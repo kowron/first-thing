@@ -32,8 +32,8 @@ def frange(a, b, step=0.25):
 
 # grubości warstw (mm na rysunku)
 SKIN, FAT, SLIT, FSUP = 0.9, 3.0, 0.6, 0.25     # skóra, tkanka podskórna, szczelina, odstęp powięzi powierzchownej od mięśnia
-D_TIP = 2.8                                      # głębokość kąta bocznego pochewki (rozdwojenie rozcięgna m. sk. wewn.)
-EO_L, IO_L, TA_L = (0.0, 1.7), (1.9, 3.7), (3.9, 5.6)   # mięśnie szerokie bocznie (głębokość od – do)
+D_TIP = 3.3                                      # głębokość kąta bocznego pochewki (rozdwojenie rozcięgna m. sk. wewn.)
+EO_L, IO_L, TA_L = (0.0, 2.0), (2.2, 4.4), (4.6, 6.4)   # mięśnie szerokie bocznie (głębokość od – do)
 BL = TA_L[1]                                     # tylna powierzchnia ściany bocznie
 
 
@@ -58,7 +58,7 @@ class Sec:
     # --- profile głębokości
     def bump(s, u):
         v = (abs(u) - s.m0) / (s.m1 - s.m0)
-        return math.sin(math.pi * v) ** 0.8 if 0 < v < 1 else 0.0
+        return math.sin(math.pi * v ** 0.8) ** 1.1 if 0 < v < 1 else 0.0
 
     def fb(s, u):            # przednia powierzchnia warstwy mięśniowo-rozcięgnowej
         return -s.bulge * s.bump(u)
@@ -66,15 +66,19 @@ class Sec:
     def bb(s, u):            # tylna powierzchnia ściany (A: rozcięgno m. poprzecznego; B: m. prosty)
         return BL + s.bulge_b * s.bump(u)
 
+    def conv(s, u, L=8.0, p=2.2):
+        t = (abs(u) - (s.m1 - L)) / L
+        return 0.0 if t <= 0 else (1.0 if t >= 1 else t ** p)
+
     def Lf(s, u):            # wewnętrzna powierzchnia blaszki przedniej (granica z m. prostym)
         if s.kind == 'A':
-            return lerp(s.fb(u) + 2 * s.ta, D_TIP, ss(s.m1 - 5.0, s.m1, abs(u)))
-        return lerp(s.fb(u) + 3 * s.ta, s.bb(u), ss(s.m1 - 5.5, s.m1, abs(u)))
+            return lerp(s.fb(u) + 2 * s.ta, D_TIP, s.conv(u))
+        return s.fb(u) + 3 * s.ta
 
     def Lb(s, u):            # wewnętrzna powierzchnia blaszki tylnej (A) / tylna powierzchnia m. prostego (B)
         if s.kind == 'A':
-            return lerp(s.bb(u) - 2 * s.ta, D_TIP, ss(s.m1 - 5.0, s.m1, abs(u)))
-        return s.bb(u)
+            return lerp(s.bb(u) - 2 * s.ta, D_TIP, s.conv(u))
+        return lerp(s.bb(u), s.fb(u) + 3 * s.ta + 0.3, s.conv(u))
 
     # --- rysowanie
     def poly(s, pts_ud):
@@ -88,7 +92,7 @@ class Sec:
         pts = [(u, top(u)) for u in us] + [(u, bot(u)) for u in reversed(us)]
         f.add(f'<path class="{cls}" d="{s.poly(pts)}"/>')
 
-    def muscle(s, j, top, bot, side, taper=3.2):
+    def muscle(s, j, top, bot, side, taper=2.6):
         """brzusiec mięśnia szerokiego od u=j (koniec przyśrodkowy, zaostrzony) do cięcia u=U"""
         sg = 1 if side > 0 else -1
         us = frange(j, s.U, 0.25)
@@ -145,13 +149,17 @@ def superficial(S):
     S.band(-U, U, lambda u: sk_in(u) - SKIN, sk_in, 'organ')                      # skóra
     S.band(-U, U, sk_in, lambda u: S.fb(u) - FSUP - SLIT, 'shade')               # tkanka podskórna
     rnd = random.Random(7 if S.kind == 'A' else 11)
-    u = -U + 1.0
-    while u < U - 0.8:                                                           # zraziki tłuszczu
-        d0 = sk_in(u) + 0.75 + rnd.random() * (FAT - 1.5)
-        r = 0.42 + rnd.random() * 0.22
-        x, y = S.P(u, d0)
-        f.add(f'<circle class="cavity" cx="{x:.2f}" cy="{y:.2f}" r="{r:.2f}"/>')
-        u += 1.25 + rnd.random() * 0.6
+    for row, dd in enumerate((0.95, 2.05)):                                       # zraziki tłuszczu (2 rzędy)
+        u = -U + 1.2 + (1.05 if row % 2 else 0.0)
+        while u < U - 0.9:
+            d0 = sk_in(u) + dd + (rnd.random() - 0.5) * 0.3
+            x, y = S.P(u, d0)
+            ang = math.degrees(math.atan(S.dY(u))) + (rnd.random() - 0.5) * 16
+            rx = 0.62 + rnd.random() * 0.16
+            ry = 0.38 + rnd.random() * 0.08
+            f.add(f'<ellipse class="cavity" cx="{x:.2f}" cy="{y:.2f}" rx="{rx:.2f}" ry="{ry:.2f}" '
+                  f'transform="rotate({ang:.1f} {x:.2f} {y:.2f})"/>')
+            u += 2.1 + (rnd.random() - 0.5) * 0.5
     us = frange(-U, U, 0.3)
     f.add(f'<path class="capsule" d="{S.line([(u, S.fb(u) - FSUP - SLIT) for u in us])}"/>')   # powięź podskórna
     f.add(f'<path class="capsule" d="{S.line([(u, S.fb(u) - FSUP) for u in us])}"/>')          # powięź powierzchowna
@@ -214,35 +222,36 @@ def section_B(S):
     superficial(S)
     deep(S)
     S.knot()
-    # m. poprzeczny: rozcięgno przechodzi do przodu od m. prostego (najgłębsza warstwa blaszki przedniej)
-    ta_bot = lambda u: S.Lf(u) if abs(u) <= m1 else S.bb(u)
-    ta_top = lambda u: (S.Lf(u) - ta) if abs(u) <= m1 else lerp(S.bb(u) - ta, TA_L[0], ss(m1, m1 + 6, abs(u)))
+    sf = lambda u: ss(m1 - 1, m1 + 6, abs(u))          # rozejście się rozcięgien ku mięśniom (bocznie od m. prostego)
+    # m. poprzeczny: rozcięgno biegnie do przodu od m. prostego (najgłębsza warstwa blaszki przedniej)
+    ta_top = lambda u: lerp(S.fb(u) + 2 * ta, TA_L[0], sf(u))
+    ta_bot = lambda u: lerp(S.fb(u) + 3 * ta, TA_L[1], sf(u))
     S.band(-U, U, ta_top, ta_bot, 'tendon', step=0.15)
     for sd in (-1, 1):
         S.muscle(m1 + 2.0, ta_top, ta_bot, sd)
     # m. skośny wewnętrzny: całe rozcięgno do przodu od m. prostego
-    io_top = lambda u: lerp(S.fb(u) + ta, IO_L[0], ss(m1 - 4, m1 + 6, abs(u)))
-    io_bot = lambda u: lerp(S.fb(u) + 2 * ta, IO_L[1], ss(m1 - 4, m1 + 6, abs(u)))
+    io_top = lambda u: lerp(S.fb(u) + ta, IO_L[0], sf(u))
+    io_bot = lambda u: lerp(S.fb(u) + 2 * ta, IO_L[1], sf(u))
     S.band(-U, U, io_top, io_bot, 'lig', step=0.15)
     for sd in (-1, 1):
         S.muscle(m1 + 1.2, io_top, io_bot, sd)
     # m. skośny zewnętrzny
-    eo_bot = lambda u: lerp(S.fb(u) + ta, EO_L[1], ss(m1 - 1, m1 + 7, abs(u)))
+    eo_bot = lambda u: lerp(S.fb(u) + ta, EO_L[1], ss(m1 - 1, m1 + 8, abs(u)))
     S.band(-U, U, S.fb, eo_bot, 'tendon')
     for sd in (-1, 1):
         S.muscle(m1 + 3.5, S.fb, eo_bot, sd)
     # kresa biała – skrzyżowanie włókien (cienkie linie)
     for sd in (-1, 1):
-        a = S.P(sd * 1.6, S.fb(0) + 0.15)
-        b = S.P(-sd * 0.5, S.bb(0) - 0.6)
+        a = S.P(sd * 2.2, S.fb(0) + 3 * ta - 0.05)
+        b = S.P(-sd * 0.45, S.bb(0) - 0.5)
         f.add(f'<path class="tendon" d="M{a[0]:.2f},{a[1]:.2f} L{b[0]:.2f},{b[1]:.2f}"/>')
     for sd in (-1, 1):
         S.rectus(sd)
 
 
-A = Sec('A', 0.0)
-B = Sec('B', 48.0, m0=0.8, m1=14.0, RT=2.6, RB=0.7, bulge=0.4, bulge_b=0.9, ta=0.42, dext=None)
-B.dext = B.bb(0) - 0.7
+A = Sec('A', 0.0, ya=22.0, a=0.003, b=4e-6, U=36.0, m0=1.9, m1=19.0, RT=2.4, RB=2.4, bulge=0.9, bulge_b=1.1, ta=0.5)
+B = Sec('B', 47.0, ya=22.0, a=0.003, b=4e-6, U=36.0, m0=0.8, m1=16.5, RT=2.8, RB=0.8, bulge=0.5, bulge_b=1.4, ta=0.45)
+B.dext = B.bb(0) - 0.8
 section_A(A)
 section_B(B)
 
