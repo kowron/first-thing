@@ -1,0 +1,12 @@
+{
+  "modelSettings": {
+    "claude-sonnet-5-5": {
+      "effortLevel": "high",
+      "maxEffortLevel": "high"
+    },
+    "claude-opus-5-5": {
+      "effortLevel": "medium",
+      "maxEffortLevel": "medium"
+    }
+  }
+}
