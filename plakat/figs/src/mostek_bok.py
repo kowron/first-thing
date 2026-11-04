@@ -108,7 +108,7 @@ f.label(T((1.9, 59.5)), 'wyrostek mieczykowaty', 'processus xiphoideus', (TL, 90
 f.label(T(man(22.25, 4.9)), 'wcięcie obojczykowe', 'incisura clavicularis', (TR, 6.5), side='R')
 f.label(T(man(15.0, 3.9)), 'wcięcie żebrowe I', 'incisura costalis I', (TR, 16.0), side='R')
 f.label(T((2.75, -1.6)), 'wcięcie żebrowe II', 'incisura costalis II', (TR, 26.5), side='R')
-f.label(T((4.6, -0.2)), 'górne połączenie mostkowe', 'synchondrosis manubriosternalis', (TR, 37.0), side='R')
+f.label(T((4.6, -0.2)), 'górne połączenie mostkowe', 'synchondrosis s. symphysis manubriosternalis', (TR, 37.0), side='R')
 f.label(T((2.2, 49.4)), 'wcięcie żebrowe VII', 'incisura costalis VII', (TR, 75.5), side='R')
 f.label(T((3.75, 50.0)), 'dolne połączenie mostkowe', 'synchondrosis xiphosternalis', (TR, 85.0), side='R')
 

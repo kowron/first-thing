@@ -1,3 +1,28 @@
+# AKTUALIZACJA – sesja 2 (4.11.2026, wieczór) – czytaj to najpierw
+
+**Środowisko (zmiana względem opisu poniżej):** projekt leży w `/home/user/first-thing/plakat/` (ścieżki w kodzie zamienione z `/home/claude`), skrypty w `/home/user/first-thing/scripts/`.
+Czcionki: Inter + TeX Gyre Pagella (pobrane z CTAN do `/usr/local/share/fonts/texgyre`). Python playwright: `export PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers`;
+skrypty `launch` mają `executable_path=/opt/pw-browsers/chromium` i `--no-sandbox`. OCR książki (`all.txt`, `bones.txt`) NIE jest w repozytorium (`.gitignore`) – trzymać lokalnie.
+
+**Przebudowa stron:**
+```bash
+cd /home/user/first-thing/plakat
+python3 build.py && python3 ../scripts/pdf_poster2.py /home/user/first-thing/plakat/index.html p2.pdf          # strona 2 (cel max_bottom ≤ 830; teraz 829)
+../scripts/meas.sh kosciec 0.8 0.75; K=0.8 FIGSCALE=0.75 PAGE=kosciec python3 build_os.py && python3 ../scripts/pdf_poster2.py /home/user/first-thing/plakat/page_kosciec.html test_k.pdf   # strona 1 (teraz 790)
+../scripts/meas.sh mech 0.8 0.75;    K=0.8 FIGSCALE=0.75 PAGE=mech    python3 build_os.py && python3 ../scripts/pdf_poster2.py /home/user/first-thing/plakat/page_mech.html test_m.pdf       # strona 3 (teraz ~818)
+```
+`k_oddychanie.json` jest GENEROWANY (`python3 gen_oddychanie.py` z `data.py` + `l3_klatka.json`) – poprawki robić w generatorze/`data.py`, nie w JSON-ie.
+
+**Stan:** strona 1 – gotowa (wszystkie rysunki); strona 2 – gotowa, dodany własny rysunek `pochewka_przekroje` (dok pod kolumną `bbocz`) i wiersz „Tłocznia – udział mięśni”;
+strona 3 – układ przebudowany (`layout_mech.py`: kręgosłup 3 kolumny, klatka 2 bloki, oddychanie na podwójnej szerokości; parametry env `CWM`, `CWK`), `k_mech.json` napisany,
+nowa karta „Tłocznia brzuszna” z rysunkiem `przepona_brzuch`. Weryfikacje V1–V7 i audyty terminologii T1/T3 nałożone (`verify_*.json`).
+**Znane braki:** w skanie nie ma s. 288–289 i ryc. 194–195 (początek „Klatka piersiowa jako całość”) – użytkownik ma papierową książkę; dopisać z fotografii.
+**Zasady wyciągnięte z tej sesji:** (1) nazwy łacińskie na rysunkach tylko takie, które są w t. I Bochenka (kontrola: skrypt porównujący `class="la"` z OCR; narządów typu hepar/ren/pulmo/cor/splen/gaster/pericardium u Bochenka nie ma – bez łaciny);
+(2) numer strony PDF skanu brać ze znaczników `=== PDF N-0/1 ===` w `bones.txt` (stały wzór nie działa w całej książce);
+(3) po zmianie rysunków/treści zawsze `meas.sh` → `build_os.py` → `pdf_poster2.py` i sprawdzić `max_bottom`, `over`, `overlap`.
+
+---
+
 # HANDOFF – plakat A0 „Anatomia: szkielet osiowy” (Piotr, ŚUM, 1. rok lekarski)
 
 Stan na 4.11.2026, ok. 18:00. Dokument dla kolejnej sesji (Claude Code). Wszystko po polsku; kod ma twardo wpisane ścieżki `/home/user/first-thing/...`

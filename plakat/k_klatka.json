@@ -1085,7 +1085,7 @@
         "kąt mostka {{angulus sterni}}",
         "rękojeść mostka {{manubrium sterni}}",
         "trzon mostka {{corpus sterni}}",
-        "górne połączenie mostkowe {{synchondrosis manubriosternalis}}",
+        "górne połączenie mostkowe {{synchondrosis s. symphysis manubriosternalis}}",
         "wcięcie żebrowe II {{incisura costalis II}}",
         "żebro II {{costa II}}",
         "wyniosłość poprzeczna na powierzchni przedniej"
@@ -1104,7 +1104,7 @@
          "items": [
           "rękojeść, trzon i wyrostek łączy warstwa chrząstki – zachowują względem siebie pewien stopień ruchomości",
           "także u dorosłego zwykle połączone chrząstką – **chrząstkozrosty mostkowe** {{synchondroses sternales}}",
-          "**górne połączenie mostkowe** {{synchondrosis manubriosternalis}} – między rękojeścią a trzonem",
+          "**górne połączenie mostkowe** {{synchondrosis s. symphysis manubriosternalis}} – między rękojeścią a trzonem",
           "**dolne połączenie mostkowe** {{synchondrosis xiphosternalis}} – między trzonem a wyrostkiem mieczykowatym"
          ]
         }
@@ -1121,7 +1121,7 @@
         "rękojeść mostka {{manubrium sterni}}",
         "trzon mostka {{corpus sterni}}",
         "wyrostek mieczykowaty {{processus xiphoideus}}",
-        "górne połączenie mostkowe {{synchondrosis manubriosternalis}}",
+        "górne połączenie mostkowe {{synchondrosis s. symphysis manubriosternalis}}",
         "dolne połączenie mostkowe {{synchondrosis xiphosternalis}}",
         "kąt mostka {{angulus sterni}}"
        ],
