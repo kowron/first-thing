@@ -137,7 +137,7 @@ f.text(*PA(15.0, VH + DSC + 15.4), 'L4', cls='notec')
 # ======================================================================= B. przekrój poziomy lewego stawu L3/L4 (od góry, przód ku górze)
 SB = 1.5
 U0, U1, V0, V1 = -27.0, 7.0, -13.0, 16.0          # okno wstawki (mm kości)
-XB, YB0 = 97.5 - U0 * SB, 57.5 - V0 * SB          # x = 0 – płaszczyzna pośrodkowa, y = 0 – środek stawu
+XB, YB0 = 96.4 - U0 * SB, 58.0 - V0 * SB          # x = 0 – płaszczyzna pośrodkowa, y = 0 – środek stawu
 
 
 def PB(x, y):

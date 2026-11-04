@@ -234,7 +234,7 @@ for a0, a1, b0, b1, bu in IL:
 f.add('</g>')
 f.text(*PA(-6.2, -31.0), 'L5', cls='notec')
 f.text(*PA(-6.2, -71.0), 'L4', cls='notec')
-f.text(*PA(122.0, -64.0), 'A', cls='big')
+f.text(*PA(122.0, -58.0), 'A', cls='big')
 
 # ======================================================================= B. przekrój poziomy prawego stawu krzyżowo-biodrowego
 SB = 0.425
@@ -308,8 +308,8 @@ f.add(f'<path class="bonel" d="{poly(TB([(40.0, 5.6), (51.0, 9.0), (59.0, 5.0)])
 f.add('</g>')
 f.add(f'<rect x="{bx0:.2f}" y="{by0:.2f}" width="{bx1 - bx0:.2f}" height="{by1 - by0:.2f}" rx="2.2" class="dim"/>')
 f.text(*PB(2.0, 16.0), 'kość krzyżowa', cls='note')
-f.text(*PB(62.0, 37.4), 'kość', cls='note')
-f.text(*PB(60.0, 42.8), 'biodrowa', cls='note')
+f.text(*PB(53.0, 36.2), 'kość', cls='note')
+f.text(*PB(48.0, 42.0), 'biodrowa', cls='note')
 f.text(bx0 + 0.8, by1 - 1.6, 'B', cls='big')
 
 # ======================================================================= podpisy
