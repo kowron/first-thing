@@ -12,7 +12,7 @@ from figlib import Fig
 
 W, H = 86, 96
 f = Fig('pochewka_przekroje', W, H,
-        caption='przekroje poprzeczne przez przednią ścianę brzucha · schemat · przód (skóra) ku górze')
+        caption='przekroje poprzeczne przedniej ściany brzucha · przód ku górze')
 
 
 def ss(e0, e1, x):
@@ -270,36 +270,41 @@ def section_B(S):
 
 
 A = Sec('A', 0.0, ya=24.5, a=0.003, b=4e-6, U=36.0, m0=1.9, m1=19.0, RT=2.4, RB=2.4, bulge=0.9, bulge_b=1.1, ta=0.5)
-B = Sec('B', 57.0, ya=14.5, a=0.003, b=4e-6, U=36.0, m0=0.8, m1=16.5, RT=2.8, RB=0.8, bulge=0.5, bulge_b=1.4, ta=0.45)
+B = Sec('B', 61.0, ya=14.5, a=0.003, b=4e-6, U=36.0, m0=0.8, m1=16.5, RT=2.8, RB=0.8, bulge=0.5, bulge_b=1.4, ta=0.45)
 B.dext = B.bb(0) - 0.8
 section_A(A)
 section_B(B)
 
-# ---------- tytuły przekrojów ----------
+# ---------- tytuły przekrojów i liczby warstw pochewki ----------
 f.text(2.0, 4.4, 'A · powyżej kresy łukowatej', cls='big')
+f.text(83.7, 56.6, 'blaszka przednia: 2 warstwy', cls='note', anchor='end')
+f.text(83.7, 59.2, 'blaszka tylna: 2 warstwy', cls='note', anchor='end')
 f.text(2.0, B.oy + 4.4, 'B · poniżej kresy łukowatej', cls='big')
+f.text(2.0, B.oy + 8.2, 'blaszka przednia: 3 warstwy', cls='note')
+f.text(2.0, B.oy + 10.7, 'blaszka tylna: brak', cls='note')
 
 # ---------- podpisy: A (warstwy wspólne + pochewka powyżej kresy łukowatej) ----------
 P = A.P
-# góra – lewa strona (warstwy powierzchowne, linie do lewej części ściany)
+# góra – lewa strona (warstwy powierzchowne)
 f.label(P(-33.6, -FSUP), 'powięź powierzchowna brzucha', 'fascia superficialis abdominis', (4.6, 8.1), side='R')
-f.label(P(-29.5, -FSUP - SLIT), 'powięź podskórna', 'fascia subcutanea', (8.0, 13.6), side='R')
-f.label(P(-22.0, -FSUP - SLIT - FAT - SKIN / 2), 'skóra', 'cutis', (19.0, 19.1), side='L')
+f.label(P(-31.0, -FSUP - SLIT), 'powięź podskórna', 'fascia subcutanea', (8.0, 13.6), side='R')
 # góra – prawa strona
 f.label(P(5.3, A.fb(5.3) + A.ta), 'blaszka przednia', 'lamina anterior', (50.0, 2.6), side='R')
-f.label(P(12.0, (A.Lf(12) + A.Lb(12)) / 2), 'm. prosty brzucha', 'm. rectus abdominis', (57.0, 8.1), side='R')
-f.label(P(28.0, -FSUP - SLIT - FAT / 2), 'tkanka podskórna', 'tela subcutanea', (82.4, 13.6), side='L')
-# dół – środek i strony
-f.label(P(0.0, A.bb(0) - 1.2), 'kresa biała', 'linea alba', (41.4, 38.2), side='L')
-f.label(P(14.5, A.bb(14.5) + 0.3 + 0.825), 'otrzewna', 'peritoneum', (58.5, 38.2), side='R')
-f.label(P(9.5, A.bb(9.5) - A.ta), 'blaszka tylna', 'lamina posterior', (53.5, 43.7), side='R')
-f.label(P(-35.4, (TA_L[0] + TA_L[1]) / 2), 'm. poprzeczny brzucha', 'm. transversus abdominis', (13.2, 43.7), side='R')
-f.label(P(35.4, (EO_L[0] + EO_L[1]) / 2), 'm. skośny zewnętrzny brzucha', 'm. obliquus externus abdominis', (82.4, 49.2), side='L')
-f.label(P(-35.4, (IO_L[0] + IO_L[1]) / 2), 'm. skośny wewnętrzny brzucha', 'm. obliquus internus abdominis', (4.2, 54.0), side='R')
+f.label(P(10.5, (A.Lf(10.5) + A.Lb(10.5)) / 2), 'm. prosty brzucha', 'm. rectus abdominis', (55.0, 8.1), side='R')
+f.label(P(14.0, -FSUP - SLIT - FAT / 2), 'tkanka podskórna', 'tela subcutanea', (57.5, 13.6), side='R')
+f.label(P(28.6, -FSUP - SLIT - FAT - SKIN / 2), 'skóra', 'cutis', (76.0, 19.1), side='R')
+# dół – środek
+f.label(P(0.0, A.bb(0) - 1.6), 'kresa biała', 'linea alba', (41.4, 38.8), side='L')
+f.label(P(9.5, A.bb(9.5) - A.ta), 'blaszka tylna', 'lamina posterior', (53.5, 44.3), side='R')
+f.label(P(13.0, A.bb(13.0) + 0.3 + 0.825), 'otrzewna', 'peritoneum', (55.0, 38.8), side='R')
+# dół – lewy koniec przekroju (powierzchnia cięcia mięśni szerokich)
+f.label(P(-35.5, (TA_L[0] + TA_L[1]) / 2), 'm. poprzeczny brzucha', 'm. transversus abdominis', (13.2, 44.3), side='R')
+f.label(P(-35.5, (IO_L[0] + IO_L[1]) / 2), 'm. skośny wewnętrzny brzucha', 'm. obliquus internus abdominis', (8.1, 49.8), side='R')
+f.label(P(-35.5, (EO_L[0] + EO_L[1]) / 2), 'm. skośny zewnętrzny brzucha', 'm. obliquus externus abdominis', (4.2, 55.3), side='R')
 
 # ---------- podpisy: B (tylko różnice) ----------
 P = B.P
 f.label(P(5.0, B.fb(5.0) + 1.5 * B.ta), 'blaszka przednia', 'lamina anterior', (50.0, B.oy + 2.6), side='R')
-f.label(P(9.0, B.bb(9.0) + 0.15), 'powięź poprzeczna', 'fascia transversalis', (36.0, B.oy + 27.5), side='L')
+f.label(P(-6.0, B.bb(-6.0) + 0.15), 'powięź poprzeczna', 'fascia transversalis', (38.5, B.oy + 27.5), side='R')
 
 f.save()

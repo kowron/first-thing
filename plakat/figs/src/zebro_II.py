@@ -131,7 +131,7 @@ class Rib:
             v = (-nx * math.cos(a) + tE[0] * math.sin(a) * end_flat, -ny * math.cos(a) + tE[1] * math.sin(a) * end_flat)
             cap_end.append((cE[0] + v[0] * rE, cE[1] + v[1] * rE))
         self.cap_head = cap_head
-        return outer + cap_end + inner[::-1] + cap_head
+        return outer + cap_end + inner[::-1] + cap_head[::-1]
 
 
 # ================= zarys żebra I (te same dane co w rysunku „zebro_I”; przesunięty do wnętrza łuku żebra II) =========
