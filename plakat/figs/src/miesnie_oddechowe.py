@@ -299,12 +299,11 @@ for y in (24.4, 29.8):
     add('tendon', poly(PS([(0.6, y - 0.35), (7.65, y - 0.6), (7.6, y + 0.25), (0.6, y + 0.45)], R)))
 for u in (2.3, 4.0, 5.8):
     add('musclel', line(PS([(u, 19.0 if u < 4 else 18.2), (u, 36.0)], R)))
-EO = [(7.7, 24.6), (9.6, 24.2)]
-for k in range(7, 12):
-    EO.append((RA[k][0] - 1.5, rib_y(k, RA[k][0] - 1.5) + 0.3) if k < 10 else (RA[k][0] - 0.4, RA[k][1] + 0.5))
-EO += [(14.0, 30.0), (14.4, 36.0), (7.6, 36.0), (7.75, 30.0)]
-add('muscle', poly(PS(EO, R)))
-for a, b in (((10.6, 25.3), (8.1, 28.8)), ((12.1, 26.6), (8.6, 31.8)), ((13.3, 28.2), (9.4, 34.6)), ((13.9, 31.2), (11.4, 35.4))):
+EO = [(7.7, 24.4), (9.8, 24.0), (11.8, 23.4), (13.5, 22.6), (14.8, 22.4), (15.1, 25.0), (14.8, 28.5), (14.5, 32.0),
+      (14.4, 36.0), (7.6, 36.0), (7.75, 30.0)]
+add('muscle', smooth(PS(EO, R), closed=True, t=0.2))
+for a, b in (((10.4, 24.4), (8.0, 27.6)), ((12.4, 24.0), (8.3, 30.6)), ((14.1, 23.6), (8.8, 33.8)), ((14.4, 27.2), (10.6, 35.8)),
+             ((14.4, 31.0), (12.8, 35.8))):
     add('musclel', line(PS([a, b], R)))
 
 # ================================================================ 7. kości obręczy i ramienia
@@ -325,10 +324,10 @@ add('musclel', line(LD))
 
 # m. piersiowy większy (prawa strona ciała) – część mostkowo-żebrowa jako pasmo (warstwa powierzchowna,
 # przykrywa m. piersiowy mniejszy): mostek i chrząstki żeber → grzebień guzka większego kości ramiennej
-PMAJ = [(1.9, 10.6), (6.0, 10.4), (10.5, 9.2), (14.8, 7.5), (18.2, 6.2), (19.0, 6.6), (19.1, 9.0), (18.4, 9.5),
-        (14.8, 11.6), (10.4, 14.6), (6.0, 16.6), (2.1, 17.4)]
+PMAJ = [(1.9, 13.4), (6.0, 13.0), (10.5, 11.3), (14.8, 8.8), (18.2, 6.6), (19.0, 6.9), (19.1, 9.3), (18.4, 9.8),
+        (14.8, 12.6), (10.4, 16.0), (6.0, 18.4), (2.1, 19.2)]
 add('muscle', smooth(PS(PMAJ, L), closed=True, t=0.25))
-for q, e in (((2.1, 11.6), (18.6, 6.9)), ((2.1, 13.4), (18.7, 7.6)), ((2.1, 15.2), (18.8, 8.3)), ((3.2, 16.9), (18.8, 9.0))):
+for q, e in (((2.1, 14.6), (18.6, 7.3)), ((2.1, 16.2), (18.7, 7.9)), ((2.1, 17.8), (18.8, 8.5)), ((4.6, 18.6), (18.8, 9.1))):
     add('musclel', line(PS([q, e], L)))
 
 # m. mostkowo-obojczykowo-sutkowy: głowa boczna (obojczyk) i przyśrodkowa (rękojeść mostka) → wyrostek sutkowaty
@@ -344,8 +343,9 @@ f.arrow(f'M{xd:.2f},{P(0, 17.8, L)[1]:.2f} L{xd:.2f},{P(0, 22.2, L)[1]:.2f}')   
 f.arrow(line([P(11.0, 24.6, L), P(11.0, 21.0, L)]))                                     # mm. międzyżebrowe zewn.
 f.arrow(line([P(6.2, 1.4, L), P(5.2, -2.6, L)]))                                        # mm. pochyłe
 f.arrow(line([P(0.9, 7.6, L), P(1.6, 4.0, L)]))                                         # m. mostkowo-obojczykowo-sutkowy
-f.arrow(line([P(10.2, 13.2, L), P(12.0, 9.8, L)]))                                      # m. piersiowy mniejszy
+f.arrow(line([P(11.4, 10.6, L), P(13.0, 7.2, L)]))                                      # m. piersiowy mniejszy
 f.arrow(line([P(16.4, 20.6, L), P(17.4, 16.8, L)]))                                     # m. zębaty przedni
+f.arrow(line([P(7.0, 16.6, L), P(11.4, 13.9, L)]))                                      # m. piersiowy większy
 # wydech (czerwone)
 f.arrow(line([P(11.3, 9.4, R), P(11.3, 13.0, R)]), red=True)                            # mm. międzyżebrowe wewn.
 f.arrow(line([P(7.0, 12.9, R), P(4.8, 15.0, R)]), red=True)                             # m. poprzeczny kl. piersiowej
@@ -358,9 +358,9 @@ f.body = [f'<defs><clipPath id="cp_mo"><rect x="0" y="{Y0 + S * YTOPC:.2f}" widt
           f'</clipPath></defs><g clip-path="url(#cp_mo)">{body}</g>']
 
 # ================================================================ 9. wstawka: m. zębaty tylny górny – od tyłu
-S2 = 0.95
-CX2, Y02 = 75.0, 87.0                   # oś; górny brzeg trzonu Th1 (wstawka)
-U2, YT2, YB2 = 9.6, -5.6, 14.6          # zakres przycięcia (cm)
+S2 = 1.15
+CX2, Y02 = 75.0, 86.5                   # oś; górny brzeg trzonu Th1 (wstawka)
+U2, YT2, YB2 = 9.0, -5.2, 13.8          # zakres przycięcia (cm)
 inset = []
 
 
@@ -439,13 +439,14 @@ def lab(at, pl, la, to, side, nt=None):
 
 lab(P(5.0, -7.0, L), 'm. mostkowo-obojczykowo-sutkowy', 'm. sternocleidomastoideus', (63.0, 14.5), 'L',
     'głowa i kręgosłup ustalone')
-lab(P(6.6, -0.9, L), 'mm. pochyłe', 'mm. scaleni', (XL, 25.5), 'L', 'przedłużenie mm. międzyżebrowych zewn.')
-lab(P(9.0, 4.1, L), 'm. podobojczykowy', 'm. subclavius', (XL, 35.0), 'L')
-lab(P(12.6, 8.4, L), 'm. piersiowy mniejszy', 'm. pectoralis minor', (XL, 42.5), 'L')
-lab(P(13.0, 9.6, L), 'm. piersiowy większy', 'm. pectoralis major', (XL, 50.0), 'L')
-lab(P(14.6, 17.2, L), 'm. zębaty przedni', 'm. serratus anterior', (XL, 59.5), 'L')
-lab(P(12.0, 22.9, L), 'mm. międzyżebrowe zewnętrzne', 'mm. intercostales externi', (XL, 67.0), 'L', 'główne (oddychanie żebrowe)')
-lab(P(8.6, 17.4, L), 'przepona', 'diaphragma', (XL, 76.5), 'L', 'główny mięsień wdechowy')
+lab(P(6.6, -0.9, L), 'mm. pochyłe', 'mm. scaleni', (XL, 25.5), 'L', 'przedłużenie mm. międzyżebrowych')
+note(XL - 0.7, 34.5, 'zewnętrznych', 'end')
+lab(P(9.0, 4.1, L), 'm. podobojczykowy', 'm. subclavius', (XL, 39.0), 'L')
+lab(P(10.4, 9.2, L), 'm. piersiowy mniejszy', 'm. pectoralis minor', (XL, 46.0), 'L')
+lab(P(13.6, 11.2, L), 'm. piersiowy większy', 'm. pectoralis major', (XL, 53.0), 'L')
+lab(P(14.6, 17.2, L), 'm. zębaty przedni', 'm. serratus anterior', (XL, 60.0), 'L')
+lab(P(12.0, 23.1, L), 'mm. międzyżebrowe zewnętrzne', 'mm. intercostales externi', (XL, 77.0), 'L', 'główne (oddychanie żebrowe)')
+lab(P(9.6, 18.1, L), 'przepona', 'diaphragma', (XL, 68.0), 'L', 'główny mięsień wdechowy')
 # wydechowe (prawa kolumna)
 XR = 104.5
 lab(P(11.0, 11.6, R), 'mm. międzyżebrowe wewnętrzne', 'mm. intercostales interni', (XR, 31.0), 'R', 'spokojny wydech')
@@ -457,10 +458,10 @@ lab(P(11.0, 31.0, R), 'mięśnie brzucha', None, (XR, 64.0), 'R', 'najsilniej op
 lab(Q(4.6, 3.6, 1), 'm. zębaty tylny górny', 'm. serratus posterior superior', (XR, 88.0), 'R', 'pomocniczy wdechowy')
 
 # ================================================================ uwagi (warunki działania mięśni pomocniczych)
-for i, t in enumerate(['mięśnie obręczy kończyny górnej działają', 'wdechowo, gdy ramię jest ustalone',
-                       '(np. chwyt brzegu stołu)']):
-    note(XL - 0.7, 88.0 + i * 2.7, t, 'end')
-for i, t in enumerate(['pomocnicze wydechowe – gdy wydech idzie', 'przeciw oporowi lub szybko', '(kaszel, kichanie, śmiech)']):
+for i, t in enumerate(['mięśnie od obręczy kończyny górnej', 'i ramienia działają wdechowo, gdy ramię',
+                       'jest ustalone (np. chwyt brzegu stołu)']):
+    note(XL - 0.7, 92.0 + i * 2.7, t, 'end')
+for i, t in enumerate(['pomocnicze wydechowe – gdy wydech', 'idzie przeciw oporowi lub szybko', '(kaszel, kichanie, śmiech)']):
     note(XR + 0.7, 71.0 + i * 2.7, t, 'start')
 
 f.save()

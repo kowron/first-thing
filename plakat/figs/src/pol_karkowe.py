@@ -7,9 +7,9 @@
 import sys, math; sys.path.insert(0, '/home/user/first-thing/plakat/figs')
 from figlib import Fig, smooth
 
-W, H = 140, 104
+W, H = 128, 104
 S = 0.47                       # mm rysunku / mm kości
-X0, Y0 = 50.0, 32.0            # położenie guzka przedniego kręgu szczytowego na rysunku
+X0, Y0 = 38.0, 32.0            # położenie guzka przedniego kręgu szczytowego na rysunku
 f = Fig('pol_karkowe', W, H,
         caption='więzadło karkowe · kręgi szyjne i fragment kości potylicznej · widok od strony lewej (przód w lewo)')
 
@@ -63,7 +63,7 @@ ATLAS = [(-0.4, 0.0), (0.3, -4.2), (2.4, -5.8), (5.4, -5.4), (8.0, -6.9), (11.5,
          (25.8, -4.4), (28.2, -3.4), (31.0, -3.9), (35.5, -4.5), (40.2, -5.1), (43.8, -4.6), (46.2, -2.2), (46.6, 1.2), (45.2, 4.4),
          (41.8, 5.4), (37.2, 4.4), (32.4, 3.7), (28.4, 4.0), (25.6, 5.9), (22.8, 8.0), (17.8, 8.5), (12.2, 7.8), (8.6, 6.2),
          (5.2, 5.6), (2.2, 5.8), (0.3, 4.2)]
-ATLAS_TP = [(12.4, -2.6), (14.6, -5.0), (17.8, -5.4), (20.2, -3.0), (20.8, 0.8), (19.0, 4.0), (15.6, 4.8), (13.0, 2.8)]
+ATLAS_TP = [(11.6, -3.0), (13.6, -5.8), (17.4, -6.6), (20.4, -4.6), (21.4, -0.6), (20.2, 3.6), (16.8, 5.4), (13.4, 4.2), (11.4, 0.8)]
 TUB_POST = (46.5, 0.2)                       # guzek tylny kręgu szczytowego
 
 # --- kręg obrotowy (C2): zarys jak w rysunku kr_c2_bok (u – ku tyłowi, v – w dół od wierzchołka zęba)
@@ -160,11 +160,10 @@ for v in V:
 INION = (73.0, -40.0)          # guzowatość potyliczna zewnętrzna – wierzchołek trójkąta więzadła
 OPIST = (36.6, -13.4)          # tylny brzeg otworu wielkiego
 CREST = [(73.0, -39.6), (67.4, -34.6), (59.6, -28.6), (51.6, -22.6), (44.4, -17.6), (39.4, -14.6), OPIST]
-OCC = [(66.4, -62.4), (70.6, -57.0), (73.6, -50.6), (74.8, -44.6), (74.4, -41.6)] + CREST[1:] + [(35.0, -15.2)]
-OCC_CUT = [(35.0, -15.2), (66.4, -62.4), (67.6, -61.0), (36.9, -14.6)]       # powierzchnia przecięcia (linia cięcia)
+OCC = [(36.0, -64.0), (68.4, -64.0), (71.6, -57.0), (74.0, -50.0), (74.9, -44.6), (74.4, -41.6)] + CREST[1:] + [(34.8, -15.0), (32.6, -17.2)]
 
 # ============================================================ rysowanie
-YCUT_TOP, YCUT_BOT = -66.0, 128.0
+YCUT_TOP, YCUT_BOT = -62.0, 137.0
 cx0, cy0 = P(-30, YCUT_TOP)
 cx1, cy1 = P(140, YCUT_BOT)
 f.add(f'<defs><clipPath id="cp_karkowe"><rect x="{cx0:.2f}" y="{cy0:.2f}" width="{cx1 - cx0:.2f}" height="{cy1 - cy0:.2f}"/></clipPath></defs>')
@@ -250,11 +249,8 @@ f.add(f'<path class="bone" d="{smooth(T(ATLAS))}"/>')
 f.add(f'<path class="bone" d="{smooth(T(ATLAS_TP))}"/>')
 
 # 4. kość potyliczna – fragment łuski; z przodu linia cięcia (powierzchnia przecięcia ciemniejsza)
-f.add(f'<path class="bone" d="{smooth(T(OCC))}"/>')
-f.add(f'<path class="bone2" d="{poly(T(OCC_CUT))}"/>')
+f.add(f'<path class="bone" d="{poly(T(cr(OCC[1:-1], n=8)) + T([OCC[-1], OCC[0]]))}"/>')
 f.add(f'<path class="shade" d="{smooth(T([(38.6, -14.6), (44.4, -17.6), (51.6, -22.6), (59.6, -28.6), (67.4, -34.6), (72.6, -39.4), (69.0, -39.6), (60.0, -33.6), (51.0, -27.4), (43.6, -21.8), (39.0, -17.2)]))}"/>')
-# kresa karkowa górna (od guzowatości potylicznej zewnętrznej ku przodowi i bocznie)
-f.add(f'<path class="bonel" d="{smooth(T([(73.8, -43.2), (67.0, -45.6), (58.0, -45.0), (49.0, -41.4)]), closed=False)}"/>')
 f.add('</g>')
 
 # oznaczenia kręgów
@@ -266,7 +262,7 @@ for v in V:
         f.text(*P(x, y), v['name'], cls='notec')
 
 # ============================================================ podpisy
-TL, TR = 40.0, 92.0
+TL, TR = 28.0, 80.0
 f.label(P(62.0, -48.0), 'kość potyliczna', 'os occipitale', (TR, 5.0), side='R')
 f.label(P(62.4, -30.6), 'grzebień potyliczny zewnętrzny', 'crista occipitalis externa', (TR, 14.0), side='R')
 f.label(P(71.0, 4.0), 'więzadło karkowe', 'ligamentum nuchae', (TR, 31.0), side='R')

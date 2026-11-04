@@ -320,6 +320,8 @@ for s_ in (-1, 1):
         o0 = offset(seg, d0 * s_)
         o1 = offset(seg, d1 * s_)
         f.add(f'<path class="muscle" d="{poly([Q(*p) for p in o0 + o1[::-1]])}"/>')
+        if d0 > 0.5:             # mm. skośne lekko przyciemnione – m. poprzeczny (warstwa najgłębsza) wyróżniony
+            f.add(f'<path class="shade" d="{poly([Q(*p) for p in o0 + o1[::-1]])}"/>')
     # włókna m. poprzecznego – poprzecznie (okrężnie)
     mid = offset(base, 0.45 * s_)[2:-1]
     f.add(f'<path class="musclel" d="{line([Q(*p) for p in mid])}"/>')
