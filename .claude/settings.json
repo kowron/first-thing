@@ -1,12 +1,14 @@
 {
+  "effortLevel": "medium",
+  "maxEffortLevel": "xhigh",
   "modelSettings": {
     "claude-sonnet-5-5": {
-      "effortLevel": "high",
-      "maxEffortLevel": "high"
+      "effortLevel": "medium",
+      "maxEffortLevel": "xhigh"
     },
     "claude-opus-5-5": {
       "effortLevel": "medium",
-      "maxEffortLevel": "medium"
+      "maxEffortLevel": "xhigh"
     }
   }
 }
