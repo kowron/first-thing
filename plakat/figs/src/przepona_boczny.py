@@ -8,7 +8,7 @@ from figlib import Fig, smooth
 
 W, H = 150, 100
 K = 2.6                      # mm na cm
-XA, YT = 47.0, 4.0           # x przedniej (wewnętrznej) powierzchni ściany przedniej (z=0); y górnego cięcia
+XA, YT = 46.0, 4.0           # x przedniej (wewnętrznej) powierzchni ściany przedniej (z=0); y górnego cięcia
 YCUT = 29.6                  # dolne cięcie (cm)
 f = Fig('przepona_boczny', W, H,
         caption='przepona · przekrój strzałkowy przez prawą kopułę (schemat) · przód w lewo')
@@ -99,10 +99,10 @@ def p_out(y): return interp(P_OUT, y)
 
 
 # ---------- przepona (cm) ----------
-EXP = [(0.15, 14.7), (0.55, 12.7), (1.3, 10.5), (2.5, 8.4), (4.1, 6.8), (6.0, 5.75), (7.9, 5.4), (9.8, 5.6),
-       (11.8, 6.6), (13.6, 8.6), (15.0, 11.2), (15.95, 14.0), (16.45, 16.5), (16.6, 18.2), (16.35, 19.35)]
-INS = [(0.15, 14.7), (1.3, 13.3), (2.9, 12.0), (4.9, 11.1), (7.0, 10.75), (9.3, 10.8), (11.6, 11.45),
-       (13.6, 12.7), (14.95, 14.4), (15.7, 16.3), (16.15, 18.1), (16.35, 19.35)]
+EXP = [(0.15, 13.9), (0.5, 12.2), (1.15, 10.2), (2.2, 8.2), (3.8, 6.55), (5.8, 5.6), (7.8, 5.35), (9.9, 5.5),
+       (11.9, 6.3), (13.7, 8.0), (15.05, 10.5), (15.95, 13.4), (16.45, 16.1), (16.6, 18.1), (16.35, 19.35)]
+INS = [(0.15, 13.9), (1.1, 12.75), (2.6, 11.7), (4.6, 11.0), (6.9, 10.7), (9.3, 10.75), (11.6, 11.35),
+       (13.6, 12.6), (14.95, 14.35), (15.7, 16.3), (16.15, 18.1), (16.35, 19.35)]
 cE = [P(z, y) for z, y in cr(EXP, n=16)]
 cI = [P(z, y) for z, y in cr(INS, n=16)]
 TEN = (P(4.6, 0)[0], P(11.2, 0)[0])        # zasięg środka ścięgnistego (x, mm) – płatek prawy
@@ -180,19 +180,27 @@ tipP = ((post[0][0] + dia_up[iP][0]) / 2 + 0.1, yP_mm + 0.5)
 lung = ant + [tipA] + dia_up[iA:iP + 1] + [tipP] + post
 f.add(f'<path class="organ" d="{poly(lung)}"/>')
 
-# ---------- 4. wątroba (płat prawy) ----------
-liv_top = [p for p in loE if p[1] < YT + K * 16.6]
-liv_top = [p for p in liv_top if p[0] > XA + K * 0.55]
-liv_low = [P(15.2, 17.0), P(13.9, 17.5), P(12.6, 18.4), P(11.2, 19.6), P(8.8, 20.1), P(6.0, 19.4), P(3.2, 18.2),
-           P(1.2, 17.2), P(0.5, 16.75)]
-liver = liv_top + cr(liv_low, n=6)
+# ---------- 4. nerka prawa (biegun górny pod tylną częścią przepony) i wątroba (płat prawy) ----------
+KC, KA, KB, KR = (14.0, 23.3), 1.8, 5.2, 14.0          # środek (cm), półosie (cm), obrót (biegun górny ku tyłowi)
+
+
+def kid_pt(t, grow=0.0):
+    x, y = (KA + grow) * math.cos(t), (KB + grow) * math.sin(t)
+    r = math.radians(KR)
+    return (KC[0] + x * math.cos(r) - y * math.sin(r), KC[1] + x * math.sin(r) + y * math.cos(r))
+
+
+# wątroba: góra = dolna powierzchnia przepony; dół – powierzchnia trzewna, z tyłu na nerce
+liv_top = [p for p in loE if p[0] > XA + K * 0.5 and not (p[0] > XA + K * 10 and p[1] > YT + K * 17.6)]
+arc = [kid_pt(math.radians(a), 0.32) for a in range(-80, -178, -8)]       # od bieguna górnego ku przodowi
+liv_low = [P(*q) for q in arc] + [P(10.6, 19.55), P(8.6, 19.75), P(6.2, 19.2), P(3.6, 18.1), P(1.6, 17.05),
+                                   P(0.45, 16.35)]
+liver = liv_top + [P(15.9, 17.75)] + cr(liv_low, n=4)
 f.add(f'<path class="organ" d="{poly(liver)}"/>')
 f.add(f'<path class="shade" d="{poly(liver)}"/>')
-
-# ---------- 5. nerka prawa (biegun górny przylega do przepony) ----------
-kc = P(13.75, 23.6)
-f.add(f'<ellipse class="organ" cx="{kc[0]:.2f}" cy="{kc[1]:.2f}" rx="{K * 1.85:.2f}" ry="{K * 5.2:.2f}" transform="rotate(-14 {kc[0]:.2f} {kc[1]:.2f})"/>')
-f.add(f'<ellipse class="shade" cx="{kc[0]:.2f}" cy="{kc[1]:.2f}" rx="{K * 1.85:.2f}" ry="{K * 5.2:.2f}" transform="rotate(-14 {kc[0]:.2f} {kc[1]:.2f})"/>')
+kid = [P(*kid_pt(math.radians(a))) for a in range(0, 360, 6)]
+f.add(f'<path class="organ" d="{smooth(kid, closed=True)}"/>')
+f.add(f'<path class="shade" d="{smooth(kid, closed=True)}"/>')
 
 # ---------- 6. przepona (wydech): część mięśniowa – środek ścięgnisty – część mięśniowa ----------
 iT0 = next(i for i, p in enumerate(cE) if p[0] >= TEN[0])
@@ -219,47 +227,49 @@ yi2 = y_at(cI, xa + 1.25, apexI[1] - 1, apexI[1] + 3)
 f.arrow(f'M{xa + 1.25:.2f},{yi2 - 0.7:.2f} L{xa + 1.25:.2f},{ya_lo2 + 0.2:.2f}', red=True)
 
 # ---------- 8. poziomy kopuły (po stronie przedniej) ----------
-XL = 41.4
+XL = 39.6
 y_exp = apex[1]
 y_ins = apexI[1]
 f.add(f'<path class="dim" d="M{XL:.2f},{y_exp:.2f} L{apex[0]:.2f},{y_exp:.2f}"/>')
 f.add(f'<path class="dim" d="M{XL:.2f},{y_ins:.2f} L{apexI[0]:.2f},{y_ins:.2f}"/>')
-f.text(XL - 0.6, y_exp - 0.55, 'kopuła prawa – wydech:', anchor='end')
-f.text(XL - 0.6, y_exp + 2.05, 'górny brzeg V chrząstki żebrowej', anchor='end')
-f.text(XL - 0.6, y_ins - 0.55, 'głęboki wdech: VII żebro', anchor='end')
-f.text(XL - 0.6, y_ins + 2.05, '(do trzech żeber niżej)', anchor='end')
-# numery żeber przy ścianie przedniej
-for nm in ('V', 'VII'):
+f.text(XL - 0.4, y_exp - 3.2, 'kopuła prawa – wydech:', anchor='end')
+f.text(XL - 0.4, y_exp - 0.6, 'górny brzeg V chrząstki żebrowej', anchor='end')
+f.text(XL - 0.4, y_ins - 3.2, 'głęboki wdech: VII żebro', anchor='end')
+f.text(XL - 0.4, y_ins - 0.6, '(do trzech żeber niżej)', anchor='end')
+# numery chrząstek żebrowych przy ścianie przedniej
+for nm, dy in (('V', 0.75), ('VII', 2.25)):
     c = ant_c[nm]
-    f.text(c[0] - 2.2, c[1] + 0.75, nm, cls='note', anchor='end')
+    yy = (c[1] - YT) / K
+    f.text(XA + K * a_out(yy) - 0.7, c[1] + dy, nm, cls='note', anchor='end')
 
 # jamy ciała
-f.text(P(8.2, 1.6)[0], P(8.2, 1.6)[1], 'jama klatki piersiowej', cls='notec')
-f.text(P(6.0, 24.5)[0], P(6.0, 24.5)[1], 'jama brzuszna', cls='notec')
+f.text(P(8.2, 1.7)[0], P(8.2, 1.7)[1], 'jama klatki piersiowej', cls='notec')
+f.text(P(5.6, 24.2)[0], P(5.6, 24.2)[1], 'jama brzuszna', cls='notec')
 
 # ---------- 9. podpisy ----------
+TL, TR = 39.8, 108.0
 # strona przednia (lewa)
-f.label(P(4.0, 2.8), 'płuco prawe', 'pulmo dexter', (40.8, 10.0), side='L')
-pc = min((p for p in cE if p[0] < TEN[0] - 4), key=lambda p: abs(p[1] - (YT + K * 9.3)))
-f.label(pc, 'część żebrowa', 'pars costalis', (40.8, 41.0), side='L')
-f.label(P(4.2, 15.6), 'wątroba', 'hepar', (40.8, 52.5), side='L')
+f.label(P(4.0, 2.8), 'płuco prawe', 'pulmo dexter', (TL, 6.4), side='L')
+pc = min((p for p in cE if p[0] < TEN[0] - 3), key=lambda p: abs(p[1] - (YT + K * 12.2)))
+f.label(pc, 'część żebrowa', 'pars costalis', (TL, 39.0), side='L')
 cm = ant_c['IX']
-f.label((cm[0] - 0.2, cm[1] + 0.4), 'łuk żebrowy', 'arcus costalis', (40.8, 62.0), side='L')
-rp = P((a_in(25.0) + a_out(25.0)) / 2, 25.0)
-f.label(rp, 'm. prosty brzucha', 'm. rectus abdominis', (40.8, 73.5), side='L')
+f.label((cm[0] - 0.3, cm[1] + 0.5), 'łuk żebrowy', 'arcus costalis', (TL, 47.6), side='L')
+f.label(P(5.2, 17.7), 'wątroba', 'hepar', (TL, 56.4), side='L')
+rp = P((a_in(24.0) + a_out(24.0)) / 2, 24.0)
+f.label(rp, 'm. prosty brzucha', 'm. rectus abdominis', (TL, 70.5), side='L')
 # strona tylna (prawa)
-pt = min((p for p in cE if TEN[0] + 3 < p[0] < TEN[1] - 2), key=lambda p: p[1])
-f.label((pt[0] + 3.0, y_at(cE, pt[0] + 3.0, YT, YT + 30)), 'środek ścięgnisty', 'centrum tendineum', (109.4, 10.0), side='R')
+xt = TEN[1] - 2.6
+f.label((xt, y_at(cE, xt, YT, YT + 30)), 'środek ścięgnisty', 'centrum tendineum', (TR, 8.6), side='R')
 pl_ = min((p for p in cE if p[0] > TEN[1] + 3), key=lambda p: abs(p[1] - (YT + K * 11.0)))
-f.label(pl_, 'część lędźwiowa', 'pars lumbalis', (109.4, 24.0), side='R')
-zr = P((p_in(16.6) + 16.75) / 2 + 0.05, 16.6)
-f.label(zr, 'zachyłek żebrowo-przeponowy', 'recessus costodiaphragmaticus', (109.4, 38.0), side='R')
-r12 = P((p_in(18.2) + p_mid(18.2)) / 2, 18.2)
-f.label(r12, 'żebro XII', 'costa XII', (109.4, 49.0), side='R')
-f.label((LIG[0] + 0.6, LIG[1] + 0.2), 'więzadło łukowate boczne', 'lig. arcuatum laterale', (109.4, 58.5), side='R')
-f.label(P(13.3, 23.0), 'nerka prawa', 'ren dexter', (109.4, 68.0), side='R')
+f.label(pl_, 'część lędźwiowa', 'pars lumbalis', (TR, 24.0), side='R')
+zr = P((p_in(16.7) + 16.78) / 2, 16.7)
+f.label(zr, 'zachyłek żebrowo-przeponowy', 'recessus costodiaphragmaticus', (TR, 38.0), side='R')
+r12 = P((p_in(18.2) + p_mid(18.2)) / 2 + 0.2, 18.2)
+f.label(r12, 'żebro XII', 'costa XII', (TR, 48.6), side='R')
+f.label((LIG[0] + 0.7, LIG[1] + 0.25), 'więzadło łukowate boczne', 'lig. arcuatum laterale', (TR, 58.0), side='R')
+f.label(P(13.9, 23.6), 'nerka prawa', 'ren dexter', (TR, 67.6), side='R')
 qp = P((p_in(26.0) + p_mid(26.0)) / 2, 26.0)
-f.label(qp, 'm. czworoboczny lędźwi', 'm. quadratus lumborum', (109.4, 77.5), side='R')
+f.label(qp, 'm. czworoboczny lędźwi', 'm. quadratus lumborum', (TR, 77.2), side='R')
 
 # ---------- legenda ----------
 LY = 92.6

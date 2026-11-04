@@ -12,11 +12,10 @@
 import sys, math; sys.path.insert(0, '/home/user/first-thing/plakat/figs')
 from figlib import Fig, smooth
 
-W, H = 150, 106
+W, H = 150, 108
 f = Fig('typy_oddechowe', W, H,
-        caption='typy oddechowe · linia ciągła – wydech, przerywana – wdech · '
-                'od przodu (prawa strona ciała po lewej) i od strony lewej (przód w lewo)')
-S = 1.0                  # mm na cm
+        caption='typy oddechowe · klatka od przodu (prawa strona ciała po lewej) i od strony lewej (przód w lewo) · schemat')
+S = 1.15                 # mm na cm
 
 
 # ---------------------------------------------------------------- pomocnicze
@@ -260,16 +259,22 @@ def diaphragm_side(FB, pts=DS_E):
     add('tendon', poly(band([FB(*p) for p in pts[1:5]], 1.0 * S, n=12)))
 
 
+# ================================================================ układ
+YTOP = 25.5                               # górny brzeg trzonu Th1 (wszystkie panele)
+CXA = 28.0                                # A – oś pośrodkowa
+XOB = 76.0                                # B – przednia powierzchnia trzonu Th1
+XOC = 116.5                               # C – przednia powierzchnia trzonu Th1
+YCUT = 52.0                               # C – dolna linia cięcia (cm)
+
 # ================================================================ PANEL A – oddychanie żebrowe dolne (od przodu)
-CXA, YA = 25.0, 23.0
 
 
 def FA(u, y, side=-1):
-    return (CXA + side * S * u, YA + S * y)
+    return (CXA + side * S * u, YTOP + S * y)
 
 
 def FAs(u, y):
-    return (CXA - S * u, YA + S * y)
+    return (CXA - S * u, YTOP + S * y)
 
 
 def low_tf(u, y):
@@ -285,51 +290,49 @@ LUNG_F = [(2.6, -2.0), (4.4, -2.3), (6.4, -0.6), (8.4, 3.0), (10.6, 6.2), (12.3,
 
 def lung_front(side):
     s = -side                            # znak u w DIA_E: + prawa strona ciała
-    dia = [(u, y - 0.75) for u, y in cr(DIA_E, n=8) if u * s > 1.2]
-    dia = [(abs(u), y) for u, y in dia]
+    dia = [(abs(u), y - 0.75) for u, y in cr(DIA_E, n=8) if u * s > 1.2]
     dia.sort(key=lambda p: -p[0])
-    med = [(3.0, 16.0), (2.2, 11.0), (1.9, 6.0), (2.0, 1.0)] if side < 0 else [(6.0, 17.0), (4.6, 13.0), (2.4, 9.0), (1.9, 4.0), (2.0, 0.5)]
+    med = [(3.0, 16.0), (2.2, 11.0), (1.9, 6.0), (2.0, 1.0)] if side < 0 else \
+        [(6.0, 17.0), (4.6, 13.0), (2.4, 9.0), (1.9, 4.0), (2.0, 0.5)]
     pts = LUNG_F + [p for p in dia if p[0] < 13.6 and (side < 0 or p[0] > 6.4)] + med
     return [FA(u, y, side) for u, y in pts]
 
 
 for sd in (-1, 1):
-    add('organ', smooth(lung_front(sd)[::1], closed=True, t=0.4))
+    add('organ', smooth(lung_front(sd), closed=True, t=0.4))
 front_cage(lambda u, y, side: FA(u, y, side))
 # przepona (wydech)
-dA = [FAs(u, y) for u, y in DIA_E]
-add('muscle', poly(band(dA, 1.0 * S, n=12)))
+add('muscle', poly(band([FAs(u, y) for u, y in DIA_E], 1.0 * S, n=12)))
 add('tendon', poly(band([FAs(u, y) for u, y in DIA_E[4:9]], 1.0 * S, n=12)))
-# wdech: zarys boczny dolnych żeber + łuk żebrowy + przepona (przyczepy razem z żebrami)
+# wdech: zarys boczny dolnych żeber, łuk żebrowy i przepona (jej przyczepy idą razem z żebrami)
+ARCH = [(12.9, 29.2), (11.6, 28.8), (10.1, 27.3), (8.3, 25.0), (6.3, 22.6), (3.4, 20.8), (1.7, 19.8)]
 for sd in (-1, 1):
     cont = [low_tf(u, y) for u, y in RA[5:11]] + [low_tf(13.6, 29.6)]
     add('capsule', smooth([FA(u + 0.55, y, sd) for u, y in cont], closed=False))
-    arch = [(12.9, 29.2), (11.6, 28.8), (10.1, 27.3), (8.3, 25.0), (6.3, 22.6), (3.4, 20.8), (1.7, 19.8)]
-    add('capsule', smooth([FA(*low_tf(u, y), sd) for u, y in arch], closed=False))
+    add('capsule', smooth([FA(*low_tf(u, y), sd) for u, y in ARCH], closed=False))
 dIA = [(u * (1 + 0.10 * sstep((y - 15) / 9)), y + 0.5 - 0.9 * sstep((y - 15) / 9)) for u, y in DIA_E]
 add('capsule', smooth([FAs(u, y) for u, y in dIA], closed=False))
 # strzałki: wdech – dolne żebra ku bokom (niebieska), wydech – do środka (czerwona)
-yT = 23.0
+yT = YTOP + S * 23.0
 for sd in (-1, 1):
-    x0 = CXA + sd * S * 16.6
-    f.arrow(f'M{x0:.2f},{YA + S * yT - 1.2:.2f} L{x0 + sd * 5.6:.2f},{YA + S * yT - 1.2:.2f}')
-    f.arrow(f'M{x0 + sd * 6.0:.2f},{YA + S * yT + 1.2:.2f} L{x0 + sd * 0.5:.2f},{YA + S * yT + 1.2:.2f}', red=True)
+    x0 = CXA + sd * S * 16.7
+    f.arrow(f'M{x0:.2f},{yT - 1.2:.2f} L{x0 + sd * 5.2:.2f},{yT - 1.2:.2f}')
+    f.arrow(f'M{x0 + sd * 5.6:.2f},{yT + 1.2:.2f} L{x0 + sd * 0.5:.2f},{yT + 1.2:.2f}', red=True)
 
 # ================================================================ PANEL B – oddychanie żebrowe górne (z boku)
-XOB, YBB = 76.0, 23.0
 
 
 def FB_B(z, y):
-    return (XOB - S * z, YBB + S * y)
+    return (XOB - S * z, YTOP + S * y)
 
 
 ribsB = side_panel(FB_B, n_vert=14)
 diaphragm_side(FB_B)
-# wdech: żebra I–V i mostek unoszą się (obrót ku górze wokół tylnych końców)
+# wdech: żebra I–V i mostek unoszą się (obrót ku górze wokół tylnych końców); żebra – linie osiowe
 ANGS = [-6.0, -8.0, -9.0, -9.5, -9.5]
-h = [(za(YH[k]) - 1.5, YH[k]) for k in range(5)]
+hh = [(za(YH[k]) - 1.5, YH[k]) for k in range(5)]
 s1 = (stern_back(SY[0]) + 0.55, SY[0]); s5 = (stern_back(SY[4]) + 0.55, SY[4])
-s1n, s5n = rot(s1, h[0], ANGS[0]), rot(s5, h[4], ANGS[4])
+s1n, s5n = rot(s1, hh[0], ANGS[0]), rot(s5, hh[4], ANGS[4])
 a0 = math.atan2(s5[1] - s1[1], s5[0] - s1[0]); a1 = math.atan2(s5n[1] - s1n[1], s5n[0] - s1n[0])
 
 
@@ -341,55 +344,59 @@ def stern_tf(p):
 add('capsule', smooth([FB_B(*stern_tf(p)) for p in STERN_F + STERN_B], closed=True, t=0.35))
 for k in range(5):
     r = rib_side(k, ANGS[k])
-    w0, w1 = (1.25 if k > 0 else 1.5) * S, 1.15 * S
-    add('capsule', poly(band([FB_B(*p) for p in r], w0, w1)))
+    c = cart_side(k, r)
+    c[-1] = stern_tf(cart_side(k, rib_side(k))[-1])
+    cl = cr(r, n=8)[10:] + cr(c, n=6)[1:]
+    add('capsule', line([FB_B(*p) for p in cl]))
 # strzałki mostka: wdech – ku przodowi i ku górze, wydech – ku tyłowi i ku dołowi
 q0 = FB_B(10.3, 14.0)
-f.arrow(f'M{q0[0] - 0.6:.2f},{q0[1] - 1.0:.2f} L{q0[0] - 6.2:.2f},{q0[1] - 3.6:.2f}')
-f.arrow(f'M{q0[0] - 5.4:.2f},{q0[1] - 0.2:.2f} L{q0[0] - 0.4:.2f},{q0[1] + 2.1:.2f}', red=True)
+f.arrow(f'M{q0[0] - 0.6:.2f},{q0[1] - 1.0:.2f} L{q0[0] - 6.0:.2f},{q0[1] - 3.5:.2f}')
+f.arrow(f'M{q0[0] - 5.2:.2f},{q0[1] - 0.1:.2f} L{q0[0] - 0.4:.2f},{q0[1] + 2.1:.2f}', red=True)
 
 # ================================================================ PANEL C – typ brzuszny (z boku)
-XOC, YBC = 121.0, 23.0
-YCUT = 54.0                               # dolna linia cięcia (cm)
 
 
 def FB_C(z, y):
-    return (XOC - S * z, YBC + S * y)
+    return (XOC - S * z, YTOP + S * y)
 
 
 # przednia ściana brzucha (linia środkowa pasma, cm) – wydech i wdech (uwypuklenie głównie powyżej pępka)
 YUMB = 42.0
 WALL_E = [(9.0, 23.2), (9.6, 27.0), (10.1, 31.0), (10.4, 35.0), (10.5, 39.0), (10.4, 42.0), (10.2, 46.0), (9.8, 50.0),
           (9.3, YCUT + 1.5)]
-WALL_I = [(9.0, 23.2), (10.4, 27.0), (11.5, 31.0), (12.1, 35.0), (12.0, 39.0), (11.4, 42.0), (10.8, 46.0), (10.1, 50.0),
+WALL_I = [(9.0, 23.2), (10.4, 27.0), (11.5, 31.0), (12.1, 35.0), (12.0, 38.5), (11.3, 42.0), (10.7, 46.0), (10.1, 50.0),
           (9.4, YCUT + 1.5)]
 DS_I = [(9.0, 22.2), (7.6, 21.8), (4.8, 23.0), (1.6, 23.6), (-1.4, 24.2), (-3.7, 26.0), (-4.9, 28.6), (-5.2, 31.3)]
+
+
+def post_abd(y):
+    return za(y) - depth(y) - 2.0
 
 
 def abdomen_C():
     # jama brzuszna: od dolnej powierzchni przepony do linii cięcia, od ściany przedniej do tylnej
     top = [(x, y + 0.5) for x, y in cr(DS_E, n=6)]
     front = [(z - 0.6, y) for z, y in cr(WALL_E, n=6) if y > 24.0]
-    pts = [FB_C(*p) for p in front] + [FB_C(-5.5, YCUT + 2), FB_C(-5.6, 34.0)] + [FB_C(*p) for p in top[::-1]]
+    back = [(post_abd(y), y) for y in (YCUT + 2, 48.0, 44.0, 40.0, 36.0, 32.5)]
+    pts = [FB_C(*p) for p in front] + [FB_C(*p) for p in back] + [FB_C(*p) for p in top[::-1]]
     add('organ', poly(pts))
     add('shade', poly(pts))
 
 
 ribsC = side_panel(FB_C, n_vert=17, abdomen=abdomen_C)
 # kość krzyżowa (część górna)
-yS = BODIES[16][1] + 0.8
-sac = [(za(BODIES[16][1]) + 0.1, yS), (za(BODIES[16][1]) - 1.1, YCUT + 2.5), (za(BODIES[16][1]) - 6.0, YCUT + 2.5),
-       (za(BODIES[16][1]) - 4.0, yS)]
-add('annulus', poly([FB_C(za(BODIES[16][1]) - 0.1, BODIES[16][1]), FB_C(za(BODIES[16][1]) - depth(48) + 0.1, BODIES[16][1]),
-                     FB_C(sac[3][0] + 0.1, yS), FB_C(sac[0][0] - 0.1, yS)]))
+yL5 = BODIES[16][1]
+yS = yL5 + 0.8
+zA = za(yL5)
+sac = [(zA + 0.1, yS), (zA - 1.2, YCUT + 2.5), (zA - 6.4, YCUT + 2.5), (zA - 3.9, yS)]
+add('annulus', poly([FB_C(zA - 0.1, yL5), FB_C(zA - depth(yL5) + 0.1, yL5), FB_C(zA - 3.8, yS), FB_C(zA, yS)]))
 add('bone', smooth([FB_C(*p) for p in sac], closed=True, t=0.2))
 diaphragm_side(FB_C)
-# ściana brzucha (mięśnie brzucha) – pasmo; pępek – wcięcie na powierzchni przedniej
-wall = band([FB_C(*p) for p in WALL_E], 1.2 * S, n=10)
-add('muscle', poly(wall))
-pu = FB_C(10.4 + 0.6, YUMB)
-f.add(f'<path class="cavity" d="M{pu[0] - 0.05:.2f},{pu[1] - 0.9:.2f} Q{pu[0] + 0.9:.2f},{pu[1]:.2f} '
-      f'{pu[0] - 0.05:.2f},{pu[1] + 0.9:.2f} Z"/>')
+# ściana brzucha (mięśnie brzucha) – pasmo; pępek – wcięcie powierzchni przedniej
+add('muscle', poly(band([FB_C(*p) for p in WALL_E], 1.2 * S, n=10)))
+pu = FB_C(10.4 + 0.62, YUMB)
+f.add(f'<path class="cavity" d="M{pu[0] - 0.15:.2f},{pu[1] - 1.1:.2f} L{pu[0] + 0.85:.2f},{pu[1]:.2f} '
+      f'L{pu[0] - 0.15:.2f},{pu[1] + 1.1:.2f}"/>')
 # wdech: przepona niżej, ściana brzucha uwypuklona
 add('capsule', smooth([FB_C(*p) for p in DS_I], closed=False))
 add('capsule', smooth([FB_C(z + 0.6, y) for z, y in WALL_I], closed=False))
@@ -398,31 +405,63 @@ xd = FB_C(2.0, 0)[0]
 yE, yI = FB_C(0, 17.4)[1], FB_C(0, 23.4)[1]
 f.arrow(f'M{xd - 1.1:.2f},{yE + 1.2:.2f} L{xd - 1.1:.2f},{yI:.2f}')
 f.arrow(f'M{xd + 1.2:.2f},{yI - 0.2:.2f} L{xd + 1.2:.2f},{yE + 1.1:.2f}', red=True)
-pw = FB_C(11.1, 34.0)
-f.arrow(f'M{pw[0] - 0.4:.2f},{pw[1] - 1.2:.2f} L{pw[0] - 5.0:.2f},{pw[1] - 1.2:.2f}')
-f.arrow(f'M{pw[0] - 5.4:.2f},{pw[1] + 1.2:.2f} L{pw[0] - 0.8:.2f},{pw[1] + 1.2:.2f}', red=True)
+pw = FB_C(12.4, 34.0)
+f.arrow(f'M{pw[0] + 0.2:.2f},{pw[1] - 1.2:.2f} L{pw[0] - 4.6:.2f},{pw[1] - 1.2:.2f}')
+f.arrow(f'M{pw[0] - 5.0:.2f},{pw[1] + 1.2:.2f} L{pw[0] - 0.2:.2f},{pw[1] + 1.2:.2f}', red=True)
 
 # przycięcie panelu C u dołu
+YCLIP = YTOP + S * YCUT
 body = ''.join(f.body)
-f.body = [f'<defs><clipPath id="cp_typy"><rect x="0" y="0" width="{W}" height="{YBC + S * YCUT:.2f}"/></clipPath></defs>'
+f.body = [f'<defs><clipPath id="cp_typy"><rect x="0" y="0" width="{W}" height="{YCLIP:.2f}"/></clipPath></defs>'
           f'<g clip-path="url(#cp_typy)">{body}</g>']
 
 # ================================================================ nagłówki
-f.text(52.0, 6.0, 'typ oddechowy żebrowy (piersiowy)', cls='big', anchor='middle')
-f.text(52.0, 9.4, 'poruszają się żebra', cls='notec')
-f.text(CXA, 14.6, 'oddychanie żebrowe dolne', cls='notec')
-f.text(XOB - 2, 14.6, 'oddychanie żebrowe górne', cls='notec')
-f.text(118.0, 6.0, 'typ brzuszny (przeponowy)', cls='big', anchor='middle')
-f.text(118.0, 9.4, 'bez bezpośredniego udziału żeber', cls='notec')
+XB_C = 74.0                              # środek kolumny B
+XC_C = 121.0                             # środek kolumny C
+f.text(51.0, 5.6, 'typ żebrowy (piersiowy)', cls='big', anchor='middle')
+f.text(51.0, 9.3, 'poruszają się żebra', cls='notec')
+f.text(XC_C, 5.6, 'typ brzuszny (przeponowy)', cls='big', anchor='middle')
+f.text(XC_C, 9.3, 'bez bezpośredniego udziału żeber', cls='notec')
+f.text(CXA, 15.4, 'oddychanie żebrowe dolne', cls='pl', anchor='middle')
+f.text(CXA, 18.7, 'mechanizm żebrowo-przeponowy · od przodu', cls='notec')
+f.text(XB_C, 15.4, 'oddychanie żebrowe górne', cls='pl', anchor='middle')
+f.text(XB_C, 18.7, 'mechanizm żebrowo-mostkowy · z boku', cls='notec')
+f.text(XC_C, 15.4, 'oddychanie brzuszne', cls='pl', anchor='middle')
+f.text(XC_C, 18.7, 'przepona i ściana brzucha · z boku', cls='notec')
+
+# ================================================================ opisy pod panelami
+NY = 91.2
+for x, lines in ((CXA, ['dolne żebra unoszą się i silnie odchylają', 'ku bokom – dolna część klatki poszerza się',
+                        'przewietrza głównie dolne części płuc']),
+                 (XB_C, ['górne żebra unoszą się wraz z mostkiem;', 'gdy dolna część klatki jest ograniczona',
+                         'w ruchach (np. pasek); przewietrza', 'silniej górne części płuc']),
+                 (XC_C, ['przepona obniża się – trzewia uwypuklają', 'przednią ścianę brzucha, głównie powyżej pępka;',
+                         'wydech: przepona wpukla się do klatki', '(sprężystość płuc, napięcie mięśni brzucha)'])):
+    for i, t in enumerate(lines):
+        f.text(x, NY + i * 2.7, t, cls='notec')
+f.text(W / 2, 103.0, 'oddychanie spokojne – zazwyczaj czysty typ brzuszny · oddech wzmożony – typ mieszany '
+                     '(żebrowo-przeponowy)', cls='notec')
+
+# ================================================================ legenda (pod panelem A)
+LX, LY = 6.0, 75.0
+f.add(f'<rect class="bone" x="{LX:.2f}" y="{LY - 1.6:.2f}" width="5.2" height="2.2" rx=".5"/>')
+f.text(LX + 6.6, LY + 0.3, 'położenie przy wydechu')
+f.add(f'<path class="capsule" d="M{LX:.2f},{LY + 2.6:.2f} L{LX + 5.4:.2f},{LY + 2.6:.2f}"/>')
+f.text(LX + 6.6, LY + 3.4, 'położenie przy wdechu')
+f.arrow(f'M{LX:.2f},{LY + 5.7:.2f} L{LX + 5.4:.2f},{LY + 5.7:.2f}')
+f.text(LX + 6.6, LY + 6.5, 'ruch przy wdechu')
+f.arrow(f'M{LX:.2f},{LY + 8.8:.2f} L{LX + 5.4:.2f},{LY + 8.8:.2f}', red=True)
+f.text(LX + 6.6, LY + 9.6, 'ruch przy wydechu')
 
 # ================================================================ podpisy
-f.label(FA(8.3, 25.0, -1), 'łuk żebrowy', 'arcus costalis', (4.0, 62.0), side='R')
-f.label(FAs(-8.0, 18.0), 'przepona', 'diaphragma', (47.0, 62.0), side='L')
-f.label(FB_B(9.2, 13.0), 'mostek', 'sternum', (54.0, 67.0), side='R')
-f.label(FB_C(-4.9, 25.0), 'przepona', 'diaphragma', (130.0, 46.0), side='R')
-f.label(FB_C(-2.0, 38.0), 'jama brzuszna', 'cavitas abdominalis', (128.5, 62.0), side='R')
-f.label(FB_C(11.0, YUMB), 'pępek', 'umbilicus', (98.0, 72.0), side='L')
-f.label(FB_C(10.4, 47.0), 'mięśnie brzucha', None, (98.0, 80.0), side='L')
+f.label(FA(8.3, 25.0, -1), 'łuk żebrowy', 'arcus costalis', (3.5, 66.0), side='R')
+f.label(FAs(-8.4, 18.6), 'przepona', 'diaphragma', (52.5, 66.0), side='L')
+f.label(FB_B(9.3, 15.5), 'mostek', 'sternum', (56.0, 73.5), side='R')
+f.label(FB_B(1.5, 7.4), 'żebra', 'costae', (86.5, 33.0), side='R')
+f.label(FB_C(-4.9, 25.5), 'przepona', 'diaphragma', (126.0, 52.5), side='R')
+f.label(FB_C(-3.6, 40.0), 'jama brzuszna', 'cavitas abdominalis', (126.0, 72.0), side='R')
+f.label(FB_C(11.0, YUMB), 'pępek', 'umbilicus', (95.5, 73.5), side='L')
+f.label(FB_C(10.3, 46.5), 'przednia ściana brzucha', None, (95.5, 81.5), side='L')
 
 f.save()
 print('ok')
