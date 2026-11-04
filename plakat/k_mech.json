@@ -1,0 +1,646 @@
+{
+ "chapter": "mech",
+ "tree": [
+  {
+   "type": "group",
+   "title": "Krzywizny kręgosłupa",
+   "pg": "264–268",
+   "why": "wężowate wygięcia kręgosłupa dorosłego – przede wszystkim w płaszczyźnie pośrodkowej",
+   "q": "w której płaszczyźnie?",
+   "children": [
+    {
+     "type": "card",
+     "title": "Krzywizny w płaszczyźnie pośrodkowej",
+     "pg": "264, 266",
+     "sections": [
+      {
+       "k": "KSZTAŁT",
+       "items": [
+        "kręgosłup dorosłego nie jest prostym słupem – ma wężowate wygięcia, przede wszystkim w płaszczyźnie pośrodkowej",
+        "widziany z boku – podwójnie esowata krzywizna",
+        "4 krzywizny – odpowiadają poszczególnym odcinkom kręgosłupa"
+       ]
+      },
+      {
+       "k": "WYPUKŁE DO PRZODU – LORDOZY",
+       "items": [
+        "**krzywizna szyjna** {{lordosis cervicalis}}",
+        "**krzywizna lędźwiowa** {{lordosis lumbalis}}",
+        "części wypukłe do przodu – bardziej ruchome"
+       ]
+      },
+      {
+       "k": "WYPUKŁE KU TYŁOWI – KIFOZY",
+       "items": [
+        "**krzywizna piersiowa** {{kyphosis thoracica}}",
+        "**krzywizna krzyżowa** {{kyphosis sacralis}} – kończy się na wierzchołku kości guzicznej",
+        "części wypukłe ku tyłowi – bardziej sztywne"
+       ]
+      },
+      {
+       "k": "STOPIEŃ WYGIĘCIA",
+       "items": [
+        "najsilniejsza – krzywizna kości krzyżowej, następna – lędźwiowa",
+        "szyjna – słabsza niż lędźwiowa; najsłabsza – piersiowa",
+        "każda z 4 krzywizn ma inny promień; w dużym przybliżeniu – odcinki koła"
+       ]
+      },
+      {
+       "k": "WZAJEMNY STOSUNEK",
+       "items": [
+        "3 górne krzywizny – w stosunku „kompensacyjnym”: gdy silnie wzrasta krzywizna piersiowa, rosną też szyjna i lędźwiowa – inaczej równowaga ciała byłaby zachwiana",
+        "krzywizna krzyżowa – zupełnie samodzielna"
+       ]
+      },
+      {
+       "k": "POSTAWA PIONOWA",
+       "items": [
+        "wężowaty kształt kręgosłupa – swoista właściwość człowieka, związana z pionową postawą ciała",
+        "punkt ciężkości ciała leży powyżej punktu podpory – poprzecznej osi stawów biodrowych (łączy środki obu głów kości udowych)",
+        "stąd **równowaga chwiejna** – utrzymują ją przede wszystkim silne mięśnie grzbietu wraz z więzadłami żółtymi"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "ZMIENNOŚĆ",
+       "t": "Krzywizny są bardzo zmienne osobniczo, a u tego samego człowieka zależą od położenia i postawy ciała (stojąca, leżąca, siedząca, obciążenie, np. sztywna postawa wojskowa) – dlatego analiza matematyczna krzywizn nie byłaby celowa.",
+       "pg": "264",
+       "src": "2521-2525"
+      },
+      {
+       "k": "NAZWY",
+       "t": "kyphosis – kyfos = krzywy. Określenia kyphosis i lordosis w zasadzie dotyczą nienormalnie silnych skrzywień; anatomia prawidłowa zapożyczyła je dla krzywizn prawidłowych ze względu na ich wyrazistość.",
+       "pg": "264, 267",
+       "src": "2518-2519, 2699-2701"
+      },
+      {
+       "k": "PUNKT CIĘŻKOŚCI",
+       "t": "Ryc. 177 (wg Braune-Fischera): pion postawy normalnej ciała; punkt ciężkości ciała leży powyżej poziomu głów kości udowych i ok. 2 cm poniżej wzgórka.",
+       "pg": "266",
+       "src": "2639-2649"
+      },
+      {
+       "k": "PORÓWNANIE",
+       "t": "Ptaki: punkt ciężkości poniżej punktów podpory stawów biodrowych – równowaga stała (śpią bez podpierania się). Niższe ssaki: kręgosłup słabo kifotycznie wygięty (poza częścią szyjną i ogonową), podparty na kończynach – też równowaga stała.",
+       "pg": "264",
+       "src": "2535-2539"
+      },
+      {
+       "k": "PORÓWNANIE",
+       "t": "Człekokształtne – stopień pośredni: postawa półprosta, chodzą niechętnie, podpierając się rękami. Krzywizna lędźwiowa prawie nie występuje, wzgórek znacznie słabszy; masę ciała dźwigają w pewnym stopniu także ręce.",
+       "pg": "264",
+       "src": "2539-2544"
+      },
+      {
+       "k": "PRZEJŚCIA KRZYWIZN",
+       "t": "C7 leży w przejściu krzywizny szyjnej w piersiową – m.in. dlatego koniec jego wyrostka kolczystego uwypukla się guzkowato pod skórą grzbietu.",
+       "pg": "227",
+       "src": "516-518"
+      },
+      {
+       "k": "PRZEJŚCIA KRZYWIZN",
+       "t": "Odcinek lędźwiowy wypukły do przodu, kość krzyżowa do tyłu – na granicy L5 i podstawy kości krzyżowej powstaje kąt lędźwiowo-krzyżowy; jego wierzchołek leży na wzgórku.",
+       "pg": "234",
+       "src": "868-876"
+      },
+      {
+       "k": "!",
+       "t": "s. 243: wygięcie lędźwiowe to właściwość wyłącznie ludzka (szyjne i piersiowe są też u małp człekokształtnych); s. 264: u człekokształtnych krzywizna lędźwiowa „jeszcze prawie” nie występuje.",
+       "pg": "243, 264",
+       "src": "1393-1398, 2540-2541"
+      }
+     ],
+     "labels": [
+      "krzywizna szyjna {{lordosis cervicalis}}",
+      "krzywizna piersiowa {{kyphosis thoracica}}",
+      "krzywizna lędźwiowa {{lordosis lumbalis}}",
+      "krzywizna krzyżowa {{kyphosis sacralis}}",
+      "kręgi szyjne {{vertebrae cervicales}}",
+      "kręgi piersiowe {{vertebrae thoracicae}}",
+      "kręgi lędźwiowe {{vertebrae lumbales}}",
+      "kość krzyżowa {{os sacrum}}",
+      "kość guziczna {{os coccygis}}",
+      "wzgórek {{promontorium}}",
+      "kręg wystający (C7) {{vertebra prominens}} – przejście krzywizny szyjnej w piersiową",
+      "wierzchołek kości guzicznej – koniec krzywizny krzyżowej",
+      "pion postawy normalnej ciała",
+      "punkt ciężkości ciała (ok. 2 cm poniżej wzgórka)",
+      "oś poprzeczna stawów biodrowych (punkt podpory)"
+     ],
+     "fig": "kręgosłup dorosłego z boku – 4 krzywizny (lordozy do przodu, kifozy ku tyłowi), wzgórek, wierzchołek kości guzicznej | sylwetka z boku: pion postawy normalnej ciała i punkt ciężkości (wg ryc. 177)"
+    },
+    {
+     "type": "card",
+     "title": "Powstawanie krzywizn",
+     "pg": "265–266",
+     "tag": "W PŁASZCZYŹNIE POŚRODKOWEJ",
+     "sections": [
+      {
+       "k": "PRZYCZYNA",
+       "items": [
+        "wężowaty kształt kręgosłupa dorosłego – bezpośredni wynik obciążenia oraz pociągania mięśni w rozwoju osobniczym",
+        "dlatego brak go jeszcze u płodu i noworodka",
+        "u osób, które nie nauczyły się chodzić i stale leżą – krzywizny prawie niewykształcone, przede wszystkim lędźwiowa"
+       ]
+      },
+      {
+       "k": "KOLEJNOŚĆ",
+       "items": [
+        "piersiowa (przypuszczalnie pierwsza) → krzyżowa (druga) → szyjna → lędźwiowa (przypuszczalnie ostatnia)"
+       ]
+      },
+      {
+       "k": "DLACZEGO TAK",
+       "items": [
+        "**lordoza szyi** – względy ortoptyczne: główka opada do przodu (punkt ciężkości głowy leży do przodu od stawu szczytowo-potylicznego), a dziecko potrzebuje większego, swobodnego pola widzenia",
+        "**lordoza lędźwiowa** – względy statyczne: swobodniejsze dźwiganie tułowia i ochrona przed przewróceniem do przodu (masa górnej części tułowia, zgięcie piersiowego odcinka kręgosłupa)",
+        "**krzywizna krzyżowa** – ostateczny kształt znacznie później: obciążenie górnej części kości krzyżowej, pociąganie mięśni pośladków i więzadeł krzyżowo-guzowych (działają na część dolną do przodu)"
+       ]
+      },
+      {
+       "k": "USTALANIE SIĘ",
+       "items": [
+        "krzywizny są przejściowe – ustalają się stopniowo, u każdego w innym czasie",
+        "po stronie wklęsłej (może przez silniejszy ucisk) – pewien ubytek substancji kręgów i krążków; przybierają kształt nieco klinowaty",
+        "kifozy (piersiowa, krzyżowa) – klinowate głównie **trzony kręgów**",
+        "lordozy (szyjna, lędźwiowa) – klinowate głównie **krążki międzykręgowe**"
+       ]
+      }
+     ],
+     "timeline": [
+      {
+       "age": "zarodek 3-tygodniowy",
+       "t": "już **ogólna kifoza**, a z nią kifoza piersiowa – przypuszczalnie pierwsza krzywizna",
+       "pg": "265"
+      },
+      {
+       "age": "od 5. miesiąca życia płodowego",
+       "t": "jako druga – **krzywizna krzyżowa**",
+       "pg": "265"
+      },
+      {
+       "age": "noworodek",
+       "t": "kręgosłup jeszcze wygięty kifotycznie (jak u płodu) – kształt odziedziczony po niższych ssakach, wzmożony przez położenie płodu w macicy",
+       "pg": "265"
+      },
+      {
+       "age": "ok. 4. miesiąca",
+       "t": "jeszcze przed siadaniem osesek uczy się dźwigać głowę: skurcz mięśni karku prostuje (zgina do tyłu) szyjny odcinek → **lordoza szyi**",
+       "pg": "265"
+      },
+      {
+       "age": "siadanie, a głównie pierwsze próby powstawania i chodzenia (10–15 miesiąc)",
+       "t": "lędźwiowy odcinek uwypukla się do przodu → **lordoza lędźwiowa**",
+       "pg": "265–266"
+      },
+      {
+       "age": "do 6–7 roku życia",
+       "t": "ustalone krzywizny szyjna i piersiowa",
+       "pg": "266"
+      },
+      {
+       "age": "okres dojrzewania płciowego",
+       "t": "ustalona krzywizna lędźwiowa",
+       "pg": "266"
+      }
+     ],
+     "l3": [
+      {
+       "k": "ZGODNIE Z TYM",
+       "t": "Trzony kręgów piersiowych – klinowate, z przodu nieco niższe niż z tyłu (s. 228). Krążki w części szyjnej i lędźwiowej wyższe z przodu niż z tyłu, w piersiowej odwrotnie – w znacznym stopniu kształtują krzywizny (s. 250).",
+       "pg": "228, 250",
+       "src": "581-583, 1730-1732"
+      },
+      {
+       "k": "RYCINA",
+       "t": "Ryc. 178: kręgosłup noworodka widziany ze strony lewej – zaznaczone I kręg piersiowy, I lędźwiowy i I krzyżowy.",
+       "pg": "266",
+       "src": "2663-2664"
+      },
+      {
+       "k": "!",
+       "t": "s. 265: wężowaty kształt „zaczyna się rozwijać, z chwilą gdy dziecko zaczyna siadać”; w tym samym akapicie lordoza szyi powstaje już ok. 4. miesiąca – „jeszcze przed pierwszymi próbami siadania”.",
+       "pg": "265",
+       "src": "2558-2559, 2583-2600"
+      }
+     ],
+     "labels": [
+      "ogólna kifoza (zarodek 3-tygodniowy)",
+      "kifoza piersiowa – przypuszczalnie pierwsza",
+      "krzywizna krzyżowa {{kyphosis sacralis}} – od 5. miesiąca życia płodowego",
+      "kręgosłup noworodka – wygięty kifotycznie",
+      "lordoza szyi {{lordosis cervicalis}} – ok. 4. miesiąca",
+      "mięśnie karku (podnoszą główkę)",
+      "staw szczytowo-potyliczny – punkt podpory głowy",
+      "lordoza lędźwiowa {{lordosis lumbalis}} – 10–15 miesiąc",
+      "ustalenie: szyjna i piersiowa do 6–7 roku życia",
+      "ustalenie: lędźwiowa – okres dojrzewania płciowego",
+      "kifoza: klinowate trzony kręgów",
+      "lordoza: klinowate krążki międzykręgowe"
+     ],
+     "fig": "oś czasu – kręgosłup z boku: zarodek/płód (ogólna kifoza) → noworodek (kształt kifotyczny, ryc. 178) → ok. 4. miesiąca (lordoza szyi, mięśnie karku) → 10–15 miesiąc (lordoza lędźwiowa) → 6–7 lat i dojrzewanie (ustalenie) | mały schemat: kifoza – klinowate trzony, lordoza – klinowate krążki"
+    },
+    {
+     "type": "card",
+     "title": "Krzywizny w płaszczyźnie czołowej (skoliozy)",
+     "lat": "skolioses",
+     "pg": "266–267",
+     "sections": [
+      {
+       "k": "CZYM SĄ",
+       "items": [
+        "**skrzywienia boczne kręgosłupa** {{skolioses}} – krzywizny w płaszczyźnie czołowej",
+        "występują zwykle – w 68%",
+        "przypuszczalnie wiążą się z ogólną asymetrią ciała (np. asymetria podstawy czaszki, kości krzyżowej, poszczególnych kręgów, wyrostków kolczystych)"
+       ]
+      },
+      {
+       "k": "KIEDY POWSTAJĄ",
+       "items": [
+        "u normalnego noworodka i paroletnich dzieci krzywizn czołowych jeszcze nie ma",
+        "rozwijają się później – przeważnie, gdy dziecko zaczyna uczęszczać do szkoły (między 7 a 10 rokiem życia)",
+        "dlatego niektórzy autorzy wątpią, czy istnieje prawidłowa, fizjologiczna skolioza"
+       ]
+      },
+      {
+       "k": "KTÓRA CZĘŚĆ I W KTÓRĄ STRONĘ",
+       "items": [
+        "najczęściej (52%) – skrzywienie boczne **części piersiowej** wypukłością na prawo, przeważnie na wysokości Th3–Th6",
+        "skolioza piersiowa lewostronna – tylko 16%",
+        "skolioza piersiowa prawostronna często łączy się ze skrzywieniem **części lędźwiowej** wypukłym w lewo"
+       ]
+      },
+      {
+       "k": "KRZYWIZNY KOMPENSACYJNE",
+       "items": [
+        "lewostronnie wypukła skolioza lędźwiowa (np. przy dłuższej lewej kończynie dolnej) łączy się najczęściej z prawostronnie wypukłą piersiową – ze względów statycznych",
+        "skolioza piersiowa może się też łączyć z kompensacyjną, drugostronną skoliozą szyi – ze względów ortooptycznych"
+       ]
+      },
+      {
+       "k": "GARB",
+       "items": [
+        "nienormalnie silne krzywizny pośrodkowe i czołowe → **garb** {{kyphoskoliosis}}",
+        "przyczyny bardzo różnorodne: wrodzone, krzywica i inne choroby, wadliwa pozycja siedząca"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "PRZYCZYNY",
+       "t": "Przyczyny częstej prawostronnej skoliozy piersiowej nie są ustalone. Jedni autorzy: większa masa lewej połowy czaszki i lewej półkuli mózgu; inni: dłuższa lewa kończyna dolna i ukośne ustawienie miednicy.",
+       "pg": "267",
+       "src": "2678-2681"
+      },
+      {
+       "k": "PRZYCZYNY",
+       "t": "Za przyczynę uważano też ucisk tętnienia aorty po lewej stronie Th3–Th6 [[impressio aortica]] – ale przy odwrotnym położeniu trzew [[situs inversus]] skolioza prawostronna jest prawie tak samo częsta jak lewostronna.",
+       "pg": "267",
+       "src": "2681-2684"
+      },
+      {
+       "k": "PRZYCZYNY",
+       "t": "Liczni autorzy (m.in. Bichat): przyczyną prawej skoliozy piersiowej jest praworęczność – u leworęcznych stwierdzono skoliozę lewą.",
+       "pg": "267",
+       "src": "2684-2686"
+      },
+      {
+       "k": "UWAGI",
+       "t": "W opisie czynności kręgosłupa: najsłabszym miejscem jest „jakoby” Th5 – dlatego tu najczęściej występują boczne skrzywienia.",
+       "pg": "268",
+       "src": "2743-2745"
+      },
+      {
+       "k": "UWAGI",
+       "t": "Nieprawidłowe, silne i asymetryczne krzywizny kręgosłupa [[kyphoskoliosis]] mogą daleko zniekształcać klatkę piersiową.",
+       "pg": "292",
+       "src": "3983-3985"
+      },
+      {
+       "k": "NAZWY",
+       "t": "skolioses – skolios = krzywy.",
+       "pg": "267",
+       "src": "2667"
+      }
+     ],
+     "labels": [
+      "skrzywienie boczne części piersiowej – wypukłe na prawo",
+      "wysokość Th3–Th6 (najczęstsze miejsce)",
+      "piąty kręg piersiowy (Th5)",
+      "skrzywienie boczne części lędźwiowej – wypukłe w lewo (kompensacyjne)",
+      "skolioza szyi drugostronna (kompensacyjna)",
+      "wycisk aortowy {{impressio aortica}} – po lewej stronie trzonów",
+      "dłuższa lewa kończyna dolna – ukośne ustawienie miednicy",
+      "płaszczyzna czołowa – widok od tyłu",
+      "wyrostki kolczyste {{processus spinosi}}"
+     ],
+     "fig": "kręgosłup od tyłu (płaszczyzna czołowa): prawostronna skolioza piersiowa na wysokości Th3–Th6 + kompensacyjna lewostronna skolioza lędźwiowa (i drugostronna szyi); obok mały prosty kręgosłup noworodka dla porównania"
+    }
+   ]
+  },
+  {
+   "type": "group",
+   "title": "Mechanika klatki piersiowej",
+   "pg": "293–296, 298",
+   "why": "odporność – sprężyste pierścienie żebrowe; ruchomość – żebra, chrząstki żebrowe i mostek",
+   "q": "odporność czy ruchomość?",
+   "children": [
+    {
+     "type": "card",
+     "title": "Odporność klatki piersiowej",
+     "pg": "293",
+     "sections": [
+      {
+       "k": "NA CZYM POLEGA",
+       "items": [
+        "klatka mimo lekkiej budowy i zmienności kształtu jest mocna i odporna – dobrze chroni narządy (serce, przełyk, płuca itd.)",
+        "odporność mechaniczna = duża sprężystość pierścieni żebrowych",
+        "**pierścień żebrowy** – jedna para żeber poprzecznie złączonych mostkiem",
+        "każdy pierścień – do pewnego stopnia napięta sprężyna; mięśnie wdechowe jeszcze wzmagają napięcie"
+       ]
+      },
+      {
+       "k": "KTÓRA ŚCIANA?",
+       "items": [
+        "**ściana przednia** – zbudowana szczególnie korzystnie: przez mostek każdy ciężar i każde uderzenie rozkłada się na szereg obustronnych pierścieni żebrowych → złamania niesłychanie rzadkie",
+        "**ściany boczne** – złamania częstsze: uderzenie trafia tylko na jedno lub kilka żeber",
+        "**ściana tylna** – mocniejsza niż boczne, ale mniej sprężysta i mniej giętka"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "PRZYKŁADY",
+       "t": "Przeciętnie silny mężczyzna, leżąc na grzbiecie, może bez niebezpieczeństwa dźwigać na klatce bardzo znaczne ciężary, np. drugiego człowieka – szczególnie przy głębokim wdechu.",
+       "pg": "293",
+       "src": "4027-4030"
+      },
+      {
+       "k": "PRZYKŁADY",
+       "t": "Na preparacie ścianę przednią klatki dziecka obciążoną 90–100 kg można zetknąć z kręgosłupem bez jej złamania (Fick).",
+       "pg": "293",
+       "src": "4030-4031"
+      }
+     ],
+     "labels": [
+      "pierścień żebrowy (para żeber + mostek)",
+      "mostek {{sternum}}",
+      "kość żebrowa {{os costale}}",
+      "chrząstka żebrowa {{cartilago costalis}}",
+      "kręgosłup – część piersiowa",
+      "ściana przednia – nacisk rozkłada się na szereg pierścieni",
+      "ściana boczna – uderzenie na jedno lub kilka żeber",
+      "ściana tylna – mocna, mało sprężysta"
+     ],
+     "fig": "przekrój poziomy klatki: pierścień żebrowy (para żeber + mostek) jako napięta sprężyna | klatka od przodu: nacisk na mostek rozkłada się na kilka par pierścieni żebrowych (strzałki), uderzenie z boku – na jedno żebro"
+    },
+    {
+     "type": "group",
+     "title": "Ruchomość klatki piersiowej",
+     "pg": "293–296, 298",
+     "why": "ruchy żeber w stawach żebrowo-kręgowych, ruchy chrząstek żebrowych i bierne ruchy mostka",
+     "q": "co się porusza?",
+     "l3": [
+      {
+       "k": "POŁĄCZENIA",
+       "t": "Ruchomość klatki zapewniają też połączenia: kości żebrowych z chrząstkami żebrowymi, stawy międzychrząstkowe VI–VIII (V–IX) i chrząstkozrosty mostkowe – górny i dolny (streszczenie).",
+       "pg": "298",
+       "src": "4294-4297"
+      },
+      {
+       "k": "RUCHY KLATKI JAKO CAŁOŚCI",
+       "t": "Uniesienie żeber (podstawa wdechu) zwiększa wymiary strzałkowe i poprzeczne klatki; równocześnie prostuje się piersiowy odcinek kręgosłupa. Wysokość jamy klatki zmienia głównie przepona. Wydech – odwrotnie; odcinek piersiowy się zgina.",
+       "pg": "295–296",
+       "src": "4169-4171, 4189-4195"
+      },
+      {
+       "k": "RUCHY KLATKI JAKO CAŁOŚCI",
+       "t": "Płuca, szczelnie objęte opłucną, powiększają się z klatką – powietrze zostaje wessane. W obu fazach płuco jest w stanie sprężystego napięcia: większego we wdechu, mniejszego w wydechu.",
+       "pg": "296",
+       "src": "4195-4200"
+      }
+     ],
+     "children": [
+      {
+       "type": "card",
+       "title": "Mechanika kości żebrowej",
+       "pg": "293–295",
+       "sections": [
+        {
+         "k": "GDZIE RUCH",
+         "items": [
+          "kości żebrowe poruszają się w obu **stawach żebrowo-kręgowych** {{articulationes costovertebrales}} – stawie głowy żebra i stawie żebrowo-poprzecznym",
+          "wyjątek – 2 dolne żebra: nie mają stawów żebrowo-poprzecznych, tylko połączenia więzozrostowe",
+          "w żebrach I–X ruchy nie są identyczne (odmiany budowy stawów) – 3 typy ruchów (Warenskiold, Hayek)"
+         ]
+        },
+        {
+         "k": "TYP ŻEBER II–V",
+         "items": [
+          "ruch dokoła długiej **osi szyjki żebra** – biegnie przez oba stawy żebrowo-kręgowe",
+          "ku dołowi oś coraz bardziej skośna – jak wyrostki poprzeczne (Th1 – prawie czołowo, niżej coraz silniej ku tyłowi)",
+          "**czołowy kąt skrzyżowania** – kąt szyjki żebra z płaszczyzną czołową: żebro I ok. 10°, ku dołowi rośnie do 45° na żebrze X (Felix)",
+          "wdech: najsilniej ku górze, słabiej bocznie, najsłabiej do przodu; wydech – w odwrotnym kierunku",
+          "każdy punkt kości żebrowej zatacza łuk kolisty w płaszczyźnie prostopadłej do osi szyjki"
+         ]
+        },
+        {
+         "k": "TYP ŻEBER VI–X",
+         "items": [
+          "ruch nie odbywa się względem osi szyjki – inaczej ukształtowane powierzchnie stawowe",
+          "wdech: **guzek żebra** [[tuberculum costae]] wsuwa się na wyrostek poprzeczny ku górze i ku tyłowi",
+          "wdech: najsilniej ku górze, słabiej bocznie, poza tym nieco ku tyłowi"
+         ]
+        },
+        {
+         "k": "TYP ŻEBRA I",
+         "items": [
+          "nieco odmienna budowa obu stawów żebrowo-kręgowych (zwłaszcza stawu głowy żebra); czołowy kąt skrzyżowania znacznie mniejszy – „czysty” ruch dokoła szyjki nie dałby rzeczywistego odchylenia",
+          "oprócz ruchu dokoła szyjki – ruch ślizgowy względem wyrostka poprzecznego: ku górze (wdech), ku dołowi (wydech)",
+          "przednia część kości żebrowej I przy wdechu: najsilniej ku górze, słabiej do przodu, najsłabiej bocznie"
+         ]
+        },
+        {
+         "k": "ZAKRES RUCHÓW",
+         "items": [
+          "im dalej ku tyłowi leży punkt kości żebrowej, tym mniejszy zakres jego ruchu",
+          "żebra XI i XII – znacznie krótsze, luźniej związane z kośćcem; ich ruchy nie mają większego znaczenia dla mechaniki klatki"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "ZAKRES (NA ZWŁOKACH)",
+         "t": "Ku górze: najsilniej kość żebrowa IV (ok. 35 mm), najsłabiej I i X (25 mm).",
+         "pg": "295",
+         "src": "4112-4115"
+        },
+        {
+         "k": "ZAKRES (NA ZWŁOKACH)",
+         "t": "Bocznie: najsilniej żebra dolne (22 mm), najsłabiej żebro I (10 mm).",
+         "pg": "295",
+         "src": "4115-4116"
+        },
+        {
+         "k": "ZAKRES (NA ZWŁOKACH)",
+         "t": "Do przodu: ruch maleje od żebra I do V (z ok. 15 mm do 1 mm), potem przechodzi w ruch ku tyłowi, rosnący od żebra VI do X (z 2 do 8 mm).",
+         "pg": "295",
+         "src": "4116-4118"
+        },
+        {
+         "k": "POŁOŻENIE POWIERZCHNI",
+         "t": "Przy podnoszeniu żeber górnych ich powierzchnie boczne kierują się nieco ku górze; przy podnoszeniu dolnych – powierzchnie zwrócone bardziej ku dołowi kierują się bocznie.",
+         "pg": "295",
+         "src": "4122-4125"
+        },
+        {
+         "k": "NAZWY",
+         "t": "U Bochenka nagłówek „Mechanika żebra kostnego”; żebro kostne = kość żebrowa [[os costale]].",
+         "pg": "274, 293",
+         "src": "3047, 4036"
+        },
+        {
+         "k": "!",
+         "t": "Podpis ryc. 199: „po lewej – obrót dokoła osi szyjki żebra; po prawej – guzek żebra wsuwa się na wyrostek poprzeczny”; w tekście obrót dokoła osi szyjki to ryc. 199 a (żebro III), a wsuwanie się guzka – ryc. 199 b (żebro VIII).",
+         "pg": "294",
+         "src": "4067-4078, 4102-4104"
+        }
+       ],
+       "labels": [
+        "oś szyjki żebra – oś ruchu żeber II–V",
+        "szyjka żebra {{collum costae}}",
+        "głowa żebra {{caput costae}}",
+        "guzek żebra {{tuberculum costae}}",
+        "staw głowy żebra {{articulatio capitis costae}}",
+        "staw żebrowo-poprzeczny {{articulatio costotransversaria}}",
+        "wyrostek poprzeczny {{processus transversus}}",
+        "trzon kręgu {{corpus vertebrae}}",
+        "płaszczyzna czołowa",
+        "czołowy kąt skrzyżowania (żebro I ok. 10°, żebro X 45°)",
+        "łuk kolisty punktu kości żebrowej – płaszczyzna prostopadła do osi szyjki",
+        "wdech żeber II–V: ku górze > bocznie > do przodu",
+        "wdech żeber VI–X: guzek wsuwa się ku górze i ku tyłowi"
+       ],
+       "fig": "kręg piersiowy z żebrem od góry – oś szyjki żebra i czołowy kąt skrzyżowania, żebro górne obok dolnego (wg ryc. 198) | ruch żebra III (obrót dokoła osi szyjki) i żebra VIII (guzek wsuwa się na wyrostek poprzeczny), wg ryc. 199 | schemat przesunięć kości żebrowych I–X na zwłokach: ku górze, bocznie, do przodu / ku tyłowi (mm)"
+      },
+      {
+       "type": "card",
+       "title": "Mechanika chrząstki żebrowej",
+       "pg": "295",
+       "sections": [
+        {
+         "k": "PO CO RUCHOME OGNIWA",
+         "items": [
+          "dwa żebra poprzecznie złączone mostkiem obracają się względem dwóch różnie skierowanych osi",
+          "jest to możliwe tylko dlatego, że pierścień żebrowy nie jest sztywny – ma ruchome ogniwa: **chrząstki żebrowe** {{cartilagines costales}}",
+          "ruchom kości żebrowych towarzyszą więc zmiany położenia chrząstek"
+         ]
+        },
+        {
+         "k": "PRZY UNOSZENIU KOŚCI ŻEBROWEJ",
+         "items": [
+          "kość żebrowa unosi się, a jej koniec mostkowy przesuwa się bocznie – w chrząstce zachodzą wtedy 3 ruchy:",
+          "1) powiększa się **kąt chrząstki** – na żebrach I–V leży między kością żebrową a chrząstką, na dalszych – w obrębie samej chrząstki",
+          "2) obrót w **stawie mostkowo-żebrowym** [[articulatio sternocostalis]] – powiększa się kąt między chrząstką żebrową a mostkiem",
+          "3) obrót chrząstki dokoła osi czołowej biegnącej wzdłuż chrząstki – podłużne skręcenie, przenosi się też na kość żebrową; brzeg górny chrząstki obraca się nieco do wewnątrz",
+          "przy opuszczaniu żeber – ruchy w odwrotnym kierunku"
+         ]
+        },
+        {
+         "k": "SPRĘŻYSTOŚĆ",
+         "items": [
+          "chrząstka wyprowadzona z położenia równowagi stawia sprężysty opór",
+          "**położenie równowagi** klatki – pośrednie między maksymalnym wdechem a wydechem, nieco bliższe wdechowemu",
+          "kostnienie chrząstek szkodzi ruchom oddechowym; przy całkowitym skostnieniu tzw. oddychanie piersiowe w ogóle nie jest możliwe"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "DOWÓD",
+         "t": "Przy ratowaniu pozornie zmarłych uciskanie dolnej części klatki daje wydech, a zaprzestanie ucisku – wdech: klatka wraca do położenia równowagi bez pomocy mięśni. Wniosek: w spoczynku klatka jest bliższa położeniu wdechowemu.",
+         "pg": "295",
+         "src": "4143-4147"
+        },
+        {
+         "k": "RYCINA",
+         "t": "Ryc. 200 (model ruchów żeber wg Ficka i Brausa): pierścienie żebrowe I i VII; w położeniu wydechu kąty α i β małe, w położeniu wdechu – powiększone.",
+         "pg": "296",
+         "src": "4178-4185"
+        }
+       ],
+       "labels": [
+        "pierścień żebrowy (para żeber + mostek)",
+        "kość żebrowa {{os costale}}",
+        "chrząstka żebrowa {{cartilago costalis}}",
+        "mostek {{sternum}}",
+        "kąt chrząstki – żebra I–V: między kością a chrząstką",
+        "kąt chrząstki – żebra dalsze: w obrębie chrząstki",
+        "staw mostkowo-żebrowy {{articulatio sternocostalis}}",
+        "kąt między chrząstką żebrową a mostkiem",
+        "oś czołowa wzdłuż chrząstki – skręcenie",
+        "brzeg górny chrząstki – obraca się do wewnątrz",
+        "położenie wydechu – kąty małe",
+        "położenie wdechu – kąty powiększone"
+       ],
+       "fig": "model pierścienia żebrowego od przodu w położeniu wydechu i wdechu (jak ryc. 200/1–2): kąt chrząstki (α) i kąt między chrząstką a mostkiem (β) – małe w wydechu, powiększone we wdechu | mały schemat: skręcenie chrząstki dokoła osi biegnącej wzdłuż niej"
+      },
+      {
+       "type": "card",
+       "title": "Ruchy mostka",
+       "pg": "295, 298",
+       "sections": [
+        {
+         "k": "ZASADA",
+         "items": [
+          "ruchy mostka zależą od ruchów żeber – są bierne",
+          "w zasadzie **przesunięcie równoległe**: przy podnoszeniu klatki mostek idzie ku górze i do przodu – zwiększa wymiar przednio-tylny klatki",
+          "przesunięcie nie jest „czyste” (różna długość żeber) – dolne części mostka przesuwają się silniej do przodu niż górne"
+         ]
+        },
+        {
+         "k": "MIĘDZY CZĘŚCIAMI MOSTKA",
+         "items": [
+          "chrząstkozrost górny (rękojeść–trzon) [[synchondrosis manubriosternalis]] – nieznaczny obrót rękojeści względem trzonu (lub odwrotnie) dokoła osi poprzecznej przez przyczepy mostkowe żeber II",
+          "to zmiana **kąta mostka** {{angulus sterni}} – przy maksymalnym wdechu bardzo znacznie się spłaszcza (wartości: karta „Kąt mostka”, strona 1)",
+          "chrząstkozrost dolny (trzon–wyrostek mieczykowaty) [[synchondrosis xiphosternalis]] – ruchy mniej istotne",
+          "więzadło mostkowo-mieczykowe hamuje przesuwanie się wyrostka mieczykowatego ku tyłowi pod działaniem przepony"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "RYCINA",
+         "t": "Ryc. 200/4: żebro I i mostek w położeniu wydechu (ZM) i wdechu (Z'M'), widok od strony lewej.",
+         "pg": "296",
+         "src": "4186-4187"
+        },
+        {
+         "k": "!",
+         "t": "Na s. 295 „więzadło mostkowo-mieczykowe”; w opisie połączeń (s. 287) i w streszczeniu (s. 298) są tylko więzadła żebrowo-mieczykowe [[ligamenta costoxiphoidea]] – z trzonu mostka i chrząstek VI–VII na wyrostek mieczykowaty.",
+         "pg": "287, 295, 298",
+         "src": "3806-3809, 4165-4167, 4291-4292"
+        }
+       ],
+       "labels": [
+        "mostek {{sternum}}",
+        "rękojeść mostka {{manubrium sterni}}",
+        "trzon mostka {{corpus sterni}}",
+        "wyrostek mieczykowaty {{processus xiphoideus}}",
+        "kąt mostka {{angulus sterni}}",
+        "górne połączenie mostkowe {{synchondrosis manubriosternalis}}",
+        "dolne połączenie mostkowe {{synchondrosis xiphosternalis}}",
+        "żebro I {{costa I}}",
+        "oś poprzeczna przez przyczepy mostkowe żeber II",
+        "położenie wydechu / położenie wdechu",
+        "przesunięcie ku górze i do przodu"
+       ],
+       "fig": "widok od strony lewej: żebro I i mostek w położeniu wydechu i wdechu (jak ryc. 200/4) – przesunięcie ku górze i do przodu, dolna część mostka silniej do przodu; oś obrotu w chrząstkozroście górnym (poziom żeber II)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
