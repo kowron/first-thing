@@ -64,12 +64,6 @@
        ],
        "l3": [
         {
-         "k": "LICZBA",
-         "t": "liczba par może wzrosnąć (żebra szyjne lub lędźwiowe) albo zmaleć do 11 (redukcja żeber)",
-         "pg": "273",
-         "src": "3021-3024"
-        },
-        {
          "k": "STRUKTURA",
          "t": "silnie unaczyniona istota gąbczasta ze szpikiem czerwonym, pokryta cienką warstwą istoty zbitej",
          "pg": "278",
@@ -114,7 +108,7 @@
            "k": "POŁĄCZENIE Z MOSTKIEM",
            "items": [
             "7 górnych par żeber",
-            "z przodu łączą się obustronnie z mostkiem – bezpośrednio, swoją chrząstką żebrową",
+            "z przodu łączą się obustronnie z mostkiem",
             "na brzegach mostka – wcięcia żebrowe dla chrząstek I–VII"
            ]
           }
@@ -1444,18 +1438,6 @@
          "t": "wymiary wg Rauber-Kopscha; cały akapit małym drukiem",
          "pg": "293",
          "src": "4005-4009"
-        },
-        {
-         "k": "WSKAŹNIK",
-         "t": "zmienia się w rozwoju osobniczym: zarodek 4-tygodniowy ok. 60, płód 2-miesięczny ok. 90, noworodek ok. 105, dorosły 139, po 70. roku życia ok. 129",
-         "pg": "293",
-         "src": "4010-4014"
-        },
-        {
-         "k": "WSKAŹNIK",
-         "t": "w rozwoju rodowym – u Naczelnych: małpy niższe 86 (makak), człekokształtne ok. 112",
-         "pg": "293",
-         "src": "4015-4016"
         }
        ],
        "labels": [

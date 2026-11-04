@@ -1,0 +1,43 @@
+{
+ "issues": [
+  {
+   "card": "Więzadło biodrowo-lędźwiowe",
+   "field": "pg",
+   "problem": "przy połączeniu L5 z kością krzyżową więzadło biodrowo-lędźwiowe jest wymienione dopiero na s. 255 (s. 254 kończy się na „5) więzadło” = międzykolcowe)",
+   "fix": "255, 530",
+   "evidence": "s. 255: „Poza tym dodatkowe, silne więzadło biodrowo-lędźwiowe (ligamentum iliolumbale)”"
+  },
+  {
+   "card": "Połączenie krzyżowo-guziczne",
+   "field": "tag",
+   "problem": "etykieta nie podaje rodzaju połączenia (wymóg: podział na chrząstkozrosty / więzozrosty / stawy); Bochenek przy kości guzicznej nazywa je chrząstkozrostem, a więzadła są więzozrostami (s. 249)",
+   "fix": "CHRZĄSTKOZROST + WIĘZOZROSTY",
+   "evidence": "s. 237: „podstawy kości guzicznej jest połączona z wierzchołkiem kości krzyżowej chrząstkozrostem”"
+  }
+ ],
+ "missing": [
+  {
+   "card": "Połączenie krzyżowo-guziczne",
+   "where": "l3",
+   "k": "RODZAJ",
+   "text": "Przy opisie kości guzicznej Bochenek nazywa to połączenie **chrząstkozrostem**; tak samo łączą się Co1 z Co2 i Co2 z Co3, połączenia dalszych kręgów guzicznych są skostniałe. W wieku późniejszym zwykle kostnieją wszystkie, także z kością krzyżową.",
+   "pg": "237"
+  },
+  {
+   "card": "Chrząstkozrost mostkowo-żebrowy żebra I",
+   "where": "l3",
+   "k": "RODZAJ",
+   "text": "Część ogólna: u dorosłego to jedyne miejsce z czystą **chrząstką szklistą** – wszystkie inne chrząstkozrosty są już włókniste.",
+   "pg": "207"
+  },
+  {
+   "card": "Chrząstkozrosty mostkowe",
+   "where": "l3",
+   "k": "UWAGI",
+   "text": "Przy ruchach mostka Bochenek wymienia **więzadło mostkowo-mieczykowe** – hamuje przesunięcie wyrostka mieczykowatego ku tyłowi pod wpływem przepony; ruchy w dolnym chrząstkozroście są mniej istotne.",
+   "pg": "295"
+  }
+ ],
+ "checked": 429,
+ "notes": "Zakres: grupy „Połączenia kości krzyżowej” (L5–kość krzyżowa, krzyżowo-guziczne, staw krzyżowo-biodrowy i więzadła miednicy łączące kość krzyżową) oraz „Połączenia żeber i mostka” w k_polaczenia.json – każdy punkt, pg, łacina i etykiety porównane z OCR s. 237, 249–250, 253–255, 274, 282–287, 293, 295, 297–298, 527–532. NA SKANIE sprawdzone: s. 254 (junctura lumbosacralis, przypis junctura sacrovertebralis), s. 255 (wszystkie 5 składników połączenia krzyżowo-guzicznego, łacina więzadeł; przypis rzeczywiście ma błąd druku „articulatio sacrococeygea” – l3/5 karty jest prawdziwe), s. 285 (przypisy: costotransversarium superius = anterius, laterale = posterius; ligamentum tuberculi costae*), s. 286–287 (ryc. 193, 6 mm, 25%, ligamenta costoxiphoidea, synchondrosis s. symphysis manubriosternalis, synchondrosis xiphosternalis), s. 297–298 (streszczenie – trzy punkty „!” w kartach Stawy głów żebrowych l3/2, Stawy żebrowo-poprzeczne l3/5 i l3/6 potwierdzone), s. 529 (sacroiliaca dorsalia/posteriora, sacroiliacum dorsale breve/longum), s. 206–207 i 216–218 (część ogólna – tylko do oceny podziału: staw krzyżowo-biodrowy jako przykład stawu płaskiego na s. 217 i s. 527 → tag STAW PŁASKI zgodny; więzadła miednicy w rozdziale „Więzozrosty miednicy” → tagi WIĘZOZROST zgodne; chrząstkozrosty mostkowe, chrząstkozrost żebra I, stawy mostkowo-żebrowe, stawy międzychrząstkowe, stawy głów żebrowych i żebrowo-poprzeczne – tagi zgodne). Podział grupy „Połączenia żeber i mostka” odpowiada 5 grupom Bochenka (s. 282). Brak treści z części ogólnej i z połączeń czaszki z kręgosłupem (s. 255 od „Połączenie kręgosłupa z czaszką” nie wzięto – dobrze). Terminologia żebro/kość żebrowa/chrząstka żebrowa, więzadło/więzozrost, staw/połączenie – bez błędów (sformułowania jak u Bochenka). Do decyzji, niezgłoszone jako błąd: (a) „Więzadła łączące kość krzyżową z kością kulszową” l3/0 – „przypuszczalnie pozostałość mięśni ogona” to domysł filogenetyczny Bochenka (s. 532); zgodny z tekstem, ale niepewny i z rozwoju rodowego – można usunąć tę część zdania; (b) tag „JAK MIĘDZY KRĘGAMI” w karcie L5 – połączenie mieszane (krążek = chrząstkozrost, więzadła = więzozrosty, stawy międzykręgowe), co wyjaśnia l3/1 – zostawić; (c) „Połączenia kości żebrowych z chrząstkami żebrowymi” bez tagu – Bochenek nie podaje rodzaju (l3/0 słusznie to mówi); (d) missing nr 3 (więzadło mostkowo-mieczykowe, s. 295) pochodzi z „Ruchów mostka” – jeśli trafi do k_mech, pominąć (--skip=V7:m2); poza s. 295 Bochenek go na dostępnych stronach nie opisuje – mógł to robić na brakujących s. 288–289 (nie da się sprawdzić). Nie dało się potwierdzić: treści s. 288–289 (brak w skanie) – mogą zawierać dalszy ciąg połączeń części mostka (ryc. 194–195), więc kompletność kart „Chrząstkozrosty mostkowe” i „Stawy międzychrząstkowe” jest potwierdzona tylko do końca s. 287."
+}

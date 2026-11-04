@@ -1,0 +1,21 @@
+{
+ "issues": [
+  {
+   "card": "Wymiary klatki piersiowej",
+   "field": "l3/1",
+   "problem": "zmiany wskaźnika klatki w rozwoju osobniczym (zarodek, płód, noworodek, starość) – rozwój, poza zakresem; wartość u dorosłego (139) jest już w sections/3/1",
+   "fix": null,
+   "evidence": "s. 293: „zmienia się znacznie zarówno w rozwoju osobniczym, jak i w rozwoju rodowym”"
+  },
+  {
+   "card": "Wymiary klatki piersiowej",
+   "field": "l3/2",
+   "problem": "wskaźnik u Naczelnych (makak, człekokształtne) – rozwój rodowy, poza zakresem",
+   "fix": null,
+   "evidence": "s. 293: „Wśród Naczelnych wskaźnik ten wynosi: u małp niższych 86 (makak)”"
+  }
+ ],
+ "missing": [],
+ "checked": 360,
+ "notes": "KONTROLA s. 288–289: w skanie NAPRAWDĘ ich nie ma. PDF 128 = s. 286|287 (s. 287 kończy się zdaniem „Natomiast bardzo rzadko wytwarza się połączenie stawowe.” – koniec akapitu o dolnym połączeniu mostkowym), PDF 129 = s. 290|291 (s. 290 zaczyna się w pół zdania „…w jamę klatki piersiowej, a tylne części żeber…”). Brakuje też ryc. 194 i 195 (ryc. 193 na s. 286, ryc. 196 na s. 290). Sprawdzono stopki wszystkich 458 stron PDF (pliki /tmp/claude-0/-home-user-first-thing/d41721b4-1413-50bf-8c94-691fa5e52b07/scratchpad/verify_agent/sheet_*.png): s. 288–289 nie występują nigdzie indziej, a jedyne strony bez numeru (PDF 289–296) to tablice RTG (Tablica I–XX, kości kończyn/kręgosłup/czaszka) między s. 608 a 610. Wniosek: notatki o brakujących stronach w l3 grupy „Klatka piersiowa jako całość” i w l3/0–l3/1 karty „Ściany i kształt klatki” są prawdziwe; karty nie pomijają niczego z dostępnych stron 290–291 i 293. Początek podrozdziału (prawdopodobnie ogólny opis klatki, ściany, przestrzenie międzyżebrowe i to, co „wnika w jamę klatki piersiowej”) trzeba uzupełnić z papierowego egzemplarza; dopóki to nie nastąpi, ściany/przestrzenie międzyżebrowe słusznie wzięto ze streszczenia s. 298. Uwaga do „Ściany i kształt klatki” sections/1/1: u Bochenka „dzięki temu” (kształt nerkowaty) odnosi się do OBU członów zdania – brakującego (s. 289: coś wnika w jamę klatki) i wypuklenia tylnych części żeber; karta podaje tylko drugi – nie jest to błąd, ale do uzupełnienia razem z s. 289. Mimochodem: w skanie brak też s. 6–55 (część ogólna) i s. 646–647 (mięśnie; all.txt zaczyna się od s. 648) – bez znaczenia dla tej weryfikacji. SPRAWDZONE NA SKANIE: s. 279 (ryc. 187/188: Incisura jugularis, clavicularis, costalis I–VII, Manubrium/Corpus sterni, Processus xiphoideus, M. sternohyoideus, M. sternothyroideus, M. transversus thoracis, Diaphragma), s. 280 (cały opis rękojeści, trzonu, wyrostka; processus xiphoideus; ksifos; sternebrae; angulus sterni), s. 287, s. 290–291, s. 293 (wszystkie wymiary i wskaźniki zgodne co do liczby; „Wymiary klatki piersiowej” to osobny pogrubiony nagłówek małym drukiem w podrozdziale o klatce – NIE część „Zmienności kształtu”; HANDOFF wyklucza tylko wymiary kręgosłupa, więc samą kartę zostawiam – do decyzji zlecającego), s. 295 (kąt mostka 164°/167°, różnica 14°/12°, Rotschild – zgodne), s. 298 (streszczenie: spatia intercostalia, sulcus costovertebralis, „dolnymi brzegami żeber XI i XII” – punkt „!” w karcie Otwór dolny potwierdzony, angulus infrasternalis, fossa epigastrica, cavitas thoracis/abdominalis). k_kregoslup.json: jedyne zdanie o mostku/klatce – l3/1 grupy „Kręgosłup” (kościec osiowy, skeleton axiale, s. 219) – zgodne. Drobiazgi niezgłoszone jako błąd: (a) „podłużne, chropawe pole” (Rękojeść l3/1, Wcięcia mostka sections/2/0) – u Bochenka „podługowate, chropawe pole” (s. 280), sens ten sam; (b) „Połączenia części mostka” sections/0/2 i labels podają tylko {{synchondrosis manubriosternalis}} – Bochenek (s. 287) pisze „synchondrosis s. symphysis manubriosternalis” (karta na stronie 3 ma pełną formę); (c) „Wyrostek mieczykowaty” sections/1/0 i labels/5: PL w liczbie pojedynczej (tak jak s. 280), łacina w mnogiej {{ligamenta costoxiphoidea}} (tak jak s. 287) – oba zgodne z Bochenkiem, ale niespójne w jednym punkcie; (d) „Wcięcia mostka” sections/0/0 „nieparzyste” – wniosek z „pośrodku”, słowa brak u Bochenka. Nie dało się potwierdzić: czy Bochenek na s. 288–289 podaje łacinę „thorax” dla klatki (lat grupy i karty „Ściany i kształt klatki”) – na dostępnych stronach tylko formy pochodne (apertura thoracis, cavitas thoracis, thorax inspiratorius/exspiratorius)."
+}

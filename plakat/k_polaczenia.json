@@ -661,7 +661,7 @@
      "title": "Połączenie krzyżowo-guziczne",
      "lat": "junctura sacrococcygea",
      "pg": "255",
-     "tag": "JAK POŁĄCZENIA TRZONÓW",
+     "tag": "CHRZĄSTKOZROST + WIĘZOZROSTY",
      "sections": [
       {
        "k": "ŁĄCZY",
@@ -729,6 +729,11 @@
        "t": "Inna nazwa łacińska (przypis): [[articulatio sacrococcygea]] – w druku „sacrococeygea” (błąd druku).",
        "pg": "255",
        "src": "2041"
+      },
+      {
+       "k": "RODZAJ",
+       "t": "Przy opisie kości guzicznej Bochenek nazywa to połączenie **chrząstkozrostem**; tak samo łączą się Co1 z Co2 i Co2 z Co3, połączenia dalszych kręgów guzicznych są skostniałe. W wieku późniejszym zwykle kostnieją wszystkie, także z kością krzyżową.",
+       "pg": "237"
       }
      ],
      "labels": [
@@ -957,7 +962,7 @@
          "type": "card",
          "title": "Więzadło biodrowo-lędźwiowe",
          "lat": "ligamentum iliolumbale",
-         "pg": "254–255, 530",
+         "pg": "255, 530",
          "tag": "WIĘZOZROST",
          "sections": [
           {
@@ -1344,6 +1349,11 @@
          "t": "Streszczenie (s. 297): żebro I łączy się z rękojeścią mostka chrząstkozrostem, żebra II–VII tworzą stawy prawdziwe.",
          "pg": "297",
          "src": "4281-4283"
+        },
+        {
+         "k": "RODZAJ",
+         "t": "Część ogólna: u dorosłego to jedyne miejsce z czystą **chrząstką szklistą** – wszystkie inne chrząstkozrosty są już włókniste.",
+         "pg": "207"
         }
        ],
        "labels": [
@@ -1557,6 +1567,11 @@
        "t": "Górne: kościozrost w starości jakoby nie zdarza się częściej niż w młodości; nawet w skostniałym połączeniu zostają wewnątrz resztki chrząstki.",
        "pg": "287",
        "src": "3846-3848"
+      },
+      {
+       "k": "UWAGI",
+       "t": "Przy ruchach mostka Bochenek wymienia **więzadło mostkowo-mieczykowe** – hamuje przesunięcie wyrostka mieczykowatego ku tyłowi pod wpływem przepony; ruchy w dolnym chrząstkozroście są mniej istotne.",
+       "pg": "295"
       }
      ],
      "labels": [
