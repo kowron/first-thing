@@ -1,0 +1,220 @@
+@page { size: 1189mm 841mm; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: 'Inter', sans-serif; color: #1d2126; }
+b { font-weight: 700; }
+
+/* palety */
+.purple { --bg:#EEEDFE; --b:#AFA9EC; --s:#534AB7; --t:#3C3489; }
+.teal   { --bg:#E1F5EE; --b:#5DCAA5; --s:#0F6E56; --t:#085041; }
+.coral  { --bg:#FAECE7; --b:#F0997B; --s:#993C1D; --t:#712B13; }
+.blue   { --bg:#E6F1FB; --b:#85B7EB; --s:#185FA5; --t:#0C447C; }
+.pink   { --bg:#FBEAF0; --b:#ED93B1; --s:#993556; --t:#72243E; }
+.red    { --bg:#FCEBEB; --b:#F09595; --s:#A32D2D; --t:#791F1F; }
+.green  { --bg:#EAF3DE; --b:#97C459; --s:#3B6D11; --t:#27500A; }
+.amber  { --bg:#FAEEDA; --b:#EF9F27; --s:#854F0B; --t:#633806; }
+.c1 { --s:#1f6f78; --t:#0f3f45; --bg:#e3f0f1; --b:#7fb3b8; }
+.c2 { --s:#a23b3b; --t:#5e1f1f; --bg:#f6e4e4; --b:#d99a9a; }
+.c4 { --s:#2f7d4a; --t:#1b4a2b; --bg:#e3f1e6; --b:#8cc49c; }
+.c3 { --s:#a8741a; --t:#5e400c; --bg:#f6ecd9; --b:#d9b56f; }
+
+/* ===== rama plakatu (bez skalowania) ===== */
+.poster { width: 1189mm; height: 841mm; padding: 11mm 14mm; position: relative; overflow: hidden; }
+.info { position: absolute; left: 14mm; top: 11mm; width: 360mm; z-index: 2; }
+.i1 { font-size: 13pt; letter-spacing: .25em; color: #7b828a; font-weight: 700; }
+.i2 { font-size: 14.5pt; color: #3a4048; margin-top: 2.4mm; line-height: 1.35; }
+.i3 { font-size: 12pt; color: #6c737c; margin-top: 1.6mm; line-height: 1.35; }
+.legend { position: absolute; right: 14mm; top: 8mm; width: 380mm; background: #f6f4ef; border-radius: 3mm; padding: 2mm 4mm 2.4mm; font-size: 8.6pt; line-height: 1.25; z-index: 2; }
+.lt1 { font-size: 7.5pt; letter-spacing: .22em; color: #6c737c; font-weight: 800; margin-bottom: .8mm; }
+.lgrid { display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 4mm; row-gap: .6mm; }
+.legend .lrow { display: grid; grid-template-columns: 23mm 1fr; gap: 2mm; align-items: center; padding: .3mm 0; }
+.legend .lrow:last-child { border-bottom: 0; }
+.lz { display: inline-flex; width: 6mm; height: 6mm; border-radius: 50%; background: #1d2126; color: #fff; align-items: center; justify-content: center; font-weight: 800; font-size: 9.5pt; }
+.lsw { display: inline-block; font-size: 10pt; font-weight: 700; padding: .4mm 3mm; border-radius: 1.5mm; color: #085041; background: #E1F5EE; border: .45mm dashed #0F6E56; }
+.lcard { display: inline-block; font-size: 10pt; font-weight: 700; padding: .4mm 3mm; border-radius: 1.5mm; color: #3C3489; background: #fff; border: .4mm solid #AFA9EC; border-left: 1.8mm solid #534AB7; }
+.lsm { font-family: 'TeX Gyre Pagella', serif; font-style: italic; color: #6b5a3c; font-size: 9pt; white-space: nowrap; }
+.lw { display: inline-flex; width: 6.5mm; height: 6.5mm; border-radius: 50%; background: #c7682b; color: #fff; align-items: center; justify-content: center; font-weight: 800; }
+.lsm2 { font-weight: 700; }
+.legend.inflow { position: static; width: auto; right: auto; bottom: auto; }
+.lz3 { display: inline-flex; width: 5mm; height: 5mm; border-radius: 50%; background: #1d2126; color: #fff; align-items: center; justify-content: center; font-weight: 800; font-size: 8pt; vertical-align: 1px; }
+.lpill { display: inline-block; white-space: nowrap; font-size: 7.4pt; font-weight: 800; letter-spacing: .08em; padding: .6mm 2.4mm; border-radius: 3mm; background: #1d2126; color: #fff; }
+
+/*TREE*/
+/* wszystko poniżej jest skalowane przez build.py (współczynnik K) */
+.treebox { position: relative; }
+svg.wires { position: absolute; left: 0; top: 0; z-index: 0; overflow: visible; }
+.sub { display: flex; flex-direction: column; align-items: stretch; position: relative; }
+.sub.rowsub { align-items: center; }
+.kids.row { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; align-self: stretch; margin-top: 7mm; }
+.kids.row > * { flex: none; }
+.kids.list { display: flex; flex-direction: column; gap: 2.6mm; margin-top: 2.6mm; padding-left: 5mm; align-self: stretch; }
+.kids.list > .node, .kids.list > .sub { width: 100%; }
+.kwrap { display: flex; flex-direction: column; }
+.krow { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+.krow > * { flex: none; }
+.sub.hasq > .q { align-self: flex-start; }
+.sub.hasq > .kids.list { padding-left: 8.5mm; }
+
+.node { position: relative; z-index: 1; }
+.node.g { border-radius: 2.2mm; color: var(--t); }
+.node.g .hd { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 2mm; }
+.node.g .pl { font-weight: 800; }
+.node.g .pg { color: #7b828a; font-weight: 500; white-space: nowrap; margin-left: auto; padding-left: 2mm; }
+.node.g .gla { font-family: 'TeX Gyre Pagella', serif; font-style: italic; font-weight: 700; }
+.node.g .why { color: #4f565e; line-height: 1.25; margin-top: .4mm; }
+.sub.rowsub > .node.g { text-align: center; }
+.sub.rowsub > .node.g .hd { justify-content: center; }
+.sub.rowsub > .node.g .pg { margin-left: 2mm; }
+
+.node.root { background: #1d2126; color: #fff; padding: 3mm 20mm 3.6mm; border-radius: 6mm; margin-top: 2mm; }
+.node.root .pl { font-size: 54pt; letter-spacing: -.01em; }
+.node.root .why { color: #fff; opacity: .78; font-size: 15pt; margin-top: .2mm; }
+.node.chap { background: var(--s); color: #fff; padding: 2.6mm 9mm 3mm; border-radius: 4mm; }
+.node.chap .pl { font-size: 34pt; }
+.node.chap .gla { font-size: 25pt; color: #fff; font-weight: 400; }
+.node.chap .why { color: #fff; opacity: .9; font-size: 11pt; }
+.node.chap .pg { color: #fff; opacity: .85; font-size: 12pt; }
+.node.chap .deg { color: #ffd9c2; }
+.node.world { background: var(--s); color: #fff; padding: 2.2mm 6mm 2.6mm; }
+.node.world .pl { font-size: 20pt; }
+.node.world .gla { font-size: 19pt; color: #fff; }
+.node.world .why { color: #fff; opacity: .9; font-size: 10pt; }
+.node.world .pg { color: #fff; opacity: .85; font-size: 9.5pt; }
+.node.grp { background: var(--bg); border: .55mm dashed var(--s); padding: 1.8mm 3mm 2mm; }
+.node.grp .pl { font-size: 14.5pt; line-height: 1.12; }
+.node.grp .gla { font-size: 14pt; }
+.node.grp .why { font-size: 9.2pt; }
+.node.grp .pg { font-size: 8.5pt; }
+.node.band { background: var(--bg); border: .8mm dashed var(--s); padding: 1.8mm 3.2mm 2mm; }
+.node.band .pl { font-size: 15pt; }
+.node.band .why { font-size: 9.4pt; }
+.node.band .pg { font-size: 8.5pt; }
+.node.sg { background: var(--bg); border: .45mm dashed var(--s); padding: 1.5mm 2.6mm 1.7mm; }
+.node.sg .pl { font-size: 12.2pt; line-height: 1.12; }
+.node.sg .gla { font-size: 12pt; }
+.node.sg .why { font-size: 8.6pt; }
+.node.sg .pg { font-size: 8pt; }
+.deg { color: #b0552c; font-style: normal; font-weight: 700; padding-left: .3mm; }
+
+.q { position: relative; z-index: 1; display: flex; align-items: center; gap: 2mm; margin-top: 4mm; background: #fff; border: .5mm solid #1d2126; border-radius: 6mm; padding: .7mm 4mm .7mm .8mm; font-size: 11.5pt; font-weight: 700; white-space: nowrap; color: #1d2126; }
+.qn { width: 7mm; height: 7mm; border-radius: 50%; background: #1d2126; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 11pt; font-weight: 800; flex: none; }
+.qpg { font-size: 8.5pt; color: #7b828a; font-weight: 500; }
+
+/* karty mięśni */
+.card { background: #fff; border: .4mm solid var(--b); border-left: 1.8mm solid var(--s); border-radius: 2mm; padding: 1.8mm 2.4mm 2mm; color: #1d2126; }
+.card .ch { font-size: 12.3pt; line-height: 1.14; color: var(--t); overflow-wrap: break-word; }
+.card .nm { font-weight: 800; }
+.card .lt { font-family: 'TeX Gyre Pagella', serif; font-style: italic; font-weight: 700; font-size: 12.8pt; }
+.card .tag { display: inline-block; font-family: 'Inter', sans-serif; font-style: normal; font-size: 6.6pt; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--s); border: .3mm solid var(--s); border-radius: 1mm; padding: 0 1.2mm; margin-left: 1.6mm; vertical-align: 2px; line-height: 1.5; }
+.card .tag.warm { color: #b0552c; border-color: #b0552c; }
+.card .bd { font-size: 7.4pt; line-height: 1.3; margin-top: .9mm; }
+.pgl { font-size: 6.2pt; color: #7b828a; margin-bottom: .4mm; }
+.k { font-size: 5.4pt; font-weight: 800; letter-spacing: .12em; color: #7b828a; margin: .2mm 0 .2mm; }
+.ls { font-family: 'TeX Gyre Pagella', serif; font-style: italic; font-size: .88em; color: #6b5a3c; }
+.note { color: #4f565e; font-size: 7pt; margin-bottom: .6mm; }
+.parts { margin: .4mm 0 .6mm; }
+.parts ul { list-style: none; margin: 0; padding: 0; }
+.parts li { position: relative; padding-left: 2.2mm; }
+.parts li::before { content: ''; position: absolute; left: .2mm; top: 1.15mm; width: 1.1mm; height: 1.1mm; border-radius: 50%; background: var(--s); }
+.att { background: #f6f7f8; border-radius: 1.2mm; padding: .8mm 1.5mm 1mm; margin: .6mm 0 .8mm; }
+.att.two { display: grid; grid-template-columns: 1fr 5mm 1fr; }
+.att.two .arr { color: var(--s); display: flex; align-items: center; justify-content: center; font-size: 11pt; font-weight: 700; }
+.att.stack .col + .col { margin-top: .7mm; padding-top: .6mm; border-top: .25mm dashed #d3d7db; }
+.att ol { margin: 0; padding-left: 3.2mm; }
+.att li { margin: .1mm 0; }
+.att li::marker { color: var(--s); font-weight: 800; }
+.omax { font-size: 6pt; color: #b0552c; margin-top: .4mm; font-weight: 600; }
+.sm { border-top: .25mm dashed #d3d7db; margin-top: .9mm; padding-top: .7mm; }
+.sm .sh { color: var(--t); }
+.snm { font-weight: 800; font-size: 8.4pt; }
+.slt { font-family: 'TeX Gyre Pagella', serif; font-style: italic; font-weight: 700; font-size: 8.6pt; }
+.fn ul, .xrow ul { margin: 0; padding-left: 3mm; }
+.fn li, .xrow li { margin: .15mm 0; }
+.fn li::marker, .xrow li::marker { color: var(--s); }
+.xrow ul ul { padding-left: 3mm; margin-top: .2mm; }
+.xrow ul ul li::marker { content: '– '; }
+.fn { margin-top: .5mm; }
+.xrow { margin: .5mm 0 .8mm; background: var(--bg); border-radius: 1.2mm; padding: .7mm 1.5mm .9mm; }
+.extra { font-size: 6.9pt; color: #3a4048; margin-top: .8mm; padding-top: .6mm; border-top: .25mm dashed #d3d7db; }
+.warn { display: flex; gap: 1.2mm; align-items: flex-start; margin-top: .9mm; background: #fbf1e8; border-radius: 1.1mm; padding: .6mm 1.3mm; font-size: 6.7pt; color: #5b3a1c; }
+.warn .wi { flex: none; width: 3.3mm; height: 3.3mm; border-radius: 50%; background: #c7682b; color: #fff; text-align: center; font-weight: 800; font-size: 6pt; line-height: 3.3mm; margin-top: .2mm; }
+.card.ref { border-left-style: dashed; background: #f8f8f6; }
+
+/* panel: mechanika oddychania */
+.panel { align-self: stretch; margin-top: 7mm; background: #fff; border: .6mm solid var(--b); border-top: 2.2mm solid var(--s); border-radius: 3mm; padding: 2.4mm 3.4mm 3mm; position: relative; z-index: 1; }
+.panel .ph { display: flex; align-items: baseline; gap: 3mm; margin-bottom: 1.2mm; flex-wrap: wrap; }
+.panel .pt { font-size: 17pt; font-weight: 800; color: var(--t); }
+.panel .pg { font-size: 8.5pt; color: #7b828a; }
+.panel .psub { font-size: 8.6pt; color: #4f565e; flex-basis: 100%; }
+.panel .bd.two { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; font-size: 7.4pt; line-height: 1.3; }
+
+/* ===== poziom 3: szczegóły z Bochenka małym drukiem ===== */
+.l3 { margin-top: 1.1mm; padding: .7mm 1.1mm .9mm; background: #f6f5f1; border-top: .3mm dotted #a9a296; border-radius: 1mm; font-size: calc(3.9pt * var(--l3s)); line-height: 1.27; color: #2d3238; }
+.l3h { display: flex; align-items: center; gap: .7mm; font-size: calc(3.2pt * var(--l3s)); font-weight: 800; letter-spacing: .12em; color: #6c737c; margin-bottom: .35mm; }
+.l3n { display: inline-flex; flex: none; width: 2.4mm; height: 2.4mm; border-radius: 50%; background: #1d2126; color: #fff; align-items: center; justify-content: center; font-size: calc(3pt * var(--l3s)); font-weight: 800; letter-spacing: 0; }
+.l3n.big { width: 5.4mm; height: 5.4mm; font-size: calc(7.5pt * var(--l3s)); margin-right: .6mm; }
+.l3r { margin: .25mm 0 .3mm; }
+.l3r.one .l3k { display: inline; margin-right: .6mm; }
+.l3k { font-size: calc(3pt * var(--l3s)); font-weight: 800; letter-spacing: .1em; color: var(--s); margin-bottom: .1mm; }
+.l3 ul { margin: 0; padding-left: 2mm; }
+.l3 li { margin: .05mm 0; }
+.l3 li::marker { color: var(--s); }
+.lti { font-family: 'TeX Gyre Pagella', serif; font-style: italic; }
+.l3pg { color: #5f666e; font-size: .9em; font-weight: 500; white-space: nowrap; }
+.l3w { background: #fbf1e8; border-radius: .8mm; padding: .3mm .8mm .4mm; }
+.l3w .l3k { color: #b0552c; display: flex; align-items: center; gap: .6mm; }
+.l3w .wi { display: inline-flex; width: 2.2mm; height: 2.2mm; border-radius: 50%; background: #c7682b; color: #fff; align-items: center; justify-content: center; font-size: calc(2.6pt * var(--l3s)); font-weight: 800; letter-spacing: 0; }
+.l3.ing { margin-top: 1mm; background: rgba(255,255,255,.6); text-align: left; }
+.node.world .l3.ing, .node.chap .l3.ing { background: rgba(255,255,255,.14); color: #fff; border-top-color: rgba(255,255,255,.5); }
+.node.world .l3.ing .l3h, .node.world .l3.ing .l3k, .node.world .l3.ing .l3pg,
+.node.chap .l3.ing .l3h, .node.chap .l3.ing .l3k, .node.chap .l3.ing .l3pg { color: #fff; }
+.node.world .l3.ing li::marker, .node.chap .l3.ing li::marker { color: #fff; }
+.node.world .l3.ing .l3n, .node.chap .l3.ing .l3n { background: #fff; color: var(--s); }
+.l3.inmech { margin-top: 1.6mm; }
+.l3cols { column-count: 2; column-gap: 3mm; }
+.l3cols .l3r { break-inside: avoid; }
+
+.dock { position: absolute; display: flex; flex-direction: column; gap: 3.5mm; z-index: 1; }
+.dock > .panel { margin-top: 0; }
+.l3panel { padding: 2mm 2.8mm 2.4mm; }
+.l3panel .ph { align-items: center; gap: 1.6mm; margin-bottom: .8mm; }
+.l3panel .pt { font-size: calc(11.5pt * var(--l3s)); line-height: 1.1; }
+.l3panel .lt { font-family: 'TeX Gyre Pagella', serif; font-style: italic; font-weight: 700; font-size: calc(11pt * var(--l3s)); color: var(--t); }
+.l3panel .pg { margin-left: auto; }
+.l3.inpanel { font-size: calc(4.3pt * var(--l3s)); background: none; border: 0; padding: 0; margin-top: 0; }
+.l3.inpanel .l3k { font-size: calc(3.3pt * var(--l3s)); }
+
+/* ===== karty z rysunkami (strony: kościec, połączenia i mechanika) ===== */
+.card.osc .figleft { display: grid; grid-template-columns: auto 1fr; gap: 2.6mm; align-items: start; margin-top: .6mm; }
+.card.osc .figs { display: flex; flex-direction: column; gap: 1.4mm; align-items: center; }
+.card.osc .figs.top { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 2mm; margin: .6mm 0 1mm; }
+.card.osc .fig { line-height: 0; }
+.card.osc .fig svg { display: block; }
+.card.osc .secs2 { column-count: 2; column-gap: 3mm; }
+.card.osc .secs2 .xrow { break-inside: avoid; }
+.card.osc .xrow { background: var(--bg); }
+.figmiss { width: 70mm; height: 30mm; border: .3mm dashed #b0b6bd; color: #8a9097; font-size: 6pt; display: flex; align-items: center; justify-content: center; margin: 1mm auto; }
+.tline { margin: 0; padding-left: 4mm; }
+.tline li { margin: .35mm 0; }
+.tline li::marker { color: var(--s); font-weight: 800; }
+
+.sub.g2sub > .q { align-self: center; }
+.sub.g2sub > .node.g { text-align: center; }
+.sub.g2sub > .node.g .hd { justify-content: center; }
+.kids.grid2 { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; margin-top: 4mm; align-self: stretch; }
+.kids.grid2 > .gcol { display: flex; flex-direction: column; gap: 2.6mm; flex: none; }
+.figs.row { flex-direction: row !important; flex-wrap: nowrap; justify-content: center; }
+
+.intro { margin-top: 3mm; align-self: stretch; position: relative; z-index: 1; display: flex; justify-content: center; }
+.kstack { display: flex; flex-direction: column; gap: 6mm; flex: none; }
+.card.osc .secs3 { column-count: 3; column-gap: 3.5mm; }
+.card.osc .secs3 .xrow { break-inside: avoid; }
+
+.card.osc .sm.mrg { break-inside: avoid; margin-top: 1mm; padding-top: .8mm; }
+.card.osc .sm.mrg:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+
+.card.osc .ch .cpg { float: right; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 600; font-size: 6.2pt; color: #7b828a; margin: 1.3mm 0 0 2mm; white-space: nowrap; }
+
+/* panel z własnym rysunkiem (strona 2: pochewka m. prostego brzucha) */
+.figpanel .l3fig { margin-top: 1mm; display: flex; justify-content: center; }
+.figpanel .l3fig svg { display: block; max-width: 100%; height: auto; }

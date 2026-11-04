@@ -1,0 +1,743 @@
+{
+ "chapter": "klatka",
+ "muscles": {
+  "m. piersiowy większy": [
+   {
+    "k": "BUDOWA",
+    "t": "Szeroki, mniej więcej trójkątny; najbardziej powierzchowny w grupie. Ścięgno końcowe ma 5–7 cm szerokości.",
+    "pg": "678",
+    "src": "1749-1762"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Część obojczykowa na całej długości oddzielona od mostkowo-żebrowej bruzdą [[sulcus interpectoralis]] – czasem widać ją nawet przez skórę. Część mostkowo-żebrowa rozkłada się wachlarzowato.",
+    "pg": "679",
+    "src": "1808-1814"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Ścięgno końcowe ma dwie warstwy: przednią (część obojczykowa i górny odcinek mostkowo-żebrowej) i tylną (reszta). U dołu łączą się w „kieszonkę” otwartą ku górze; górne włókna leżą z przodu, dolne z tyłu.",
+    "pg": "679",
+    "src": "1817-1826"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Z przodu: blaszka powierzchowna powięzi piersiowej. U góry zachodzą na nią dolne włókna m. szerokiego szyi, u dołu leży gruczoł sutkowy (u kobiet pokrywa znaczną część mięśnia).",
+    "pg": "680",
+    "src": "1859-1861"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Z tyłu: blaszka głęboka powięzi piersiowej; leży na mostku, żebrach i międzyżebrzach. Z m. piersiowym mniejszym tworzy ścianę przednią jamy pachowej. Dolny brzeg – fałd pachowy przedni [[plica axillaris anterior]].",
+    "pg": "680",
+    "src": "1861-1866"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Z m. naramiennym ogranicza bruzdę i trójkąt naramienno-piersiowy (osobny panel).",
+    "pg": "680",
+    "src": "1870-1876"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "n. piersiowy przyśrodkowy i boczny (czyli nn. piersiowe przednie), C5–Th1.",
+    "pg": "680",
+    "src": "1889-1890"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Może go częściowo lub całkiem brakować; bywa zdwojony (warstwa powierzchowna i głęboka). Liczba przyczepów do żeber bywa różna. Część brzuszna bywa samodzielna albo jej brak.",
+    "pg": "680",
+    "src": "1901-1906"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Mięśniowy łuk pachowy – pasmo od brzegu m. piersiowego większego do m. najszerszego grzbietu; krzyżuje powrózek naczyniowo-nerwowy jamy pachowej. Przypuszczalnie resztka m. skórnego [[panniculus carnosus]].",
+    "pg": "680",
+    "src": "1908-1915"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "M. mostkowy [[m. sternalis]] – w 4,5% przypadków, na powięzi piersiowej wzdłuż mostka, jedno- lub obustronnie; szerokość od paru mm do 4–5 cm. Unerwiony (przeważnie) jak m. piersiowy większy.",
+    "pg": "681",
+    "src": "1921-1930"
+   }
+  ],
+  "m. piersiowy mniejszy": [
+   {
+    "k": "BUDOWA",
+    "t": "Płaski, kształtu wydłużonego trójkąta. Włókna biegną zbieżnie ku górze i w bok; kończy się krótkim, silnym ścięgnem.",
+    "pg": "681",
+    "src": "1951-1959"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "W całości przykryty m. piersiowym większym; u osób ze słabymi mięśniami przy uniesionym ramieniu może wystawać spod jego dolnego brzegu. Między oboma mięśniami biegną naczynia i nerwy.",
+    "pg": "682",
+    "src": "1983-1986"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Z tyłu: przyśrodkowo leży na żebrach i międzyżebrzach, bocznie na m. zębatym przednim. Razem z m. piersiowym większym tworzy ścianę przednią jamy pachowej.",
+    "pg": "682",
+    "src": "1986-1989"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "n. piersiowy przyśrodkowy i boczny (C8–Th1 i C5–C7).",
+    "pg": "682",
+    "src": "1991"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Powstaje ze wspólnego zawiązka z m. piersiowym większym – stąd odmiany z przyczepem obok niego: na guzku większym lub na grzebieniu guzka większego k. ramiennej.",
+    "pg": "682",
+    "src": "1993-1996"
+   },
+   {
+    "k": "UWAGI",
+    "t": "U najniższych ssaków (Monotremata) biegnie jak m. kruczo-ramienny; przyczepy jak u człowieka zdobywa dopiero u naczelnych. Ta zmiana położenia tłumaczy liczne odmiany.",
+    "pg": "682",
+    "src": "1996-2000"
+   }
+  ],
+  "m. podobojczykowy": [
+   {
+    "k": "BUDOWA",
+    "t": "Mały, wrzecionowaty, ustawiony poprzecznie do długiej osi ciała. Zaczyna się silnym ścięgnem; włókna biegną skośnie w bok i ku górze.",
+    "pg": "682",
+    "src": "2002-2009"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "U góry graniczy z dolną powierzchnią obojczyka, u dołu z górną powierzchnią I żebra. Bocznie oddzielają go od żebra: ż. podobojczykowa, t. podobojczykowa i splot ramienny.",
+    "pg": "682",
+    "src": "2017-2019"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Objęty silną powięzią [[fascia subclavia]]; przyczepiają się do niej włókna mięśnia.",
+    "pg": "682, 698",
+    "src": "2019-2021, 2983-2984"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "n. podobojczykowy (C5–C6).",
+    "pg": "683",
+    "src": "2076"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Kaletka maziowa [[bursa synovialis supracoracoidea]] – między przyczepem mięśnia do obojczyka a wyrostkiem kruczym.",
+    "pg": "683",
+    "src": "2078-2079"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Może nie występować – zastępuje go wtedy więzadło. Tzw. zdwojenia powstają przez nadliczbowe wiązki (np. m. acromioclavicularis, m. sternoclavicularis).",
+    "pg": "683",
+    "src": "2081-2083"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Rzadko dodatkowe przyczepy początkowe od I i II żebra. Znane są też dodatkowe przyczepy końcowe poza obojczykiem (np. wyrostek kruczy, wyrostek barkowy).",
+    "pg": "683",
+    "src": "2083-2086"
+   }
+  ],
+  "m. zębaty przedni": [
+   {
+    "k": "BUDOWA",
+    "t": "Płaski, czworokątny, na bocznej ścianie klatki piersiowej. Jeden z największych mięśni ciała – nie robi tego wrażenia, bo leży ukryty.",
+    "pg": "683",
+    "src": "2088-2091"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Części różnią się grubością, długością i kierunkiem włókien. Górna – najgrubsza, z krótkich włókien. Środkowa – najcieńsza, włókna rozbieżne, nieraz z przerwami zamkniętymi powięzią. Dolna – włókna silnie zbieżne.",
+    "pg": "683–684",
+    "src": "2096-2115"
+   },
+   {
+    "k": "PRZYCZEPY – UZUPEŁNIENIE",
+    "t": "Zębów jest o jeden więcej niż żeber, bo część górna i środkowa mają po jednym zębie na II żebrze.",
+    "pg": "684",
+    "src": "2110-2112"
+   },
+   {
+    "k": "PRZYCZEPY – UZUPEŁNIENIE",
+    "t": "Cztery dolne zęby wsuwają się między pięć górnych zębów m. skośnego zewnętrznego brzucha. Poniżej przyczepów żebrowych m. zębatego przedniego leżą przyczepy żebrowe m. najszerszego grzbietu.",
+    "pg": "684",
+    "src": "2115-2118"
+   },
+   {
+    "k": "CZYNNOŚĆ – SZCZEGÓŁY",
+    "t": "Przy obracaniu łopatki (ramię ponad poziom) współpracuje z m. czworobocznym, a działa antagonistycznie do m. równoległobocznego i dźwigacza łopatki.",
+    "pg": "684",
+    "src": "2126-2128"
+   },
+   {
+    "k": "CZYNNOŚĆ – SZCZEGÓŁY",
+    "t": "Porażenie: brzeg przyśrodkowy łopatki, a zwłaszcza jej dolny koniec, odstaje od klatki piersiowej; ramienia nie można podnieść ponad poziom.",
+    "pg": "684",
+    "src": "2130-2132"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Na zewnątrz: u góry przykrywają go oba mm. piersiowe, m. podobojczykowy, m. podłopatkowy, naczynia i nerwy pachowe; u dołu m. najszerszy grzbietu i skóra (przy ramieniu ponad poziomem widać dolne zęby).",
+    "pg": "684",
+    "src": "2136-2139"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Od wewnątrz leży na żebrach i mm. międzyżebrowych zewnętrznych; u góry przykrywa przyczepy mm. pochyłych, z tyłu – m. zębatego tylnego górnego. Tworzy ścianę przyśrodkową jamy pachowej.",
+    "pg": "684",
+    "src": "2139-2142"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "n. piersiowy długi (C5–C8).",
+    "pg": "684",
+    "src": "2147"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Poszczególne części mogą nie występować. Liczba wiązek waha się od 7 do 11. Może się łączyć z m. międzyżebrowym zewnętrznym i z m. skośnym zewnętrznym brzucha.",
+    "pg": "684",
+    "src": "2149-2151"
+   }
+  ],
+  "mm. międzyżebrowe zewnętrzne": [
+   {
+    "k": "BUDOWA",
+    "t": "Płaskie, krótkie, cienkie; zawierają dużo włókien ścięgnistych. Włókna biegną ku dołowi i do przodu (domostkowo) – krzyżują się z włóknami mm. międzyżebrowych wewnętrznych.",
+    "pg": "685–686",
+    "src": "2168-2171, 2180-2183, 2229-2232"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Z tyłu łączą się z dźwigaczami żeber. Mm. pochyłe szyi stanowią ich przedłużenie.",
+    "pg": "685, 697",
+    "src": "2175-2176, 2865-2866"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Przykrywają je mięśnie przyczepiające się do żeber: z tyłu dźwigacze żeber, bocznie i z przodu oba mm. piersiowe, trzy mm. zębate, m. najszerszy grzbietu, m. skośny zewnętrzny brzucha i m. krzyżowo-grzbietowy.",
+    "pg": "688",
+    "src": "2326-2329"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Naczynia i nerwy międzyżebrowe biegną z tyłu do wewnątrz od mm. międzyżebrowych zewnętrznych, a dalej bocznie – między nimi a mm. międzyżebrowymi wewnętrznymi.",
+    "pg": "688",
+    "src": "2332-2335"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "nn. międzyżebrowe I–XI.",
+    "pg": "688",
+    "src": "2342"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Poszczególne mięśnie mogą nie występować; czasem przeważają włókna mięśniowe, czasem ścięgniste. Dolne łączą się niekiedy z m. skośnym zewnętrznym brzucha.",
+    "pg": "688",
+    "src": "2344-2347"
+   }
+  ],
+  "mm. międzyżebrowe wewnętrzne": [
+   {
+    "k": "BUDOWA",
+    "t": "Włókna biegną ku dołowi i w stronę kręgosłupa – w kierunku przeciwnym niż w mm. międzyżebrowych zewnętrznych.",
+    "pg": "686",
+    "src": "2229-2232"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Leżą do wewnątrz od mm. zewnętrznych: do bocznych końców chrząstek żebrowych są przez nie przykryte, dalej do mostka tylko przez błony międzyżebrowe zewnętrzne, przez które nieco prześwitują.",
+    "pg": "686",
+    "src": "2224-2228"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Mm. pośrednie przylegają ściśle do mm. zewnętrznych i różnią się od nich tylko kierunkiem włókien. Przypuszczalnie tylko ta warstwa odpowiada m. skośnemu wewnętrznemu brzucha.",
+    "pg": "686",
+    "src": "2234-2242"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Naczynia i nerwy międzyżebrowe w linii pachowej biegną między warstwą pośrednią a najgłębszą, z przodu – po wewnętrznej powierzchni mm. pośrednich.",
+    "pg": "687–688, 700",
+    "src": "2335-2337, 3104-3105"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Od opłucnej oddziela je powięź wewnątrzpiersiowa [[fascia endothoracica]]; z przodu dodatkowo m. poprzeczny klatki piersiowej.",
+    "pg": "688, 700",
+    "src": "2329-2332, 3109-3110"
+   },
+   {
+    "k": "CZYNNOŚĆ – SZCZEGÓŁY",
+    "t": "Ich działanie było od dawna sporne – niektórzy autorzy przypisują im to samo co mm. zewnętrznym. Antagonizm zdaje się pewny przynajmniej w bocznych odcinkach; doświadczalnie nie udało się wyizolować ich pracy.",
+    "pg": "687",
+    "src": "2287-2311"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "nn. międzyżebrowe I–XI.",
+    "pg": "688",
+    "src": "2342"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Poszczególne mięśnie mogą nie występować; udział włókien ścięgnistych bywa różny. Dolne łączą się niekiedy z m. skośnym wewnętrznym brzucha.",
+    "pg": "688",
+    "src": "2344-2348"
+   }
+  ],
+  "mm. podżebrowe": [
+   {
+    "k": "BUDOWA",
+    "t": "Bardzo zmienne, płaskie, trójkątne, bardzo cienkie.",
+    "pg": "687",
+    "src": "2277-2278"
+   }
+  ],
+  "m. poprzeczny klatki piersiowej": [
+   {
+    "k": "BUDOWA",
+    "t": "Płaski, bardzo cienki, trójkątny; często bardzo dużo włókien ścięgnistych – wyraźny mięsień zanikowy.",
+    "pg": "688",
+    "src": "2350-2353"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Włókna dolnej, większej części biegną poprzecznie, górnej – skośnie ku górze i bocznie. Górne pasma mijają przeważnie dwa międzyżebrza.",
+    "pg": "688",
+    "src": "2356-2360"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Leży za mostkiem i chrząstkami żebrowymi. Razem z nimi i mm. międzyżebrowymi ogranicza przestrzeń, w której wzdłuż mostka biegną naczynia piersiowe wewnętrzne.",
+    "pg": "688",
+    "src": "2350-2352, 2366-2369"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Tylna powierzchnia jest zwrócona do opłucnej ściennej (prawej i lewej) i do osierdzia – oddziela go od nich powięź wewnątrzpiersiowa.",
+    "pg": "688",
+    "src": "2369-2371"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Ku dołowi przechodzi bezpośrednio w m. poprzeczny brzucha; u obu włókna biegną poprzecznie – stąd nazwa. Tylko górne włókna zachowały pierwotny, podłużny kierunek.",
+    "pg": "688",
+    "src": "2371-2375"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "nn. międzyżebrowe II–VI.",
+    "pg": "689",
+    "src": "2418"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Jak każdy narząd uwsteczniony – wybitnie zmienny: różna liczba i stopień rozwoju wiązek, silna asymetria; czasem go brak.",
+    "pg": "689",
+    "src": "2420-2422"
+   }
+  ],
+  "przepona": [
+   {
+    "k": "BUDOWA",
+    "t": "Kształt nerkowaty, płaska, cienka (ok. 3 mm); poprzecznie prążkowana, ale tylko częściowo dowolna. Wypukła ku górze, silniej po bokach (kopuła prawa i lewa); środek lekko wgłębiony – siodło serca.",
+    "pg": "690–691, 700",
+    "src": "2464-2465, 2499-2503, 3116-3118"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Grubość: część lędźwiowa do 1 cm, część żebrowa ok. 3 mm (najszersza część). Część mostkowa – najmniejsza, z wąskich, krótkich pęczków. Trzy części nigdy ściśle się ze sobą nie łączą.",
+    "pg": "691–692",
+    "src": "2508-2509, 2553, 2567-2573"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Więzadła łukowate to inaczej łuki lędźwiowo-żebrowe [[arcus lumbocostales]]. Przyśrodkowe biegnie nad m. lędźwiowym większym, boczne nad m. czworobocznym lędźwi – oba zrośnięte z powięzią tych mięśni.",
+    "pg": "691",
+    "src": "2511-2513, 2535-2544, 2555"
+   },
+   {
+    "k": "PRZYCZEPY – UZUPEŁNIENIE",
+    "t": "Wiązki części żebrowej wchodzą między wiązki m. poprzecznego brzucha. Przebijają je z każdej strony nn. i naczynia międzyżebrowe VII–XI (idą do mm. brzucha). N. podżebrowy przechodzi pod więzadłem łukowatym bocznym.",
+    "pg": "692",
+    "src": "2559-2565"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Środek ścięgnisty – najcieńsza część przepony; oddziela serce od żołądka (to sąsiedztwo tłumaczy niektóre objawy chorobowe). U niektórych ssaków go nie ma, u innych jest bardzo mały i we wczesnych okresach płodowych powstaje przez zanik włókien mięśniowych.",
+    "pg": "692, 694",
+    "src": "2586-2588, 2711-2713"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Rozwór aortowy – bardzo nieznacznie na lewo od płaszczyzny pośrodkowej; przewód piersiowy leży do tyłu i na prawo od aorty. Otaczają go włókna ścięgniste, więc skurcz przepony nie utrudnia tętnienia aorty.",
+    "pg": "692–693",
+    "src": "2604-2617"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Rozwór przełykowy – przeważnie (57%) nieco na lewo od aortowego; pień błędny przedni na jego górnym brzegu, tylny na dolnym. Otwór żyły głównej – na prawo i do przodu od niego; ż. główna dolna zrośnięta z brzegiem.",
+    "pg": "693",
+    "src": "2619-2622, 2634-2638"
+   },
+   {
+    "k": "CZYNNOŚĆ – SZCZEGÓŁY",
+    "t": "Włókna wokół rozworu przełykowego mogą przy każdym wdechu zwężać przełyk – przeciwstawia się to opróżnianiu żołądka przez przełyk. Są z nim luźno złączone: przecięty operacyjnie przełyk może się wyśliznąć do śródpiersia.",
+    "pg": "693",
+    "src": "2624-2632"
+   },
+   {
+    "k": "CZYNNOŚĆ – SZCZEGÓŁY",
+    "t": "Spokojny wdech: zachyłek żebrowo-przeponowy się rozchyla, środek ścięgnisty obniża się tylko ok. 1 cm. Głębszy wdech: części boczne spłaszczają się u mężczyzn ok. 4 cm (u kobiet mniej), środek ścięgnisty do 2 cm.",
+    "pg": "693",
+    "src": "2653-2660"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Od góry: osierdzie zrośnięte z płatkiem przednim środka ścięgnistego, po bokach opłucna przeponowa i podstawy płuc. Obwód przepony z żebrami ogranicza zachyłek żebrowo-przeponowy – płuco wsuwa się w niego przy wdechu.",
+    "pg": "694",
+    "src": "2693-2701"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Od dołu: otrzewna (poza polem zrośnięcia z wątrobą). Pod prawą kopułą wątroba, pod lewą żołądek i śledziona; z tyłu nadnercza i górne części nerek. Odnogi graniczą od przodu z trzustką i częścią dwunastnicy.",
+    "pg": "694, 701",
+    "src": "2703-2709, 3143-3146"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "n. przeponowy (C3–C5). Często także n. przeponowy dodatkowy – gałąź n. podobojczykowego (C5–C6) lub pętli szyjnej (C2–C3), rzadziej wprost ze splotu ramiennego; zwykle łączy się z pniem głównym.",
+    "pg": "695",
+    "src": "2729-2733"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Na zwłokach (położenie krańcowo wysokie) prawa kopuła sięga przeciętnie IV chrząstki żebrowej (młodzi III, starsi V), lewa o międzyżebrze niżej. U żywego w wydechu o międzyżebrze niżej: prawa – górny, lewa – dolny brzeg V chrząstki.",
+    "pg": "695",
+    "src": "2735-2744, 2751-2753"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "U żywego położenie bardzo zmienne: niżej u mężczyzn niż u kobiet, wyżej w leżeniu niż w staniu i siedzeniu, wyżej u młodych niż u starszych. Wdech–wydech: do trzech żeber (V–VII); prawa kopuła od Th8 do Th11.",
+    "pg": "695",
+    "src": "2749-2751, 2755-2758"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Trójkąt mostkowo-żebrowy [[trigonum sternocostale s. Larreyi]] – stykają się w nim opłucna i otrzewna; lędźwiowo-żebrowy [[trigonum lumbocostale s. Bochdaleki]] – zamykają go nadnercza i części górne nerek; przy rozworze przełykowym (zwłaszcza po prawej) bywają szczeliny.",
+    "pg": "692, 695",
+    "src": "2576-2579, 2610-2611, 2760-2769"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Przepukliny prawdziwe [[herniae diaphragmaticae verae]] mają worek przepuklinowy (co najmniej z otrzewnej ściennej), rzekome [[herniae diaphragmaticae spuriae]] – nie mają. Oba rodzaje bywają wrodzone lub nabyte.",
+    "pg": "695, 701",
+    "src": "2773-2779, 3160-3165"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Rzekome powstają, gdy ubytek obejmuje też opłucną i otrzewną – na brzegu otworu przechodzą one w siebie. Większość przepuklin przeponowych jest po lewej, bo po prawej ubytki dobrze zamyka wątroba.",
+    "pg": "695",
+    "src": "2779-2788"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Całkowity brak – czasem u silnie niedorozwiniętych płodów (zwłaszcza bezmózgich). Wrodzone ubytki (z nieprawidłowego zrastania się trzech części) z przesunięciem trzew do klatki – przepukliny wrodzone rzekome.",
+    "pg": "695–696",
+    "src": "2769-2771, 2792-2796"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Niezbyt rzadko pasma mięśniowe w środku ścięgnistym. Bywają dodatkowe pasma do sąsiednich mięśni (m. poprzeczny brzucha, m. lędźwiowy, m. czworoboczny lędźwi) i narządów (np. m. phrenicoesophageus, m. suspensorius duodeni).",
+    "pg": "696",
+    "src": "2796-2804"
+   },
+   {
+    "k": "!",
+    "t": "Streszczenie a opis: przez rozwór przełykowy – wg streszczenia (s. 701) przechodzą przełyk, nn. błędne i „n. przeponowy lewy”; w opisie (s. 693) tylko czasem gałązki brzuszne n. przeponowego lewego.",
+    "pg": "693, 701",
+    "src": "2604-2606, 2623-2624, 3122-3124, 3128-3130"
+   }
+  ]
+ },
+ "groups": {
+  "Mięśnie klatki piersiowej": [
+   {
+    "k": "UNERWIENIE",
+    "t": "Gałęzie przednie nn. rdzeniowych – mięśnie klatki piersiowej są pochodnymi mięśniówki brzusznej tułowia.",
+    "pg": "677",
+    "src": "1728-1729"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Część mięśni grupy powierzchownej i głębokiej przewędrowała w rozwoju na grzbiet; zachowały swoje unerwienie i przykrywają właściwe mięśnie grzbietu (omówione przy grzbiecie).",
+    "pg": "677",
+    "src": "1734-1736"
+   }
+  ],
+  "Powierzchowne mięśnie klatki piersiowej": [
+   {
+    "k": "ODMIANY",
+    "t": "Odmiany mięśniowe w okolicy klatki piersiowej są szczególnie częste – z niepełnego podziału zawiązków mięśniowych albo z nieprawidłowych przesunięć w ich obrębie.",
+    "pg": "680",
+    "src": "1896-1898"
+   }
+  ],
+  "Głębokie albo właściwe mięśnie klatki piersiowej": [
+   {
+    "k": "CZYNNOŚĆ – SZCZEGÓŁY",
+    "t": "Zadanie: ruchy oddechowe i wzmocnienie ściany klatki piersiowej.",
+    "pg": "684",
+    "src": "2159-2162"
+   },
+   {
+    "k": "UWAGI",
+    "t": "U ssaków tworzą trzy warstwy: mm. międzyżebrowe zewnętrzne, mm. międzyżebrowe wewnętrzne i m. poprzeczny klatki piersiowej – podobnie jak trzy warstwy ściany brzucha (skośny zewnętrzny, skośny wewnętrzny, poprzeczny).",
+    "pg": "677–678",
+    "src": "1736-1745"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Mm. międzyżebrowe są zbudowane z licznych, krótkich włókien – mają duży przekrój fizjologiczny.",
+    "pg": "687",
+    "src": "2284-2286"
+   }
+  ],
+  "Przepona": [
+   {
+    "k": "UWAGI",
+    "t": "Mięśniową przegrodę między jamą klatki a jamą brzuszną mają tylko ssaki. Kopulasta przepona przesuwa się między jamami i powiększa jedną kosztem drugiej; dzięki niej ciśnienie w klatce może być niższe niż w brzuchu.",
+    "pg": "689–690",
+    "src": "2426-2446"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Pochodzi z miotomów szyjnych III–V i zstępuje z sercem do klatki [[descensus diaphragmatis]] – stąd unerwia ją nerw szyjny, n. przeponowy (ok. 25–30 cm). Z zawiązka [[septum transversum]] powstaje jej część przednia.",
+    "pg": "690",
+    "src": "2448-2452, 2460-2462"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Razem z sercem pracuje bez przerwy przez całe życie (przepona – od urodzenia), ale oddychanie można w pewnym stopniu regulować dowolnie.",
+    "pg": "690",
+    "src": "2454-2457"
+   }
+  ]
+ },
+ "panels": [
+  {
+   "id": "oddychanie_l3",
+   "title": "Oddychanie – szczegóły",
+   "lat": "",
+   "pg": "696–698, 701",
+   "items": [
+    {
+     "k": "LICZBY, DUSZNOŚĆ",
+     "t": "Spokojnie ok. pół litra powietrza na oddech, 16–20 oddechów na minutę. Przy większym wysiłku lub wpływach psychicznych oddechy głębsze lub częstsze; gdy to nie wystarcza – duszność [[dyspnoë]]. Przy wybitnych ruchach ciała zużycie tlenu nieraz rośnie 8–10-krotnie albo i więcej.",
+     "pg": "696",
+     "src": "2808-2818"
+    },
+    {
+     "k": "WYMIARY KLATKI",
+     "t": "Uniesienie żeber poszerza i pogłębia klatkę, skurcz przepony zwiększa jej wymiar długościowy, a prostowanie kręgosłupa piersiowego ją wydłuża – przy silnym wdechu człowiek jest wyższy o parę milimetrów.",
+     "pg": "696",
+     "src": "2825-2829"
+    },
+    {
+     "k": "UDZIAŁ MIĘŚNI",
+     "t": "W silnym wdechu i wydechu mogą pomagać wszystkie mięśnie przyczepione do żeber i kręgów oraz tworzące powłoki brzuszne. Ruchy oddechowe to potencjalnie jedne z najbardziej uniwersalnych ruchów ciała.",
+     "pg": "696",
+     "src": "2832-2840"
+    },
+    {
+     "k": "KIEDY POMOCNICZE",
+     "t": "Wdechowe – gdy trzeba silniej unieść żebra albo wdech idzie przeciw oporowi (np. ssanie). Czynny wydech – przeciw oporowi lub szybki: kaszel, kichanie, śmiech; m. najszerszy grzbietu przy utrudnionym wydechu [[asthma]].",
+     "pg": "697",
+     "src": "2861-2864, 2882-2889"
+    },
+    {
+     "k": "ŻEBROWE DOLNE I GÓRNE",
+     "t": "Dolne: dolne żebra silnie odchylają się ku bokom; przewietrza głównie dolne części płuc; często z typem przeponowym (u pykników). Górne: gdy dół klatki jest ograniczony (np. pasek); przewietrza silniej górne części płuc.",
+     "pg": "697",
+     "src": "2891-2903"
+    },
+    {
+     "k": "TYP BRZUSZNY",
+     "t": "Obniżona przepona przesuwa trzewia ku przedniej ścianie brzucha – uwypukla się ona głównie powyżej pępka. W wydechu przepona wpukla się do klatki: ciągną ją sprężyste płuca, a mm. brzucha pchają trzewia ku górze.",
+     "pg": "697",
+     "src": "2905-2912"
+    },
+    {
+     "k": "PŁEĆ",
+     "t": "Mężczyzna i kobieta mają ten sam typ oddychania. U mężczyzn typ brzuszny jest przeciętnie czystszy, u kobiet częściej żebrowy lub żebrowo-przeponowy – m.in. przez ubranie (sznurówka, pasek), które nieraz wciska dolne żebra.",
+     "pg": "697",
+     "src": "2920-2923"
+    },
+    {
+     "k": "POŁOŻENIE CIAŁA",
+     "t": "Ciśnienie trzew na przeponę i masa klatki działają różnie w różnych pozycjach. Oddychanie spokojne zależy od tego najmniej – może być zawsze czysto brzuszne; oddech wzmożony (mieszany) jest bardzo zmienny.",
+     "pg": "698",
+     "src": "2929-2933"
+    },
+    {
+     "k": "NA PLECACH, SEN",
+     "t": "Na plecach przepona stoi wyżej niż w staniu, a im wyżej, tym łatwiej się opuszcza (włókna mogą się najbardziej skrócić). Klatka spłaszcza się przednio-tylnie, żebra unoszą się silniej – stąd we śnie przeważa typ żebrowy.",
+     "pg": "698",
+     "src": "2927, 2933-2940"
+    },
+    {
+     "k": "NA BOKU",
+     "t": "Połowa klatki przy podłożu jest wyłączona z oddychania żebrowego, żebra drugiej strony ruszają się silniej. Chorzy z jednostronnym bólem (zapalenie opłucnej, płuc) leżą na chorej stronie – unieruchamiają bolesne żebra.",
+     "pg": "698",
+     "src": "2942-2946"
+    },
+    {
+     "k": "PRAWY I LEWY BOK",
+     "t": "Ruchy przepony różnią się na prawym i lewym boku – serce i wątroba pod własną masą mogą silniej przesuwać się w lewo niż w prawo i różnie wpływają na jej położenie.",
+     "pg": "698",
+     "src": "2946-2949"
+    },
+    {
+     "k": "WIEK",
+     "t": "W młodości przeważa oddychanie żebrowe. Później sprężystość klatki i płuc maleje, przepona obniża się i spłaszcza; oddech staje się utrudniony i częstszy, przeważnie mieszany.",
+     "pg": "698",
+     "src": "2951-2954"
+    },
+    {
+     "k": "BUDOWA CIAŁA",
+     "t": "Wąska klatka ze zwieszającymi się żebrami – przeważa typ żebrowy. Typ pykniczny – często brzuszny lub żebrowo-przeponowy.",
+     "pg": "697–698",
+     "src": "2894-2895, 2956-2959"
+    },
+    {
+     "k": "!",
+     "t": "Streszczenie (s. 701): przy spokojnym oddychaniu „występuje tylko oddychanie brzuszne”. Opis (s. 697): „zazwyczaj” czysty typ brzuszny; opisuje też spokojne oddychanie żebrowe (żebra unoszą mm. międzyżebrowe zewnętrzne).",
+     "pg": "696–697, 701",
+     "src": "2848-2849, 2861, 2914, 3186-3187"
+    }
+   ]
+  },
+  {
+   "id": "powiezi_klatki",
+   "title": "Powięzie klatki piersiowej",
+   "lat": "",
+   "pg": "698–700",
+   "items": [
+    {
+     "k": "POWIĘŹ PIERSIOWA",
+     "t": "Powięź piersiowa [[fascia pectoralis]] ma dwie blaszki: powierzchowna pokrywa przednią, głęboka – tylną powierzchnię m. piersiowego większego.",
+     "pg": "698",
+     "src": "2965-2967"
+    },
+    {
+     "k": "BLASZKA POWIERZCHOWNA",
+     "t": "U góry przyczepia się do przedniego brzegu obojczyka (łączy się tu z blaszką powierzchowną powięzi szyi), przyśrodkowo do mostka; bocznie przechodzi w powięź m. naramiennego, pokrywając bruzdę naramienno-piersiową.",
+     "pg": "698",
+     "src": "2968-2971"
+    },
+    {
+     "k": "POWIĘŹ PACHOWA",
+     "t": "Od dolnego brzegu m. piersiowego większego obie blaszki razem przechodzą na przedni brzeg m. najszerszego grzbietu. Tworzą podstawę jamy pachowej jako powięź pachowa [[fascia axillaris]].",
+     "pg": "698, 701",
+     "src": "2972-2975, 3192-3193"
+    },
+    {
+     "k": "GRUCZOŁ SUTKOWY",
+     "t": "Blaszka powierzchowna jest nieprzesuwalnie zrośnięta z namięsną mięśnia, a ze skórą i tkanką podskórną – luźno. Dlatego gruczoł sutkowy u kobiet łatwo przesuwa się względem powięzi i mięśnia.",
+     "pg": "698",
+     "src": "2977-2981"
+    },
+    {
+     "k": "POWIĘŹ OBOJCZYKOWO-PIERSIOWA",
+     "t": "Powięź obojczykowo-piersiowa [[fascia clavipectoralis]] – przedłużenie w dół powięzi m. podobojczykowego [[fascia subclavia]]. Wypełnia trójkąt między m. podobojczykowym a m. piersiowym mniejszym i obejmuje ten mięsień.",
+     "pg": "698–699",
+     "src": "2983-2985, 3034-3038"
+    },
+    {
+     "k": "CZĘŚĆ GÓRNA",
+     "t": "Część górna [[fascia coracoclavipectoralis]] (między m. podobojczykowym a m. piersiowym mniejszym) przyczepia się silnymi pasmami do wyrostka kruczego; przez jej otwory idą z jamy pachowej naczynia i nerwy do mm. piersiowych.",
+     "pg": "699",
+     "src": "3038-3043"
+    },
+    {
+     "k": "WIĘZADŁO WIESZADŁOWE PACHY",
+     "t": "Część dolna, połączona z powięzią pachową – więzadło wieszadłowe pachy [[ligamentum suspensorium axillae]]. Wpuklenie skóry dołu pachowego powoduje jednak głównie zewnętrzne ciśnienie powietrza.",
+     "pg": "699",
+     "src": "3043-3047"
+    },
+    {
+     "k": "PRZEGRODA",
+     "t": "Powięź obojczykowo-piersiowa to silna, zamknięta przegroda: przyśrodkowo przyczepia się do żeber i powięzi mm. międzyżebrowych, bocznie do wyrostka kruczego i powięzi m. kruczo-ramiennego. Stanowi zaporę dla chorób.",
+     "pg": "699",
+     "src": "3047-3051"
+    },
+    {
+     "k": "POWIĘŹ WEWNĄTRZPIERSIOWA",
+     "t": "Powięź wewnątrzpiersiowa [[fascia endothoracica]] – delikatna błona na wewnętrznej powierzchni żeber i mm. międzyżebrowych wewnętrznych; od wewnątrz przylega do niej opłucna. Odpowiada powięzi poprzecznej ściany brzucha.",
+     "pg": "699–700",
+     "src": "3053-3063"
+    },
+    {
+     "k": "POWIĘŹ PRZEPONOWO-OPŁUCNOWA",
+     "t": "Powięź przeponowo-opłucnowa [[fascia phrenicopleuralis]] – przedłużenie powięzi wewnątrzpiersiowej na górną powierzchnię przepony, pod opłucną przeponową.",
+     "pg": "694, 699–700",
+     "src": "2714-2716, 3055-3061"
+    }
+   ]
+  },
+  {
+   "id": "dol_pachowy",
+   "title": "Trójkąt naramienno-piersiowy",
+   "lat": "trigonum deltoideopectorale",
+   "pg": "680, 700",
+   "items": [
+    {
+     "k": "BRUZDA",
+     "t": "Między m. piersiowym większym a m. naramiennym leży bruzda naramienno-piersiowa [[sulcus deltoideopectoralis]] z ż. odpromieniową [[v. cephalica]]. Ku dołowi przechodzi w bruzdę boczną m. dwugłowego.",
+     "pg": "680",
+     "src": "1870-1873"
+    },
+    {
+     "k": "TRÓJKĄT",
+     "t": "Ku górze bruzda rozszerza się w trójkątną, osobniczo bardzo zmienną szczelinę – trójkąt naramienno-piersiowy. Jego podstawę tworzy obojczyk.",
+     "pg": "680",
+     "src": "1873-1876"
+    },
+    {
+     "k": "DÓŁ PODOBOJCZYKOWY",
+     "t": "Skóra wpukla się tu nieco pod wpływem ciśnienia atmosferycznego – powstaje dół podobojczykowy [[fossa infraclavicularis]]. Trójkąt naramienno-piersiowy stanowi jego dno.",
+     "pg": "680, 700",
+     "src": "1876-1877, 3078-3079"
+    },
+    {
+     "k": "ZAWARTOŚĆ",
+     "t": "Dół wypełnia tkanka tłuszczowa. Ż. odpromieniowa uchodzi tu do ż. pachowej (nieraz prześwieca przez skórę); głębiej leży t. piersiowo-barkowa z odgałęzieniami.",
+     "pg": "680",
+     "src": "1881-1884"
+    },
+    {
+     "k": "ZNACZENIE",
+     "t": "Miejsce orientacyjne przy szukaniu t. podobojczykowej. Dół zanika w niektórych chorobach między klatką a m. piersiowym (np. guzy jamy pachowej, zwichnięcie głowy k. ramiennej).",
+     "pg": "680",
+     "src": "1877-1881"
+    },
+    {
+     "k": "ODMIANY",
+     "t": "Trójkąt może nie występować albo być bardzo duży – gdy brak części obojczykowej m. piersiowego większego.",
+     "pg": "680",
+     "src": "1904-1905"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "issues": [
+  {
+   "card": "Żebra – cechy ogólne",
+   "field": "l3/0",
+   "problem": "zmienność liczby żeber (żebra szyjne/lędźwiowe, redukcja do 11) – zakres „zmienność żeber”, poza zakresem plakatu (niepewne: zdanie stoi w opisie ogólnym żeber, nie w rozdziale o rozwoju)",
+   "fix": null,
+   "evidence": "s. 273: „liczba ta może się jednak zwiększać z powodu występowania żeber szyjnych lub lędźwiowych”"
+  },
+  {
+   "card": "Żebra prawdziwe (I–VII)",
+   "field": "sections/0/1",
+   "problem": "„bezpośrednio, swoją chrząstką żebrową” – dopowiedziane; Bochenek pisze tylko, że łączą się z przodu obustronnie z mostkiem (słowo „pośrednio” dotyczy rzekomych) – niewielka nieścisłość",
+   "fix": "z przodu łączą się obustronnie z mostkiem",
+   "evidence": "s. 273–274: „łączy się z przodu obustronnie z mostkiem; noszą one nazwę żeber prawdziwych”"
+  }
+ ],
+ "missing": [],
+ "checked": 160,
+ "notes": "Sprawdzone na OCR i skanie s. 274 (costae fluitantes w tekście, costae fluctuantes w przypisie – zgodne z JSON; crista capitis, foveae costales OK). Reszta strony w OCR czytelna; łacina zgodna. Numery stron: stopki OCR 213=273 (kolejność zgodna), 274–281, 291, 295 (mechanika chrząstki), 297 (streszczenie żebra II) – zgodne. Pola własne grupy „Klatka piersiowa” OK (pg 273–293 nie weryfikowałem do końca – zależy od dzieci poza moją częścią). Borderline, nie zgłoszone: kostnienie chrząstek z wiekiem i typ asteniczny (opis, nie rozwój)."
+}

@@ -1,0 +1,26 @@
+{
+ "checked": 184,
+ "issues": [
+  {
+   "where": "muscles/m. kolcowy #1",
+   "problem": "Drobne – literówka w druku poprawiona po cichu. W druku (s. 667) jest „przyczep końcowy z m. półkolistym i m. wielodzielnym”; punkt ma „półkolcowym” bez adnotacji (w #4 tej samej karty podobna literówka jest oznaczona „w druku”). Dla zgodności z Bochenkiem dodać adnotację.",
+   "fix_t": "Początek i koniec nie są ściśle wyodrębnione: początek łączy się z m. najdłuższym, koniec – z m. półkolcowym (w druku: „półkolistym”) i m. wielodzielnym.",
+   "fix_pg": null,
+   "evidence": "Skan s. 667: „Jego przyczep początkowy łączy się z m. najdłuższym, przyczep końcowy z m. półkolistym i m. wielodzielnym.” (OCR taki sam, linie 1073–1074)."
+  },
+  {
+   "where": "muscles/m. najszerszy grzbietu #5",
+   "problem": "Drobne – literówka w druku poprawiona po cichu. W druku (s. 655) jest „…i grzbietem biodrowym” (z kontekstu: grzebieniem; rys. 433 podpisuje „Crista iliaca”); punkt podaje „grzebieniem biodrowym” bez adnotacji „w druku”.",
+   "fix_t": "Trójkąt lędźwiowy [[trigonum lumbare]]: między tylnym brzegiem m. skośnego zewnętrznego brzucha, przednim brzegiem m. najszerszego grzbietu i grzebieniem biodrowym (w druku: „grzbietem biodrowym”); w ok. ¾ przypadków. Dno – m. skośny wewnętrzny brzucha.",
+   "fix_pg": null,
+   "evidence": "Skan s. 655: „Trójkąt lędźwiowy (trigonum lumbare¹). Między brzegiem tylnym m. skośnego zewnętrznego brzucha, brzegiem przednim m. najszerszego grzbietu i grzbietem biodrowym mniej więcej w trzech czwartych przypadków znajduje się trójkątna przestrzeń, której dno jest utworzone przez m. skośny wewnętrzny brzucha.” (przypis 1: „trigonum lumbale s. Petiti”)."
+  },
+  {
+   "where": "muscles/m. półkolcowy klatki piersiowej i szyi #1",
+   "problem": "Doprecyzowanie – zdanie wzięte osobno jest zbyt ogólne. W druku zdanie o guzku tylnym atlasu stoi w opisie m. półkolcowego (chodzi o jego przyczep na wyrostkach kolczystych); w punkcie wypadło to odniesienie, więc brzmi, że guzek tylny kręgu szczytowego w ogóle nie ma przyczepu. Tymczasem Bochenek na s. 671–672 podaje na tym guzku początek m. prostego tylnego mniejszego głowy (tak samo karta ② tego mięśnia).",
+   "fix_t": "Górne włókna części piersiowej kończą się na górnym kręgu piersiowym, części szyjnej – na kręgu obrotowym. Kręg szczytowy nie ma przyczepu (m. półkolcowego) na swoim szczątkowym wyrostku kolczystym (guzku tylnym) – dzięki temu jego zdolność ruchów obrotowych nie jest ograniczona.",
+   "fix_pg": null,
+   "evidence": "Skan s. 668: „Górne włókna m. półkolcowego klatki piersiowej kończą się na górnym kręgu piersiowym; górne włókna m. półkolcowego szyi — na kręgu obrotowym. Kręg szczytowy nie ma przyczepu na swym szczątkowym wyrostku kolczystym (guzku tylnym), dzięki czemu jego zdolność ruchów obrotowych nie jest ograniczona.” Skan s. 671: m. prosty tylny mniejszy głowy „rozpoczyna się on na guzku tylnym kręgu szczytowego”."
+  }
+ ]
+}

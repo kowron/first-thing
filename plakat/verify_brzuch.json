@@ -1,0 +1,33 @@
+{
+  "checked": 182,
+  "issues": [
+    {
+      "where": "muscles/dźwigacz jądra #4",
+      "problem": "[drobne] „gr.” dopisane spoza książki – Bochenek podaje samo „kremao — zawieszać”, bez oznaczenia języka.",
+      "fix_t": "Nazwa: kremao – zawieszać.",
+      "fix_pg": null,
+      "evidence": "s. 710 (skan): „Dźwigacz jądra (m. cremaster; kremao — zawieszać) u mężczyzny, jak już wspomniano, składa się z włókien…”"
+    },
+    {
+      "where": "muscles/m. skośny wewnętrzny brzucha #6",
+      "problem": "[drobne] pg/src niepełne – lista nerwów i segmenty (Th12, L1; L1) pochodzą ze s. 706 (src 3461-3462); na s. 708 (src 3546) jest tylko „Unerwienie: jak m. skośny zewnętrzny”. Treść punktu poprawna (segmenty sprawdzone na skanie s. 706).",
+      "fix_t": "Jak m. skośny zewnętrzny (s. 706): nn. międzyżebrowe V–XII, n. biodrowo-podbrzuszny (Th12, L1) i n. biodrowo-pachwinowy (L1).",
+      "fix_pg": "706, 708",
+      "evidence": "s. 706 (skan): „Unerwienie: nn. międzyżebrowe V—XII, n. biodrowo-podbrzuszny (Th12, L1) i n. biodrowo-pachwinowy (L1).” s. 708: „Unerwienie: jak m. skośny zewnętrzny.”"
+    },
+    {
+      "where": "panels/sciana_przepukliny #4",
+      "problem": "[drobne] „dawne nazwy” – Bochenek w przypisach (s. 726, 728) podaje tylko inne nazwy łacińskie i nigdzie nie nazywa ich dawnymi (to wiedza spoza książki). Dotyczy też podtytułu k: „DAWNE NAZWY” → np. „INNE NAZWY (PRZYPISY)”. Samo przypisanie nazw do fałdów jest poprawne.",
+      "fix_t": "W przypisach Bochenek podaje inne nazwy: fałd pośrodkowy [[plica umbilicalis media]], fałdy przyśrodkowe [[plicae umbilicales laterales]], fałdy boczne [[plicae epigastricae]].",
+      "fix_pg": null,
+      "evidence": "s. 726, przypis 1 do „plica umbilicalis mediana¹”: „plica umbilicalis media”. s. 728, przypis 1 do „plicae umbilicales mediales¹”: „plicae umbilicales laterales”; przypis 2 do „plicae umbilicales laterales²”: „plicae epigastricae” (skan) – bez słowa „dawne”."
+    },
+    {
+      "where": "panels/zstepowanie #9",
+      "problem": "[drobne] cudzysłów sugeruje dosłowny cytat, ale „powstaje zachyłek Nucka” nie występuje w tekście – s. 732 ma przy płodach żeńskich zdanie bez orzeczenia („…u płodów żeńskich zachyłek Nucka (diverticulum Nucki)”). Sens punktu poprawny; dosłownie zacytować tylko „zachyłek Nucka”.",
+      "fix_t": "Streszczenie (s. 732): z wyrostka pochwowego otrzewnej u płodów żeńskich powstaje „zachyłek Nucka”. Opis (s. 724): wyrostek zwykle zanika w 3. miesiącu, a zachowany bywa tylko czasem.",
+      "fix_pg": null,
+      "evidence": "s. 732 (skan): „…wyrostek pochwowy otrzewnej (processus vaginalis peritonei), z którego u płodów płci męskiej powstaje osłonka pochwowa jądra (tunica vaginalis testis), u płodów żeńskich zachyłek Nucka (diverticulum Nucki).” s. 724: „Zazwyczaj zanika on już w trzecim miesiącu życia płodowego; tylko czasami zostaje zachowany (diverticulum Nucki).”"
+    }
+  ]
+}

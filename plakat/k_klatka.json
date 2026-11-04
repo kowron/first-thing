@@ -1,0 +1,1480 @@
+{
+ "chapter": "klatka",
+ "tree": [
+  {
+   "type": "group",
+   "title": "Klatka piersiowa",
+   "lat": "thorax",
+   "pg": "273–293",
+   "why": "kościec kostno-chrzęstny: kręgi piersiowe, żebra i mostek połączone w całość",
+   "q": "która część klatki?",
+   "l3": [
+    {
+     "k": "OGÓLNE",
+     "t": "klatka piersiowa zawiera i chroni główne narządy oddechowe i narządy krążenia",
+     "pg": "273",
+     "src": "3011-3013"
+    },
+    {
+     "k": "OGÓLNE",
+     "t": "kręgi piersiowe, żebra i mostek są związane licznymi połączeniami w jedną całość",
+     "pg": "273",
+     "src": "3013-3014"
+    }
+   ],
+   "children": [
+    {
+     "type": "group",
+     "title": "Żebra",
+     "lat": "costae",
+     "pg": "273–278",
+     "why": "12 par sprężystych listewek; z tyłu część kostna, z przodu chrzęstna",
+     "l3": [],
+     "children": [
+      {
+       "type": "card",
+       "title": "Żebra – cechy ogólne",
+       "lat": "costae",
+       "pg": "273–274",
+       "sections": [
+        {
+         "k": "CZYM SĄ",
+         "items": [
+          "sprężyste listewki – częściowo kostne, częściowo chrzęstne",
+          "z tyłu odchodzą obustronnie od powierzchni bocznych kręgów piersiowych",
+          "bocznie wypukłym łukiem ograniczają jamę klatki piersiowej",
+          "u człowieka w zasadzie 12 par"
+         ]
+        },
+        {
+         "k": "CZĘŚCI",
+         "items": [
+          "dłuższa, tylna część kostna – **kość żebrowa** {{os costale}}",
+          "krótsza, przednia część chrzęstna – **chrząstka żebrowa** {{cartilago costalis}}"
+         ]
+        },
+        {
+         "k": "DŁUGOŚĆ I SZEROKOŚĆ",
+         "items": [
+          "długość części kostnej i chrzęstnej rośnie od żebra I do VII lub VIII, potem stopniowo maleje",
+          "żebro XII – mniej więcej tej samej długości co żebro I",
+          "najszersze – żebro I; następne pod względem szerokości – żebra środkowe; najwęższe – żebro XII"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "LICZBA",
+         "t": "liczba par może wzrosnąć (żebra szyjne lub lędźwiowe) albo zmaleć do 11 (redukcja żeber)",
+         "pg": "273",
+         "src": "3021-3024"
+        },
+        {
+         "k": "STRUKTURA",
+         "t": "silnie unaczyniona istota gąbczasta ze szpikiem czerwonym, pokryta cienką warstwą istoty zbitej",
+         "pg": "278",
+         "src": "3308-3309"
+        }
+       ],
+       "labels": [
+        "żebro I {{costa I}}",
+        "żebro VII {{costa VII}}",
+        "żebro XII {{costa XII}}",
+        "kość żebrowa {{os costale}}",
+        "chrząstka żebrowa {{cartilago costalis}}",
+        "granica kości i chrząstki",
+        "mostek {{sternum}}",
+        "kręgi piersiowe {{vertebrae thoracicae}}"
+       ],
+       "fig": "klatka od przodu – żebra ponumerowane I–XII, zaznaczona granica części kostnej i chrzęstnej"
+      },
+      {
+       "type": "group",
+       "title": "Podział żeber",
+       "lat": "",
+       "pg": "273–274",
+       "why": "kryterium Bochenka: jak przedni koniec żebra łączy się z mostkiem",
+       "q": "jak łączy się z mostkiem?",
+       "l3": [
+        {
+         "k": "UWAGI",
+         "t": "to samo w opisie chrząstki: I–VII łączy się z mostkiem, VIII–X przylega do chrząstki wyższego żebra, XI–XII kończy się swobodnie",
+         "pg": "276",
+         "src": "3175-3177"
+        }
+       ],
+       "children": [
+        {
+         "type": "card",
+         "title": "Żebra prawdziwe (I–VII)",
+         "lat": "costae verae",
+         "pg": "273–274",
+         "sections": [
+          {
+           "k": "POŁĄCZENIE Z MOSTKIEM",
+           "items": [
+            "7 górnych par żeber",
+            "z przodu łączą się obustronnie z mostkiem – bezpośrednio, swoją chrząstką żebrową",
+            "na brzegach mostka – wcięcia żebrowe dla chrząstek I–VII"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "UWAGI",
+           "t": "czasem także 8. para chrząstek łączy się z mostkiem (mostek: 7, czasem/rzadziej 8 par)",
+           "pg": "278, 281",
+           "src": "3315-3316, 3445-3446"
+          }
+         ],
+         "labels": [
+          "żebro I {{costa I}}",
+          "żebro VII {{costa VII}}",
+          "chrząstka żebrowa {{cartilago costalis}}",
+          "mostek {{sternum}}",
+          "rękojeść mostka {{manubrium sterni}}",
+          "trzon mostka {{corpus sterni}}",
+          "wcięcie żebrowe {{incisura costalis}}"
+         ],
+         "fig": "klatka od przodu – żebra I–VII wyróżnione kolorem; ich chrząstki dochodzą do mostka"
+        },
+        {
+         "type": "group",
+         "title": "Żebra rzekome (VIII–XII)",
+         "lat": "costae spuriae",
+         "pg": "274",
+         "why": "5 par; z mostkiem łączą się tylko pośrednio albo wcale (koniec wolny)",
+         "q": "czy łączy się z wyższym żebrem?",
+         "l3": [],
+         "children": [
+          {
+           "type": "card",
+           "title": "Żebra VIII–X i łuk żebrowy",
+           "lat": "arcus costalis",
+           "pg": "274, 291",
+           "sections": [
+            {
+             "k": "POŁĄCZENIE",
+             "items": [
+              "z mostkiem łączą się pośrednio – przez żebro wyżej położone",
+              "ich chrząstka przylega do chrząstki żebra wyższego",
+              "żebro X czasem kończy się swobodnie, jak żebra wolne"
+             ]
+            },
+            {
+             "k": "ŁUK ŻEBROWY",
+             "items": [
+              "**łuk żebrowy** {{arcus costalis}} prawy i lewy – tworzą żebra VIII–X razem z żebrem VII",
+              "powstaje z łączących się chrząstek żebrowych",
+              "kąt między łukami obu stron – **kąt podmostkowy** {{angulus infrasternalis}}"
+             ]
+            }
+           ],
+           "l3": [
+            {
+             "k": "UWAGI",
+             "t": "chrząstki żeber X–VII ograniczają otwór dolny klatki piersiowej",
+             "pg": "291",
+             "src": "3897-3900"
+            }
+           ],
+           "labels": [
+            "żebro VII {{costa VII}}",
+            "żebro VIII {{costa VIII}}",
+            "żebro X {{costa X}}",
+            "chrząstka żebrowa {{cartilago costalis}}",
+            "łuk żebrowy {{arcus costalis}}",
+            "kąt podmostkowy {{angulus infrasternalis}}",
+            "wyrostek mieczykowaty {{processus xiphoideus}}",
+            "mostek {{sternum}}"
+           ],
+           "fig": "dolna część klatki od przodu – chrząstki VII–X łączą się w łuk żebrowy (obie strony)"
+          },
+          {
+           "type": "card",
+           "title": "Żebra wolne (XI–XII)",
+           "lat": "costae fluitantes",
+           "pg": "274, 276",
+           "sections": [
+            {
+             "k": "POŁĄCZENIE",
+             "items": [
+              "żebra XI i XII, a czasem także X",
+              "nie łączą się ani z innymi żebrami, ani z sobą",
+              "kończą się swobodnie między mięśniami brzucha"
+             ]
+            },
+            {
+             "k": "CHRZĄSTKA",
+             "items": [
+              "chrząstka żebra XI i XII – tylko krótkie zaostrzenie na końcu żebra"
+             ]
+            }
+           ],
+           "l3": [
+            {
+             "k": "NAZWY",
+             "t": "w przypisie druga nazwa łacińska: [[costae fluctuantes]]",
+             "pg": "274",
+             "src": "3079"
+            }
+           ],
+           "labels": [
+            "żebro XI {{costa XI}}",
+            "żebro XII {{costa XII}}",
+            "wolny koniec żebra",
+            "chrząstka żebrowa {{cartilago costalis}}",
+            "łuk żebrowy {{arcus costalis}}",
+            "kręg piersiowy XII {{vertebra thoracica XII}}"
+           ],
+           "fig": "klatka z boku (lub od tyłu) – żebra XI i XII z wolnymi przednimi końcami"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "group",
+       "title": "Części żebra",
+       "lat": "",
+       "pg": "274–276",
+       "why": "każde żebro = dłuższa tylna kość żebrowa + krótsza przednia chrząstka",
+       "q": "która część żebra?",
+       "l3": [],
+       "children": [
+        {
+         "type": "card",
+         "title": "Kość żebrowa (żebro kostne)",
+         "lat": "os costale",
+         "pg": "274–275",
+         "sections": [
+          {
+           "k": "PODZIAŁ",
+           "items": [
+            "koniec tylny (kręgosłupowy) – głowa, szyjka i guzek",
+            "**trzon żebra** {{corpus costae}} – między końcami",
+            "koniec przedni (mostkowy) – łączy się z chrząstką żebrową"
+           ]
+          },
+          {
+           "k": "GŁOWA",
+           "items": [
+            "**głowa żebra** {{caput costae}} – zgrubienie na tylnym końcu, częściowo pokryte chrząstką",
+            "**powierzchnia stawowa głowy żebra** {{facies articularis capitis costae}} – łączy głowę z dołkami żebrowymi trzonów kręgów [[foveae costales]]",
+            "w żebrach II–X dzieli ją poziomo **grzebień głowy** {{crista capitis}} na 2 części; górna mniejsza od dolnej"
+           ]
+          },
+          {
+           "k": "SZYJKA I GUZEK",
+           "items": [
+            "**szyjka żebra** {{collum costae}} – nieco węższa część, na której osadzona jest głowa; wyraźniejsza w żebrach górnych",
+            "**grzebień szyjki żebra** {{crista colli costae}} – podłużnie na górnej powierzchni szyjki; przyczep więzadła żebrowo-poprzecznego górnego",
+            "**guzek żebra** {{tuberculum costae}} – na bocznym końcu szyjki, nieco ku tyłowi i dołowi",
+            "**powierzchnia stawowa guzka żebra** {{facies articularis tuberculi costae}} – mała, pokryta chrząstką; łączy żebro z wyrostkiem poprzecznym kręgu"
+           ]
+          },
+          {
+           "k": "TRZON",
+           "items": [
+            "cienki i spłaszczony; powierzchnia zewnętrzna wypukła i gładka",
+            "**kąt żebra** {{angulus costae}} – tępy, bocznie od guzka; skierowany ku tyłowi i dołowi",
+            "powierzchnia wewnętrzna wklęsła i gładka",
+            "**bruzda żebra** {{sulcus costae}} – przy dolnym brzegu powierzchni wewnętrznej; dla naczyń i nerwów międzyżebrowych"
+           ]
+          },
+          {
+           "k": "KONIEC PRZEDNI",
+           "items": [
+            "nieco poszerzony; kończy się chropowatą, wgłębioną powierzchnią do połączenia z chrząstką żebrową"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "SZYJKA",
+           "t": "grzebień szyjki nie występuje na pierwszych i ostatnich żebrach",
+           "pg": "274",
+           "src": "3063-3064"
+          },
+          {
+           "k": "GUZEK",
+           "t": "najwydatniejszy na pierwszych żebrach; brak go na XI i XII, czasem także na X",
+           "pg": "274",
+           "src": "3070-3072"
+          },
+          {
+           "k": "GUZEK",
+           "t": "na guzku, bocznie od powierzchni stawowej – przyczep więzadła żebrowo-poprzecznego bocznego",
+           "pg": "274",
+           "src": "3068-3070"
+          },
+          {
+           "k": "KĄT ŻEBRA",
+           "t": "na żebrze I tuż przy guzku, na następnych coraz dalej w bok; najsilniejszy na żebrach środkowych; brak na dwóch ostatnich",
+           "pg": "274–275",
+           "src": "3076-3085"
+          },
+          {
+           "k": "POŁOŻENIE POWIERZCHNI",
+           "t": "powierzchnia zewnętrzna: w żebrach środkowych zwykle pionowa, w górnych silnie skierowana ku górze, w dolnych bardziej ku dołowi",
+           "pg": "275",
+           "src": "3087-3089"
+          },
+          {
+           "k": "KRZYWIZNY ŻEBRA",
+           "t": "żebro zakrzywione w 3 kierunkach; krzywizna płaszczyzny – łuk wypukły bocznie, promień z tyłu mniejszy, bocznie i z przodu większy",
+           "pg": "275",
+           "src": "3089-3091"
+          },
+          {
+           "k": "KRZYWIZNY ŻEBRA",
+           "t": "krzywizna obrotu – skręcenie wzdłuż żebra: gdy części tylne i środkowe stoją pionowo, przednie zwracają powierzchnię zewnętrzną ku górze",
+           "pg": "275",
+           "src": "3091-3094"
+          },
+          {
+           "k": "KRZYWIZNY ŻEBRA",
+           "t": "krzywizna brzegu – lekkie esowate skręcenie względem płaszczyzny poziomej; żebro położone na płaszczyźnie: część tylna unosi się nad podporę",
+           "pg": "275",
+           "src": "3094-3097"
+          },
+          {
+           "k": "BRUZDA ŻEBRA",
+           "t": "zaczyna się przy guzku, z tyłu najgłębsza, ku przodowi stopniowo zanika; na pierwszych i ostatnich żebrach brak jej lub bardzo słaba",
+           "pg": "275",
+           "src": "3098-3101"
+          },
+          {
+           "k": "MIĘŚNIE",
+           "t": "bruzda biegnie między przyczepami mm. międzyżebrowych: wzdłuż jej górnego brzegu – m. międzyżebrowy wewnętrzny, wzdłuż dolnego (= dolny brzeg żebra) – zewnętrzny",
+           "pg": "275",
+           "src": "3101-3104"
+          },
+          {
+           "k": "BRZEGI",
+           "t": "brzeg górny gruby, zaokrąglony, z 2 niewyraźnymi wargami (zewnętrzną i wewnętrzną) – przyczep obu mm. międzyżebrowych",
+           "pg": "275",
+           "src": "3151-3152"
+          },
+          {
+           "k": "BRZEGI",
+           "t": "brzeg dolny cienki – przyczep m. międzyżebrowego zewnętrznego",
+           "pg": "275",
+           "src": "3152-3153"
+          }
+         ],
+         "labels": [
+          "głowa żebra {{caput costae}}",
+          "powierzchnia stawowa głowy żebra górna {{facies articularis capitis costae superior}}",
+          "powierzchnia stawowa głowy żebra dolna {{facies articularis capitis costae inferior}}",
+          "grzebień głowy żebra {{crista capitis costae}}",
+          "szyjka żebra {{collum costae}}",
+          "grzebień szyjki żebra {{crista colli costae}}",
+          "guzek żebra {{tuberculum costae}}",
+          "powierzchnia stawowa guzka żebra {{facies articularis tuberculi costae}}",
+          "kąt żebra {{angulus costae}}",
+          "trzon żebra {{corpus costae}}",
+          "bruzda żebra {{sulcus costae}}",
+          "koniec przedni (powierzchnia do chrząstki)"
+         ],
+         "fig": "prawe żebro VII (kość żebrowa) od tyłu | przekrój poprzeczny trzonu – bruzda przy dolnym brzegu"
+        },
+        {
+         "type": "card",
+         "title": "Chrząstka żebrowa (żebro chrzęstne)",
+         "lat": "cartilago costalis",
+         "pg": "275–276",
+         "sections": [
+          {
+           "k": "BUDOWA",
+           "items": [
+            "przedłużenie żebra kostnego ku przodowi",
+            "bardzo zwiększa sprężystość ścian klatki piersiowej",
+            "chrząstka szklista pokryta ochrzęstną",
+            "w wieku 16–20 lat pojawiają się w niej składniki włókniste – nadają jej żółtawe zabarwienie"
+           ]
+          },
+          {
+           "k": "PRZEBIEG",
+           "items": [
+            "zwykle skośny w kierunku odwrotnym niż żebro kostne",
+            "im bardziej skośnie w dół biegnie żebro kostne, tym bardziej stromo w górę biegnie chrząstka",
+            "żebra górne (I–V): kąt między żebrem kostnym a chrząstką",
+            "żebra dalsze: chrząstka biegnie najpierw w przedłużeniu żebra, potem silnie w górę – kąt w obrębie samej chrząstki"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "ZAKOŃCZENIE",
+           "t": "z przodu: chrząstki I–VII łączą się z mostkiem, VIII–X przylegają do chrząstki wyższego żebra, XI–XII kończą się swobodnie",
+           "pg": "276",
+           "src": "3175-3177"
+          },
+          {
+           "k": "KSZTAŁT I DŁUGOŚĆ",
+           "t": "kształt na ogół jak żebro kostne; długość rośnie od I do VII lub VIII, potem maleje; XI i XII – tylko krótkie zaostrzenie",
+           "pg": "276",
+           "src": "3174-3179"
+          },
+          {
+           "k": "PRZEBIEG",
+           "t": "kierunek zmienia się z fazą oddechu, tak jak kierunek żebra kostnego",
+           "pg": "276",
+           "src": "3179-3181"
+          },
+          {
+           "k": "PRZEBIEG",
+           "t": "chrząstka I lekko zstępuje, II leży mniej więcej poziomo, III–V coraz bardziej kierują się ku górze",
+           "pg": "276",
+           "src": "3183-3185"
+          },
+          {
+           "k": "UWAGI",
+           "t": "zakres „I–V” dla kąta między żebrem a chrząstką podany wprost w mechanice chrząstki; w opisie chrząstki – „żebra górne”",
+           "pg": "276, 295",
+           "src": "3187-3189, 4132-4134"
+          },
+          {
+           "k": "POWIERZCHNIE",
+           "t": "przednia – wypukła, skierowana do przodu i ku górze; tylna – wklęsła, skierowana do tyłu i ku dołowi",
+           "pg": "276",
+           "src": "3189-3194"
+          },
+          {
+           "k": "PRZYCZEPY (PRZÓD)",
+           "t": "chrząstka I: więzadło żebrowo-obojczykowe i m. podobojczykowy; końce mostkowe I–VI (VII): m. piersiowy większy; dalsze – mm. brzucha",
+           "pg": "276",
+           "src": "3189-3193"
+          },
+          {
+           "k": "PRZYCZEPY (TYŁ)",
+           "t": "chrząstka I: m. mostkowo-tarczowy; II–VI: m. poprzeczny klatki piersiowej; 6 (czasem 7) dolnych: m. poprzeczny brzucha i przepona",
+           "pg": "276",
+           "src": "3193-3197"
+          },
+          {
+           "k": "KOSTNIENIE",
+           "t": "z wiekiem chrząstki kostnieją; najwcześniej chrząstka I – już od ok. 20 r.ż. lub wcześniej, zwłaszcza w astenicznym typie klatki",
+           "pg": "276",
+           "src": "3170-3172"
+          },
+          {
+           "k": "KOSTNIENIE",
+           "t": "pozostałe kostnieją później; nowa kość otacza chrząstkę pochewkowato, kostnienie śródchrzęstne rzadsze; kostnienie bardzo zmniejsza sprężystość i ruchomość klatki",
+           "pg": "276",
+           "src": "3172-3174"
+          }
+         ],
+         "labels": [
+          "chrząstka żebrowa {{cartilago costalis}}",
+          "kość żebrowa {{os costale}}",
+          "chrząstka żebra I (lekko zstępuje)",
+          "chrząstka żebra II (pozioma)",
+          "kąt między żebrem kostnym a chrząstką (żebra I–V)",
+          "kąt w obrębie chrząstki (żebra dalsze)",
+          "granica kości i chrząstki",
+          "mostek {{sternum}}",
+          "łuk żebrowy {{arcus costalis}}"
+         ],
+         "fig": "połowa klatki od przodu – przebieg chrząstek I–X i dwa typy kąta (między kością a chrząstką / w chrząstce)"
+        }
+       ]
+      },
+      {
+       "type": "group",
+       "title": "Żebra o odrębnych cechach",
+       "lat": "",
+       "pg": "276–278",
+       "why": "Bochenek: dwa pierwsze i dwa ostatnie żebra mają odrębne właściwości",
+       "q": "które żebro?",
+       "l3": [],
+       "children": [
+        {
+         "type": "card",
+         "title": "Żebro I",
+         "lat": "costa I",
+         "pg": "276–277",
+         "sections": [
+          {
+           "k": "KSZTAŁT",
+           "items": [
+            "zwykle najbardziej wygięte, szerokie i płaskie",
+            "powierzchnie zwrócone ku górze i ku dołowi; brzegi – na zewnątrz i do wewnątrz",
+            "z boku: biegnie skośnie od tyłu i góry ku przodowi i dołowi – koniec mostkowy na poziomie Th2 lub Th3"
+           ]
+          },
+          {
+           "k": "KONIEC TYLNY",
+           "items": [
+            "głowa mała, zaokrąglona; powierzchnia stawowa przeważnie niepodzielona",
+            "głowa łączy się tylko z trzonem Th1",
+            "szyjka i guzek wyraźnie rozwinięte"
+           ]
+          },
+          {
+           "k": "POWIERZCHNIA GÓRNA",
+           "items": [
+            "**guzek mięśnia pochyłego przedniego** {{tuberculum m. scaleni anterioris}} – nieco do przodu od środka żebra; uwypukla brzeg wewnętrzny",
+            "do guzka przyczepia się m. pochyły przedni",
+            "do przodu od guzka – płytka **bruzda żyły podobojczykowej** {{sulcus venae subclaviae}}",
+            "do tyłu od guzka – nieco głębsza **bruzda tętnicy podobojczykowej** {{sulcus arteriae subclaviae}}",
+            "za bruzdą tętnicy – chropowate pole, przyczep m. pochyłego środkowego"
+           ]
+          },
+          {
+           "k": "POWIERZCHNIA DOLNA I BRZEGI",
+           "items": [
+            "powierzchnia dolna gładka, bez bruzdy żebra",
+            "brzeg zewnętrzny wypukły, gruby; w tylnej części – przyczep 1. zęba m. zębatego przedniego",
+            "brzeg wewnętrzny wklęsły, cienki i ostry – ogranicza otwór górny klatki piersiowej",
+            "koniec przedni szerszy i grubszy niż w innych żebrach; przyczep m. podobojczykowego"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "UWAGI",
+           "t": "kąt żebra I leży tuż przy guzku; grzebienia szyjki brak (jak na pierwszych żebrach)",
+           "pg": "274",
+           "src": "3063-3064, 3076-3077"
+          },
+          {
+           "k": "UWAGI",
+           "t": "chrząstka żebra I lekko zstępuje i kostnieje najwcześniej (od ok. 20 r.ż.)",
+           "pg": "276",
+           "src": "3170-3171, 3183-3184"
+          }
+         ],
+         "labels": [
+          "żebro I {{costa I}}",
+          "głowa żebra {{caput costae}}",
+          "szyjka żebra {{collum costae}}",
+          "guzek żebra {{tuberculum costae}}",
+          "guzek m. pochyłego przedniego {{tuberculum m. scaleni anterioris}}",
+          "bruzda żyły podobojczykowej {{sulcus venae subclaviae}}",
+          "bruzda tętnicy podobojczykowej {{sulcus arteriae subclaviae}}",
+          "przyczep m. pochyłego przedniego [[m. scalenus anterior]]",
+          "przyczep m. pochyłego środkowego [[m. scalenus medius]]",
+          "przyczep m. zębatego przedniego [[m. serratus anterior]]",
+          "przyczep m. podobojczykowego [[m. subclavius]]",
+          "brzeg wewnętrzny",
+          "brzeg zewnętrzny"
+         ],
+         "fig": "prawe żebro I od góry, z polami przyczepów mięśni"
+        },
+        {
+         "type": "card",
+         "title": "Żebro II",
+         "lat": "costa II",
+         "pg": "277",
+         "sections": [
+          {
+           "k": "KSZTAŁT",
+           "items": [
+            "znacznie dłuższe od żebra I, podobnie wygięte",
+            "trzon nieskręcony – oba końce mniej więcej na tej samej wysokości"
+           ]
+          },
+          {
+           "k": "POWIERZCHNIA ZEWNĘTRZNA",
+           "items": [
+            "wypukła; skierowana ku górze i nieco bocznie",
+            "pośrodku nieznaczna, chropowata **guzowatość m. zębatego przedniego** {{tuberositas m. serrati anterioris}}",
+            "do tyłu i nieco ku górze od guzowatości – przyczep m. pochyłego tylnego"
+           ]
+          },
+          {
+           "k": "POWIERZCHNIA WEWNĘTRZNA",
+           "items": [
+            "gładka, wklęsła; skierowana ku dołowi i nieco do wewnątrz",
+            "w części tylnej – krótka bruzda żebra"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "PRZYCZEPY",
+           "t": "guzowatość – przyczep dolnej części 1. i całego 2. zęba m. zębatego przedniego",
+           "pg": "277",
+           "src": "3272-3274"
+          },
+          {
+           "k": "!",
+           "t": "streszczenie: guzowatość „dla przyczepu dwóch głów m. zębatego przedniego”; opis: dolna część 1. i cały 2. ząb",
+           "pg": "277, 297",
+           "src": "3272-3274, 4232-4233"
+          },
+          {
+           "k": "POŁĄCZENIE",
+           "t": "chrząstka II dochodzi do mostka na granicy rękojeści i trzonu (wcięcie z 2 pólek); kąt mostka wskazuje położenie żebra II",
+           "pg": "280",
+           "src": "3394-3396, 3414-3416"
+          }
+         ],
+         "labels": [
+          "żebro II {{costa II}}",
+          "głowa żebra {{caput costae}}",
+          "szyjka żebra {{collum costae}}",
+          "guzek żebra {{tuberculum costae}}",
+          "guzowatość m. zębatego przedniego {{tuberositas m. serrati anterioris}}",
+          "przyczep m. pochyłego tylnego [[m. scalenus posterior]]",
+          "przyczep m. zębatego przedniego [[m. serratus anterior]]"
+         ],
+         "fig": "prawe żebro II od góry (obok żebra I – porównanie długości i wygięcia)"
+        },
+        {
+         "type": "card",
+         "title": "Żebra XI i XII",
+         "lat": "costa XI, costa XII",
+         "pg": "277–278",
+         "sections": [
+          {
+           "k": "BUDOWA",
+           "items": [
+            "cienkie listewki kostne",
+            "głowa mała, bez grzebienia – tylko jedna powierzchnia stawowa",
+            "niemal brak szyjki i guzka",
+            "niemal brak kąta i bruzdy żebra"
+           ]
+          },
+          {
+           "k": "KSZTAŁT",
+           "items": [
+            "prawie równomiernie wypukłe bocznie i do tyłu",
+            "ku przodowi lekko się zaostrzają i kończą małą chrząstką żebrową",
+            "zwykle nie łączą się z innymi żebrami – kończą się swobodnie między mm. brzucha"
+           ]
+          },
+          {
+           "k": "RÓŻNICE",
+           "items": [
+            "żebro XI – biegnie równomiernie skośnie ku dołowi",
+            "żebro XII – bardzo różnej długości",
+            "krótkie żebro XII leży podobnie jak wyrostek żebrowy kręgów lędźwiowych"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "UWAGI",
+           "t": "guzka brak na XI i XII (czasem też na X); kąta brak na obu ostatnich żebrach",
+           "pg": "274–275",
+           "src": "3070-3072, 3084-3085"
+          }
+         ],
+         "labels": [
+          "żebro X {{costa X}}",
+          "żebro XI {{costa XI}}",
+          "żebro XII {{costa XII}}",
+          "powierzchnia stawowa głowy żebra – pojedyncza (XI, XII) {{facies articularis capitis costae}}",
+          "powierzchnia stawowa głowy żebra górna (X) {{facies articularis capitis costae superior}}",
+          "powierzchnia stawowa głowy żebra dolna (X) {{facies articularis capitis costae inferior}}",
+          "powierzchnia stawowa guzka żebra (X) {{facies articularis tuberculi costae}}",
+          "kąt żebra (X) {{angulus costae}}"
+         ],
+         "fig": "prawe żebra X, XI i XII od tyłu – porównanie końców tylnych"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Mostek",
+     "lat": "sternum",
+     "pg": "278–281",
+     "why": "nieparzysta, spłaszczona kość w środku przedniej ściany klatki; 3 części",
+     "q": "który element mostka?",
+     "l3": [],
+     "children": [
+      {
+       "type": "card",
+       "title": "Mostek – cechy ogólne",
+       "lat": "sternum",
+       "pg": "278–279, 281",
+       "sections": [
+        {
+         "k": "CZYM JEST",
+         "items": [
+          "nieparzysta, spłaszczona kość",
+          "środkowa część przedniej ściany klatki piersiowej",
+          "górny koniec dźwiga obojczyki",
+          "brzegi boczne łączą się z chrząstkami żeber I–VII, czasem także VIII"
+         ]
+        },
+        {
+         "k": "POŁOŻENIE",
+         "items": [
+          "ustawiony nieco skośnie: od góry ku dołowi i od tyłu do przodu",
+          "leży na wysokości od Th2 lub Th3 do Th9 lub Th10"
+         ]
+        },
+        {
+         "k": "CZĘŚCI",
+         "items": [
+          "kształt od dawna porównywany do krótkiego greckiego miecza – stąd nazwy części",
+          "**rękojeść mostka** {{manubrium sterni}} – część górna, najszersza",
+          "**trzon mostka** {{corpus sterni}} – część środkowa, najdłuższa",
+          "**wyrostek mieczykowaty** {{processus xiphoideus}} – część dolna, najsłabiej rozwinięta",
+          "części łączy warstwa chrząstki – dzięki niej zachowują względem siebie pewien stopień ruchomości"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "STRUKTURA",
+         "t": "istota gąbczasta ze szpikiem czerwonym, pokryta cienką warstwą istoty zbitej; „jest ona najgrubsza w górnej części rękojeści”",
+         "pg": "281",
+         "src": "3442-3443"
+        },
+        {
+         "k": "POŁĄCZENIA",
+         "t": "mostek łączy się z obu stron z obojczykiem oraz z górnymi 7, rzadziej 8 chrząstkami żebrowymi",
+         "pg": "281",
+         "src": "3445-3446"
+        },
+        {
+         "k": "POZIOMY",
+         "t": "wcięcie szyjne – mniej więcej na poziomie Th2 lub Th3, zależnie od wdechu czy wydechu; podstawa wyrostka mieczykowatego (wierzchołek kąta podmostkowego) – na poziomie Th9–Th10",
+         "pg": "290–291",
+         "src": "3870-3873, 3904-3907"
+        }
+       ],
+       "labels": [
+        "mostek {{sternum}}",
+        "rękojeść mostka {{manubrium sterni}}",
+        "trzon mostka {{corpus sterni}}",
+        "wyrostek mieczykowaty {{processus xiphoideus}}",
+        "wcięcie szyjne {{incisura jugularis}}",
+        "wcięcie obojczykowe {{incisura clavicularis}}",
+        "kąt mostka {{angulus sterni}}",
+        "poziom Th2–Th3 (górny koniec mostka)",
+        "poziom Th9–Th10 (dolny koniec mostka)"
+       ],
+       "fig": "mostek od przodu – 3 części | klatka z boku: mostek ustawiony skośnie (ku dołowi odchyla się do przodu), poziomy Th2/Th3 i Th9/Th10"
+      },
+      {
+       "type": "group",
+       "title": "Części mostka",
+       "lat": "",
+       "pg": "278–281",
+       "why": "kształt krótkiego greckiego miecza: rękojeść, trzon i wyrostek mieczykowaty",
+       "q": "która część?",
+       "l3": [],
+       "children": [
+        {
+         "type": "card",
+         "title": "Rękojeść mostka",
+         "lat": "manubrium sterni",
+         "pg": "279–280",
+         "sections": [
+          {
+           "k": "KSZTAŁT",
+           "items": [
+            "mniej więcej czworokątna",
+            "u góry szersza i grubsza, ku dołowi się zwęża",
+            "najszersza część mostka"
+           ]
+          },
+          {
+           "k": "POWIERZCHNIE",
+           "items": [
+            "przednia – nieco wypukła, gładka; przyczep części mostkowej m. piersiowego większego [[m. pectoralis major]]",
+            "do przedniej przyczepia się też m. mostkowo-obojczykowo-sutkowy [[m. sternocleidomastoideus]]",
+            "tylna – nieco wklęsła, gładka; przyczep m. mostkowo-gnykowego [[m. sternohyoideus]] i m. mostkowo-tarczowego [[m. sternothyroideus]]"
+           ]
+          },
+          {
+           "k": "BRZEG GÓRNY",
+           "items": [
+            "najgrubszy brzeg rękojeści",
+            "pośrodku – płytkie **wcięcie szyjne** {{incisura jugularis}}",
+            "bocznie, po obu stronach – **wcięcie obojczykowe** {{incisura clavicularis}}: do stawowego połączenia z końcem mostkowym obojczyka"
+           ]
+          },
+          {
+           "k": "BRZEGI BOCZNE",
+           "items": [
+            "w najszerszym miejscu – **wcięcie żebrowe** {{incisura costalis}} do połączenia z chrząstką żebra I",
+            "poniżej – małe pólko; z podobnym pólkiem trzonu tworzy wcięcie dla chrząstki żebra II"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "WCIĘCIE OBOJCZYKOWE",
+           "t": "owalne zagłębienie, mniej więcej siodełkowato zakrzywione, pokryte chrząstką włóknistą",
+           "pg": "280",
+           "src": "3387-3391"
+          },
+          {
+           "k": "WCIĘCIE ŻEBROWE I",
+           "t": "podłużne, chropawe pole na brzegu bocznym, ku dołowi od wcięcia obojczykowego",
+           "pg": "280",
+           "src": "3391-3394"
+          },
+          {
+           "k": "UWAGI",
+           "t": "u dołu rękojeść łączy się z trzonem – w tym miejscu kąt mostka (poprzeczna wyniosłość na powierzchni przedniej)",
+           "pg": "280",
+           "src": "3410-3414"
+          }
+         ],
+         "labels": [
+          "rękojeść mostka {{manubrium sterni}}",
+          "wcięcie szyjne {{incisura jugularis}}",
+          "wcięcie obojczykowe {{incisura clavicularis}}",
+          "wcięcie żebrowe I {{incisura costalis I}}",
+          "pólko wcięcia żebrowego II {{incisura costalis II}}",
+          "przyczep m. piersiowego większego [[m. pectoralis major]]",
+          "przyczep m. mostkowo-obojczykowo-sutkowego [[m. sternocleidomastoideus]]",
+          "przyczep m. mostkowo-gnykowego [[m. sternohyoideus]]",
+          "przyczep m. mostkowo-tarczowego [[m. sternothyroideus]]",
+          "kąt mostka {{angulus sterni}}"
+         ],
+         "fig": "rękojeść od przodu (wcięcia, przyczepy mm. piersiowego większego i mostkowo-obojczykowo-sutkowego) | rękojeść od tyłu z polami przyczepów mm. mostkowo-gnykowego i mostkowo-tarczowego"
+        },
+        {
+         "type": "card",
+         "title": "Trzon mostka",
+         "lat": "corpus sterni",
+         "pg": "280",
+         "sections": [
+          {
+           "k": "KSZTAŁT",
+           "items": [
+            "dłuższy, węższy i cieńszy niż rękojeść",
+            "najdłuższa część mostka"
+           ]
+          },
+          {
+           "k": "POWIERZCHNIA PRZEDNIA",
+           "items": [
+            "3 poprzeczne, tępe kresy – od brzegu do brzegu, na poziomie wcięć żebrowych III, IV i V",
+            "kresy dzielą trzon na 4 odcinki – rozwojowo odpowiadają 4 **segmentom** {{sternebrae}} widocznym u zwierząt",
+            "bocznie, po obu stronach – przyczep części mostkowej m. piersiowego większego [[m. pectoralis major]] (jak na rękojeści)"
+           ]
+          },
+          {
+           "k": "POWIERZCHNIA TYLNA",
+           "items": [
+            "równa; też 3 poprzeczne kresy, ale znacznie słabiej zaznaczone",
+            "z boku, w dolnej części – przyczep m. poprzecznego klatki piersiowej [[m. transversus thoracis]]"
+           ]
+          },
+          {
+           "k": "BRZEGI",
+           "items": [
+            "górny – łączy się z rękojeścią; tu **kąt mostka** {{angulus sterni}}",
+            "dolny – wąski; łączy się z wyrostkiem mieczykowatym",
+            "boczne – wcięcia żebrowe: u góry połowa wcięcia II, niżej wcięcia III–VI, na dole część wcięcia VII"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "WCIĘCIA",
+           "t": "na końcu górnym brzegu bocznego – powierzchnia, która z pólkiem rękojeści tworzy wgłębienie dla chrząstki żebra II",
+           "pg": "280",
+           "src": "3421-3423"
+          },
+          {
+           "k": "WCIĘCIA",
+           "t": "wcięcia III–VI mają powierzchnie gładkie, pokryte chrząstką szklistą",
+           "pg": "280",
+           "src": "3423-3426"
+          },
+          {
+           "k": "WCIĘCIA",
+           "t": "wcięcie VII leży przeważnie częściowo na trzonie, częściowo na wyrostku mieczykowatym",
+           "pg": "280",
+           "src": "3426-3427"
+          }
+         ],
+         "labels": [
+          "trzon mostka {{corpus sterni}}",
+          "kresy poprzeczne (3)",
+          "segmenty trzonu {{sternebrae}}",
+          "wcięcie żebrowe II (połowa) {{incisura costalis II}}",
+          "wcięcie żebrowe III {{incisura costalis III}}",
+          "wcięcie żebrowe IV {{incisura costalis IV}}",
+          "wcięcie żebrowe V {{incisura costalis V}}",
+          "wcięcie żebrowe VI {{incisura costalis VI}}",
+          "wcięcie żebrowe VII (część) {{incisura costalis VII}}",
+          "kąt mostka {{angulus sterni}}",
+          "przyczep m. piersiowego większego [[m. pectoralis major]]",
+          "przyczep m. poprzecznego klatki piersiowej [[m. transversus thoracis]]"
+         ],
+         "fig": "trzon od przodu – 3 kresy na poziomie wcięć III–V dzielą go na 4 segmenty | trzon od tyłu – przyczep m. poprzecznego klatki piersiowej"
+        },
+        {
+         "type": "card",
+         "title": "Wyrostek mieczykowaty",
+         "lat": "processus xiphoideus",
+         "pg": "280–281",
+         "sections": [
+          {
+           "k": "KSZTAŁT",
+           "items": [
+            "najmniejsza część mostka",
+            "cienki, wydłużony",
+            "bardzo zmienny pod względem wielkości i kształtu",
+            "często na końcu dwudzielny albo przebity otworem"
+           ]
+          },
+          {
+           "k": "PRZYCZEPY",
+           "items": [
+            "powierzchnia przednia, po obu stronach – więzadło żebrowo-mieczykowe [[ligamenta costoxiphoidea]] i mała część m. prostego brzucha [[m. rectus abdominis]]",
+            "powierzchnia tylna – część włókien przepony [[diaphragma]] i m. poprzecznego klatki piersiowej [[m. transversus thoracis]]",
+            "dolny koniec – kresa biała [[linea alba]]"
+           ]
+          },
+          {
+           "k": "POŁĄCZENIA",
+           "items": [
+            "u góry łączy się z wąskim dolnym brzegiem trzonu",
+            "na granicy z trzonem – część wcięcia żebrowego VII"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "NAZWA",
+           "t": "gr. ksifos = miecz",
+           "pg": "280",
+           "src": "3429"
+          },
+          {
+           "k": "UWAGI",
+           "t": "podstawa wyrostka = wierzchołek kąta podmostkowego, najwyższy punkt otworu dolnego klatki; poziom Th9–Th10",
+           "pg": "291",
+           "src": "3904-3907"
+          }
+         ],
+         "labels": [
+          "wyrostek mieczykowaty {{processus xiphoideus}}",
+          "trzon mostka {{corpus sterni}}",
+          "wcięcie żebrowe VII (część) {{incisura costalis VII}}",
+          "koniec dwudzielny (odmiana)",
+          "otwór w wyrostku (odmiana)",
+          "przyczep więzadła żebrowo-mieczykowego [[ligamenta costoxiphoidea]]",
+          "przyczep m. prostego brzucha [[m. rectus abdominis]]",
+          "przyczep przepony [[diaphragma]]",
+          "przyczep m. poprzecznego klatki piersiowej [[m. transversus thoracis]]",
+          "przyczep kresy białej [[linea alba]]"
+         ],
+         "fig": "dolna część mostka od przodu i od tyłu – wyrostek z polami przyczepów | obok małe odmiany kształtu: koniec dwudzielny, otwór"
+        }
+       ]
+      },
+      {
+       "type": "card",
+       "title": "Wcięcia mostka",
+       "lat": "",
+       "pg": "279–280",
+       "sections": [
+        {
+         "k": "WCIĘCIE SZYJNE (1)",
+         "items": [
+          "**wcięcie szyjne** {{incisura jugularis}} – płytkie, nieparzyste",
+          "pośrodku górnego, najgrubszego brzegu rękojeści",
+          "leży mniej więcej na poziomie Th2 lub Th3 – zależnie od wdechu czy wydechu"
+         ]
+        },
+        {
+         "k": "WCIĘCIA OBOJCZYKOWE (2)",
+         "items": [
+          "**wcięcie obojczykowe** {{incisura clavicularis}} – po obu stronach wcięcia szyjnego",
+          "owalne zagłębienie, mniej więcej siodełkowato zakrzywione",
+          "pokryte chrząstką włóknistą",
+          "służy do stawowego połączenia z końcem mostkowym obojczyka"
+         ]
+        },
+        {
+         "k": "WCIĘCIA ŻEBROWE (7 PAR)",
+         "items": [
+          "**wcięcie żebrowe** {{incisura costalis}} I – brzeg boczny rękojeści, w najszerszym miejscu; podłużne, chropawe pole",
+          "II – z 2 pólek: małego na rękojeści i podobnego w górnym kącie trzonu – na granicy rękojeści i trzonu",
+          "III–VI – na brzegach bocznych trzonu; gładkie, pokryte chrząstką szklistą",
+          "VII – przeważnie częściowo na trzonie, częściowo na wyrostku mieczykowatym"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "UWAGI",
+         "t": "czasem także chrząstka żebra VIII łączy się z mostkiem",
+         "pg": "278, 281",
+         "src": "3315-3316, 3445-3446"
+        },
+        {
+         "k": "UWAGI",
+         "t": "wcięcie II leży na poziomie kąta mostka – według kąta mostka określa się u żywego położenie żebra II",
+         "pg": "280",
+         "src": "3394-3396, 3414-3416"
+        },
+        {
+         "k": "POŁOŻENIE",
+         "t": "wcięcie szyjne: poziom Th2 lub Th3 podany przy otworze górnym klatki",
+         "pg": "290",
+         "src": "3870-3873"
+        }
+       ],
+       "labels": [
+        "wcięcie szyjne {{incisura jugularis}}",
+        "wcięcie obojczykowe {{incisura clavicularis}}",
+        "wcięcie żebrowe I {{incisura costalis I}}",
+        "wcięcie żebrowe II {{incisura costalis II}}",
+        "wcięcie żebrowe III {{incisura costalis III}}",
+        "wcięcie żebrowe IV {{incisura costalis IV}}",
+        "wcięcie żebrowe V {{incisura costalis V}}",
+        "wcięcie żebrowe VI {{incisura costalis VI}}",
+        "wcięcie żebrowe VII {{incisura costalis VII}}",
+        "rękojeść mostka {{manubrium sterni}}",
+        "trzon mostka {{corpus sterni}}",
+        "wyrostek mieczykowaty {{processus xiphoideus}}"
+       ],
+       "fig": "mostek od przodu – wcięcie szyjne, oba obojczykowe i wcięcia żebrowe ponumerowane I–VII (po jednej stronie)"
+      },
+      {
+       "type": "card",
+       "title": "Kąt mostka",
+       "lat": "angulus sterni",
+       "pg": "280, 295",
+       "sections": [
+        {
+         "k": "BUDOWA",
+         "items": [
+          "kąt między rękojeścią a trzonem, otwarty ku tyłowi",
+          "w miejscu, gdzie górny brzeg trzonu łączy się z rękojeścią",
+          "na powierzchni przedniej – tępa, poprzecznie biegnąca wyniosłość"
+         ]
+        },
+        {
+         "k": "ZNACZENIE",
+         "items": [
+          "u żywego przeważnie wyczuwalny, często nawet widoczny",
+          "według niego określa się położenie żebra II"
+         ]
+        },
+        {
+         "k": "PRZY ODDYCHANIU",
+         "items": [
+          "gdy chrząstka między rękojeścią a trzonem jest zachowana – przy wdechu kąt się spłaszcza",
+          "przy wydechu się zaostrza i staje się bardziej wyczuwalny"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "WARTOŚCI",
+         "t": "w spokojnym wdechu przeciętnie 164° u mężczyzny, 167° u kobiety; w maksymalnym wdechu bardzo znacznie się spłaszcza",
+         "pg": "295",
+         "src": "4161-4163"
+        },
+        {
+         "k": "WARTOŚCI",
+         "t": "różnica między wdechem a wydechem: ok. 14° u mężczyzn, ok. 12° u kobiet (Rotschild)",
+         "pg": "295",
+         "src": "4163-4164"
+        },
+        {
+         "k": "MECHANIKA",
+         "t": "zmiana kąta = obrót rękojeści względem trzonu (lub odwrotnie) wokół osi poprzecznej przez przyczepy mostkowe żeber II",
+         "pg": "295",
+         "src": "4158-4161"
+        }
+       ],
+       "labels": [
+        "kąt mostka {{angulus sterni}}",
+        "rękojeść mostka {{manubrium sterni}}",
+        "trzon mostka {{corpus sterni}}",
+        "górne połączenie mostkowe {{synchondrosis manubriosternalis}}",
+        "wcięcie żebrowe II {{incisura costalis II}}",
+        "żebro II {{costa II}}",
+        "wyniosłość poprzeczna na powierzchni przedniej"
+       ],
+       "fig": "mostek z boku (przekrój pośrodkowy) – kąt między rękojeścią a trzonem otwarty ku tyłowi | mały schemat: kąt spłaszczony (wdech) i ostrzejszy (wydech)"
+      },
+      {
+       "type": "card",
+       "title": "Połączenia części mostka",
+       "lat": "synchondroses sternales",
+       "pg": "279, 287",
+       "tag": "CHRZĄSTKOZROST",
+       "sections": [
+        {
+         "k": "W SKRÓCIE",
+         "items": [
+          "rękojeść, trzon i wyrostek łączy warstwa chrząstki – zachowują względem siebie pewien stopień ruchomości",
+          "także u dorosłego zwykle połączone chrząstką – **chrząstkozrosty mostkowe** {{synchondroses sternales}}",
+          "**górne połączenie mostkowe** {{synchondrosis manubriosternalis}} – między rękojeścią a trzonem",
+          "**dolne połączenie mostkowe** {{synchondrosis xiphosternalis}} – między trzonem a wyrostkiem mieczykowatym"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "UWAGI",
+         "t": "budowa i kostnienie obu połączeń – szczegółowo w części o połączeniach",
+         "pg": "287",
+         "src": "3833-3853"
+        }
+       ],
+       "labels": [
+        "rękojeść mostka {{manubrium sterni}}",
+        "trzon mostka {{corpus sterni}}",
+        "wyrostek mieczykowaty {{processus xiphoideus}}",
+        "górne połączenie mostkowe {{synchondrosis manubriosternalis}}",
+        "dolne połączenie mostkowe {{synchondrosis xiphosternalis}}",
+        "kąt mostka {{angulus sterni}}"
+       ],
+       "fig": "mostek z boku – miejsca obu chrząstkozrostów (warstwa chrząstki między częściami)"
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Klatka piersiowa jako całość",
+     "lat": "thorax",
+     "pg": "290–291, 293",
+     "why": "ściany i kształt, otwór górny i dolny, łuk żebrowy, kąt podmostkowy, wymiary",
+     "q": "który element klatki?",
+     "l3": [
+      {
+       "k": "UWAGI",
+       "t": "w skanie brak s. 288–289 – początek podrozdziału niedostępny (s. 290 zaczyna się w połowie zdania); ściany i przestrzenie międzyżebrowe – wg streszczenia",
+       "pg": "288–290, 298",
+       "src": "3855-3857, 4299-4301"
+      }
+     ],
+     "children": [
+      {
+       "type": "card",
+       "title": "Ściany i kształt klatki",
+       "lat": "thorax",
+       "pg": "290, 298",
+       "sections": [
+        {
+         "k": "ŚCIANY",
+         "items": [
+          "z tyłu – część piersiowa kręgosłupa",
+          "z przodu – mostek",
+          "z boków – żebra",
+          "żebra oddzielają od siebie **przestrzenie międzyżebrowe** {{spatia intercostalia}}"
+         ]
+        },
+        {
+         "k": "KSZTAŁT",
+         "items": [
+          "tylne części żeber silnie wypuklają się ku tyłowi",
+          "dzięki temu klatka człowieka ma w przekroju poprzecznym kształt nerkowaty"
+         ]
+        },
+        {
+         "k": "ŚCIANA TYLNA",
+         "items": [
+          "między uwypuklonymi ku tyłowi częściami żeber – głęboka bruzda",
+          "pośrodku przerywa ją szereg wyrostków kolczystych",
+          "**bruzda żebrowo-kręgowa** {{sulcus costovertebralis}} – spoczywają w niej głębokie mięśnie grzbietu"
+         ]
+        },
+        {
+         "k": "OD WEWNĄTRZ",
+         "items": [
+          "tylnym wypukleniom żeber odpowiada po stronie wewnętrznej **bruzda płucna** {{sulcus pulmonalis}}",
+          "leży po obu stronach kręgosłupa; układa się w niej płuco"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "UWAGI",
+         "t": "ściany i przestrzenie międzyżebrowe podane w streszczeniu; w dostępnym tekście głównym (s. 290–291) ich opisu brak",
+         "pg": "298",
+         "src": "4299-4301"
+        },
+        {
+         "k": "UWAGI",
+         "t": "s. 290 zaczyna się od słów „…w jamę klatki piersiowej, a tylne części żeber…” – początek zdania (co wnika w jamę klatki) jest na brakującej s. 289",
+         "pg": "290",
+         "src": "3857"
+        },
+        {
+         "k": "STRESZCZENIE",
+         "t": "bruzdę żebrowo-kręgową tworzą uwypuklone ku tyłowi tylne odcinki żeber i wyrostki kolczyste kręgów; bruzda płucna uwypukla się do tyłu po obu stronach kręgosłupa",
+         "pg": "298",
+         "src": "4301-4304"
+        }
+       ],
+       "labels": [
+        "kręgosłup – część piersiowa",
+        "trzon kręgu [[corpus vertebrae]]",
+        "wyrostek kolczysty [[processus spinosus]]",
+        "mostek {{sternum}}",
+        "żebro [[costa]]",
+        "kąt żebra {{angulus costae}}",
+        "przestrzenie międzyżebrowe {{spatia intercostalia}}",
+        "bruzda żebrowo-kręgowa {{sulcus costovertebralis}}",
+        "bruzda płucna {{sulcus pulmonalis}}",
+        "głębokie mięśnie grzbietu (w bruździe żebrowo-kręgowej)"
+       ],
+       "fig": "przekrój poprzeczny klatki – kształt nerkowaty, bruzdy żebrowo-kręgowe na zewnątrz i bruzdy płucne wewnątrz | klatka od przodu – ściany i przestrzenie międzyżebrowe"
+      },
+      {
+       "type": "card",
+       "title": "Otwór górny klatki piersiowej",
+       "lat": "apertura thoracis superior",
+       "pg": "290",
+       "sections": [
+        {
+         "k": "GRANICE",
+         "items": [
+          "trzon Th1",
+          "żebra I",
+          "brzeg rękojeści mostka"
+         ]
+        },
+        {
+         "k": "POŁOŻENIE",
+         "items": [
+          "płaszczyzna otworu pochylona do przodu",
+          "wcięcie szyjne rękojeści leży mniej więcej na poziomie Th2 lub Th3 – zależnie od wdechu czy wydechu"
+         ]
+        },
+        {
+         "k": "CO GO WYPEŁNIA",
+         "items": [
+          "osklepki opłucnej – otaczają szczyty płuc",
+          "między nimi: przełyk, tchawica, wielkie naczynia krwionośne",
+          "przewód piersiowy (limfatyczny)",
+          "kilka nerwów: nerwy błędne, nerwy przeponowe, pnie współczulne"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "STRESZCZENIE",
+         "t": "granice: trzon I kręgu piersiowego, pierwsze żebra i górny brzeg rękojeści mostka",
+         "pg": "298",
+         "src": "4304-4306"
+        },
+        {
+         "k": "UWAGI",
+         "t": "otwór ogranicza wklęsły, cienki i ostry brzeg wewnętrzny żebra I",
+         "pg": "277",
+         "src": "3264-3265"
+        }
+       ],
+       "labels": [
+        "otwór górny klatki piersiowej {{apertura thoracis superior}}",
+        "trzon Th1",
+        "żebro I {{costa I}}",
+        "rękojeść mostka {{manubrium sterni}}",
+        "wcięcie szyjne {{incisura jugularis}}",
+        "płaszczyzna otworu – pochylona do przodu",
+        "poziom Th2–Th3"
+       ],
+       "fig": "klatka z boku – płaszczyzna otworu górnego pochylona do przodu, wcięcie szyjne na poziomie Th2/Th3 | otwór górny widziany od góry"
+      },
+      {
+       "type": "card",
+       "title": "Otwór dolny klatki piersiowej",
+       "lat": "apertura thoracis inferior",
+       "pg": "291",
+       "sections": [
+        {
+         "k": "CECHY",
+         "items": [
+          "znacznie większy niż górny",
+          "kształt bardzo nieregularny"
+         ]
+        },
+        {
+         "k": "GRANICE",
+         "items": [
+          "Th12",
+          "dolne brzegi żeber XII",
+          "końce żeber XI",
+          "chrząstki żeber X–VII",
+          "wyrostek mieczykowaty"
+         ]
+        },
+        {
+         "k": "PRZEPONA",
+         "items": [
+          "granice otworu – miejsce przyczepu przepony [[diaphragma]]; oddziela ona jamę klatki piersiowej od jamy brzusznej",
+          "przepona wypukla się ku górze mniej więcej do połowy wysokości klatki – jako jej ruchome dno",
+          "górną część klatki zajmuje **jama klatki piersiowej** {{cavitas thoracis}}, dolną – **jama brzuszna** {{cavitas abdominalis}}",
+          "przez specjalne otwory w przeponie przechodzą przełyk, naczynia i nerwy"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "!",
+         "t": "opis (s. 291): granice to „brzegami dolnymi dwunastych żeber, końcami żeber jedenastych”; streszczenie (s. 298): „dolnymi brzegami żeber XI i XII”",
+         "pg": "291, 298",
+         "src": "3897-3898, 4306-4307"
+        },
+        {
+         "k": "UWAGI",
+         "t": "najwyższy punkt otworu dolnego – wierzchołek kąta podmostkowego, u podstawy wyrostka mieczykowatego (Th9–Th10)",
+         "pg": "291",
+         "src": "3904-3907"
+        }
+       ],
+       "labels": [
+        "otwór dolny klatki piersiowej {{apertura thoracis inferior}}",
+        "kręg piersiowy XII {{vertebra thoracica XII}}",
+        "żebro XII {{costa XII}}",
+        "żebro XI {{costa XI}}",
+        "chrząstki żeber VII–X {{cartilagines costales}}",
+        "łuk żebrowy {{arcus costalis}}",
+        "wyrostek mieczykowaty {{processus xiphoideus}}",
+        "przepona [[diaphragma]]",
+        "jama klatki piersiowej {{cavitas thoracis}}",
+        "jama brzuszna {{cavitas abdominalis}}"
+       ],
+       "fig": "klatka od przodu (lekko od dołu) – obrys otworu dolnego | przekrój czołowy: kopuła przepony do połowy wysokości klatki, nad nią jama klatki piersiowej, pod nią jama brzuszna"
+      },
+      {
+       "type": "card",
+       "title": "Łuk żebrowy i kąt podmostkowy",
+       "lat": "arcus costalis, angulus infrasternalis",
+       "pg": "274, 291",
+       "sections": [
+        {
+         "k": "ŁUK ŻEBROWY",
+         "items": [
+          "**łuk żebrowy** {{arcus costalis}} – po każdej stronie; tworzą go łączące się chrząstki żebrowe",
+          "żebra VIII, IX i X łączą się z żebrem wyżej położonym i razem z żebrem VII tworzą łuk prawy i lewy",
+          "łuki ograniczają otwór dolny klatki"
+         ]
+        },
+        {
+         "k": "KĄT PODMOSTKOWY",
+         "items": [
+          "**kąt podmostkowy** {{angulus infrasternalis}} – kąt zawarty między łukami żebrowymi",
+          "wierzchołek – u podstawy wyrostka mieczykowatego; najwyższy punkt otworu dolnego klatki",
+          "wierzchołek leży na poziomie Th9–Th10",
+          "wielkość bardzo zmienna, zależy od wielu czynników; przeciętnie zbliża się do 90°"
+         ]
+        },
+        {
+         "k": "DÓŁ NADBRZUSZNY",
+         "items": [
+          "okolica kąta podmostkowego – zwykle nieco wpuklona",
+          "**dół nadbrzuszny** {{fossa epigastrica}} albo żołądkowy – położeniem odpowiada części żołądka",
+          "w przypisie inna nazwa: **dołek sercowy** {{scrobiculus cordis}}",
+          "mniej więcej na tym poziomie, ku tyłowi od żołądka – trzustka i splot trzewny (brzuszny ośrodek autonomicznego układu nerwowego)"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "STRESZCZENIE",
+         "t": "chrząstki żeber VII–X łącząc się tworzą obustronnie łuk żebrowy; kąt między łukami – kąt podmostkowy; okolica nieco wpuklona – dół nadbrzuszny",
+         "pg": "298",
+         "src": "4308-4311"
+        },
+        {
+         "k": "UWAGI",
+         "t": "kąt podmostkowy, dół nadbrzuszny i przepona opisane małym drukiem",
+         "pg": "291",
+         "src": "3904-3918"
+        }
+       ],
+       "labels": [
+        "łuk żebrowy {{arcus costalis}}",
+        "kąt podmostkowy {{angulus infrasternalis}}",
+        "wierzchołek kąta – podstawa wyrostka mieczykowatego",
+        "wyrostek mieczykowaty {{processus xiphoideus}}",
+        "żebro VII {{costa VII}}",
+        "żebro X {{costa X}}",
+        "chrząstka żebrowa {{cartilago costalis}}",
+        "dół nadbrzuszny {{fossa epigastrica}}",
+        "poziom Th9–Th10"
+       ],
+       "fig": "dolna część klatki od przodu – oba łuki żebrowe i kąt podmostkowy ok. 90° z wierzchołkiem u podstawy wyrostka mieczykowatego"
+      },
+      {
+       "type": "card",
+       "title": "Wymiary klatki piersiowej",
+       "lat": "",
+       "pg": "293",
+       "sections": [
+        {
+         "k": "DŁUGOŚĆ (PRZECIĘTNIE)",
+         "items": [
+          "z przodu 16–19 cm",
+          "z tyłu 27–30 cm",
+          "z boku 32 cm"
+         ]
+        },
+        {
+         "k": "WYMIAR POPRZECZNY",
+         "items": [
+          "otwór górny – 9–11 cm",
+          "na wysokości nasady wyrostka mieczykowatego – 20–23 cm",
+          "na wysokości żebra XII – 18–20 cm"
+         ]
+        },
+        {
+         "k": "WYMIAR PRZEDNIO-TYLNY",
+         "items": [
+          "otwór górny – 5–6 cm",
+          "otwór dolny na wysokości nasady wyrostka mieczykowatego – 15–19 cm"
+         ]
+        },
+        {
+         "k": "WSKAŹNIK KLATKI PIERSIOWEJ",
+         "items": [
+          "**wskaźnik klatki piersiowej** – wymiar poprzeczny wyrażony w odsetkach wymiaru przednio-tylnego",
+          "u dorosłego – 139",
+          "u kobiet nieco mniejszy niż u mężczyzn"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "ŹRÓDŁO",
+         "t": "wymiary wg Rauber-Kopscha; cały akapit małym drukiem",
+         "pg": "293",
+         "src": "4005-4009"
+        },
+        {
+         "k": "WSKAŹNIK",
+         "t": "zmienia się w rozwoju osobniczym: zarodek 4-tygodniowy ok. 60, płód 2-miesięczny ok. 90, noworodek ok. 105, dorosły 139, po 70. roku życia ok. 129",
+         "pg": "293",
+         "src": "4010-4014"
+        },
+        {
+         "k": "WSKAŹNIK",
+         "t": "w rozwoju rodowym – u Naczelnych: małpy niższe 86 (makak), człekokształtne ok. 112",
+         "pg": "293",
+         "src": "4015-4016"
+        }
+       ],
+       "labels": [
+        "długość z przodu: 16–19 cm",
+        "długość z tyłu: 27–30 cm",
+        "długość z boku: 32 cm",
+        "wymiar poprzeczny otworu górnego: 9–11 cm",
+        "wymiar poprzeczny na wysokości nasady wyrostka mieczykowatego: 20–23 cm",
+        "wymiar poprzeczny na wysokości żebra XII: 18–20 cm",
+        "wymiar przednio-tylny otworu górnego: 5–6 cm",
+        "wymiar przednio-tylny na wysokości nasady wyrostka mieczykowatego: 15–19 cm",
+        "wyrostek mieczykowaty {{processus xiphoideus}}",
+        "żebro XII {{costa XII}}"
+       ],
+       "fig": "klatka od przodu i z boku – linie wymiarowe z wartościami | mały schemat przekroju poprzecznego: wymiar poprzeczny vs przednio-tylny (wskaźnik)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

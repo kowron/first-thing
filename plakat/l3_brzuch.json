@@ -1,0 +1,1201 @@
+{
+ "chapter": "brzuch",
+ "muscles": {
+  "m. skośny zewnętrzny brzucha": [
+   {
+    "k": "BUDOWA",
+    "t": "Mięsień płaski, czworokątny, szeroki; z przodu znacznie dłuższy niż z tyłu. Leży między V żebrem a kością miedniczą – od m. najszerszego grzbietu do linii pośrodkowej przedniej.",
+    "pg": "704–705",
+    "src": "3335-3343"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Włókna biegną skośnie do przodu i ku dołowi – jak w mm. międzyżebrowych zewnętrznych; tylko najwyższe wiązki biegną bardziej poziomo. Włókna rozcięgna zachowują kierunek włókien mięśniowych.",
+    "pg": "705",
+    "src": "3353-3360"
+   },
+   {
+    "k": "PRZYCZEPY – UZUPEŁNIENIE",
+    "t": "Pierwszy ząb przeważnie przykryty częścią brzuszną m. piersiowego większego. 5 górnych zębów zachodzi między wiązki m. zębatego przedniego, 3 dolne – między wiązki m. najszerszego grzbietu.",
+    "pg": "705",
+    "src": "3345-3350"
+   },
+   {
+    "k": "PRZYCZEPY – UZUPEŁNIENIE",
+    "t": "Dolne pęczki, przechodzące w więzadło pachwinowe, przyśrodkowo zawierają otwór – pierścień pachwinowy powierzchowny [[annulus inguinalis superficialis]] – dla powrózka nasiennego (u kobiety: więzadła obłego macicy).",
+    "pg": "705",
+    "src": "3362-3366"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Najbardziej powierzchowny mięsień brzucha; ściśle przylega do niego powięź powierzchowna. Pokrywa (od strony przyśrodkowej do bocznej): m. prosty, m. piramidowy, m. skośny wewnętrzny i 8 dolnych żeber z mm. międzyżebrowymi.",
+    "pg": "705",
+    "src": "3383-3388"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Brzeg tylny przeważnie oddzielony od brzegu przedniego m. najszerszego grzbietu trójkątem lędźwiowym. Z przodu włókna mięśniowe sięgają mniej więcej do linii sutkowej.",
+    "pg": "705",
+    "src": "3388-3390"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Brzusiec kończy się linią pionową, która nieco przyśrodkowo i powyżej kolca biodrowego przedniego górnego załamuje się pod kątem prostym w poziomą: „kąt mięśniowy”, zwykle widoczny, 3–5 cm od kolca na linii kolec–pępek.",
+    "pg": "705–706",
+    "src": "3390-3449"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Kąt mięśniowy odpowiada dość dokładnie punktowi McBurneya (rzut odejścia wyrostka robaczkowego): środek linii kolec–pępek, u dorosłego 5–6 cm od kolca. Punkt Lanza: niżej, na linii między kolcami, w ⅓ od prawej.",
+    "pg": "706",
+    "src": "3449-3456"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "nn. międzyżebrowe V–XII, n. biodrowo-podbrzuszny (Th12, L1) i n. biodrowo-pachwinowy (L1).",
+    "pg": "706",
+    "src": "3461-3462"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Liczba przyczepów żebrowych: 6–9. Wg Lotha: 6 – 1%, 7 – 31%, 8 – 68%; 9 – stwierdzone w jednym przypadku. Czasem połączenia z sąsiednimi mięśniami.",
+    "pg": "707",
+    "src": "3477-3481"
+   }
+  ],
+  "m. skośny wewnętrzny brzucha": [
+   {
+    "k": "BUDOWA",
+    "t": "Płaski, czworokątny, z przodu znacznie dłuższy niż z tyłu. Włókna biegną odwrotnie niż w m. skośnym zewnętrznym: od okolicy lędźwiowo-biodrowej do dolnych żeber, kresy białej i więzadła pachwinowego.",
+    "pg": "707",
+    "src": "3483-3489"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Włókna tylne (z powięzi piersiowo-lędźwiowej) biegną ku górze i do przodu – jak w mm. międzyżebrowych wewnętrznych. Główna masa włókien (z grzebienia biodrowego i więzadła pachwinowego) rozchodzi się przyśrodkowo.",
+    "pg": "707",
+    "src": "3496-3501"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Włókna górne wstępują równolegle do końców chrząstek żebrowych X–VIII, środkowe biegną poziomo, dolne (od więzadła pachwinowego) zstępują nieco ku dołowi.",
+    "pg": "707",
+    "src": "3501-3505"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Na wysokości przyczepu do żeber czasem smugi ścięgniste, nieraz z częściami chrzęstnymi, w przedłużeniu ostatnich żeber – ślad procesu zanikowego u dołu klatki piersiowej.",
+    "pg": "707",
+    "src": "3520-3523"
+   },
+   {
+    "k": "CZYNNOŚĆ – SZCZEGÓŁY",
+    "t": "Przy zgięciu bocznym tułowia razem z m. skośnym zewnętrznym tej samej strony – przeciwne składowe obrotowe obu mięśni znoszą się.",
+    "pg": "708",
+    "src": "3534-3536"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Z przodu przykryty m. skośnym zewnętrznym, z tyłu zachodzi na niego m. najszerszy grzbietu. Pokrywa m. poprzeczny brzucha. Tworzy dno trójkąta lędźwiowego.",
+    "pg": "708",
+    "src": "3538-3540"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "Jak m. skośny zewnętrzny (s. 706): nn. międzyżebrowe V–XII, n. biodrowo-podbrzuszny (Th12, L1) i n. biodrowo-pachwinowy (L1).",
+    "pg": "706, 708",
+    "src": "3546"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Smugi ścięgniste w przedłużeniu dolnych żeber – dosyć częste. Części chrzęstne zawierają w przedłużeniu żebra X w 12% przypadków, żebra XI – w 18%, żebra XII – w 1%.",
+    "pg": "708",
+    "src": "3548-3551"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Zmienność przyczepów żebrowych – 34%. Wg Lotha: tylko do żebra XI – 1%, do 3 ostatnich żeber – 66,5%, do 4 dolnych – 31%, do 5 dolnych – 1,5%.",
+    "pg": "708",
+    "src": "3551-3553"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Wiązki dodatkowe między m. skośnym zewnętrznym a wewnętrznym: między jednym z 3 ostatnich żeber a grzebieniem biodrowym albo między chrząstką żebra XI a pochewką m. prostego.",
+    "pg": "708",
+    "src": "3555-3557"
+   }
+  ],
+  "m. poprzeczny brzucha": [
+   {
+    "k": "BUDOWA",
+    "t": "Szeroki, płaski pas o poprzecznym przebiegu włókien, ścięgnisty na obu końcach; ciągnie się od kręgosłupa do kresy białej i obejmuje trzewa jamy brzusznej.",
+    "pg": "708",
+    "src": "3559-3563"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Włókna biegną równolegle i poprzecznie. Kresa półksiężycowata [[linea semilunaris s. Spigeli]] jest wklęsła – jej najgłębsze miejsce skierowane jest do pępka.",
+    "pg": "708",
+    "src": "3575-3582"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Włókna od żeber VII i VIII są całkowicie przykryte m. prostym brzucha; dopiero niżej kresa półksiężycowata biegnie bocznie od m. prostego.",
+    "pg": "708",
+    "src": "3578-3581"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Powierzchnia zewnętrzna (wypukła) przykryta obu mięśniami skośnymi. Wewnętrzna (wklęsła) wysłana powięzią poprzeczną, która oddziela mięsień od otrzewnej.",
+    "pg": "709",
+    "src": "3608-3610"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Między nim a m. skośnym wewnętrznym biegną dolne nn. międzyżebrowe i pierwszy n. lędźwiowy (do m. prostego brzucha); nieco powyżej kolca biodrowego przedniego górnego – naczynia głębokie okalające biodro.",
+    "pg": "709",
+    "src": "3610-3613"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Jego rozcięgno początkowe tworzy dno ścięgnistej przestrzeni lędźwiowej (przykrytej m. najszerszym grzbietu).",
+    "pg": "716",
+    "src": "3976-3984"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Od powierzchni wewnętrznej może się oddzielać pasmo mięśniowe dł. ok. 5 cm – m. międzydołkowy [[m. interfoveolaris]]: biegnie przyśrodkowo od pierścienia pachwinowego głębokiego, między dołami pachwinowymi, do gałęzi górnej kości łonowej.",
+    "pg": "709",
+    "src": "3596-3600"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "nn. międzyżebrowe VI–XII, n. biodrowo-podbrzuszny (Th12, L1), n. biodrowo-pachwinowy (L1) i n. płciowo-udowy (L1–L2).",
+    "pg": "710",
+    "src": "3660-3661"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Często zaczyna się tylko na 5 dolnych żebrach zamiast na 6.",
+    "pg": "710",
+    "src": "3665"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Brak mięśnia stwierdzono dwukrotnie. Znane: zlanie z m. skośnym wewnętrznym, podwojenie, smugi ścięgniste, połączenia z m. skośnym wewnętrznym, międzyżebrowym wewnętrznym, poprzecznym klatki piersiowej i przeponą.",
+    "pg": "710",
+    "src": "3663-3668"
+   }
+  ],
+  "dźwigacz jądra": [
+   {
+    "k": "BUDOWA",
+    "t": "Grubsze pasmo boczne dochodzi do bocznej strony powrózka nasiennego, słabsze pasmo przyśrodkowe – do strony przyśrodkowej.",
+    "pg": "710",
+    "src": "3672-3674"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Leży między powięzią nasienną wewnętrzną (wypustką powięzi poprzecznej) a powięzią dźwigacza jądra [[fascia cremasterica]] (z rozcięgna m. skośnego zewnętrznego i powięzi powierzchownej).",
+    "pg": "726",
+    "src": "4593-4605"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "n. płciowo-udowy (L1–L2).",
+    "pg": "710",
+    "src": "3678-3679"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Powstaje, gdy zstępujące jądro pociąga za sobą przez ścianę brzucha włókna obu tych mięśni – jako jedną z osłonek powrózka nasiennego.",
+    "pg": "723",
+    "src": "4410-4417"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Nazwa: kremao – zawieszać.",
+    "pg": "710",
+    "src": "3670"
+   }
+  ],
+  "m. prosty brzucha": [
+   {
+    "k": "BUDOWA",
+    "t": "Rozpięty między mostkiem, środkowymi żebrami a kością łonową; szerszy i cieńszy u góry niż u dołu. Włókna biegną równolegle ku dołowi; u dołu zbiegają się w silne, płaskie ścięgno.",
+    "pg": "710",
+    "src": "3682-3696"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Smugi ścięgniste [[intersectiones tendineae]] mają ok. 1 cm szerokości; rzadko biegną ściśle poprzecznie – przeważnie nieco skośnie lub łukowato. Często nie przedzielają mięśnia w całej grubości.",
+    "pg": "710",
+    "src": "3692-3709"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Położenie smug: górna (często niekompletna, łukowata) – na wysokości końca VIII żebra chrzęstnego, druga – pierwszego żebra wolnego, trzecia – pępka; czwarta, jeśli jest – linii łukowatej.",
+    "pg": "711",
+    "src": "3718-3721"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Smugi są ściśle zrośnięte z blaszką przednią pochewki – dzięki temu mogą się kurczyć poszczególne odcinki mięśnia, a mięsień w całości nie przesuwa się w pochewce. Z blaszką tylną smugi łączą się luźno.",
+    "pg": "710",
+    "src": "3709-3713"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Przez pochewkę przylega z tyłu do powięzi poprzecznej, z przodu do skóry; z przodu bezpośrednio przylega do niego m. piramidowy. Brzeg przyśrodkowy oddziela od mięśnia strony przeciwnej kresa biała.",
+    "pg": "711",
+    "src": "3738-3753"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "W pochewce, wzdłuż tylnej powierzchni mięśnia, biegną i zespalają się: t. nabrzuszna górna (od t. piersiowej wewnętrznej) – z góry i t. nabrzuszna dolna (od t. biodrowej zewnętrznej) – z dołu.",
+    "pg": "711",
+    "src": "3743-3750"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Złączenie smug z kresą białą chroni mm. proste przed rozstępowaniem się. Gdy połączenia się rozluźnią, mięśnie zsuwają się na boki, a trzewa uwypuklają się między nimi [[diastasis musculorum rectorum]].",
+    "pg": "711",
+    "src": "3723-3728"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "nn. międzyżebrowe VI–XII.",
+    "pg": "711",
+    "src": "3758-3759"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Przyczepy żebrowe sięgają od żebra IV (2%) do VIII (10%); zawsze 2 lub 3 żebra. Typy wg Lotha: V–VII – 67%, VI–VII – 20%, VI–VIII – 10%; rzadziej IV–V, IV–VI, V–VI.",
+    "pg": "711",
+    "src": "3770-3775"
+   },
+   {
+    "k": "!",
+    "t": "Położenie górnej smugi Bochenek podaje dwojako. S. 702 (plastyka): górna – na poziomie wyrostka mieczykowatego, dolna – pępka, trzecia – między nimi. S. 711: górna – koniec VIII żebra chrzęstnego.",
+    "pg": "702, 711",
+    "src": "3248-3249, 3718-3720"
+   }
+  ],
+  "m. piramidowy": [
+   {
+    "k": "BUDOWA",
+    "t": "Mały, płaski mięsień w kształcie trójkąta: podstawa ku dołowi, wierzchołek ku górze. Bardzo zmienny. Włókna biegną ku górze i przyśrodkowo.",
+    "pg": "712",
+    "src": "3786-3794"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Po obu stronach linii pośrodkowej w dolnej części przedniej ściany brzucha. Tyłem spoczywa na m. prostym (oddziela je tylko bardzo cienka blaszka tkanki łącznej); od skóry oddziela go blaszka przednia pochewki.",
+    "pg": "712",
+    "src": "3786-3802"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "n. międzyżebrowy XII (podżebrowy).",
+    "pg": "712",
+    "src": "3806"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Dobrze rozwinięty ma ok. 7–8 cm długości (skala wahań 2–14 cm); często jest mniejszy, aż do zupełnego zaniku (ok. 20%). Często wyraźnie asymetryczny.",
+    "pg": "712",
+    "src": "3808-3810"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Rzadko podwójny, bardzo rzadko ze smugą ścięgnistą. U człowieka może czasem sięgać do wysokości wyrostka mieczykowatego.",
+    "pg": "712",
+    "src": "3810-3816"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Przypuszczalnie szczątek mięśnia silnie rozwiniętego u torbaczy i stekowców, u których tworzy ścianę torby wylęgowej.",
+    "pg": "712",
+    "src": "3811-3812"
+   },
+   {
+    "k": "!",
+    "t": "W akapicie „Odmiany” (s. 712) Bochenek nazywa ten mięsień „m. stożkowatym”.",
+    "pg": "712",
+    "src": "3808"
+   }
+  ],
+  "m. czworoboczny lędźwi": [
+   {
+    "k": "BUDOWA",
+    "t": "Spłaszczony, czworoboczny; po obu stronach kręgosłupa lędźwiowego, między grzebieniem biodrowym a żebrem XII. Dwie warstwy różnią się przebiegiem włókien i są w zmienny sposób ze sobą zrośnięte.",
+    "pg": "712",
+    "src": "3828-3833"
+   },
+   {
+    "k": "CZYNNOŚĆ – SZCZEGÓŁY",
+    "t": "Przy porażeniu mięśnia powstaje skrzywienie boczne kręgosłupa w odcinku lędźwiowym.",
+    "pg": "714",
+    "src": "3882-3885"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Powierzchnią tylną przylega do blaszki głębokiej powięzi piersiowo-lędźwiowej, a przez nią do m. krzyżowo-grzbietowego. Graniczy z m. lędźwiowym większym.",
+    "pg": "714",
+    "src": "3887-3894"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Powierzchnię przednią pokrywa powięź lędźwiowa [[fascia lumbalis]]. Przy brzegu bocznym mięśnia rozdwaja się: do boku i przodu przechodzi w powięź poprzeczną, ku tyłowi łączy się z blaszką głęboką powięzi piersiowo-lędźwiowej.",
+    "pg": "714",
+    "src": "3889-3892"
+   },
+   {
+    "k": "POŁOŻENIE",
+    "t": "Powięź lędźwiowa oddziela mięsień od trzew (nerka, okrężnica wstępująca lub zstępująca). Przyśrodkowo pokrywa m. lędźwiowy większy (jako powięź biodrowa); brzeg górny zlewa się z więzadłem łukowatym bocznym przepony.",
+    "pg": "714",
+    "src": "3892-3896"
+   },
+   {
+    "k": "UNERWIENIE",
+    "t": "n. międzyżebrowy XII (podżebrowy) i gałązki splotu lędźwiowego (Th12, L1–L3).",
+    "pg": "715",
+    "src": "3923-3924"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Szerokość, grubość, rozwój obu warstw i liczba przyczepów – bardzo zmienne. Ku górze może sięgać do trzonu Th11 i do żebra XI.",
+    "pg": "715",
+    "src": "3930-3932"
+   },
+   {
+    "k": "ODMIANY",
+    "t": "Przy 6 kręgach lędźwiowych albo żebrze XIII mięsień z zewnątrz może wyglądać zwyczajnie, ale unerwienie wskazuje, że buduje go większa liczba segmentów.",
+    "pg": "715",
+    "src": "3932-3936"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Odpowiada mm. międzyżebrowym, które wraz z zanikiem żeber zlały się w jedną całość; można go porównać do mm. pochyłych szyi.",
+    "pg": "715",
+    "src": "3926-3927"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Sąsiedni m. lędźwiowy większy ma inne pochodzenie – z mięśniówki kończyny dolnej, skąd wędruje na tułów.",
+    "pg": "715",
+    "src": "3928-3930"
+   }
+  ]
+ },
+ "groups": {
+  "Mięśnie brzucha": [
+   {
+    "k": "UWAGI",
+    "t": "Granice brzucha – od góry: łuki żebrowe, końce przednie obu dolnych żeber i dolny brzeg żebra XII; od dołu: grzebienie biodrowe, bruzda pachwinowa (więzadło pachwinowe) i górny brzeg kości łonowych.",
+    "pg": "702",
+    "src": "3212-3216"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Granice zewnętrzne nie pokrywają się z wewnętrznymi: jama brzuszna uwypukla się kopulasto w obręb klatki piersiowej, a od jamy miednicy nie da się jej ściśle oddzielić.",
+    "pg": "702",
+    "src": "3216-3219"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Kształt brzucha zależy od dolnego otworu klatki, szerokości miednicy, tkanki tłuszczowej, mięśni i zawartości brzucha. Typ męski – większa górna część brzucha; typ kobiecy (szeroka miednica) – większa dolna.",
+    "pg": "702",
+    "src": "3226-3232"
+   },
+   {
+    "k": "BUDOWA",
+    "t": "Z tyłu, przy kręgosłupie lędźwiowym, ścianę brzucha uzupełnia m. czworoboczny lędźwi. Z przodu rozcięgna trzech warstw bocznych tworzą po obu stronach linii pośrodkowej pochewki mm. prostych.",
+    "pg": "702",
+    "src": "3239-3244"
+   },
+   {
+    "k": "UWAGI",
+    "t": "U szczupłych, umięśnionych mężczyzn widać przez skórę brzegi boczne mm. prostych, ich smugi ścięgniste i zazębioną linię zębów m. skośnego zewnętrznego (od dolnego brzegu m. piersiowego większego w dół i do tyłu).",
+    "pg": "702–703",
+    "src": "3246-3269"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Silna tkanka tłuszczowa, wiotkie mięśnie i powiększenie jamy brzusznej (puchlina brzuszna [[ascites]], wzdęcie [[meteorismus]], ciąża) powodują uwypuklenie i zwisanie przedniej ściany brzucha.",
+    "pg": "703",
+    "src": "3272-3276"
+   }
+  ],
+  "boczne": [
+   {
+    "k": "UWAGI",
+    "t": "Mięśniówka przednio-boczna tułowia u ssaków ma 3 warstwy: na klatce – mm. międzyżebrowe zewn., wewn. i m. poprzeczny klatki; na brzuchu – oba mm. skośne i m. poprzeczny. Gdzie żebra zanikają, mięśnie segmentów się zlewają.",
+    "pg": "703",
+    "src": "3278-3285"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Naczynia i nerwy biegną w klatce częściowo między mm. międzyżebrowymi zewnętrznymi a wewnętrznymi, na brzuchu – między m. skośnym wewnętrznym a poprzecznym. Na tej podstawie Bochenek ustala odpowiedniki warstw.",
+    "pg": "704",
+    "src": "3316-3319"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Odpowiedniki: m. skośny zewnętrzny – częściowo mm. międzyżebrowe zewnętrzne; m. skośny wewnętrzny – tylko mm. międzyżebrowe pośrednie; m. poprzeczny – właściwe mm. międzyżebrowe wewnętrzne i m. poprzeczny klatki piersiowej.",
+    "pg": "704",
+    "src": "3319-3323"
+   },
+   {
+    "k": "UWAGI",
+    "t": "M. skośny zewnętrzny na klatce piersiowej pokrywa mm. międzyżebrowe zewnętrzne – należy więc częściowo do warstwy bardziej powierzchownej. Oba mięśnie odpowiadają sobie dopiero od łuku żebrowego w dół.",
+    "pg": "706",
+    "src": "3464-3469"
+   }
+  ],
+  "przednie": [
+   {
+    "k": "UWAGI",
+    "t": "Przednie mięśnie brzucha jako jedyne nie dzielą się na warstwy. Układ mięśni prostych sięgał pierwotnie od miednicy do żuchwy; rozwój mostka podzielił go na m. prosty brzucha i mięśniówkę przednią szyi.",
+    "pg": "704",
+    "src": "3325-3328"
+   }
+  ],
+  "Tylne mięśnie brzucha": [
+   {
+    "k": "UWAGI",
+    "t": "M. czworoboczny lędźwi jest w ścisłym stosunku rozwojowym z mm. międzypoprzecznymi bocznymi lędźwi (s. 670).",
+    "pg": "712",
+    "src": "3820-3823"
+   },
+   {
+    "k": "UWAGI",
+    "t": "Mm. międzypoprzeczne zachowały budowę metameryczną; w m. czworobocznym materiał segmentalny zlał się w jedną całość – pierwotną metamerię zdradza tylko unerwienie.",
+    "pg": "712",
+    "src": "3823-3826"
+   }
+  ]
+ },
+ "panels": [
+  {
+   "id": "trojkat_ledzwiowy",
+   "title": "Trójkąt lędźwiowy i ścięgnista przestrzeń lędźwiowa",
+   "lat": "trigonum lumbare; spatium tendineum lumbale",
+   "pg": "715–716",
+   "items": [
+    {
+     "k": "TRÓJKĄT – CZĘSTOŚĆ",
+     "t": "Trójkąt lędźwiowy [[trigonum lumbare; syn. trigonum lumbale s. Petiti]] występuje mniej więcej w 75% przypadków (wspomniany już przy m. najszerszym grzbietu, s. 655).",
+     "pg": "715",
+     "src": "3941-3942"
+    },
+    {
+     "k": "TRÓJKĄT – GRANICE",
+     "t": "Podstawa – grzebień biodrowy. Ramię przyśrodkowe – rozcięgno m. najszerszego grzbietu. Ramię boczne – brzeg tylny m. skośnego zewnętrznego brzucha.",
+     "pg": "715",
+     "src": "3942-3944"
+    },
+    {
+     "k": "TRÓJKĄT – DNO",
+     "t": "Dno trójkąta tworzy m. skośny wewnętrzny brzucha.",
+     "pg": "715",
+     "src": "3944-3945"
+    },
+    {
+     "k": "BRAK TRÓJKĄTA",
+     "t": "Mniej więcej w 25% przypadków brzegi m. najszerszego grzbietu i m. skośnego zewnętrznego stykają się – wtedy trójkąta nie ma.",
+     "pg": "715–716",
+     "src": "3945-3970"
+    },
+    {
+     "k": "TRÓJKĄT – ZNACZENIE",
+     "t": "Miejsce zmniejszonego oporu okolicy lędźwiowej dolnej: bardzo rzadko powstają tu przepukliny lędźwiowe dolne [[herniae lumbales inferiores]]; tędy mogą też kierować się na zewnątrz ropnie zaotrzewnowe.",
+     "pg": "716",
+     "src": "3970-3974"
+    },
+    {
+     "k": "PRZESTRZEŃ ŚCIĘGNISTA",
+     "t": "Powyżej trójkąta leży ścięgnista przestrzeń lędźwiowa [[spatium tendineum lumbale s. Grynfelti]] – pole trójkątne lub częściej czworokątne, w którym brak obu mm. skośnych. Występuje w 91% przypadków.",
+     "pg": "716",
+     "src": "3976-3980"
+    },
+    {
+     "k": "PRZESTRZEŃ – GRANICE",
+     "t": "Od góry – żebro XII z dolnym brzegiem m. zębatego tylnego dolnego. Przyśrodkowo – prostownik grzbietu. Bocznie – mm. skośne zewnętrzny i wewnętrzny brzucha.",
+     "pg": "716",
+     "src": "3980-3983"
+    },
+    {
+     "k": "PRZESTRZEŃ – DNO I POKRYCIE",
+     "t": "Dno tworzy rozcięgno początkowe m. poprzecznego brzucha; od tyłu pole przykrywa m. najszerszy grzbietu. Poza nim ścianę tylną brzucha tworzy tu wyłącznie to rozcięgno.",
+     "pg": "716",
+     "src": "3976-3984"
+    },
+    {
+     "k": "PRZEPUKLINY LĘDŹWIOWE GÓRNE",
+     "t": "N. i naczynia podżebrowe przechodzą przez dno przestrzeni i je osłabiają – mogą tu powstać przepukliny lędźwiowe górne [[herniae lumbales superiores]]. Tą drogą mogą też kierować się na zewnątrz ropnie opadowe.",
+     "pg": "716",
+     "src": "3984-3988"
+    },
+    {
+     "k": "ODMIANA",
+     "t": "Wyjątkowo przestrzeń stanowi górną część trójkąta lędźwiowego i nie jest przykryta m. najszerszym grzbietu – rozcięgno m. poprzecznego styka się wtedy z tkanką podskórną, a ryzyko przepuklin wybitnie rośnie.",
+     "pg": "716",
+     "src": "3988-3992"
+    }
+   ]
+  },
+  {
+   "id": "tlocznia",
+   "title": "Czynność mięśni brzucha – tłocznia brzuszna",
+   "lat": "prelum abdominis",
+   "pg": "716–717",
+   "items": [
+    {
+     "k": "RUCHY TUŁOWIA",
+     "t": "Mięśnie brzucha ustalają miednicę i kręgosłup oraz nimi poruszają. W postawie stojącej rozpoczynają zgięcie tułowia do przodu; dalej zgina go masa ciała, a prostownik grzbietu pracuje hamująco.",
+     "pg": "716",
+     "src": "3998-4001"
+    },
+    {
+     "k": "ZGIĘCIE DO TYŁU, W BOK, OBRÓT",
+     "t": "Mm. proste brzucha regulują zgięcie tułowia do tyłu. W zgięciu bocznym współpracują mięśnie brzucha i grzbietu; w obrotach – m. skośny zewnętrzny jednej strony i m. skośny wewnętrzny strony drugiej.",
+     "pg": "716",
+     "src": "4001-4004"
+    },
+    {
+     "k": "MIEDNICA",
+     "t": "Przy ustalonej klatce piersiowej obustronny skurcz mięśni brzucha podnosi miednicę, a prostownik grzbietu zwiększa jej nachylenie. Napięcie spoczynkowe mięśni brzucha i grzbietu ustala położenie miednicy.",
+     "pg": "716",
+     "src": "4004-4007"
+    },
+    {
+     "k": "WYDECH",
+     "t": "Gdy kurczą się mięśnie powłok brzucha i dna miednicy, rozluźniona przepona uwypukla się ku górze, jama klatki piersiowej maleje, ciśnienie w niej rośnie – następuje wydech. Mięśnie brzucha są antagonistami przepony.",
+     "pg": "716",
+     "src": "4009-4012"
+    },
+    {
+     "k": "TŁOCZNIA – MECHANIZM",
+     "t": "Tłocznia brzuszna [[prelum abdominis]]: przy ustalonej miednicy i klatce piersiowej kurczą się razem przepona, mięśnie dna miednicy i mięśnie powłok brzucha – objętość jamy brzusznej maleje, a ciśnienie w niej rośnie.",
+     "pg": "716",
+     "src": "4014-4016"
+    },
+    {
+     "k": "ZAMKNIĘTA GŁOŚNIA",
+     "t": "Tłocznia działa w pełni dopiero przy powietrzu zatrzymanym w płucach (zamknięta szpara głośni): płuca podpierają wtedy przeponę jak poduszki wypełnione powietrzem i nie pozwalają jej uwypuklić się do klatki piersiowej.",
+     "pg": "716",
+     "src": "4018-4022"
+    },
+    {
+     "k": "ZNACZENIE TŁOCZNI",
+     "t": "Tłocznia działa na narządy jamy brzusznej i miednicy – pomaga przy oddawaniu stolca, wydalaniu moczu i porodzie. Jest szczególnie skuteczna, gdy klatka piersiowa i miednica zbliżają się do siebie.",
+     "pg": "716",
+     "src": "4022-4025"
+    },
+    {
+     "k": "WCIĄGNIĘCIE BRZUCHA",
+     "t": "Przy bardzo silnym skurczu mięśni szerokich, zwłaszcza m. poprzecznego, powłoki brzucha łódkowato się wpuklają, a ruchome trzewa przesuwają się pod przeponę. Mm. proste (przez pochewkę) zostają biernie wgięte.",
+     "pg": "716–717",
+     "src": "4027-4064"
+    },
+    {
+     "k": "OCHRONA TRZEW",
+     "t": "Przednie mięśnie brzucha chronią zawartość jamy brzusznej – przy uderzeniu w brzuch kurczą się. Lekarz bada brzuch ostrożnie: nagły ruch, zwłaszcza zimna ręka, wywołuje mimowolne napięcie mięśni, które uniemożliwia badanie.",
+     "pg": "717",
+     "src": "4066-4069"
+    },
+    {
+     "k": "POLE ŚCIĘGNISTE",
+     "t": "Rozcięgna tworzą pole ścięgniste, które łączy przednie mięśnie brzucha w jeden układ. Poszczególne części tego układu mogą jednak samodzielnie się kurczyć lub rozluźniać.",
+     "pg": "717",
+     "src": "4071-4074"
+    },
+    {
+     "k": "UWYPUKLENIE DOLNEJ CZĘŚCI",
+     "t": "Gdy kurczy się tylko górna połowa mięśni (górne odcinki mm. prostych i górne części mm. skośnych zewnętrznych), a dolna jest rozluźniona – uwypukla się dolna część brzucha.",
+     "pg": "717",
+     "src": "4074-4076"
+    },
+    {
+     "k": "UWYPUKLENIE GÓRNEJ CZĘŚCI",
+     "t": "Gdy napięte są dolne pasy mięśniowe (części mm. prostych poniżej pępka i dolne części mm. skośnych wewnętrznych) – uwypukla się górna część brzucha.",
+     "pg": "717",
+     "src": "4076-4078"
+    }
+   ]
+  },
+  {
+   "id": "pochewka",
+   "title": "Pochewka mięśnia prostego brzucha",
+   "lat": "vagina m. recti abdominis",
+   "pg": "717–719",
+   "items": [
+    {
+     "k": "ROZCIĘGNA",
+     "t": "Oba mm. skośne i m. poprzeczny przechodzą w silne, szerokie, płaskie rozcięgna [[aponeuroses]] – ważne składniki przedniej ściany brzucha. Tworzą one pochewkę m. prostego i kresę białą.",
+     "pg": "717",
+     "src": "4082-4085"
+    },
+    {
+     "k": "BUDOWA",
+     "t": "Pochewka ma dwie blaszki ścięgniste – przednią i tylną – przylegające bezpośrednio do przedniej i tylnej powierzchni m. prostego. W linii pośrodkowej łączą się z blaszkami strony przeciwnej wzdłuż kresy białej.",
+     "pg": "718",
+     "src": "4091-4096"
+    },
+    {
+     "k": "BLASZKA PRZEDNIA",
+     "t": "Blaszka przednia [[lamina anterior]] pokrywa całą przednią powierzchnię mięśnia i jest ściśle zrośnięta ze smugami ścięgnistymi. U góry cienka – przyczepia się do niej część brzuszna m. piersiowego większego; ku dołowi grubsza.",
+     "pg": "718",
+     "src": "4142-4146"
+    },
+    {
+     "k": "PRZEDNIA – SKŁAD",
+     "t": "W górnych ⅔: blaszka przednia rozcięgna m. skośnego wewnętrznego zrośnięta z rozcięgnem m. skośnego zewnętrznego. W dolnej ⅓: połączone rozcięgna obu mm. skośnych i m. poprzecznego.",
+     "pg": "718",
+     "src": "4146-4150"
+    },
+    {
+     "k": "BLASZKA TYLNA",
+     "t": "Blaszka tylna [[lamina posterior]] jest znacznie krótsza: zaczyna się na chrząstkach żebrowych przy kącie podmostkowym, a kończy nieco poniżej pępka.",
+     "pg": "718",
+     "src": "4152-4154"
+    },
+    {
+     "k": "TYLNA – SKŁAD",
+     "t": "Blaszkę tylną tworzą: blaszka tylna rozcięgna m. skośnego wewnętrznego i rozcięgno m. poprzecznego.",
+     "pg": "718–719",
+     "src": "4155-4163"
+    },
+    {
+     "k": "KRESA ŁUKOWATA",
+     "t": "Blaszka tylna kończy się u dołu mniej lub bardziej wyraźnym, wklęsłym brzegiem – kresą łukowatą [[linea arcuata]]; syn. linia półkolista [[linea semicircularis s. Douglasi]].",
+     "pg": "718",
+     "src": "4153-4157"
+    },
+    {
+     "k": "PONIŻEJ KRESY ŁUKOWATEJ",
+     "t": "Poniżej kresy łukowatej pochewka nie ma blaszki tylnej – tylna powierzchnia m. prostego przylega bezpośrednio do powięzi poprzecznej.",
+     "pg": "719",
+     "src": "4163-4165"
+    },
+    {
+     "k": "LICZBA WARSTW",
+     "t": "Blaszka przednia: powyżej kresy łukowatej – 2 zrośnięte warstwy, poniżej – 3. Blaszka tylna: powyżej – 2 warstwy, poniżej – brak.",
+     "pg": "719",
+     "src": "4167-4170"
+    },
+    {
+     "k": "PRZYCZYNA",
+     "t": "Podawano różne przyczyny odmiennego przebiegu rozcięgien powyżej i poniżej kresy łukowatej; żadna nie wyjaśnia tego dostatecznie.",
+     "pg": "719",
+     "src": "4170-4172"
+    },
+    {
+     "k": "ZAWARTOŚĆ",
+     "t": "W pochewce leżą: m. prosty brzucha, przed nim m. piramidowy, a wzdłuż tylnej powierzchni m. prostego – zespalające się tt. nabrzuszne górna i dolna.",
+     "pg": "711–712",
+     "src": "3743-3750, 3799-3802"
+    }
+   ]
+  },
+  {
+   "id": "kresa_pepek",
+   "title": "Kresa biała i pępek",
+   "lat": "linea alba; umbilicus",
+   "pg": "719–720",
+   "items": [
+    {
+     "k": "KRESA BIAŁA",
+     "t": "Kresa biała [[linea alba]] – silne pasmo łącznotkankowe w płaszczyźnie pośrodkowej między mm. prostymi; przyczepia się u góry do wyrostka mieczykowatego, u dołu – do spojenia łonowego.",
+     "pg": "719",
+     "src": "4176-4178"
+    },
+    {
+     "k": "SZEROKOŚĆ",
+     "t": "Poszerza się od góry do pępka: przy pępku jest mniej więcej 2 razy szersza (ok. 2–2,5 cm) niż u góry (ok. 1–1,5 cm). Poniżej pępka znów się zwęża.",
+     "pg": "719",
+     "src": "4179-4181"
+    },
+    {
+     "k": "PRZYTWIERDZENIE",
+     "t": "Za przyczepem końcowym m. prostego poszerza się w trójkątną blaszkę – przytwierdzenie kresy białej [[adminiculum lineae albae]], przyczepione do więzadła łonowego górnego na górnym brzegu spojenia łonowego.",
+     "pg": "719",
+     "src": "4181-4185"
+    },
+    {
+     "k": "BUDOWA",
+     "t": "Powstaje ze skrzyżowania włókien ścięgnistych strony prawej i lewej: włókna blaszki przedniej pochewki przechodzą częściowo w blaszkę tylną strony przeciwnej i odwrotnie – dlatego kresa jest bardzo odporna.",
+     "pg": "719",
+     "src": "4188-4190"
+    },
+    {
+     "k": "OTWORKI",
+     "t": "Włókna mm. skośnych zewnętrznych biegną skośnie od góry, wewnętrznych – skośnie od dołu; w miejscach skrzyżowania powstają małe równoległoboczne otworki dla gałązek nerwów i naczyń.",
+     "pg": "719",
+     "src": "4191-4194"
+    },
+    {
+     "k": "PRZEPUKLINY KRESY BIAŁEJ",
+     "t": "Otworki to miejsca słabszego oporu [[loci minoris resistentiae]]; pod naporem trzew mogą się powiększać – powstają przepukliny kresy białej [[herniae lineae albae]], zawierające przeważnie części sieci większej.",
+     "pg": "719",
+     "src": "4194-4197"
+    },
+    {
+     "k": "PĘPEK",
+     "t": "Pępek [[umbilicus]] – blizna po pępowinie (pierwotnym połączeniu ściany brzucha z łożyskiem). Wypełnia pierścieniowatą przerwę całej warstwy ścięgnistej w obrębie kresy białej; skóra jest tu zrośnięta z blizną.",
+     "pg": "720",
+     "src": "4223-4230"
+    },
+    {
+     "k": "POŁOŻENIE PĘPKA",
+     "t": "W linii pośrodkowej, poniżej środka odległości wyrostek mieczykowaty – spojenie łonowe. U dorosłego leży powyżej środka ciała, u noworodka (stosunkowo krótsze kończyny dolne) – nieco poniżej.",
+     "pg": "720",
+     "src": "4224-4228"
+    },
+    {
+     "k": "RZUT PĘPKA",
+     "t": "W rzucie na kręgosłup – na wysokości krążka międzykręgowego L3/L4; ok. 2 cm powyżej linii łączącej najwyższe punkty grzebieni biodrowych.",
+     "pg": "720",
+     "src": "4228-4230"
+    },
+    {
+     "k": "DOŁEK I BRODAWKA",
+     "t": "Zależnie od grubości tkanki tłuszczowej pępek jest mniej lub bardziej wpuklony – dołek pępkowy [[fovea umbilicalis]]. Z dna dołka unosi się brodawka pępkowa [[papilla umbilicalis]].",
+     "pg": "720",
+     "src": "4230-4233"
+    },
+    {
+     "k": "PIERŚCIEŃ PĘPKOWY",
+     "t": "Ku tyłowi od dołka leży przerwa warstwy ścięgnistej – pierścień pępkowy [[annulus umbilicalis]]: miejsce zmniejszonego oporu, przez które naczynia pępkowe płodu przechodziły do pępowiny.",
+     "pg": "720",
+     "src": "4233-4236"
+    },
+    {
+     "k": "PRZEPUKLINY PĘPKOWE",
+     "t": "Trzewa mogą tu uwypuklać ścianę brzucha – przepuklina pępkowa [[hernia umbilicalis]]: nabyta (powstaje po zamknięciu pępka) albo wrodzona (zahamowanie rozwoju, niezupełne zamknięcie pępka).",
+     "pg": "720",
+     "src": "4236-4240"
+    },
+    {
+     "k": "BRUZDA POŚRODKOWA",
+     "t": "Powyżej pępka (zwłaszcza przy silnych mięśniach) widać pionową bruzdę między mm. prostymi do wyrostka mieczykowatego; poniżej pępka zanika. U ciężarnych skóra poniżej pępka w linii pośrodkowej ciemnieje.",
+     "pg": "720",
+     "src": "4240-4244"
+    }
+   ]
+  },
+  {
+   "id": "powiez_poprzeczna",
+   "title": "Powięź poprzeczna i słabe miejsca ściany brzucha",
+   "lat": "fascia transversalis; loci minoris resistentiae",
+   "pg": "721–722, 729",
+   "items": [
+    {
+     "k": "POŁOŻENIE",
+     "t": "Powięź poprzeczna [[fascia transversalis]] pokrywa tylną powierzchnię m. poprzecznego i jego rozcięgna – leży między nim a otrzewną. Od kresy łukowatej do miednicy przylega bezpośrednio do m. prostego.",
+     "pg": "721",
+     "src": "4309-4312"
+    },
+    {
+     "k": "CIĄGŁOŚĆ",
+     "t": "Przy pępku mocniejsza [[fascia umbilicalis]]. Ku górze przechodzi w tkankę podotrzewnową przepony, z tyłu – w powięź m. czworobocznego lędźwi i na m. lędźwiowy większy; u dołu – do grzebienia biodrowego i więzadła pachwinowego.",
+     "pg": "721",
+     "src": "4312-4318"
+    },
+    {
+     "k": "WYROSTEK POCHWOWY",
+     "t": "Mniej więcej w połowie długości więzadła pachwinowego, nieco nad nim, wysyła przez kanał pachwinowy palcowatą wypustkę – wyrostek pochwowy powięzi poprzecznej [[processus vaginalis fasciae transversalis]].",
+     "pg": "721",
+     "src": "4320-4322"
+    },
+    {
+     "k": "POWIĘŹ NASIENNA WEWNĘTRZNA",
+     "t": "U mężczyzny wypustka sięga do moszny jako powięź nasienna wewnętrzna [[fascia spermatica interna; syn. tunica vaginalis communis testis et funiculi spermatici]], pokryta dźwigaczem jądra. U kobiety słabsza osłonka obejmuje więzadło obłe macicy.",
+     "pg": "721",
+     "src": "4322-4326"
+    },
+    {
+     "k": "PIERŚCIEŃ GŁĘBOKI",
+     "t": "Wejście do wypustki, tuż pod otrzewną, to pierścień pachwinowy głęboki [[annulus inguinalis profundus]]. Jego brzeg przyśrodkowy ostro odgranicza więzadło międzydołkowe; wzdłuż niego biegną ku górze naczynia nabrzuszne dolne.",
+     "pg": "721",
+     "src": "4326-4330"
+    },
+    {
+     "k": "DWA WZMOCNIENIA",
+     "t": "Nad więzadłem pachwinowym powięź wzmacniają 2 pasma ścięgniste: przyśrodkowe – sierp pachwinowy, boczne – więzadło międzydołkowe. Uważa się je za wzmocnienia powięzi albo szczątkowe przyczepy m. skośnego wewn. i poprzecznego.",
+     "pg": "721–722",
+     "src": "4332-4370"
+    },
+    {
+     "k": "SIERP PACHWINOWY",
+     "t": "Sierp pachwinowy [[falx inguinalis]], inaczej ścięgno łączące – trójkątny. Brzeg przyśrodkowy łączy się z pochewką i ścięgnem m. prostego, brzeg boczny (sierpowaty) jest wolny; podstawa – gałąź górna kości łonowej. Ważny w chirurgii.",
+     "pg": "722",
+     "src": "4372-4375"
+    },
+    {
+     "k": "WIĘZADŁO MIĘDZYDOŁKOWE",
+     "t": "Więzadło międzydołkowe [[ligamentum interfoveolare]] – pasmo z góry w dół między dołami pachwinowymi, tuż przed naczyniami nabrzusznymi dolnymi. W dół łączy się z więzadłem pachwinowym, w górę – z powięzią lub rozcięgnem m. poprzecznego.",
+     "pg": "722",
+     "src": "4377-4381"
+    },
+    {
+     "k": "WIĘZADŁO MIĘDZYDOŁKOWE – BRZEGI",
+     "t": "Brzeg przyśrodkowy zwrócony jest do sierpa pachwinowego; brzeg boczny, wklęsły, ogranicza od strony przyśrodkowej pierścień pachwinowy głęboki.",
+     "pg": "722",
+     "src": "4381-4383"
+    },
+    {
+     "k": "M. MIĘDZYDOŁKOWY",
+     "t": "Czasem sierp, a zwłaszcza więzadło międzydołkowe, zastępują lub wzmacniają pasma mięśniowe z m. poprzecznego i skośnego wewnętrznego [[m. interfoveolaris]]; biegną zwykle przed powięzią poprzeczną.",
+     "pg": "722",
+     "src": "4383-4386"
+    },
+    {
+     "k": "POWIĘŹ A DOŁY",
+     "t": "Cienkie miejsce powięzi między więzadłem międzydołkowym a sierpem odpowiada na otrzewnej dołowi pachwinowemu przyśrodkowemu, a pierścień głęboki – dołowi bocznemu. Oba doły to miejsca zmniejszonego oporu (przepukliny).",
+     "pg": "722",
+     "src": "4386-4392"
+    },
+    {
+     "k": "SŁABE MIEJSCA – MECHANIZM",
+     "t": "Przez miejsca zmniejszonego oporu trzewa mogą wydostać się pod skórę i utworzyć przepuklinę – np. przy wzmożonym ciśnieniu w jamie brzusznej podczas podnoszenia ciężarów.",
+     "pg": "729",
+     "src": "4804-4807"
+    },
+    {
+     "k": "SŁABE MIEJSCA – LISTA",
+     "t": "Ściana przednia: kresa biała i pępek. Ściana tylna: trójkąt lędźwiowy i ścięgnista przestrzeń lędźwiowa (przepukliny lędźwiowe). Przepona: trójkąt mostkowo-żebrowy i lędźwiowo-żebrowy (przepukliny przeponowe).",
+     "pg": "729",
+     "src": "4807-4841"
+    },
+    {
+     "k": "KANAŁ UDOWY I PACHWINOWY",
+     "t": "Także kanał udowy – poniżej przyśrodkowego końca więzadła pachwinowego (przepukliny udowe; opis przy powięziach uda) – i kanał pachwinowy z pierścieniami (przepukliny pachwinowe).",
+     "pg": "729",
+     "src": "4841-4846"
+    }
+   ]
+  },
+  {
+   "id": "kanal",
+   "title": "Kanał pachwinowy",
+   "lat": "canalis inguinalis",
+   "pg": "722–726",
+   "items": [
+    {
+     "k": "PRZEBIEG",
+     "t": "Kanał pachwinowy [[canalis inguinalis]] skośnie przebija ścianę brzucha powyżej przyśrodkowej części więzadła pachwinowego: od tyłu, góry i boku – do przodu, w dół i przyśrodkowo.",
+     "pg": "722",
+     "src": "4396-4399"
+    },
+    {
+     "k": "WYMIARY",
+     "t": "Kąt między więzadłem pachwinowym a osią kanału – ok. 15°. Długość kanału – 4–5 cm.",
+     "pg": "722",
+     "src": "4399-4400"
+    },
+    {
+     "k": "KANAŁ POTENCJALNY",
+     "t": "U dorosłego w warunkach prawidłowych kanał nie ma światła – istnieje tylko potencjalnie. Jest miejscem zmniejszonego oporu [[locus minoris resistentiae]]; przez pionową postawę ciała – tylko u człowieka.",
+     "pg": "724",
+     "src": "4487-4492"
+    },
+    {
+     "k": "WĘDRÓWKA JĄDRA",
+     "t": "Tą drogą jądro (leżące w jamie brzusznej poza otrzewną) zstępuje do moszny [[descensus testis]], pociągając za sobą jako osłonki warstwy ściany brzucha – tak powstaje powrózek nasienny, który wypełnia kanał.",
+     "pg": "722–723",
+     "src": "4400-4417"
+    },
+    {
+     "k": "PIERŚCIEŃ POWIERZCHOWNY",
+     "t": "Pierścień pachwinowy powierzchowny [[annulus inguinalis superficialis; syn. annulus inguinalis subcutaneus]] – szczelina w dolnej, przyśrodkowej części rozcięgna m. skośnego zewnętrznego, nieco bocznie i powyżej guzka łonowego. Łatwo wyczuwalny.",
+     "pg": "724",
+     "src": "4494-4514"
+    },
+    {
+     "k": "ODNOGI",
+     "t": "Brzegi pierścienia powierzchownego: odnoga przyśrodkowa [[crus mediale]] i boczna [[crus laterale]] (przechodzi w więzadło pachwinowe), z przodu włókna międzyodnogowe [[fibrae intercrurales]], z tyłu i od dołu – więzadło zagięte [[lig. reflexum]].",
+     "pg": "724",
+     "src": "4501-4512"
+    },
+    {
+     "k": "PIERŚCIEŃ GŁĘBOKI",
+     "t": "Pierścień pachwinowy głęboki [[annulus inguinalis profundus; syn. annulus inguinalis subperitonealis]] – w powięzi poprzecznej, mniej więcej w połowie długości więzadła pachwinowego, ok. 2 cm nad nim; bocznie od naczyń nabrzusznych dolnych.",
+     "pg": "725",
+     "src": "4558-4565"
+    },
+    {
+     "k": "ŚCIANA PRZEDNIA I TYLNA",
+     "t": "4 ściany: 2 szerokie i 2 wąskie. Przednia – rozcięgno m. skośnego zewnętrznego, zwłaszcza włókna międzyodnogowe. Tylna – głównie powięź poprzeczna, wzmocniona więzadłem międzydołkowym i sierpem pachwinowym.",
+     "pg": "725",
+     "src": "4567-4575"
+    },
+    {
+     "k": "ŚCIANA GÓRNA I DOLNA",
+     "t": "Górna (strop) – dolne włókna m. skośnego wewnętrznego i m. poprzecznego. Dolna (dno) – więzadło pachwinowe i włókna odnogi bocznej: tworzą rynienkę otwartą ku górze, w której biegnie powrózek nasienny.",
+     "pg": "725",
+     "src": "4577-4583"
+    },
+    {
+     "k": "ZAWARTOŚĆ",
+     "t": "U mężczyzny – powrózek nasienny [[funiculus spermaticus]]. U kobiety – więzadło obłe macicy [[ligamentum teres uteri]]: od brzegu bocznego macicy przez kanał do wzgórka łonowego i wargi sromowej większej.",
+     "pg": "726",
+     "src": "4589-4623"
+    },
+    {
+     "k": "OSŁONKI POWRÓZKA (OD WEWNĄTRZ)",
+     "t": "Powięź nasienna wewnętrzna (z powięzi poprzecznej), dźwigacz jądra (z mm. skośnego wewn. i poprzecznego), powięź dźwigacza jądra (z rozcięgna m. skośnego zewn. i powięzi powierzchownej – przy pierścieniu powierzchownym).",
+     "pg": "723, 726",
+     "src": "4410-4417, 4593-4608"
+    },
+    {
+     "k": "SKŁAD POWRÓZKA",
+     "t": "t. jądrowa (od aorty brzusznej), t. m. dźwigacza jądra (od t. nabrzusznej dolnej), t. nasieniowodu (od t. biodrowej wewnętrznej); żyły – splot wiciowaty; naczynia limfatyczne.",
+     "pg": "726",
+     "src": "4610-4612"
+    },
+    {
+     "k": "SKŁAD POWRÓZKA – C.D.",
+     "t": "Gałąź płciowa n. płciowo-udowego (L1–L2), splot współczulny jądrowy, pozostałość wyrostka pochwowego otrzewnej i nasieniowód [[ductus deferens]] – najważniejszy składnik: twardy (gruba cewa mięśniowa), wyczuwalny u żywego.",
+     "pg": "726",
+     "src": "4612-4617"
+    },
+    {
+     "k": "PUNKTY ORIENTACYJNE",
+     "t": "Pierścieniowi głębokiemu odpowiada dół pachwinowy boczny, naprzeciw pierścienia powierzchownego leży dół przyśrodkowy. Przepuklina skośna idzie całym kanałem, prosta – najkrótszą drogą przez dół przyśrodkowy.",
+     "pg": "729–730",
+     "src": "4794-4877"
+    }
+   ]
+  },
+  {
+   "id": "sciana_przepukliny",
+   "title": "Powierzchnia wewnętrzna przedniej ściany brzucha i przepukliny pachwinowe",
+   "lat": "fossa inguinalis medialis et lateralis",
+   "pg": "726–730, 733",
+   "items": [
+    {
+     "k": "FAŁDY – OGÓLNIE",
+     "t": "Poniżej pępka, między powięzią poprzeczną a otrzewną, biegną więzadła i naczynia. Wypuklają otrzewną w 5 fałdów – punkty orientacyjne dla przebiegu kanału pachwinowego.",
+     "pg": "726",
+     "src": "4628-4632"
+    },
+    {
+     "k": "FAŁD POŚRODKOWY",
+     "t": "Fałd pępkowy pośrodkowy [[plica umbilicalis mediana]], nieparzysty – zawiera więzadło pępkowe pośrodkowe (od pępka do szczytu pęcherza): pozostałość moczownika [[urachus]], powstałego z przewodu omoczni.",
+     "pg": "726–728",
+     "src": "4634-4748"
+    },
+    {
+     "k": "FAŁDY PRZYŚRODKOWE",
+     "t": "Fałdy pępkowe przyśrodkowe [[plicae umbilicales mediales]], prawy i lewy – zawierają więzadła pępkowe przyśrodkowe: biegną od miejsca bocznie od pęcherza zbieżnie do pępka. To pozostałości tętnic pępkowych, które po urodzeniu zarastają.",
+     "pg": "728",
+     "src": "4750-4757"
+    },
+    {
+     "k": "FAŁDY BOCZNE",
+     "t": "Fałdy pępkowe boczne [[plicae umbilicales laterales]] – bocznie od poprzednich, nieco zbieżne ku górze; zawierają naczynia nabrzuszne dolne, biegnące na tylną powierzchnię m. prostego.",
+     "pg": "728",
+     "src": "4759-4762"
+    },
+    {
+     "k": "INNE NAZWY (PRZYPISY)",
+     "t": "W przypisach Bochenek podaje inne nazwy: fałd pośrodkowy [[plica umbilicalis media]], fałdy przyśrodkowe [[plicae umbilicales laterales]], fałdy boczne [[plicae epigastricae]].",
+     "pg": "726, 728",
+     "src": "4639, 4788-4789"
+    },
+    {
+     "k": "TRZY DOŁY",
+     "t": "Nad więzadłem pachwinowym po każdej stronie: dół nadpęcherzowy [[fossa supravesicalis]] (między fałdem pośrodkowym a przyśrodkowym), dół pachwinowy przyśrodkowy [[fossa inguinalis medialis]] (między przyśrodkowym a bocznym) i boczny [[fossa inguinalis lateralis]].",
+     "pg": "728–729",
+     "src": "4764-4795"
+    },
+    {
+     "k": "DOŁY A PIERŚCIENIE",
+     "t": "Dół pachwinowy boczny odpowiada pierścieniowi głębokiemu, przyśrodkowy leży naprzeciw pierścienia powierzchownego. Dół nadpęcherzowy rzadko daje przepukliny – ścianę wzmacniają tu mm. proste i piramidowe.",
+     "pg": "729–730",
+     "src": "4795-4800, 4854-4858"
+    },
+    {
+     "k": "!",
+     "t": "S. 730: „oba doły pachwinowe” (przyśrodkowy i boczny) to miejsca zmniejszonego oporu; streszczenie s. 733: „wszystkie trzy doły” są „miejscami słabszego oporu” (dół nadpęcherzowy tylko rzadko bywa miejscem wyjścia przepuklin).",
+     "pg": "730, 733",
+     "src": "4861, 5070-5072"
+    },
+    {
+     "k": "PRZEPUKLINY – OGÓLNIE",
+     "t": "Przepukliny pachwinowe powstają powyżej więzadła pachwinowego (udowe – poniżej). Wychodzą przez dół pachwinowy przyśrodkowy lub boczny: tu przebieg kanału i przewaga warstw ścięgnistych nad mięśniowymi osłabiają ścianę.",
+     "pg": "730",
+     "src": "4852-4861"
+    },
+    {
+     "k": "CZĘSTOŚĆ",
+     "t": "Na 100 przepuklin pachwinowych przypada 80 bocznych i 20 przyśrodkowych; Bochenek dodaje: „pierwsze są przy tym częstsze u mężczyzn niż u kobiet”.",
+     "pg": "730",
+     "src": "4862-4864"
+    },
+    {
+     "k": "PRZEPUKLINA PROSTA",
+     "t": "Przyśrodkowa, czyli prosta [[herniae mediales s. rectae]]: najkrótszą drogą – przez dół pachwinowy przyśrodkowy i pierścień powierzchowny pod skórę. Leży bocznie od więzadła pępkowego przyśrodkowego i przyśrodkowo od naczyń nabrzusznych dolnych.",
+     "pg": "730",
+     "src": "4866-4870"
+    },
+    {
+     "k": "PROSTA – WOREK",
+     "t": "Worek przepukliny prostej ma 2 warstwy: zewnętrzną – powięź poprzeczną, wewnętrzną – otrzewną. Przepukliny proste są nabyte [[herniae acquisitae]], przeważnie u dorosłych.",
+     "pg": "730",
+     "src": "4870-4873"
+    },
+    {
+     "k": "PRZEPUKLINA SKOŚNA",
+     "t": "Boczna, czyli skośna [[herniae laterales s. obliquae]]: przez dół pachwinowy boczny, całą długością kanału i pierścień powierzchowny pod skórę; leży bocznie od naczyń nabrzusznych dolnych. Nabyta lub wrodzona – często u dzieci.",
+     "pg": "730",
+     "src": "4875-4880"
+    },
+    {
+     "k": "SKOŚNA – WOREK",
+     "t": "Skośna nabyta (wyrostek pochwowy otrzewnej zarośnięty): worek z 1 warstwy – otrzewnej. Skośna wrodzona [[herniae congenitae]]: workiem jest otwarty wyrostek pochwowy otrzewnej, łączący jamę otrzewnej z jamą surowiczą wokół jądra.",
+     "pg": "730",
+     "src": "4880-4889"
+    },
+    {
+     "k": "GRANICA – NACZYNIA",
+     "t": "Miejsca wyjścia przepuklin prostych i skośnych rozdzielają naczynia nabrzuszne dolne, biegnące po więzadle (mięśniu) międzydołkowym.",
+     "pg": "733",
+     "src": "5068-5070"
+    }
+   ]
+  },
+  {
+   "id": "zstepowanie",
+   "title": "Zstępowanie gruczołów płciowych",
+   "lat": "descensus testis; descensus ovarii",
+   "pg": "723–724, 732",
+   "items": [
+    {
+     "k": "POCZĄTEK",
+     "t": "U obu płci gruczoły płciowe powstają w jamie brzusznej po obu stronach kręgosłupa lędźwiowego. W 3. lub 4. miesiącu życia płodowego dochodzą do miednicy większej, w pobliże pierścienia pachwinowego głębokiego.",
+     "pg": "723",
+     "src": "4422-4425"
+    },
+    {
+     "k": "ZSTĘPOWANIE WEWNĘTRZNE",
+     "t": "To „zstępowanie wewnętrzne” jest pozorne: tylna ściana brzucha intensywnie rośnie ku górze. „Zstępowanie zewnętrzne” jądra łatwo prześledzić.",
+     "pg": "723",
+     "src": "4425-4430"
+    },
+    {
+     "k": "WYROSTEK POCHWOWY OTRZEWNEJ",
+     "t": "W 7.–9. miesiącu jądro z nasieniowodem i naczyniami przechodzi przez ścianę brzucha wzdłuż tylnej strony wyrostka pochwowego otrzewnej [[processus vaginalis peritonei]] – wypustki jak palec rękawiczki, sięgającej do moszny.",
+     "pg": "723",
+     "src": "4450-4456"
+    },
+    {
+     "k": "JĄDROWÓD",
+     "t": "Drogę jądra przez kanał kieruje i toruje jądrowód [[gubernaculum testis]] – pasmo łącznotkankowe z włóknami sprężystymi i komórkami mięśniowymi gładkimi, łączące jądro z okolicą pachwinową.",
+     "pg": "723–724",
+     "src": "4456-4464"
+    },
+    {
+     "k": "WIĘZADŁO MOSZNOWE",
+     "t": "Po zejściu jądra jądrowód prawie całkowicie zanika; zostaje więzadło mosznowe [[ligamentum scrotale]] – łączy dolny biegun jądra z dnem jego połowy moszny.",
+     "pg": "724",
+     "src": "4464-4467"
+    },
+    {
+     "k": "LOS WYROSTKA POCHWOWEGO",
+     "t": "Przed urodzeniem połączenie wyrostka z jamą otrzewnej się zamyka. Część w powrózku zwykle zanika do pasemka [[vestigium processus vaginalis peritonei]]; dno zostaje jako osłonka surowicza jądra.",
+     "pg": "724",
+     "src": "4467-4472"
+    },
+    {
+     "k": "JAJNIK",
+     "t": "Zstępowanie jajnika [[descensus ovarii]] jest znacznie krótsze: z miednicy większej do mniejszej, zwykle pod koniec życia płodowego lub zaraz po urodzeniu.",
+     "pg": "724",
+     "src": "4474-4476"
+    },
+    {
+     "k": "ODPOWIEDNIK JĄDROWODU",
+     "t": "U kobiety odpowiednik jądrowodu jest trwały; macica dzieli go na 2 części: krótszą – więzadło właściwe jajnika (do dolnego bieguna jajnika) i dłuższą – więzadło obłe macicy.",
+     "pg": "724",
+     "src": "4476-4482"
+    },
+    {
+     "k": "WYROSTEK U PŁODU ŻEŃSKIEGO",
+     "t": "U płodu żeńskiego otrzewna także wypukla się do kanału pachwinowego (wyrostek pochwowy otrzewnej). Zwykle zanika już w 3. miesiącu; czasem zostaje zachowany [[diverticulum Nucki]].",
+     "pg": "724",
+     "src": "4482-4485"
+    },
+    {
+     "k": "!",
+     "t": "Streszczenie (s. 732): z wyrostka pochwowego otrzewnej u płodów żeńskich powstaje „zachyłek Nucka”. Opis (s. 724): wyrostek zwykle zanika w 3. miesiącu, a zachowany bywa tylko czasem.",
+     "pg": "724, 732",
+     "src": "4484-4485, 5021-5024"
+    }
+   ]
+  },
+  {
+   "id": "powiezie",
+   "title": "Powięzie mięśni brzucha",
+   "lat": "fascia superficialis; fascia subcutanea",
+   "pg": "720–721",
+   "items": [
+    {
+     "k": "UKŁAD WARSTW",
+     "t": "Powięź przednia m. skośnego zewnętrznego to powięź powierzchowna brzucha. Jego powięź tylna jest zarazem powięzią przednią m. skośnego wewnętrznego i oddziela oba mm. skośne.",
+     "pg": "720",
+     "src": "4248-4252"
+    },
+    {
+     "k": "MIĘDZY SKOŚNYM WEWN. A POPRZECZNYM",
+     "t": "Oddziela je gruba blaszka powięziowa; biegnie w niej 6 ostatnich nn. międzyżebrowych i pierwszy nerw splotu lędźwiowego (n. biodrowo-podbrzuszny). Najgłębiej leży powięź poprzeczna.",
+     "pg": "720",
+     "src": "4252-4259"
+    },
+    {
+     "k": "POWIĘŹ POWIERZCHOWNA",
+     "t": "Powięź powierzchowna brzucha [[fascia superficialis]] – dość gruba, z licznymi włóknami sprężystymi, ściśle przylega do namięsnej. Łączy się z powięzią piersiową i kresą białą; u dołu zrasta się z więzadłem pachwinowym.",
+     "pg": "720",
+     "src": "4249-4267"
+    },
+    {
+     "k": "POWIĘŹ DŹWIGACZA JĄDRA",
+     "t": "Przy pierścieniu pachwinowym powierzchownym lejkowato otacza powrózek nasienny (u kobiety – więzadło obłe macicy) i schodzi z nim w dół; u mężczyzny tworzy w mosznie powięź dźwigacza jądra [[fascia cremasterica]].",
+     "pg": "720",
+     "src": "4267-4273"
+    },
+    {
+     "k": "OKOLICA ŁONOWA",
+     "t": "Poniżej pępka powięź powierzchowna jest silniejsza i ma więcej włókien sprężystych; w okolicy łonowej łączy się z więzadłem procowatym i wieszadłowym prącia (łechtaczki).",
+     "pg": "721",
+     "src": "4278-4280"
+    },
+    {
+     "k": "POWIĘŹ PODSKÓRNA",
+     "t": "Na zewnątrz od powięzi powierzchownej leży powięź podskórna [[fascia subcutanea]]: pokrywa od wewnątrz tkankę tłuszczową podskórną; u dołu także przyczepia się do więzadła pachwinowego.",
+     "pg": "721",
+     "src": "4280-4290"
+    },
+    {
+     "k": "SZCZELINA MIĘDZY POWIĘZIAMI",
+     "t": "Między powięzią podskórną a powierzchowną jest szczelina prawie bez tłuszczu z powierzchownymi naczyniami i nerwami. Dlatego u bardzo otyłych (tłuszcz do 10–15 cm) nawet dość głębokie rany mało krwawią.",
+     "pg": "721",
+     "src": "4284-4288"
+    },
+    {
+     "k": "WIĘZADŁO PROCOWATE",
+     "t": "Więzadło procowate prącia [[ligamentum fundiforme penis]] – głównie włókna sprężyste; powstaje nad spojeniem łonowym z powięzi podskórnej i kresy białej; dwa ramiona obejmują ciało jamiste. U kobiety bardzo słabe.",
+     "pg": "721",
+     "src": "4294-4300"
+    },
+    {
+     "k": "WIĘZADŁO WIESZADŁOWE",
+     "t": "Więzadło wieszadłowe prącia (łechtaczki) [[ligamentum suspensorium penis resp. clitoridis]] leży głębiej: od przedniej powierzchni spojenia łonowego do tylnej powierzchni ciała jamistego; ma włókna ze ścięgna m. prostego i rozcięgna m. skośnego zewnętrznego.",
+     "pg": "721",
+     "src": "4302-4305"
+    }
+   ]
+  }
+ ]
+}

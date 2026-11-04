@@ -1,0 +1,68 @@
+{
+ "checked": 100,
+ "issues": [
+  {
+   "where": "panels/oddychanie_l3 #0",
+   "problem": "Liczba przekręcona: Bochenek pisze, że zużycie tlenu przy wybitnych ruchach ciała „może nieraz wzrastać 8—10-krotnie albo i więcej” (w JSON: „nawet 8–10 razy” przy wysiłku lub wpływach psychicznych – brzmi jak górna granica). Łacina na skanie: „dyspnoë” (z ë), nie „dyspnoe”.",
+   "fix_t": "Spokojnie ok. pół litra powietrza na oddech, 16–20 oddechów na minutę. Przy większym wysiłku lub wpływach psychicznych oddechy głębsze lub częstsze; gdy to nie wystarcza – duszność [[dyspnoë]]. Przy wybitnych ruchach ciała zużycie tlenu nieraz rośnie 8–10-krotnie albo i więcej.",
+   "fix_pg": null,
+   "evidence": "s. 696 (skan): „Przy większym wysiłku cielesnym lub wpływach psychicznych wzrasta głębokość oddechów lub ich częstość. Jeżeli i to nie wystarcza do zaspokojenia męczącego głodu powietrza, mówimy wtedy o duszności (dyspnoë)... ponieważ zużycie tlenu wskutek wybitnych ruchów ciała może nieraz wzrastać 8—10-krotnie albo i więcej.”"
+  },
+  {
+   "where": "muscles/przepona #14",
+   "problem": "Łacina: w Bochenku (s. 692, przypisy) jest „trigonum sternocostale” z przypisem „s. Larreyi” oraz „trigonum lumbocostale” z przypisem „s. Bochdaleki” – nie „trigonum Larreyi” / „trigonum Bochdaleki”. Ponadto trójkąt lędźwiowo-żebrowy zamykają „nadnercza i części górne nerek” (nie „nerki”).",
+   "fix_t": "Trójkąt mostkowo-żebrowy [[trigonum sternocostale s. Larreyi]] – stykają się w nim opłucna i otrzewna; lędźwiowo-żebrowy [[trigonum lumbocostale s. Bochdaleki]] – zamykają go nadnercza i części górne nerek; przy rozworze przełykowym (zwłaszcza po prawej) bywają szczeliny.",
+   "fix_pg": null,
+   "evidence": "s. 692 (skan), przypisy: „¹ s. Bochdaleki”, „² s. Larreyi” – przy „trigonum lumbocostale¹*” i „trigonum sternocostale²*” (ten sam zapis w tej książce np. „trigonum lumbale s. Petiti”, więc „s.” to zapewne „sive”). s. 695 (OCR): „W obrębie trójkąta mostkowo-żebrowego w warunkach normalnych przylegają do siebie opłucna i otrzewna. Trójkąt zaś lędźwiowo-żebrowy jest zamknięty przez nadnercza i części górne nerek.”"
+  },
+  {
+   "where": "muscles/przepona #4",
+   "problem": "Zdanie o powstawaniu przez zanik włókien mięśniowych jest w Bochenku częścią zdania o ssakach („u niektórych ssaków nie występuje, u innych jest bardzo mały i ...”); o człowieku następne zdanie mówi tylko, że środek jest „na ogół nerkowaty”. Przypisanie tego człowiekowi bez zastrzeżenia jest niepewne.",
+   "fix_t": "Środek ścięgnisty – najcieńsza część przepony; oddziela serce od żołądka (to sąsiedztwo tłumaczy niektóre objawy chorobowe). U niektórych ssaków go nie ma, u innych jest bardzo mały i we wczesnych okresach płodowych powstaje przez zanik włókien mięśniowych.",
+   "fix_pg": null,
+   "evidence": "s. 692 (skan): „Środek ścięgnisty (centrum tendineum) stanowi wspólne ścięgno końcowe wszystkich trzech części przepony. U niektórych ssaków nie występuje, u innych jest bardzo mały i we wczesnych okresach płodowych powstaje przez zanik włókien mięśniowych. U człowieka jest on na ogół nerkowaty...”; s. 694 (skan): „...środek ścięgnisty..., stanowiący najcieńszą część przepony: to bliskie sąsiedztwo tłumaczy niektóre objawy chorobowe”."
+  },
+  {
+   "where": "muscles/przepona #19",
+   "problem": "Pierwszy człon nie jest pewną niezgodnością: w streszczeniu zaimek „który” w „dla aorty i przewodu piersiowego, który przebija przeponę w linii pośrodkowej” może się odnosić do przewodu piersiowego, a ten wg opisu leży „do tyłu i na prawo od aorty” (blisko linii pośrodkowej) – nie przeczy to rozworowi „bardzo nieznacznie na lewo od płaszczyzny pośrodkowej”. Pewna niezgodność to tylko drugi człon (n. przeponowy lewy w rozworze przełykowym). Proponuję zostawić tylko ją.",
+   "fix_t": "Streszczenie a opis: przez rozwór przełykowy – wg streszczenia (s. 701) przechodzą przełyk, nn. błędne i „n. przeponowy lewy”; w opisie (s. 693) tylko czasem gałązki brzuszne n. przeponowego lewego.",
+   "fix_pg": "693, 701",
+   "evidence": "s. 700 (skan): „rozwór aortowy (hiatus aorticus) dla aorty i przewodu piersiowego, który przebija przeponę w linii pośrodkowej na wysokości kręgu Th12”; s. 692 (skan): „Rozwór aortowy ... bardzo nieznacznie na lewo od płaszczyzny pośrodkowej ciała. Oprócz aorty przez rozwór aortowy przechodzi również przewód piersiowy do tyłu i na prawo od aorty.”; s. 701 (skan): „rozwór przełykowy (hiatus esophageus) dla przełyku, nn. błędnych i n. przeponowego lewego”; s. 693 (OCR): „Tędy przechodzą również czasem gałązki brzuszne nerwu przeponowego lewego.”"
+  },
+  {
+   "where": "panels/oddychanie_l3 #10",
+   "problem": "Zmiana słowa: Bochenek pisze, że serce i wątroba „silniej mogą przesuwać się” w lewo niż w prawo, nie „łatwiej przesuwają się”.",
+   "fix_t": "Ruchy przepony różnią się na prawym i lewym boku – serce i wątroba pod własną masą mogą silniej przesuwać się w lewo niż w prawo i różnie wpływają na jej położenie.",
+   "fix_pg": null,
+   "evidence": "s. 698 (skan): „Ruchy przepony są różne w zależności od położenia ciała na prawym lub lewym boku, ponieważ serce i wątroba pod wpływem swojej masy silniej mogą przesuwać się w lewo niż w prawo i w różny sposób wpływają na położenie przepony.”"
+  },
+  {
+   "where": "panels/oddychanie_l3 #13",
+   "problem": "Strona (drobne): zdanie o spokojnym oddychaniu żebrowym zaczyna się w ostatnim wierszu s. 696 („Podczas spokojnego oddychania żebrowego”) i kończy na s. 697; wiersze z src (2848-2849) leżą na s. 696. Treść zgodna.",
+   "fix_t": "Streszczenie (s. 701): przy spokojnym oddychaniu „występuje tylko oddychanie brzuszne”. Opis (s. 697): „zazwyczaj” czysty typ brzuszny; opisuje też spokojne oddychanie żebrowe (żebra unoszą mm. międzyżebrowe zewnętrzne).",
+   "fix_pg": "696–697, 701",
+   "evidence": "s. 696 (skan, ostatni wiersz tekstu): „Typ oddechowy piersiowy albo żebrowy. Podczas spokojnego oddychania żebrowego”; s. 697 (skan, początek): „żebra są podnoszone przez mm. międzyżebrowe zewnętrzne.”; s. 697: „W oddychaniu spokojnym występuje zazwyczaj czysty typ oddechowy brzuszny, bez udziału żeber.”; s. 701 (OCR): „Przy oddychaniu spokojnym występuje tylko oddychanie brzuszne.”"
+  },
+  {
+   "where": "muscles/mm. międzyżebrowe wewnętrzne #3",
+   "problem": "Źródło (drobne): sformułowanie „w linii pachowej” pochodzi z podpisu ryc. 449 na s. 687 („c — w linii pachowej”), a nie z cytowanych wierszy i stron (688, 700). Treść zgodna, brakuje s. 687.",
+   "fix_t": "Naczynia i nerwy międzyżebrowe w linii pachowej biegną między warstwą pośrednią a najgłębszą, z przodu – po wewnętrznej powierzchni mm. pośrednich.",
+   "fix_pg": "687–688, 700",
+   "evidence": "s. 687 (OCR podpisu ryc. 449): „c — w linii pachowej; d — w części przedniej, bocznie od mostka”; s. 688 (skan): „...następnie między obu warstwami mm. międzyżebrowych wewnętrznych (ryc. 449 c); z przodu zaś na powierzchni wewnętrznej mm. międzyżebrowych pośrednich (ryc. 449 d).”"
+  },
+  {
+   "where": "muscles/m. zębaty przedni #1",
+   "problem": "Drobne: pominięte „nieraz” – Bochenek pisze, że włókna części środkowej „nieraz zawierają dość znaczne przerwy”, a nie że przerwy są zawsze.",
+   "fix_t": "Części różnią się grubością, długością i kierunkiem włókien. Górna – najgrubsza, z krótkich włókien. Środkowa – najcieńsza, włókna rozbieżne, nieraz z przerwami zamkniętymi powięzią. Dolna – włókna silnie zbieżne.",
+   "fix_pg": null,
+   "evidence": "s. 683–684 (skan): „Część środkowa, najcieńsza, rozpoczyna się na drugim i trzecim żebrze; włókna biegną rozbieżnie i nieraz zawierają dość znaczne przerwy między sobą, zamknięte jednak przez powięź mięśniową”."
+  },
+  {
+   "where": "panels/oddychanie_l3 #6",
+   "problem": "Drobne: pominięte „nieraz” – ubranie, „które nieraz wciskają dolne żebra do wewnątrz” (nie zawsze).",
+   "fix_t": "Mężczyzna i kobieta mają ten sam typ oddychania. U mężczyzn typ brzuszny jest przeciętnie czystszy, u kobiet częściej żebrowy lub żebrowo-przeponowy – m.in. przez ubranie (sznurówka, pasek), które nieraz wciska dolne żebra.",
+   "fix_pg": null,
+   "evidence": "s. 697 (skan): „Mężczyzna i kobieta mają ten sam typ oddychania. Tylko u mężczyzn typ brzuszny występuje przeciętnie w bardziej czystej formie, a u kobiety szczególnie często zaznacza się typ żebrowy lub żebrowo-przeponowy, m.in. z powodu ubrania (sznurówka, pasek), które nieraz wciskają dolne żebra do wewnątrz.”"
+  }
+ ]
+}

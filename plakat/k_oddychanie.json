@@ -1,0 +1,467 @@
+{
+ "chapter": "oddychanie",
+ "tree": [
+  {
+   "type": "group",
+   "title": "Przepona",
+   "lat": "diaphragma",
+   "pg": "689–696",
+   "why": "mięśniowo-ścięgnista przegroda między jamą klatki piersiowej a jamą brzuszną",
+   "q": "co trzeba o niej wiedzieć?",
+   "l3": [
+    {
+     "k": "UWAGI",
+     "t": "Mięśniową przegrodę między jamą klatki a jamą brzuszną mają tylko ssaki. Kopulasta przepona przesuwa się między jamami i powiększa jedną kosztem drugiej; dzięki niej ciśnienie w klatce może być niższe niż w brzuchu.",
+     "pg": "689–690",
+     "src": "2426-2446"
+    },
+    {
+     "k": "UWAGI",
+     "t": "Pochodzi z miotomów szyjnych III–V i zstępuje z sercem do klatki [[descensus diaphragmatis]] – stąd unerwia ją nerw szyjny, n. przeponowy (ok. 25–30 cm). Z zawiązka [[septum transversum]] powstaje jej część przednia.",
+     "pg": "690",
+     "src": "2448-2452, 2460-2462"
+    },
+    {
+     "k": "UWAGI",
+     "t": "Razem z sercem pracuje bez przerwy przez całe życie (przepona – od urodzenia), ale oddychanie można w pewnym stopniu regulować dowolnie.",
+     "pg": "690",
+     "src": "2454-2457"
+    }
+   ],
+   "children": [
+    {
+     "type": "card",
+     "title": "Części i przyczepy",
+     "pg": "690–692",
+     "figs": [
+      "przepona_dol"
+     ],
+     "sections": [
+      {
+       "k": "CZĘŚCI",
+       "items": [
+        "**część lędźwiowa** {{pars lumbalis}}",
+        "**część żebrowa** {{pars costalis}}",
+        "**część mostkowa** {{pars sternalis}}"
+       ]
+      },
+      {
+       "k": "PRZYCZEP POCZĄTKOWY",
+       "items": [
+        "część lędźwiowa – odnogi: prawa [[crus dextrum]] od przedniej powierzchni trzonów L1–L3 (od więzadła podłużnego przedniego [[ligamentum longitudinale anterius]]), lewa [[crus sinistrum]] od L1–L2; przed rozworem aortowym łączą się w więzadło łukowate pośrodkowe [[ligamentum arcuatum medianum]]",
+        "część lędźwiowa – więzadło łukowate przyśrodkowe [[ligamentum arcuatum mediale]] (trzon L1 lub L2 → wyrostek żebrowy L1) i boczne [[ligamentum arcuatum laterale]] (wyrostek żebrowy L1 → XII żebro)",
+        "część żebrowa: powierzchnia wewnętrzna chrząstek żeber VII–XII – 6 wiązek [[cartilago costalis]]",
+        "część mostkowa: powierzchnia wewnętrzna wyrostka mieczykowatego [[processus xiphoideus]]"
+       ]
+      },
+      {
+       "k": "PRZYCZEP KOŃCOWY",
+       "items": [
+        "środek ścięgnisty – wspólne ścięgno końcowe wszystkich trzech części [[centrum tendineum]]"
+       ]
+      },
+      {
+       "k": "ŚRODEK ŚCIĘGNISTY",
+       "items": [
+        "kształt trójpłatowego liścia koniczyny – na płatku przednim leży serce z osierdziem, na bocznych podstawy płuc [[centrum tendineum]] (s. 692)"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "BUDOWA",
+       "t": "Kształt nerkowaty, płaska, cienka (ok. 3 mm); poprzecznie prążkowana, ale tylko częściowo dowolna. Wypukła ku górze, silniej po bokach (kopuła prawa i lewa); środek lekko wgłębiony – siodło serca.",
+       "pg": "690–691, 700",
+       "src": "2464-2465, 2499-2503, 3116-3118"
+      },
+      {
+       "k": "BUDOWA",
+       "t": "Grubość: część lędźwiowa do 1 cm, część żebrowa ok. 3 mm (najszersza część). Część mostkowa – najmniejsza, z wąskich, krótkich pęczków. Trzy części nigdy ściśle się ze sobą nie łączą.",
+       "pg": "691–692",
+       "src": "2508-2509, 2553, 2567-2573"
+      },
+      {
+       "k": "BUDOWA",
+       "t": "Więzadła łukowate to inaczej łuki lędźwiowo-żebrowe [[arcus lumbocostales]]. Przyśrodkowe biegnie nad m. lędźwiowym większym, boczne nad m. czworobocznym lędźwi – oba zrośnięte z powięzią tych mięśni.",
+       "pg": "691",
+       "src": "2511-2513, 2535-2544, 2555"
+      },
+      {
+       "k": "PRZYCZEPY – UZUPEŁNIENIE",
+       "t": "Wiązki części żebrowej wchodzą między wiązki m. poprzecznego brzucha. Przebijają je z każdej strony nn. i naczynia międzyżebrowe VII–XI (idą do mm. brzucha). N. podżebrowy przechodzi pod więzadłem łukowatym bocznym.",
+       "pg": "692",
+       "src": "2559-2565"
+      },
+      {
+       "k": "BUDOWA",
+       "t": "Środek ścięgnisty – najcieńsza część przepony; oddziela serce od żołądka (to sąsiedztwo tłumaczy niektóre objawy chorobowe). U niektórych ssaków go nie ma, u innych jest bardzo mały i we wczesnych okresach płodowych powstaje przez zanik włókien mięśniowych.",
+       "pg": "692, 694",
+       "src": "2586-2588, 2711-2713"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "Otwory",
+     "pg": "691–693",
+     "sections": [
+      {
+       "k": "OTWORY I SZCZELINY",
+       "items": [
+        "**rozwór aortowy** {{hiatus aorticus}} – na wysokości Th12, między odnogami a kręgosłupem: aorta i przewód piersiowy (s. 691–692)",
+        "**rozwór przełykowy** {{hiatus esophageus}} – wyżej i nieco na lewo od aortowego, w części lędźwiowej: przełyk oraz pnie błędne przedni i tylny (s. 691, 693)",
+        "**otwór żyły głównej** {{foramen venae cavae}} – w środku ścięgnistym, na granicy płatka prawego i przedniego: żyła główna dolna i gałązki n. przeponowego prawego (s. 692–693)",
+        "**szczeliny w odnogach**: n. trzewny większy (często też mniejszy), żyła nieparzysta (odnoga prawa) i nieparzysta krótka (odnoga lewa); bardziej bocznie pień współczulny (s. 691, 693)"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "POŁOŻENIE",
+       "t": "Rozwór aortowy – bardzo nieznacznie na lewo od płaszczyzny pośrodkowej; przewód piersiowy leży do tyłu i na prawo od aorty. Otaczają go włókna ścięgniste, więc skurcz przepony nie utrudnia tętnienia aorty.",
+       "pg": "692–693",
+       "src": "2604-2617"
+      },
+      {
+       "k": "POŁOŻENIE",
+       "t": "Rozwór przełykowy – przeważnie (57%) nieco na lewo od aortowego; pień błędny przedni na jego górnym brzegu, tylny na dolnym. Otwór żyły głównej – na prawo i do przodu od niego; ż. główna dolna zrośnięta z brzegiem.",
+       "pg": "693",
+       "src": "2619-2622, 2634-2638"
+      },
+      {
+       "k": "!",
+       "t": "Streszczenie a opis: przez rozwór przełykowy – wg streszczenia (s. 701) przechodzą przełyk, nn. błędne i „n. przeponowy lewy”; w opisie (s. 693) tylko czasem gałązki brzuszne n. przeponowego lewego.",
+       "pg": "693, 701",
+       "src": "2604-2606, 2623-2624, 3122-3124, 3128-3130"
+      },
+      {
+       "k": "!",
+       "t": "Na s. 693 Bochenek pisze, że w odnodze prawej biegnie ż. nieparzysta krótka; na s. 691 – prawa: ż. nieparzysta, lewa: ż. nieparzysta krótka.",
+       "pg": "691, 693"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "Trójkąty i przepukliny",
+     "pg": "692, 695",
+     "sections": [
+      {
+       "k": "TRÓJKĄTY",
+       "items": [
+        "**trójkąt lędźwiowo-żebrowy** {{trigonum lumbocostale}} – między częścią lędźwiową a żebrową, nad XII żebrem (s. 692)",
+        "**trójkąt mostkowo-żebrowy** {{trigonum sternocostale}} – między częścią mostkową a żebrową; przechodzą nim naczynia nabrzuszne górne (s. 692)",
+        "oba trójkąty i rozwór przełykowy to miejsca zmniejszonego oporu – tędy mogą powstawać przepukliny przeponowe (s. 695)"
+       ]
+      },
+      {
+       "k": "PRZEPUKLINY PRZEPONOWE",
+       "items": [
+        "Przepukliny prawdziwe [[herniae diaphragmaticae verae]] mają worek przepuklinowy (co najmniej z otrzewnej ściennej), rzekome [[herniae diaphragmaticae spuriae]] – nie mają. Oba rodzaje bywają wrodzone lub nabyte. (s. 695, 701)",
+        "Rzekome powstają, gdy ubytek obejmuje też opłucną i otrzewną – na brzegu otworu przechodzą one w siebie. Większość przepuklin przeponowych jest po lewej, bo po prawej ubytki dobrze zamyka wątroba. (s. 695)"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "UWAGI",
+       "t": "Trójkąt mostkowo-żebrowy [[trigonum sternocostale s. Larreyi]] – stykają się w nim opłucna i otrzewna; lędźwiowo-żebrowy [[trigonum lumbocostale s. Bochdaleki]] – zamykają go nadnercza i części górne nerek; przy rozworze przełykowym (zwłaszcza po prawej) bywają szczeliny.",
+       "pg": "692, 695",
+       "src": "2576-2579, 2610-2611, 2760-2769"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "Położenie i sąsiedztwo",
+     "pg": "693–695",
+     "figs": [
+      "przepona_czolowy"
+     ],
+     "sections": [
+      {
+       "k": "KOPUŁY – POŁOŻENIE",
+       "items": [
+        "Na zwłokach (położenie krańcowo wysokie) prawa kopuła sięga przeciętnie IV chrząstki żebrowej (młodzi III, starsi V), lewa o międzyżebrze niżej. U żywego w wydechu o międzyżebrze niżej: prawa – górny, lewa – dolny brzeg V chrząstki. (s. 695)",
+        "U żywego położenie bardzo zmienne: niżej u mężczyzn niż u kobiet, wyżej w leżeniu niż w staniu i siedzeniu, wyżej u młodych niż u starszych. Wdech–wydech: do trzech żeber (V–VII); prawa kopuła od Th8 do Th11. (s. 695)"
+       ]
+      },
+      {
+       "k": "OD GÓRY",
+       "items": [
+        "Od góry: osierdzie zrośnięte z płatkiem przednim środka ścięgnistego, po bokach opłucna przeponowa i podstawy płuc. Obwód przepony z żebrami ogranicza zachyłek żebrowo-przeponowy – płuco wsuwa się w niego przy wdechu. (s. 694)"
+       ]
+      },
+      {
+       "k": "OD DOŁU",
+       "items": [
+        "Od dołu: otrzewna (poza polem zrośnięcia z wątrobą). Pod prawą kopułą wątroba, pod lewą żołądek i śledziona; z tyłu nadnercza i górne części nerek. Odnogi graniczą od przodu z trzustką i częścią dwunastnicy. (s. 694, 701)"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "Czynność",
+     "pg": "693–694",
+     "figs": [
+      "przepona_boczny"
+     ],
+     "sections": [
+      {
+       "k": "CZYNNOŚĆ",
+       "items": [
+        "ważny mięsień wdechowy: podczas skurczu spłaszcza się, kopuły obniżają się (przy spokojnym wdechu ok. 2 cm), jama klatki piersiowej powiększa się – tzw. oddychanie brzuszne",
+        "podczas wydechu rozluźnioną przeponę podnosi napięcie mięśni brzucha",
+        "czynna przy wydawaniu głosu – reguluje siłę wydechowego prądu powietrza",
+        "z mięśniami brzucha i dna miednicy tworzy tłocznię brzuszną (s. 716)"
+       ]
+      },
+      {
+       "k": "WDECH SPOKOJNY I GŁĘBOKI",
+       "items": [
+        "Spokojny wdech: zachyłek żebrowo-przeponowy się rozchyla, środek ścięgnisty obniża się tylko ok. 1 cm. Głębszy wdech: części boczne spłaszczają się u mężczyzn ok. 4 cm (u kobiet mniej), środek ścięgnisty do 2 cm. (s. 693)"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "CZYNNOŚĆ – SZCZEGÓŁY",
+       "t": "Włókna wokół rozworu przełykowego mogą przy każdym wdechu zwężać przełyk – przeciwstawia się to opróżnianiu żołądka przez przełyk. Są z nim luźno złączone: przecięty operacyjnie przełyk może się wyśliznąć do śródpiersia.",
+       "pg": "693",
+       "src": "2624-2632"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "Unerwienie, rozwój i odmiany",
+     "pg": "690, 695–696",
+     "sections": [
+      {
+       "k": "UNERWIENIE",
+       "items": [
+        "n. przeponowy (C3–C5). Często także n. przeponowy dodatkowy – gałąź n. podobojczykowego (C5–C6) lub pętli szyjnej (C2–C3), rzadziej wprost ze splotu ramiennego; zwykle łączy się z pniem głównym. (s. 695)"
+       ]
+      },
+      {
+       "k": "ROZWÓJ",
+       "items": [
+        "Pochodzi z miotomów szyjnych III–V i zstępuje z sercem do klatki [[descensus diaphragmatis]] – stąd unerwia ją nerw szyjny, n. przeponowy (ok. 25–30 cm). Z zawiązka [[septum transversum]] powstaje jej część przednia. (s. 690)"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "ODMIANY",
+       "t": "Całkowity brak – czasem u silnie niedorozwiniętych płodów (zwłaszcza bezmózgich). Wrodzone ubytki (z nieprawidłowego zrastania się trzech części) z przesunięciem trzew do klatki – przepukliny wrodzone rzekome.",
+       "pg": "695–696",
+       "src": "2769-2771, 2792-2796"
+      },
+      {
+       "k": "ODMIANY",
+       "t": "Niezbyt rzadko pasma mięśniowe w środku ścięgnistym. Bywają dodatkowe pasma do sąsiednich mięśni (m. poprzeczny brzucha, m. lędźwiowy, m. czworoboczny lędźwi) i narządów (np. m. phrenicoesophageus, m. suspensorius duodeni).",
+       "pg": "696",
+       "src": "2796-2804"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "group",
+   "title": "Mechanika oddychania",
+   "pg": "696–698",
+   "why": "przepona, mięśnie klatki i brzucha razem zmieniają objętość klatki piersiowej",
+   "q": "jak to działa?",
+   "children": [
+    {
+     "type": "card",
+     "title": "Wdech i wydech",
+     "pg": "696–697",
+     "figs": [
+      "oddychanie_wymiary"
+     ],
+     "sections": [
+      {
+       "k": "WDECH",
+       "items": [
+        "klatka piersiowa powiększa się we wszystkich trzech kierunkach: przepona napina się i obniża, powłoki brzucha się rozluźniają, żebra się unoszą, kręgosłup się prostuje (s. 696)",
+        "Uniesienie żeber poszerza i pogłębia klatkę, skurcz przepony zwiększa jej wymiar długościowy, a prostowanie kręgosłupa piersiowego ją wydłuża – przy silnym wdechu człowiek jest wyższy o parę milimetrów. (s. 696)"
+       ]
+      },
+      {
+       "k": "WYDECH",
+       "items": [
+        "mięśnie brzucha się napinają, przepona się rozluźnia, żebra czynnie się opuszczają, kręgosłup się zgina (s. 696)",
+        "siła sprężysta klatki piersiowej działa tylko do położenia równowagi – dalej żebra opuszczają mięśnie wydechowe (s. 697)"
+       ]
+      },
+      {
+       "k": "LICZBY",
+       "items": [
+        "Spokojnie ok. pół litra powietrza na oddech, 16–20 oddechów na minutę. Przy większym wysiłku lub wpływach psychicznych oddechy głębsze lub częstsze; gdy to nie wystarcza – duszność [[dyspnoë]]. Przy wybitnych ruchach ciała zużycie tlenu nieraz rośnie 8–10-krotnie albo i więcej. (s. 696)"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "UDZIAŁ MIĘŚNI",
+       "t": "W silnym wdechu i wydechu mogą pomagać wszystkie mięśnie przyczepione do żeber i kręgów oraz tworzące powłoki brzuszne. Ruchy oddechowe to potencjalnie jedne z najbardziej uniwersalnych ruchów ciała.",
+       "pg": "696",
+       "src": "2832-2840"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "Typy oddechowe",
+     "pg": "696–697",
+     "figs": [
+      "typy_oddechowe"
+     ],
+     "sections": [
+      {
+       "k": "TYP ŻEBROWY (PIERSIOWY)",
+       "items": [
+        "poruszają się żebra; przy spokojnym oddychaniu żebrowym unoszą je mm. międzyżebrowe zewnętrzne (s. 696–697)",
+        "**dolny** – mechanizm żebrowo-przeponowy: dolne żebra i przepona to jeden układ (s. 697)",
+        "**górny** – mechanizm żebrowo-mostkowy: górne żebra i mostek (s. 697)",
+        "Dolne: dolne żebra silnie odchylają się ku bokom; przewietrza głównie dolne części płuc; często z typem przeponowym (u pykników). Górne: gdy dół klatki jest ograniczony (np. pasek); przewietrza silniej górne części płuc. (s. 697)"
+       ]
+      },
+      {
+       "k": "TYP BRZUSZNY (PRZEPONOWY)",
+       "items": [
+        "bez bezpośredniego udziału żeber; ruch przepony widać na przedniej ścianie brzucha (s. 697)",
+        "Obniżona przepona przesuwa trzewia ku przedniej ścianie brzucha – uwypukla się ona głównie powyżej pępka. W wydechu przepona wpukla się do klatki: ciągną ją sprężyste płuca, a mm. brzucha pchają trzewia ku górze. (s. 697)"
+       ]
+      },
+      {
+       "k": "KIEDY KTÓRY",
+       "items": [
+        "spokojne oddychanie: zwykle czysty typ brzuszny; wzmożone: typ mieszany, żebrowo-przeponowy (s. 697)"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "!",
+       "t": "Streszczenie (s. 701): przy spokojnym oddychaniu „występuje tylko oddychanie brzuszne”. Opis (s. 697): „zazwyczaj” czysty typ brzuszny; opisuje też spokojne oddychanie żebrowe (żebra unoszą mm. międzyżebrowe zewnętrzne).",
+       "pg": "696–697, 701",
+       "src": "2848-2849, 2861, 2914, 3186-3187"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "Mięśnie oddechowe",
+     "pg": "693, 697",
+     "figs": [
+      "miesnie_oddechowe"
+     ],
+     "sections": [
+      {
+       "k": "MIĘŚNIE WDECHOWE – GŁÓWNE",
+       "items": [
+        "przepona (s. 693)",
+        "mm. międzyżebrowe zewnętrzne – podnoszą żebra przy spokojnym oddychaniu żebrowym (s. 697)"
+       ]
+      },
+      {
+       "k": "MIĘŚNIE WDECHOWE – POMOCNICZE (s. 697)",
+       "items": [
+        "mm. pochyłe – przedłużenie mm. międzyżebrowych zewnętrznych",
+        "m. mostkowo-obojczykowo-sutkowy – gdy głowa i kręgosłup są ustalone",
+        "m. zębaty przedni, mm. piersiowe większy i mniejszy, m. najszerszy grzbietu (wiązki żebrowe), m. podobojczykowy – gdy ramię jest ustalone, np. chwyt brzegu stołu",
+        "m. zębaty tylny górny"
+       ]
+      },
+      {
+       "k": "MIĘŚNIE WYDECHOWE",
+       "items": [
+        "w spokojnym oddychaniu: mm. międzyżebrowe wewnętrzne i m. poprzeczny klatki piersiowej (s. 697)",
+        "pomocnicze: mięśnie brzucha – najsilniej opuszczają żebra; czynne przy kaszlu i śpiewie (s. 697)",
+        "m. najszerszy grzbietu – „mięsień kaszlu”: jego części boczne kurczą się przy utrudnionym wydechu, gdy ramiona są ustalone (s. 697)"
+       ]
+      },
+      {
+       "k": "KIEDY POMOCNICZE",
+       "items": [
+        "Wdechowe – gdy trzeba silniej unieść żebra albo wdech idzie przeciw oporowi (np. ssanie). Czynny wydech – przeciw oporowi lub szybki: kaszel, kichanie, śmiech; m. najszerszy grzbietu przy utrudnionym wydechu [[asthma]]. (s. 697)"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "Przepona i mięśnie brzucha",
+     "pg": "697",
+     "figs": [
+      "przepona_brzuch"
+     ],
+     "sections": [
+      {
+       "k": "ANTAGONIŚCI",
+       "items": [
+        "przepona i mięśnie brzucha działają antagonistycznie (s. 697)",
+        "wdech: przepona obniża się, trzewia przesuwają się ku przedniej ścianie brzucha, powłoki się rozluźniają (s. 696–697)",
+        "wydech: mięśnie brzucha napinają się i przesuwają trzewia ku górze, przepona rozluźnia się i wpukla do klatki (s. 696–697)",
+        "z mięśniami brzucha i dna miednicy przepona tworzy tłocznię brzuszną (s. 716)"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "Od czego zależy oddychanie",
+     "pg": "697–698",
+     "sections": [
+      {
+       "k": "PŁEĆ",
+       "items": [
+        "Mężczyzna i kobieta mają ten sam typ oddychania. U mężczyzn typ brzuszny jest przeciętnie czystszy, u kobiet częściej żebrowy lub żebrowo-przeponowy – m.in. przez ubranie (sznurówka, pasek), które nieraz wciska dolne żebra. (s. 697)"
+       ]
+      },
+      {
+       "k": "POŁOŻENIE CIAŁA",
+       "items": [
+        "Ciśnienie trzew na przeponę i masa klatki działają różnie w różnych pozycjach. Oddychanie spokojne zależy od tego najmniej – może być zawsze czysto brzuszne; oddech wzmożony (mieszany) jest bardzo zmienny. (s. 698)"
+       ]
+      },
+      {
+       "k": "NA PLECACH, SEN",
+       "items": [
+        "Na plecach przepona stoi wyżej niż w staniu, a im wyżej, tym łatwiej się opuszcza (włókna mogą się najbardziej skrócić). Klatka spłaszcza się przednio-tylnie, żebra unoszą się silniej – stąd we śnie przeważa typ żebrowy. (s. 698)"
+       ]
+      },
+      {
+       "k": "NA BOKU",
+       "items": [
+        "Połowa klatki przy podłożu jest wyłączona z oddychania żebrowego, żebra drugiej strony ruszają się silniej. Chorzy z jednostronnym bólem (zapalenie opłucnej, płuc) leżą na chorej stronie – unieruchamiają bolesne żebra. (s. 698)"
+       ]
+      },
+      {
+       "k": "PRAWY I LEWY BOK",
+       "items": [
+        "Ruchy przepony różnią się na prawym i lewym boku – serce i wątroba pod własną masą mogą silniej przesuwać się w lewo niż w prawo i różnie wpływają na jej położenie. (s. 698)"
+       ]
+      },
+      {
+       "k": "WIEK",
+       "items": [
+        "W młodości przeważa oddychanie żebrowe. Później sprężystość klatki i płuc maleje, przepona obniża się i spłaszcza; oddech staje się utrudniony i częstszy, przeważnie mieszany. (s. 698)"
+       ]
+      },
+      {
+       "k": "BUDOWA CIAŁA",
+       "items": [
+        "Wąska klatka ze zwieszającymi się żebrami – przeważa typ żebrowy. Typ pykniczny – często brzuszny lub żebrowo-przeponowy. (s. 697–698)"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

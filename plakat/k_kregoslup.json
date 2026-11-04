@@ -1,0 +1,1490 @@
+{
+ "chapter": "kregoslup",
+ "tree": [
+  {
+   "type": "group",
+   "title": "Kręgosłup",
+   "lat": "columna vertebralis",
+   "pg": "219–237",
+   "why": "ruchoma oś tułowia i szyi; 33–34 kręgi ułożone jeden na drugim",
+   "q": "kręg samodzielny czy zrośnięty?",
+   "l3": [
+    {
+     "k": "POŁOŻENIE",
+     "t": "Leży pośrodkowo po stronie grzbietowej ciała; biegnie od podstawy czaszki do dolnego końca tułowia.",
+     "pg": "219",
+     "src": "127-129"
+    },
+    {
+     "k": "KOŚCIEC OSIOWY",
+     "t": "Kręgosłup razem z żebrami i mostkiem tworzy **kościec osiowy** {{skeleton axiale}}.",
+     "pg": "219",
+     "src": "129-131"
+    },
+    {
+     "k": "PODZIAŁ",
+     "t": "Wg okolicy: kręgi szyjne (czyli karkowe) – 7, piersiowe (czyli grzbietowe) – 12, lędźwiowe – 5, krzyżowe – 5, ogonowe (czyli guziczne) – 4–5.",
+     "pg": "220",
+     "src": "135-140"
+    },
+    {
+     "k": "BUDOWA",
+     "t": "Kręgi nieparzyste, zbudowane symetrycznie. Ku dołowi coraz silniejsze i większe – jako podpora górnej części ciała kręgosłup przybiera ku dołowi na mocy.",
+     "pg": "220",
+     "src": "135-147"
+    },
+    {
+     "k": "UWAGI",
+     "t": "Kręgi guziczne to odcinek ogonowy kręgosłupa – u wielu zwierząt ma on znaczną długość.",
+     "pg": "220",
+     "src": "161-162"
+    }
+   ],
+   "children": [
+    {
+     "type": "card",
+     "title": "Budowa ogólna kręgu",
+     "lat": "vertebra",
+     "pg": "220–222",
+     "sections": [
+      {
+       "k": "CZĘŚCI KRĘGU",
+       "items": [
+        "**Trzon** {{corpus vertebrae}} – część przednia, silniejsza i grubsza; dźwiga masę ciała.",
+        "**Łuk kręgu** {{arcus vertebrae}} – część tylna, słabsza i cieńsza; otacza i chroni rdzeń kręgowy.",
+        "**Otwór kręgowy** {{foramen vertebrale}} – otoczony przez trzon i łuk.",
+        "**Kanał kręgowy** {{canalis vertebralis}} – suma otworów kręgowych wszystkich kręgów; mieści rdzeń kręgowy i jego opony."
+       ]
+      },
+      {
+       "k": "TRZON",
+       "items": [
+        "Kształt niskiego walca.",
+        "Powierzchnie górna i dolna – porowate, nieco chropawe; zrastają się z chrzęstnym krążkiem międzykręgowym.",
+        "Na brzegu tych powierzchni – listewka brzeżna: gładsza, nieco wystająca, szeroka na parę milimetrów.",
+        "Powierzchnie przednia i boczne – nieco wklęsłe w pionie, wypukłe w poziomie. Na przedniej – kilka małych otworów dla naczyń odżywczych.",
+        "Powierzchnia tylna (przednia ściana otworu kręgowego) – prawie równa; ma 1 lub 2 stosunkowo duże otwory.",
+        "Przez te otwory wychodzą z trzonu **żyły podstawno-kręgowe** {{venae basivertebrales}} – uchodzą do splotów żylnych kręgowych wewnętrznych w kanale kręgowym."
+       ]
+      },
+      {
+       "k": "ŁUK",
+       "items": [
+        "**Nasada łuku kręgu** {{pediculus arcus vertebrae}} – początek łuku z prawej i z lewej, w górnej części tylnej powierzchni trzonu; najwęższa część łuku.",
+        "**Wcięcie kręgowe górne** {{incisura vertebralis superior}} – płytkie, na górnym brzegu nasady.",
+        "**Wcięcie kręgowe dolne** {{incisura vertebralis inferior}} – znacznie głębsze, na dolnym brzegu nasady.",
+        "**Otwór międzykręgowy** {{foramen intervertebrale}} – między wcięciami 2 sąsiednich kręgów (wraz z krążkiem międzykręgowym); po 1 z prawej i z lewej. Przechodzą nim nerwy rdzeniowe i naczynia.",
+        "**Blaszka łuku kręgu** {{lamina arcus vertebrae}} – szeroka, przedłużenie nasady; biegnie ku tyłowi i przyśrodkowo. Blaszki prawa i lewa łączą się i zamykają otwór kręgowy od tyłu."
+       ]
+      },
+      {
+       "k": "7 WYROSTKÓW",
+       "items": [
+        "Wszystkie odchodzą od łuku: 1 kolczysty, 2 stawowe górne, 2 stawowe dolne, 2 poprzeczne.",
+        "**Wyrostek kolczysty** {{processus spinosus}} – nieparzysty; biegnie ku tyłowi w płaszczyźnie pośrodkowej. Koniec pod skórą grzbietu – zwykle wyczuwalny, u osób chudych nawet widoczny.",
+        "**Wyrostek stawowy górny** {{processus articularis superior}} – krótki, skierowany ku górze; jego powierzchnia stawowa zwrócona mniej więcej ku tyłowi.",
+        "**Wyrostek stawowy dolny** {{processus articularis inferior}} – krótki, skierowany ku dołowi; jego powierzchnia stawowa zwrócona mniej więcej do przodu.",
+        "Powierzchnie stawowe pokryte chrząstką szklistą; wyrostki stawowe łączą kręgi między sobą stawowo.",
+        "**Wyrostek poprzeczny** {{processus transversus}} – parzysty; odchodzi od łuku między wyrostkami stawowymi górnym i dolnym, kieruje się bocznie.",
+        "Wyrostki stawowe i poprzeczne odchodzą przeważnie mniej więcej w miejscu przejścia nasady w blaszkę.",
+        "Wyrostki kolczyste i poprzeczne – przyczep mięśni i więzadeł (ramiona dźwigni dla mięśni)."
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "STRUKTURA",
+       "t": "Trzon: tkanka gąbczasta pokryta cienką warstwą istoty zbitej; wzmacniają ją okostna i więzadła podłużne kręgosłupa. Istota zbita trzonu, tak jak więzadła, ma przebieg podłużny.",
+       "pg": "222",
+       "src": "259-263"
+      },
+      {
+       "k": "STRUKTURA",
+       "t": "Istota gąbczasta wypełniona szpikiem czerwonym; biegną w niej poziomo i promieniście kanały dla żył podstawno-kręgowych.",
+       "pg": "222",
+       "src": "263-265"
+      },
+      {
+       "k": "STRUKTURA",
+       "t": "Blaszki kostne istoty gąbczastej – prostopadle do górnej i dolnej powierzchni trzonu (kierunek największego obciążenia); wzmacniają je poziome beleczki. Łuk i wyrostki – gruba warstwa istoty zbitej.",
+       "pg": "222",
+       "src": "265-269"
+      },
+      {
+       "k": "UWAGI",
+       "t": "Kręgi mają wspólną zasadniczą budowę, ale w poszczególnych okolicach dość znacznie się różnią.",
+       "pg": "220",
+       "src": "166-169"
+      },
+      {
+       "k": "NAZWY",
+       "t": "Nasada łuku – inaczej [[radix arcus vertebrae]]. Wyrostki stawowe – inaczej [[zygapophyses]].",
+       "pg": "221–222",
+       "src": "211-213, 236, 246"
+      },
+      {
+       "k": "KLINIKA",
+       "t": "Laminektomia (od [[lamina]]) – operacyjne usunięcie blaszki łuku w celu otwarcia kanału kręgowego.",
+       "pg": "221",
+       "src": "222-223, 238-239"
+      }
+     ],
+     "labels": [
+      "trzon {{corpus vertebrae}}",
+      "łuk kręgu {{arcus vertebrae}}",
+      "otwór kręgowy {{foramen vertebrale}}",
+      "nasada łuku kręgu {{pediculus arcus vertebrae}}",
+      "blaszka łuku kręgu {{lamina arcus vertebrae}}",
+      "wyrostek kolczysty {{processus spinosus}}",
+      "wyrostek stawowy górny {{processus articularis superior}}",
+      "wyrostek stawowy dolny {{processus articularis inferior}}",
+      "wyrostek poprzeczny {{processus transversus}}",
+      "wcięcie kręgowe górne {{incisura vertebralis superior}}",
+      "wcięcie kręgowe dolne {{incisura vertebralis inferior}}",
+      "otwór międzykręgowy {{foramen intervertebrale}}",
+      "listewka brzeżna"
+     ],
+     "fig": "schemat typowego kręgu: widok od góry | widok z boku – 2 sąsiednie kręgi (otwór międzykręgowy)"
+    },
+    {
+     "type": "group",
+     "title": "Kręgi prawdziwe",
+     "lat": "vertebrae verae",
+     "pg": "220–232",
+     "why": "kręgi 3 górnych odcinków; każdy zachował samodzielność (kręgi ruchome)",
+     "q": "który odcinek?",
+     "l3": [
+      {
+       "k": "NAZWY",
+       "t": "Inaczej kręgi przedkrzyżowe [[vertebrae presacrales]] albo kręgi ruchome.",
+       "pg": "220",
+       "src": "153-156"
+      },
+      {
+       "k": "WIELKOŚĆ",
+       "t": "Piersiowe – większe i silniej zbudowane niż szyjne; lędźwiowe – masywniejsze i większe niż piersiowe.",
+       "pg": "220",
+       "src": "143-145"
+      },
+      {
+       "k": "KRĘGI PRZEJŚCIOWE",
+       "t": "Kręgi środkowe każdej grupy mają tak wyraźne cechy, że do rozpoznania grupy wystarcza nawet część kręgu. Kręgi na końcach odcinków mają częściowo cechy grupy sąsiedniej.",
+       "pg": "222",
+       "src": "271-278"
+      }
+     ],
+     "children": [
+      {
+       "type": "group",
+       "title": "Kręgi szyjne",
+       "lat": "vertebrae cervicales",
+       "pg": "222–227",
+       "why": "7 kręgów, najmniejsze z prawdziwych; charakterystyczne wyrostki poprzeczne",
+       "q": "typowy (C3–C6) czy szczególny?",
+       "l3": [
+        {
+         "k": "PODZIAŁ",
+         "t": "C1, C2 i C7 mają cechy szczególne – Bochenek opisuje je oddzielnie. Opis ogólny dotyczy pozostałych 4 kręgów (C3–C6).",
+         "pg": "222",
+         "src": "282-285"
+        },
+        {
+         "k": "PRZEGLĄD ODCINKA",
+         "t": "Trzony od C2 do C7 coraz szersze. Dolna powierzchnia trzonu każdego kręgu dopasowana do górnej powierzchni kręgu następnego.",
+         "pg": "227",
+         "src": "556-560"
+        },
+        {
+         "k": "PRZEGLĄD ODCINKA",
+         "t": "Wyrostki poprzeczne skracają się od C7 ku górze aż do C2; potem długie, szeroko rozstawione wyrostki C1.",
+         "pg": "227",
+         "src": "560-562"
+        },
+        {
+         "k": "PRZEGLĄD ODCINKA",
+         "t": "Guzki przednie wyrostków poprzecznych: od C3 do C6 coraz większe; na C7 słabo rozwinięte; na C1 i C2 przeważnie ich brak.",
+         "pg": "227",
+         "src": "562-565"
+        },
+        {
+         "k": "PRZEGLĄD ODCINKA",
+         "t": "Wyrostki kolczyste C2–C6: krótkie, przeważnie rozszczepione na końcach, ku dołowi nieco dłuższe. C7 (czasem C6): niepodzielony i długi.",
+         "pg": "227",
+         "src": "565-568"
+        },
+        {
+         "k": "NAZWY",
+         "t": "Inaczej kręgi karkowe.",
+         "pg": "220",
+         "src": "137"
+        }
+       ],
+       "children": [
+        {
+         "type": "card",
+         "title": "Kręg szyjny typowy (C3–C6)",
+         "lat": "vertebra cervicalis",
+         "pg": "222–224",
+         "sections": [
+          {
+           "k": "TRZON",
+           "items": [
+            "**Trzon** {{corpus vertebrae}} – niski; z przodu i z tyłu mniej więcej tej samej wysokości.",
+            "Powierzchnie górna i dolna: kształt poprzecznie ustawionego, podłużnego czworoboku o zaokrąglonych brzegach.",
+            "Powierzchnia górna – wklęsła w kierunku czołowym, słabo wypukła w strzałkowym; dolna – odwrotnie (słabo wypukła czołowo, wklęsła strzałkowo)."
+           ]
+          },
+          {
+           "k": "ŁUK I OTWÓR",
+           "items": [
+            "**Łuk kręgu** {{arcus vertebrae}} – cienki, lekko pochylony w dół.",
+            "**Otwór kręgowy** {{foramen vertebrale}} – duży, trójkątny."
+           ]
+          },
+          {
+           "k": "WYROSTEK KOLCZYSTY",
+           "items": [
+            "**Wyrostek kolczysty** {{processus spinosus}} – niezbyt długi, nieznacznie pochylony ku dołowi.",
+            "Do C6 włącznie dzieli się na końcu na 2 części (zwykle asymetryczne), zakończone guzkowato. Ku dołowi kręgosłupa coraz dłuższy."
+           ]
+          },
+          {
+           "k": "WYROSTKI STAWOWE",
+           "items": [
+            "**Wyrostek stawowy górny** {{processus articularis superior}} – powierzchnia stawowa zwrócona ku górze i do tyłu.",
+            "**Wyrostek stawowy dolny** {{processus articularis inferior}} – powierzchnia stawowa zwrócona ku dołowi i do przodu.",
+            "Powierzchnie okrągłe, prawie równe; ustawione skośnie (od góry ku dołowi i od przodu ku tyłowi) pod kątem ok. 45°."
+           ]
+          },
+          {
+           "k": "WYROSTEK POPRZECZNY",
+           "items": [
+            "Budowa wyrostków poprzecznych – jedna z najbardziej charakterystycznych cech kręgów szyjnych.",
+            "**Wyrostek poprzeczny** {{processus transversus}} – stosunkowo krótki, skierowany bocznie i nieco ku dołowi.",
+            "Zbudowany z 2 listewek kostnych: listewka przednia odchodzi od trzonu, listewka tylna – od nasady łuku. Łączą się na wolnym, bocznym końcu.",
+            "Na bocznym końcu 2 oddzielne guzki: **guzek przedni** {{tuberculum anterius}} i **guzek tylny** {{tuberculum posterius}}.",
+            "**Otwór wyrostka poprzecznego** {{foramen transversarium}} – objęty przez obie listewki; nierzadko podzielony na 2 części mostkiem łącznotkankowym lub kostnym.",
+            "Przez te otwory, od C6 w górę, biegną: tętnica kręgowa, przeważnie 2 żyły kręgowe i splot nerwów współczulnych.",
+            "**Bruzda nerwu rdzeniowego** {{sulcus nervi spinalis}} – głęboka, na górnej powierzchni wyrostka, w bocznym przedłużeniu otworu; biegnie w niej gałąź przednia szyjnego n. rdzeniowego.",
+            "Bruzda oddziela guzek przedni od guzka tylnego."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "BADANIE",
+           "t": "Wolne końce wyrostków poprzecznych są wyczuwalne na bocznej powierzchni szyi.",
+           "pg": "224",
+           "src": "346-347"
+          },
+          {
+           "k": "POŁOŻENIE",
+           "t": "Dolny brzeg C3 – mniej więcej na poziomie górnego brzegu chrząstki tarczowatej, czyli wyniosłości krtaniowej („jabłko Adama”).",
+           "pg": "224",
+           "src": "347-349"
+          }
+         ],
+         "labels": [
+          "trzon {{corpus vertebrae}}",
+          "łuk kręgu {{arcus vertebrae}}",
+          "otwór kręgowy {{foramen vertebrale}}",
+          "wyrostek kolczysty {{processus spinosus}}",
+          "wyrostek stawowy górny {{processus articularis superior}}",
+          "wyrostek stawowy dolny {{processus articularis inferior}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "listewka przednia",
+          "listewka tylna",
+          "guzek przedni {{tuberculum anterius}}",
+          "guzek tylny {{tuberculum posterius}}",
+          "otwór wyrostka poprzecznego {{foramen transversarium}}",
+          "bruzda nerwu rdzeniowego {{sulcus nervi spinalis}}"
+         ],
+         "fig": "widok od góry | widok z boku (powierzchnie stawowe pod kątem ok. 45°)"
+        },
+        {
+         "type": "card",
+         "title": "Szósty kręg szyjny (C6)",
+         "lat": "vertebra cervicalis VI",
+         "pg": "223–224, 227",
+         "sections": [
+          {
+           "k": "MIEJSCE W GRUPIE",
+           "items": [
+            "Jeden z 4 typowych kręgów szyjnych (C3–C6) – ma ich wszystkie cechy.",
+            "Leży na poziomie chrząstki pierścieniowatej krtani."
+           ]
+          },
+          {
+           "k": "GUZEK TĘTNICY SZYJNEJ",
+           "items": [
+            "**Wyrostek poprzeczny** {{processus transversus}} – jego guzek przedni jest nieco większy i bardziej wysunięty do przodu niż na pozostałych kręgach; łatwo go wymacać.",
+            "Do przodu od tego guzka biegnie tętnica szyjna wspólna – stąd nazwa **guzek tętnicy szyjnej** {{tuberculum caroticum}}.",
+            "Przy zranieniu tętnicy szyjnej wspólnej można czasowo zahamować krwotok, uciskając naczynie o ten guzek."
+           ]
+          },
+          {
+           "k": "OTWÓR WYROSTKA POPRZECZNEGO",
+           "items": [
+            "**Otwór wyrostka poprzecznego** {{foramen transversarium}} – od C6 w górę biegną przez te otwory: tętnica kręgowa, przeważnie 2 żyły kręgowe i splot nerwów współczulnych."
+           ]
+          },
+          {
+           "k": "WYROSTEK KOLCZYSTY",
+           "items": [
+            "**Wyrostek kolczysty** {{processus spinosus}} – zwykle jeszcze rozdwojony: wyrostki dzielą się na końcu „aż do szóstego kręgu włącznie”.",
+            "Czasem jednak niepodzielony i długi – jak na C7."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "PRZEGLĄD ODCINKA",
+           "t": "Guzki przednie wyrostków poprzecznych stają się coraz większe od C3 do C6; na C7 są już słabo rozwinięte.",
+           "pg": "227",
+           "src": "562-564"
+          }
+         ],
+         "labels": [
+          "wyrostek poprzeczny {{processus transversus}}",
+          "guzek tętnicy szyjnej {{tuberculum caroticum}}",
+          "tętnica szyjna wspólna",
+          "otwór wyrostka poprzecznego {{foramen transversarium}}",
+          "wyrostek kolczysty {{processus spinosus}}"
+         ],
+         "fig": "widok od góry, z zaznaczoną tętnicą szyjną wspólną do przodu od guzka"
+        },
+        {
+         "type": "card",
+         "title": "Kręg szczytowy (C1)",
+         "lat": "atlas",
+         "pg": "224–225",
+         "sections": [
+          {
+           "k": "CECHY GŁÓWNE",
+           "items": [
+            "Brak trzonu – złączył się z górną powierzchnią trzonu C2 (tworzy jego ząb).",
+            "Brak właściwego wyrostka kolczystego.",
+            "Kształt pierścienia: łuk przedni, łuk tylny i 2 części boczne."
+           ]
+          },
+          {
+           "k": "ŁUK PRZEDNI",
+           "items": [
+            "**Łuk przedni** {{arcus anterior}} – jedyna pozostałość trzonu; znacznie krótszy niż tylny, wypukły do przodu.",
+            "**Guzek przedni** {{tuberculum anterius}} – mały, pośrodkowo na przedniej powierzchni łuku przedniego.",
+            "**Dołek zębowy** {{fovea dentis}} – okrągła powierzchnia stawowa na tylnej powierzchni łuku przedniego; łączy się z zębem C2."
+           ]
+          },
+          {
+           "k": "ŁUK TYLNY",
+           "items": [
+            "**Łuk tylny** {{arcus posterior}} – właściwy łuk kręgu.",
+            "**Guzek tylny** {{tuberculum posterius}} – mały szczątek wyrostka kolczystego; dzięki temu głowę można swobodnie zginać do tyłu.",
+            "**Bruzda tętnicy kręgowej** {{sulcus arteriae vertebralis}} – dość głęboka, na górnej powierzchni łuku tylnego, tuż u jego nasady.",
+            "W bruździe biegnie tętnica kręgowa (z żyłą i 1. n. szyjnym) – od otworu wyrostka poprzecznego C1 do otworu wielkiego k. potylicznej. Czasem bruzdę zamyka mostek kostny → krótki kanalik."
+           ]
+          },
+          {
+           "k": "CZĘŚCI BOCZNE",
+           "items": [
+            "**Części boczne** {{massae laterales}} – między łukami; najbardziej masywne części kręgu, przystosowane do dźwigania głowy.",
+            "Właściwych wyrostków stawowych brak – na górnej i dolnej stronie części bocznych leżą powierzchnie stawowe.",
+            "**Dołki stawowe górne** {{foveae articulares superiores}} – łączą się z kłykciami potylicznymi [[condyli occipitales]].",
+            "Dołki górne: owalne, długie osie zbiegają się do przodu; czasem przedzielone poprzecznie; wklęsłe strzałkowo i czołowo – dostosowane do ruchów przytakiwania.",
+            "**Dołki stawowe dolne** {{foveae articulares inferiores}} – łączą się z C2; okrągławe, płaskie lub słabo wypukłe, szersze od górnych."
+           ]
+          },
+          {
+           "k": "OTWÓR KRĘGOWY",
+           "items": [
+            "**Otwór kręgowy** {{foramen vertebrale}} – części boczne pod dołkami dolnymi wpuklają się w niego i zaznaczają jego podział na 2 części.",
+            "Część tylna – znacznie większa, właściwy otwór kręgowy; mieści rdzeń przedłużony z najbardziej żywotnymi ośrodkami nerwowymi.",
+            "Część przednia – znacznie mniejsza; mieści ząb C2.",
+            "Granica części: **więzadło poprzeczne kręgu szczytowego** {{ligamentum transversum atlantis}} – silne, od przyśrodkowego brzegu jednej części bocznej do drugiej.",
+            "Więzadło obejmuje ząb od tyłu, oddziela go od kanału kręgowego i chroni rdzeń przedłużony."
+           ]
+          },
+          {
+           "k": "WYROSTKI POPRZECZNE",
+           "items": [
+            "**Wyrostek poprzeczny** {{processus transversus}} – dłuższy, mocniejszy i znacznie bardziej rozstawiony bocznie niż w innych kręgach szyjnych.",
+            "Przyczep mięśni obracających głowę – długie ramię dźwigni tych mięśni.",
+            "Bez bruzdy n. rdzeniowego; przeważnie także bez obu guzków.",
+            "**Otwór wyrostka poprzecznego** {{foramen transversarium}} – stąd tętnica kręgowa biegnie do bruzdy na łuku tylnym."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "BADANIE",
+           "t": "Wolny koniec wyrostka poprzecznego – nieco poniżej, przyśrodkowo i do przodu od koniuszka wyrostka sutkowatego k. skroniowej; łatwo wyczuwalny w dołku za małżowiną uszną.",
+           "pg": "225",
+           "src": "419-421"
+          },
+          {
+           "k": "KLINIKA",
+           "t": "Zerwanie więzadła poprzecznego w ciężkim urazie → ząb przesuwa się ku tyłowi → zmiażdżenie rdzenia przedłużonego i śmierć („złamanie karku”).",
+           "pg": "225",
+           "src": "411-414"
+          },
+          {
+           "k": "NAZWY",
+           "t": "Na ryc. 136 Bochenka otwór wyrostka poprzecznego podpisany [[foramen processus transversi]].",
+           "pg": "224"
+          }
+         ],
+         "labels": [
+          "łuk przedni {{arcus anterior}}",
+          "guzek przedni {{tuberculum anterius}}",
+          "dołek zębowy {{fovea dentis}}",
+          "łuk tylny {{arcus posterior}}",
+          "guzek tylny {{tuberculum posterius}}",
+          "bruzda tętnicy kręgowej {{sulcus arteriae vertebralis}}",
+          "części boczne {{massae laterales}}",
+          "dołki stawowe górne {{foveae articulares superiores}}",
+          "dołki stawowe dolne {{foveae articulares inferiores}}",
+          "otwór kręgowy {{foramen vertebrale}}",
+          "więzadło poprzeczne kręgu szczytowego {{ligamentum transversum atlantis}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "otwór wyrostka poprzecznego {{foramen transversarium}}"
+         ],
+         "fig": "widok od góry (z więzadłem poprzecznym) | widok od dołu (dołki stawowe dolne)"
+        },
+        {
+         "type": "card",
+         "title": "Kręg obrotowy (C2)",
+         "lat": "axis",
+         "pg": "225–226",
+         "sections": [
+          {
+           "k": "ZĄB",
+           "items": [
+            "Tworzy oś, wokół której obraca się **kręg szczytowy** {{atlas}} razem z głową – stąd nazwa.",
+            "**Trzon** {{corpus vertebrae}} wydatnie przedłużony ku górze – z jego górnej powierzchni wystaje **ząb** {{dens}}.",
+            "Ząb to trzon kręgu szczytowego zrośnięty z kręgiem leżącym niżej.",
+            "**Wierzchołek zęba** {{apex dentis}} – tępy.",
+            "**Powierzchnia stawowa przednia** {{facies articularis anterior}} – owalna, na przedniej powierzchni zęba; łączy się z łukiem przednim C1.",
+            "**Powierzchnia stawowa tylna** {{facies articularis posterior}} – na tylnej stronie zęba; łączy się stawowo z więzadłem poprzecznym C1."
+           ]
+          },
+          {
+           "k": "POWIERZCHNIE STAWOWE GÓRNE",
+           "items": [
+            "Właściwych wyrostków stawowych górnych brak (tak samo jak na C1).",
+            "**Powierzchnia stawowa górna** {{facies articularis superior}} – okrągława, słabo wypukła; po obu stronach zęba, na części bocznej trzonu; skierowana skośnie ku dołowi i bocznie.",
+            "Powierzchnie te pozwalają na rozległe obroty C1 (razem z głową) względem C2.",
+            "N. rdzeniowy 2 biegnie grzbietowo od powierzchni stawowej górnej – podobnie jak n. rdzeniowy 1 i tętnica kręgowa na C1."
+           ]
+          },
+          {
+           "k": "POZOSTAŁE CZĘŚCI",
+           "items": [
+            "**Wyrostek kolczysty** {{processus spinosus}} – stosunkowo długi, silny, na końcu rozdwojony.",
+            "**Wyrostek stawowy dolny** {{processus articularis inferior}} – razem ze swą powierzchnią stawową bez szczególnych właściwości.",
+            "**Wyrostek poprzeczny** {{processus transversus}} – bez guzka przedniego i tylnego oraz bez bruzdy n. rdzeniowego (jak na C1).",
+            "**Wcięcie kręgowe dolne** {{incisura vertebralis inferior}} – jak zwykle w kręgach szyjnych: do przodu od wyrostków stawowych dolnych.",
+            "Wcięcia górnego brak – C2 nie ma wyrostków stawowych górnych."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "NAZWY",
+           "t": "Inaczej: [[epistropheus]].",
+           "pg": "225",
+           "src": "437"
+          },
+          {
+           "k": "!",
+           "t": "Opis C2: wyrostek kolczysty „stosunkowo długi”. Przegląd kręgów szyjnych (s. 227): wyrostki kolczyste C2–C6 „są krótkie”.",
+           "pg": "226–227",
+           "src": "472-473, 565"
+          },
+          {
+           "k": "!",
+           "t": "Opis C2: wyrostek poprzeczny „nie ma” guzka przedniego i tylnego. Przegląd (s. 227): guzki przednie na C1 i C2 „przeważnie nie występują”.",
+           "pg": "226–227",
+           "src": "481-483, 564-565"
+          },
+          {
+           "k": "!",
+           "t": "W tekście: „wcięcia stawowego górnego brak” (obok „wcięcie kręgowe dolne”). Nazwa „wcięcie stawowe” nie występuje w ogólnym opisie kręgu.",
+           "pg": "226",
+           "src": "483-491"
+          }
+         ],
+         "labels": [
+          "kręg szczytowy {{atlas}}",
+          "trzon {{corpus vertebrae}}",
+          "ząb {{dens}}",
+          "wierzchołek zęba {{apex dentis}}",
+          "powierzchnia stawowa przednia {{facies articularis anterior}}",
+          "powierzchnia stawowa tylna {{facies articularis posterior}}",
+          "powierzchnia stawowa górna {{facies articularis superior}}",
+          "wyrostek kolczysty {{processus spinosus}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "wyrostek stawowy dolny {{processus articularis inferior}}",
+          "wcięcie kręgowe dolne {{incisura vertebralis inferior}}"
+         ],
+         "fig": "widok od strony lewej | widok od przodu: C1 osadzony na C2 (schemat)"
+        },
+        {
+         "type": "card",
+         "title": "Kręg wystający (C7)",
+         "lat": "vertebra prominens",
+         "pg": "226–227",
+         "tag": "KRĘG PRZEJŚCIOWY",
+         "sections": [
+          {
+           "k": "KRĘG PRZEJŚCIOWY",
+           "items": [
+            "Siódmy, ostatni kręg szyjny; budową zbliża się do kręgów piersiowych – traci niektóre cechy szyjnych, zyskuje cechy piersiowych."
+           ]
+          },
+          {
+           "k": "TRZON",
+           "items": [
+            "**Trzon** {{corpus vertebrae}} – znacznie większy niż w pozostałych kręgach szyjnych.",
+            "Czasem bocznie na dolnym brzegu trzonu – mała, niekompletna powierzchnia stawowa dla głowy żebra I."
+           ]
+          },
+          {
+           "k": "WYROSTEK KOLCZYSTY",
+           "items": [
+            "**Wyrostek kolczysty** {{processus spinosus}} – niepodzielony i długi; w pozostałych kręgach szyjnych wyrostki są dwudzielne i krótkie.",
+            "Leży w przejściu krzywizny szyjnej w piersiową – jego koniec uwypukla się guzkowato pod skórą grzbietu.",
+            "Przy wymacywaniu wyrostków od czaszki w dół – przeważnie pierwszy wyraźnie wyczuwalny. Wystaje przy zgięciu głowy do przodu – stąd nazwa."
+           ]
+          },
+          {
+           "k": "WYROSTEK POPRZECZNY",
+           "items": [
+            "**Wyrostek poprzeczny** {{processus transversus}} – znacznej wielkości.",
+            "Listewka tylna – duża; listewka przednia – mała, słabo zaznaczona.",
+            "**Guzek przedni** {{tuberculum anterius}} – słabo rozwinięty.",
+            "**Otwór wyrostka poprzecznego** {{foramen transversarium}} – zwykle mniejszy niż w innych kręgach (bywa tej samej wielkości); często asymetryczny, nieraz podwójny, niekiedy go brak.",
+            "Tętnica i żyła kręgowa zwykle biegną do przodu od wyrostka poprzecznego. Przez otwór tętnica przechodzi tylko wyjątkowo, żyła – częściej („jeśli występuje podwójnie”)."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "NAZWY",
+           "t": "Na ryc. 139 Bochenka otwór wyrostka poprzecznego podpisany [[foramen processus transversi]].",
+           "pg": "227"
+          }
+         ],
+         "labels": [
+          "trzon {{corpus vertebrae}}",
+          "powierzchnia stawowa dla głowy żebra I",
+          "wyrostek kolczysty {{processus spinosus}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "listewka tylna",
+          "listewka przednia",
+          "guzek przedni {{tuberculum anterius}}",
+          "otwór wyrostka poprzecznego {{foramen transversarium}}"
+         ],
+         "fig": "widok od góry | widok z boku (długi wyrostek kolczysty, powierzchnia dla żebra I)"
+        }
+       ]
+      },
+      {
+       "type": "group",
+       "title": "Kręgi piersiowe",
+       "lat": "vertebrae thoracicae",
+       "pg": "228–231",
+       "why": "12 kręgów, połączone ruchomo z żebrami – dołki żebrowe",
+       "q": "typowy czy szczególny?",
+       "l3": [
+        {
+         "k": "NAZWY",
+         "t": "Inaczej kręgi grzbietowe; łac. też [[vertebrae thoracales]].",
+         "pg": "220, 228",
+         "src": "137-138, 621"
+        },
+        {
+         "k": "KRĘGI PRZEJŚCIOWE",
+         "t": "Dwa dolne kręgi piersiowe, a zwłaszcza Th12, mają wiele cech zbliżających je do kręgów lędźwiowych.",
+         "pg": "231",
+         "src": "711-712"
+        }
+       ],
+       "children": [
+        {
+         "type": "card",
+         "title": "Kręg piersiowy typowy",
+         "lat": "vertebra thoracica",
+         "pg": "228–231",
+         "sections": [
+          {
+           "k": "TRZON",
+           "items": [
+            "**Trzon** {{corpus vertebrae}} – klinowaty, odpowiednio do krzywizny piersiowej: nieco niższy z przodu niż z tyłu.",
+            "Powierzchnie górna i dolna płaskie: w górnych i dolnych kręgach piersiowych w kształcie ziarna fasoli, w środkowych – sercowate.",
+            "Trzony zwiększają się stopniowo ku dołowi."
+           ]
+          },
+          {
+           "k": "DOŁKI ŻEBROWE",
+           "items": [
+            "**Dołki żebrowe** {{foveae costales}} – charakterystyczna cecha trzonów kręgów piersiowych; służą do połączenia stawowego z głowami żeber.",
+            "9 górnych kręgów (Th1–Th9): po 2 powierzchnie stawowe po każdej stronie trzonu – na krawędzi górnej i dolnej, tuż u nasady łuku.",
+            "**Dołek żebrowy górny** {{fovea costalis superior}} – zawsze większy niż dolny.",
+            "**Dołek żebrowy dolny** {{fovea costalis inferior}} – mniejszy.",
+            "Dołek dolny kręgu + dołek górny kręgu niższego + krążek międzykręgowy = 1 wspólna powierzchnia dla głowy żebra."
+           ]
+          },
+          {
+           "k": "WYROSTEK POPRZECZNY",
+           "items": [
+            "**Wyrostek poprzeczny** {{processus transversus}} – od łuku, między wyrostkami stawowymi górnym i dolnym; bardzo mocny, zgrubiały na końcu.",
+            "W górnych kręgach skierowany bocznie; niżej stopniowo coraz bardziej odchylony ku tyłowi.",
+            "**Dołek żebrowy wyrostka poprzecznego** {{fovea costalis processus transversi}} – mały, pokryty chrząstką, na przedniej powierzchni końca wyrostka; łączy się z guzkiem żebra."
+           ]
+          },
+          {
+           "k": "WYROSTKI STAWOWE",
+           "items": [
+            "Ustawione w płaszczyźnie czołowej. Powierzchnie słabo zakrzywione – wycinki powierzchni walca, którego oś biegnie do przodu od otworu kręgowego.",
+            "**Wyrostek stawowy górny** {{processus articularis superior}} – powierzchnia skierowana ku tyłowi.",
+            "**Wyrostek stawowy dolny** {{processus articularis inferior}} – powierzchnia skierowana ku przodowi."
+           ]
+          },
+          {
+           "k": "WYROSTEK KOLCZYSTY",
+           "items": [
+            "**Wyrostek kolczysty** {{processus spinosus}} – w górnych kręgach stopniowo coraz dłuższy.",
+            "Th1–Th8: spiczaste, silnie pochylone ku dołowi, w przekroju trójkątne; zachodzą na siebie dachówkowato.",
+            "Od Th8: znowu krótsze, bardziej poziome; stopniowo spłaszczają się i grubieją na końcu."
+           ]
+          },
+          {
+           "k": "ŁUK I OTWÓR",
+           "items": [
+            "**Nasada łuku kręgu** {{pediculus arcus vertebrae}} – łuk jest u nasady silnie zwężony.",
+            "**Blaszka łuku kręgu** {{lamina arcus vertebrae}} (tylny odcinek łuku) – płaska, szeroka, pionowo ustawiona listewka.",
+            "**Otwór kręgowy** {{foramen vertebrale}} – okrągły, stosunkowo mały."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "WYMIARY TRZONU",
+           "t": "Th1 – trzon wydłużony poprzecznie; niżej wymiar poprzeczny coraz krótszy; Th6 lub Th7 – wymiary poprzeczny i podłużny mniej więcej równe; niżej trzony znowu szersze, zbliżone kształtem do lędźwiowych.",
+           "pg": "228",
+           "src": "575-581"
+          },
+          {
+           "k": "WYJĄTKI",
+           "t": "Inaczej ułożone dołki żebrowe na trzonie: Th1, Th11, Th12 i czasem Th10 (osobne karty).",
+           "pg": "228",
+           "src": "612-619"
+          },
+          {
+           "k": "WYJĄTKI",
+           "t": "Dołki żebrowe wyrostka poprzecznego: brak na Th11 i Th12, niestałe na Th10.",
+           "pg": "229",
+           "src": "657-659"
+          },
+          {
+           "k": "WYJĄTKI",
+           "t": "Wyrostki poprzeczne zgrubiałe na końcach – z wyjątkiem „dwóch czy trzech ostatnich” kręgów piersiowych.",
+           "pg": "229",
+           "src": "627-628"
+          },
+          {
+           "k": "!",
+           "t": "Streszczenie (s. 248): wyrostki kolczyste kręgów piersiowych „coraz dłuższe ku dołowi”, silnie pochylone. Opis (s. 230–231): od Th8 znowu krótsze i bardziej poziome.",
+           "pg": "230–231, 248",
+           "src": "666-670, 703, 1657-1658"
+          }
+         ],
+         "labels": [
+          "trzon {{corpus vertebrae}}",
+          "dołek żebrowy górny {{fovea costalis superior}}",
+          "dołek żebrowy dolny {{fovea costalis inferior}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "dołek żebrowy wyrostka poprzecznego {{fovea costalis processus transversi}}",
+          "wyrostek stawowy górny {{processus articularis superior}}",
+          "wyrostek stawowy dolny {{processus articularis inferior}}",
+          "wyrostek kolczysty {{processus spinosus}}",
+          "nasada łuku kręgu {{pediculus arcus vertebrae}}",
+          "blaszka łuku kręgu {{lamina arcus vertebrae}}",
+          "otwór kręgowy {{foramen vertebrale}}"
+         ],
+         "fig": "widok od góry | widok z boku – 2 sąsiednie kręgi (wspólna powierzchnia dla głowy żebra) | widok od tyłu"
+        },
+        {
+         "type": "card",
+         "title": "Pierwszy kręg piersiowy (Th1)",
+         "lat": "vertebra thoracica I",
+         "pg": "226, 228–231",
+         "sections": [
+          {
+           "k": "TRZON",
+           "items": [
+            "**Trzon** {{corpus vertebrae}} – wydłużony w osi poprzecznej."
+           ]
+          },
+          {
+           "k": "DOŁKI ŻEBROWE",
+           "items": [
+            "**Dołek żebrowy górny** {{fovea costalis superior}} – leży poniżej krawędzi górnej trzonu (jedyny taki przypadek).",
+            "Zwykle sam, bez uzupełnienia, tworzy połączenie stawowe z głową żebra I.",
+            "Uzupełnienie bywa na C7: czasem ma on na dolnym brzegu trzonu małą, niekompletną powierzchnię stawową dla głowy żebra I.",
+            "**Dołek żebrowy dolny** {{fovea costalis inferior}} – na krawędzi dolnej trzonu (Th1 należy do 9 górnych kręgów z 2 powierzchniami stawowymi).",
+            "**Dołek żebrowy wyrostka poprzecznego** {{fovea costalis processus transversi}} – obecny, jak na kręgach Th1–Th9."
+           ]
+          },
+          {
+           "k": "WYROSTKI",
+           "items": [
+            "**Wyrostek poprzeczny** {{processus transversus}} – skierowany bocznie (jak w górnych kręgach piersiowych).",
+            "**Wyrostek kolczysty** {{processus spinosus}} – wyczuwalny tuż pod wyrostkiem kolczystym C7.",
+            "**Wyrostek kolczysty** {{processus spinosus}} – jak od Th1 do Th8: spiczasty, silnie pochylony ku dołowi, w przekroju trójkątny; zachodzi dachówkowato na następne."
+           ]
+          }
+         ],
+         "l3": [],
+         "labels": [
+          "trzon {{corpus vertebrae}}",
+          "dołek żebrowy górny {{fovea costalis superior}}",
+          "dołek żebrowy dolny {{fovea costalis inferior}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "dołek żebrowy wyrostka poprzecznego {{fovea costalis processus transversi}}",
+          "wyrostek kolczysty {{processus spinosus}}"
+         ],
+         "fig": "widok z boku (prawej) | widok od góry (trzon wydłużony poprzecznie)"
+        },
+        {
+         "type": "card",
+         "title": "Dziesiąty kręg piersiowy (Th10)",
+         "lat": "vertebra thoracica X",
+         "pg": "228–231",
+         "sections": [
+          {
+           "k": "DOŁKI ŻEBROWE",
+           "items": [
+            "**Dołek żebrowy** {{fovea costalis}} – czasami tylko 1 po każdej stronie trzonu; leży wtedy przy górnym brzegu trzonu.",
+            "**Dołek żebrowy wyrostka poprzecznego** {{fovea costalis processus transversi}} – występuje niestale."
+           ]
+          },
+          {
+           "k": "TRZON",
+           "items": [
+            "**Trzon** {{corpus vertebrae}} – jak w dolnych kręgach piersiowych: szerszy, zbliżony kształtem do lędźwiowych; powierzchnie górna i dolna w kształcie ziarna fasoli."
+           ]
+          },
+          {
+           "k": "WYROSTKI",
+           "items": [
+            "**Wyrostek stawowy górny** {{processus articularis superior}} – na jego stronie bocznej mogą występować małe guzki, słabiej zaznaczone niż na Th12.",
+            "Guzki te kształtem i położeniem odpowiadają wyrostkom suteczkowatym lub dodatkowym kręgów lędźwiowych.",
+            "**Wyrostek kolczysty** {{processus spinosus}} – jak od Th8: krótszy, bardziej poziomy, spłaszczony i zgrubiały na końcu."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "UWAGI",
+           "t": "Wyrostki poprzeczne nie są zgrubiałe na końcach w „dwóch czy trzech ostatnich” kręgach piersiowych – tekst nie rozstrzyga, czy dotyczy to Th10.",
+           "pg": "229",
+           "src": "627-628"
+          },
+          {
+           "k": "!",
+           "t": "Streszczenie (s. 248) jako wyjątki od wspólnej powierzchni dla głowy żebra podaje tylko Th1, Th11 i Th12. Opis (s. 228): czasem także Th10 ma tylko 1 powierzchnię stawową.",
+           "pg": "228, 248",
+           "src": "616-619, 1653-1656"
+          }
+         ],
+         "labels": [
+          "trzon {{corpus vertebrae}}",
+          "dołek żebrowy {{fovea costalis}}",
+          "dołek żebrowy wyrostka poprzecznego {{fovea costalis processus transversi}}",
+          "wyrostek stawowy górny {{processus articularis superior}}",
+          "wyrostek kolczysty {{processus spinosus}}"
+         ],
+         "fig": "widok z boku (prawej)"
+        },
+        {
+         "type": "card",
+         "title": "Jedenasty kręg piersiowy (Th11)",
+         "lat": "vertebra thoracica XI",
+         "pg": "228–231",
+         "sections": [
+          {
+           "k": "DOŁKI ŻEBROWE",
+           "items": [
+            "**Dołek żebrowy** {{fovea costalis}} – tylko 1 po każdej stronie, w środku powierzchni bocznej trzonu.",
+            "**Wyrostek poprzeczny** {{processus transversus}} – bez dołka żebrowego; niezgrubiały na końcu (należy do „dwóch czy trzech ostatnich”)."
+           ]
+          },
+          {
+           "k": "WYROSTKI STAWOWE",
+           "items": [
+            "**Wyrostek stawowy dolny** {{processus articularis inferior}} – zmiana ustawienia jak na Th12 (powierzchnia prawie w płaszczyźnie strzałkowej) może wystąpić już na Th11.",
+            "**Wyrostek stawowy górny** {{processus articularis superior}} – na jego stronie bocznej mogą występować małe guzki (słabiej zaznaczone niż na Th12), odpowiedniki wyrostków suteczkowatych lub dodatkowych kręgów lędźwiowych."
+           ]
+          },
+          {
+           "k": "POZOSTAŁE",
+           "items": [
+            "Jeden z 2 dolnych kręgów piersiowych – ma wiele cech zbliżających go do kręgów lędźwiowych.",
+            "**Trzon** {{corpus vertebrae}} – szerszy, zbliżony kształtem do lędźwiowych; powierzchnie górna i dolna w kształcie ziarna fasoli.",
+            "**Wyrostek kolczysty** {{processus spinosus}} – jak od Th8: krótszy, bardziej poziomy, spłaszczony i zgrubiały na końcu."
+           ]
+          }
+         ],
+         "l3": [],
+         "labels": [
+          "trzon {{corpus vertebrae}}",
+          "dołek żebrowy {{fovea costalis}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "wyrostek stawowy górny {{processus articularis superior}}",
+          "wyrostek stawowy dolny {{processus articularis inferior}}",
+          "wyrostek kolczysty {{processus spinosus}}"
+         ],
+         "fig": "widok z boku (prawej)"
+        },
+        {
+         "type": "card",
+         "title": "Dwunasty kręg piersiowy (Th12)",
+         "lat": "vertebra thoracica XII",
+         "pg": "228–231",
+         "tag": "KRĘG PRZEJŚCIOWY",
+         "sections": [
+          {
+           "k": "KRĘG PRZEJŚCIOWY",
+           "items": [
+            "„Jak gdyby przejściowy” między kręgami piersiowymi a lędźwiowymi – spośród 2 dolnych kręgów piersiowych to zwłaszcza on ma wiele cech lędźwiowych."
+           ]
+          },
+          {
+           "k": "DOŁKI ŻEBROWE",
+           "items": [
+            "**Dołek żebrowy** {{fovea costalis}} – tylko 1 po każdej stronie, w środku powierzchni bocznej trzonu.",
+            "**Wyrostek poprzeczny** {{processus transversus}} – bez dołka żebrowego; niezgrubiały na końcu (należy do „dwóch czy trzech ostatnich”)."
+           ]
+          },
+          {
+           "k": "WYROSTKI STAWOWE",
+           "items": [
+            "**Wyrostek stawowy górny** {{processus articularis superior}} – powierzchnia prawie w płaszczyźnie czołowej, jak w innych kręgach piersiowych.",
+            "**Wyrostek stawowy dolny** {{processus articularis inferior}} – powierzchnia prawie w płaszczyźnie strzałkowej, jak w kręgach lędźwiowych.",
+            "Na stronie bocznej wyrostków stawowych górnych mogą występować małe guzki – na Th12 najwyraźniejsze (słabsze na Th10 i Th11).",
+            "Guzki odpowiadają kształtem i położeniem wyrostkom kręgów lędźwiowych; na ryc. 143 podpisane na Th12: **wyrostek suteczkowaty** {{processus mamillaris}} i **wyrostek dodatkowy** {{processus accessorius}}."
+           ]
+          },
+          {
+           "k": "POZOSTAŁE",
+           "items": [
+            "**Trzon** {{corpus vertebrae}} – szeroki, zbliżony kształtem do lędźwiowych; powierzchnie górna i dolna w kształcie ziarna fasoli.",
+            "**Wyrostek kolczysty** {{processus spinosus}} – jak od Th8: krótszy, bardziej poziomy, spłaszczony i zgrubiały na końcu."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "UWAGI",
+           "t": "Zmiana ustawienia wyrostków stawowych (górne – czołowo, dolne – strzałkowo) może nastąpić już na Th11.",
+           "pg": "231",
+           "src": "716-717"
+          }
+         ],
+         "labels": [
+          "trzon {{corpus vertebrae}}",
+          "dołek żebrowy {{fovea costalis}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "wyrostek stawowy górny {{processus articularis superior}}",
+          "wyrostek stawowy dolny {{processus articularis inferior}}",
+          "wyrostek suteczkowaty {{processus mamillaris}}",
+          "wyrostek dodatkowy {{processus accessorius}}",
+          "wyrostek kolczysty {{processus spinosus}}"
+         ],
+         "fig": "widok z boku (prawej), najlepiej obok Th11 i L1 | widok od tyłu (ustawienie wyrostków stawowych)"
+        }
+       ]
+      },
+      {
+       "type": "group",
+       "title": "Kręgi lędźwiowe",
+       "lat": "vertebrae lumbales",
+       "pg": "231–232",
+       "why": "zwykle 5; duże, bez powierzchni stawowych dla żeber",
+       "q": "typowy czy L5?",
+       "l3": [],
+       "children": [
+        {
+         "type": "card",
+         "title": "Kręg lędźwiowy typowy",
+         "lat": "vertebra lumbalis",
+         "pg": "231–232",
+         "sections": [
+          {
+           "k": "CECHY ODCINKA",
+           "items": [
+            "Zwykle 5, między kręgami piersiowymi a kością krzyżową.",
+            "Od szyjnych różnią się przede wszystkim znaczną wielkością; od piersiowych – także brakiem powierzchni stawowych dla żeber."
+           ]
+          },
+          {
+           "k": "TRZON",
+           "items": [
+            "**Trzon** {{corpus vertebrae}} – powierzchnie górna i dolna płaskie, nerkowate lub owalne.",
+            "Wysokość z przodu i z tyłu mniej więcej równa (wyjątek – L5)."
+           ]
+          },
+          {
+           "k": "WYROSTEK ŻEBROWY",
+           "items": [
+            "**Wyrostek żebrowy** {{processus costalis}} – tak nazywa się tu wyrostek poprzeczny, bo jest właściwie szczątkowym żebrem.",
+            "Odchodzi od podstawy łuku i od trzonu. Zbudowany głównie ze szczątkowego żebra lędźwiowego, w znacznie mniejszym stopniu – z właściwego wyrostka poprzecznego.",
+            "Rozwinięty bardzo różnie – czasem silniej niż w kręgach piersiowych, czasem słabiej; zwykle rośnie od L1 do L3, potem maleje.",
+            "Na ogół wąski i płaski, nieco odgięty ku tyłowi."
+           ]
+          },
+          {
+           "k": "WYROSTEK DODATKOWY",
+           "items": [
+            "**Wyrostek dodatkowy** {{processus accessorius}} – mały guzek; odpowiada właściwemu wyrostkowi poprzecznemu innych kręgów.",
+            "Bywa wydatną wyniosłością, nieraz tylko chropowatością lub kolcem – z tyłu u nasady wyrostka żebrowego."
+           ]
+          },
+          {
+           "k": "WYROSTKI STAWOWE",
+           "items": [
+            "Ustawione pionowo; powierzchnie stawowe prawie w płaszczyźnie strzałkowej.",
+            "**Wyrostek stawowy górny** {{processus articularis superior}} – powierzchnia wklęsła, skierowana do tyłu i przyśrodkowo.",
+            "**Wyrostek stawowy dolny** {{processus articularis inferior}} – powierzchnia wypukła, zwrócona do przodu i bocznie.",
+            "Powierzchnie górne obejmują powierzchnie dolne kręgu leżącego wyżej.",
+            "**Wyrostek suteczkowaty** {{processus mamillaris}} – tępy, owalny guzek kostny na stronie bocznej wyrostka stawowego górnego."
+           ]
+          },
+          {
+           "k": "WYROSTEK KOLCZYSTY",
+           "items": [
+            "**Wyrostek kolczysty** {{processus spinosus}} – płytka w płaszczyźnie pośrodkowej; biegnie prosto ku tyłowi (czasem nieco zagięty ku dołowi); na końcu zwykle zgrubiały."
+           ]
+          },
+          {
+           "k": "ŁUK I OTWÓR",
+           "items": [
+            "**Łuk kręgu** {{arcus vertebrae}} – mocna, płaska, prawie pionowa listewka; u nasady zwężony, z tyłu rozszerzony.",
+            "**Otwór kręgowy** {{foramen vertebrale}} – spłaszczony przednio-tylnie; zwykle trójkątny, czasem owalny."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "DOWODY",
+           "t": "Że wyrostek poprzeczny to głównie żebro, dowodzą: rozwój (obie części mają osobne zawiązki) i przypadki samodzielnego żebra, łączącego się z trzonem stawowo lub więzadłowo (z 1 lub z obu stron).",
+           "pg": "232",
+           "src": "752-756"
+          },
+          {
+           "k": "ODMIANY",
+           "t": "Oddzielenie się wyrostka poprzecznego (żebro lędźwiowe) – najczęściej na L1.",
+           "pg": "232",
+           "src": "756-757"
+          }
+         ],
+         "labels": [
+          "trzon {{corpus vertebrae}}",
+          "wyrostek żebrowy {{processus costalis}}",
+          "wyrostek dodatkowy {{processus accessorius}}",
+          "wyrostek stawowy górny {{processus articularis superior}}",
+          "wyrostek suteczkowaty {{processus mamillaris}}",
+          "wyrostek stawowy dolny {{processus articularis inferior}}",
+          "wyrostek kolczysty {{processus spinosus}}",
+          "łuk kręgu {{arcus vertebrae}}",
+          "otwór kręgowy {{foramen vertebrale}}"
+         ],
+         "fig": "widok od góry | widok z boku"
+        },
+        {
+         "type": "card",
+         "title": "Piąty kręg lędźwiowy (L5)",
+         "lat": "vertebra lumbalis V",
+         "pg": "231–232, 234",
+         "sections": [
+          {
+           "k": "TRZON",
+           "items": [
+            "**Trzon** {{corpus vertebrae}} – wyróżnia się wielkością i kształtem: z przodu znacznie wyższy niż z tyłu, przez co klinowaty."
+           ]
+          },
+          {
+           "k": "WYROSTKI",
+           "items": [
+            "**Wyrostek poprzeczny** {{processus transversus}} – krótki, silny, szeroki u podstawy, na końcu zgrubiały.",
+            "Odchodzi od odcinka grzbietowego trzonu i od podstawy łuku; skierowany bocznie, nieco ku tyłowi i ku górze.",
+            "**Wyrostek stawowy górny** {{processus articularis superior}} – skierowany bardziej ku tyłowi niż w innych kręgach.",
+            "**Wyrostek stawowy dolny** {{processus articularis inferior}} – skierowany bardziej do przodu."
+           ]
+          },
+          {
+           "k": "POŁĄCZENIE Z KOŚCIĄ KRZYŻOWĄ",
+           "items": [
+            "Trzon L5 łączy się przez krążek międzykręgowy z powierzchnią górną trzonu S1.",
+            "Wyrostki stawowe górne kości krzyżowej łączą ją z ostatnim kręgiem lędźwiowym.",
+            "Na granicy L5 i podstawy kości krzyżowej – **kąt lędźwiowo-krzyżowy** {{angulus lumbosacralis}}, 120–170°, wierzchołkiem do przodu (na wzgórku)."
+           ]
+          }
+         ],
+         "l3": [],
+         "labels": [
+          "trzon {{corpus vertebrae}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "wyrostek stawowy górny {{processus articularis superior}}",
+          "wyrostek stawowy dolny {{processus articularis inferior}}",
+          "kąt lędźwiowo-krzyżowy {{angulus lumbosacralis}}"
+         ],
+         "fig": "widok z boku (razem z podstawą kości krzyżowej) | widok od przodu"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Kręgi rzekome",
+     "lat": "vertebrae spuriae",
+     "pg": "220, 232–237",
+     "why": "kręgi krzyżowe i guziczne zrośnięte w 2 kości; utraciły samodzielność czynnościową",
+     "q": "która kość?",
+     "l3": [
+      {
+       "k": "UWAGI",
+       "t": "Morfologicznie kręgi krzyżowe i guziczne są istotnymi kręgami, choć utraciły samodzielność czynnościową.",
+       "pg": "220",
+       "src": "157-159"
+      },
+      {
+       "k": "UWAGI",
+       "t": "Odcinek ogonowy u człowieka – szczątkowy: kręgi znacznie mniejsze, właściwie tylko pozostałe trzony; kość guziczna bywa całkowicie skostniała.",
+       "pg": "220",
+       "src": "147-151"
+      },
+      {
+       "k": "NAZWY",
+       "t": "Kręgi krzyżowe i guziczne to **kręgi rzekome** {{vertebrae spuriae}}; kręgi trzech górnych odcinków – **prawdziwe** {{vertebrae verae}}, czyli **przedkrzyżowe** {{vertebrae presacrales}}, czyli ruchome – każdy zachował swą samodzielność.",
+       "pg": "220"
+      }
+     ],
+     "children": [
+      {
+       "type": "group",
+       "title": "Kość krzyżowa",
+       "lat": "os sacrum",
+       "pg": "232–237",
+       "why": "zrost 5 kręgów krzyżowych (w wieku 20–25 lat); dźwiga masę górnej części ciała",
+       "q": "która część kości?",
+       "l3": [],
+       "children": [
+        {
+         "type": "card",
+         "title": "Kształt i położenie kości krzyżowej",
+         "lat": "os sacrum",
+         "pg": "232–234, 236",
+         "sections": [
+          {
+           "k": "BUDOWA",
+           "items": [
+            "Powstaje ze zrośnięcia 5 kręgów krzyżowych – dopiero u dorosłych, w wieku 20–25 lat.",
+            "Kształt klina lub trójkąta wierzchołkiem ku dołowi – kręgi krzyżowe szybko maleją ku dołowi.",
+            "**Podstawa kości krzyżowej** {{basis ossis sacri}} – górna, poszerzona część.",
+            "**Wierzchołek kości krzyżowej** {{apex ossis sacri}} – dolna część; skierowany ku dołowi, ma owalną powierzchnię do połączenia z kością guziczną.",
+            "Z przodu – **powierzchnia miedniczna** {{facies pelvina}}, z tyłu – **powierzchnia grzbietowa** {{facies dorsalis}} (osobne karty)."
+           ]
+          },
+          {
+           "k": "CZYNNOŚĆ",
+           "items": [
+            "Dźwiga masę górnej części ciała i przenosi ją na kończyny dolne przez obręcz kończyny dolnej.",
+            "Wklinowana między kości miedniczne; razem z nimi tworzy silny pierścień kostny – miednicę."
+           ]
+          },
+          {
+           "k": "KRZYWIZNA I POŁOŻENIE",
+           "items": [
+            "Z boku silnie wypukła ku tyłowi – **kyfoza krzyżowa** {{kyphosis sacralis}}; dzięki niej pojemność miednicy mniejszej znacznie się zwiększa.",
+            "W postawie pionowej leży pochyło: od przodu i góry ku tyłowi i dołowi."
+           ]
+          },
+          {
+           "k": "KĄT LĘDŹWIOWO-KRZYŻOWY",
+           "items": [
+            "Odcinek lędźwiowy jest wypukły do przodu, kość krzyżowa – do tyłu; na granicy L5 i podstawy powstaje kąt wierzchołkiem do przodu.",
+            "**Kąt lędźwiowo-krzyżowy** {{angulus lumbosacralis}} – 120–170°.",
+            "**Wzgórek** {{promontorium}} – wierzchołek tego kąta; tworzy go wpuklająca się do przodu krawędź krążka międzykręgowego między L5 a kością krzyżową."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "NAZWY",
+           "t": "Kyfoza – od gr. kyfos = krzywy.",
+           "pg": "234",
+           "src": "867-868"
+          }
+         ],
+         "labels": [
+          "podstawa kości krzyżowej {{basis ossis sacri}}",
+          "wierzchołek kości krzyżowej {{apex ossis sacri}}",
+          "powierzchnia miedniczna {{facies pelvina}}",
+          "powierzchnia grzbietowa {{facies dorsalis}}",
+          "kyfoza krzyżowa {{kyphosis sacralis}}",
+          "kąt lędźwiowo-krzyżowy {{angulus lumbosacralis}}",
+          "wzgórek {{promontorium}}"
+         ],
+         "fig": "widok z boku (prawej), razem z L5 i kością guziczną"
+        },
+        {
+         "type": "card",
+         "title": "Podstawa kości krzyżowej",
+         "lat": "basis ossis sacri",
+         "pg": "234",
+         "sections": [
+          {
+           "k": "TRZON S1",
+           "items": [
+            "Ma wszystkie typowe części składowe kręgu.",
+            "Środek podstawy – owalna powierzchnia górna trzonu S1; przez krążek międzykręgowy łączy się z L5."
+           ]
+          },
+          {
+           "k": "ŁUK",
+           "items": [
+            "**Łuk kręgu** {{arcus vertebrae}} – 2 symetryczne listewki kostne; odchodzą ku tyłowi po bokach trzonu, nieco poniżej jego powierzchni górnej.",
+            "Listewki łączą się z tyłu; wznosi się na nich mniej lub bardziej wyniosły guzek – odpowiednik wyrostka kolczystego.",
+            "Łuk i trzon zamykają trójkątny otwór – wejście do kanału krzyżowego.",
+            "**Kanał krzyżowy** {{canalis sacralis}} – zaczyna się tym otworem (osobna karta)."
+           ]
+          },
+          {
+           "k": "WYROSTKI STAWOWE GÓRNE",
+           "items": [
+            "**Wyrostki stawowe górne** {{processus articulares superiores}} – symetryczne, u nasady łuków tuż przy trzonie; łączą kość krzyżową z ostatnim kręgiem lędźwiowym.",
+            "Ich powierzchnie stawowe płaskie lub nieco wklęsłe, skierowane ku tyłowi i przyśrodkowo.",
+            "Na powierzchni bocznej wyrostków – mała, chropowata wyniosłość, odpowiednik wyrostka suteczkowatego kręgów lędźwiowych."
+           ]
+          },
+          {
+           "k": "CZĘŚCI BOCZNE",
+           "items": [
+            "Wyrostki poprzeczne i żebra szczątkowe S1 zlewają się z odpowiednimi częściami dalszych kręgów → **części boczne kości krzyżowej** {{partes laterales ossis sacri}}.",
+            "**Skrzydło kości krzyżowej** {{ala sacralis}} – część podstawy po obu stronach, do boku od trzonów kręgów krzyżowych."
+           ]
+          }
+         ],
+         "l3": [],
+         "labels": [
+          "powierzchnia górna trzonu S1",
+          "łuk kręgu {{arcus vertebrae}}",
+          "guzek – odpowiednik wyrostka kolczystego",
+          "wyrostki stawowe górne {{processus articulares superiores}}",
+          "kanał krzyżowy {{canalis sacralis}}",
+          "skrzydło kości krzyżowej {{ala sacralis}}",
+          "części boczne kości krzyżowej {{partes laterales ossis sacri}}"
+         ],
+         "fig": "widok od góry"
+        },
+        {
+         "type": "card",
+         "title": "Powierzchnia miedniczna",
+         "lat": "facies pelvina",
+         "pg": "234–235",
+         "sections": [
+          {
+           "k": "BUDOWA",
+           "items": [
+            "Powierzchnia przednia, czyli miedniczna – na ogół gładka i wklęsła.",
+            "U góry **podstawa kości krzyżowej** {{basis ossis sacri}}, u dołu **wierzchołek kości krzyżowej** {{apex ossis sacri}}.",
+            "Część środkowa – zrośnięte trzony kręgów krzyżowych.",
+            "**Kresy poprzeczne** {{lineae transversae}} – wyraźne, chropawe ślady zrostu trzonów; sięgają bocznie do otworów krzyżowych miednicznych."
+           ]
+          },
+          {
+           "k": "OTWORY",
+           "items": [
+            "**Otwory krzyżowe miedniczne** {{foramina sacralia pelvina}} – 4 pary; odgraniczają część środkową kości od części bocznych.",
+            "Prowadzą ku tyłowi i przyśrodkowo do kanału krzyżowego; ku dołowi coraz mniejsze.",
+            "Wychodzą przez nie gałęzie przednie nerwów krzyżowych; wchodzą gałązki rdzeniowe tętnicy krzyżowej bocznej."
+           ]
+          },
+          {
+           "k": "CZĘŚCI BOCZNE",
+           "items": [
+            "Bocznie od otworów – **części boczne** {{partes laterales}}; tu przyczepy m. gruszkowatego."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "NAZWY",
+           "t": "Otwory krzyżowe miedniczne – dawniej [[foramina sacralia anteriora]].",
+           "pg": "234",
+           "src": "911"
+          }
+         ],
+         "labels": [
+          "podstawa kości krzyżowej {{basis ossis sacri}}",
+          "wierzchołek kości krzyżowej {{apex ossis sacri}}",
+          "kresy poprzeczne {{lineae transversae}}",
+          "otwory krzyżowe miedniczne {{foramina sacralia pelvina}}",
+          "części boczne {{partes laterales}}"
+         ],
+         "fig": "widok od przodu"
+        },
+        {
+         "type": "card",
+         "title": "Powierzchnia grzbietowa",
+         "lat": "facies dorsalis",
+         "pg": "235–236",
+         "sections": [
+          {
+           "k": "BUDOWA",
+           "items": [
+            "Powierzchnia tylna, czyli grzbietowa – wypukła ku tyłowi, z szeregiem nierówności."
+           ]
+          },
+          {
+           "k": "GRZEBIENIE",
+           "items": [
+            "**Grzebień krzyżowy pośrodkowy** {{crista sacralis mediana}} – w linii pośrodkowej; ze zrośniętych wyrostków kolczystych 4 górnych kręgów krzyżowych; zwykle 4 podłużne guzki.",
+            "**Grzebień krzyżowy pośredni** {{crista sacralis intermedia}} – ze zrośniętych wyrostków stawowych; na ogół słabo zaznaczony.",
+            "U góry grzebień pośredni kończą **wyrostki stawowe górne** {{processus articulares superiores}} S1.",
+            "U dołu kończą go **rożki krzyżowe** {{cornua sacralia}} – wyraźne guzki; odpowiadają wyrostkom stawowym dolnym ostatniego kręgu krzyżowego; skierowane ku rożkom kości guzicznej.",
+            "**Grzebień krzyżowy boczny** {{crista sacralis lateralis}} – bocznie od otworów grzbietowych; wydatniejszy niż pośredni; utworzony przez szczątkowe wyrostki poprzeczne."
+           ]
+          },
+          {
+           "k": "OTWORY",
+           "items": [
+            "**Otwory krzyżowe grzbietowe** {{foramina sacralia dorsalia}} – 4 po każdej stronie; bocznie od grzebieni pośrednich, na granicy części środkowej i części bocznych.",
+            "Nieco mniejsze i ostrzej zarysowane niż miedniczne. Prowadzą do przodu i przyśrodkowo do kanału krzyżowego, a prosto do przodu – do otworów miednicznych.",
+            "Wychodzą przez nie gałęzie tylne nerwów krzyżowych."
+           ]
+          },
+          {
+           "k": "DOLNY ODCINEK",
+           "items": [
+            "Łuki ostatniego (często i 4.) kręgu krzyżowego są zwykle szczątkowe – nie dochodzą do linii pośrodkowej.",
+            "Dlatego kanał jest w dolnym odcinku otwarty od tyłu, a jego otwór dolny – **rozwór krzyżowy** {{hiatus sacralis}} – silnie wydłużony ku górze."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "NAZWY",
+           "t": "Dawne nazwy: grzebień pośrodkowy – [[crista sacralis media]]; grzebień pośredni – [[crista sacralis articularis]]; otwory grzbietowe – [[foramina sacralia posteriora]].",
+           "pg": "235–236",
+           "src": "960-962, 1016"
+          }
+         ],
+         "labels": [
+          "grzebień krzyżowy pośrodkowy {{crista sacralis mediana}}",
+          "grzebień krzyżowy pośredni {{crista sacralis intermedia}}",
+          "grzebień krzyżowy boczny {{crista sacralis lateralis}}",
+          "otwory krzyżowe grzbietowe {{foramina sacralia dorsalia}}",
+          "wyrostki stawowe górne {{processus articulares superiores}}",
+          "rożki krzyżowe {{cornua sacralia}}",
+          "rozwór krzyżowy {{hiatus sacralis}}"
+         ],
+         "fig": "widok od tyłu"
+        },
+        {
+         "type": "card",
+         "title": "Części boczne kości krzyżowej",
+         "lat": "partes laterales ossis sacri",
+         "pg": "234–236",
+         "sections": [
+          {
+           "k": "BUDOWA",
+           "items": [
+            "**Części boczne** {{partes laterales}} – powstały ze zrośniętych wyrostków poprzecznych i szczątków żeber; silnie zwężają się ku dołowi.",
+            "Granica z częścią środkową – otwory krzyżowe: z przodu miedniczne, z tyłu **otwory krzyżowe grzbietowe** {{foramina sacralia dorsalia}}.",
+            "**Skrzydło kości krzyżowej** {{ala sacralis}} – część podstawy leżąca do boku od trzonów kręgów krzyżowych."
+           ]
+          },
+          {
+           "k": "POWIERZCHNIA BOCZNA",
+           "items": [
+            "**Powierzchnia uchowata** {{facies auricularis}} – nierówna powierzchnia stawowa na wolnej, bocznej powierzchni odcinka górnego; łączy się z kością biodrową.",
+            "**Guzowatość krzyżowa** {{tuberositas sacralis}} – silnie guzkowata, ku tyłowi od powierzchni uchowatej; przyczepiają się tu więzadła krzyżowo-biodrowe międzykostne."
+           ]
+          },
+          {
+           "k": "STRONA GRZBIETOWA",
+           "items": [
+            "**Grzebień krzyżowy boczny** {{crista sacralis lateralis}} – bocznie od otworów grzbietowych; ze szczątkowych wyrostków poprzecznych."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "!",
+           "t": "Ryc. 148 (przekrój na wysokości 2. pary otworów) podpisuje część boczną „Pars lateralis (ala sacralis)”. W tekście skrzydło to część podstawy, do boku od trzonów.",
+           "pg": "234, 236",
+           "src": "898-900, 997-998"
+          }
+         ],
+         "labels": [
+          "części boczne {{partes laterales}}",
+          "skrzydło kości krzyżowej {{ala sacralis}}",
+          "powierzchnia uchowata {{facies auricularis}}",
+          "guzowatość krzyżowa {{tuberositas sacralis}}",
+          "otwory krzyżowe grzbietowe {{foramina sacralia dorsalia}}",
+          "grzebień krzyżowy boczny {{crista sacralis lateralis}}"
+         ],
+         "fig": "widok z boku (prawej)"
+        },
+        {
+         "type": "card",
+         "title": "Kanał krzyżowy",
+         "lat": "canalis sacralis",
+         "pg": "234–236",
+         "sections": [
+          {
+           "k": "PRZEBIEG",
+           "items": [
+            "**Kanał krzyżowy** {{canalis sacralis}} – biegnie wzdłuż całej kości krzyżowej.",
+            "U góry – otwór górny: trójkątny, zamknięty przez łuk i trzon S1.",
+            "U dołu – otwór dolny, czyli **rozwór krzyżowy** {{hiatus sacralis}}.",
+            "Łuki ostatniego (często i 4.) kręgu krzyżowego szczątkowe – kanał w dolnym odcinku otwarty od tyłu; rozwór silnie wydłużony ku górze."
+           ]
+          },
+          {
+           "k": "KANAŁY BOCZNE",
+           "items": [
+            "Bocznie – 4 pary krótkich kanałów; odpowiadają one otworom międzykręgowym.",
+            "Na ryc. 148 taki kanał podpisany: **otwór międzykręgowy** {{foramen intervertebrale}}.",
+            "Na końcu każdy kanał rozdwaja się: do przodu – **otwór krzyżowy miedniczny** {{foramen sacrale pelvinum}}, do tyłu – **otwór krzyżowy grzbietowy** {{foramen sacrale dorsale}}."
+           ]
+          },
+          {
+           "k": "OTWORY – PORÓWNANIE",
+           "items": [
+            "Miedniczne: większe, ku dołowi coraz mniejsze; wychodzą gałęzie przednie nn. krzyżowych.",
+            "Grzbietowe: nieco mniejsze, ostrzej zarysowane; wychodzą gałęzie tylne nn. krzyżowych."
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "!",
+           "t": "Streszczenie (s. 248): „trójkątny kanał krzyżowy”. Opis (s. 234): trójkątny jest otwór zamknięty przez łuk i trzon S1, który prowadzi do kanału.",
+           "pg": "234, 248",
+           "src": "894-896, 1676-1677"
+          }
+         ],
+         "labels": [
+          "kanał krzyżowy {{canalis sacralis}}",
+          "otwór międzykręgowy {{foramen intervertebrale}}",
+          "otwór krzyżowy miedniczny {{foramen sacrale pelvinum}}",
+          "otwór krzyżowy grzbietowy {{foramen sacrale dorsale}}",
+          "rozwór krzyżowy {{hiatus sacralis}}"
+         ],
+         "fig": "przekrój poprzeczny na wysokości 2. pary otworów krzyżowych | widok od tyłu (rozwór krzyżowy)"
+        },
+        {
+         "type": "card",
+         "title": "Różnice płciowe kości krzyżowej",
+         "lat": "",
+         "pg": "236–237",
+         "sections": [
+          {
+           "k": "KOŚĆ MĘSKA",
+           "items": [
+            "Stosunkowo węższa i dłuższa niż żeńska.",
+            "Część górna kości bardziej spłaszczona; część dolna kości ostro zagina się ku przodowi.",
+            "**Powierzchnia uchowata** {{facies auricularis}} dłuższa – sięga do połowy albo nawet do dolnego brzegu S3."
+           ]
+          },
+          {
+           "k": "KOŚĆ ŻEŃSKA",
+           "items": [
+            "Stosunkowo szersza i krótsza.",
+            "Krzywizna słabsza, rozłożona bardziej równomiernie na całej długości kości.",
+            "Położona bardziej poziomo niż u mężczyzn – dlatego **wzgórek** {{promontorium}} bardziej się zaznacza.",
+            "Powierzchnia uchowata stosunkowo krótsza – wg niektórych autorów tworzą ją tylko 2 kręgi."
+           ]
+          },
+          {
+           "k": "ROZPOZNAWANIE",
+           "items": [
+            "Typowe kości męskie i żeńskie zwykle łatwo rozróżnić.",
+            "W przypadkach nietypowych decyduje głównie stosunek długości do szerokości kości."
+           ]
+          }
+         ],
+         "l3": [],
+         "labels": [
+          "powierzchnia uchowata {{facies auricularis}}",
+          "wzgórek {{promontorium}}",
+          "część górna kości",
+          "część dolna kości",
+          "S3"
+         ],
+         "fig": "kość męska obok żeńskiej: widok od przodu (długość i szerokość) | widok z boku (krzywizna, zasięg powierzchni uchowatej)"
+        }
+       ]
+      },
+      {
+       "type": "card",
+       "title": "Kość guziczna",
+       "lat": "os coccygis",
+       "pg": "237, 248",
+       "sections": [
+        {
+         "k": "BUDOWA",
+         "items": [
+          "Czyli kość ogonowa; 4 lub 5 szczątkowych kręgów – zachowały się głównie trzony.",
+          "Kształt zbliżony do trójkąta: podstawa kości guzicznej zwrócona ku kości krzyżowej, wierzchołek kości guzicznej – zakończenie kręgosłupa."
+         ]
+        },
+        {
+         "k": "PIERWSZY KRĘG (Co1)",
+         "items": [
+          "Podstawę kości tworzy powierzchnia górna Co1.",
+          "Co1 ma oprócz trzonu szczątkowe wyrostki poprzeczne i wyrostki stawowe górne.",
+          "**Wyrostek poprzeczny** {{processus transversus}} – na Co1 szczątkowy.",
+          "**Rożki guziczne** {{cornua coccygea}} – utworzone przez wyrostki stawowe górne Co1; skierowane ku górze.",
+          "Rożki guziczne łączą się z odpowiadającymi im rożkami kości krzyżowej – **rożki krzyżowe** {{cornua sacralia}}."
+         ]
+        },
+        {
+         "k": "DALSZE KRĘGI",
+         "items": [
+          "Spłaszczone lub okrągłe kostki – już tylko szczątkowe trzony kręgów.",
+          "Na Co2 czasem wyrostki poprzeczne – niskie wzgórki na powierzchniach bocznych."
+         ]
+        },
+        {
+         "k": "POŁĄCZENIA",
+         "items": [
+          "Podstawa kości guzicznej z wierzchołkiem kości krzyżowej – chrząstkozrost; tak samo Co1 z Co2 i Co2 z Co3.",
+          "Połączenia dalszych kręgów – skostniałe. W wieku późniejszym zwykle kostnieją wszystkie połączenia, także z kością krzyżową.",
+          "Ostatnie 2 kręgi mają skłonność do asymetrycznego zrastania się – kość guziczna bywa wyraźnie skrzywiona w bok lub ku przodowi, rzadziej do tyłu."
+         ]
+        }
+       ],
+       "l3": [],
+       "labels": [
+        "podstawa kości guzicznej",
+        "wierzchołek kości guzicznej",
+        "Co1",
+        "wyrostek poprzeczny {{processus transversus}}",
+        "rożki guziczne {{cornua coccygea}}",
+        "rożki krzyżowe {{cornua sacralia}}",
+        "chrząstkozrost"
+       ],
+       "fig": "widok od przodu | widok z boku – połączenie z kością krzyżową (rożki)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

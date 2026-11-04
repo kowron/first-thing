@@ -1,0 +1,8 @@
+{
+ "issues": [],
+ "missing": [
+  {"card": "Pierwszy kręg piersiowy (Th1)", "where": "sections/2", "k": "", "text": "**Wyrostek kolczysty** {{processus spinosus}} – jak od Th1 do Th8: spiczasty, silnie pochylony ku dołowi, w przekroju trójkątny; zachodzi dachówkowato na następne.", "pg": "230"}
+ ],
+ "checked": 195,
+ "notes": "Wszystkie punkty kart (Kręgi piersiowe: typowy, Th1, Th10, Th11, Th12; Kręgi lędźwiowe: typowy, L5), pola grup, l3, labels i numery stron porównane z bones.txt (s. 228-232, 234, 248); na skanie sprawdzono s. 230 (ryc. 143: podpisy processus mamillaris/accessorius przy XII potwierdzone, a drugi zestaw przy L1) i s. 234 (kąt lędźwiowo-krzyżowy 120-170 stopni, ryc. 347 w tekście Bochenka). Numeracja stron: stopka stoi na końcu połowy PDF (PDF 99-0 = s. 228 ... PDF 102-0 = s. 234). Brak błędów faktycznych. Uwaga niekrytyczna: zdanie o guzkach (s. 231) 'są bardziej zaznaczone na dwunastym, słabiej na dziesiątym i jedenastym' u Bochenka dotyczy ogółu cech zbliżających do lędźwiowych, a karty (Th10, Th11, Th12) przypisują to wprost guzkom - interpretacja dopuszczalna, nie zgłaszam jako błąd. Th1 'dołek dolny' i 'dołek wyrostka poprzecznego' wynikają z zapisu o 9 górnych kręgach i braku dołków dopiero od Th10/11 - zgodne. Zakresy stron zgodne (pg '220, 228' dla NAZWY: s. 220 = 'kręgi piersiowe, czyli grzbietowe')."
+}

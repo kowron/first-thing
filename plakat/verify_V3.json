@@ -1,0 +1,14 @@
+{
+ "issues": [],
+ "missing": [
+  {
+   "card": "Kręgi rzekome",
+   "where": "l3",
+   "k": "NAZWY",
+   "text": "Kręgi krzyżowe i guziczne to **kręgi rzekome** {{vertebrae spuriae}}; kręgi trzech górnych odcinków – **prawdziwe** {{vertebrae verae}}, czyli **przedkrzyżowe** {{vertebrae presacrales}}, czyli ruchome – każdy zachował swą samodzielność.",
+   "pg": "220"
+  }
+ ],
+ "checked": 183,
+ "notes": "Wszystkie pola sprawdzone z OCR i skanem s. 234, 235, 236 (120–170°, podpisy ryc. 147 i 148, przypisy z dawnymi nazwami potwierdzone). Brak błędów merytorycznych, łaciny ani numerów stron. Jedyny brak (drobny): nazwy kręgów prawdziwych/przedkrzyżowych na s. 220. Uwaga drobna, bez zgłoszenia: w karcie Powierzchnia miedniczna zdanie o m. gruszkowatym u Bochenka brzmi ogólnie Bocznie od otworów, bez słów części boczne (sens zgodny)."
+}

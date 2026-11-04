@@ -1,0 +1,9 @@
+# OCR podręcznika (pełny tekst książki) – tylko lokalnie
+all.txt
+bones.txt
+# pliki generowane / robocze
+plakat/measure_*.html
+plakat/figs/png/
+__pycache__/
+*.pyc
+*.bak

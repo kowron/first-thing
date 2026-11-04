@@ -1,0 +1,78 @@
+{
+ "issues": [
+  {
+   "card": "Budowa ogólna kręgu",
+   "field": "l3/4",
+   "problem": "„dawniej” – u Bochenka (przypis 1, s. 221) jest tylko synonim, bez zaznaczenia, że dawny",
+   "fix": "Nasada łuku – inaczej [[radix arcus vertebrae]]. Wyrostki stawowe – inaczej [[zygapophyses]].",
+   "evidence": "s. 221, przypis 1: „radix arcus vertebrae” (bez słowa „dawniej”)"
+  },
+  {
+   "card": "Budowa ogólna kręgu",
+   "field": "l3/3",
+   "problem": "zdanie o noworodku to rozwój/zmienność – poza zakresem",
+   "fix": "Kręgi mają wspólną zasadniczą budowę, ale w poszczególnych okolicach dość znacznie się różnią.",
+   "evidence": "s. 220: „Jeszcze u noworodka różnorodność… o wiele mniejsza niż u dorosłego”"
+  },
+  {
+   "card": "Kręg obrotowy (C2)",
+   "field": "l3/0",
+   "problem": "„Dawna nazwa” – Bochenek (przypis 1, s. 225) podaje tylko synonim, bez „dawna”",
+   "fix": "Inaczej: [[epistropheus]].",
+   "evidence": "s. 225, przypis 1: „epistropheus”"
+  },
+  {
+   "card": "Kręg obrotowy (C2)",
+   "field": "sections/0/2",
+   "problem": "druga połowa (noworodek, późny zrost) to rozwój – poza zakresem",
+   "fix": "Ząb to trzon kręgu szczytowego zrośnięty z kręgiem leżącym niżej.",
+   "evidence": "s. 225: „Jeszcze u noworodka… Zrost obu tych części następuje dopiero znacznie później”"
+  },
+  {
+   "card": "Kręg szyjny typowy (C3–C6)",
+   "field": "l3/3",
+   "problem": "pozycja źle przypisana: ryc. 136 to kręg szczytowy (s. 224), ryc. 139 to C7 (s. 227), nie typowy kręg C3–C6; przenieść na karty C1 i C7 (patrz missing)",
+   "fix": null,
+   "evidence": "s. 224 ryc. 136: „Foramen processus transversi”; s. 227 ryc. 139 to samo"
+  },
+  {
+   "card": "Kręg szyjny typowy (C3–C6)",
+   "field": "l3/0",
+   "problem": "rozwój (pochodzenie listewki z zawiązka żebra, żebro szyjne) – poza zakresem; do decyzji zlecającego",
+   "fix": null,
+   "evidence": "s. 223 przypis: „listewka przednia… powstała z zawiązku żebra”"
+  },
+  {
+   "card": "Kręg szyjny typowy (C3–C6)",
+   "field": "l3/4",
+   "problem": "niezgodność dotyczy rozwoju (żebro) – poza zakresem; do decyzji zlecającego. Sama treść zgodna z s. 223–224 i 248",
+   "fix": null,
+   "evidence": "s. 248: „przednia jest odpowiednikiem żebra odcinka piersiowego”"
+  },
+  {
+   "card": "Kręg wystający (C7)",
+   "field": "sections/3/5",
+   "problem": "żebro szyjne = zmienność/rozwój – poza zakresem; do decyzji zlecającego (treść zgodna z s. 227)",
+   "fix": null,
+   "evidence": "s. 227: „oddziela się od kręgu i występuje samodzielnie jako żebro szyjne”"
+  }
+ ],
+ "missing": [
+  {
+   "card": "Kręg szczytowy (C1)",
+   "where": "l3",
+   "k": "NAZWY",
+   "text": "Na ryc. 136 Bochenka otwór wyrostka poprzecznego podpisany [[foramen processus transversi]].",
+   "pg": "224"
+  },
+  {
+   "card": "Kręg wystający (C7)",
+   "where": "l3",
+   "k": "NAZWY",
+   "text": "Na ryc. 139 Bochenka otwór wyrostka poprzecznego podpisany [[foramen processus transversi]].",
+   "pg": "227"
+  }
+ ],
+ "checked": 235,
+ "notes": "Sprawdzone na skanie (s. 219-227, rzut każdej strony): zgodne z Bochenkiem wszystkie pozostałe punkty, w tym 45 stopni (s. 223), 33-34, 4-5, kłykcie potyliczne condyli occipitales (pisownia jak u Bochenka), 'wcięcia stawowego górnego brak' (s. 226), foramen processus transversi na ryc. 136 i 139, pg wszystkich l3 (s. 219-227) i kart. pg grupy Kręgosłup 219-237 zgodny (kość guziczna kończy się na s. 237). Gwiazdki przy vertebrae spuriae/verae/presacrales/apex dentis/zygapophyses nie są wyjaśnione w sprawdzonych stronach; JSON nie dodaje tam słów 'dawniej'. Drobne: C1 'części boczne pod dołkami dolnymi wpuklają się' pomija 'nieco'; C3-C6 'szyjnego n. rdzeniowego' (u B. liczba mnoga) - sens ten sam. Brak innych ważnych braków w C1, C2, C6, C7, C3-C6."
+}

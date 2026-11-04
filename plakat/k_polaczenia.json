@@ -1,0 +1,1576 @@
+{
+ "chapter": "polaczenia",
+ "tree": [
+  {
+   "type": "group",
+   "title": "Połączenia kręgów przedkrzyżowych",
+   "lat": "",
+   "pg": "249–254",
+   "why": "ścisłe (chrząstkozrosty, więzozrosty) i ruchome – stawy między wyrostkami stawowymi",
+   "q": "ścisłe czy ruchome?",
+   "l3": [
+    {
+     "k": "PODZIAŁ",
+     "t": "Połączenia ścisłe [[synarthroses]]: chrząstkozrosty [[synchondroses]] łączą trzony kręgów; więzozrosty [[syndesmoses]] łączą trzony, łuki, wyrostki poprzeczne i kolczyste.",
+     "pg": "249",
+     "src": "1703-1708"
+    },
+    {
+     "k": "PODZIAŁ",
+     "t": "Połączenia ruchome, stawowe [[articulationes]], czyli maziowe [[juncturae synoviales]]: połączenia stawowe między wyrostkami stawowymi kręgów.",
+     "pg": "249",
+     "src": "1703-1709"
+    },
+    {
+     "k": "UKŁAD OPISU",
+     "t": "Bochenek opisuje je w dwóch częściach: połączenia trzonów kręgów (krążki, więzadła podłużne) oraz połączenia wyrostków i łuków (stawy międzykręgowe i pozostałe więzadła).",
+     "pg": "249–254",
+     "src": "1711, 1869-1873"
+    }
+   ],
+   "children": [
+    {
+     "type": "group",
+     "title": "Połączenia ścisłe",
+     "lat": "synarthroses",
+     "pg": "249–254",
+     "why": "chrząstkozrosty łączą trzony; więzozrosty – trzony, łuki i wyrostki",
+     "q": "chrząstkozrost czy więzozrost?",
+     "l3": [],
+     "children": [
+      {
+       "type": "group",
+       "title": "Chrząstkozrosty",
+       "lat": "synchondroses",
+       "pg": "249–251",
+       "why": "łączą trzony kręgów – krążki międzykręgowe",
+       "l3": [],
+       "children": [
+        {
+         "type": "card",
+         "title": "Krążki międzykręgowe",
+         "lat": "disci intervertebrales",
+         "pg": "249–251",
+         "tag": "CHRZĄSTKOZROST",
+         "sections": [
+          {
+           "k": "BUDOWA",
+           "items": [
+            "inaczej **chrząstki międzykręgowe** – płaskie płytki **chrząstki włóknistej** między zwróconymi ku sobie powierzchniami trzonów",
+            "z trzonami ściśle złączone cienką warstwą **chrząstki szklistej**",
+            "kształt jak powierzchnie trzonów, ale nieco większe – na brzegach lekko wystają nad trzonami"
+           ]
+          },
+          {
+           "k": "LICZBA I WYSOKOŚĆ",
+           "items": [
+            "**23** krążki – łączą kręgi prawdziwe: pierwszy między C2 a C3, ostatni między L5 a kością krzyżową",
+            "wysokość rośnie ku dołowi (**4–12 mm**) razem z wysokością trzonów: najniższe w części szyjnej, najwyższe w lędźwiowej"
+           ]
+          },
+          {
+           "k": "CZĘŚCI",
+           "items": [
+            "**pierścień włóknisty** {{annulus fibrosus}} – część obwodowa, mocniejsza i bardziej zbita; blaszki ułożone koncentrycznie, równolegle do brzegu trzonu",
+            "**jądro miażdżyste** {{nucleus pulposus}} – część środkowa, bardziej miękka; leży ekscentrycznie, bliżej tylnego brzegu krążka",
+            "obie części przechodzą jedna w drugą bez wyraźnej granicy"
+           ]
+          },
+          {
+           "k": "CZYNNOŚĆ",
+           "items": [
+            "dzięki sprężystości krążek wydatnie zmniejsza wstrząsy kręgosłupa",
+            "pierścień włóknisty – silnie złączony z trzonami, mocno hamuje ruchy kręgów",
+            "jądro – kulista „poduszka wodna”, na której w równowadze chwiejnej spoczywa trzon wyższego kręgu; przy zgięciu w jedną stronę przesuwa się w stronę przeciwną"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "WYMIARY",
+           "t": "Łączna wysokość wszystkich krążków – ok. 1/4 długości kręgosłupa.",
+           "pg": "250",
+           "src": "1729-1730"
+          },
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "W części szyjnej i lędźwiowej krążki są wyższe z przodu niż z tyłu, w piersiowej odwrotnie; te różnice w dużym stopniu kształtują krzywizny kręgosłupa.",
+           "pg": "250",
+           "src": "1730-1732"
+          },
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "Jądro: im bliżej środka, tym luźniejsza tkanka; u młodych środek galaretowaty, wodnisty. Oprócz włókien – komórki chrzęstne i wielkie komórki, pozostałość struny grzbietowej (z wiekiem zanikają).",
+           "pg": "250–251",
+           "src": "1755-1766"
+          },
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "Jądro jest pod silnym ciśnieniem – po przecięciu krążka wystaje poza płaszczyznę przekroju.",
+           "pg": "251",
+           "src": "1766-1770"
+          },
+          {
+           "k": "Z WIEKIEM",
+           "t": "U młodych krążki są też między kręgami krzyżowymi i między Co1–Co3; z wiekiem te połączenia kostnieją, a w starszym wieku także połączenie kości krzyżowej z guziczną.",
+           "pg": "250",
+           "src": "1734-1735, 1742-1743"
+          },
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "Na C3–C7 obustronnie, zwykle między wklęsłą boczną częścią górnej powierzchni trzonu a dolną powierzchnią wyższego kręgu (lub krążka), jest mała jama stawowa z własną torebką.",
+           "pg": "250",
+           "src": "1743-1747"
+          },
+          {
+           "k": "NAZWY",
+           "t": "Inna nazwa łacińska: [[fibrocartilagines intervertebrales]].",
+           "pg": "249",
+           "src": "1718"
+          }
+         ],
+         "labels": [
+          "krążek międzykręgowy {{discus intervertebralis}}",
+          "pierścień włóknisty {{annulus fibrosus}}",
+          "jądro miażdżyste {{nucleus pulposus}}",
+          "trzon kręgu {{corpus vertebrae}}",
+          "więzadło podłużne przednie {{ligamentum longitudinale anterius}}",
+          "więzadło podłużne tylne {{ligamentum longitudinale posterius}}",
+          "otwór międzykręgowy {{foramen intervertebrale}}"
+         ],
+         "fig": "przekrój poziomy krążka – widok od góry (jądro bliżej tyłu) | przekrój pośrodkowy 2–3 kręgów lędźwiowych z krążkami i więzadłami (ten rysunek mogą dzielić karty więzadeł)"
+        }
+       ]
+      },
+      {
+       "type": "group",
+       "title": "Więzozrosty",
+       "lat": "syndesmoses",
+       "pg": "251–254",
+       "why": "więzadła łączące trzony, łuki, wyrostki poprzeczne i kolczyste",
+       "q": "co łączą: trzony, łuki czy wyrostki?",
+       "l3": [
+        {
+         "k": "CO ŁĄCZĄ",
+         "t": "Trzony – więzadła podłużne przednie i tylne; łuki – więzadła żółte; wyrostki poprzeczne – międzypoprzeczne; wyrostki kolczyste – międzykolcowe, nadkolcowe i karkowe.",
+         "pg": "249–254",
+         "src": "1706-1708, 1791-1974"
+        }
+       ],
+       "children": [
+        {
+         "type": "card",
+         "title": "Więzadło podłużne przednie",
+         "lat": "ligamentum longitudinale anterius",
+         "pg": "251–252",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "PRZEBIEG",
+           "items": [
+            "biegnie na **przedniej powierzchni trzonów** kręgów",
+            "początek: **guzek gardłowy** [[tuberculum pharyngeum]] części podstawnej kości potylicznej",
+            "koniec: **powierzchnia miedniczna kości krzyżowej** [[facies pelvina]]",
+            "ku dołowi rozszerza się i zachodzi na boczne powierzchnie trzonów – częściowo przykrywa **więzadła promieniste głów żeber**"
+           ]
+          },
+          {
+           "k": "BUDOWA",
+           "items": [
+            "ściśle złączone z krążkami międzykręgowymi",
+            "w przebiegu grubieje, zwłaszcza w odcinku lędźwiowym"
+           ]
+          },
+          {
+           "k": "CZYNNOŚĆ",
+           "items": [
+            "łączy trzony i **hamuje zgięcie kręgosłupa do tyłu**"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "W odcinku lędźwiowym wzmacniają je ścięgniste włókna przyczepów lędźwiowych przepony.",
+           "pg": "252",
+           "src": "1825-1830"
+          },
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "Kilka warstw włókien różnej długości: najbardziej powierzchowne ciągną się przez 4–5 kręgów, najgłębsze – od jednego kręgu do następnego.",
+           "pg": "252",
+           "src": "1831-1838"
+          }
+         ],
+         "labels": [
+          "więzadło podłużne przednie {{ligamentum longitudinale anterius}}",
+          "trzon kręgu {{corpus vertebrae}}",
+          "krążek międzykręgowy {{discus intervertebralis}}",
+          "więzadło promieniste głowy żebra {{ligamentum capitis costae radiatum}}",
+          "więzadło podłużne tylne {{ligamentum longitudinale posterius}}",
+          "kanał kręgowy {{canalis vertebralis}}"
+         ],
+         "fig": "kręgi piersiowe z głowami żeber widziane z boku (wspólny z kartą Stawy głów żebrowych) | przekrój pośrodkowy odcinka lędźwiowego (wspólny z kartą Krążki międzykręgowe)"
+        },
+        {
+         "type": "card",
+         "title": "Więzadło podłużne tylne",
+         "lat": "ligamentum longitudinale posterius",
+         "pg": "252",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "PRZEBIEG",
+           "items": [
+            "leży na **tylnej powierzchni trzonów**, wewnątrz **kanału kręgowego** [[canalis vertebralis]]",
+            "zaczyna się jako szerokie, cienkie pasmo na **stoku** [[clivus]] kości potylicznej i na przednim brzegu **otworu wielkiego** [[foramen magnum]]",
+            "biegnie wzdłuż kręgów prawdziwych, kończy się w górnej części **kanału krzyżowego** [[canalis sacralis]]"
+           ]
+          },
+          {
+           "k": "BUDOWA",
+           "items": [
+            "ściśle złączone z krążkami: na krążkach się rozszerza, na trzonach zwęża"
+           ]
+          },
+          {
+           "k": "CZYNNOŚĆ",
+           "items": [
+            "napina się przy **zgięciu kręgosłupa do przodu**"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "Podobnie jak przednie, składa się z kilku warstw włókien różnej długości.",
+           "pg": "252",
+           "src": "1865-1866"
+          }
+         ],
+         "labels": [
+          "więzadło podłużne tylne {{ligamentum longitudinale posterius}}",
+          "trzon kręgu {{corpus vertebrae}}",
+          "krążek międzykręgowy {{discus intervertebralis}}",
+          "nasada łuku kręgu {{pediculus arcus vertebrae}}",
+          "kanał kręgowy {{canalis vertebralis}}",
+          "więzadło podłużne przednie {{ligamentum longitudinale anterius}}"
+         ],
+         "fig": "trzony 3 kręgów widziane od tyłu, łuki odpiłowane przy nasadach (więzadło szersze na krążkach, węższe na trzonach) | przekrój pośrodkowy odcinka lędźwiowego (wspólny z kartą Krążki międzykręgowe)"
+        },
+        {
+         "type": "card",
+         "title": "Więzadła żółte",
+         "lat": "ligamenta flava",
+         "pg": "252–253",
+         "tag": "WIĘZOZROST SPRĘŻYSTY",
+         "sections": [
+          {
+           "k": "ŁĄCZĄ",
+           "items": [
+            "inaczej **więzadła międzyłukowe** – łączą zwrócone ku sobie brzegi **łuków** [[arcus vertebrae]] dwóch sąsiednich kręgów",
+            "górne – między C1 a C2; dolne – między L5 a kością krzyżową"
+           ]
+          },
+          {
+           "k": "BUDOWA",
+           "items": [
+            "błony grubości ok. **2 mm**; włókna biegną pionowo",
+            "z **tkanki łącznej sprężystej** – stąd żółtawy kolor i nazwa",
+            "na przedniej powierzchni, w płaszczyźnie pośrodkowej, mała rynienka dzieli je na dwie połowy",
+            "od tyłu przylegają do torebek stawów międzykręgowych i je wzmacniają"
+           ]
+          },
+          {
+           "k": "CZYNNOŚĆ",
+           "items": [
+            "zamykają szpary między łukami – przyczyniają się do zamknięcia kanału kręgowego",
+            "działają jak taśma gumowa: rozciągają się przy **zgięciu do przodu** i dążą do wyprostowania kręgosłupa – oszczędzają pracę mięśniom prostującym"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "Najsilniejsze między kręgami lędźwiowymi, ku górze słabsze; najsłabsze – między łukami C1 i C2.",
+           "pg": "253",
+           "src": "1901-1903"
+          },
+          {
+           "k": "UWAGI",
+           "t": "Dzięki sprężystości mają duże znaczenie dla statyki i mechaniki kręgosłupa.",
+           "pg": "253",
+           "src": "1903-1904"
+          },
+          {
+           "k": "RODZAJ",
+           "t": "W części ogólnej Bochenek podaje więzadła żółte między łukami kręgów jako przykład więzozrostu sprężystego [[syndesmosis elastica]] – włókna sprężyste zastępują klejodajne i dają żółte zabarwienie.",
+           "pg": "206",
+           "src": "skan s. 206"
+          }
+         ],
+         "labels": [
+          "więzadło żółte {{ligamentum flavum}}",
+          "łuk kręgu {{arcus vertebrae}}",
+          "nasada łuku kręgu {{pediculus arcus vertebrae}}",
+          "wyrostek stawowy górny {{processus articularis superior}}",
+          "wyrostek stawowy dolny {{processus articularis inferior}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "dołek żebrowy wyrostka poprzecznego {{fovea costalis processus transversi}}",
+          "wyrostek kolczysty {{processus spinosus}}"
+         ],
+         "fig": "łuki 3 kręgów piersiowych widziane od przodu – trzony usunięte, nasady łuków przecięte | przekrój pośrodkowy odcinka lędźwiowego (wspólny z kartą Krążki międzykręgowe)"
+        },
+        {
+         "type": "card",
+         "title": "Więzadła międzypoprzeczne",
+         "lat": "ligamenta intertransversaria",
+         "pg": "254",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "ŁĄCZĄ",
+           "items": [
+            "**wyrostki poprzeczne** [[processus transversi]] sąsiednich kręgów"
+           ]
+          },
+          {
+           "k": "BUDOWA",
+           "items": [
+            "z tkanki łącznej włóknistej",
+            "odcinek lędźwiowy – cienkie, błoniaste",
+            "odcinek piersiowy – okrągłe pasemka, łączą się z głęboką warstwą mięśni grzbietu",
+            "odcinek szyjny – najsłabsze albo ich brak (czasem podwójne)"
+           ]
+          },
+          {
+           "k": "CZYNNOŚĆ",
+           "items": [
+            "napinają się przy **zgięciu bocznym** kręgosłupa w stronę przeciwną"
+           ]
+          }
+         ],
+         "l3": [],
+         "labels": [
+          "więzadło międzypoprzeczne {{ligamentum intertransversarium}}",
+          "wyrostek poprzeczny {{processus transversus}}",
+          "blaszka łuku kręgu {{lamina arcus vertebrae}}",
+          "wyrostek stawowy górny {{processus articularis superior}}",
+          "wyrostek kolczysty {{processus spinosus}}",
+          "więzadło nadkolcowe {{ligamentum supraspinale}}"
+         ],
+         "fig": "2–3 kręgi piersiowe z żebrami widziane od tyłu (wspólny z kartą Stawy żebrowo-poprzeczne)"
+        },
+        {
+         "type": "card",
+         "title": "Więzadła międzykolcowe",
+         "lat": "ligamenta interspinalia",
+         "pg": "254",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "ŁĄCZĄ",
+           "items": [
+            "płaskie pasma między zwróconymi do siebie brzegami sąsiednich **wyrostków kolczystych** [[processus spinosi]]"
+           ]
+          },
+          {
+           "k": "BUDOWA",
+           "items": [
+            "najlepiej rozwinięte w odcinku lędźwiowym, najsłabiej – w szyjnym",
+            "włókna biegną zwykle skośnie: od góry i przodu ku dołowi i tyłowi",
+            "na szyi łączą się z **więzadłem karkowym**, w pozostałych odcinkach – z **więzadłem nadkolcowym**"
+           ]
+          },
+          {
+           "k": "CZYNNOŚĆ",
+           "items": [
+            "napinają się przy **zgięciu do przodu** – pomagają hamować ten ruch"
+           ]
+          }
+         ],
+         "l3": [],
+         "labels": [
+          "więzadło międzykolcowe {{ligamentum interspinale}}",
+          "więzadło nadkolcowe {{ligamentum supraspinale}}",
+          "wyrostek kolczysty {{processus spinosus}}",
+          "więzadło żółte {{ligamentum flavum}}",
+          "trzon kręgu {{corpus vertebrae}}",
+          "krążek międzykręgowy {{discus intervertebralis}}",
+          "więzadło podłużne przednie {{ligamentum longitudinale anterius}}",
+          "więzadło podłużne tylne {{ligamentum longitudinale posterius}}"
+         ],
+         "fig": "przekrój pośrodkowy odcinka lędźwiowego (wspólny z kartą Krążki międzykręgowe)"
+        },
+        {
+         "type": "card",
+         "title": "Więzadło nadkolcowe",
+         "lat": "ligamentum supraspinale",
+         "pg": "254",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "PRZEBIEG",
+           "items": [
+            "mocne, wąskie pasmo wzdłuż kręgosłupa – łączy **końce wyrostków kolczystych**",
+            "od wyrostka kolczystego **C7** do **grzebienia krzyżowego pośrodkowego** [[crista sacralis mediana]]"
+           ]
+          },
+          {
+           "k": "CZYNNOŚĆ",
+           "items": [
+            "napina się przy **zgięciu kręgosłupa do przodu**"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "Najbardziej powierzchowne włókna ciągną się przez 3–4 kręgi, najgłębsze – od jednego wyrostka do następnego.",
+           "pg": "254",
+           "src": "1960-1961"
+          },
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "Między wyrostkami kolczystymi łączy się z więzadłami międzykolcowymi, a ku górze – z więzadłem karkowym.",
+           "pg": "254",
+           "src": "1962-1964"
+          },
+          {
+           "k": "!",
+           "t": "Opis (s. 254) i streszczenie (s. 272): więzadło zaczyna się na C7; ale w tym samym opisie, małym drukiem: łączy się z więzadłem karkowym „ku górze, począwszy od wyrostka kolczystego siódmego kręgu piersiowego”.",
+           "pg": "254, 272",
+           "src": "1955-1958, 1962-1964, 2932-2933"
+          }
+         ],
+         "labels": [
+          "więzadło nadkolcowe {{ligamentum supraspinale}}",
+          "więzadło międzykolcowe {{ligamentum interspinale}}",
+          "wyrostek kolczysty {{processus spinosus}}",
+          "kręg wystający (C7) {{vertebra prominens}}",
+          "grzebień krzyżowy pośrodkowy {{crista sacralis mediana}}",
+          "więzadło karkowe {{ligamentum nuchae}}"
+         ],
+         "fig": "schemat kręgosłupa z boku od kości potylicznej do kości krzyżowej – więzadło karkowe przechodzi w nadkolcowe (wspólny z kartą Więzadło karkowe) | przekrój pośrodkowy odcinka lędźwiowego (wspólny z kartą Krążki międzykręgowe)"
+        },
+        {
+         "type": "card",
+         "title": "Więzadło karkowe",
+         "lat": "ligamentum nuchae",
+         "pg": "254",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "POŁOŻENIE",
+           "items": [
+            "nieparzysta, trójkątna błona włóknista w **płaszczyźnie pośrodkowej** – między kością potyliczną a wyrostkami kolczystymi kręgów szyjnych"
+           ]
+          },
+          {
+           "k": "PRZYCZEPY",
+           "items": [
+            "u góry: **grzebień potyliczny zewnętrzny** [[crista occipitalis externa]]",
+            "od przodu: **guzek tylny kręgu szczytowego** [[tuberculum posterius]] i wierzchołki **wyrostków kolczystych C2–C7**"
+           ]
+          },
+          {
+           "k": "ZNACZENIE",
+           "items": [
+            "przegroda między symetrycznymi grupami mięśni karku",
+            "u człowieka słaba pozostałość mocnej, sprężystej przegrody, która u wielu niższych zwierząt pomaga dźwigać masę głowy"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "W obrębie szyi łączą się z nim więzadła międzykolcowe.",
+           "pg": "254",
+           "src": "1950-1951"
+          }
+         ],
+         "labels": [
+          "więzadło karkowe {{ligamentum nuchae}}",
+          "kość potyliczna {{os occipitale}}",
+          "grzebień potyliczny zewnętrzny {{crista occipitalis externa}}",
+          "kręg szczytowy {{atlas}}",
+          "guzek tylny {{tuberculum posterius}}",
+          "kręg obrotowy {{axis}}",
+          "wyrostek kolczysty {{processus spinosus}}",
+          "kręg wystający {{vertebra prominens}}",
+          "więzadło nadkolcowe {{ligamentum supraspinale}}"
+         ],
+         "fig": "szyja z boku: kość potyliczna i kręgi C1–C7 z trójkątnym więzadłem karkowym (wspólny z kartą Więzadło nadkolcowe)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Połączenia ruchome – stawy",
+     "lat": "articulationes, juncturae synoviales",
+     "pg": "252",
+     "why": "połączenia stawowe (maziowe) między wyrostkami stawowymi kręgów",
+     "l3": [],
+     "children": [
+      {
+       "type": "card",
+       "title": "Stawy międzykręgowe",
+       "lat": "juncturae zygapophysiales",
+       "pg": "252",
+       "tag": "STAW PŁASKI",
+       "sections": [
+        {
+         "k": "BUDOWA",
+         "items": [
+          "tworzą je **wyrostki stawowe górne i dolne** – **23 pary** stawów",
+          "torebka łączy **wyrostki stawowe dolne** każdego kręgu z **wyrostkami stawowymi górnymi** kręgu niżej leżącego",
+          "torebki cienkie, przyczepione do brzegów powierzchni stawowych",
+          "w odcinku szyjnym torebki luźniejsze i nieco dłuższe niż w piersiowym i lędźwiowym"
+         ]
+        },
+        {
+         "k": "WZMOCNIENIE",
+         "items": [
+          "od tyłu do torebek przylegają **więzadła żółte** {{ligamenta flava}} i je wzmacniają"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "NAZWY",
+         "t": "W nagłówku Bochenek nazywa je połączeniami międzykręgowymi [[juncturae zygapophysiales]]; inna nazwa łacińska (przypis): [[articulationes intervertebrales]].",
+         "pg": "252",
+         "src": "1875, 1886"
+        },
+        {
+         "k": "RODZAJ STAWU",
+         "t": "W części ogólnej Bochenek podaje „stawy kręgów” jako przykład stawów płaskich o wiotkiej, luźnej torebce – jedna kość może się względem drugiej nieznacznie przesuwać.",
+         "pg": "217",
+         "src": "skan s. 217"
+        },
+        {
+         "k": "UWAGI",
+         "t": "Para stawów międzykręgowych łączy też L5 z kością krzyżową (zob. połączenie L5 z kością krzyżową).",
+         "pg": "254",
+         "src": "1983-1984"
+        }
+       ],
+       "labels": [
+        "wyrostek stawowy górny {{processus articularis superior}}",
+        "wyrostek stawowy dolny {{processus articularis inferior}}",
+        "torebka stawowa {{capsula articularis}}",
+        "jama stawowa {{cavitas articularis}}",
+        "więzadło żółte {{ligamentum flavum}}",
+        "łuk kręgu {{arcus vertebrae}}",
+        "trzon kręgu {{corpus vertebrae}}",
+        "krążek międzykręgowy {{discus intervertebralis}}",
+        "wyrostek kolczysty {{processus spinosus}}",
+        "otwór międzykręgowy {{foramen intervertebrale}}"
+       ],
+       "fig": "2 sąsiednie kręgi lędźwiowe widziane z boku – staw między wyrostkiem stawowym dolnym a górnym (torebka częściowo otwarta, widać jamę stawową) | łuki kręgów od przodu (wspólny z kartą Więzadła żółte)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "group",
+   "title": "Połączenia kości krzyżowej",
+   "lat": "",
+   "pg": "254–255, 527–532",
+   "why": "z kręgosłupem (L5), z kością guziczną i z kośćmi miednicznymi",
+   "q": "z czym się łączy?",
+   "l3": [
+    {
+     "k": "UKŁAD OPISU",
+     "t": "Połączenia z L5 i z kością guziczną Bochenek opisuje przy kręgosłupie (s. 254–255), a staw krzyżowo-biodrowy i więzadła miednicy – przy miednicy (s. 527–532).",
+     "pg": "254–255, 527–532",
+     "src": "1976-2024, 10979-11259"
+    },
+    {
+     "k": "KOŚCIOZROSTY",
+     "t": "U młodych krążki międzykręgowe są też między kręgami krzyżowymi i między Co1–Co3; z wiekiem te połączenia kostnieją. W starszym wieku kostnieje też połączenie kości krzyżowej z guziczną.",
+     "pg": "250",
+     "src": "1734-1735, 1742-1743"
+    }
+   ],
+   "children": [
+    {
+     "type": "card",
+     "title": "Połączenie L5 z kością krzyżową",
+     "lat": "junctura lumbosacralis",
+     "pg": "254–255",
+     "tag": "JAK MIĘDZY KRĘGAMI",
+     "sections": [
+      {
+       "k": "BUDOWA",
+       "items": [
+        "nie różni się od innych połączeń między kręgami prawdziwymi",
+        "**krążek międzykręgowy** {{discus intervertebralis}} (włóknisty) – między trzonem L5 a trzonem pierwszego kręgu kości krzyżowej",
+        "przedłużenie **więzadła podłużnego przedniego** i **tylnego**",
+        "**więzadło żółte** {{ligamentum flavum}} – łączy odpowiednie łuki",
+        "torebki stawowe łączące wyrostki stawowe – obustronnie **stawy międzykręgowe**",
+        "**więzadło międzykolcowe** i **nadkolcowe**"
+       ]
+      },
+      {
+       "k": "DODATKOWO",
+       "items": [
+        "silne **więzadło biodrowo-lędźwiowe** {{ligamentum iliolumbale}} – obustronnie łączy miednicę z kręgosłupem"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "NAZWY",
+       "t": "Bochenek: „połączenie przedkrzyżowego odcinka kręgosłupa z kością krzyżową”; inna nazwa łacińska (przypis): [[junctura sacrovertebralis]].",
+       "pg": "254",
+       "src": "1976-1979, 1986"
+      },
+      {
+       "k": "RODZAJE",
+       "t": "Składniki jak w odcinku przedkrzyżowym (s. 249): krążek – chrząstkozrost, więzadła – więzozrosty, połączenia wyrostków stawowych – stawy.",
+       "pg": "249, 254–255",
+       "src": "1703-1709, 1979-1990"
+      },
+      {
+       "k": "UWAGI",
+       "t": "Tu leżą ostatni krążek międzykręgowy i dolne więzadło żółte.",
+       "pg": "250, 253",
+       "src": "1733-1734, 1891-1893"
+      }
+     ],
+     "labels": [
+      "trzon kręgu {{corpus vertebrae}}",
+      "kość krzyżowa {{os sacrum}}",
+      "wzgórek {{promontorium}}",
+      "krążek międzykręgowy {{discus intervertebralis}}",
+      "więzadło podłużne przednie {{ligamentum longitudinale anterius}}",
+      "więzadło podłużne tylne {{ligamentum longitudinale posterius}}",
+      "więzadło żółte {{ligamentum flavum}}",
+      "więzadło międzykolcowe {{ligamentum interspinale}}",
+      "więzadło nadkolcowe {{ligamentum supraspinale}}",
+      "kanał krzyżowy {{canalis sacralis}}"
+     ],
+     "fig": "przekrój pośrodkowy przez L5 i górną część kości krzyżowej"
+    },
+    {
+     "type": "card",
+     "title": "Połączenie krzyżowo-guziczne",
+     "lat": "junctura sacrococcygea",
+     "pg": "255",
+     "tag": "JAK POŁĄCZENIA TRZONÓW",
+     "sections": [
+      {
+       "k": "ŁĄCZY",
+       "items": [
+        "owalną powierzchnię **wierzchołka kości krzyżowej** z **podstawą kości guzicznej**",
+        "homologiczne do połączeń trzonów kręgów prawdziwych; wzmocnione podobnymi więzadłami"
+       ]
+      },
+      {
+       "k": "KRĄŻEK",
+       "items": [
+        "**krążek międzykręgowy** {{discus intervertebralis}} – włóknisty, cieńszy niż inne; w wieku późniejszym zwykle kostnieje"
+       ]
+      },
+      {
+       "k": "WIĘZADŁA",
+       "items": [
+        "**więzadło krzyżowo-guziczne brzuszne** albo przednie {{ligamentum sacrococcygeum ventrale s. anterius}} – odpowiada więzadłu podłużnemu przedniemu",
+        "**więzadło krzyżowo-guziczne grzbietowe głębokie** {{ligamentum sacrococcygeum dorsale profundum}} – przedłużenie więzadła podłużnego tylnego",
+        "**więzadło krzyżowo-guziczne grzbietowe powierzchowne** {{ligamentum sacrococcygeum dorsale superficiale}} – odpowiada więzadłom żółtym i torebkom stawowym",
+        "**więzadło krzyżowo-guziczne boczne** {{ligamentum sacrococcygeum laterale}} – odpowiada więzadłu międzypoprzecznemu"
+       ]
+      },
+      {
+       "k": "RUCHOMOŚĆ",
+       "items": [
+        "na ogół ograniczona, ale bardzo różna – zależy od charakteru połączenia",
+        "u młodych osób, zwłaszcza kobiet, krążek może zawierać prawdziwą jamę stawową – powstaje połączenie stawowe"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "PRZEBIEG",
+       "t": "Brzuszne: dwa cienkie pasma, prawe i lewe, na przedniej powierzchni – od wierzchołka kości krzyżowej do kręgów guzicznych; u dołu krzyżują się.",
+       "pg": "255",
+       "src": "2002-2006"
+      },
+      {
+       "k": "PRZEBIEG",
+       "t": "Grzbietowe głębokie: cienkie pasmo na tylnej powierzchni trzonów kręgów krzyżowych i guzicznych.",
+       "pg": "255",
+       "src": "2007-2009"
+      },
+      {
+       "k": "PRZEBIEG",
+       "t": "Grzbietowe powierzchowne: kilka pasm – z dolnego końca grzebienia krzyżowego pośrodkowego na tylną powierzchnię kości guzicznej (zamyka rozwór krzyżowy [[hiatus sacralis]]) i od rożków krzyżowych do rożków guzicznych.",
+       "pg": "255",
+       "src": "2010-2014"
+      },
+      {
+       "k": "PRZEBIEG",
+       "t": "Przez szczeliny między pasmami więzadła grzbietowego powierzchownego przechodzi obustronnie n. guziczny.",
+       "pg": "255",
+       "src": "2014-2015"
+      },
+      {
+       "k": "PRZEBIEG",
+       "t": "Boczne: od końców grzebieni krzyżowych bocznych do wyrostków poprzecznych Co1; pomaga zamknąć piąty otwór krzyżowy.",
+       "pg": "255",
+       "src": "2015-2019"
+      },
+      {
+       "k": "NAZWY",
+       "t": "Inna nazwa łacińska (przypis): [[articulatio sacrococcygea]] – w druku „sacrococeygea” (błąd druku).",
+       "pg": "255",
+       "src": "2041"
+      }
+     ],
+     "labels": [
+      "kość krzyżowa {{os sacrum}}",
+      "kość guziczna {{os coccygis}}",
+      "krążek międzykręgowy {{discus intervertebralis}}",
+      "rozwór krzyżowy {{hiatus sacralis}}",
+      "rożki krzyżowe {{cornua sacralia}}",
+      "rożki guziczne {{cornua coccygea}}",
+      "grzebień krzyżowy pośrodkowy {{crista sacralis mediana}}",
+      "grzebień krzyżowy boczny {{crista sacralis lateralis}}",
+      "więzadło krzyżowo-guziczne brzuszne {{ligamentum sacrococcygeum ventrale}}",
+      "więzadło krzyżowo-guziczne grzbietowe głębokie {{ligamentum sacrococcygeum dorsale profundum}}",
+      "więzadło krzyżowo-guziczne grzbietowe powierzchowne {{ligamentum sacrococcygeum dorsale superficiale}}",
+      "więzadło krzyżowo-guziczne boczne {{ligamentum sacrococcygeum laterale}}"
+     ],
+     "fig": "dolna część kości krzyżowej i kość guziczna od tyłu | to samo od przodu | przekrój pośrodkowy (więzadło grzbietowe głębokie na tylnej powierzchni trzonów)"
+    },
+    {
+     "type": "group",
+     "title": "Połączenia z kośćmi miednicznymi",
+     "lat": "",
+     "pg": "527–532",
+     "why": "staw krzyżowo-biodrowy i więzozrosty miednicy",
+     "q": "staw czy więzozrost?",
+     "l3": [
+      {
+       "k": "WIĘZOZROSTY MIEDNICY",
+       "t": "Podział Bochenka: 1) więzadła wzmacniające staw krzyżowo-biodrowy; 2) więzadła łączące kość krzyżową z kością kulszową; 3) błona zasłonowa i więzadło pachwinowe (nie łączą kości krzyżowej).",
+       "pg": "528–532",
+       "src": "11041-11043, 11178, 11261"
+      },
+      {
+       "k": "UWAGI",
+       "t": "Więzozrosty miednicy wzmacniają stawy albo zamykają otwory i wcięcia kości miednicznej.",
+       "pg": "527",
+       "src": "10985-10987"
+      }
+     ],
+     "children": [
+      {
+       "type": "card",
+       "title": "Staw krzyżowo-biodrowy",
+       "lat": "articulatio sacroiliaca",
+       "pg": "527–528",
+       "tag": "STAW PŁASKI",
+       "sections": [
+        {
+         "k": "POWIERZCHNIE",
+         "items": [
+          "staw płaski między stawowymi **powierzchniami uchowatymi** [[facies auricularis]] kości krzyżowej i kości biodrowej",
+          "chrząstka stawowa znacznie grubsza na kości krzyżowej niż na biodrowej"
+         ]
+        },
+        {
+         "k": "JAMA I TOREBKA",
+         "items": [
+          "jama stawowa wąska, szczelinowata",
+          "torebka krótka, silnie napięta, przyczepiona do brzegów powierzchni stawowych",
+          "wzmacniają ją silne **więzadła krzyżowo-biodrowe** – brzuszne, grzbietowe i międzykostne"
+         ]
+        },
+        {
+         "k": "RUCHOMOŚĆ",
+         "items": [
+          "bardzo ograniczona – w wieku starczym może dojść do zrostu kości: **zesztywnienie stawu** [[ankylosis]]",
+          "mimo to spojenie i oba stawy krzyżowo-biodrowe chronią pierścień miednicy – osłabiają wstrząsy przy chodzeniu, biegu i skokach"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "SZCZEGÓŁY",
+         "t": "Na kości biodrowej przeważnie chrząstka włóknista; na kości krzyżowej tylko warstwa powierzchowna jest włóknista, warstwy głębokie – szkliste.",
+         "pg": "528",
+         "src": "11029-11032"
+        },
+        {
+         "k": "MIEDNICA",
+         "t": "Kość krzyżowa i obie kości miedniczne tworzą mocny, sprężysty pierścień: z tyłu dwa stawy płaskie krzyżowo-biodrowe, z przodu spojenie łonowe.",
+         "pg": "527",
+         "src": "10982-10985"
+        }
+       ],
+       "labels": [
+        "kość krzyżowa {{os sacrum}}",
+        "kość biodrowa {{os ilium}}",
+        "powierzchnia uchowata {{facies auricularis}}",
+        "jama stawowa {{cavitas articularis}}",
+        "torebka stawowa {{capsula articularis}}",
+        "więzadła krzyżowo-biodrowe brzuszne {{ligamenta sacroiliaca ventralia}}",
+        "więzadła krzyżowo-biodrowe międzykostne {{ligamenta sacroiliaca interossea}}",
+        "więzadła krzyżowo-biodrowe grzbietowe {{ligamenta sacroiliaca dorsalia}}",
+        "guzowatość krzyżowa {{tuberositas sacralis}}",
+        "guzowatość biodrowa {{tuberositas iliaca}}"
+       ],
+       "fig": "przekrój poziomy przez staw krzyżowo-biodrowy (schemat): od przodu więzadła brzuszne, jama stawowa, za nią międzykostne, najbardziej z tyłu grzbietowe (wspólny z kartami więzadeł krzyżowo-biodrowych)"
+      },
+      {
+       "type": "group",
+       "title": "Więzadła wzmacniające staw krzyżowo-biodrowy",
+       "lat": "",
+       "pg": "528–530",
+       "why": "więzozrosty miednicy, grupa 1: brzuszne, grzbietowe, międzykostne, biodrowo-lędźwiowe",
+       "q": "gdzie leżą?",
+       "l3": [],
+       "children": [
+        {
+         "type": "card",
+         "title": "Więzadła krzyżowo-biodrowe brzuszne",
+         "lat": "ligamenta sacroiliaca ventralia",
+         "pg": "528",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "PRZEBIEG",
+           "items": [
+            "liczne, cienkie pasma",
+            "łączą **powierzchnię miedniczną części bocznej kości krzyżowej** z **przednim brzegiem powierzchni uchowatej kości biodrowej**"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "NAZWY",
+           "t": "Inna nazwa łacińska (przypis): [[ligamenta sacroiliaca anteriora]].",
+           "pg": "528",
+           "src": "11053"
+          }
+         ],
+         "labels": [
+          "więzadła krzyżowo-biodrowe brzuszne {{ligamenta sacroiliaca ventralia}}",
+          "kość krzyżowa {{os sacrum}}",
+          "wzgórek {{promontorium}}",
+          "dół biodrowy {{fossa iliaca}}",
+          "więzadło biodrowo-lędźwiowe {{ligamentum iliolumbale}}",
+          "więzadło podłużne przednie {{ligamentum longitudinale anterius}}",
+          "otwór kulszowy większy {{foramen ischiadicum majus}}"
+         ],
+         "fig": "prawa połowa miednicy z L4–L5 widziana od przodu (wspólny rysunek więzadeł miednicy) | przekrój poziomy przez staw krzyżowo-biodrowy (schemat): od przodu więzadła brzuszne, jama stawowa, za nią międzykostne, najbardziej z tyłu grzbietowe (wspólny z kartami więzadeł krzyżowo-biodrowych)"
+        },
+        {
+         "type": "card",
+         "title": "Więzadła krzyżowo-biodrowe grzbietowe",
+         "lat": "ligamenta sacroiliaca dorsalia",
+         "pg": "529",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "PRZEBIEG",
+           "items": [
+            "szereg pasm, niezbyt ściśle od siebie oddzielonych, po tylnej stronie stawu",
+            "od okolicy **grzebienia krzyżowego pośredniego** [[crista sacralis intermedia]] i **bocznego** [[crista sacralis lateralis]] skośnie w górę do **talerza kości biodrowej** [[ala ossis ilii]]",
+            "przyczep na kości biodrowej: od **kolca biodrowego tylnego górnego** [[spina iliaca posterior superior]] do **tylnego dolnego** [[spina iliaca posterior inferior]]"
+           ]
+          },
+          {
+           "k": "CZĘŚCI",
+           "items": [
+            "górna – głębiej i bardziej skośnie: **więzadło krzyżowo-biodrowe grzbietowe krótkie** {{ligamentum sacroiliacum dorsale breve}}",
+            "dolna – bardziej powierzchownie i stromo: **więzadło krzyżowo-biodrowe grzbietowe długie** {{ligamentum sacroiliacum dorsale longum}}"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "NAZWY",
+           "t": "Inna nazwa łacińska (przypis): [[ligamenta sacroiliaca posteriora]].",
+           "pg": "529",
+           "src": "11133"
+          },
+          {
+           "k": "SĄSIEDZTWO",
+           "t": "Całkowicie przykrywają więzadła międzykostne i są z nimi zrośnięte; w górnej części zwykle ściśle łączy się z nimi więzadło krzyżowo-guzowe.",
+           "pg": "530",
+           "src": "11166-11168, 11183-11184"
+          }
+         ],
+         "labels": [
+          "więzadła krzyżowo-biodrowe grzbietowe {{ligamenta sacroiliaca dorsalia}}",
+          "kolec biodrowy tylny górny {{spina iliaca posterior superior}}",
+          "kolec biodrowy tylny dolny {{spina iliaca posterior inferior}}",
+          "talerz kości biodrowej {{ala ossis ilii}}",
+          "kość krzyżowa {{os sacrum}}",
+          "więzadło biodrowo-lędźwiowe {{ligamentum iliolumbale}}",
+          "więzadło krzyżowo-guzowe {{ligamentum sacrotuberale}}",
+          "otwór kulszowy większy {{foramen ischiadicum majus}}"
+         ],
+         "fig": "prawa połowa miednicy z L4–L5 widziana od tyłu (wspólny rysunek więzadeł miednicy) | przekrój poziomy przez staw krzyżowo-biodrowy (schemat): od przodu więzadła brzuszne, jama stawowa, za nią międzykostne, najbardziej z tyłu grzbietowe (wspólny z kartami więzadeł krzyżowo-biodrowych)"
+        },
+        {
+         "type": "card",
+         "title": "Więzadła krzyżowo-biodrowe międzykostne",
+         "lat": "ligamenta sacroiliaca interossea",
+         "pg": "529–530",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "POŁOŻENIE",
+           "items": [
+            "wypełniają od tyłu wąską szczelinę między **guzowatością krzyżową** [[tuberositas sacralis]] a **guzowatością biodrową** [[tuberositas iliaca]]",
+            "całkowicie przykryte więzadłami krzyżowo-biodrowymi grzbietowymi i z nimi zrośnięte"
+           ]
+          },
+          {
+           "k": "BUDOWA",
+           "items": [
+            "krótkie, mocne pasma tkanki łącznej; krzyżując się, tworzą bardzo mocne połączenie ściany miednicy"
+           ]
+          }
+         ],
+         "l3": [],
+         "labels": [
+          "więzadła krzyżowo-biodrowe międzykostne {{ligamenta sacroiliaca interossea}}",
+          "guzowatość krzyżowa {{tuberositas sacralis}}",
+          "guzowatość biodrowa {{tuberositas iliaca}}",
+          "jama stawowa {{cavitas articularis}}",
+          "więzadła krzyżowo-biodrowe grzbietowe {{ligamenta sacroiliaca dorsalia}}",
+          "więzadła krzyżowo-biodrowe brzuszne {{ligamenta sacroiliaca ventralia}}",
+          "kość krzyżowa {{os sacrum}}",
+          "kość biodrowa {{os ilium}}"
+         ],
+         "fig": "przekrój poziomy przez staw krzyżowo-biodrowy (schemat): od przodu więzadła brzuszne, jama stawowa, za nią międzykostne, najbardziej z tyłu grzbietowe (wspólny z kartami więzadeł krzyżowo-biodrowych)"
+        },
+        {
+         "type": "card",
+         "title": "Więzadło biodrowo-lędźwiowe",
+         "lat": "ligamentum iliolumbale",
+         "pg": "254–255, 530",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "PRZEBIEG",
+           "items": [
+            "mocne, płaskie pasmo włókniste",
+            "początek: **wyrostki poprzeczne L4 i L5**",
+            "część włókien → **tylna część grzebienia biodrowego** [[crista iliaca]]",
+            "część druga, większa → powierzchnia wewnętrzna **talerza kości biodrowej** [[ala ossis ilii]] i górna powierzchnia **części bocznych kości krzyżowej** [[partes laterales]]"
+           ]
+          },
+          {
+           "k": "ZNACZENIE",
+           "items": [
+            "również wzmacnia staw krzyżowo-biodrowy",
+            "przy połączeniu L5 z kością krzyżową – silne, dodatkowe więzadło: obustronnie łączy miednicę z kręgosłupem"
+           ]
+          }
+         ],
+         "l3": [],
+         "labels": [
+          "więzadło biodrowo-lędźwiowe {{ligamentum iliolumbale}}",
+          "wyrostek żebrowy (poprzeczny) L5 {{processus costalis}}",
+          "grzebień biodrowy {{crista iliaca}}",
+          "talerz kości biodrowej {{ala ossis ilii}}",
+          "kość krzyżowa {{os sacrum}}",
+          "więzadła krzyżowo-biodrowe brzuszne {{ligamenta sacroiliaca ventralia}}",
+          "wzgórek {{promontorium}}"
+         ],
+         "fig": "prawa połowa miednicy z L4–L5 widziana od przodu (wspólny rysunek więzadeł miednicy) | prawa połowa miednicy z L4–L5 widziana od tyłu (wspólny rysunek więzadeł miednicy)"
+        }
+       ]
+      },
+      {
+       "type": "group",
+       "title": "Więzadła łączące kość krzyżową z kością kulszową",
+       "lat": "",
+       "pg": "530–532",
+       "why": "zamykają miednicę; z wcięć kulszowych tworzą otwory kulszowe większy i mniejszy",
+       "q": "guz czy kolec kulszowy?",
+       "l3": [
+        {
+         "k": "WSPÓLNE",
+         "t": "Oba bardzo silne, przypuszczalnie pozostałość mięśni ogona. Przekształcają wcięcia kulszowe w otwór kulszowy większy [[foramen ischiadicum majus]] i mniejszy [[foramen ischiadicum minus]].",
+         "pg": "532",
+         "src": "11255-11258"
+        },
+        {
+         "k": "WSPÓLNE",
+         "t": "Przez oba otwory przechodzą mięśnie, naczynia i nerwy.",
+         "pg": "532",
+         "src": "11258-11259"
+        }
+       ],
+       "children": [
+        {
+         "type": "card",
+         "title": "Więzadło krzyżowo-guzowe",
+         "lat": "ligamentum sacrotuberale",
+         "pg": "530, 532",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "PRZYCZEPY",
+           "items": [
+            "zaczyna się wachlarzowato: od **kolca biodrowego tylnego górnego i dolnego**, od **brzegu bocznego kości krzyżowej** i od **dwóch górnych kręgów guzicznych**",
+            "włókna zbiegają się ku dołowi, do przodu i bocznie, potem znów się poszerzają",
+            "koniec: **brzeg przyśrodkowy guza kulszowego** [[tuber ischiadicum]]",
+            "przedłużenie – wąskie pasmo wzdłuż przyśrodkowego brzegu gałęzi kości kulszowej: **wyrostek sierpowaty** {{processus falciformis}}"
+           ]
+          },
+          {
+           "k": "SĄSIEDZTWO",
+           "items": [
+            "w górnej części zwykle ściśle złączone z więzadłami krzyżowo-biodrowymi grzbietowymi",
+            "powierzchnia tylna – miejsce przyczepu **m. pośladkowego wielkiego**"
+           ]
+          }
+         ],
+         "l3": [
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "Między wyrostkiem sierpowatym a kością kulszową – rowek, w którym biegną n. sromowy i naczynia sromowe wewnętrzne (przez otwór kulszowy mniejszy do dołu kulszowo-odbytniczego).",
+           "pg": "532",
+           "src": "11238-11242"
+          },
+          {
+           "k": "SZCZEGÓŁY",
+           "t": "Więzadło przebijają gałązki t. pośladkowej dolnej.",
+           "pg": "532",
+           "src": "11242-11243"
+          }
+         ],
+         "labels": [
+          "więzadło krzyżowo-guzowe {{ligamentum sacrotuberale}}",
+          "wyrostek sierpowaty {{processus falciformis}}",
+          "guz kulszowy {{tuber ischiadicum}}",
+          "kolec biodrowy tylny górny {{spina iliaca posterior superior}}",
+          "kolec biodrowy tylny dolny {{spina iliaca posterior inferior}}",
+          "kość guziczna {{os coccygis}}",
+          "więzadło krzyżowo-kolcowe {{ligamentum sacrospinale}}",
+          "otwór kulszowy większy {{foramen ischiadicum majus}}",
+          "otwór kulszowy mniejszy {{foramen ischiadicum minus}}"
+         ],
+         "fig": "prawa połowa miednicy z L4–L5 widziana od tyłu (wspólny rysunek więzadeł miednicy)"
+        },
+        {
+         "type": "card",
+         "title": "Więzadło krzyżowo-kolcowe",
+         "lat": "ligamentum sacrospinale",
+         "pg": "532",
+         "tag": "WIĘZOZROST",
+         "sections": [
+          {
+           "k": "PRZYCZEPY",
+           "items": [
+            "znacznie cieńsze niż krzyżowo-guzowe",
+            "początek: **brzeg boczny dolnej części kości krzyżowej** i **górne kręgi guziczne**",
+            "biegnie bocznie, do przodu od więzadła krzyżowo-guzowego, i zwęża się",
+            "koniec: **kolec kulszowy** [[spina ischiadica]]"
+           ]
+          },
+          {
+           "k": "SĄSIEDZTWO",
+           "items": [
+            "powierzchnia wewnętrzna przylega do **m. guzicznego** i jest z nim ściśle związana",
+            "razem z kością guziczną i kolcem kulszowym bierze udział w utworzeniu **dna miednicy**"
+           ]
+          }
+         ],
+         "l3": [],
+         "labels": [
+          "więzadło krzyżowo-kolcowe {{ligamentum sacrospinale}}",
+          "kolec kulszowy {{spina ischiadica}}",
+          "więzadło krzyżowo-guzowe {{ligamentum sacrotuberale}}",
+          "otwór kulszowy większy {{foramen ischiadicum majus}}",
+          "otwór kulszowy mniejszy {{foramen ischiadicum minus}}",
+          "kość krzyżowa {{os sacrum}}",
+          "kość guziczna {{os coccygis}}"
+         ],
+         "fig": "prawa połowa miednicy z L4–L5 widziana od tyłu (wspólny rysunek więzadeł miednicy) | prawa połowa miednicy z L4–L5 widziana od przodu (wspólny rysunek więzadeł miednicy)"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "group",
+   "title": "Połączenia żeber i mostka",
+   "lat": "",
+   "pg": "282–287",
+   "why": "5 grup połączeń; ruchome połączenia końców żeber dają klatce sprężystość",
+   "q": "co z czym się łączy?",
+   "l3": [
+    {
+     "k": "PODZIAŁ",
+     "t": "Bochenek wyróżnia 5 grup: 1) żebra – kręgosłup, 2) żebra – mostek, 3) żebra kostne – chrząstki żebrowe, 4) chrząstki żebrowe między sobą, 5) części mostka między sobą.",
+     "pg": "282",
+     "src": "3547-3550"
+    },
+    {
+     "k": "UWAGI",
+     "t": "Klatka piersiowa jest bardzo sprężysta dzięki budowie z pierścieni żebrowych (część kostna i chrzęstna) oraz ruchomym połączeniom ich przednich i tylnych końców.",
+     "pg": "282",
+     "src": "3544-3547"
+    }
+   ],
+   "children": [
+    {
+     "type": "group",
+     "title": "Połączenia żeber z kręgosłupem",
+     "lat": "articulationes costovertebrales",
+     "pg": "283–285",
+     "why": "stawy żebrowo-kręgowe: żebro łączy się w dwóch punktach – głową i guzkiem",
+     "q": "głowa czy guzek żebra?",
+     "l3": [
+      {
+       "k": "UWAGI",
+       "t": "Głowa żebra porusza się w dołkach żebrowych trzonów, a równocześnie guzek obraca się w dołku żebrowym wyrostka poprzecznego.",
+       "pg": "283",
+       "src": "3560-3563"
+      },
+      {
+       "k": "UWAGI",
+       "t": "Pod względem mechanicznym oba połączenia każdego żebra tworzą jeden staw (streszczenie: jedną całość funkcjonalną).",
+       "pg": "283, 297",
+       "src": "3563-3564, 4262-4263"
+      }
+     ],
+     "children": [
+      {
+       "type": "card",
+       "title": "Stawy głów żebrowych",
+       "lat": "articulationes capitum costarum",
+       "pg": "283–285",
+       "tag": "STAW",
+       "sections": [
+        {
+         "k": "POWIERZCHNIE STAWOWE",
+         "items": [
+          "**głowa żebra** [[caput costae]] dwiema powierzchniami stawowymi przylega do **dołków żebrowych** [[foveae costales]] trzonów dwóch kręgów i do wgłębienia krążka międzykręgowego między nimi",
+          "przykład – głowa żebra V: dołek żebrowy dolny Th4, dołek żebrowy górny Th5 i krążek między nimi",
+          "powierzchnie pokryte przeważnie **chrząstką włóknistą**, czasem szklistą"
+         ]
+        },
+        {
+         "k": "WYJĄTKI",
+         "items": [
+          "tylko z jednym trzonem kręgu łączy się żebro I – przeważnie, żebro X – czasem, żebra XI i XII – stale"
+         ]
+        },
+        {
+         "k": "WIĘZADŁA",
+         "items": [
+          "**więzadło promieniste głowy żebra** {{ligamentum capitis costae radiatum}} – szerokie, płaskie; na przedniej powierzchni torebki, którą wzmacnia",
+          "biegnie od głowy żebra rozbieżnie przyśrodkowo do bocznej powierzchni trzonów i krążka",
+          "**więzadło śródstawowe głowy żebra** {{ligamentum capitis costae intraarticulare}} – wewnątrz stawu, od **grzebienia głowy** [[crista capitis]] do krążka międzykręgowego",
+          "przeważnie dzieli staw na dwie komory – górną i dolną"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "SZCZEGÓŁY",
+         "t": "Więzadło promieniste jest częściowo przykryte więzadłem podłużnym przednim kręgosłupa.",
+         "pg": "283",
+         "src": "3580-3581"
+        },
+        {
+         "k": "SZCZEGÓŁY",
+         "t": "Każda z dwóch komór ma własną jamę i torebkę stawową. Stawy żeber I, XI i XII (nieraz też X) nie mają więzadła śródstawowego – mają jedną niepodzielną jamę i jedną torebkę.",
+         "pg": "285",
+         "src": "3673-3678"
+        },
+        {
+         "k": "!",
+         "t": "Streszczenie (s. 297) podaje bez zastrzeżeń, że więzadło śródstawowe dzieli staw na dwie komory; opis (s. 285): „przeważnie”, a w stawach żeber I, XI, XII (nieraz X) tego więzadła brak.",
+         "pg": "285, 297",
+         "src": "3673-3678, 4268-4270"
+        }
+       ],
+       "labels": [
+        "głowa żebra {{caput costae}}",
+        "grzebień głowy {{crista capitis}}",
+        "dołek żebrowy górny {{fovea costalis superior}}",
+        "dołek żebrowy dolny {{fovea costalis inferior}}",
+        "krążek międzykręgowy {{discus intervertebralis}}",
+        "jama stawowa {{cavitas articularis}}",
+        "więzadło promieniste głowy żebra {{ligamentum capitis costae radiatum}}",
+        "więzadło śródstawowe głowy żebra {{ligamentum capitis costae intraarticulare}}",
+        "więzadło podłużne przednie {{ligamentum longitudinale anterius}}",
+        "trzon kręgu {{corpus vertebrae}}"
+       ],
+       "fig": "2 kręgi piersiowe z żebrem widziane z lewej strony – jeden staw głowy żebra otwarty (widać grzebień głowy i więzadło śródstawowe) | kręg piersiowy z parą żeber widziany od góry – po jednej stronie więzadła"
+      },
+      {
+       "type": "card",
+       "title": "Stawy żebrowo-poprzeczne",
+       "lat": "articulationes costotransversariae",
+       "pg": "285",
+       "tag": "STAW",
+       "sections": [
+        {
+         "k": "GDZIE",
+         "items": [
+          "tylko na **żebrach I–X**",
+          "żebra XI i XII nie tworzą stawu – z wyrostkiem poprzecznym łączą je jedynie luźne pasma więzadłowe"
+         ]
+        },
+        {
+         "k": "POWIERZCHNIE STAWOWE",
+         "items": [
+          "powierzchnia stawowa **guzka żebra** [[tuberculum costae]] przylega do **dołka żebrowego wyrostka poprzecznego** [[fovea costalis processus transversi]] odpowiedniego kręgu",
+          "przykład: guzek żebra V – wyrostek poprzeczny Th5",
+          "powierzchnie pokryte **chrząstką szklistą**; torebka wzmocniona kilkoma więzadłami żebrowo-poprzecznymi"
+         ]
+        },
+        {
+         "k": "WIĘZADŁA",
+         "items": [
+          "łączą **szyjkę żebra** [[collum costae]] z wyrostkiem poprzecznym tego samego kręgu i kręgu wyżej położonego",
+          "**więzadło żebrowo-poprzeczne** {{ligamentum costotransversarium}} – krótkie, szerokie, poziome: tylna powierzchnia szyjki → przednia powierzchnia wyrostka poprzecznego tego samego kręgu",
+          "**więzadło żebrowo-poprzeczne górne** {{ligamentum costotransversarium superius}} – silne, czworokątne: **grzebień szyjki żebra** [[crista colli costae]] → w górę i bocznie do dolnego brzegu wyrostka poprzecznego kręgu wyżej",
+          "**więzadło żebrowo-poprzeczne boczne** {{ligamentum costotransversarium laterale}} – słabsze, trójkątne: tylna powierzchnia szyjki → w górę i przyśrodkowo do nasady wyrostka kolczystego i poprzecznego kręgu wyżej",
+          "**więzadło guzka żebra** {{ligamentum tuberculi costae}} – krótkie, mocne, grube: wierzchołek wyrostka poprzecznego → tylna powierzchnia guzka żebra"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "SZCZEGÓŁY",
+         "t": "Więzadło żebrowo-poprzeczne prawie całkowicie wypełnia przestrzeń między szyjką a wyrostkiem poprzecznym – zostają tylko małe otworki z przodu i z tyłu; włókna biegną od żebra skośnie ku tyłowi i przyśrodkowo.",
+         "pg": "285",
+         "src": "3693-3698"
+        },
+        {
+         "k": "SZCZEGÓŁY",
+         "t": "Więzadło górne graniczy z przodu z naczyniami i nn. międzyżebrowymi; jego brzeg przyśrodkowy zamyka otwór, przez który gałęzie tylne tych naczyń i gałęzie grzbietowe nn. piersiowych biegną ku tyłowi.",
+         "pg": "285",
+         "src": "3704-3707"
+        },
+        {
+         "k": "SZCZEGÓŁY",
+         "t": "Więzadło boczne biegnie prawie prostopadle do górnego i do tyłu od niego; zwykle ma dwa pasma – do nasady wyrostka kolczystego i do nasady wyrostka poprzecznego.",
+         "pg": "285",
+         "src": "3709-3713"
+        },
+        {
+         "k": "NAZWY",
+         "t": "Inne nazwy (przypisy): więzadło górne = przednie [[ligamentum costotransversarium anterius]]; więzadło boczne = tylne [[ligamentum costotransversarium posterius]].",
+         "pg": "285",
+         "src": "3729-3730"
+        },
+        {
+         "k": "UWAGI",
+         "t": "Więzadło lędźwiowo-żebrowe [[ligamentum lumbocostale]] niektórzy autorzy zaliczają do więzadeł tego stawu; wg Bochenka to górna część blaszki głębokiej powięzi piersiowo-lędźwiowej.",
+         "pg": "285",
+         "src": "3719-3722"
+        },
+        {
+         "k": "!",
+         "t": "Streszczenie (s. 297) wymienia więzadło lędźwiowo-żebrowe jako 5. więzadło wzmacniające staw żebrowo-poprzeczny – w opisie (s. 285) Bochenek go do nich nie zalicza.",
+         "pg": "285, 297",
+         "src": "3719-3722, 4275-4279"
+        },
+        {
+         "k": "!",
+         "t": "Osteologia żebra (s. 274): na guzku żebra, bocznie od powierzchni stawowej, przyczepia się więzadło żebrowo-poprzeczne boczne; w opisie połączeń (s. 285) do guzka biegnie więzadło guzka żebra, a boczne – z szyjki żebra.",
+         "pg": "274, 285",
+         "src": "3068-3070, 3709-3717"
+        },
+        {
+         "k": "ŻEBRA XI–XII",
+         "t": "Przy ruchach żeber Bochenek nazywa połączenia żeber XI–XII z wyrostkami poprzecznymi połączeniami więzozrostowymi.",
+         "pg": "293",
+         "src": "4037-4039"
+        }
+       ],
+       "labels": [
+        "guzek żebra {{tuberculum costae}}",
+        "szyjka żebra {{collum costae}}",
+        "wyrostek poprzeczny {{processus transversus}}",
+        "dołek żebrowy wyrostka poprzecznego {{fovea costalis processus transversi}}",
+        "więzadło żebrowo-poprzeczne {{ligamentum costotransversarium}}",
+        "więzadło żebrowo-poprzeczne górne {{ligamentum costotransversarium superius}}",
+        "więzadło żebrowo-poprzeczne boczne {{ligamentum costotransversarium laterale}}",
+        "więzadło guzka żebra {{ligamentum tuberculi costae}}",
+        "więzadło międzypoprzeczne {{ligamentum intertransversarium}}",
+        "wyrostek kolczysty {{processus spinosus}}"
+       ],
+       "fig": "2–3 kręgi piersiowe z żebrami widziane od tyłu (strona prawa) – więzadła żebrowo-poprzeczne | kręg piersiowy z parą żeber widziany od góry – po jednej stronie więzadła (wspólny z kartą Stawy głów żebrowych)"
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Połączenia żeber z mostkiem",
+     "lat": "",
+     "pg": "285–287",
+     "why": "7 górnych (prawdziwych) żeber; chrząstki przylegają do wcięć żebrowych mostka",
+     "q": "które żebro?",
+     "l3": [],
+     "children": [
+      {
+       "type": "card",
+       "title": "Chrząstkozrost mostkowo-żebrowy żebra I",
+       "lat": "synchondrosis sternocostalis costae primae",
+       "pg": "285–286",
+       "tag": "CHRZĄSTKOZROST",
+       "sections": [
+        {
+         "k": "BUDOWA",
+         "items": [
+          "**chrząstka żebra I** w większości przypadków **zlewa się z mostkiem** – powstaje chrząstkozrost",
+          "miejsce połączenia: **wcięcie żebrowe** [[incisura costalis]] **rękojeści mostka** [[manubrium sterni]]"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "STRESZCZENIE",
+         "t": "Streszczenie (s. 297): żebro I łączy się z rękojeścią mostka chrząstkozrostem, żebra II–VII tworzą stawy prawdziwe.",
+         "pg": "297",
+         "src": "4281-4283"
+        }
+       ],
+       "labels": [
+        "chrząstkozrost mostkowo-żebrowy żebra I {{synchondrosis sternocostalis costae primae}}",
+        "żebro I {{costa I}}",
+        "chrząstka żebrowa {{cartilago costalis}}",
+        "rękojeść mostka {{manubrium sterni}}",
+        "wcięcie żebrowe {{incisura costalis}}",
+        "staw mostkowo-żebrowy {{articulatio sternocostalis}}"
+       ],
+       "fig": "mostek z chrząstkami żeber I–III (i dalej w dół) widziany od przodu – po jednej stronie zdjęta przednia warstwa (widać jamy stawowe i chrząstkozrost żebra I) (wspólny z kartą Stawy mostkowo-żebrowe)"
+      },
+      {
+       "type": "card",
+       "title": "Stawy mostkowo-żebrowe",
+       "lat": "articulationes sternocostales",
+       "pg": "285–287",
+       "tag": "STAW",
+       "sections": [
+        {
+         "k": "GDZIE",
+         "items": [
+          "chrząstki żeber **II–VII** (czasem VIII) łączą się z mostkiem prawdziwymi stawami – z jamą i torebką stawową",
+          "przedni koniec każdej chrząstki przylega bezpośrednio do **wcięcia żebrowego** mostka [[incisura costalis]]"
+         ]
+        },
+        {
+         "k": "WIĘZADŁA",
+         "items": [
+          "**więzadła promieniste mostkowo-żebrowe** {{ligamenta sternocostalia radiata}}, przednie i tylne – szerokie, cienkie pasma od mostkowych końców chrząstek rozbieżnie na mostek; wzmacniają cienką torebkę",
+          "splatają się z więzadłami strony przeciwnej – powstaje **błona mostka** {{membrana sterni}}, przednia i tylna",
+          "**więzadło śródstawowe mostkowo-żebrowe** {{ligamentum sternocostale intraarticulare}} – stale tylko w stawie chrząstki II",
+          "to płytka chrząstki włóknistej: od przyśrodkowego końca chrząstki II do miejsca połączenia rękojeści z trzonem; dzieli jamę na dwie oddzielne komory",
+          "**więzadła żebrowo-mieczykowe** {{ligamenta costoxiphoidea}} – od dolnego końca trzonu mostka i przedniej powierzchni chrząstek VI i VII skośnie w dół na przód wyrostka mieczykowatego"
+         ]
+        }
+       ],
+       "l3": [
+        {
+         "k": "SZCZEGÓŁY",
+         "t": "Więzadła promieniste są silniejsze z przodu niż z tyłu; częściowo krzyżują się na mostku.",
+         "pg": "286",
+         "src": "3786-3787"
+        },
+        {
+         "k": "SZCZEGÓŁY",
+         "t": "Tylna błona mostka jest szczególnie mocna: przy poprzecznym złamaniu mostka nie pęka jak przednia i chroni przed przemieszczeniem odłamów do klatki piersiowej.",
+         "pg": "286",
+         "src": "3788-3791"
+        },
+        {
+         "k": "SZCZEGÓŁY",
+         "t": "Podobne płytki chrząstki są też w dalszych stawach, coraz rzadziej ku dołowi; dzielą staw na dwie komory, zwykle różnej wielkości, które nieraz łączą się ze sobą.",
+         "pg": "287",
+         "src": "3801-3804"
+        },
+        {
+         "k": "SZCZEGÓŁY",
+         "t": "Więzadła żebrowo-mieczykowe łączą się z blaszką przednią pochewki m. prostego brzucha.",
+         "pg": "287",
+         "src": "3809"
+        },
+        {
+         "k": "UWAGI",
+         "t": "Bochenek porównuje je ze stawami głów żebrowych: cienka torebka wzmocniona więzadłem promienistym, a więzadło śródstawowe wzmacnia połączenie obu końców stawowych.",
+         "pg": "286",
+         "src": "3739-3742"
+        }
+       ],
+       "labels": [
+        "rękojeść mostka {{manubrium sterni}}",
+        "trzon mostka {{corpus sterni}}",
+        "wyrostek mieczykowaty {{processus xiphoideus}}",
+        "chrząstka żebrowa {{cartilago costalis}}",
+        "staw mostkowo-żebrowy {{articulatio sternocostalis}}",
+        "więzadło promieniste mostkowo-żebrowe {{ligamentum sternocostale radiatum}}",
+        "więzadło śródstawowe mostkowo-żebrowe {{ligamentum sternocostale intraarticulare}}",
+        "błona mostka {{membrana sterni}}",
+        "więzadła żebrowo-mieczykowe {{ligamenta costoxiphoidea}}",
+        "chrząstkozrost mostkowo-żebrowy żebra I {{synchondrosis sternocostalis costae primae}}"
+       ],
+       "fig": "mostek z chrząstkami żeber I–III (i dalej w dół) widziany od przodu – po jednej stronie zdjęta przednia warstwa (widać jamy stawowe i chrząstkozrost żebra I) | przednia ściana klatki piersiowej od przodu: dolna część mostka, wyrostek mieczykowaty, chrząstki żeber V–X"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "Połączenia kości żebrowych z chrząstkami żebrowymi",
+     "lat": "",
+     "pg": "287",
+     "sections": [
+      {
+       "k": "BUDOWA",
+       "items": [
+        "**kość żebrowa** [[os costale]] na przednim końcu przechodzi bezpośrednio w **chrząstkę żebrową** [[cartilago costalis]]",
+        "przedni koniec kości żebrowej – owalne, pionowe wgłębienie o porowatej powierzchni; chrząstka łączy się z nim ściśle"
+       ]
+      },
+      {
+       "k": "TRWAŁOŚĆ",
+       "items": [
+        "połączenie bardzo mocne: najmniejsze, mikroskopowe części stykających się powierzchni wnikają jedne w drugie",
+        "**okostna** kości żebrowej przechodzi bezpośrednio w **ochrzęstną** chrząstki",
+        "dlatego oderwanie chrząstki od kości zdarza się bardzo rzadko"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "UWAGI",
+       "t": "Bochenek nie podaje tu nazwy rodzaju połączenia – opisuje bezpośrednie przejście kości żebrowej w chrząstkę.",
+       "pg": "287",
+       "src": "3811-3819"
+      }
+     ],
+     "labels": [
+      "kość żebrowa {{os costale}}",
+      "chrząstka żebrowa {{cartilago costalis}}",
+      "owalne wgłębienie przedniego końca kości żebrowej",
+      "okostna",
+      "ochrzęstna"
+     ],
+     "fig": "przedni koniec kości żebrowej z chrząstką żebrową – przekrój podłużny (schemat)"
+    },
+    {
+     "type": "card",
+     "title": "Stawy międzychrząstkowe",
+     "lat": "articulationes interchondrales",
+     "pg": "287",
+     "tag": "STAW",
+     "sections": [
+      {
+       "k": "GDZIE",
+       "items": [
+        "z reguły między przylegającymi brzegami chrząstek żeber **VI, VII i VIII**",
+        "w połowie przypadków także chrząstka V z VI; często (w 25%) także IX z VIII"
+       ]
+      },
+      {
+       "k": "BUDOWA",
+       "items": [
+        "mała jamka stawowa; rolę torebki stawowej pełni **ochrzęstna**",
+        "za więzadła wzmacniające mogą uchodzić **błony międzyżebrowe zewnętrzne** – ściśle związane z mm. międzyżebrowymi"
+       ]
+      },
+      {
+       "k": "DOLNE CHRZĄSTKI",
+       "items": [
+        "przedni koniec chrząstki X łączy się z chrząstką IX tylko luźnymi pasmami więzadłowymi",
+        "żebra XI i XII nie mają nawet takiego połączenia"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "STRESZCZENIE",
+       "t": "Streszczenie (s. 298): połączenia chrząstek żebrowych VI–VIII (V–IX), czyli stawy międzychrząstkowe.",
+       "pg": "298",
+       "src": "4295-4296"
+      }
+     ],
+     "labels": [
+      "stawy międzychrząstkowe {{articulationes interchondrales}}",
+      "chrząstka żebrowa {{cartilago costalis}}",
+      "żebro VII {{costa VII}}",
+      "trzon mostka {{corpus sterni}}",
+      "wyrostek mieczykowaty {{processus xiphoideus}}",
+      "więzadła żebrowo-mieczykowe {{ligamenta costoxiphoidea}}",
+      "łuk żebrowy {{arcus costalis}}"
+     ],
+     "fig": "przednia ściana klatki piersiowej od przodu: dolna część mostka, wyrostek mieczykowaty, chrząstki żeber V–X (wspólny z kartą Stawy mostkowo-żebrowe)"
+    },
+    {
+     "type": "card",
+     "title": "Chrząstkozrosty mostkowe",
+     "lat": "synchondroses sternales",
+     "pg": "287",
+     "tag": "CHRZĄSTKOZROST",
+     "sections": [
+      {
+       "k": "BUDOWA",
+       "items": [
+        "trzy części mostka – **rękojeść**, **trzon** i **wyrostek mieczykowaty** – także u dorosłego zwykle łączą się chrząstką, mniej lub bardziej ruchomo",
+        "powierzchnie końcowe części pokryte **chrząstką szklistą**, a między nimi **płytka chrząstki włóknistej**"
+       ]
+      },
+      {
+       "k": "GÓRNE POŁĄCZENIE",
+       "items": [
+        "**górne połączenie mostkowe** {{synchondrosis s. symphysis manubriosternalis}} – między rękojeścią a trzonem; masa chrzęstna ok. **6 mm** grubości",
+        "w starości chrząstka nieraz się rozpada – powstaje połączenie zbliżone do stawowego; rzadziej zrost kości (**kościozrost**)"
+       ]
+      },
+      {
+       "k": "DOLNE POŁĄCZENIE",
+       "items": [
+        "**dolne połączenie mostkowe** {{synchondrosis xiphosternalis}} – między trzonem a wyrostkiem mieczykowatym; podobne do górnego",
+        "tu **kościozrost** bardzo częsty, zwłaszcza od 50. roku życia; połączenie stawowe – bardzo rzadko"
+       ]
+      }
+     ],
+     "l3": [
+      {
+       "k": "SZCZEGÓŁY",
+       "t": "Grubość 6 mm obejmuje całą masę chrzęstną górnego połączenia: obie warstwy szkliste i płytkę włóknistą.",
+       "pg": "287",
+       "src": "3842-3844"
+      },
+      {
+       "k": "SZCZEGÓŁY",
+       "t": "Górne: kościozrost w starości jakoby nie zdarza się częściej niż w młodości; nawet w skostniałym połączeniu zostają wewnątrz resztki chrząstki.",
+       "pg": "287",
+       "src": "3846-3848"
+      }
+     ],
+     "labels": [
+      "rękojeść mostka {{manubrium sterni}}",
+      "trzon mostka {{corpus sterni}}",
+      "wyrostek mieczykowaty {{processus xiphoideus}}",
+      "górne połączenie mostkowe {{synchondrosis manubriosternalis}}",
+      "dolne połączenie mostkowe {{synchondrosis xiphosternalis}}",
+      "kąt mostka {{angulus sterni}}",
+      "wcięcie żebrowe {{incisura costalis}}"
+     ],
+     "fig": "mostek – przekrój pośrodkowy (strzałkowy): warstwy chrząstki szklistej i płytka włóknista w obu połączeniach | mostek od przodu"
+    }
+   ]
+  }
+ ]
+}
