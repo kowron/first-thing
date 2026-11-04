@@ -171,13 +171,13 @@ ribX.build(end='break')
 # ================= żebro XI =================
 CXI = [(4.2, 0.0), (11, 0.4), (20, 2.0), (31, 5.2), (43, 9.6), (55, 15.0), (66, 21.4), (76, 28.8), (84, 37.0),
        (90, 46.0), (94, 55.0), (96, 63.0)]
-WXI = [(0, 4.3), (0.03, 4.1), (0.08, 3.4), (0.16, 3.5), (0.3, 3.9), (0.6, 3.8), (0.85, 3.1), (1.0, 2.2)]
+WXI = [(0, 3.9), (0.03, 3.7), (0.08, 2.9), (0.16, 3.0), (0.3, 3.3), (0.6, 3.2), (0.85, 2.6), (1.0, 1.9)]
 ribXI = Rib(CXI, DY, lambda u: lerp(WXI, u) * S, lambda u: lerp(WXI, u) * S)
 ribXI.build(end='round', end_flat=0.12)
 
 # ================= żebro XII =================
 CXII = [(4.0, 0.0), (11, 0.6), (20, 2.6), (30, 6.0), (40, 10.5), (49, 16.0), (57, 22.5), (63, 29.5), (67, 36.5)]
-WXII = [(0, 4.1), (0.04, 3.9), (0.1, 3.3), (0.2, 3.5), (0.4, 3.6), (0.75, 3.0), (1.0, 2.0)]
+WXII = [(0, 3.7), (0.04, 3.5), (0.1, 2.9), (0.2, 3.0), (0.4, 3.1), (0.75, 2.6), (1.0, 1.8)]
 ribXII = Rib(CXII, 2 * DY, lambda u: lerp(WXII, u) * S, lambda u: lerp(WXII, u) * S)
 ribXII.build(end='round', end_flat=0.12)
 
@@ -190,20 +190,20 @@ def cart_tip(rib, L):
     pts = [rib.edge(rib.ipt(0.985), +1, -0.05)]
     for k in range(1, 12):
         a = k / 12
-        w = rE * (1 - a) ** 1.25 * 1.02
+        w = rE * (1 - a ** 1.6) ** 0.9 * 1.02
         pts.append((cE[0] + tE[0] * L * a + nE[0] * w, cE[1] + tE[1] * L * a + nE[1] * w))
     pts.append((cE[0] + tE[0] * L, cE[1] + tE[1] * L))
     for k in range(11, 0, -1):
         a = k / 12
-        w = rE * (1 - a) ** 1.25 * 1.02
+        w = rE * (1 - a ** 1.6) ** 0.9 * 1.02
         pts.append((cE[0] + tE[0] * L * a - nE[0] * w, cE[1] + tE[1] * L * a - nE[1] * w))
     pts.append(rib.edge(rib.ipt(0.985), -1, -0.05))
     f.add(f'<path class="cart" d="{poly(pts)}"/>')
     return (cE[0] + tE[0] * L * 0.45, cE[1] + tE[1] * L * 0.45)
 
 
-P_CART_XI = cart_tip(ribXI, 9.0 * S)
-P_CART_XII = cart_tip(ribXII, 7.0 * S)
+P_CART_XI = cart_tip(ribXI, 11.0 * S)
+P_CART_XII = cart_tip(ribXII, 9.0 * S)
 
 for rb in (ribX, ribXI, ribXII):
     f.add(f'<path class="bone" d="{poly(rb.outline)}"/>')
@@ -261,6 +261,9 @@ f.label(P_FINF, 'powierzchnia stawowa głowy żebra dolna', 'facies articularis 
 f.label(P_FXI, 'powierzchnia stawowa głowy żebra', 'facies articularis capitis costae', (TL, 37.5), side='L')
 f.label(P_FXII, '', None, (TL, 37.5), side='L')
 f.text(TL - 0.7, 44.0, '(XI, XII – jedna, bez grzebienia)', cls='note', anchor='end')
+f.text(TL - 0.7, 58.0, 'XI i XII – cienkie listewki kostne:', cls='note', anchor='end')
+f.text(TL - 0.7, 61.0, 'niemal bez szyjki, guzka, kąta', cls='note', anchor='end')
+f.text(TL - 0.7, 64.0, 'i bruzdy żebra', cls='note', anchor='end')
 f.label(P_FTUB, 'powierzchnia stawowa guzka żebra', 'facies articularis tuberculi costae', (80.0, 4.5), side='R')
 f.label(P_ANG, 'kąt żebra', 'angulus costae', (124.0, 16.0), side='R')
 f.label(P_X, 'żebro X', 'costa X', (124.0, 30.0), side='R')

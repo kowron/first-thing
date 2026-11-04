@@ -1,15 +1,15 @@
 # PRZEPONA – przekrój strzałkowy przez prawą połowę tułowia, na wysokości prawej kopuły przepony
 # (schemat własny wg opisu Bochenka s. 690–695). Przód w lewo. Pasmo mięśniowe/ścięgniste – wydech,
-# linia przerywana – głęboki wdech (kopuła prawa od górnego brzegu V chrząstki żebrowej do VII żebra, s. 695).
+# linia przerywana – maksymalny wdech (kopuła prawa od górnego brzegu V chrząstki żebrowej do VII żebra, s. 695).
 # Przyczep przedni – chrząstki żeber (część żebrowa), tylny – więzadło łukowate boczne nad m. czworobocznym
 # lędźwi i XII żebro (część lędźwiowa / żebrowa, s. 691–692). Zachyłek żebrowo-przeponowy rozchyla się przy wdechu (s. 693).
 import sys, math; sys.path.insert(0, '/home/user/first-thing/plakat/figs')
 from figlib import Fig, smooth
 
-W, H = 150, 100
+W, H = 150, 94
 K = 2.6                      # mm na cm
 XA, YT = 46.0, 4.0           # x przedniej (wewnętrznej) powierzchni ściany przedniej (z=0); y górnego cięcia
-YCUT = 29.6                  # dolne cięcie (cm)
+YCUT = 27.2                  # dolne cięcie (cm)
 f = Fig('przepona_boczny', W, H,
         caption='przepona · przekrój strzałkowy przez prawą kopułę (schemat) · przód w lewo')
 
@@ -191,11 +191,11 @@ def kid_pt(t, grow=0.0):
 
 
 # wątroba: góra = dolna powierzchnia przepony; dół – powierzchnia trzewna, z tyłu na nerce
-liv_top = [p for p in loE if p[0] > XA + K * 0.5 and not (p[0] > XA + K * 10 and p[1] > YT + K * 17.6)]
-arc = [kid_pt(math.radians(a), 0.32) for a in range(-80, -178, -8)]       # od bieguna górnego ku przodowi
-liv_low = [P(*q) for q in arc] + [P(10.6, 19.55), P(8.6, 19.75), P(6.2, 19.2), P(3.6, 18.1), P(1.6, 17.05),
-                                   P(0.45, 16.35)]
-liver = liv_top + [P(15.9, 17.75)] + cr(liv_low, n=4)
+liv_top = [p for p in loE if p[0] > XA + K * 0.5 and not (p[0] > XA + K * 10 and p[1] > YT + K * 18.55)]
+arc = [kid_pt(math.radians(a), 0.32) for a in range(-64, -146, -6)]       # od bieguna górnego ku przodowi
+liv_low = [P(*q) for q in arc] + [P(10.9, 19.75), P(8.6, 19.45), P(6.2, 18.55), P(3.6, 17.5), P(1.6, 16.95),
+                                   P(0.4, 17.25)]
+liver = liv_top + cr(liv_low, n=4)
 f.add(f'<path class="organ" d="{poly(liver)}"/>')
 f.add(f'<path class="shade" d="{poly(liver)}"/>')
 kid = [P(*kid_pt(math.radians(a))) for a in range(0, 360, 6)]
@@ -214,7 +214,7 @@ for a, b in ((3, iT0 - 3), (iT1 + 3, len(cE) - 4)):
 LIG = P(16.55, 19.55)
 f.add(f'<ellipse class="lig" cx="{LIG[0]:.2f}" cy="{LIG[1]:.2f}" rx="1.25" ry=".75" transform="rotate(-20 {LIG[0]:.2f} {LIG[1]:.2f})"/>')
 
-# ---------- 7. przepona – głęboki wdech (linia przerywana) ----------
+# ---------- 7. przepona – maksymalny wdech (linia przerywana) ----------
 f.add(f'<path class="capsule" d="{line(cI)}"/>')
 
 # strzałki ruchu kopuły: wdech – w dół (niebieska), wydech – w górę (czerwona)
@@ -234,8 +234,8 @@ f.add(f'<path class="dim" d="M{XL:.2f},{y_exp:.2f} L{apex[0]:.2f},{y_exp:.2f}"/>
 f.add(f'<path class="dim" d="M{XL:.2f},{y_ins:.2f} L{apexI[0]:.2f},{y_ins:.2f}"/>')
 f.text(XL - 0.4, y_exp - 3.2, 'kopuła prawa – wydech:', anchor='end')
 f.text(XL - 0.4, y_exp - 0.6, 'górny brzeg V chrząstki żebrowej', anchor='end')
-f.text(XL - 0.4, y_ins - 3.2, 'głęboki wdech: VII żebro', anchor='end')
-f.text(XL - 0.4, y_ins - 0.6, '(do trzech żeber niżej)', anchor='end')
+f.text(XL - 0.4, y_ins - 3.2, 'maksymalny wdech: VII żebro', anchor='end')
+f.text(XL - 0.4, y_ins - 0.6, '(różnica do trzech żeber, V–VII)', anchor='end')
 # numery chrząstek żebrowych przy ścianie przedniej
 for nm, dy in (('V', 0.75), ('VII', 2.25)):
     c = ant_c[nm]
@@ -244,7 +244,7 @@ for nm, dy in (('V', 0.75), ('VII', 2.25)):
 
 # jamy ciała
 f.text(P(8.2, 1.7)[0], P(8.2, 1.7)[1], 'jama klatki piersiowej', cls='notec')
-f.text(P(5.6, 24.2)[0], P(5.6, 24.2)[1], 'jama brzuszna', cls='notec')
+f.text(P(5.8, 23.4)[0], P(5.8, 23.4)[1], 'jama brzuszna', cls='notec')
 
 # ---------- 9. podpisy ----------
 TL, TR = 39.8, 108.0
@@ -255,8 +255,8 @@ f.label(pc, 'część żebrowa', 'pars costalis', (TL, 39.0), side='L')
 cm = ant_c['IX']
 f.label((cm[0] - 0.3, cm[1] + 0.5), 'łuk żebrowy', 'arcus costalis', (TL, 47.6), side='L')
 f.label(P(5.2, 17.7), 'wątroba', 'hepar', (TL, 56.4), side='L')
-rp = P((a_in(24.0) + a_out(24.0)) / 2, 24.0)
-f.label(rp, 'm. prosty brzucha', 'm. rectus abdominis', (TL, 70.5), side='L')
+rp = P((a_in(22.5) + a_out(22.5)) / 2, 22.5)
+f.label(rp, 'm. prosty brzucha', 'm. rectus abdominis', (TL, 66.4), side='L')
 # strona tylna (prawa)
 xt = TEN[1] - 2.6
 f.label((xt, y_at(cE, xt, YT, YT + 30)), 'środek ścięgnisty', 'centrum tendineum', (TR, 8.6), side='R')
@@ -267,24 +267,24 @@ f.label(zr, 'zachyłek żebrowo-przeponowy', 'recessus costodiaphragmaticus', (T
 r12 = P((p_in(18.2) + p_mid(18.2)) / 2 + 0.2, 18.2)
 f.label(r12, 'żebro XII', 'costa XII', (TR, 48.6), side='R')
 f.label((LIG[0] + 0.7, LIG[1] + 0.25), 'więzadło łukowate boczne', 'lig. arcuatum laterale', (TR, 58.0), side='R')
-f.label(P(13.9, 23.6), 'nerka prawa', 'ren dexter', (TR, 67.6), side='R')
-qp = P((p_in(26.0) + p_mid(26.0)) / 2, 26.0)
-f.label(qp, 'm. czworoboczny lędźwi', 'm. quadratus lumborum', (TR, 77.2), side='R')
+f.label(P(13.9, 22.6), 'nerka prawa', 'ren dexter', (TR, 64.6), side='R')
+qp = P((p_in(24.8) + p_mid(24.8)) / 2, 24.8)
+f.label(qp, 'm. czworoboczny lędźwi', 'm. quadratus lumborum', (TR, 73.4), side='R')
 
 # ---------- legenda ----------
-LY = 92.6
-lx = 22.0
+LY = YT + K * YCUT + 10.6
+lx = 5.0
 f.add(f'<rect class="muscle" x="{lx:.2f}" y="{LY - 1.55:.2f}" width="5.2" height="1.9" rx=".4"/>')
 f.text(lx + 6.4, LY + 0.3, 'położenie przy wydechu')
-lx2 = lx + 34.0
+lx2 = lx + 34.5
 f.add(f'<path class="capsule" d="M{lx2:.2f},{LY - 0.6:.2f} L{lx2 + 5.6:.2f},{LY - 0.6:.2f}"/>')
-f.text(lx2 + 6.8, LY + 0.3, 'przy głębokim wdechu')
-lx3 = lx2 + 32.5
+f.text(lx2 + 6.8, LY + 0.3, 'położenie przy maksymalnym wdechu')
+lx3 = lx2 + 48.5
 f.arrow(f'M{lx3:.2f},{LY - 0.6:.2f} L{lx3 + 6.6:.2f},{LY - 0.6:.2f}')
-f.text(lx3 + 8.0, LY + 0.3, 'wdech')
-lx4 = lx3 + 18.5
+f.text(lx3 + 8.0, LY + 0.3, 'ruch przy wdechu')
+lx4 = lx3 + 29.0
 f.arrow(f'M{lx4:.2f},{LY - 0.6:.2f} L{lx4 + 6.6:.2f},{LY - 0.6:.2f}', red=True)
-f.text(lx4 + 8.0, LY + 0.3, 'wydech')
+f.text(lx4 + 8.0, LY + 0.3, 'ruch przy wydechu')
 
 # przycięcie (górne i dolne cięcie przekroju)
 body = ''.join(f.body[:-0] if False else f.body)

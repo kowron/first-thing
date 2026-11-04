@@ -304,14 +304,12 @@ front_cage(lambda u, y, side: FA(u, y, side))
 # przepona (wydech)
 add('muscle', poly(band([FAs(u, y) for u, y in DIA_E], 1.0 * S, n=12)))
 add('tendon', poly(band([FAs(u, y) for u, y in DIA_E[4:9]], 1.0 * S, n=12)))
-# wdech: zarys boczny dolnych żeber, łuk żebrowy i przepona (jej przyczepy idą razem z żebrami)
+# wdech: zarys boczny dolnych żeber i łuk żebrowy (dolne żebra unoszą się i odchylają ku bokom)
 ARCH = [(12.9, 29.2), (11.6, 28.8), (10.1, 27.3), (8.3, 25.0), (6.3, 22.6), (3.4, 20.8), (1.7, 19.8)]
 for sd in (-1, 1):
     cont = [low_tf(u, y) for u, y in RA[5:11]] + [low_tf(13.6, 29.6)]
     add('capsule', smooth([FA(u + 0.55, y, sd) for u, y in cont], closed=False))
     add('capsule', smooth([FA(*low_tf(u, y), sd) for u, y in ARCH], closed=False))
-dIA = [(u * (1 + 0.10 * sstep((y - 15) / 9)), y + 0.5 - 0.9 * sstep((y - 15) / 9)) for u, y in DIA_E]
-add('capsule', smooth([FAs(u, y) for u, y in dIA], closed=False))
 # strzałki: wdech – dolne żebra ku bokom (niebieska), wydech – do środka (czerwona)
 yT = YTOP + S * 23.0
 for sd in (-1, 1):
@@ -398,7 +396,7 @@ pu = FB_C(10.4 + 0.62, YUMB)
 f.add(f'<path class="cavity" d="M{pu[0] - 0.15:.2f},{pu[1] - 1.1:.2f} L{pu[0] + 0.85:.2f},{pu[1]:.2f} '
       f'L{pu[0] - 0.15:.2f},{pu[1] + 1.1:.2f}"/>')
 # wdech: przepona niżej, ściana brzucha uwypuklona
-add('capsule', smooth([FB_C(*p) for p in DS_I], closed=False))
+add('capsule', poly(band([FB_C(*p) for p in DS_I], 1.0 * S, n=12)))
 add('capsule', smooth([FB_C(z + 0.6, y) for z, y in WALL_I], closed=False))
 # strzałki: przepona (w dół / w górę), ściana brzucha (do przodu / do tyłu)
 xd = FB_C(2.0, 0)[0]
@@ -431,12 +429,12 @@ f.text(XC_C, 18.7, 'przepona i ściana brzucha · z boku', cls='notec')
 
 # ================================================================ opisy pod panelami
 NY = 91.2
-for x, lines in ((CXA, ['dolne żebra unoszą się i silnie odchylają', 'ku bokom – dolna część klatki poszerza się',
+for x, lines in ((CXA, ['dolne żebra unoszą się i silnie odchylają', 'ku bokom – dolna część klatki poszerza się;',
                         'przewietrza głównie dolne części płuc']),
                  (XB_C, ['górne żebra unoszą się wraz z mostkiem;', 'gdy dolna część klatki jest ograniczona',
                          'w ruchach (np. pasek); przewietrza', 'silniej górne części płuc']),
-                 (XC_C, ['przepona obniża się – trzewia uwypuklają', 'przednią ścianę brzucha, głównie powyżej pępka;',
-                         'wydech: przepona wpukla się do klatki', '(sprężystość płuc, napięcie mięśni brzucha)'])):
+                 (XC_C, ['przepona obniża się, zawartość jamy brzusznej', 'uwypukla przednią ścianę brzucha, głównie',
+                         'powyżej pępka; wydech: przepona wpukla się', 'do klatki (sprężystość płuc, mięśnie brzucha)'])):
     for i, t in enumerate(lines):
         f.text(x, NY + i * 2.7, t, cls='notec')
 f.text(W / 2, 103.0, 'oddychanie spokojne – zazwyczaj czysty typ brzuszny · oddech wzmożony – typ mieszany '
@@ -456,10 +454,10 @@ f.text(LX + 6.6, LY + 9.6, 'ruch przy wydechu')
 # ================================================================ podpisy
 f.label(FA(8.3, 25.0, -1), 'łuk żebrowy', 'arcus costalis', (3.5, 66.0), side='R')
 f.label(FAs(-8.4, 18.6), 'przepona', 'diaphragma', (52.5, 66.0), side='L')
-f.label(FB_B(9.3, 15.5), 'mostek', 'sternum', (56.0, 73.5), side='R')
+f.label(FB_B(9.75, 19.2), 'mostek', 'sternum', (56.0, 73.5), side='R')
 f.label(FB_B(1.5, 7.4), 'żebra', 'costae', (86.5, 33.0), side='R')
 f.label(FB_C(-4.9, 25.5), 'przepona', 'diaphragma', (126.0, 52.5), side='R')
-f.label(FB_C(-3.6, 40.0), 'jama brzuszna', 'cavitas abdominalis', (126.0, 72.0), side='R')
+f.label(FB_C(-2.1, 40.0), 'jama brzuszna', 'cavitas abdominalis', (126.0, 72.0), side='R')
 f.label(FB_C(11.0, YUMB), 'pępek', 'umbilicus', (95.5, 73.5), side='L')
 f.label(FB_C(10.3, 46.5), 'przednia ściana brzucha', None, (95.5, 81.5), side='L')
 
