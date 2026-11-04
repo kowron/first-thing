@@ -384,7 +384,7 @@ f.label(ps, 'krzywizna krzyżowa', 'kyphosis sacralis', (tx, 55.0), side='R')
 note(tx, 61.2, 'od 5. mies. życia płodowego –'); note(tx, 63.8, 'druga z kolei')
 
 I = INFO['m4']; sp = I['sp']
-a = P('m4', 'C'); f.label(a, 'lordoza szyjna', 'lordosis cervicalis', (a[0] - 8.0, 27.0), side='L')
+a = P('m4', 'C'); f.label(a, 'lordoza szyi', 'lordosis cervicalis', (a[0] - 8.0, 27.0), side='L')
 f.label(mid, 'mięśnie karku', None, (mid[0] + 8.5, 24.5), side='R')
 
 I = INFO['m12']; sp = I['sp']

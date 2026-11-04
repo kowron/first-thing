@@ -5,7 +5,7 @@
 import sys, math; sys.path.insert(0, '/home/user/first-thing/plakat/figs')
 from figlib import Fig, smooth
 
-W, H = 150, 102
+W, H = 150, 106
 f = Fig('pol_staw_miedzykregowy', W, H,
         caption='stawy międzykręgowe · L3–L4 od strony lewej (przód w lewo) · przekrój poziomy lewego stawu L3/L4 (widok od góry)')
 
@@ -45,7 +45,7 @@ def offset(pl, d):
 
 # ======================================================================= A. widok z boku L3–L4
 SA = 0.70
-XA, YA = 31.6, 14.0           # rysunek: x kości = 0 (przednia powierzchnia trzonu L3), y kości = 0 (górna powierzchnia trzonu L3)
+XA, YA = 35.6, 14.0           # rysunek: x kości = 0 (przednia powierzchnia trzonu L3), y kości = 0 (górna powierzchnia trzonu L3)
 
 
 def PA(x, y):
@@ -93,7 +93,7 @@ F4 = Fr(-0.6, VH + DSC, -2.0)          # L4 lekko pochylony – krążek nieco w
 F2 = Fr(0.8, -(VH + DSC), 2.0)         # L2 (tylko dolna część, przycięta)
 F5 = Fr(-1.6, 2 * (VH + DSC), -4.0)    # L5 (tylko górna część, przycięta)
 
-YT, YB = -15.5, 2 * (VH + DSC) - 4.0   # linie cięcia u góry i u dołu (y kości)
+YT, YB = -15.5, 2 * (VH + DSC) - 6.0   # linie cięcia u góry i u dołu (y kości)
 ax0, ay0 = PA(-8, YT)
 ax1, ay1 = PA(96, YB)
 f.add(f'<defs><clipPath id="cp_smk_a"><rect x="{ax0:.2f}" y="{ay0:.2f}" width="{ax1 - ax0:.2f}" height="{ay1 - ay0:.2f}"/></clipPath></defs>')
@@ -128,15 +128,16 @@ for Fv in (F2, F3, F4, F5):
 f.add('</g>')
 
 # torebka stawu L3/L4 (przyczepiona do brzegów powierzchni stawowych) – zarys przerywany
-caps = F3.G([(46.4, 21.6), (50.6, 20.2), (56.6, 21.0), (60.2, 25.0), (60.4, 31.4), (58.6, 36.8), (55.6, 40.2), (51.2, 41.8),
-             (46.8, 40.6), (44.2, 36.2), (43.6, 29.6), (44.2, 24.4)])
+caps = F3.G([(48.6, 22.2), (52.6, 21.0), (57.6, 22.2), (60.4, 26.0), (60.6, 31.6), (59.0, 37.0), (56.2, 40.6), (52.4, 41.6),
+             (49.6, 39.4), (48.4, 34.4), (47.8, 28.4)])
 f.add(f'<path class="capsule" d="{smooth(TA(caps))}"/>')
 f.text(*PA(15.0, 15.4), 'L3', cls='notec')
 f.text(*PA(15.0, VH + DSC + 15.4), 'L4', cls='notec')
 
 # ======================================================================= B. przekrój poziomy lewego stawu L3/L4 (od góry, przód ku górze)
-SB = 1.55
-XB, YB0 = 135.0, 74.0         # rysunek: x = 0 (płaszczyzna pośrodkowa), y = 0 (środek stawu)
+SB = 1.5
+U0, U1, V0, V1 = -27.0, 7.0, -13.0, 16.0          # okno wstawki (mm kości)
+XB, YB0 = 97.5 - U0 * SB, 57.5 - V0 * SB          # x = 0 – płaszczyzna pośrodkowa, y = 0 – środek stawu
 
 
 def PB(x, y):
@@ -147,55 +148,62 @@ def TB(pts):
     return [PB(x, y) for x, y in pts]
 
 
-# okno wstawki
-U0, U1, V0, V1 = -26.5, 6.8, -12.6, 14.6
+def mx(pts):
+    return [(-x, y) for x, y in pts]
+
+
 bx0, by0 = PB(U0, V0)
 bx1, by1 = PB(U1, V1)
 f.add(f'<defs><clipPath id="cp_smk_b"><rect x="{bx0:.2f}" y="{by0:.2f}" width="{bx1 - bx0:.2f}" height="{by1 - by0:.2f}" rx="2.2"/></clipPath></defs>')
 f.add('<g clip-path="url(#cp_smk_b)">')
-# kanał kręgowy (w głębi) – przed łukiem
-f.add(f'<path class="shade" d="{poly(TB([(-12.0, -20.0), (10.0, -20.0), (10.0, -0.4), (0.0, 1.2), (-6.0, -1.0), (-10.4, -5.0)]))}"/>')
 
-# wyrostek stawowy dolny L3 (przekrój) z blaszką łuku i nasadą wyrostka kolczystego
-iap_face = cr([(-12.6, -7.4), (-15.6, -4.6), (-17.2, -0.6), (-17.6, 4.0), (-17.0, 8.4), (-15.6, 11.4)], n=10)   # wypukła, ku przodowi i bocznie
-lam = [(-15.6, 11.4), (-13.2, 13.0), (-9.6, 13.4), (-5.6, 13.2), (-2.6, 14.0), (-2.2, 20.0), (2.2, 20.0), (2.6, 14.0),
-       (4.4, 12.6), (8.0, 11.0), (12.0, 9.6)]
-lam_front = [(12.0, 6.6), (8.0, 7.6), (4.0, 8.6), (0.0, 9.0), (-4.0, 7.8), (-7.6, 5.0), (-9.8, 1.4), (-11.0, -3.0), (-12.0, -6.4)]
-iap = iap_face + cr(lam, n=6)[1:] + cr(lam_front, n=6)
+# powierzchnia stawowa wyrostka stawowego dolnego L3: wypukła, zwrócona do przodu i bocznie (prawie w płaszczyźnie strzałkowej)
+iap_face = cr([(-10.9, -7.3), (-13.4, -5.4), (-14.9, -2.2), (-15.4, 1.6), (-15.0, 5.4), (-13.8, 8.6)], n=10)
+GAP = 1.2
+sap_face = offset(iap_face, GAP)       # powierzchnia wyrostka stawowego górnego L4: wklęsła, zwrócona do tyłu i przyśrodkowo
+# przednia (kanałowa) powierzchnia blaszki L3 i jej tylna powierzchnia; wyrostek kolczysty w płaszczyźnie pośrodkowej
+lam_front = [(-10.6, -6.9), (-10.0, -3.4), (-8.8, 0.4), (-6.6, 3.4), (-3.6, 5.8), (-1.0, 7.2), (0.0, 7.6)]
+lam_back = [(-13.8, 8.6), (-12.2, 10.8), (-9.4, 12.2), (-6.0, 13.6), (-3.4, 15.4), (-2.3, 18.0), (-2.2, 24.0)]
+iap = iap_face + cr(lam_back, n=6)[1:] + mx(cr(lam_back, n=6))[::-1] + mx(cr(lam_front, n=6)) + cr(lam_front, n=6)[::-1][1:]
+# kanał kręgowy (w głębi) – przed więzadłami żółtymi
+canal = [(-9.6, -16.0), (9.6, -16.0)] + mx(cr(lam_front, n=6)) + cr(lam_front, n=6)[::-1][1:] + [(-11.4, -8.6)]
+f.add(f'<path class="shade" d="{poly(TB(canal))}"/>')
 f.add(f'<path class="bone2" d="{poly(TB(iap))}"/>')
+# wyrostek kolczysty – grzebień (linia pośrodkowa)
+f.add(f'<path class="bonel" d="{poly(TB([(0.0, 12.0), (0.0, 17.0)]), closed=False)}"/>')
 
-# szpara stawowa: chrząstka na obu powierzchniach + jama stawowa
-GAP = 1.15
-sap_face = offset(iap_face, GAP)               # powierzchnia wyrostka stawowego górnego L4 (wklęsła, ku tyłowi i przyśrodkowo)
-c_i = offset(iap_face, 0.42)
-c_s = offset(iap_face, GAP - 0.42)
+# wyrostek stawowy górny L4 (przekrój): obejmuje wyrostek dolny od przodu i bocznie; z tyłu wyrostek suteczkowaty
+sap_out = cr([(-14.9, 9.8), (-17.2, 11.4), (-20.6, 12.0), (-23.4, 10.8), (-24.8, 8.0), (-24.2, 4.8), (-23.0, 2.6),
+              (-22.8, -1.0), (-21.6, -5.2), (-19.2, -8.6), (-15.8, -10.6), (-12.4, -10.6), (-10.0, -9.2)], n=8)
 f.add(f'<path class="cavity" d="{poly(TB(iap_face + sap_face[::-1]))}"/>')
-# wyrostek stawowy górny L4 (przekrój) z wyrostkiem suteczkowatym, obejmuje wyrostek dolny od przodu i bocznie
-sap_out = cr([(-15.6 - 1.2, 11.9), (-18.4, 12.6), (-21.0, 11.6), (-22.6, 9.0), (-24.6, 7.2), (-25.2, 3.6), (-24.0, 0.4),
-              (-23.0, -3.4), (-21.0, -7.0), (-17.6, -9.8), (-14.0, -10.8), (-11.0, -10.2), (-10.6, -8.8)], n=8)
 f.add(f'<path class="bone2" d="{poly(TB(sap_face + sap_out))}"/>')
+# chrząstka stawowa na obu powierzchniach; między nimi szczelinowata jama stawowa
+c_i = offset(iap_face, 0.40)
+c_s = offset(iap_face, GAP - 0.40)
 f.add(f'<path class="facet" d="{poly(TB(iap_face + c_i[::-1]))}"/>')
 f.add(f'<path class="facet" d="{poly(TB(sap_face + c_s[::-1]))}"/>')
-f.add(f'<path class="cavity" d="{poly(TB(c_i + c_s[::-1]))}"/>')
 
-# więzadło żółte: na przedniej (kanałowej) powierzchni blaszki, bocznie dochodzi do torebki stawowej
-flav = cr([(10.0, 6.4), (4.0, 8.4), (0.0, 8.7), (-4.0, 7.5), (-7.4, 4.8), (-9.6, 1.2), (-10.8, -3.2), (-11.8, -6.6), (-10.9, -7.9),
-           (-9.6, -6.6), (-8.4, -3.0), (-6.4, 0.4), (-3.4, 2.8), (0.0, 3.8), (4.0, 3.6), (10.0, 2.6)], n=6)
-f.add(f'<path class="lig" d="{poly(TB(flav))}"/>')
+# więzadła żółte: na przedniej powierzchni blaszek (od strony kanału), bocznie dochodzą do torebki stawowej
+flv_in = cr(lam_front, n=6)
+flv_out = offset(flv_in, 2.2)
+flv_out[0] = (flv_out[0][0] + 0.4, flv_out[0][1] - 0.8)
+f.add(f'<path class="lig" d="{poly(TB(flv_in + flv_out[::-1]))}"/>')
+f.add(f'<path class="lig" d="{poly(TB(mx(flv_in) + mx(flv_out)[::-1]))}"/>')
 
-# torebka stawowa: cienka, przyczepiona do brzegów powierzchni stawowych (przedni i tylny koniec szpary)
+# torebka stawowa: cienka, przyczepiona do brzegów powierzchni stawowych – z przodu (pod więzadłem żółtym) i z tyłu
 fa, fb = iap_face[0], sap_face[0]
-f.add(f'<path class="capsule" d="{smooth(TB([(fa[0] + 0.6, fa[1] + 0.4), (fa[0] - 0.4, fa[1] - 1.6), (fb[0] - 0.6, fb[1] - 1.8), (fb[0] - 1.6, fb[1] - 0.6)]), closed=False)}"/>')
+f.add(f'<path class="capsule" d="{smooth(TB([(fa[0] + 0.2, fa[1] + 0.4), (fa[0] - 0.2, fa[1] - 1.5), (fb[0] - 0.4, fb[1] - 2.0), (fb[0] - 1.6, fb[1] - 0.4)]), closed=False)}"/>')
 la, lb = iap_face[-1], sap_face[-1]
-f.add(f'<path class="capsule" d="{smooth(TB([(la[0] + 0.8, la[1] + 0.6), (la[0] + 0.2, la[1] + 2.0), (lb[0] - 0.6, lb[1] + 2.0), (lb[0] - 1.2, lb[1] + 0.6)]), closed=False)}"/>')
+f.add(f'<path class="capsule" d="{smooth(TB([(la[0] + 0.9, la[1] + 0.9), (la[0] + 0.3, la[1] + 2.6), (lb[0] - 1.0, lb[1] + 2.8), (lb[0] - 1.8, lb[1] + 1.0)]), closed=False)}"/>')
 f.add('</g>')
 f.add(f'<rect x="{bx0:.2f}" y="{by0:.2f}" width="{bx1 - bx0:.2f}" height="{by1 - by0:.2f}" rx="2.2" class="dim"/>')
-f.text(*PB(-10.0, -3.0 + 9.0), 'L3', cls='notec')
-f.text(*PB(-21.0, 3.8), 'L4', cls='notec')
+f.text(*PB(-7.4, 11.2), 'L3', cls='notec')
+f.text(*PB(-19.4, 2.2), 'L4', cls='notec')
+f.text(*PB(2.0, -6.0), 'kanał', cls='notec')
 f.text((bx0 + bx1) / 2, by0 - 1.4, 'przekrój poziomy (przód ku górze)', cls='notec')
 
 # ======================================================================= podpisy
-TL, TR = 29.0, 97.5
+TL, TR = 33.0, 100.0
 # A – lewa kolumna (struktury przednie)
 f.label(PA(12.0, 8.0), 'trzon kręgu', 'corpus vertebrae', (TL, 13.0), side='L')
 f.label(PA(37.6, 22.0), 'otwór międzykręgowy', 'foramen intervertebrale', (TL, 24.0), side='L')
@@ -208,8 +216,8 @@ f.label(PA(57.6, 33.6), 'wyrostek stawowy dolny', 'processus articularis inferio
 x, y = F4.g(66.0, 12.0)
 f.label(PA(x, y), 'łuk kręgu', 'arcus vertebrae', (TR, 45.0), side='R')
 # B – podpisy po lewej stronie wstawki
-TB_L = bx0 - 4.0
-f.label(PB(-17.1, 1.0), 'jama stawowa', 'cavitas articularis', (TB_L, 67.0), side='L')
-f.label(PB(-11.8, -8.4), 'torebka stawowa', 'capsula articularis', (TB_L, 76.0), side='L')
-f.label(PB(-3.0, 6.6), 'więzadło żółte', 'ligamentum flavum', (TB_L, 85.0), side='L')
+TB_L = bx0 - 3.0
+f.label(PB(-15.6, -1.2), 'jama stawowa', 'cavitas articularis', (TB_L, 76.0), side='L')
+f.label(PB(-13.4, 11.4), 'torebka stawowa', 'capsula articularis', (TB_L, 94.0), side='L')
+f.label(PB(-11.0, -2.6), 'więzadło żółte', 'ligamentum flavum', (TB_L, 67.0), side='L')
 f.save()

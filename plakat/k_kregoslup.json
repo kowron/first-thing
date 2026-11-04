@@ -817,7 +817,7 @@
            "k": "DOŁKI ŻEBROWE",
            "items": [
             "**Dołek żebrowy** {{fovea costalis}} – tylko 1 po każdej stronie, w środku powierzchni bocznej trzonu.",
-            "**Wyrostek poprzeczny** {{processus transversus}} – bez dołka żebrowego; niezgrubiały na końcu (należy do „dwóch czy trzech ostatnich”)."
+            "**Wyrostek poprzeczny** {{processus transversus}} – bez dołka żebrowego wyrostka poprzecznego; niezgrubiały na końcu (należy do „dwóch czy trzech ostatnich”)."
            ]
           },
           {
@@ -864,7 +864,7 @@
            "k": "DOŁKI ŻEBROWE",
            "items": [
             "**Dołek żebrowy** {{fovea costalis}} – tylko 1 po każdej stronie, w środku powierzchni bocznej trzonu.",
-            "**Wyrostek poprzeczny** {{processus transversus}} – bez dołka żebrowego; niezgrubiały na końcu (należy do „dwóch czy trzech ostatnich”)."
+            "**Wyrostek poprzeczny** {{processus transversus}} – bez dołka żebrowego wyrostka poprzecznego; niezgrubiały na końcu (należy do „dwóch czy trzech ostatnich”)."
            ]
           },
           {
@@ -1017,7 +1017,7 @@
           {
            "k": "WYROSTKI",
            "items": [
-            "**Wyrostek poprzeczny** {{processus transversus}} – krótki, silny, szeroki u podstawy, na końcu zgrubiały.",
+            "**Wyrostek poprzeczny**, czyli **żebrowy** {{processus costalis}} – krótki, silny, szeroki u podstawy, na końcu zgrubiały.",
             "Odchodzi od odcinka grzbietowego trzonu i od podstawy łuku; skierowany bocznie, nieco ku tyłowi i ku górze.",
             "**Wyrostek stawowy górny** {{processus articularis superior}} – skierowany bardziej ku tyłowi niż w innych kręgach.",
             "**Wyrostek stawowy dolny** {{processus articularis inferior}} – skierowany bardziej do przodu."
@@ -1035,7 +1035,7 @@
          "l3": [],
          "labels": [
           "trzon {{corpus vertebrae}}",
-          "wyrostek poprzeczny {{processus transversus}}",
+          "wyrostek żebrowy {{processus costalis}}",
           "wyrostek stawowy górny {{processus articularis superior}}",
           "wyrostek stawowy dolny {{processus articularis inferior}}",
           "kąt lędźwiowo-krzyżowy {{angulus lumbosacralis}}"
@@ -1108,7 +1108,7 @@
           {
            "k": "KRZYWIZNA I POŁOŻENIE",
            "items": [
-            "Z boku silnie wypukła ku tyłowi – **kifoza krzyżowa** {{kyphosis sacralis}}; dzięki niej pojemność miednicy mniejszej znacznie się zwiększa.",
+            "Z boku silnie wypukła ku tyłowi – **krzywizna krzyżowa** {{kyphosis sacralis}}; dzięki niej pojemność miednicy mniejszej znacznie się zwiększa.",
             "W postawie pionowej leży pochyło: od przodu i góry ku tyłowi i dołowi."
            ]
           },
@@ -1134,7 +1134,7 @@
           "wierzchołek kości krzyżowej {{apex ossis sacri}}",
           "powierzchnia miedniczna {{facies pelvina}}",
           "powierzchnia grzbietowa {{facies dorsalis}}",
-          "kifoza krzyżowa {{kyphosis sacralis}}",
+          "krzywizna krzyżowa {{kyphosis sacralis}}",
           "kąt lędźwiowo-krzyżowy {{angulus lumbosacralis}}",
           "wzgórek {{promontorium}}"
          ],
@@ -1223,7 +1223,7 @@
          "l3": [
           {
            "k": "NAZWY",
-           "t": "Otwory krzyżowe miedniczne – dawniej [[foramina sacralia anteriora]].",
+           "t": "Otwory krzyżowe miedniczne – inaczej [[foramina sacralia anteriora]].",
            "pg": "234",
            "src": "911"
           }
@@ -1278,7 +1278,7 @@
          "l3": [
           {
            "k": "NAZWY",
-           "t": "Dawne nazwy: grzebień pośrodkowy – [[crista sacralis media]]; grzebień pośredni – [[crista sacralis articularis]]; otwory grzbietowe – [[foramina sacralia posteriora]].",
+           "t": "Inne nazwy (przypisy): grzebień pośrodkowy – [[crista sacralis media]]; grzebień pośredni – [[crista sacralis articularis]]; otwory grzbietowe – [[foramina sacralia posteriora]].",
            "pg": "235–236",
            "src": "960-962, 1016"
           }
@@ -1374,8 +1374,8 @@
          "l3": [
           {
            "k": "!",
-           "t": "Streszczenie (s. 248): „trójkątny kanał krzyżowy”. Opis (s. 234): trójkątny jest otwór zamknięty przez łuk i trzon S1, który prowadzi do kanału.",
-           "pg": "234, 248",
+           "t": "Streszczenie (s. 249): „trójkątny kanał krzyżowy”. Opis (s. 234): trójkątny jest otwór zamknięty przez łuk i trzon S1, który prowadzi do kanału.",
+           "pg": "234, 249",
            "src": "894-896, 1676-1677"
           }
          ],
@@ -1435,7 +1435,7 @@
        "type": "card",
        "title": "Kość guziczna",
        "lat": "os coccygis",
-       "pg": "237, 248",
+       "pg": "237, 249",
        "sections": [
         {
          "k": "BUDOWA",

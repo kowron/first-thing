@@ -65,7 +65,7 @@
        "l3": [
         {
          "k": "STRUKTURA",
-         "t": "silnie unaczyniona istota gąbczasta ze szpikiem czerwonym, pokryta cienką warstwą istoty zbitej",
+         "t": "kość żebrowa: silnie unaczyniona istota gąbczasta ze szpikiem czerwonym, pokryta cienką warstwą istoty zbitej",
          "pg": "278",
          "src": "3308-3309"
         }
@@ -232,7 +232,7 @@
        "title": "Części żebra",
        "lat": "",
        "pg": "274–276",
-       "why": "każde żebro = dłuższa tylna kość żebrowa + krótsza przednia chrząstka",
+       "why": "każde żebro = dłuższa tylna kość żebrowa + krótsza przednia chrząstka żebrowa",
        "q": "która część żebra?",
        "l3": [],
        "children": [
@@ -255,7 +255,7 @@
            "items": [
             "**głowa żebra** {{caput costae}} – zgrubienie na tylnym końcu, częściowo pokryte chrząstką",
             "**powierzchnia stawowa głowy żebra** {{facies articularis capitis costae}} – łączy głowę z dołkami żebrowymi trzonów kręgów [[foveae costales]]",
-            "w żebrach II–X dzieli ją poziomo **grzebień głowy** {{crista capitis}} na 2 części; górna mniejsza od dolnej"
+            "w żebrach II–X dzieli ją poziomo **grzebień głowy** {{crista capitis}} [[na ryc. 184: crista capitis costae]] na 2 części; górna mniejsza od dolnej"
            ]
           },
           {
@@ -394,7 +394,7 @@
             "zwykle skośny w kierunku odwrotnym niż żebro kostne",
             "im bardziej skośnie w dół biegnie żebro kostne, tym bardziej stromo w górę biegnie chrząstka",
             "żebra górne (I–V): kąt między żebrem kostnym a chrząstką",
-            "żebra dalsze: chrząstka biegnie najpierw w przedłużeniu żebra, potem silnie w górę – kąt w obrębie samej chrząstki"
+            "żebra dalsze: chrząstka biegnie najpierw w przedłużeniu żebra kostnego, potem silnie w górę – kąt w obrębie samej chrząstki"
            ]
           }
          ],
@@ -425,7 +425,7 @@
           },
           {
            "k": "UWAGI",
-           "t": "zakres „I–V” dla kąta między żebrem a chrząstką podany wprost w mechanice chrząstki; w opisie chrząstki – „żebra górne”",
+           "t": "zakres „I–V” dla kąta między żebrem kostnym a chrząstką podany wprost w mechanice chrząstki; w opisie chrząstki – „żebra górne”",
            "pg": "276, 295",
            "src": "3187-3189, 4132-4134"
           },
@@ -455,7 +455,7 @@
           },
           {
            "k": "KOSTNIENIE",
-           "t": "pozostałe kostnieją później; nowa kość otacza chrząstkę pochewkowato, kostnienie śródchrzęstne rzadsze; kostnienie bardzo zmniejsza sprężystość i ruchomość klatki",
+           "t": "pozostałe kostnieją później; nowa kość otacza chrząstkę pochwowato, kostnienie śródchrzęstne rzadsze; kostnienie bardzo zmniejsza sprężystość i ruchomość klatki",
            "pg": "276",
            "src": "3172-3174"
           }
@@ -920,7 +920,7 @@
           {
            "k": "PRZYCZEPY",
            "items": [
-            "powierzchnia przednia, po obu stronach – więzadło żebrowo-mieczykowe [[ligamenta costoxiphoidea]] i mała część m. prostego brzucha [[m. rectus abdominis]]",
+            "powierzchnia przednia, po obu stronach – więzadła żebrowo-mieczykowe [[ligamenta costoxiphoidea]] i mała część m. prostego brzucha [[m. rectus abdominis]]",
             "powierzchnia tylna – część włókien przepony [[diaphragma]] i m. poprzecznego klatki piersiowej [[m. transversus thoracis]]",
             "dolny koniec – kresa biała [[linea alba]]"
            ]
@@ -953,7 +953,7 @@
           "wcięcie żebrowe VII (część) {{incisura costalis VII}}",
           "koniec dwudzielny (odmiana)",
           "otwór w wyrostku (odmiana)",
-          "przyczep więzadła żebrowo-mieczykowego [[ligamenta costoxiphoidea]]",
+          "przyczep więzadeł żebrowo-mieczykowych [[ligamenta costoxiphoidea]]",
           "przyczep m. prostego brzucha [[m. rectus abdominis]]",
           "przyczep przepony [[diaphragma]]",
           "przyczep m. poprzecznego klatki piersiowej [[m. transversus thoracis]]",

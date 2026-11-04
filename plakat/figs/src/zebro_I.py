@@ -10,7 +10,7 @@ from figlib import Fig, smooth
 W, H = 150, 94
 S = 0.8                     # mm rysunku / mm kości
 X0, Y0 = 45.6, 58.5         # rysunek ← kość: X w bok (w prawo), Y do przodu (w górę)
-f = Fig('zebro_I', W, H, caption='prawe żebro I · widok od góry (przód ku górze)')
+f = Fig('zebro_I', W, H, caption='prawe żebro I (kość żebrowa) · widok od góry (przód ku górze)')
 
 
 def T(X, Y):

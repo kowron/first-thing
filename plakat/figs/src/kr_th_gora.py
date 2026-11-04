@@ -54,7 +54,7 @@ for s in (-1, 1):
 
 # --- podpisy ---
 TL, TR = 33.0, 99.0
-f.label(P(-4.0, 9.0), 'trzon', 'corpus vertebrae', (TL, 13.5), side='L')
+f.label(P(-4.0, 9.0), 'trzon kręgu', 'corpus vertebrae', (TL, 13.5), side='L')
 f.label(P(-12.6, 18.9), 'dołek żebrowy górny', 'fovea costalis superior', (TL, 24.0), side='L')
 f.label(P(-9.0, 24.6), 'nasada łuku kręgu', 'pediculus arcus vertebrae', (TL, 34.5), side='L')
 f.label(P(-20.0, 35.2), 'wyrostek poprzeczny', 'processus transversus', (TL, 45.5), side='L')

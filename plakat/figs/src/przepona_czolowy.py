@@ -272,11 +272,11 @@ f.label((60.0, 70.0), 'wątroba', None, (41.2, 77.0), side='L')
 # prawa strona rysunku (lewa strona ciała)
 f.label((106.0, 21.0), 'płuco lewe', None, (118.8, 10.5), side='R')
 f.label((C + 14.35, 27.0), 'osierdzie', None, (118.8, 19.0), side='R')
-f.label((C + 8.0, 31.0), 'serce', 'cor', (118.8, 27.5), side='R')
+f.label((C + 8.0, 31.0), 'serce', None, (118.8, 27.5), side='R')
 f.label((C + 7.0, y_at(cE, C + 7.0, 40, 48)), 'środek ścięgnisty', 'centrum tendineum', (118.8, 50.0), side='R')
 pp = min((p for p in cE if p[0] > 100), key=lambda p: abs(p[1] - 60.0))
 f.label(pp, 'przepona', 'diaphragma', (118.8, 58.5), side='R')
-f.label((C + 26.0, 66.0), 'śledziona', 'splen', (118.8, 69.0), side='R')
+f.label((C + 26.0, 66.0), 'śledziona', None, (118.8, 69.0), side='R')
 f.label((C + 12.0, 79.5), 'żołądek', None, (118.8, 86.0), side='R')
 
 # przycięcie wszystkiego, co przecięte u góry i u dołu

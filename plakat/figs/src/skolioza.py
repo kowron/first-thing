@@ -14,7 +14,7 @@ sys.path.insert(0, '/home/user/first-thing/plakat/figs')
 from figlib import Fig, smooth, mirror
 
 W, H = 146, 124
-f = Fig('skolioza', W, H, caption='skrzywienia boczne kręgosłupa (płaszczyzna czołowa) · widok od tyłu · krzywizny powiększone')
+f = Fig('skolioza', W, H, caption='skrzywienia boczne kręgosłupa (skolioses) · płaszczyzna czołowa · widok od tyłu · krzywizny powiększone')
 
 
 def poly(pts, close=True):
@@ -32,7 +32,7 @@ def add(name, reg, h, disc, wb, wt):
 
 add('C1', 'C1', 10, 4, 0, 76)
 add('C2', 'C2', 24, 5, 20, 56)
-for i, (wb, wt) in enumerate([(19, 52), (20, 53), (21, 54), (23, 56)]):
+for i, (wb, wt) in enumerate([(19, 48), (20, 49), (21, 50), (23, 52)]):
     add(f'C{i + 3}', 'C', 14, 5, wb, wt)
 add('C7', 'C7', 15, 5, 25, 70)
 TH = [(16, 4, 27, 76), (17, 4, 28, 72), (17.5, 4, 28, 68), (18, 4, 29, 66), (18.5, 5, 30, 64), (19, 5, 31, 63),
@@ -54,26 +54,80 @@ def layout(S, Y0):
 
 
 # ---------------------------------------------------------------- przebieg krzywizn: przesunięcie boczne osi (mm rysunku)
-def bump(y, a, apex, b, amp):
-    if y <= a or y >= b:
-        return 0.0
-    if y <= apex:
-        return amp * math.sin(math.pi / 2 * (y - a) / (apex - a)) ** 2
-    return amp * math.sin(math.pi / 2 * (b - y) / (b - apex)) ** 2
+# Zadana krzywizna osi x''(y) = suma trzech dzwonów (szyjna – wypukła w lewo, piersiowa – w prawo, lędźwiowa – w lewo);
+# warunki: kość krzyżowa pionowa i w linii pośrodkowej, a kręg szczytowy znów nad nią (x = 0, x' = 0) – krzywizny
+# wyrównują się wzajemnie (kompensacyjne). Między krzywiznami odcinki prawie proste, skośne.
+APEX_T = 4.4                       # odchylenie wierzchołka krzywizny piersiowej (mm rysunku)
+
+
+def solve(M, b):
+    n = len(b)
+    A = [row[:] + [b[i]] for i, row in enumerate(M)]
+    for c in range(n):
+        p = max(range(c, n), key=lambda r: abs(A[r][c]))
+        A[c], A[p] = A[p], A[c]
+        for r in range(n):
+            if r != c:
+                k = A[r][c] / A[c][c]
+                A[r] = [x - k * y for x, y in zip(A[r], A[c])]
+    return [A[i][n] / A[i][i] for i in range(n)]
 
 
 def make_offset(byname, S):
     def lvl(n, fr=0.5):
         v = byname[n]
         return v['y0'] + fr * v['h'] * S
-    yC0, yCa, yCT = lvl('C1', 0.0), lvl('C4', 0.5), lvl('Th1', 0.0)
-    yTa, yTL = lvl('Th5', 0.0) - 0.0, lvl('Th10', 0.5)
-    yLa, yLS = lvl('L3', 0.0), lvl('L5', 1.0) + byname['L5']['disc'] * S
-    # wierzchołek krzywizny piersiowej między Th4 a Th5 (zakres Th3–Th6)
-    yTa = (lvl('Th4', 0.5) + lvl('Th5', 0.5)) / 2
+    yt = lvl('C1', 0.0) - 0.7
+    yb = byname['L5']['y0'] + (byname['L5']['h'] + byname['L5']['disc']) * S
+    # dzwony krzywizny: (środek, sigma) – połączenie szczytowo-obrotowe, szyjna, piersiowa, lędźwiowa, lędźwiowo-krzyżowa
+    C = {'CC': (lvl('C2', 0.0), 1.6), 'C': (lvl('C4', 1.0), 2.6),
+         'T': ((lvl('Th4', 0.5) + lvl('Th5', 0.5)) / 2, 3.3),          # wierzchołek Th4/Th5 – zgięcie głównie Th3–Th6
+         'L': (lvl('L3', 0.0), 5.0), 'LS': (lvl('L5', 0.5), 1.3)}
+    N = 1600
+    ys = [yt + (yb - yt) * k / N for k in range(N + 1)]
+    dy = ys[1] - ys[0]
+
+    def g(y, c, s_):
+        return math.exp(-0.5 * ((y - c) / s_) ** 2) / (s_ * math.sqrt(2 * math.pi))
+
+    def prof(a):                                  # całkowanie od dołu (x = 0, x' = 0 u podstawy kości krzyżowej)
+        X = [0.0] * (N + 1); D = [0.0] * (N + 1)
+        for k in range(N - 1, -1, -1):
+            kap = sum(a[n] * g(ys[k], *C[n]) for n in a)
+            D[k] = D[k + 1] - kap * dy
+            X[k] = X[k + 1] - D[k] * dy
+        return X, D
+
+    def at(X, y):
+        return X[min(N, max(0, int(round((y - yt) / dy))))]
+    P = {'top': yt, 'C': C['C'][0] - 1.0, 'T': C['T'][0], 'L': C['L'][0]}
+
+    def feats(a):
+        X, D = prof(a)
+        r = {k: at(X, y) for k, y in P.items()}
+        r['sl'] = D[0]
+        return r, X
+    # warunki: szczyt nad kością krzyżową i pionowo; lędźwiowa i szyjna – mniejsze, drugostronne (kompensacyjne)
+    fs = [lambda r: r['top'], lambda r: r['sl'], lambda r: r['L'] + 0.64 * r['T'], lambda r: r['C'] + 0.30 * r['T']]
+    base = {n: 0.0 for n in C}; base['T'] = -1.0
+    r0, _ = feats(base)
+    cols = []
+    for n in ('CC', 'C', 'L', 'LS'):
+        a = dict(base); a[n] = 1.0
+        cols.append(feats(a)[0])
+    sol = solve([[f_(c) - f_(r0) for c in cols] for f_ in fs], [-f_(r0) for f_ in fs])
+    a = dict(base); a.update(zip(('CC', 'C', 'L', 'LS'), sol))
+    r, X = feats(a)
+    sc = APEX_T / r['T']
+    X = [x * sc for x in X]
 
     def off(y):
-        return (bump(y, yC0, yCa, yCT, -1.5) + bump(y, yCT, yTa, yTL, 4.6) + bump(y, yTL, yLa, yLS, -3.1))
+        if y >= yb:
+            return 0.0
+        if y <= ys[0]:
+            return X[0]
+        k = min(N - 1, int((y - ys[0]) / dy)); t = (y - ys[k]) / dy
+        return X[k] + (X[k + 1] - X[k]) * t
     return off
 
 
@@ -133,14 +187,15 @@ def draw_spine(CX, Y0, S, curved=True, detail=True):
                  (a - 3.0, -3.6), (a, -2.4), (a + 0.3, 0.8), (a - 3.0, 2.0), (15.0, 3.0), (13.5, h / 2 + 2.0),
                  (9.0, h / 2 + 4.0), (5.0, h / 2 + 1.5), (0, h / 2 + 0.5)]
             sp = [(0, -h / 2 + 2.0), (4.6, -h / 2 + 4.0), (5.0, h / 2 + 2.0), (4.0, h / 2 + 5.2), (0, h / 2 + 5.8)]
-        elif reg in ('C', 'C7'):
-            R = [(0, -h / 2 - 0.5), (7.0, -h / 2 - 1.0), (15.0, -h / 2 - 1.5), (a - 1.5, -h / 2 + 1.0),
-                 (a + 0.3, -h / 2 + 4.0), (a - 1.5, -h / 2 + 7.0), (17.5, h / 2 + 0.5), (15.0, h / 2 + 2.5),
-                 (7.0, h / 2 + 1.0), (0, h / 2 - 0.5)]
-            if reg == 'C7':
-                sp = [(0, -h / 2 + 3), (3.2, -h / 2 + 4.0), (3.0, h / 2 + 6.0), (3.4, h / 2 + 10.0), (0, h / 2 + 12.0)]
-            else:
-                sp = [(0, -h / 2 + 3), (2.8, -h / 2 + 4.0), (3.4, h / 2 + 2.0), (3.6, h / 2 + 4.4), (0, h / 2 + 3.4)]
+        elif reg == 'C':
+            R = [(0, -h / 2 - 0.3), (7.0, -h / 2 - 0.9), (15.0, -h / 2 - 0.7), (a - 1.0, -h / 2 + 1.2), (a + 0.2, -h / 2 + 4.2),
+                 (a - 1.2, h / 2 - 1.2), (15.0, h / 2 + 0.8), (7.0, h / 2 + 1.0), (0, h / 2)]
+            sp = [(0, -h / 2 + 3), (2.8, -h / 2 + 4.0), (3.4, h / 2 + 2.0), (3.6, h / 2 + 4.4), (0, h / 2 + 3.4)]
+        elif reg == 'C7':
+            R = [(0, -h / 2 - 0.3), (7.0, -h / 2 - 1.2), (15.0, -h / 2 - 0.8), (18.0, -h / 2 + 0.6), (a - 3.0, -h / 2 + 0.2),
+                 (a, -h / 2 + 1.4), (a - 0.6, -h / 2 + 4.6), (a - 4.0, -h / 2 + 5.0), (18.0, -h / 2 + 7.0),
+                 (17.0, h / 2 + 0.8), (7.0, h / 2 + 1.0), (0, h / 2)]
+            sp = [(0, -h / 2 + 3), (3.2, -h / 2 + 4.0), (3.0, h / 2 + 6.0), (3.4, h / 2 + 10.0), (0, h / 2 + 12.0)]
         elif reg == 'C2':
             R = [(0, -h / 2 + 2.0), (8.0, -h / 2 + 1.0), (15.0, -h / 2 - 2.5), (a - 2.0, -h / 2 + 0.5),
                  (a, -h / 2 + 4.0), (a - 2.5, -h / 2 + 8.0), (19.5, h / 2 - 2.0), (14.0, h / 2 + 1.0), (7.0, h / 2), (0, h / 2 - 1.0)]
@@ -206,6 +261,75 @@ def lvl(n, fr=0.5):
 
 # płaszczyzna pośrodkowa (linia pionowa przez środek kości krzyżowej)
 f.add(f'<path class="dim" d="M{CX:.2f},{Y0 - 4.0:.2f} L{CX:.2f},{A["coccyx_end"][1] + 2.0:.2f}"/>')
+
+
+def axis_pt(y, d=0.0):
+    """punkt na osi kręgosłupa na wysokości y, przesunięty o d (mm rysunku) w poprzek osi (+ w prawo)"""
+    c, t, n = frame(y)
+    return (c[0] + n[0] * d, c[1] + n[1] * d)
+
+
+def bracket(y_a, y_b, d, tick):
+    """klamra wzdłuż osi w odległości d; ząbki na końcach (tick – ku kręgosłupowi). Zwraca punkt środkowy."""
+    pts = [axis_pt(y_a + (y_b - y_a) * k / 30, d) for k in range(31)]
+    dd = 'M' + ' L'.join(f'{x:.2f},{y:.2f}' for x, y in pts)
+    for y in (y_a, y_b):
+        p0, p1 = axis_pt(y, d), axis_pt(y, d - tick)
+        dd += f' M{p0[0]:.2f},{p0[1]:.2f} L{p1[0]:.2f},{p1[1]:.2f}'
+    f.add(f'<path class="lead" d="{dd}"/>')
+    return axis_pt((y_a + y_b) / 2, d)
+
+
+def top(n):
+    return by[n]['y0']
+
+
+def bot(n):
+    return by[n]['y0'] + by[n]['h'] * S
+
+
+mC = bracket(top('C2') + 0.6, bot('C7'), -5.9, -1.0)
+mT = bracket(top('Th3') - 0.3, bot('Th6') + 0.3, 6.0, 1.0)
+mL = bracket(top('L1'), bot('L5'), -7.6, -1.0)
+
+# strony ciała (widok od tyłu: lewa strona ciała po lewej stronie rysunku)
+f.text(CX - 7.4, Y0 + 1.6, 'strona lewa', cls='note', anchor='end')
+f.text(CX + 7.4, Y0 + 1.6, 'strona prawa', cls='note', anchor='start')
+
+TL, TR = 57.0, 91.0
+
+
+def notes(x, y, lines, side):
+    for k, t in enumerate(lines):
+        f.text(x + (0.7 if side == 'R' else -0.7), y + 6.6 + 2.6 * k, t, cls='note', anchor='start' if side == 'R' else 'end')
+
+
+# --- lewa kolumna
+f.label(mC, 'skolioza drugostronna szyi', None, (TL, mC[1] - 2.0), side='L')
+notes(TL, mC[1] - 2.0 - 3.0, ['kompensacyjna – względy ortooptyczne'], 'L')
+v5 = by['Th5']
+p5 = A['T'](v5, [(-v5['wt'] / 2 + 1.0, -v5['h'] / 2 + 1.2)])[0]
+f.label(p5, 'piąty kręg piersiowy', None, (TL, 31.0), side='L')
+notes(TL, 31.0 - 3.0, ['jakoby najsłabsze miejsce kręgosłupa –', 'tu najczęściej boczne skrzywienia'], 'L')
+v12 = by['Th12']
+p12 = A['T'](v12, [(0, v12['h'] / 2 + 5.0)])[0]
+f.label(p12, 'wyrostek kolczysty', 'processus spinosus', (TL, 55.0), side='L')
+f.label(mL, 'lewostronnie wypukła skolioza lędźwiowa', None, (TL, mL[1] - 2.0), side='L')
+notes(TL, mL[1] - 2.0 - 3.0, ['kompensacyjna – względy statyczne', '(np. z powodu dłuższej kończyny dolnej lewej)'], 'L')
+
+# --- prawa kolumna
+f.label((CX, Y0 - 2.6), 'płaszczyzna pośrodkowa', None, (TR, Y0 - 2.6), side='R')
+f.label(mT, 'prawostronnie wypukła skolioza piersiowa', None, (TR, mT[1] - 2.0), side='R')
+notes(TR, mT[1] - 2.0 - 3.0, ['wypukłość na prawo, przeważnie na wysokości', 'trzeciego – szóstego kręgu piersiowego;',
+                              'najczęstsza (52%), lewostronna tylko 16%'], 'R')
+v10 = by['Th10']
+p10 = A['T'](v10, [(v10['wt'] / 2 - 3.0, -v10['h'] / 2 + 1.0)])[0]
+f.label(p10, 'wyrostek poprzeczny', 'processus transversus', (TR, 54.0), side='R')
+vL = by['L3']
+pL = A['T'](vL, [(11.0, 5.0)])[0]
+f.label(pL, 'kręgi lędźwiowe', 'vertebrae lumbales', (TR, 78.0), side='R')
+pS = A['SP'](30.0, 40.0)
+f.label(pS, 'kość krzyżowa', 'os sacrum', (TR, 100.0), side='R')
 
 if os.environ.get('PTS'):
     for v in V:

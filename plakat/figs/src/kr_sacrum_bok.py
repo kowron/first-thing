@@ -230,6 +230,6 @@ f.label(G(CP(120.0, -3.6)), 'kość guziczna', 'os coccygis', (TL, 88.0), side='
 f.label(G(SP(2.0, 31.0)), 'podstawa kości krzyżowej', 'basis ossis sacri', (TR, 24.0), side='R')
 f.label(G(SP(13.0, 38.0)), 'guzowatość krzyżowa', 'tuberositas sacralis', (TR, 32.0), side='R')
 f.label(G(SP(29.0, 41.6)), 'powierzchnia grzbietowa', 'facies dorsalis', (TR, 40.0), side='R')
-f.label(KM, 'kifoza krzyżowa', 'kyphosis sacralis', (TR, 66.0), side='R')
+f.label(KM, 'krzywizna krzyżowa', 'kyphosis sacralis', (TR, 66.0), side='R')
 note(TR, 66.0 + 6.4, 'wypukłość ku tyłowi', 'R')
 f.save()

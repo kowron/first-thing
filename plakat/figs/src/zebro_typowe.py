@@ -10,7 +10,7 @@ from figlib import Fig, smooth
 W, H = 140, 104
 S = 0.5                    # mm rysunku / mm kości
 X0, Y0 = 112.0, 82.0       # punkt odniesienia (X=0, Y=0 kości)
-f = Fig('zebro_typowe', W, H, caption='żebro typowe (prawe żebro VII) · widok od dołu (przód ku górze)')
+f = Fig('zebro_typowe', W, H, caption='żebro typowe – kość żebrowa (prawe żebro VII) · widok od dołu (przód ku górze)')
 
 
 def T(X, Y):

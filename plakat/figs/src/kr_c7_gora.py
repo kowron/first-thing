@@ -60,7 +60,7 @@ f.label(P(-33.0, 11.4), 'wyrostek poprzeczny', 'processus transversus', (TL, 19.
 f.label(P(-24.5, 13.3), 'listewka tylna', None, (TL, 29.5), side='L');  note(TL, 33.6, 'duża', 'L')
 f.label(P(-17.8, 21.2), 'wyrostek stawowy górny', 'processus articularis superior', (TL, 39.0), side='L')
 f.label(P(-10.4, 27.6), 'blaszka łuku kręgu', 'lamina arcus vertebrae', (TL, 49.0), side='L')
-f.label(P(4.0, 6.0), 'trzon', 'corpus vertebrae', (TR, 6.5), side='R')
+f.label(P(4.0, 6.0), 'trzon kręgu', 'corpus vertebrae', (TR, 6.5), side='R')
 f.label(P(16.6, 6.1), 'listewka przednia', None, (TR, 16.5), side='R');  note(TR, 20.6, 'mała, słabo zaznaczona', 'R')
 f.label(P(15.8, 9.7), 'otwór wyrostka poprzecznego', 'foramen transversarium', (TR, 26.0), side='R');  note(TR, 32.9, 'zwykle mniejszy', 'R')
 f.label(P(5.0, 22.0), 'otwór kręgowy', 'foramen vertebrale', (TR, 39.0), side='R')

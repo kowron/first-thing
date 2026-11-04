@@ -64,7 +64,7 @@ f.add(f'<ellipse class="facet" cx="{x:.2f}" cy="{y:.2f}" rx="{1.85 * S:.2f}" ry=
 TL, TR = 36.0, 98.5
 f.label(P(27.4, 1.5), 'wcięcie kręgowe górne', 'incisura vertebralis superior', (TL, 5.0), side='L')
 f.label(P(20.5, 1.6), 'dołek żebrowy górny', 'fovea costalis superior', (TL, 14.5), side='L')
-f.label(P(9.0, 9.5), 'trzon', 'corpus vertebrae', (TL, 24.5), side='L')
+f.label(P(9.0, 9.5), 'trzon kręgu', 'corpus vertebrae', (TL, 24.5), side='L')
 f.label(P(27.6, 6.8), 'nasada łuku kręgu', 'pediculus arcus vertebrae', (TL, 34.5), side='L')
 f.label(P(27.4, 13.6), 'wcięcie kręgowe dolne', 'incisura vertebralis inferior', (TL, 44.8), side='L')
 f.label(P(22.3, 18.4), 'dołek żebrowy dolny', 'fovea costalis inferior', (TL, 55.0), side='L')

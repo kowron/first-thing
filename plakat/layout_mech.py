@@ -5,6 +5,8 @@ import os as _os
 G7 = 7
 W1 = float(_os.environ.get('CWM', 120))
 W2 = 2 * W1 + G7
+WK = float(_os.environ.get('CWK', 150))        # kolumna „Mechanika klatki piersiowej” (szersza – ma dużo rysunków)
+WP = (W2 + W1 + G7) - WK - G7                  # blok „Połączenia żeber i mostka”
 CH_WIDTHS = [W2 + 2 * W1 + 2 * G7, W2 + W1 + G7, W2]
 COLOR.update({'Oddychanie': 'c4'})
 MODE.update({'Kręgosłup': 'row', 'Klatka piersiowa': 'row', 'Oddychanie': 'list',
@@ -14,14 +16,14 @@ MODE.update({'Kręgosłup': 'row', 'Klatka piersiowa': 'row', 'Oddychanie': 'lis
              'Więzadła wzmacniające staw krzyżowo-biodrowy': 'list',
              'Więzadła łączące kość krzyżową z kością kulszową': 'list',
              'Krzywizny kręgosłupa': 'list',
-             'Połączenia żeber i mostka': 'grid2', 'Połączenia żeber z kręgosłupem': 'list', 'Połączenia żeber z mostkiem': 'list',
+             'Połączenia żeber i mostka': 'grid2', 'Połączenia żeber z kręgosłupem – stawy żebrowo-kręgowe': 'list', 'Połączenia żeber z mostkiem': 'list',
              'Mechanika klatki piersiowej': 'list', 'Ruchomość klatki piersiowej': 'list',
              'Przepona': 'grid2', 'Mechanika oddychania': 'grid2'})
 ROWSPEC.update({
     'Kręgosłup': [(W2, ['Połączenia kręgów przedkrzyżowych']), (W1, ['Połączenia kości krzyżowej']), (W1, ['Krzywizny kręgosłupa'])],
-    'Klatka piersiowa': [(W2, ['Połączenia żeber i mostka']), (W1, ['Mechanika klatki piersiowej'])],
+    'Klatka piersiowa': [(WP, ['Połączenia żeber i mostka']), (WK, ['Mechanika klatki piersiowej'])],
 })
-GRID2.update({'Połączenia żeber i mostka': ['Połączenia żeber z kręgosłupem']})
+GRID2.update({'Połączenia żeber i mostka': ['Połączenia żeber z kręgosłupem – stawy żebrowo-kręgowe']})
 GFIG.update({
     'Więzozrosty': ('Przekrój pośrodkowy odcinka lędźwiowego – więzadła kręgosłupa', ['pol_przekroj_strzalkowy']),
     'Połączenia z kośćmi miednicznymi': ('Staw krzyżowo-biodrowy i więzadła miednicy', ['pol_krzyzowo_biodrowy']),

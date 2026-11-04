@@ -54,5 +54,5 @@ f.label(P(1.0, 6.4), 'powierzchnia stawowa przednia', 'facies articularis anteri
 f.label(P(-13.0, 16.2), 'powierzchnia stawowa górna', 'facies articularis superior', (41.0, 20.0), side='L')
 f.label(P(-25.6, 27.4), 'wyrostek poprzeczny', 'processus transversus', (38.5, 34.0), side='L')
 f.label(P(-15.8, 34.8), 'wyrostek stawowy dolny', 'processus articularis inferior', (41.0, 49.5), side='L')
-f.label(P(4.0, 30.0), 'trzon', 'corpus vertebrae', (112.0, 44.0), side='R')
+f.label(P(4.0, 30.0), 'trzon kręgu', 'corpus vertebrae', (112.0, 44.0), side='R')
 f.save()

@@ -61,7 +61,7 @@ f.add(f'<path class="bone" d="{smooth(ac)}"/>')
 # --- podpisy ---
 TL, TR = 36.0, 110.0
 f.label(P(21.0, 11.8), 'dołek żebrowy', 'fovea costalis', (TL, 12.0), side='L')
-f.label(P(8.0, 16.0), 'trzon', 'corpus vertebrae', (TL, 24.0), side='L')
+f.label(P(8.0, 16.0), 'trzon kręgu', 'corpus vertebrae', (TL, 24.0), side='L')
 f.label(P(42.8, 26.2), 'wyrostek stawowy dolny', 'processus articularis inferior', (TL, 44.0), side='L')
 f.label(P(41.0, -6.0), 'wyrostek stawowy górny', 'processus articularis superior', (TR, 5.5), side='R')
 f.label(P(46.6, -1.0), 'wyrostek suteczkowaty', 'processus mamillaris', (TR, 14.5), side='R')

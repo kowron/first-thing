@@ -108,7 +108,7 @@ V['Th12'] = dict(                                            # jak w kr_th12_bok
 ORDER = ['Th1', 'typ', 'Th10', 'Th11', 'Th12']
 NAME = {'Th1': 'Th1', 'typ': 'Th2–Th9', 'Th10': 'Th10', 'Th11': 'Th11', 'Th12': 'Th12'}
 NOTES = {
-    'Th1':  ['dołek górny – cały,', 'poniżej krawędzi górnej', 'na wyrostku: jest'],
+    'Th1':  ['dołek górny – bez uzupełnienia,', 'poniżej krawędzi górnej', 'na wyrostku: jest'],
     'typ':  ['dołek górny i dolny', 'na krawędziach trzonu', 'na wyrostku: jest'],
     'Th10': ['czasem tylko 1 dołek', 'przy górnym brzegu', 'na wyrostku: niestały'],
     'Th11': ['1 dołek – w środku', 'powierzchni bocznej', 'na wyrostku: brak'],
@@ -164,7 +164,7 @@ for k in ORDER:
 f.label(P('typ', 21.4, 1.7), 'dołek żebrowy górny', 'fovea costalis superior', (38.6, 4.0), side='L')
 f.label(P('typ', 22.4, 18.5), 'dołek żebrowy dolny', 'fovea costalis inferior', (30.0, 12.2), side='L')
 f.label(P('typ', 37.0, 4.3), 'dołek żebrowy wyrostka poprzecznego', 'fovea costalis processus transversi', (52.0, 4.0), side='R')
-f.label(P('Th10', 9.0, 11.0), 'trzon', 'corpus vertebrae', (67.6, 12.2), side='R')
+f.label(P('Th10', 9.0, 11.0), 'trzon kręgu', 'corpus vertebrae', (67.6, 12.2), side='R')
 f.label(P('Th11', 19.4, 11.5), 'dołek żebrowy', 'fovea costalis', (104.2, 4.0), side='R')
 f.label(P('Th12', 43.2, 5.6), 'wyrostek poprzeczny', 'processus transversus', (142.0, 12.2), side='L')
 f.save()

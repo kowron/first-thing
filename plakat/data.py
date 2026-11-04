@@ -485,7 +485,7 @@ KLATKA = G('Mięśnie klatki piersiowej', 'musculi thoracis°', '677–702', [
       o=[
         'część lędźwiowa – odnogi: prawa [[crus dextrum]] od przedniej powierzchni trzonów L1–L3 (od więzadła podłużnego przedniego [[ligamentum longitudinale anterius]]), lewa [[crus sinistrum]] od L1–L2; przed rozworem aortowym łączą się w więzadło łukowate pośrodkowe [[ligamentum arcuatum medianum]]',
         'część lędźwiowa – więzadło łukowate przyśrodkowe [[ligamentum arcuatum mediale]] (trzon L1 lub L2 → wyrostek żebrowy L1) i boczne [[ligamentum arcuatum laterale]] (wyrostek żebrowy L1 → XII żebro)',
-        'część żebrowa: powierzchnia wewnętrzna chrząstek żeber VII–XII – 6 wiązek [[cartilago costalis]]',
+        'część żebrowa: powierzchnia wewnętrzna chrząstek żeber VII–XII – 6 wiązek [[cartilagines costales]]',
         'część mostkowa: powierzchnia wewnętrzna wyrostka mieczykowatego [[processus xiphoideus]]',
       ],
       i=['środek ścięgnisty – wspólne ścięgno końcowe wszystkich trzech części [[centrum tendineum]]'],
@@ -493,7 +493,7 @@ KLATKA = G('Mięśnie klatki piersiowej', 'musculi thoracis°', '677–702', [
         'ważny mięsień wdechowy: podczas skurczu spłaszcza się, kopuły obniżają się (przy spokojnym wdechu ok. 2 cm), jama klatki piersiowej powiększa się – tzw. oddychanie brzuszne',
         'podczas wydechu rozluźnioną przeponę podnosi napięcie mięśni brzucha',
         'czynna przy wydawaniu głosu – reguluje siłę wydechowego prądu powietrza',
-        'z mięśniami brzucha i dna miednicy tworzy tłocznię brzuszną (s. 716)',
+        'przy ustalonej miednicy i klatce piersiowej kurczy się razem z mięśniami dna miednicy i mięśniami powłok brzucha – tłocznia brzuszna [[prelum abdominis]] (s. 716)',
       ]),
   ]),
 ])

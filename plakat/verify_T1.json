@@ -1,0 +1,133 @@
+{
+ "issues": [
+  {
+   "card": "Chrząstka żebrowa (żebro chrzęstne)",
+   "field": "sections/1/3",
+   "problem": "PEWNE: „w przedłużeniu żebra” – chrząstka sama jest częścią żebra; Bochenek pisze o przedłużeniu ŻEBRA KOSTNEGO (kości żebrowej).",
+   "fix": "żebra dalsze: chrząstka biegnie najpierw w przedłużeniu żebra kostnego, potem silnie w górę – kąt w obrębie samej chrząstki",
+   "evidence": "s. 276: „następne biegną początkowo na nieznacznej przestrzeni w przedłużeniu żebra kostnego”"
+  },
+  {
+   "card": "Chrząstka żebrowa (żebro chrzęstne)",
+   "field": "l3/4",
+   "problem": "PEWNE: „kąt między żebrem a chrząstką” – u Bochenka kąt leży między żebrem KOSTNYM a chrzęstnym (chrząstka to część żebra).",
+   "fix": "zakres „I–V” dla kąta między żebrem kostnym a chrząstką podany wprost w mechanice chrząstki; w opisie chrząstki – „żebra górne”",
+   "evidence": "s. 295: „znajduje się na żebrach od pierwszego do piątego, między żebrem kostnym a chrzęstnym”"
+  },
+  {
+   "card": "Chrząstka żebrowa (żebro chrzęstne)",
+   "field": "l3/9",
+   "problem": "PEWNE: u Bochenka „pochwowato”, nie „pochewkowato” (sprawdzone na skanie).",
+   "fix": "pozostałe kostnieją później; nowa kość otacza chrząstkę pochwowato, kostnienie śródchrzęstne rzadsze; kostnienie bardzo zmniejsza sprężystość i ruchomość klatki",
+   "evidence": "s. 276: „nowo wytworzona kość pochwowato otacza chrząstkę”"
+  },
+  {
+   "card": "Wyrostek mieczykowaty",
+   "field": "sections/1/0",
+   "problem": "PEWNE: niezgodna liczba PL↔łac. – polska nazwa w l. pojedynczej (z s. 280, bez łaciny), łacina w l. mnogiej; Bochenek łączy ligamenta costoxiphoidea z nazwą „więzadła żebrowo-mieczykowe”.",
+   "fix": "powierzchnia przednia, po obu stronach – więzadła żebrowo-mieczykowe [[ligamenta costoxiphoidea]] i mała część m. prostego brzucha [[m. rectus abdominis]]",
+   "evidence": "s. 287: „Więzadła żebrowo-mieczykowe (ligamenta costoxiphoidea). Tworzą one pasma biegnące obustronnie”"
+  },
+  {
+   "card": "Wyrostek mieczykowaty",
+   "field": "labels/5",
+   "problem": "PEWNE: jak wyżej – PL l. pojedyncza przy łac. l. mnogiej (ligamenta).",
+   "fix": "przyczep więzadeł żebrowo-mieczykowych [[ligamenta costoxiphoidea]]",
+   "evidence": "s. 287: „Więzadła żebrowo-mieczykowe (ligamenta costoxiphoidea)”"
+  },
+  {
+   "card": "Powierzchnia miedniczna",
+   "field": "l3/0",
+   "problem": "PEWNE: „dawniej” – Bochenek w przypisie podaje sam synonim, bez określenia, że nazwa jest dawna (V1 poprawiło to samo przy s. 221 i 225; tu zostało). Sprawdzone na skanie.",
+   "fix": "Otwory krzyżowe miedniczne – inaczej [[foramina sacralia anteriora]].",
+   "evidence": "s. 234, przypis 1: „for. sacralia anteriora” (bez „dawniej”)"
+  },
+  {
+   "card": "Powierzchnia grzbietowa",
+   "field": "l3/0",
+   "problem": "PEWNE: „Dawne nazwy” – przypisy Bochenka podają tylko synonimy, bez „dawne” (jak wyżej). Sprawdzone na skanie.",
+   "fix": "Inne nazwy (przypisy): grzebień pośrodkowy – [[crista sacralis media]]; grzebień pośredni – [[crista sacralis articularis]]; otwory grzbietowe – [[foramina sacralia posteriora]].",
+   "evidence": "s. 235, przypisy: „crista sacralis media”, „crista sacralis articularis”; s. 236: „foramina sacralia posteriora”"
+  },
+  {
+   "card": "Piąty kręg lędźwiowy (L5)",
+   "field": "sections/1/0",
+   "problem": "WĄTPLIWE: ta sama struktura w grupie lędźwiowej nazwana dwojako – karta „Kręg lędźwiowy typowy” i rysunki kr_l_*: „wyrostek żebrowy {processus costalis}”, karta L5: „wyrostek poprzeczny {processus transversus}”. Wg Bochenka na kręgach lędźwiowych processus transversus właściwy = wyrostek dodatkowy, więc łacina „processus transversus” na L5 myli. (Petit o L5, s. 232, mówi po polsku „Wyrostki poprzeczne”, ale bez łaciny – stąd tylko wątpliwość.)",
+   "fix": "**Wyrostek poprzeczny**, czyli **żebrowy** {{processus costalis}} – krótki, silny, szeroki u podstawy, na końcu zgrubiały.",
+   "evidence": "s. 249 (streszczenie): „Wyrostki poprzeczne… nazywamy tu wyrostkami żebrowymi (processus costales)… Właściwym wyrostkiem poprzecznym jest mały wyrostek dodatkowy”"
+  },
+  {
+   "card": "Piąty kręg lędźwiowy (L5)",
+   "field": "labels/1",
+   "problem": "WĄTPLIWE: jak wyżej – podpis niespójny z kartą „Kręg lędźwiowy typowy” i rysunkami kr_l_gora/kr_l_bok („wyrostek żebrowy / processus costalis”).",
+   "fix": "wyrostek żebrowy {{processus costalis}}",
+   "evidence": "s. 232: „nazywają go też wyrostkiem żebrowym (processus costalis)”"
+  },
+  {
+   "card": "Jedenasty kręg piersiowy (Th11)",
+   "field": "sections/0/1",
+   "problem": "WĄTPLIWE: skrót „bez dołka żebrowego” – w tej samej karcie „dołek żebrowy {fovea costalis}” to dołek NA TRZONIE, który ten kręg ma; brakuje „dołka żebrowego wyrostka poprzecznego” (inna struktura).",
+   "fix": "**Wyrostek poprzeczny** {{processus transversus}} – bez dołka żebrowego wyrostka poprzecznego; niezgrubiały na końcu (należy do „dwóch czy trzech ostatnich”).",
+   "evidence": "s. 229: „dołki żebrowe wyrostka poprzecznego… Dołki te nie występują na kręgu jedenastym i dwunastym”"
+  },
+  {
+   "card": "Dwunasty kręg piersiowy (Th12)",
+   "field": "sections/1/1",
+   "problem": "WĄTPLIWE: skrót „bez dołka żebrowego” – w tej samej karcie „dołek żebrowy {fovea costalis}” to dołek NA TRZONIE, który ten kręg ma; brakuje „dołka żebrowego wyrostka poprzecznego” (inna struktura).",
+   "fix": "**Wyrostek poprzeczny** {{processus transversus}} – bez dołka żebrowego wyrostka poprzecznego; niezgrubiały na końcu (należy do „dwóch czy trzech ostatnich”).",
+   "evidence": "s. 229: „dołki żebrowe wyrostka poprzecznego… Dołki te nie występują na kręgu jedenastym i dwunastym”"
+  },
+  {
+   "card": "Kość żebrowa (żebro kostne)",
+   "field": "sections/1/2",
+   "problem": "WĄTPLIWE: ta sama struktura z dwiema nazwami łacińskimi – w sekcji „grzebień głowy {crista capitis}”, a w labels/3 oraz na rysunkach zebro_tyl i zebra_XI_XII „grzebień głowy żebra / crista capitis costae”. Obie formy są u Bochenka (tekst i streszczenie: crista capitis; ryc. 184: Crista capitis costae, sprawdzone na skanie) – warto powiązać, żeby student nie wziął ich za 2 twory.",
+   "fix": "w żebrach II–X dzieli ją poziomo **grzebień głowy** {{crista capitis}} [[na ryc. 184: crista capitis costae]] na 2 części; górna mniejsza od dolnej",
+   "evidence": "s. 274: „grzebieniem głowy (crista capitis)”; ryc. 184 (s. 275): „Crista capitis costae”"
+  },
+  {
+   "card": "Żebra – cechy ogólne",
+   "field": "l3/0",
+   "problem": "WĄTPLIWE: zdanie o budowie z istoty gąbczastej/zbitej dotyczy części kostnej, a w karcie o całym żebrze brzmi jak opis całego żebra (chrząstka żebrowa = chrząstka szklista). Bochenek pisze tu dosłownie „Żebra”, stąd tylko wątpliwość wg zasady §2.2.",
+   "fix": "kość żebrowa: silnie unaczyniona istota gąbczasta ze szpikiem czerwonym, pokryta cienką warstwą istoty zbitej",
+   "evidence": "s. 278: „Żebra zbudowane są z silnie unaczynionej istoty gąbczastej”; s. 276 (chrząstki): „Zbudowane są z chrząstki szklistej”"
+  },
+  {
+   "card": "Części żebra",
+   "field": "why",
+   "problem": "WĄTPLIWE: nazwa części chrzęstnej skrócona do „chrząstka”; u Bochenka nazwa to „chrząstka żebrowa” (para do „kość żebrowa” w tym samym zdaniu).",
+   "fix": "każde żebro = dłuższa tylna kość żebrowa + krótsza przednia chrząstka żebrowa",
+   "evidence": "s. 275: „Chrząstka żebrowa (cartilago costalis) albo żebro chrzęstne”"
+  },
+  {
+   "card": "SVG: kr_c2_przod, kr_c7_gora, kr_th_gora, kr_th_bok, kr_th_dolki, kr_th12_bok",
+   "field": "pl: trzon",
+   "problem": "WĄTPLIWE (spójność): na tych 6 rysunkach „trzon / corpus vertebrae”, na pozostałych (kr_c_gora, kr_c_przod, kr_c2_bok, kr_l_gora, kr_l_bok, klatka_przod) „trzon kręgu / corpus vertebrae” – ta sama struktura dwiema nazwami, nawet w jednej karcie (C2: kr_c2_bok vs kr_c2_przod). Pełna nazwa u Bochenka: „trzon kręgu”. (Streszczenie s. 248 ma też „trzonu (corpus vertebrae)”, więc nie błąd, tylko niespójność.)",
+   "fix": "trzon kręgu",
+   "evidence": "s. 221: „Trzon kręgu (corpus vertebrae) ma kształt niskiego walca”"
+  },
+  {
+   "card": "SVG: zebro_typowe",
+   "field": "cap",
+   "problem": "WĄTPLIWE: rysunek pokazuje tylko część kostną (koniec przedni „powierzchnia do chrząstki”), a podpis mówi „żebro”; Bochenek przy takich rycinach pisze „kość żebrowa”. Rysunek zebro_II ma już „(kość żebrowa)” – niespójność. (Klasa cap, nie pl/la.)",
+   "fix": "żebro typowe – kość żebrowa (prawe żebro VII) · widok od dołu (przód ku górze)",
+   "evidence": "ryc. 184 (s. 275): „Prawe żebro siódme; kość żebrowa w widoku od tyłu”"
+  },
+  {
+   "card": "SVG: zebro_I",
+   "field": "cap",
+   "problem": "WĄTPLIWE: jak wyżej – narysowana sama kość żebrowa z przyczepami mięśni (bez chrząstki), podpis „prawe żebro I”; zebro_II ma „(kość żebrowa)”.",
+   "fix": "prawe żebro I (kość żebrowa) · widok od góry (przód ku górze)",
+   "evidence": "ryc. 185 (s. 277): „Prawe żebra, pierwsze i drugie; kości żebrowe z przyczepami mięśni”"
+  },
+  {
+   "card": "SVG: kr_th_dolki",
+   "field": "notec: dołek górny – cały,",
+   "problem": "WĄTPLIWE: „cały” nie pochodzi z Bochenka (może sugerować osobną nazwę „dołek cały”); Bochenek: powierzchnia górna Th1 „zwykle sama, bez uzupełnienia” – tak też pisze karta Th1 (sections/1/1).",
+   "fix": "dołek górny – bez uzupełnienia,",
+   "evidence": "s. 228: „na pierwszym kręgu powierzchnia górna leży poniżej krawędzi górnej trzonu i zwykle sama, bez uzupełnienia”"
+  }
+ ],
+ "missing": [],
+ "checked": 1523,
+ "notes": "Plik obejmuje 2 pliki treści: T1:0–4 i T1:11–13 → k_klatka; T1:5–10 → k_kregoslup (apply_verify2.py k_kregoslup verify_T1 --dry i k_klatka verify_T1 --dry – sprawdzone, wszystkie pola się rozwiązują; „brak węzła” dla kart drugiego pliku jest oczekiwane). Zakres: k_kregoslup.json i k_klatka.json – 1057 pól (title/lat/tag/why/q, każdy punkt sections, l3, labels) + 466 podpisów pl/la z 25 SVG (kr_*, zebro_*, zebra_*, mostek_*, klatka_przod; przejrzane też teksty cap/note). Każdą parę PL–łac. porównano skryptem z OCR po scaleniu łamań „-\\n”: wszystkie nazwy łacińskie są u Bochenka w tekście albo na rycinach (tylko z rycin: crista capitis costae, facies articularis capitis costae superior/inferior – ryc. 184; foramen sacrale pelvinum/dorsale – ryc. 148; fovea costalis superior/inferior/processus transversi – ryc. 140–143; incisura costalis I–VII – ryc. 187); tworzone poprawnie gramatycznie: costa VII/VIII, vertebra cervicalis VI itp. Na skanie sprawdzone: s. 234–236 (przypisy bez „dawniej”, ala sacralis, ryc. 148), s. 275 (ryc. 184), s. 276 (przebieg i kostnienie chrząstek). Rozróżnienia żebro / kość żebrowa (żebro kostne) / chrząstka żebrowa (żebro chrzęstne) są poza zgłoszonymi miejscami użyte jak u Bochenka; podobnie wyrostek suteczkowaty (processus mamillaris) vs sutkowaty (k. skroniowej), górne/dolne połączenie mostkowe (s. 287), segmenty {sternebrae} (streszczenie s. 297), kresy poprzeczne {lineae transversae}, kresa biała. Niezgłoszone (niska waga): (a) JSON labels/0 „trzon {{corpus vertebrae}}” w 10 kartach kręgów i sekcje „**Trzon** {{corpus vertebrae}}” – pola labels nie są drukowane (oslib/build_os ich nie renderują), ale przy nowych rysunkach lepiej „trzon kręgu”; (b) Rękojeść mostka labels/4 „pólko wcięcia żebrowego II {{incisura costalis II}}” – PL to część, łacina całe wcięcie; (c) klatka_przod: kropka podpisu „żebro / costa” leży na części kostnej tuż obok podpisu „kość żebrowa” – rozważyć przesunięcie; (d) „kifoza krzyżowa” – na s. 234 tylko łac. kyphosis sacralis, ale Bochenek używa PL „kifoza piersiowa” (s. 264–266), więc zostawione. zebro_os_ruchu należy do strony 3 (layout_mech) – pl/la sprawdzone, bez uwag. zebra_XI_XII ma pusty <text class=\"pl\"> (druga linia odnośnika tego samego podpisu) – nieszkodliwe. Pozycje „SVG: …” mają pole field w postaci „pl: …”/„cap”/„notec: …” – apply_verify2.py ich nie nakłada (wypisze „brak węzła”); trzeba je poprawić w figs/src/*.py. Poza terminologią, przy okazji: Kanał krzyżowy l3/0 cytuje „trójkątny kanał krzyżowy” jako s. 248, a to s. 249 (PDF 109-1); Kość guziczna pg „237, 248” – streszczenie o kości guzicznej jest na s. 249. Nie dało się potwierdzić: s. 288–289 (brak w skanie) – w audytowanych kartach dotyczy tylko ścian klatki (wzięte ze streszczenia s. 298)."
+}
