@@ -1108,7 +1108,7 @@
           {
            "k": "KRZYWIZNA I POŁOŻENIE",
            "items": [
-            "Z boku silnie wypukła ku tyłowi – **kyfoza krzyżowa** {{kyphosis sacralis}}; dzięki niej pojemność miednicy mniejszej znacznie się zwiększa.",
+            "Z boku silnie wypukła ku tyłowi – **kifoza krzyżowa** {{kyphosis sacralis}}; dzięki niej pojemność miednicy mniejszej znacznie się zwiększa.",
             "W postawie pionowej leży pochyło: od przodu i góry ku tyłowi i dołowi."
            ]
           },
@@ -1124,7 +1124,7 @@
          "l3": [
           {
            "k": "NAZWY",
-           "t": "Kyfoza – od gr. kyfos = krzywy.",
+           "t": "{{kyphosis}} – od gr. kyfos = krzywy.",
            "pg": "234",
            "src": "867-868"
           }
@@ -1134,7 +1134,7 @@
           "wierzchołek kości krzyżowej {{apex ossis sacri}}",
           "powierzchnia miedniczna {{facies pelvina}}",
           "powierzchnia grzbietowa {{facies dorsalis}}",
-          "kyfoza krzyżowa {{kyphosis sacralis}}",
+          "kifoza krzyżowa {{kyphosis sacralis}}",
           "kąt lędźwiowo-krzyżowy {{angulus lumbosacralis}}",
           "wzgórek {{promontorium}}"
          ],

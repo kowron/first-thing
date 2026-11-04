@@ -7,7 +7,7 @@
 import sys, math; sys.path.insert(0, '/home/user/first-thing/plakat/figs')
 from figlib import Fig, smooth
 
-W, H = 150, 106
+W, H = 150, 108
 S = 0.55                  # mm rysunku / mm kości
 X0, Y0 = 68.0, 34.5       # położenie środka powierzchni górnej trzonu S1 na rysunku
 
@@ -118,8 +118,8 @@ POST = [(13.0, 49.2), (16, 48.6), (21, 45.6), (26, 43.6), (31, 43.8), (35, 41.6)
         (54, 33.4), (60, 29.6), (64, 28.0), (68, 27.4), (72, 25.4), (78, 22.4)]          # grzebień pośrodkowy (4 guzki)
 LOW = [(83, 20.0), (88, 18.6), (93, 17.8)]
 OUT = ([(0.0, 0.2), (-0.4, 8), (-0.6, 16), (-0.6, 24), (-0.2, 30.6), (1.4, 32.6),            # pow. górna S1 (pod krążkiem)
-        (-2.0, 33.6), (-7.0, 34.6), (-11.6, 36.0), (-14.0, 39.0), (-13.6, 42.6), (-10.6, 44.6),   # wyrostek stawowy górny
-        (-6.0, 45.6), (-2.0, 46.4), (2.0, 46.6), (6.0, 46.8), (9.0, 47.4), (11.2, 48.6)]       # (za nim wyr. stawowy dolny L5)
+        (-2.0, 33.6), (-7.0, 34.6), (-11.6, 36.0), (-14.0, 39.0), (-13.4, 43.2), (-10.4, 45.8),   # wyrostek stawowy górny
+        (-6.0, 46.8), (-2.0, 46.8), (2.0, 46.6), (6.0, 46.8), (9.0, 47.4), (11.2, 48.6)]       # (za nim wyr. stawowy dolny L5)
        + POST + LOW +
        [(97.6, 17.6), (100.6, 16.6), (101.4, 14.6),                                             # rożek krzyżowy
         (100.0, 12.6), (102.6, 11.2), (104.4, 8.4), (104.6, 4.0), (104.0, 0.4),                  # wierzchołek
@@ -148,15 +148,15 @@ for s, p, r in STR:
     f.add(f'<path class="bonel" d="M{x - dx:.2f},{y - dy:.2f} L{x + dx:.2f},{y + dy:.2f}"/>')
 
 # powierzchnia uchowata – kształt ucha: krótkie ramię górne (do tyłu), długie dolne (ku dołowi i do tyłu), kąt zwrócony do przodu
-AUR = [(17.0, 3.6), (11.0, 4.4), (5.5, 6.6), (2.6, 11.0), (1.8, 17.0), (2.6, 23.5), (5.0, 27.5), (8.6, 27.2),
-       (11.6, 23.2), (15.6, 19.8), (21.0, 18.4), (27.5, 19.6), (34.0, 22.0), (40.0, 24.6), (45.2, 25.6), (48.2, 23.6),
-       (47.6, 19.6), (43.0, 14.6), (36.6, 10.2), (29.4, 6.8), (22.6, 4.6)]
+AUR = [(17.0, 3.6), (11.0, 4.4), (5.6, 6.4), (2.6, 10.6), (1.6, 16.6), (2.0, 23.0), (3.8, 27.6), (7.0, 29.2), (10.0, 27.6),
+       (12.4, 23.0), (15.4, 18.0), (19.6, 15.4), (25.0, 15.8), (31.0, 18.6), (37.4, 21.8), (43.2, 24.2), (47.4, 23.8),
+       (48.6, 20.6), (46.0, 16.4), (41.0, 12.6), (34.6, 9.0), (28.0, 6.4), (22.0, 4.4)]
 f.add(f'<path class="facet" d="{smooth(GL([SP(s, p) for s, p in AUR]))}"/>')
 
 # ======================= krążek L5/S1 =======================
 disc = [A, L5(0, 28.5), L5(34.0, 28.0), B]
 DA = G(A); DA5 = G(L5(0, 28.5)); DB5 = G(L5(34.0, 28.0)); DB = G(B)
-mf = ((DA[0] + DA5[0]) / 2 - 1.4, (DA[1] + DA5[1]) / 2 + 0.2)          # przednia krawędź krążka wpukla się do przodu
+mf = ((DA[0] + DA5[0]) / 2 - 1.8, (DA[1] + DA5[1]) / 2 + 0.2)          # przednia krawędź krążka wpukla się do przodu
 mb = ((DB[0] + DB5[0]) / 2 + 0.5, (DB[1] + DB5[1]) / 2)
 f.add(f'<path class="annulus" d="M{DA[0]:.2f},{DA[1]:.2f} Q{mf[0] * 2 - (DA[0] + DA5[0]) / 2:.2f},{mf[1] * 2 - (DA[1] + DA5[1]) / 2:.2f} '
       f'{DA5[0]:.2f},{DA5[1]:.2f} L{DB5[0]:.2f},{DB5[1]:.2f} Q{mb[0] * 2 - (DB[0] + DB5[0]) / 2:.2f},{mb[1] * 2 - (DB[1] + DB5[1]) / 2:.2f} '
@@ -175,8 +175,10 @@ for i, (s0, hh, dd) in enumerate(CO):
            CP(s1 - 0.8, dd / 2), CP(s1, dd / 2 - 0.8), CP(s1 + 0.2, 0), CP(s1, -dd / 2 + 0.8), CP(s1 - 0.8, -dd / 2),
            CP((s0 + s1) / 2, -dd / 2 + 0.5), CP(s0 + 0.8, -dd / 2)]
     if i == 0:   # Co1 z rożkiem guzicznym (ku górze, do rożka krzyżowego)
-        pts = pts[:3] + [CP(s0 - 0.4, 6.2), CP(s0 - 2.4, 7.4), CP(s0 - 3.0, 8.8), CP(s0 - 1.2, 9.6), CP(s0 + 1.6, 8.8),
-                         CP(s0 + 3.6, 7.0)] + pts[5:]
+        pts = [CP(s0 + 0.2, -5.4), CP(s0, 0), CP(s0 + 0.2, 4.4), CP(s0 - 1.2, 5.2), CP(s0 - 3.4, 5.8), CP(s0 - 4.4, 7.0),
+               CP(s0 - 4.0, 8.4), CP(s0 - 2.2, 8.8), CP(s0 + 0.6, 8.2), CP(s0 + 3.2, 6.8), CP(s0 + 6.0, 6.0),
+               CP(s1 - 0.6, 5.2), CP(s1, 2.0), CP(s1 + 0.2, -1.0), CP(s1, -4.4), CP(s1 - 1.6, -6.0), CP(s0 + 4.2, -6.2),
+               CP(s0 + 1.2, -6.0)]
     f.add(f'<path class="bone" d="{smooth(GL(pts), t=0.55)}"/>')
 for s0, s1 in ((115.0, 116.6), (123.2, 124.6)):
     pts = [CP(s0, -3.4), CP(s0, 3.4), CP(s1, 3.0), CP(s1, -3.0)]
@@ -188,21 +190,46 @@ nl = math.hypot(*uL); uL = (uL[0] / nl, uL[1] / nl)                       # kier
 q1, q2 = SP(10, 0), SP(46, 0)
 uS = (q2[0] - q1[0], q2[1] - q1[1]); ns = math.hypot(*uS); uS = (uS[0] / ns, uS[1] / ns)   # pow. miedniczna S1–S2
 V = PROM
-R1, R2 = 46.0 * S, 40.0 * S
+R1, R2 = 50.0 * S, 24.0 * S
 e1 = (V[0] + uL[0] * R1, V[1] + uL[1] * R1)
 e2 = (V[0] + uS[0] * R2, V[1] + uS[1] * R2)
 f.add(f'<path class="dim" d="M{e1[0]:.2f},{e1[1]:.2f} L{V[0]:.2f},{V[1]:.2f} L{e2[0]:.2f},{e2[1]:.2f}"/>')
-RA = 10.0 * S
+RA = 6.0 * S
 a_1 = (V[0] + uL[0] * RA, V[1] + uL[1] * RA); a_2 = (V[0] + uS[0] * RA, V[1] + uS[1] * RA)
-f.add(f'<path class="dim" d="M{a_1[0]:.2f},{a_1[1]:.2f} A{RA:.2f},{RA:.2f} 0 0 1 {a_2[0]:.2f},{a_2[1]:.2f}"/>')
+f.add(f'<path class="lead" d="M{a_1[0]:.2f},{a_1[1]:.2f} A{RA:.2f},{RA:.2f} 0 0 1 {a_2[0]:.2f},{a_2[1]:.2f}"/>')
 ang = math.degrees(math.acos(uL[0] * uS[0] + uL[1] * uS[1]))
-print('kąt lędźwiowo-krzyżowy na rysunku: %.1f°' % ang)
 
-# oznaczenia kręgów
+# oznaczenie kręgu L5
 c5 = G(L5(17, 15.5)); f.text(c5[0], c5[1] + 0.8, 'L5', cls='notec')
-c1 = G(SP(9, 9)); f.text(c1[0], c1[1] + 0.8, 'S1', cls='notec')
 
-for nm, pt in (('A', A), ('PROM', PROM), ('apex', SP(104, 0)), ('top L5 SAP', L5(46.8, -9.4)), ('spinous', L5(79, 11.6)),
-               ('coccyx tip', CP(135.8, 0)), ('S1 SAP', SP(-14, 39.6)), ('post max', SP(44, 42.4))):
-    print(nm, [round(v, 1) for v in (G(pt) if nm != 'PROM' else pt)])
+# ======================= kifoza krzyżowa – klamra po stronie wypukłej (tylnej) =======================
+BR = [(46, 35.6), (54, 33.4), (62, 29.0), (70, 26.4), (78, 22.4), (86, 19.4), (94, 17.6), (100, 16.4)]
+OFF = 6.5
+br = [SP(s_, p_ + OFF) for s_, p_ in BR] + [CP(s_, q_ + OFF) for s_, q_ in [(108, 7.4), (116, 4.4), (124, 2.0), (129, 0.4), (132.0, -0.6)]]
+brg = GL(br)
+d = smooth(brg, closed=False)
+t0a, t0b = G(SP(46, 35.6 + OFF)), G(SP(46, 35.6 + OFF - 5.0))
+t1a, t1b = G(CP(132.0, -0.6 + OFF)), G(CP(132.0, -0.6 + OFF - 3.0))
+d += f' M{t0a[0]:.2f},{t0a[1]:.2f} L{t0b[0]:.2f},{t0b[1]:.2f} M{t1a[0]:.2f},{t1a[1]:.2f} L{t1b[0]:.2f},{t1b[1]:.2f}'
+f.add(f'<path class="lead" d="{d}"/>')
+KM = G(SP(78, 22.4 + OFF))
+
+# ======================= podpisy =======================
+TL, TR = 47.0, 104.0
+def note(x, y, t, side):
+    f.text(x + (0.7 if side == 'R' else -0.7), y, t, cls='note', anchor='start' if side == 'R' else 'end')
+
+f.label(a_1, 'kąt lędźwiowo-krzyżowy', 'angulus lumbosacralis', (TL, 22.0), side='L')
+note(TL, 22.0 + 6.4, '120–170°', 'L')
+f.label(V, 'wzgórek', 'promontorium', (TL, 36.0), side='L')
+f.label(G(SP(40, 15.0)), 'powierzchnia uchowata', 'facies auricularis', (TL, 49.0), side='L')
+f.label(G(SP(62, 0.2)), 'powierzchnia miedniczna', 'facies pelvina', (TL, 61.0), side='L')
+f.label(G(SP(102.4, 2.2)), 'wierzchołek kości krzyżowej', 'apex ossis sacri', (TL, 74.0), side='L')
+f.label(G(CP(120.0, -3.6)), 'kość guziczna', 'os coccygis', (TL, 88.0), side='L')
+
+f.label(G(SP(2.0, 31.0)), 'podstawa kości krzyżowej', 'basis ossis sacri', (TR, 24.0), side='R')
+f.label(G(SP(13.0, 38.0)), 'guzowatość krzyżowa', 'tuberositas sacralis', (TR, 32.0), side='R')
+f.label(G(SP(29.0, 41.6)), 'powierzchnia grzbietowa', 'facies dorsalis', (TR, 40.0), side='R')
+f.label(KM, 'kifoza krzyżowa', 'kyphosis sacralis', (TR, 66.0), side='R')
+note(TR, 66.0 + 6.4, 'wypukłość ku tyłowi', 'R')
 f.save()

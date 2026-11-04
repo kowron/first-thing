@@ -60,11 +60,14 @@ class Sec:
         v = (abs(u) - s.m0) / (s.m1 - s.m0)
         return math.sin(math.pi * v ** 0.8) ** 1.1 if 0 < v < 1 else 0.0
 
-    def fb(s, u):            # przednia powierzchnia warstwy mięśniowo-rozcięgnowej
-        return -s.bulge * s.bump(u)
+    def fb(s, u):            # przednia powierzchnia warstwy mięśniowo-rozcięgnowej (bruzda pośrodkowa między mm. prostymi)
+        return -s.bulge * s.bump(u) * ss(s.m0 - 0.3, s.m0 + 2.5, abs(u))
 
     def bb(s, u):            # tylna powierzchnia ściany (A: rozcięgno m. poprzecznego; B: m. prosty)
-        return BL + s.bulge_b * s.bump(u)
+        au = math.sqrt(u * u + 0.6)
+        v = (au + s.m0) / (s.m1 + s.m0)
+        hb = math.sin(math.pi * v ** 0.8) ** 1.1 if v < 1 else 0.0
+        return BL + s.bulge_b * hb
 
     def conv(s, u, L=8.0, p=2.2):
         t = (abs(u) - (s.m1 - L)) / L
@@ -103,20 +106,37 @@ class Sec:
         B = [(sg * u, (top(sg * u) + bot(sg * u)) / 2 + (bot(sg * u) - top(sg * u)) / 2 * w(u)) for u in us]
         f.add(f'<path class="muscle" d="{s.poly(T + B[::-1])}"/>')
 
+    def sheath(s, u):
+        """granice przestrzeni zajętej przez m. prosty (u >= 0)"""
+        if s.kind == 'A':
+            return s.Lf(u), s.Lb(u)
+        sf = ss(s.m1 - 1, s.m1 + 6, u)
+        return lerp(s.fb(u) + 3 * s.ta, TA_L[1], sf), s.bb(u)
+
     def rect_profile(s, u):
-        """górna i dolna granica m. prostego (u >= 0) z zaokrąglonym końcem przyśrodkowym"""
-        top, bot = s.Lf(u) + 0.12, s.Lb(u) - 0.12
+        """górna i dolna granica m. prostego (u >= 0) z zaokrąglonym końcem przyśrodkowym (i bocznym w B)"""
+        t0, b0 = s.sheath(u)
+        top, bot = t0 + 0.12, b0 - 0.12
+        if s.kind == 'B':
+            ue, RL = s.m1 + 1.0, 3.6
+            te, be = s.sheath(ue)
+            de = (te + be) / 2
+            x = (u - (ue - RL)) / RL
+            if x > 0:
+                k = 1 - math.sqrt(max(0.0, 1 - min(1.0, x) ** 2))
+                top += (de - top) * k
+                bot -= (bot - de) * k
         de = s.dext if s.dext is not None else (s.Lf(s.m0) + s.Lb(s.m0)) / 2
         x = u - s.m0
         if x < s.RT:
-            top += (de - s.Lf(u)) * (1 - math.sqrt(max(0.0, 1 - (1 - x / s.RT) ** 2)))
+            top += (de - t0) * (1 - math.sqrt(max(0.0, 1 - (1 - x / s.RT) ** 2)))
         if x < s.RB:
-            bot -= (s.Lb(u) - de) * (1 - math.sqrt(max(0.0, 1 - (1 - x / s.RB) ** 2)))
+            bot -= (b0 - de) * (1 - math.sqrt(max(0.0, 1 - (1 - x / s.RB) ** 2)))
         return top, bot
 
     def rectus(s, side):
         sg = 1 if side > 0 else -1
-        us = frange(s.m0, s.m1, 0.12)
+        us = frange(s.m0, s.m1 + (1.0 if s.kind == 'B' else 0.0), 0.12)
         T, B = [], []
         for u in us:
             t, b = s.rect_profile(u)
@@ -228,18 +248,18 @@ def section_B(S):
     ta_bot = lambda u: lerp(S.fb(u) + 3 * ta, TA_L[1], sf(u))
     S.band(-U, U, ta_top, ta_bot, 'tendon', step=0.15)
     for sd in (-1, 1):
-        S.muscle(m1 + 2.0, ta_top, ta_bot, sd)
+        S.muscle(m1 + 4.5, ta_top, ta_bot, sd)
     # m. skośny wewnętrzny: całe rozcięgno do przodu od m. prostego
     io_top = lambda u: lerp(S.fb(u) + ta, IO_L[0], sf(u))
     io_bot = lambda u: lerp(S.fb(u) + 2 * ta, IO_L[1], sf(u))
     S.band(-U, U, io_top, io_bot, 'lig', step=0.15)
     for sd in (-1, 1):
-        S.muscle(m1 + 1.2, io_top, io_bot, sd)
+        S.muscle(m1 + 3.5, io_top, io_bot, sd)
     # m. skośny zewnętrzny
     eo_bot = lambda u: lerp(S.fb(u) + ta, EO_L[1], ss(m1 - 1, m1 + 8, abs(u)))
     S.band(-U, U, S.fb, eo_bot, 'tendon')
     for sd in (-1, 1):
-        S.muscle(m1 + 3.5, S.fb, eo_bot, sd)
+        S.muscle(m1 + 4.5, S.fb, eo_bot, sd)
     # kresa biała – skrzyżowanie włókien (cienkie linie)
     for sd in (-1, 1):
         a = S.P(sd * 2.2, S.fb(0) + 3 * ta - 0.05)
@@ -249,13 +269,37 @@ def section_B(S):
         S.rectus(sd)
 
 
-A = Sec('A', 0.0, ya=22.0, a=0.003, b=4e-6, U=36.0, m0=1.9, m1=19.0, RT=2.4, RB=2.4, bulge=0.9, bulge_b=1.1, ta=0.5)
-B = Sec('B', 47.0, ya=22.0, a=0.003, b=4e-6, U=36.0, m0=0.8, m1=16.5, RT=2.8, RB=0.8, bulge=0.5, bulge_b=1.4, ta=0.45)
+A = Sec('A', 0.0, ya=24.5, a=0.003, b=4e-6, U=36.0, m0=1.9, m1=19.0, RT=2.4, RB=2.4, bulge=0.9, bulge_b=1.1, ta=0.5)
+B = Sec('B', 57.0, ya=14.5, a=0.003, b=4e-6, U=36.0, m0=0.8, m1=16.5, RT=2.8, RB=0.8, bulge=0.5, bulge_b=1.4, ta=0.45)
 B.dext = B.bb(0) - 0.8
 section_A(A)
 section_B(B)
 
-f.text(2.0, 5.0, 'A', cls='big')
-f.text(2.0, 53.0, 'B', cls='big')
+# ---------- tytuły przekrojów ----------
+f.text(2.0, 4.4, 'A · powyżej kresy łukowatej', cls='big')
+f.text(2.0, B.oy + 4.4, 'B · poniżej kresy łukowatej', cls='big')
+
+# ---------- podpisy: A (warstwy wspólne + pochewka powyżej kresy łukowatej) ----------
+P = A.P
+# góra – lewa strona (warstwy powierzchowne, linie do lewej części ściany)
+f.label(P(-33.6, -FSUP), 'powięź powierzchowna brzucha', 'fascia superficialis abdominis', (4.6, 8.1), side='R')
+f.label(P(-29.5, -FSUP - SLIT), 'powięź podskórna', 'fascia subcutanea', (8.0, 13.6), side='R')
+f.label(P(-22.0, -FSUP - SLIT - FAT - SKIN / 2), 'skóra', 'cutis', (19.0, 19.1), side='L')
+# góra – prawa strona
+f.label(P(5.3, A.fb(5.3) + A.ta), 'blaszka przednia', 'lamina anterior', (50.0, 2.6), side='R')
+f.label(P(12.0, (A.Lf(12) + A.Lb(12)) / 2), 'm. prosty brzucha', 'm. rectus abdominis', (57.0, 8.1), side='R')
+f.label(P(28.0, -FSUP - SLIT - FAT / 2), 'tkanka podskórna', 'tela subcutanea', (82.4, 13.6), side='L')
+# dół – środek i strony
+f.label(P(0.0, A.bb(0) - 1.2), 'kresa biała', 'linea alba', (41.4, 38.2), side='L')
+f.label(P(14.5, A.bb(14.5) + 0.3 + 0.825), 'otrzewna', 'peritoneum', (58.5, 38.2), side='R')
+f.label(P(9.5, A.bb(9.5) - A.ta), 'blaszka tylna', 'lamina posterior', (53.5, 43.7), side='R')
+f.label(P(-35.4, (TA_L[0] + TA_L[1]) / 2), 'm. poprzeczny brzucha', 'm. transversus abdominis', (13.2, 43.7), side='R')
+f.label(P(35.4, (EO_L[0] + EO_L[1]) / 2), 'm. skośny zewnętrzny brzucha', 'm. obliquus externus abdominis', (82.4, 49.2), side='L')
+f.label(P(-35.4, (IO_L[0] + IO_L[1]) / 2), 'm. skośny wewnętrzny brzucha', 'm. obliquus internus abdominis', (4.2, 54.0), side='R')
+
+# ---------- podpisy: B (tylko różnice) ----------
+P = B.P
+f.label(P(5.0, B.fb(5.0) + 1.5 * B.ta), 'blaszka przednia', 'lamina anterior', (50.0, B.oy + 2.6), side='R')
+f.label(P(9.0, B.bb(9.0) + 0.15), 'powięź poprzeczna', 'fascia transversalis', (36.0, B.oy + 27.5), side='L')
 
 f.save()
