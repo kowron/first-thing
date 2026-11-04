@@ -12,7 +12,7 @@ from figlib import Fig, smooth
 W, H = 150, 108
 YTOP = 2.6                    # górne cięcie (szyja)
 f = Fig('przepona_brzuch', W, H,
-        caption='tłocznia brzuszna · schemat strzałkowy tułowia (przód w lewo) i przekrój poprzeczny brzucha')
+        caption='tłocznia brzuszna (prelum abdominis) · schemat strzałkowy tułowia (przód w lewo) i przekrój poprzeczny brzucha')
 
 
 # ---------- pomocnicze ----------
@@ -130,8 +130,6 @@ COCCYX_TIP = (71.2, 95.6)
 
 # ---------- spojenie łonowe ----------
 SYM_C = (43.4, 87.6)
-for dx in (-0.2, 0.2):
-    pass
 f.add(f'<ellipse class="bone" cx="{SYM_C[0]:.2f}" cy="{SYM_C[1]:.2f}" rx="2.3" ry="4.4" transform="rotate(-24 {SYM_C[0]:.2f} {SYM_C[1]:.2f})"/>')
 f.add(f'<ellipse class="cart" cx="{SYM_C[0]:.2f}" cy="{SYM_C[1]:.2f}" rx="0.9" ry="3.7" transform="rotate(-24 {SYM_C[0]:.2f} {SYM_C[1]:.2f})"/>')
 
@@ -151,7 +149,7 @@ f.add(f'<path class="musclel" d="{line(offset(floor, -1.0)[2:-2])}"/>')
 
 # ---------- przepona (położenie wdechowe, skurcz) ----------
 DIA = [(42.6, 42.4), (44.4, 39.9), (47.6, 38.0), (52.0, 37.0), (57.0, 37.4), (61.8, 39.2), (65.6, 42.2), (68.0, 46.0),
-       (69.0, 50.4), (68.8, 54.8), (68.0, 59.4), (67.4, 62.6)]
+       (69.2, 50.4), (69.3, 54.8), (68.8, 59.4), (68.3, 62.6)]
 cD = cr(DIA, n=14)
 TEN = (47.6, 60.4)
 
@@ -176,33 +174,44 @@ f.add(f'<path class="organ" d="{poly(ab)}"/>')
 GAP = 0.6
 ST_B = [(47.1, 17.4), (46.0, 22.0), (44.9, 27.0), (43.9, 32.0), (43.1, 36.6), (43.0, 38.8)]   # tylna pow. mostka
 lung_front = [(x + GAP, yy) for x, yy in cr(ST_B, n=6)]
-lung_top = [(47.8, 15.4), (50.0, 12.3), (54.0, 10.4), (58.4, 10.8)]
-lung_back = [(xs(yy) - GAP, yy) for yy in [13 + 0.5 * k for k in range(int((48.6 - 13) / 0.5) + 1)]]
+lung_top = [(47.8, 15.4), (49.4, 11.9), (52.6, 9.7), (56.8, 9.1), (61.4, 9.8), (65.8, 11.2), (69.0, 12.6)]
+lung_back = [(xs(yy) - GAP, yy) for yy in [13.5 + 0.5 * k for k in range(int((48.6 - 13.5) / 0.5) + 1)]]
 dia_up = [p for p in offset(cD, lambda p: dthick(p) / 2 + GAP) if p[1] < 48.4]
 lung = lung_front[::-1][:-1] + cr(lung_top, n=6) + lung_back + [(69.9, 49.2)] + dia_up[::-1] + [(43.6, 40.6)]
-lung = cr([(45.1, 39.2), (44.0, 36.6)], n=2)[:0] + lung
 f.add(f'<path class="organ" d="{poly(lung)}"/>')
-# tchawica i krtań
-TR = [(63.2, 2.0), (63.4, 7.0), (64.2, 12.0), (65.6, 18.0), (66.6, 24.0)]
-ctr = cr(TR, n=8)
-tr_a = offset(ctr, 1.6); tr_b = offset(ctr, -1.6)
-f.add(f'<path class="cart" d="{poly(tr_a + tr_b[::-1])}"/>')
-f.add(f'<path class="cavity" d="{poly(offset(ctr, 0.8) + offset(ctr, -0.8)[::-1])}"/>')
-for yy in [12.5 + 1.6 * k for k in range(7)]:       # chrząstki tchawicy
+# drogi oddechowe: krtań (szersza), tchawica, rozwidlenie na oskrzela główne
+TR = [(63.2, 1.0), (63.3, 6.0), (63.9, 11.0), (65.0, 16.5), (66.2, 22.4)]
+ctr = cr(TR, n=10)
+# tchawica z rozwidleniem na oskrzela główne – jeden kontur (ściana) i jedno światło
+cA = cr([(66.2, 21.6), (65.7, 24.6), (64.3, 27.6)], n=8)
+cB = cr([(66.2, 21.6), (67.1, 24.6), (68.0, 27.4)], n=8)
+
+
+def airway(wt, wb, ycar):
+    tr_ant = [p for p in offset(ctr, -wt) if p[1] < 21.0]
+    tr_post = [p for p in offset(ctr, wt) if p[1] < 21.0][::-1]
+    a_ant = [p for p in offset(cA, -wb) if p[1] >= 23.0]
+    a_post = [p for p in offset(cA, wb) if p[1] >= ycar][::-1]
+    b_ant = [p for p in offset(cB, -wb) if p[1] >= ycar]
+    b_post = [p for p in offset(cB, wb) if p[1] >= 23.0][::-1]
+    return tr_ant + a_ant + a_post + b_ant + b_post + tr_post
+
+
+f.add(f'<path class="cart" d="{poly(airway(1.6, 1.15, 24.4))}"/>')
+f.add(f'<path class="cavity" d="{poly(airway(0.8, 0.5, 23.4))}"/>')
+for yy in [11.6 + 1.6 * k for k in range(7)]:       # chrząstki tchawicy
     xc = x_at(ctr, yy)
     if xc:
         f.add(f'<path class="bonel" d="M{xc - 1.55:.2f},{yy:.2f} L{xc - 0.8:.2f},{yy + 0.15:.2f} M{xc + 0.8:.2f},{yy + 0.15:.2f} L{xc + 1.55:.2f},{yy + 0.3:.2f}"/>')
-# oskrzela główne (krótkie odcinki w płucu)
-f.add(f'<path class="cart" d="{poly(offset(cr([(66.6, 23.6), (64.6, 27.4), (61.6, 30.2)], n=6), 1.0) + offset(cr([(66.6, 23.6), (64.6, 27.4), (61.6, 30.2)], n=6), -1.0)[::-1])}"/>')
-# krtań: chrząstka tarczowata (przód) i zamknięta szpara głośni (zwarte fałdy głosowe)
-LX = [(60.2, 2.0), (60.0, 5.0), (60.6, 8.2), (61.8, 10.4)]
-f.add(f'<path class="cart" d="{poly(cr(LX, n=6) + offset(cr(LX, n=6), 1.4)[::-1])}"/>')
-GL_Y = 6.3
+# krtań (odcinek szerszy) ze zwartymi fałdami głosowymi – szpara głośni zamknięta
+lar = [p for p in ctr if p[1] <= 9.6]
+f.add(f'<path class="cart" d="{poly(offset(lar, 2.5) + offset(lar, -2.5)[::-1])}"/>')
+f.add(f'<path class="cavity" d="{poly(offset(lar, 1.2) + offset(lar, -1.2)[::-1])}"/>')
+GL_Y = 5.6
 xg = x_at(ctr, GL_Y)
-f.add(f'<path class="muscle" d="M{xg - 1.7:.2f},{GL_Y - 1.0:.2f} L{xg + 0.15:.2f},{GL_Y - 0.15:.2f} L{xg + 0.15:.2f},{GL_Y + 0.25:.2f} '
-      f'L{xg - 1.7:.2f},{GL_Y + 1.2:.2f} Z"/>')
-f.add(f'<path class="muscle" d="M{xg + 1.7:.2f},{GL_Y - 1.0:.2f} L{xg - 0.15:.2f},{GL_Y - 0.15:.2f} L{xg - 0.15:.2f},{GL_Y + 0.25:.2f} '
-      f'L{xg + 1.7:.2f},{GL_Y + 1.2:.2f} Z"/>')
+for s_ in (-1, 1):
+    f.add(f'<path class="muscle" d="M{xg + s_ * 1.25:.2f},{GL_Y - 1.5:.2f} Q{xg + s_ * 0.5:.2f},{GL_Y - 0.4:.2f} {xg:.2f},{GL_Y:.2f} '
+          f'L{xg:.2f},{GL_Y + 0.3:.2f} Q{xg + s_ * 0.6:.2f},{GL_Y + 1.0:.2f} {xg + s_ * 1.25:.2f},{GL_Y + 1.9:.2f} Z"/>')
 
 # ---------- przepona (na wierzchu płuc i jamy brzusznej) ----------
 iT0 = next(i for i, p in enumerate(cD) if p[0] >= TEN[0])
@@ -239,107 +248,106 @@ for x0 in (50.0, 57.8):
 
 # ---------- podpisy (lewa kolumna) ----------
 TL = 33.6
-f.label((xg - 1.0, GL_Y + 0.1), 'szpara głośni zamknięta', None, (TL, 6.4), side='L')
+f.label((xg - 0.55, GL_Y + 0.15), 'szpara głośni zamknięta', None, (TL, 5.8), side='L')
 f.label((53.0, 19.0), 'płuca', None, (TL, 14.6), side='L')
-f.text(TL - 0.7, 18.0, 'powietrze zatrzymane – ', anchor='end')
-f.text(TL - 0.7, 20.6, 'podpierają przeponę', anchor='end')
-f.label((41.9, 30.0), 'klatka piersiowa (ustalona)', None, (TL, 27.6), side='L')
+f.text(TL - 0.7, 18.0, 'powietrze zatrzymane;', anchor='end')
+f.text(TL - 0.7, 20.6, 'jak poduszki podpierają', anchor='end')
+f.text(TL - 0.7, 23.2, 'przeponę', anchor='end')
+f.label((41.9, 30.0), 'klatka piersiowa', None, (TL, 27.4), side='L')
+f.text(TL - 0.7, 31.0, 'ustalona', anchor='end')
 f.label((44.2, 40.6), 'przepona', 'diaphragma', (TL, 37.2), side='L')
 f.label((38.8, 58.0), 'mięśnie powłok brzucha', None, (TL, 50.2), side='L')
-f.text(TL - 0.7, 53.6, 'największy udział:', anchor='end')
-f.text(TL - 0.7, 56.2, 'm. poprzeczny brzucha', anchor='end')
+f.text(TL - 0.7, 54.2, 'największy udział:', anchor='end')
+f.text(TL - 0.7, 56.8, 'm. poprzeczny brzucha', anchor='end')
 f.label((52.0, 66.0), 'jama brzuszna', None, (TL, 66.6), side='L')
 f.text(TL - 0.7, 70.0, 'objętość maleje,', anchor='end')
 f.text(TL - 0.7, 72.6, 'ciśnienie rośnie', anchor='end')
-f.label((42.2, 85.0), 'miednica (ustalona)', None, (TL, 82.0), side='L')
+f.label((42.2, 88.6), 'miednica', None, (TL, 81.6), side='L')
+f.text(TL - 0.7, 85.2, 'ustalona', anchor='end')
 f.label((50.0, 94.6), 'mięśnie dna miednicy', None, (TL, 94.0), side='L')
 
 # =====================================================================  WSTAWKA: przekrój poprzeczny brzucha
-CX, CY = 122.0, 30.0
-A0, B0 = 19.0, 11.6            # półosie wewnętrznej powierzchni ściany (jama brzuszna)
+# (na wysokości L3, widok od góry, przód ku górze; schemat)
+CX, CY, SC = 121.0, 32.0, 1.12
 
 
-def E(t, d=0.0, sx=1.0):
-    """punkt elipsy (t w stopniach; -90 = przód/góra rysunku), d – przesunięcie na zewnątrz."""
-    r = math.radians(t)
-    return (CX + (A0 + d) * math.cos(r) * sx, CY + (B0 + d) * math.sin(r))
+def Q(x, y):
+    return (CX + SC * x, CY + SC * y)
 
 
-f.text(CX, 8.4, 'przekrój poprzeczny brzucha', cls='notec')
-f.text(CX, 11.0, 'widok od góry · przód ku górze', cls='notec')
-# mięśnie grzbietu (prostownik) i wyrostek kolczysty
-for s in (-1, 1):
-    er = [(CX + s * 1.6, 40.6), (CX + s * 4.6, 39.4), (CX + s * 8.4, 40.6), (CX + s * 9.4, 44.2), (CX + s * 6.6, 46.6),
-          (CX + s * 1.6, 46.4)]
-    f.add(f'<path class="muscle" d="{smooth(er, closed=True, t=0.4)}"/>')
-    f.add(f'<path class="shade" d="{smooth(er, closed=True, t=0.4)}"/>')
-f.add(f'<path class="bone" d="M{CX - 0.9:.2f},38.4 L{CX + 0.9:.2f},38.4 L{CX + 0.7:.2f},46.4 L{CX - 0.7:.2f},46.4 Z"/>')
-# łuk kręgu i trzon L3
-f.add(f'<path class="bone" d="{smooth([(CX - 4.6, 37.6), (CX - 2.6, 35.6), (CX + 2.6, 35.6), (CX + 4.6, 37.6), (CX + 3.0, 39.6), (CX - 3.0, 39.6)], closed=True, t=0.4)}"/>')
-f.add(f'<ellipse class="hole" cx="{CX:.2f}" cy="37.7" rx="1.5" ry="1.1"/>')
-f.add(f'<path class="bone" d="{smooth([(CX - 3.9, 35.4), (CX - 4.2, 32.4), (CX - 2.4, 30.4), (CX, 30.0), (CX + 2.4, 30.4), (CX + 4.2, 32.4), (CX + 3.9, 35.4), (CX, 35.9)], closed=True, t=0.4)}"/>')
+def mirror_l(pts):
+    return [(-x, y) for x, y in pts]
+
+
+f.text(CX, 8.0, 'przekrój poprzeczny brzucha', cls='notec')
+f.text(CX, 10.6, '(od góry, przód ku górze)', cls='notec')
+
+# kontur jamy brzusznej (prawa połowa rysunku, od przodu ku tyłowi)
+CAV_R = [(0, -10.9), (4.4, -10.6), (8.8, -9.7), (13.0, -7.6), (16.4, -4.3), (18.3, -0.3), (18.5, 3.5), (17.0, 6.6),
+         (14.4, 7.6), (11.6, 6.5), (9.6, 4.4), (8.2, 2.2), (6.4, 1.5), (4.4, 1.8), (2.6, 1.2), (0, 0.9)]
+cav_r = cr(CAV_R, n=8)
+cav = cav_r + [(-x, y) for x, y in cav_r[::-1]][1:-1]
+# odcinek ściany bocznej (od brzegu m. prostego do m. czworobocznego lędźwi) – po nim biegną 3 mięśnie płaskie
+lat_r = cr([(8.2, -9.85), (13.0, -7.6), (16.4, -4.3), (18.3, -0.3), (18.5, 3.5), (17.0, 6.6), (14.6, 7.7)], n=10)
+LAYERS = [(0.0, 0.9, 0), (0.9, 1.9, 4), (1.9, 2.9, 9)]     # (od, do, ile punktów krócej z tyłu): poprzeczny, skośny wewn., skośny zewn.
+
+# mięśnie grzbietu (prostownik), łuk kręgu z wyrostkami, trzon L3
+for s_ in (-1, 1):
+    er = [(s_ * 1.4, 9.0), (s_ * 4.6, 8.4), (s_ * 8.6, 9.2), (s_ * 9.6, 12.2), (s_ * 7.0, 14.6), (s_ * 1.4, 14.4)]
+    f.add(f'<path class="muscle" d="{smooth([Q(*p) for p in er], closed=True, t=0.4)}"/>')
+    f.add(f'<path class="shade" d="{smooth([Q(*p) for p in er], closed=True, t=0.4)}"/>')
+f.add(f'<path class="bone" d="{poly([Q(-0.8, 7.0), Q(0.8, 7.0), Q(0.6, 14.6), Q(-0.6, 14.6)])}"/>')
+f.add(f'<path class="bone" d="{smooth([Q(*p) for p in [(-10.2, 7.6), (-6.0, 6.0), (-3.4, 5.2), (0, 5.6), (3.4, 5.2), (6.0, 6.0), (10.2, 7.6), (9.8, 8.5), (5.4, 7.6), (2.4, 8.4), (0, 9.0), (-2.4, 8.4), (-5.4, 7.6), (-9.8, 8.5)]], closed=True, t=0.35)}"/>')
+f.add(f'<ellipse class="hole" cx="{CX:.2f}" cy="{CY + SC * 6.8:.2f}" rx="{SC * 1.6:.2f}" ry="{SC * 1.1:.2f}"/>')
+f.add(f'<path class="bone" d="{smooth([Q(*p) for p in [(-3.8, 4.8), (-4.3, 2.6), (-2.6, 1.0), (0, 0.6), (2.6, 1.0), (4.3, 2.6), (3.8, 4.8), (0, 5.4)]], closed=True, t=0.4)}"/>')
 # m. lędźwiowy większy i m. czworoboczny lędźwi
-for s in (-1, 1):
-    ps = [(CX + s * 3.8, 31.6), (CX + s * 6.4, 29.8), (CX + s * 8.6, 31.4), (CX + s * 8.6, 34.6), (CX + s * 5.6, 35.6),
-          (CX + s * 4.0, 34.8)]
-    f.add(f'<path class="muscle" d="{smooth(ps, closed=True, t=0.4)}"/>')
-    ql = [(CX + s * 7.8, 36.2), (CX + s * 10.6, 35.0), (CX + s * 13.6, 36.4), (CX + s * 12.8, 38.4), (CX + s * 9.0, 38.6)]
-    f.add(f'<path class="muscle" d="{smooth(ql, closed=True, t=0.4)}"/>')
-# trzy mięśnie płaskie: skośny zewnętrzny (zewn.), skośny wewnętrzny, poprzeczny (wewn.) – od brzegu m. prostego do tyłu
-T0, T1 = -62.0, 44.0
-LAY = [(1.6, 2.6, 'muscle'), (0.75, 1.6, 'muscle'), (0.0, 0.75, 'muscle')]       # (d_wewn, d_zewn)
+for s_ in (-1, 1):
+    ps = [(s_ * 4.2, 2.0), (s_ * 6.4, 1.2), (s_ * 8.6, 2.4), (s_ * 9.6, 4.6), (s_ * 8.2, 6.4), (s_ * 5.0, 5.6)]
+    f.add(f'<path class="muscle" d="{smooth([Q(*p) for p in ps], closed=True, t=0.4)}"/>')
+    ql = [(s_ * 10.0, 8.6), (s_ * 10.4, 6.8), (s_ * 12.4, 6.4), (s_ * 15.0, 7.4), (s_ * 15.2, 9.0), (s_ * 12.4, 9.8)]
+    f.add(f'<path class="muscle" d="{smooth([Q(*p) for p in ql], closed=True, t=0.4)}"/>')
 
+# zawartość jamy brzusznej
+f.add(f'<path class="organ" d="{poly([Q(*p) for p in cav])}"/>')
 
-def band_e(t0, t1, d0, d1, s):
-    ts = [t0 + (t1 - t0) * k / 40 for k in range(41)]
-    inner = [E(t if s > 0 else 180 - t, d0) for t in ts]
-    outer = [E(t if s > 0 else 180 - t, d1) for t in ts]
-    return inner + outer[::-1]
-
-
-for s in (-1, 1):
-    for d0, d1, cls in LAY:
-        tt1 = T1 if d0 < 0.5 else (T1 - 6 if d0 < 1.0 else T1 - 14)
-        f.add(f'<path class="{cls}" d="{poly(band_e(T0, tt1, d0, d1, s))}"/>')
+# trzy mięśnie płaskie (obie strony)
+for s_ in (-1, 1):
+    base = [(s_ * x, y) for x, y in lat_r]
+    if s_ < 0:
+        base_m = base[::-1]          # marsz w kierunku przeciwnym do ruchu wskazówek zegara → odwrócone normalne
+    for d0, d1, cut in LAYERS:
+        seg = base[:len(base) - cut]
+        o0 = offset(seg, d0 * s_)
+        o1 = offset(seg, d1 * s_)
+        f.add(f'<path class="muscle" d="{poly([Q(*p) for p in o0 + o1[::-1]])}"/>')
     # włókna m. poprzecznego – poprzecznie (okrężnie)
-    ts = [T0 + 2 + (T1 - 2 - T0 - 2) * k / 40 for k in range(41)]
-    f.add(f'<path class="musclel" d="{line([E(t if s > 0 else 180 - t, 0.375) for t in ts])}"/>')
-    # rozcięgno m. poprzecznego do tyłu (do m. czworobocznego lędźwi)
-    pa = E(T1 if s > 0 else 180 - T1, 0.375)
-    f.add(f'<path class="tendon" d="M{pa[0]:.2f},{pa[1] - 0.3:.2f} L{CX + s * 13.4:.2f},{36.0:.2f} L{CX + s * 13.6:.2f},{36.7:.2f} '
-          f'L{pa[0] + s * 0.3:.2f},{pa[1] + 0.4:.2f} Z"/>')
-# m. prosty brzucha (w pochewce) i kresa biała
-for s in (-1, 1):
-    rc = (CX + s * 4.4, CY - B0 - 1.1)
-    f.add(f'<ellipse class="muscle" cx="{rc[0]:.2f}" cy="{rc[1]:.2f}" rx="4.3" ry="1.75"/>')
-    f.add(f'<ellipse class="shade" cx="{rc[0]:.2f}" cy="{rc[1]:.2f}" rx="4.3" ry="1.75"/>')
-f.add(f'<path class="tendon" d="M{CX - 0.35:.2f},{CY - B0 - 2.6:.2f} L{CX + 0.35:.2f},{CY - B0 - 2.6:.2f} L{CX + 0.35:.2f},{CY - B0 + 0.3:.2f} L{CX - 0.35:.2f},{CY - B0 + 0.3:.2f} Z"/>')
-# jama brzuszna (zawartość)
-cav = [E(t, -0.05) for t in range(-90, 46, 4)] + [(CX + 13.2, 35.4), (CX + 9.0, 35.2), (CX + 5.4, 36.0), (CX + 4.4, 34.8),
-       (CX + 3.6, 31.0), (CX, 29.6), (CX - 3.6, 31.0), (CX - 4.4, 34.8), (CX - 5.4, 36.0), (CX - 9.0, 35.2), (CX - 13.2, 35.4)] \
-      + [E(t, -0.05) for t in range(134, 271, 4)]
-f.add(f'<path class="organ" d="{poly(cav)}"/>')
-f.text(CX, CY - 1.0, 'jama brzuszna', cls='notec')
-f.text(CX, CY + 1.6, 'ciśnienie rośnie', cls='notec')
-# strzałki skurczu (sznurowanie ku środkowi)
-for t in (-30, 10, 190, 150):
-    p0 = E(t, -0.7)
-    p1 = E(t, -5.8)
-    f.arrow(f'M{p0[0]:.2f},{p0[1]:.2f} L{p1[0]:.2f},{p1[1]:.2f}')
-for s in (-1, 1):
-    p0 = (CX + s * 4.4, CY - B0 + 0.9)
-    f.arrow(f'M{p0[0]:.2f},{p0[1]:.2f} L{p0[0]:.2f},{p0[1] + 4.4:.2f}')
+    mid = offset(base, 0.45 * s_)[2:-1]
+    f.add(f'<path class="musclel" d="{line([Q(*p) for p in mid])}"/>')
+# m. prosty brzucha w pochewce i kresa biała
+for s_ in (-1, 1):
+    rc = Q(s_ * 4.35, -12.15)
+    f.add(f'<ellipse class="tendon" cx="{rc[0]:.2f}" cy="{rc[1]:.2f}" rx="{SC * 4.35:.2f}" ry="{SC * 1.95:.2f}"/>')
+    f.add(f'<ellipse class="muscle" cx="{rc[0]:.2f}" cy="{rc[1]:.2f}" rx="{SC * 3.85:.2f}" ry="{SC * 1.5:.2f}"/>')
+    f.add(f'<ellipse class="shade" cx="{rc[0]:.2f}" cy="{rc[1]:.2f}" rx="{SC * 3.85:.2f}" ry="{SC * 1.5:.2f}"/>')
+f.text(CX, CY - 4.4, 'jama brzuszna', cls='notec')
+f.text(CX, CY - 1.8, 'ciśnienie rośnie', cls='notec')
+# strzałki skurczu – ściany „sznurują” brzuch ku środkowi
+ARW = [((18.0, -1.0), (12.0, -1.6)), ((14.4, -6.4), (9.6, -3.6)), ((4.4, -10.1), (4.4, -6.2))]
+for s_ in (-1, 1):
+    for (x0, y0), (x1, y1) in ARW:
+        a, b = Q(s_ * x0, y0), Q(s_ * x1, y1)
+        f.arrow(f'M{a[0]:.2f},{a[1]:.2f} L{b[0]:.2f},{b[1]:.2f}')
 
 # podpisy wstawki
-pt = E(16, 0.375)
-f.label(pt, 'm. poprzeczny brzucha', 'm. transversus abdominis', (113.0, 52.6), side='R')
-f.text(113.7, 59.2, 'włókna biegną poprzecznie –')
-f.text(113.7, 61.8, 'największy udział w tłoczni')
-po = E(196, 2.1)
-f.label(po, 'm. skośny zewnętrzny brzucha', 'm. obliquus externus abdominis', (101.0, 68.0), side='R')
+pt = Q(-18.5 - 0.45, 4.6)
+f.label(pt, 'm. poprzeczny brzucha', 'm. transversus abdominis', (88.2, 56.0), side='R')
+f.text(88.9, 62.6, 'poprzeczny kierunek włókien –')
+f.text(88.9, 65.2, 'największy udział w tłoczni,')
+f.text(88.9, 67.8, 'przy współudziale pozostałych')
+f.text(88.9, 70.4, 'mięśni brzucha')
 
 # ---------- legenda ----------
-LY = 80.0
+LY = 80.6
 lx = 96.0
 f.arrow(f'M{lx:.2f},{LY - 0.6:.2f} L{lx + 6.6:.2f},{LY - 0.6:.2f}')
 f.text(lx + 8.0, LY + 0.3, 'skurcz mięśni – nacisk')
@@ -347,6 +355,8 @@ f.text(lx + 8.0, LY + 2.9, 'na zawartość jamy brzusznej')
 f.arrow(f'M{lx:.2f},{LY + 6.4:.2f} L{lx + 6.6:.2f},{LY + 6.4:.2f}', red=True)
 f.text(lx + 8.0, LY + 7.3, 'płuca (powietrze zatrzymane)')
 f.text(lx + 8.0, LY + 9.9, 'podpierają przeponę')
+f.text(lx, LY + 16.0, 'Tłocznia jest szczególnie skuteczna, gdy')
+f.text(lx, LY + 18.6, 'klatka piersiowa i miednica zbliżają się do siebie.')
 
 # przycięcie u góry (szyja)
 body = ''.join(f.body)

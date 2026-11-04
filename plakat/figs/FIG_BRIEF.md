@@ -41,7 +41,10 @@ porządnie rozłożonych. Każdy rysunek oglądnij w podglądzie przynajmniej 2 
 
 Na koniec odpowiedz krótko: lista rysunków (nazwa pliku, co przedstawia, rozmiar w mm), co było trudne, czego nie jesteś pewien.
 
-## Skan – numeracja stron (potwierdzone)
+## Skan – numeracja stron (POPRAWIONE)
 Skan: /tmp/claude-0/-home-user-first-thing/d41721b4-1413-50bf-8c94-691fa5e52b07/scratchpad/skan.pdf (458 stron PDF). Jedna strona PDF = dwie strony książki (lewa = parzysta, prawa = nieparzysta).
-Strona PDF N zawiera strony książki 706+2*(N-344) (lewa) i 707+2*(N-344) (prawa); np. PDF 344 = s. 706–707, PDF 350 = s. 718–719.
-Render: pdftoppm -r 110 -f N -l N -png "/tmp/claude-0/-home-user-first-thing/d41721b4-1413-50bf-8c94-691fa5e52b07/scratchpad/skan.pdf" <katalog_w_/tmp>/x
+**Numer strony PDF dla danej strony książki bierz ze znaczników `=== PDF N-0 ===` / `=== PDF N-1 ===` w `bones.txt`** (N = numer strony PDF,
+-0 = lewa, -1 = prawa połowa; np. s. 276–277 = PDF 123, s. 278–279 = PDF 124, s. 290–291 = PDF 129) – to jest pewne. W skanie brakuje s. 288–289, 6–55
+i 646–647, więc stały wzór na numerację NIE działa w całej książce (działa tylko blisko s. 700–720: PDF 344 = s. 706–707). Zawsze sprawdź numer w stopce
+wyrenderowanej strony.
+Render: pdftoppm -r 110 -f N -l N -png "/tmp/claude-0/-home-user-first-thing/d41721b4-1413-50bf-8c94-691fa5e52b07/scratchpad/skan.pdf" <katalog_w_scratchpadzie>/x

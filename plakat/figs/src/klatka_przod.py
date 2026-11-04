@@ -10,7 +10,7 @@ import sys, os; sys.path.insert(0, '/home/user/first-thing/plakat/figs')
 import math
 from figlib import Fig
 
-W, H = 150, 117
+W, H = 150, 113
 K = 3.0                     # mm rysunku / cm
 CX, Y0 = 75.0, 10.5         # oś symetrii; poziom Y=0 (górny brzeg trzonu Th1)
 f = Fig('klatka_przod', W, H, caption='klatka piersiowa · widok od przodu')
@@ -393,7 +393,8 @@ NUMS = {}
 for n in range(1, 11):
     ln, us, wf = ribs[n]
     NUMS[n] = M(*ln.pt(us + NUM_U[n] * (1 - us)), LEFT)
-NUMS[11] = M(*free[11].pt(0.80), LEFT)
+NUMS[11] = M(*free[11].pt(1.0), LEFT)
+NUMS[11] = (NUMS[11][0] + 3.6, NUMS[11][1] + 1.2)
 NUMS[12] = M(*free[12].pt(0.78), LEFT)
 for n, (x, y) in NUMS.items():
     f.text(x, y + 0.75, ROM[n - 1], cls='notec')
@@ -404,14 +405,15 @@ ln4, us4, _ = ribs[4]
 P_OS = M(*ln4.pt(us4 + 0.42 * (1 - us4)), RIGHT)
 P_CC = M(*RIB[5][4], RIGHT)
 P_CART = M(*carts[6].pt(0.62), RIGHT)
-P_ARC = M(*carts[8].pt(0.70, -0.30), RIGHT)
+P_ARC = M(*carts[8].pt(0.74, 0.0), RIGHT)
 P_XII = M(*free[12].pt(0.62), RIGHT)
 
 P_SPINE = M(0.5, 2.75, LEFT)
 P_SP = M(5.8, 6.2, LEFT)
 P_ST = M(0.45, 11.0, LEFT)
 ln6, us6, _ = ribs[6]
-P_RIB = M(*ln6.pt(us6 + 0.62 * (1 - us6)), LEFT)
+ln5, us5, _ = ribs[5]
+P_RIB = M(*ln5.pt(us5 + 0.70 * (1 - us5)), LEFT)
 P_ANG = M(R_ANG * math.sin(math.radians(22)), APEX[1] + R_ANG * math.cos(math.radians(22)), LEFT)
 P_VB = M(0.9, 25.3, LEFT)
 
@@ -425,11 +427,11 @@ f.label(P_XII, 'żebro XII', 'costa XII', (36.0, 100.0), side='L')
 f.label(P_SPINE, 'kręgosłup – część piersiowa', None, (98.0, 8.0), side='R')
 f.text(98.7, 11.6, '(ściana tylna)', cls='note')
 f.label(P_SP, 'przestrzenie międzyżebrowe', 'spatia intercostalia', (104.0, 26.0), side='R')
-f.label(P_ST, 'mostek', 'sternum', (108.0, 40.0), side='R')
-f.text(108.7, 46.3, '(ściana przednia)', cls='note')
+f.label(P_ST, 'mostek', 'sternum', (108.0, 43.5), side='R')
+f.text(108.7, 49.8, '(ściana przednia)', cls='note')
 f.label(P_RIB, 'żebro', 'costa', (114.0, 58.0), side='R')
 f.text(114.7, 64.3, '(ściany boczne)', cls='note')
-f.label(P_ANG, 'kąt podmostkowy', 'angulus infrasternalis', (114.0, 78.0), side='R')
+f.label(P_ANG, 'kąt podmostkowy', 'angulus infrasternalis', (114.0, 76.5), side='R')
 f.label(P_VB, 'trzon kręgu', 'corpus vertebrae', (114.0, 92.0), side='R')
 
 if os.environ.get('PTS'):

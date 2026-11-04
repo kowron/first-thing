@@ -265,10 +265,10 @@ f.text(TL - 0.7, 58.0, 'XI i XII – cienkie listewki kostne:', cls='note', anch
 f.text(TL - 0.7, 61.0, 'niemal bez szyjki, guzka, kąta', cls='note', anchor='end')
 f.text(TL - 0.7, 64.0, 'i bruzdy żebra', cls='note', anchor='end')
 f.label(P_FTUB, 'powierzchnia stawowa guzka żebra', 'facies articularis tuberculi costae', (80.0, 4.5), side='R')
-f.label(P_ANG, 'kąt żebra', 'angulus costae', (124.0, 16.0), side='R')
-f.label(P_X, 'żebro X', 'costa X', (124.0, 30.0), side='R')
-f.label(P_XI, 'żebro XI', 'costa XI', (124.0, 50.0), side='R')
-f.label(P_CART_XI, 'chrząstka żebrowa', 'cartilago costalis', (124.0, 72.0), side='R')
+f.label(P_ANG, 'kąt żebra', 'angulus costae', (123.0, 16.0), side='R')
+f.label(P_X, 'żebro X', 'costa X', (123.0, 30.0), side='R')
+f.label(P_XI, 'żebro XI', 'costa XI', (123.0, 50.0), side='R')
+f.label(P_CART_XI, 'chrząstka żebrowa', 'cartilago costalis', (123.0, 72.0), side='R')
 f.label(P_XII, 'żebro XII', 'costa XII', (80.0, 76.0), side='L')
 
 if os.environ.get('PTS'):

@@ -159,7 +159,7 @@ for k in range(1, 18):
     v = (-nx * math.cos(a) + tE[0] * math.sin(a) * 0.30, -ny * math.cos(a) + tE[1] * math.sin(a) * 0.30)
     cap_end.append((cE[0] + v[0] * rE, cE[1] + v[1] * rE))
 # cap_end biegnie od brzegu zewnętrznego do wewnętrznego
-outline = outer + cap_end + inner[::-1] + cap_head
+outline = outer + cap_end + inner[::-1] + cap_head[::-1]
 f.add(f'<path class="bone" d="{poly(outline)}"/>')
 
 # ---------- brzeg zewnętrzny gruby, zaokrąglony – pas cienia wzdłuż brzegu ----------
@@ -243,7 +243,7 @@ P_ART = UV(U_ART, -0.42)
 P_SER = cen(F_SER)
 P_TUB = UV(U_TUB, -1.0, -0.6)
 
-YS = dict(sub=12.0, inb=21.5, stb=31.0, sca=39.5, med=48.0, neck=63.0, head=72.0,
+YS = dict(sub=12.0, inb=21.5, stb=39.5, sca=31.0, med=48.0, neck=72.0, head=63.0,
           outb=17.0, ven=26.0, art=35.0, ser=44.0, tub=70.0)
 f.label(P_SUB, 'przyczep m. podobojczykowego', 'm. subclavius', (TL, YS['sub']), side='L')
 f.label(P_INB, 'brzeg wewnętrzny', None, (TL, YS['inb']), side='L')
