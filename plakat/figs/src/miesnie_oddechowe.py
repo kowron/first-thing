@@ -8,11 +8,12 @@
 # Wstawka: m. zębaty tylny górny – od tyłu (pomocniczy wdechowy).
 # Przebieg włókien mm. międzyżebrowych wg s. 685–686: zewnętrzne – ku dołowi i do mostka, wewnętrzne – ku dołowi
 # i w stronę kręgosłupa. M. poprzeczny klatki piersiowej wg s. 688. M. najszerszy grzbietu – s. 654–655.
-# Schemat własny; mięśnie uproszczone (pasma pokazujące kierunek działania), m. piersiowy większy – tylko część dolna.
+# Schemat własny; mięśnie uproszczone (pasma pokazujące kierunek działania), m. piersiowy większy – tylko część
+# mostkowo-żebrowa (pasmo nad m. piersiowym mniejszym). Klatka – dane jak w oddychanie_wymiary.py.
 import sys, math; sys.path.insert(0, '/home/user/first-thing/plakat/figs')
 from figlib import Fig, smooth
 
-W, H = 150, 112
+W, H = 150, 110
 f = Fig('miesnie_oddechowe', W, H,
         caption='mięśnie oddechowe · klatka piersiowa od przodu (prawa strona ciała po lewej) · schemat kierunku działania')
 S = 1.35                     # mm na cm
@@ -359,7 +360,7 @@ f.body = [f'<defs><clipPath id="cp_mo"><rect x="0" y="{Y0 + S * YTOPC:.2f}" widt
 
 # ================================================================ 9. wstawka: m. zębaty tylny górny – od tyłu
 S2 = 1.15
-CX2, Y02 = 75.0, 86.5                   # oś; górny brzeg trzonu Th1 (wstawka)
+CX2, Y02 = 75.0, 85.6                   # oś; górny brzeg trzonu Th1 (wstawka)
 U2, YT2, YB2 = 9.0, -5.2, 13.8          # zakres przycięcia (cm)
 inset = []
 
@@ -414,7 +415,7 @@ f.add(f'<defs><clipPath id="cp_mo2"><rect x="{CX2 - S2 * U2:.2f}" y="{Y02 + S2 *
 f.arrow(inset_arrow)
 f.add(f'<rect class="dim" x="{CX2 - S2 * U2:.2f}" y="{Y02 + S2 * YT2:.2f}" width="{2 * S2 * U2:.2f}" '
       f'height="{S2 * (YB2 - YT2):.2f}" rx="1.2"/>')
-f.text(CX2, Y02 + S2 * YB2 + 3.0, 'od tyłu', cls='notec')
+f.text(CX2, Y02 + S2 * YB2 + 2.8, 'od tyłu', cls='notec')
 
 # ================================================================ nagłówki
 f.text(24.0, 5.6, 'mięśnie wdechowe', cls='big', anchor='middle')
@@ -455,7 +456,7 @@ lab(P(3.6, 16.2, R), 'm. poprzeczny klatki piersiowej', 'm. transversus thoracis
 lab(P(16.7, 17.0, R), 'm. najszerszy grzbietu', 'm. latissimus dorsi', (XR, 50.0), 'R', '„mięsień kaszlu” – części boczne')
 note(XR + 0.7, 59.0, '(wiązki żebrowe – pomocnicze wdechowe)', 'start')
 lab(P(11.0, 31.0, R), 'mięśnie brzucha', None, (XR, 64.0), 'R', 'najsilniej opuszczają żebra')
-lab(Q(4.6, 3.6, 1), 'm. zębaty tylny górny', 'm. serratus posterior superior', (XR, 88.0), 'R', 'pomocniczy wdechowy')
+lab(Q(4.6, 3.6, 1), 'm. zębaty tylny górny', 'm. serratus posterior superior', (XR, 87.0), 'R', 'pomocniczy wdechowy')
 
 # ================================================================ uwagi (warunki działania mięśni pomocniczych)
 for i, t in enumerate(['mięśnie od obręczy kończyny górnej', 'i ramienia działają wdechowo, gdy ramię',
