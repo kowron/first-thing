@@ -55,9 +55,10 @@ def ok(name, K):
 LO, HI, STEP = float(os.environ.get('KLO', 0.75)), float(os.environ.get('KHI', 1.5)), float(os.environ.get('KSTEP', 0.02))
 for name in todo:
     # wyszukiwanie binarne największego K, które się mieści (zakładamy: mniejsze K = niższa strona)
-    lo, hi = LO, HI
-    if not ok(name, lo):
-        res[name] = None; print(f'== {name}: nie mieści się nawet przy K={lo}', flush=True); continue
+    # punkt startowy: pierwsze K (od góry), które się mieści – przy bardzo małym K drobny druk (L3MIN) rośnie, więc K=LO nie zawsze jest „najbezpieczniejsze”
+    hi = HI; lo = next((k for k in (1.0, 0.95, 0.9, 0.85, 0.8, LO) if k >= LO and ok(name, k)), None)
+    if lo is None:
+        res[name] = None; print(f'== {name}: nie mieści się nawet przy K={LO}', flush=True); continue
     while hi - lo > STEP:
         mid = round((lo + hi) / 2, 3)
         if ok(name, mid): lo = mid
