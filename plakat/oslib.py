@@ -86,6 +86,11 @@ def expl_html(key, maxw=None, fig_scale=1.0):
         h.append('<ul>' + ''.join(f'<li>{mk(x)}</li>' for x in e['points']) + '</ul>')
     if e.get('steps'):
         h.append('<ol class="estep">' + ''.join(f'<li>{mk(x)}</li>' for x in e['steps']) + '</ol>')
+    if e.get('table'):
+        t = e['table']; n = len(t['cols'])
+        h.append('<table class="etab"><tr>' + ''.join(f'<th>{mk(c)}</th>' for c in t['cols']) + '</tr>' + ''.join(
+            f'<tr><td colspan="{n}" class="eg">{mk(r[0])}</td></tr>' if len(r) == 1 else '<tr>' + ''.join(f'<td>{mk(c)}</td>' for c in r) + '</tr>'
+            for r in t['rows']) + '</table>')
     for w_ in e.get('warn', []):
         h.append(f'<div class="warn"><span class="wi">!</span><span>{mk(w_)}</span></div>')
     figs = ''.join(scaled_svg(n, fig_scale, maxw) for n in e.get('fig', []))
@@ -180,8 +185,9 @@ def card_html(c, col, width, figs=(), missing=None, layout='auto', extra_html=''
     cpg = f'<span class="cpg">s.&nbsp;{c["pg"]}</span>' if c.get('pg') else ''
     h = [f'<div class="node card osc {col}" style="width:{width:.2f}mm">',
          f'<div class="ch">{cpg}<span class="nm">{"<span class=star>★</span> " if c.get("star") else ""}{mk(c["title"])}</span> {lat(c.get("lat"))}{tag}</div><div class="bd">' + (expl_html(c['title'], width - 6.5 * K, FIGSCALE_FOR.get('_expl', 1.0)) if c['title'] in EXPL else '')]
+    _secs = [] if (c['title'] == 'Mięśnie oddechowe' and c['title'] in EXPL) else c.get('sections', [])   # zastępuje je tabela ★
     secs = ''.join(f'<div class="xrow"><div class="k">{mk(s["k"])}</div><ul>' + ''.join(f'<li>{mk(i)}</li>' for i in s.get('items', [])) + '</ul></div>'
-                   for s in c.get('sections', []))
+                   for s in _secs)
     if c.get('timeline'):
         secs += '<div class="xrow tl"><div class="k">OŚ CZASU</div><ol class="tline">' + ''.join(
             f'<li><b>{mk(t["age"])}</b> – {mk(t["t"])}' + (f' <span class="l3pg">s.&nbsp;{t["pg"]}</span>' if t.get('pg') else '') + '</li>'

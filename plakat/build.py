@@ -176,6 +176,7 @@ def card(m, col, wide=False, extra_rows=None, extra_warn=None, kids_html=''):
     if m['kind'] == 'ref':
         return (f'<div class="node card ref {col}"><div class="ch"><span class="nm">{m["pl"]}</span> {lat(m["lat"])}</div>'
                 f'<div class="bd"><div class="note">{mk(m["txt"])} · <b>→ s. {m["pg"]}</b></div></div></div>')
+    m = trim(m)
     cls = f'node card {col}' + (' wide' if wide else '')
     h = [f'<div class="{cls}">']
     h.append(f'<div class="ch"><span class="nm">{"<span class=star>★</span> " if m["pl"] in STAR_M else ""}{m["pl"]}</span> {lat(m["lat"])}{tags(m)}</div>')
@@ -211,6 +212,33 @@ def gfcard(g, col):
     return (f'<div class="node card gf {col}"><div class="ch"><span class="nm">{g["title"]} – czynność wspólna</span></div>'
             f'<div class="bd"><div class="pgl">Bochenek s. {g["groupf_pg"]}</div><div class="fn"><ul>' +
             ''.join(f'<li>{mk(x)}</li>' for x in g['groupf']) + '</ul></div></div></div>')
+
+# wiersze kart, które po wstawieniu rozbudowanej sekcji ★ (explain_*.json) są zbędne (indeksy w listach; ujemne = od końca)
+TRIM = {
+    'mm. międzyżebrowe zewnętrzne': {'note': True, 'f': [0, 1]},
+    'mm. międzyżebrowe wewnętrzne': {'note': True, 'parts': [0, 1], 'f': [0]},
+    'mm. podżebrowe': {'f': [0]},
+    'm. poprzeczny klatki piersiowej': {'f': [0, 1]},
+    'mm. dźwigacze żeber': {'note': True, 'parts': [0, 1], 'f': [0, 1]},
+    'm. zębaty tylny górny': {'f': [0], 'warn': [0]},
+    'm. zębaty tylny dolny': {'f': [0], 'warn': [0]},
+    'm. piersiowy większy': {'f': [2, 3]},
+    'm. najszerszy grzbietu': {'f': [2, 3]},
+    'm. piersiowy mniejszy': {'f': [-1], 'warn': [0]},
+    'm. zębaty przedni': {'f': [-1], 'note': True},
+}
+def trim(m):
+    spec = TRIM.get(m['pl'])
+    if not spec or m['pl'] not in EXPL:
+        return m
+    m = copy.deepcopy(m)
+    for k, v in spec.items():
+        if v is True:
+            m.pop(k, None)
+        elif m.get(k):
+            n = len(m[k]); drop = {i % n for i in v if -n <= i < n}
+            m[k] = [x for j, x in enumerate(m[k]) if j not in drop]
+    return m
 
 def bare(n):
     """Mięsień z pełnym PODZIAŁEM (części, warstwa), ale bez cech: przyczepów, czynności, przebiegu i uwag."""

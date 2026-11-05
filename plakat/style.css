@@ -246,3 +246,7 @@ svg.wires { position: absolute; left: 0; top: 0; z-index: 0; overflow: visible; 
 .expl .efig svg { display: block; max-width: 100%; height: auto; }
 .estar .k { color: #b35f00; }
 .estar .estep { margin: .4mm 0 .4mm 4mm; padding: 0; }
+.etab { width: 100%; border-collapse: collapse; margin: .8mm 0; font-size: 6.6pt; line-height: 1.25; }
+.etab th { background: #fbe7c4; text-align: left; padding: .5mm 1mm; font-size: 6pt; }
+.etab td { border-top: .15mm solid #e3c690; padding: .4mm 1mm; vertical-align: top; }
+.etab td.eg { background: #fff1d6; font-weight: 800; color: #7a4a00; }
