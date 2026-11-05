@@ -54,7 +54,10 @@ elif ONLY == 'klodd':
     WP6 = float(_os.environ.get('CWP', 300))
     WK6 = float(_os.environ.get('CWK6', 190))
     WO6 = float(_os.environ.get('CWO', 400))
-    CH_WIDTHS = [WP6 + WK6 + G7, WO6]
-    ROWSPEC.update({'Klatka piersiowa': [(WP6, ['Połączenia żeber i mostka']), (WK6, ['Mechanika klatki piersiowej'])]})
-    CHAPTERS_FN = lambda c: [c['CHAPTERS'][1], c['CHAPTERS'][2]]
+    CH_WIDTHS = [WK6, WO6]
+    MODE.update({'Mechanika klatki piersiowej': 'list', 'Ruchomość klatki piersiowej': 'list'})
+    def _chap_klodd(c):
+        mk_ = [n for n in c['MJ'][0]['children'] if False] or [n for n in (c['mech_nodes'] or []) if n['title'].startswith('Mechanika klatki')]
+        return [(mk_[0], 'c2'), c['CHAPTERS'][2]]
+    CHAPTERS_FN = _chap_klodd
     PAGE_TITLE, PAGE_SUB = 'Klatka i oddychanie', 'połączenia żeber i mostka · mechanika klatki · przepona · mechanika oddychania'

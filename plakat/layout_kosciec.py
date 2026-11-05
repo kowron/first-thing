@@ -47,6 +47,16 @@ if ONLY == 'kregoslup':
     CHAPTERS_FN = lambda c: [(c['KJ'][0], 'c1')]
     PAGE_TITLE, PAGE_SUB = 'Kręgosłup', 'kości: kręgi · kość krzyżowa i guziczna'
 elif ONLY == 'klatka':
-    CH_WIDTHS = [4 * CT + 3 * G7]
-    CHAPTERS_FN = lambda c: [(c['TJ'][0], 'c2')]
+    _WP = float(_os.environ.get('CWPOL', 0))          # >0: dołącz rozdział „Połączenia żeber i mostka” (szerokość CWPOL)
+    CH_WIDTHS = [4 * CT + 3 * G7] + ([_WP] if _WP else [])
+    MODE.update({'Połączenia żeber i mostka': 'grid2', 'Połączenia żeber z kręgosłupem – stawy żebrowo-kręgowe': 'list', 'Połączenia żeber z mostkiem': 'list'})
+    GRID2.update({'Połączenia żeber i mostka': ['Połączenia żeber z kręgosłupem – stawy żebrowo-kręgowe']})
+    FIG.update({'Stawy głów żebrowych': ['pol_zebro_kreg_bok'], 'Stawy żebrowo-poprzeczne': ['pol_zebro_kreg_gora'], 'Stawy mostkowo-żebrowe': ['pol_mostkowo_zebrowe']})
+    def _chap_klatka(c):
+        out = [(c['TJ'][0], 'c2')]
+        if _WP:
+            pj = J('k_polaczenia')['tree']
+            out += [(n, 'c4') for n in pj if n['title'].startswith('Połączenia żeber')]
+        return out
+    CHAPTERS_FN = _chap_klatka
     PAGE_TITLE, PAGE_SUB = 'Klatka piersiowa', 'kości: żebra · mostek · klatka jako całość'

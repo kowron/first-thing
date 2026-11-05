@@ -68,6 +68,19 @@ for _m in NAMES_ONLY:
     L3M.pop(_m, None)
 for _g in ('Mięśnie kolcowo-poprzeczne', 'Mięśnie poprzeczno-kolcowe', 'Krótkie mięśnie grzbietu', 'Mięśnie podpotyliczne'):
     L3G.pop(_g, None)
+# wiersze poziomu 3 zastąpione rozbudowanymi sekcjami ★ (explain_*.json) – indeksy do usunięcia
+_DROP_M = {'m. prosty brzucha': [0, 1, 2, 3, 6, 9], 'm. skośny zewnętrzny brzucha': [0, 1, 2, 3], 'm. skośny wewnętrzny brzucha': [0, 1, 2, 3],
+           'm. poprzeczny brzucha': [0, 1, 2, 3], 'm. piramidowy': [0, 1, 2, 3, 5, 6], 'm. czworoboczny lędźwi': [0, 2, 3, 4, 8, 9]}
+for _n, _ix in _DROP_M.items():
+    if _n in EXPL and _n in L3M:
+        L3M[_n] = [x for j, x in enumerate(L3M[_n]) if j not in _ix]
+if 'm. skośny zewnętrzny brzucha' in EXPL:
+    for _g, _ix in (('boczne', [1, 2, 3]), ('Tylne mięśnie brzucha', [0, 1])):
+        if _g in L3G:
+            L3G[_g] = [x for j, x in enumerate(L3G[_g]) if j not in _ix]
+for _pid, _ix in (('pochewka', [3, 5, 7, 8, 10]), ('powiez_poprzeczna', [0, 2, 4, 10]), ('powiezie', [0, 1]), ('kanal', [0, 1, 2, 5, 7, 8, 9, 10, 13])):
+    if _pid in EXPL and _pid in L3P:
+        L3P[_pid] = dict(L3P[_pid]); L3P[_pid]['items'] = [x for j, x in enumerate(L3P[_pid]['items']) if j not in _ix]
 USED_M, USED_G, USED_P = set(), set(), set()
 
 def _rows(items):
@@ -503,7 +516,17 @@ DOCKS = ''
 for ch in ('grzbiet', 'klatka', 'brzuch'):
     if ch not in REGIONS:
         continue
-    html = ''.join(l3panel(i, COLS[ch]) for i in chapter_panels(ch, ORDER[ch], skip=('oddychanie_l3',)))
+    _pl = [l3panel(i, COLS[ch]) for i in chapter_panels(ch, ORDER[ch], skip=('oddychanie_l3',))]
+    _pl = [x for x in _pl if x]
+    html = ''.join(_pl)
+    _sp = os.environ.get('DOCKSPLIT_' + ch)          # np. 'btyl:3,bprzed:3,bbocz:9' – panele rozdzielone na kilka doków pod różnymi kolumnami
+    if _sp:
+        _i = 0
+        for _part in _sp.split(','):
+            _u, _n = _part.split(':')
+            DOCKS += dock(_u, ''.join(_pl[_i:_i + int(_n)]), cols=int(os.environ.get('DOCKCOLS_' + ch, 1)))
+            _i += int(_n)
+        continue
     if LEGEND_AT == ch:
         html += f'<div class="legend inflow">{LEGEND_ROWS}</div>'
     DOCKS += dock(DOCK_UNDER[ch], html, cols=int(os.environ.get('DOCKCOLS_' + ch, 1)))
@@ -540,7 +563,7 @@ def fig_panel(figname, title, la='', pg='', col=''):
             f'<span class="pg">Bochenek s. {pg}</span></div><div class="l3fig">{svg}</div></div>')
 
 # pochewka m. prostego brzucha – przekroje poprzeczne (ryc. 465/466 u Bochenka; rysunek własny) – w wolnym miejscu pod kolumną mięśni bocznych
-FIGDOCK = '' if 'brzuch' not in REGIONS else dock(os.environ.get('D_pochewka_fig', 'bbocz'),
+FIGDOCK = '' if ('brzuch' not in REGIONS or 'pochewka' in EXPL) else dock(os.environ.get('D_pochewka_fig', 'bbocz'),
                fig_panel('pochewka_przekroje', '<span class=star>★</span> Pochewka m. prostego brzucha – przekroje', 'vagina m. recti abdominis', '718', AM))
 DOCKS += FIGDOCK
 

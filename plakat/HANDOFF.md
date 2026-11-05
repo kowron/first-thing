@@ -1,3 +1,13 @@
+# AKTUALIZACJA – sesja 3 (ciąg dalszy): 7 stron A0, tematy ★ rozbudowane
+
+**Budowanie:** `cd /home/user/first-thing/plakat && ./build_pages.py` (dla każdej strony szuka największego K mieszczącego się na stronie; `./build_pages.py m3` – wybrane strony; zmienne `KS`, `L3MIN`, `LIMIT`).
+Strony (A0 1189×841): kregoslup, klatka (kości + połączenia żeber i mostka), m1 grzbiet, m2 mięśnie klatki, m3 brzuch (doki rozdzielone `DOCKSPLIT_brzuch`), polkreg, klodd (mechanika klatki + przepona + oddychanie).
+Rozbudowy ★: `explain_*.json` (klucz = nazwa mięśnia / tytuł karty / id panelu) wstawiane jako sekcje kart (`oslib.expl_html`); zbędne stare wiersze usuwane przez `TRIM`, `_DROP_*` (build.py) i `CARD_TRIM` (oslib.py).
+Agenci rysunkowi: instrukcja `plakat/STAR_BRIEF.md`. Nowe rysunki: mm_miedzyzebrowe, m_poprzeczny_klatki, m_piersiowy_wiekszy, m_najszerszy_grzbietu, m_prosty_brzucha, mm_brzucha_przyczepy, kanal_pachwinowy, przepona_wiezadla, klatka_wymiary, zebro_krzywizny.
+Poprzedni opis „6 stron 1030×728” poniżej jest nieaktualny (build_pages.sh zastąpiono build_pages.py).
+
+---
+
 # AKTUALIZACJA – sesja 3 (5.11.2026): format 6 stron „A0,5” (1030×728 mm)
 
 Plakat podzielono na **6 stron 1030×728 mm** (pole 0,75 m² – pomiędzy A0 i A1; PDF dowolnego rozmiaru, czytany w przeglądarce): 1 kręgosłup (kości), 2 klatka piersiowa (kości),
