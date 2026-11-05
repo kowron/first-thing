@@ -231,3 +231,16 @@ svg.wires { position: absolute; left: 0; top: 0; z-index: 0; overflow: visible; 
 /* ★ – temat wskazany jako ważny na zaliczeniu */
 .star { color: #d9770b; font-weight: 900; }
 .lz.star, .lrow .star { font-size: 11pt; }
+
+
+/* ★ karty i panele: opisy poziomu 3 bez najmniejszej czcionki, ramka „W SKRÓCIE” */
+.l3.big { font-size: 6.6pt; line-height: 1.3; }
+.l3.big .l3k { font-size: 5.2pt; }
+.panel.starp .l3.inpanel { font-size: 6.6pt; line-height: 1.3; }
+.panel.starp .l3.inpanel .l3k { font-size: 5.2pt; }
+.expl { background: #fff6e0; border: .35mm solid #e2a33a; border-radius: 1.6mm; padding: 1.4mm 2.2mm 1.6mm; margin: 1.2mm 0; font-size: 7.4pt; line-height: 1.3; color: #2a2118; }
+.expl .eh { font-weight: 800; font-size: 8pt; margin-bottom: .8mm; color: #7a4a00; }
+.expl ul, .expl ol { margin: .4mm 0 .4mm 3.6mm; padding: 0; }
+.expl li { margin: .3mm 0; }
+.expl .efig { display: flex; flex-wrap: wrap; gap: 2mm; margin-top: 1mm; justify-content: center; }
+.expl .efig svg { display: block; max-width: 100%; height: auto; }

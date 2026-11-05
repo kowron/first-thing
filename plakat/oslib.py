@@ -54,6 +54,46 @@ def l3block(items, cls='', title='SZCZEGÓŁY Z BOCHENKA'):
     return f'<div class="l3 {cls}"><div class="l3h"><span class="l3n">3</span>{title}</div>{l3rows(items)}</div>'
 
 
+# ---------------------------------------------------------------- wyjaśnienia „★ W SKRÓCIE” (pliki explain_*.json; klucz = nazwa mięśnia / tytuł karty / id panelu)
+import glob as _glob
+EXPL = {}
+for _f in sorted(_glob.glob('/home/user/first-thing/plakat/explain_*.json')):
+    try:
+        EXPL.update(json.load(open(_f, encoding='utf-8')))
+    except Exception as _e:
+        print('BŁĄD explain', _f, _e)
+
+
+def scaled_svg(name, scale=1.0, maxw=None):
+    """Rysunek z figs/out wstawiony inline w skali (w mm); maxw – ograniczenie szerokości."""
+    s, w, h = fig_svg(name)
+    if s is None:
+        return ''
+    k = scale
+    if maxw and w * k > maxw:
+        k = maxw / w
+    s = re.sub(r'width="[\d.]+mm" height="[\d.]+mm"', f'width="{w * k:.1f}mm" height="{h * k:.1f}mm"', s, count=1)
+    return s
+
+
+def expl_html(key, maxw=None, fig_scale=1.0):
+    e = EXPL.get(key)
+    if not e:
+        return ''
+    h = ['<div class="expl"><div class="eh"><span class="star">★</span> W SKRÓCIE – ' + mk(e.get('title', key)) + '</div>']
+    if e.get('points'):
+        h.append('<ul>' + ''.join(f'<li>{mk(x)}</li>' for x in e['points']) + '</ul>')
+    if e.get('steps'):
+        h.append('<ol>' + ''.join(f'<li>{mk(x)}</li>' for x in e['steps']) + '</ol>')
+    for w_ in e.get('warn', []):
+        h.append(f'<div class="warn"><span class="wi">!</span><span>{mk(w_)}</span></div>')
+    figs = ''.join(scaled_svg(n, fig_scale, maxw) for n in e.get('fig', []))
+    if figs:
+        h.append(f'<div class="efig">{figs}</div>')
+    h.append('</div>')
+    return ''.join(h)
+
+
 # ---------------------------------------------------------------- drzewo
 def q(sym, txt, pg=''):
     p = f'<span class="qpg">s. {pg}</span>' if pg else ''
@@ -138,7 +178,7 @@ def card_html(c, col, width, figs=(), missing=None, layout='auto', extra_html=''
     tag = f'<span class="tag">{mk(c["tag"])}</span>' if c.get('tag') else ''
     cpg = f'<span class="cpg">s.&nbsp;{c["pg"]}</span>' if c.get('pg') else ''
     h = [f'<div class="node card osc {col}" style="width:{width:.2f}mm">',
-         f'<div class="ch">{cpg}<span class="nm">{"<span class=star>★</span> " if c.get("star") else ""}{mk(c["title"])}</span> {lat(c.get("lat"))}{tag}</div><div class="bd">']
+         f'<div class="ch">{cpg}<span class="nm">{"<span class=star>★</span> " if c.get("star") else ""}{mk(c["title"])}</span> {lat(c.get("lat"))}{tag}</div><div class="bd">' + (expl_html(c['title'], width - 6.5 * K, FIGSCALE_FOR.get('_expl', 1.0)) if c['title'] in EXPL else '')]
     secs = ''.join(f'<div class="xrow"><div class="k">{mk(s["k"])}</div><ul>' + ''.join(f'<li>{mk(i)}</li>' for i in s.get('items', [])) + '</ul></div>'
                    for s in c.get('sections', []))
     if c.get('timeline'):
@@ -163,7 +203,7 @@ def card_html(c, col, width, figs=(), missing=None, layout='auto', extra_html=''
     else:
         cols = ' secs2' if inner_w >= 150 * K and nchar > 400 else ''
         h.append(f'<div class="secs{cols}">{secs}</div>')
-    h.append(l3block(c.get('l3', [])))
+    h.append(l3block(c.get('l3', []), 'big' if c.get('star') else ''))
     h.append('</div></div>')
     return ''.join(h)
 

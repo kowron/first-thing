@@ -9,6 +9,7 @@ Użytkownik nie zna się na programowaniu ani GitHubie – wszystko tłumaczyć 
   - **Sonnet:** low/medium – czytanie i przeglądanie źródeł, mało ważne odczyty, kod i skrypty rutynowe; high/xhigh – merytoryka, która trafi do plików wyjściowych (treść plakatów, weryfikacja faktów, terminologia).
   - **Opus:** medium – zadania trudniejsze, ale rutynowe (np. proste rysunki, weryfikacje); high – wymagające rysunki i złożona praca; xhigh – tylko najtrudniejsze rysunki/zadania wymagające najlepszej jakości.
   - Rysunki dzielić na zwykłe (medium/high) i najtrudniejsze (xhigh).
+- **Aktualizacja 5.11.2026:** użytkownik chce, żeby więcej pracy szło na **Opusie xhigh** (rysunki, treść ★, weryfikacje z Bochenkiem), a mniej na Sonnecie. Sufit nadal xhigh – nigdy „max”.
 - Mało subagentów naraz (kilku, nie kilkunastu); nie uruchamiać zbędnych równoległych audytów. Jeśli praca jest duża, dzielić ją na etapy do zatwierdzenia przez użytkownika.
 
 ## Plakat A0 „Anatomia: szkielet osiowy”
