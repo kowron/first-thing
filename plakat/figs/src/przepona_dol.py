@@ -5,7 +5,7 @@ from figlib import Fig, smooth, mirror
 
 W, H = 160, 124
 C = 80.0                      # oś pośrodkowa
-f = Fig('przepona_dol', W, H, caption='przepona · widok od dołu i od przodu (od strony jamy brzusznej) · prawa strona ciała po lewej')
+f = Fig('przepona_dol', W, H, caption='przepona · widok od dołu i od przodu (od strony jamy brzusznej) · rozwór aortowy przed trzonem Th12, nad L1 · prawa strona ciała po lewej')
 
 
 # ---------- pomocnicze ----------
@@ -260,7 +260,7 @@ f.label((86.0, 49.8), 'rozwór przełykowy', 'hiatus esophageus', (127, 46.5), s
 f.label((93.4, 60.4), 'część lędźwiowa', 'pars lumbalis', (127, 55.0), side='R')
 f.label((111.6, 66.4), 'trójkąt lędźwiowo-żebrowy', 'trigonum lumbocostale', (122, 62.5), side='R')
 f.label((80.4, 61.5), 'więzadło łukowate pośrodkowe', 'lig. arcuatum medianum', (114, 79.5), side='R')
-f.label((81.8, 66.2), 'rozwór aortowy', 'hiatus aorticus', (114, 88.5), side='R')
+f.label((81.8, 66.2), 'rozwór aortowy (Th12)', 'hiatus aorticus', (114, 88.5), side='R')
 f.label((85.3, 78.0), 'odnoga lewa', 'crus sinistrum', (114, 97.5), side='R')
 
 f.save()

@@ -17,7 +17,7 @@ Wynik: `/home/user/first-thing/Plakat_A0_5_szkielet_osiowy.pdf`. Limit wysokośc
 Nowe przełączniki: `build.py` – `REGIONS`, `PAGE=SZERxWYS`, `OUT`, `ROOT_TITLE/ROOT_SUB`, `DOCKCOLS_<rozdział>=2`; `build_os.py` – `PW/PH`, `LAYOUT`, `DATA`, `ONLY` (layout_kosciec.py: kregoslup|klatka; layout_mech.py: polkreg|klodd).
 **Zmiany treści (od użytkownika):** mięśnie głębokie grzbietu – tylko nazwy (karty `namecard`, `NAMES_ONLY` w `build.py`); pełne opisy zostały przy m. krzyżowo-grzbietowym (prostownik grzbietu), mm. dźwigaczach żeber
 i mięśniach powierzchownych. ★ = temat wskazany przez użytkownika jako ważny na zaliczeniu (`STAR_M`, `STAR_P` w `build.py`, `STAR_TITLES` w `gen_oddychanie.py`, pole `star` w kartach).
-**Czego NIE ma w Bochenku t. I** (nie dopisywać z pamięci – potrzebne notatki z wykładu): fazy kaszlu; oddychanie w pozycji siedzącej (jest tylko zdanie o położeniu przepony); m. piersiowy większy jako wydechowy
+**Ustalenia z użytkownikiem (5.11):** faz kaszlu NIE robić. „Kiedy piersiowy większy pomaga w oddychaniu / pozycja, w której łatwiej oddychać” = ramiona ustalone, chwyt brzegu stołu lub krzesła → pomocniczy WDECHOWY (s. 680, 697). Przy m. poprzecznym klatki używać słowa „promienisty” (słowo prowadzącego). „Błona” z notatki = błony międzyżebrowe zewnętrzne (między chrząstkami żebrowymi). Rozwór aortowy zawsze na Th12. Tylko Opus (bez Sonneta).
 (Bochenek s. 680: tylko pomocniczy wdechowy przy ustalonych ramionach).
 
 ---
