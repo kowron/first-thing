@@ -43,3 +43,18 @@ FIG.update({
     'Mechanika chrząstki żebrowej': ['chrzastka_mechanika'],
     'Ruchy mostka': ['mostek_ruchy'],
 })
+
+# --- osobne strony (ONLY=polkreg | klodd): szerokości z env CWM (kolumna kręgosłupa), CWP/CWK/CWO (klatka, oddychanie)
+ONLY = _os.environ.get('ONLY', '')
+if ONLY == 'polkreg':
+    CH_WIDTHS = [W2 + 2 * W1 + 2 * G7]
+    CHAPTERS_FN = lambda c: [c['CHAPTERS'][0]]
+    PAGE_TITLE, PAGE_SUB = 'Połączenia kręgosłupa', 'stawy · więzozrosty · chrząstkozrosty · kość krzyżowa · krzywizny'
+elif ONLY == 'klodd':
+    WP6 = float(_os.environ.get('CWP', 300))
+    WK6 = float(_os.environ.get('CWK6', 190))
+    WO6 = float(_os.environ.get('CWO', 400))
+    CH_WIDTHS = [WP6 + WK6 + G7, WO6]
+    ROWSPEC.update({'Klatka piersiowa': [(WP6, ['Połączenia żeber i mostka']), (WK6, ['Mechanika klatki piersiowej'])]})
+    CHAPTERS_FN = lambda c: [c['CHAPTERS'][1], c['CHAPTERS'][2]]
+    PAGE_TITLE, PAGE_SUB = 'Klatka i oddychanie', 'połączenia żeber i mostka · mechanika klatki · przepona · mechanika oddychania'

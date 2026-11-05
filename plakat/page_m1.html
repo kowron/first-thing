@@ -1,0 +1,411 @@
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><title>Mięśnie szkieletu osiowego – plakat</title>
+<style>:root { --l3s: 0.9; }
+@page { size: 1030mm 728mm; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: 'Inter', sans-serif; color: #1d2126; }
+b { font-weight: 700; }
+
+/* palety */
+.purple { --bg:#EEEDFE; --b:#AFA9EC; --s:#534AB7; --t:#3C3489; }
+.teal   { --bg:#E1F5EE; --b:#5DCAA5; --s:#0F6E56; --t:#085041; }
+.coral  { --bg:#FAECE7; --b:#F0997B; --s:#993C1D; --t:#712B13; }
+.blue   { --bg:#E6F1FB; --b:#85B7EB; --s:#185FA5; --t:#0C447C; }
+.pink   { --bg:#FBEAF0; --b:#ED93B1; --s:#993556; --t:#72243E; }
+.red    { --bg:#FCEBEB; --b:#F09595; --s:#A32D2D; --t:#791F1F; }
+.green  { --bg:#EAF3DE; --b:#97C459; --s:#3B6D11; --t:#27500A; }
+.amber  { --bg:#FAEEDA; --b:#EF9F27; --s:#854F0B; --t:#633806; }
+.c1 { --s:#1f6f78; --t:#0f3f45; --bg:#e3f0f1; --b:#7fb3b8; }
+.c2 { --s:#a23b3b; --t:#5e1f1f; --bg:#f6e4e4; --b:#d99a9a; }
+.c4 { --s:#2f7d4a; --t:#1b4a2b; --bg:#e3f1e6; --b:#8cc49c; }
+.c3 { --s:#a8741a; --t:#5e400c; --bg:#f6ecd9; --b:#d9b56f; }
+
+/* ===== rama plakatu (bez skalowania) ===== */
+.poster { width: 1030mm; height: 728mm; padding: 11mm 14mm; position: relative; overflow: hidden; }
+.info { position: absolute; left: 14mm; top: 11mm; width: 360mm; z-index: 2; }
+.i1 { font-size: 13pt; letter-spacing: .25em; color: #7b828a; font-weight: 700; }
+.i2 { font-size: 14.5pt; color: #3a4048; margin-top: 2.4mm; line-height: 1.35; }
+.i3 { font-size: 12pt; color: #6c737c; margin-top: 1.6mm; line-height: 1.35; }
+.legend { position: absolute; right: 14mm; top: 8mm; width: 380mm; background: #f6f4ef; border-radius: 3mm; padding: 2mm 4mm 2.4mm; font-size: 8.6pt; line-height: 1.25; z-index: 2; }
+.lt1 { font-size: 7.5pt; letter-spacing: .22em; color: #6c737c; font-weight: 800; margin-bottom: .8mm; }
+.lgrid { display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 4mm; row-gap: .6mm; }
+.legend .lrow { display: grid; grid-template-columns: 23mm 1fr; gap: 2mm; align-items: center; padding: .3mm 0; }
+.legend .lrow:last-child { border-bottom: 0; }
+.lz { display: inline-flex; width: 6mm; height: 6mm; border-radius: 50%; background: #1d2126; color: #fff; align-items: center; justify-content: center; font-weight: 800; font-size: 9.5pt; }
+.lsw { display: inline-block; font-size: 10pt; font-weight: 700; padding: .4mm 3mm; border-radius: 1.5mm; color: #085041; background: #E1F5EE; border: .45mm dashed #0F6E56; }
+.lcard { display: inline-block; font-size: 10pt; font-weight: 700; padding: .4mm 3mm; border-radius: 1.5mm; color: #3C3489; background: #fff; border: .4mm solid #AFA9EC; border-left: 1.8mm solid #534AB7; }
+.lsm { font-family: 'TeX Gyre Pagella', serif; font-style: italic; color: #6b5a3c; font-size: 9pt; white-space: nowrap; }
+.lw { display: inline-flex; width: 6.5mm; height: 6.5mm; border-radius: 50%; background: #c7682b; color: #fff; align-items: center; justify-content: center; font-weight: 800; }
+.lsm2 { font-weight: 700; }
+.legend.inflow { position: static; width: auto; right: auto; bottom: auto; }
+.lz3 { display: inline-flex; width: 5mm; height: 5mm; border-radius: 50%; background: #1d2126; color: #fff; align-items: center; justify-content: center; font-weight: 800; font-size: 8pt; vertical-align: 1px; }
+.lpill { display: inline-block; white-space: nowrap; font-size: 7.4pt; font-weight: 800; letter-spacing: .08em; padding: .6mm 2.4mm; border-radius: 3mm; background: #1d2126; color: #fff; }
+
+
+/* wszystko poniżej jest skalowane przez build.py (współczynnik K) */
+.treebox { position: relative; }
+svg.wires { position: absolute; left: 0; top: 0; z-index: 0; overflow: visible; }
+.sub { display: flex; flex-direction: column; align-items: stretch; position: relative; }
+.sub.rowsub { align-items: center; }
+.kids.row { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; align-self: stretch; margin-top: 7mm; }
+.kids.row > * { flex: none; }
+.kids.list { display: flex; flex-direction: column; gap: 2.6mm; margin-top: 2.6mm; padding-left: 5mm; align-self: stretch; }
+.kids.list > .node, .kids.list > .sub { width: 100%; }
+.kwrap { display: flex; flex-direction: column; }
+.krow { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+.krow > * { flex: none; }
+.sub.hasq > .q { align-self: flex-start; }
+.sub.hasq > .kids.list { padding-left: 8.5mm; }
+
+.node { position: relative; z-index: 1; }
+.node.g { border-radius: 2.2mm; color: var(--t); }
+.node.g .hd { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 2mm; }
+.node.g .pl { font-weight: 800; }
+.node.g .pg { color: #7b828a; font-weight: 500; white-space: nowrap; margin-left: auto; padding-left: 2mm; }
+.node.g .gla { font-family: 'TeX Gyre Pagella', serif; font-style: italic; font-weight: 700; }
+.node.g .why { color: #4f565e; line-height: 1.25; margin-top: 0.4mm; }
+.sub.rowsub > .node.g { text-align: center; }
+.sub.rowsub > .node.g .hd { justify-content: center; }
+.sub.rowsub > .node.g .pg { margin-left: 2mm; }
+
+.node.root { background: #1d2126; color: #fff; padding: 3mm 20mm 3.6mm; border-radius: 6mm; margin-top: 2mm; }
+.node.root .pl { font-size: 54pt; letter-spacing: -.01em; }
+.node.root .why { color: #fff; opacity: .78; font-size: 15pt; margin-top: 0.2mm; }
+.node.chap { background: var(--s); color: #fff; padding: 2.6mm 9mm 3mm; border-radius: 4mm; }
+.node.chap .pl { font-size: 34pt; }
+.node.chap .gla { font-size: 25pt; color: #fff; font-weight: 400; }
+.node.chap .why { color: #fff; opacity: .9; font-size: 11pt; }
+.node.chap .pg { color: #fff; opacity: .85; font-size: 12pt; }
+.node.chap .deg { color: #ffd9c2; }
+.node.world { background: var(--s); color: #fff; padding: 2.2mm 6mm 2.6mm; }
+.node.world .pl { font-size: 20pt; }
+.node.world .gla { font-size: 19pt; color: #fff; }
+.node.world .why { color: #fff; opacity: .9; font-size: 10pt; }
+.node.world .pg { color: #fff; opacity: .85; font-size: 9.5pt; }
+.node.grp { background: var(--bg); border: 0.55mm dashed var(--s); padding: 1.8mm 3mm 2mm; }
+.node.grp .pl { font-size: 14.5pt; line-height: 1.12; }
+.node.grp .gla { font-size: 14pt; }
+.node.grp .why { font-size: 9.2pt; }
+.node.grp .pg { font-size: 8.5pt; }
+.node.band { background: var(--bg); border: 0.8mm dashed var(--s); padding: 1.8mm 3.2mm 2mm; }
+.node.band .pl { font-size: 15pt; }
+.node.band .why { font-size: 9.4pt; }
+.node.band .pg { font-size: 8.5pt; }
+.node.sg { background: var(--bg); border: 0.45mm dashed var(--s); padding: 1.5mm 2.6mm 1.7mm; }
+.node.sg .pl { font-size: 12.2pt; line-height: 1.12; }
+.node.sg .gla { font-size: 12pt; }
+.node.sg .why { font-size: 8.6pt; }
+.node.sg .pg { font-size: 8pt; }
+.deg { color: #b0552c; font-style: normal; font-weight: 700; padding-left: 0.3mm; }
+
+.q { position: relative; z-index: 1; display: flex; align-items: center; gap: 2mm; margin-top: 4mm; background: #fff; border: 0.5mm solid #1d2126; border-radius: 6mm; padding: 0.7mm 4mm 0.7mm 0.8mm; font-size: 11.5pt; font-weight: 700; white-space: nowrap; color: #1d2126; }
+.qn { width: 7mm; height: 7mm; border-radius: 50%; background: #1d2126; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 11pt; font-weight: 800; flex: none; }
+.qpg { font-size: 8.5pt; color: #7b828a; font-weight: 500; }
+
+/* karty mięśni */
+.card { background: #fff; border: 0.4mm solid var(--b); border-left: 1.8mm solid var(--s); border-radius: 2mm; padding: 1.8mm 2.4mm 2mm; color: #1d2126; }
+.card .ch { font-size: 12.3pt; line-height: 1.14; color: var(--t); overflow-wrap: break-word; }
+.card .nm { font-weight: 800; }
+.card .lt { font-family: 'TeX Gyre Pagella', serif; font-style: italic; font-weight: 700; font-size: 12.8pt; }
+.card .tag { display: inline-block; font-family: 'Inter', sans-serif; font-style: normal; font-size: 6.6pt; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--s); border: 0.3mm solid var(--s); border-radius: 1mm; padding: 0 1.2mm; margin-left: 1.6mm; vertical-align: 2px; line-height: 1.5; }
+.card .tag.warm { color: #b0552c; border-color: #b0552c; }
+.card .bd { font-size: 7.4pt; line-height: 1.3; margin-top: 0.9mm; }
+.pgl { font-size: 6.2pt; color: #7b828a; margin-bottom: 0.4mm; }
+.k { font-size: 5.4pt; font-weight: 800; letter-spacing: .12em; color: #7b828a; margin: 0.2mm 0 0.2mm; }
+.ls { font-family: 'TeX Gyre Pagella', serif; font-style: italic; font-size: .88em; color: #6b5a3c; }
+.note { color: #4f565e; font-size: 7pt; margin-bottom: 0.6mm; }
+.parts { margin: 0.4mm 0 0.6mm; }
+.parts ul { list-style: none; margin: 0; padding: 0; }
+.parts li { position: relative; padding-left: 2.2mm; }
+.parts li::before { content: ''; position: absolute; left: 0.2mm; top: 1.15mm; width: 1.1mm; height: 1.1mm; border-radius: 50%; background: var(--s); }
+.att { background: #f6f7f8; border-radius: 1.2mm; padding: 0.8mm 1.5mm 1mm; margin: 0.6mm 0 0.8mm; }
+.att.two { display: grid; grid-template-columns: 1fr 5mm 1fr; }
+.att.two .arr { color: var(--s); display: flex; align-items: center; justify-content: center; font-size: 11pt; font-weight: 700; }
+.att.stack .col + .col { margin-top: 0.7mm; padding-top: 0.6mm; border-top: 0.25mm dashed #d3d7db; }
+.att ol { margin: 0; padding-left: 3.2mm; }
+.att li { margin: 0.1mm 0; }
+.att li::marker { color: var(--s); font-weight: 800; }
+.omax { font-size: 6pt; color: #b0552c; margin-top: 0.4mm; font-weight: 600; }
+.sm { border-top: 0.25mm dashed #d3d7db; margin-top: 0.9mm; padding-top: 0.7mm; }
+.sm .sh { color: var(--t); }
+.snm { font-weight: 800; font-size: 8.4pt; }
+.slt { font-family: 'TeX Gyre Pagella', serif; font-style: italic; font-weight: 700; font-size: 8.6pt; }
+.fn ul, .xrow ul { margin: 0; padding-left: 3mm; }
+.fn li, .xrow li { margin: 0.15mm 0; }
+.fn li::marker, .xrow li::marker { color: var(--s); }
+.xrow ul ul { padding-left: 3mm; margin-top: 0.2mm; }
+.xrow ul ul li::marker { content: '– '; }
+.fn { margin-top: 0.5mm; }
+.xrow { margin: 0.5mm 0 0.8mm; background: var(--bg); border-radius: 1.2mm; padding: 0.7mm 1.5mm 0.9mm; }
+.extra { font-size: 6.9pt; color: #3a4048; margin-top: 0.8mm; padding-top: 0.6mm; border-top: 0.25mm dashed #d3d7db; }
+.warn { display: flex; gap: 1.2mm; align-items: flex-start; margin-top: 0.9mm; background: #fbf1e8; border-radius: 1.1mm; padding: 0.6mm 1.3mm; font-size: 6.7pt; color: #5b3a1c; }
+.warn .wi { flex: none; width: 3.3mm; height: 3.3mm; border-radius: 50%; background: #c7682b; color: #fff; text-align: center; font-weight: 800; font-size: 6pt; line-height: 3.3mm; margin-top: 0.2mm; }
+.card.ref { border-left-style: dashed; background: #f8f8f6; }
+
+/* panel: mechanika oddychania */
+.panel { align-self: stretch; margin-top: 7mm; background: #fff; border: 0.6mm solid var(--b); border-top: 2.2mm solid var(--s); border-radius: 3mm; padding: 2.4mm 3.4mm 3mm; position: relative; z-index: 1; }
+.panel .ph { display: flex; align-items: baseline; gap: 3mm; margin-bottom: 1.2mm; flex-wrap: wrap; }
+.panel .pt { font-size: 17pt; font-weight: 800; color: var(--t); }
+.panel .pg { font-size: 8.5pt; color: #7b828a; }
+.panel .psub { font-size: 8.6pt; color: #4f565e; flex-basis: 100%; }
+.panel .bd.two { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; font-size: 7.4pt; line-height: 1.3; }
+
+/* ===== poziom 3: szczegóły z Bochenka małym drukiem ===== */
+.l3 { margin-top: 1.1mm; padding: 0.7mm 1.1mm 0.9mm; background: #f6f5f1; border-top: 0.3mm dotted #a9a296; border-radius: 1mm; font-size: calc(3.9pt * var(--l3s)); line-height: 1.27; color: #2d3238; }
+.l3h { display: flex; align-items: center; gap: 0.7mm; font-size: calc(3.2pt * var(--l3s)); font-weight: 800; letter-spacing: .12em; color: #6c737c; margin-bottom: 0.35mm; }
+.l3n { display: inline-flex; flex: none; width: 2.4mm; height: 2.4mm; border-radius: 50%; background: #1d2126; color: #fff; align-items: center; justify-content: center; font-size: calc(3pt * var(--l3s)); font-weight: 800; letter-spacing: 0; }
+.l3n.big { width: 5.4mm; height: 5.4mm; font-size: calc(7.5pt * var(--l3s)); margin-right: 0.6mm; }
+.l3r { margin: 0.25mm 0 0.3mm; }
+.l3r.one .l3k { display: inline; margin-right: 0.6mm; }
+.l3k { font-size: calc(3pt * var(--l3s)); font-weight: 800; letter-spacing: .1em; color: var(--s); margin-bottom: 0.1mm; }
+.l3 ul { margin: 0; padding-left: 2mm; }
+.l3 li { margin: 0.05mm 0; }
+.l3 li::marker { color: var(--s); }
+.lti { font-family: 'TeX Gyre Pagella', serif; font-style: italic; }
+.l3pg { color: #5f666e; font-size: .9em; font-weight: 500; white-space: nowrap; }
+.l3w { background: #fbf1e8; border-radius: 0.8mm; padding: 0.3mm 0.8mm 0.4mm; }
+.l3w .l3k { color: #b0552c; display: flex; align-items: center; gap: 0.6mm; }
+.l3w .wi { display: inline-flex; width: 2.2mm; height: 2.2mm; border-radius: 50%; background: #c7682b; color: #fff; align-items: center; justify-content: center; font-size: calc(2.6pt * var(--l3s)); font-weight: 800; letter-spacing: 0; }
+.l3.ing { margin-top: 1mm; background: rgba(255,255,255,.6); text-align: left; }
+.node.world .l3.ing, .node.chap .l3.ing { background: rgba(255,255,255,.14); color: #fff; border-top-color: rgba(255,255,255,.5); }
+.node.world .l3.ing .l3h, .node.world .l3.ing .l3k, .node.world .l3.ing .l3pg,
+.node.chap .l3.ing .l3h, .node.chap .l3.ing .l3k, .node.chap .l3.ing .l3pg { color: #fff; }
+.node.world .l3.ing li::marker, .node.chap .l3.ing li::marker { color: #fff; }
+.node.world .l3.ing .l3n, .node.chap .l3.ing .l3n { background: #fff; color: var(--s); }
+.l3.inmech { margin-top: 1.6mm; }
+.l3cols { column-count: 2; column-gap: 3mm; }
+.l3cols .l3r { break-inside: avoid; }
+
+.dock { position: absolute; display: flex; flex-direction: column; gap: 3.5mm; z-index: 1; }
+.dock > .panel { margin-top: 0; }
+.l3panel { padding: 2mm 2.8mm 2.4mm; }
+.l3panel .ph { align-items: center; gap: 1.6mm; margin-bottom: 0.8mm; }
+.l3panel .pt { font-size: calc(11.5pt * var(--l3s)); line-height: 1.1; }
+.l3panel .lt { font-family: 'TeX Gyre Pagella', serif; font-style: italic; font-weight: 700; font-size: calc(11pt * var(--l3s)); color: var(--t); }
+.l3panel .pg { margin-left: auto; }
+.l3.inpanel { font-size: calc(4.3pt * var(--l3s)); background: none; border: 0; padding: 0; margin-top: 0; }
+.l3.inpanel .l3k { font-size: calc(3.3pt * var(--l3s)); }
+
+/* ===== karty z rysunkami (strony: kościec, połączenia i mechanika) ===== */
+.card.osc .figleft { display: grid; grid-template-columns: auto 1fr; gap: 2.6mm; align-items: start; margin-top: 0.6mm; }
+.card.osc .figs { display: flex; flex-direction: column; gap: 1.4mm; align-items: center; }
+.card.osc .figs.top { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 2mm; margin: 0.6mm 0 1mm; }
+.card.osc .fig { line-height: 0; }
+.card.osc .fig svg { display: block; }
+.card.osc .secs2 { column-count: 2; column-gap: 3mm; }
+.card.osc .secs2 .xrow { break-inside: avoid; }
+.card.osc .xrow { background: var(--bg); }
+.figmiss { width: 70mm; height: 30mm; border: 0.3mm dashed #b0b6bd; color: #8a9097; font-size: 6pt; display: flex; align-items: center; justify-content: center; margin: 1mm auto; }
+.tline { margin: 0; padding-left: 4mm; }
+.tline li { margin: 0.35mm 0; }
+.tline li::marker { color: var(--s); font-weight: 800; }
+
+.sub.g2sub > .q { align-self: center; }
+.sub.g2sub > .node.g { text-align: center; }
+.sub.g2sub > .node.g .hd { justify-content: center; }
+.kids.grid2 { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; margin-top: 4mm; align-self: stretch; }
+.kids.grid2 > .gcol { display: flex; flex-direction: column; gap: 2.6mm; flex: none; }
+.figs.row { flex-direction: row !important; flex-wrap: nowrap; justify-content: center; }
+
+.intro { margin-top: 3mm; align-self: stretch; position: relative; z-index: 1; display: flex; justify-content: center; }
+.kstack { display: flex; flex-direction: column; gap: 6mm; flex: none; }
+.card.osc .secs3 { column-count: 3; column-gap: 3.5mm; }
+.card.osc .secs3 .xrow { break-inside: avoid; }
+
+.card.osc .sm.mrg { break-inside: avoid; margin-top: 1mm; padding-top: 0.8mm; }
+.card.osc .sm.mrg:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+
+.card.osc .ch .cpg { float: right; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 600; font-size: 6.2pt; color: #7b828a; margin: 1.3mm 0 0 2mm; white-space: nowrap; }
+
+/* panel z własnym rysunkiem (strona 2: pochewka m. prostego brzucha) */
+.figpanel .l3fig { margin-top: 1mm; display: flex; justify-content: center; }
+.figpanel .l3fig svg { display: block; max-width: 100%; height: auto; }
+
+/* karta z samymi nazwami mięśni (mięśnie głębokie grzbietu – tylko wymienić) */
+.namecard .nlk { font-size: 6.2pt; font-weight: 800; letter-spacing: .06em; color: var(--s, #6b5a3c); margin: 0.8mm 0 0.6mm; }
+.namecard .nlist { list-style: none; margin: 0; padding: 0; font-size: 8.6pt; line-height: 1.3; }
+.namecard .nlist li { margin: 0.7mm 0; }
+
+/* dok z panelami poziomu 3 w dwóch kolumnach (opcja DOCKCOLS_<rozdział>=2) */
+.dock.cols2 { display: block; column-count: 2; column-gap: 3.5mm; }
+.dock.cols2 > .panel { break-inside: avoid; margin-bottom: 3.5mm; }
+
+/* ★ – temat wskazany jako ważny na zaliczeniu */
+.star { color: #d9770b; font-weight: 900; }
+.lz.star, .lrow .star { font-size: 11pt; }
+
+.figsvg .bone{fill:#f3e7d0;stroke:#6b5640;stroke-width:.35;stroke-linejoin:round}
+.figsvg .bone2{fill:#e2cfab;stroke:#6b5640;stroke-width:.3;stroke-linejoin:round}
+.figsvg .bonel{fill:none;stroke:#8a7356;stroke-width:.22;stroke-linecap:round;stroke-linejoin:round}
+.figsvg .facet{fill:#cfe3f1;stroke:#4f7fa3;stroke-width:.28}
+.figsvg .cart{fill:#d7eaf5;stroke:#5c8db0;stroke-width:.3}
+.figsvg .annulus{fill:#e3edf7;stroke:#6f92b5;stroke-width:.28}
+.figsvg .nucleus{fill:#a9cbe8;stroke:#4f7fa3;stroke-width:.28}
+.figsvg .lig{fill:#efd28a;stroke:#a7822a;stroke-width:.28}
+.figsvg .ligl{fill:none;stroke:#b8902e;stroke-width:.55;stroke-linecap:round}
+.figsvg .capsule{fill:none;stroke:#7a6a55;stroke-width:.3;stroke-dasharray:1 .6}
+.figsvg .cavity{fill:#ffffff;stroke:#7a6a55;stroke-width:.22}
+.figsvg .muscle{fill:#eaa595;stroke:#b4553f;stroke-width:.3}
+.figsvg .musclel{fill:none;stroke:#c9705b;stroke-width:.2}
+.figsvg .tendon{fill:#f4ead6;stroke:#a89268;stroke-width:.3}
+.figsvg .nerve{fill:#f6d55c;stroke:#b8961c;stroke-width:.25}
+.figsvg .artery{fill:#e05a5a;stroke:#a82f2f;stroke-width:.25}
+.figsvg .vein{fill:#5b82c9;stroke:#33589b;stroke-width:.25}
+.figsvg .organ{fill:#f0d9e6;stroke:#a5708c;stroke-width:.28}
+.figsvg .hole{fill:#ffffff;stroke:#6b5640;stroke-width:.3}
+.figsvg .shade{fill:#6b5640;opacity:.10;stroke:none}
+.figsvg .arrow{fill:none;stroke:#1f6fd1;stroke-width:.7;stroke-linecap:round;marker-end:url(#ah)}
+.figsvg .arrow2{fill:none;stroke:#d23c3c;stroke-width:.7;stroke-linecap:round;marker-end:url(#ah2)}
+.figsvg .axis{fill:none;stroke:#d23c3c;stroke-width:.4;stroke-dasharray:2.2 .8 .4 .8}
+.figsvg .dim{fill:none;stroke:#8d939a;stroke-width:.22;stroke-dasharray:.8 .5}
+.figsvg .lead{fill:none;stroke:#3a3d42;stroke-width:.18;stroke-linejoin:round}
+.figsvg .dot{fill:#3a3d42}
+.figsvg .pl{font-family:Inter,sans-serif;font-weight:600;font-size:2.55px;fill:#1f2328}
+.figsvg .la{font-family:'TeX Gyre Pagella',serif;font-style:italic;font-size:2.45px;fill:#6b5a3c}
+.figsvg .note{font-family:Inter,sans-serif;font-size:2.1px;fill:#6c737c}
+.figsvg .notec{font-family:Inter,sans-serif;font-size:2.1px;fill:#6c737c;text-anchor:middle}
+.figsvg .big{font-family:Inter,sans-serif;font-weight:800;font-size:3.2px;fill:#1f2328}
+.figsvg .cap{font-family:Inter,sans-serif;font-size:2.2px;fill:#7b828a;letter-spacing:.08px;text-anchor:middle;font-weight:600}</style></head><body><div class="poster"><div class="info">
+<div class="i1">PLAKAT DO NAUKI · ANATOMIA · MIĘŚNIE</div>
+<div class="i2">Wszystko wg: A. Bochenek, M. Reicher, <i>Anatomia człowieka</i>, t. I, s. 649–733</div>
+<div class="i3">Poziom 1 – podział, poziom 2 – karty mięśni, poziom 3 – szczegóły z Bochenka małym drukiem.<br>Mięśnie szyi pominięte – nie ma ich na zaliczeniu. Mięśnie głębokie grzbietu – na zaliczeniu wystarczy je wymienić. Przepona szczegółowo i mechanika oddychania – na stronie „Klatka i oddychanie”.</div>
+</div><div class="legend"><div class="lt1">JAK CZYTAĆ</div><div class="lgrid">
+<div class="lrow"><span><span class="lpill">POZIOM 1</span></span><span><b>Z daleka:</b> sam podział – rozdziały, grupy, nazwy mięśni.</span></div>
+<div class="lrow"><span><span class="lpill">POZIOM 2</span></span><span><b>Po przybliżeniu:</b> karty mięśni – przyczepy, czynność, części.</span></div>
+<div class="lrow"><span><span class="lpill">POZIOM 3</span></span><span><b>Duże przybliżenie:</b> małym drukiem w ramkach <span class="lz3">3</span> – unerwienie, odmiany, położenie, szczegóły; panele tematyczne.</span></div>
+<div class="lrow"><span><span class="lz">1</span></span><span>Pytanie przy rozgałęzieniu: według czego Bochenek dzieli grupę. Cyfra = kolejny podział w rozdziale.</span></div>
+<div class="lrow"><span><span class="lsw">grupa</span></span><span>Przerywana ramka = grupa mięśni.</span></div>
+<div class="lrow"><span><span class="lcard">mięsień</span></span><span>Pełna ramka = karta jednego mięśnia.</span></div>
+<div class="lrow"><span class="lsm">(linea nuchae)</span><span>Łacińska nazwa miejsca przyczepu. ° = łaciny brak w t. I Bochenka.</span></div>
+<div class="lrow"><span><span class="lw">!</span></span><span>Bochenek w różnych miejscach podaje coś innego.</span></div>
+<div class="lrow"><span><span class="star">★</span></span><span>Temat wskazany jako ważny na zaliczeniu.</span></div>
+<div class="lrow"><span class="lsm2">C · Th · L</span><span>Kręgi szyjne · piersiowe · lędźwiowe. Najwyżej 4 przyczepy na stronę.</span></div></div></div><div class="treebox"><svg class="wires"></svg><div class="sub rowsub" data-c="root" style="width:1002.0mm;"><div class="node g root "><div class="hd"><span class="pl">Grzbiet</span></div><div class="why">mięśnie grzbietu – powierzchowne i głębokie</div></div><div class="kids row"><div class="sub rowsub" id="grz" data-c="c1" style="width:911.0mm;"><div class="node g chap c1"><div class="hd"><span class="pl">Mięśnie grzbietu</span><span class="pg">s. 649–677</span></div><div class="gla">musculi dorsi<span class="deg">°</span></div><div class="l3 ing"><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r"><div class="l3k">BUDOWA</div><ul><li>Dwie wielkie grupy, jedna na drugiej, różne budową i pochodzeniem. W głębi – właściwe mm. grzbietu, od kości krzyżowej do potylicy. Na nich – mięśnie należące głównie do kończyny górnej. <span class="l3pg">s.&nbsp;649</span></li><li>Grupa powierzchowna przykrywa całą grzbietową powierzchnię tułowia aż do grzebienia biodrowego. Grupa głęboka: mięśnie wysmukłe, biegnące podłużnie. <span class="l3pg">s.&nbsp;649–650</span></li></ul></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> Powierzchowne – gałęzie brzuszne nn. rdzeniowych. Głębokie (właściwe mm. grzbietu) – gałęzie grzbietowe, a część z nich – gałęzie brzuszne (s. 675). <span class="l3pg">s.&nbsp;650, 675</span></div><div class="l3r one"><span class="l3k">UWAGI</span> Na podstawie unerwienia odróżnia się mięśnie właściwe (autochtoniczne) od mięśni, które przewędrowały. Związek mięśnia z nerwem uchodzi za najbardziej „konserwatywny” w całym ustroju. <span class="l3pg">s.&nbsp;649</span></div></div></div><div class="q"><span class="qn">1</span><span class="qt">skąd pochodzą – jaki mają nerw?</span><span class="qpg">s. 649–650</span></div><div class="kids row"><div class="sub hasq" id="pow" data-c="purple" style="width:240.0mm;"><div class="node g world purple"><div class="hd"><span class="pl">Powierzchowne mięśnie grzbietu</span><span class="pg">s. 649–650</span></div><div class="why">głównie mm. kończyny górnej, które przewędrowały na grzbiet · gałęzie przednie nn. rdzeniowych</div><div class="l3 ing"><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r one"><span class="l3k">BUDOWA</span> Mięśnie szerokie, biegnące przeważnie (nie wyłącznie) do obręczy kończyny górnej i kości ramiennej. <span class="l3pg">s.&nbsp;649–650</span></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> Gałęzie brzuszne (przednie) nn. rdzeniowych. Powód: te mięśnie powstały z mięśniówki brzusznej tułowia i przewędrowały na grzbiet, prawie zawsze zachowując swoje unerwienie. <span class="l3pg">s.&nbsp;649–650</span></div></div></div><div class="q"><span class="qn">2</span><span class="qt">do czego dochodzą?</span><span class="qpg">s. 650</span></div><div class="kids list"><div class="sub" data-c="purple" style=""><div class="node g grp purple"><div class="hd"><span class="pl">Mięśnie kolcowo-ramienne</span><span class="pg">s. 650</span></div><div class="gla">mm. spinohumerales</div><div class="why">do łopatki i k. ramiennej</div></div><div class="kids list"><div class="node card purple wide"><div class="ch"><span class="nm">m. czworoboczny</span> <span class="lt">m. trapezius</span><span class="tag">warstwa I</span></div><div class="bd"><div class="pgl">Bochenek s. 650–651</div><div class="parts"><span class="k">CZĘŚCI</span><ul><li>część zstępująca (górna) <span class="ls">(pars descendens)</span></li><li>część poprzeczna (środkowa) <span class="ls">(pars transversa)</span></li><li>część wstępująca (dolna) <span class="ls">(pars ascendens)</span></li></ul></div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><ol><li>przyśrodkowa część kresy karkowej górnej <span class="ls">(linea nuchae superior)</span> i guzowatość potyliczna zewnętrzna <span class="ls">(protuberantia occipitalis externa)</span> kości potylicznej</li><li>więzadło karkowe <span class="ls">(ligamentum nuchae)</span></li><li>wyrostki kolczyste C7 i wszystkich kręgów piersiowych (Th1–Th12) <span class="ls">(processus spinosus)</span></li><li>odpowiednie odcinki więzadła nadkolcowego <span class="ls">(ligamentum supraspinale)</span></li></ol></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><ol><li>koniec barkowy obojczyka <span class="ls">(clavicula – extremitas acromialis)</span> – część zstępująca</li><li>wyrostek barkowy <span class="ls">(acromion)</span> – część poprzeczna</li><li>grzebień łopatki <span class="ls">(spina scapulae)</span> – część poprzeczna; część wstępująca kończy się na przyśrodkowej części górnego brzegu grzebienia</li></ol></div></div><div class="fn"><div class="k">CZYNNOŚĆ</div><ul><li><b>część zstępująca:</b> dźwiga staw ramienny ku górze („wzruszanie ramionami”) i dźwiga ciężary na stawie ramiennym; przy ustalonym stawie ramiennym zgina głowę ku tyłowi</li><li><b>część poprzeczna:</b> zbliża łopatkę do kręgosłupa</li><li><b>część wstępująca:</b> opuszcza staw ramienny; przy ustalonej obręczy kończyny górnej unosi tułów ku górze</li><li><b>część zstępująca + wstępująca:</b> obracają łopatkę – kąt górny zbliża się do kręgosłupa, kąt dolny idzie do przodu i bocznie, panewka kieruje się ku górze; dzięki temu ramię może być uniesione ponad poziom</li><li><b>cały mięsień:</b> cofa staw ramienny, zbliża łopatkę do kręgosłupa i przyciska ją do klatki piersiowej</li></ul></div><div class="l3 "><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r"><div class="l3k">BUDOWA</div><ul><li>Wybitnie płaski, szeroki, trójkątny. Prawy i lewy razem mają kształt rombu – przypominają kaptur mnisi; stąd dawna nazwa m. kapturowy <span class="ls">(m. cucullaris)</span>. <span class="l3pg">s.&nbsp;650</span></li><li>Wąskie ścięgno początkowe poszerza się w 3 miejscach: przy guzowatości potylicznej zewnętrznej, na poziomie C7 i Th1–Th2 (oba mięśnie razem – duży ścięgnisty romb) i na wysokości Th11–Th12 (małe pole trójkątne). <span class="l3pg">s.&nbsp;650</span></li></ul></div><div class="l3r"><div class="l3k">POŁOŻENIE</div><ul><li>Leży najbardziej powierzchownie ze wszystkich mięśni karku i górnej części grzbietu. Jego przyczep do kości potylicznej przebijają n. potyliczny większy i t. potyliczna. <span class="l3pg">s.&nbsp;650–651</span></li><li>Część zstępująca obejmuje śrubowato m. półkolcowy głowy, m. płatowaty i dźwigacz łopatki. Jej gruby przedni brzeg tworzy tylną granicę trójkąta bocznego szyi. <span class="l3pg">s.&nbsp;651</span></li><li>Część poprzeczna przykrywa mm. równoległoboczne, m. zębaty tylny górny i m. nadgrzebieniowy. Część wstępująca przykrywa górną część m. najszerszego grzbietu. <span class="l3pg">s.&nbsp;651</span></li></ul></div><div class="l3r one"><span class="l3k">PRZYCZEPY – UZUPEŁNIENIE</span> Górne poszerzenie ścięgna nieraz sięga bocznie do ścięgna m. mostkowo-obojczykowo-sutkowego i zrasta się z nim. Część wstępująca przechodzi nad trójkątem grzebienia łopatki <span class="ls">(trigonum spinae)</span>. <span class="l3pg">s.&nbsp;650–651</span></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> Podwójne, tak jak m. mostkowo-obojczykowo-sutkowy: gałąź zewnętrzna n. dodatkowego (XI) oraz gałązki splotu szyjnego (C2–C4). <span class="l3pg">s.&nbsp;651</span></div><div class="l3r"><div class="l3k">ODMIANY</div><ul><li>Asymetria – bardzo częsta; prawy mięsień zwykle większy. U praworęcznych część wstępująca po lewej stronie sięga nieraz tylko do Th11 lub Th10; u leworęcznych odwrotnie. <span class="l3pg">s.&nbsp;651</span></li><li>Początek części wstępującej może kończyć się już na Th8 (2%), a nawet na Th7 (1%), albo schodzić aż do L1 (2%). <span class="l3pg">s.&nbsp;651–652</span></li><li>Część obojczykowa bywa silnie zredukowana lub jej brak. Częściej jest poszerzona – nawet do przyczepu m. mostkowo-obojczykowo-sutkowego; zostaje wtedy między nimi tylko wąska szczelina. <span class="l3pg">s.&nbsp;652</span></li></ul></div></div></div></div><div class="node card purple wide"><div class="ch"><span class="nm"><span class=star>★</span> m. najszerszy grzbietu</span> <span class="lt">m. latissimus dorsi</span><span class="tag">warstwa I</span></div><div class="bd"><div class="pgl">Bochenek s. 652–655</div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><ol><li>wyrostki kolczyste Th7–Th12 i L1–L5 oraz grzebień krzyżowy pośrodkowy <span class="ls">(crista sacralis mediana)</span> – szerokim ścięgnem, które tworzy blaszkę powierzchowną powięzi piersiowo-lędźwiowej <span class="ls">(fascia thoracolumbalis)</span></li><li>tylna ⅓ wargi zewnętrznej grzebienia biodrowego <span class="ls">(crista iliaca – labium externum)</span></li><li>powierzchnia zewnętrzna żeber IX lub X, XI i XII – 3–4 pasma <span class="ls">(costa)</span></li><li>kąt dolny łopatki – często, niewielka część mięśnia <span class="ls">(angulus inferior scapulae)</span></li></ol></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">grzebień guzka mniejszego kości ramiennej <span class="ls">(crista tuberculi minoris)</span> – do przodu od m. obłego większego</div></div></div><div class="fn"><div class="k">CZYNNOŚĆ</div><ul><li>przy ustalonym kręgosłupie opuszcza podniesione ramię, przywodzi je do tyłu i obraca do wewnątrz (ręka zbliża się do pośladków)</li><li>razem z m. piersiowym większym opuszcza wysoko podniesione ramię, np. przy podciąganiu się na drążku</li><li>przy ustalonych ramionach mięśnie obu stron dźwigają dolne żebra – pomocnicze mięśnie wdechowe</li><li>przy ustalonym stawie ramiennym naciska bocznie na żebra – jego brzeg boczny twardnieje podczas kaszlu, czyli wydechu – „mięsień kaszlu”</li></ul></div><div class="l3 "><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r"><div class="l3k">BUDOWA</div><ul><li>Cienki i płaski, kształtem mniej więcej trójkąt: podstawa przy kręgosłupie, wierzchołek w dole pachowym. <span class="l3pg">s.&nbsp;652</span></li><li>Pęczki biegną silnie zbieżnie do dołu pachowego (górne bardziej poprzecznie, dolne stromo ku górze). Owijają się wokół m. obłego większego – z jego tyłu na przód – i przechodzą w spłaszczone, czworokątne ścięgno. <span class="l3pg">s.&nbsp;652</span></li></ul></div><div class="l3r"><div class="l3k">POŁOŻENIE</div><ul><li>Leży pod skórą; tylko górną część przykrywa m. czworoboczny. Przykrywa m. zębaty tylny dolny, żebra i mm. międzyżebrowe. Zwykle zachodzi na kąt dolny łopatki i przytwierdza go do klatki piersiowej. <span class="l3pg">s.&nbsp;655</span></li><li>Razem z m. obłym większym ogranicza jamę pachową od tyłu i tworzy fałd pachowy tylny <span class="ls">(plica axillaris posterior)</span>. <span class="l3pg">s.&nbsp;655</span></li><li>Trójkąt lędźwiowy <span class="ls">(trigonum lumbare)</span>: między tylnym brzegiem m. skośnego zewnętrznego brzucha, przednim brzegiem m. najszerszego grzbietu i grzebieniem biodrowym (w druku: „grzbietem biodrowym”); w ok. ¾ przypadków. Dno – m. skośny wewnętrzny brzucha. <span class="l3pg">s.&nbsp;655</span></li></ul></div><div class="l3r one"><span class="l3k">PRZYCZEPY – UZUPEŁNIENIE</span> Części – Bochenek podaje je tylko po łacinie: <span class="lti">pars vertebralis</span>, <span class="lti">pars iliaca</span>, <span class="lti">pars costalis</span> (jej pasma wchodzą między pasma m. skośnego zewnętrznego brzucha) i <span class="lti">pars scapularis</span>. <span class="l3pg">s.&nbsp;652</span></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> N. piersiowo-grzbietowy (C6–C8). <span class="l3pg">s.&nbsp;655</span></div><div class="l3r"><div class="l3k">ODMIANY</div><ul><li>Przyczep kręgosłupowy może sięgać w górę do Th5 lub Th4 albo zaczynać się dopiero na L1. Przyczep biodrowy nieraz sięga aż do m. skośnego zewnętrznego – wtedy brak trójkąta lędźwiowego. <span class="l3pg">s.&nbsp;655</span></li><li>Przyczepów żebrowych może być 5 (żebra VIII–XII – tak zwykle u małp) albo tylko 2 (żebra X i XI). <span class="l3pg">s.&nbsp;655</span></li><li>Mięśniowy łuk pachowy (Langera), 5–7% przypadków: pęczek 7–10 cm długi, 0,5–2 cm szeroki, zwykle od ścięgna m. najszerszego do ścięgna m. piersiowego większego. Krzyżuje od przodu powrózek naczyniowo-nerwowy pachy. <span class="l3pg">s.&nbsp;655</span></li></ul></div></div></div></div><div class="node card purple wide"><div class="ch"><span class="nm">m. równoległoboczny</span> <span class="lt">m. rhomboideus</span><span class="tag">warstwa II</span></div><div class="bd"><div class="pgl">Bochenek s. 655–657</div><div class="parts"><span class="k">CZĘŚCI</span><ul><li>część górna, szyjna – m. równoległoboczny mniejszy <span class="ls">(m. rhomboideus minor)</span></li><li>część dolna, grzbietowa – m. równoległoboczny większy <span class="ls">(m. rhomboideus major)</span></li></ul></div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><ol><li>dolny odcinek więzadła karkowego <span class="ls">(ligamentum nuchae)</span></li><li>wyrostki kolczyste C6–C7 <span class="ls">(processus spinosus)</span></li><li>więzadło nadkolcowe <span class="ls">(ligamentum supraspinale)</span></li><li>wyrostki kolczyste Th1–Th4</li></ol></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">brzeg przyśrodkowy łopatki – od grzebienia (trójkąta grzebienia) do kąta dolnego <span class="ls">(margo medialis scapulae)</span></div></div></div><div class="fn"><div class="k">CZYNNOŚĆ</div><ul><li>pociąga łopatkę przyśrodkowo i ku górze; zwłaszcza kąt dolny przesuwa przyśrodkowo i ku górze</li><li>przyciska łopatkę, zwłaszcza jej brzeg przyśrodkowy, do klatki piersiowej</li><li>kieruje panewkę stawową ku dołowi (s. 675)</li></ul></div><div class="warn"><span class="wi">!</span><span>W streszczeniu (s. 675) Bochenek podaje początek na wyrostkach kolczystych C7–Th4. Notatka podaje opis ze s. 655 (dwa ostatnie kręgi szyjne + Th1–Th4).</span></div><div class="l3 "><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r"><div class="l3k">BUDOWA</div><ul><li>Szeroki, czworokątny, cienki; włókna przeważnie równoległe. Zaczyna się cienką blaszką ścięgnistą; w stronę łopatki staje się znacznie grubszy. <span class="l3pg">s.&nbsp;655–656</span></li><li>W większości przypadków między pęczkami szyjnymi i grzbietowymi jest wąska szczelina, przez którą biegną naczynia; dzielą one mięsień na dwie nierówne części – m. równoległoboczny mniejszy i większy. <span class="l3pg">s.&nbsp;656</span></li></ul></div><div class="l3r"><div class="l3k">POŁOŻENIE</div><ul><li>Leży w dolnej części karku i górnej części grzbietu. Przykrywa go u góry m. czworoboczny, u dołu nieznacznie m. najszerszy grzbietu. <span class="l3pg">s.&nbsp;655, 657</span></li><li>Sam przykrywa m. zębaty tylny górny, m. płatowaty, długie mm. grzbietu, żebra i mm. międzyżebrowe. <span class="l3pg">s.&nbsp;657</span></li></ul></div><div class="l3r one"><span class="l3k">PRZYCZEPY – UZUPEŁNIENIE</span> Górne włókna kończą się wprost na kości. Dolne – na łuku ścięgnistym wzdłuż brzegu przyśrodkowego łopatki; łuk jest silnie połączony z brzegiem na obu końcach, luźno w środku. <span class="l3pg">s.&nbsp;656</span></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> N. grzbietowy łopatki (C4–C5). <span class="l3pg">s.&nbsp;657</span></div><div class="l3r"><div class="l3k">ODMIANY</div><ul><li>Początek może sięgać w górę do C4 albo cofać się do C7. W dół – kończyć się już na Th3 albo schodzić do Th5, a nawet Th6 (graniczy wtedy z m. najszerszym grzbietu). <span class="l3pg">s.&nbsp;657</span></li><li>Dodatkowe pasma mogą łączyć go z m. najszerszym grzbietu, m. obłym większym, m. zębatym tylnym górnym i dźwigaczem łopatki. <span class="l3pg">s.&nbsp;657</span></li><li>Rzadko: m. potyliczno-łopatkowy <span class="ls">(m. occipitoscapularis s. rhomboideus capitis)</span> – pasmo do 2 cm szerokości, od kości potylicznej do brzegu przyśrodkowego łopatki na poziomie grzebienia. <span class="l3pg">s.&nbsp;657</span></li></ul></div><div class="l3r one"><span class="l3k">UWAGI</span> Gdy m. równoległoboczny, m. zębaty przedni i m. czworoboczny są słabe lub porażone, brzeg przyśrodkowy łopatki odstaje skrzydłowato <span class="ls">(scapula alata)</span>; widuje się to nieraz w typie gruźliczym klatki piersiowej. <span class="l3pg">s.&nbsp;656</span></div></div></div></div><div class="node card purple wide"><div class="ch"><span class="nm">dźwigacz łopatki</span> <span class="lt">m. levator scapulae</span><span class="tag">warstwa II</span></div><div class="bd"><div class="pgl">Bochenek s. 657</div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><div class="one">guzki tylne wyrostków poprzecznych C1–C4 – 4 wiązki <span class="ls">(processus transversus – tuberculum posterius)</span></div></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">górny odcinek brzegu przyśrodkowego łopatki – od kąta górnego do trójkąta grzebienia <span class="ls">(angulus superior; margo medialis; trigonum spinae)</span></div></div></div><div class="fn"><div class="k">CZYNNOŚĆ</div><ul><li>razem z częścią zstępującą m. czworobocznego pociąga łopatkę ku górze i przyśrodkowo</li><li>obraca łopatkę: kąt dolny przyśrodkowo, wyrostek barkowy bocznie</li><li>przy ustalonej obręczy kończyny górnej: jednostronnie zgina kręgosłup w odcinku szyjnym ku bokowi, obustronnie – ku tyłowi</li></ul></div><div class="l3 "><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r one"><span class="l3k">BUDOWA</span> Kształt wydłużonego trójkąta. 4 wiązki początkowe biegną równolegle ku dołowi, do tyłu i bocznie. <span class="l3pg">s.&nbsp;657</span></div><div class="l3r"><div class="l3k">POŁOŻENIE</div><ul><li>Leży na bocznej powierzchni szyi. Przykrywają go m. mostkowo-obojczykowo-sutkowy, m. czworoboczny i skóra; od przodu przylegają mm. pochyłe. <span class="l3pg">s.&nbsp;657</span></li><li>Tworzy dno górnej części trójkąta bocznego szyi – tu bywa widoczny na żywym. Na nim leży n. dodatkowy. <span class="l3pg">s.&nbsp;657</span></li></ul></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> N. grzbietowy łopatki (C4–C5) i gałązki splotu szyjnego (C2–C3). <span class="l3pg">s.&nbsp;657</span></div><div class="l3r"><div class="l3k">ODMIANY</div><ul><li>Mniej przyczepów początkowych zdarza się częściej niż więcej; zmiany dotyczą pasm dolnych. Najbardziej stałe są 2 górne przyczepy. <span class="l3pg">s.&nbsp;657</span></li><li>Bardzo rzadko początek sięga do C7, a nawet Th1. Dodatkowy przyczep początkowy może odchodzić od wyrostka sutkowatego. <span class="l3pg">s.&nbsp;657–658</span></li><li>Dodatkowe pasma do mm. pochyłych, m. równoległobocznego i m. zębatego przedniego. Te odmiany i unerwienie wskazują na wspólne pochodzenie tych mięśni. <span class="l3pg">s.&nbsp;658</span></li></ul></div></div></div></div></div></div><div class="sub" data-c="purple" style=""><div class="node g grp purple"><div class="hd"><span class="pl">Mięśnie kolcowo-żebrowe</span><span class="pg">s. 658</span></div><div class="gla">mm. spinocostales</div><div class="why">do żeber</div><div class="l3 ing"><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r one"><span class="l3k">BUDOWA</span> Mm. zębate tylne <span class="ls">(mm. serrati posteriores)</span>: niewielkie, czworokątne, bardzo cienkie. U człowieka słabo rozwinięte, o wyraźnie szczątkowym charakterze. <span class="l3pg">s.&nbsp;658</span></div><div class="l3r one"><span class="l3k">ODMIANY</span> Jako mięśnie uwstecznione mają bardzo zmienną liczbę przyczepów – może ich być znacznie więcej albo mniej. <span class="l3pg">s.&nbsp;658</span></div><div class="l3r"><div class="l3k">UWAGI</div><ul><li>Pochodzenie niewyjaśnione. Pogląd 1: oba mięśnie to jedna wspólna warstwa, odpowiadająca mm. międzyżebrowym zewnętrznym. <span class="l3pg">s.&nbsp;658</span></li><li>Pogląd 2: tylko m. zębaty tylny górny odpowiada mm. międzyżebrowym zewnętrznym. Dolny to warstwa głębsza – odpowiada mm. międzyżebrowym wewnętrznym. <span class="l3pg">s.&nbsp;658</span></li></ul></div></div></div><div class="kids list"><div class="node card purple wide"><div class="ch"><span class="nm"><span class=star>★</span> m. zębaty tylny górny</span> <span class="lt">m. serratus posterior superior</span><span class="tag">warstwa III</span></div><div class="bd"><div class="pgl">Bochenek s. 658</div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><ol><li>dolna część więzadła karkowego <span class="ls">(ligamentum nuchae)</span></li><li>wyrostki kolczyste C6–C7 i Th1–Th2 <span class="ls">(processus spinosus)</span></li></ol></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">brzeg górny i powierzchnia zewnętrzna żeber II–V – 4 pasma <span class="ls">(costa)</span></div></div></div><div class="fn"><div class="k">CZYNNOŚĆ</div><ul><li>dźwiga żebra – mięsień wdechowy</li></ul></div><div class="warn"><span class="wi">!</span><span>W streszczeniu (s. 675) jest „do zewnętrznej powierzchni II i V żebra”. Notatka podaje opis ze s. 658 (żebra II–V, 4 pasma).</span></div><div class="l3 "><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r one"><span class="l3k">BUDOWA</span> Zaczyna się płaskim, cienkim, szerokim ścięgnem. Włókna biegną równolegle, skośnie w bok i ku dołowi. <span class="l3pg">s.&nbsp;658</span></div><div class="l3r"><div class="l3k">POŁOŻENIE</div><ul><li>Leży w górnej części grzbietu, przykryty m. równoległobocznym oraz częścią poprzeczną m. czworobocznego. <span class="l3pg">s.&nbsp;658, 651</span></li><li>Razem z m. równoległobocznym oddziela u dołu mm. płatowate od m. czworobocznego. <span class="l3pg">s.&nbsp;660</span></li></ul></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> Gałązki odpowiednich nn. międzyżebrowych. Bochenek podaje razem dla obu mm. zębatych tylnych: I–IV i IX–XI. <span class="l3pg">s.&nbsp;658</span></div></div></div></div><div class="node card purple wide"><div class="ch"><span class="nm"><span class=star>★</span> m. zębaty tylny dolny</span> <span class="lt">m. serratus posterior inferior</span><span class="tag">warstwa III</span></div><div class="bd"><div class="pgl">Bochenek s. 658</div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><div class="one">blaszka tylna powięzi piersiowo-lędźwiowej na wysokości Th10–L2 <span class="ls">(fascia thoracolumbalis)</span></div></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">brzeg dolny żeber IX–XII – 4 pasma <span class="ls">(costa)</span></div></div></div><div class="fn"><div class="k">CZYNNOŚĆ</div><ul><li>opuszcza żebra i kieruje je ku bokom; kurczy się podczas wydechu</li></ul></div><div class="warn"><span class="wi">!</span><span>W streszczeniu (s. 675) Bochenek pisze: „dolny opuszcza je (również m. wdechowy)”. Notatka podaje opis ze s. 658.</span></div><div class="l3 "><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r one"><span class="l3k">BUDOWA</span> Włókna biegną równolegle, skośnie w bok i ku górze. <span class="l3pg">s.&nbsp;658</span></div><div class="l3r one"><span class="l3k">POŁOŻENIE</span> Leży w dolnej części grzbietu, przykryty m. najszerszym grzbietu i częściowo m. czworobocznym. <span class="l3pg">s.&nbsp;658</span></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> Gałązki odpowiednich nn. międzyżebrowych. Bochenek podaje razem dla obu mm. zębatych tylnych: I–IV i IX–XI. <span class="l3pg">s.&nbsp;658</span></div></div></div></div></div></div></div></div><div class="sub rowsub" id="gleb" data-c="teal" style="width:661.0mm;"><div class="node g world teal"><div class="hd"><span class="pl">Głębokie mięśnie grzbietu</span><span class="pg">s. 650, 659</span></div><div class="gla">erector spinae</div><div class="why">właściwe mięśnie grzbietu · gałęzie tylne nn. rdzeniowych</div><div class="l3 ing"><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r"><div class="l3k">BUDOWA</div><ul><li>Przeważnie (nie wyłącznie) właściwe mm. grzbietu. Sięgają od miednicy do czaszki; leżą w bruździe po obu stronach wyrostków kolczystych. <span class="l3pg">s.&nbsp;658–659</span></li><li>Układ poprzeczno-kolcowy <span class="ls">(mm. transversospinales)</span>: pasma prawie poprzeczne lub skośne, od wyrostków poprzecznych do kolczystych (mm. skręcające, wielodzielne, półkolcowe). <span class="l3pg">s.&nbsp;659</span></li><li>Układ międzykolcowy <span class="ls">(mm. spinales et interspinales)</span> – od wyrostków kolczystych do kolczystych. Układ międzypoprzeczny <span class="ls">(m. sacrospinalis et mm. intertransversarii)</span> – od poprzecznych do poprzecznych. <span class="l3pg">s.&nbsp;659</span></li><li>Pasmo przyśrodkowe = układ poprzeczno-kolcowy + międzykolcowy. Pasmo boczne = mm. międzypoprzeczne, m. krzyżowo-grzbietowy (biodrowo-żebrowy i najdłuższy) oraz mm. płatowate. <span class="l3pg">s.&nbsp;659</span></li><li>Oba pasma razem: 1) mięśnie długie; wyłącza się z nich 2) mięśnie krótkie <span class="ls">(mm. intertransversarii, rotatores et mm. interspinales)</span> i 3) podpotyliczne <span class="ls">(mm. suboccipitales)</span>. <span class="l3pg">s.&nbsp;659</span></li></ul></div><div class="l3r one"><span class="l3k">POŁOŻENIE</span> Bruzdę z mięśniami zamyka silna blaszka powięzi piersiowo-lędźwiowej – powstaje kanał kostno-włóknisty. <span class="l3pg">s.&nbsp;659</span></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> Gałęzie tylne nn. rdzeniowych. Gałęzie przednie – mięśnie pochodzenia brzusznego: mm. międzypoprzeczne przednie szyi i boczne lędźwi, mm. dźwigacze żeber, m. prosty boczny głowy. <span class="l3pg">s.&nbsp;658, 669–673</span></div><div class="l3r one"><span class="l3k">UWAGI</span> Pierwotnie (ryby, płazy ogoniaste) ułożone metamerycznie – między sąsiednimi kręgami. U człowieka tak zostało w najgłębszych warstwach; wyżej pasma są coraz dłuższe i przeskakują coraz więcej kręgów. <span class="l3pg">s.&nbsp;659</span></div><div class="l3r l3w"><div class="l3k"><span class="wi">!</span> NIEZGODNOŚĆ W BOCHENKU</div><ul><li>Zakres nazwy prostownik grzbietu <span class="ls">(erector spinae)</span>: s. 659 – cała mięśniówka głęboka grzbietu. S. 663 i streszczenie (s. 676) – m. krzyżowo-grzbietowy (m. biodrowo-żebrowy + m. najdłuższy). <span class="l3pg">s.&nbsp;659, 663, 676</span></li></ul></div></div></div><div class="q"><span class="qn">3</span><span class="qt">jak długie są włókna?</span><span class="qpg">s. 659</span></div><div class="kids row"><div class="sub rowsub" id="dlugie" data-c="teal" style="width:407.0mm;"><div class="node g grp teal"><div class="hd"><span class="pl">Długie mięśnie grzbietu</span><span class="pg">s. 659</span></div><div class="why">włókna biegną przez wiele kręgów</div></div><div class="q"><span class="qn">4</span><span class="qt">do których wyrostków biegną włókna?</span><span class="qpg">s. 659</span></div><div class="kids row"><div class="sub" id="pbocz" data-c="teal" style="width:200.0mm;"><div class="node g band teal"><div class="hd"><span class="pl">pasmo boczne</span><span class="pg">s. 659</span></div><div class="why">włókna do wyr. poprzecznych i żeber</div></div><div class="kids list"><div class="sub" data-c="teal" style=""><div class="node g sg teal"><div class="hd"><span class="pl">Mięśnie kolcowo-poprzeczne</span><span class="pg">s. 659</span></div><div class="gla">m. spinotransversalis</div><div class="why">od wyr. kolczystych do poprzecznych</div></div><div class="kids list"><div class="node card teal namecard"><div class="bd"><div class="pgl">Bochenek s. 659–660, 660</div><div class="nlk">TYLKO WYMIENIĆ</div><ul class="nlist"><li><b>m. płatowaty głowy</b> <span class="lt">m. splenius capitis</span></li><li><b>m. płatowaty szyi</b> <span class="lt">m. splenius cervicis</span></li></ul></div></div></div></div><div class="sub" data-c="teal" style=""><div class="node g sg teal"><div class="hd"><span class="pl">Mięsień krzyżowo-grzbietowy</span><span class="pg">s. 660–665</span></div><div class="gla">m. sacrospinalis</div><div class="why">wspólny pień – wyżej dwa mięśnie; razem prostownik grzbietu</div><div class="l3 ing"><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r one"><span class="l3k">UWAGI</span> Pierwotnie wieloczłonowy łańcuch mięśniowy (jeszcze u najniższych ssaków) u człowieka – z jego pionową postawą – przekształca się w jednolity prostownik grzbietu <span class="ls">(erector spinae)</span>. <span class="l3pg">s.&nbsp;663</span></div></div></div><div class="kids list"><div class="sub" data-c="teal" style=""><div class="node card teal wide"><div class="ch"><span class="nm">m. krzyżowo-grzbietowy – wspólny początek</span> <span class="lt">m. sacrospinalis</span></div><div class="bd"><div class="pgl">Bochenek s. 663, 665</div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><ol><li>grzebień biodrowy <span class="ls">(crista iliaca)</span></li><li>więzadła krzyżowo-biodrowe tylne <span class="ls">(ligamenta sacroiliaca dorsalia)</span></li><li>powierzchnia grzbietowa kości krzyżowej <span class="ls">(os sacrum – facies dorsalis)</span></li><li>wyrostki kolczyste kręgów lędźwiowych i 2–3 dolnych kręgów piersiowych <span class="ls">(processus spinosus)</span></li></ol></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">wyżej dzieli się na m. biodrowo-żebrowy (pasmo boczne) i m. najdłuższy (pasmo przyśrodkowe) – ich przyczepy końcowe niżej</div></div></div><div class="fn"><div class="k">CZYNNOŚĆ</div><ul><li>utrzymuje równowagę tułowia; napina się przy każdym kroku</li><li>bierze udział w oddychaniu – przy głębokim wdechu prostuje kręgosłup</li></ul></div><div class="l3 "><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r"><div class="l3k">BUDOWA</div><ul><li>Dopasowuje się do krzywizn kręgosłupa. W lordozie lędźwiowej – trójkątna, gruba masa; jej brzeg boczny sięga mniej więcej do linii łopatkowej. W kifozie grzbietowej wypełnia bruzdę żebrowo-kręgową. <span class="l3pg">s.&nbsp;660–663</span></li><li>Przy przejściu w lordozę szyjną szybko się zwęża – wąska, strzałkowo ustawiona taśma, aż do wyrostka sutkowatego. W okolicy krzyżowej jest wąski, ku dołowi spiczasty, przeważnie ścięgnisty. <span class="l3pg">s.&nbsp;663</span></li><li>W okolicy lędźwiowej masa dzieli się ku górze na 2 pasma: m. biodrowo-żebrowy dochodzi do szyi, m. najdłuższy – aż do głowy. <span class="l3pg">s.&nbsp;663</span></li></ul></div><div class="l3r"><div class="l3k">POŁOŻENIE</div><ul><li>Leży w bruździe między wyrostkami kolczystymi a wyrostkami poprzecznymi i żebrami. Biegnie od okolicy krzyżowej do karku; tam leży bocznie od układu poprzeczno-kolcowego. <span class="l3pg">s.&nbsp;660</span></li><li>W okolicy lędźwiowej i grzbietowej przykrywa go powięź piersiowo-lędźwiowa, w okolicy szyjnej – powięź karku. <span class="l3pg">s.&nbsp;660</span></li></ul></div><div class="l3r one"><span class="l3k">PRZYCZEPY – UZUPEŁNIENIE</span> W głębi zaczyna się mięśniowo, na powierzchni – długimi ścięgnami. Na żywym ścięgnista płyta początkowa wyraźnie odgranicza się od brzuśca w okolicy lędźwiowej. <span class="l3pg">s.&nbsp;663</span></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> Obie części – gałązki boczne gałęzi tylnych nn. rdzeniowych: m. biodrowo-żebrowy C4–L3, m. najdłuższy C2–L5. <span class="l3pg">s.&nbsp;665</span></div></div></div></div><div class="kids list"><div class="node card teal wide"><div class="ch"><span class="nm">m. biodrowo-żebrowy</span> <span class="lt">m. iliocostalis</span></div><div class="bd"><div class="pgl">Bochenek s. 663, 665</div><div class="note">pasmo boczne m. krzyżowo-grzbietowego</div><div class="sm"><div class="sh"><span class="snm">m. biodrowo-żebrowy lędźwi</span> <span class="slt">m. iliocostalis lumborum</span></div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><div class="one">wspólna masa m. krzyżowo-grzbietowego</div></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">kąty 6–9 dolnych żeber <span class="ls">(angulus costae)</span></div></div></div></div><div class="sm"><div class="sh"><span class="snm">m. biodrowo-żebrowy klatki piersiowej</span> <span class="slt">m. iliocostalis thoracis</span></div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><div class="one">kąty żeber VII–XII – przyśrodkowo od przyczepów części lędźwiowej <span class="ls">(angulus costae)</span></div></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">kąty 6 lub 5 górnych żeber</div></div></div></div><div class="sm"><div class="sh"><span class="snm">m. biodrowo-żebrowy szyi</span> <span class="slt">m. iliocostalis cervicis</span></div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><div class="one">kąty żeber III–VI, często II–VII – 4–6 wiązek</div></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">guzki tylne wyrostków poprzecznych C4–C6 (także C3) <span class="ls">(processus transversus – tuberculum posterius)</span></div></div></div></div><div class="fn"><div class="k">CZYNNOŚĆ</div><ul><li>dzięki przyczepom do żeber silnie zgina kręgosłup w kierunku bocznym</li><li>obustronnie, razem z m. najdłuższym: prostuje tułów (zgina go do tyłu)</li></ul></div><div class="l3 "><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r"><div class="l3k">BUDOWA</div><ul><li>Biegnie między żebrami lub ich homologicznymi odpowiednikami. <span class="l3pg">s.&nbsp;663</span></li><li>Część szyjna stale łączy się z częścią klatki piersiowej. <span class="l3pg">s.&nbsp;663</span></li></ul></div><div class="l3r one"><span class="l3k">POŁOŻENIE</span> Część szyjna graniczy z przodu z m. pochyłym tylnym, bocznie i z tyłu z dźwigaczem łopatki, przyśrodkowo z m. najdłuższym szyi. <span class="l3pg">s.&nbsp;663</span></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> Gałązki boczne gałęzi tylnych nn. rdzeniowych C4–L3. <span class="l3pg">s.&nbsp;665</span></div><div class="l3r one"><span class="l3k">ODMIANY</span> Przyczepów początkowych i końcowych bywa więcej lub mniej. Ciąg przyczepów żebrowych może przerywać brak jednej wiązki. <span class="l3pg">s.&nbsp;665</span></div></div></div></div><div class="node card teal wide"><div class="ch"><span class="nm">m. najdłuższy</span> <span class="lt">m. longissimus</span></div><div class="bd"><div class="pgl">Bochenek s. 663, 665</div><div class="note">pasmo przyśrodkowe m. krzyżowo-grzbietowego</div><div class="sm"><div class="sh"><span class="snm">m. najdłuższy klatki piersiowej</span> <span class="slt">m. longissimus thoracis</span></div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><ol><li>wspólna masa i powierzchowna masa ścięgnista m. krzyżowo-grzbietowego</li><li>wyrostki poprzeczne 6–7 dolnych kręgów piersiowych <span class="ls">(processus transversus)</span></li></ol></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><ol><li>wiązki boczne: wyrostki poprzeczne kręgów lędźwiowych</li><li>wiązki boczne: kąty żeber II–XII <span class="ls">(angulus costae)</span></li><li>wiązki przyśrodkowe: wyrostki dodatkowe kręgów lędźwiowych <span class="ls">(processus accessorius)</span></li><li>wiązki przyśrodkowe: wyrostki poprzeczne wszystkich kręgów piersiowych</li></ol></div></div></div><div class="sm"><div class="sh"><span class="snm">m. najdłuższy szyi</span> <span class="slt">m. longissimus cervicis</span></div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><div class="one">wyrostki poprzeczne 4–6 górnych kręgów piersiowych</div></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">guzki tylne wyrostków poprzecznych C2–C5 <span class="ls">(processus transversus – tuberculum posterius)</span></div></div></div></div><div class="sm"><div class="sh"><span class="snm">m. najdłuższy głowy</span> <span class="slt">m. longissimus capitis</span></div><div class="att two"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><div class="one">wyrostki poprzeczne Th1–Th3 i C3–C7 <span class="ls">(processus transversus)</span></div></div><div class="arr">→</div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">wyrostek sutkowaty kości skroniowej <span class="ls">(processus mastoideus)</span></div></div></div></div><div class="fn"><div class="k">CZYNNOŚĆ</div><ul><li>obustronnie, razem z m. biodrowo-żebrowym: prostuje tułów (zgina go do tyłu)</li><li><b>m. najdłuższy głowy:</b> pociąga głowę ku tyłowi, zgina ją i pochyla w tę samą stronę</li></ul></div><div class="l3 "><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r"><div class="l3k">BUDOWA</div><ul><li>Biegnie w zasadzie między wyrostkami poprzecznymi lub ich odpowiednikami. <span class="l3pg">s.&nbsp;663</span></li><li>Budowa bardziej złożona niż m. biodrowo-żebrowego: ma przyśrodkowy i boczny szereg przyczepów końcowych; jego 3 części zachodzą na siebie dachówkowato. <span class="l3pg">s.&nbsp;663</span></li></ul></div><div class="l3r"><div class="l3k">POŁOŻENIE</div><ul><li>Część szyjna – cienka i płaska – leży przyśrodkowo od m. biodrowo-żebrowego szyi i bocznie od m. najdłuższego głowy. <span class="l3pg">s.&nbsp;665</span></li><li>Część głowowa – cienka blaszka przykryta m. płatowatym; leży przyśrodkowo od m. najdłuższego szyi i bocznie od m. półkolcowego głowy. <span class="l3pg">s.&nbsp;665</span></li><li>Pod przyczepem m. najdłuższego głowy leżą t. potyliczna i brzusiec tylny m. dwubrzuścowego. <span class="l3pg">s.&nbsp;665</span></li></ul></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> Gałązki boczne gałęzi tylnych nn. rdzeniowych C2–L5. <span class="l3pg">s.&nbsp;665</span></div><div class="l3r"><div class="l3k">ODMIANY</div><ul><li>M. najdłuższy głowy może nie występować. Często ma 1–2 smugi ścięgniste; liczba jego wiązek początkowych bywa mniejsza lub większa. <span class="l3pg">s.&nbsp;665</span></li><li>Czasem dodatkowy pęczek <span class="ls">(m. transversus cervicis minor)</span>: od wyrostków poprzecznych C5–Th2 do wyrostka poprzecznego kręgu szczytowego i wyrostka sutkowatego. <span class="l3pg">s.&nbsp;665</span></li></ul></div></div></div></div></div></div></div></div></div></div><div class="sub" id="pprzy" data-c="coral" style="width:200.0mm;"><div class="node g band coral"><div class="hd"><span class="pl">pasmo przyśrodkowe</span><span class="pg">s. 659</span></div><div class="why">włókna do wyr. kolczystych</div></div><div class="kids list"><div class="sub" data-c="coral" style=""><div class="node g sg coral"><div class="hd"><span class="pl">Mięsień kolcowy</span><span class="pg">s. 667</span></div><div class="gla">m. spinalis</div><div class="why">po wyrostkach kolczystych</div></div><div class="kids list"><div class="node card coral namecard"><div class="bd"><div class="pgl">Bochenek s. 667</div><div class="nlk">TYLKO WYMIENIĆ</div><ul class="nlist"><li><b>m. kolcowy</b> <span class="lt">m. spinalis</span></li></ul></div></div></div></div><div class="sub" data-c="coral" style=""><div class="node g sg coral"><div class="hd"><span class="pl">Mięśnie poprzeczno-kolcowe</span><span class="pg">s. 667</span></div><div class="gla">mm. transversospinales</div><div class="why">3 warstwy – coraz krótsze w głąb</div></div><div class="kids list"><div class="node card coral namecard"><div class="bd"><div class="pgl">Bochenek s. 668–669, 668, 669</div><div class="nlk">TYLKO WYMIENIĆ</div><ul class="nlist"><li><b>m. półkolcowy klatki piersiowej i szyi</b> <span class="lt">m. semispinalis thoracis et cervicis</span></li><li><b>m. półkolcowy głowy</b> <span class="lt">m. semispinalis capitis</span></li><li><b>m. wielodzielny</b> <span class="lt">m. multifidus</span></li><li><b>mm. skręcające</b> <span class="lt">mm. rotatores</span></li></ul></div></div></div></div></div></div></div></div><div class="sub" id="krot" data-c="blue" style="width:120.0mm;"><div class="node g grp blue"><div class="hd"><span class="pl">Krótkie mięśnie grzbietu</span><span class="pg">s. 669</span></div><div class="why">między dwoma sąsiednimi kręgami</div></div><div class="kids list"><div class="node card blue namecard"><div class="bd"><div class="pgl">Bochenek s. 669–670, 670</div><div class="nlk">TYLKO WYMIENIĆ</div><ul class="nlist"><li><b>mm. międzykolcowe</b> <span class="lt">mm. interspinales</span></li><li><b>mm. międzypoprzeczne</b> <span class="lt">mm. intertransversarii</span></li></ul></div></div><div class="node card blue"><div class="ch"><span class="nm"><span class=star>★</span> mm. dźwigacze żeber</span> <span class="lt">mm. levatores costarum</span></div><div class="bd"><div class="pgl">Bochenek s. 671</div><div class="note">12 z każdej strony</div><div class="parts"><span class="k">CZĘŚCI</span><ul><li>krótkie – do następnego żebra <span class="ls">(mm. levatores costarum breves)</span></li><li>długie – w 3–4 dolnych przestrzeniach, mijają jedną przestrzeń międzyżebrową <span class="ls">(mm. levatores costarum longi)</span></li></ul></div><div class="att stack"><div class="col"><div class="k">PRZYCZEP POCZĄTKOWY</div><div class="one">wyrostki poprzeczne C7 i Th1–Th11 <span class="ls">(processus transversus)</span></div></div><div class="col"><div class="k">PRZYCZEP KOŃCOWY</div><div class="one">następne żebro; mięśnie długie – drugie z kolei żebro <span class="ls">(costa)</span></div></div></div><div class="fn"><div class="k">CZYNNOŚĆ</div><ul><li>przypuszczalnie współdziałają przy prostowaniu kręgosłupa, pochylaniu go w bok i obracaniu w stronę przeciwległą</li><li>Bochenek: nie unoszą żeber; ich praca jako mięśni wdechowych jest sporna</li></ul></div><div class="l3 "><div class="l3h"><span class="l3n">3</span>SZCZEGÓŁY Z BOCHENKA</div><div class="l3r one"><span class="l3k">BUDOWA</span> Płaskie, trójkątne, cienkie i małe. <span class="l3pg">s.&nbsp;671</span></div><div class="l3r one"><span class="l3k">POŁOŻENIE</span> Leżą do tyłu od stawów żebrowo-poprzecznych, przykryte m. najdłuższym. Łączą się bezpośrednio z mm. międzyżebrowymi zewnętrznymi. <span class="l3pg">s.&nbsp;671</span></div><div class="l3r one"><span class="l3k">CZYNNOŚĆ – SZCZEGÓŁY</span> Przy obracaniu kręgosłupa są ogniwem wielkiego łańcucha mięśniowego, który tworzą właściwe mm. grzbietu i mm. skośne brzucha. <span class="l3pg">s.&nbsp;671</span></div><div class="l3r one"><span class="l3k">UNERWIENIE</span> Gałęzie przednie n. szyjnego VIII i nn. piersiowych I–XI (C8, Th1–Th11). <span class="l3pg">s.&nbsp;671</span></div><div class="l3r one"><span class="l3k">UWAGI</span> Pochodne mm. międzyżebrowych – przesunęły przyczep początkowy z żeber na wyrostki poprzeczne. Dlatego nie należą do właściwych mm. grzbietu. <span class="l3pg">s.&nbsp;671</span></div></div></div></div></div></div><div class="sub" id="podp" data-c="pink" style="width:120.0mm;"><div class="node g grp pink"><div class="hd"><span class="pl">Mięśnie podpotyliczne</span><span class="pg">s. 671</span></div><div class="gla">mm. suboccipitales</div><div class="why">potylica ↔ dwa górne kręgi · 5 mięśni</div></div><div class="kids list"><div class="node card pink namecard"><div class="bd"><div class="pgl">Bochenek s. 671, 671–672, 672–673, 672</div><div class="nlk">TYLKO WYMIENIĆ</div><ul class="nlist"><li><b>m. skośny górny głowy</b> <span class="lt">m. obliquus capitis superior</span></li><li><b>m. prosty tylny mniejszy głowy</b> <span class="lt">m. rectus capitis posterior minor</span></li><li><b>m. prosty tylny większy głowy</b> <span class="lt">m. rectus capitis posterior major</span></li><li><b>m. skośny dolny głowy</b> <span class="lt">m. obliquus capitis inferior</span></li><li><b>m. prosty boczny głowy</b> <span class="lt">m. rectus capitis lateralis</span></li></ul></div></div></div></div></div></div></div></div></div></div><div class="dock" data-under="krot,podp" data-gap="6"><div class="panel l3panel teal"><div class="ph"><span class="l3n big">3</span><span class="pt">Powięzi grzbietu</span><span class="pg">Bochenek s. 673–674</span></div><div class="l3 inpanel"><div class="l3r one"><span class="l3k">POWIĘŹ POWIERZCHOWNA</span> Powięź powierzchowna grzbietu <span class="ls">(fascia superficialis dorsi)</span>: cienka włóknista błona na powierzchni m. czworobocznego i m. najszerszego grzbietu. Część ogólnej powięzi powierzchownej. <span class="l3pg">s.&nbsp;673</span></div><div class="l3r one"><span class="l3k">POWIĘŹ PIERSIOWO-LĘDŹWIOWA</span> Powięź piersiowo-lędźwiowa <span class="ls">(fascia thoracolumbalis)</span>, inaczej lędźwiowo-grzbietowa <span class="ls">(fascia lumbodorsalis)</span>: dwie blaszki – przednia i tylna – obejmujące mm. głębokie grzbietu. <span class="l3pg">s.&nbsp;673</span></div><div class="l3r one"><span class="l3k">KANAŁ KOSTNO-WŁÓKNISTY</span> Razem z kręgosłupem tworzy dla mm. głębokich grzbietu rodzaj kanału kostno-włóknistego. <span class="l3pg">s.&nbsp;659, 673</span></div><div class="l3r one"><span class="l3k">BLASZKA TYLNA</span> Blaszka tylna albo powierzchowna <span class="ls">(lamina superficialis)</span>: leży tuż pod mm. czworobocznym, równoległobocznym i najszerszym grzbietu, na tylnej powierzchni m. krzyżowo-grzbietowego. <span class="l3pg">s.&nbsp;673</span></div><div class="l3r one"><span class="l3k">BLASZKA TYLNA – POCZĄTEK</span> U góry zaczyna się w przedłużeniu powięzi karku, w okolicy m. zębatego tylnego górnego. Od niej zaczynają się m. najszerszy grzbietu i m. zębaty tylny dolny. <span class="l3pg">s.&nbsp;673</span></div><div class="l3r one"><span class="l3k">BLASZKA TYLNA – PRZYŚRODKOWO</span> Przyczepia się do wyrostków kolczystych kręgów piersiowych, lędźwiowych i krzyżowych <span class="ls">(crista sacralis mediana)</span> oraz do grzebienia biodrowego. <span class="l3pg">s.&nbsp;673–674</span></div><div class="l3r one"><span class="l3k">BLASZKA TYLNA – W DÓŁ I BOCZNIE</span> Ku dołowi sięga do okolicy kości guzicznej i łączy się z początkowymi ścięgnami m. krzyżowo-grzbietowego. Bocznie: u góry – kąty żeber; u dołu, między żebrem XII a grzebieniem biodrowym, łączy się z blaszką przednią. <span class="l3pg">s.&nbsp;674</span></div><div class="l3r one"><span class="l3k">BLASZKA PRZEDNIA</span> Blaszka przednia albo głęboka <span class="ls">(lamina profunda)</span>: cieńsza od tylnej. Leży do przodu od m. krzyżowo-grzbietowego, a do tyłu od m. czworobocznego lędźwi i m. lędźwiowego większego. <span class="l3pg">s.&nbsp;674</span></div><div class="l3r one"><span class="l3k">BLASZKA PRZEDNIA – PRZYCZEPY</span> Rozpięta tylko od żebra XII do grzebienia biodrowego i do nich przyczepiona. Zaczyna się 4 pasmami od wyrostków poprzecznych L1–L4. <span class="l3pg">s.&nbsp;674</span></div><div class="l3r one"><span class="l3k">WIĘZADŁA</span> Blaszka przednia łączy się ku dołowi z więzadłem biodrowo-lędźwiowym <span class="ls">(ligamentum iliolumbale)</span>. U góry zawiera łukowate pasma od L1–L2 do żebra XII – więzadło lędźwiowo-żebrowe <span class="ls">(ligamentum lumbocostale)</span>. <span class="l3pg">s.&nbsp;674</span></div><div class="l3r one"><span class="l3k">POŁĄCZENIE BLASZEK</span> Bocznie od m. krzyżowo-grzbietowego obie blaszki łączą się i tworzą ścięgno początkowe m. poprzecznego brzucha. Na tylnej powierzchni złączonych blaszek częściowo zaczyna się m. skośny wewnętrzny brzucha. <span class="l3pg">s.&nbsp;674</span></div><div class="l3r one"><span class="l3k">POWIĘŹ KARKU</span> Powięź karku <span class="ls">(fascia nuchae)</span>: cienka łącznotkankowa błona tuż pod m. czworobocznym i m. równoległobocznym. Zaczyna się na dolnej powierzchni łuski potylicznej; pokrywa mm. płatowate i m. półkolcowy głowy. <span class="l3pg">s.&nbsp;674</span></div><div class="l3r one"><span class="l3k">POWIĘŹ KARKU – POŁĄCZENIA</span> Przyśrodkowo łączy się z więzadłem karkowym. Do przodu przechodzi w blaszkę powierzchowną i przedkręgową powięzi szyi; ku dołowi, przy m. zębatym tylnym górnym – w powięź piersiowo-lędźwiową. <span class="l3pg">s.&nbsp;674</span></div><div class="l3r l3w"><div class="l3k"><span class="wi">!</span> NIEZGODNOŚĆ W BOCHENKU</div><ul><li>S. 652: szerokie ścięgno m. najszerszego grzbietu stanowi blaszkę tylną powięzi piersiowo-lędźwiowej. S. 673: blaszka tylna leży pod m. najszerszym grzbietu, a mięsień od niej się zaczyna. <span class="l3pg">s.&nbsp;652, 673</span></li></ul></div></div></div></div></div></div>
+<script>window.POSTER_K = 1.0;</script><script>(function () {
+  var MM = 96 / 25.4; var K = window.POSTER_K || 1;
+  var COLORS = { purple: '#8f88d9', teal: '#3aa889', coral: '#d97a56', blue: '#5d9bd8', pink: '#d46f95',
+                 red: '#d46a6a', green: '#7fae45', amber: '#d39a3a', indigo: '#6f7dc4',
+                 c1: '#1f6f78', c2: '#a23b3b', c3: '#a8741a', c4: '#2f7d4a', root: '#1d2126' };
+  function widthFor(p) {
+    var c = p.classList;
+    if (c.contains('root')) return 6 * K;
+    if (c.contains('chap')) return 4.4 * K;
+    if (c.contains('world')) return 3.4 * K;
+    if (c.contains('grp') || c.contains('band')) return 2.6 * K;
+    if (c.contains('sg')) return 2.2 * K;
+    return 1.8 * K;
+  }
+  function draw(box) {
+    var svg = box.querySelector('svg.wires');
+    var c = box.getBoundingClientRect();
+    svg.setAttribute('width', c.width);
+    svg.setAttribute('height', c.height);
+    svg.setAttribute('viewBox', '0 0 ' + c.width + ' ' + c.height);
+    function R(el) {
+      var r = el.getBoundingClientRect();
+      return { l: r.left - c.left, t: r.top - c.top, r: r.right - c.left, b: r.bottom - c.top,
+               cx: (r.left + r.right) / 2 - c.left, cy: (r.top + r.bottom) / 2 - c.top };
+    }
+    var out = '';
+    function L(x1, y1, x2, y2, col, w) {
+      out += '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '" stroke="' + col +
+             '" stroke-width="' + w + '" stroke-linecap="round"/>';
+    }
+    box.querySelectorAll('.sub').forEach(function (sub) {
+      var p = sub.querySelector(':scope > .node');
+      var q = sub.querySelector(':scope > .q');
+      var kids = sub.querySelector(':scope > .kids');
+      if (!p || !kids) return;
+      var col = COLORS[sub.dataset.c] || '#9aa1a8';
+      var w = widthFor(p);
+      if (kids.classList.contains('grid2')) {
+        // dwie kolumny kart: pień pośrodku przerwy, odgałęzienia w lewo i w prawo
+        var gcols = kids.querySelectorAll(':scope > .gcol');
+        if (gcols.length < 2) return;
+        var P2 = R(p), G0 = R(gcols[0]), G1 = R(gcols[1]);
+        var tx = (G0.r + G1.l) / 2, sx2 = P2.cx, sy2 = P2.b;
+        if (q) { var Q2 = R(q); L(P2.cx, P2.b, Q2.cx, Q2.t, col, w); sx2 = Q2.cx; sy2 = Q2.b; }
+        var items = [];
+        [0, 1].forEach(function (ci) {
+          Array.prototype.forEach.call(gcols[ci].children, function (k) {
+            var nd = k.classList.contains('sub') ? k.querySelector(':scope > .node') : k;
+            if (!nd) return;
+            var hh = nd.querySelector(':scope > .ch'), rk = R(nd);
+            items.push({ x: ci === 0 ? rk.r : rk.l, y: hh ? R(hh).cy : Math.min(rk.cy, rk.t + 6 * MM * K) });
+          });
+        });
+        if (!items.length) return;
+        var maxy = Math.max.apply(null, items.map(function (i) { return i.y; }));
+        if (Math.abs(sx2 - tx) > 0.5) { L(sx2, sy2, sx2, sy2 + 2 * MM, col, w); L(sx2, sy2 + 2 * MM, tx, sy2 + 2 * MM, col, w); sy2 += 2 * MM; }
+        L(tx, sy2, tx, maxy, col, w);
+        items.forEach(function (i) { L(tx, i.y, i.x, i.y, col, w); });
+        return;
+      }
+      var kn = [], side = [];
+      Array.prototype.forEach.call(kids.children, function (k) {
+        if (k.classList.contains('kstack')) {
+          var st = Array.prototype.map.call(k.querySelectorAll(':scope > .sub, :scope > .node'), function (x) {
+            return x.classList.contains('sub') ? x.querySelector(':scope > .node') : x; }).filter(Boolean);
+          if (st.length) { kn.push(st[0]); for (var si = 1; si < st.length; si++) side.push({ n: st[si], col: k }); }
+        } else if (k.classList.contains('kwrap')) {
+          k.querySelectorAll(':scope > .krow > .sub').forEach(function (s2) { kn.push(s2.querySelector(':scope > .node')); });
+        } else if (k.classList.contains('sub')) { kn.push(k.querySelector(':scope > .node')); }
+        else if (k.classList.contains('node')) { kn.push(k); }
+      });
+      kn = kn.filter(Boolean);
+      if (!kn.length) return;
+      var P = R(p);
+      if (kids.classList.contains('row')) {
+        var sx = P.cx, sy = P.b;
+        if (q) { var Q = R(q); L(P.cx, P.b, Q.cx, Q.t, col, w); sx = Q.cx; sy = Q.b; }
+        var KR = kn.map(R);
+        var top = Math.min.apply(null, KR.map(function (k) { return k.t; }));
+        var by = sy + (top - sy) / 2;
+        L(sx, sy, sx, by, col, w);
+        var xs = KR.map(function (k) { return k.cx; });
+        var sideX = side.map(function (s) { return R(s.col).l - 2.4 * MM * K; });
+        L(Math.min.apply(null, xs.concat([sx], sideX)), by, Math.max.apply(null, xs.concat([sx], sideX)), by, col, w);
+        KR.forEach(function (k) { L(k.cx, by, k.cx, k.t, col, w); });
+        side.forEach(function (s, i) {
+          var N = R(s.n), x = sideX[i], hy = N.t + Math.min(N.b - N.t, 9 * MM * K) / 2;
+          L(x, by, x, hy, col, w); L(x, hy, N.l, hy, col, w);
+        });
+      } else {
+        var qn = q ? q.querySelector('.qn') : null;
+        var x0 = qn ? R(qn).cx : P.l + 2.6 * MM * K;
+        var ys = kn.map(function (k) {
+          var h = k.querySelector(':scope > .ch');
+          var rk = R(k);
+          return { l: rk.l, y: h ? R(h).cy : rk.cy };
+        });
+        L(x0, P.b, x0, ys[ys.length - 1].y, col, w);
+        ys.forEach(function (k) { L(x0, k.y, k.l, k.y, col, w); });
+      }
+    });
+    svg.innerHTML = out;
+  }
+  function subBottom(el) {
+    var mb = el.getBoundingClientRect().bottom;
+    el.querySelectorAll('*').forEach(function (e) { var r = e.getBoundingClientRect(); if (r.height > 0 && r.bottom > mb) mb = r.bottom; });
+    return mb;
+  }
+  function placeDocks(box) {
+    var c = box.getBoundingClientRect();
+    box.querySelectorAll(':scope > .dock').forEach(function (d) {
+      var l = Infinity, r = -Infinity, b = -Infinity;
+      d.dataset.under.split(',').forEach(function (id) {
+        var el = document.getElementById(id.trim()); if (!el) return;
+        var rr = el.getBoundingClientRect();
+        l = Math.min(l, rr.left); r = Math.max(r, rr.right); b = Math.max(b, subBottom(el));
+      });
+      var gap = (+d.dataset.gap || 6) * MM * K;
+      d.style.left = (l - c.left) + 'px'; d.style.top = (b - c.top + gap) + 'px'; d.style.width = (r - l) + 'px';
+    });
+  }
+  function run() {
+    document.querySelectorAll('.treebox').forEach(placeDocks);
+    document.querySelectorAll('.treebox').forEach(draw);
+    document.body.setAttribute('data-wired', '1');
+  }
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(run); } else { window.addEventListener('load', run); }
+})();
+</script></body></html>

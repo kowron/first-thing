@@ -110,5 +110,13 @@ tree = [
     "sections": [{"k": it['k'], "items": [t(it)]} for it in (OD[6], OD[7], OD[8], OD[9], OD[10], OD[11], OD[12])]},
   ]},
 ]
+STAR_TITLES = {'Części i przyczepy', 'Otwory', 'Trójkąty i przepukliny', 'Położenie i sąsiedztwo', 'Czynność', 'Wdech i wydech',
+               'Mięśnie oddechowe', 'Tłocznia brzuszna'}      # ★ tematy wskazane jako ważne na zaliczeniu
+def _star(ns):
+    for n in ns:
+        if n.get('type') == 'card' and n.get('title') in STAR_TITLES:
+            n['star'] = True
+        _star(n.get('children', []))
+_star(tree)
 json.dump({"chapter": "oddychanie", "tree": tree}, open('/home/user/first-thing/plakat/k_oddychanie.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print('ok', sum(1 for _ in tree[0]['children']), sum(1 for _ in tree[1]['children']))

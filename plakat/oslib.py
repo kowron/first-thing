@@ -138,7 +138,7 @@ def card_html(c, col, width, figs=(), missing=None, layout='auto', extra_html=''
     tag = f'<span class="tag">{mk(c["tag"])}</span>' if c.get('tag') else ''
     cpg = f'<span class="cpg">s.&nbsp;{c["pg"]}</span>' if c.get('pg') else ''
     h = [f'<div class="node card osc {col}" style="width:{width:.2f}mm">',
-         f'<div class="ch">{cpg}<span class="nm">{mk(c["title"])}</span> {lat(c.get("lat"))}{tag}</div><div class="bd">']
+         f'<div class="ch">{cpg}<span class="nm">{"<span class=star>★</span> " if c.get("star") else ""}{mk(c["title"])}</span> {lat(c.get("lat"))}{tag}</div><div class="bd">']
     secs = ''.join(f'<div class="xrow"><div class="k">{mk(s["k"])}</div><ul>' + ''.join(f'<li>{mk(i)}</li>' for i in s.get('items', [])) + '</ul></div>'
                    for s in c.get('sections', []))
     if c.get('timeline'):

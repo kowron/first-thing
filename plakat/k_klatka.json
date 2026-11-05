@@ -1452,7 +1452,8 @@
         "wyrostek mieczykowaty {{processus xiphoideus}}",
         "żebro XII {{costa XII}}"
        ],
-       "fig": "klatka od przodu i z boku – linie wymiarowe z wartościami | mały schemat przekroju poprzecznego: wymiar poprzeczny vs przednio-tylny (wskaźnik)"
+       "fig": "klatka od przodu i z boku – linie wymiarowe z wartościami | mały schemat przekroju poprzecznego: wymiar poprzeczny vs przednio-tylny (wskaźnik)",
+       "star": true
       }
      ]
     }

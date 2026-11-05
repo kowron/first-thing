@@ -9,7 +9,9 @@ from oslib import mk, lat, l3block, q, gnode, sub, dock, card_html, fig_css, fin
 PAGE = os.environ.get('PAGE', 'mech')
 K = float(os.environ.get('K', 1.0))
 L3S = float(os.environ.get('L3S', 0.9))
-PAGE_W, PAGE_H = 1189, 841
+PAGE_W, PAGE_H = float(os.environ.get('PW', 1189)), float(os.environ.get('PH', 841))
+LAYOUT = os.environ.get('LAYOUT', PAGE)       # plik układu layout_<LAYOUT>.py (domyślnie jak PAGE)
+DATA = os.environ.get('DATA', 'mech' if PAGE == 'mech' else 'kosciec')
 oslib.FIGSCALE = float(os.environ.get('FIGSCALE', 1.0))
 INNER_W = PAGE_W - 28
 J = lambda n: json.load(open(f'/home/user/first-thing/plakat/{n}.json', encoding='utf-8')) if os.path.exists(f'/home/user/first-thing/plakat/{n}.json') else {'tree': []}
@@ -28,7 +30,7 @@ MERGE = set()
 GRID2 = {}      # tytuł grupy → tytuły dzieci w lewej kolumnie (wymuszony podział grid2)
 ROWSPEC = {}    # tytuł grupy → [(szerokość, [tytuły dzieci w tej kolumnie]), ...]
 FIGSCALE_FOR = oslib.FIGSCALE_FOR
-exec(open(f'/home/user/first-thing/plakat/layout_{PAGE}.py', encoding='utf-8').read()) if os.path.exists(f'/home/user/first-thing/plakat/layout_{PAGE}.py') else None
+exec(open(f'/home/user/first-thing/plakat/layout_{LAYOUT}.py', encoding='utf-8').read()) if os.path.exists(f'/home/user/first-thing/plakat/layout_{LAYOUT}.py') else None
 
 
 MEAS_PATH = f"/home/user/first-thing/plakat/measure_{PAGE}_{K:g}_{oslib.FIGSCALE:g}.json"
@@ -224,9 +226,9 @@ def G(title, children, **kw):
     d.update(kw)
     return d
 
-if PAGE == 'mech':
-    TITLE = 'Połączenia i mechanika szkieletu osiowego'
-    SUBT = 'połączenia kręgosłupa i klatki piersiowej · krzywizny · mechanika klatki · przepona i oddychanie'
+if DATA == 'mech':
+    TITLE = globals().get('PAGE_TITLE') or 'Połączenia i mechanika szkieletu osiowego'
+    SUBT = globals().get('PAGE_SUB') or 'połączenia kręgosłupa i klatki piersiowej · krzywizny · mechanika klatki · przepona i oddychanie'
     PJ, MJ, OJ = J('k_polaczenia')['tree'], J('k_mech')['tree'], J('k_oddychanie')['tree']
     pick = lambda tree, t: [n for n in tree if n['title'].startswith(t)]
     mech_nodes = MJ[0]['children'] if (len(MJ) == 1 and MJ[0]['type'] == 'group' and len(MJ[0].get('children', [])) >= 2 and not MJ[0]['title'].startswith('Krzywizny')) else MJ
@@ -237,13 +239,15 @@ if PAGE == 'mech':
         (G('Oddychanie', OJ, q='przepona czy mechanika?'), 'c4'),
     ]
 else:
-    TITLE = 'Kościec osiowy'
-    SUBT = 'kręgosłup · żebra · mostek · klatka piersiowa'
+    TITLE = globals().get('PAGE_TITLE') or 'Kościec osiowy'
+    SUBT = globals().get('PAGE_SUB') or 'kręgosłup · żebra · mostek · klatka piersiowa'
     KJ, TJ = J('k_kregoslup')['tree'], J('k_klatka')['tree']
     CHAPTERS = globals().get('CHAPTERS_DEF') or [
         (KJ[0] if KJ else G('Kręgosłup', []), 'c1'),
         (TJ[0] if TJ else G('Klatka piersiowa', []), 'c2'),
     ]
+if globals().get('CHAPTERS_FN'):
+    CHAPTERS = CHAPTERS_FN({k: globals().get(k) for k in ('KJ', 'TJ', 'PJ', 'MJ', 'OJ', 'G', 'pick', 'mech_nodes', 'CHAPTERS')})
 for hook in globals().get('PREPARE', []):
     hook(CHAPTERS)
 
@@ -303,11 +307,14 @@ LEGEND = '''<div class="legend"><div class="lt1">JAK CZYTAĆ</div><div class="lg
 <div class="lrow"><span><span class="lsw">grupa</span></span><span>Przerywana ramka = grupa; pełna ramka = karta.</span></div>
 <div class="lrow"><span class="lsm">nomen latinum</span><span>Łacina pogrubionych nazw – tak samo ważna jak polska.</span></div>
 <div class="lrow"><span><span class="lw">!</span></span><span>Bochenek w różnych miejscach podaje coś innego.</span></div>
+<div class="lrow"><span><span class="star">★</span></span><span>Temat wskazany jako ważny na zaliczeniu.</span></div>
 <div class="lrow"><span class="lsm2">C · Th · L · S</span><span>Kręgi szyjne · piersiowe · lędźwiowe · krzyżowe.</span></div>
 <div class="lrow"><span class="lsm2">I–XII</span><span>Numery żeber.</span></div>
 </div></div>'''
 
 CSS = open('/home/user/first-thing/plakat/style.css', encoding='utf-8').read()
+CSS = CSS.replace('size: 1189mm 841mm', f'size: {PAGE_W:g}mm {PAGE_H:g}mm').replace(
+    '.poster { width: 1189mm; height: 841mm;', f'.poster {{ width: {PAGE_W:g}mm; height: {PAGE_H:g}mm;')
 frame, tree = CSS.split('/*TREE*/')
 def scale(m):
     v = float(m.group(1)) * K

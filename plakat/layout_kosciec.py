@@ -36,3 +36,17 @@ FIG.update({
     'Mostek – cechy ogólne': ['mostek_przod', 'mostek_bok'],
     'Ściany i kształt klatki': ['klatka_przod'],
 })
+
+# --- tryby jednorozdziałowe (osobne strony): ONLY=kregoslup | klatka  (szerokości kolumn: CWS, CWT)
+ONLY = _os.environ.get('ONLY', '')
+if ONLY == 'kregoslup':
+    # 7 kolumn: szyjne ×2, piersiowe ×2, lędźwiowe ×1, krzyżowa ×2 (kręgi piersiowe w grid2)
+    CH_WIDTHS = [7 * CW + 6 * G7]
+    MODE.update({'Kręgi piersiowe': 'grid2'})
+    WIDTH.update({'Kręgosłup /kids': [4 * CW + 5 * G7 + CW, C2], 'Kręgi prawdziwe /kids': [C2, C2, CW]})
+    CHAPTERS_FN = lambda c: [(c['KJ'][0], 'c1')]
+    PAGE_TITLE, PAGE_SUB = 'Kręgosłup', 'kości: kręgi · kość krzyżowa i guziczna'
+elif ONLY == 'klatka':
+    CH_WIDTHS = [4 * CT + 3 * G7]
+    CHAPTERS_FN = lambda c: [(c['TJ'][0], 'c2')]
+    PAGE_TITLE, PAGE_SUB = 'Klatka piersiowa', 'kości: żebra · mostek · klatka jako całość'

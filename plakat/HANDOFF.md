@@ -1,3 +1,17 @@
+# AKTUALIZACJA – sesja 3 (5.11.2026): format 6 stron „A0,5” (1030×728 mm)
+
+Plakat podzielono na **6 stron 1030×728 mm** (pole 0,75 m² – pomiędzy A0 i A1; PDF dowolnego rozmiaru, czytany w przeglądarce): 1 kręgosłup (kości), 2 klatka piersiowa (kości),
+3 mięśnie grzbietu, 4 mięśnie klatki i brzucha, 5 połączenia i krzywizny kręgosłupa, 6 klatka (połączenia, mechanika) + przepona i oddychanie.
+**Budowanie wszystkiego jednym poleceniem:** `cd /home/user/first-thing/plakat && ./build_pages.sh` (parametry stron – w skrypcie; `./build_pages.sh m1 klodd` – tylko wybrane strony).
+Wynik: `/home/user/first-thing/Plakat_A0_5_szkielet_osiowy.pdf`. Limit wysokości `max_bottom` ≤ 717 mm. Poprzednia wersja 3×A0: `Plakat_A0_szkielet_osiowy.pdf`.
+Nowe przełączniki: `build.py` – `REGIONS`, `PAGE=SZERxWYS`, `OUT`, `ROOT_TITLE/ROOT_SUB`, `DOCKCOLS_<rozdział>=2`; `build_os.py` – `PW/PH`, `LAYOUT`, `DATA`, `ONLY` (layout_kosciec.py: kregoslup|klatka; layout_mech.py: polkreg|klodd).
+**Zmiany treści (od użytkownika):** mięśnie głębokie grzbietu – tylko nazwy (karty `namecard`, `NAMES_ONLY` w `build.py`); pełne opisy zostały przy m. krzyżowo-grzbietowym (prostownik grzbietu), mm. dźwigaczach żeber
+i mięśniach powierzchownych. ★ = temat wskazany przez użytkownika jako ważny na zaliczeniu (`STAR_M`, `STAR_P` w `build.py`, `STAR_TITLES` w `gen_oddychanie.py`, pole `star` w kartach).
+**Czego NIE ma w Bochenku t. I** (nie dopisywać z pamięci – potrzebne notatki z wykładu): fazy kaszlu; oddychanie w pozycji siedzącej (jest tylko zdanie o położeniu przepony); m. piersiowy większy jako wydechowy
+(Bochenek s. 680: tylko pomocniczy wdechowy przy ustalonych ramionach).
+
+---
+
 # AKTUALIZACJA – sesja 2 (4.11.2026, wieczór) – czytaj to najpierw
 
 **Środowisko (zmiana względem opisu poniżej):** projekt leży w `/home/user/first-thing/plakat/` (ścieżki w kodzie zamienione z `/home/claude`), skrypty w `/home/user/first-thing/scripts/`.

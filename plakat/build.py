@@ -52,6 +52,20 @@ for _ch in ('grzbiet', 'klatka', 'brzuch'):
         L3G.update(_d.get('groups', {}))
         for _p in _d.get('panels', []):
             L3P[_p['id']] = _p
+# --- mięśnie głębokie grzbietu: na zaliczeniu wystarczy je WYMIENIĆ (bez przyczepów, czynności i przebiegu); pełne opisy zostają
+#     przy prostowniku grzbietu (m. krzyżowo-grzbietowy), mm. dźwigaczach żeber (oddychanie) i wszystkich mięśniach powierzchownych
+STAR_M = {'mm. międzyżebrowe zewnętrzne', 'mm. międzyżebrowe wewnętrzne', 'mm. podżebrowe', 'm. poprzeczny klatki piersiowej',
+          'm. piersiowy większy', 'm. piersiowy mniejszy', 'm. podobojczykowy', 'm. zębaty przedni', 'm. najszerszy grzbietu',
+          'm. zębaty tylny górny', 'm. zębaty tylny dolny', 'mm. dźwigacze żeber', 'm. skośny zewnętrzny brzucha',
+          'm. skośny wewnętrzny brzucha', 'm. poprzeczny brzucha', 'm. prosty brzucha'}     # ★ tematy wskazane jako ważne na zaliczeniu
+STAR_P = {'tlocznia', 'pochewka', 'powiez_poprzeczna'}
+NAMES_ONLY = ['m. płatowaty głowy', 'm. płatowaty szyi', 'm. kolcowy', 'm. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy',
+              'm. wielodzielny', 'mm. skręcające', 'mm. międzykolcowe', 'mm. międzypoprzeczne', 'm. skośny górny głowy',
+              'm. prosty tylny mniejszy głowy', 'm. prosty tylny większy głowy', 'm. skośny dolny głowy', 'm. prosty boczny głowy']
+for _m in NAMES_ONLY:
+    L3M.pop(_m, None)
+for _g in ('Mięśnie kolcowo-poprzeczne', 'Mięśnie poprzeczno-kolcowe', 'Krótkie mięśnie grzbietu', 'Mięśnie podpotyliczne'):
+    L3G.pop(_g, None)
 USED_M, USED_G, USED_P = set(), set(), set()
 
 def _rows(items):
@@ -96,7 +110,7 @@ def l3panel(pid, col):
         return ''
     USED_P.add(pid)
     la = f' {lat(p["lat"])}' if p.get('lat') else ''
-    return (f'<div class="panel l3panel {col}"><div class="ph"><span class="l3n big">3</span><span class="pt">{p["title"]}</span>{la}'
+    return (f'<div class="panel l3panel {col}"><div class="ph"><span class="l3n big">3</span><span class="pt">{"<span class=star>★</span> " if pid in STAR_P else ""}{p["title"]}</span>{la}'
             f'<span class="pg">Bochenek s. {p["pg"]}</span></div><div class="l3 inpanel">{l3rows(p["items"])}</div></div>')
 
 # ---------------------------------------------------------------- elementy drzewa
@@ -125,8 +139,9 @@ def sub(nodehtml, kids='', mode='list', qhtml='', width='', col='', extra='', id
     ida = f' id="{id}"' if id else ''
     return f'<div class="{cls}"{ida} data-c="{col}" style="{st}">{nodehtml}{qhtml}{k}{extra}</div>'
 
-def dock(under, html, gap=6):
-    return f'<div class="dock" data-under="{under}" data-gap="{gap}">{html}</div>' if html else ''
+def dock(under, html, gap=6, cols=1):
+    c = f' cols{cols}' if cols > 1 else ''
+    return f'<div class="dock{c}" data-under="{under}" data-gap="{gap}">{html}</div>' if html else ''
 
 def ol(items):
     if not items:
@@ -161,7 +176,7 @@ def card(m, col, wide=False, extra_rows=None, extra_warn=None, kids_html=''):
                 f'<div class="bd"><div class="note">{mk(m["txt"])} · <b>→ s. {m["pg"]}</b></div></div></div>')
     cls = f'node card {col}' + (' wide' if wide else '')
     h = [f'<div class="{cls}">']
-    h.append(f'<div class="ch"><span class="nm">{m["pl"]}</span> {lat(m["lat"])}{tags(m)}</div>')
+    h.append(f'<div class="ch"><span class="nm">{"<span class=star>★</span> " if m["pl"] in STAR_M else ""}{m["pl"]}</span> {lat(m["lat"])}{tags(m)}</div>')
     h.append('<div class="bd">')
     h.append(f'<div class="pgl">Bochenek s. {m["pg"]}</div>')
     if m.get('note'):
@@ -193,6 +208,14 @@ def gfcard(g, col):
             f'<div class="bd"><div class="pgl">Bochenek s. {g["groupf_pg"]}</div><div class="fn"><ul>' +
             ''.join(f'<li>{mk(x)}</li>' for x in g['groupf']) + '</ul></div></div></div>')
 
+def namecard(names, col, wide=True):
+    """Karta z samymi nazwami mięśni (PL + łacina) – dla mięśni, które trzeba tylko umieć wymienić."""
+    ms = [M(n) for n in names]
+    pgs = sorted({m['pg'] for m in ms}, key=lambda x: int(re.match(r'\d+', x).group()))
+    rows = ''.join(f'<li><b>{m["pl"]}</b> {lat(m["lat"])}</li>' for m in ms)
+    return (f'<div class="node card {col} namecard"><div class="bd"><div class="pgl">Bochenek s. {", ".join(pgs)}</div>'
+            f'<div class="nlk">TYLKO WYMIENIĆ</div><ul class="nlist">{rows}</ul></div></div>')
+
 def cards(names, col, wide=False):
     return ''.join(card(M(n), col, wide) for n in names)
 
@@ -217,9 +240,11 @@ W['kwrap'] = W['kgleb'] + W['kprz'] + GAP
 W['kl'] = W['kpow'] + W['kwrap'] + GAP + 1
 W['bbp'] = W['bbocz'] + W['bprzed'] + GAP
 W['brz'] = W['bbp'] + W['btyl'] + GAP + 1
-REST = INNER_W - (W['grz'] + W['kl'] + W['brz'])
-print('szerokości: grzbiet %.0f, klatka %.0f, brzuch %.0f, zapas %.0f mm' % (W['grz'], W['kl'], W['brz'], REST))
-assert REST >= 10, 'za szeroko'
+REGIONS = [x for x in os.environ.get('REGIONS', 'grzbiet,klatka,brzuch').split(',') if x]
+_wsum = sum(W[{'grzbiet': 'grz', 'klatka': 'kl', 'brzuch': 'brz'}[r]] for r in REGIONS)
+REST = INNER_W - _wsum - 7 * (len(REGIONS) - 1)
+print('szerokości: grzbiet %.0f, klatka %.0f, brzuch %.0f | wybrane %s: zapas %.0f mm' % (W['grz'], W['kl'], W['brz'], ','.join(REGIONS), REST))
+assert REST >= 0, 'za szeroko'
 
 # ======================================================================
 # I. GRZBIET
@@ -237,7 +262,7 @@ POW_G = sub(gnode('Powierzchowne mięśnie grzbietu', '', 'world', PU,
             g_ram + g_zeb, 'list', q('2', 'do czego dochodzą?', '650'), width=W['pow'], col=PU, id='pow')
 
 kp = sub(gnode('Mięśnie kolcowo-poprzeczne', 'm. spinotransversalis', 'sg', TE, 'od wyr. kolczystych do poprzecznych', '659'),
-         cards(['m. płatowaty głowy', 'm. płatowaty szyi'], TE, True), 'list', col=TE)
+         namecard(['m. płatowaty głowy', 'm. płatowaty szyi'], TE), 'list', col=TE)
 kg_card = card(M('m. krzyżowo-grzbietowy – wspólny początek'), TE, True,
                kids_html=card(M('m. biodrowo-żebrowy'), TE, True) + card(M('m. najdłuższy'), TE, True))
 kg = sub(gnode('Mięsień krzyżowo-grzbietowy', 'm. sacrospinalis', 'sg', TE, 'wspólny pień – wyżej dwa mięśnie; razem prostownik grzbietu', '660–665'),
@@ -246,20 +271,20 @@ p_boczne = sub(gnode('pasmo boczne', '', 'band', TE, 'włókna do wyr. poprzeczn
                kp + kg, 'list', width=W['band'], col=TE, id='pbocz')
 
 pk = sub(gnode('Mięśnie poprzeczno-kolcowe', 'mm. transversospinales', 'sg', CO, '3 warstwy – coraz krótsze w głąb', '667'),
-         cards(['m. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy', 'm. wielodzielny', 'mm. skręcające'], CO, True),
+         namecard(['m. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy', 'm. wielodzielny', 'mm. skręcające'], CO),
          'list', col=CO)
 kol = sub(gnode('Mięsień kolcowy', 'm. spinalis', 'sg', CO, 'po wyrostkach kolczystych', '667'),
-          cards(['m. kolcowy'], CO, True), 'list', col=CO)
+          namecard(['m. kolcowy'], CO), 'list', col=CO)
 p_przysr = sub(gnode('pasmo przyśrodkowe', '', 'band', CO, 'włókna do wyr. kolczystych', '659'),
                kol + pk, 'list', width=W['band'], col=CO, id='pprzy')
 
 DLUGIE = sub(gnode('Długie mięśnie grzbietu', '', 'grp', TE, 'włókna biegną przez wiele kręgów', '659'),
              p_boczne + p_przysr, 'row', q('4', 'do których wyrostków biegną włókna?', '659'), width=W['dlugie'], col=TE, id='dlugie')
 KROTKIE = sub(gnode('Krótkie mięśnie grzbietu', '', 'grp', BL, 'między dwoma sąsiednimi kręgami', '669'),
-              cards(['mm. międzykolcowe', 'mm. międzypoprzeczne', 'mm. dźwigacze żeber'], BL), 'list', width=W['krot'], col=BL, id='krot')
+              namecard(['mm. międzykolcowe', 'mm. międzypoprzeczne'], BL) + cards(['mm. dźwigacze żeber'], BL), 'list', width=W['krot'], col=BL, id='krot')
 PODPOT = sub(gnode('Mięśnie podpotyliczne', 'mm. suboccipitales', 'grp', PK, 'potylica ↔ dwa górne kręgi · 5 mięśni', '671'),
-             cards(['m. skośny górny głowy', 'm. prosty tylny mniejszy głowy', 'm. prosty tylny większy głowy',
-                    'm. skośny dolny głowy', 'm. prosty boczny głowy'], PK), 'list', width=W['podp'], col=PK, id='podp')
+             namecard(['m. skośny górny głowy', 'm. prosty tylny mniejszy głowy', 'm. prosty tylny większy głowy',
+                      'm. skośny dolny głowy', 'm. prosty boczny głowy'], PK), 'list', width=W['podp'], col=PK, id='podp')
 GLEB_G = sub(gnode('Głębokie mięśnie grzbietu', 'erector spinae', 'world', TE,
                    'właściwe mięśnie grzbietu · gałęzie tylne nn. rdzeniowych', '650, 659'),
              DLUGIE + KROTKIE + PODPOT, 'row', q('3', 'jak długie są włókna?', '659'), width=W['gleb'], col=TE, id='gleb')
@@ -386,13 +411,16 @@ CH_BRZUCH = sub(gnode('Mięśnie brzucha', 'musculi abdominis°', 'chap', 'c3', 
                 b_bp + b_tyl, 'row', q('1', 'gdzie leżą?', '702'), width=W['brz'], col='c3', id='brz')
 
 # ======================================================================
-ROOT = sub(gnode('Mięśnie szkieletu osiowego', '', 'root', '', 'grzbiet · klatka piersiowa · brzuch', ''),
-           CH_GRZBIET + CH_KLATKA + CH_BRZUCH, 'row', width=INNER_W, col='root')
+_CH = {'grzbiet': CH_GRZBIET, 'klatka': CH_KLATKA, 'brzuch': CH_BRZUCH}
+_RT = os.environ.get('ROOT_TITLE', 'Mięśnie szkieletu osiowego')
+_RS = os.environ.get('ROOT_SUB', 'grzbiet · klatka piersiowa · brzuch')
+ROOT = sub(gnode(_RT, '', 'root', '', _RS, ''),
+           ''.join(_CH[r] for r in REGIONS), 'row', width=INNER_W, col='root')
 
 INFO = '''<div class="info">
 <div class="i1">PLAKAT DO NAUKI · ANATOMIA · MIĘŚNIE</div>
 <div class="i2">Wszystko wg: A. Bochenek, M. Reicher, <i>Anatomia człowieka</i>, t. I, s. 649–733</div>
-<div class="i3">Poziom 1 – podział, poziom 2 – karty mięśni, poziom 3 – szczegóły z Bochenka małym drukiem.<br>Mięśnie szyi pominięte – nie ma ich na zaliczeniu. Przepona szczegółowo i mechanika oddychania – na plakacie „Połączenia i mechanika”.</div>
+<div class="i3">Poziom 1 – podział, poziom 2 – karty mięśni, poziom 3 – szczegóły z Bochenka małym drukiem.<br>Mięśnie szyi pominięte – nie ma ich na zaliczeniu. Mięśnie głębokie grzbietu – na zaliczeniu wystarczy je wymienić. Przepona szczegółowo i mechanika oddychania – na stronie „Klatka i oddychanie”.</div>
 </div>'''
 
 LEGEND_ROWS = '''<div class="lt1">JAK CZYTAĆ</div>
@@ -404,6 +432,7 @@ LEGEND_ROWS = '''<div class="lt1">JAK CZYTAĆ</div>
 <div class="lrow"><span><span class="lcard">mięsień</span></span><span>Pełna ramka = karta jednego mięśnia.</span></div>
 <div class="lrow"><span class="lsm">(linea nuchae)</span><span>Łacińska nazwa miejsca przyczepu. ° = łaciny brak w t. I Bochenka.</span></div>
 <div class="lrow"><span><span class="lw">!</span></span><span>Bochenek w różnych miejscach podaje coś innego.</span></div>
+<div class="lrow"><span><span class="star">★</span></span><span>Temat wskazany jako ważny na zaliczeniu.</span></div>
 <div class="lrow"><span class="lsm2">C · Th · L</span><span>Kręgi szyjne · piersiowe · lędźwiowe. Najwyżej 4 przyczepy na stronę.</span></div>'''
 
 _rows_only = LEGEND_ROWS.split('</div>', 1)[1]
@@ -427,10 +456,12 @@ ORDER = {'grzbiet': ['powiezi_grzbietu'],
          'brzuch': ['trojkat_ledzwiowy', 'tlocznia', 'pochewka', 'kresa_pepek', 'powiezie', 'powiez_poprzeczna', 'kanal', 'sciana_przepukliny', 'zstepowanie']}
 DOCKS = ''
 for ch in ('grzbiet', 'klatka', 'brzuch'):
+    if ch not in REGIONS:
+        continue
     html = ''.join(l3panel(i, COLS[ch]) for i in chapter_panels(ch, ORDER[ch], skip=('oddychanie_l3',)))
     if LEGEND_AT == ch:
         html += f'<div class="legend inflow">{LEGEND_ROWS}</div>'
-    DOCKS += dock(DOCK_UNDER[ch], html)
+    DOCKS += dock(DOCK_UNDER[ch], html, cols=int(os.environ.get('DOCKCOLS_' + ch, 1)))
 LEGEND =f'<div class="legend">{LEGEND_TOP}</div>' if LEGEND_AT == 'top' else ''
 
 # ---------------------------------------------------------------- panel z rysunkiem (własny rysunek SVG z figs/out) w osobnym doku
@@ -464,8 +495,8 @@ def fig_panel(figname, title, la='', pg='', col=''):
             f'<span class="pg">Bochenek s. {pg}</span></div><div class="l3fig">{svg}</div></div>')
 
 # pochewka m. prostego brzucha – przekroje poprzeczne (ryc. 465/466 u Bochenka; rysunek własny) – w wolnym miejscu pod kolumną mięśni bocznych
-FIGDOCK = dock(os.environ.get('D_pochewka_fig', 'bbocz'),
-               fig_panel('pochewka_przekroje', 'Pochewka m. prostego brzucha – przekroje', 'vagina m. recti abdominis', '718', AM))
+FIGDOCK = '' if 'brzuch' not in REGIONS else dock(os.environ.get('D_pochewka_fig', 'bbocz'),
+               fig_panel('pochewka_przekroje', '<span class=star>★</span> Pochewka m. prostego brzucha – przekroje', 'vagina m. recti abdominis', '718', AM))
 DOCKS += FIGDOCK
 
 # ---------------------------------------------------------------- kontrola: czy wszystkie dane ③ trafiły na plakat
@@ -488,5 +519,5 @@ JS = open('/home/user/first-thing/plakat/wires.js', encoding='utf-8').read()
 html = f'''<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><title>Mięśnie szkieletu osiowego – plakat</title>
 <style>:root {{ --l3s: {L3S}; }}\n{CSS}</style></head><body><div class="poster">{INFO}{LEGEND}<div class="treebox"><svg class="wires"></svg>{ROOT}{DOCKS}</div></div>
 <script>window.POSTER_K = {K};</script><script>{JS}</script></body></html>'''
-open('/home/user/first-thing/plakat/index.html', 'w', encoding='utf-8').write(html)
+open(os.path.join('/home/user/first-thing/plakat', os.environ.get('OUT', 'index.html')), 'w', encoding='utf-8').write(html)
 print('ok', len(html), 'K', K, 'strona', PAGE_W, PAGE_H)

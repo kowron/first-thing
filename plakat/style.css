@@ -218,3 +218,16 @@ svg.wires { position: absolute; left: 0; top: 0; z-index: 0; overflow: visible; 
 /* panel z własnym rysunkiem (strona 2: pochewka m. prostego brzucha) */
 .figpanel .l3fig { margin-top: 1mm; display: flex; justify-content: center; }
 .figpanel .l3fig svg { display: block; max-width: 100%; height: auto; }
+
+/* karta z samymi nazwami mięśni (mięśnie głębokie grzbietu – tylko wymienić) */
+.namecard .nlk { font-size: 6.2pt; font-weight: 800; letter-spacing: .06em; color: var(--s, #6b5a3c); margin: .8mm 0 .6mm; }
+.namecard .nlist { list-style: none; margin: 0; padding: 0; font-size: 8.6pt; line-height: 1.3; }
+.namecard .nlist li { margin: .7mm 0; }
+
+/* dok z panelami poziomu 3 w dwóch kolumnach (opcja DOCKCOLS_<rozdział>=2) */
+.dock.cols2 { display: block; column-count: 2; column-gap: 3.5mm; }
+.dock.cols2 > .panel { break-inside: avoid; margin-bottom: 3.5mm; }
+
+/* ★ – temat wskazany jako ważny na zaliczeniu */
+.star { color: #d9770b; font-weight: 900; }
+.lz.star, .lrow .star { font-size: 11pt; }
