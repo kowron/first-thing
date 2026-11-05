@@ -10,6 +10,7 @@ Użytkownik nie zna się na programowaniu ani GitHubie – wszystko tłumaczyć 
   - **Opus:** medium – zadania trudniejsze, ale rutynowe (np. proste rysunki, weryfikacje); high – wymagające rysunki i złożona praca; xhigh – tylko najtrudniejsze rysunki/zadania wymagające najlepszej jakości.
   - Rysunki dzielić na zwykłe (medium/high) i najtrudniejsze (xhigh).
 - **Aktualizacja 5.11.2026:** użytkownik chce, żeby więcej pracy szło na **Opusie xhigh** (rysunki, treść ★, weryfikacje z Bochenkiem), a mniej na Sonnecie. Sufit nadal xhigh – nigdy „max”.
+- **Aktualizacja 5.11.2026 (2):** **NIE używać Sonneta do żadnych zadań** (także subagentów – zawsze `model: "opus"`), bo wykonywał polecenia niespójnie. Opus **medium** tylko do prostych zadań; do większości **high**, a do najważniejszych/najtrudniejszych **xhigh**. Domyślnie high. Nadal nigdy „max”. Poniższe zasady o Sonnecie są nieaktualne.
 - Mało subagentów naraz (kilku, nie kilkunastu); nie uruchamiać zbędnych równoległych audytów. Jeśli praca jest duża, dzielić ją na etapy do zatwierdzenia przez użytkownika.
 
 ## Plakat A0 „Anatomia: szkielet osiowy”
