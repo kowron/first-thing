@@ -81,6 +81,7 @@ def expl_html(key, maxw=None, fig_scale=1.0):
     e = EXPL.get(key)
     if not e:
         return ''
+    fig_scale = fig_scale * float(os.environ.get('EXFIG', 1.0))
     h = ['<div class="xrow estar"><div class="k"><span class="star">★</span> ' + mk(e.get('title', key)).upper() + '</div>']
     if e.get('points'):
         h.append('<ul>' + ''.join(f'<li>{mk(x)}</li>' for x in e['points']) + '</ul>')
@@ -178,6 +179,45 @@ def figs_html(names, missing, maxw=None):
 
 
 # ---------------------------------------------------------------- karta z JSON
+# karty ★ rozbudowane sekcją z explain_*.json: stare sekcje (całe lub wybrane punkty) i wpisy poziomu 3 (indeksy) zbędne
+CARD_TRIM = {
+    'Części i przyczepy': {'sections': 'ALL', 'l3': [1, 2, 3]},
+    'Otwory': {'sections': 'ALL', 'l3': 'ALL'},
+    'Trójkąty i przepukliny': {'sections': 'ALL', 'l3': 'ALL'},
+    'Położenie i sąsiedztwo': {'sections': 'ALL'},
+    'Czynność': {'sections': {'WDECH SPOKOJNY I GŁĘBOKI': 'ALL', 'CZYNNOŚĆ': [0, 1, 2]}, 'l3': 'ALL'},
+    'Wdech i wydech': {'sections': {'WDECH': 'ALL', 'WYDECH': 'ALL'}},
+    'Tłocznia brzuszna': {'sections': 'ALL', 'l3': 'ALL'},
+    'Wymiary klatki piersiowej': {'sections': 'ALL'},
+}
+
+
+def trim_card(c):
+    spec = CARD_TRIM.get(c.get('title'))
+    if not spec or c['title'] not in EXPL:
+        return c
+    c = dict(c)
+    sp = spec.get('sections')
+    if sp == 'ALL':
+        c['sections'] = []
+    elif isinstance(sp, dict):
+        out = []
+        for sec in c.get('sections', []):
+            r = sp.get(sec['k'])
+            if r == 'ALL':
+                continue
+            if isinstance(r, list):
+                sec = dict(sec); sec['items'] = [x for j, x in enumerate(sec['items']) if j not in r]
+            out.append(sec)
+        c['sections'] = out
+    lp = spec.get('l3')
+    if lp == 'ALL':
+        c['l3'] = []
+    elif isinstance(lp, list):
+        c['l3'] = [x for j, x in enumerate(c.get('l3', [])) if j not in lp]
+    return c
+
+
 def card_html(c, col, width, figs=(), missing=None, layout='auto', extra_html='', K=1.0):
     """c – węzeł 'card' z JSON; width – szerokość karty w mm (już po skali K)."""
     missing = missing if missing is not None else []
@@ -185,6 +225,7 @@ def card_html(c, col, width, figs=(), missing=None, layout='auto', extra_html=''
     cpg = f'<span class="cpg">s.&nbsp;{c["pg"]}</span>' if c.get('pg') else ''
     h = [f'<div class="node card osc {col}" style="width:{width:.2f}mm">',
          f'<div class="ch">{cpg}<span class="nm">{"<span class=star>★</span> " if c.get("star") else ""}{mk(c["title"])}</span> {lat(c.get("lat"))}{tag}</div><div class="bd">' + (expl_html(c['title'], width - 6.5 * K, FIGSCALE_FOR.get('_expl', 1.0)) if c['title'] in EXPL else '')]
+    c = trim_card(c)
     _secs = [] if (c['title'] == 'Mięśnie oddechowe' and c['title'] in EXPL) else c.get('sections', [])   # zastępuje je tabela ★
     secs = ''.join(f'<div class="xrow"><div class="k">{mk(s["k"])}</div><ul>' + ''.join(f'<li>{mk(i)}</li>' for i in s.get('items', [])) + '</ul></div>'
                    for s in _secs)

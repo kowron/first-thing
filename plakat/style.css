@@ -250,3 +250,6 @@ svg.wires { position: absolute; left: 0; top: 0; z-index: 0; overflow: visible; 
 .etab th { background: #fbe7c4; text-align: left; padding: .5mm 1mm; font-size: 6pt; }
 .etab td { border-top: .15mm solid #e3c690; padding: .4mm 1mm; vertical-align: top; }
 .etab td.eg { background: #fff1d6; font-weight: 800; color: #7a4a00; }
+.efig { min-width: 0; }
+.efig > svg { flex: 0 1 auto; min-width: 0; }
+.estar { min-width: 0; overflow-wrap: anywhere; }

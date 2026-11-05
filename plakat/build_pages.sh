@@ -24,12 +24,12 @@ mus() {
 for pg in $ORDER; do
   echo "== $pg"
   case $pg in
-    kregoslup) ( export CWS=160 CWT=104; os kregoslup kosciec kosciec kregoslup 1189 841 0.95 0.85 ) ;;
-    klatka)    ( export CWS=112 CWT=270; os klatka kosciec kosciec klatka 1189 841 0.95 0.85 ) ;;
-    polkreg)   ( export CWM=270; os polkreg mech mech polkreg 1189 841 0.95 0.85 ) ;;
-    klodd)     ( export CWM=120 CWP=380 CWK6=240 CWO=520; os klodd mech mech klodd 1189 841 0.95 0.85 ) ;;
-    m1) ( export ROOT_TITLE='Grzbiet' ROOT_SUB='mięśnie grzbietu – powierzchowne i głębokie' W_pow=300 W_band=240 W_krot=150 W_podp=150; mus m1 grzbiet 1189 841 1.1 ) ;;
-    m2) ( export ROOT_TITLE='Klatka i brzuch' ROOT_SUB='mięśnie klatki piersiowej i brzucha' W_kpow=140 W_kgleb=140 W_kprz=190 W_bbocz=190 W_bprzed=220 W_btyl=220 DOCKCOLS_brzuch=2; mus m2 klatka,brzuch 1189 841 1.1 ) ;;
+    kregoslup) ( export CWS=160 CWT=104; os kregoslup kosciec kosciec kregoslup 1189 841 ${KO:-0.95} ${FS:-0.85} ) ;;
+    klatka)    ( export CWS=112 CWT=270; os klatka kosciec kosciec klatka 1189 841 ${KO:-0.95} ${FS:-0.85} ) ;;
+    polkreg)   ( export CWM=270; os polkreg mech mech polkreg 1189 841 ${KO:-0.95} ${FS:-0.85} ) ;;
+    klodd)     ( export CWM=120 CWP=380 CWK6=240 CWO=520; os klodd mech mech klodd 1189 841 ${KO:-0.95} ${FS:-0.85} ) ;;
+    m1) ( export ROOT_TITLE='Grzbiet' ROOT_SUB='mięśnie grzbietu – powierzchowne i głębokie' W_pow=300 W_band=240 W_krot=150 W_podp=150; mus m1 grzbiet 1189 841 ${KM:-1.1} ) ;;
+    m2) ( export ROOT_TITLE='Klatka i brzuch' ROOT_SUB='mięśnie klatki piersiowej i brzucha' W_kpow=140 W_kgleb=140 W_kprz=190 W_bbocz=190 W_bprzed=220 W_btyl=220 DOCKCOLS_brzuch=2; mus m2 klatka,brzuch 1189 841 ${KM:-1.1} ) ;;
   esac
 done
 python3 - <<PY
