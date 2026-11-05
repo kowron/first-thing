@@ -277,6 +277,15 @@
            ]
           },
           {
+           "k": "TRZY KRZYWIZNY ŻEBRA",
+           "items": [
+            "kość żebrowa jest zakrzywiona w 3 kierunkach (s. 275)",
+            "1. **krzywizna płaszczyzny** – żebro zatacza łuk wypukły bocznie; promień łuku z tyłu mniejszy, bocznie i z przodu większy (s. 275)",
+            "2. **krzywizna obrotu** – skręcenie wzdłuż żebra: gdy części tylne i środkowe stoją pionowo, części przednie zwracają powierzchnię zewnętrzną ku górze (s. 275)",
+            "3. **krzywizna brzegu** – lekkie esowate skręcenie względem płaszczyzny poziomej; żebro położone na płaszczyźnie: część tylna unosi się nad podporę (s. 275)"
+           ]
+          },
+          {
            "k": "KONIEC PRZEDNI",
            "items": [
             "nieco poszerzony; kończy się chropowatą, wgłębioną powierzchnią do połączenia z chrząstką żebrową"
@@ -313,24 +322,6 @@
            "t": "powierzchnia zewnętrzna: w żebrach środkowych zwykle pionowa, w górnych silnie skierowana ku górze, w dolnych bardziej ku dołowi",
            "pg": "275",
            "src": "3087-3089"
-          },
-          {
-           "k": "KRZYWIZNY ŻEBRA",
-           "t": "żebro zakrzywione w 3 kierunkach; krzywizna płaszczyzny – łuk wypukły bocznie, promień z tyłu mniejszy, bocznie i z przodu większy",
-           "pg": "275",
-           "src": "3089-3091"
-          },
-          {
-           "k": "KRZYWIZNY ŻEBRA",
-           "t": "krzywizna obrotu – skręcenie wzdłuż żebra: gdy części tylne i środkowe stoją pionowo, przednie zwracają powierzchnię zewnętrzną ku górze",
-           "pg": "275",
-           "src": "3091-3094"
-          },
-          {
-           "k": "KRZYWIZNY ŻEBRA",
-           "t": "krzywizna brzegu – lekkie esowate skręcenie względem płaszczyzny poziomej; żebro położone na płaszczyźnie: część tylna unosi się nad podporę",
-           "pg": "275",
-           "src": "3094-3097"
           },
           {
            "k": "BRUZDA ŻEBRA",
@@ -371,7 +362,8 @@
           "bruzda żebra {{sulcus costae}}",
           "koniec przedni (powierzchnia do chrząstki)"
          ],
-         "fig": "prawe żebro VII (kość żebrowa) od tyłu | przekrój poprzeczny trzonu – bruzda przy dolnym brzegu"
+         "fig": "prawe żebro VII (kość żebrowa) od tyłu | przekrój poprzeczny trzonu – bruzda przy dolnym brzegu",
+         "star": true
         },
         {
          "type": "card",

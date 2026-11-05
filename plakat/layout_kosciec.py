@@ -29,7 +29,7 @@ FIG.update({
     'Powierzchnia grzbietowa': ['kr_sacrum_tyl'],
     'Kość guziczna': ['kr_coccyx'],
     'Żebra – cechy ogólne': ['zebro_typowe'],
-    'Kość żebrowa': ['zebro_tyl'],
+    'Kość żebrowa': ['zebro_tyl', 'zebro_krzywizny'],
     'Żebro I': ['zebro_I'],
     'Żebro II': ['zebro_II'],
     'Żebra XI i XII': ['zebra_XI_XII'],

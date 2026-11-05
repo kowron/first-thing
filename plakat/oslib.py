@@ -77,14 +77,15 @@ def scaled_svg(name, scale=1.0, maxw=None):
 
 
 def expl_html(key, maxw=None, fig_scale=1.0):
+    """Rozbudowa karty (★): zwykła sekcja karty z tytułem, punktami, krokami i rysunkami – bez osobnej ramki."""
     e = EXPL.get(key)
     if not e:
         return ''
-    h = ['<div class="expl"><div class="eh"><span class="star">★</span> W SKRÓCIE – ' + mk(e.get('title', key)) + '</div>']
+    h = ['<div class="xrow estar"><div class="k"><span class="star">★</span> ' + mk(e.get('title', key)).upper() + '</div>']
     if e.get('points'):
         h.append('<ul>' + ''.join(f'<li>{mk(x)}</li>' for x in e['points']) + '</ul>')
     if e.get('steps'):
-        h.append('<ol>' + ''.join(f'<li>{mk(x)}</li>' for x in e['steps']) + '</ol>')
+        h.append('<ol class="estep">' + ''.join(f'<li>{mk(x)}</li>' for x in e['steps']) + '</ol>')
     for w_ in e.get('warn', []):
         h.append(f'<div class="warn"><span class="wi">!</span><span>{mk(w_)}</span></div>')
     figs = ''.join(scaled_svg(n, fig_scale, maxw) for n in e.get('fig', []))
