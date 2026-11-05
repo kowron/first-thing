@@ -77,6 +77,7 @@ for _e in EXPL.values():
     for _fld in ('points', 'steps'):
         _e[_fld] = [x for x in _e.get(_fld, []) if not re.match(r'\W*(\*\*)?\s*(Unerwienie|Odmiany)', x)]
     _e['steps'] = [re.sub(r'^\s*\d+[.)]\s*', '', x) for x in _e.get('steps', [])]     # numerację daje lista
+    _e['warn'] = [x for x in _e.get('warn', []) if not re.search(r'odmian|unerwi', x, re.I)]
 
 
 def scaled_svg(name, scale=1.0, maxw=None):
@@ -212,7 +213,7 @@ NO_DETAIL = re.compile(r'UNERWIENIE|ODMIAN|ZMIENNO', re.I)      # użytkownik: b
 
 def trim_card(c):
     c = dict(c)
-    c['l3'] = [x for x in c.get('l3', []) if not NO_DETAIL.search(x.get('k', ''))]
+    c['l3'] = [x for x in c.get('l3', []) if not NO_DETAIL.search(x.get('k', '')) and not re.search(r'unerwi', x.get('t', ''), re.I)]
     c['sections'] = [s_ for s_ in c.get('sections', []) if not NO_DETAIL.search(s_.get('k', ''))]
     spec = CARD_TRIM.get(c.get('title'))
     if not spec or c['title'] not in EXPL:

@@ -166,7 +166,7 @@ NERVES = [((25.0, 16.7), 19.6), ((27.4, 24.4), 25.8), ((28.8, 31.2), 33.6), ((30
 for (u0, y0), y1 in NERVES:
     u1 = lat(y1) - 1.2
     um = (u0 + u1) / 2
-    f.add(f'<path class="nerve" d="{poly(Ps(ribbon([(u0, y0), (um, (y0 + y1) / 2 + 0.25), (u1, y1)], 0.75), 1))}"/>')
+    pass  # nerwy usunięte (użytkownik: bez unerwień)
 
 
 # ---------------------------------------------------------------- kości: żebra i chrząstki
@@ -326,11 +326,9 @@ f.label(P(0.3, 109.0, -1), 'spojenie łonowe', 'symphysis pubica', (TL, 104.0), 
 # ---------------------------------------------------------------- podpisy – prawa kolumna
 TR = 119.0
 f.label(P(10.0, 19.0, 1), 'm. prosty brzucha', 'm. rectus abdominis', (TR, 8.0), side='R')
-f.label(P(22.4, 41.0, 1), 'nn. międzyżebrowe VI–XII', None, (TR, 20.0), side='R')
-f.text(TR + 0.7, 23.6, '6–9 miotomów buduje mięsień –')
-f.text(TR + 0.7, 26.2, 'wskazuje na to unerwienie;')
-f.text(TR + 0.7, 28.8, 'smugi = zachowane granice')
-f.text(TR + 0.7, 31.4, 'miotomów (nie wszystkie)')
+f.text(TR + 0.7, 23.6, 'budowa metameryczna: 6–9 miotomów;')
+f.text(TR + 0.7, 26.2, 'smugi = zachowane granice')
+f.text(TR + 0.7, 28.8, 'miotomów (nie wszystkie)')
 f.label(P(13.0, 46.4, 1), 'smugi ścięgniste', 'intersectiones tendineae', (TR, 40.0), side='R')
 f.text(TR + 0.7, 46.4, 'najczęściej 3–4; położenie:')
 f.text(TR + 0.7, 49.0, 'I – koniec VIII żebra chrzęstnego')

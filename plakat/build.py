@@ -83,14 +83,15 @@ for _pid, _ix in (('pochewka', [3, 5, 7, 8, 10]), ('powiez_poprzeczna', [0, 2, 4
         L3P[_pid] = dict(L3P[_pid]); L3P[_pid]['items'] = [x for j, x in enumerate(L3P[_pid]['items']) if j not in _ix]
 # --- użytkownik (5.11): bez unerwień i odmian; szczegóły poziomu 3 (budowa, uwagi, położenie…) tylko przy mięśniach oddechowych
 _NOD = re.compile(r'UNERWIENIE|ODMIAN|ZMIENNO', re.I)
+_NOT = re.compile(r'unerwi|odmian', re.I)          # także wpisy, których TREŚĆ mówi o unerwieniu
 RESP = STAR_M | {'przepona'}
 _GRZ_G = set(json.load(open('/home/user/first-thing/plakat/l3_grzbiet.json', encoding='utf-8')).get('groups', {}))
 for _m in list(L3M):
-    L3M[_m] = [x for x in L3M[_m] if not _NOD.search(x['k'])] if _m in RESP else [x for x in L3M[_m] if x['k'].strip() == '!']
+    L3M[_m] = [x for x in L3M[_m] if not _NOD.search(x['k']) and not _NOT.search(x['t'])] if _m in RESP else [x for x in L3M[_m] if x['k'].strip() == '!']
 for _g in list(L3G):
-    L3G[_g] = [x for x in L3G[_g] if not _NOD.search(x['k']) and (_g not in _GRZ_G or x['k'].strip() == '!')]
+    L3G[_g] = [x for x in L3G[_g] if not _NOD.search(x['k']) and not _NOT.search(x['t']) and (_g not in _GRZ_G or x['k'].strip() == '!')]
 for _pid in list(L3P):
-    L3P[_pid] = dict(L3P[_pid]); L3P[_pid]['items'] = [x for x in L3P[_pid]['items'] if not _NOD.search(x['k'])]
+    L3P[_pid] = dict(L3P[_pid]); L3P[_pid]['items'] = [x for x in L3P[_pid]['items'] if not _NOD.search(x['k']) and not _NOT.search(x['t'])]
 USED_M, USED_G, USED_P = set(), set(), set()
 
 def _rows(items):
@@ -268,6 +269,7 @@ def bare(n):
     m = copy.deepcopy(M(n))
     for k in ('o', 'i', 'att', 'omax', 'f', 'note', 'extra', 'warn'):
         m.pop(k, None)
+    m['sub'] = [sm for sm in m.get('sub', []) if 'odmian' not in (str(sm.get('layer', '')) + str(sm.get('tag', ''))).lower()]
     for sm in m.get('sub', []):
         for k in ('o', 'i', 'att', 'omax', 'f', 'note', 'extra', 'warn'):
             sm.pop(k, None)
@@ -386,7 +388,7 @@ k_pow = sub(gnode('Powierzchowne mięśnie klatki piersiowej', '', 'grp', PU, 'p
 k_gleb = sub(gnode('Głębokie albo właściwe mięśnie klatki piersiowej', '', 'grp', RE, 'właściwe mięśnie ściany klatki – ruchy oddechowe', '684–689'),
              cards(['mm. międzyżebrowe zewnętrzne', 'mm. międzyżebrowe wewnętrzne', 'mm. podżebrowe', 'm. poprzeczny klatki piersiowej'], RE),
              'list', width=W['kgleb'], col=RE, id='kgleb')
-PRZ_POINTER = os.environ.get('PRZ_POINTER', 'budowa, kopuły, trójkąty, unerwienie i mechanika oddychania – na plakacie „Połączenia i mechanika”')
+PRZ_POINTER = os.environ.get('PRZ_POINTER', 'przyczepy szczegółowo, kopuły, otwory, trójkąty i mechanika oddychania – na stronie „Klatka i oddychanie”')
 def przepona_short(col):
     rows = [
         ('CZĘŚCI', [
@@ -494,7 +496,7 @@ INFO = '''<div class="info">
 LEGEND_ROWS = '''<div class="lt1">JAK CZYTAĆ</div>
 <div class="lrow"><span><span class="lpill">POZIOM 1</span></span><span><b>Z daleka:</b> sam podział – rozdziały, grupy, nazwy mięśni.</span></div>
 <div class="lrow"><span><span class="lpill">POZIOM 2</span></span><span><b>Po przybliżeniu:</b> karty mięśni – przyczepy, czynność, części.</span></div>
-<div class="lrow"><span><span class="lpill">POZIOM 3</span></span><span><b>Duże przybliżenie:</b> małym drukiem w ramkach <span class="lz3">3</span> – unerwienie, odmiany, położenie, szczegóły; panele tematyczne.</span></div>
+<div class="lrow"><span><span class="lpill">POZIOM 3</span></span><span><b>Duże przybliżenie:</b> małym drukiem w ramkach <span class="lz3">3</span> – położenie, szczegóły; panele tematyczne.</span></div>
 <div class="lrow"><span><span class="lz">1</span></span><span>Pytanie przy rozgałęzieniu: według czego Bochenek dzieli grupę. Cyfra = kolejny podział w rozdziale.</span></div>
 <div class="lrow"><span><span class="lsw">grupa</span></span><span>Przerywana ramka = grupa mięśni.</span></div>
 <div class="lrow"><span><span class="lcard">mięsień</span></span><span>Pełna ramka = karta jednego mięśnia.</span></div>
