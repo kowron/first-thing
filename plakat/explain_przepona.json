@@ -1,0 +1,148 @@
+{
+ "Części i przyczepy": {
+  "title": "Przyczepy w tabeli: skąd → dokąd",
+  "points": [
+   "**część** → **przyczep początkowy** → **przyczep końcowy**",
+   "**część lędźwiowa** {{pars lumbalis}} – najsilniejsza (do 1 cm) → z każdej strony odnoga i więzadła łukowate; **odnoga prawa** {{crus dextrum}} (silniejsza, schodzi niżej) – przednia powierzchnia trzonów L1–L3 (od więzadła podłużnego przedniego), **odnoga lewa** {{crus sinistrum}} – L1–L2 → środek ścięgnisty (s. 691)",
+   "**część żebrowa** {{pars costalis}} – najszersza (ok. 3 mm) → 6 wiązek z powierzchni wewnętrznej chrząstek żeber VII–XII; wchodzą między wiązki m. poprzecznego brzucha, przebijają je nn. i naczynia międzyżebrowe VII–XI (idą do mm. brzucha) → środek ścięgnisty (s. 691–692)",
+   "**część mostkowa** {{pars sternalis}} – najmniejsza, wąskie krótkie pęczki → powierzchnia wewnętrzna wyrostka mieczykowatego → środek ścięgnisty (s. 692)",
+   "**środek ścięgnisty** {{centrum tendineum}} = wspólne ścięgno końcowe trzech części; kształt trójpłatowego liścia koniczyny: na płatku przednim serce z osierdziem, na bocznych części przyśrodkowe podstaw płuc (s. 692)",
+   "**więzadło łukowate** (inaczej łuk lędźwiowo-żebrowy {{arcus lumbocostales}}) → **od – do** → **nad czym biegnie** (s. 691)",
+   "**pośrodkowe** {{lig. arcuatum medianum}} → łuk ze zbiegających się włókien przyśrodkowych, ścięgnistych brzegów obu odnóg (na wysokości Th12) → tworzy przednie ograniczenie rozworu aortowego (s. 691)",
+   "**przyśrodkowe** {{lig. arcuatum mediale}} → trzon L1 (lub L2) → wyrostek żebrowy (poprzeczny) L1 → nad **m. lędźwiowym większym**, zrośnięte z jego powięzią (s. 691)",
+   "**boczne** {{lig. arcuatum laterale}} → wyrostek żebrowy L1 → XII żebro → nad **m. czworobocznym lędźwi**, zrośnięte z jego powięzią; pod nim przechodzi n. podżebrowy (s. 691–692)"
+  ],
+  "steps": [
+   "Przepona przyczepia się wzdłuż granic otworu dolnego klatki piersiowej (s. 291) – opowiadaj ją „dookoła”, od kręgosłupa do mostka.",
+   "Z tyłu: odnogi na trzonach (prawa L1–L3, lewa L1–L2); na wysokości Th12 łączą się więzadłem łukowatym pośrodkowym (s. 691).",
+   "W bok: więzadło łukowate przyśrodkowe przechodzi łukiem nad m. lędźwiowym większym do wyrostka żebrowego L1; od niego więzadło łukowate boczne – nad m. czworobocznym lędźwi do XII żebra (s. 691).",
+   "Dalej ku przodowi: część żebrowa (chrząstki żeber VII–XII), na końcu część mostkowa (wyrostek mieczykowaty) (s. 691–692).",
+   "Wszystkie włókna zbiegają się w środku ścięgnistym (s. 692)."
+  ],
+  "warn": [
+   "Streszczenie (s. 700) podaje w części lędźwiowej tylko więzadła łukowate boczne i przyśrodkowe oraz odnogi; opis (s. 691) – trzy więzadła: pośrodkowe, przyśrodkowe i boczne.",
+   "Część żebrowa: opis (s. 692) – od chrząstek żeber VII–XII; streszczenie (s. 701) – „od wewnętrznych powierzchni żeber VII–XII”."
+  ],
+  "fig": ["przepona_wiezadla"]
+ },
+ "Otwory": {
+  "title": "Otwory w tabeli: gdzie, czym ograniczone, co przechodzi",
+  "points": [
+   "**otwór** → **część przepony** → **ograniczenia** → **co przechodzi**",
+   "**rozwór aortowy** {{hiatus aorticus}} → część lędźwiowa, między odnogami, na wysokości **Th12** → z przodu więzadło łukowate pośrodkowe, po bokach odnoga prawa i lewa, z tyłu kręgosłup; dokoła włókna ścięgniste → aorta oraz przewód piersiowy (do tyłu i na prawo od aorty) (s. 691–692, 700–701)",
+   "**rozwór przełykowy** {{hiatus esophageus}} → część lędźwiowa, ku górze i przeważnie (57%) nieco na lewo od rozworu aortowego → rozstępujące się pęczki mięśniowe części lędźwiowej – dokoła włókna mięśniowe → przełyk oraz pnie błędne – przedni na brzegu górnym, tylny na dolnym brzegu rozworu (na przednim i tylnym obwodzie przełyku, s. 691); czasem gałązki brzuszne n. przeponowego lewego (s. 691, 693)",
+   "**otwór żyły głównej** {{foramen venae cavae}} → środek ścięgnisty, na granicy płatka prawego i przedniego; na prawo i do przodu od rozworu przełykowego → ścięgnisty brzeg, zrośnięty z żyłą → żyła główna dolna (w drodze do prawego przedsionka serca), gałązki brzuszne n. przeponowego prawego (s. 692–693)",
+   "**szczeliny w odnogach** → część lędźwiowa, między pasmami ścięgnistymi odnóg → pasma ścięgniste odnogi → szczelina przyśrodkowa: n. trzewny większy i żyła nieparzysta / nieparzysta krótka; szczelina boczna: pień współczulny; n. trzewny mniejszy – jedną albo drugą (s. 691, 693)",
+   "Ściana otworu decyduje o czynności: rozwór aortowy jest otoczony włóknami ścięgnistymi – skurcz przepony nie przeszkadza tętnieniu aorty; rozwór przełykowy otaczają włókna mięśniowe – przy każdym wdechu mogą zwężać przełyk, co przeciwstawia się opróżnianiu żołądka przez przełyk (s. 692–693).",
+   "Przełyk jest z tymi włóknami złączony luźno – przecięty operacyjnie przy żołądku może się wyśliznąć do śródpiersia, trzeba go przytrzymać (s. 693).",
+   "Poziom kręgu Bochenek podaje tylko dla rozworu aortowego: Th12 (s. 691–692, 700)."
+  ],
+  "steps": [
+   "Najniżej, tuż przy kręgosłupie (Th12) – rozwór aortowy.",
+   "Ku górze i nieco na lewo od niego – rozwór przełykowy (jeszcze w części lędźwiowej).",
+   "Na prawo i do przodu od rozworu przełykowego, już w środku ścięgnistym – otwór żyły głównej (s. 691–693)."
+  ],
+  "warn": [
+   "Rozwór aortowy: opis (s. 692) – „bardzo nieznacznie na lewo od płaszczyzny pośrodkowej”; streszczenie (s. 700) – „w linii pośrodkowej”.",
+   "Żyły w odnogach: s. 691 – w prawej ż. nieparzysta, w lewej ż. nieparzysta krótka; s. 693 – w odnodze prawej ż. nieparzysta krótka; streszczenie (s. 701) – tylko ż. nieparzysta krótka.",
+   "N. przeponowy lewy: opis (s. 693) – przez rozwór przełykowy przechodzą „czasem” jego gałązki brzuszne; streszczenie (s. 701) – rozwór „dla … n. przeponowego lewego”."
+  ]
+ },
+ "Trójkąty i przepukliny": {
+  "title": "Skąd trójkąty i którędy przepukliny",
+  "points": [
+   "Trzy części przepony nigdy ściśle się ze sobą nie łączą – między nimi zostają pola bez włókien mięśniowych: trójkąty (s. 692).",
+   "**trójkąt** → **między czym** → **gdzie i jaki** → **co przez niego / co go zamyka**",
+   "**trójkąt lędźwiowo-żebrowy** {{trigonum lumbocostale s. Bochdaleki}} → początki części lędźwiowej i żebrowej → nad XII żebrem; małe trójkątne pole, wierzchołek ku górze, podstawa ku XII żebru; występuje często → od dołu zamykają go nadnercza i części górne nerek (s. 692, 694–695)",
+   "**trójkąt mostkowo-żebrowy** {{trigonum sternocostale s. Larreyi}} → brzegi boczne części mostkowej i przyśrodkowe części żebrowej → wąska, mniej więcej trójkątna szczelina → naczynia nabrzuszne górne (końcowe gałęzie naczyń piersiowych wewnętrznych) idą na tylną powierzchnię m. prostego brzucha; normalnie przylegają tu do siebie opłucna i otrzewna (s. 692, 695)",
+   "Miejsca zmniejszonego oporu: 1) trójkąt mostkowo-żebrowy, 2) trójkąt lędźwiowo-żebrowy, 3) rozwór przełykowy – przełyk łączy się z przeponą luźno, zwłaszcza po prawej mogą powstać szczeliny (s. 695).",
+   "**przepuklina prawdziwa** {{herniae diaphragmaticae verae}} → ma worek przepuklinowy (co najmniej z otrzewnej ściennej); **rzekoma** {{herniae diaphragmaticae spuriae}} → bez worka: ubytek obejmuje też opłucną i otrzewną, które na brzegu otworu przechodzą jedna w drugą (s. 695)",
+   "Obie mogą być wrodzone {{h. congenitae}} (np. z nieprawidłowego zrastania się trzech części przepony) lub nabyte {{h. acquisitae}} (s. 695–696).",
+   "Większość przepuklin przeponowych jest po lewej – po prawej ubytki dobrze zamyka wątroba (s. 695)."
+  ]
+ },
+ "Położenie i sąsiedztwo": {
+  "title": "Gdzie stoją kopuły i co do nich przylega",
+  "points": [
+   "**sytuacja** → **kopuła prawa** → **kopuła lewa**",
+   "zwłoki (położenie krańcowo wysokie) → IV chrząstka żebrowa (młodzi III, starsi V) → o jedno międzyżebrze niżej (s. 695)",
+   "żywy, wydech (o jedno międzyżebrze niżej niż na zwłokach) → górny brzeg V chrząstki żebrowej, nieco powyżej płaszczyzny przez dolny brzeg trzonu mostka → dolny brzeg V chrząstki, nieco poniżej tej płaszczyzny (s. 695)",
+   "wdech a wydech → różnica do trzech żeber (od V do VII); prawa kopuła względem kręgosłupa: od Th8 do Th11 (s. 695)",
+   "Dlaczego na zwłokach najwyżej? Mięśnie za życia nigdy nie są tak rozluźnione; gazy w jelitach i żołądku usuwają przez przeponę powietrze z płuc, płuca silnie się zapadają (s. 695).",
+   "U żywego położenie jest bardzo zmienne: u mężczyzn niżej niż u kobiet; w pozycji leżącej wyżej niż w stojącej lub siedzącej; u młodych wyżej niż u starszych (s. 695).",
+   "**od góry** → osierdzie (zrośnięte z płatkiem przednim środka ścięgnistego) z sercem; po bokach opłucna przeponowa i podstawy płuc; przy obwodzie zachyłek żebrowo-przeponowy – płuco opuszcza się w niego przy każdym wdechu (s. 694)",
+   "**od dołu** → otrzewna (poza polem zrośnięcia z wątrobą); pod prawą kopułą wątroba, pod lewą żołądek i śledziona; z tyłu nadnercza i górne części nerek (tuż pod trójkątem lędźwiowo-żebrowym); odnogi graniczą od przodu z trzustką i częścią dwunastnicy (s. 694, 701)"
+  ]
+ },
+ "Czynność": {
+  "title": "Co się dzieje przy skurczu przepony",
+  "steps": [
+   "Przepona kurczy się i spłaszcza (s. 693).",
+   "Jej wiązki mięśniowe odchylają się od ściany klatki – zachyłek żebrowo-przeponowy rozchyla się (s. 693).",
+   "Kopuły obniżają się, mniej ruchomy środek ścięgnisty – słabiej (s. 693).",
+   "Jama klatki piersiowej powiększa się, ciśnienie w niej opada i powietrze przez drogi oddechowe wchodzi do płuc (s. 693).",
+   "Wydech: przepona się rozluźnia; napięcie mm. brzucha podnosi ją i pomaga usuwać powietrze z płuc (s. 693), a sprężyste płuca ją pociągają (s. 697)."
+  ],
+  "points": [
+   "**wdech** → **kopuły / części boczne** → **środek ścięgnisty**",
+   "spokojny → ok. 2 cm → ok. 1 cm (s. 693)",
+   "głębszy → u mężczyzn ok. 4 cm (u kobiet mniej) → do 2 cm; przy bardzo głębokim wdechu ruchy są jeszcze większe (s. 693)",
+   "Przepona to ważny mięsień wdechowy – powoduje tzw. oddychanie brzuszne (w przeciwieństwie do typu żebrowego) (s. 693).",
+   "Mięśnie brzucha są jej najskuteczniejszymi antagonistami: gdy kurczą się mm. powłok brzucha i dna miednicy, rozluźniona przepona uwypukla się ku górze – wydech (s. 697, 716).",
+   "Przy wydawaniu głosu (fonacji) przepona reguluje siłę wydechowego prądu powietrza (s. 693).",
+   "Przy każdym wdechu włókna wokół rozworu przełykowego mogą zwężać przełyk – przeciwstawia się to opróżnianiu żołądka przez przełyk (s. 693)."
+  ],
+  "warn": [
+   "Zachyłek żebrowo-przeponowy przy wdechu: opis (s. 693) – „rozchyla się”; streszczenie (s. 701) – „staje się wtedy płytszy”."
+  ]
+ },
+ "Wdech i wydech": {
+  "title": "Trzy wymiary klatki – kto je zmienia",
+  "points": [
+   "**wymiar klatki** → **wdech: co go zwiększa** → **wydech: co go zmniejsza**",
+   "**długościowy** → skurcz i obniżenie przepony (przy rozluźnionych powłokach brzucha) oraz prostowanie kręgosłupa piersiowego – przy silnym wdechu człowiek jest wyższy o parę milimetrów → rozluźnienie przepony, którą unoszą napięte mm. brzucha; zgięcie kręgosłupa (s. 693, 696)",
+   "**poprzeczny i przednio-tylny** → uniesienie żeber – klatka poszerza się i pogłębia → czynne opuszczenie żeber (s. 696)",
+   "Najskuteczniejszy wdech i wydech = wszystkie ruchy naraz; klatka powiększa się we wszystkich trzech kierunkach (s. 696).",
+   "Wydech szybki lub przeciw oporowi (kaszel, kichanie, śmiech) wymaga czynnego opuszczania żeber; najsilniej robią to mięśnie brzucha – czynne przy kaszlu i śpiewie (s. 697).",
+   "Brzeg boczny m. najszerszego grzbietu twardnieje podczas kaszlu, czyli w wydechu (przy ustalonym stawie ramiennym naciska bocznie na żebra) – klinicyści nazywają go mięśniem kaszlu (s. 654–655, 697)."
+  ],
+  "steps": [
+   "Ustaje skurcz mięśni wdechowych – żebra i klatka zaczynają się opuszczać (s. 697).",
+   "Siła sprężysta klatki działa tylko do położenia równowagi (s. 697).",
+   "Dalej żebra opuszczają mięśnie wydechowe – w spokojnym oddychaniu mm. międzyżebrowe wewnętrzne i m. poprzeczny klatki piersiowej (s. 697)."
+  ]
+ },
+ "Tłocznia brzuszna": {
+  "title": "Tłocznia krok po kroku i do czego służy",
+  "steps": [
+   "Miednica i klatka piersiowa są ustalone (s. 716).",
+   "Szpara głośni zamknięta – powietrze zostaje w płucach; płuca podpierają przeponę jak poduszki i nie dają jej uwypuklić się w obręb klatki (s. 716).",
+   "Kurczą się razem: przepona, mięśnie dna miednicy i mięśnie powłok brzucha – najwięcej m. poprzeczny brzucha (poprzeczny kierunek włókien), przy współudziale pozostałych mm. brzucha (s. 716).",
+   "Objętość jamy brzusznej maleje, ciśnienie w niej rośnie – działa ono na zawartość narządów jamy brzusznej i miednicy (s. 716)."
+  ],
+  "points": [
+   "**Zastosowania wg Bochenka**: oddawanie stolca, wydalanie moczu, poród (s. 716).",
+   "Działa najskuteczniej, gdy klatka piersiowa i miednica zbliżają się do siebie (s. 716).",
+   "Po co zamknięta głośnia? Przepona jest znacznie słabsza od mięśni powłok brzusznych – dopiero podparta przez płuca wypełnione powietrzem pozwala w pełni wyzyskać tłocznię (s. 716).",
+   "M. poprzeczny brzucha – główny mięsień tłoczni („poprzeczne sznurowanie ścian brzucha”, s. 709); m. prosty brzucha wzmacnia tłocznię (s. 711, 731).",
+   "**wydech** → przepona rozluźniona; kurczą się mm. powłok brzucha i dna miednicy → przepona uwypukla się ku górze, ciśnienie w klatce rośnie (s. 716) · **tłocznia** → przepona kurczy się razem z nimi przy ustalonej miednicy i klatce → rośnie ciśnienie w jamie brzusznej (s. 716)"
+  ],
+  "warn": [
+   "Streszczenie (s. 701): „wydech powoduje tłocznia brzuszna, która wypycha przeponę ku klatce piersiowej”; opis (s. 716) rozdziela wydech (przepona rozluźniona) i tłocznię (przepona kurczy się razem z mm. brzucha, a przy zamkniętej głośni nie uwypukla się do klatki)."
+  ]
+ },
+ "Wymiary klatki piersiowej": {
+  "title": "Wymiary w tabeli i wskaźnik klatki",
+  "points": [
+   "**poziom** → **wymiar poprzeczny** → **wymiar przednio-tylny** (przeciętnie, s. 293)",
+   "otwór górny → 9–11 cm → 5–6 cm (s. 293)",
+   "na wysokości nasady wyrostka mieczykowatego (otwór dolny) → 20–23 cm → 15–19 cm (s. 293)",
+   "na wysokości XII żebra → 18–20 cm → nie podano (s. 293)",
+   "**długość** → z przodu 16–19 cm · z boku 32 cm · z tyłu 27–30 cm (s. 293)",
+   "**wskaźnik klatki piersiowej** = wymiar poprzeczny wyrażony w odsetkach wymiaru przednio-tylnego (poprzeczny ÷ przednio-tylny × 100); u dorosłego 139 – klatka ok. 1,4 raza szersza niż głęboka (s. 293)",
+   "Wskaźnik zmienia się z wiekiem: zarodek 4-tygodniowy ok. 60 → płód 2-miesięczny ok. 90 → noworodek ok. 105 → dorosły 139 → ponad 70 lat ok. 129; u kobiet nieco mniejszy niż u mężczyzn; makak 86, człekokształtne ok. 112 (s. 293)",
+   "Przekrój poprzeczny klatki jest nerkowaty – tylne części żeber silnie wypuklają się ku tyłowi; z tyłu bruzda żebrowo-kręgowa (mięśnie głębokie grzbietu), od wewnątrz po obu stronach kręgosłupa bruzda płucna (płuco) (s. 290)"
+  ],
+  "fig": ["klatka_wymiary"]
+ }
+}
