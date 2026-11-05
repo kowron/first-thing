@@ -10,7 +10,7 @@ os.makedirs(OUT, exist_ok=True)
 PW, PH = 1189, 841
 LIMIT = float(os.environ.get('LIMIT', 826))
 KS = [float(x) for x in os.environ.get('KS', '1.05,1.0,0.95,0.9,0.85,0.8,0.75').split(',')]
-L3MIN = float(os.environ.get('L3MIN', 5.3))
+L3MIN = float(os.environ.get('L3MIN', 5.8))
 ENV0 = dict(os.environ, PLAYWRIGHT_BROWSERS_PATH='/opt/pw-browsers', EXFIG=os.environ.get('EXFIG', '0.75'))
 
 # strony: (rodzaj, parametry). 'os' = build_os.py (nazwa, layout, only, env szerokości, FS),  'mus' = build.py (rozdziały, env)
@@ -48,15 +48,23 @@ def build(name, K):
 
 todo = sys.argv[1:] or ORDER
 res = {}
+def ok(name, K):
+    b, r, over, ov = build(name, K)
+    print(f'  {name:10s} K={K:<6} dół={b:4d} prawo={r:4d} over={over} overlap={ov}', flush=True)
+    return b <= LIMIT and over == 0 and ov == 0
+LO, HI, STEP = float(os.environ.get('KLO', 0.75)), float(os.environ.get('KHI', 1.5)), float(os.environ.get('KSTEP', 0.02))
 for name in todo:
-    best = None
-    for K in KS:
-        b, r, over, ov = build(name, K)
-        print(f'  {name:10s} K={K:<5} dół={b:4d} prawo={r:4d} over={over} overlap={ov}', flush=True)
-        if b <= LIMIT and over == 0 and ov == 0:
-            best = K; break
-    res[name] = best
-    print(f'== {name}: wybrane K = {best}', flush=True)
+    # wyszukiwanie binarne największego K, które się mieści (zakładamy: mniejsze K = niższa strona)
+    lo, hi = LO, HI
+    if not ok(name, lo):
+        res[name] = None; print(f'== {name}: nie mieści się nawet przy K={lo}', flush=True); continue
+    while hi - lo > STEP:
+        mid = round((lo + hi) / 2, 3)
+        if ok(name, mid): lo = mid
+        else: hi = mid
+    lo = round(lo, 3); ok(name, lo)          # końcowe zbudowanie wybranej wersji
+    res[name] = lo
+    print(f'== {name}: wybrane K = {lo}', flush=True)
 w = PdfWriter()
 for n in ORDER:
     f = f'{OUT}/{n}.pdf'
