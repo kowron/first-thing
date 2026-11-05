@@ -54,10 +54,7 @@ tree = [
     "sections": [{"k": "CZYNNOŚĆ", "items": P['f']},
                  {"k": "WDECH SPOKOJNY I GŁĘBOKI", "items": [t(LP[8])]}],
     "l3": [LP[7], {"k": "!", "t": "Zachyłek żebrowo-przeponowy przy wdechu: s. 693 – „rozchyla się”; streszczenie (s. 701) – „staje się wtedy płytszy”.", "pg": "693, 701", "src": "2655-2656, 3151-3152"}]},
-   {"type": "card", "title": "Unerwienie, rozwój i odmiany", "pg": "690, 695–696",
-    "sections": [{"k": "UNERWIENIE", "items": [t(LP[11])]},
-                 {"k": "ROZWÓJ", "items": [t(LG[1])]}],
-    "l3": [LP[17], LP[18]]},
+   # karta „Unerwienie, rozwój i odmiany” usunięta (użytkownik: bez unerwień i odmian)
   ]},
  {"type": "group", "title": "Mechanika oddychania", "pg": "696–698",
   "why": "przepona, mięśnie klatki i brzucha razem zmieniają objętość klatki piersiowej", "q": "jak to działa?",

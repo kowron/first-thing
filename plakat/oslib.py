@@ -64,6 +64,21 @@ for _f in sorted(_glob.glob('/home/user/first-thing/plakat/explain_*.json')):
         print('BŁĄD explain', _f, _e)
 
 
+# punkty rozbudów, które tłumaczą przyczepy (użytkownik: przyczepy tylko wypunktować) albo mówią o unerwieniu/odmianach – usunięte
+EXPL_DROP = {'m. piersiowy większy': {'points': [0]}, 'm. najszerszy grzbietu': {'points': [0]}, 'm. piersiowy mniejszy': {'points': [1]},
+             'm. czworoboczny lędźwi': {'points': [1]}, 'm. piramidowy': {'points': [0, 5]}, 'Części i przyczepy': {'steps': [0]},
+             'm. prosty brzucha': {'steps': [3]}, 'm. poprzeczny klatki piersiowej': {'points': [6]},
+             'm. zębaty tylny górny': {'points': [5]}, 'm. zębaty tylny dolny': {'points': [4, 5]}}
+for _k, _sp in EXPL_DROP.items():
+    if _k in EXPL:
+        for _fld, _ix in _sp.items():
+            EXPL[_k][_fld] = [x for j, x in enumerate(EXPL[_k].get(_fld, [])) if j not in _ix]
+for _e in EXPL.values():
+    for _fld in ('points', 'steps'):
+        _e[_fld] = [x for x in _e.get(_fld, []) if not re.match(r'\W*(\*\*)?\s*(Unerwienie|Odmiany)', x)]
+    _e['steps'] = [re.sub(r'^\s*\d+[.)]\s*', '', x) for x in _e.get('steps', [])]     # numerację daje lista
+
+
 def scaled_svg(name, scale=1.0, maxw=None):
     """Rysunek z figs/out wstawiony inline w skali (w mm); maxw – ograniczenie szerokości."""
     s, w, h = fig_svg(name)
@@ -192,11 +207,16 @@ CARD_TRIM = {
 }
 
 
+NO_DETAIL = re.compile(r'UNERWIENIE|ODMIAN|ZMIENNO', re.I)      # użytkownik: bez unerwień i odmian
+
+
 def trim_card(c):
+    c = dict(c)
+    c['l3'] = [x for x in c.get('l3', []) if not NO_DETAIL.search(x.get('k', ''))]
+    c['sections'] = [s_ for s_ in c.get('sections', []) if not NO_DETAIL.search(s_.get('k', ''))]
     spec = CARD_TRIM.get(c.get('title'))
     if not spec or c['title'] not in EXPL:
         return c
-    c = dict(c)
     sp = spec.get('sections')
     if sp == 'ALL':
         c['sections'] = []

@@ -253,3 +253,5 @@ svg.wires { position: absolute; left: 0; top: 0; z-index: 0; overflow: visible; 
 .efig { min-width: 0; }
 .efig > svg { flex: 0 1 auto; min-width: 0; }
 .estar { min-width: 0; overflow-wrap: anywhere; }
+ul.attl { margin: 0; padding-left: 3.4mm; list-style: disc; }
+ul.attl li { margin: .2mm 0; }

@@ -81,6 +81,16 @@ if 'm. skośny zewnętrzny brzucha' in EXPL:
 for _pid, _ix in (('pochewka', [3, 5, 7, 8, 10]), ('powiez_poprzeczna', [0, 2, 4, 10]), ('powiezie', [0, 1]), ('kanal', [0, 1, 2, 5, 7, 8, 9, 10, 13])):
     if _pid in EXPL and _pid in L3P:
         L3P[_pid] = dict(L3P[_pid]); L3P[_pid]['items'] = [x for j, x in enumerate(L3P[_pid]['items']) if j not in _ix]
+# --- użytkownik (5.11): bez unerwień i odmian; szczegóły poziomu 3 (budowa, uwagi, położenie…) tylko przy mięśniach oddechowych
+_NOD = re.compile(r'UNERWIENIE|ODMIAN|ZMIENNO', re.I)
+RESP = STAR_M | {'przepona'}
+_GRZ_G = set(json.load(open('/home/user/first-thing/plakat/l3_grzbiet.json', encoding='utf-8')).get('groups', {}))
+for _m in list(L3M):
+    L3M[_m] = [x for x in L3M[_m] if not _NOD.search(x['k'])] if _m in RESP else [x for x in L3M[_m] if x['k'].strip() == '!']
+for _g in list(L3G):
+    L3G[_g] = [x for x in L3G[_g] if not _NOD.search(x['k']) and (_g not in _GRZ_G or x['k'].strip() == '!')]
+for _pid in list(L3P):
+    L3P[_pid] = dict(L3P[_pid]); L3P[_pid]['items'] = [x for x in L3P[_pid]['items'] if not _NOD.search(x['k'])]
 USED_M, USED_G, USED_P = set(), set(), set()
 
 def _rows(items):
@@ -163,7 +173,7 @@ def ol(items):
         return ''
     if len(items) == 1:
         return f'<div class="one">{mk(items[0])}</div>'
-    return '<ol>' + ''.join(f'<li>{mk(x)}</li>' for x in items) + '</ol>'
+    return '<ul class="attl">' + ''.join(f'<li>{mk(x)}</li>' for x in items) + '</ul>'
 
 def att(d, wide):
     o, i, a = d.get('o'), d.get('i'), d.get('att')
