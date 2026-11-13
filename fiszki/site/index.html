@@ -13,6 +13,7 @@
   --bone:#c27c00; --bone-soft:#fff2cf; --joint:#2b7be4; --joint-soft:#e2edff; --muscle:#e2503a; --muscle-soft:#ffe7e1;
   --star:#dc8400; --star-soft:#fff1d0; --bad:#d4382c; --bad-soft:#fdeae7;
   --latin:#8a6a1f;
+  --m-z:#d9a21b; --m-s:#a3adbf; --m-b:#c27a45;
   --serif:"Literata Variable",Georgia,"Iowan Old Style","Palatino Linotype",serif;
   --sans:"Instrument Sans Variable",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --tis:var(--accent); --tis-soft:var(--accent-soft);
@@ -220,6 +221,102 @@ dl.how2 dd{margin:2px 0 0;color:var(--ink2);font-size:15.5px}
 .refs{margin:0;padding-left:18px;display:grid;gap:8px;font-size:15px;color:var(--ink2)}
 .refs a{color:var(--accent);font-weight:600}
 .empty{color:var(--ink2);padding:18px 0}
+/* znak w nagłówku */
+.brand{display:flex;align-items:center;gap:9px;min-width:0}
+.brand span{overflow:hidden;text-overflow:ellipsis}
+.logo{flex:none}
+@media (max-width:430px){.brand{font-size:15.5px;gap:7px}.bar nav button{padding:8px 7px}}
+
+/* kręgosłup postępu: jeden krąg = jedno pytanie */
+.spine{display:flex;align-items:center;gap:2px;height:30px}
+.spine i{display:block;flex-basis:0;min-width:2px;border-radius:3px;background:var(--line);transition:background .3s}
+.spine i.l{background:#7fd0b6}.spine i.d{background:var(--accent)}
+.spcap{font-size:12.5px;color:var(--ink3);margin-top:4px}
+
+/* karta gry na stronie głównej */
+.hero.game{background:linear-gradient(180deg,var(--star-soft),var(--surface) 64%)}
+.hero.game:before{background:var(--star)}
+.hero.game .eb{color:#8a5200}
+.btn.game-btn{background:var(--ink);border-color:var(--ink)}
+
+/* wymienianka: wybór */
+.g-lead h1{font-size:34px}
+.g-lead p{margin-top:8px}
+.g-eb{display:inline-flex;align-items:center;gap:6px;color:#8a5200}
+.seg3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:4px;background:#e9edf4;border-radius:14px}
+.seg3 button{border:0;background:none;border-radius:10px;padding:10px 6px;font-weight:600;font-size:15.5px;color:var(--ink2);transition:background .15s,color .15s}
+.seg3 button.on{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(21,26,39,.08),0 4px 12px -6px rgba(21,26,39,.25)}
+.g-md{margin-top:-6px}
+.g-note{background:var(--star-soft);border-radius:14px;padding:12px 14px;font-size:14.5px;line-height:1.45;color:#6f4500}
+.g-lists{display:flex;flex-direction:column;gap:10px}
+.g-card{display:grid;grid-template-columns:28px minmax(0,1fr) 16px;gap:14px;align-items:center;width:100%;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px;transition:box-shadow .15s,transform .12s}
+.g-card:hover{box-shadow:var(--sh)}.g-card:active{transform:scale(.99)}
+.g-cm{display:grid;place-items:center}
+.g-ct{display:flex;flex-direction:column;gap:2px;min-width:0}
+.g-ct>b{font-size:16.5px;font-weight:650;line-height:1.3}
+.g-cd{font-size:13.5px;color:var(--ink2)}
+.g-cb{font-size:13px;color:var(--ink3)}.g-cb b{color:var(--ink);font-weight:650}
+.g-card .ch{color:var(--ink3)}
+.g-rl{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13.5px;color:var(--ink2);margin-top:6px}
+.g-rl span{display:inline-flex;align-items:center;gap:6px}
+.medal{flex:none;display:block}.medal.none{opacity:.7}
+
+/* wymienianka: przed startem */
+.g-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.g-stats div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.g-stats span{font-size:12.5px;color:var(--ink2)}
+.g-stats b{font:650 21px/1.2 var(--serif);font-variant-numeric:tabular-nums}
+.g-how{font-size:15px;line-height:1.5;color:var(--ink2)}
+.g-how b{display:block;color:var(--ink);font-size:14px;margin-bottom:2px}
+.btn.g-go{font-size:18px}
+
+/* wymienianka: plansza */
+.g-board{display:flex;flex-direction:column;gap:16px}
+.g-grp{display:flex;flex-direction:column;gap:8px}
+.g-gh{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;font-weight:650;color:var(--tis)}
+.g-gc{color:var(--ink3);font-variant-numeric:tabular-nums}
+.slots{display:flex;flex-wrap:wrap;gap:6px}
+.slot{min-width:58px;min-height:34px;display:inline-flex;align-items:center;padding:6px 11px;border-radius:10px;border:1.5px dashed #cfd6e3;font-size:14.5px;line-height:1.3;color:var(--ink)}
+.g-board.still .slot{min-width:46px;min-height:28px}
+.slot.ok{border:1.5px solid transparent;background:var(--tis-soft);font-weight:560}
+.slot.half{border-style:solid;border-color:var(--star)}
+.slot.pop{animation:pop .5s cubic-bezier(.3,1.5,.5,1) both}
+@keyframes pop{0%{transform:scale(.55);opacity:0}100%{transform:none;opacity:1}}
+
+/* wymienianka: w trakcie */
+.g-tl{flex:1;min-width:0;font-size:14px;font-weight:600;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.g-clock{display:flex;flex-direction:column;align-items:center;gap:8px;padding:4px 0 0}
+.g-time{font:650 64px/1 var(--serif);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.g-time small{font-size:.42em;font-weight:500;color:var(--ink3)}
+.g-parbar{width:min(300px,80%);height:6px;border-radius:4px;background:var(--line);overflow:hidden}
+.g-parbar b{display:block;height:100%;width:0;border-radius:4px;background:var(--accent)}
+.g-parbar b.over{background:var(--star)}
+.g-parl{font-size:13px;color:var(--ink3)}
+.g-mic{display:flex;align-items:center;gap:10px;min-height:42px;font-size:15px;color:var(--ink2)}
+.g-mic .btn{margin-left:auto}
+.g-dot{flex:none;width:12px;height:12px;border-radius:50%;background:var(--ink3)}
+.g-dot.wait{background:var(--star)}
+.g-dot.live{background:var(--bad);animation:pulse 1.4s infinite}
+.g-dot.kb{width:auto;height:auto;background:none;color:var(--ink2)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(212,56,44,.45)}70%{box-shadow:0 0 0 10px rgba(212,56,44,0)}100%{box-shadow:0 0 0 0 rgba(212,56,44,0)}}
+.g-heard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;min-height:50px;font-size:15px;line-height:1.45;overflow-wrap:anywhere}
+.g-heard i{font-family:var(--sans);color:var(--ink3)}
+
+/* wymienianka: wynik */
+.g-res{display:flex;gap:18px;align-items:center}
+.g-res .eb{color:var(--ink2)}
+.g-pts{font:650 18px/1.1 var(--serif);margin:2px 0 6px}
+.g-pts b{font-size:50px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.g-sum{display:flex;flex-direction:column;gap:14px}
+.g-sg ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:2px}
+.g-sg li{display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;align-items:start;padding:8px 8px;margin:0 -8px;border-radius:10px;line-height:1.4}
+.g-sg li[role=button]{cursor:pointer}
+.g-sg li.no{background:var(--bad-soft)}
+.g-ck{width:22px;height:22px;margin-top:1px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff;background:var(--accent)}
+.g-sg li.no .g-ck{background:transparent;border:2px solid var(--bad)}
+.g-nm b{font-weight:600}
+.g-tr summary{cursor:pointer;padding:6px 0;font-weight:600;color:var(--ink2)}
+.g-tr p{font-size:14.5px;color:var(--ink2);overflow-wrap:anywhere}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 @media (max-width:359px){.wrap{padding:0 16px}.bar nav button{padding:8px 6px;font-size:14px}.brand{font-size:16px}}
 @media (min-width:720px){main{padding-top:34px}}
@@ -230,5 +327,8 @@ dl.how2 dd{margin:2px 0 0;color:var(--ink2);font-size:15.5px}
 <main id="app"><div class="wrap"><p class="mut">Wczytuję…</p></div></main>
 <script src="bank.js"></script>
 <script src="app.js"></script>
+<script src="wym.js"></script>
+<script src="wymatch.js"></script>
+<script src="gra.js"></script>
 </body>
 </html>

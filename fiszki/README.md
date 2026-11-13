@@ -6,6 +6,9 @@ Strona do nauki na zaliczenie nr 2 (szkielet osiowy): pytania prowadzącego, odp
 - `site/` – gotowa strona (to jest opublikowane jako artefakt)
   - `index.html` – szkielet strony i cały CSS
   - `app.js` – cała logika (widoki, sesja nauki, powtórki, egzamin, zapis postępu)
+  - `wym.js` – listy do wymienianki (nazwy polskie i łacińskie wg Bochenka, strony)
+  - `wymatch.js` – dopasowanie mowy/tekstu do nazw (klucz fonetyczny, tolerancja błędów; testowalne w node)
+  - `gra.js` – wymienianka na czas: tryby polska/łacińska/mieszana, czas, punkty, medale, rekordy (`S.g`)
   - `bank.js` – bank pytań, GENEROWANY z `bank/*.txt` (nie edytować ręcznie)
   - `fonts.css` – czcionki Literata i Instrument Sans jako data URI
 - `bank/` – źródło treści: pytania, punkty odpowiedzi, dopytania, łacina
