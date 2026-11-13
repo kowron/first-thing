@@ -9,6 +9,7 @@ Strona do nauki na zaliczenie nr 2 (szkielet osiowy): pytania prowadzącego, odp
   - `wym.js` – listy do wymienianki (nazwy polskie i łacińskie wg Bochenka, strony)
   - `wymatch.js` – dopasowanie mowy/tekstu do nazw (klucz fonetyczny, tolerancja błędów; testowalne w node)
   - `gra.js` – wymienianka na czas: tryby polska/łacińska/mieszana, czas, punkty, medale, rekordy (`S.g`)
+  - `lac.js` + `lac_data.js` – tryb Łacina: wszystkie nazwy łacińskie z Bochenka (s. 219–298, 649–733); runda 1 przegląd (umiem / nie jestem pewny / nie umiem), od rundy 2 pisanie tylko niepewnych, błędne wracają; stan w `S.lt`
   - `bank.js` – bank pytań, GENEROWANY z `bank/*.txt` (nie edytować ręcznie)
   - `fonts.css` – czcionki Literata i Instrument Sans jako data URI
 - `bank/` – źródło treści: pytania, punkty odpowiedzi, dopytania, łacina
@@ -48,3 +49,6 @@ Następnego dnia (granica doby 4:00) pełna powtórka; dobra odpowiedź utrwala,
 ## Zasady treści
 Źródłem jest Bochenek. Cecha struktury = to, co ją odróżnia od reszty grupy; przymiotniki zawsze z punktem odniesienia.
 Każda informacja w jednym pytaniu.
+
+## Łacina (`lac_src/`)
+`lac_1..6.json` – nazwy wypisane z tekstu Bochenka (po jednym rozdziale), `lac_drop.txt` – pominięte, `merge_lac.py` – scala je do `site/lac_data.js` (bez powtórzeń, działy w kolejności książki). Lekcje z pytaniami nie mają już wpisywania łaciny.

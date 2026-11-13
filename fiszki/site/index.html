@@ -225,7 +225,8 @@ dl.how2 dd{margin:2px 0 0;color:var(--ink2);font-size:15.5px}
 .brand{display:flex;align-items:center;gap:9px;min-width:0}
 .brand span{overflow:hidden;text-overflow:ellipsis}
 .logo{flex:none}
-@media (max-width:430px){.brand{font-size:15.5px;gap:7px}.bar nav button{padding:8px 7px}}
+@media (max-width:520px){.brand span{display:none}.bar nav button{padding:8px 8px}}
+@media (max-width:360px){.bar nav button{padding:8px 5px;font-size:14px}}
 
 /* kręgosłup postępu: jeden krąg = jedno pytanie */
 .spine{display:flex;align-items:center;gap:2px;height:30px}
@@ -317,6 +318,42 @@ dl.how2 dd{margin:2px 0 0;color:var(--ink2);font-size:15.5px}
 .g-nm b{font-weight:600}
 .g-tr summary{cursor:pointer;padding:6px 0;font-weight:600;color:var(--ink2)}
 .g-tr p{font-size:14.5px;color:var(--ink2);overflow-wrap:anywhere}
+/* łacina */
+.lt-eb{color:var(--latin)}
+.lt-seg{display:flex;height:10px;border-radius:6px;overflow:hidden;background:var(--line)}
+.lt-seg b{display:block;height:100%;transition:width .5s cubic-bezier(.3,.7,.2,1)}
+.lt-seg .k{background:var(--latin)}.lt-seg .ok{background:var(--accent)}.lt-seg .todo{background:#f2b9ae}.lt-seg .left{background:var(--line)}
+.legend .lk:before{background:var(--latin)}.legend .lok:before{background:var(--accent)}.legend .ltd:before{background:#f2b9ae}
+.hero.lt-hero{background:linear-gradient(180deg,#f6efdf,var(--surface) 64%)}
+.hero.lt-hero:before{background:var(--latin)}
+.hero.lt-hero .eb{color:var(--latin)}
+.lt-topics{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.lt-det summary{cursor:pointer;font-weight:600;color:var(--ink2);padding:6px 0}
+.lt-det[open] summary{margin-bottom:6px}
+.lt-tp{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.lt-tn{color:var(--ink3);font-variant-numeric:tabular-nums;flex:none}
+.lt-links{display:flex;flex-wrap:wrap;gap:10px}
+.lt-fc{cursor:pointer;border-top-color:var(--latin);animation:ltin .28s cubic-bezier(.2,.75,.25,1) both}
+.lt-fc .lb{color:var(--latin)}
+@keyframes ltin{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
+.lt-pl{font:650 27px/1.25 var(--serif);text-wrap:balance}
+.lt-la{border-top:1px dashed var(--line);padding-top:14px;min-height:56px;font-size:21px;line-height:1.35}
+.lt-la i{font-size:23px}
+.lt-hide{font-size:15px;color:var(--ink3)}
+.lt-alt{font-size:14px;color:var(--ink2);margin-top:4px}.lt-alt i{font-size:15px}
+.btn.lt-n{background:var(--surface);color:var(--bad);border-color:#f0c4be}
+.btn.lt-u{background:var(--surface);color:#8a5200;border-color:#f1d9a6}
+.lt-intro{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:24px max(16px,env(safe-area-inset-left,0px));background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:ltfade .25s ease both}
+.lt-intro>div{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;animation:ltup .45s cubic-bezier(.2,.8,.25,1) both}
+.lt-intro span{font:650 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--latin)}
+.lt-intro b{font:650 32px/1.15 var(--serif);text-wrap:balance;max-width:16em}
+.lt-intro.out{animation:ltfade .3s ease reverse both}
+@keyframes ltfade{from{opacity:0}to{opacity:1}}
+@keyframes ltup{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+.lt-bank{display:flex;flex-direction:column}
+.lt-bh{font-size:13.5px;font-weight:650;color:var(--latin);padding:16px 0 4px}
+.lt-bi{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.lt-bi>div{min-width:0}.lt-bi .link{flex:none;padding:6px 0}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 @media (max-width:359px){.wrap{padding:0 16px}.bar nav button{padding:8px 6px;font-size:14px}.brand{font-size:16px}}
 @media (min-width:720px){main{padding-top:34px}}
@@ -330,5 +367,7 @@ dl.how2 dd{margin:2px 0 0;color:var(--ink2);font-size:15.5px}
 <script src="wym.js"></script>
 <script src="wymatch.js"></script>
 <script src="gra.js"></script>
+<script src="lac_data.js"></script>
+<script src="lac.js"></script>
 </body>
 </html>

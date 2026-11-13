@@ -1,0 +1,5 @@
+# mięśnie zwierząt (nie człowieka)
+panniculus carnosus
+musculus depressor scapulae
+# duplikat: ten sam mięsień jest na s. 659 jako „prostownik grzbietu” (erector spinae)
+musculus erector spinae

@@ -1,0 +1,671 @@
+[
+ {
+  "pl": "żebra",
+  "la": "costae",
+  "alt": [],
+  "s": 273,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "żebra prawdziwe",
+  "la": "costae verae",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "żebra rzekome",
+  "la": "costae spuriae",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "łuk żebrowy",
+  "la": "arcus costalis",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "żebra wolne",
+  "la": "costae fluitantes",
+  "alt": [
+   "costae fluctuantes"
+  ],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": "costae fluctuantes – w przypisie"
+ },
+ {
+  "pl": "kość żebrowa",
+  "la": "os costale",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": "albo żebro kostne"
+ },
+ {
+  "pl": "głowa żebra",
+  "la": "caput costae",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powierzchnia stawowa głowy żebra",
+  "la": "facies articularis capitis costae",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": "w tekście „powierzchnia stawowa (facies articularis capitis costae)”; w streszczeniu l.mn. facies articulares capitis costae"
+ },
+ {
+  "pl": "grzebień głowy",
+  "la": "crista capitis",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "dołki żebrowe",
+  "la": "foveae costales",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": "w tym miejscu tekst: „powierzchniom stawowym trzonów kręgów piersiowych (foveae costales)”, zdanie dalej „dołkami żebrowymi trzonów kręgów”"
+ },
+ {
+  "pl": "szyjka żebra",
+  "la": "collum costae",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "grzebień szyjki żebra",
+  "la": "crista colli costae",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "guzek żebra",
+  "la": "tuberculum costae",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powierzchnia stawowa guzka żebra",
+  "la": "facies articularis tuberculi costae",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "trzon żebra",
+  "la": "corpus costae",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kąt żebra",
+  "la": "angulus costae",
+  "alt": [],
+  "s": 274,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": "w tekście „tępy kąt (angulus costae)”; „kąt żebra” – streszczenie s. 297"
+ },
+ {
+  "pl": "bruzda żebra",
+  "la": "sulcus costae",
+  "alt": [],
+  "s": 275,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "chrząstka żebrowa",
+  "la": "cartilago costalis",
+  "alt": [],
+  "s": 275,
+  "t": "Żebra",
+  "k": false,
+  "uwaga": "albo żebro chrzęstne; w streszczeniu l.mn. chrząstki żebrowe (cartilagines costales)"
+ },
+ {
+  "pl": "guzek mięśnia pochyłego przedniego",
+  "la": "tuberculum musculi scaleni anterioris",
+  "alt": [],
+  "s": 276,
+  "t": "Żebro pierwsze i drugie",
+  "k": false,
+  "uwaga": "u Bochenka skrót: tuberculum m. scaleni anterioris"
+ },
+ {
+  "pl": "bruzda żyły podobojczykowej",
+  "la": "sulcus venae subclaviae",
+  "alt": [],
+  "s": 276,
+  "t": "Żebro pierwsze i drugie",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "bruzda tętnicy podobojczykowej",
+  "la": "sulcus arteriae subclaviae",
+  "alt": [],
+  "s": 276,
+  "t": "Żebro pierwsze i drugie",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "guzowatość mięśnia zębatego przedniego",
+  "la": "tuberositas musculi serrati anterioris",
+  "alt": [],
+  "s": 277,
+  "t": "Żebro pierwsze i drugie",
+  "k": false,
+  "uwaga": "u Bochenka skrót: tuberositas m. serrati anterioris; w tekście tylko „guzowatość” (dla przyczepu m. zębatego przedniego)"
+ },
+ {
+  "pl": "mostek",
+  "la": "sternum",
+  "alt": [],
+  "s": 278,
+  "t": "Mostek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "rękojeść mostka",
+  "la": "manubrium sterni",
+  "alt": [],
+  "s": 279,
+  "t": "Mostek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wcięcie szyjne",
+  "la": "incisura jugularis",
+  "alt": [],
+  "s": 280,
+  "t": "Mostek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wcięcie obojczykowe",
+  "la": "incisura clavicularis",
+  "alt": [],
+  "s": 280,
+  "t": "Mostek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wcięcie żebrowe",
+  "la": "incisura costalis",
+  "alt": [],
+  "s": 280,
+  "t": "Mostek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "trzon mostka",
+  "la": "corpus sterni",
+  "alt": [],
+  "s": 280,
+  "t": "Mostek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "segmenty mostka",
+  "la": "sternebrae",
+  "alt": [],
+  "s": 280,
+  "t": "Mostek",
+  "k": false,
+  "uwaga": "w tekście: trzon dzieli się na cztery odcinki odpowiadające rozwojowo czterem segmentom (sternebrae); streszczenie: „cztery rozwojowe segmenty”"
+ },
+ {
+  "pl": "kąt mostka",
+  "la": "angulus sterni",
+  "alt": [],
+  "s": 280,
+  "t": "Mostek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wyrostek mieczykowaty",
+  "la": "processus xiphoideus",
+  "alt": [],
+  "s": 280,
+  "t": "Mostek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "żebro dwudzielne",
+  "la": "costa bicipitalis",
+  "alt": [
+   "costa bifurca"
+  ],
+  "s": 282,
+  "t": "Zmienność żeber i mostka",
+  "k": false,
+  "uwaga": "zwane też żebrem rozdwojonym (costa bifurca)"
+ },
+ {
+  "pl": "żebro przebite",
+  "la": "costa perforata",
+  "alt": [],
+  "s": 282,
+  "t": "Zmienność żeber i mostka",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "szczelina mostka",
+  "la": "fissura sterni",
+  "alt": [],
+  "s": 282,
+  "t": "Zmienność żeber i mostka",
+  "k": true,
+  "uwaga": "w tekście „podłużna szczelina (fissura sterni)”; „szczelina mostka” – streszczenie s. 297"
+ },
+ {
+  "pl": "nieprawidłowe położenie serca",
+  "la": "ectopia cordis",
+  "alt": [],
+  "s": 282,
+  "t": "Zmienność żeber i mostka",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "kości nadmostkowe",
+  "la": "ossa suprasternalia",
+  "alt": [],
+  "s": 282,
+  "t": "Zmienność żeber i mostka",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "stawy żebrowo-kręgowe",
+  "la": "articulationes costovertebrales",
+  "alt": [],
+  "s": 283,
+  "t": "Połączenia żeber z kręgosłupem",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "stawy głów żebrowych",
+  "la": "articulationes capitum costarum",
+  "alt": [],
+  "s": 283,
+  "t": "Połączenia żeber z kręgosłupem",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło promieniste głowy żebra",
+  "la": "ligamentum capitis costae radiatum",
+  "alt": [],
+  "s": 283,
+  "t": "Połączenia żeber z kręgosłupem",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło śródstawowe głowy żebra",
+  "la": "ligamentum capitis costae intraarticulare",
+  "alt": [],
+  "s": 285,
+  "t": "Połączenia żeber z kręgosłupem",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "stawy żebrowo-poprzeczne",
+  "la": "articulationes costotransversariae",
+  "alt": [],
+  "s": 285,
+  "t": "Połączenia żeber z kręgosłupem",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło żebrowo-poprzeczne",
+  "la": "ligamentum costotransversarium",
+  "alt": [],
+  "s": 285,
+  "t": "Połączenia żeber z kręgosłupem",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło żebrowo-poprzeczne górne",
+  "la": "ligamentum costotransversarium superius",
+  "alt": [
+   "ligamentum costotransversarium anterius"
+  ],
+  "s": 285,
+  "t": "Połączenia żeber z kręgosłupem",
+  "k": false,
+  "uwaga": "w przypisie: więzadło żebrowo-poprzeczne przednie (ligamentum costotransversarium anterius)"
+ },
+ {
+  "pl": "więzadło żebrowo-poprzeczne boczne",
+  "la": "ligamentum costotransversarium laterale",
+  "alt": [
+   "ligamentum costotransversarium posterius"
+  ],
+  "s": 285,
+  "t": "Połączenia żeber z kręgosłupem",
+  "k": false,
+  "uwaga": "w przypisie: więzadło żebrowo-poprzeczne tylne (ligamentum costotransversarium posterius)"
+ },
+ {
+  "pl": "więzadło guzka żebra",
+  "la": "ligamentum tuberculi costae",
+  "alt": [],
+  "s": 285,
+  "t": "Połączenia żeber z kręgosłupem",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło lędźwiowo-żebrowe",
+  "la": "ligamentum lumbocostale",
+  "alt": [],
+  "s": 285,
+  "t": "Połączenia żeber z kręgosłupem",
+  "k": false,
+  "uwaga": "część blaszki głębokiej powięzi piersiowo-lędźwiowej"
+ },
+ {
+  "pl": "chrząstkozrost mostkowo-żebrowy żebra pierwszego",
+  "la": "synchondrosis sternocostalis costae primae",
+  "alt": [],
+  "s": 286,
+  "t": "Połączenia żeber i mostka",
+  "k": false,
+  "uwaga": "w tekście polska nazwa tylko „chrząstkozrost” (chrząstki I żebra z mostkiem)"
+ },
+ {
+  "pl": "stawy mostkowo-żebrowe",
+  "la": "articulationes sternocostales",
+  "alt": [],
+  "s": 286,
+  "t": "Połączenia żeber i mostka",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadła promieniste mostkowo-żebrowe",
+  "la": "ligamenta sternocostalia radiata",
+  "alt": [],
+  "s": 286,
+  "t": "Połączenia żeber i mostka",
+  "k": false,
+  "uwaga": "przednie i tylne"
+ },
+ {
+  "pl": "błona mostka",
+  "la": "membrana sterni",
+  "alt": [],
+  "s": 286,
+  "t": "Połączenia żeber i mostka",
+  "k": false,
+  "uwaga": "przednia i tylna"
+ },
+ {
+  "pl": "więzadło śródstawowe mostkowo-żebrowe",
+  "la": "ligamentum sternocostale intraarticulare",
+  "alt": [],
+  "s": 286,
+  "t": "Połączenia żeber i mostka",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadła żebrowo-mieczykowe",
+  "la": "ligamenta costoxiphoidea",
+  "alt": [],
+  "s": 287,
+  "t": "Połączenia żeber i mostka",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "stawy międzychrząstkowe",
+  "la": "articulationes interchondrales",
+  "alt": [],
+  "s": 287,
+  "t": "Połączenia żeber i mostka",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "chrząstkozrosty mostkowe",
+  "la": "synchondroses sternales",
+  "alt": [],
+  "s": 287,
+  "t": "Połączenia żeber i mostka",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "górne połączenie mostkowe",
+  "la": "synchondrosis manubriosternalis",
+  "alt": [
+   "symphysis manubriosternalis"
+  ],
+  "s": 287,
+  "t": "Połączenia żeber i mostka",
+  "k": false,
+  "uwaga": "u Bochenka: synchondrosis s. symphysis manubriosternalis"
+ },
+ {
+  "pl": "dolne połączenie mostkowe",
+  "la": "synchondrosis xiphosternalis",
+  "alt": [],
+  "s": 287,
+  "t": "Połączenia żeber i mostka",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "przestrzenie międzyżebrowe",
+  "la": "spatia intercostalia",
+  "alt": [],
+  "s": 298,
+  "t": "Klatka piersiowa jako całość",
+  "k": false,
+  "uwaga": "tylko w streszczeniu (s. 298); opis główny prawdopodobnie na brakujących s. 288–289"
+ },
+ {
+  "pl": "bruzda żebrowo-kręgowa",
+  "la": "sulcus costovertebralis",
+  "alt": [],
+  "s": 290,
+  "t": "Klatka piersiowa jako całość",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "bruzda płucna",
+  "la": "sulcus pulmonalis",
+  "alt": [],
+  "s": 290,
+  "t": "Klatka piersiowa jako całość",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "otwór górny klatki piersiowej",
+  "la": "apertura thoracis superior",
+  "alt": [],
+  "s": 290,
+  "t": "Klatka piersiowa jako całość",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "otwór dolny klatki piersiowej",
+  "la": "apertura thoracis inferior",
+  "alt": [],
+  "s": 291,
+  "t": "Klatka piersiowa jako całość",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kąt podmostkowy",
+  "la": "angulus infrasternalis",
+  "alt": [],
+  "s": 291,
+  "t": "Klatka piersiowa jako całość",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "dół nadbrzuszny",
+  "la": "fossa epigastrica",
+  "alt": [
+   "scrobiculus cordis"
+  ],
+  "s": 291,
+  "t": "Klatka piersiowa jako całość",
+  "k": false,
+  "uwaga": "lub żołądkowy; w przypisie: dołek sercowy (scrobiculus cordis)"
+ },
+ {
+  "pl": "jama klatki piersiowej",
+  "la": "cavitas thoracis",
+  "alt": [],
+  "s": 291,
+  "t": "Klatka piersiowa jako całość",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "jama brzuszna",
+  "la": "cavitas abdominalis",
+  "alt": [],
+  "s": 291,
+  "t": "Klatka piersiowa jako całość",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wdech",
+  "la": "inspiratio",
+  "alt": [],
+  "s": 291,
+  "t": "Kształt klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wydech",
+  "la": "exspiratio",
+  "alt": [],
+  "s": 291,
+  "t": "Kształt klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "opuszczanie się klatki piersiowej",
+  "la": "descensus thoracis",
+  "alt": [],
+  "s": 291,
+  "t": "Kształt klatki piersiowej",
+  "k": false,
+  "uwaga": "polska nazwa ułożona z tekstu: „żebra coraz bardziej opuszczają się (descensus thoracis)”"
+ },
+ {
+  "pl": "klatka piersiowa typu wdechowego",
+  "la": "thorax inspiratorius",
+  "alt": [],
+  "s": 291,
+  "t": "Kształt klatki piersiowej",
+  "k": false,
+  "uwaga": "tekst: klatkę piersiową dziecięcą możemy określić jako thorax inspiratorius (typ wdechowy) – brak dosłownej polskiej nazwy"
+ },
+ {
+  "pl": "klatka piersiowa typu wydechowego",
+  "la": "thorax exspiratorius",
+  "alt": [],
+  "s": 291,
+  "t": "Kształt klatki piersiowej",
+  "k": false,
+  "uwaga": "tekst: klatkę piersiową starego człowieka określamy jako thorax exspiratorius (typ wydechowy) – brak dosłownej polskiej nazwy"
+ },
+ {
+  "pl": "klatka piersiowa rozedmowa",
+  "la": "thorax emphysematicus",
+  "alt": [],
+  "s": 292,
+  "t": "Kształt klatki piersiowej",
+  "k": true,
+  "uwaga": "polska nazwa ułożona: w tekście „rozedma płuc powoduje … (thorax emphysematicus)”"
+ },
+ {
+  "pl": "kifoskolioza",
+  "la": "kyphoskoliosis",
+  "alt": [],
+  "s": 292,
+  "t": "Kształt klatki piersiowej",
+  "k": true,
+  "uwaga": "w tekście bez polskiego odpowiednika: „zniekształcenie klatki piersiowej (kyphoskoliosis)”; pisownia jak w OCR – sprawdzić, czy nie „kyphoscoliosis”"
+ },
+ {
+  "pl": "klatka piersiowa gruźlicza",
+  "la": "thorax phthisicus",
+  "alt": [],
+  "s": 292,
+  "t": "Kształt klatki piersiowej",
+  "k": true,
+  "uwaga": "polska nazwa ułożona z tekstu (klatka piersiowa asteniczna – gruźlicza; skłonność do gruźlicy szczytów płuc)"
+ }
+]

@@ -1,0 +1,791 @@
+[
+ {
+  "pl": "mięśnie kolcowo-ramienne",
+  "la": "musculi spinohumerales",
+  "alt": [],
+  "s": 650,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "Podgrupa powierzchownych mięśni grzbietu."
+ },
+ {
+  "pl": "mięśnie kolcowo-żebrowe",
+  "la": "musculi spinocostales",
+  "alt": [],
+  "s": 650,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "Podgrupa powierzchownych mięśni grzbietu (mm. zębate tylne); wymienione we wstępie do mięśni powierzchownych."
+ },
+ {
+  "pl": "mięsień czworoboczny",
+  "la": "musculus trapezius",
+  "alt": [
+   "musculus mensalis",
+   "musculus cucullaris"
+  ],
+  "s": 650,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "Dawne nazwy: mięsień stołowy (m. mensalis) i mięsień kapturowy (m. cucullaris)."
+ },
+ {
+  "pl": "część zstępująca mięśnia czworobocznego",
+  "la": "pars descendens musculi trapezii",
+  "alt": [],
+  "s": 650,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "S. 650: „włókna górne mięśnia (pars descendens m. trapezii)”; w Czynności „część górna”, w Topografii „część zstępująca”."
+ },
+ {
+  "pl": "część poprzeczna mięśnia czworobocznego",
+  "la": "pars transversa musculi trapezii",
+  "alt": [],
+  "s": 651,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "W tekście też „część środkowa”; „część poprzeczna” – Topografia s. 651."
+ },
+ {
+  "pl": "część wstępująca mięśnia czworobocznego",
+  "la": "pars ascendens musculi trapezii",
+  "alt": [],
+  "s": 651,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "W tekście: „włókna dolne”, „część dolna”; „część wstępująca” – Topografia s. 651."
+ },
+ {
+  "pl": "trójkąt grzebienia",
+  "la": "trigonum spinae",
+  "alt": [],
+  "s": 651,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "S. 651: „trójkątny początek grzebienia łopatki (trigonum spinae)”; nazwa „trójkąt grzebienia (trigonum spinae)” – s. 657."
+ },
+ {
+  "pl": "pęczki obojczykowo-potyliczne",
+  "la": "fasciculi cleidooccipitales",
+  "alt": [],
+  "s": 652,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "Drobny druk (odmiany m. czworobocznego)."
+ },
+ {
+  "pl": "mięsień najszerszy grzbietu",
+  "la": "musculus latissimus dorsi",
+  "alt": [],
+  "s": 652,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "część kręgowa mięśnia najszerszego grzbietu",
+  "la": "pars vertebralis musculi latissimi dorsi",
+  "alt": [],
+  "s": 652,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: przyczep na wyrostkach kolczystych kręgów i grzebieniu krzyżowym."
+ },
+ {
+  "pl": "powięź piersiowo-lędźwiowa",
+  "la": "fascia thoracolumbalis",
+  "alt": [
+   "fascia lumbodorsalis"
+  ],
+  "s": 652,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "Pierwsze wystąpienie s. 652; opis główny w „Powięzie grzbietu” s. 673; alt z przypisu s. 673: powięź lędźwiowo-grzbietowa (fascia lumbodorsalis)."
+ },
+ {
+  "pl": "część biodrowa mięśnia najszerszego grzbietu",
+  "la": "pars iliaca musculi latissimi dorsi",
+  "alt": [],
+  "s": 652,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: przyczep na grzebieniu biodrowym."
+ },
+ {
+  "pl": "część żebrowa mięśnia najszerszego grzbietu",
+  "la": "pars costalis musculi latissimi dorsi",
+  "alt": [],
+  "s": 652,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: pasma od żeber IX/X–XII."
+ },
+ {
+  "pl": "część łopatkowa mięśnia najszerszego grzbietu",
+  "la": "pars scapularis musculi latissimi dorsi",
+  "alt": [],
+  "s": 652,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: przyczep na dolnym kącie łopatki."
+ },
+ {
+  "pl": "fałd pachowy tylny",
+  "la": "plica axillaris posterior",
+  "alt": [],
+  "s": 655,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "Drobny druk (Topografia)."
+ },
+ {
+  "pl": "trójkąt lędźwiowy",
+  "la": "trigonum lumbare",
+  "alt": [
+   "trigonum lumbale"
+  ],
+  "s": 655,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "Drobny druk; w przypisie: „trigonum lumbale s. Petiti” (trójkąt Petita)."
+ },
+ {
+  "pl": "kaletka maziowa mięśnia najszerszego grzbietu",
+  "la": "bursa subtendinea musculi latissimi dorsi",
+  "alt": [],
+  "s": 655,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "W tekście tylko „kaletka maziowa (bursa subtendinea m. latissimi dorsi)” – dosłownie: kaletka podścięgnowa m. najszerszego grzbietu."
+ },
+ {
+  "pl": "mięsień równoległoboczny",
+  "la": "musculus rhomboideus",
+  "alt": [],
+  "s": 655,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień równoległoboczny mniejszy",
+  "la": "musculus rhomboideus minor",
+  "alt": [],
+  "s": 656,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień równoległoboczny większy",
+  "la": "musculus rhomboideus major",
+  "alt": [],
+  "s": 656,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "łopatka skrzydłowata",
+  "la": "scapula alata",
+  "alt": [],
+  "s": 656,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": true,
+  "uwaga": "W tekście: „brzeg przyśrodkowy łopatki skrzydłowato odstaje od klatki piersiowej (scapula alata)” – polska nazwa ułożona z opisu."
+ },
+ {
+  "pl": "mięsień potyliczno-łopatkowy",
+  "la": "musculus occipitoscapularis",
+  "alt": [
+   "musculus rhomboideus capitis"
+  ],
+  "s": 657,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": "Drobny druk (odmiana); u Bochenka: „m. occipitoscapularis s. rhomboideus capitis”."
+ },
+ {
+  "pl": "dźwigacz łopatki",
+  "la": "musculus levator scapulae",
+  "alt": [],
+  "s": 657,
+  "t": "Mięśnie kolcowo-ramienne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie zębate tylne",
+  "la": "musculi serrati posteriores",
+  "alt": [],
+  "s": 658,
+  "t": "Mięśnie kolcowo-żebrowe",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień zębaty tylny górny",
+  "la": "musculus serratus posterior superior",
+  "alt": [],
+  "s": 658,
+  "t": "Mięśnie kolcowo-żebrowe",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień zębaty tylny dolny",
+  "la": "musculus serratus posterior inferior",
+  "alt": [],
+  "s": 658,
+  "t": "Mięśnie kolcowo-żebrowe",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "prostownik grzbietu",
+  "la": "erector spinae",
+  "alt": [
+   "erector trunci"
+  ],
+  "s": 659,
+  "t": "Głębokie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "Alt z przypisu. U Bochenka bez „musculus”."
+ },
+ {
+  "pl": "mięśnie poprzeczno-kolcowe",
+  "la": "musculi transversospinales",
+  "alt": [],
+  "s": 659,
+  "t": "Głębokie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "S. 659: „układ poprzeczno-kolcowy (mm. transversospinales; rotatores, multifidi, semispinales)”; nagłówek „Mięśnie poprzeczno-kolcowe” s. 667."
+ },
+ {
+  "pl": "mięsień krzyżowo-grzbietowy",
+  "la": "musculus sacrospinalis",
+  "alt": [],
+  "s": 659,
+  "t": "Głębokie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "Opis główny s. 660."
+ },
+ {
+  "pl": "mięsień kolcowo-poprzeczny",
+  "la": "musculus spinotransversalis",
+  "alt": [
+   "musculi spinotransversarii"
+  ],
+  "s": 659,
+  "t": "Głębokie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "S. 659: mm. płatowate „jedyne mięśnie o przebiegu kolcowo-poprzecznym (m. spinotransversalis)”; w streszczeniu s. 675: „Mm. kolcowo-poprzeczne (m. spinotransversarii)”."
+ },
+ {
+  "pl": "mięśnie podpotyliczne",
+  "la": "musculi suboccipitales",
+  "alt": [],
+  "s": 659,
+  "t": "Głębokie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "Opis główny s. 671."
+ },
+ {
+  "pl": "mięśnie płatowate",
+  "la": "musculi splenii",
+  "alt": [],
+  "s": 659,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień płatowaty głowy",
+  "la": "musculus splenius capitis",
+  "alt": [],
+  "s": 659,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień płatowaty szyi",
+  "la": "musculus splenius cervicis",
+  "alt": [
+   "musculus splenius colli"
+  ],
+  "s": 660,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "Alt ze streszczenia s. 675 (m. splenius colli)."
+ },
+ {
+  "pl": "mięsień biodrowo-żebrowy",
+  "la": "musculus iliocostalis",
+  "alt": [],
+  "s": 663,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień biodrowo-żebrowy lędźwi",
+  "la": "musculus iliocostalis lumborum",
+  "alt": [],
+  "s": 663,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień biodrowo-żebrowy klatki piersiowej",
+  "la": "musculus iliocostalis thoracis",
+  "alt": [],
+  "s": 663,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień biodrowo-żebrowy szyi",
+  "la": "musculus iliocostalis cervicis",
+  "alt": [],
+  "s": 663,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień najdłuższy",
+  "la": "musculus longissimus",
+  "alt": [],
+  "s": 663,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień najdłuższy klatki piersiowej",
+  "la": "musculus longissimus thoracis",
+  "alt": [],
+  "s": 665,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień najdłuższy szyi",
+  "la": "musculus longissimus cervicis",
+  "alt": [],
+  "s": 665,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień najdłuższy głowy",
+  "la": "musculus longissimus capitis",
+  "alt": [],
+  "s": 665,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień kolcowy",
+  "la": "musculus spinalis",
+  "alt": [],
+  "s": 667,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień kolcowy klatki piersiowej",
+  "la": "musculus spinalis thoracis",
+  "alt": [],
+  "s": 667,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień kolcowy szyi",
+  "la": "musculus spinalis cervicis",
+  "alt": [],
+  "s": 667,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień kolcowy głowy",
+  "la": "musculus spinalis capitis",
+  "alt": [],
+  "s": 667,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "Występuje jako odmiana."
+ },
+ {
+  "pl": "mięsień półkolcowy",
+  "la": "musculus semispinalis",
+  "alt": [],
+  "s": 667,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień półkolcowy klatki piersiowej i szyi",
+  "la": "musculus semispinalis thoracis et cervicis",
+  "alt": [],
+  "s": 668,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień półkolcowy głowy",
+  "la": "musculus semispinalis capitis",
+  "alt": [],
+  "s": 668,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień dwubrzuścowy głowy",
+  "la": "musculus biventer capitis",
+  "alt": [],
+  "s": 668,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "Przyśrodkowa część m. półkolcowego głowy."
+ },
+ {
+  "pl": "mięsień spleciony większy",
+  "la": "musculus complexus major",
+  "alt": [],
+  "s": 668,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "Boczna część m. półkolcowego głowy."
+ },
+ {
+  "pl": "mięsień wielodzielny",
+  "la": "musculus multifidus",
+  "alt": [],
+  "s": 668,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie skręcające",
+  "la": "musculi rotatores",
+  "alt": [],
+  "s": 669,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "Bochenek zalicza je do mięśni długich (choć są krótkie)."
+ },
+ {
+  "pl": "mięśnie skręcające długie",
+  "la": "rotatores longi",
+  "alt": [],
+  "s": 669,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "U Bochenka bez „mm.”. S. 669: „jedne mijają jeden kręg (rotatores longi)”; w streszczeniu s. 676: „długie (rotatores longi)”."
+ },
+ {
+  "pl": "mięśnie skręcające krótkie",
+  "la": "rotatores breves",
+  "alt": [],
+  "s": 669,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "U Bochenka bez „mm.”. Nazwa „mm. skręcające krótkie” pada na s. 669."
+ },
+ {
+  "pl": "mięśnie skręcające klatki piersiowej",
+  "la": "musculi rotatores thoracis",
+  "alt": [],
+  "s": 669,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: „w okolicy klatki piersiowej (mm. rotatores thoracis)”."
+ },
+ {
+  "pl": "mięśnie skręcające szyi",
+  "la": "musculi rotatores cervicis",
+  "alt": [],
+  "s": 669,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: „W okolicy szyjnej (mm. rotatores cervicis)”."
+ },
+ {
+  "pl": "mięśnie skręcające lędźwi",
+  "la": "musculi rotatores lumborum",
+  "alt": [],
+  "s": 669,
+  "t": "Długie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: „w okolicy lędźwiowej (mm. rotatores lumborum)”."
+ },
+ {
+  "pl": "mięśnie międzykolcowe",
+  "la": "musculi interspinales",
+  "alt": [],
+  "s": 669,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie międzykolcowe szyi",
+  "la": "musculi interspinales cervicis",
+  "alt": [],
+  "s": 670,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: „na kręgosłupie w odcinku szyjnym (mm. interspinales cervicis)”."
+ },
+ {
+  "pl": "mięśnie międzykolcowe lędźwi",
+  "la": "musculi interspinales lumborum",
+  "alt": [],
+  "s": 670,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: „w odcinku lędźwiowym (mm. interspinales lumborum)”."
+ },
+ {
+  "pl": "mięśnie międzykolcowe klatki piersiowej",
+  "la": "musculi interspinales thoracis",
+  "alt": [],
+  "s": 670,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: „w odcinku piersiowym (mm. interspinales thoracis)”."
+ },
+ {
+  "pl": "mięsień krzyżowo-guziczny tylny",
+  "la": "musculus sacrococcygeus dorsalis",
+  "alt": [],
+  "s": 670,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie międzypoprzeczne",
+  "la": "musculi intertransversarii",
+  "alt": [],
+  "s": 670,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie międzypoprzeczne przednie szyi",
+  "la": "musculi intertransversarii anteriores cervicis",
+  "alt": [],
+  "s": 670,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie międzypoprzeczne tylne szyi",
+  "la": "musculi intertransversarii posteriores cervicis",
+  "alt": [],
+  "s": 670,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie międzypoprzeczne boczne lędźwi",
+  "la": "musculi intertransversarii laterales lumborum",
+  "alt": [],
+  "s": 670,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie międzypoprzeczne przyśrodkowe lędźwi",
+  "la": "musculi intertransversarii mediales lumborum",
+  "alt": [],
+  "s": 670,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień krzyżowo-guziczny przedni",
+  "la": "musculus sacrococcygeus ventralis",
+  "alt": [],
+  "s": 670,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie dźwigacze żeber",
+  "la": "musculi levatores costarum",
+  "alt": [],
+  "s": 671,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "W tekście „Mm. dźwigacze żeber”."
+ },
+ {
+  "pl": "mięśnie dźwigacze żeber krótkie",
+  "la": "musculi levatores costarum breves",
+  "alt": [],
+  "s": 671,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: „kończą się na następnym żebrze (mm. levatores costarum breves)”."
+ },
+ {
+  "pl": "mięśnie dźwigacze żeber długie",
+  "la": "musculi levatores costarum longi",
+  "alt": [],
+  "s": 671,
+  "t": "Krótkie mięśnie grzbietu",
+  "k": false,
+  "uwaga": "BRAK dosłownej polskiej nazwy w tekście – polska nazwa ułożona z opisu: „mijając jedną przestrzeń międzyżebrową (mm. levatores costarum longi)”."
+ },
+ {
+  "pl": "mięsień skośny górny głowy",
+  "la": "musculus obliquus capitis superior",
+  "alt": [],
+  "s": 671,
+  "t": "Mięśnie podpotyliczne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień prosty tylny mniejszy głowy",
+  "la": "musculus rectus capitis posterior minor",
+  "alt": [],
+  "s": 671,
+  "t": "Mięśnie podpotyliczne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień prosty tylny większy głowy",
+  "la": "musculus rectus capitis posterior major",
+  "alt": [],
+  "s": 672,
+  "t": "Mięśnie podpotyliczne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień skośny dolny głowy",
+  "la": "musculus obliquus capitis inferior",
+  "alt": [],
+  "s": 672,
+  "t": "Mięśnie podpotyliczne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień prosty boczny głowy",
+  "la": "musculus rectus capitis lateralis",
+  "alt": [],
+  "s": 672,
+  "t": "Mięśnie podpotyliczne",
+  "k": false,
+  "uwaga": "W streszczeniu s. 677: „m. prosty głowy boczny”."
+ },
+ {
+  "pl": "wyrostek szyjny",
+  "la": "processus jugularis",
+  "alt": [],
+  "s": 673,
+  "t": "Mięśnie podpotyliczne",
+  "k": false,
+  "uwaga": "Wyrostek szyjny kości potylicznej (przyczep m. prostego bocznego głowy)."
+ },
+ {
+  "pl": "trójkąt podpotyliczny",
+  "la": "trigonum suboccipitale",
+  "alt": [],
+  "s": 673,
+  "t": "Mięśnie podpotyliczne",
+  "k": false,
+  "uwaga": "Drobny druk; ograniczony przez m. prosty tylny większy i oba mm. skośne głowy."
+ },
+ {
+  "pl": "powięź powierzchowna grzbietu",
+  "la": "fascia superficialis dorsi",
+  "alt": [],
+  "s": 673,
+  "t": "Powięzie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "blaszka tylna albo powierzchowna",
+  "la": "lamina superficialis",
+  "alt": [],
+  "s": 673,
+  "t": "Powięzie grzbietu",
+  "k": false,
+  "uwaga": "Blaszka powięzi piersiowo-lędźwiowej."
+ },
+ {
+  "pl": "grzebień krzyżowy pośrodkowy",
+  "la": "crista sacralis mediana",
+  "alt": [],
+  "s": 674,
+  "t": "Powięzie grzbietu",
+  "k": false,
+  "uwaga": "S. 674 łacina podana po „wyrostków kolczystych kręgów … krzyżowych”; polska nazwa „grzebień krzyżowy pośrodkowy” – s. 652."
+ },
+ {
+  "pl": "blaszka przednia albo głęboka",
+  "la": "lamina profunda",
+  "alt": [],
+  "s": 674,
+  "t": "Powięzie grzbietu",
+  "k": false,
+  "uwaga": "Blaszka powięzi piersiowo-lędźwiowej."
+ },
+ {
+  "pl": "więzadło biodrowo-lędźwiowe",
+  "la": "ligamentum iliolumbale",
+  "alt": [],
+  "s": 674,
+  "t": "Powięzie grzbietu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło lędźwiowo-żebrowe",
+  "la": "ligamentum lumbocostale",
+  "alt": [],
+  "s": 674,
+  "t": "Powięzie grzbietu",
+  "k": false,
+  "uwaga": "Część blaszki przedniej powięzi piersiowo-lędźwiowej."
+ },
+ {
+  "pl": "powięź karku",
+  "la": "fascia nuchae",
+  "alt": [],
+  "s": 674,
+  "t": "Powięzie grzbietu",
+  "k": false,
+  "uwaga": ""
+ }
+]

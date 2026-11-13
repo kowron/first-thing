@@ -1,0 +1,750 @@
+[
+ {
+  "pl": "puchlina brzuszna",
+  "la": "ascites",
+  "alt": [],
+  "s": 703,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "wzdęcie",
+  "la": "meteorismus",
+  "alt": [],
+  "s": 703,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień skośny zewnętrzny brzucha",
+  "la": "musculus obliquus externus abdominis",
+  "alt": [],
+  "s": 704,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kresa biała",
+  "la": "linea alba",
+  "alt": [],
+  "s": 705,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło pachwinowe",
+  "la": "ligamentum inguinale",
+  "alt": [],
+  "s": 705,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "pierścień pachwinowy powierzchowny",
+  "la": "annulus inguinalis superficialis",
+  "alt": [
+   "annulus inguinalis subcutaneus"
+  ],
+  "s": 705,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": "W przypisie s. 724: pierścień pachwinowy podskórny (annulus inguinalis subcutaneus)."
+ },
+ {
+  "pl": "mięsień skośny wewnętrzny brzucha",
+  "la": "musculus obliquus internus abdominis",
+  "alt": [],
+  "s": 707,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "dźwigacz jądra",
+  "la": "musculus cremaster",
+  "alt": [],
+  "s": 707,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": "Bochenek pisze „dźwigacz jądra (m. cremaster)”; w streszczeniu „m. dźwigacz jądra”."
+ },
+ {
+  "pl": "mięsień poprzeczny brzucha",
+  "la": "musculus transversus abdominis",
+  "alt": [],
+  "s": 708,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kresa półksiężycowata",
+  "la": "linea semilunaris",
+  "alt": [
+   "linea semilunaris s. Spigeli"
+  ],
+  "s": 708,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": "Przypis: „s. Spigeli”."
+ },
+ {
+  "pl": "mięsień międzydołkowy",
+  "la": "musculus interfoveolaris",
+  "alt": [],
+  "s": 709,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień prosty brzucha",
+  "la": "musculus rectus abdominis",
+  "alt": [],
+  "s": 710,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "smugi ścięgniste",
+  "la": "intersectiones tendineae",
+  "alt": [],
+  "s": 710,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "rozstęp mięśni prostych brzucha",
+  "la": "diastasis musculorum rectorum",
+  "alt": [],
+  "s": 711,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": true,
+  "uwaga": "Bochenek opisuje opisowo (rozstępowanie się mm. prostych na boki), bez osobnej polskiej nazwy."
+ },
+ {
+  "pl": "mięsień piramidowy",
+  "la": "musculus pyramidalis",
+  "alt": [],
+  "s": 712,
+  "t": "Boczne i przednie mięśnie brzucha",
+  "k": false,
+  "uwaga": "W „Odmianach” na s. 712 nazwany też m. stożkowatym."
+ },
+ {
+  "pl": "mięsień czworoboczny lędźwi",
+  "la": "musculus quadratus lumborum",
+  "alt": [],
+  "s": 712,
+  "t": "Tylne mięśnie i trójkąt lędźwiowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "trójkąt lędźwiowy",
+  "la": "trigonum lumbare",
+  "alt": [
+   "trigonum lumbale s. Petiti",
+   "trigonum lumbale"
+  ],
+  "s": 715,
+  "t": "Tylne mięśnie i trójkąt lędźwiowy",
+  "k": false,
+  "uwaga": "W tekście (s. 655, 715) „trigonum lumbare”, przypis „trigonum lumbale s. Petiti”; w streszczeniu (s. 731) „trigonum lumbale”."
+ },
+ {
+  "pl": "przepukliny lędźwiowe dolne",
+  "la": "herniae lumbales inferiores",
+  "alt": [],
+  "s": 716,
+  "t": "Tylne mięśnie i trójkąt lędźwiowy",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "ścięgnista przestrzeń lędźwiowa",
+  "la": "spatium tendineum lumbale",
+  "alt": [
+   "spatium tendineum lumbale s. Grynfelti"
+  ],
+  "s": 716,
+  "t": "Tylne mięśnie i trójkąt lędźwiowy",
+  "k": false,
+  "uwaga": "Przypis: „s. Grynfelti”."
+ },
+ {
+  "pl": "przepukliny lędźwiowe górne",
+  "la": "herniae lumbales superiores",
+  "alt": [],
+  "s": 716,
+  "t": "Tylne mięśnie i trójkąt lędźwiowy",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "tłocznia brzuszna",
+  "la": "prelum abdominis",
+  "alt": [],
+  "s": 716,
+  "t": "Rozcięgna i pochewka mięśnia prostego",
+  "k": false,
+  "uwaga": "Z podrozdziału „Współdziałanie mięśni brzucha”."
+ },
+ {
+  "pl": "rozcięgna",
+  "la": "aponeuroses",
+  "alt": [],
+  "s": 717,
+  "t": "Rozcięgna i pochewka mięśnia prostego",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "pochewka mięśnia prostego brzucha",
+  "la": "vagina musculi recti abdominis",
+  "alt": [],
+  "s": 718,
+  "t": "Rozcięgna i pochewka mięśnia prostego",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "blaszka przednia",
+  "la": "lamina anterior",
+  "alt": [],
+  "s": 718,
+  "t": "Rozcięgna i pochewka mięśnia prostego",
+  "k": false,
+  "uwaga": "Blaszka przednia pochewki m. prostego brzucha."
+ },
+ {
+  "pl": "blaszka tylna",
+  "la": "lamina posterior",
+  "alt": [],
+  "s": 718,
+  "t": "Rozcięgna i pochewka mięśnia prostego",
+  "k": false,
+  "uwaga": "Blaszka tylna pochewki m. prostego brzucha."
+ },
+ {
+  "pl": "kresa łukowata",
+  "la": "linea arcuata",
+  "alt": [
+   "linea semicircularis s. Douglasi"
+  ],
+  "s": 718,
+  "t": "Rozcięgna i pochewka mięśnia prostego",
+  "k": false,
+  "uwaga": "Przypis: linia półkolista (linea semicircularis s. Douglasi)."
+ },
+ {
+  "pl": "przytwierdzenie kresy białej",
+  "la": "adminiculum lineae albae",
+  "alt": [],
+  "s": 719,
+  "t": "Kresa biała i pępek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "miejsca słabszego oporu",
+  "la": "loci minoris resistentiae",
+  "alt": [
+   "locus minoris resistentiae"
+  ],
+  "s": 719,
+  "t": "Kresa biała i pępek",
+  "k": true,
+  "uwaga": "L. poj. na s. 724: miejsce zmniejszonego oporu (locus minoris resistentiae)."
+ },
+ {
+  "pl": "przepukliny kresy białej",
+  "la": "herniae lineae albae",
+  "alt": [],
+  "s": 719,
+  "t": "Kresa biała i pępek",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "pępek",
+  "la": "umbilicus",
+  "alt": [],
+  "s": 720,
+  "t": "Kresa biała i pępek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "dołek pępkowy",
+  "la": "fovea umbilicalis",
+  "alt": [],
+  "s": 720,
+  "t": "Kresa biała i pępek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "brodawka pępkowa",
+  "la": "papilla umbilicalis",
+  "alt": [],
+  "s": 720,
+  "t": "Kresa biała i pępek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "pierścień pępkowy",
+  "la": "annulus umbilicalis",
+  "alt": [],
+  "s": 720,
+  "t": "Kresa biała i pępek",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "przepuklina pępkowa",
+  "la": "hernia umbilicalis",
+  "alt": [
+   "herniae umbilicales"
+  ],
+  "s": 720,
+  "t": "Kresa biała i pępek",
+  "k": true,
+  "uwaga": "W streszczeniu (s. 732) l. mn.: przepukliny pępkowe (herniae umbilicales)."
+ },
+ {
+  "pl": "powięź powierzchowna brzucha",
+  "la": "fascia superficialis",
+  "alt": [
+   "fascia superficialis abdominis"
+  ],
+  "s": 720,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": "W streszczeniu (s. 732): fascia superficialis abdominis."
+ },
+ {
+  "pl": "powięź dźwigacza jądra",
+  "la": "fascia cremasterica",
+  "alt": [],
+  "s": 720,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powięź podskórna",
+  "la": "fascia subcutanea",
+  "alt": [],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło procowate prącia",
+  "la": "ligamentum fundiforme penis",
+  "alt": [],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło procowate łechtaczki",
+  "la": "ligamentum fundiforme clitoridis",
+  "alt": [],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło wieszadłowe prącia",
+  "la": "ligamentum suspensorium penis",
+  "alt": [],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": "W tekście razem: „więzadło wieszadłowe prącia lub łechtaczki (ligamentum suspensorium penis resp. clitoridis)”."
+ },
+ {
+  "pl": "więzadło wieszadłowe łechtaczki",
+  "la": "ligamentum suspensorium clitoridis",
+  "alt": [],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": "Rozdzielone z „ligamentum suspensorium penis resp. clitoridis”."
+ },
+ {
+  "pl": "powięź poprzeczna",
+  "la": "fascia transversalis",
+  "alt": [],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powięź pępkowa",
+  "la": "fascia umbilicalis",
+  "alt": [],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": "Bochenek nie podaje polskiej nazwy wprost: wzmocnienie powięzi poprzecznej w okolicy pępka."
+ },
+ {
+  "pl": "powięź mięśnia czworobocznego lędźwi",
+  "la": "fascia lumbalis",
+  "alt": [],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": "Na s. 714 nazywana powięzią lędźwiową."
+ },
+ {
+  "pl": "wyrostek pochwowy powięzi poprzecznej",
+  "la": "processus vaginalis fasciae transversalis",
+  "alt": [],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powięź nasienna wewnętrzna",
+  "la": "fascia spermatica interna",
+  "alt": [
+   "tunica vaginalis communis testis et funiculi spermatici"
+  ],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": "Przypis: osłonka pochwowa wspólna jądra i powrózka nasiennego (tunica vaginalis communis testis et funiculi spermatici)."
+ },
+ {
+  "pl": "pierścień pachwinowy głęboki",
+  "la": "annulus inguinalis profundus",
+  "alt": [
+   "annulus inguinalis subperitonealis"
+  ],
+  "s": 721,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": "Przypis s. 725: pierścień pachwinowy podotrzewnowy (annulus inguinalis subperitonealis)."
+ },
+ {
+  "pl": "sierp pachwinowy",
+  "la": "falx inguinalis",
+  "alt": [],
+  "s": 722,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": "Przypis: ścięgno łączące (bez łaciny w tekście; na rycinie „tendo conjunctivus”)."
+ },
+ {
+  "pl": "więzadło międzydołkowe",
+  "la": "ligamentum interfoveolare",
+  "alt": [],
+  "s": 722,
+  "t": "Powięzie brzucha",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kanał pachwinowy",
+  "la": "canalis inguinalis",
+  "alt": [],
+  "s": 722,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "zstępowanie jądra",
+  "la": "descensus testis",
+  "alt": [],
+  "s": 722,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "nasieniowód",
+  "la": "ductus deferens",
+  "alt": [],
+  "s": 723,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powrózek nasienny",
+  "la": "funiculus spermaticus",
+  "alt": [],
+  "s": 723,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wyrostek pochwowy otrzewnej",
+  "la": "processus vaginalis peritonei",
+  "alt": [],
+  "s": 723,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "jądrowód",
+  "la": "gubernaculum testis",
+  "alt": [],
+  "s": 723,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło mosznowe",
+  "la": "ligamentum scrotale",
+  "alt": [],
+  "s": 724,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "pozostałość wyrostka pochwowego otrzewnej",
+  "la": "vestigium processus vaginalis peritonei",
+  "alt": [
+   "vestigium processus vaginalis",
+   "ligamentum vaginale"
+  ],
+  "s": 724,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": "Na s. 726: „vestigium processus vaginalis”, dawniej więzadło pochwowe (ligamentum vaginale)."
+ },
+ {
+  "pl": "zstępowanie jajnika",
+  "la": "descensus ovarii",
+  "alt": [
+   "descensus ovariorum"
+  ],
+  "s": 724,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": "W streszczeniu (s. 732) l. mn.: zstępowanie jajników (descensus ovariorum)."
+ },
+ {
+  "pl": "zachyłek Nucka",
+  "la": "diverticulum Nucki",
+  "alt": [],
+  "s": 724,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": "Polska nazwa ze streszczenia (s. 732); to zachowany wyrostek pochwowy otrzewnej u kobiety."
+ },
+ {
+  "pl": "odnoga przyśrodkowa",
+  "la": "crus mediale",
+  "alt": [],
+  "s": 724,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": "Odnoga pierścienia pachwinowego powierzchownego."
+ },
+ {
+  "pl": "odnoga boczna",
+  "la": "crus laterale",
+  "alt": [],
+  "s": 724,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": "Odnoga pierścienia pachwinowego powierzchownego."
+ },
+ {
+  "pl": "włókna międzyodnogowe",
+  "la": "fibrae intercrurales",
+  "alt": [],
+  "s": 724,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": "Czyli odnoga przednia."
+ },
+ {
+  "pl": "więzadło zagięte",
+  "la": "ligamentum reflexum",
+  "alt": [],
+  "s": 724,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": "Odnoga tylna pierścienia powierzchownego."
+ },
+ {
+  "pl": "więzadło obłe macicy",
+  "la": "ligamentum teres uteri",
+  "alt": [],
+  "s": 726,
+  "t": "Kanał pachwinowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "fałd pępkowy pośrodkowy",
+  "la": "plica umbilicalis mediana",
+  "alt": [
+   "plica umbilicalis media"
+  ],
+  "s": 726,
+  "t": "Fałdy i doły przedniej ściany",
+  "k": false,
+  "uwaga": "Przypis: plica umbilicalis media."
+ },
+ {
+  "pl": "więzadło pępkowe pośrodkowe",
+  "la": "ligamentum umbilicale medianum",
+  "alt": [],
+  "s": 726,
+  "t": "Fałdy i doły przedniej ściany",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "moczownik",
+  "la": "urachus",
+  "alt": [],
+  "s": 728,
+  "t": "Fałdy i doły przedniej ściany",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "fałdy pępkowe przyśrodkowe",
+  "la": "plicae umbilicales mediales",
+  "alt": [
+   "plicae umbilicales laterales"
+  ],
+  "s": 728,
+  "t": "Fałdy i doły przedniej ściany",
+  "k": false,
+  "uwaga": "Przypis (dawna nazwa): plicae umbilicales laterales."
+ },
+ {
+  "pl": "więzadła pępkowe przyśrodkowe",
+  "la": "ligamenta umbilicalia medialia",
+  "alt": [],
+  "s": 728,
+  "t": "Fałdy i doły przedniej ściany",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "fałdy pępkowe boczne",
+  "la": "plicae umbilicales laterales",
+  "alt": [
+   "plicae epigastricae",
+   "plica umbilicalis lateralis"
+  ],
+  "s": 728,
+  "t": "Fałdy i doły przedniej ściany",
+  "k": false,
+  "uwaga": "Przypis: plicae epigastricae; w streszczeniu (s. 733) l. poj. fałd pępkowy boczny (plica umbilicalis lateralis)."
+ },
+ {
+  "pl": "dół nadpęcherzowy",
+  "la": "fossa supravesicalis",
+  "alt": [],
+  "s": 728,
+  "t": "Fałdy i doły przedniej ściany",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "dół pachwinowy przyśrodkowy",
+  "la": "fossa inguinalis medialis",
+  "alt": [],
+  "s": 729,
+  "t": "Fałdy i doły przedniej ściany",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "dół pachwinowy boczny",
+  "la": "fossa inguinalis lateralis",
+  "alt": [],
+  "s": 729,
+  "t": "Fałdy i doły przedniej ściany",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "przepukliny przyśrodkowe",
+  "la": "herniae mediales",
+  "alt": [
+   "herniae rectae"
+  ],
+  "s": 730,
+  "t": "Przepukliny i streszczenie",
+  "k": true,
+  "uwaga": "„Przepukliny przyśrodkowe lub proste (herniae mediales s. rectae)”."
+ },
+ {
+  "pl": "przepukliny nabyte",
+  "la": "herniae acquisitae",
+  "alt": [],
+  "s": 730,
+  "t": "Przepukliny i streszczenie",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "przepukliny boczne",
+  "la": "herniae laterales",
+  "alt": [
+   "herniae obliquae"
+  ],
+  "s": 730,
+  "t": "Przepukliny i streszczenie",
+  "k": true,
+  "uwaga": "„Przepukliny boczne lub skośne (herniae laterales s. obliquae)”."
+ },
+ {
+  "pl": "przepukliny wrodzone",
+  "la": "herniae congenitae",
+  "alt": [],
+  "s": 730,
+  "t": "Przepukliny i streszczenie",
+  "k": true,
+  "uwaga": "W tekście skrót „h. congenitae”."
+ },
+ {
+  "pl": "osłonka pochwowa jądra",
+  "la": "tunica vaginalis testis",
+  "alt": [],
+  "s": 732,
+  "t": "Przepukliny i streszczenie",
+  "k": false,
+  "uwaga": "Tylko w streszczeniu."
+ },
+ {
+  "pl": "naczynia nabrzuszne dolne",
+  "la": "vasa epigastrica inferiora",
+  "alt": [],
+  "s": 733,
+  "t": "Przepukliny i streszczenie",
+  "k": false,
+  "uwaga": "Tylko w streszczeniu."
+ }
+]

@@ -1,0 +1,546 @@
+[
+ {
+  "pl": "mięsień piersiowy większy",
+  "la": "musculus pectoralis major",
+  "alt": [],
+  "s": 678,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "część obojczykowa",
+  "la": "pars clavicularis",
+  "alt": [],
+  "s": 678,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "część m. piersiowego większego"
+ },
+ {
+  "pl": "część mostkowo-żebrowa",
+  "la": "pars sternocostalis",
+  "alt": [],
+  "s": 678,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "część m. piersiowego większego"
+ },
+ {
+  "pl": "część brzuszna",
+  "la": "pars abdominalis",
+  "alt": [],
+  "s": 678,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "część m. piersiowego większego"
+ },
+ {
+  "pl": "fałd pachowy przedni",
+  "la": "plica axillaris anterior",
+  "alt": [],
+  "s": 680,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "trójkąt naramienno-piersiowy",
+  "la": "trigonum deltoideopectorale",
+  "alt": [],
+  "s": 680,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "bruzda naramienno-piersiowa",
+  "la": "sulcus deltoideopectoralis",
+  "alt": [],
+  "s": 680,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "żyła odpromieniowa",
+  "la": "vena cephalica",
+  "alt": [],
+  "s": 680,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "biegnie w bruździe naramienno-piersiowej"
+ },
+ {
+  "pl": "dół podobojczykowy",
+  "la": "fossa infraclavicularis",
+  "alt": [],
+  "s": 680,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kaletka maziowa mięśnia piersiowego większego",
+  "la": "bursa musculi pectoralis majoris",
+  "alt": [],
+  "s": 680,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "w tekście: „Kaletka maziowa (bursa m. pectoralis majoris*)”"
+ },
+ {
+  "pl": "mięsień skórny",
+  "la": "panniculus carnosus",
+  "alt": [],
+  "s": 680,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "silnie rozwinięty u ssaków; u człowieka tylko szczątki"
+ },
+ {
+  "pl": "mięsień mostkowy",
+  "la": "musculus sternalis",
+  "alt": [],
+  "s": 681,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "odmiana (szczątek mięśniówki skórnej)"
+ },
+ {
+  "pl": "mięsień piersiowy mniejszy",
+  "la": "musculus pectoralis minor",
+  "alt": [],
+  "s": 681,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień podobojczykowy",
+  "la": "musculus subclavius",
+  "alt": [],
+  "s": 682,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kaletka maziowa nadkrucza",
+  "la": "bursa synovialis supracoracoidea",
+  "alt": [],
+  "s": 683,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "w tekście tylko „Kaletka maziowa (bursa synovialis supracoracoidea*)” – między przyczepem m. podobojczykowego do obojczyka a wyrostkiem kruczym; przymiotnik „nadkrucza” dodany wg łaciny"
+ },
+ {
+  "pl": "mięsień zębaty przedni",
+  "la": "musculus serratus anterior",
+  "alt": [],
+  "s": 683,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięsień obniżający łopatkę",
+  "la": "musculus depressor scapulae",
+  "alt": [],
+  "s": 684,
+  "t": "Powierzchowne mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "występuje u ptaków; u człowieka odmiana (odszczepiona część m. zębatego przedniego)"
+ },
+ {
+  "pl": "mięśnie międzyżebrowe",
+  "la": "musculi intercostales",
+  "alt": [],
+  "s": 685,
+  "t": "Głębokie mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie międzyżebrowe zewnętrzne",
+  "la": "musculi intercostales externi",
+  "alt": [],
+  "s": 685,
+  "t": "Głębokie mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "błony międzyżebrowe zewnętrzne",
+  "la": "membranae intercostales externae",
+  "alt": [],
+  "s": 685,
+  "t": "Głębokie mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie międzyżebrowe wewnętrzne",
+  "la": "musculi intercostales interni",
+  "alt": [],
+  "s": 686,
+  "t": "Głębokie mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie międzyżebrowe pośrednie",
+  "la": "musculi intercostales intermedii",
+  "alt": [],
+  "s": 686,
+  "t": "Głębokie mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "warstwa zewnętrzna mm. międzyżebrowych wewnętrznych"
+ },
+ {
+  "pl": "mięśnie międzyżebrowe najgłębsze",
+  "la": "musculi intercostales intimi",
+  "alt": [],
+  "s": 686,
+  "t": "Głębokie mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "warstwa wewnętrzna mm. międzyżebrowych wewnętrznych"
+ },
+ {
+  "pl": "błony międzyżebrowe wewnętrzne",
+  "la": "membranae intercostales internae",
+  "alt": [],
+  "s": 687,
+  "t": "Głębokie mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "mięśnie podżebrowe",
+  "la": "musculi subcostales",
+  "alt": [],
+  "s": 687,
+  "t": "Głębokie mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powięź wewnątrzpiersiowa",
+  "la": "fascia endothoracica",
+  "alt": [],
+  "s": 688,
+  "t": "Głębokie mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": "opisana dalej w „Powięziach klatki piersiowej” (s. 699)"
+ },
+ {
+  "pl": "mięsień poprzeczny klatki piersiowej",
+  "la": "musculus transversus thoracis",
+  "alt": [],
+  "s": 688,
+  "t": "Głębokie mięśnie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "przepona",
+  "la": "diaphragma",
+  "alt": [],
+  "s": 689,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "zstępowanie przepony",
+  "la": "descensus diaphragmatis",
+  "alt": [],
+  "s": 690,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": "w tekście opisowo: „zstępuje do klatki piersiowej (descensus diaphragmatis)”"
+ },
+ {
+  "pl": "nerw przeponowy",
+  "la": "nervus phrenicus",
+  "alt": [],
+  "s": 690,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "przegroda poprzeczna",
+  "la": "septum transversum",
+  "alt": [],
+  "s": 690,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": "dziś nazwa zawiązku embrionalnego przedniej części przepony"
+ },
+ {
+  "pl": "środek ścięgnisty",
+  "la": "centrum tendineum",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "część lędźwiowa",
+  "la": "pars lumbalis",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": "część przepony"
+ },
+ {
+  "pl": "odnoga prawa",
+  "la": "crus dextrum",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": "odnoga przepony"
+ },
+ {
+  "pl": "odnoga lewa",
+  "la": "crus sinistrum",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": "odnoga przepony"
+ },
+ {
+  "pl": "rozwór aortowy",
+  "la": "hiatus aorticus",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "rozwór przełykowy",
+  "la": "hiatus esophageus",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło łukowate pośrodkowe",
+  "la": "ligamentum arcuatum medianum",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło łukowate przyśrodkowe",
+  "la": "ligamentum arcuatum mediale",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło łukowate boczne",
+  "la": "ligamentum arcuatum laterale",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "łuki lędźwiowo-żebrowe",
+  "la": "arcus lumbocostales",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": "przypis: druga nazwa więzadeł łukowatych"
+ },
+ {
+  "pl": "część żebrowa",
+  "la": "pars costalis",
+  "alt": [],
+  "s": 691,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": "część przepony"
+ },
+ {
+  "pl": "część mostkowa",
+  "la": "pars sternalis",
+  "alt": [],
+  "s": 692,
+  "t": "Przepona",
+  "k": false,
+  "uwaga": "część przepony"
+ },
+ {
+  "pl": "trójkąt lędźwiowo-żebrowy",
+  "la": "trigonum lumbocostale",
+  "alt": [
+   "trigonum Bochdaleki"
+  ],
+  "s": 692,
+  "t": "Trójkąty i otwory przepony",
+  "k": false,
+  "uwaga": "przypis: „s. Bochdaleki”"
+ },
+ {
+  "pl": "trójkąt mostkowo-żebrowy",
+  "la": "trigonum sternocostale",
+  "alt": [
+   "trigonum Larreyi"
+  ],
+  "s": 692,
+  "t": "Trójkąty i otwory przepony",
+  "k": false,
+  "uwaga": "przypis: „s. Larreyi”"
+ },
+ {
+  "pl": "otwór żyły głównej",
+  "la": "foramen venae cavae",
+  "alt": [],
+  "s": 692,
+  "t": "Trójkąty i otwory przepony",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "odma opłucnowa",
+  "la": "pneumothorax",
+  "alt": [],
+  "s": 695,
+  "t": "Przepona i oddychanie – klinika",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "przepukliny przeponowe",
+  "la": "herniae diaphragmaticae",
+  "alt": [],
+  "s": 695,
+  "t": "Przepona i oddychanie – klinika",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "przepukliny przeponowe prawdziwe",
+  "la": "herniae diaphragmaticae verae",
+  "alt": [],
+  "s": 695,
+  "t": "Przepona i oddychanie – klinika",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "przepukliny przeponowe rzekome",
+  "la": "herniae diaphragmaticae spuriae",
+  "alt": [],
+  "s": 695,
+  "t": "Przepona i oddychanie – klinika",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "przepukliny wrodzone",
+  "la": "herniae congenitae",
+  "alt": [],
+  "s": 695,
+  "t": "Przepona i oddychanie – klinika",
+  "k": true,
+  "uwaga": "w tekście skrót „h. congenitae”"
+ },
+ {
+  "pl": "przepukliny nabyte",
+  "la": "herniae acquisitae",
+  "alt": [],
+  "s": 695,
+  "t": "Przepona i oddychanie – klinika",
+  "k": true,
+  "uwaga": "w tekście skrót „h. acquisitae”"
+ },
+ {
+  "pl": "duszność",
+  "la": "dyspnoe",
+  "alt": [],
+  "s": 696,
+  "t": "Przepona i oddychanie – klinika",
+  "k": true,
+  "uwaga": "rozdział „Mechanika oddychania”"
+ },
+ {
+  "pl": "powięź piersiowa",
+  "la": "fascia pectoralis",
+  "alt": [],
+  "s": 698,
+  "t": "Powięzie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powięź obojczykowo-piersiowa",
+  "la": "fascia clavipectoralis",
+  "alt": [],
+  "s": 698,
+  "t": "Powięzie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powięź mięśnia podobojczykowego",
+  "la": "fascia subclavia",
+  "alt": [],
+  "s": 698,
+  "t": "Powięzie klatki piersiowej",
+  "k": false,
+  "uwaga": "na s. 698 tylko „powięzią (fascia subclavia*)”; polska nazwa ze streszczenia (s. 702)"
+ },
+ {
+  "pl": "część górna powięzi obojczykowo-piersiowej",
+  "la": "fascia coracoclavipectoralis",
+  "alt": [],
+  "s": 699,
+  "t": "Powięzie klatki piersiowej",
+  "k": false,
+  "uwaga": "między m. podobojczykowym a górnym brzegiem m. piersiowego mniejszego"
+ },
+ {
+  "pl": "więzadło wieszadłowe pachy",
+  "la": "ligamentum suspensorium axillae",
+  "alt": [],
+  "s": 699,
+  "t": "Powięzie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powięź przeponowo-opłucnowa",
+  "la": "fascia phrenicopleuralis",
+  "alt": [],
+  "s": 699,
+  "t": "Powięzie klatki piersiowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powięź pachowa",
+  "la": "fascia axillaris",
+  "alt": [],
+  "s": 701,
+  "t": "Powięzie klatki piersiowej",
+  "k": false,
+  "uwaga": "łacina dopiero w streszczeniu"
+ }
+]

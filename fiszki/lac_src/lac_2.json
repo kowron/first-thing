@@ -1,0 +1,545 @@
+[
+ {
+  "pl": "połączenia ścisłe",
+  "la": "synarthroses",
+  "alt": [],
+  "s": 249,
+  "t": "Połączenia kręgów",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "połączenia stawowe",
+  "la": "articulationes",
+  "alt": [],
+  "s": 249,
+  "t": "Połączenia kręgów",
+  "k": false,
+  "uwaga": "w tekście: „połączenia ruchome, stawowe (articulationes)”"
+ },
+ {
+  "pl": "połączenia maziowe",
+  "la": "juncturae synoviales",
+  "alt": [],
+  "s": 249,
+  "t": "Połączenia kręgów",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "chrząstkozrosty",
+  "la": "synchondroses",
+  "alt": [],
+  "s": 249,
+  "t": "Połączenia kręgów",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzozrosty",
+  "la": "syndesmoses",
+  "alt": [],
+  "s": 249,
+  "t": "Połączenia kręgów",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "krążki międzykręgowe",
+  "la": "disci intervertebrales",
+  "alt": [
+   "fibrocartilagines intervertebrales"
+  ],
+  "s": 249,
+  "t": "Krążki międzykręgowe",
+  "k": false,
+  "uwaga": "czyli chrząstki międzykręgowe; nazwa alt z przypisu"
+ },
+ {
+  "pl": "pierścień włóknisty",
+  "la": "annulus fibrosus",
+  "alt": [],
+  "s": 250,
+  "t": "Krążki międzykręgowe",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "jądro miażdżyste",
+  "la": "nucleus pulposus",
+  "alt": [],
+  "s": 250,
+  "t": "Krążki międzykręgowe",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło podłużne przednie",
+  "la": "ligamentum longitudinale anterius",
+  "alt": [],
+  "s": 251,
+  "t": "Więzadła i stawy kręgosłupa",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło podłużne tylne",
+  "la": "ligamentum longitudinale posterius",
+  "alt": [],
+  "s": 252,
+  "t": "Więzadła i stawy kręgosłupa",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "połączenia międzykręgowe",
+  "la": "juncturae zygapophysiales",
+  "alt": [
+   "articulationes intervertebrales"
+  ],
+  "s": 252,
+  "t": "Więzadła i stawy kręgosłupa",
+  "k": false,
+  "uwaga": "w tekście dalej i w streszczeniu: stawy międzykręgowe; alt z przypisu"
+ },
+ {
+  "pl": "więzadła żółte",
+  "la": "ligamenta flava",
+  "alt": [],
+  "s": 252,
+  "t": "Więzadła i stawy kręgosłupa",
+  "k": false,
+  "uwaga": "albo międzyłukowe"
+ },
+ {
+  "pl": "więzadła międzypoprzeczne",
+  "la": "ligamenta intertransversaria",
+  "alt": [],
+  "s": 254,
+  "t": "Więzadła i stawy kręgosłupa",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadła międzykolcowe",
+  "la": "ligamenta interspinalia",
+  "alt": [],
+  "s": 254,
+  "t": "Więzadła i stawy kręgosłupa",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło nadkolcowe",
+  "la": "ligamentum supraspinale",
+  "alt": [],
+  "s": 254,
+  "t": "Więzadła i stawy kręgosłupa",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło karkowe",
+  "la": "ligamentum nuchae",
+  "alt": [],
+  "s": 254,
+  "t": "Więzadła i stawy kręgosłupa",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "połączenie między piątym kręgiem lędźwiowym a kością krzyżową",
+  "la": "junctura lumbosacralis",
+  "alt": [
+   "junctura sacrovertebralis"
+  ],
+  "s": 254,
+  "t": "Połączenia kości krzyżowej",
+  "k": false,
+  "uwaga": "Bochenek nie podaje krótszej nazwy polskiej; alt z przypisu"
+ },
+ {
+  "pl": "więzadło biodrowo-lędźwiowe",
+  "la": "ligamentum iliolumbale",
+  "alt": [],
+  "s": 255,
+  "t": "Połączenia kości krzyżowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "połączenie krzyżowo-guziczne",
+  "la": "junctura sacrococcygea",
+  "alt": [
+   "articulatio sacrococcygea"
+  ],
+  "s": 255,
+  "t": "Połączenia kości krzyżowej",
+  "k": false,
+  "uwaga": "alt z przypisu"
+ },
+ {
+  "pl": "więzadło krzyżowo-guziczne brzuszne",
+  "la": "ligamentum sacrococcygeum ventrale",
+  "alt": [
+   "ligamentum sacrococcygeum anterius"
+  ],
+  "s": 255,
+  "t": "Połączenia kości krzyżowej",
+  "k": false,
+  "uwaga": "w tekście: „brzuszne albo przednie (ligamentum sacrococcygeum ventrale s. anterius)”"
+ },
+ {
+  "pl": "więzadło krzyżowo-guziczne grzbietowe głębokie",
+  "la": "ligamentum sacrococcygeum dorsale profundum",
+  "alt": [],
+  "s": 255,
+  "t": "Połączenia kości krzyżowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło krzyżowo-guziczne grzbietowe powierzchowne",
+  "la": "ligamentum sacrococcygeum dorsale superficiale",
+  "alt": [],
+  "s": 255,
+  "t": "Połączenia kości krzyżowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło krzyżowo-guziczne boczne",
+  "la": "ligamentum sacrococcygeum laterale",
+  "alt": [],
+  "s": 255,
+  "t": "Połączenia kości krzyżowej",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "staw szczytowo-potyliczny",
+  "la": "articulatio atlantooccipitalis",
+  "alt": [],
+  "s": 255,
+  "t": "Górny staw głowy",
+  "k": false,
+  "uwaga": "= górny staw głowy"
+ },
+ {
+  "pl": "kłykcie potyliczne",
+  "la": "condyli occipitales",
+  "alt": [],
+  "s": 255,
+  "t": "Górny staw głowy",
+  "k": false,
+  "uwaga": "część kości potylicznej, wymieniona przy stawie"
+ },
+ {
+  "pl": "dołki stawowe górne kręgu szczytowego",
+  "la": "foveae articulares superiores atlantis",
+  "alt": [],
+  "s": 256,
+  "t": "Górny staw głowy",
+  "k": false,
+  "uwaga": "część kręgu szczytowego wymieniona przy stawie (w opisie kości: foveae articulares superiores)"
+ },
+ {
+  "pl": "torebki stawowe",
+  "la": "capsulae articulares",
+  "alt": [],
+  "s": 256,
+  "t": "Górny staw głowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "błona szczytowo-potyliczna przednia",
+  "la": "membrana atlantooccipitalis anterior",
+  "alt": [],
+  "s": 256,
+  "t": "Górny staw głowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "błona szczytowo-potyliczna tylna",
+  "la": "membrana atlantooccipitalis posterior",
+  "alt": [],
+  "s": 256,
+  "t": "Górny staw głowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "staw szczytowo-obrotowy",
+  "la": "articulatio atlantoaxialis",
+  "alt": [],
+  "s": 257,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": "= dolny staw głowy"
+ },
+ {
+  "pl": "stawy szczytowo-obrotowe pośrodkowe",
+  "la": "articulationes atlantoaxiales medianae",
+  "alt": [],
+  "s": 257,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": "przedni i tylny"
+ },
+ {
+  "pl": "stawy szczytowo-obrotowe boczne",
+  "la": "articulationes atlantoaxiales laterales",
+  "alt": [],
+  "s": 257,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powierzchnia stawowa przednia zęba",
+  "la": "facies articularis anterior dentis",
+  "alt": [],
+  "s": 257,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": "w tekście „ant.” i opis „na stronie przedniej zęba kręgu obrotowego” – polska nazwa ułożona analogicznie do tylnej"
+ },
+ {
+  "pl": "powierzchnia stawowa tylna zęba",
+  "la": "facies articularis posterior dentis",
+  "alt": [],
+  "s": 257,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": "w tekście skrót „post.”"
+ },
+ {
+  "pl": "więzadło krzyżowe kręgu szczytowego",
+  "la": "ligamentum cruciforme atlantis",
+  "alt": [],
+  "s": 258,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło poprzeczne kręgu szczytowego",
+  "la": "ligamentum transversum atlantis",
+  "alt": [],
+  "s": 258,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": "część pozioma więzadła krzyżowego; występuje też w streszczeniu o kościach (s. 248)"
+ },
+ {
+  "pl": "pęczki podłużne",
+  "la": "fasciculi longitudinales",
+  "alt": [],
+  "s": 258,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": "część pionowa więzadła krzyżowego"
+ },
+ {
+  "pl": "więzadło wierzchołka zęba",
+  "la": "ligamentum apicis dentis",
+  "alt": [],
+  "s": 258,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadła skrzydłowate",
+  "la": "ligamenta alaria",
+  "alt": [],
+  "s": 260,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": "w streszczeniu (s. 273): więzadła skrzydłowe"
+ },
+ {
+  "pl": "błona pokrywająca",
+  "la": "membrana tectoria",
+  "alt": [],
+  "s": 260,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "zgięcie do przodu",
+  "la": "anteflexio",
+  "alt": [],
+  "s": 261,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": "s. 261: zgięcie głowy do przodu (górny staw głowy); s. 270: zgięcie kręgosłupa do przodu"
+ },
+ {
+  "pl": "zgięcie do tyłu",
+  "la": "retroflexio",
+  "alt": [],
+  "s": 261,
+  "t": "Dolny staw głowy i ruchy głowy",
+  "k": false,
+  "uwaga": "s. 261: zgięcie głowy ku tyłowi; s. 270: zgięcie kręgosłupa do tyłu; s. 272: przegięcie kręgosłupa ku tyłowi"
+ },
+ {
+  "pl": "wycisk aortowy",
+  "la": "impressio aortica",
+  "alt": [],
+  "s": 263,
+  "t": "Kręgosłup jako całość",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "nakłucie podpotyliczne",
+  "la": "punctio suboccipitalis",
+  "alt": [],
+  "s": 263,
+  "t": "Kręgosłup jako całość",
+  "k": true,
+  "uwaga": "w tekście: „nakłuć podpotylicznych, czy też lędźwiowych (punctio suboccipitalis et lumbalis)”"
+ },
+ {
+  "pl": "nakłucie lędźwiowe",
+  "la": "punctio lumbalis",
+  "alt": [],
+  "s": 263,
+  "t": "Kręgosłup jako całość",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "rozszczepienie kręgosłupa",
+  "la": "spina bifida",
+  "alt": [],
+  "s": 264,
+  "t": "Kręgosłup jako całość",
+  "k": true,
+  "uwaga": "lub tarń dwudzielna; wada rozwojowa"
+ },
+ {
+  "pl": "krzywizna szyjna",
+  "la": "lordosis cervicalis",
+  "alt": [],
+  "s": 264,
+  "t": "Krzywizny kręgosłupa",
+  "k": false,
+  "uwaga": "wypukła do przodu; w tekście „krzywizny części szyjnej i lędźwiowej (lordosis cervicalis et lumbalis)”, dalej też „lordoza szyi”"
+ },
+ {
+  "pl": "krzywizna lędźwiowa",
+  "la": "lordosis lumbalis",
+  "alt": [],
+  "s": 264,
+  "t": "Krzywizny kręgosłupa",
+  "k": false,
+  "uwaga": "wypukła do przodu; dalej też „lordoza lędźwiowa”"
+ },
+ {
+  "pl": "krzywizna piersiowa",
+  "la": "kyphosis thoracica",
+  "alt": [],
+  "s": 264,
+  "t": "Krzywizny kręgosłupa",
+  "k": false,
+  "uwaga": "wypukła ku tyłowi; w tekście „krzywizny części piersiowej i krzyżowej (kyphosis thoracica et sacralis)”, dalej też „kifoza piersiowa”"
+ },
+ {
+  "pl": "krzywizna krzyżowa",
+  "la": "kyphosis sacralis",
+  "alt": [],
+  "s": 264,
+  "t": "Krzywizny kręgosłupa",
+  "k": false,
+  "uwaga": "wypukła ku tyłowi"
+ },
+ {
+  "pl": "skrzywienia boczne kręgosłupa",
+  "la": "skolioses",
+  "alt": [],
+  "s": 267,
+  "t": "Krzywizny kręgosłupa",
+  "k": false,
+  "uwaga": "pisownia jak w książce (przez k); krzywizny w płaszczyźnie czołowej; współcześnie scoliosis"
+ },
+ {
+  "pl": "garb",
+  "la": "kyphoskoliosis",
+  "alt": [],
+  "s": 267,
+  "t": "Krzywizny kręgosłupa",
+  "k": true,
+  "uwaga": "pisownia jak w książce"
+ },
+ {
+  "pl": "odwrotne położenie trzew",
+  "la": "situs inversus",
+  "alt": [],
+  "s": 267,
+  "t": "Krzywizny kręgosłupa",
+  "k": true,
+  "uwaga": ""
+ },
+ {
+  "pl": "zgięcie",
+  "la": "flexio",
+  "alt": [],
+  "s": 270,
+  "t": "Ruchy kręgosłupa",
+  "k": false,
+  "uwaga": "w tekście: „ruchy zgięcia i prostowania w płaszczyźnie pośrodkowej (flexio et extensio)”"
+ },
+ {
+  "pl": "prostowanie",
+  "la": "extensio",
+  "alt": [],
+  "s": 270,
+  "t": "Ruchy kręgosłupa",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "zgięcie boczne",
+  "la": "flexio lateralis",
+  "alt": [],
+  "s": 271,
+  "t": "Ruchy kręgosłupa",
+  "k": false,
+  "uwaga": "w tekście: „boczne ruchy zgięcia w płaszczyźnie czołowej (flexio lateralis)”"
+ },
+ {
+  "pl": "ruch obrotowy",
+  "la": "rotatio",
+  "alt": [
+   "torsio"
+  ],
+  "s": 271,
+  "t": "Ruchy kręgosłupa",
+  "k": false,
+  "uwaga": "w tekście: „ruchy obrotowe w prawo i w lewo (rotatio s. torsio et retorsio)”; retorsio bez osobnej nazwy polskiej"
+ },
+ {
+  "pl": "obwodzenie",
+  "la": "circumductio",
+  "alt": [],
+  "s": 271,
+  "t": "Ruchy kręgosłupa",
+  "k": false,
+  "uwaga": "w tekście: „ruchy obwodzenia (circumductio)”"
+ },
+ {
+  "pl": "prostownik",
+  "la": "musculus erector spinae",
+  "alt": [],
+  "s": 271,
+  "t": "Ruchy kręgosłupa",
+  "k": false,
+  "uwaga": "w tekście „prostowników (m. erector spinae)”, w streszczeniu „zespół mięśni prostowników”; w rozdziale o mięśniach (s. 659) „prostownik grzbietu”"
+ }
+]

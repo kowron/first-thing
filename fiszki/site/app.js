@@ -17,8 +17,8 @@ function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').repl
 function strip(h){return String(h).replace(/<[^>]+>/g,'').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&amp;/g,'&')}
 function pl(n,a,b,c){var d=n%10,h=n%100;return n===1?a:(d>=2&&d<=4&&(h<12||h>14)?b:c)}
 function fold(s){return String(s).toLowerCase().replace(/ł/g,'l').normalize('NFD').replace(/[̀-ͯ]/g,'')}
-/* Łacina: literówek nie przepuszczam. Nie liczą się wielkość liter, kropki i przedrostki m., mm., lig. */
-var DROPW={m:1,mm:1,musculus:1,musculi:1,lig:1,ligg:1,ligamentum:1,ligamenta:1};
+/* Łacina: literówek nie przepuszczam. Nie liczą się wielkość liter, kropki i przedrostki m., mm., lig., v., a., n. */
+var DROPW={m:1,mm:1,musculus:1,musculi:1,lig:1,ligg:1,ligamentum:1,ligamenta:1,v:1,vena:1,venae:1,a:1,arteria:1,n:1,nervus:1};
 function nlat(s){s=fold(s).replace(/[^a-z\s]/g,' ').replace(/\s+/g,' ').trim().replace(/\boe/g,'e').replace(/annul/g,'anul');
   return s.split(' ').filter(function(w){return w&&!DROPW[w]}).join(' ')}
 
@@ -63,6 +63,7 @@ function mergeRemote(R){if(!R||R.v!==5||!R.u)return;var ch=false;
   Object.keys(R.u).forEach(function(k){var r=R.u[k];if((r.t||0)<(S.rs||0))return;if(!S.u[k]||(r.t||0)>(S.u[k].t||0)){S.u[k]=r;ch=true}});
   if(R.g){S.g=S.g||{};Object.keys(R.g).forEach(function(k){var r=R.g[k];if((r.at||0)<(S.rs||0))return;if(!S.g[k]||(r.p||0)>(S.g[k].p||0)){S.g[k]=r;ch=true}})}
   if(R.gm&&!S.gm){S.gm=R.gm;ch=true}
+  if(R.lt&&(!S.lt||(R.lt.ts||0)>(S.lt.ts||0))&&(R.lt.ts||0)>=(S.rs||0)){S.lt=R.lt;ch=true}
   if(ch)persist()}
 
 /* ---------- postęp ---------- */
@@ -72,7 +73,7 @@ function done(k){var u=S.u[k];return !!(u&&u.d)}
 function pending(k){var u=S.u[k];return !!(u&&u.n&&!u.d)}
 function due(k){var u=S.u[k];return !!(u&&u.n&&!u.d&&dayKey(u.t)!==dayKey(Date.now()))}
 function uo(u){return{k:'u',key:u.key,x:u,L:u.L}}
-function objs(L){return L.units.map(uo).concat(L.words.map(function(w){return{k:'w',key:w.key,w:w,L:L}}))}
+function objs(L){return L.units.map(uo)} /* łacina ma osobny tryb (lac.js) */
 function learnQ(L){return objs(L).filter(function(o){return !learned(o.key)})}
 function reviewQ(early,L){var a=[];(L?[L]:LESSONS).forEach(function(l){objs(l).forEach(function(o){if(early?pending(o.key):due(o.key))a.push(o)})});return a}
 function missN(o){var u=S.u[o.key];return o.k==='u'&&u&&u.n>=2?(u.m||[]).length+(u.f||[]).length:0}
@@ -88,7 +89,7 @@ var view='',curL=null,T=null,cap={sample:null,dict:null},capTry=0,dictT=null,dic
 var LOGO='<svg class="logo" width="20" height="22" viewBox="0 0 20 22" aria-hidden="true"><rect x="5.5" y="1" width="9" height="5" rx="2.2" fill="var(--accent)"/><rect x="4" y="8.5" width="12" height="5" rx="2.2" fill="var(--accent)" opacity=".72"/><rect x="2.5" y="16" width="15" height="5" rx="2.2" fill="var(--accent)" opacity=".45"/></svg>';
 function setTis(t){document.body.className=t?'t-'+t:''}
 function setView(v){view=v;window.scrollTo(0,0);if(cap.dict&&dictOn)cap.dict.stop().catch(function(){});dictT=null}
-function nav(on){topEl.innerHTML='<header class="bar"><div class="wrap"><button class="brand" data-a="home">'+LOGO+'<span>Szkielet osiowy</span></button><nav><button data-a="game"'+(on==='game'?' class="on"':'')+'>Na czas</button><button data-a="notes"'+(on==='notes'?' class="on"':'')+'>Notatki</button><button data-a="set"'+(on==='set'?' class="on"':'')+'>Więcej</button></nav></div></header>'}
+function nav(on){topEl.innerHTML='<header class="bar"><div class="wrap"><button class="brand" data-a="home">'+LOGO+'<span>Szkielet osiowy</span></button><nav><button data-a="lac"'+(on==='lac'?' class="on"':'')+'>Łacina</button><button data-a="game"'+(on==='game'?' class="on"':'')+'>Na czas</button><button data-a="notes"'+(on==='notes'?' class="on"':'')+'>Notatki</button><button data-a="set"'+(on==='set'?' class="on"':'')+'>Więcej</button></nav></div></header>'}
 function bar(){var i=T.i,n=T.q.length;topEl.innerHTML='<header class="bar sbar"><div class="wrap"><button class="x" data-a="exit" aria-label="Zakończ">'+ICO.x+'</button><div class="prog"><b style="width:'+(n?i/n*100:0)+'%"></b></div><span class="cnt">'+Math.min(i+1,n)+' z '+n+'</span></div></header>'}
 function page(h,still){app.innerHTML='<div class="wrap stack'+(still?' still':'')+'">'+h+'</div>'}
 function dock(primary,links){return '<div class="dock"><div class="wrap">'+(links?'<div class="links">'+links+'</div>':'')+'<div class="row">'+primary+'</div></div></div>'}
@@ -124,6 +125,7 @@ function home(){setView('home');nav('home');setTis('');curL=null;T=null;
     h+='<section class="hero t-'+nl.tis+(dq.length?' plain':'')+'"><div><div class="eb">'+(st.l?'Lekcja w toku':'Następna lekcja')+'</div><h2>'+esc(nl.t)+'</h2><p>'+esc(nl.d)+'</p></div><button class="btn'+(dq.length?' ghost':'')+'" data-a="learn" data-l="'+nl.id+'">'+(st.l?'Dokończ':'Zacznij')+', ok. '+mins(lq)+' min</button></section>'}
   else if(!dq.length)h+='<section class="hero rev"><div><div class="eb">Cały materiał przerobiony</div><h2>'+(pq.length?'Jutro ostatni sprawdzian':'Wszystko utrwalone')+'</h2><p>'+(pq.length?'Zostało '+kinds(pq)+' do sprawdzenia po przerwie.':'Możesz jeszcze zrobić próbny egzamin.')+'</p></div></section>';
   if(!dq.length&&pq.length)h+='<p class="sm mut">Na jutro czeka '+kinds(pq)+'. <button class="link" data-a="early" style="padding:0">Poćwicz już dziś</button></p>';
+  if(window.LAC_UI)h+=window.LAC_UI.card();
   var gm={z:0,s:0,b:0};Object.keys(S.g||{}).forEach(function(k){var md=S.g[k].md;if(md)gm[md]++});var gmt=gm.z+gm.s+gm.b;
   h+='<section class="hero game"><div><div class="eb">Na czas</div><h2>Wymienianka mięśni</h2><p>Mów nazwy na głos: po polsku, po łacinie albo na zmianę. 100 punktów za każdą nazwę i premia za szybki komplet.'+(gmt?' Twoje medale: '+[gm.z?gm.z+' '+pl(gm.z,'złoty','złote','złotych'):'',gm.s?gm.s+' '+pl(gm.s,'srebrny','srebrne','srebrnych'):'',gm.b?gm.b+' '+pl(gm.b,'brązowy','brązowe','brązowych'):''].filter(Boolean).join(', ')+'.':'')+'</p></div><button class="btn game-btn" data-a="game">Zagraj</button></section>';
   h+='<section class="hero plain"><div><h2>Próbny egzamin</h2><p>Sześć losowych pytań, częste trafiają się częściej. Do każdego jedno dopytanie.</p></div><button class="btn ghost" data-a="exam">Losuj pytania</button></section>';
@@ -139,7 +141,6 @@ function lessonView(L){setView('lesson');nav('home');setTis(L.tis);curL=L;T=null
   var h='<div><button class="back" data-a="home">'+ICO.back+' Wszystkie lekcje</button></div><div><h1>'+esc(L.t)+'</h1><p class="mut" style="margin-top:8px">'+esc(L.d)+'</p></div>';
   var lp=pgfmt(pgs(L.units.map(function(u){return u.src}).join(';')));if(lp)h+=bkBox('Przed lekcją przeczytaj w Bochenku',lp);
   h+='<div><div class="lbl">Pytania prowadzącego</div><div class="list">'+L.units.map(function(u){return urow(u,'lesson')}).join('')+'</div></div>';
-  if(L.words.length)h+='<p class="sm mut">Na końcu lekcji wpisujesz '+L.words.length+' '+pl(L.words.length,'nazwę łacińską','nazwy łacińskie','nazw łacińskich')+' z tych odpowiedzi'+(wl?' (utrwalone '+wd+' z '+L.words.length+')':'')+'.</p>';
   var p,links='';
   if(lq.length)p='<button class="btn" data-a="learn" data-l="'+L.id+'">'+(s.l?'Dokończ lekcję':'Zacznij lekcję')+', ok. '+mins(lq)+' min</button>';
   else if(dq.length)p='<button class="btn" data-a="review" data-l="'+L.id+'">Powtórz, ok. '+mins(dq,true)+' min</button>';
@@ -292,7 +293,7 @@ function settings(){setView('set');nav('set');setTis('');T=null;curL=null;
    +'<div><h2 style="margin:10px 0 4px">Ustawienia</h2>'
    +'<div class="set"><div><b>Podpowiedź AI</b><p class="sm mut">Jeśli napiszesz albo podyktujesz odpowiedź, AI wstępnie zaznaczy braki. Decyzja zawsze jest Twoja. '+(cap.sample?'':'W tym widoku jest niedostępna.')+'</p></div><button class="sw'+(S.ai?' on':'')+'" data-a="s-ai" role="switch" aria-checked="'+(S.ai?'true':'false')+'" aria-label="Podpowiedź AI"></button></div>'
    +'<div class="set"><div><b>Zacznij od zera</b><p class="sm mut">Usuwa cały postęp. Zapisuje się on '+dbState+'.</p></div><button class="btn ghost sml" data-a="s-reset">'+(resetArm?'Na pewno usuń':'Usuń postęp')+'</button></div></div>'
-   +'<div><h2 style="margin:10px 0 12px">Skąd pytania i odpowiedzi</h2><p class="mut">Pytania: lista realnych pytań prowadzącego i Twoja notatka z zajęć. Odpowiedzi: Bochenek, Anatomia człowieka, tom I; przy każdym pytaniu są numery stron. Tam, gdzie czegoś w Bochenku nie ma albo podaje to dwojako, jest o tym uwaga pod odpowiedzią. Razem '+ALLU.length+' pytań i '+nw+' nazw łacińskich.</p></div>'
+   +'<div><h2 style="margin:10px 0 12px">Skąd pytania i odpowiedzi</h2><p class="mut">Pytania: lista realnych pytań prowadzącego i Twoja notatka z zajęć. Odpowiedzi: Bochenek, Anatomia człowieka, tom I; przy każdym pytaniu są numery stron. Tam, gdzie czegoś w Bochenku nie ma albo podaje to dwojako, jest o tym uwaga pod odpowiedzią. Razem '+ALLU.length+' pytań. Nazwy łacińskie ćwiczysz osobno, w zakładce Łacina.</p></div>'
    +'<div><h2 style="margin:10px 0 12px">Skąd ta metoda</h2><ul class="refs">'+REFS.map(function(r){return '<li><a href="'+r[2]+'" target="_blank" rel="noopener">'+r[0]+'</a>: '+r[1]+'.</li>'}).join('')+'</ul></div>';page(h,resetArm>0)}
 
 /* ---------- zdarzenia ---------- */
@@ -312,6 +313,7 @@ document.addEventListener('click',function(e){var el=e.target.closest('[data-a]'
   case 'one':x=UNITS[el.getAttribute('data-u')];if(x){curL=x.L;startSession([uo(x)],{mode:learned(x.key)?'review':'learn',L:x.L,one:true,from:noteFrom,title:learned(x.key)?'Trening':x.L.t})}break;
   case 'exam':startExam();break;
   case 'game':if(window.GAME)window.GAME.home();break;
+  case 'lac':if(window.LAC_UI)window.LAC_UI.home();break;
   case 'exit':exit();break;
   case 'skip':if(T)nextTask();break;
   case 'u-ask':askView();break;
@@ -331,7 +333,7 @@ document.addEventListener('click',function(e){var el=e.target.closest('[data-a]'
   case 'mic':if(cap.dict){if(dictOn)cap.dict.stop().catch(function(){});else{dictT=document.getElementById('ans');dictBase=dictT&&dictT.value?dictT.value.replace(/\s*$/,' '):'';cap.dict.start().catch(function(){toast('Mikrofon niedostępny')})}}break;
   case 's-ai':S.ai=S.ai?0:1;save();settings();break;
   case 's-reset':if(!resetArm){resetArm=Date.now();settings();setTimeout(function(){if(resetArm&&Date.now()-resetArm>=5000){resetArm=0;if(view==='set')settings()}},5200)}
-    else{resetArm=0;S.u={};S.g={};S.rs=Date.now();save();if(dbRef){clearTimeout(dbTimer);pushDb()}toast('Postęp usunięty');home()}break;
+    else{resetArm=0;S.u={};S.g={};S.lt=null;S.rs=Date.now();save();if(dbRef){clearTimeout(dbTimer);pushDb()}toast('Postęp usunięty');home()}break;
   }});
 document.addEventListener('submit',function(e){e.preventDefault();if(e.target.id==='tf')wordCheck(false)});
 document.addEventListener('input',function(e){if(e.target.id==='nq'){noteQ=e.target.value;document.getElementById('nres').innerHTML=notesList(noteQ)}});

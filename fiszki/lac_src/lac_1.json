@@ -1,0 +1,702 @@
+[
+ {
+  "pl": "kręgosłup",
+  "la": "columna vertebralis",
+  "alt": [],
+  "s": 219,
+  "t": "Kręgosłup – podział",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kościec osiowy",
+  "la": "skeleton axiale",
+  "alt": [],
+  "s": 219,
+  "t": "Kręgosłup – podział",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kręgi rzekome",
+  "la": "vertebrae spuriae",
+  "alt": [],
+  "s": 220,
+  "t": "Kręgosłup – podział",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kręgi prawdziwe",
+  "la": "vertebrae verae",
+  "alt": [],
+  "s": 220,
+  "t": "Kręgosłup – podział",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kręgi przedkrzyżowe",
+  "la": "vertebrae presacrales",
+  "alt": [],
+  "s": 220,
+  "t": "Kręgosłup – podział",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "trzon kręgu",
+  "la": "corpus vertebrae",
+  "alt": [],
+  "s": 220,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "łuk kręgu",
+  "la": "arcus vertebrae",
+  "alt": [],
+  "s": 220,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "otwór kręgowy",
+  "la": "foramen vertebrale",
+  "alt": [],
+  "s": 220,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kanał kręgowy",
+  "la": "canalis vertebralis",
+  "alt": [],
+  "s": 220,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wyrostek kolczysty",
+  "la": "processus spinosus",
+  "alt": [],
+  "s": 220,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wyrostki stawowe górne i dolne",
+  "la": "processus articulares superiores et inferiores",
+  "alt": [],
+  "s": 220,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": "Na s. 234 (kość krzyżowa) osobno: wyrostki stawowe górne (processus articulares superiores)."
+ },
+ {
+  "pl": "wyrostki poprzeczne",
+  "la": "processus transversi",
+  "alt": [],
+  "s": 220,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "żyły podstawno-kręgowe",
+  "la": "venae basivertebrales",
+  "alt": [],
+  "s": 221,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "nasada łuku kręgu",
+  "la": "pediculus arcus vertebrae",
+  "alt": [
+   "radix arcus vertebrae"
+  ],
+  "s": 221,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": "W tekście samo „nasada”; alt z przypisu."
+ },
+ {
+  "pl": "wcięcie kręgowe górne",
+  "la": "incisura vertebralis superior",
+  "alt": [],
+  "s": 221,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wcięcie kręgowe dolne",
+  "la": "incisura vertebralis inferior",
+  "alt": [],
+  "s": 221,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "otwór międzykręgowy",
+  "la": "foramen intervertebrale",
+  "alt": [],
+  "s": 221,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "blaszka łuku kręgu",
+  "la": "lamina arcus vertebrae",
+  "alt": [],
+  "s": 221,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": "W streszczeniu (s. 248) l. mn.: blaszki łuku kręgu (laminae arcus vertebrae)."
+ },
+ {
+  "pl": "wyrostki stawowe",
+  "la": "processus articulares",
+  "alt": [
+   "zygapophyses"
+  ],
+  "s": 222,
+  "t": "Budowa kręgu",
+  "k": false,
+  "uwaga": "W tekście: „processus articulares s. zygapophyses”."
+ },
+ {
+  "pl": "kręgi szyjne",
+  "la": "vertebrae cervicales",
+  "alt": [],
+  "s": 222,
+  "t": "Kręgi szyjne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "guzek przedni i tylny",
+  "la": "tuberculum anterius et posterius",
+  "alt": [],
+  "s": 223,
+  "t": "Kręgi szyjne",
+  "k": false,
+  "uwaga": "Guzki wyrostka poprzecznego kręgu szyjnego."
+ },
+ {
+  "pl": "otwór wyrostka poprzecznego",
+  "la": "foramen transversarium",
+  "alt": [],
+  "s": 223,
+  "t": "Kręgi szyjne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "bruzda nerwu rdzeniowego",
+  "la": "sulcus nervi spinalis",
+  "alt": [],
+  "s": 223,
+  "t": "Kręgi szyjne",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "guzek tętnicy szyjnej",
+  "la": "tuberculum caroticum",
+  "alt": [],
+  "s": 224,
+  "t": "Kręgi szyjne",
+  "k": false,
+  "uwaga": "Drobny druk; guzek przedni wyrostka poprzecznego C6."
+ },
+ {
+  "pl": "kręg szczytowy",
+  "la": "atlas",
+  "alt": [],
+  "s": 224,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "łuk przedni",
+  "la": "arcus anterior",
+  "alt": [],
+  "s": 224,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "guzek przedni",
+  "la": "tuberculum anterius",
+  "alt": [],
+  "s": 224,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": "Na łuku przednim kręgu szczytowego."
+ },
+ {
+  "pl": "dołek zębowy",
+  "la": "fovea dentis",
+  "alt": [],
+  "s": 224,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "łuk tylny",
+  "la": "arcus posterior",
+  "alt": [],
+  "s": 224,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "guzek tylny",
+  "la": "tuberculum posterius",
+  "alt": [],
+  "s": 224,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": "Na łuku tylnym kręgu szczytowego."
+ },
+ {
+  "pl": "bruzda tętnicy kręgowej",
+  "la": "sulcus arteriae vertebralis",
+  "alt": [],
+  "s": 224,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "części boczne",
+  "la": "massae laterales",
+  "alt": [],
+  "s": 224,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "dołki stawowe górne",
+  "la": "foveae articulares superiores",
+  "alt": [],
+  "s": 225,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kłykcie potyliczne",
+  "la": "condyli occipitales",
+  "alt": [],
+  "s": 225,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "dołki stawowe dolne",
+  "la": "foveae articulares inferiores",
+  "alt": [],
+  "s": 225,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "więzadło poprzeczne kręgu szczytowego",
+  "la": "ligamentum transversum atlantis",
+  "alt": [],
+  "s": 225,
+  "t": "Kręg szczytowy",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kręg obrotowy",
+  "la": "axis",
+  "alt": [
+   "epistropheus"
+  ],
+  "s": 225,
+  "t": "Kręg obrotowy i kręg wystający",
+  "k": false,
+  "uwaga": "Alt z przypisu."
+ },
+ {
+  "pl": "ząb",
+  "la": "dens",
+  "alt": [],
+  "s": 225,
+  "t": "Kręg obrotowy i kręg wystający",
+  "k": false,
+  "uwaga": "Ząb kręgu obrotowego."
+ },
+ {
+  "pl": "wierzchołek zęba",
+  "la": "apex dentis",
+  "alt": [],
+  "s": 225,
+  "t": "Kręg obrotowy i kręg wystający",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powierzchnia stawowa przednia",
+  "la": "facies articularis anterior",
+  "alt": [],
+  "s": 225,
+  "t": "Kręg obrotowy i kręg wystający",
+  "k": false,
+  "uwaga": "Na zębie kręgu obrotowego."
+ },
+ {
+  "pl": "powierzchnia stawowa tylna",
+  "la": "facies articularis posterior",
+  "alt": [],
+  "s": 226,
+  "t": "Kręg obrotowy i kręg wystający",
+  "k": false,
+  "uwaga": "Na zębie kręgu obrotowego."
+ },
+ {
+  "pl": "kręg wystający",
+  "la": "vertebra prominens",
+  "alt": [],
+  "s": 226,
+  "t": "Kręg obrotowy i kręg wystający",
+  "k": false,
+  "uwaga": "Siódmy kręg szyjny."
+ },
+ {
+  "pl": "kręgi piersiowe",
+  "la": "vertebrae thoracicae",
+  "alt": [
+   "vertebrae thoracales"
+  ],
+  "s": 228,
+  "t": "Kręgi piersiowe",
+  "k": false,
+  "uwaga": "Alt z przypisu."
+ },
+ {
+  "pl": "dołki żebrowe",
+  "la": "foveae costales",
+  "alt": [],
+  "s": 228,
+  "t": "Kręgi piersiowe",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "dołki żebrowe wyrostka poprzecznego",
+  "la": "foveae costales processus transversi",
+  "alt": [],
+  "s": 229,
+  "t": "Kręgi piersiowe",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kręgi lędźwiowe",
+  "la": "vertebrae lumbales",
+  "alt": [],
+  "s": 231,
+  "t": "Kręgi lędźwiowe",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wyrostek żebrowy",
+  "la": "processus costalis",
+  "alt": [],
+  "s": 232,
+  "t": "Kręgi lędźwiowe",
+  "k": false,
+  "uwaga": "W streszczeniu (s. 249) l. mn.: wyrostki żebrowe (processus costales)."
+ },
+ {
+  "pl": "wyrostek dodatkowy",
+  "la": "processus accessorius",
+  "alt": [],
+  "s": 232,
+  "t": "Kręgi lędźwiowe",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wyrostek suteczkowaty",
+  "la": "processus mamillaris",
+  "alt": [],
+  "s": 232,
+  "t": "Kręgi lędźwiowe",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kość krzyżowa",
+  "la": "os sacrum",
+  "alt": [],
+  "s": 232,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "podstawa kości krzyżowej",
+  "la": "basis ossis sacri",
+  "alt": [],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wierzchołek kości krzyżowej",
+  "la": "apex ossis sacri",
+  "alt": [],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "W tekście: „wierzchołek”."
+ },
+ {
+  "pl": "krzywizna krzyżowa",
+  "la": "kyphosis sacralis",
+  "alt": [],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "S. 234: „wypuklenie skierowane ku tyłowi”; nazwa „krzyżowa (krzywizna)” ze streszczenia s. 249."
+ },
+ {
+  "pl": "kąt lędźwiowo-krzyżowy",
+  "la": "angulus lumbosacralis",
+  "alt": [],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "wzgórek",
+  "la": "promontorium",
+  "alt": [],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "kanał krzyżowy",
+  "la": "canalis sacralis",
+  "alt": [],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "części boczne kości krzyżowej",
+  "la": "partes laterales ossis sacri",
+  "alt": [],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "Dalej też skrótowo: części boczne (partes laterales)."
+ },
+ {
+  "pl": "skrzydło kości krzyżowej",
+  "la": "ala sacralis",
+  "alt": [],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "W tekście: „skrzydło k. krzyżowej”."
+ },
+ {
+  "pl": "powierzchnia miedniczna",
+  "la": "facies pelvina",
+  "alt": [],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "W tekście: „powierzchnia przednia, czyli miedniczna”."
+ },
+ {
+  "pl": "kresy poprzeczne",
+  "la": "lineae transversae",
+  "alt": [],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "otwory krzyżowe miedniczne",
+  "la": "foramina sacralia pelvina",
+  "alt": [
+   "foramina sacralia anteriora"
+  ],
+  "s": 234,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "Alt z przypisu."
+ },
+ {
+  "pl": "powierzchnia grzbietowa",
+  "la": "facies dorsalis",
+  "alt": [],
+  "s": 235,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "W tekście: „powierzchnia tylna, czyli grzbietowa”."
+ },
+ {
+  "pl": "grzebień krzyżowy pośrodkowy",
+  "la": "crista sacralis mediana",
+  "alt": [
+   "crista sacralis media"
+  ],
+  "s": 235,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "Alt z przypisu."
+ },
+ {
+  "pl": "grzebień krzyżowy pośredni",
+  "la": "crista sacralis intermedia",
+  "alt": [
+   "crista sacralis articularis"
+  ],
+  "s": 235,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "Alt z przypisu."
+ },
+ {
+  "pl": "rożki krzyżowe",
+  "la": "cornua sacralia",
+  "alt": [],
+  "s": 235,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "otwory krzyżowe grzbietowe",
+  "la": "foramina sacralia dorsalia",
+  "alt": [
+   "foramina sacralia posteriora"
+  ],
+  "s": 236,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "Alt z przypisu."
+ },
+ {
+  "pl": "grzebień krzyżowy boczny",
+  "la": "crista sacralis lateralis",
+  "alt": [],
+  "s": 236,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "powierzchnia uchowata",
+  "la": "facies auricularis",
+  "alt": [],
+  "s": 236,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "guzowatość krzyżowa",
+  "la": "tuberositas sacralis",
+  "alt": [],
+  "s": 236,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "rozwór krzyżowy",
+  "la": "hiatus sacralis",
+  "alt": [],
+  "s": 236,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "W tekście: „otwór dolny kanału krzyżowego, czyli rozwór krzyżowy”."
+ },
+ {
+  "pl": "kość guziczna",
+  "la": "os coccygis",
+  "alt": [],
+  "s": 237,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": "W tekście: „kość guziczna, czyli ogonowa”."
+ },
+ {
+  "pl": "rożki guziczne",
+  "la": "cornua coccygea",
+  "alt": [],
+  "s": 237,
+  "t": "Kość krzyżowa i guziczna",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "struna grzbietowa",
+  "la": "chorda dorsalis",
+  "alt": [],
+  "s": 237,
+  "t": "Rozwój i krzywizny kręgosłupa",
+  "k": false,
+  "uwaga": "Drobny druk (rozwój kręgosłupa)."
+ },
+ {
+  "pl": "krzywizna lędźwiowa",
+  "la": "lordosis lumbalis",
+  "alt": [],
+  "s": 243,
+  "t": "Rozwój i krzywizny kręgosłupa",
+  "k": false,
+  "uwaga": ""
+ },
+ {
+  "pl": "krzywizna szyjna",
+  "la": "lordosis cervicalis",
+  "alt": [],
+  "s": 243,
+  "t": "Rozwój i krzywizny kręgosłupa",
+  "k": false,
+  "uwaga": "S. 243: „wygięcie szyjnego odcinka kręgosłupa”; nazwa „krzywizna szyjna” ze streszczenia s. 249."
+ },
+ {
+  "pl": "krzywizna piersiowa",
+  "la": "kyphosis thoracica",
+  "alt": [],
+  "s": 243,
+  "t": "Rozwój i krzywizny kręgosłupa",
+  "k": false,
+  "uwaga": "S. 243: wygięcie piersiowego odcinka; nazwa „krzywizna piersiowa” ze streszczenia s. 249."
+ }
+]
