@@ -1,0 +1,168 @@
+@B Kręgosłup
+
+@L kregi-szyjne | bone | Kręgi szyjne | Cechy grupy oraz kręgi C1, C2 i C7. Cecha to coś, co odróżnia; reszta to opis.
+
+@U kregi-szyjne | 3 | s. 222–224, 248
+Q: Cechy i budowa typowych kręgów szyjnych (C3–C6).
+H: Cechy: ma je tylko ta grupa
+- [Otwór wyrostka poprzecznego|foramen transversarium] w każdym wyrostku poprzecznym. Od C6 w górę biegnie nim tętnica kręgowa. ?? Kręgi szyjne: jaki otwór mają w wyrostkach poprzecznych i co nim biegnie? {s. 223}
+- Wyrostek poprzeczny składa się z dwóch listewek i kończy dwoma guzkami: [guzek przedni|tuberculum anterius|guzek przedni wyrostka poprzecznego] i [guzek tylny|tuberculum posterius|guzek tylny wyrostka poprzecznego]. Między guzkami biegnie [bruzda nerwu rdzeniowego|sulcus nervi spinalis]. ?? Kręgi szyjne: jak zbudowany jest koniec wyrostka poprzecznego? {s. 223}
+- Wyrostek kolczysty jest rozdwojony na końcu (C2–C6). ?? Kręgi szyjne: jak zakończony jest wyrostek kolczysty? {s. 223}
+H: Budowa: w porównaniu z innymi grupami
+- Trzon jest najmniejszy spośród kręgów prawdziwych. Powierzchnia górna jest wklęsła w kierunku czołowym, dolna w strzałkowym, więc trzony pasują do siebie siodełkowato. W kręgach piersiowych i lędźwiowych powierzchnie trzonów są płaskie. ?? Kręgi szyjne: wielkość trzonu i kształt jego powierzchni na tle innych grup? {s. 222, 228, 231}
+- Otwór kręgowy jest duży i trójkątny. W kręgach piersiowych jest mały i okrągły. ?? Kręgi szyjne: kształt i wielkość otworu kręgowego w porównaniu z piersiowymi? {s. 223, 231}
+- Powierzchnie wyrostków stawowych są okrągłe, prawie płaskie i ustawione skośnie pod kątem ok. 45°: górne zwrócone ku górze i tyłowi, dolne ku dołowi i przodowi. ?? Kręgi szyjne: jak ustawione są powierzchnie wyrostków stawowych? {s. 223}
+F: „Kręgi szyjne mają mały trzon”. Co zrobić, żeby prowadzący nie dopytał „mały względem czego”? => Od razu podać odniesienie: trzon najmniejszy spośród kręgów prawdziwych. Wysokość trzonów rośnie od C3 do L5 dwukrotnie. {s. 222, 262}
+F: Który kręg szyjny ma guzek tętnicy szyjnej i co to jest? => C6. To jego guzek przedni wyrostka poprzecznego, większy i bardziej wysunięty do przodu niż w pozostałych kręgach (_tuberculum caroticum_). Przed nim biegnie tętnica szyjna wspólna i można ją do niego ucisnąć. {s. 224}
+
+@U c1 | 3 | s. 224–225, 248
+Q: Kręg szczytowy (C1): czym różni się od pozostałych kręgów szyjnych?
+- [Kręg szczytowy|atlas] nie ma trzonu, ma kształt pierścienia. Jego trzon zrósł się z kręgiem obrotowym jako ząb. ?? Kręg szczytowy: czego mu brakuje z przodu i co się z tym stało? {s. 224}
+- Nie ma wyrostka kolczystego. W jego miejscu jest guzek tylny (_tuberculum posterius_), dzięki czemu głowę można swobodnie zgiąć do tyłu. ?? Kręg szczytowy: co ma zamiast wyrostka kolczystego i co to daje? {s. 224}
+- [Łuk przedni|arcus anterior|łuk przedni kręgu szczytowego]: z przodu guzek przedni, z tyłu [dołek zębowy|fovea dentis] dla zęba kręgu obrotowego. ?? Kręg szczytowy: co znajduje się na łuku przednim z przodu i z tyłu? {s. 224}
+- [Łuk tylny|arcus posterior|łuk tylny kręgu szczytowego]: na jego górnej powierzchni biegnie [bruzda tętnicy kręgowej|sulcus arteriae vertebralis]. ?? Kręg szczytowy: jaka bruzda biegnie po łuku tylnym? {s. 224}
+- [Części boczne|massae laterales|części boczne kręgu szczytowego] dźwigają głowę. Zamiast wyrostków stawowych mają [dołki stawowe górne|foveae articulares superiores|dołki stawowe górne kręgu szczytowego] dla kłykci potylicznych (owalne, wklęsłe) i [dołki stawowe dolne|foveae articulares inferiores|dołki stawowe dolne kręgu szczytowego] dla kręgu obrotowego (okrągławe, płaskie). ?? Kręg szczytowy: co mają części boczne zamiast wyrostków stawowych i z czym się łączą? {s. 224–225}
+- Wyrostki poprzeczne są dłuższe i szerzej rozstawione niż w pozostałych kręgach szyjnych, bo są ramieniem dźwigni dla mięśni obracających głowę. Nie mają guzków ani bruzdy nerwu rdzeniowego. ?? Kręg szczytowy: czym różnią się jego wyrostki poprzeczne od wyrostków pozostałych kręgów szyjnych? {s. 225}
+- Otwór kręgowy dzieli więzadło poprzeczne kręgu szczytowego: część przednia mieści ząb, tylna jest właściwym otworem kręgowym. ?? Kręg szczytowy: co dzieli jego otwór kręgowy i na jakie części? {s. 225}
+F: Dlaczego otwór wyrostka poprzecznego nie jest cechą kręgu szczytowego? => Bo ma go każdy kręg szyjny, więc to cecha grupy. Cechą kręgu jest to, co odróżnia go od reszty grupy: brak trzonu, brak wyrostka kolczystego, dwa łuki, części boczne z dołkami stawowymi. {s. 224–225}
+
+@U c2c7 | 3 | s. 225–227, 248
+Q: Kręg obrotowy (C2) i kręg wystający (C7): cechy własne.
+H: Kręg obrotowy
+- [Kręg obrotowy|axis] ma [ząb|dens|ząb kręgu obrotowego]: wyrostek sterczący z górnej powierzchni trzonu. Rozwojowo to trzon kręgu szczytowego. ?? Kręg obrotowy: co jest jego główną cechą i czym jest rozwojowo? {s. 225}
+- Ząb ma dwie powierzchnie stawowe: przednią dla dołka zębowego kręgu szczytowego i tylną dla więzadła poprzecznego kręgu szczytowego. ?? Ząb kręgu obrotowego: jakie ma powierzchnie stawowe i z czym się łączą? {s. 225–226}
+- Powierzchnie stawowe górne leżą na trzonie po bokach zęba, bo kręg nie ma wyrostków stawowych górnych. Są okrągławe, lekko wypukłe, skierowane skośnie ku dołowi i bocznie. ?? Kręg obrotowy: gdzie leżą jego powierzchnie stawowe górne i jak wyglądają? {s. 226}
+H: Kręg wystający
+- [Kręg wystający|vertebra prominens]: wyrostek kolczysty jest nierozdwojony i dłuższy niż w C3–C6. To pierwszy wyrostek wyraźnie wyczuwalny pod skórą, wystaje przy zgięciu głowy do przodu. ?? Kręg wystający: czym jego wyrostek kolczysty różni się od wyrostków C3–C6? {s. 226–227}
+- Otwór wyrostka poprzecznego jest mniejszy niż w pozostałych kręgach szyjnych, czasem go brak. Tętnica kręgowa zwykle przez niego nie przechodzi. ?? Kręg wystający: co wyróżnia jego otwór wyrostka poprzecznego? {s. 227}
+- Listewka przednia wyrostka poprzecznego jest mniejsza od tylnej. Jeśli się usamodzielni, powstaje żebro szyjne. ?? Kręg wystający: co może powstać z listewki przedniej wyrostka poprzecznego? {s. 227}
+F: Dlaczego rozdwojony wyrostek kolczysty nie jest cechą kręgu obrotowego? => Bo rozdwojony wyrostek mają kręgi C2–C6, czyli to cecha grupy. Cechą C2 jest ząb i powierzchnie stawowe górne leżące na trzonie. {s. 225–227}
+
+@L kregi-reszta | bone | Kręgi piersiowe, lędźwiowe i kość krzyżowa | Cechy obu grup, pytanie o otwory w wyrostkach i opis kości krzyżowej.
+
+@U kregi-piersiowe | 3 | s. 228–231, 248
+Q: Cechy i budowa kręgów piersiowych. Czy na ich wyrostkach są otwory?
+H: Cechy: ma je tylko ta grupa
+- [Dołki żebrowe|foveae costales] na bokach trzonu, dla głów żeber. Th1–Th9 mają po dwa z każdej strony: górny i dolny. Dołek dolny kręgu wyższego, górny kręgu niższego i krążek między nimi tworzą jedną panewkę dla głowy żebra. ?? Kręgi piersiowe: jakie powierzchnie stawowe mają na trzonie i jak tworzą panewkę dla głowy żebra? {s. 228}
+- Wyjątki: Th1 ma u góry pełny dołek dla I żebra. Th11 i Th12 (czasem Th10) mają po jednym dołku z każdej strony. ?? Które kręgi piersiowe mają nietypowe dołki żebrowe na trzonie? {s. 228}
+- [Dołek żebrowy wyrostka poprzecznego|fovea costalis processus transversi] leży na przedniej powierzchni końca wyrostka poprzecznego i łączy się z guzkiem żebra. Brak go na Th11 i Th12. ?? Kręgi piersiowe: jaką powierzchnię stawową mają na wyrostku poprzecznym i których kręgów to nie dotyczy? {s. 229}
+- Otworów w wyrostkach nie ma. Otwór wyrostka poprzecznego to cecha wyłącznie kręgów szyjnych. Wyrostki poprzeczne kręgów piersiowych mają dołki żebrowe, czyli powierzchnie stawowe. ?? Czy na wyrostkach kręgów piersiowych są otwory? Co na nich jest? {s. 223, 229}
+H: Budowa: w porównaniu z innymi grupami
+- Trzon jest większy niż w szyjnych, mniejszy niż w lędźwiowych, z przodu nieco niższy niż z tyłu (klinowaty, zgodnie z kifozą piersiową). ?? Kręgi piersiowe: wielkość i kształt trzonu na tle innych grup? {s. 228}
+- Otwór kręgowy jest okrągły i mniejszy niż w kręgach szyjnych i lędźwiowych. ?? Kręgi piersiowe: kształt i wielkość otworu kręgowego na tle innych grup? {s. 231}
+- Wyrostki kolczyste są dłuższe niż w kręgach szyjnych i lędźwiowych i tak pochylone ku dołowi, że zachodzą na siebie dachówkowato (Th1–Th8). ?? Kręgi piersiowe: jak ustawione są wyrostki kolczyste? {s. 230}
+- Powierzchnie wyrostków stawowych leżą w płaszczyźnie czołowej: górne zwrócone ku tyłowi, dolne ku przodowi. ?? Kręgi piersiowe: w jakiej płaszczyźnie leżą powierzchnie wyrostków stawowych? {s. 229–230}
+F: Czym wyróżnia się Th12? => To kręg przejściowy: wyrostki stawowe górne ma ustawione jak piersiowe (płaszczyzna czołowa), dolne jak lędźwiowe (płaszczyzna strzałkowa). {s. 231}
+
+@U kregi-ledzwiowe | 3 | s. 231–232, 249
+Q: Cechy i budowa kręgów lędźwiowych.
+H: Cechy: ma je tylko ta grupa
+- [Wyrostek żebrowy|processus costalis]: to, co wygląda jak wyrostek poprzeczny, jest szczątkowym żebrem. ?? Kręgi lędźwiowe: jak nazywa się ich „wyrostek poprzeczny” i czym jest rozwojowo? {s. 232}
+- [Wyrostek dodatkowy|processus accessorius]: guzek z tyłu u nasady wyrostka żebrowego. To właściwy wyrostek poprzeczny. ?? Kręgi lędźwiowe: gdzie leży wyrostek dodatkowy i czemu odpowiada? {s. 232}
+- [Wyrostek suteczkowaty|processus mamillaris]: guzek na bocznej stronie wyrostka stawowego górnego. ?? Kręgi lędźwiowe: gdzie leży wyrostek suteczkowaty? {s. 232}
+H: Budowa: w porównaniu z innymi grupami
+- Trzon jest największy spośród kręgów prawdziwych, nerkowaty, bez powierzchni stawowych dla żeber. Z przodu i z tyłu ma równą wysokość. ?? Kręgi lędźwiowe: wielkość i kształt trzonu na tle innych grup? {s. 231}
+- Otwór kręgowy jest trójkątny. ?? Kręgi lędźwiowe: kształt otworu kręgowego? {s. 232}
+- Wyrostek kolczysty ma kształt płytki ustawionej w płaszczyźnie pośrodkowej i skierowanej prosto ku tyłowi. ?? Kręgi lędźwiowe: kształt i kierunek wyrostka kolczystego? {s. 232}
+- Powierzchnie wyrostków stawowych leżą w płaszczyźnie strzałkowej. Górne są wklęsłe i obejmują wypukłe powierzchnie dolne kręgu wyższego. ?? Kręgi lędźwiowe: w jakiej płaszczyźnie leżą powierzchnie wyrostków stawowych i jak do siebie pasują? {s. 232}
+F: Czym wyróżnia się L5? => Trzon jest z przodu wyraźnie wyższy niż z tyłu (klinowaty). Wyrostki poprzeczne są krótkie, silne, szerokie u podstawy i zgrubiałe na końcu; odchodzą od grzbietowego odcinka trzonu i od podstawy łuku. Wyrostki stawowe górne są skierowane bardziej ku tyłowi, a dolne bardziej do przodu niż w innych kręgach. {s. 231–232}
+F: Dlaczego odcinek lędźwiowy prawie się nie obraca? => Powierzchnie stawowe leżą w płaszczyźnie strzałkowej i górne obejmują dolne, a trzony są duże; to blokuje obrót. Ruch obrotowy jest największy w odcinku szyjnym. {s. 232, 271}
+
+@U krzyzowa | 3 | s. 232–236, 249
+Q: Opisz kość krzyżową.
+- [Kość krzyżowa|os sacrum]: pięć zrośniętych kręgów krzyżowych (zrost w wieku 20–25 lat). Ma kształt klina: [podstawa|basis ossis sacri|podstawa kości krzyżowej] u góry, [wierzchołek|apex ossis sacri|wierzchołek kości krzyżowej] u dołu. ?? Kość krzyżowa: z czego powstaje i jak nazywają się jej część górna i dolna? {s. 232–234}
+- Podstawa łączy się krążkiem z L5. Krawędź tego krążka wpukla się do przodu i tworzy [wzgórek|promontorium]. Na wzgórku leży wierzchołek kąta lędźwiowo-krzyżowego (120–170°) między L5 a kością krzyżową. ?? Kość krzyżowa: co to jest wzgórek i jaki kąt tworzy kość z kręgiem L5? {s. 234}
+- [Powierzchnia miedniczna|facies pelvina], wklęsła: cztery [kresy poprzeczne|lineae transversae] (ślady zrostu trzonów) i na ich końcach cztery pary [otworów krzyżowych miednicznych|foramina sacralia pelvina|otwory krzyżowe miedniczne]. ?? Kość krzyżowa: co widać na powierzchni miednicznej? {s. 234}
+- [Powierzchnia grzbietowa|facies dorsalis], wypukła, ma trzy rodzaje grzebieni. [Grzebień krzyżowy pośrodkowy|crista sacralis mediana]: zrośnięte wyrostki kolczyste. ?? Kość krzyżowa: z czego powstaje grzebień krzyżowy pośrodkowy? {s. 235}
+- [Grzebień krzyżowy pośredni|crista sacralis intermedia]: zrośnięte wyrostki stawowe. U dołu kończy się [rożkami krzyżowymi|cornua sacralia|rożki krzyżowe]. ?? Kość krzyżowa: z czego powstaje grzebień krzyżowy pośredni i czym się kończy u dołu? {s. 235}
+- [Grzebień krzyżowy boczny|crista sacralis lateralis]: zrośnięte wyrostki poprzeczne. Między grzebieniem pośrednim a bocznym leżą cztery pary [otworów krzyżowych grzbietowych|foramina sacralia dorsalia|otwory krzyżowe grzbietowe]. ?? Kość krzyżowa: z czego powstaje grzebień krzyżowy boczny i co leży między nim a grzebieniem pośrednim? {s. 235–236}
+- [Części boczne|partes laterales|części boczne kości krzyżowej] mają [powierzchnię uchowatą|facies auricularis|powierzchnia uchowata] do stawu z kością biodrową. Za nią leży [guzowatość krzyżowa|tuberositas sacralis], przyczep więzadeł krzyżowo-biodrowych międzykostnych. ?? Kość krzyżowa: co znajduje się na częściach bocznych? {s. 236}
+- [Kanał krzyżowy|canalis sacralis] jest przedłużeniem kanału kręgowego. U dołu otwiera się [rozworem krzyżowym|hiatus sacralis|rozwór krzyżowy], bo łuki ostatnich kręgów nie zrastają się w linii pośrodkowej. ?? Kość krzyżowa: czym jest kanał krzyżowy i jak kończy się u dołu? {s. 235–236}
+F: Co wychodzi przez otwory krzyżowe miedniczne, a co przez grzbietowe? => Przez miedniczne gałęzie przednie nerwów krzyżowych, przez grzbietowe gałęzie tylne. {s. 235–236}
+F: Czym różni się kość krzyżowa kobiety od kości mężczyzny? => U kobiety jest szersza i krótsza, słabiej i bardziej równomiernie wygięta, ustawiona bardziej poziomo. {s. 236–237}
+
+
+@L polaczenia-kregoslupa | joint | Połączenia i więzadła kręgosłupa | Rodzaje połączeń, lista więzadeł i ruchy, przy których się napinają.
+
+@U rodzaje-polaczen | 3 | s. 249–252, 272
+Q: Jakie rodzaje połączeń występują w kręgosłupie?
+- Trzy rodzaje: chrząstkozrosty i więzozrosty (połączenia ścisłe) oraz stawy (połączenia maziowe). ?? Jakie trzy rodzaje połączeń występują w kręgosłupie? {s. 249}
+- Chrząstkozrosty: [krążki międzykręgowe|disci intervertebrales] między trzonami. Jest ich 23: pierwszy między C2 a C3, ostatni między L5 a kością krzyżową. ?? Krążki międzykręgowe: jakim są połączeniem, ile ich jest, gdzie leży pierwszy i ostatni? {s. 249–250}
+- Krążek składa się z [pierścienia włóknistego|annulus fibrosus|pierścień włóknisty] na obwodzie i [jądra miażdżystego|nucleus pulposus|jądro miażdżyste] w środku, położonego bliżej tylnego brzegu. ?? Z jakich dwóch części składa się krążek międzykręgowy? {s. 250}
+- Więzozrosty: więzadła, które łączą trzony, łuki, wyrostki poprzeczne i wyrostki kolczyste. ?? Co w kręgosłupie łączą więzozrosty? {s. 249}
+- Stawy: [stawy międzykręgowe|juncturae zygapophysiales] między wyrostkami stawowymi, 23 pary, oraz stawy głowy: szczytowo-potyliczny i szczytowo-obrotowy. ?? Które połączenia kręgosłupa są stawami? {s. 252, 255}
+F: Jaką rolę pełni pierścień włóknisty, a jaką jądro miażdżyste? => Pierścień hamuje ruchy kręgów. Jądro działa jak kulista poduszka wodna, na której balansuje trzon kręgu wyższego; przy zgięciu przesuwa się w stronę przeciwną do zgięcia. Cały krążek amortyzuje wstrząsy. {s. 251}
+F: Gdzie w kręgosłupie jest kościozrost? => W kości krzyżowej i guzicznej: krążki między tymi kręgami kostnieją z wiekiem. {s. 250}
+
+@U wiezadla-kregoslupa | 3 | s. 251–254, 272
+Q: Wymień więzadła kręgosłupa i powiedz, co łączą.
+H: Długie
+- [Więzadło podłużne przednie|ligamentum longitudinale anterius]: po przedniej powierzchni trzonów, od guzka gardłowego kości potylicznej do powierzchni miednicznej kości krzyżowej. ?? Więzadło podłużne przednie: gdzie biegnie, od czego do czego? {s. 251}
+- [Więzadło podłużne tylne|ligamentum longitudinale posterius]: po tylnej powierzchni trzonów, wewnątrz kanału kręgowego, od stoku kości potylicznej do kanału krzyżowego. ?? Więzadło podłużne tylne: gdzie biegnie? {s. 252}
+- [Więzadło nadkolcowe|ligamentum supraspinale]: łączy końce wyrostków kolczystych od C7 do grzebienia krzyżowego pośrodkowego. ?? Więzadło nadkolcowe: co łączy i dokąd sięga? {s. 254}
+- [Więzadło karkowe|ligamentum nuchae]: trójkątna błona w płaszczyźnie pośrodkowej między kością potyliczną a wyrostkami kolczystymi kręgów szyjnych. Przedłuża więzadło nadkolcowe ku górze i rozdziela mięśnie karku prawej i lewej strony. ?? Więzadło karkowe: gdzie jest rozpięte i co rozdziela? {s. 254}
+H: Krótkie, między sąsiednimi kręgami
+- [Więzadła żółte|ligamenta flava]: łączą łuki sąsiednich kręgów i zamykają kanał kręgowy od tyłu. Są sprężyste. ?? Więzadła żółte: co łączą i co je wyróżnia? {s. 252–253}
+- [Więzadła międzykolcowe|ligamenta interspinalia]: między wyrostkami kolczystymi. ?? Które więzadła leżą między wyrostkami kolczystymi sąsiednich kręgów? {s. 254}
+- [Więzadła międzypoprzeczne|ligamenta intertransversaria]: między wyrostkami poprzecznymi. ?? Które więzadła leżą między wyrostkami poprzecznymi sąsiednich kręgów? {s. 254}
+F: Gdzie więzadła żółte są najsilniejsze, a gdzie najsłabsze? => Najsilniejsze między kręgami lędźwiowymi, najsłabsze między C1 a C2. {s. 253}
+
+@U napinanie-wiezadel | 2 | s. 252–254, 270–271
+Q: Przy jakich ruchach kręgosłupa napinają się poszczególne więzadła?
+- Zasada: oś zgięcia i prostowania biegnie poprzecznie przez jądro miażdżyste. Więzadła leżące za osią napinają się przy zgięciu do przodu, leżące przed osią przy zgięciu do tyłu. ?? Jaka zasada mówi, które więzadła napinają się przy zgięciu do przodu, a które przy zgięciu do tyłu? {s. 270–271}
+- Zgięcie do przodu napina: więzadło podłużne tylne, więzadła żółte, międzykolcowe i nadkolcowe. ?? Które więzadła napinają się przy zgięciu kręgosłupa do przodu? {s. 252–254}
+- Zgięcie do tyłu napina więzadło podłużne przednie. ?? Które więzadło napina się przy zgięciu kręgosłupa do tyłu? {s. 252}
+- Zgięcie w bok napina więzadła międzypoprzeczne po stronie przeciwnej. ?? Które więzadła napinają się przy zgięciu kręgosłupa w bok i po której stronie? {s. 254}
+- Ruchy obrotowe hamują głównie krążki międzykręgowe i torebki stawowe. ?? Co hamuje ruchy obrotowe kręgosłupa? {s. 271}
+- Więzadła żółte, rozciągnięte przy zgięciu do przodu, same dążą do wyprostowania kręgosłupa. Oszczędzają w ten sposób pracy prostownikowi grzbietu. ?? Jakie znaczenie ma sprężystość więzadeł żółtych? {s. 253}
+F: Co oprócz więzadeł hamuje ruchy kręgosłupa? => Części pierścieni włóknistych i torebek stawowych po stronie przeciwnej do ruchu oraz opór rozciąganych mięśni antagonistycznych. Przy zgięciu bocznym odcinka piersiowego także żebra po stronie ruchu. {s. 270–271}
+F: W których odcinkach kręgosłupa zgięcie i prostowanie, zgięcie boczne i obrót są największe? => Zgięcie i prostowanie: szyjny i lędźwiowy. Zgięcie boczne: piersiowy. Obrót: szyjny; w lędźwiowym prawie go nie ma. {s. 270–271}
+
+
+@L stawy-glowy | joint | Stawy głowy | Staw szczytowo-obrotowy dokładnie, więzadła zęba, mechanika połączenia C1 z C2.
+
+@U szczytowo-obrotowy | 3 | s. 257–258, 272
+Q: Opisz dokładnie staw szczytowo-obrotowy: z jakich stawów się składa i jakie są ich powierzchnie stawowe?
+- [Staw szczytowo-obrotowy|articulatio atlantoaxialis], czyli dolny staw głowy, składa się z czterech stawów: dwóch pośrodkowych (przedniego i tylnego) i dwóch bocznych. ?? Z ilu i jakich stawów składa się połączenie kręgu szczytowego z obrotowym? {s. 257}
+- [Staw szczytowo-obrotowy pośrodkowy|articulatio atlantoaxialis mediana] przedni: powierzchnia stawowa przednia zęba i dołek zębowy na łuku przednim kręgu szczytowego. ?? Staw szczytowo-obrotowy pośrodkowy przedni: jakie powierzchnie go tworzą? {s. 257}
+- Pośrodkowy tylny: powierzchnia stawowa tylna zęba i pokryta chrząstką powierzchnia więzadła poprzecznego kręgu szczytowego. ?? Staw szczytowo-obrotowy pośrodkowy tylny: jakie powierzchnie go tworzą? {s. 257}
+- [Staw szczytowo-obrotowy boczny|articulatio atlantoaxialis lateralis], prawy i lewy: dołek stawowy dolny kręgu szczytowego i powierzchnia stawowa górna kręgu obrotowego. ?? Staw szczytowo-obrotowy boczny: jakie powierzchnie go tworzą? {s. 257}
+- W stawach bocznych obie powierzchnie są lekko wypukłe, więc stykają się tylko wzdłuż osi poprzecznej, a z przodu i z tyłu od siebie odstają. Torebki wszystkich czterech stawów są cienkie i luźne. ?? Stawy szczytowo-obrotowe boczne: jaki kształt mają powierzchnie i jak do siebie przylegają? {s. 257–258}
+
+@U wiezadla-zeba | 3 | s. 258–261, 272–273
+Q: Więzadła, które wzmacniają połączenie dwóch pierwszych kręgów szyjnych z czaszką.
+- [Więzadło krzyżowe kręgu szczytowego|ligamentum cruciforme atlantis] ma część poziomą i pionową. ?? Z jakich dwóch części składa się więzadło krzyżowe kręgu szczytowego? {s. 258}
+- Część pozioma to [więzadło poprzeczne kręgu szczytowego|ligamentum transversum atlantis]: rozpięte między częściami bocznymi kręgu szczytowego, przylega do zęba od tyłu. Utrzymuje ząb na miejscu i oddziela go od rdzenia. ?? Więzadło poprzeczne kręgu szczytowego: między czym jest rozpięte i jakie ma zadanie? {s. 225, 258}
+- Część pionowa to [pęczki podłużne|fasciculi longitudinales]: górne dochodzą do przedniego brzegu otworu wielkiego, dolne do tylnej powierzchni trzonu kręgu obrotowego. ?? Pęczki podłużne więzadła krzyżowego: dokąd dochodzą górne, a dokąd dolne? {s. 258}
+- [Więzadło wierzchołka zęba|ligamentum apicis dentis]: od szczytu zęba do przedniego brzegu otworu wielkiego. To pozostałość struny grzbietowej, mechanicznie bez znaczenia. ?? Więzadło wierzchołka zęba: przebieg i znaczenie? {s. 258}
+- [Więzadła skrzydłowate|ligamenta alaria]: od boków zęba skośnie ku górze i bocznie do przyśrodkowej strony kłykci potylicznych. ?? Więzadła skrzydłowate: przebieg? {s. 260}
+- [Błona pokrywająca|membrana tectoria]: leży za więzadłem krzyżowym, biegnie od części podstawnej kości potylicznej do tylnej powierzchni trzonu kręgu obrotowego. To górne przedłużenie więzadła podłużnego tylnego; osłania rdzeń przed zębem. ?? Błona pokrywająca: gdzie leży, czego jest przedłużeniem i co osłania? {s. 260}
+- Kolejność od przodu ku tyłowi: więzadło podłużne przednie, błona szczytowo-potyliczna przednia, więzadło wierzchołka zęba i więzadła skrzydłowate, więzadło krzyżowe, błona pokrywająca, więzadło podłużne tylne, błona szczytowo-potyliczna tylna. ?? W jakiej kolejności od przodu ku tyłowi leżą więzadła stawów głowy? {s. 260–261}
+F: Co grozi po zerwaniu więzadła poprzecznego kręgu szczytowego? => Ząb przesuwa się ku tyłowi i miażdży rdzeń przedłużony („złamanie karku”). {s. 225}
+
+@U mechanika-c1c2 | 3 | s. 261, 273
+Q: Mechanika połączenia dwóch pierwszych kręgów szyjnych: jakie ruchy i wokół jakiej osi?
+- Główny ruch to obrót głowy: kręg szczytowy razem z czaszką obraca się dokoła zęba kręgu obrotowego. Osią jest długa oś zęba. ?? Jaki jest główny ruch w stawie szczytowo-obrotowym, co się obraca i wokół jakiej osi? {s. 261}
+- Zakres: ok. 30° w każdą stronę. Większy obrót głowy, do 90°, odbywa się ze współudziałem odcinka szyjnego. ?? Jaki jest zakres obrotu w stawie szczytowo-obrotowym? {s. 261}
+- To ruch śrubowy: przy obrocie powierzchnie kręgu szczytowego ześlizgują się w stawach bocznych ku dołowi, więc głowa obniża się o ok. 2,5 mm. Obrót wokół osi łączy się z przesunięciem wzdłuż osi. ?? Dlaczego ruch w stawie szczytowo-obrotowym nazywa się śrubowym? {s. 261}
+- Przy obrocie głowa pochyla się lekko w stronę przeciwną, bo pociąga ją więzadło skrzydłowate. ?? Co dzieje się z głową przy obrocie pod wpływem więzadła skrzydłowatego? {s. 261}
+- Poza obrotem możliwe jest bardzo małe zgięcie do przodu i do tyłu. Kończy się, gdy ząb oprze się o łuk przedni kręgu szczytowego albo o więzadło poprzeczne. ?? Jaki ruch poza obrotem jest możliwy w stawie szczytowo-obrotowym i co go ogranicza? {s. 261}
+F: A jakie ruchy odbywają się w górnym stawie głowy? => W stawie szczytowo-potylicznym (_articulatio atlantooccipitalis_; kłykcie potyliczne i dołki stawowe górne kręgu szczytowego): przytakiwanie wokół osi poprzecznej, ok. 30°, i małe zgięcie boczne wokół osi strzałkowej, ok. 10°. {s. 261}
+F: Co zamyka przestrzeń między kością potyliczną a kręgiem szczytowym? => Błona szczytowo-potyliczna przednia (do łuku przedniego) i tylna (od tylnego brzegu otworu wielkiego do łuku tylnego). {s. 256}
+
+
+@L krzywizny | bone | Krzywizny kręgosłupa | Pierwotne i wtórne, kiedy powstają i przy jakich czynnościach dziecka.
+
+@U krzywizny | 2 | s. 264–266, 249
+Q: Krzywizny kręgosłupa: jakie są, które są pierwotne, a które wtórne, kiedy i przy jakich czynnościach powstają?
+- Cztery krzywizny w płaszczyźnie pośrodkowej. Wypukłe do przodu: [lordoza szyjna|lordosis cervicalis] i [lordoza lędźwiowa|lordosis lumbalis]. Wypukłe do tyłu: [kifoza piersiowa|kyphosis thoracica] i [kifoza krzyżowa|kyphosis sacralis]. ?? Wymień cztery krzywizny kręgosłupa i powiedz, w którą stronę są wypukłe. {s. 264}
+- Pierwotne są kifozy. Kręgosłup płodu i noworodka tworzy jedną kifozę, widoczną już u trzytygodniowego zarodka; kifoza piersiowa to jej pozostałość. Kifoza krzyżowa zaznacza się od 5. miesiąca życia płodowego. ?? Które krzywizny są pierwotne i kiedy powstają? {s. 265}
+- Wtórne są lordozy. Powstają po urodzeniu pod wpływem pracy mięśni i obciążenia. ?? Które krzywizny są wtórne i co je wywołuje? {s. 265}
+- Lordoza szyjna: powstaje, gdy niemowlę uczy się dźwigać główkę, ok. 4. miesiąca życia. Mięśnie karku unoszą głowę i odginają odcinek szyjny do tyłu. ?? Lordoza szyjna: kiedy powstaje i przy jakiej czynności dziecka? {s. 265}
+- Lordoza lędźwiowa: zaczyna powstawać, gdy dziecko siada, a głównie przy pierwszych próbach wstawania i chodzenia, w 10–15 miesiącu. Odcinek lędźwiowy wygina się do przodu, żeby tułów nie przewracał się do przodu. Powstaje jako ostatnia. ?? Lordoza lędźwiowa: kiedy powstaje i przy jakich czynnościach dziecka? {s. 265–266}
+- Ustalenie krzywizn: szyjna i piersiowa do 6–7 roku życia, lędźwiowa dopiero w okresie dojrzewania. ?? Kiedy krzywizny kręgosłupa ustalają się ostatecznie? {s. 266}
+- Lordozy to odcinki bardziej ruchome, kifozy bardziej sztywne. Trzy górne krzywizny kompensują się nawzajem: gdy jedna się pogłębia, pogłębiają się pozostałe. Krzyżowa jest samodzielna. ?? Które krzywizny są bardziej ruchome i które kompensują się nawzajem? {s. 264}
+- W kifozach klinowaty kształt mają głównie trzony kręgów, w lordozach głównie krążki międzykręgowe. ?? Co ma klinowaty kształt w kifozach, a co w lordozach? {s. 266}
+F: Po co kręgosłupowi krzywizny? => Amortyzują wstrząsy: prosty słup przenosiłby je wprost na czaszkę i mózgowie. Pozwalają też utrzymać równowagę w postawie pionowej. {s. 264, 267}
+F: Jakie krzywizny ma kręgosłup w płaszczyźnie czołowej? => Skrzywienia boczne (skoliozy). Najczęstsza jest piersiowa wypukła w prawo, na wysokości Th3–Th6, często z kompensacyjną lędźwiową w lewo. Pojawiają się w wieku szkolnym, 7–10 lat. {s. 266–267}
+X: Nazwy „pierwotne” i „wtórne” pochodzą z zajęć. Bochenek (s. 265–266) opisuje to samo bez tych nazw: kifoza jest odziedziczona i widoczna u płodu, lordozy powstają po urodzeniu.

@@ -1,0 +1,369 @@
+@B Mięśnie tułowia i oddychanie
+
+@L pochewka | muscle | Pochewka i mięsień prosty brzucha | Najczęstsze pytanie na zaliczeniu i to, o co prowadzący dopytuje zaraz po nim.
+
+@U pochewka | 3 | s. 718–719, 731
+Q: Opisz dokładnie pochewkę mięśnia prostego brzucha: blaszkę przednią i tylną.
+H: Co to jest
+- [Pochewka mięśnia prostego brzucha|vagina musculi recti abdominis]: dwie blaszki ścięgniste, przednia i tylna, które pokrywają mięsień prosty brzucha od przodu i od tyłu. ?? Czym jest pochewka mięśnia prostego brzucha i z ilu blaszek się składa? {s. 718}
+- Tworzą ją rozcięgna trzech mięśni płaskich brzucha: skośnego zewnętrznego, skośnego wewnętrznego i poprzecznego. ?? Rozcięgna których mięśni tworzą pochewkę mięśnia prostego brzucha? {s. 718}
+- Budowa zmienia się na wysokości [kresy łukowatej|linea arcuata|kresa łukowata]. To wklęsły dolny brzeg blaszki tylnej, nieco poniżej pępka. Nad nią leżą górne 2/3 pochewki, pod nią dolna 1/3. ?? Co to jest kresa łukowata i gdzie leży? {s. 718}
+H: Powyżej kresy łukowatej
+- [Blaszka przednia|lamina anterior|blaszka przednia pochewki]: rozcięgno m. skośnego zewnętrznego zrośnięte z przednią blaszką rozcięgna m. skośnego wewnętrznego. Dwie warstwy. ?? Z czego składa się blaszka przednia pochewki powyżej kresy łukowatej? {s. 718}
+- [Blaszka tylna|lamina posterior|blaszka tylna pochewki]: tylna blaszka rozcięgna m. skośnego wewnętrznego i rozcięgno m. poprzecznego. Dwie warstwy. ?? Z czego składa się blaszka tylna pochewki powyżej kresy łukowatej? {s. 718–719}
+H: Poniżej kresy łukowatej
+- Blaszka przednia: połączone rozcięgna wszystkich trzech mięśni, obu skośnych i poprzecznego. Trzy warstwy. ?? Z czego składa się blaszka przednia pochewki poniżej kresy łukowatej? {s. 718–719}
+- Blaszki tylnej tu nie ma. Tylna powierzchnia m. prostego przylega bezpośrednio do [powięzi poprzecznej|fascia transversalis|powięź poprzeczna]. ?? Co leży za mięśniem prostym brzucha poniżej kresy łukowatej? {s. 719}
+H: Przebieg blaszek
+- Blaszka przednia pokrywa całą przednią powierzchnię mięśnia i jest ściśle zrośnięta z jego smugami ścięgnistymi. U góry przyczepia się do niej część brzuszna m. piersiowego większego. ?? Blaszka przednia pochewki: jaką część mięśnia pokrywa, z czym jest zrośnięta i co się do niej przyczepia u góry? {s. 718}
+- Blaszka tylna jest krótsza: zaczyna się na chrząstkach żebrowych przy kącie podmostkowym, kończy się kresą łukowatą. Ze smugami ścięgnistymi łączy się tylko luźno. ?? Blaszka tylna pochewki: gdzie się zaczyna, gdzie kończy i jak łączy się ze smugami ścięgnistymi? {s. 710, 718}
+- W linii pośrodkowej blaszki prawej i lewej pochewki łączą się w [kresę białą|linea alba|kresa biała], która biegnie od wyrostka mieczykowatego do spojenia łonowego. ?? Gdzie łączą się pochewki prawa i lewa i dokąd sięga to pasmo? {s. 718–719}
+F: Dlaczego rozcięgno mięśnia skośnego wewnętrznego jest i w blaszce przedniej, i w tylnej? => W górnych 2/3 rozdziela się na dwie blaszki: jedna przechodzi przed mięśniem prostym, druga za nim. W dolnej 1/3 nie dzieli się i całe przechodzi przed mięśniem. {s. 707, 718}
+F: Co leży w pochewce oprócz mięśnia prostego brzucha? => Mięsień piramidowy (u dołu, przed mięśniem prostym) oraz naczynia nabrzuszne górne i dolne, które biegną po tylnej powierzchni mięśnia prostego. {s. 711–712}
+F: Jak powstaje kresa biała? => Ze skrzyżowania włókien ścięgnistych rozcięgien strony prawej i lewej. Szczeliny między włóknami to miejsca słabszego oporu (przepukliny kresy białej). {s. 719}
+
+@U prosty | 3 | s. 710–711
+Q: Mięsień prosty brzucha: przyczepy, smugi ścięgniste, budowa metameryczna i czynność.
+H: Przyczepy
+- [Mięsień prosty brzucha|musculus rectus abdominis] zaczyna się na przedniej powierzchni chrząstek żebrowych V–VII, na wyrostku mieczykowatym i więzadłach żebrowo-mieczykowych. ?? Mięsień prosty brzucha: przyczep początkowy? {s. 710}
+- Kończy się na górnej gałęzi kości łonowej i na przedniej powierzchni spojenia łonowego. ?? Mięsień prosty brzucha: przyczep końcowy? {s. 710}
+H: Smugi ścięgniste
+- [Smugi ścięgniste|intersectiones tendineae]: poprzeczne pasma ścięgniste szerokości ok. 1 cm, najczęściej 3 lub 4. Dzielą mięsień na odcinki. ?? Co to są smugi ścięgniste mięśnia prostego brzucha i ile ich zwykle jest? {s. 710}
+- Położenie: pierwsza na wysokości końca VIII chrząstki żebrowej, druga na poziomie pierwszego żebra wolnego, trzecia na wysokości pępka, czwarta (jeśli jest) na wysokości kresy łukowatej. ?? Na jakich wysokościach leżą kolejne smugi ścięgniste? {s. 711}
+- Zrost smug z blaszką przednią pochewki pozwala kurczyć się poszczególnym odcinkom mięśnia osobno i nie pozwala mięśniowi przesuwać się w pochewce. ?? Co daje zrost smug ścięgnistych z blaszką przednią pochewki? {s. 710}
+H: Budowa metameryczna
+- Mięsień powstaje z 6–9 miotomów (świadczy o tym unerwienie przez kolejne nerwy międzyżebrowe). Smugi to zachowane granice między miotomami, ale zachowały się tylko niektóre. ?? Na czym polega budowa metameryczna mięśnia prostego brzucha: z ilu miotomów powstaje i czym są smugi? {s. 710}
+- Między dwiema sąsiednimi smugami włókna biegną podłużnie, czyli tak, jak pierwotnie biegły w miotomach. ?? Jak biegną włókna między sąsiednimi smugami i o czym to świadczy? {s. 710}
+H: Czynność
+- Zgina tułów do przodu: z leżenia na plecach unosi górną połowę ciała albo miednicę. Najsilniejszy antagonista prostownika grzbietu. ?? Główna czynność mięśnia prostego brzucha i jego antagonista? {s. 711}
+- Opuszcza żebra, więc jest mięśniem wydechowym. Wzmacnia tłocznię brzuszną. ?? Jaką rolę mięsień prosty brzucha pełni w oddychaniu i w tłoczni brzusznej? {s. 711}
+F: Co chroni oba mięśnie proste przed rozsunięciem się na boki? => Połączenie smug ścięgnistych z kresą białą. Gdy się rozluźni, mięśnie rozsuwają się na boki (_diastasis musculorum rectorum_). {s. 711}
+
+@U pod-powiezia | 2 | s. 721, 726–729
+Q: Co leży pod powięzią poprzeczną, do której przylega mięsień prosty brzucha?
+- Powięź poprzeczna pokrywa od wewnątrz m. poprzeczny brzucha i jego rozcięgno. Głębiej od niej leży już tylko otrzewna ścienna. ?? Co pokrywa powięź poprzeczna i co leży bezpośrednio pod nią? {s. 721}
+- Między powięzią poprzeczną a otrzewną, poniżej pępka, biegną: więzadło pępkowe pośrodkowe (od szczytu pęcherza do pępka), dwa więzadła pępkowe przyśrodkowe (zarośnięte tętnice pępkowe) i naczynia nabrzuszne dolne. ?? Jakie więzadła i naczynia biegną między powięzią poprzeczną a otrzewną poniżej pępka? {s. 726, 728}
+- Otrzewna tworzy na nich pięć fałdów: [fałd pępkowy pośrodkowy|plica umbilicalis mediana], dwa [fałdy pępkowe przyśrodkowe|plica umbilicalis medialis|fałd pępkowy przyśrodkowy] i dwa [fałdy pępkowe boczne|plica umbilicalis lateralis|fałd pępkowy boczny]. Fałdy boczne zawierają naczynia nabrzuszne dolne. ?? Jakie fałdy otrzewnej widać na wewnętrznej powierzchni przedniej ściany brzucha i co zawierają boczne? {s. 726, 728}
+- Między fałdami leżą po każdej stronie trzy doły: nadpęcherzowy, pachwinowy przyśrodkowy (naprzeciw pierścienia pachwinowego powierzchownego) i pachwinowy boczny (odpowiada pierścieniowi pachwinowemu głębokiemu). ?? Jakie trzy doły leżą między fałdami pępkowymi i którym pierścieniom pachwinowym odpowiadają dwa z nich? {s. 728–729}
+
+
+@L brzuch | muscle | Mięśnie brzucha i tłocznia brzuszna | Podział, przyczepy trzech mięśni płaskich, tłocznia i kanał pachwinowy.
+
+@U brzuch-podzial | 2 | s. 702–704, 712–714, 731
+Q: Wymień mięśnie brzucha z podziałem na grupy.
+- Mięśnie boczne, płaskie, w trzech warstwach od zewnątrz: [mięsień skośny zewnętrzny brzucha|musculus obliquus externus abdominis], [mięsień skośny wewnętrzny brzucha|musculus obliquus internus abdominis], [mięsień poprzeczny brzucha|musculus transversus abdominis]. ?? Mięśnie boczne brzucha: trzy warstwy od zewnątrz do wewnątrz? {s. 702}
+- Mięśnie przednie: mięsień prosty brzucha i [mięsień piramidowy|musculus pyramidalis]. Piramidowy biegnie od kości łonowej i spojenia łonowego do kresy białej i ją napina. ?? Mięśnie przednie brzucha: które dwa i co robi mniejszy z nich? {s. 704, 712}
+- Mięsień tylny: [mięsień czworoboczny lędźwi|musculus quadratus lumborum]. Rozpięty między grzebieniem biodrowym, wyrostkami żebrowymi kręgów lędźwiowych i XII żebrem. Zgina tułów w bok, obustronnie obniża XII żebra. ?? Mięsień tylny brzucha: nazwa, między czym jest rozpięty, czynność? {s. 712, 714}
+- Odpowiedniki na klatce piersiowej: skośny zewnętrzny częściowo odpowiada mm. międzyżebrowym zewnętrznym, skośny wewnętrzny tylko mm. międzyżebrowym pośrednim, a poprzeczny właściwym mm. międzyżebrowym wewnętrznym i m. poprzecznemu klatki piersiowej. ?? Którym mięśniom klatki piersiowej odpowiadają trzy mięśnie płaskie brzucha? {s. 704}
+
+@U skosny-zewn | 2 | s. 704–706, 730
+Q: Mięsień skośny zewnętrzny brzucha: przyczepy, kierunek włókien, czynność.
+- Początek: ośmioma zębami na zewnętrznej powierzchni żeber V–XII. Górne zęby wchodzą między zęby m. zębatego przedniego, dolne między wiązki m. najszerszego grzbietu. ?? Mięsień skośny zewnętrzny brzucha: przyczep początkowy i z jakimi mięśniami się zazębia? {s. 705}
+- Włókna biegną skośnie ku dołowi i do przodu, tak jak włókna mm. międzyżebrowych zewnętrznych. ?? Mięsień skośny zewnętrzny brzucha: kierunek włókien? {s. 705}
+- Koniec w trzech miejscach: rozcięgno przechodzi do blaszki przedniej pochewki m. prostego i kresy białej; dolny brzeg rozcięgna tworzy [więzadło pachwinowe|ligamentum inguinale]; tylne włókna kończą się na wardze zewnętrznej grzebienia biodrowego. ?? Mięsień skośny zewnętrzny brzucha: trzy miejsca przyczepu końcowego? {s. 705}
+- Czynność: jednostronnie zgina tułów w bok i obraca go w stronę przeciwną. Obustronnie zgina tułów do przodu i pociąga klatkę piersiową ku dołowi (wydech). Przy ustalonej klatce piersiowej unosi miednicę. ?? Mięsień skośny zewnętrzny brzucha: czynność jednostronna i obustronna? {s. 705}
+
+@U skosny-wewn | 2 | s. 707–708, 731
+Q: Mięsień skośny wewnętrzny brzucha: przyczepy i działanie.
+- Początek: powięź piersiowo-lędźwiowa, kresa pośrednia grzebienia biodrowego i boczne 2/3 więzadła pachwinowego. ?? Mięsień skośny wewnętrzny brzucha: trzy miejsca przyczepu początkowego? {s. 707}
+- Włókna rozchodzą się wachlarzowato. Tylne wstępują do dolnych brzegów żeber X–XII (kierunek jak w mm. międzyżebrowych wewnętrznych), środkowe biegną poziomo, dolne zstępują. ?? Mięsień skośny wewnętrzny brzucha: kierunek włókien i przyczep do żeber? {s. 707}
+- Główna masa przechodzi w rozcięgno, które dochodzi do kresy białej i po drodze współtworzy pochewkę m. prostego. ?? Dokąd dochodzi rozcięgno mięśnia skośnego wewnętrznego brzucha? {s. 707}
+- Dolne włókna razem z włóknami m. poprzecznego tworzą [dźwigacz jądra|musculus cremaster]. ?? Jaki mięsień powstaje z dolnych włókien mięśnia skośnego wewnętrznego i poprzecznego brzucha? {s. 707}
+- Czynność: obustronnie zgina tułów do przodu i pociąga żebra ku dołowi (wydech). Jednostronnie obraca tułów w swoją stronę, razem ze skośnym zewnętrznym strony przeciwnej. Ze skośnym zewnętrznym tej samej strony zgina tułów w bok. ?? Mięsień skośny wewnętrzny brzucha: czynność obustronna i jednostronna; z którym mięśniem współpracuje przy obrocie? {s. 707–708}
+
+@U poprzeczny-brzucha | 2 | s. 708–709, 731
+Q: Mięsień poprzeczny brzucha: przyczepy i czynność.
+- Początek w czterech miejscach: wewnętrzna powierzchnia chrząstek żebrowych VII–XII (sześć zębów, między zębami przepony), powięź piersiowo-lędźwiowa, warga wewnętrzna grzebienia biodrowego, boczna połowa więzadła pachwinowego. ?? Mięsień poprzeczny brzucha: cztery miejsca przyczepu początkowego? {s. 708}
+- Włókna biegną poprzecznie i wzdłuż [kresy półksiężycowatej|linea semilunaris|kresa półksiężycowata] przechodzą w rozcięgno, które wchodzi do pochewki m. prostego i dochodzi do kresy białej. ?? Mięsień poprzeczny brzucha: kierunek włókien i miejsce przejścia w rozcięgno? {s. 708}
+- Czynność: zbliża żebra do płaszczyzny pośrodkowej i zwęża klatkę piersiową (wydech). Ściąga poprzecznie ścianę brzucha, dlatego jest głównym mięśniem tłoczni brzusznej. ?? Mięsień poprzeczny brzucha: czynność? {s. 709}
+
+@U tlocznia | 3 | s. 716–717
+Q: Tłocznia brzuszna: co to jest, jakie mięśnie ją tworzą i do czego służy?
+- [Tłocznia brzuszna|prelum abdominis]: wzrost ciśnienia w jamie brzusznej wywołany zmniejszeniem jej objętości. ?? Co to jest tłocznia brzuszna? {s. 716}
+- Kurczą się jednocześnie trzy grupy mięśni: przepona od góry, mięśnie dna miednicy od dołu i mięśnie powłok brzucha dookoła. Miednica i klatka piersiowa są wtedy ustalone. ?? Które trzy grupy mięśni kurczą się w tłoczni brzusznej i co musi być ustalone? {s. 716}
+- Największy udział ma m. poprzeczny brzucha, bo jego włókna biegną poprzecznie. Pomagają mu pozostałe mięśnie brzucha. ?? Który mięsień brzucha ma największy udział w tłoczni i dlaczego? {s. 716}
+- Przepona jest słabsza od mięśni brzucha. Dlatego tłocznia działa w pełni dopiero po zatrzymaniu powietrza w płucach przez zamknięcie szpary głośni: płuca podpierają wtedy przeponę jak poduszki. ?? Po co w tłoczni brzusznej zamyka się szparę głośni? {s. 716}
+- Zastosowania: oddawanie stolca, oddawanie moczu, poród. ?? Do czego służy tłocznia brzuszna (trzy zastosowania)? {s. 716}
+- Działa najskuteczniej, gdy klatka piersiowa i miednica zbliżają się do siebie. ?? W jakim ułożeniu ciała tłocznia brzuszna działa najskuteczniej? {s. 716}
+F: Mięśnie brzucha a przepona: kiedy współpracują, a kiedy są antagonistami? => W tłoczni brzusznej kurczą się razem. W oddychaniu są antagonistami: przepona kurczy się przy wdechu, a mięśnie brzucha przy wydechu wypychają rozluźnioną przeponę ku górze. {s. 716}
+
+@U kanal-pachwinowy | 1 | s. 722–726, 732
+Q: Kanał pachwinowy: położenie, pierścienie, ściany i zawartość.
+- [Kanał pachwinowy|canalis inguinalis]: skośna szczelina w przedniej ścianie brzucha nad przyśrodkową częścią więzadła pachwinowego, długości 4–5 cm. Biegnie od tyłu, góry i boku ku przodowi, dołowi i przyśrodkowo. ?? Kanał pachwinowy: gdzie leży, jak długi jest i w jakim kierunku biegnie? {s. 722}
+- [Pierścień pachwinowy głęboki|annulus inguinalis profundus]: otwór w powięzi poprzecznej, ok. 2 cm nad środkiem więzadła pachwinowego, bocznie od naczyń nabrzusznych dolnych. ?? Pierścień pachwinowy głęboki: w czym jest otworem i gdzie leży? {s. 725}
+- [Pierścień pachwinowy powierzchowny|annulus inguinalis superficialis]: otwór w rozcięgnie m. skośnego zewnętrznego, nieco powyżej i bocznie od guzka łonowego. Ograniczają go odnoga przyśrodkowa i boczna, włókna międzyodnogowe i więzadło zagięte. ?? Pierścień pachwinowy powierzchowny: w czym jest otworem, gdzie leży i co go ogranicza? {s. 724}
+- Ściana przednia: rozcięgno m. skośnego zewnętrznego. Ściana tylna: powięź poprzeczna. ?? Kanał pachwinowy: ściana przednia i tylna? {s. 725}
+- Ściana górna: dolne włókna m. skośnego wewnętrznego i m. poprzecznego. Ściana dolna: więzadło pachwinowe. ?? Kanał pachwinowy: ściana górna i dolna? {s. 725}
+- Zawartość: u mężczyzny [powrózek nasienny|funiculus spermaticus], u kobiety [więzadło obłe macicy|ligamentum teres uteri]. ?? Co przechodzi przez kanał pachwinowy u mężczyzny, a co u kobiety? {s. 726}
+F: Którędy wychodzi przepuklina pachwinowa boczna (skośna), a którędy przyśrodkowa (prosta)? => Boczna: przez dół pachwinowy boczny i pierścień głęboki, całą długością kanału, bocznie od naczyń nabrzusznych dolnych. Przyśrodkowa: przez dół pachwinowy przyśrodkowy prosto do pierścienia powierzchownego, przyśrodkowo od tych naczyń. {s. 730}
+
+
+@L przepona1 | muscle | Przepona: budowa i przyczepy | Części, odnogi, więzadła łukowate, środek ścięgnisty i trójkąty.
+
+@U przepona-czesci | 3 | s. 689–692, 700–701
+Q: Z czego składa się przepona? Wymień części i ich przyczepy.
+- [Przepona|diaphragma]: płaski mięsień, kopulasto wypukły ku górze, który oddziela jamę klatki piersiowej od jamy brzusznej. W środku jest ścięgnista, na obwodzie mięśniowa. ?? Czym jest przepona i jak jest zbudowana ogólnie? {s. 690–691}
+- Część mięśniowa dzieli się według przyczepów na trzy części: lędźwiową, żebrową i mostkową. Wszystkie kończą się w środku ścięgnistym. ?? Na jakie trzy części dzieli się część mięśniowa przepony i gdzie wszystkie się kończą? {s. 691–692}
+- [Część lędźwiowa|pars lumbalis|część lędźwiowa przepony]: zaczyna się po każdej stronie odnogą przepony i więzadłami łukowatymi. Jest najgrubsza, do 1 cm. ?? Część lędźwiowa przepony: czym się zaczyna? {s. 691}
+- [Odnoga prawa|crus dextrum|odnoga prawa przepony] zaczyna się na przedniej powierzchni trzonów L1–L3, [odnoga lewa|crus sinistrum|odnoga lewa przepony] na trzonach L1–L2. Prawa jest silniejsza i schodzi niżej. ?? Odnogi przepony: na których kręgach zaczyna się prawa, a na których lewa? {s. 691}
+- [Część żebrowa|pars costalis|część żebrowa przepony]: sześć wiązek od wewnętrznej powierzchni chrząstek żeber VII–XII. Wiązki wchodzą między zęby m. poprzecznego brzucha. ?? Część żebrowa przepony: przyczep początkowy i z którym mięśniem się zazębia? {s. 691–692}
+- [Część mostkowa|pars sternalis|część mostkowa przepony]: pęczki od wewnętrznej powierzchni wyrostka mieczykowatego. Najmniejsza z trzech części. ?? Część mostkowa przepony: przyczep początkowy? {s. 692}
+- [Środek ścięgnisty|centrum tendineum]: wspólne ścięgno końcowe trzech części, w kształcie liścia koniczyny. Na płatku przednim leży serce z osierdziem, na płatkach bocznych podstawy płuc. ?? Środek ścięgnisty przepony: czym jest, jaki ma kształt i co leży na jego płatkach? {s. 692}
+F: Co leży pod prawą, a co pod lewą kopułą przepony? => Pod prawą wątroba, pod lewą żołądek i śledziona. Prawa kopuła stoi nieco wyżej niż lewa. {s. 694–695}
+
+@U przepona-wiezadla | 3 | s. 691
+Q: Więzadła łukowate przepony: między czym są rozpięte i nad jakimi mięśniami przebiegają?
+- Więzadła łukowate to ścięgniste łuki, od których zaczynają się włókna części lędźwiowej. Jest jedno pośrodkowe (nieparzyste) oraz po każdej stronie przyśrodkowe i boczne. ?? Ile jest więzadeł łukowatych przepony i czym one są? {s. 691}
+- [Więzadło łukowate pośrodkowe|ligamentum arcuatum medianum]: tworzą je zbiegające się ścięgniste brzegi obu odnóg. Przebiega nad aortą i ogranicza rozwór aortowy od przodu. ?? Więzadło łukowate pośrodkowe: z czego powstaje i nad czym przebiega? {s. 691}
+- [Więzadło łukowate przyśrodkowe|ligamentum arcuatum mediale]: od trzonu L1 (lub L2) do wyrostka żebrowego L1. Przebiega nad m. lędźwiowym większym i jest zrośnięte z jego powięzią. ?? Więzadło łukowate przyśrodkowe: między czym jest rozpięte i nad którym mięśniem przebiega? {s. 691}
+- [Więzadło łukowate boczne|ligamentum arcuatum laterale]: od wyrostka żebrowego L1 do XII żebra. Przebiega nad m. czworobocznym lędźwi i jest zrośnięte z jego powięzią. ?? Więzadło łukowate boczne: między czym jest rozpięte i nad którym mięśniem przebiega? {s. 691}
+
+@U przepona-trojkaty | 3 | s. 692, 695, 701
+Q: Trójkąty przepony: gdzie leżą, co je ogranicza i jakie mają znaczenie?
+- Trzy części przepony nie łączą się ze sobą ściśle. Między nimi zostają trójkątne pola bez włókien mięśniowych. ?? Dlaczego w przeponie są trójkąty? {s. 692}
+- [Trójkąt lędźwiowo-żebrowy|trigonum lumbocostale]: między częścią lędźwiową a żebrową, nad XII żebrem. Podstawą zwrócony do XII żebra, wierzchołkiem ku górze. ?? Trójkąt lędźwiowo-żebrowy: między którymi częściami przepony leży i jak jest ustawiony? {s. 692}
+- Od strony jamy brzusznej zamykają go nadnercze i górna część nerki. ?? Jakie narządy przylegają do trójkąta lędźwiowo-żebrowego od dołu? {s. 694–695}
+- [Trójkąt mostkowo-żebrowy|trigonum sternocostale]: szczelina między częścią mostkową a żebrową. Przechodzą przez niego naczynia nabrzuszne górne. ?? Trójkąt mostkowo-żebrowy: między którymi częściami przepony leży i co przez niego przechodzi? {s. 692}
+- Znaczenie: to miejsca zmniejszonego oporu, przez które mogą przechodzić przepukliny przeponowe. Trzecim takim miejscem jest rozwór przełykowy. ?? Jakie znaczenie kliniczne mają trójkąty przepony i jakie jest trzecie takie miejsce? {s. 695}
+F: Po której stronie przepukliny przeponowe zdarzają się częściej i dlaczego? => Po lewej, bo po prawej wątroba zamyka ubytki w przeponie. {s. 695}
+
+
+@L przepona2 | muscle | Przepona: otwory i czynność | Rozwór aortowy to najczęstsze pytanie z przepony.
+
+@U rozwor-aortowy | 3 | s. 691–693, 700–701
+Q: Rozwór aortowy: gdzie leży, co go ogranicza i co przez niego przechodzi?
+- [Rozwór aortowy|hiatus aorticus] leży w części lędźwiowej przepony, na wysokości Th12, tuż przed kręgosłupem. ?? Rozwór aortowy: w której części przepony i na jakiej wysokości leży? {s. 691–692}
+- Ograniczenia: z tyłu kręgosłup (Th12), z boków odnoga prawa i lewa, z przodu więzadło łukowate pośrodkowe. ?? Co ogranicza rozwór aortowy z tyłu, z boków i z przodu? {s. 691}
+- Przechodzi przez niego aorta i przewód piersiowy, który leży do tyłu i na prawo od aorty. ?? Co przechodzi przez rozwór aortowy? {s. 692}
+- Rozwór jest obszerny i otoczony włóknami ścięgnistymi, więc skurcz przepony nie uciska aorty. ?? Dlaczego skurcz przepony nie uciska aorty? {s. 692–693}
+F: Czym pod tym względem różni się rozwór przełykowy? => Otaczają go włókna mięśniowe. Przy każdym skurczu przepony, czyli przy wdechu, mogą one zwężać przełyk. {s. 693}
+
+@U otwory-pozostale | 3 | s. 691–693, 701
+Q: Rozwór przełykowy, otwór żyły głównej i szczeliny w odnogach przepony: położenie i zawartość.
+- [Rozwór przełykowy|hiatus esophageus] leży w części lędźwiowej, ku górze i nieco na lewo od rozworu aortowego. Tworzą go rozstępujące się pęczki mięśniowe. ?? Rozwór przełykowy: w której części przepony leży i jak jest położony względem rozworu aortowego? {s. 691}
+- Przechodzi przez niego przełyk oraz pnie błędne, przedni i tylny. ?? Co przechodzi przez rozwór przełykowy? {s. 691}
+- [Otwór żyły głównej|foramen venae cavae] leży w środku ścięgnistym, na granicy płatka prawego i przedniego, czyli na prawo i do przodu od rozworu przełykowego. ?? Otwór żyły głównej: w której części przepony leży i gdzie dokładnie? {s. 692–693}
+- Przechodzi przez niego żyła główna dolna, zrośnięta ze ścięgnistym brzegiem otworu, oraz gałązki brzuszne prawego nerwu przeponowego. ?? Co przechodzi przez otwór żyły głównej? {s. 693}
+- Szczeliny między pasmami odnóg: przez przyśrodkową przechodzi nerw trzewny większy i żyła nieparzysta (po lewej nieparzysta krótka), przez boczną pień współczulny. ?? Co przechodzi przez szczeliny w odnogach przepony? {s. 691, 693}
+F: Które otwory leżą w części mięśniowej, a który w ścięgnistej? => Rozwór aortowy i przełykowy leżą w części lędźwiowej. Otwór żyły głównej leży w środku ścięgnistym. {s. 691, 693}
+F: Którędy przechodzi nerw podżebrowy, a którędy nerwy międzyżebrowe VII–XI? => Nerw podżebrowy pod więzadłem łukowatym bocznym. Nerwy i naczynia międzyżebrowe VII–XI przebijają przyczepy żebrowe przepony i tą drogą dochodzą do mięśni brzucha. {s. 692}
+
+@U przepona-czynnosc | 2 | s. 693–695, 701
+Q: Czynność przepony: co się z nią dzieje przy wdechu i przy wydechu?
+- Przepona jest ważnym mięśniem wdechowym. Jej praca daje oddychanie brzuszne, czyli przeponowe. ?? Jakim mięśniem oddechowym jest przepona i jak nazywa się typ oddychania, który wywołuje? {s. 693, 696}
+- Wdech: przepona kurczy się i spłaszcza. Kopuły obniżają się przy spokojnym wdechu o ok. 2 cm, środek ścięgnisty o ok. 1 cm. Rośnie wymiar pionowy klatki piersiowej, ciśnienie w niej spada i powietrze wchodzi do płuc. ?? Co dzieje się z przeponą przy wdechu i jaki ma to skutek? {s. 693}
+- Przy wdechu wiązki przepony odchylają się od ściany klatki piersiowej. Zachyłek żebrowo-przeponowy rozchyla się i wsuwa się w niego płuco. ?? Co dzieje się z zachyłkiem żebrowo-przeponowym przy wdechu? {s. 693–694}
+- Wydech: przepona się rozluźnia, a napięcie mięśni brzucha i sprężystość płuc wypychają ją ku górze. ?? Co unosi przeponę przy wydechu? {s. 693, 697}
+- Poza oddychaniem bierze udział w tłoczni brzusznej i w wydawaniu głosu, bo reguluje siłę wydechowego prądu powietrza. ?? W czym, poza oddychaniem, bierze udział przepona? {s. 693, 716}
+F: Jak wysoko sięgają kopuły przepony u żywego człowieka przy wydechu? => Prawa do górnego, lewa do dolnego brzegu V chrząstki żebrowej. Na zwłokach o jedno międzyżebrze wyżej (prawa do IV chrząstki). {s. 695}
+
+
+@L miedzyzebrowe | muscle | Mięśnie międzyżebrowe | Podział, przyczepy, błony i odpowiedź na pytanie, czy mięśnie wypełniają całą przestrzeń międzyżebrową.
+
+@U miedzyzebrowe | 3 | s. 685–688, 700
+Q: Mięśnie międzyżebrowe: podział, przyczepy i kierunek włókien.
+H: Podział
+- Dwie zasadnicze warstwy: [mięśnie międzyżebrowe zewnętrzne|musculi intercostales externi] i [mięśnie międzyżebrowe wewnętrzne|musculi intercostales interni]. Wewnętrzne składają się prawie na całej długości z dwóch warstw: pośredniej i najgłębszej. ?? Na jakie warstwy dzielą się mięśnie międzyżebrowe? {s. 685–686}
+H: Zewnętrzne
+- Przyczepy: od dolnego brzegu żebra wyższego, na zewnątrz od bruzdy żebra, do górnego brzegu żebra niższego. ?? Mięśnie międzyżebrowe zewnętrzne: przyczepy? {s. 685}
+- Włókna biegną skośnie ku dołowi i do przodu, w stronę mostka. ?? Mięśnie międzyżebrowe zewnętrzne: kierunek włókien? {s. 685}
+H: Wewnętrzne
+- Przyczepy: od dolnego brzegu żebra wyższego do górnego brzegu żebra niższego, głębiej niż mięśnie zewnętrzne. ?? Mięśnie międzyżebrowe wewnętrzne: przyczepy? {s. 686}
+- Włókna biegną skośnie ku dołowi i do tyłu, w stronę kręgosłupa. Krzyżują się z włóknami zewnętrznych. ?? Mięśnie międzyżebrowe wewnętrzne: kierunek włókien? {s. 686}
+- Warstwa zewnętrzna to [mięśnie międzyżebrowe pośrednie|musculi intercostales intermedii]: przylegają do mięśni zewnętrznych, zaczynają się tak jak one na zewnątrz od bruzdy żebra i sięgają do przodu aż do mostka. ?? Mięśnie międzyżebrowe pośrednie: gdzie się przyczepiają względem bruzdy żebra i dokąd sięgają z przodu? {s. 686}
+- Warstwa wewnętrzna to [mięśnie międzyżebrowe najgłębsze|musculi intercostales intimi]: zaczynają się do wewnątrz od bruzdy żebra i kończą się z przodu na granicy chrzęstno-kostnej żebra. Między obiema warstwami biegną naczynia i nerw międzyżebrowy. ?? Mięśnie międzyżebrowe najgłębsze: gdzie się przyczepiają względem bruzdy żebra, dokąd sięgają z przodu i co je oddziela od pośrednich? {s. 686, 688}
+H: Czynność
+- Zewnętrzne unoszą żebra (wdech), wewnętrzne opuszczają żebra (wydech). Skrzyżowane włókna obu warstw napinają ścianę, dzięki czemu przy zmianach ciśnienia przestrzeń międzyżebrowa nie wpukla się ani nie uwypukla. ?? Czynność mięśni międzyżebrowych zewnętrznych i wewnętrznych oraz ich wspólne zadanie? {s. 687–688}
+F: Jak zmienia się położenie naczyń i nerwu międzyżebrowego od kręgosłupa ku przodowi? => Z tyłu leżą do wewnątrz od mięśni zewnętrznych, bocznie od kąta żebra między mięśniami zewnętrznymi a wewnętrznymi, w linii pachowej między pośrednimi a najgłębszymi, a z przodu na wewnętrznej powierzchni mięśni pośrednich. {s. 688}
+
+@U przestrzen | 3 | s. 685–688
+Q: Czy przestrzeń międzyżebrowa jest w całości wypełniona mięśniami? Opisz, co ją wypełnia od kręgosłupa do mostka.
+- Nie. Żadna warstwa mięśni nie sięga na całą długość przestrzeni. Tam, gdzie mięśnia brakuje, zastępuje go błona międzyżebrowa. ?? Czy mięśnie wypełniają całą przestrzeń międzyżebrową i co jest tam, gdzie ich brak? {s. 685–687}
+- Mięśnie zewnętrzne sięgają od guzków żeber do bocznych końców chrząstek żebrowych. ?? Mięśnie międzyżebrowe zewnętrzne: od czego do czego sięgają wzdłuż przestrzeni? {s. 685}
+- Dalej, aż do mostka, przedłuża je [błona międzyżebrowa zewnętrzna|membrana intercostalis externa]: lśniące, ścięgniste pasma o tym samym kierunku włókien. ?? Co wypełnia przestrzeń międzyżebrową między końcem mięśni zewnętrznych a mostkiem? {s. 685}
+- Mięśnie wewnętrzne sięgają od mostka do okolicy kątów żeber. ?? Mięśnie międzyżebrowe wewnętrzne: od czego do czego sięgają wzdłuż przestrzeni? {s. 686}
+- Dalej, aż do kręgosłupa, przedłuża je [błona międzyżebrowa wewnętrzna|membrana intercostalis interna]. ?? Co wypełnia przestrzeń międzyżebrową między kątami żeber a kręgosłupem po stronie wewnętrznej? {s. 686–687}
+- Od wewnątrz przestrzeń pokrywa [powięź wewnątrzpiersiowa|fascia endothoracica], która oddziela ją od opłucnej. ?? Co oddziela przestrzeń międzyżebrową od opłucnej? {s. 688}
+F: Co znajdziesz w przestrzeni międzyżebrowej tuż przy mostku, a co tuż przy kręgosłupie? => Przy mostku: błonę międzyżebrową zewnętrzną i pod nią mięsień wewnętrzny (pośredni). Przy kręgosłupie: mięsień zewnętrzny i pod nim błonę międzyżebrową wewnętrzną. {s. 685–687}
+
+@U podzebrowe-poprzeczny | 2 | s. 687–689, 700
+Q: Mięśnie podżebrowe i mięsień poprzeczny klatki piersiowej: przyczepy, przebieg włókien, działanie.
+H: Mięśnie podżebrowe
+- [Mięśnie podżebrowe|musculi subcostales] leżą na wewnętrznej powierzchni dolnych żeber, w okolicy kątów żeber. ?? Mięśnie podżebrowe: gdzie leżą? {s. 687}
+- Włókna biegną w tym samym kierunku co włókna mm. międzyżebrowych wewnętrznych, ale mijają jedno lub dwa żebra i kończą się na górnym brzegu następnego. ?? Mięśnie podżebrowe: przebieg włókien i przyczep końcowy? {s. 687}
+- Działanie: według Bochenka to mięśnie szczątkowe o niewielkim znaczeniu. Z przebiegu włókien wynika, że opuszczają żebra tak jak mięśnie międzyżebrowe wewnętrzne. ?? Mięśnie podżebrowe: działanie? {s. 687}
+H: Mięsień poprzeczny klatki piersiowej
+- [Mięsień poprzeczny klatki piersiowej|musculus transversus thoracis] leży wewnątrz klatki, na tylnej powierzchni mostka i chrząstek żebrowych. Zaczyna się na tylnej powierzchni wyrostka mieczykowatego i dolnej części trzonu mostka. ?? Mięsień poprzeczny klatki piersiowej: gdzie leży i gdzie się zaczyna? {s. 688}
+- Kończy się zwykle pięcioma zębami na granicy chrzęstno-kostnej żeber VI–II. ?? Mięsień poprzeczny klatki piersiowej: przyczep końcowy? {s. 688}
+- Włókna rozchodzą się od mostka promieniście: dolne biegną poprzecznie, wyższe coraz bardziej skośnie ku górze i bocznie. ?? Mięsień poprzeczny klatki piersiowej: jak biegną włókna? {s. 688}
+- Działanie: część dolna zmniejsza kąt między chrząstką żebrową a mostkiem, czyli opuszcza żebra (wydech). Górne wiązki prawie nie mają znaczenia. ?? Mięsień poprzeczny klatki piersiowej: działanie? {s. 688}
+F: W jaki mięsień przechodzi ku dołowi mięsień poprzeczny klatki piersiowej? => Bezpośrednio w mięsień poprzeczny brzucha. Oba mają poprzeczny przebieg włókien. {s. 688}
+
+
+@L klatka-miesnie | muscle | Mięśnie klatki piersiowej | Podział na grupy i mięśnie powierzchowne z przyczepami.
+
+@U klatka-podzial | 3 | s. 677–678, 700
+Q: Wymień mięśnie klatki piersiowej z podziałem na grupy.
+- Trzy zespoły: mięśnie powierzchowne, mięśnie głębokie (właściwe mięśnie ściany klatki piersiowej) i przepona. ?? Na jakie trzy zespoły dzielą się mięśnie klatki piersiowej? {s. 677}
+- Powierzchowne: [mięsień piersiowy większy|musculus pectoralis major], [mięsień piersiowy mniejszy|musculus pectoralis minor], [mięsień podobojczykowy|musculus subclavius], [mięsień zębaty przedni|musculus serratus anterior]. Przyczepiają się do kości obręczy kończyny górnej i ramienia. ?? Wymień cztery mięśnie powierzchowne klatki piersiowej. Dokąd biegną? {s. 677, 700}
+- Głębokie: mięśnie międzyżebrowe zewnętrzne i wewnętrzne, mięśnie podżebrowe, mięsień poprzeczny klatki piersiowej. ?? Wymień mięśnie głębokie klatki piersiowej. {s. 684–685}
+- Przepona tworzy osobny zespół: przegrodę między jamą klatki piersiowej a jamą brzuszną. ?? Który mięsień klatki piersiowej tworzy osobny, trzeci zespół? {s. 677}
+F: Czym różni się zadanie mięśni powierzchownych i głębokich? => Powierzchowne poruszają obręczą kończyny górnej i ramieniem, a oddechowo działają tylko pomocniczo, gdy kończyna jest ustalona. Głębokie wykonują ruchy oddechowe i wzmacniają ścianę klatki piersiowej. {s. 684–685, 697}
+
+@U piersiowy-wiekszy | 3 | s. 678–680, 700
+Q: Mięsień piersiowy większy: przyczepy i czynność. Kiedy bierze udział w oddychaniu?
+- Początek trzema częściami. [Część obojczykowa|pars clavicularis|część obojczykowa mięśnia piersiowego większego]: przyśrodkowa połowa obojczyka. ?? Mięsień piersiowy większy: gdzie zaczyna się część obojczykowa? {s. 678}
+- [Część mostkowo-żebrowa|pars sternocostalis|część mostkowo-żebrowa mięśnia piersiowego większego]: przednia powierzchnia mostka i chrząstek żeber prawdziwych. ?? Mięsień piersiowy większy: gdzie zaczyna się część mostkowo-żebrowa? {s. 678}
+- [Część brzuszna|pars abdominalis|część brzuszna mięśnia piersiowego większego]: blaszka przednia pochewki m. prostego brzucha. ?? Mięsień piersiowy większy: gdzie zaczyna się część brzuszna? {s. 678}
+- Koniec: grzebień guzka większego kości ramiennej. Włókna krzyżują się przed przyczepem: obojczykowe dochodzą najniżej, brzuszne najwyżej. ?? Mięsień piersiowy większy: przyczep końcowy i jak układają się włókna w ścięgnie? {s. 678–679}
+- Czynność: przywodzi ramię i pociąga je do przodu, obraca do wewnątrz, opuszcza podniesione ramię. ?? Mięsień piersiowy większy: działanie na ramię? {s. 679}
+- Przy ustalonych ramionach podciąga tułów ku górze (wspinanie) i unosi żebra, czyli jest pomocniczym mięśniem wdechowym. ?? Mięsień piersiowy większy: co robi, gdy ramiona są ustalone? {s. 679–680}
+X: W Twojej notatce z zajęć jest zdanie „kiedy piersiowy większy jest mięśniem wydechowym”. Bochenek (s. 680, 697, 701) podaje go wyłącznie jako pomocniczy mięsień wdechowy przy ustalonych ramionach. Pomocniczym mięśniem wydechowym z tej okolicy jest mięsień najszerszy grzbietu, „mięsień kaszlu”. Sprawdź w notatkach, o który mięsień chodziło.
+
+@U piersiowy-mniejszy | 2 | s. 681, 700
+Q: Mięsień piersiowy mniejszy: przyczepy i działanie.
+- Początek: trzema lub czterema wiązkami na zewnętrznej powierzchni przednich końców żeber kostnych III–V (czasem od II). ?? Mięsień piersiowy mniejszy: przyczep początkowy? {s. 681}
+- Koniec: wyrostek kruczy łopatki. ?? Mięsień piersiowy mniejszy: przyczep końcowy? {s. 681}
+- Działanie: obniża obręcz kończyny górnej, pociąga ją przyśrodkowo i do przodu, obraca łopatkę tak, że panewka się obniża. ?? Mięsień piersiowy mniejszy: działanie na obręcz kończyny górnej? {s. 681}
+- Przy ustalonej obręczy unosi żebra, czyli działa jako mięsień wdechowy. ?? Mięsień piersiowy mniejszy: co robi przy ustalonej obręczy kończyny górnej? {s. 681}
+
+@U zebaty-przedni | 2 | s. 682–684, 700
+Q: Mięsień zębaty przedni i mięsień podobojczykowy: przyczepy i czynność.
+H: Zębaty przedni
+- Początek: dziesięcioma zębami na zewnętrznej powierzchni dziewięciu górnych żeber (na II żebrze są dwa zęby). ?? Mięsień zębaty przedni: przyczep początkowy? {s. 683–684}
+- Koniec: brzeg przyśrodkowy łopatki, od kąta górnego do kąta dolnego. ?? Mięsień zębaty przedni: przyczep końcowy? {s. 683–684}
+- Czynność: przyciska łopatkę do klatki piersiowej i pociąga ją do przodu. Część dolna obraca łopatkę kątem dolnym w bok, dzięki czemu ramię można odwieść ponad poziom. ?? Mięsień zębaty przedni: działanie na łopatkę? {s. 684}
+- Przy ustalonej łopatce jest pomocniczym mięśniem wdechowym. ?? Mięsień zębaty przedni: rola w oddychaniu? {s. 684}
+H: Podobojczykowy
+- Biegnie od górnej powierzchni I żebra (na granicy kostno-chrzęstnej) do dolnej powierzchni obojczyka. Pociąga obojczyk ku dołowi i do przodu, hamuje ruchy w stawie mostkowo-obojczykowym. ?? Mięsień podobojczykowy: przyczepy i działanie? {s. 682}
+F: Co się dzieje przy porażeniu mięśnia zębatego przedniego? => Brzeg przyśrodkowy łopatki, zwłaszcza kąt dolny, odstaje od klatki piersiowej, a ramienia nie można unieść ponad poziom. {s. 684}
+
+
+@L grzbiet | muscle | Mięśnie grzbietu | Grupy i podgrupy, pełny podział do wymienienia na głos; powierzchowne z przyczepami.
+
+@U grzbiet-podzial | 3 | s. 649–650, 659, 675–677
+Q: Podaj podział mięśni grzbietu na grupy i podgrupy. Wymień mięśnie.
+H: Podział ogólny
+- Dwie grupy: powierzchowne i głębokie. Powierzchowne przywędrowały z mięśniówki brzusznej i biegną głównie do obręczy kończyny górnej i ramienia. Głębokie to właściwe mięśnie grzbietu. ?? Na jakie dwie grupy dzielą się mięśnie grzbietu i czym różnią się pochodzeniem? {s. 649–650}
+H: Powierzchowne
+- Podgrupa kolcowo-ramienna ([mięśnie kolcowo-ramienne|musculi spinohumerales]): czworoboczny, najszerszy grzbietu, równoległoboczny, dźwigacz łopatki. ?? Mięśnie powierzchowne grzbietu: wymień cztery mięśnie kolcowo-ramienne. {s. 650}
+- Podgrupa kolcowo-żebrowa ([mięśnie kolcowo-żebrowe|musculi spinocostales]): zębaty tylny górny i zębaty tylny dolny. ?? Mięśnie powierzchowne grzbietu: wymień mięśnie kolcowo-żebrowe. {s. 650}
+H: Głębokie
+- Wszystkie razem noszą nazwę [prostownika grzbietu|musculus erector spinae|prostownik grzbietu]. Dzielą się na długie, krótkie i podpotyliczne. ?? Jak nazywa się cała mięśniówka głęboka grzbietu i na jakie trzy grupy się dzieli? {s. 659}
+- Długie, pasmo boczne: [mięśnie płatowate|musculi splenii] głowy i szyi oraz mięsień krzyżowo-grzbietowy, czyli [mięsień biodrowo-żebrowy|musculus iliocostalis] i [mięsień najdłuższy|musculus longissimus]. ?? Mięśnie głębokie długie: co należy do pasma bocznego? {s. 659}
+- Długie, pasmo przyśrodkowe: [mięsień kolcowy|musculus spinalis] oraz układ poprzeczno-kolcowy w trzech warstwach: [mięsień półkolcowy|musculus semispinalis], [mięsień wielodzielny|musculus multifidus], [mięśnie skręcające|musculi rotatores]. ?? Mięśnie głębokie długie: co należy do pasma przyśrodkowego? {s. 659, 667}
+- Krótkie: [mięśnie międzykolcowe|musculi interspinales], [mięśnie międzypoprzeczne|musculi intertransversarii] i [mięśnie dźwigacze żeber|musculi levatores costarum]. ?? Mięśnie głębokie krótkie: wymień. {s. 669}
+- Podpotyliczne ([mięśnie podpotyliczne|musculi suboccipitales]), pięć: prosty tylny większy głowy, prosty tylny mniejszy głowy, skośny górny głowy, skośny dolny głowy, prosty boczny głowy. ?? Wymień pięć mięśni podpotylicznych. {s. 671–672}
+X: Mięśnie skręcające Bochenek w streszczeniu (s. 676) wymienia w układzie poprzeczno-kolcowym, a w tekście (s. 659) zalicza je też do mięśni krótkich. Mięśnie głębokie wystarczy umieć wymienić.
+F: Jak po przebiegu włókien rozpoznać układ poprzeczno-kolcowy, kolcowo-poprzeczny i międzykolcowy? => Poprzeczno-kolcowy: od wyrostków poprzecznych skośnie ku górze do kolczystych (półkolcowy, wielodzielny, skręcające). Kolcowo-poprzeczny: od kolczystych ku górze do poprzecznych (tylko płatowate). Międzykolcowy: od kolczystych do kolczystych (kolcowy, międzykolcowe). {s. 659}
+
+@U grzbiet-ustnie | 3 | s. 649–650, 659, 675–677
+Q: Wymień na głos wszystkie mięśnie grzbietu po kolei, z pełnym podziałem: grupy, podgrupy i części mięśni.
+H: Powierzchowne: kolcowo-ramienne
+- Mięsień czworoboczny (_m. trapezius_), trzy części: zstępująca (górna), poprzeczna (środkowa) i wstępująca (dolna). ?? Ustnie: na jakie trzy części dzielisz mięsień czworoboczny? {s. 650–651}
+- Mięsień najszerszy grzbietu (_m. latissimus dorsi_). ?? Ustnie: który mięsień kolcowo-ramienny wymieniasz drugi, zaraz po czworobocznym? {s. 652}
+- Mięsień równoległoboczny (_m. rhomboideus_): część górna, szyjna, czyli m. równoległoboczny mniejszy (_m. rhomboideus minor_), i część dolna, grzbietowa, czyli m. równoległoboczny większy (_m. rhomboideus major_). ?? Ustnie: na jakie dwie części dzieli się mięsień równoległoboczny i jak się nazywają? {s. 655–656}
+- Dźwigacz łopatki (_m. levator scapulae_). ?? Ustnie: jaki czwarty, ostatni mięsień kolcowo-ramienny wymieniasz? {s. 657}
+H: Powierzchowne: kolcowo-żebrowe
+- Mięsień zębaty tylny górny (_m. serratus posterior superior_) i mięsień zębaty tylny dolny (_m. serratus posterior inferior_). ?? Ustnie: wymień oba mięśnie kolcowo-żebrowe. {s. 658}
+H: Głębokie, długie: pasmo boczne
+- Mięśnie kolcowo-poprzeczne, czyli mięśnie płatowate: m. płatowaty głowy (_m. splenius capitis_) i m. płatowaty szyi (_m. splenius cervicis_). ?? Ustnie: które mięśnie są jedynymi mięśniami kolcowo-poprzecznymi i na jakie dwa się dzielą? {s. 659–660}
+- Mięsień krzyżowo-grzbietowy (_m. sacrospinalis_) dzieli się na m. biodrowo-żebrowy (bocznie) i m. najdłuższy (przyśrodkowo). ?? Ustnie: na jakie dwa mięśnie dzieli się mięsień krzyżowo-grzbietowy? {s. 659, 676}
+- Mięsień biodrowo-żebrowy (_m. iliocostalis_), trzy części: lędźwi, klatki piersiowej i szyi (_m. iliocostalis lumborum, thoracis, cervicis_). ?? Ustnie: wymień trzy części mięśnia biodrowo-żebrowego. {s. 663}
+- Mięsień najdłuższy (_m. longissimus_), trzy części: klatki piersiowej, szyi i głowy (_m. longissimus thoracis, cervicis, capitis_). ?? Ustnie: wymień trzy części mięśnia najdłuższego. {s. 663–665}
+H: Głębokie, długie: pasmo przyśrodkowe
+- Mięsień kolcowy (_m. spinalis_), trzy części: klatki piersiowej, szyi i głowy (_m. spinalis thoracis, cervicis, capitis_). Część głowowa występuje tylko jako odmiana. ?? Ustnie: wymień części mięśnia kolcowego i powiedz, która występuje tylko jako odmiana. {s. 667, 676}
+- Mięśnie poprzeczno-kolcowe (_mm. transversospinales_), trzy warstwy: powierzchowna, m. półkolcowy; środkowa, m. wielodzielny; głęboka, mm. skręcające. ?? Ustnie: jakie trzy warstwy mają mięśnie poprzeczno-kolcowe i co leży w każdej? {s. 667}
+- Mięsień półkolcowy (_m. semispinalis_): m. półkolcowy klatki piersiowej i szyi (_m. semispinalis thoracis et cervicis_) oraz m. półkolcowy głowy (_m. semispinalis capitis_). Półkolcowy głowy dzieli się na m. dwubrzuścowy głowy (_m. biventer capitis_) i m. spleciony większy (_m. complexus major_). ?? Ustnie: podział mięśnia półkolcowego, razem z dwiema częściami półkolcowego głowy. {s. 667–668, 676}
+- Mięsień wielodzielny (_m. multifidus_). ?? Ustnie: który mięsień tworzy środkową warstwę układu poprzeczno-kolcowego? {s. 668}
+- Mięśnie skręcające (_mm. rotatores_): długie (_rotatores longi_), które mijają jeden kręg, i krótkie (_rotatores breves_), które dochodzą do kręgu leżącego bezpośrednio wyżej. Według odcinków: lędźwi, klatki piersiowej i szyi. ?? Ustnie: jak dzielisz mięśnie skręcające: na jakie dwa rodzaje i według jakich odcinków? {s. 669, 676}
+H: Głębokie, krótkie
+- Mięśnie międzykolcowe (_mm. interspinales_): szyi i lędźwi (_mm. interspinales cervicis, lumborum_). W pozostałych odcinkach przeważnie zanikły. ?? Ustnie: w jakich odcinkach wymieniasz mięśnie międzykolcowe? {s. 669–670, 676}
+- Mięśnie międzypoprzeczne (_mm. intertransversarii_): na szyi przednie i tylne, w odcinku lędźwiowym boczne i przyśrodkowe. ?? Ustnie: wymień cztery rodzaje mięśni międzypoprzecznych. {s. 670, 677}
+- Mięśnie dźwigacze żeber (_mm. levatores costarum_), po dwanaście z każdej strony: krótkie (_breves_), do następnego żebra, i długie (_longi_), które u dołu mijają jedną przestrzeń międzyżebrową. ?? Ustnie: na jakie dwa rodzaje dzielą się dźwigacze żeber i ile ich jest? {s. 671, 677}
+H: Głębokie, podpotyliczne
+- Pięć mięśni, w kolejności Bochenka: skośny górny głowy, prosty tylny mniejszy głowy, prosty tylny większy głowy, skośny dolny głowy, prosty boczny głowy. ?? Ustnie: wymień mięśnie podpotyliczne w kolejności z Bochenka. {s. 671–673, 677}
+X: Kolejność taka jak w streszczeniu Bochenka (s. 675–677). Nazwę „prostownik grzbietu” Bochenek daje na s. 659 całej mięśniówce głębokiej, a w streszczeniu (s. 676) tylko m. krzyżowo-grzbietowemu. Mięśnie skręcające Bochenek wymienia w układzie poprzeczno-kolcowym, a na s. 659 zalicza je też do mięśni krótkich. Mięśnie międzypoprzeczne należą według s. 659 do pasma bocznego, ale opisane są wśród mięśni krótkich.
+
+@U czworoboczny | 3 | s. 650–651, 675
+Q: Mięsień czworoboczny: przyczepy i czynność poszczególnych części.
+- [Mięsień czworoboczny|musculus trapezius] zaczyna się na przyśrodkowej części kresy karkowej górnej i guzowatości potylicznej zewnętrznej, na więzadle karkowym oraz na wyrostkach kolczystych C7 i wszystkich kręgów piersiowych. ?? Mięsień czworoboczny: przyczep początkowy? {s. 650}
+- Koniec: część górna (zstępująca) na końcu barkowym obojczyka, część środkowa (poprzeczna) na wyrostku barkowym i grzebieniu łopatki, część dolna (wstępująca) na przyśrodkowej części grzebienia łopatki. ?? Mięsień czworoboczny: gdzie kończą się część górna, środkowa i dolna? {s. 650–651}
+- Czynność części: górna unosi bark, a przy ustalonym barku zgina głowę ku tyłowi. Środkowa zbliża łopatkę do kręgosłupa. Dolna opuszcza bark. ?? Mięsień czworoboczny: co robi część górna, środkowa i dolna? {s. 651}
+- Część górna i dolna razem obracają łopatkę tak, że panewka kieruje się ku górze. Dzięki temu ramię można unieść ponad poziom. ?? Mięsień czworoboczny: jak obraca łopatkę i co to umożliwia? {s. 651}
+
+@U najszerszy | 3 | s. 652–655, 675
+Q: Mięsień najszerszy grzbietu: przyczepy i czynność, także oddechowa.
+- [Mięsień najszerszy grzbietu|musculus latissimus dorsi] zaczyna się na wyrostkach kolczystych sześciu dolnych kręgów piersiowych i wszystkich lędźwiowych oraz na grzebieniu krzyżowym pośrodkowym, za pośrednictwem powięzi piersiowo-lędźwiowej. ?? Mięsień najszerszy grzbietu: przyczep początkowy na kręgosłupie? {s. 652}
+- Dalsze początki: tylna 1/3 wargi zewnętrznej grzebienia biodrowego, trzy lub cztery dolne żebra (wiązki wchodzą między zęby m. skośnego zewnętrznego brzucha), często dolny kąt łopatki. ?? Mięsień najszerszy grzbietu: przyczepy początkowe poza kręgosłupem? {s. 652}
+- Koniec: grzebień guzka mniejszego kości ramiennej. Ścięgno owija się wokół m. obłego większego. ?? Mięsień najszerszy grzbietu: przyczep końcowy? {s. 652}
+- Czynność: opuszcza podniesione ramię, przywodzi je, pociąga do tyłu i obraca do wewnątrz (ręka sięga do pośladka). ?? Mięsień najszerszy grzbietu: działanie na ramię? {s. 652, 654}
+- Przy ustalonych ramionach wiązki żebrowe unoszą dolne żebra (pomocniczy mięsień wdechowy). Przy kaszlu brzeg boczny mięśnia naciska na żebra (pomocniczy mięsień wydechowy, „mięsień kaszlu”). ?? Mięsień najszerszy grzbietu: rola przy wdechu i przy kaszlu? {s. 654–655}
+
+@U rownolegloboczny | 3 | s. 655–657, 675
+Q: Mięsień równoległoboczny i dźwigacz łopatki: przyczepy i czynność.
+H: Równoległoboczny
+- [Mięsień równoległoboczny|musculus rhomboideus] zaczyna się na dolnej części więzadła karkowego, na wyrostkach kolczystych C6–C7 (część mniejsza) i Th1–Th4 (część większa). ?? Mięsień równoległoboczny: przyczep początkowy? {s. 655–656}
+- Kończy się na brzegu przyśrodkowym łopatki, od grzebienia do kąta dolnego. Pociąga łopatkę przyśrodkowo i ku górze i przyciska ją do klatki piersiowej. ?? Mięsień równoległoboczny: przyczep końcowy i czynność? {s. 656}
+H: Dźwigacz łopatki
+- [Dźwigacz łopatki|musculus levator scapulae] zaczyna się czterema wiązkami na guzkach tylnych wyrostków poprzecznych C1–C4. Kończy się na górnym odcinku brzegu przyśrodkowego łopatki, od kąta górnego do grzebienia. ?? Dźwigacz łopatki: przyczepy? {s. 657}
+- Unosi łopatkę i pociąga ją przyśrodkowo. Przy ustalonej łopatce zgina odcinek szyjny w bok, a działając obustronnie ku tyłowi. ?? Dźwigacz łopatki: czynność? {s. 657}
+
+@U zebate-tylne | 3 | s. 658, 675
+Q: Mięśnie zębate tylne: przyczepy i czynność.
+- [Mięsień zębaty tylny górny|musculus serratus posterior superior] zaczyna się na dolnej części więzadła karkowego i wyrostkach kolczystych C6–Th2. Włókna biegną skośnie ku dołowi i bocznie do żeber II–V. ?? Mięsień zębaty tylny górny: przyczepy i kierunek włókien? {s. 658}
+- Unosi żebra, jest mięśniem wdechowym. ?? Mięsień zębaty tylny górny: czynność? {s. 658}
+- [Mięsień zębaty tylny dolny|musculus serratus posterior inferior] zaczyna się na powięzi piersiowo-lędźwiowej na wysokości Th10–L2. Włókna biegną skośnie ku górze i bocznie do dolnych brzegów żeber IX–XII. ?? Mięsień zębaty tylny dolny: przyczepy i kierunek włókien? {s. 658}
+- Opuszcza dolne żebra i kieruje je ku bokom. ?? Mięsień zębaty tylny dolny: czynność? {s. 658}
+X: Bochenek opisuje mięsień zębaty tylny dolny dwojako: w tekście głównym (s. 658) kurczy się podczas wydechu, w streszczeniu rozdziału (s. 675) jest nazwany „również wdechowym”. Na zaliczeniu powiedz, co robi z żebrami (opuszcza i odciąga ku bokom), i zaznacz tę rozbieżność.
+
+
+@L oddychanie | muscle | Oddychanie | Mechanizm, wymiary klatki piersiowej, mięśnie wdechowe i wydechowe, pozycja ciała, kaszel.
+
+@U mechanizm | 3 | s. 696, 701, 295–296
+Q: Opisz mechanizm oddychania: co powoduje wdech, a co wydech?
+- Wdech: klatka piersiowa się powiększa, ciśnienie w niej spada i powietrze zostaje wessane do płuc. Wydech: klatka piersiowa się zmniejsza i powietrze zostaje wydalone. ?? Na czym polega wdech i wydech od strony objętości i ciśnienia? {s. 296, 696}
+- Najskuteczniejszy wdech ma cztery składowe: skurcz przepony, rozluźnienie powłok brzucha, uniesienie żeber i wyprostowanie kręgosłupa piersiowego. ?? Jakie cztery ruchy składają się na najskuteczniejszy wdech? {s. 696}
+- Najskuteczniejszy wydech: napięcie mięśni brzucha, rozluźnienie przepony, czynne opuszczenie żeber i zgięcie kręgosłupa. ?? Jakie cztery ruchy składają się na najskuteczniejszy wydech? {s. 696}
+- Gdy mięśnie wdechowe przestają się kurczyć, klatka piersiowa sama wraca do położenia równowagi dzięki sprężystości chrząstek żebrowych i płuc. Dalsze opuszczanie żeber wymaga już pracy mięśni wydechowych. ?? Co opuszcza żebra na początku wydechu, a co dopiero potem? {s. 295, 697}
+F: Ile powietrza wymienia jeden spokojny oddech i ile jest oddechów na minutę? => Około pół litra na oddech, 16–20 oddechów na minutę. {s. 696}
+
+@U wymiary | 3 | s. 293–296
+Q: Jak zmieniają się wymiary klatki piersiowej przy wdechu? Który wymiar powiększa ruch pierwszego żebra?
+- Przy wdechu rosną wszystkie trzy wymiary: strzałkowy (przednio-tylny), poprzeczny i pionowy. ?? Które wymiary klatki piersiowej rosną przy wdechu? {s. 295–296}
+- Unoszenie żeber zwiększa wymiar strzałkowy i poprzeczny. ?? Które wymiary zwiększa unoszenie żeber? {s. 295–296}
+- Wymiar pionowy zwiększa głównie przepona, gdy się kurczy i spłaszcza. Pomaga prostowanie piersiowego odcinka kręgosłupa. ?? Co zwiększa wymiar pionowy klatki piersiowej? {s. 296, 696}
+- Żebro I: jego przedni koniec porusza się najsilniej ku górze, słabiej do przodu, najsłabiej w bok. Razem z nim unosi się rękojeść mostka. Powiększa się więc głównie wymiar strzałkowy górnej części klatki piersiowej. ?? W jakich kierunkach porusza się przedni koniec żebra I przy wdechu i który wymiar klatki przez to rośnie? {s. 294–295}
+- Mostek przesuwa się ku górze i do przodu, dolną częścią silniej niż górną. Zwiększa to wymiar strzałkowy. ?? Jak porusza się mostek przy wdechu i który wymiar zwiększa? {s. 295}
+- Ruch do przodu maleje od żebra I do V, a ruch w bok jest największy w żebrach dolnych. Górne żebra powiększają więc głównie wymiar strzałkowy, dolne poprzeczny. ?? Które żebra powiększają głównie wymiar strzałkowy, a które poprzeczny? {s. 295}
+F: Jakie są przeciętne wymiary klatki piersiowej? => Poprzeczny na wysokości nasady wyrostka mieczykowatego 20–23 cm, przednio-tylny tamże 15–19 cm. Otwór górny: poprzecznie 9–11 cm, przednio-tylnie 5–6 cm. Długość z przodu 16–19 cm, z tyłu 27–30 cm. {s. 293}
+
+@U miesnie-oddechowe | 3 | s. 697, 701
+Q: Wymień mięśnie wdechowe i wydechowe, zasadnicze i pomocnicze.
+H: Wdechowe
+- Zasadnicze, czynne w spokojnym oddychaniu: przepona i mięśnie międzyżebrowe zewnętrzne. ?? Wymień zasadnicze mięśnie wdechowe. {s. 696–697}
+- Pomocnicze z szyi: [mięśnie pochyłe|musculi scaleni] i [mięsień mostkowo-obojczykowo-sutkowy|musculus sternocleidomastoideus]. Głowa i kręgosłup muszą być wtedy ustalone. ?? Które mięśnie szyi są pomocniczymi mięśniami wdechowymi i jaki jest warunek ich działania? {s. 697}
+- Pomocnicze z obręczy kończyny górnej: zębaty przedni, piersiowy większy i mniejszy, najszerszy grzbietu (wiązki żebrowe), podobojczykowy. Ramię i bark muszą być ustalone. ?? Które mięśnie biegnące od obręczy kończyny górnej są pomocniczymi mięśniami wdechowymi i jaki jest warunek ich działania? {s. 697}
+- Pomocniczy z grzbietu: zębaty tylny górny. ?? Który mięsień grzbietu Bochenek zalicza do pomocniczych mięśni wdechowych? {s. 697}
+H: Wydechowe
+- Zasadnicze: mięśnie międzyżebrowe wewnętrzne i mięsień poprzeczny klatki piersiowej. ?? Wymień zasadnicze mięśnie wydechowe. {s. 697}
+- Pomocnicze: mięśnie brzucha. Opuszczają żebra najsilniej ze wszystkich i wypychają przeponę ku górze. ?? Które mięśnie są najsilniejszymi pomocniczymi mięśniami wydechowymi i jak działają? {s. 697}
+- Pomocniczy: mięsień najszerszy grzbietu, „mięsień kaszlu”. ?? Który mięsień grzbietu jest pomocniczym mięśniem wydechowym? {s. 697}
+F: Kiedy potrzebne są pomocnicze mięśnie wdechowe, a kiedy wydechowe? => Wdechowe: gdy żebra trzeba unieść silniej albo wdech odbywa się przeciw oporowi (np. ssanie). Wydechowe: gdy wydech musi być szybki albo przeciw oporowi, np. kaszel, kichanie, śmiech, śpiew. {s. 697}
+
+@U typy-oddychania | 2 | s. 696–698
+Q: Typy oddychania i wpływ pozycji ciała na oddychanie.
+- Typ żebrowy (piersiowy): poruszają się żebra. Typ brzuszny (przeponowy): pracuje przepona bez bezpośredniego udziału żeber, widać ruchy przedniej ściany brzucha. ?? Jakie są dwa typy oddychania i czym się różnią? {s. 696–697}
+- Spokojne oddychanie to zwykle czysty typ brzuszny. Oddychanie wzmożone jest mieszane, żebrowo-przeponowe. ?? Jaki typ oddychania występuje w spoczynku, a jaki przy wzmożonym oddychaniu? {s. 697}
+- Oddychanie żebrowe dolne: dolne żebra pracują razem z przeponą (mechanizm żebrowo-przeponowy). Żebrowe górne: górne żebra pracują razem z mostkiem (mechanizm żebrowo-mostkowy). ?? Na czym polega mechanizm żebrowo-przeponowy i żebrowo-mostkowy? {s. 697}
+- Pozycja siedząca z rękami opartymi, np. o brzeg stołu: ramiona i bark są ustalone, więc mięśnie biegnące od obręczy kończyny górnej do żeber mogą unosić żebra jako pomocnicze mięśnie wdechowe. ?? Co daje oddychaniu pozycja siedząca z podparciem rąk? {s. 697}
+- Leżenie na plecach: przepona stoi wyżej niż na stojąco lub siedząco i może się silniej obniżać. Żebra też unoszą się silniej, dlatego we śnie przeważa typ żebrowy. ?? Jak leżenie na plecach wpływa na pracę przepony i żeber? {s. 698}
+- Leżenie na boku: żebra po stronie podłoża są unieruchomione, pracuje strona przeciwna. ?? Jak leżenie na boku wpływa na ruchy żeber? {s. 698}
+
+@U kaszel | 2 | z zajęć; Bochenek s. 655, 697, 716
+Q: Fazy kaszlu i mięśnie, które w nim pracują.
+- Faza pierwsza: głęboki wdech. ?? Kaszel: co dzieje się w pierwszej fazie? {z zajęć}
+- Faza druga: głośnia się zamyka, a mięśnie wydechowe się kurczą. Ciśnienie w klatce piersiowej gwałtownie rośnie. ?? Kaszel: co dzieje się w drugiej fazie? {z zajęć}
+- Faza trzecia: głośnia nagle się otwiera i powietrze zostaje gwałtownie wyrzucone. ?? Kaszel: co dzieje się w trzeciej fazie? {z zajęć}
+- Pracują pomocnicze mięśnie wydechowe: mięśnie brzucha i mięsień najszerszy grzbietu („mięsień kaszlu”), obok mięśni międzyżebrowych wewnętrznych. ?? Które mięśnie pracują przy kaszlu? {s. 697}
+X: Podział kaszlu na trzy fazy pochodzi z fizjologii (tak było na zajęciach, podobnie w materiałach dydaktycznych WUM). Bochenek w tomie I opisuje tylko mięśnie czynne przy kaszlu. Zamknięcie głośni działa tu tak samo jak w tłoczni brzusznej.

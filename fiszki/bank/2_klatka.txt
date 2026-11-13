@@ -1,0 +1,94 @@
+@B Klatka piersiowa: kości i połączenia
+
+@L zebra | bone | Żebra i mostek | Z żeber najważniejsze jest pierwsze. Do tego krzywizny żeber, łuk żebrowy i kąty.
+
+@U zebro1 | 3 | s. 276–277, 297
+Q: Opisz dokładnie żebro pierwsze.
+H: Ustawienie i trzon
+- Ma powierzchnię górną i dolną oraz brzeg zewnętrzny i wewnętrzny. Pozostałe żebra mają powierzchnię zewnętrzną i wewnętrzną oraz brzeg górny i dolny. ?? Żebro I: jak ustawione są jego powierzchnie i brzegi w porównaniu z innymi żebrami? {s. 275–276}
+- Jest najszersze i najsilniej zakrzywione ze wszystkich żeber. Biegnie skośnie ku przodowi i dołowi: koniec mostkowy leży na poziomie Th2–Th3. ?? Żebro I: szerokość i zakrzywienie na tle innych żeber; na jakim poziomie leży jego koniec mostkowy? {s. 274, 276}
+H: Koniec tylny
+- Głowa ma jedną, niepodzieloną powierzchnię stawową i łączy się tylko z trzonem Th1. Szyjka i guzek są wydatniejsze niż na żebrach niższych, a kąt żebra leży tuż przy guzku. ?? Żebro I: jak wygląda głowa i z czym się łączy; gdzie leży kąt żebra? {s. 274, 276}
+H: Powierzchnia górna
+- [Guzek mięśnia pochyłego przedniego|tuberculum musculi scaleni anterioris] leży nieco do przodu od środka żebra, przy brzegu wewnętrznym. Przyczepia się do niego m. pochyły przedni. ?? Żebro I: jaki guzek leży na powierzchni górnej i co się do niego przyczepia? {s. 276}
+- Do przodu od guzka biegnie [bruzda żyły podobojczykowej|sulcus venae subclaviae], do tyłu od niego głębsza [bruzda tętnicy podobojczykowej|sulcus arteriae subclaviae]. ?? Żebro I: jakie bruzdy leżą przed guzkiem m. pochyłego przedniego i za nim? {s. 276}
+- Do tyłu od bruzdy tętnicy leży chropowate pole: przyczep m. pochyłego środkowego. ?? Żebro I: co przyczepia się do tyłu od bruzdy tętnicy podobojczykowej? {s. 276–277}
+H: Reszta
+- Powierzchnia dolna jest gładka, bez bruzdy żebra. ?? Żebro I: czego brakuje na powierzchni dolnej? {s. 277}
+- Brzeg wewnętrzny jest wklęsły i ostry, ogranicza otwór górny klatki piersiowej. Do brzegu zewnętrznego, w jego tylnej części, przyczepia się pierwszy ząb m. zębatego przedniego. ?? Żebro I: co ogranicza brzeg wewnętrzny i co przyczepia się do brzegu zewnętrznego? {s. 277}
+- Koniec przedni jest szerszy i grubszy niż w innych żebrach. Przyczepia się do niego m. podobojczykowy, a chrząstka łączy się z rękojeścią mostka chrząstkozrostem. ?? Żebro I: koniec przedni; co się do niego przyczepia i jak łączy się z mostkiem? {s. 277, 286}
+F: „Żebro pierwsze jest szerokie i płaskie”. Jak to powiedzieć, żeby była to cecha, a nie opis? => Podaj, względem czego: jest najszersze ze wszystkich żeber i jako jedyne ma powierzchnię górną i dolną zamiast zewnętrznej i wewnętrznej. {s. 274, 276}
+F: Czym wyróżnia się żebro drugie? => Ma guzowatość m. zębatego przedniego (_tuberositas musculi serrati anterioris_) na powierzchni zewnętrznej, a jego trzon nie jest skręcony. {s. 277}
+
+@U zebra-podzial | 2 | s. 273–275, 296–297
+Q: Podział żeber i budowa typowego żebra.
+- [Żebra prawdziwe|costae verae], I–VII: ich chrząstki łączą się bezpośrednio z mostkiem. ?? Które żebra są prawdziwe i dlaczego tak się nazywają? {s. 274}
+- [Żebra rzekome|costae spuriae], VIII–XII. Chrząstki żeber VIII–X łączą się z chrząstką żebra wyższego. Żebra XI i XII to [żebra wolne|costae fluitantes]: kończą się swobodnie w mięśniach brzucha. ?? Które żebra są rzekome, jak łączą się żebra VIII–X i które są wolne? {s. 274}
+- Koniec tylny: [głowa żebra|caput costae] z powierzchnią stawową podzieloną grzebieniem głowy (żebra II–X), [szyjka żebra|collum costae] i [guzek żebra|tuberculum costae] z powierzchnią stawową dla wyrostka poprzecznego. ?? Jakie trzy części ma koniec tylny żebra i jakie mają powierzchnie stawowe? {s. 274}
+- Trzon: bocznie od guzka tworzy [kąt żebra|angulus costae]. Na powierzchni wewnętrznej, przy brzegu dolnym, biegnie [bruzda żebra|sulcus costae] dla naczyń i nerwu międzyżebrowego. ?? Co znajduje się na trzonie żebra: jaki kąt i jaka bruzda? {s. 274–275}
+- Koniec przedni kości żebrowej przechodzi w [chrząstkę żebrową|cartilago costalis|chrząstka żebrowa], zbudowaną z chrząstki szklistej. ?? W co przechodzi koniec przedni kości żebrowej? {s. 275–276}
+F: Czego brakuje żebrom XI i XII? => Grzebienia głowy (jedna powierzchnia stawowa), guzka z powierzchnią stawową, kąta i bruzdy żebra. Szyjki prawie nie widać. {s. 277}
+
+@U krzywizny-zeber | 2 | s. 275
+Q: Krzywizny żeber.
+- Żebro jest zakrzywione w trzech kierunkach: ma krzywiznę płaszczyzny, krzywiznę obrotu i krzywiznę brzegu. ?? Ile krzywizn ma żebro i jak się nazywają? {s. 275}
+- Krzywizna płaszczyzny: łuk wypukły w bok, którym żebro biegnie od kręgosłupa do mostka. Promień tego łuku jest mniejszy z tyłu, większy z boku i z przodu. ?? Krzywizna płaszczyzny żebra: na czym polega? {s. 275}
+- Krzywizna obrotu: skręcenie żebra wzdłuż jego długiej osi. Część tylna i środkowa stoją pionowo, a część przednia zwraca powierzchnię zewnętrzną ku górze. ?? Krzywizna obrotu żebra: na czym polega? {s. 275}
+- Krzywizna brzegu: lekkie esowate wygięcie względem płaszczyzny poziomej. Żebro położone na stole unosi część tylną nad podłoże. ?? Krzywizna brzegu żebra: na czym polega i jak ją pokazać? {s. 275}
+
+@U luk-katy | 3 | s. 274, 280, 291, 295
+Q: Opisz łuk żebrowy, kąt mostka i kąt podmostkowy.
+- [Łuk żebrowy|arcus costalis]: tworzą go połączone chrząstki żeber VII–X, po prawej i po lewej. Ogranicza otwór dolny klatki piersiowej. ?? Łuk żebrowy: chrząstki których żeber go tworzą i co ogranicza? {s. 291}
+- [Kąt mostka|angulus sterni]: kąt między rękojeścią a trzonem mostka, otwarty ku tyłowi. Z przodu wyczuwa się go jako poprzeczną wyniosłość. ?? Kąt mostka: między czym leży i w którą stronę jest otwarty? {s. 280}
+- Na wysokości kąta mostka przyczepia się chrząstka II żebra. Od tego miejsca liczy się żebra u żywego człowieka. ?? Kąt mostka: które żebro leży na jego wysokości i do czego to służy? {s. 280}
+- Kąt mostka zmienia się przy oddychaniu: przy wdechu spłaszcza się, przy wydechu zaostrza. Ruch odbywa się w chrząstkozroście rękojeści z trzonem. ?? Jak kąt mostka zmienia się przy wdechu i wydechu? {s. 280, 295}
+- [Kąt podmostkowy|angulus infrasternalis]: kąt między prawym a lewym łukiem żebrowym. Wierzchołek leży u podstawy wyrostka mieczykowatego, na poziomie Th9–Th10. Przeciętnie ok. 90°. ?? Kąt podmostkowy: między czym leży, gdzie ma wierzchołek i ile wynosi? {s. 291}
+- Okolica kąta podmostkowego jest wpuklona i nosi nazwę dołu nadbrzusznego (_fossa epigastrica_). ?? Jak nazywa się okolica kąta podmostkowego? {s. 291}
+F: Od czego zależy wielkość kąta podmostkowego? => Od typu budowy i fazy oddechu: mały przy klatce wąskiej, wydechowej (leptosomicy), duży przy szerokiej, wdechowej (eurysomicy). {s. 291}
+
+
+@L polaczenia-zeber | joint | Połączenia żeber | Stawy z kręgosłupem i ich osie, połączenia z mostkiem, stawy międzychrząstkowe, więzadła i błona mostka.
+
+@U zebrowo-kregowe | 3 | s. 283–285, 297
+Q: Stawy łączące żebra z kręgosłupem: budowa i więzadła.
+- [Stawy żebrowo-kręgowe|articulationes costovertebrales]: każde żebro łączy się z kręgosłupem w dwóch miejscach, głową i guzkiem. Mechanicznie oba połączenia działają jak jeden staw. ?? W ilu miejscach żebro łączy się z kręgosłupem i jak te połączenia działają mechanicznie? {s. 283}
+- [Staw głowy żebra|articulatio capitis costae]: głowa żebra leży w dołkach żebrowych trzonów dwóch sąsiednich kręgów i na krążku między nimi. Przykład: żebro V łączy się z dołkiem dolnym Th4 i górnym Th5. ?? Staw głowy żebra: jakie powierzchnie go tworzą? Podaj przykład dla żebra V. {s. 283}
+- Żebra I, XI i XII (czasem X) łączą się tylko z jednym trzonem. ?? Głowy których żeber łączą się tylko z jednym kręgiem? {s. 283}
+- Więzadła stawu głowy: [więzadło promieniste głowy żebra|ligamentum capitis costae radiatum] na przedniej powierzchni torebki oraz [więzadło śródstawowe głowy żebra|ligamentum capitis costae intraarticulare], które biegnie od grzebienia głowy do krążka i dzieli staw na dwie komory. ?? Jakie dwa więzadła ma staw głowy żebra i co robi więzadło śródstawowe? {s. 283, 285}
+- [Staw żebrowo-poprzeczny|articulatio costotransversaria]: guzek żebra łączy się z dołkiem żebrowym wyrostka poprzecznego kręgu o tym samym numerze. Mają go tylko żebra I–X. ?? Staw żebrowo-poprzeczny: jakie powierzchnie go tworzą i które żebra go mają? {s. 285}
+- Więzadła stawu żebrowo-poprzecznego łączące szyjkę żebra z wyrostkami poprzecznymi: [więzadło żebrowo-poprzeczne|ligamentum costotransversarium] biegnie do wyrostka poprzecznego tego samego kręgu, [więzadło żebrowo-poprzeczne górne|ligamentum costotransversarium superius] od grzebienia szyjki do wyrostka poprzecznego kręgu wyższego. ?? Które dwa więzadła łączą szyjkę żebra z wyrostkiem poprzecznym tego samego i wyższego kręgu? {s. 285}
+- Pozostałe dwa: [więzadło żebrowo-poprzeczne boczne|ligamentum costotransversarium laterale], od szyjki żebra do nasady wyrostka kolczystego i poprzecznego kręgu wyższego, oraz [więzadło guzka żebra|ligamentum tuberculi costae], od wierzchołka wyrostka poprzecznego do guzka żebra. ?? Jakie dwa więzadła stawu żebrowo-poprzecznego uzupełniają więzadło żebrowo-poprzeczne i żebrowo-poprzeczne górne? {s. 285}
+
+@U zebra-osie | 3 | s. 293–295
+Q: Ruchy żeber w stawach żebrowo-kręgowych: wokół jakich osi się odbywają?
+- Wyróżnia się trzy typy ruchu: żebra I, żeber II–V i żeber VI–X. ?? Ile typów ruchu żeber wyróżnia Bochenek i których żeber dotyczą? {s. 293}
+- Żebra II–V: obrót wokół osi, która biegnie wzdłuż szyjki żebra przez oba stawy żebrowo-kręgowe. Przedni koniec żebra idzie najsilniej ku górze, słabiej w bok, najsłabiej do przodu. ?? Żebra II–V: wokół jakiej osi się obracają i w jakich kierunkach porusza się ich przedni koniec przy wdechu? {s. 293}
+- Oś szyjki tworzy z płaszczyzną czołową kąt (czołowy kąt skrzyżowania), który rośnie od ok. 10° przy żebrze I do 45° przy żebrze X. Wynika to z ustawienia wyrostków poprzecznych, coraz bardziej odchylonych ku tyłowi. ?? Jak zmienia się ustawienie osi szyjki żebra od żebra I do X? {s. 293}
+- Żebra VI–X: zamiast obrotu wokół szyjki jest ślizg. Guzek żebra wsuwa się po wyrostku poprzecznym ku górze i ku tyłowi. Żebro idzie ku górze, w bok i nieco ku tyłowi. ?? Żebra VI–X: na czym polega ich ruch przy wdechu? {s. 294}
+- Żebro I: obrót wokół szyjki połączony ze ślizgiem ku górze względem wyrostka poprzecznego (przy wydechu ku dołowi). ?? Żebro I: z jakich dwóch ruchów składa się jego ruch? {s. 294}
+- Żebra XI i XII nie mają stawów żebrowo-poprzecznych. Ich ruchy nie mają większego znaczenia dla mechaniki klatki piersiowej. ?? Jakie znaczenie mają ruchy żeber XI i XII? {s. 293, 295}
+
+@U mostkowo-zebrowe | 3 | s. 285–287, 295, 297–298
+Q: Połączenia żeber z mostkiem. Po co żebro pierwsze ma chrząstkozrost? Stawy mostkowo-żebrowe: powierzchnie, więzadła, ruchy.
+- Żebro I: chrząstka zrasta się z rękojeścią mostka. To chrząstkozrost (_synchondrosis sternocostalis costae primae_), bez jamy stawowej. ?? Jak żebro I łączy się z mostkiem? {s. 286}
+- Po co: połączenie bez jamy stawowej jest sztywne, więc pierwsza para żeber i rękojeść mostka poruszają się jako jedna całość. Uniesienie żebra I przenosi się wprost na mostek. Rękojeść daje też stałe oparcie obojczykom. ?? Po co żebro I jest połączone z mostkiem chrząstkozrostem, a nie stawem? {s. 286}
+- Żebra II–VII: [stawy mostkowo-żebrowe|articulationes sternocostales], prawdziwe stawy z jamą i torebką. Powierzchnie stawowe to przedni koniec chrząstki żebrowej i wcięcie żebrowe mostka. ?? Jak żebra II–VII łączą się z mostkiem i jakie są powierzchnie stawowe? {s. 285–286}
+- Więzadła: [więzadła promieniste mostkowo-żebrowe|ligamenta sternocostalia radiata] przednie i tylne, [więzadło śródstawowe mostkowo-żebrowe|ligamentum sternocostale intraarticulare] (stale tylko w stawie II żebra, dzieli jamę na dwie komory) oraz [więzadła żebrowo-mieczykowe|ligamenta costoxiphoidea]. ?? Wymień więzadła stawów mostkowo-żebrowych. W którym stawie stale jest więzadło śródstawowe? {s. 286–287}
+- Ruchy: gdy żebro się unosi, chrząstka obraca się w stawie i kąt między chrząstką a mostkiem rośnie (obrót wokół osi strzałkowej, czyli przednio-tylnej). Jednocześnie chrząstka skręca się wokół osi biegnącej wzdłuż niej. Przy wydechu ruchy są odwrotne. ?? Jakie ruchy wykonuje chrząstka żebrowa w stawie mostkowo-żebrowym przy unoszeniu żebra? {s. 295}
+X: Sam fakt chrząstkozrostu żebra I jest w Bochenku (s. 286). Wyjaśnienie „po co” to wniosek z budowy: Bochenek opisuje, że mostek porusza się biernie razem z żebrami, ku górze i do przodu (s. 295). Jeśli prowadzący podał na zajęciach inne uzasadnienie, powiedz jego wersję. Ruchy chrząstki Bochenek opisuje bez nazywania pierwszej osi; „strzałkowa” wynika z kierunku ruchu.
+
+@U miedzychrzastkowe | 2 | s. 287
+Q: Stawy międzychrząstkowe.
+- [Stawy międzychrząstkowe|articulationes interchondrales] łączą przylegające brzegi chrząstek żeber VI, VII i VIII. W połowie przypadków łączą też V z VI, w 25% VIII z IX. ?? Stawy międzychrząstkowe: między chrząstkami których żeber leżą? {s. 287}
+- Staw ma małą jamkę stawową. Rolę torebki pełni ochrzęstna. ?? Stawy międzychrząstkowe: co pełni rolę torebki stawowej? {s. 287}
+- Wzmacniają je błony międzyżebrowe zewnętrzne. ?? Co wzmacnia stawy międzychrząstkowe? {s. 287}
+- Chrząstka żebra X łączy się z IX tylko luźnymi pasmami więzadłowymi. Żebra XI i XII nie mają nawet tego. ?? Jak chrząstka żebra X łączy się z IX? {s. 287}
+
+@U mostek | 2 | s. 278–280, 286–287, 297–298
+Q: Mostek: części, ich połączenia, więzadła i błona mostka.
+- Trzy części: [rękojeść mostka|manubrium sterni], [trzon mostka|corpus sterni] i [wyrostek mieczykowaty|processus xiphoideus]. ?? Z jakich trzech części składa się mostek? {s. 279}
+- Rękojeść ma [wcięcie szyjne|incisura jugularis] na brzegu górnym, bocznie od niego wcięcia obojczykowe, a na brzegach bocznych wcięcia żebrowe dla I żebra. Żebro II przyczepia się na granicy rękojeści i trzonu, żebra III–VI do trzonu, VII na granicy trzonu i wyrostka mieczykowatego. ?? Jakie wcięcia ma rękojeść mostka i gdzie przyczepiają się kolejne żebra? {s. 280}
+- Części łączą [chrząstkozrosty mostkowe|synchondroses sternales]: górny między rękojeścią a trzonem, dolny między trzonem a wyrostkiem mieczykowatym. Dolny często kostnieje po 50. roku życia. ?? Jak połączone są części mostka i które połączenie często kostnieje? {s. 287}
+- [Błona mostka|membrana sterni]: więzadła promieniste mostkowo-żebrowe obu stron krzyżują się i splatają na mostku. Pokrywają go z przodu i z tyłu jako błona przednia i tylna. ?? Błona mostka: z czego powstaje i gdzie leży? {s. 286}
+- Błona tylna jest mocniejsza. Przy poprzecznym złamaniu mostka nie pęka i chroni przed przemieszczeniem odłamów do wnętrza klatki piersiowej. ?? Która błona mostka jest mocniejsza i jakie ma to znaczenie? {s. 286}
+- Więzadła żebrowo-mieczykowe biegną od chrząstek żeber VI–VII i dolnego końca trzonu na przednią powierzchnię wyrostka mieczykowatego. Hamują przesuwanie wyrostka ku tyłowi przez przeponę. ?? Więzadła żebrowo-mieczykowe: przebieg i zadanie? {s. 287, 295}
