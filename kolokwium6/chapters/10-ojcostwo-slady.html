@@ -9,16 +9,14 @@
   <!-- ============================================================ -->
   <h2 id="c10-pi">Wskaźnik ojcostwa PI – co wyraża</h2>
 
-  <aside class="note liceum"><p><b>I prawo Mendla</b>: każdy z pary alleli trafia do innej gamety, więc dziecko dostaje <b>jeden allel danego genu od matki i jeden od ojca</b>. Tak samo dziedziczą się allele układów STR.</p></aside>
+  <aside class="note liceum"><p><b>I prawo Mendla</b>: każdy z pary alleli trafia do innej gamety, więc dziecko dostaje <b>jeden allel danego genu od matki i jeden od ojca</b>. Tak samo dziedziczą się allele układów STR.</p><p><b>II prawo Mendla</b>: geny na różnych chromosomach dziedziczą się niezależnie, geny <b>sprzężone</b> – razem. Prawdopodobieństwa zdarzeń niezależnych się mnoży.</p></aside>
   <p>Połowa DNA jądrowego dziecka pochodzi od matki, a połowa od ojca, więc każdy allel badanych układów STR dziecka powinien być obecny w profilu jednego z rodziców. Rodzic i dziecko muszą mieć w każdym układzie <b>przynajmniej jeden wspólny allel</b>. Jeśli wspólnych alleli nie ma – pokrewieństwo w pierwszej linii trzeba <b>wykluczyć</b>. Jeśli są we wszystkich układach – trzeba obliczyć, w jakim stopniu zgodność może być dziełem przypadku.</p>
 
-  <aside class="note pojecie" data-term="LR"><p>stosunek szans (ang. <i>likelihood ratio</i>) – mówi, ile razy bardziej prawdopodobne jest otrzymanie danego wyniku badań przy jednej hipotezie niż przy drugiej, wykluczającej się z nią.</p></aside>
-  <p>Ocena opiera się na <b>logice Bayesa</b>, tak jak przy śladach biologicznych, gdzie oblicza się <b>stosunek szans LR</b>. Formułuje się dwie hipotezy: profile pochodzą od rodzica i dziecka albo osoby nie są spokrewnione, a zgodność alleli jest przypadkowa. W ramce 29.3 Drewa nadaje im głosy stron sporu: <b>hipoteza matki</b> – „ten mężczyzna jest ojcem mojego dziecka” (licznik), <b>hipoteza domniemanego ojca</b> – „to nie jest moje dziecko” (mianownik). Dane genetyczne nie mówią, która hipoteza jest <b>prawdziwa</b>, tylko która jest <b>bardziej prawdopodobna</b>.</p>
+  <p>Ocena opiera się na <b>logice Bayesa</b>, tak jak przy śladach biologicznych, gdzie oblicza się <b>stosunek szans LR</b> (ang. <i>likelihood ratio</i>). Formułuje się dwie hipotezy: profile pochodzą od rodzica i dziecka albo osoby nie są spokrewnione, a zgodność alleli jest przypadkowa. W ramce 29.3 Drewa nadaje im głosy stron sporu: <b>hipoteza matki</b> – „ten mężczyzna jest ojcem mojego dziecka” (licznik), <b>hipoteza domniemanego ojca</b> – „to nie jest moje dziecko” (mianownik). Dane genetyczne nie mówią, która hipoteza jest <b>prawdziwa</b>, tylko która jest <b>bardziej prawdopodobna</b>.</p>
 
   <aside class="note pojecie" data-term="PI"><p>wskaźnik ojcostwa (ang. <i>paternity index</i>) – stosunek szans hipotezy pokrewieństwa i hipotezy braku pokrewieństwa, liczony dla jednego układu STR.</p></aside>
   <p>Szanse obu hipotez ocenia się <b>osobno dla każdego układu</b>; zależą od wzajemnego układu alleli (homozygoty, jeden czy dwa wspólne allele). Ich iloraz to <b>wskaźnik ojcostwa (PI)</b> – odpowiednik LR: mówi, o ile bardziej prawdopodobne jest otrzymanie konkretnego wyniku przy założeniu, że osoby <b>są spokrewnione</b>, niż przy założeniu, że <b>nie są</b>. <b>PI &gt; 1</b> dla danego układu i pary „dziecko – domniemany rodzic” zwiększa prawdopodobieństwo pokrewieństwa; <b>PI ułamkowe (0–1)</b> może oznaczać, że osoby nie są spokrewnione.</p>
 
-  <aside class="note liceum"><p><b>Reguła mnożenia</b>: prawdopodobieństwo jednoczesnego zajścia zdarzeń niezależnych to iloczyn ich prawdopodobieństw. Geny na różnych chromosomach dziedziczą się niezależnie (II prawo Mendla); geny <b>sprzężone</b> – razem.</p></aside>
   <p>Po wyliczeniu PI dla wszystkich układów oblicza się <b>sumaryczny PI</b>, mnożąc wartości poszczególnych układów – pod warunkiem, że układy <b>nie są ze sobą sprzężone genetycznie</b>. Tylko wtedy wyniki w układach są niezależne i mnożenie jest uprawnione.</p>
 
   <div class="box przyklad"><p>Wartości wymyślone. PI w trzech niesprzężonych układach wynoszą 2,5, 4 i 10: sumaryczny PI = 2,5 × 4 × 10 = <b>100</b>. Czwarty układ z PI = 20 daje 100 × 20 = <b>2000</b>. Każdy układ mnoży wynik – przy kilkunastu układach PI szybko sięga milionów.</p></div>
@@ -34,6 +32,11 @@
   <p><b>Wariant 1 – domniemany ojciec + dziecko.</b> Ojciec 26/30, dziecko 26/29; <b>wspólny allel ojca i dziecka: 26</b>; częstość p<sub>26</sub> = 0,004. PI = 1 / (4 × p<sub>26</sub>) = 1 / (4 × 0,004) = 1 / 0,016 = <b>62,5</b>.</p>
 
   <p><b>Wariant 2 – matka + dziecko + domniemany ojciec.</b> Matka 28/29, dziecko 26/29, ojciec 26/30; <b>wspólny allel matki i dziecka: 29</b>, ojca i dziecka: 26. Matka nie ma allelu 26, więc dziecko dostało od niej allel 29 – ten wyłącza się z analizy. Allel 26 musiał pochodzić od ojca biologicznego, a domniemany ojciec go ma. PI = 0,5 / p<sub>26</sub> = 0,5 / 0,004 = <b>125</b>.</p>
+
+  <aside class="note warto"><p>Tab. 29.3 u Drewy podaje wzory PI dla trójki matka–dziecko–ojciec. Przypadek z ramki to wiersz <b>matka CD, dziecko AC, ojciec AB → 0,5/p<sub>A</sub></b> (A = 26, B = 30, C = 29, D = 28).</p></aside>
+  <p>Wartość PI zależy więc od tego, czy znany jest profil <b>obojga rodziców</b>, czy tylko domniemanego ojca. Gdy znany jest profil matki, często można wskazać u dziecka allele, które <b>mogą pochodzić wyłącznie od matki</b>, i wyłączyć je z analizy. Zmniejsza to zwykle <b>mianownik</b> ilorazu szans obu hipotez, więc PI dla danego układu rośnie – tu z 62,5 do 125.</p>
+
+  <div class="box obraz"><p>Skąd „0,5/p<sub>26</sub>”? <b>Licznik</b>: domniemany ojciec (26/30) przekazuje allel 26 z szansą 0,5. <b>Mianownik</b>: przypadkowy mężczyzna przekazałby allel 26 z szansą równą jego częstości w populacji – 0,004. Rzadki allel daje mały mianownik i wysoki PI. Wzoru 1/(4 × p<sub>26</sub>) dla pary bez matki Drewa nie wyprowadza – daje on wynik dwa razy niższy niż w trójce.</p></div>
 
   <figure class="fig" id="c10-fig-pi" data-title="Locus D21S11 – skąd dziecko ma swoje allele i jak liczy się PI">
     <div class="panel" data-badge="A" data-title="Przepływ alleli w rodzinie">
@@ -106,18 +109,57 @@
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 780 (ramka 29.3)</p>
   </figure>
 
-  <aside class="note warto"><p>Tab. 29.3 u Drewy podaje wzory PI dla trójki matka–dziecko–ojciec. Przypadek z ramki to wiersz <b>matka CD, dziecko AC, ojciec AB → 0,5/p<sub>A</sub></b> (A = 26, B = 30, C = 29, D = 28).</p></aside>
-  <p>Wartość PI zależy więc od tego, czy znany jest profil <b>obojga rodziców</b>, czy tylko domniemanego ojca. Gdy znany jest profil matki, często można wskazać u dziecka allele, które <b>mogą pochodzić wyłącznie od matki</b>, i wyłączyć je z analizy. Zmniejsza to zwykle <b>mianownik</b> ilorazu szans obu hipotez, więc PI dla danego układu rośnie – tu z 62,5 do 125.</p>
-
-  <div class="box obraz"><p>Skąd „0,5/p<sub>26</sub>”? <b>Licznik</b>: domniemany ojciec (26/30) przekazuje allel 26 z szansą 0,5. <b>Mianownik</b>: przypadkowy mężczyzna przekazałby allel 26 z szansą równą jego częstości w populacji – 0,004. Rzadki allel daje mały mianownik i wysoki PI. Wzoru 1/(4 × p<sub>26</sub>) dla pary bez matki Drewa nie wyprowadza – daje on wynik dwa razy niższy niż w trójce.</p></div>
-
   <div class="box uwaga"><p>Ramka 29.3 opisuje wynik jako „hipoteza matki jest 62,5 raza [125 razy] bardziej prawdopodobna niż hipoteza ojca” (tak samo Drewa ujmuje LR na s. 777). Według definicji z tekstu (s. 776, 780) PI – jak LR – mówi jednak, ile razy bardziej prawdopodobne jest <b>otrzymanie danego wyniku badań</b> przy jednej hipotezie niż przy drugiej. To drugie sformułowanie jest ściślejsze i bezpieczniejsze na kolokwium.</p></div>
 
   <p class="src">Źródło: Drewa s. 779–780</p>
 
   <!-- ============================================================ -->
   <h2 id="c10-ojcostwo">Procedura badania spornego ojcostwa – 5 etapów</h2>
-  <p>Obliczenia statystyczne, które pokazują <b>wartość dowodową</b> wyników badań genetycznych, są jednym z podstawowych etapów złożonej procedury – od <b>podjęcia decyzji o przeprowadzeniu badań</b> do <b>wydania ekspertyzy</b>. Oznaczenie profilu i jego interpretacja to proces wieloetapowy, nieco odmienny dla różnych typów badań. Ramka 29.4 zestawia dwa typowe schematy: badanie spornego ojcostwa (5 etapów) i badanie śladów biologicznych (7 etapów) (<a class="figref" href="#c10-fig-proc"></a>).</p>
+  <p>Obliczenia statystyczne, które pokazują <b>wartość dowodową</b> wyników badań genetycznych, są jednym z podstawowych etapów złożonej procedury – od <b>podjęcia decyzji o przeprowadzeniu badań</b> do <b>wydania ekspertyzy</b>. Oznaczenie profilu i jego interpretacja to proces wieloetapowy, nieco odmienny dla różnych typów badań. Ramka 29.4 zestawia dwa typowe schematy: badanie spornego ojcostwa (5 etapów) i badanie śladów biologicznych (7 etapów); ich zestawienie pokazuje <a class="figref" href="#c10-fig-proc"></a> w podrozdziale porównawczym.</p>
+
+  <aside class="note liceum"><p><b>PCR</b> to łańcuchowa reakcja polimerazy: w cyklach denaturacji, przyłączania starterów i wydłużania polimeraza DNA namnaża wybrany fragment. W reakcji <b>multipleksowej</b> jest wiele par starterów naraz.</p></aside>
+  <ol>
+    <li><b>Pobranie materiału</b> od osób wyznaczonych przez <b>organ zlecający analizę</b>. Zwykle pobiera się <b>wymaz z ust</b> od <b>matki, dziecka i domniemanego ojca</b> – od każdej osoby <b>co najmniej dwa wymazy</b>, najczęściej <b>w obecności wszystkich zainteresowanych</b>, którzy podpisują sporządzony w czasie pobrania <b>protokół</b>.</li>
+    <li><b>Izolacja materiału genetycznego</b> jedną z dostępnych metod. Materiał jest najczęściej <b>świeży</b>, więc zwykle nie ma problemu z uzyskaniem DNA dobrej jakości w ilości wystarczającej do amplifikacji. Od każdej osoby uzyskuje się <b>co najmniej dwa preparaty DNA z dwóch wymazów</b>; każdy analizuje się <b>oddzielnie</b>, a wyniki porównuje, by wykryć pomyłkę, np. <b>przypadkową zamianę próbek</b>.</li>
+    <li><b>Amplifikacja i elektroforeza.</b> Zwykle <b>zestawy multipleksowe</b> amplifikujące <b>kilkanaście układów STR</b>. Produkty PCR rozdziela się standardowo na <b>sekwenatorach kapilarnych z detekcją 4- lub 5-kolorową</b>, z użyciem <b>drabin allelicznych</b> i <b>wewnętrznego standardu wielkości</b> (<a class="chapref" href="#c09"></a>).</li>
+    <li><b>Analiza wyników i obliczenia statystyczne</b> – w <b>specjalnych programach komputerowych</b>. W przeważającej większości spraw oznaczenie <b>15 układów STR</b> wystarcza do uzyskania <b>PI na poziomie 1 000 000 lub więcej</b>; czasami jednak, by uzyskać wysoki PI, trzeba wykonać <b>dodatkowe analizy</b>. Dlatego laboratorium powinno móc badać <b>więcej układów STR niż standardowe</b>, wchodzące w skład popularnych systemów amplifikacji.</li>
+    <li><b>Sporządzenie opinii</b> – szczegółowe rezultaty badań oraz <b>interpretacja wyników i obliczeń statystycznych</b>. <b>Wykluczenie</b> ojcostwa stwierdza się <b>kategorycznie</b> („nie jest ojcem”); przy <b>potwierdzeniu</b> podkreśla się, że mężczyzna jest ojcem <b>„z prawdopodobieństwem graniczącym z pewnością”</b>.</li>
+  </ol>
+
+  <p>Skąd ta asymetria? Wspólny allel może mieć też przypadkowy mężczyzna, a ze względu na <b>specyfikę modelu dziedziczenia cech autosomalnych</b> i wynikający z niego <b>model matematyczny</b> obliczania prawdopodobieństwa pokrewieństwa <b>nie da się potwierdzić ojcostwa ze 100% pewnością</b>. Badania układów STR pozwalają jednak zwykle uzyskać <b>prawdopodobieństwo ojcostwa 99,9999% lub wyższe</b>. Cała procedura trwa zwykle <b>ok. 1–2 tygodni</b>; w niektórych sprawach dodatkowe analizy wydłużają oczekiwanie na opinię.</p>
+
+  <div class="numbers">
+    <div class="n"><span class="v">≥ 2</span><span class="d">wymazy i preparaty DNA od każdej osoby</span></div>
+    <div class="n"><span class="v">4–5</span><span class="d">kolorów detekcji w sekwenatorze kapilarnym</span></div>
+    <div class="n"><span class="v">15<small>STR</small></span><span class="d">zwykle wystarcza do PI ≥ 1 000 000</span></div>
+    <div class="n"><span class="v">99,9999<small>%</small></span><span class="d">typowe prawdopodobieństwo ojcostwa (lub więcej)</span></div>
+    <div class="n"><span class="v">1–2<small>tyg.</small></span><span class="d">typowy czas całej procedury</span></div>
+  </div>
+
+  <p class="src">Źródło: Drewa s. 780–781</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c10-slady">Procedura badania śladów biologicznych – 7 etapów</h2>
+  <p>Ślad biologiczny to inny materiał niż świeży wymaz z ust: bywa trudny do wykrycia, skąpy, zdegradowany, zanieczyszczony lub zmieszany z DNA innych osób. Stąd więcej etapów.</p>
+
+  <ol>
+    <li><b>Zabezpieczenie śladów biologicznych.</b> Zwykle robią to <b>technicy kryminalistyki</b> na miejscu przestępstwa. Przedmioty z wieloma różnymi śladami, ze śladami nieewidentnymi lub trudnymi do zabezpieczenia trafiają do laboratorium, które wykrywa i zabezpiecza <b>wszelkie substancje mogące zawierać DNA</b>. Pomaga w tym sprzęt specjalistyczny: <b>źródła światła o różnych długościach fali</b>, <b>mikroskopy</b>, <b>binokulary</b>. Etap ma <b>podstawowe znaczenie dla wszystkich kolejnych</b> – niewłaściwe zabezpieczenie lub pominięcie śladów może znacząco wpłynąć na końcowe wnioski.</li>
+    <li><b>Wstępna ocena śladów</b> – jakiego typu ślady biologiczne zawiera materiał. Najczęściej <b>testy biochemiczne</b> na obecność <b>krwi i nasienia</b>; są też <b>testy specyficzne</b> wykrywające <b>krew ludzką i nasienie ludzkie</b>; często <b>oględziny mikroskopowe włosów i włókien</b>. Wyniki służą do <b>wstępnej kwalifikacji śladów do analiz genetycznych</b>.</li>
+    <li><b>Izolacja materiału genetycznego.</b> Dobór metody zależy od rodzaju śladu i w dużej mierze od <b>doświadczenia badacza</b>. Niejednokrotnie trzeba zastosować <b>dwie lub trzy różne metody</b>, z których <b>tylko jedna daje wynik pozytywny</b>. Dodatkowo większość ujawnianych śladów zawiera <b>niewielkie ilości materiału biologicznego</b>.</li>
+    <li><b>Ocena ilościowa i jakościowa DNA, amplifikacja i elektroforeza.</b> DNA ze śladu bywa <b>znacznie zdegradowany</b>, jest go <b>bardzo mało</b> lub zawiera <b>substancje inhibujące PCR</b> – amplifikacja jest wtedy bardzo utrudniona, więc trzeba dokładnie znać preparat. Najczęściej ocenia się go reakcją <b>„RT-PCR”</b>: namnaża się <b>krótki fragment DNA</b> i specjalistycznym sprzętem ocenia <b>efektywność namnażania</b>. Amplifikacja i analiza produktów są <b>podobne jak w analizie spornego pokrewieństwa</b>; przy DNA szczególnie zdegradowanym lub skąpym stosuje się multipleksy <b>układów miniSTR</b> albo <b>analizę mtDNA</b> (Drewa 29.6.2–29.6.3).</li>
+    <li><b>Analiza materiału porównawczego.</b> Żeby określić, czy ślad pochodzi od <b>konkretnej osoby</b>, oznacza się jej profil i porównuje z profilami poszczególnych śladów – technikami i procedurami <b>podobnymi jak w badaniach spornego ojcostwa</b>.</li>
+    <li><b>Analiza wyników i obliczenia statystyczne</b> – w <b>programach komputerowych</b> (wyniki elektroforezy, częstość profili). <b>Profile pełne, bez mieszanin</b> – interpretacja stosunkowo prosta. <b>Profile szczątkowe</b> – zdarzają się często i czasem nawet bardzo obniżają wartość dowodową. <b>Brak profilu</b> – niekiedy oznaczenie jest niemożliwe z powodu silnej degradacji lub inhibitorów PCR. <b>Mieszaniny DNA</b> – osobny problem; ich ocena wymaga <b>odrębnych metod analitycznych</b>.</li>
+    <li><b>Sporządzenie opinii</b> – szczegółowe informacje o śladach, <b>sposobie ich zabezpieczenia</b> i <b>metodach badań</b> oraz szczegółowa lista wyników. W <b>sentencji</b> – podsumowanie obserwacji i obliczeń, z ewentualnymi uwagami o <b>zanieczyszczeniach</b> lub <b>degradacji</b>. Przy dużej liczbie śladów opinia może liczyć <b>nawet setki stron</b>.</li>
+  </ol>
+
+  <aside class="note pojecie" data-term="Profil szczątkowy"><p>profil oznaczony tylko w kilku układach STR (np. przy silnej degradacji DNA). Ma znacznie wyższą częstość w populacji niż profil pełny, więc niższe LR; przy LR ok. 10<sup>3</sup> ślad „może pochodzić” od danej osoby (s. 778).</p></aside>
+  <div class="box uwaga"><p>Skrót <b>RT-PCR</b> oznacza zwykle PCR z odwrotną transkrypcją (matryca RNA). Z opisu Drewy – namnażanie krótkiego fragmentu DNA i pomiar efektywności namnażania – wynika, że chodzi o <b>PCR w czasie rzeczywistym</b> (ang. <i>real-time PCR</i>). Na kolokwium warto to dopisać.</p></div>
+
+  <p class="src">Źródło: Drewa s. 778, 781–782</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c10-porownanie">Ojcostwo a ślady – porównanie procedur</h2>
+  <p>Rdzeń laboratoryjny obu procedur jest wspólny; różnice dotyczą początku procedury, jakości materiału i interpretacji. Wniosek Drewy: analiza śladów biologicznych jest <b>znacznie bardziej złożona</b> niż standardowe badania pokrewieństwa, wymaga <b>znacznie większej wiedzy i doświadczenia</b>, a <b>czas badań może być znacznie dłuższy</b> (<a class="figref" href="#c10-fig-proc"></a>).</p>
 
   <figure class="fig" id="c10-fig-proc" data-title="Dwie procedury obok siebie – etapy wspólne i dodatkowe">
     <div class="panel">
@@ -200,52 +242,6 @@
     <figcaption>Etapy ustawione w rzędach tak, by odpowiadające sobie leżały obok siebie. Izolacja, amplifikacja z elektroforezą, analiza ze statystyką i opinia występują w obu procedurach (teal). Badanie śladów zaczyna się od zabezpieczenia zamiast od pobrania wymazów (błękit) i ma dodatkowo wstępną ocenę śladów, ocenę ilości i jakości DNA oraz osobną analizę materiału porównawczego (ochra).</figcaption>
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 780–782 (ramka 29.4)</p>
   </figure>
-
-  <aside class="note liceum"><p><b>PCR</b> to łańcuchowa reakcja polimerazy: w cyklach denaturacji, przyłączania starterów i wydłużania polimeraza DNA namnaża wybrany fragment. W reakcji <b>multipleksowej</b> jest wiele par starterów naraz.</p></aside>
-  <ol>
-    <li><b>Pobranie materiału</b> od osób wyznaczonych przez <b>organ zlecający analizę</b>. Zwykle pobiera się <b>wymaz z ust</b> od <b>matki, dziecka i domniemanego ojca</b> – od każdej osoby <b>co najmniej dwa wymazy</b>, najczęściej <b>w obecności wszystkich zainteresowanych</b>, którzy podpisują sporządzony w czasie pobrania <b>protokół</b>.</li>
-    <li><b>Izolacja materiału genetycznego</b> jedną z dostępnych metod. Materiał jest najczęściej <b>świeży</b>, więc zwykle nie ma problemu z uzyskaniem DNA dobrej jakości w ilości wystarczającej do amplifikacji. Od każdej osoby uzyskuje się <b>co najmniej dwa preparaty DNA z dwóch wymazów</b>; każdy analizuje się <b>oddzielnie</b>, a wyniki porównuje, by wykryć pomyłkę, np. <b>przypadkową zamianę próbek</b>.</li>
-    <li><b>Amplifikacja i elektroforeza.</b> Zwykle <b>zestawy multipleksowe</b> amplifikujące <b>kilkanaście układów STR</b>. Produkty PCR rozdziela się standardowo na <b>sekwenatorach kapilarnych z detekcją 4- lub 5-kolorową</b>, z użyciem <b>drabin allelicznych</b> i <b>wewnętrznego standardu wielkości</b> (<a class="chapref" href="#c09"></a>).</li>
-    <li><b>Analiza wyników i obliczenia statystyczne</b> – w <b>specjalnych programach komputerowych</b>. W przeważającej większości spraw oznaczenie <b>15 układów STR</b> wystarcza do uzyskania <b>PI na poziomie 1 000 000 lub więcej</b>; czasami jednak, by uzyskać wysoki PI, trzeba wykonać <b>dodatkowe analizy</b>. Dlatego laboratorium powinno móc badać <b>więcej układów STR niż standardowe</b>, wchodzące w skład popularnych systemów amplifikacji.</li>
-    <li><b>Sporządzenie opinii</b> – szczegółowe rezultaty badań oraz <b>interpretacja wyników i obliczeń statystycznych</b>. <b>Wykluczenie</b> ojcostwa stwierdza się <b>kategorycznie</b> („nie jest ojcem”); przy <b>potwierdzeniu</b> podkreśla się, że mężczyzna jest ojcem <b>„z prawdopodobieństwem graniczącym z pewnością”</b>.</li>
-  </ol>
-
-  <aside class="note liceum"><p>Każdy allel dziecka musi mieć źródło u któregoś z rodziców – dlatego brak wspólnego allelu rozstrzyga. Wspólny allel może jednak mieć też przypadkowy mężczyzna z populacji, z prawdopodobieństwem zależnym od częstości allelu.</p></aside>
-  <p>Skąd ta asymetria? Ze względu na <b>specyfikę modelu dziedziczenia cech autosomalnych</b> i wynikający z niego <b>model matematyczny</b> obliczania prawdopodobieństwa pokrewieństwa <b>nie da się potwierdzić ojcostwa ze 100% pewnością</b>. Badania układów STR pozwalają jednak zwykle uzyskać <b>prawdopodobieństwo ojcostwa 99,9999% lub wyższe</b>. Cała procedura trwa zwykle <b>ok. 1–2 tygodni</b>; w niektórych sprawach dodatkowe analizy wydłużają oczekiwanie na opinię.</p>
-
-  <div class="numbers">
-    <div class="n"><span class="v">≥ 2</span><span class="d">wymazy i preparaty DNA od każdej osoby</span></div>
-    <div class="n"><span class="v">4–5</span><span class="d">kolorów detekcji w sekwenatorze kapilarnym</span></div>
-    <div class="n"><span class="v">15<small>STR</small></span><span class="d">zwykle wystarcza do PI ≥ 1 000 000</span></div>
-    <div class="n"><span class="v">99,9999<small>%</small></span><span class="d">typowe prawdopodobieństwo ojcostwa (lub więcej)</span></div>
-    <div class="n"><span class="v">1–2<small>tyg.</small></span><span class="d">typowy czas całej procedury</span></div>
-  </div>
-
-  <p class="src">Źródło: Drewa s. 780–781</p>
-
-  <!-- ============================================================ -->
-  <h2 id="c10-slady">Procedura badania śladów biologicznych – 7 etapów</h2>
-  <p>Ślad biologiczny to inny materiał niż świeży wymaz z ust: bywa trudny do wykrycia, skąpy, zdegradowany, zanieczyszczony lub zmieszany z DNA innych osób. Stąd więcej etapów.</p>
-
-  <ol>
-    <li><b>Zabezpieczenie śladów biologicznych.</b> Zwykle robią to <b>technicy kryminalistyki</b> na miejscu przestępstwa. Przedmioty z wieloma różnymi śladami, ze śladami nieewidentnymi lub trudnymi do zabezpieczenia trafiają do laboratorium, które wykrywa i zabezpiecza <b>wszelkie substancje mogące zawierać DNA</b>. Pomaga w tym sprzęt specjalistyczny: <b>źródła światła o różnych długościach fali</b>, <b>mikroskopy</b>, <b>binokulary</b>. Etap ma <b>podstawowe znaczenie dla wszystkich kolejnych</b> – niewłaściwe zabezpieczenie lub pominięcie śladów może znacząco wpłynąć na końcowe wnioski.</li>
-    <li><b>Wstępna ocena śladów</b> – jakiego typu ślady biologiczne zawiera materiał. Najczęściej <b>testy biochemiczne</b> na obecność <b>krwi i nasienia</b>; są też <b>testy specyficzne</b> wykrywające <b>krew ludzką i nasienie ludzkie</b>; często <b>oględziny mikroskopowe włosów i włókien</b>. Wyniki służą do <b>wstępnej kwalifikacji śladów do analiz genetycznych</b>.</li>
-    <li><b>Izolacja materiału genetycznego.</b> Dobór metody zależy od rodzaju śladu i w dużej mierze od <b>doświadczenia badacza</b>. Niejednokrotnie trzeba zastosować <b>dwie lub trzy różne metody</b>, z których <b>tylko jedna daje wynik pozytywny</b>. Dodatkowo większość ujawnianych śladów zawiera <b>niewielkie ilości materiału biologicznego</b>.</li>
-    <li><b>Ocena ilościowa i jakościowa DNA, amplifikacja i elektroforeza.</b> DNA ze śladu bywa <b>znacznie zdegradowany</b>, jest go <b>bardzo mało</b> lub zawiera <b>substancje inhibujące PCR</b> – amplifikacja jest wtedy bardzo utrudniona, więc trzeba dokładnie znać preparat. Najczęściej ocenia się go reakcją <b>„RT-PCR”</b>: namnaża się <b>krótki fragment DNA</b> i specjalistycznym sprzętem ocenia <b>efektywność namnażania</b>. Amplifikacja i analiza produktów są <b>podobne jak w analizie spornego pokrewieństwa</b>; przy DNA szczególnie zdegradowanym lub skąpym stosuje się multipleksy <b>układów miniSTR</b> albo <b>analizę mtDNA</b> (Drewa 29.6.2–29.6.3).</li>
-    <li><b>Analiza materiału porównawczego.</b> Żeby określić, czy ślad pochodzi od <b>konkretnej osoby</b>, oznacza się jej profil i porównuje z profilami poszczególnych śladów – technikami i procedurami <b>podobnymi jak w badaniach spornego ojcostwa</b>.</li>
-    <li><b>Analiza wyników i obliczenia statystyczne</b> – w <b>programach komputerowych</b> (wyniki elektroforezy, częstość profili). <b>Profile pełne, bez mieszanin</b> – interpretacja stosunkowo prosta. <b>Profile szczątkowe</b> – zdarzają się często i czasem nawet bardzo obniżają wartość dowodową. <b>Brak profilu</b> – niekiedy oznaczenie jest niemożliwe z powodu silnej degradacji lub inhibitorów PCR. <b>Mieszaniny DNA</b> – osobny problem; ich ocena wymaga <b>odrębnych metod analitycznych</b>.</li>
-    <li><b>Sporządzenie opinii</b> – szczegółowe informacje o śladach, <b>sposobie ich zabezpieczenia</b> i <b>metodach badań</b> oraz szczegółowa lista wyników. W <b>sentencji</b> – podsumowanie obserwacji i obliczeń, z ewentualnymi uwagami o <b>zanieczyszczeniach</b> lub <b>degradacji</b>. Przy dużej liczbie śladów opinia może liczyć <b>nawet setki stron</b>.</li>
-  </ol>
-
-  <aside class="note liceum"><p><b>Inhibitor</b> enzymu to substancja hamująca reakcję enzymatyczną. Polimeraza DNA w PCR też jest enzymem – zanieczyszczenia ze śladu mogą ją zablokować.</p></aside>
-  <aside class="note pojecie" data-term="Profil szczątkowy"><p>profil oznaczony tylko w kilku układach STR (np. przy silnej degradacji DNA). Ma znacznie wyższą częstość w populacji niż profil pełny, więc niższe LR; przy LR ok. 10<sup>3</sup> ślad „może pochodzić” od danej osoby (s. 778).</p></aside>
-  <div class="box uwaga"><p>Skrót <b>RT-PCR</b> oznacza zwykle PCR z odwrotną transkrypcją (matryca RNA). Z opisu Drewy – namnażanie krótkiego fragmentu DNA i pomiar efektywności namnażania – wynika, że chodzi o <b>PCR w czasie rzeczywistym</b> (ang. <i>real-time PCR</i>). Na kolokwium warto to dopisać.</p></div>
-
-  <p class="src">Źródło: Drewa s. 778, 781–782</p>
-
-  <!-- ============================================================ -->
-  <h2 id="c10-porownanie">Ojcostwo a ślady – porównanie procedur</h2>
-  <p>Rdzeń laboratoryjny obu procedur jest wspólny; różnice dotyczą początku procedury, jakości materiału i interpretacji. Wniosek Drewy: analiza śladów biologicznych jest <b>znacznie bardziej złożona</b> niż standardowe badania pokrewieństwa, wymaga <b>znacznie większej wiedzy i doświadczenia</b>, a <b>czas badań może być znacznie dłuższy</b>.</p>
 
   <table class="tbl wide">
     <thead><tr><th style="width:20%">Cecha</th><th style="width:40%">Sporne ojcostwo</th><th>Ślady biologiczne</th></tr></thead>
