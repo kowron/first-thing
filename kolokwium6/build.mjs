@@ -122,18 +122,27 @@ try {
   page.on('requestfailed', (r) => W.push({ level: 'warn', msg: `Nie wczytano zasobu: ${r.url()}` }));
   await page.goto(pathToFileURL(tmpHtml).href, { waitUntil: 'load' });
   await page.addScriptTag({ path: path.join(ROOT, 'lib', 'browser.js') });
-  await page.evaluate(() => document.fonts.ready);
+  // Wszystkie @font-face wczytujemy jawnie, zanim cokolwiek zmierzymy lub wydrukujemy.
+  // Same document.fonts.ready nie wystarcza: podzbiory z unicode-range i kroje używane tylko w druku
+  // (pagina w @page – Inter 600/700) ładują się leniwie, dopiero gdy układ ich zażąda; gdyby to nastąpiło
+  // w trakcie page.pdf(), druk mógł wyjść z czcionką zastępczą albo z pustą stroną (niedeterministycznie).
+  const loadFonts = () => page.evaluate(async () => {
+    const faces = [...document.fonts];
+    const res = await Promise.allSettled(faces.map((f) => f.load()));
+    await document.fonts.ready;
+    return res.map((r, i) => (r.status === 'rejected' || faces[i].status !== 'loaded') ? `${faces[i].family} ${faces[i].weight} ${faces[i].style}` : null).filter(Boolean);
+  });
+  const badFaces = await loadFonts();
+  if (badFaces.length) W.push({ level: 'error', msg: `Nie wczytano czcionek: ${[...new Set(badFaces)].join(', ')} (sprawdź katalog fonts/)` });
 
   const prep = await page.evaluate((o) => window.K6.prepare(o), { mode, only: opt.only, book });
   W.push(...prep.warnings);
-  await page.evaluate(() => document.fonts.ready);
-  const fontsOk = await page.evaluate(async () => {
-    await document.fonts.load('10pt "Source Serif 4"', 'ąęłńśźżóć');
-    return document.fonts.check('10pt "Source Serif 4"', 'ąęłńśźżóć');
-  });
+  await loadFonts();
+  const fontsOk = await page.evaluate(() => document.fonts.check('10pt "Source Serif 4"', 'ąęłńśźżóć'));
   if (!fontsOk) W.push({ level: 'error', msg: 'Nie wczytano Source Serif 4 (sprawdź katalog fonts/)' });
   W.push(...(await page.evaluate(() => window.K6.measure())));
   await page.emulateMedia({ media: 'print' });
+  await page.evaluate(() => document.fonts.ready);
 
   /* ---------- przebiegi: numery stron aż do stabilizacji ---------- */
   let applied = null, info = null, stable = false, passes = 0;
@@ -144,49 +153,86 @@ try {
       if (pass === 2 && missing.length) W.push({ level: 'warn', msg: `Brak strony dla: ${missing.join(', ')}` });
     }
     await page.pdf({ path: passPdf, preferCSSPageSize: true, printBackground: true, outline: false, tagged: false });
+    // Zabezpieczenie przed sporadyczną pustą stroną (raz zaobserwowana pusta 1. strona w --only, nie do
+    // odtworzenia): strona bez tekstu w polu zadruku -> drukujemy jeszcze raz, po ustabilizowaniu układu.
+    for (let retry = 0; retry < 2; retry++) {
+      const empty = emptyPages(passPdf, prep.hasCover);
+      if (!empty.length) break;
+      W.push({ level: 'info', msg: `Przebieg ${pass}: strona bez tekstu (s. ${empty.join(', ')}) – druk powtórzony` });
+      await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => document.fonts.ready.then(r)))));
+      await page.pdf({ path: passPdf, preferCSSPageSize: true, printBackground: true, outline: false, tagged: false });
+    }
     info = JSON.parse(execFileSync('python3', [PDFTOOL, 'dests', passPdf], { encoding: 'utf8' }));
     const got = Object.fromEntries(Object.entries(info.dests).map(([k, [i]]) => [k, i + 1]));
     if (applied && JSON.stringify(got) === JSON.stringify(applied)) { stable = true; break; }
     applied = got;
+    // ściąga: wyrównanie kolumn na ostatniej stronie (potrzebne strony punktów z 1. przebiegu)
+    if (pass === 1) await page.evaluate((m) => window.K6.balanceColumns(m), got);
   }
   if (!stable) W.push({ level: 'error', msg: 'Numery stron nie ustabilizowały się po 5 przebiegach – sprawdź odsyłacze w pobliżu końca stron' });
   const pageOf = applied;
 
-  /* ---------- miękkie łączniki -> prawdziwe dywizy tylko tam, gdzie wiersz się łamie ---------- */
+  /* ---------- miękkie łączniki -> prawdziwe dywizy tylko tam, gdzie wiersz się łamie ----------
+     1. zamrożenie wg układu ekranowego (szerokość = druk, zob. style.css),
+     2. druk i kontrola: te same strony i cele linków ORAZ te same wiersze na każdej stronie (pdftotext),
+     3. jeśli jakiś akapit złamał się inaczej (remis „na styk” – różnice rzędu 1/64 px między ekranem
+        a drukiem), zamrażamy go ponownie przy minimalnie węższym / szerszym wierszu; gdy i to nie pomoże,
+        zostawiamy w nim U+00AD (tylko w tym akapicie). Gdyby nawet to nie dało zgodności – cały druk z U+00AD. */
+  const pdfDests = (f) => JSON.parse(execFileSync('python3', [PDFTOOL, 'dests', f], { encoding: 'utf8' }));
+  const lineDiff = (a, b) => JSON.parse(execFileSync('python3', [PDFTOOL, 'linediff', a, b], { encoding: 'utf8', maxBuffer: 64 << 20 }));
+  const printPass = () => page.pdf({ path: passPdf, preferCSSPageSize: true, printBackground: true, outline: false, tagged: false });
   {
-    await page.emulateMedia({ media: 'screen' });
-    const snap = () => page.evaluate(() => Array.from(document.querySelectorAll('p, li, td, figcaption, dd, .box, aside')).map((e) => Math.round(e.getBoundingClientRect().height)));
-    const h0 = process.env.K6_DEBUG ? await snap() : null;
-    const fr = await page.evaluate(() => window.K6.freezeHyphens());
-    if (h0) {
-      const h1 = await snap();
-      const els = await page.evaluate(() => Array.from(document.querySelectorAll('p, li, td, figcaption, dd, .box, aside')).map((e) => e.textContent.slice(0, 60)));
-      h0.forEach((v, i) => { if (v !== h1[i]) console.log('HEIGHT', v, '->', h1[i], els[i]); });
-    }
-    await page.emulateMedia({ media: 'print' });
     const shyPdf = passPdf.replace(/\.pdf$/, '.shy.pdf');
     fs.copyFileSync(passPdf, shyPdf);
-    await page.pdf({ path: passPdf, preferCSSPageSize: true, printBackground: true, outline: false, tagged: false });
-    const after = JSON.parse(execFileSync('python3', [PDFTOOL, 'dests', passPdf], { encoding: 'utf8' }));
-    const same = after.pages === info.pages && Object.entries(info.dests).every(([k, [p, top]]) => {
-      const b = after.dests[k];
-      return b && b[0] === p && (top === null || b[1] === null || Math.abs(b[1] - top) < 1);
-    });
-    if (process.env.K6_DEBUG) {
-      for (const [k, [p, top]] of Object.entries(info.dests)) { const b = after.dests[k]; if (!b || b[0] !== p || Math.abs(b[1] - top) >= 1) console.log('DEST', k, p, top, '->', b); }
+    await page.emulateMedia({ media: 'screen' });
+    const fr = await page.evaluate(() => window.K6.freezeHyphens());
+    await page.emulateMedia({ media: 'print' });
+    let broken = fr.broken, ok = false, shyKept = [], repaired = new Set(), lastDiff = null;
+    for (let attempt = 0; ; attempt++) {
+      await printPass();
+      const after = pdfDests(passPdf);
+      const moved = Object.entries(info.dests).filter(([k, [p, top]]) => {
+        const b = after.dests[k];
+        return !(b && b[0] === p && (top === null || b[1] === null || Math.abs(b[1] - top) < 1));
+      }).map(([k]) => k);
+      const diff = lineDiff(shyPdf, passPdf);
+      lastDiff = diff;
+      if (process.env.K6_DEBUG) {
+        for (const k of moved) console.log('DEST', k, info.dests[k], '->', after.dests[k]);
+        for (const d of diff.diffs) console.log('LINES s.', d.page, JSON.stringify(d.a.slice(0, 4)), '->', JSON.stringify(d.b.slice(0, 4)));
+      }
+      if (after.pages === info.pages && !moved.length && !diff.diffs.length) { info = after; ok = true; break; }
+      if (attempt >= 8) break;
+      // różnica na pierwszej stronie zwykle przesuwa wszystko dalej – naprawiamy od pierwszej różniącej się strony
+      const ds = diff.diffs.length > 6 ? diff.diffs.slice(0, 1) : diff.diffs;
+      const segs = ds.flatMap((d) => d.a.concat(d.b));
+      if (!segs.length) break;
+      await page.emulateMedia({ media: 'screen' });
+      const r = await page.evaluate((sg) => window.K6.refreezeHyphens(sg), segs);
+      await page.emulateMedia({ media: 'print' });
+      if (!r.refrozen.length && !r.shy.length) break;
+      r.refrozen.forEach((e) => repaired.add(e));
+      shyKept.push(...r.shy);
+      broken += r.broken;
     }
-    if (same) { info = after; fs.rmSync(shyPdf, { force: true }); }
-    else {
+    if (ok) {
+      fs.rmSync(shyPdf, { force: true });
+      if (shyKept.length) W.push({ level: 'info', msg: `Miękkie łączniki zostawiono w ${shyKept.length} akapitach (łamanie ekranu i druku różni się o ułamek piksela): ${shyKept.slice(0, 3).join('; ')}` });
+    } else {
       fs.renameSync(shyPdf, passPdf);
-      W.push({ level: 'info', msg: `Zamiana miękkich łączników zmieniłaby łamanie – zostawiono wersję z U+00AD (wyszukiwanie w PDF może gorzej działać)` });
+      const d = lastDiff && lastDiff.diffs[0];
+      W.push({ level: 'warn', msg: `Zamiana miękkich łączników zmieniłaby łamanie – zostawiono wersję z U+00AD (wyszukiwanie w PDF działa gorzej)${d ? `; pierwsza różnica s. ${d.page}: „${(d.a[0] || '').slice(0, 70)}”` : ''} – zgłoś to` });
     }
-    W.push({ level: 'info', msg: `Dzielenie wyrazów: ${fr.broken} przeniesień${same ? '' : ' (niezamrożone)'}` });
+    W.push({ level: 'info', msg: `Dzielenie wyrazów: ${ok ? broken : fr.broken} przeniesień${ok ? (repaired.size ? ` (${repaired.size} akapitów zamrożonych ponownie po kontroli)` : '') : ' (niezamrożone)'}` });
   }
   {
-    // kontrola: dywiz U+2010 (wstawiany tylko przy zamrażaniu przeniesień w tekście Inter) nie może stać w środku wiersza
-    const all = execFileSync('pdftotext', [passPdf, '-'], { encoding: 'utf8' });
+    // kontrola: w warstwie tekstowej nie zostają miękkie łączniki; dywiz U+2010 (wstawiany tylko przy
+    // zamrażaniu przeniesień w tekście Inter) nie może stać w środku wiersza
+    const all = execFileSync('pdftotext', [passPdf, '-'], { encoding: 'utf8', maxBuffer: 64 << 20 });
     const mids = all.split('\n').flatMap((l) => l.match(/[^\s\d]‐[^\s\d]/gu) || []);
     if (mids.length) W.push({ level: 'warn', msg: `Dywiz przeniesienia w środku wiersza (${mids.length}×, np. „${mids[0]}”) – łamanie ekranowe różni się od druku; zgłoś to` });
+    const nShy = (all.match(/\u00AD/g) || []).length;
+    if (nShy) W.push({ level: 'info', msg: `Warstwa tekstowa PDF zawiera ${nShy} miękkich łączników (U+00AD)` });
   }
   if (pageOf.howto && pageOf.toc && pageOf.toc - pageOf.howto > 1) W.push({ level: 'warn', msg: `Strona „Jak korzystać” zajmuje ${pageOf.toc - pageOf.howto} strony – skróć front/howto.html do jednej` });
 
@@ -227,14 +273,24 @@ try {
 
   /* ---------- kontrola wydruku: białe dziury, wystające elementy ---------- */
   const startPages = new Set(prep.sections.map((s) => pageOf[s.id]).filter(Boolean));
-  const holes = inkCheck(finalPdf, fin.pages, prep.hasCover, startPages);
+  const bodyText = bodyTexts(finalPdf);
+  const holes = inkCheck(finalPdf, fin.pages, prep.hasCover, startPages, bodyText);
 
   /* ---------- czcionki ---------- */
   const fonts = execFileSync('pdffonts', [finalPdf], { encoding: 'utf8' });
   const fontNames = [...new Set(fonts.split('\n').slice(2).map((l) => l.split(/\s+/)[0]).filter(Boolean).map((n) => n.replace(/^[A-Z]{6}\+/, '')))];
   if (!fontNames.some((n) => /SourceSerif4|Source-Serif-4/i.test(n))) W.push({ level: 'error', msg: 'W PDF brak Source Serif 4!' });
   const odd = fontNames.filter((n) => !/^(Inter|SourceSerif4|Source-Serif-4|JetBrainsMono|JetBrains-Mono)/i.test(n));
-  if (odd.length) W.push({ level: 'info', msg: `Czcionki zastępcze w PDF (znaki spoza Source Serif/Inter): ${odd.join(', ')}` });
+  if (odd.length) {
+    // które znaki i gdzie: strona -> sekcja -> plik źródłowy
+    const secAt = (p) => prep.sections.filter((s) => pageOf[s.id] && pageOf[s.id] <= p).sort((a, b) => pageOf[b.id] - pageOf[a.id])[0];
+    let detail = '';
+    try {
+      const chars = [...new Set(odd.map((n) => n.replace(/-.*$/, '')))].flatMap((pat) => JSON.parse(execFileSync('python3', [PDFTOOL, 'fontchars', finalPdf, pat], { encoding: 'utf8', maxBuffer: 16 << 20 })));
+      detail = chars.map((c) => `„${c.char}” U+${c.char.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')} (${c.font}) s. ${c.pages.map((p) => { const s = secAt(p); return `${p}${s && s.file ? ' [' + s.file + ']' : ''}`; }).join(', ')}`).join('; ');
+    } catch { /* brak pdfminer – sama lista czcionek */ }
+    W.push({ level: 'warn', msg: `Czcionki zastępcze w PDF (znaki spoza Source Serif/Inter/JetBrains Mono): ${odd.join(', ')}${detail ? ' – ' + detail + ' – dodaj glif do fonts/ (lib/fontpatch.py) albo zmień znak' : ''}` });
+  }
   if (/\bno\b\s+\S+\s+\S+\s*\d+\s+\d+\s*$/m.test(fonts)) W.push({ level: 'warn', msg: 'Niektóre czcionki nie są osadzone' });
 
   /* ---------- PNG ---------- */
@@ -271,8 +327,24 @@ try {
 process.exit(exitCode);
 
 /* ====================================================================== */
+/* Tekst z samego pola zadruku każdej strony (bez żywej paginy i stopki): 22–272 mm w pionie,
+   ok. 14–194,5 mm w poziomie (współrzędne pdftotext w pt). */
+function bodyTexts(pdf) {
+  return execFileSync('pdftotext', ['-x', '40', '-y', '62', '-W', '515', '-H', '709', pdf, '-'], { encoding: 'utf8', maxBuffer: 64 << 20 }).split('\f');
+}
+function emptyPages(pdf, hasCover) {
+  const t = bodyTexts(pdf);
+  const out = [];
+  for (let i = 0; i < t.length; i++) {
+    if (i === t.length - 1 && !t[i].trim()) break; // po ostatnim \f
+    if (hasCover && i === 0) continue;
+    if (!t[i].trim()) out.push(i + 1);
+  }
+  return out;
+}
+
 /* Kontrola „atramentu” na stronach: render 36 dpi w skali szarości (PGM). */
-function inkCheck(pdf, nPages, hasCover, startPages) {
+function inkCheck(pdf, nPages, hasCover, startPages, bodyText) {
   fs.rmSync(checkDir, { recursive: true, force: true });
   fs.mkdirSync(checkDir, { recursive: true });
   const DPI = 36;
@@ -292,7 +364,12 @@ function inkCheck(pdf, nPages, hasCover, startPages) {
     const fill = lowest < 0 ? 0 : (lowest - Y0) / (Y1 - Y0);
     const isEnd = startPages.has(pno + 1) || pno === nPages;
     const pct = Math.round(fill * 100);
-    if (fill < 0.35) {
+    const noText = bodyText && !(bodyText[idx] || '').trim();
+    if (lowest < 0 || (noText && fill < 0.35)) {
+      // pusta strona (np. wymuszony podział strony przed pustym blokiem albo wyścig z ładowaniem czcionek)
+      W.push({ level: 'warn', msg: `s. ${pno}: pusta strona – ${lowest < 0 ? 'nic poza paginą' : 'brak tekstu poza paginą'} (sprawdź break-before/after w okolicy; uruchom build ponownie, jeśli znika – zgłoś)` });
+      holes.push(pno);
+    } else if (fill < 0.35) {
       if (isEnd) W.push({ level: 'info', msg: `s. ${pno}: zapełniona w ${pct}% (ostatnia strona sekcji – zwykle w porządku)` });
       else { W.push({ level: 'warn', msg: `s. ${pno}: zapełniona tylko w ${pct}% – duża biała dziura (zwykle rycina/tabela nie zmieściła się i przeszła na następną stronę)` }); holes.push(pno); }
     } else if (fill < 0.6 && !isEnd) {

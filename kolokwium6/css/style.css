@@ -112,9 +112,15 @@ body {
   font-kerning: normal; font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
 }
-/* Szerokość jak w druku: Chromium zaokrągla stronę A4 do 794 px, pole zadruku = 794 px − 2 × 15,5 mm.
-   Potrzebne, żeby pomiary w widoku ekranowym (kontrole, dywizy) zgadzały się z PDF. */
-@media screen { body { width: calc(794px - 31mm); margin: 0 auto; } }
+/* Szerokość jak w druku. Potrzebne, żeby pomiary w widoku ekranowym (kontrole, zamrażanie dywizów)
+   zgadzały się z PDF co do ułamka piksela. Wartość zmierzona w druku Chromium (A4, marginesy 15,5 mm):
+   pole zadruku = 677,03125 px (43330/64 – LayoutUnit). Dawne calc(794px − 31mm) = 676,83 px było
+   o 0,2 px węższe i wiersze „na styk” łamały się na ekranie inaczej niż w druku (zamrażanie miękkich
+   łączników nie przechodziło kontroli). Na ekranie bierzemy 677 px – o 1/32 px mniej: przy remisie
+   lepiej złamać wcześniej na miękkim łączniku (twardy dywiz w druku złamie się tak samo) niż za późno.
+   Jeśli zmienisz rozmiar strony lub marginesy w @page, zmierz to na nowo (build zgłosi wtedy
+   „Zamiana miękkich łączników zmieniłaby łamanie”). */
+@media screen { body { width: 677px; margin: 0 auto; } }
 p { margin: 0 0 6.5pt; orphans: 2; widows: 2; }
 strong, b { font-weight: 700; color: var(--navy); }
 em, i { font-style: italic; }
@@ -124,6 +130,8 @@ code, .mono { font-family: var(--mono); font-size: 0.86em; }
 .seq { font-family: var(--mono); font-size: 0.86em; letter-spacing: 0.04em; }
 .sc { font-variant: all-small-caps; letter-spacing: .04em; }
 .nowrap { white-space: nowrap; }
+/* dywiz przeniesienia wstawiany przez build (zamrażanie miękkich łączników) – bez kerningu, jak miękki łącznik */
+.k6-hy { font-kerning: none; }
 .k6-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
 .ghost-links { position: absolute; left: 0; top: 0; width: 1px; height: 1px; overflow: hidden; color: transparent; font-size: 1px; line-height: 1px; }
 
@@ -561,26 +569,40 @@ table.cited { width: 100%; }
 
 /* Ściąga */
 section.back.cheat { font-size: 7.9pt; line-height: 11pt; }
-.cheat-cols { columns: 2; column-gap: 14pt; column-rule: 0.6pt solid var(--rule); }
-.cheat-block { break-inside: avoid; margin: 0 0 9pt; }
+.cheat-cols { columns: 2; column-gap: 14pt; column-rule: 0.6pt solid var(--rule); column-fill: balance; }
+/* ostatnia strona ściągi – osobny kontener tworzony przez build (balanceColumns), Chromium wyrównuje jego kolumny */
+.cheat-cols-last { break-before: page; }
+.cheat-cont[data-cont]::before {
+  content: attr(data-cont) " (cd.)"; display: block; font-family: var(--sans); font-weight: 600;
+  font-size: 7pt; line-height: 9pt; color: var(--navy); border-bottom: 1pt solid var(--navy);
+  padding: 0 0 2pt; margin: 0 0 4pt;
+}
+/* Bloki mogą łamać się między punktami (nagłówek zostaje z pierwszym punktem) – dzięki temu kolumny
+   wypełniają się do dołu strony i nie zostają w nich białe dziury wielkości całego bloku. */
+.cheat-block { break-inside: auto; margin: 0 0 9pt; orphans: 2; widows: 2; }
 section.back .cheat-block h3 {
   font-family: var(--sans); font-size: 8.4pt; line-height: 11pt; color: #fff; background: var(--navy);
-  padding: 3pt 7pt; border-radius: 3pt; margin: 0 0 4pt; font-weight: 600;
+  padding: 3pt 7pt; border-radius: 3pt; margin: 0 0 4pt; font-weight: 600; break-after: avoid;
 }
 .cheat-block h3 .n { color: var(--teal-l); margin-right: 5pt; font-weight: 700; }
-.cheat-block p { margin: 0 0 3pt; }
+.cheat-block p { margin: 0 0 3pt; break-inside: avoid; }
 .cheat-block ul { list-style: none; margin: 0 0 3pt; padding: 0; }
-.cheat-block li { position: relative; padding-left: 9pt; margin: 0 0 1.5pt; }
+.cheat-block li { position: relative; padding-left: 9pt; margin: 0 0 1.5pt; break-inside: avoid; }
 .cheat-block li::before { content: ""; position: absolute; left: 1pt; top: 4.2pt; width: 3.4pt; height: 3.4pt; border-radius: 50%; background: var(--teal); }
-.cheat-block table.tbl { margin: 3pt 0 4pt; font-size: 7.4pt; line-height: 10pt; width: 100%; }
-.cheat-block table.tbl th { padding: 4pt 5pt 3.5pt; font-size: 6pt; }
-.cheat-block table.tbl td { padding: 3pt 5pt; }
+/* Tabele w ściądze – gęsty wariant (także table.tbl.wide poza blokami): pismo i odstępy jak w reszcie ściągi */
+section.cheat table.tbl { margin: 3pt 0 6pt; font-size: 7.3pt; line-height: 9.8pt; width: 100%; min-width: 0; }
+section.cheat table.tbl th { padding: 3.5pt 5pt 3pt; font-size: 5.9pt; line-height: 7.6pt; letter-spacing: 0.08em; }
+section.cheat table.tbl td { padding: 2.6pt 5pt 2.4pt; }
+section.cheat table.tbl thead tr:first-child th:first-child { border-top-left-radius: 3pt; }
+section.cheat table.tbl thead tr:first-child th:last-child { border-top-right-radius: 3pt; }
+section.cheat table.tbl caption { font-size: 8.4pt; padding-bottom: 3pt; }
+.cheat-block table.tbl { break-inside: avoid; }
 .cheat-block .numbers > .lbl { display: none; }
 .cheat-block .numbers { margin: 3pt 0 4pt; padding-top: 6pt; border-top-width: 1pt; }
 .cheat-block .numbers .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .cheat-block .numbers .v { font-size: 13pt; line-height: 15pt; }
 .cheat-block .numbers .n { padding: 3pt 0 4pt; }
-.cheat-block .pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6pt; }
+.cheat-block .pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6pt; break-inside: avoid; }
 .cheat-block .vs { color: var(--red); font-weight: 700; }
 
 /* ---------- Okładka ----------------------------------------------------------- */

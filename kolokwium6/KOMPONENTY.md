@@ -353,7 +353,13 @@ schemat aparatu + elektroferogram – ryc. 3; dwa panele obok siebie – ryc. 1.
 * **Ściąga**: `<section class="back cheat" id="b-sciaga" data-title="Ściąga">`, w środku
   `<div class="cheat-cols">` z blokami `<div class="cheat-block"><h3><span class="n">03</span>Tytuł</h3>…</div>`.
   W blokach: `<p>`, `<ul>`, `<table class="tbl">`, `<div class="numbers">` (bez etykiety), `<div class="pair">` (dwie kolumny).
-  Bloki nie łamią się – krótkie (6–12 wierszy). Cel: 1–2 strony.
+  Bloki mogą przechodzić do następnej kolumny/strony **między punktami** (nagłówek zawsze zostaje z pierwszym
+  punktem; pojedynczy punkt, akapit, tabela i `.pair` się nie dzielą) – kolumny wypełniają się do dołu strony.
+  Blok przecięty stroną dostaje na nowej stronie szary nagłówek „NN Tytuł (cd.)” (wstawia build).
+  Kolumny ostatniej strony ściągi build wyrównuje sam (po 1. przebiegu przenosi jej treść do osobnego
+  kontenera `.cheat-cols-last`) – nie wstawiaj ręcznych podziałów. Kolejność bloków = kolejność w pliku.
+  Tabele w ściądze (także `table.tbl.wide` poza blokami) mają automatycznie gęsty wariant: pismo 7,3 pt,
+  mniejsze odstępy – nie dodawaj własnych klas. Cel: 1–2 strony (obecnie 2).
 * **Słownik**: `<dl class="glossary">` z pozycjami `<div><dt>SKRÓT</dt><dd>rozwinięcie <span class="en">(english)</span></dd></div>`, alfabetycznie.
 
 ---
@@ -364,12 +370,29 @@ schemat aparatu + elektroferogram – ryc. 3; dwa panele obok siebie – ryc. 1.
    rozdziały w kolejności numerów, część końcowa.
 2. W przeglądarce: numeruje ryciny, generuje otwarcia rozdziałów, etykiety ramek, spis treści, spis rycin,
    klucz odpowiedzi, źródła, statystyki okładki; wstawia twarde spacje i miękkie dzielenie wyrazów (polskie reguły sylabizacji).
-3. Drukuje PDF (natywny druk Chromium), czyta z PDF numery stron każdego celu linku i drukuje ponownie z
+3. Przed pomiarami i drukiem jawnie wczytuje wszystkie czcionki z `fonts/` (także podzbiory i kroje używane
+   tylko w paginie), żeby żaden krój nie doładowywał się w trakcie druku.
+   Drukuje PDF (natywny druk Chromium), czyta z PDF numery stron każdego celu linku i drukuje ponownie z
    prawdziwymi numerami – aż numeracja się nie zmienia (zwykle 2 przebiegi). Potem zamienia miękkie łączniki
-   na zwykłe dywizy tylko tam, gdzie wiersz faktycznie się łamie, i sprawdza, że łamanie się nie zmieniło.
+   na zwykłe dywizy tylko tam, gdzie wiersz faktycznie się łamie (dywiz w `<span class="k6-hy">` bez kerningu),
+   a pozostałe usuwa, i sprawdza, że **każdy wiersz każdej strony** wygląda jak w druku z miękkimi łącznikami
+   (te same strony, cele linków i wiersze w `pdftotext`). W warstwie tekstowej PDF nie zostają U+00AD, więc
+   wyszukiwanie i kopiowanie działa. Akapit, który mimo to złamałby się inaczej (remis „na styk”), build zamraża
+   ponownie albo – ostatecznie – zostawia w nim miękkie łączniki (komunikat `info`).
+   Pomiary robi w widoku ekranowym o szerokości pola zadruku z druku Chromium (677,03 px, w CSS 677 px –
+   zob. `@media screen` w `css/style.css`); przy zmianie formatu strony/marginesów trzeba to zmierzyć na nowo.
 4. Dokłada metadane, zakładki PDF (rozdziały + podrozdziały h2) i sprawdza linki.
 5. Kontrole: id, odsyłacze, podpisy rycin, rozmiar tekstu w SVG, elementy szersze niż kolumna/pole zadruku,
-   notatki, które odjechały od akapitu, strony zapełnione < 35 % (biała dziura), czcionki w PDF.
+   notatki, które odjechały od akapitu, strony zapełnione < 35 % (biała dziura), puste strony (bez tekstu
+   poza paginą – w przebiegu druk jest wtedy powtarzany, w wyniku końcowym `UWAGA`), czcionki w PDF
+   (znak złożony czcionką zastępczą jest wypisany ze stroną i plikiem źródłowym).
+
+**Czcionki i znaki specjalne.** Pokrycie: Source Serif 4 (łacina, łacina rozszerzona, greka), Inter (to samo +
+interpunkcja, strzałki, indeksy, symbole matematyczne), JetBrains Mono. Znaki, których nie ma w Source Serif
+(→ ← ≈ ≥ ⅓ ₂ ⁶ itp.), w tekście szeryfowym bierze Inter – to zamierzone. Znak `∝` nie istnieje ani w Inter, ani
+w Source Serif – został dołożony do plików `fonts/Inter-*.woff2` z DejaVu Sans skryptem `lib/fontpatch.py`
+(dopasowana wysokość i szerokość). Jeśli build zgłosi „Czcionki zastępcze w PDF … „X” U+…”, dopisz kod znaku
+do `CHARS` w `lib/fontpatch.py` i uruchom go (wymaga fontTools + brotli) albo użyj innego znaku.
 
 ---
 
@@ -392,6 +415,9 @@ schemat aparatu + elektroferogram – ryc. 3; dwa panele obok siebie – ryc. 1.
 | `data-num … nie zgadza się z numerem w nazwie pliku` | — | ujednolić |
 | `plik rozdziału to fragment` | wklejony `<html>`/`<body>` | usuń, zostaw samą `<section>` |
 | w PDF czerwone „s. ?” | odsyłacz do innego rozdziału w trybie `--only` | normalne w podglądzie |
+| `Czcionki zastępcze w PDF … „X” U+…` | znak spoza Source Serif / Inter / JetBrains Mono | zob. „Czcionki i znaki specjalne” w p. 12 |
+| `s. N: pusta strona` | pusty blok z wymuszonym podziałem strony albo (rzadko) chwilowy błąd renderera | sprawdź `break-before/after` w okolicy; jeśli znika po ponownym uruchomieniu – zgłoś |
+| `Zamiana miękkich łączników zmieniłaby łamanie` | ekran i druk łamią wiersze inaczej (zmieniony format strony, marginesy, nowa czcionka) | zgłoś – trzeba zmierzyć na nowo szerokość w `@media screen` |
 
 Czego nie robić: stylów inline (`style="…"`) poza szerokościami kolumn tabel, własnego CSS, `<br>` do robienia
 odstępów, pustych akapitów, obrazków rastrowych (tylko inline SVG), `<h1>`, ręcznego dzielenia wyrazów,

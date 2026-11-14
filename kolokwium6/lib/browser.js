@@ -210,7 +210,7 @@
       const head = html(`<header class="opener"><div class="opener-num">${num}</div><div class="opener-body">${ch.dataset.kicker ? `<p class="opener-kicker">${esc(ch.dataset.kicker)}</p>` : ''}<h1 class="ch-title">${esc(title)}</h1><div class="lead-slot"></div><p class="opener-meta"><b>W rozdziale:</b> ${list}${list ? ' · ' : ''}<b>Ryciny:</b> ${nf}</p></div></header>`);
       ch.prepend(head);
       if (lead) $('.lead-slot', ch).replaceWith(lead); else $('.lead-slot', ch).remove();
-      sections.push({ id: ch.id, kind: 'chapter', title: `${num} ${title}` });
+      sections.push({ id: ch.id, kind: 'chapter', title: `${num} ${title}`, file: ch.dataset.srcFile || '' });
       outline.push({ id: ch.id, title: `${num} ${title}`, children: h2s.map((h) => ({ id: h.id, title: txt(h) })) });
     }
 
@@ -224,11 +224,11 @@
         b.prepend(html(`<header class="back-head"><p class="kicker">${esc(b.dataset.kicker || 'Na koniec')}</p><h1>${esc(title)}</h1></header>`));
       }
       backOrder.push(b);
-      sections.push({ id: b.id, kind: 'back', title });
+      sections.push({ id: b.id, kind: 'back', title, file: b.dataset.srcFile || '' });
     }
     for (const f of fronts) {
       if (!f.id) error(`${where(f)}: sekcja przednia bez id`);
-      sections.push({ id: f.id, kind: 'front', title: f.dataset.title || txt($('h1', f)) });
+      sections.push({ id: f.id, kind: 'front', title: f.dataset.title || txt($('h1', f)), file: f.dataset.srcFile || '' });
     }
 
     /* ---------- Klucz odpowiedzi ---------- */
@@ -359,8 +359,16 @@
     const frontOutline = fronts.map((f) => ({ id: f.id, title: f.dataset.title || txt($('h1', f)) }));
     const backOutline = backOrder.map((b) => ({ id: b.id, title: b.dataset.title }));
 
+    /* ---------- Ściąga: kotwice punktów (do wyrównania kolumn na ostatniej stronie) ---------- */
+    let cu = 0;
+    for (const u of $$('.cheat-cols > .cheat-block > :not(ul), .cheat-cols > .cheat-block > ul > li')) {
+      if (!u.id) u.id = `b-k6cu-${++cu}`;
+      u.dataset.k6cu = '1';
+    }
+
     /* ---------- Ukryte linki (dla numerów stron) ---------- */
     const need = new Set();
+    for (const u of $$('[data-k6cu]')) need.add(u.id);
     for (const el of $$('[data-page-of]')) need.add(el.dataset.pageOf);
     for (const s of sections) need.add(s.id);
     for (const o of outline) for (const c of o.children) need.add(c.id);
@@ -422,6 +430,52 @@
       out.push(`${key} s. ${merged.map(([a, b]) => (a === b ? `${a}` : `${a}–${b}`)).join(', ')}`);
     }
     return out.concat(other);
+  }
+
+  /* Ściąga: Chromium w druku wypełnia kolumny po kolei także na ostatniej stronie (column-fill: balance
+     działa tylko dla bloku wielokolumnowego, który nie dzieli się między strony). Po pierwszym przebiegu
+     znamy strony punktów ściągi: wszystko od pierwszego punktu ostatniej strony przenosimy do nowego
+     kontenera .cheat-cols.cheat-cols-last (od nowej strony) – ten już się nie dzieli, więc Chromium
+     wyrównuje jego kolumny. Blok przecięty stroną dzielimy na dwa (druga część bez nagłówka – tak jak
+     wyglądała dotąd). pageOf: id -> numer strony. */
+  function balanceColumns(pageOf) {
+    let changed = 0;
+    const moveFrom = (node, target) => { for (let n = node; n;) { const nx = n.nextSibling; target.appendChild(n); n = nx; } };
+    for (const cols of $$('.cheat-cols:not(.cheat-cols-last)')) {
+      const units = $$('[data-k6cu]', cols).filter((u) => pageOf[u.id]);
+      if (!units.length) continue;
+      const pages = units.map((u) => pageOf[u.id]);
+      const last = Math.max(...pages);
+      if (last === Math.min(...pages)) continue;
+      const u = units.find((x) => pageOf[x.id] === last);
+      const blk = u.closest('.cheat-block');
+      let start = blk;
+      if (u !== $('[data-k6cu]', blk)) {
+        const b2 = blk.cloneNode(false);
+        b2.removeAttribute('id');
+        b2.classList.add('cheat-cont');
+        const h = $(':scope > h3', blk);
+        if (h) b2.dataset.cont = [...h.childNodes].map((n) => n.textContent.trim()).filter(Boolean).join(' ');
+        if (u.matches('li')) {
+          const ul = u.parentElement;
+          const ul2 = ul.cloneNode(false);
+          moveFrom(u, ul2);
+          b2.appendChild(ul2);
+          if (ul.nextSibling) moveFrom(ul.nextSibling, b2);
+        } else {
+          moveFrom(u, b2);
+        }
+        blk.after(b2);
+        start = b2;
+      }
+      const c2 = cols.cloneNode(false);
+      c2.removeAttribute('id');
+      c2.classList.add('cheat-cols-last');
+      moveFrom(start, c2);
+      cols.after(c2);
+      changed++;
+    }
+    return changed;
   }
 
   /* ------------------------------------------------------------------ */
@@ -560,17 +614,15 @@
   }
 
   /* Po ustaleniu łamania: miękkie łączniki (U+00AD), na których wiersz faktycznie się łamie,
-     zamieniamy na zwykły dywiz (U+2010), a pozostałe usuwamy – w warstwie tekstowej PDF
-     nie zostają niewidoczne znaki utrudniające wyszukiwanie i kopiowanie.
-     Wywoływać w widoku ekranowym (te same szerokości co w druku). */
-  function freezeHyphens(skipSel) {
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
-    const nodes = [];
-    const SHY = String.fromCharCode(0xAD);
-    while (walker.nextNode()) {
-      const t = walker.currentNode;
-      if (t.nodeValue.includes(SHY) && !(t.parentElement && t.parentElement.closest(skipSel || '#k6-none'))) nodes.push(t);
-    }
+     zamieniamy na zwykły dywiz (U+2010 w Inter, „-” w Source Serif), a pozostałe usuwamy – w warstwie
+     tekstowej PDF nie zostają niewidoczne znaki utrudniające wyszukiwanie i kopiowanie.
+     Wywoływać w widoku ekranowym (te same szerokości co w druku – zob. @media screen w style.css).
+     Oryginalne wartości węzłów zostają w FROZEN, żeby build mógł cofnąć/powtórzyć zamrożenie
+     pojedynczych akapitów (refreezeHyphens), gdy kontrola wykaże różnicę z drukiem. */
+  const SHY = '\u00AD';
+  const FROZEN = new Map(); // węzeł tekstowy -> { orig: tekst z U+00AD sprzed zamrożenia, n: liczba przeniesień }
+  const FREEZE_BLOCK = 'p, li, td, th, dd, dt, figcaption, blockquote, h1, h2, h3, h4, .lbl, aside, div';
+  function freezeNodes(nodes) {
     const range = document.createRange();
     const plan = [];
     let broken = 0;
@@ -578,10 +630,11 @@
       const s = t.nodeValue;
       // Chromium rysuje przeniesienie znakiem U+2010, jeśli czcionka go ma (Inter), inaczej U+002D (Source Serif)
       const hy = /Source Serif/.test(getComputedStyle(t.parentElement).fontFamily.split(',')[0]) ? '-' : '\u2010';
-      let out = '';
+      let out = '', n = 0;
+      const segs = [];
       for (let i = 0; i < s.length; i++) {
         const c = s[i];
-        if (c !== '\u00AD') { out += c; continue; }
+        if (c !== SHY) { out += c; continue; }
         let isBreak = false;
         if (i > 0 && i + 1 < s.length) {
           range.setStart(t, i - 1); range.setEnd(t, i);
@@ -590,13 +643,91 @@
           const b = range.getClientRects();
           if (a.length && b.length && Math.abs(b[b.length - 1].top - a[a.length - 1].top) > 2) isBreak = true;
         }
-        if (isBreak) { out += hy; broken++; }
+        if (isBreak) { segs.push(out); out = ''; broken++; n++; }
       }
-      plan.push([t, out]);
+      segs.push(out);
+      plan.push([t, segs, hy]);
     }
-    for (const [t, v] of plan) t.nodeValue = v;
-    return { nodes: nodes.length, broken };
+    // Dywiz wstawiamy w osobnym <span class="k6-hy"> (font-kerning: none): miękki łącznik Chromium rysuje
+    // bez kerningu z poprzednią literą, a zwykły dywiz w tym samym ciągu tekstu byłby kerningowany
+    // (np. „e-” w Source Serif szersze o ok. 0,3 px) – wiersz „na styk” przestałby się mieścić.
+    // Span nie dodaje znaków do warstwy tekstowej PDF.
+    for (const [t, segs, hy] of plan) {
+      const parts = [t];
+      const orig = t.nodeValue;
+      t.nodeValue = segs[0];
+      let at = t;
+      for (let k = 1; k < segs.length; k++) {
+        const sp = document.createElement('span');
+        sp.className = 'k6-hy';
+        sp.textContent = hy;
+        const tx = document.createTextNode(segs[k]);
+        at.after(sp, tx);
+        parts.push(sp, tx);
+        at = tx;
+      }
+      FROZEN.set(t, { orig, n: segs.length - 1, parts });
+    }
+    return broken;
+  }
+  function shyNodes(root, skipSel) {
+    const walker = document.createTreeWalker(root || document.body, NodeFilter.SHOW_TEXT, null);
+    const nodes = [];
+    while (walker.nextNode()) {
+      const t = walker.currentNode;
+      if (t.nodeValue.includes(SHY) && !(t.parentElement && t.parentElement.closest(skipSel || '#k6-none'))) nodes.push(t);
+    }
+    return nodes;
+  }
+  function freezeHyphens(skipSel) {
+    const nodes = shyNodes(document.body, skipSel);
+    return { nodes: nodes.length, broken: freezeNodes(nodes) };
   }
 
-  window.K6 = { prepare, applyPages, measure, hyphenateWord, freezeHyphens };
+  /* Naprawa po kontroli: segments = fragmenty wierszy (z pdftotext) ze stron, na których zamrożony
+     druk różni się od druku z U+00AD. Znajduje zamrożone akapity zawierające te fragmenty,
+     przywraca w nich U+00AD i – przy kolejnych próbach dla tego samego akapitu:
+       1. zamraża go ponownie przy wierszu węższym o 0,15 px, 2. szerszym o 0,05 px
+          (remis „na styk” rozstrzyga się wtedy jak w druku),
+       3. zostawia w nim U+00AD (wariant awaryjny: tylko ten akapit ma miękkie łączniki).
+     Zwraca opisy akapitów zamrożonych ponownie (refrozen) i zostawionych z U+00AD (shy). */
+  const TRIES = new WeakMap();
+  function refreezeHyphens(segments) {
+    const squash = (s) => s.replace(/[\s\u00A0\u00AD\u2010\u2011-]+/g, '');
+    const segs = segments.map(squash).filter((s) => s.length >= 12);
+    const blocks = new Map();
+    for (const t of FROZEN.keys()) {
+      if (!t.isConnected) continue;
+      const el = t.parentElement && t.parentElement.closest(FREEZE_BLOCK);
+      if (el && !blocks.has(el)) blocks.set(el, squash(el.textContent));
+    }
+    // najmniejsze pasujące elementy (akapit, a nie cały rozdział)
+    let hit = [...blocks.entries()].filter(([, txt]) => segs.some((s) => txt.includes(s))).map(([el]) => el);
+    hit = hit.filter((el) => !hit.some((o) => o !== el && el.contains(o)));
+    let broken = 0;
+    const refrozen = [], shy = [];
+    for (const el of hit) {
+      const tries = (TRIES.get(el) || 0) + 1;
+      TRIES.set(el, tries);
+      const D = [0.15, -0.05][tries - 1];
+      const nodes = [];
+      for (const [t, f] of FROZEN) {
+        if (!t.isConnected || !el.contains(t)) continue;
+        t.nodeValue = f.orig;
+        for (const p of f.parts.slice(1)) p.remove();
+        broken -= f.n;
+        nodes.push(t);
+      }
+      for (const t of nodes) FROZEN.delete(t);
+      if (D === undefined || el.matches('td, th')) { shy.push(where(el)); continue; }
+      refrozen.push(where(el));
+      const prev = el.style.marginRight;
+      el.style.marginRight = `${(parseFloat(getComputedStyle(el).marginRight) || 0) + D}px`;
+      broken += freezeNodes(nodes);
+      el.style.marginRight = prev;
+    }
+    return { refrozen, shy, broken };
+  }
+
+  window.K6 = { prepare, applyPages, balanceColumns, measure, hyphenateWord, freezeHyphens, refreezeHyphens };
 })();
