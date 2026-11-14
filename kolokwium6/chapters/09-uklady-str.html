@@ -355,7 +355,120 @@
 </svg>
       </div>
     </div>
-    <div class="panel" data-badge="D" data-title="Genotypowanie – porównanie z drabiną alleliczną">
+    <figcaption>A – próbka (produkty PCR w trzech kolorach + czerwony marker wewnętrzny) wędruje w kapilarze; w oknie detekcji laser wzbudza fluorescencję, układ optyczny ją odczytuje, komputer tworzy elektroforegram. B – marker w osobnej linii, jeden kolor: pomiar mało dokładny, stąd wątpliwości przy nazywaniu alleli. C – marker w każdej linii, osobny kolor dla markera i dla grup starterów: pomiar dokładny, a rozdzielenie kolorów pozwala oznaczyć więcej układów naraz.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 772–773 (ryc. 29.4)</p>
+  </figure>
+
+  <p class="src">Źródło: Drewa s. 772–773</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c09-genotypowanie">Genotypowanie: drabina alleliczna i nazwy alleli</h2>
+
+  <p><b>Genotypowanie</b> polega na przypisaniu fragmentom DNA uzyskanym w amplifikacji <b>standardowych symboli</b> zgodnych z przyjętym, uniwersalnym nazewnictwem. Podstawowym wymogiem jest uzyskanie <b>drabiny allelicznej</b> – zestawu wszystkich możliwych, a przynajmniej najczęściej występujących w danej populacji, alleli badanych układów mikrosatelitarnych. Allele umieszczone w drabinie są <b>wcześniej sekwencjonowane</b>, więc wiadomo dokładnie, ile i jakich jednostek powtarzalnych zawiera każdy z nich. Drabinę poddaje się elektroforezie w warunkach <b>identycznych</b> jak badane próbki.</p>
+
+  <p>Znając czas migracji poszczególnych, znanych alleli drabiny, można przypisać <b>anonimowym fragmentom</b> z dowolnej próbki unikalne symbole. Wystarczą do tego dwie informacje: <b>jakim barwnikiem</b> jest wyznakowany fragment i <b>jakiej jest długości</b> (<a class="figref" href="#c09-fig-th01" data-panel="B"></a>).</p>
+
+  <h3>Nazwa allelu = liczba powtórzeń</h3>
+  <aside class="note liceum"><p><b>Intron</b> – odcinek genu, który jest przepisywany na pre-mRNA, ale zostaje wycięty podczas splicingu i nie koduje białka.</p></aside>
+  <p>Nazewnictwo alleli STR opiera się na <b>liczbie powtórzeń</b> w obrębie sekwencji mikrosatelitarnej. Przykładem jest układ <b>TH01</b>, położony na <b>krótkim ramieniu chromosomu 11</b>, w <b>pierwszym intronie genu hydroksylazy tyrozynowej</b>. Zawiera on jednostkę powtarzalną o sekwencji <span class="seq">AATG</span>.</p>
+
+  <p>Allel TH01 opisany w bazie <b>GenBank</b> (numer dostępu <b>D00269</b>, nukleotydy <b>1169–1205</b>) zawiera <b>9 powtórzeń</b> motywu <span class="seq">TCAT</span>, dlatego zgodnie z konwencją nazywa się go <b>allelem 9</b>. Amplifikacja tego allelu jednym z zestawów starterów daje produkt o długości rzeczywistej <b>176 pz</b>.</p>
+
+  <p>W praktyce długość produktu zmierzona w sekwenatorze kapilarnym może różnić się od rzeczywistej <b>nawet o kilka nukleotydów</b>. Dlatego wielkość fragmentów odpowiadających poszczególnym allelom trzeba <b>weryfikować</b> elektroforezą i analizą drabiny allelicznej – drabina przechodzi te same warunki co próbka, więc jej allele „przesuwają się” tak samo.</p>
+
+  <h3>Allele pośrednie – przykład 9.3</h3>
+  <p>Nomenklatura alleli STR jest na tyle elastyczna, że uwzględnia także niektóre <b>mutacje punktowe</b> utrwalone w populacji. W układzie TH01 istnieje np. allel, w którym w <b>allelu 10</b> doszło do <b>delecji jednego nukleotydu</b> w jednej z jednostek powtarzalnych. Powstał allel z <b>9 pełnymi jednostkami</b> i <b>jedną niepełną</b>, o długości <b>trzech nukleotydów</b>. Oznacza się go jako <b>allel 9.3</b> (liczba pełnych jednostek, kropka, liczba nukleotydów w jednostce niepełnej).</p>
+
+  <p>Zgodnie z tą logiką produkt amplifikacji allelu 9.3 tą samą parą starterów powinien liczyć <b>179 pz</b>, a allelu 10 – <b>180 pz</b> (<a class="figref" href="#c09-fig-th01"></a>). Każda pełna jednostka to 4 pz, więc allele 9 i 10 różnią się o 4 pz, a allele 9.3 i 10 – tylko o <b>1 pz</b>. Właśnie dlatego tak ważna jest dokładność pomiaru 0,5–1 pz.</p>
+
+  <figure class="fig" id="c09-fig-th01" data-title="Układ TH01 – allele i ich oznaczanie">
+    <div class="panel" data-badge="A" data-title="Budowa alleli i długość produktu PCR">
+<svg viewBox="0 0 640 202" role="img" aria-label="Allele 9, 9.3 i 10 układu TH01 zbudowane z jednostek powtarzalnych">
+<text x="10" y="44" class="t-s sb">allel 9</text>
+<line x1="92" y1="40" x2="532" y2="40" stroke="#8a98a3" stroke-width="2"/>
+<rect x="169" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="184" y="43.5" class="t-xs mid sb f-teal">1</text>
+<rect x="201" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="216" y="43.5" class="t-xs mid sb f-teal">2</text>
+<rect x="233" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="248" y="43.5" class="t-xs mid sb f-teal">3</text>
+<rect x="265" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="280" y="43.5" class="t-xs mid sb f-teal">4</text>
+<rect x="297" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="312" y="43.5" class="t-xs mid sb f-teal">5</text>
+<rect x="329" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="344" y="43.5" class="t-xs mid sb f-teal">6</text>
+<rect x="361" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="376" y="43.5" class="t-xs mid sb f-teal">7</text>
+<rect x="393" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="408" y="43.5" class="t-xs mid sb f-teal">8</text>
+<rect x="425" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="440" y="43.5" class="t-xs mid sb f-teal">9</text>
+<path d="M98,25 H142" class="arrow navy"/>
+<path d="M526,55 H482" class="arrow navy"/>
+<text x="634" y="45" class="t-l b end">176 pz</text>
+<path d="M168,54 V59 H456 V54" fill="none" stroke="#007e83" stroke-width="1.2"/>
+<text x="312" y="72" class="t-xs mid f-teal sb">9 jednostek × 4 nt = 36 pz</text>
+<g transform="translate(0,-10)">
+<text x="10" y="116" class="t-s sb">allel 9.3</text>
+<line x1="92" y1="112" x2="556" y2="112" stroke="#8a98a3" stroke-width="2"/>
+<rect x="169" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="184" y="115.5" class="t-xs mid sb f-teal">1</text>
+<rect x="201" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="216" y="115.5" class="t-xs mid sb f-teal">2</text>
+<rect x="233" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="248" y="115.5" class="t-xs mid sb f-teal">3</text>
+<rect x="265" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="280" y="115.5" class="t-xs mid sb f-teal">4</text>
+<rect x="297" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="312" y="115.5" class="t-xs mid sb f-teal">5</text>
+<rect x="329" y="103" width="22" height="18" rx="2.5" class="f-red-bg s-red sw15"/>
+<text x="340" y="115.5" class="t-xs mid sb f-red">·3</text>
+<rect x="353" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="368" y="115.5" class="t-xs mid sb f-teal">6</text>
+<rect x="385" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="400" y="115.5" class="t-xs mid sb f-teal">7</text>
+<rect x="417" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="432" y="115.5" class="t-xs mid sb f-teal">8</text>
+<rect x="449" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="464" y="115.5" class="t-xs mid sb f-teal">9</text>
+<path d="M98,97 H142" class="arrow navy"/>
+<path d="M550,127 H506" class="arrow navy"/>
+<text x="634" y="117" class="t-l b end">179 pz</text>
+<text x="340" y="142" class="t-xs mid f-red sb">jednostka niepełna: 3 nt (delecja 1 nt w allelu 10)</text>
+</g>
+<g transform="translate(0,-20)">
+<text x="10" y="188" class="t-s sb">allel 10</text>
+<line x1="92" y1="184" x2="564" y2="184" stroke="#8a98a3" stroke-width="2"/>
+<rect x="169" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="184" y="187.5" class="t-xs mid sb f-teal">1</text>
+<rect x="201" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="216" y="187.5" class="t-xs mid sb f-teal">2</text>
+<rect x="233" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="248" y="187.5" class="t-xs mid sb f-teal">3</text>
+<rect x="265" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="280" y="187.5" class="t-xs mid sb f-teal">4</text>
+<rect x="297" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="312" y="187.5" class="t-xs mid sb f-teal">5</text>
+<rect x="329" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="344" y="187.5" class="t-xs mid sb f-teal">6</text>
+<rect x="361" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="376" y="187.5" class="t-xs mid sb f-teal">7</text>
+<rect x="393" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="408" y="187.5" class="t-xs mid sb f-teal">8</text>
+<rect x="425" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="440" y="187.5" class="t-xs mid sb f-teal">9</text>
+<rect x="457" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="472" y="187.5" class="t-xs mid sb f-teal">10</text>
+<path d="M98,169 H142" class="arrow navy"/>
+<path d="M558,199 H514" class="arrow navy"/>
+<text x="634" y="189" class="t-l b end">180 pz</text>
+<path d="M168,198 V203 H488 V198" fill="none" stroke="#007e83" stroke-width="1.2"/>
+<text x="328" y="216" class="t-xs mid f-teal sb">10 jednostek × 4 nt = 40 pz</text>
+</g>
+</svg>
+    </div>
+    <div class="panel" data-badge="B" data-title="Genotypowanie – porównanie z drabiną alleliczną">
 <svg viewBox="0 0 640 164" role="img" aria-label="Przypisanie alleli przez porównanie z drabiną alleliczną">
 <line x1="70" y1="76" x2="616" y2="76" class="axis"/>
 <path d="M71,76 L121,76 L122,75.9 L123,75.7 L124,75.1 L125,73.7 L126,70.6 L127,65.2 L128,57.2 L129,48 L130,40 L131,36.1 L132,37.8 L133,44.5 L134,53.6 L135,62.3 L136,68.7 L137,72.7 L138,74.7 L139,75.6 L140,75.9 L141,76 L189,76 L190,75.9 L191,75.7 L192,75.1 L193,73.7 L194,70.6 L195,65.2 L196,57.2 L197,48 L198,40 L199,36.1 L200,37.8 L201,44.5 L202,53.6 L203,62.3 L204,68.7 L205,72.7 L206,74.7 L207,75.6 L208,75.9 L209,76 L257,76 L258,75.9 L259,75.7 L260,75.1 L261,73.7 L262,70.6 L263,65.2 L264,57.2 L265,48 L266,40 L267,36.1 L268,37.8 L269,44.5 L270,53.6 L271,62.3 L272,68.7 L273,72.7 L274,74.7 L275,75.6 L276,75.9 L277,76 L325,76 L326,75.9 L327,75.7 L328,75.1 L329,73.7 L330,70.6 L331,65.2 L332,57.2 L333,48 L334,40 L335,36.1 L336,37.8 L337,44.5 L338,53.6 L339,62.3 L340,68.7 L341,72.7 L342,74.7 L343,75.6 L344,75.9 L345,76 L376,76 L377,75.9 L378,75.7 L379,75.1 L380,73.7 L381,70.6 L382,65.2 L383,57.2 L384,48 L385,40 L386,36.1 L387,37.8 L388,44.5 L389,53.6 L390,62.3 L391,68.7 L392,72.7 L393,74.7 L394,75.5 L395,75.6 L396,75.1 L397,73.7 L398,70.6 L399,65.1 L400,57.2 L401,48 L402,40 L403,36.1 L404,37.8 L405,44.5 L406,53.6 L407,62.3 L408,68.7 L409,72.7 L410,74.7 L411,75.6 L412,75.9 L413,76 L461,76 L462,75.9 L463,75.7 L464,75.1 L465,73.7 L466,70.6 L467,65.2 L468,57.2 L469,48 L470,40 L471,36.1 L472,37.8 L473,44.5 L474,53.6 L475,62.3 L476,68.7 L477,72.7 L478,74.7 L479,75.6 L480,75.9 L481,76 L614,76" class="trace blue"/>
@@ -401,193 +514,11 @@
 
 </g></svg>
     </div>
-    <figcaption>A – próbka (produkty PCR w trzech kolorach + czerwony marker wewnętrzny) wędruje w kapilarze; w oknie detekcji laser wzbudza fluorescencję, układ optyczny ją odczytuje, komputer tworzy elektroforegram. B – marker w osobnej linii, jeden kolor: pomiar mało dokładny, stąd wątpliwości przy nazywaniu alleli. C – marker w każdej linii, osobny kolor dla markera i dla grup starterów: pomiar dokładny, a rozdzielenie kolorów pozwala oznaczyć więcej układów naraz. D – zmierzone długości (przykładowe) odbiegają od rzeczywistych (allel 9 to naprawdę 176 pz), ale drabina przechodzi te same warunki, więc piki próbki przypisuje się do jej szczebli.</figcaption>
-    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 772–774 (ryc. 29.4)</p>
+    <figcaption>A – produkt PCR = sekwencje flankujące ze starterami (stała część: 176 − 36 = 140 pz) + jednostki powtarzalne po 4 nt. Allel 9: 140 + 36 = 176 pz; allel 10: 140 + 40 = 180 pz; allel 9.3 (9 pełnych jednostek + 1 jednostka 3-nukleotydowa): 179 pz. Położenie jednostki niepełnej narysowano umownie. B – zmierzone w sekwenatorze długości (tu przykładowe) odbiegają od rzeczywistych (allel 9 to naprawdę 176 pz), ale drabina przechodzi te same warunki, więc piki próbki przypisuje się do jej szczebli: genotyp 9, 10 (heterozygota).</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 766, 773–774</p>
   </figure>
 
-  <p class="src">Źródło: Drewa s. 772–773</p>
-
-  <!-- ============================================================ -->
-  <h2 id="c09-genotypowanie">Genotypowanie: drabina alleliczna i nazwy alleli</h2>
-
-  <p><b>Genotypowanie</b> polega na przypisaniu fragmentom DNA uzyskanym w amplifikacji <b>standardowych symboli</b> zgodnych z przyjętym, uniwersalnym nazewnictwem. Podstawowym wymogiem jest uzyskanie <b>drabiny allelicznej</b> – zestawu wszystkich możliwych, a przynajmniej najczęściej występujących w danej populacji, alleli badanych układów mikrosatelitarnych. Allele umieszczone w drabinie są <b>wcześniej sekwencjonowane</b>, więc wiadomo dokładnie, ile i jakich jednostek powtarzalnych zawiera każdy z nich. Drabinę poddaje się elektroforezie w warunkach <b>identycznych</b> jak badane próbki.</p>
-
-  <p>Znając czas migracji poszczególnych, znanych alleli drabiny, można przypisać <b>anonimowym fragmentom</b> z dowolnej próbki unikalne symbole. Wystarczą do tego dwie informacje: <b>jakim barwnikiem</b> jest wyznakowany fragment i <b>jakiej jest długości</b> (<a class="figref" href="#c09-fig-sekwenator" data-panel="D"></a>).</p>
-
-  <h3>Nazwa allelu = liczba powtórzeń</h3>
-  <aside class="note liceum"><p><b>Intron</b> – odcinek genu, który jest przepisywany na pre-mRNA, ale zostaje wycięty podczas splicingu i nie koduje białka.</p></aside>
-  <p>Nazewnictwo alleli STR opiera się na <b>liczbie powtórzeń</b> w obrębie sekwencji mikrosatelitarnej. Przykładem jest układ <b>TH01</b>, położony na <b>krótkim ramieniu chromosomu 11</b>, w <b>pierwszym intronie genu hydroksylazy tyrozynowej</b>. Zawiera on jednostkę powtarzalną o sekwencji <span class="seq">AATG</span>.</p>
-
-  <p>Allel TH01 opisany w bazie <b>GenBank</b> (numer dostępu <b>D00269</b>, nukleotydy <b>1169–1205</b>) zawiera <b>9 powtórzeń</b> motywu <span class="seq">TCAT</span>, dlatego zgodnie z konwencją nazywa się go <b>allelem 9</b>. Amplifikacja tego allelu jednym z zestawów starterów daje produkt o długości rzeczywistej <b>176 pz</b>.</p>
-
-  <p>W praktyce długość produktu zmierzona w sekwenatorze kapilarnym może różnić się od rzeczywistej <b>nawet o kilka nukleotydów</b>. Dlatego wielkość fragmentów odpowiadających poszczególnym allelom trzeba <b>weryfikować</b> elektroforezą i analizą drabiny allelicznej – drabina przechodzi te same warunki co próbka, więc jej allele „przesuwają się” tak samo.</p>
-
-  <h3>Allele pośrednie – przykład 9.3</h3>
-  <p>Nomenklatura alleli STR jest na tyle elastyczna, że uwzględnia także niektóre <b>mutacje punktowe</b> utrwalone w populacji. W układzie TH01 istnieje np. allel, w którym w <b>allelu 10</b> doszło do <b>delecji jednego nukleotydu</b> w jednej z jednostek powtarzalnych. Powstał allel z <b>9 pełnymi jednostkami</b> i <b>jedną niepełną</b>, o długości <b>trzech nukleotydów</b>. Oznacza się go jako <b>allel 9.3</b> (liczba pełnych jednostek, kropka, liczba nukleotydów w jednostce niepełnej).</p>
-
-  <p>Zgodnie z tą logiką produkt amplifikacji allelu 9.3 tą samą parą starterów powinien liczyć <b>179 pz</b>, a allelu 10 – <b>180 pz</b> (<a class="figref" href="#c09-fig-th01"></a>). Każda pełna jednostka to 4 pz, więc allele 9 i 10 różnią się o 4 pz, a allele 9.3 i 10 – tylko o <b>1 pz</b>. Właśnie dlatego tak ważna jest dokładność pomiaru 0,5–1 pz.</p>
-
-  <figure class="fig" id="c09-fig-th01" data-title="Układ TH01 – allele 9, 9.3 i 10">
-    <div class="panel" data-badge="A" data-title="Budowa alleli i długość produktu PCR">
-<svg viewBox="0 0 640 222" role="img" aria-label="Allele 9, 9.3 i 10 układu TH01 zbudowane z jednostek powtarzalnych">
-<text x="10" y="44" class="t-s sb">allel 9</text>
-<line x1="92" y1="40" x2="532" y2="40" stroke="#8a98a3" stroke-width="2"/>
-<rect x="169" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="184" y="43.5" class="t-xs mid sb f-teal">1</text>
-<rect x="201" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="216" y="43.5" class="t-xs mid sb f-teal">2</text>
-<rect x="233" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="248" y="43.5" class="t-xs mid sb f-teal">3</text>
-<rect x="265" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="280" y="43.5" class="t-xs mid sb f-teal">4</text>
-<rect x="297" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="312" y="43.5" class="t-xs mid sb f-teal">5</text>
-<rect x="329" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="344" y="43.5" class="t-xs mid sb f-teal">6</text>
-<rect x="361" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="376" y="43.5" class="t-xs mid sb f-teal">7</text>
-<rect x="393" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="408" y="43.5" class="t-xs mid sb f-teal">8</text>
-<rect x="425" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="440" y="43.5" class="t-xs mid sb f-teal">9</text>
-<path d="M98,25 H142" class="arrow navy"/>
-<path d="M526,55 H482" class="arrow navy"/>
-<text x="634" y="45" class="t-l b end">176 pz</text>
-<path d="M168,54 V59 H456 V54" fill="none" stroke="#007e83" stroke-width="1.2"/>
-<text x="312" y="72" class="t-xs mid f-teal sb">9 jednostek × 4 nt = 36 pz</text>
-<text x="10" y="116" class="t-s sb">allel 9.3</text>
-<line x1="92" y1="112" x2="556" y2="112" stroke="#8a98a3" stroke-width="2"/>
-<rect x="169" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="184" y="115.5" class="t-xs mid sb f-teal">1</text>
-<rect x="201" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="216" y="115.5" class="t-xs mid sb f-teal">2</text>
-<rect x="233" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="248" y="115.5" class="t-xs mid sb f-teal">3</text>
-<rect x="265" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="280" y="115.5" class="t-xs mid sb f-teal">4</text>
-<rect x="297" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="312" y="115.5" class="t-xs mid sb f-teal">5</text>
-<rect x="329" y="103" width="22" height="18" rx="2.5" class="f-red-bg s-red sw15"/>
-<text x="340" y="115.5" class="t-xs mid sb f-red">·3</text>
-<rect x="353" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="368" y="115.5" class="t-xs mid sb f-teal">6</text>
-<rect x="385" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="400" y="115.5" class="t-xs mid sb f-teal">7</text>
-<rect x="417" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="432" y="115.5" class="t-xs mid sb f-teal">8</text>
-<rect x="449" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="464" y="115.5" class="t-xs mid sb f-teal">9</text>
-<path d="M98,97 H142" class="arrow navy"/>
-<path d="M550,127 H506" class="arrow navy"/>
-<text x="634" y="117" class="t-l b end">179 pz</text>
-<text x="340" y="142" class="t-xs mid f-red sb">jednostka niepełna: 3 nt (delecja 1 nt w allelu 10)</text>
-<text x="10" y="188" class="t-s sb">allel 10</text>
-<line x1="92" y1="184" x2="564" y2="184" stroke="#8a98a3" stroke-width="2"/>
-<rect x="169" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="184" y="187.5" class="t-xs mid sb f-teal">1</text>
-<rect x="201" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="216" y="187.5" class="t-xs mid sb f-teal">2</text>
-<rect x="233" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="248" y="187.5" class="t-xs mid sb f-teal">3</text>
-<rect x="265" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="280" y="187.5" class="t-xs mid sb f-teal">4</text>
-<rect x="297" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="312" y="187.5" class="t-xs mid sb f-teal">5</text>
-<rect x="329" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="344" y="187.5" class="t-xs mid sb f-teal">6</text>
-<rect x="361" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="376" y="187.5" class="t-xs mid sb f-teal">7</text>
-<rect x="393" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="408" y="187.5" class="t-xs mid sb f-teal">8</text>
-<rect x="425" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="440" y="187.5" class="t-xs mid sb f-teal">9</text>
-<rect x="457" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
-<text x="472" y="187.5" class="t-xs mid sb f-teal">10</text>
-<path d="M98,169 H142" class="arrow navy"/>
-<path d="M558,199 H514" class="arrow navy"/>
-<text x="634" y="189" class="t-l b end">180 pz</text>
-<path d="M168,198 V203 H488 V198" fill="none" stroke="#007e83" stroke-width="1.2"/>
-<text x="328" y="216" class="t-xs mid f-teal sb">10 jednostek × 4 nt = 40 pz</text>
-</svg>
-    </div>
-    <div class="panel" data-badge="B" data-title="AATG i TCAT – ten sam powtórzony motyw na dwóch niciach">
-<svg viewBox="0 0 640 128" role="img" aria-label="Powtórzenie AATG na jednej nici odpowiada powtórzeniu TCAT na nici komplementarnej">
-<text x="10" y="30" class="t-xs sb">nić górna (5′→3′)</text>
-<text x="10" y="50" class="t-xs sb">nić komplementarna</text>
-<text x="10" y="104" class="t-xs sb">nić komplementarna</text>
-<text x="10" y="117" class="t-xs muted">zapisana 5′→3′</text>
-<text x="242" y="30" class="t-s mono end muted">5′–</text>
-<text x="256.5" y="30" class="t-m mono mid f-teal sb">A</text>
-<text x="269.5" y="30" class="t-m mono mid f-teal sb">A</text>
-<text x="282.5" y="30" class="t-m mono mid f-teal sb">T</text>
-<text x="295.5" y="30" class="t-m mono mid f-teal sb">G</text>
-<text x="308.5" y="30" class="t-m mono mid f-teal sb">A</text>
-<text x="321.5" y="30" class="t-m mono mid f-teal sb">A</text>
-<text x="334.5" y="30" class="t-m mono mid f-teal sb">T</text>
-<text x="347.5" y="30" class="t-m mono mid f-teal sb">G</text>
-<text x="360.5" y="30" class="t-m mono mid f-teal sb">A</text>
-<text x="373.5" y="30" class="t-m mono mid f-teal sb">A</text>
-<text x="386.5" y="30" class="t-m mono mid f-teal sb">T</text>
-<text x="399.5" y="30" class="t-m mono mid f-teal sb">G</text>
-<text x="412.5" y="30" class="t-m mono mid f-teal sb">A</text>
-<text x="425.5" y="30" class="t-m mono mid f-teal sb">A</text>
-<text x="438.5" y="30" class="t-m mono mid f-teal sb">T</text>
-<text x="451.5" y="30" class="t-m mono mid f-teal sb">G</text>
-<text x="466" y="30" class="t-s mono muted">–3′</text>
-<text x="242" y="50" class="t-s mono end muted">3′–</text>
-<text x="256.5" y="50" class="t-m mono mid f-ink">T</text>
-<text x="269.5" y="50" class="t-m mono mid f-ink">T</text>
-<text x="282.5" y="50" class="t-m mono mid f-ink">A</text>
-<text x="295.5" y="50" class="t-m mono mid f-ink">C</text>
-<text x="308.5" y="50" class="t-m mono mid f-ink">T</text>
-<text x="321.5" y="50" class="t-m mono mid f-ink">T</text>
-<text x="334.5" y="50" class="t-m mono mid f-ink">A</text>
-<text x="347.5" y="50" class="t-m mono mid f-ink">C</text>
-<text x="360.5" y="50" class="t-m mono mid f-ink">T</text>
-<text x="373.5" y="50" class="t-m mono mid f-ink">T</text>
-<text x="386.5" y="50" class="t-m mono mid f-ink">A</text>
-<text x="399.5" y="50" class="t-m mono mid f-ink">C</text>
-<text x="412.5" y="50" class="t-m mono mid f-ink">T</text>
-<text x="425.5" y="50" class="t-m mono mid f-ink">T</text>
-<text x="438.5" y="50" class="t-m mono mid f-ink">A</text>
-<text x="451.5" y="50" class="t-m mono mid f-ink">C</text>
-<text x="466" y="50" class="t-s mono muted">–5′</text>
-<path d="M251.5,18 V14 H300.5 V18" fill="none" stroke="#007e83" stroke-width="1.2"/>
-<path d="M303.5,18 V14 H352.5 V18" fill="none" stroke="#007e83" stroke-width="1.2"/>
-<path d="M355.5,18 V14 H404.5 V18" fill="none" stroke="#007e83" stroke-width="1.2"/>
-<path d="M407.5,18 V14 H456.5 V18" fill="none" stroke="#007e83" stroke-width="1.2"/>
-<text x="498" y="30" class="t-xs sb f-teal">(AATG)n</text>
-<path d="M354,58 V86" class="arrow"/>
-<text x="362" y="76" class="t-xs muted">odczyt od prawej do lewej</text>
-<text x="242" y="104" class="t-s mono end muted">5′–</text>
-<text x="256.5" y="104" class="t-m mono mid f-ink">C</text>
-<text x="269.5" y="104" class="t-m mono mid f-ink">A</text>
-<text x="282.5" y="104" class="t-m mono mid f-ink">T</text>
-<text x="295.5" y="104" class="t-m mono mid f-ink">T</text>
-<text x="308.5" y="104" class="t-m mono mid f-ink">C</text>
-<text x="321.5" y="104" class="t-m mono mid f-ink">A</text>
-<text x="334.5" y="104" class="t-m mono mid f-ink">T</text>
-<text x="347.5" y="104" class="t-m mono mid f-ink">T</text>
-<text x="360.5" y="104" class="t-m mono mid f-ink">C</text>
-<text x="373.5" y="104" class="t-m mono mid f-ink">A</text>
-<text x="386.5" y="104" class="t-m mono mid f-ink">T</text>
-<text x="399.5" y="104" class="t-m mono mid f-ink">T</text>
-<text x="412.5" y="104" class="t-m mono mid f-ink">C</text>
-<text x="425.5" y="104" class="t-m mono mid f-ink">A</text>
-<text x="438.5" y="104" class="t-m mono mid f-ink">T</text>
-<text x="451.5" y="104" class="t-m mono mid f-ink">T</text>
-<text x="466" y="104" class="t-s mono muted">–3′</text>
-<rect x="289.5" y="91" width="51.0" height="18" rx="3" fill="none" stroke="#c84d42" stroke-width="1.3"/>
-<rect x="341.5" y="91" width="51.0" height="18" rx="3" fill="none" stroke="#c84d42" stroke-width="1.3"/>
-<rect x="393.5" y="91" width="51.0" height="18" rx="3" fill="none" stroke="#c84d42" stroke-width="1.3"/>
-<text x="498" y="104" class="t-xs sb f-red">(TCAT)n</text>
-</svg>
-    </div>
-    <figcaption>A – produkt PCR = sekwencje flankujące ze starterami (stała część: 176 − 36 = 140 pz) + jednostki powtarzalne po 4 nt. Allel 9: 140 + 36 = 176 pz; allel 10: 140 + 40 = 180 pz; allel 9.3 (9 pełnych jednostek + 1 jednostka 3-nukleotydowa): 179 pz. Położenie jednostki niepełnej narysowano umownie. B – powtórzenie (AATG)n na jednej nici to na nici komplementarnej, zapisanej 5′→3′, ciąg CATTCATT…; odczytany od ostatniego T jednostki daje kolejne jednostki TCAT (czerwone ramki).</figcaption>
-    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 766, 774</p>
-  </figure>
-
-  <div class="box uwaga"><p>Drewa podaje dla TH01 jednostkę <b>AATG</b> (tak też na ryc. 29.1), a zdanie dalej mówi o allelu z 9 powtórzeniami motywu <b>TCAT</b>. Najpewniej nie są to dwa różne motywy, tylko ten sam ciąg powtórzeń zapisany z <b>drugiej, komplementarnej nici</b>: (AATG)<sub>n</sub> czytany na nici komplementarnej (5′→3′) to CATTCATT…, a zaczynając odczyt od ostatniego T każdej jednostki, otrzymuje się TCAT TCAT… (<a class="figref" href="#c09-fig-th01" data-panel="B"></a>). Podręcznik tego nie wyjaśnia.</p></div>
+  <div class="box uwaga"><p>Drewa podaje dla TH01 jednostkę <b>AATG</b> (tak też na ryc. 29.1 podręcznika), a zdanie dalej mówi o allelu z 9 powtórzeniami motywu <b>TCAT</b>. Najpewniej nie są to dwa różne motywy, tylko ten sam ciąg powtórzeń zapisany z <b>drugiej, komplementarnej nici</b>: (AATG)<sub>n</sub> czytany na nici komplementarnej (5′→3′) to CATTCATT…, a zaczynając odczyt od ostatniego T każdej jednostki, otrzymuje się TCAT TCAT… Podręcznik tego nie wyjaśnia.</p></div>
 
   <h3>Wynik genotypowania</h3>
   <p>Znając zależność między liczbą powtórzeń w allelach badanych układów a ich wielkością zmierzoną w określonych warunkach elektroforezy, można <b>jednoznacznie oznaczyć</b> fragmenty z nieznanej próbki – porównując ich wielkość z wielkością fragmentów wzorcowych. Wynikiem jest <b>profil genetyczny</b> próbki: po prostu <b>lista alleli</b> układów mikrosatelitarnych otrzymanych w amplifikacji jej DNA.</p>
