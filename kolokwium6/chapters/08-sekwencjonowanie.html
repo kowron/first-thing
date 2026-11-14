@@ -17,6 +17,8 @@
   <aside class="note pojecie" data-term="Heterodupleks"><p>dwuniciowy DNA, którego nici nie są w pełni komplementarne – w miejscu różnicy powstaje niesparowanie (<i>mismatch</i>).</p></aside>
   <p>Zamiast denaturować DNA przed elektroforezą, można zastosować czynnik denaturujący zawarty <b>bezpośrednio w żelu</b> (<b>PCR-DGGE</b>, <i>denaturing gradient gel electrophoresis</i>) albo <b>gradient temperatury</b> jako czynnik denaturujący (<b>PCR-TGGE</b>, <i>temperature gradient gel electrophoresis</i>). Spośród innych technik częściej używa się <b>analizy heterodupleksów</b> (HA, <i>heteroduplex analysis</i>) i <b>chemicznego rozszczepiania niesparowań heterodupleksów</b> (CMC, <i>chemical mismatch cleavage</i>). Odmianą HA jest <b>denaturująca wysokosprawna chromatografia cieczowa</b> – DHPLC (<i>denaturing high-performance liquid chromatography</i>), wykorzystująca wysoką rozdzielczość nowoczesnych wypełnień kolumn chromatograficznych. Łączy ona zalety dotychczasowych metod: <b>czułość sięga 100%</b> przy stosunkowo niskich kosztach, jest <b>szybka</b>, a z automatycznym podajnikiem preparatów (<b>autosamplerem</b>) pozwala wykonać analizę <b>200 próbek na dobę</b>.</p>
 
+  <div class="box zapamietaj"><p>Nieznaną mutację najpierw wykrywa się <b>metodą przesiewową</b>, a potem <b>sekwencjonuje</b> wskazany fragment. Metody przesiewowe nie odczytują sekwencji, tylko zmianę właściwości fizykochemicznych DNA: <b>SSCP</b> – konformacja pojedynczej nici; <b>DGGE</b> / <b>TGGE</b> – czynnik denaturujący w żelu / gradient temperatury; <b>HA</b> – analiza heterodupleksów; <b>CMC</b> – chemiczne rozszczepianie niesparowań; <b>DHPLC</b> – odmiana HA (czułość do 100%, 200 próbek na dobę). Wynik to tylko <b>podejrzenie mutacji</b>.</p></div>
+
   <p class="src">Źródło: Drewa s. 729–730</p>
 
   <!-- ============================================================ -->
@@ -161,8 +163,16 @@
   <!-- ============================================================ -->
   <h2 id="c08-cycle">Cycle sequencing – sekwencjonowanie obu nici</h2>
 
+  <aside class="note liceum"><p><b>PCR</b>: cykle denaturacji, przyłączania starterów i wydłużania przez termostabilną polimerazę. Polimeraza dobudowuje nukleotydy do końca 3′ startera (nić rośnie 5′→3′), więc starter wyznacza, którą nić się kopiuje.</p></aside>
   <p>Najbardziej dogodną techniką jest tzw. <b>cycle sequencing</b>. W czasie badania ocenia się sekwencje produktów PCR <b>obu nici DNA</b>. To kluczowe dla wiarygodności wyniku: <b>rzeczywistą zmianę</b> – w odróżnieniu od <b>artefaktów</b> – wykrywa się <b>w obu niciach</b> (<a class="figref" href="#c08-fig-cycle" data-panel="B"></a>).</p>
 
+  <p>Procedura sekwencjonowania składa się z kilku etapów (<a class="figref" href="#c08-fig-cycle" data-panel="A"></a>):</p>
+  <ol>
+    <li><b>Preparatywna reakcja PCR</b> – namnożenie wybranego fragmentu genu przy użyciu <b>pary specyficznych starterów</b>.</li>
+    <li><b>Asymetryczna reakcja PCR</b> – dla każdej próbki amplifikację przeprowadza się <b>osobno z każdym ze starterów</b>, z zastosowaniem <b>dideoksynukleotydów znakowanych barwnikami fluorescencyjnymi</b>; jedna reakcja daje odczyt jednej nici, druga – drugiej.</li>
+    <li><b>Elektroforeza na denaturującym żelu poliakrylamidowym</b> z równoczesną <b>detekcją i rejestracją przepływających produktów</b>.</li>
+    <li><b>Analiza otrzymanych wyników</b> z wykorzystaniem <b>pakietu programów komputerowych</b>.</li>
+  </ol>
   <figure class="fig" id="c08-fig-cycle" data-title="Cycle sequencing – etapy i sens odczytu obu nici">
     <div class="panel" data-badge="A" data-title="Cztery etapy procedury">
 <svg viewBox="0 0 640 192" role="img" aria-label="Cztery etapy sekwencjonowania cyklicznego">
@@ -288,15 +298,9 @@
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 730–731</p>
   </figure>
 
-  <aside class="note liceum"><p><b>PCR</b>: cykle denaturacji, przyłączania starterów i wydłużania przez termostabilną polimerazę. Polimeraza dobudowuje nukleotydy do końca 3′ startera (nić rośnie 5′→3′), więc starter wyznacza, którą nić się kopiuje.</p></aside>
-  <p>Procedura sekwencjonowania składa się z kilku etapów (<a class="figref" href="#c08-fig-cycle" data-panel="A"></a>):</p>
-  <ol>
-    <li><b>Preparatywna reakcja PCR</b> – namnożenie wybranego fragmentu genu przy użyciu <b>pary specyficznych starterów</b>.</li>
-    <li><b>Asymetryczna reakcja PCR</b> – dla każdej próbki amplifikację przeprowadza się <b>osobno z każdym ze starterów</b>, z zastosowaniem <b>dideoksynukleotydów znakowanych barwnikami fluorescencyjnymi</b>; jedna reakcja daje odczyt jednej nici, druga – drugiej.</li>
-    <li><b>Elektroforeza na denaturującym żelu poliakrylamidowym</b> z równoczesną <b>detekcją i rejestracją przepływających produktów</b>.</li>
-    <li><b>Analiza otrzymanych wyników</b> z wykorzystaniem <b>pakietu programów komputerowych</b>.</li>
-  </ol>
   <p>Nowoczesne aparaty do sekwencjonowania DNA mogą pracować z szybkością <b>milionów par zasad na godzinę</b>.</p>
+
+  <div class="box zapamietaj"><p><b>Cycle sequencing</b> – odczyt <b>obu nici</b> w czterech etapach: (1) <b>preparatywny PCR</b> z parą starterów → (2) <b>asymetryczny PCR</b> osobno z każdym starterem, z ddNTP znakowanymi fluorescencyjnie → (3) <b>denaturujący żel poliakrylamidowy</b> z detekcją na bieżąco → (4) <b>analiza komputerowa</b>. Zmiana rzeczywista – w obu niciach, artefakt – w jednej.</p></div>
 
   <p class="src">Źródło: Drewa s. 730–731</p>
 
@@ -316,6 +320,8 @@
     <li>Powstały ATP jest <b>rozkładany przez lucyferazę</b>, czego efektem jest <b>emisja światła</b> rejestrowanego przez aparaturę pomiarową.</li>
     <li>Po dodaniu <b>niewłaściwego dNTP</b> <b>nie obserwuje się emisji światła</b>, a sam związek jest <b>rozkładany przez apyrazę</b>.</li>
   </ol>
+  <div class="box zapamietaj" data-title="Kaskada pirosekwencjonowania"><p>Dodaje się <b>po jednym dNTP</b>. Pasujący wbudowuje <b>polimeraza DNA</b> → <b>pirofosforan</b> → <b>sulfurylaza ATP</b> (z 5′-fosfosiarczanem adenozyny) → <b>ATP</b> → <b>lucyferaza</b> → <b>światło</b>. Niewłaściwy dNTP: brak światła, rozkłada go <b>apyraza</b>.</p></div>
+
   <p>W ten sposób „<b>krok po kroku</b>” zachodzi synteza nici komplementarnej i jednocześnie zbierana jest informacja o jej sekwencji. Podejście to pozwala znacząco <b>przyśpieszyć</b> cały proces przy znacznej <b>redukcji kosztów</b>.</p>
 
   <figure class="fig" id="c08-fig-piro" data-title="Pirosekwencjonowanie – światło jako odpowiedź „tak”">
@@ -554,6 +560,15 @@
   <p>Do syntezy używa się dNTP znakowanych <b>różnymi znacznikami fluorescencyjnymi</b> dołączonymi do <b>końcowego atomu fosforu</b>. Gdy do komory wprowadza się pasujący substrat, polimeraza włącza nukleotyd, a fluorofor znajduje się <b>w zasięgu detekcji o rząd wielkości dłużej</b>, niż trwa dyfuzja cząsteczki z komory. Po włączeniu nukleotydu <b>znakowany pirofosforan dyfunduje</b> (znacznik odchodzi z końcowym fosforanem, więc nić pozostaje nieznakowana) i proces się powtarza. Podstawową zaletą jest <b>szybkość</b>: synteza biegnie z szybkością <b>10 par zasad na sekundę</b>, więc teoretycznie jeden chip pozwala zsekwencjonować <b>ponad milion par zasad w ciągu minuty</b>, co stanowi niebywały postęp w tej dziedzinie.</p>
 
   <div class="box przyklad"><p>Skąd „ponad milion par zasad na minutę”? Jedna polimeraza: 10 pz/s × 60 s = <b>600 pz/min</b>. Aby przekroczyć 1 000 000 pz/min, potrzeba 1 000 000 : 600 ≈ <b>1667</b> komór pracujących równolegle – a chip ma ich <b>kilka tysięcy</b>. (Rachunek własny).</p></div>
+
+  <div class="numbers">
+    <div class="n"><span class="v">300–1000<small>pz</small></span><span class="d">odczyt z jednej kapilary</span></div>
+    <div class="n"><span class="v">200<small>próbek</small></span><span class="d">na dobę w DHPLC</span></div>
+    <div class="n"><span class="v">1996<small>r.</small></span><span class="d">pirosekwencjonowanie</span></div>
+    <div class="n"><span class="v">≥ 1000<small>kopii</small></span><span class="d">każdej matrycy na płytce</span></div>
+    <div class="n"><span class="v">10<small>nm</small></span><span class="d">komora SMRT (20 zl)</span></div>
+    <div class="n"><span class="v">10<small>pz/s</small></span><span class="d">synteza w SMRT</span></div>
+  </div>
 
   <p class="src">Źródło: Drewa s. 731–732</p>
 

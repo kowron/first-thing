@@ -4,19 +4,21 @@
   data-short="Część praktyczna – czytanie wyników"
   data-kicker="Wzorzec mas · trawienie restrykcyjne · gen ACE · pasek HPV">
 
-  <p class="lead">Na zajęciach praktycznych wynik trzeba umieć przeczytać: odczytać wielkość produktu, rozpoznać genotyp z układu prążków, zinterpretować pasek hybrydyzacyjny i ocenić, czy żel w ogóle nadaje się do interpretacji. Ten rozdział zamienia reguły z Drewy na procedury krok po kroku i ćwiczy je na wymyślonych przykładach.</p>
+  <p class="lead">Na zajęciach praktycznych trzeba umieć przeczytać wynik: odczytać wielkość produktu PCR, rozpoznać genotyp z układu prążków po cięciu restryktazą, zinterpretować wynik hybrydyzacji i ocenić, czy żel w ogóle nadaje się do interpretacji. Rozdział zamienia reguły z Drewy na procedury krok po kroku.</p>
 
   <!-- ============================================================ -->
   <h2 id="c11-wielkosc">Wielkość produktu PCR – odczyt ze wzorca krok po kroku</h2>
 
   <aside class="note liceum"><p><b>PCR</b> powiela in vitro wybrany odcinek DNA. Odcinek ten ograniczają dwa startery, dlatego wszystkie kopie produktu mają tę samą, z góry znaną długość.</p></aside>
-  <p>Elektroforeza analityczna pozwala ustalić <b>wielkość fragmentów DNA</b> przez porównanie tempa migracji badanych prążków z <b>wzorcem mas cząsteczkowych</b> – preparatem zawierającym fragmenty DNA o znanych wielkościach. Wzorzec rozdziela się <b>w tym samym żelu</b> co badane cząsteczki. Na tej samej wysokości żelu, w tym samym prążku, leżą fragmenty <b>identycznej wielkości</b>. Zasadę i krzywą wzorcową omawia <a class="chapref" href="#c01"></a>; tu – sama procedura odczytu (<a class="figref" href="#c11-fig-odczyt"></a>).</p>
+  <p>Elektroforeza analityczna pozwala ustalić <b>wielkość fragmentów DNA</b> przez porównanie tempa migracji badanych prążków z <b>wzorcem mas cząsteczkowych</b> – preparatem zawierającym fragmenty DNA o znanych wielkościach. Wzorzec rozdziela się <b>w tym samym żelu</b> co badane cząsteczki. Na tej samej wysokości żelu, w tym samym prążku, leżą fragmenty <b>identycznej wielkości</b>. Zasadę omawia <a class="chapref" href="#c01"></a>; tu – sama procedura odczytu (<a class="figref" href="#c11-fig-odczyt"></a>).</p>
+
+  <aside class="note poza"><p>Droga migracji liniowego DNA jest w przybliżeniu proporcjonalna do <b>logarytmu</b> jego długości. Dlatego między prążkami wzorca interpoluje się w skali logarytmicznej albo odczytuje wynik z krzywej wzorcowej (log długości względem drogi).</p></aside>
 
   <ol>
     <li><b>Znajdź wzorzec</b> i przypisz jego prążkom wielkości z opisu wzorca. Bez wzorca wielkości nie da się ustalić.</li>
     <li><b>Ustal kierunek</b>: studzienki (start) są po stronie katody, DNA wędruje do anody, a krótsze fragmenty leżą dalej od startu.</li>
     <li><b>Dla każdego prążka znajdź dwa sąsiednie prążki wzorca</b> – większy powyżej, mniejszy poniżej. To przedział, w którym leży wynik.</li>
-    <li><b>Oszacuj położenie w przedziale</b>. Droga migracji zależy od logarytmu długości, więc w szerokim przedziale interpoluje się w skali logarytmicznej albo z krzywej wzorcowej.</li>
+    <li><b>Oszacuj położenie w przedziale</b> – w szerokim przedziale w skali logarytmicznej (notatka obok).</li>
     <li><b>Porównaj z oczekiwaną długością</b> produktu z protokołu i zapisz wynik jako „ok. X pz”.</li>
   </ol>
 
@@ -48,17 +50,16 @@
       <div class="panel" data-badge="B" data-title="Ścieżka 1 – odczyt">
         <svg viewBox="0 0 296 250" role="img" aria-label="Powiększenie odczytu prążka między 400 i 300 pz">
           <rect x="20" y="20" width="96" height="200" rx="6" class="gel"/>
-          <rect x="30" y="40" width="30" height="5" rx="2" class="band ladder"/>
+          <rect x="30" y="35.7" width="30" height="5" rx="2" class="band ladder"/>
           <rect x="30" y="90" width="30" height="5" rx="2" class="band ladder"/>
           <rect x="30" y="160" width="30" height="5" rx="2" class="band ladder"/>
-          <rect x="30" y="206" width="30" height="5" rx="2" class="band ladder"/>
           <rect x="76" y="125" width="30" height="5" rx="2" class="band"/>
           <line x1="60" y1="92.5" x2="150" y2="92.5" class="guide"/><line x1="60" y1="162.5" x2="150" y2="162.5" class="guide"/>
           <line x1="106" y1="127.5" x2="150" y2="127.5" class="s-teal sw1" stroke-dasharray="3 2"/>
           <text x="156" y="96" class="t-s sb">400 pz – 30 mm</text>
           <text x="156" y="131" class="t-s sb f-teal">próbka – 33 mm</text>
           <text x="156" y="166" class="t-s sb">300 pz – 36 mm</text>
-          <text x="45" y="34" class="t-xs mid muted">500</text><text x="45" y="226" class="t-xs mid muted">200</text>
+          <text x="45" y="31" class="t-xs mid muted">500</text>
           <text x="156" y="30" class="t-xs muted">przedział: 300–400 pz</text>
           <text x="156" y="44" class="t-xs muted">próbka w połowie drogi</text>
           <text x="156" y="184" class="t-xs muted">log 400 = 2,60</text><text x="156" y="196" class="t-xs muted">log 300 = 2,48</text>
@@ -71,39 +72,29 @@
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 705, 712</p>
   </figure>
 
-  <div class="box przyklad"><p>(Liczby przykładowe.) W ścieżce 1 prążek wzorca 400 pz leży 30 mm od studzienki, prążek 300 pz – 36 mm, a produkt – 33 mm. Produkt jest w połowie przedziału. Interpolacja logarytmiczna: (2,602 + 2,477) : 2 = 2,540; 10<sup>2,54</sup> ≈ 347, czyli <b>ok. 350 pz</b>. W tak wąskim przedziale średnia arytmetyczna (350 pz) daje praktycznie ten sam wynik; różnica rośnie, gdy prążki wzorca leżą daleko od siebie.</p></div>
+  <div class="box przyklad"><p>(Liczby przykładowe.) W ścieżce 1 prążek wzorca 400 pz leży 30 mm od studzienki, prążek 300 pz – 36 mm, a produkt – 33 mm, czyli w połowie przedziału. Interpolacja logarytmiczna: (2,602 + 2,477) : 2 ≈ 2,540; 10<sup>2,540</sup> ≈ 347, czyli <b>ok. 350 pz</b>. W tak wąskim przedziale średnia arytmetyczna daje praktycznie to samo; różnica rośnie, gdy prążki wzorca leżą daleko od siebie.</p></div>
 
-  <aside class="note warto"><p>Ilość DNA ocenia się z intensywności fluorescencji prążka względem wzorca. Bromek etydyny uwidacznia DNA od ok. 10 ng w prążku; jednoniciowe kwasy nukleinowe barwią się znacznie słabiej.</p></aside>
-  <p>Typ żelu dobiera się do spodziewanej wielkości produktu. Żele agarozowe rozdzielają cząsteczki od 0,1 do 20 kpz, poliakrylamidowe – mniejsze fragmenty, 5–1000 pz, z dokładnością do jednego nukleotydu. Przy RNA całkowitym orientacyjnym wzorcem są prążki rRNA (u człowieka 18S – 1,9 kpz, 28S – 5,0 kpz).</p>
+  <p>Typ żelu dobiera się do spodziewanej wielkości produktu: żele agarozowe rozdzielają cząsteczki 0,1–20 kpz, poliakrylamidowe – mniejsze fragmenty, 5–1000 pz (<a class="chapref" href="#c02"></a>).</p>
 
-  <div class="numbers">
-    <div class="n"><span class="v">0,1–20<small>kpz</small></span><span class="d">zakres żelu agarozowego</span></div>
-    <div class="n"><span class="v">5–1000<small>pz</small></span><span class="d">zakres żelu poliakrylamidowego</span></div>
-    <div class="n"><span class="v">~10<small>ng</small></span><span class="d">DNA w prążku widoczne po bromku etydyny</span></div>
-    <div class="n"><span class="v">5–8<small>V/cm</small></span><span class="d">napięcie rozdziału</span></div>
-    <div class="n"><span class="v">1,9<small>kpz</small></span><span class="d">rRNA 18S u człowieka</span></div>
-    <div class="n"><span class="v">5,0<small>kpz</small></span><span class="d">rRNA 28S u człowieka</span></div>
-  </div>
-
-  <p class="src">Źródło: Drewa s. 705, 712–713</p>
+  <p class="src">Źródło: Drewa s. 705, 712–713 · uzupełnienie spoza Drewy</p>
 
   <!-- ============================================================ -->
   <h2 id="c11-restrykcja">Cięcie restryktazą – jak przewidzieć i odczytać wzór prążków</h2>
 
   <aside class="note pojecie" data-term="Wzór restrykcyjny"><p>zestaw wielkości fragmentów otrzymanych po trawieniu cząsteczki danym enzymem. Wzajemne ułożenie miejsc cięcia to mapa restrykcyjna.</p></aside>
-  <p><b>Enzymy restrykcyjne</b> (restryktazy) to DNA endonukleazy występujące tylko w komórkach bakterii i sinic. Tną DNA w miejscu swoistej sekwencji, zwykle symetrycznej, o długości 4–8 pz. <b>Długość fragmentów zależy od odległości między sekwencjami rozpoznawanymi przez enzym.</b> Po elektroforezie fragmenty układają się od najmniejszych do największych, a wielkości fragmentów tworzą <b>wzór restrykcyjny</b>.</p>
+  <p><b>Enzymy restrykcyjne</b> (restryktazy) to DNA endonukleazy bakterii i sinic, tnące DNA w miejscu swoistej, zwykle symetrycznej sekwencji o długości 4–8 pz. <b>Długość fragmentów zależy od odległości między sekwencjami rozpoznawanymi przez enzym</b>; po elektroforezie fragmenty układają się od najmniejszych do największych, a ich wielkości tworzą <b>wzór restrykcyjny</b>. Enzymy <b>czwórkowe</b> rozpoznają sekwencję występującą średnio co 256 pz (bardzo małe fragmenty), <b>szóstkowe</b> – statystycznie co ok. 4096 pz.</p>
 
-  <p>Enzymy <b>czwórkowe</b> rozpoznają sekwencję czteronukleotydową, występującą średnio co 256 pz, i tną DNA na bardzo małe fragmenty. <b>Szóstkowe</b> rozpoznają sekwencję sześcionukleotydową, obecną statystycznie co ok. 4096 pz. W warunkach odbiegających od optymalnych enzym może ciąć także sekwencje różniące się np. o jedną zasadę – to aktywność <b>„star”</b> (dla EcoRI zamiast GAATTC np. CAATTC czy GAATTG). Dlatego trzeba przestrzegać pH i stężenia jonów magnezu podanych dla enzymu.</p>
+  <p>W warunkach odbiegających od optymalnych (pH, stężenie jonów magnezu) enzym może ciąć także sekwencje różniące się np. o jedną zasadę – to aktywność <b>„star”</b> (dla EcoRI zamiast GAATTC np. CAATTC czy GAATTG).</p>
 
   <h3>Enzym AluI</h3>
   <aside class="note poza"><p><b>AluI</b> rozpoznaje sekwencję <span class="seq">AGCT</span> (enzym czwórkowy) i tnie ją między G i C, tworząc tępe końce. Pochodzi z bakterii <i>Arthrobacter luteus</i> – zgodnie z regułą nazewnictwa (A + lu).</p></aside>
-  <p>Nazwę enzymu tworzy się od pierwszej litery nazwy rodzajowej i dwóch pierwszych liter nazwy gatunkowej bakterii; cyfra rzymska oznacza kolejność wyizolowania (HindIII – trzeci enzym z <i>Haemophilus influenzae</i> serotypu d). Drewa wspomina o <b>AluI</b> przy sekwencjach powtarzalnych: <b>sekwencje Alu</b> (rodzina SINE) zawdzięczają nazwę endonukleazie restrykcyjnej AluI, która rozpoznaje określone miejsca w obrębie tej sekwencji. Sekwencje Alu są <b>retrotranspozonami</b> – ich transkrypty ulegają odwrotnej transkrypcji i w postaci DNA wbudowują się w genom w nowym miejscu.</p>
+  <p>Nazwę enzymu tworzy się od pierwszej litery nazwy rodzajowej i dwóch pierwszych liter nazwy gatunkowej bakterii, a cyfra rzymska oznacza kolejność wyizolowania (HindIII – trzeci enzym z <i>H. influenzae</i>). Drewa wspomina o <b>AluI</b> przy sekwencjach powtarzalnych: <b>sekwencje Alu</b> (rodzina SINE) zawdzięczają nazwę endonukleazie restrykcyjnej AluI, która rozpoznaje określone miejsca w obrębie tej sekwencji. Sekwencje Alu są <b>retrotranspozonami</b> – ich transkrypty ulegają odwrotnej transkrypcji i w postaci DNA wbudowują się w genom w nowym miejscu.</p>
 
-  <div class="box uwaga"><p>Drewa podaje dla sekwencji Alu dwie różne wartości. Na s. 63: długość ok. 300 pz i ok. 500 000 kopii w genomie. Na s. 124: fragmenty długości 280 pz, występujące ok. miliona razy. To przybliżenia z różnych źródeł; na kolokwium bezpiecznie podać „ok. 300 pz (280 pz), setki tysięcy – ok. miliona kopii”.</p></div>
+  <div class="box uwaga"><p>Drewa podaje dla sekwencji Alu różne wartości: na s. 63 – długość ok. 300 pz i ok. 500 000 kopii w genomie człowieka, na s. 124 – 280 pz i ok. miliona kopii. Obie pary liczb są przybliżeniami; bezpiecznie zapamiętać „ok. 300 pz, setki tysięcy – ok. miliona kopii”.</p></div>
 
   <h3>Logika genotypowania po trawieniu</h3>
   <aside class="note liceum"><p><b>Homozygota</b> ma dwa jednakowe allele danego genu, <b>heterozygota</b> – dwa różne. W komórce somatycznej każdy gen autosomalny występuje w dwóch kopiach, po jednej od każdego z rodziców.</p></aside>
-  <p>Regułę podaje Drewa przy hybrydyzacji Southerna, ale stosuje się ją tak samo do produktów PCR trawionych enzymem (PCR i enzymy restrykcyjne to podstawa techniki <b>RFLP</b>, stosowanej m.in. w diagnostyce fenyloketonurii, hemofilii i niedokrwistości sierpowatej). Jeśli mutacja powoduje <b>utratę miejsca restrykcyjnego</b>:</p>
+  <p>Regułę podaje Drewa przy hybrydyzacji Southerna, ale stosuje się ją tak samo do produktów PCR trawionych enzymem (<a class="figref" href="#c11-fig-restrykcja"></a>) (PCR i enzymy restrykcyjne to podstawa techniki <b>RFLP</b>, stosowanej m.in. w diagnostyce fenyloketonurii, hemofilii i niedokrwistości sierpowatej). Jeśli mutacja powoduje <b>utratę miejsca restrykcyjnego</b>:</p>
   <ul>
     <li><b>allel z miejscem</b> zostaje przecięty – daje dwa krótsze fragmenty;</li>
     <li><b>allel bez miejsca</b> nie jest cięty – daje jeden fragment o <b>większej długości</b>;</li>
@@ -111,9 +102,7 @@
     <li><b>jeden prążek o większej masie</b> – utrata miejsc w obu allelach, czyli <b>homozygota</b> mutacji.</li>
   </ul>
 
-  <div class="box przyklad"><p>(Przypadek wymyślony.) Produkt 300 pz, enzym tnie allel prawidłowy na 200 + 100 pz. Ścieżka pacjenta A: 200 i 100 pz → homozygota prawidłowa. Pacjent B: 300, 200 i 100 pz → heterozygota. Pacjent C: tylko 300 pz → homozygota zmutowana (pod warunkiem, że trawienie zadziałało – sprawdza się to na próbce, o której wiadomo, że ma miejsce cięcia).</p></div>
-
-  <aside class="note poza"><p>Prążek nieprzeciętego produktu obok fragmentów cięcia może też oznaczać <b>niepełne trawienie</b> (np. za mało enzymu, za krótki czas). Dlatego warunki trawienia muszą być takie, by allel z miejscem został przecięty całkowicie.</p></aside>
+  <aside class="note poza"><p>Prążek nieprzeciętego produktu obok fragmentów cięcia może też oznaczać <b>niepełne trawienie</b> (np. za mało enzymu, za krótki czas). Skuteczność trawienia sprawdza się na próbce, o której wiadomo, że ma miejsce cięcia.</p></aside>
   <div class="box zapamietaj" data-title="Trzy kontrole wzoru restrykcyjnego"><p><b>1.</b> Suma długości fragmentów z jednego allela równa się długości produktu nietrawionego. <b>2.</b> Dwa fragmenty identycznej wielkości dają jeden prążek – mniej prążków nie musi znaczyć mniej cięć. <b>3.</b> Prążki nieprzewidziane przez mapę mogą wynikać z aktywności „star” w nieoptymalnych warunkach trawienia.</p></div>
 
   <figure class="fig" id="c11-fig-restrykcja" data-title="Utrata miejsca restrykcyjnego – wzory prążków u homo- i heterozygot">
@@ -160,13 +149,15 @@
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 705, 716</p>
   </figure>
 
-  <p class="src">Źródło: Drewa s. 63, 124, 703–705, 716, 726</p>
+  <p class="src">Źródło: Drewa s. 63, 124, 703–705, 716, 726 · uzupełnienie spoza Drewy</p>
 
   <!-- ============================================================ -->
   <h2 id="c11-ace">Polimorfizm insercyjno-delecyjny genu ACE</h2>
 
-  <aside class="note liceum"><p><b>Intron</b> to niekodujący odcinek genu, przepisywany na pre-mRNA, ale wycinany podczas składania (splicingu). Zmiana długości intronu zwykle nie zmienia sekwencji białka.</p></aside>
+  <aside class="note liceum"><p><b>Intron</b> – niekodujący odcinek genu, wycinany z pre-mRNA podczas składania (splicingu).</p></aside>
   <p>Drewa nie opisuje genu ACE, ale opisuje sam typ zmienności. <b>Polimorfizm insercyjno-delecyjny</b> polega na tym, że allele różnią się obecnością lub brakiem odcinka DNA, a więc <b>długością</b>. Przykład z Drewy: w promotorze genu transportera serotoniny (5-HTTLPR) allel <b>s</b> ma sekwencję krótszą o 44 pz, a allel insercyjny jest dłuższy. Takie allele odróżnia się bez trawienia: po PCR produkty mają różną długość i w żelu leżą na różnej wysokości.</p>
+
+  <div class="box obraz"><p>Insercja to <b>wagon doczepiony do pociągu</b>. Startery to dwa perony, między którymi liczymy długość składu. Pociąg z wagonem (allel insercyjny) jest dłuższy i w żelu „jedzie” wolniej – zostaje wyżej. Heterozygota to dwa pociągi naraz: widać oba.</p></div>
 
   <div class="box poza" data-title="Poza Drewą · polimorfizm I/D genu ACE"><p>Polimorfizm I/D genu <b>ACE</b> polega na obecności (allel <b>I</b>, insercja) lub braku (allel <b>D</b>, delecja) <b>sekwencji Alu</b> o długości ok. 287 pz w <b>intronie 16</b>. Po PCR allel I daje dłuższy produkt (ok. 490 pz), allel D – krótszy (ok. 190 pz). Genotyp <b>II</b> – jeden prążek górny, <b>DD</b> – jeden dolny, <b>ID</b> – oba; pusta ścieżka przy prawidłowym wzorcu – brak wyniku. Dokładne wielkości zależą od użytych starterów – sprawdź je w protokole z ćwiczeń.</p></div>
 
@@ -211,18 +202,15 @@
     <p class="fig-src">Źródło: opracowanie własne; zasada polimorfizmu insercyjno-delecyjnego – Drewa s. 835; dane genu ACE – uzupełnienie spoza Drewy</p>
   </figure>
 
-  <div class="box obraz"><p>Insercja Alu to <b>wagon doczepiony do pociągu</b>. Startery to dwa perony, między którymi liczymy długość składu. Pociąg z wagonem (allel I) jest dłuższy i w żelu „jedzie” wolniej – zostaje wyżej. Heterozygota to dwa pociągi naraz: widać oba.</p></div>
-
   <p class="src">Źródło: Drewa s. 124, 835 · uzupełnienie spoza Drewy</p>
 
   <!-- ============================================================ -->
   <h2 id="c11-hpv">Wynik hybrydyzacji punktowej i paskowej – wirus HPV</h2>
 
-  <aside class="note liceum"><p><b>Komplementarność</b>: A paruje z T (w RNA z U), G z C – dlatego nić łączy się tylko z nicią o sekwencji komplementarnej.</p></aside>
+  <aside class="note liceum"><p><b>Komplementarność</b>: A paruje z T (w RNA z U), G z C.</p></aside>
   <p><b>Hybrydyzacja</b> to tworzenie podwójnej helisy między komplementarnymi niciami DNA lub RNA pochodzącymi z różnych źródeł. Jedna część hybrydy jest unieruchomiona na membranie, druga – <b>sonda molekularna</b> – jest w roztworze i jest znakowana. Sygnał oznacza więc jedno: <b>w tym miejscu jest sekwencja komplementarna do sondy</b>. Intensywność sygnału zależy od aktywności sondy i ilości komplementarnego DNA (<a class="chapref" href="#c04"></a>).</p>
 
-  <aside class="note warto"><p>Pierwowzorem mikromacierzy były paski lub krążki bibułowe z wzorcowymi próbami DNA. W mikromacierzy sekwencje wzorcowe rozmieszcza się w uporządkowany sposób (<a class="chapref" href="#c07"></a>).</p></aside>
-  <p>W <b>hybrydyzacji punktowej (dot blot)</b> wiele próbek DNA nanosi się w postaci kropli na ten sam filtr i hybrydyzuje z tą samą sondą. W wariancie <b>slot blot</b> DNA nanosi się do szczelin specjalnego wzorca. Po wprowadzeniu wzorców ilości DNA technika może służyć analizie ilościowej. Znakowanie <b>enzymatyczne</b> daje reakcję barwną, a <b>immunochemiczne</b> wykorzystuje hapten (biotynę, digoksygeninę) i przeciwciało sprzężone z alkaliczną fosfatazą lub peroksydazą.</p>
+    <p>W <b>hybrydyzacji punktowej (dot blot)</b> wiele próbek DNA nanosi się w postaci kropli na ten sam filtr i hybrydyzuje z tą samą sondą. W wariancie <b>slot blot</b> DNA nanosi się do szczelin specjalnego wzorca. Po wprowadzeniu wzorców ilości DNA technika może służyć analizie ilościowej. Sygnał bywa barwny – przy znakowaniu <b>enzymatycznym</b> lub <b>immunochemicznym</b> (hapten i przeciwciało sprzężone z enzymem; <a class="chapref" href="#c04"></a>).</p>
 
   <figure class="fig" id="c11-fig-hpv" data-title="Hybrydyzacja punktowa i odczyt paska hybrydyzacyjnego">
     <div class="panels cols-2">
@@ -266,17 +254,14 @@
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 714–717; budowa paska – uzupełnienie spoza Drewy</p>
   </figure>
 
-  <p>Odwrotny układ – na pasku unieruchomione są różne sondy wzorcowe, a znakowany jest materiał badany – Drewa opisuje jako pierwowzór mikromacierzy. Wtedy o tym, <b>jaką</b> sekwencję wykryto, decyduje <b>położenie</b> sygnału na pasku, a nie jego kolor.</p>
+  <p>W mikromacierzy (<a class="chapref" href="#c07"></a>) układ jest odwrotny: na nośniku rozmieszcza się w zaplanowany sposób wiele sekwencji wzorcowych, a znakowany jest materiał badany; jej pierwowzorem były paski lub krążki bibułowe z wzorcowymi próbami DNA. O tym, <b>jaką</b> sekwencję wykryto, decyduje wtedy <b>położenie</b> sygnału.</p>
 
   <aside class="note pojecie" data-term="HPV"><p>(<i>Human Papillomavirus</i>) – wirus brodawczaka ludzkiego, onkogenny wirus DNA.</p></aside>
-  <p><b>Wirus brodawczaka ludzkiego (HPV)</b> należy do wirusów DNA o właściwościach onkogennych. Jest związany z rakiem płaskonabłonkowym szyjki macicy, jamy ustnej i krtani, a także z rakiem prącia, sromu, odbytu i skóry. Wirusy onkogenne kodują białka unieczynniające produkty genów supresorowych: <b>białko E6</b> HPV tworzy nieaktywne kompleksy z białkiem p53, a <b>onkoproteina E7</b> HPV-16 upośledza hamowanie cyklu komórkowego przez białko p21 i utrudnia łączenie pRb z deacetylazą histonową. PCR pozwala z ogromną czułością wykazać obecność wirusa brodawczaka w wymazie z szyjki macicy.</p>
+  <p><b>Wirus brodawczaka ludzkiego (HPV)</b> to onkogenny wirus DNA, związany m.in. z rakiem płaskonabłonkowym szyjki macicy, jamy ustnej i krtani, a także z rakiem prącia, sromu, odbytu i skóry. Jego onkoproteiny unieczynniają produkty genów supresorowych (białko E6 – p53, onkoproteina E7 – m.in. p21 i pRb). <b>PCR</b> pozwala z ogromną czułością wykazać obecność wirusa brodawczaka w wymazie z szyjki macicy.</p>
 
-  <div class="box poza" data-title="Poza Drewą · jak zbudowany jest pasek do genotypowania HPV"><p>DNA wirusa namnaża się najpierw w PCR ze starterami dającymi znakowany produkt. Na pasku (kasetce) każda pozycja to <b>sonda dla innego typu wirusa</b>; są też <b>pola kontrolne</b> (np. kontrola reakcji barwnej i kontrola obecności DNA). Po hybrydyzacji i reakcji barwnej odczytuje się, w których pozycjach pojawił się prążek. Układ pozycji jest różny w różnych testach – odczytuje się go z karty dołączonej do zestawu.</p></div>
-
-  <div class="box poza" data-title="Poza Drewą · odczyt paska krok po kroku"><ol>
-    <li>Sprawdź <b>pola kontrolne</b> – bez nich wynik jest nieważny, nawet jeśli widać inne prążki.</li>
-    <li>Przyłóż pasek do karty odczytu i ustal, w których <b>pozycjach</b> są prążki.</li>
-    <li>Każda pozycja z prążkiem = obecność DNA danego typu; kilka pozycji = kilka typów naraz.</li>
+  <div class="box poza" data-title="Poza Drewą · pasek do genotypowania HPV i jego odczyt"><p>DNA wirusa namnaża się w PCR ze starterami dającymi znakowany produkt, który hybrydyzuje z paskiem. Każda pozycja paska to <b>sonda dla innego typu wirusa</b>; są też <b>pola kontrolne</b>. Układ pozycji odczytuje się z karty dołączonej do testu.</p><ol>
+    <li>Najpierw <b>kontrola</b> – bez niej wynik jest nieważny, nawet jeśli widać inne prążki.</li>
+    <li>Każda pozycja z prążkiem = DNA danego typu; kilka pozycji = kilka typów naraz.</li>
     <li>Brak prążków typów przy prawidłowej kontroli = wynik ujemny <b>tylko dla typów obecnych na pasku</b>.</li>
   </ol></div>
 
@@ -285,7 +270,9 @@
   <!-- ============================================================ -->
   <h2 id="c11-bledy">Typowe błędy przy czytaniu żelu</h2>
 
-  <p>Zanim zinterpretuje się prążki, trzeba ocenić, czy żel i preparat są wiarygodne. Drewa wymienia, co elektroforeza analityczna mówi o jakości preparatu – te same obserwacje są najczęstszymi pułapkami interpretacji.</p>
+  <p>Zanim zinterpretuje się prążki, trzeba ocenić, czy żel i preparat są wiarygodne. Drewa wymienia, co elektroforeza analityczna mówi o jakości preparatu (<a class="chapref" href="#c01"></a>) – te same obserwacje są najczęstszymi pułapkami interpretacji; pułapki wzoru restrykcyjnego zebrano wyżej (<a class="pageref" href="#c11-restrykcja"></a>).</p>
+
+  <div class="box zapamietaj"><p>Kolejność czytania żelu: <b>wzorzec</b> (czy jest i czy rozdzielony) → <b>jakość</b> (smugi, kieszonki, RNA) → <b>wielkość</b> każdego prążka względem wzorca → <b>porównanie z oczekiwanym wzorem</b> (produkt, fragmenty po trawieniu, genotyp).</p></div>
 
   <table class="tbl wide">
     <thead><tr><th style="width:26%">Co widać</th><th style="width:40%">Co to oznacza (wg Drewy)</th><th>Wniosek</th></tr></thead>
@@ -295,26 +282,19 @@
       <tr><td>smuga przed błękitem bromofenolowym</td><td>RNA zanieczyszczający preparat DNA</td><td>to nie produkt PCR – nie liczyć jako prążka</td></tr>
       <tr><td>brak wzorca lub wzorzec nierozdzielony</td><td>wielkość ustala się tylko przez porównanie ze wzorcem w tym samym żelu</td><td>wielkości nie da się ustalić</td></tr>
       <tr><td>słaby prążek lub jego brak</td><td>bromek etydyny wykrywa DNA od ok. 10 ng w prążku; jednoniciowe kwasy nukleinowe barwią się słabiej</td><td>za mało DNA – brak prążka nie zawsze znaczy brak sekwencji</td></tr>
-      <tr><td>zanikające prążki rRNA 28S i 18S</td><td>postępująca degradacja RNA</td><td>RNA złej jakości</td></tr>
-      <tr><td>nieprzewidziane prążki po trawieniu</td><td>aktywność „star” – cięcie sekwencji podobnych w nieoptymalnych warunkach</td><td>powtórzyć trawienie w zalecanych warunkach</td></tr>
-      <tr><td>mniej prążków, niż przewiduje mapa</td><td>fragmenty identycznej wielkości leżą w jednym prążku</td><td>sprawdzić sumę długości, nie liczbę prążków</td></tr>
       <tr><td>żel zdeformowany, prążki rozmyte</td><td>zbyt wysokie napięcie: wzrost temperatury, roztopienie żelu, denaturacja DNA</td><td>rozdział niewiarygodny</td></tr>
     </tbody>
   </table>
-
-  <div class="box zapamietaj"><p>Kolejność czytania żelu: <b>wzorzec</b> (czy jest i czy rozdzielony) → <b>jakość</b> (smugi, kieszonki, RNA) → <b>wielkość</b> każdego prążka względem wzorca → <b>porównanie z oczekiwanym wzorem</b> (produkt, fragmenty po trawieniu, genotyp).</p></div>
 
   <p class="src">Źródło: Drewa s. 704–705, 712–713</p>
 
   <!-- ============================================================ -->
   <div class="w60">
     <ul>
-      <li>Wielkość produktu odczytuje się <b>tylko względem wzorca mas w tym samym żelu</b>: dwa sąsiednie prążki wzorca wyznaczają przedział, skala jest logarytmiczna.</li>
-      <li>Utrata miejsca restrykcyjnego: <b>homozygota</b> – jeden większy prążek, <b>heterozygota</b> – prążek większy i prążki allela prawidłowego; suma fragmentów = produkt nietrawiony.</li>
-      <li><b>AluI</b> dało nazwę sekwencjom Alu (retrotranspozony, ok. 280–300 pz); fragmenty identycznej wielkości tworzą jeden prążek, aktywność „star” daje prążki dodatkowe.</li>
+      <li>Najpierw <b>wzorzec i jakość</b> (smuga – degradacja, kieszonki – białko, smuga przed błękitem bromofenolowym – RNA), potem wielkość – <b>tylko względem wzorca mas w tym samym żelu</b>.</li>
+      <li>Utrata miejsca restrykcyjnego: <b>homozygota</b> – jeden większy prążek, <b>heterozygota</b> – prążek większy i prążki allela prawidłowego; suma fragmentów = produkt nietrawiony; fragmenty identycznej wielkości tworzą jeden prążek.</li>
       <li>Polimorfizm <b>I/D</b> różnicuje allele długością: II – prążek górny, DD – dolny, ID – oba (wielkości genu ACE – poza Drewą, z protokołu).</li>
       <li>Hybrydyzacja: sygnał = <b>sekwencja komplementarna do sondy</b>; na pasku o typie decyduje <b>położenie</b> prążka, a bez kontroli wynik jest nieważny.</li>
-      <li>Najpierw jakość: <b>smuga</b> – degradacja, <b>kieszonki</b> – białko, smuga przed błękitem bromofenolowym – RNA, <b>brak wzorca</b> – brak wyniku.</li>
     </ul>
   </div>
 
