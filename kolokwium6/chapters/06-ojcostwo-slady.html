@@ -1,0 +1,106 @@
+<section class="chapter"
+  data-num="06"
+  data-title="Sporne ojcostwo i ślady biologiczne – obliczenia i procedury"
+  data-short="Sporne ojcostwo i ślady biologiczne"
+  data-kicker="Wskaźnik ojcostwa PI · procedury laboratoryjne · mieszaniny DNA">
+
+  <p class="lead">Obliczanie wskaźnika ojcostwa PI, procedury badania spornego ojcostwa i śladów biologicznych oraz granice autosomalnych STR.</p>
+
+  <h2 id="c06-pi">Wskaźnik ojcostwa PI (ramka 29.3)</h2>
+
+  <aside class="note pojecie" data-term="PI"><p>wskaźnik ojcostwa – iloraz szans hipotezy pokrewieństwa i hipotezy braku pokrewieństwa, liczony osobno dla każdego układu STR (Drewa s. 779).</p></aside>
+  <p>Drewa liczy PI dla jednego układu – <b>locus D21S11</b> – w dwóch wariantach. Hipotezy nazywa głosami stron: <b>hipoteza matki</b> – „ten mężczyzna jest ojcem mojego dziecka”, <b>hipoteza domniemanego ojca</b> – „to nie jest moje dziecko”. Częstość allelu 26 w populacji: <b>p<sub>26</sub> = 0,004</b>. Hasło ramki: <b>informacja o genotypie matki pozwala znacząco podnieść wartość PI</b> (<a class="figref" href="#c06-fig-pi"></a>).</p>
+
+  <p><b>Ojciec 26/30 + dziecko 26/29</b> (wspólny allel 26): <span class="nowrap">PI = 1 / (4 × p<sub>26</sub>)</span> = <b>62,5</b>. <b>Z matką 28/29</b> (wspólny allel matki i dziecka 29): <span class="nowrap">PI = 0,5 / p<sub>26</sub></span> = <b>125</b>. Ramka opisuje to jako hipotezę matki 62,5 [125] razy bardziej prawdopodobną niż hipoteza ojca.</p>
+
+  <figure class="fig" id="c06-fig-pi" data-title="Locus D21S11 – dwa obliczenia PI">
+    <div class="panels cols-2">
+      <div class="panel" data-badge="A" data-title="Ojciec + dziecko">
+        <svg viewBox="0 0 296 172" role="img" aria-label="Obliczenie PI bez matki: 62,5">
+          <text x="148" y="18" class="t-s mid">ojciec <tspan class="b">26</tspan>/30 · dziecko <tspan class="b">26</tspan>/29</text>
+          <text x="148" y="36" class="t-xs mid muted">wspólny allel: 26</text>
+          <text x="148" y="50" class="t-xs mid muted">bez matki nie wiadomo, który allel dziecka</text>
+          <text x="148" y="63" class="t-xs mid muted">jest matczyny</text>
+          <rect x="28" y="76" width="240" height="56" rx="6" class="f-ochre-bg"/>
+          <text x="148" y="98" class="t-m mid sb">PI = 1 / (4 × p₂₆)</text>
+          <text x="148" y="120" class="t-m mid sb">= 1 / 0,016 = <tspan class="b f-ochre">62,5</tspan></text>
+          <text x="148" y="152" class="t-xs mid">wynik 62,5 raza bardziej prawdopodobny</text>
+          <text x="148" y="165" class="t-xs mid">przy hipotezie matki niż przy hipotezie ojca</text>
+        </svg>
+      </div>
+      <div class="panel" data-badge="B" data-title="Matka + dziecko + ojciec">
+        <svg viewBox="0 0 296 172" role="img" aria-label="Obliczenie PI z matką: 125">
+          <text x="148" y="18" class="t-s mid">matka 28/<tspan class="b">29</tspan> · dziecko 26/29 · ojciec 26/30</text>
+          <text x="148" y="36" class="t-xs mid muted">29 – może pochodzić tylko od matki → wyłączony</text>
+          <text x="148" y="50" class="t-xs mid muted">26 – musiał pochodzić od ojca biologicznego</text>
+          <text x="148" y="63" class="t-xs mid muted">(domniemany ojciec go ma)</text>
+          <rect x="28" y="76" width="240" height="56" rx="6" class="f-teal-bg"/>
+          <text x="148" y="98" class="t-m mid sb">PI = 0,5 / p₂₆</text>
+          <text x="148" y="120" class="t-m mid sb">= 0,5 / 0,004 = <tspan class="b f-teal">125</tspan></text>
+          <text x="148" y="152" class="t-xs mid">wynik 125 razy bardziej prawdopodobny</text>
+          <text x="148" y="165" class="t-xs mid">przy hipotezie matki niż przy hipotezie ojca</text>
+        </svg>
+      </div>
+    </div>
+    <figcaption>A – bez profilu matki nie wiadomo, który allel dziecka jest matczyny: PI = 62,5. B – allel 29 wyłączony jako matczyny, zostaje allel 26 od ojca biologicznego: PI = 125.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 780 (ramka 29.3)</p>
+  </figure>
+
+  <p>PI zależy więc od tego, czy znany jest profil <b>obojga rodziców</b>, czy tylko domniemanego ojca. Znając profil matki, często można wskazać u dziecka allele <b>wyłącznie matczyne</b> i wyłączyć je z analizy; zmniejsza to zwykle <b>mianownik</b> ilorazu szans hipotez, więc PI rośnie.</p>
+
+  <p><b>Sumaryczny PI</b> to iloczyn PI poszczególnych układów – pod warunkiem, że układy <b>nie są ze sobą sprzężone genetycznie</b>. PI można traktować jako <b>odpowiednik wskaźnika LR</b>: mówi, o ile bardziej prawdopodobne jest otrzymanie konkretnego wyniku badań przy założeniu, że badane osoby <b>są spokrewnione</b>, niż przy założeniu, że <b>nie są</b>.</p>
+
+  <p class="src">Źródło: Drewa s. 779–780</p>
+
+  <h2 id="c06-procedury">Procedury badań (ramka 29.4)</h2>
+
+  <p>Obliczenia statystyczne (<b>wartość dowodowa</b>) to jeden z podstawowych etapów wieloetapowej procedury – od decyzji o badaniach do <b>wydania ekspertyzy</b> – nieco odmiennej dla różnych typów badań.</p>
+
+  <h3>Badanie spornego ojcostwa – 5 etapów</h3>
+  <aside class="note warto"><p><b>15 układów STR</b> zwykle wystarcza do <b>PI ≥ 1&nbsp;000&nbsp;000</b>; prawdopodobieństwo ojcostwa wynosi zwykle <b>99,9999% lub więcej</b>. Procedura trwa zwykle <b>ok. 1–2 tyg.</b> (dodatkowe analizy ją wydłużają).</p></aside>
+  <aside class="note warto"><p>Laboratorium powinno móc badać <b>więcej układów STR</b> niż standardowe, z popularnych systemów amplifikacji – czasem wysoki PI wymaga dodatkowych analiz.</p></aside>
+  <ol>
+    <li><b>Pobranie materiału</b> od osób wyznaczonych przez organ zlecający analizę: zwykle <b>wymaz z ust</b> od matki, dziecka i domniemanego ojca, od każdego <b>≥ 2 wymazy</b>, najczęściej przy wszystkich zainteresowanych, którzy podpisują <b>protokół</b> pobrania.</li>
+    <li><b>Izolacja materiału genetycznego</b> jedną z dostępnych metod; materiał <b>świeży</b>, więc zwykle łatwo o dość DNA dobrej jakości. Od każdej osoby <b>≥ 2 preparaty DNA z dwóch wymazów</b>, analizowane <b>oddzielnie</b>; porównanie wyników wykrywa pomyłki, np. <b>zamianę próbek</b>.</li>
+    <li><b>Amplifikacja i elektroforeza</b>: zestawy multipleksowe <b>kilkunastu układów STR</b>; sekwenatory kapilarne z detekcją <b>4- lub 5-kolorową</b>, z <b>drabinami allelicznymi</b> i <b>wewnętrznym standardem wielkości</b>.</li>
+    <li><b>Analiza wyników i obliczenia statystyczne</b> w specjalnych programach komputerowych.</li>
+    <li><b>Sporządzenie opinii</b>: rezultaty, interpretacja wyników i obliczeń. <b>Wykluczenie</b> ojcostwa – <b>kategoryczne</b>; <b>potwierdzenie</b> – „z prawdopodobieństwem <b>graniczącym z pewnością</b>”: ze względu na model dziedziczenia cech autosomalnych i wynikający z niego model matematyczny <b>100% pewności nie da się uzyskać</b>.</li>
+  </ol>
+
+  <h3>Badanie śladów biologicznych – 7 etapów</h3>
+  <aside class="note warto"><p>Do wykrywania śladów laboratorium używa m.in. <b>źródeł światła o różnych długościach fali</b>, <b>mikroskopów</b> i <b>binokularów</b>.</p></aside>
+  <aside class="note warto"><p>Ocena DNA: <b>„RT-PCR”</b> – namnożenie krótkiego fragmentu DNA i pomiar efektywności namnażania specjalistycznym sprzętem. Przy DNA silnie zdegradowanym lub skąpym: multipleksy <b>miniSTR</b> albo <b>mtDNA</b>.</p></aside>
+  <ol>
+    <li><b>Zabezpieczenie śladów</b> – zwykle przez <b>techników kryminalistyki</b> na miejscu przestępstwa; przedmioty z wieloma, nieewidentnymi lub trudnymi do zabezpieczenia śladami trafiają do laboratorium, które wykrywa i zabezpiecza wszystko, co może zawierać DNA. Etap <b>kluczowy</b>: złe zabezpieczenie lub pominięcie śladu może zmienić końcowe wnioski.</li>
+    <li><b>Wstępna ocena śladów</b>: <b>testy biochemiczne</b> na krew i nasienie, <b>testy specyficzne</b> na krew i nasienie <b>ludzkie</b>, <b>oględziny mikroskopowe</b> włosów i włókien – wstępna kwalifikacja do analiz genetycznych.</li>
+    <li><b>Izolacja materiału genetycznego</b>: metoda zależy od rodzaju śladu i <b>doświadczenia badacza</b>; nieraz trzeba 2–3 metod, z których <b>tylko jedna</b> daje wynik. Większość śladów zawiera <b>mało materiału</b>.</li>
+    <li><b>Ocena ilościowa i jakościowa DNA, amplifikacja i elektroforeza</b>: DNA bywa <b>zdegradowany</b>, skąpy lub z <b>inhibitorami PCR</b>, co bardzo utrudnia amplifikację, więc trzeba dokładnie znać preparat. Amplifikacja i analiza – jak przy spornym pokrewieństwie.</li>
+    <li><b>Analiza materiału porównawczego</b>: profil <b>konkretnej osoby</b> porównuje się z profilami śladów (techniki jak w badaniach ojcostwa).</li>
+    <li><b>Analiza wyników i obliczenia statystyczne</b> w programach komputerowych: profil <b>pełny bez mieszanin</b> – interpretacja prosta; <b>szczątkowy</b> (częsty) – czasem bardzo obniża wartość dowodową; czasem profilu <b>nie da się oznaczyć</b> (degradacja, inhibitory); <b>mieszaniny</b> wymagają odrębnych metod.</li>
+    <li><b>Sporządzenie opinii</b>: informacje o śladach, ich zabezpieczeniu i metodach, lista wyników; w <b>sentencji</b> – podsumowanie obserwacji i obliczeń, z uwagami o <b>zanieczyszczeniach</b> lub <b>degradacji</b>. Przy wielu śladach – <b>nawet setki stron</b>.</li>
+  </ol>
+
+  <p>Wniosek Drewy: analiza śladów biologicznych jest <b>znacznie bardziej złożona</b> niż standardowe badania pokrewieństwa, wymaga <b>znacznie większej wiedzy i doświadczenia</b>, a jej czas może być <b>znacznie dłuższy</b>.</p>
+
+  <p class="src">Źródło: Drewa s. 780–782</p>
+
+  <h2 id="c06-granice">Granice autosomalnych STR (początek 29.6)</h2>
+
+  <p>Identyfikacja osobnicza wciąż intensywnie się rozwija: profile STR wydają się wystarczająco unikalne, ale bywają sprawy, w których sama analiza <b>autosomalnych STR</b> nie wystarcza. W ostatniej dekadzie nowe techniki i metody analizy danych zwiększyły możliwości wykrywania sprawców i ustalania pokrewieństwa.</p>
+
+  <aside class="note pojecie" data-term="Mieszanina DNA"><p>ślad zawierający DNA różnych osób.</p></aside>
+  <p>Allele profili z autosomalnych mikrosatelitów nie zawsze wydobywają z materiału całą dostępną informację. <b>Mieszaniny DNA</b> różnych osób: możliwość ich zbadania zależy od <b>ilościowego stosunku składników</b>. Przy PCR i najczulszej obecnie elektroforezie kapilarnej skład da się ustalić przy proporcji <b>nie niższej niż 1:10–20</b>, więc w praktyce bada się tylko mieszaniny o <b>zbliżonych proporcjach</b> DNA osób. Gdy DNA jednej osoby jest <b>100–1000 razy więcej</b> niż pozostałych, analiza autosomalnych STR daje wynik jak dla <b>próbki od jednej osoby</b>.</p>
+
+  <p><b>Pokrewieństwo dalsze niż w pierwszej linii</b> bywa za pomocą autosomalnych STR bardzo trudne lub niemożliwe do ustalenia. Pokrewieństwo genetyczne, mierzone ilością DNA odziedziczonego od wspólnych przodków, <b>„rozmywa się” tym bardziej, im jest dalsze</b>: rodzice przekazują dzieciom po <b>50%</b> DNA, a ponieważ sami dostali DNA od swoich rodziców, dziadkowie przekazują wnukom po <b>25%</b> swojego materiału genetycznego.</p>
+
+  <p class="src">Źródło: Drewa s. 782</p>
+
+  <div class="w60">
+    <ul>
+      <li>D21S11, p<sub>26</sub> = 0,004: ojciec + dziecko – <b>PI = 1/(4 × p<sub>26</sub>) = 62,5</b>; z matką – <b>0,5/p<sub>26</sub> = 125</b> (allel matczyny wyłączony); <b>sumaryczny PI</b> = iloczyn PI układów niesprzężonych.</li>
+      <li><b>Ojcostwo, 5 etapów</b>: pobranie → izolacja → amplifikacja i elektroforeza → analiza i statystyka → opinia (wykluczenie kategoryczne, potwierdzenie nigdy 100%); ok. 1–2 tyg.</li>
+      <li><b>Ślady, 7 etapów</b>: zabezpieczenie → wstępna ocena → izolacja → ocena DNA, amplifikacja, elektroforeza → materiał porównawczy → analiza i statystyka → opinia.</li>
+      <li>Granice STR: <b>mieszaniny</b> (próg 1:10–20; przy 100–1000× „jedna osoba”), <b>dalsze pokrewieństwo</b> (50% → 25%).</li>
+    </ul>
+  </div>
+</section>
