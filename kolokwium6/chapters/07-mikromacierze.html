@@ -183,6 +183,8 @@
     </tbody>
   </table>
 
+  <div class="box przyklad"><p>(Dane wymyślone.) 40 sekwencji wzorcowych z jednego chromosomu ułożono w kolejności ich położenia. Plamki 1–14 i 20–40 są w równowadze, a w plamkach 15–19 sygnał DNA referencyjnego jest wyraźnie silniejszy niż badanego. Wniosek: w DNA badanym jest <b>delecja</b> fragmentu reprezentowanego przez sekwencje 15–19. Przewaga sygnału DNA badanego w tych plamkach oznaczałaby <b>duplikację</b>.</p></div>
+
   <h3 id="c07-rozdz">Rozdzielczość, zakres i koszty</h3>
   <p>Rozdzielczość mikromacierzy w analizie zmian strukturalnych genomu zależy od <b>wielkości nanoszonych sekwencji wzorcowych</b>, <b>gęstości ich upakowania na nośniku</b> oraz <b>rozdzielczości czytnika</b>. Zakres badania zależy od <b>projektowanego przeznaczenia</b> mikromacierzy: może ona służyć badaniom określonych genów, grup genów, wybranych sekwencji, a nawet <b>całego genomu</b>.</p>
 
@@ -338,14 +340,19 @@
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 717</p>
   </figure>
 
-  <div class="box przyklad"><p>(Dane wymyślone.) 40 sekwencji wzorcowych z jednego chromosomu ułożono w kolejności ich położenia. Plamki 1–14 i 20–40 są w równowadze, a w plamkach 15–19 sygnał DNA referencyjnego jest wyraźnie silniejszy niż badanego. Wniosek: w DNA badanym jest <b>delecja</b> fragmentu reprezentowanego przez sekwencje 15–19. Przewaga sygnału DNA badanego w tych plamkach oznaczałaby <b>duplikację</b>.</p></div>
-
   <p class="src">Źródło: Drewa s. 717–718</p>
 
   <!-- ============================================================ -->
   <h2 id="c07-rodzaje">Rodzaje mikromacierzy</h2>
 
   <p>W zależności od rodzaju przeprowadzanego eksperymentu Drewa wymienia pięć grup zastosowań mikromacierzy – pełną klasyfikację zestawia tabela. Szerzej opisuje dalej mikromacierze transkryptomiczne (ekspresyjne, eksonowe, dachówkowe) i technikę ChIP-chip.</p>
+
+  <aside class="note pojecie" data-term="BAC i PAC"><p>wektory do klonowania dużych fragmentów DNA (Drewa s. 707–708). <b>BAC</b> – sztuczny chromosom bakteryjny, oparty na DNA plazmidu F <i>E. coli</i>. <b>PAC</b> – sztuczny chromosom wyprowadzony z faga P1; mieści wstawkę ok. 150 kpz.</p></aside>
+  <div class="numbers">
+    <div class="n"><span class="v">25–70<small>nt</small></span><span class="d">długość sond na mikromacierzy oligonukleotydowej (na ogół)</span></div>
+    <div class="n"><span class="v">11–20</span><span class="d">sond na fragment 3′ transkryptu (mikromacierz ekspresyjna)</span></div>
+    <div class="n"><span class="v">~1<small>Mpz</small></span><span class="d">rozdzielczość mikromacierzy BAC/PAC-owej (kilka tysięcy klonów)</span></div>
+  </div>
 
   <table class="tbl wide">
     <thead><tr><th style="width:26%">Rodzaj mikromacierzy</th><th style="width:34%">Co jest naniesione</th><th>Do czego służy</th></tr></thead>
@@ -367,12 +374,6 @@
     </tbody>
   </table>
 
-  <aside class="note pojecie" data-term="BAC i PAC"><p>wektory do klonowania dużych fragmentów DNA (Drewa s. 707–708). <b>BAC</b> – sztuczny chromosom bakteryjny, oparty na DNA plazmidu F <i>E. coli</i>. <b>PAC</b> – sztuczny chromosom wyprowadzony z faga P1; mieści wstawkę ok. 150 kpz.</p></aside>
-  <div class="numbers">
-    <div class="n"><span class="v">25–70<small>nt</small></span><span class="d">długość sond na mikromacierzy oligonukleotydowej (na ogół)</span></div>
-    <div class="n"><span class="v">11–20</span><span class="d">sond na fragment 3′ transkryptu (mikromacierz ekspresyjna)</span></div>
-    <div class="n"><span class="v">~1<small>Mpz</small></span><span class="d">rozdzielczość mikromacierzy BAC/PAC-owej (kilka tysięcy klonów)</span></div>
-  </div>
 
   <div class="box uwaga"><p>Wyliczenie łączy dwa kryteria: <b>rodzaj eksperymentu</b> i – w grupie „badanie DNA” – <b>budowę sond</b>, więc grupy na siebie zachodzą. Np. mikromacierze dachówkowe stoją w grupie transkryptomicznej, a dalej Drewa przypisuje im też identyfikację miejsc wiązania czynników transkrypcyjnych i modyfikacji histonów (por. ChIP-chip). To nie sprzeczność: nazwa „dachówkowa” mówi o budowie płytki, a „ChIP-chip” o rodzaju eksperymentu. Tabelę warto czytać jako listę zastosowań, nie podział rozłączny.</p></div>
 
@@ -389,6 +390,14 @@
 
   <h3>Mikromacierze eksonowe</h3>
   <p><b>Mikromacierze eksonowe</b> zawierają sondy <b>homologiczne dla poszczególnych eksonów</b> danego transkryptu. Umożliwiają dwa uzupełniające się <b>poziomy analizy</b>: (1) badanie <b>zmian wzoru ekspresji genów</b> oraz (2) ocenę różnic w procesie <b>alternatywnego składania transkryptów</b>, dzięki któremu z tej samej cząsteczki prekursorowej (<b>pre-mRNA</b>) powstają różne warianty mRNA. Skoro każdy ekson ma własne sondy, wariant mRNA bez jednego eksonu da sygnał we wszystkich plamkach oprócz tej, która odpowiada brakującemu eksonowi (<a class="figref" href="#c07-fig-sondy" data-panel="B"></a>).</p>
+
+  <h3>Mikromacierze dachówkowe</h3>
+  <aside class="note liceum"><p><b>Czynniki transkrypcyjne</b> – białka wiążące DNA (np. promotor), włączające lub wyłączające transkrypcję. DNA nawija się na <b>histony</b> (chromatyna); modyfikacje histonów i <b>metylacja DNA</b> zmieniają dostępność genów bez zmiany sekwencji.</p></aside>
+  <p>Do <b>kompleksowej analizy aktywności transkrypcyjnej całych genomów</b> opracowano <b>mikromacierze równomiernie pokrywające genom</b> (<i>genome tiling arrays</i>), nazywane też <b>mikromacierzami dachówkowymi</b>. Ich sondy obejmują nie tylko geny, lecz także obszary pozagenowe – dlatego służą m.in. do badania ekspresji obszarów pozagenowych.</p>
+
+  <p>Mikromacierze dachówkowe umożliwiają identyfikację miejsc wiązania się <b>czynników transkrypcyjnych</b>, <b>modyfikacji histonów</b>, <b>metylacji DNA</b> i innych elementów związanych z <b>regulacją transkrypcji</b>. Uzyskane w ten sposób informacje dostarczają wiedzy o <b>roli niekodujących fragmentów genomu</b>.</p>
+
+  <p>Mikromacierze dachówkowe często stosuje się w <b>porównawczej analizie funkcjonalnej genomów</b> – podobnie jak klasyczne mikromacierze ekspresyjne. Doświadczenia takie są źródłem informacji o <b>potencjalnej roli odkrytych transkryptów</b>. Dają też szansę wglądu w regulację wielu procesów słabo dotąd poznanych pod kątem genetycznym, takich jak <b>embriogeneza</b>, <b>różnicowanie tkanek</b> czy <b>odpowiedzi komórki/organizmów na warunki środowiska zewnętrznego</b>.</p>
 
   <figure class="fig" id="c07-fig-sondy" data-title="Rozmieszczenie sond względem genu">
     <div class="panel" data-badge="A" data-title="Mikromacierz ekspresyjna, eksonowa i dachówkowa">
@@ -533,14 +542,6 @@
     <figcaption>A – gen z czterema eksonami (E1–E4), intronami i obszarami pozagenowymi. Mikromacierz ekspresyjna ma 11–20 sond w obrębie fragmentu 3′ transkryptu, eksonowa – sondy w każdym eksonie, dachówkowa – sondy równomiernie wzdłuż całego genomu, także w intronach i poza genem. B – schemat: dwa warianty mRNA z jednego pre-mRNA; wariant pozbawiony eksonu 3 nie daje sygnału w plamce sondy dla E3.</figcaption>
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 718</p>
   </figure>
-
-  <h3>Mikromacierze dachówkowe</h3>
-  <p>Do <b>kompleksowej analizy aktywności transkrypcyjnej całych genomów</b> opracowano <b>mikromacierze równomiernie pokrywające genom</b> (<i>genome tiling arrays</i>), nazywane też <b>mikromacierzami dachówkowymi</b>. Ich sondy obejmują nie tylko geny, lecz także obszary pozagenowe – dlatego służą m.in. do badania ekspresji obszarów pozagenowych.</p>
-
-  <aside class="note liceum"><p><b>Czynniki transkrypcyjne</b> – białka wiążące DNA (np. promotor), włączające lub wyłączające transkrypcję. DNA nawija się na <b>histony</b> (chromatyna); modyfikacje histonów i <b>metylacja DNA</b> zmieniają dostępność genów bez zmiany sekwencji.</p></aside>
-  <p>Mikromacierze dachówkowe umożliwiają identyfikację miejsc wiązania się <b>czynników transkrypcyjnych</b>, <b>modyfikacji histonów</b>, <b>metylacji DNA</b> i innych elementów związanych z <b>regulacją transkrypcji</b>. Uzyskane w ten sposób informacje dostarczają wiedzy o <b>roli niekodujących fragmentów genomu</b>.</p>
-
-  <p>Mikromacierze dachówkowe często stosuje się w <b>porównawczej analizie funkcjonalnej genomów</b> – podobnie jak klasyczne mikromacierze ekspresyjne. Doświadczenia takie są źródłem informacji o <b>potencjalnej roli odkrytych transkryptów</b>. Dają też szansę wglądu w regulację wielu procesów słabo dotąd poznanych pod kątem genetycznym, takich jak <b>embriogeneza</b>, <b>różnicowanie tkanek</b> czy <b>odpowiedzi komórki/organizmów na warunki środowiska zewnętrznego</b>.</p>
 
   <p class="src">Źródło: Drewa s. 717–718</p>
 

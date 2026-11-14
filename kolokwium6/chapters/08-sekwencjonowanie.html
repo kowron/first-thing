@@ -4,7 +4,7 @@
   data-short="Sekwencjonowanie"
   data-kicker="Metody przesiewowe · Sanger · cycle sequencing · pirosekwencjonowanie · SMRT">
 
-  <p class="lead">Sekwencjonowanie odczytuje kolejność nukleotydów w DNA – to najczulsza technika wykrywania zmian w materiale genetycznym, pozwalająca zarazem w pełni je scharakteryzować. Rozdział prowadzi od metod przesiewowych, które wskazują, co warto sekwencjonować, przez automatyczny odczyt i cycle sequencing, do technik nowej generacji, a kończy się na markerach molekularnych.</p>
+  <p class="lead">Sekwencjonowanie odczytuje kolejność nukleotydów w DNA – to najczulsza technika wykrywania zmian w materiale genetycznym, pozwalająca zarazem w pełni je scharakteryzować. Rozdział prowadzi od metod przesiewowych przez automatyczny odczyt i cycle sequencing do technik nowej generacji i markerów molekularnych.</p>
 
   <!-- ============================================================ -->
   <h2 id="c08-przesiew">Zanim sekwencjonowanie – metody przesiewowe</h2>
@@ -551,9 +551,9 @@
   <aside class="note pojecie" data-term="Zeptolitr"><p>10<sup>−21</sup> litra (przedrostek „zepto-” = 10<sup>−21</sup>).</p></aside>
   <p>Jedną z obecnie rozwijanych technik jest metoda <b>SMRT</b> (<i>single molecule real-time sequencing</i>). Jak wskazuje nazwa, wykorzystuje ona <b>pojedynczą cząsteczkę polimerazy DNA pracującą w trybie ciągłym</b>. Sekwencjonowanie przebiega w małej <b>komorze o średnicy 10 nm</b> i objętości <b>20 zeptolitrów</b>, utworzonej na cienkiej <b>metalowej warstewce nadrukowanej na kwarcową płytkę</b>; każdy <b>chip</b> zawiera <b>kilka tysięcy</b> takich komór (<a class="figref" href="#c08-fig-ngs" data-panel="B"></a>). Taka miniaturyzacja pozwala mierzyć aktywność <b>pojedynczej cząsteczki polimerazy przytwierdzonej kowalencyjnie do ściany komory</b>.</p>
 
-  <p>Do syntezy używa się dNTP znakowanych <b>różnymi znacznikami fluorescencyjnymi</b> dołączonymi do <b>końcowego atomu fosforu</b>. Gdy do komory wprowadza się pasujący substrat, polimeraza włącza nukleotyd, a fluorofor znajduje się <b>w zasięgu detekcji o rząd wielkości dłużej</b>, niż trwa dyfuzja cząsteczki z komory – dlatego sygnał daje nukleotyd wbudowywany, a nie swobodnie przepływające. Po włączeniu nukleotydu <b>znakowany pirofosforan dyfunduje</b> (znacznik odchodzi z końcowym fosforanem, więc nić pozostaje nieznakowana) i proces się powtarza. Podstawową zaletą jest <b>szybkość</b>: synteza biegnie z szybkością <b>10 par zasad na sekundę</b>, więc teoretycznie jeden chip pozwala zsekwencjonować <b>ponad milion par zasad w ciągu minuty</b>, co stanowi niebywały postęp w tej dziedzinie.</p>
+  <p>Do syntezy używa się dNTP znakowanych <b>różnymi znacznikami fluorescencyjnymi</b> dołączonymi do <b>końcowego atomu fosforu</b>. Gdy do komory wprowadza się pasujący substrat, polimeraza włącza nukleotyd, a fluorofor znajduje się <b>w zasięgu detekcji o rząd wielkości dłużej</b>, niż trwa dyfuzja cząsteczki z komory. Po włączeniu nukleotydu <b>znakowany pirofosforan dyfunduje</b> (znacznik odchodzi z końcowym fosforanem, więc nić pozostaje nieznakowana) i proces się powtarza. Podstawową zaletą jest <b>szybkość</b>: synteza biegnie z szybkością <b>10 par zasad na sekundę</b>, więc teoretycznie jeden chip pozwala zsekwencjonować <b>ponad milion par zasad w ciągu minuty</b>, co stanowi niebywały postęp w tej dziedzinie.</p>
 
-  <div class="box przyklad"><p>Skąd „ponad milion par zasad na minutę”? Jedna polimeraza: 10 pz/s × 60 s = <b>600 pz/min</b>. Aby przekroczyć 1 000 000 pz/min, potrzeba 1 000 000 : 600 ≈ <b>1667</b> komór pracujących równolegle – a chip ma ich <b>kilka tysięcy</b>. (Rachunek własny ilustrujący liczby z Drewy).</p></div>
+  <div class="box przyklad"><p>Skąd „ponad milion par zasad na minutę”? Jedna polimeraza: 10 pz/s × 60 s = <b>600 pz/min</b>. Aby przekroczyć 1 000 000 pz/min, potrzeba 1 000 000 : 600 ≈ <b>1667</b> komór pracujących równolegle – a chip ma ich <b>kilka tysięcy</b>. (Rachunek własny).</p></div>
 
   <p class="src">Źródło: Drewa s. 731–732</p>
 
@@ -563,7 +563,6 @@
   <p>W dziedzinie sekwencjonowania może wkrótce nastąpić rozwój technik <b>sekwencjonowania bezpośredniego</b> – poprzez <b>fizykochemiczną analizę DNA</b>, <b>bez użycia reakcji PCR</b> – dzięki rozwojowi <b>nanotechnologii</b>. Odczyt sekwencji może przebiegać z szybkością <b>300 pz na sekundę</b> w pojedynczym <b>czujniku nanometrowym</b>.</p>
 
   <table class="tbl wide">
-    <caption>Techniki sekwencjonowania w ujęciu Drewy</caption>
     <thead><tr><th style="width:18%">Metoda</th><th style="width:32%">Zasada</th><th style="width:24%">Sygnał</th><th>Liczby i cechy</th></tr></thead>
     <tbody>
       <tr><td>Sekwenator automatyczny</td><td>ddNTP znakowane fluorescencyjnie; rozdział w kapilarze lub żelu</td><td>fluorescencja wzbudzana laserem, detekcja w czasie rzeczywistym</td><td>300–1000 pz z jednej kapilary/linii; porównanie z GenBank i EMBL</td></tr>
@@ -608,7 +607,7 @@
   <div class="w60">
     <ul>
       <li><b>Metody przesiewowe</b> (PCR-SSCP, DGGE, TGGE, HA, CMC, DHPLC) dają tylko podejrzenie mutacji – wskazanie do <b>sekwencjonowania</b>.</li>
-      <li><b>Sekwencjonowanie</b> – najczulsze, z pełną charakterystyką zmiany; historycznie <b>Sanger</b> i <b>Maxam–Gilbert</b>; automatyzacja: ddNTP znakowane fluorescencyjnie.</li>
+      <li><b>Sekwencjonowanie</b> – najczulsze, z pełną charakterystyką zmiany; historycznie <b>Sanger</b> i <b>Maxam–Gilbert</b>; automatyzacja dzięki znakowanym ddNTP.</li>
       <li><b>Cycle sequencing</b>: preparatywny PCR → asymetryczny PCR z każdym starterem osobno → denaturujący PAGE z detekcją → analiza komputerowa; zmiana prawdziwa, gdy jest w <b>obu niciach</b>.</li>
       <li><b>Pirosekwencjonowanie</b>: pasujący dNTP → PP<sub>i</sub> → ATP (sulfurylaza) → światło (lucyferaza); niepasujący rozkłada apyraza. <b>454</b> = równoległe pirosekwencjonowanie.</li>
       <li><b>Płytka szklana</b> – odwracalne terminatory; <b>SMRT</b> – jedna polimeraza w nanokomorze, znacznik na końcowym fosforanie; przyszłość – sekwencjonowanie bezpośrednie bez PCR.</li>
@@ -626,9 +625,9 @@
         <div class="answer"><p>Preparatywny PCR z parą specyficznych starterów → asymetryczny PCR osobno z każdym starterem, z ddNTP znakowanymi fluorescencyjnie → elektroforeza w denaturującym żelu poliakrylamidowym z detekcją → analiza komputerowa. Obie nici odczytuje się, bo <b>rzeczywista zmiana widoczna jest w obu</b>, a artefakt – tylko w jednej.</p></div></li>
       <li id="c08-q-4">Wymień cztery enzymy pirosekwencjonowania i rolę każdego z nich.
         <div class="answer"><p><b>Polimeraza DNA</b> – włącza pasujący dNTP (powstaje pirofosforan); <b>sulfurylaza ATP</b> – katalizuje powstanie ATP z pirofosforanu i 5′-fosfosiarczanu adenozyny; <b>lucyferaza</b> – rozkłada ATP, co daje emisję światła; <b>apyraza</b> – rozkłada niewłaściwy (niewbudowany) dNTP.</p></div></li>
-      <li id="c08-q-5">W pirosekwencjonowaniu dodawano kolejno dATP, dCTP, dGTP, dTTP. Światło zarejestrowano po dodaniu dCTP i dTTP. Jaka jest sekwencja nowo syntetyzowanego odcinka i co stało się z dATP i dGTP?
+      <li id="c08-q-5">Dodawano kolejno dATP, dCTP, dGTP, dTTP; światło pojawiło się po dCTP i dTTP. Jaki odcinek dobudowano i co stało się z dATP i dGTP?
         <div class="answer"><p>Nić rośnie o <b>C, potem T</b> (5′-CT-3′). dATP i dGTP nie pasowały – nie zostały wbudowane, nie było światła, a apyraza je rozłożyła.</p></div></li>
-      <li id="c08-q-6">Dlaczego w metodzie SMRT widać sygnał od wbudowywanego nukleotydu, a nie od nukleotydów swobodnie pływających w komorze? Gdzie jest znacznik i co się z nim dzieje?
+      <li id="c08-q-6">Dlaczego w SMRT sygnał daje nukleotyd wbudowywany, a nie swobodnie pływające? Gdzie jest znacznik i co się z nim dzieje?
         <div class="answer"><p>Wbudowywany nukleotyd przebywa w zasięgu detekcji <b>o rząd wielkości dłużej</b> niż trwa dyfuzja cząsteczki z komory. Znacznik jest na <b>końcowym atomie fosforu</b> dNTP, więc po włączeniu nukleotydu odchodzi ze <b>znakowanym pirofosforanem</b>, który dyfunduje z komory.</p></div></li>
       <li id="c08-q-7">Polimeraza w SMRT syntetyzuje 10 pz/s. Ile par zasad odczyta w ciągu minuty jedna komora, a ile chip z 3000 pracujących komór?
         <div class="answer"><p>Jedna komora: 10 × 60 = <b>600 pz/min</b>. 3000 komór: 3000 × 600 = <b>1 800 000 pz/min</b> – zgodnie z podaną przez Drewę wartością „ponad milion par zasad w ciągu minuty”.</p></div></li>
