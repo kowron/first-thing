@@ -374,7 +374,7 @@
     </tbody>
   </table>
 
-  <div class="box uwaga"><p>Klasyfikacja łączy dwa kryteria: <b>rodzaj eksperymentu</b> i – tylko w grupie „badanie DNA” – <b>budowę sond</b>. Grupy nie są więc rozłączne. Mikromacierze dachówkowe stoją w grupie transkryptomicznej, a dalej Drewa przypisuje im identyfikację miejsc wiązania czynników transkrypcyjnych i modyfikacji histonów – tematy, które w wyliczeniu przypisano ChIP-chip. Ten sam typ płytki może służyć różnym eksperymentom.</p></div>
+  <div class="box uwaga"><p>Wyliczenie łączy dwa kryteria: <b>rodzaj eksperymentu</b> i – w grupie „badanie DNA” – <b>budowę sond</b>, więc grupy na siebie zachodzą. Np. mikromacierze dachówkowe stoją w grupie transkryptomicznej, a dalej Drewa przypisuje im też identyfikację miejsc wiązania czynników transkrypcyjnych i modyfikacji histonów (por. ChIP-chip). To nie sprzeczność: nazwa „dachówkowa” mówi o budowie płytki, a „ChIP-chip” o rodzaju eksperymentu. Tabelę warto czytać jako listę zastosowań, nie podział rozłączny.</p></div>
 
   <p class="src">Źródło: Drewa s. 717–718 · Drewa s. 707–708</p>
 
@@ -388,12 +388,7 @@
 
   <h3>Mikromacierze eksonowe</h3>
   <aside class="note liceum"><p>Gen eukariotyczny składa się z <b>eksonów</b> (zostają w dojrzałym mRNA) i <b>intronów</b> (wycinanych). Pre-mRNA podlega <b>składaniu</b> (<i>splicing</i>). Przy <b>alternatywnym składaniu</b> z jednego pre-mRNA powstają różne warianty mRNA, np. z pominięciem jednego eksonu – a więc różne białka.</p></aside>
-  <p><b>Mikromacierze eksonowe</b> zawierają sondy <b>homologiczne dla poszczególnych eksonów</b> danego transkryptu. Umożliwiają dwa uzupełniające się <b>poziomy analizy</b>:</p>
-  <ol>
-    <li>badanie <b>zmian wzoru ekspresji genów</b>;</li>
-    <li>ocenę różnic w procesie <b>alternatywnego składania transkryptów</b> – procesu, dzięki któremu z tej samej cząsteczki prekursorowej (<b>pre-mRNA</b>) powstają różne warianty mRNA.</li>
-  </ol>
-  <p>Skoro każdy ekson ma własne sondy, wariant mRNA pozbawiony jednego eksonu da sygnał we wszystkich plamkach oprócz tej, która odpowiada brakującemu eksonowi (<a class="figref" href="#c07-fig-sondy" data-panel="B"></a>).</p>
+  <p><b>Mikromacierze eksonowe</b> zawierają sondy <b>homologiczne dla poszczególnych eksonów</b> danego transkryptu. Umożliwiają dwa uzupełniające się <b>poziomy analizy</b>: (1) badanie <b>zmian wzoru ekspresji genów</b> oraz (2) ocenę różnic w procesie <b>alternatywnego składania transkryptów</b>, dzięki któremu z tej samej cząsteczki prekursorowej (<b>pre-mRNA</b>) powstają różne warianty mRNA. Skoro każdy ekson ma własne sondy, wariant mRNA bez jednego eksonu da sygnał we wszystkich plamkach oprócz tej, która odpowiada brakującemu eksonowi (<a class="figref" href="#c07-fig-sondy" data-panel="B"></a>).</p>
 
   <figure class="fig" id="c07-fig-sondy" data-title="Rozmieszczenie sond względem genu">
     <div class="panel" data-badge="A" data-title="Mikromacierz ekspresyjna, eksonowa i dachówkowa">
@@ -547,26 +542,17 @@
 
   <p>Mikromacierze dachówkowe często stosuje się w <b>porównawczej analizie funkcjonalnej genomów</b> – podobnie jak klasyczne mikromacierze ekspresyjne. Doświadczenia takie są źródłem informacji o <b>potencjalnej roli odkrytych transkryptów</b>. Dają też szansę wglądu w regulację wielu procesów słabo dotąd poznanych pod kątem genetycznym, takich jak <b>embriogeneza</b>, <b>różnicowanie tkanek</b> czy <b>odpowiedzi komórki/organizmów na warunki środowiska zewnętrznego</b>.</p>
 
-  <div class="box zapamietaj"><p><b>Ekspresyjna</b>: 11–20 sond na fragment 3′ każdego transkryptu; najpopularniejsza. <b>Eksonowa</b>: sondy dla każdego eksonu – ekspresja + alternatywne składanie. <b>Dachówkowa</b> (<i>genome tiling array</i>): sondy równomiernie w całym genomie – czynniki transkrypcyjne, histony, metylacja DNA, rola niekodujących fragmentów genomu.</p></div>
-
   <p class="src">Źródło: Drewa s. 717–718</p>
 
   <!-- ============================================================ -->
   <h2 id="c07-chip">ChIP-chip – mapowanie interakcji białko–DNA</h2>
 
-  <aside class="note liceum"><p>Procesy na DNA wymagają wiążących je białek: w <b>replikacji</b> – m.in. helikazy i polimerazy DNA, w <b>transkrypcji</b> – polimerazy RNA i czynników transkrypcyjnych.</p></aside>
   <p>Podstawą wielu ważnych procesów zachodzących w komórce są <b>interakcje pomiędzy białkami i DNA</b>. Należą do nich: <b>replikacja DNA</b>, <b>transkrypcja</b>, <b>rekombinacja</b>, <b>naprawa DNA</b> oraz <b>regulacja upakowania chromatyny</b>.</p>
 
   <aside class="note pojecie" data-term="Immunoprecypitacja"><p>wyłapanie z mieszaniny wybranego składnika za pomocą swoistego przeciwciała („immuno-” – przeciwciało, precypitacja – wytrącenie).</p></aside>
   <p>Jedną z najnowocześniejszych metod badania tych interakcji jest technika <b>ChIP on chip</b>, inaczej <b>ChIP-chip</b>. Stanowi ona połączenie <b>immunoprecypitacji chromatyny</b> – <b>ChIP</b> (<i>chromatin immunoprecipitation</i>) – z wykorzystaniem <b>specyficznych przeciwciał</b> oraz <b>analizy techniką mikromacierzy</b> (<i>chip</i>) <b>wyselekcjonowanej puli kwasów nukleinowych</b>.</p>
 
-  <p>Logikę metody można przedstawić w czterech krokach (<a class="figref" href="#c07-fig-chip"></a>):</p>
-  <ol>
-    <li><b>chromatyna</b> – w komórce badane białko jest związane z DNA w określonych miejscach;</li>
-    <li><b>immunoprecypitacja</b> – specyficzne przeciwciało wybiera chromatynę z badanym białkiem;</li>
-    <li><b>pula kwasów nukleinowych</b> – wyselekcjonowane w ten sposób DNA pochodzi z miejsc, które białko wiązało;</li>
-    <li><b>mikromacierz</b> – analiza puli pokazuje, które sekwencje genomu w niej występują i w jakiej ilości.</li>
-  </ol>
+  <p>Logika metody: specyficzne przeciwciało wybiera chromatynę zawierającą badane białko, więc wyselekcjonowana pula kwasów nukleinowych pochodzi z miejsc, które białko wiązało; jej analiza na mikromacierzy pokazuje, które sekwencje genomu są w puli i w jakiej ilości (<a class="figref" href="#c07-fig-chip"></a>).</p>
 
   <figure class="fig" id="c07-fig-chip" data-title="ChIP-chip krok po kroku">
     <div class="panel">
