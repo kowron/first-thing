@@ -8,10 +8,12 @@
 var A=window.__so5,D=window.LAC;if(!A||!D)return;
 var esc=A.esc,app=document.getElementById('app');
 var CARDS=[],BYK={};
-D.groups.forEach(function(g,gi){g.i.forEach(function(it){var k='l:'+it.l.toLowerCase().replace(/[^a-z]+/g,'-');if(BYK[k])return;
+D.groups.forEach(function(g,gi){g.i.forEach(function(it){var k=it.id||('l:'+it.l.toLowerCase().replace(/[^a-z]+/g,'-'));if(BYK[k])return;
   var c={k:k,p:it.p,l:it.l,a:it.a||[],s:it.s,g:gi,t:g.t,kl:!!it.k};BYK[k]=c;CARDS.push(c)})});
 var CH={1:'k',2:'u',3:'n'},CHL={k:'umiem',u:'nie jestem pewny',n:'nie umiem'};
-function st(){var S=A.S;if(!S.lt||!S.lt.c)S.lt={ts:0,r:1,q:null,i:0,c:{}};return S.lt}
+function st(){var S=A.S;if(!S.lt||!S.lt.c)S.lt={ts:0,r:1,q:null,i:0,c:{}};var L=S.lt;
+  if(!L._inh){L._inh=1;CARDS.forEach(function(c){var i=c.k.indexOf('#');if(i>0&&!L.c[c.k]&&L.c[c.k.slice(0,i)]){L.c[c.k]={c:L.c[c.k.slice(0,i)].c,ok:0,n:0};if(L.q&&L.q.indexOf(c.k.slice(0,i))>=0)L.q.push(c.k)}})}
+  return L}
 function save(){st().ts=Date.now();A.save()}
 function cs(k){return st().c[k]||null}
 function toTriage(){return CARDS.filter(function(c){return !cs(c.k)})}
@@ -69,10 +71,11 @@ function typView(){A.setView('lac-typ');var c=cur,L=st();
    +A.dock('<button class="btn" id="lb" data-l="check">Sprawdź</button>','<button class="link" id="ldk" data-l="dk">Nie wiem, pokaż</button>'));
   var el=document.getElementById('lin');try{el.focus({preventScroll:true})}catch(e){}}
 function check(dk){var c=cur,el=document.getElementById('lin');if(!c||!el)return;var L=st(),x=L.c[c.k]||{c:'u',ok:0,n:0};
-  if(el.readOnly){L.i++;save();next();return}
+  if(el.readOnly){clearTimeout(autoT);L.i++;save();next();return}
   var v=A.nlat(el.value);if(!dk&&!v){el.focus();return}
   var ok=!dk&&[c.l].concat(c.a||[]).some(function(t){return A.nlat(t)===v});
-  x.n=(x.n||0)+1;if(ok)x.ok=1;L.c[c.k]=x;save();el.readOnly=true;el.classList.add(ok?'ok':'bad');fb(ok)}
+  x.n=(x.n||0)+1;if(ok)x.ok=1;L.c[c.k]=x;save();el.readOnly=true;el.classList.add(ok?'ok':'bad');fb(ok);if(ok)auto()}
+var autoT=null;function auto(){var c0=cur;clearTimeout(autoT);autoT=setTimeout(function(){if(cur!==c0||A.view!=='lac-typ')return;st().i++;save();next()},650)}
 function fb(ok){var c=cur;document.getElementById('lfb').innerHTML='<div class="fb '+(ok?'ok':'no')+'">'+(ok?'Dobrze: ':'<b>Poprawnie:</b> ')+la(c)+' <span class="pg">'+esc(c.s?'s. '+c.s:'')+'</span>'
    +(ok||!(document.getElementById('lin')||{}).value?'':'<div><button class="link" type="button" data-l="okme" style="padding-left:0">Napisałem dobrze, zalicz</button></div>')+'</div>';
   var b=document.getElementById('lb'),d=document.getElementById('ldk');b.textContent=ok?'Dalej':'Dalej, wróci w następnej rundzie';if(d)d.hidden=true;try{b.focus({preventScroll:true})}catch(e){}}
@@ -101,7 +104,7 @@ document.addEventListener('click',function(e){var el=e.target.closest('[data-l]'
   case 'undo':if(undo){delete st().c[undo.k];save();undo=null;last=null;next()}break;
   case 'check':check(false);break;
   case 'dk':check(true);break;
-  case 'okme':var L=st(),x=L.c[cur.k];if(x){x.ok=1;save()}var i=document.getElementById('lin');if(i){i.classList.remove('bad');i.classList.add('ok')}fb(true);break;
+  case 'okme':var L=st(),x=L.c[cur.k];if(x){x.ok=1;save()}var i=document.getElementById('lin');if(i){i.classList.remove('bad');i.classList.add('ok')}fb(true);auto();break;
   case 'bank':bank();break;
   case 'unbank':var k=el.getAttribute('data-k');st().c[k]={c:'u',ok:0,n:0};if(round()>1){var Q=st();if(Q.q&&Q.q.indexOf(k)<0)Q.q.push(k)}save();bank();break;
   case 'reset':if(!rs){rs=Date.now();home();setTimeout(function(){if(rs&&Date.now()-rs>=4800){rs=null;if(A.view==='lac')home()}},5000)}else{rs=null;A.S.lt=null;save();A.toast('Łacina od nowa');home()}break;
