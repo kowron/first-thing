@@ -9,21 +9,33 @@
   "buildDir": "/tmp/claude-0/-home-user-first-thing/600b873f-e07d-5766-b2f4-6a90b68ae091/scratchpad/build",
   "tocIntro": "Rozdziały idą od rozdziału cząsteczek w żelu, przez przeniesienie ich na membranę i hybrydyzację, do odczytu sekwencji i współczesnej identyfikacji genetycznej.",
   "autoSections": {
-    "answers": { "order": 20, "title": "Klucz odpowiedzi", "id": "b-klucz" },
-    "figures": { "order": 80, "title": "Spis rycin", "id": "b-ryciny" },
-    "sources": { "order": 90, "title": "Źródła", "id": "b-zrodla" }
+    "answers": {
+      "order": 20,
+      "title": "Klucz odpowiedzi",
+      "id": "b-klucz"
+    },
+    "figures": {
+      "order": 80,
+      "title": "Spis rycin",
+      "id": "b-ryciny"
+    },
+    "sources": {
+      "order": 90,
+      "title": "Źródła",
+      "id": "b-zrodla"
+    }
   },
   "sourcesIntro": "",
   "sources": [
     {
       "key": "Drewa",
-      "html": "Drewa G., Ferenc T.: <i>Genetyka medyczna. Podręcznik dla studentów</i>. Edra Urban &amp; Partner, Wrocław 2011. Rozdz. 27 (s. 712–718, 730–732) i rozdz. 29 (s. 769–774, 780–782).",
-      "note": "Podstawowe źródło – pod podrozdziałami podano strony książki."
+      "html": "Drewa G., Ferenc T.: <i>Genetyka medyczna. Podręcznik dla studentów</i>. Edra Urban &amp; Partner, Wrocław 2011. Rozdz. 27 „Metody molekularne badania genomu” (s. 703–735; sylabus: s. 712–718, 730–732) i rozdz. 29 „Zastosowanie technik biologii molekularnej w medycynie sądowej” (s. 765–783; sylabus: s. 769–774, 780–782); w rozdz. 3 i 11 także pojedyncze strony innych rozdziałów.",
+      "note": "Jedyne źródło treści – strony podano pod każdym podrozdziałem."
     },
     {
       "key": "Jorde",
-      "html": "Jorde L.B., Carey J.C., Bamshad M.J.: <i>Genetyka medyczna</i>. Edra Urban &amp; Partner, Wrocław 2021. Rozdz. 3 (s. 42–43) – elektroforeza białek.",
-      "note": "Piśmiennictwo uzupełniające z sylabusa."
+      "html": "Jorde L.B., Carey J.C., Bamshad M.J.: <i>Genetyka medyczna</i>. Edra Urban &amp; Partner, Wrocław 2021. Rozdz. 3, s. 42–43 – według sylabusa źródło do zagadnienia „Elektroforeza białek”.",
+      "note": "Opracowanie z niego NIE korzystało; treści spoza Drewy są oznaczone „Poza Drewą”."
     },
     {
       "key": "Sylabus",
@@ -31,5 +43,5 @@
       "note": "Plik „Zajęcia 6”."
     }
   ],
-  "sourcesNote": "Wiadomości w ramkach „To było w liceum” pochodzą z programu rozszerzonej biologii w liceum i służą tylko jako przypomnienie. Treści w ramkach „Poza Drewą” wykraczają poza podręcznik – są oznaczone, żeby łatwo je pominąć."
+  "sourcesNote": "Ramki „To było w liceum” – przypomnienie z rozszerzonej biologii. Ramki „Poza Drewą” (tylko rozdz. 3 i 11; w tabeli „uzupełnienie spoza Drewy”) wykraczają poza [1] – można je pominąć."
 }
