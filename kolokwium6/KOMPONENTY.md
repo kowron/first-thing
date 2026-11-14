@@ -124,6 +124,17 @@ Odsyłacz do nieistniejącego id = `UWAGA` + czerwony znacznik w PDF.
 * Nie dziel wyrazów ręcznie, nie wstawiaj `&shy;`. Dzielenie i twarde spacje robi build:
   po jednoliterowych spójnikach/przyimkach (w, z, i, a, o, u), między liczbą a jednostką (100 pz, 5 V, 80 °C),
   po skrótach (s., ryc., np., ok.) i przed półpauzą „ – ”. Możesz pisać zwykłe spacje.
+* **Dzielenie wyrazów** (tylko tekst rozdziałów, części końcowej i „Jak korzystać”; bez nagłówków, tabel, SVG,
+  kodu, `.seq`, `.mono`, `.nohyph` itp.): algorytm Lianga z polskimi wzorcami TeX-a `plhyph`
+  (H. Kołodziejska, B. Jackowski, M. Ryćko; plik danych `lib/hyph-pl.js` z notą o pochodzeniu i licencji MIT /
+  domena publiczna). Wzorce znają przedrostki i dwuznaki (u-względ-nia, nie-któ-re, po-wstał, roz-dział).
+  Nie dzieli: słów < 6 liter, skrótów i nazw z wielką literą w środku (PCR, GenBank), słów z cyframi
+  (D3S1358, TH01), sekwencji z samych liter ACGTU; zostawia min. 2 litery przed i po podziale.
+  Błędne przeniesienie poprawiasz w **`lib/dzielenie-wyjatki.txt`** (nie w rozdziale): `po-li-mer` – wymusza
+  te miejsca podziału, `maxama` – zakaz dzielenia (obie tylko dla tej formy wyrazu), `li5a6kr` – dodatkowy
+  wzorzec Lianga dla wszystkich form (cyfra nieparzysta = wolno dzielić, parzysta = nie wolno). Zostało tam
+  też kilkadziesiąt wyrazów angielskich (podział wg zasad angielskich). Pełna lista faktycznych przeniesień
+  po buildzie: `<buildDir>/pelny-przeniesienia.txt` – przejrzyj ją po większych zmianach tekstu.
 * Myślnik to półpauza ze spacjami: ` – `. Cudzysłów polski: „…”. Zakresy liczb: `5–8` (półpauza bez spacji).
 
 ---
@@ -369,7 +380,7 @@ schemat aparatu + elektroferogram – ryc. 3; dwa panele obok siebie – ryc. 1.
 1. Składa jeden HTML: okładka (`front/cover.html`), „Jak korzystać” (`front/howto.html`), spis treści (auto),
    rozdziały w kolejności numerów, część końcowa.
 2. W przeglądarce: numeruje ryciny, generuje otwarcia rozdziałów, etykiety ramek, spis treści, spis rycin,
-   klucz odpowiedzi, źródła, statystyki okładki; wstawia twarde spacje i miękkie dzielenie wyrazów (polskie reguły sylabizacji).
+   klucz odpowiedzi, źródła, statystyki okładki; wstawia twarde spacje i miękkie dzielenie wyrazów (wzorce Lianga `plhyph` + `lib/dzielenie-wyjatki.txt`, zob. rozdz. 4).
 3. Przed pomiarami i drukiem jawnie wczytuje wszystkie czcionki z `fonts/` (także podzbiory i kroje używane
    tylko w paginie), żeby żaden krój nie doładowywał się w trakcie druku.
    Drukuje PDF (natywny druk Chromium), czyta z PDF numery stron każdego celu linku i drukuje ponownie z

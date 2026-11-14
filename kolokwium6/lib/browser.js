@@ -511,53 +511,90 @@
       s = s.replace(ABBR, '$1$2\u00A0');
       s = s.replace(DASH, '\u00A0$1');
       if (!p.closest(NO_HYPH) && p.closest('section.chapter, section.back, section.front')) {
-        s = s.replace(/[\p{L}]+/gu, hyphenateWord);
+        s = s.replace(/[\p{L}\p{N}]+/gu, hyphenateWord);
       }
       if (s !== t.nodeValue) t.nodeValue = s;
     }
   }
 
-  /* Dzielenie wyrazów po polsku – sylabizacja regułowa (bez słownika).
-     Zasady: nie dzielimy dwuznaków (ch cz dz dź dż rz sz), „i” zmiękczające idzie
-     ze spółgłoską, nie dzielimy między samogłoskami, grupę spółgłosek dzielimy
-     przed ostatnią spółgłoską, ale „spółgłoska + r/l/ł/w/j” zostaje razem
-     (elek-tro, se-kwen-cja). Min. 2 litery przed i 2 po dzieleniu, słowa ≥ 6 liter. */
-  const VOWELS = 'aąeęioóuy';
-  const DIGR = ['ch', 'cz', 'dz', 'dź', 'dż', 'rz', 'sz'];
-  const OBSTR = /^(p|b|t|d|k|g|f|w|ch|c|s|z|ś|ź|sz|cz|dz|ż|rz|h)$/;
-  function hyphenateWord(w) {
-    if (w.length < 6) return w;
-    if (/[A-ZĄĆĘŁŃÓŚŹŻ]/.test(w.slice(1))) return w; // skróty, CamelCase
-    const lw = w.toLowerCase();
-    const u = [];
-    for (let i = 0; i < lw.length;) {
-      const two = lw.substr(i, 2);
-      if (DIGR.includes(two)) { u.push({ s: two, v: false, i }); i += 2; continue; }
-      u.push({ s: lw[i], v: VOWELS.includes(lw[i]), i, soft: false }); i++;
+  /* Dzielenie wyrazów po polsku – algorytm Lianga (jak w TeX-u) z polskimi wzorcami plhyph
+     (H. Kołodziejska, B. Jackowski, M. Ryćko; dane, pochodzenie i licencja: lib/hyph-pl.js).
+     Wzorce znają przedrostki (u-względ-nia, nie-któ-re, po-wstał), dwuznaki i „i” zmiękczające.
+     Nie dzielimy: słów < 6 liter, skrótów i CamelCase (wielka litera dalej niż na początku),
+     słów z cyframi (D3S1358, pUC19), słów z samych liter a/c/g/t/u (sekwencje). Min. 2 litery
+     przed i po podziale. Ręczne wyjątki: lib/dzielenie-wyjatki.txt (build wstrzykuje je jako
+     window.K6_HYPH_EXC) – „po-li-mer” wymusza dokładnie te miejsca podziału, słowo bez dywizu
+     zakazuje dzielenia (oba tylko dla tej formy wyrazu), a wpis z cyframi to dodatkowy wzorzec
+     Lianga działający na wszystkie formy (nieparzysta cyfra = wolno dzielić, parzysta = nie wolno). */
+  const HYPH = (() => {
+    const data = window.K6_HYPH_PL || { patterns: '', exceptions: [] };
+    const pats = new Map();
+    let maxLen = 0;
+    for (const p of data.patterns.split(/\s+/)) {
+      if (!p) continue;
+      const letters = p.replace(/\d/g, '');
+      const vals = new Array(letters.length + 1).fill(0);
+      let k = 0;
+      for (const c of p) { if (c >= '0' && c <= '9') vals[k] = +c; else k++; }
+      pats.set(letters, vals);
+      maxLen = Math.max(maxLen, letters.length);
     }
-    for (let k = 1; k < u.length - 1; k++) {
-      if (u[k].s === 'i' && u[k + 1].v && !u[k - 1].v) { u[k].v = false; u[k].soft = true; }
+    const exc = new Map();
+    for (const e of [].concat(data.exceptions || [], window.K6_HYPH_EXC || [])) {
+      const x = String(e).trim().toLowerCase();
+      if (!x) continue;
+      if (/\d/.test(x)) {                       // własny wzorzec Lianga (np. „li3a4kry”) – łączony z wzorcami plhyph
+        const letters = x.replace(/\d/g, '');
+        const vals = pats.get(letters) || new Array(letters.length + 1).fill(0);
+        let k = 0;
+        for (const c of x) { if (c >= '0' && c <= '9') vals[k] = Math.max(vals[k], +c); else k++; }
+        pats.set(letters, vals);
+        maxLen = Math.max(maxLen, letters.length);
+      } else exc.set(x.replace(/-/g, ''), x);
     }
-    const nuc = []; u.forEach((x, k) => { if (x.v) nuc.push(k); });
-    if (nuc.length < 2) return w;
-    const breaks = [];
-    for (let j = 0; j < nuc.length - 1; j++) {
-      const a = nuc[j], b = nuc[j + 1];
-      let end = b - 1;
-      if (end > a && u[end].soft) end--;          // „ni”, „ci”, „si”… idą razem
-      const cons = end - a;                        // liczba spółgłosek (bez „i” zmiękczającego)
-      if (cons <= 0) continue;                     // samogłoska–samogłoska: nie dzielimy
-      let at = end;
-      if (cons >= 2) {
-        const last = u[end].s, prev = u[end - 1].s;
-        if (last === 'j' || (/^(r|l|ł|w)$/.test(last) && OBSTR.test(prev) && prev !== last)) at = end - 1;
+    return { pats, maxLen, exc, left: data.leftmin || 2, right: data.rightmin || 2 };
+  })();
+  /* miejsca podziału wg wzorców: indeksy c, przed którymi (lw[c]) wolno przenieść */
+  function liang(lw) {
+    const word = '.' + lw + '.';
+    const pts = new Array(word.length + 1).fill(0);
+    for (let i = 0; i < word.length; i++) {
+      for (let l = 1; l <= HYPH.maxLen && i + l <= word.length; l++) {
+        const v = HYPH.pats.get(word.substr(i, l));
+        if (v) for (let j = 0; j < v.length; j++) if (v[j] > pts[i + j]) pts[i + j] = v[j];
       }
-      const ci = u[at].i;
-      if (ci >= 2 && w.length - ci >= 2) breaks.push(ci);
     }
-    if (!breaks.length) return w;
+    let out = [];
+    // pts[k] = wartość przed znakiem word[k]; litera lw[c] to word[c + 1]
+    for (let c = HYPH.left; c <= lw.length - HYPH.right; c++) if (pts[c + 1] % 2) out.push(c);
+    // bezpiecznik: fragment bez samogłoski (np. „kon-tro-l-ne”) – usuwamy oba sąsiednie podziały
+    const bad = new Set(), cuts = [0, ...out, lw.length];
+    for (let k = 1; k < cuts.length; k++) {
+      if (!/[aąeęioóuy]/.test(lw.slice(cuts[k - 1], cuts[k]))) { bad.add(cuts[k - 1]); bad.add(cuts[k]); }
+    }
+    if (bad.size) out = out.filter((c) => !bad.has(c));
+    return out;
+  }
+  function hyphenPoints(w) {
+    const lw = w.toLowerCase();
+    const e = HYPH.exc.get(lw);
+    if (e !== undefined) {
+      const out = [];
+      let c = 0;
+      for (const ch of e) { if (ch === '-') out.push(c); else c++; }
+      return out;
+    }
+    if (w.length < 6) return [];
+    if (/\d/.test(w)) return [];                               // D3S1358, pUC19
+    if (/[A-ZĄĆĘŁŃÓŚŹŻ]/.test(w.slice(1))) return [];            // skróty, CamelCase
+    if (/^[acgtu]+$/i.test(w)) return [];                      // sekwencje nukleotydów
+    return liang(lw);
+  }
+  function hyphenateWord(w) {
+    const br = hyphenPoints(w);
+    if (!br.length) return w;
     let out = '', last = 0;
-    for (const c of breaks) { out += w.slice(last, c) + '\u00AD'; last = c; }
+    for (const c of br) { out += w.slice(last, c) + '­'; last = c; }
     return out + w.slice(last);
   }
 
@@ -684,6 +721,20 @@
     return { nodes: nodes.length, broken: freezeNodes(nodes) };
   }
 
+  /* Lista przeniesień w zamrożonym tekście: „wy-raz” (dywiz w miejscu złamania wiersza), w kolejności dokumentu. */
+  function frozenBreaks() {
+    const out = [];
+    for (const [t, f] of FROZEN) {
+      if (!t.isConnected || !f.n) continue;
+      for (let k = 1; k < f.parts.length; k += 2) {
+        const a = (f.parts[k - 1].nodeValue.match(/[\p{L}\p{N}]*$/u) || [''])[0];
+        const b = (f.parts[k + 1].nodeValue.match(/^[\p{L}\p{N}]*/u) || [''])[0];
+        out.push(a + '-' + b);
+      }
+    }
+    return out;
+  }
+
   /* Naprawa po kontroli: segments = fragmenty wierszy (z pdftotext) ze stron, na których zamrożony
      druk różni się od druku z U+00AD. Znajduje zamrożone akapity zawierające te fragmenty,
      przywraca w nich U+00AD i – przy kolejnych próbach dla tego samego akapitu:
@@ -729,5 +780,5 @@
     return { refrozen, shy, broken };
   }
 
-  window.K6 = { prepare, applyPages, balanceColumns, measure, hyphenateWord, freezeHyphens, refreezeHyphens };
+  window.K6 = { prepare, applyPages, balanceColumns, measure, hyphenateWord, hyphenPoints, freezeHyphens, frozenBreaks, refreezeHyphens };
 })();

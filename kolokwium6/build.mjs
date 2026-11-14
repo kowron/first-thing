@@ -121,6 +121,11 @@ try {
   page.on('console', (m) => { if (m.type() === 'error') W.push({ level: 'warn', msg: `Konsola: ${m.text()}` }); });
   page.on('requestfailed', (r) => W.push({ level: 'warn', msg: `Nie wczytano zasobu: ${r.url()}` }));
   await page.goto(pathToFileURL(tmpHtml).href, { waitUntil: 'load' });
+  // dzielenie wyrazów: wzorce Lianga (lib/hyph-pl.js) + ręczne wyjątki (lib/dzielenie-wyjatki.txt; # = komentarz)
+  await page.addScriptTag({ path: path.join(ROOT, 'lib', 'hyph-pl.js') });
+  const hyphExc = fs.readFileSync(path.join(ROOT, 'lib', 'dzielenie-wyjatki.txt'), 'utf8').split('\n')
+    .map((l) => l.replace(/#.*/, '').trim()).filter(Boolean);
+  await page.addScriptTag({ content: `window.K6_HYPH_EXC = ${JSON.stringify(hyphExc)};` });
   await page.addScriptTag({ path: path.join(ROOT, 'lib', 'browser.js') });
   // Wszystkie @font-face wczytujemy jawnie, zanim cokolwiek zmierzymy lub wydrukujemy.
   // Same document.fonts.ready nie wystarcza: podzbiory z unicode-range i kroje używane tylko w druku
@@ -223,6 +228,8 @@ try {
       const d = lastDiff && lastDiff.diffs[0];
       W.push({ level: 'warn', msg: `Zamiana miękkich łączników zmieniłaby łamanie – zostawiono wersję z U+00AD (wyszukiwanie w PDF działa gorzej)${d ? `; pierwsza różnica s. ${d.page}: „${(d.a[0] || '').slice(0, 70)}”` : ''} – zgłoś to` });
     }
+    // lista faktycznych przeniesień (do przeglądu jakości dzielenia): <buildDir>/<nazwa>-przeniesienia.txt
+    fs.writeFileSync(path.join(buildDir, `${tag}-przeniesienia.txt`), (await page.evaluate(() => window.K6.frozenBreaks())).join('\n') + '\n');
     W.push({ level: 'info', msg: `Dzielenie wyrazów: ${ok ? broken : fr.broken} przeniesień${ok ? (repaired.size ? ` (${repaired.size} akapitów zamrożonych ponownie po kontroli)` : '') : ' (niezamrożone)'}` });
   }
   {
