@@ -70,12 +70,12 @@
     <li><b>czystość</b> próbki – mówi o niej stosunek <b>260/240</b> lub <b>260/320</b>.</li>
   </ul>
 
-  <div class="box obraz"><p>Stosunek 260/280 to <b>„ile kwasu nukleinowego na jedno białko”</b>. Licznik rośnie z ilością DNA, mianownik – z ilością białek. Im więcej białka w preparacie, tym większy mianownik i tym mniejszy wynik. Podobnie 260/240 i 260/320 porównują sygnał kwasu nukleinowego z tłem: im brudniejsza próbka, tym mniejszy iloraz.</p></div>
+  <div class="box obraz"><p>Stosunek 260/280 to <b>„ile kwasu nukleinowego na jedno białko”</b>. Licznik to pomiar przy długości fali specyficznej dla kwasów nukleinowych (260 nm), mianownik – dla białek (280 nm). Im więcej białka w preparacie, tym większy mianownik i tym mniejszy wynik. Podobnie 260/240 i 260/320 porównują sygnał kwasu nukleinowego z tłem: im brudniejsza próbka, tym mniejszy iloraz.</p></div>
 
   <h3>Zastrzeżenia przy RNA</h3>
   <p>W przypadku RNA trafność pomiaru stosunku OD 260/280 jest kwestionowana. Według Drewy odpowiada on tylko 40% zawartości RNA i może zawierać zanieczyszczenia białkowe. Bardziej specyficzny jest pomiar z użyciem odpowiednich <b>sond znakujących</b>, np. barwnika <b>RiboGreen</b> (<i>RNA RiboGreen dye</i>). Sondy wykrywają już <b>1 ng RNA/ml</b> i – w przeciwieństwie do pomiaru 260/280 – nie oznaczają ewentualnych zanieczyszczeń białkami i DNA.</p>
 
-  <div class="box uwaga"><p>Zdanie „odpowiada on tylko 40% zawartości RNA” jest niejasne – nie wiadomo, co i czemu odpowiada. Pewny jest wniosek: dla <b>RNA</b> stosunek 260/280 jest mało wiarygodny i nie wyklucza zanieczyszczeń białkiem. Słowo „spektroforetycznym” to literówka podręcznika (pomiar spektrofotometryczny).</p></div>
+  <div class="box uwaga"><p>Zdanie „odpowiada on tylko 40% zawartości RNA” jest niejasne – nie wiadomo, co i czemu odpowiada. Pewny jest wniosek: dla <b>RNA</b> stosunek 260/280 jest mało wiarygodny i nie wyklucza zanieczyszczeń białkiem. Określenie „pomiar spektroforetyczny” w tym miejscu podręcznika rozumiej jako pomiar spektrofotometryczny.</p></div>
 
   <h3>Liczba integralności 1–10</h3>
   <aside class="note pojecie" data-term="Integralność"><p>„nienaruszoność” kwasu nukleinowego – to, w jakim stopniu cząsteczki są całe, a nie pocięte na fragmenty.</p></aside>
@@ -116,14 +116,14 @@
           <line x1="26" y1="40" x2="26" y2="150" stroke="#23323e" stroke-width="3"/>
           <line x1="270" y1="40" x2="270" y2="150" stroke="#c84d42" stroke-width="3"/>
           <!-- żel -->
-          <rect x="54" y="112" width="188" height="24" rx="3" class="gel"/>
-          <rect x="70" y="112" width="8" height="10" class="well"/>
-          <text x="160" y="128" class="t-xs mid muted">żel</text>
-          <!-- wędrówka DNA -->
-          <g class="f-teal"><circle cx="96" cy="100" r="5"/><circle cx="130" cy="100" r="5"/><circle cx="164" cy="100" r="5"/></g>
-          <g class="t-xs mid f-white b"><text x="96" y="103.5">–</text><text x="130" y="103.5">–</text><text x="164" y="103.5">–</text></g>
-          <path d="M178,100 H230" class="arrow teal"/>
-          <text x="148" y="84" class="t-xs mid f-teal sb">DNA / RNA (ładunek –)</text>
+          <rect x="54" y="98" width="188" height="40" rx="3" class="gel"/>
+          <rect x="70" y="98" width="8" height="12" class="well"/>
+          <text x="232" y="132" class="t-xs end muted">żel</text>
+          <!-- wędrówka DNA w żelu -->
+          <g class="f-teal"><circle cx="100" cy="116" r="5"/><circle cx="132" cy="116" r="5"/><circle cx="164" cy="116" r="5"/></g>
+          <g class="t-xs mid f-white b"><text x="100" y="119.5">–</text><text x="132" y="119.5">–</text><text x="164" y="119.5">–</text></g>
+          <path d="M176,116 H228" class="arrow teal"/>
+          <text x="148" y="88" class="t-xs mid f-teal sb">DNA / RNA (ładunek –) w żelu</text>
           <!-- podpisy -->
           <path d="M74,140 V170" stroke="#8a98a3" stroke-width="1"/>
           <text x="74" y="182" class="t-xs mid muted">studzienka (kieszonka)</text>
@@ -189,11 +189,11 @@
   <p><b>Degradacja</b> to rozpad DNA lub RNA na mniejsze fragmenty. Fragmenty mają różne długości, więc wędrują z różną szybkością i nie tworzą jednego ostrego prążka. Na żelu degradacja jest widoczna w postaci <b>smugi</b>.</p>
 
   <h3>4. Zanieczyszczenia</h3>
-  <aside class="note pojecie" data-term="Błękit bromofenolowy"><p>barwnik dodawany do próbek; widoczny gołym okiem, wędruje w żelu przed większością fragmentów i pokazuje, jak daleko zaszedł rozdział.</p></aside>
+  <aside class="note pojecie" data-term="Błękit bromofenolowy"><p>barwnik, którego pasmo jest widoczne na ścieżce żelu; Drewa używa go jako punktu odniesienia – smuga RNA migruje przed nim, czyli dalej w stronę anody.</p></aside>
   <p>Żel pokazuje też dwa typowe zanieczyszczenia:</p>
   <ul>
     <li><b>białka</b> towarzyszące kwasom nukleinowym – widoczne jako <b>kompleksy DNA–białko zalegające w kieszonkach</b> (studzienkach); kompleks jest zbyt duży, by wejść w żel;</li>
-    <li><b>RNA</b> zanieczyszczający preparaty DNA – widoczny jako <b>smuga migrująca przed błękitem bromofenolowym</b>, czyli w samym dole ścieżki.</li>
+    <li><b>RNA</b> zanieczyszczający preparaty DNA – widoczny jako <b>smuga migrująca przed błękitem bromofenolowym</b>, czyli dalej w stronę anody niż ten barwnik.</li>
   </ul>
 
   <figure class="fig" id="c01-fig-odczyt" data-title="Jak czytać żel analityczny – wielkość, ilość, degradacja, zanieczyszczenia">
@@ -346,7 +346,7 @@
         <div class="answer"><p>W buforze o pH zbliżonym do obojętnego kwasy nukleinowe mają <b>ładunek ujemny</b>, więc wędrują od katody (–) do anody (+). Napięcie: <b>5–8 V/cm długości żelu</b>. Zbyt wysokie podnosi temperaturę – żel się <b>roztapia</b>, a DNA ulega <b>denaturacji</b>.</p></div></li>
       <li id="c01-q-5">Czym różni się elektroforeza preparatywna od analitycznej?
         <div class="answer"><p><b>Preparatywna</b> służy do izolacji z żelu części preparatu potrzebnej do dalszych prac (z użyciem technik elucji). <b>Analityczna</b> służy do charakterystyki preparatu na danym etapie doświadczenia (wielkość, ilość, degradacja, zanieczyszczenia).</p></div></li>
-      <li id="c01-q-6">W ścieżce z DNA widać silny sygnał w kieszonce i smugę na samym dole żelu, przed błękitem bromofenolowym. Zinterpretuj wynik.
+      <li id="c01-q-6">W ścieżce z DNA widać silny sygnał w kieszonce, a także smugę migrującą przed błękitem bromofenolowym. Zinterpretuj wynik.
         <div class="answer"><p>Sygnał w kieszonce to <b>kompleksy DNA–białko</b> – preparat zanieczyszczony białkiem. Smuga przed błękitem bromofenolowym to <b>RNA</b> zanieczyszczający preparat DNA.</p></div></li>
       <li id="c01-q-7">Jak na żelu wygląda degradacja DNA i dlaczego właśnie tak?
         <div class="answer"><p>Jako <b>smuga</b>. Degradacja to rozpad cząsteczek na mniejsze fragmenty o różnych długościach; każdy wędruje z inną szybkością, więc zamiast jednego prążka powstaje ciągły rozmyty pas.</p></div></li>

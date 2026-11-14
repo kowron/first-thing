@@ -12,6 +12,14 @@
   <aside class="note liceum"><p><b>PCR</b> powiela in vitro wybrany odcinek DNA. Odcinek ten ograniczają dwa startery, dlatego wszystkie kopie produktu mają tę samą, z góry znaną długość.</p></aside>
   <p>Elektroforeza analityczna pozwala ustalić <b>wielkość fragmentów DNA</b> przez porównanie tempa migracji badanych prążków z <b>wzorcem mas cząsteczkowych</b> – preparatem zawierającym fragmenty DNA o znanych wielkościach. Wzorzec rozdziela się <b>w tym samym żelu</b> co badane cząsteczki. Na tej samej wysokości żelu, w tym samym prążku, leżą fragmenty <b>identycznej wielkości</b>. Zasadę i krzywą wzorcową omawia <a class="chapref" href="#c01"></a>; tu – sama procedura odczytu (<a class="figref" href="#c11-fig-odczyt"></a>).</p>
 
+  <ol>
+    <li><b>Znajdź wzorzec</b> i przypisz jego prążkom wielkości z opisu wzorca. Bez wzorca wielkości nie da się ustalić.</li>
+    <li><b>Ustal kierunek</b>: studzienki (start) są po stronie katody, DNA wędruje do anody, a krótsze fragmenty leżą dalej od startu.</li>
+    <li><b>Dla każdego prążka znajdź dwa sąsiednie prążki wzorca</b> – większy powyżej, mniejszy poniżej. To przedział, w którym leży wynik.</li>
+    <li><b>Oszacuj położenie w przedziale</b>. Droga migracji zależy od logarytmu długości, więc w szerokim przedziale interpoluje się w skali logarytmicznej albo z krzywej wzorcowej.</li>
+    <li><b>Porównaj z oczekiwaną długością</b> produktu z protokołu i zapisz wynik jako „ok. X pz”.</li>
+  </ol>
+
   <figure class="fig" id="c11-fig-odczyt" data-title="Odczyt wielkości produktu PCR ze wzorca mas">
     <div class="panels cols-2">
       <div class="panel" data-badge="A" data-title="Żel po rozdziale">
@@ -59,17 +67,9 @@
         </svg>
       </div>
     </div>
-    <figcaption>Przykład wymyślony. A – M: wzorzec mas (100–1000 pz); 1 – produkt leżący między prążkami 400 i 300 pz (linie pomocnicze); 2 – produkt na wysokości prążka 500 pz, czyli ok. 500 pz; 3 – produkt między 300 i 200 pz, bliżej 200 pz. B – odczyt ścieżki 1: produkt przebył drogę w połowie między prążkami 400 i 300 pz, co w skali logarytmicznej daje ok. 350 pz.</figcaption>
+    <figcaption>Przykład wymyślony. A – M: wzorzec 100–1000 pz; 1 – produkt między 400 i 300 pz; 2 – ok. 500 pz; 3 – między 300 i 200 pz, bliżej 200 pz. B – odczyt ścieżki 1: połowa drogi między 400 i 300 pz w skali logarytmicznej to ok. 350 pz.</figcaption>
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 705, 712</p>
   </figure>
-
-  <ol>
-    <li><b>Znajdź wzorzec</b> i przypisz jego prążkom wielkości z opisu wzorca. Bez wzorca wielkości nie da się ustalić.</li>
-    <li><b>Ustal kierunek</b>: studzienki (start) są po stronie katody, DNA wędruje do anody, a krótsze fragmenty leżą dalej od startu.</li>
-    <li><b>Dla każdego prążka znajdź dwa sąsiednie prążki wzorca</b> – większy powyżej, mniejszy poniżej. To przedział, w którym leży wynik.</li>
-    <li><b>Oszacuj położenie w przedziale</b>. Droga migracji zależy od logarytmu długości, więc w szerokim przedziale interpoluje się w skali logarytmicznej albo z krzywej wzorcowej.</li>
-    <li><b>Porównaj z oczekiwaną długością</b> produktu z protokołu i zapisz wynik jako „ok. X pz”.</li>
-  </ol>
 
   <div class="box przyklad"><p>(Liczby przykładowe.) W ścieżce 1 prążek wzorca 400 pz leży 30 mm od studzienki, prążek 300 pz – 36 mm, a produkt – 33 mm. Produkt jest w połowie przedziału. Interpolacja logarytmiczna: (2,602 + 2,477) : 2 = 2,540; 10<sup>2,54</sup> ≈ 347, czyli <b>ok. 350 pz</b>. W tak wąskim przedziale średnia arytmetyczna (350 pz) daje praktycznie ten sam wynik; różnica rośnie, gdy prążki wzorca leżą daleko od siebie.</p></div>
 
@@ -110,6 +110,11 @@
     <li><b>heterozygota (nosiciel)</b> – prążki allela prawidłowego i prążek większy;</li>
     <li><b>jeden prążek o większej masie</b> – utrata miejsc w obu allelach, czyli <b>homozygota</b> mutacji.</li>
   </ul>
+
+  <div class="box przyklad"><p>(Przypadek wymyślony.) Produkt 300 pz, enzym tnie allel prawidłowy na 200 + 100 pz. Ścieżka pacjenta A: 200 i 100 pz → homozygota prawidłowa. Pacjent B: 300, 200 i 100 pz → heterozygota. Pacjent C: tylko 300 pz → homozygota zmutowana (pod warunkiem, że trawienie zadziałało – sprawdza się to na próbce, o której wiadomo, że ma miejsce cięcia).</p></div>
+
+  <aside class="note poza"><p>Prążek nieprzeciętego produktu obok fragmentów cięcia może też oznaczać <b>niepełne trawienie</b> (np. za mało enzymu, za krótki czas). Dlatego warunki trawienia muszą być takie, by allel z miejscem został przecięty całkowicie.</p></aside>
+  <div class="box zapamietaj" data-title="Trzy kontrole wzoru restrykcyjnego"><p><b>1.</b> Suma długości fragmentów z jednego allela równa się długości produktu nietrawionego. <b>2.</b> Dwa fragmenty identycznej wielkości dają jeden prążek – mniej prążków nie musi znaczyć mniej cięć. <b>3.</b> Prążki nieprzewidziane przez mapę mogą wynikać z aktywności „star” w nieoptymalnych warunkach trawienia.</p></div>
 
   <figure class="fig" id="c11-fig-restrykcja" data-title="Utrata miejsca restrykcyjnego – wzory prążków u homo- i heterozygot">
     <div class="panels cols-2">
@@ -154,11 +159,6 @@
     <figcaption>Przykład wymyślony. A – produkt PCR (300 pz) z allela prawidłowego zawiera miejsce cięcia i po trawieniu daje fragmenty 200 i 100 pz; mutacja znosi miejsce cięcia, więc allel zmutowany zostaje fragmentem 300 pz. B – M: wzorzec; N: produkt nietrawiony; +/+: homozygota z miejscem (200 + 100 pz); +/–: heterozygota (300 + 200 + 100 pz); –/–: homozygota bez miejsca (tylko 300 pz).</figcaption>
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 705, 716</p>
   </figure>
-
-  <aside class="note poza"><p>Prążek nieprzeciętego produktu obok fragmentów cięcia może też oznaczać <b>niepełne trawienie</b> (np. za mało enzymu, za krótki czas). Dlatego warunki trawienia muszą być takie, by allel z miejscem został przecięty całkowicie.</p></aside>
-  <div class="box zapamietaj" data-title="Trzy kontrole wzoru restrykcyjnego"><p><b>1.</b> Suma długości fragmentów z jednego allela równa się długości produktu nietrawionego. <b>2.</b> Dwa fragmenty identycznej wielkości dają jeden prążek – mniej prążków nie musi znaczyć mniej cięć. <b>3.</b> Prążki nieprzewidziane przez mapę mogą wynikać z aktywności „star” w nieoptymalnych warunkach trawienia.</p></div>
-
-  <div class="box przyklad"><p>(Przypadek wymyślony.) Produkt 300 pz, enzym tnie allel prawidłowy na 200 + 100 pz. Ścieżka pacjenta A: 200 i 100 pz → homozygota prawidłowa. Pacjent B: 300, 200 i 100 pz → heterozygota. Pacjent C: tylko 300 pz → homozygota zmutowana (pod warunkiem, że trawienie zadziałało – sprawdza się to na próbce, o której wiadomo, że ma miejsce cięcia).</p></div>
 
   <p class="src">Źródło: Drewa s. 63, 124, 703–705, 716, 726</p>
 
@@ -223,14 +223,6 @@
 
   <p>W <b>hybrydyzacji punktowej (dot blot)</b> wiele próbek DNA nanosi się w postaci kropli na ten sam filtr i hybrydyzuje z tą samą sondą. W wariancie <b>slot blot</b> DNA nanosi się do szczelin specjalnego wzorca. Po wprowadzeniu wzorców ilości DNA technika może służyć analizie ilościowej. Znakowanie <b>enzymatyczne</b> daje reakcję barwną, a <b>immunochemiczne</b> wykorzystuje hapten (biotynę, digoksygeninę) i przeciwciało sprzężone z alkaliczną fosfatazą lub peroksydazą.</p>
 
-  <aside class="note warto"><p>Pierwowzorem mikromacierzy były paski lub krążki bibułowe z naniesionymi wzorcowymi próbami DNA. W mikromacierzy sekwencje wzorcowe nanosi się w sposób zaplanowany i uporządkowany – położenie punktu mówi, z czym zhybrydyzował materiał (<a class="chapref" href="#c07"></a>).</p></aside>
-  <p>Odwrotny układ – na pasku unieruchomione są różne sondy wzorcowe, a znakowany jest materiał badany – Drewa opisuje jako pierwowzór mikromacierzy. Wtedy o tym, <b>jaką</b> sekwencję wykryto, decyduje <b>położenie</b> sygnału na pasku, a nie jego kolor.</p>
-
-  <aside class="note pojecie" data-term="HPV"><p>(<i>Human Papillomavirus</i>) – wirus brodawczaka ludzkiego, onkogenny wirus DNA.</p></aside>
-  <p><b>Wirus brodawczaka ludzkiego (HPV)</b> należy do wirusów DNA o właściwościach onkogennych. Jest związany z rakiem płaskonabłonkowym szyjki macicy, jamy ustnej i krtani, a także z rakiem prącia, sromu, odbytu i skóry. Wirusy onkogenne kodują białka unieczynniające produkty genów supresorowych: <b>białko E6</b> HPV tworzy nieaktywne kompleksy z białkiem p53, a <b>onkoproteina E7</b> HPV-16 upośledza hamowanie cyklu komórkowego przez białko p21 i utrudnia łączenie pRb z deacetylazą histonową. PCR pozwala z ogromną czułością wykazać obecność wirusa brodawczaka w wymazie z szyjki macicy.</p>
-
-  <div class="box poza" data-title="Poza Drewą · jak zbudowany jest pasek do genotypowania HPV"><p>DNA wirusa namnaża się najpierw w PCR ze starterami dającymi znakowany produkt. Na pasku (kasetce) każda pozycja to <b>sonda dla innego typu wirusa</b>; są też <b>pola kontrolne</b> (np. kontrola reakcji barwnej i kontrola obecności DNA). Po hybrydyzacji i reakcji barwnej odczytuje się, w których pozycjach pojawił się prążek. Układ pozycji jest różny w różnych testach – odczytuje się go z karty dołączonej do zestawu.</p></div>
-
   <figure class="fig" id="c11-fig-hpv" data-title="Hybrydyzacja punktowa i odczyt paska hybrydyzacyjnego">
     <div class="panels cols-2">
       <div class="panel" data-badge="A" data-title="Dot blot – jedna sonda">
@@ -272,6 +264,14 @@
     <figcaption>A – dot blot (Drewa): wiele próbek na jednym filtrze, jedna sonda; ciemna kropla oznacza obecność sekwencji komplementarnej, a jej intensywność – ilość DNA (rząd C: wzorce ilości). B – przykładowy pasek z wieloma sondami (układ pozycji wymyślony; pola kontrolne i typy wirusa – uzupełnienie spoza Drewy): 1 – tylko kontrola, wynik ujemny dla typów na pasku; 2 – HPV 16; 3 – zakażenie dwoma typami; 4 – brak prążka kontroli, wynik nieważny.</figcaption>
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 714–717; budowa paska – uzupełnienie spoza Drewy</p>
   </figure>
+
+  <aside class="note warto"><p>Pierwowzorem mikromacierzy były paski lub krążki bibułowe z naniesionymi wzorcowymi próbami DNA. W mikromacierzy sekwencje wzorcowe nanosi się w sposób zaplanowany i uporządkowany – położenie punktu mówi, z czym zhybrydyzował materiał (<a class="chapref" href="#c07"></a>).</p></aside>
+  <p>Odwrotny układ – na pasku unieruchomione są różne sondy wzorcowe, a znakowany jest materiał badany – Drewa opisuje jako pierwowzór mikromacierzy. Wtedy o tym, <b>jaką</b> sekwencję wykryto, decyduje <b>położenie</b> sygnału na pasku, a nie jego kolor.</p>
+
+  <aside class="note pojecie" data-term="HPV"><p>(<i>Human Papillomavirus</i>) – wirus brodawczaka ludzkiego, onkogenny wirus DNA.</p></aside>
+  <p><b>Wirus brodawczaka ludzkiego (HPV)</b> należy do wirusów DNA o właściwościach onkogennych. Jest związany z rakiem płaskonabłonkowym szyjki macicy, jamy ustnej i krtani, a także z rakiem prącia, sromu, odbytu i skóry. Wirusy onkogenne kodują białka unieczynniające produkty genów supresorowych: <b>białko E6</b> HPV tworzy nieaktywne kompleksy z białkiem p53, a <b>onkoproteina E7</b> HPV-16 upośledza hamowanie cyklu komórkowego przez białko p21 i utrudnia łączenie pRb z deacetylazą histonową. PCR pozwala z ogromną czułością wykazać obecność wirusa brodawczaka w wymazie z szyjki macicy.</p>
+
+  <div class="box poza" data-title="Poza Drewą · jak zbudowany jest pasek do genotypowania HPV"><p>DNA wirusa namnaża się najpierw w PCR ze starterami dającymi znakowany produkt. Na pasku (kasetce) każda pozycja to <b>sonda dla innego typu wirusa</b>; są też <b>pola kontrolne</b> (np. kontrola reakcji barwnej i kontrola obecności DNA). Po hybrydyzacji i reakcji barwnej odczytuje się, w których pozycjach pojawił się prążek. Układ pozycji jest różny w różnych testach – odczytuje się go z karty dołączonej do zestawu.</p></div>
 
   <div class="box poza" data-title="Poza Drewą · odczyt paska krok po kroku"><ol>
     <li>Sprawdź <b>pola kontrolne</b> – bez nich wynik jest nieważny, nawet jeśli widać inne prążki.</li>
