@@ -1,0 +1,803 @@
+<section class="chapter"
+  data-num="09"
+  data-title="Współczesna identyfikacja genetyczna – autosomalne układy STR"
+  data-short="Identyfikacja genetyczna – układy STR"
+  data-kicker="PCR · mikrosatelity · multipleks · sekwenator · drabina alleliczna">
+
+  <p class="lead">Reakcja PCR pozwoliła badać DNA nawet z najdrobniejszych śladów biologicznych, ale wymagała nowych markerów – krótkich powtórzeń tandemowych (STR). Ten rozdział wyjaśnia, czym są układy STR, jak namnaża się je wiele naraz, jak sekwenator mierzy długość produktów i jak z tej długości powstaje nazwa allelu oraz profil genetyczny.</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c09-minisatelity">Punkt wyjścia: minisatelity i ich ograniczenia</h2>
+
+  <aside class="note liceum"><p>Tylko niewielka część genomu człowieka koduje białka. Większość to <b>DNA niekodujące</b>, w tym <b>sekwencje powtarzalne</b> – krótkie odcinki powielone wiele razy. Mutacje w tych rejonach rzadko szkodzą, więc łatwo utrwalają się w populacji.</p></aside>
+  <p>Pierwsze metody identyfikacji genetycznej opierały się na <b>sekwencjach minisatelitarnych</b> (minisatelitach). Składają się one z wielokrotnie powtórzonych segmentów DNA ułożonych jeden za drugim w danym fragmencie chromosomu. Głównym rodzajem mutacji w minisatelitach jest zmiana liczby segmentów, czyli zmiana długości całej sekwencji. Tak powstają liczne warianty długości – <b>allele</b>; obserwowano minisatelity o ponad 100 wariantach. Profil kilku minisatelitów oznaczano metodą <b>RFLP</b> z sondą molekularną (hybrydyzacja typu Southern – <a class="chapref" href="#c05"></a>).</p>
+
+  <aside class="note pojecie" data-term="Locus"><p>(l. mn. loci) – określone miejsce na chromosomie; w genetyce sądowej „układ” to badany locus polimorficzny.</p></aside>
+  <p>Analiza RFLP wymagała stosunkowo dużej ilości – <b>kilku mikrogramów</b> – DNA dobrej jakości. Dlatego stosowano ją przede wszystkim w badaniach <b>spornego ojcostwa i pokrewieństwa</b>, gdzie od badanych osób zwykle można pobrać wystarczająco dużo materiału (krwi). Technika <b>wielolokusowa</b> (<i>multilocus</i>, MLP – sonda z sekwencją rdzeniową wykrywa naraz wiele minisatelitów) była natomiast bardzo trudna, a często niemożliwa w badaniach <b>śladów biologicznych</b>. Ślady zawierają zwykle mało DNA, a ten bywa silnie zdegradowany, tzn. występuje w postaci niewielkich fragmentów.</p>
+
+  <p>Część problemów rozwiązano, zmieniając sekwencję sondy. Zamiast sekwencji rdzeniowej użyto sondy o sekwencji <b>unikalnej dla motywu powtarzalnego jednego, konkretnego minisatelity</b>. Obraz polimorfizmu stał się znacznie prostszy: obejmował allele tylko jednego wybranego locus na konkretnym chromosomie. Taką analizę nazwano <b>analizą jednolokusową</b> (SLP).</p>
+
+  <table class="tbl full">
+    <thead><tr><th style="width:30%">Cecha</th><th>Analiza wielolokusowa (MLP)</th><th>Analiza jednolokusowa (SLP)</th></tr></thead>
+    <tbody>
+      <tr><td>Sonda</td><td>sekwencja rdzeniowa wspólna dla wielu minisatelitów</td><td>sekwencja unikalna dla motywu jednego minisatelity</td></tr>
+      <tr><td>Obraz</td><td>liczne prążki z wielu loci</td><td>allele jednego locus – obraz prosty</td></tr>
+      <tr><td>Ilość DNA</td><td>kilka µg</td><td>nieco mniej – ok. 1 µg</td></tr>
+      <tr><td>Interpretacja</td><td>trudna statystycznie</td><td>łatwiejsza statystyka i analiza mieszaniny DNA kilku osób</td></tr>
+      <tr><td>Zastosowanie</td><td>ojcostwo, pokrewieństwo</td><td>głównie ojcostwo; ślady – w ograniczonym zakresie</td></tr>
+    </tbody>
+  </table>
+
+  <p>Także SLP wymagała jednak dość dużej ilości DNA, i to stosunkowo dobrej jakości, bo analizowane fragmenty liczyły po kilka, a czasem nawet kilkanaście tysięcy par zasad. Metoda znalazła więc szerokie zastosowanie głównie w sprawach spornego ojcostwa. W badaniach śladów biologicznych i innych próbek z <b>niskocząsteczkowym</b> (pofragmentowanym) DNA jej wykorzystanie było raczej ograniczone.</p>
+
+  <p class="src">Źródło: Drewa s. 765–769</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c09-pcr">Przełom: reakcja PCR</h2>
+
+  <aside class="note liceum"><p><b>PCR</b> (łańcuchowa reakcja polimerazy) powiela wybrany odcinek DNA in vitro. Cykl: denaturacja (rozdzielenie nici) → przyłączenie <b>starterów</b> → wydłużanie przez polimerazę. Każdy cykl w przybliżeniu podwaja liczbę kopii.</p></aside>
+  <p>Prawdziwy przełom w identyfikacji osobniczej nastąpił wraz z możliwością namnażania fragmentów DNA in vitro metodą <b>PCR</b>. Technika ta zrewolucjonizowała niemal wszystkie dziedziny biologii eksperymentalnej, ale szczególny rozkwit przeżyła dzięki niej genetyka sądowa. PCR pozwolił pokonać największą trudność w analizie śladów biologicznych – <b>niewielką ilość materiału</b> dostępnego do badań.</p>
+
+  <aside class="note pojecie" data-term="Starter"><p>(ang. <i>primer</i>) – krótki, odpowiednio zaprojektowany odcinek DNA, który wyznacza początek i koniec namnażanego fragmentu.</p></aside>
+  <p>Mieszanina reakcyjna PCR zawiera:</p>
+  <ul>
+    <li><b>startery</b> – krótkie, odpowiednio zaprojektowane odcinki DNA;</li>
+    <li><b>polimerazę DNA</b>;</li>
+    <li><b>trójfosforany deoksyrybonukleotydów</b> (dNTP);</li>
+    <li>niewielką ilość <b>genomowego DNA</b>.</li>
+  </ul>
+  <p>Podczas cyklicznych zmian temperatury w <b>termocyklerze</b> z jednej kopii odcinka DNA leżącego <b>między starterami</b> można uzyskać nawet <b>kilkaset milionów</b> identycznych fragmentów.</p>
+
+  <p>W praktyce oznacza to, że do analizy może wystarczyć nawet bardzo niewielki ślad:</p>
+  <ul>
+    <li>ślina na bibułce niedopałka papierosa;</li>
+    <li>plamka krwi o powierzchni równej główce szpilki;</li>
+    <li>ślady pozostawione na przedmiotach dotykanych przez przestępców.</li>
+  </ul>
+  <p>PCR dał nadzieję na znaczną poprawę efektywności badań identyfikacyjnych, zwłaszcza w sprawach trudnych, wymagających metod o wysokiej czułości. Jednocześnie wymusił <b>całkowitą zmianę warsztatu badawczego</b>, bo zastosowanie PCR do analizy minisatelitów na szerszą skalę było praktycznie niemożliwe.</p>
+
+  <p>Przyczyną jest przede wszystkim <b>długość alleli</b> minisatelitów – często kilka, a nawet kilkanaście tysięcy par zasad. Fragmenty takiej wielkości da się wprawdzie amplifikować w PCR, ale wymaga to DNA wyjściowego <b>wysokiej jakości</b> i nawet wtedy jest technicznie trudne. Trzeba było znaleźć w genomie fragmenty, które przejmą rolę minisatelitów, a jednocześnie zapewnią podobny poziom <b>zmienności międzyosobniczej</b>. Warunek ten spełniły <b>sekwencje mikrosatelitarne</b>, zwane też krótkimi powtórzeniami tandemowymi (<b>STR</b>, <i>short tandem repeats</i>).</p>
+
+  <div class="box zapamietaj"><p>PCR rozwiązał problem <b>małej ilości DNA</b> w śladach: z jednej kopii powstaje nawet kilkaset milionów kopii odcinka między starterami. Minisatelity się do PCR nie nadają, bo ich allele mają <b>tysiące pz</b> i wymagają DNA wysokiej jakości. Zastąpiły je krótkie <b>układy STR</b>.</p></div>
+
+  <p class="src">Źródło: Drewa s. 769–770</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c09-str">Układy STR – budowa i porównanie z minisatelitami</h2>
+
+  <aside class="note pojecie" data-term="STR"><p>(<i>short tandem repeats</i>) – mikrosatelity: jednostka 2–6 pz powtórzona tandemowo (jedna za drugą) zwykle 5–50 razy.</p></aside>
+  <p><b>Układy STR</b> mają budowę bardzo podobną do minisatelitów. Składają się z krótkiego fragmentu DNA o określonej sekwencji, powtórzonego wielokrotnie na określonym odcinku chromosomu. Główna różnica dotyczy <b>długości jednostki powtarzalnej</b>: w minisatelitach liczy ona od kilkunastu do kilkudziesięciu par zasad, a w STR – tylko <b>2–6 pz</b> (<a class="figref" href="#c09-fig-str"></a>).</p>
+
+  <aside class="note liceum"><p><b>Autosomy</b> to 22 pary chromosomów jednakowych u obu płci; 23. para to <b>chromosomy płciowe</b> X i Y. Każdy autosom występuje w dwóch homologicznych kopiach – od matki i od ojca.</p></aside>
+  <p>W mikrosatelitach jednostka powtarza się też znacznie mniej razy – zwykle <b>5–50</b>; w minisatelitach obserwuje się setki, a nawet tysiące kopii. Krótsza jednostka i mniej powtórzeń dają <b>krótsze allele</b>: allel STR liczy zwykle <b>100–300 pz</b>, allel minisatelity – tysiące par zasad. Przykład: allel 9 układu TH01 zawiera 9 powtórzeń motywu AATG, więc sekwencja powtarzalna liczy łącznie 36 pz (s. 766). Rozdział dotyczy układów <b>autosomalnych</b>, czyli położonych na autosomach.</p>
+
+  <figure class="fig" id="c09-fig-str" data-title="Minisatelita a układ STR">
+    <div class="panel" data-badge="A" data-title="Minisatelita">
+<svg viewBox="0 0 640 100" role="img" aria-label="Minisatelita: długi ciąg jednostek po kilkanaście–kilkadziesiąt par zasad">
+<line x1="16" y1="46" x2="624" y2="46" stroke="#8a98a3" stroke-width="2"/>
+<rect x="56" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="98" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="140" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="182" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="224" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="266" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="308" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="350" y="30" width="22" height="32" fill="#ffffff"/>
+<path d="M353,62 L359,30 M363,62 L369,30" stroke="#5d6d78" stroke-width="1.4"/>
+<rect x="376" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="418" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="460" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="502" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<rect x="544" y="36" width="40" height="20" rx="3" class="f-violet-bg s-violet sw15"/>
+<path d="M56,26 V20 H584 V26" fill="none" stroke="#7867a8" stroke-width="1.2"/>
+<text x="320" y="14" class="t-s mid sb f-violet">setki, a nawet tysiące powtórzeń – allel liczy kilka–kilkanaście tysięcy pz</text>
+<path d="M56,64 V70 H96 V64" fill="none" stroke="#5d6d78" stroke-width="1.2"/>
+<text x="56" y="86" class="t-s">jednostka powtarzalna: od kilkunastu do kilkudziesięciu pz</text>
+<text x="16" y="38" class="t-xs muted">flanka</text>
+<text x="624" y="38" class="t-xs muted end">flanka</text>
+</svg>
+    </div>
+    <div class="panel" data-badge="B" data-title="Układ STR – dwie osoby, dwa allele">
+<svg viewBox="0 0 640 176" role="img" aria-label="Układ STR: dwa allele o 6 i 9 powtórzeniach między tymi samymi starterami dają produkty PCR różnej długości">
+<text x="10" y="44" class="t-s sb">osoba 1</text>
+<line x1="96" y1="40" x2="436" y2="40" stroke="#8a98a3" stroke-width="2"/>
+<rect x="177" y="31" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="191" y="43.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="207" y="31" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="221" y="43.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="237" y="31" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="251" y="43.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="267" y="31" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="281" y="43.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="297" y="31" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="311" y="43.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="327" y="31" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="341" y="43.5" class="t-xs mid mono f-teal">AATG</text>
+<path d="M106,25 H152" class="arrow navy"/>
+<path d="M426,55 H380" class="arrow navy"/>
+<path d="M106,72 H426" class="arrow navy both" marker-start="url(#k6-arrow-navy)"/>
+<text x="10" y="122" class="t-s sb">osoba 2</text>
+<line x1="96" y1="118" x2="526" y2="118" stroke="#8a98a3" stroke-width="2"/>
+<rect x="177" y="109" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="191" y="121.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="207" y="109" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="221" y="121.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="237" y="109" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="251" y="121.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="267" y="109" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="281" y="121.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="297" y="109" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="311" y="121.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="327" y="109" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="341" y="121.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="357" y="109" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="371" y="121.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="387" y="109" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="401" y="121.5" class="t-xs mid mono f-teal">AATG</text>
+<rect x="417" y="109" width="28" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="431" y="121.5" class="t-xs mid mono f-teal">AATG</text>
+<path d="M106,103 H152" class="arrow navy"/>
+<path d="M516,133 H470" class="arrow navy"/>
+<path d="M106,150 H516" class="arrow navy both" marker-start="url(#k6-arrow-navy)"/>
+<text x="448" y="76" class="t-s">produkt PCR – allel 6</text>
+<text x="538" y="154" class="t-s">produkt PCR – allel 9</text>
+<text x="538" y="168" class="t-xs muted">dłuższy o 3 × 4 = 12 pz</text>
+<text x="106" y="22" class="t-xs muted">starter</text>
+<text x="448" y="44" class="t-xs muted">starter (druga nić)</text>
+</svg>
+    </div>
+    <div class="panel" data-badge="C" data-title="Długość alleli w tej samej skali">
+<svg viewBox="0 0 640 84" role="img" aria-label="Długość allelu STR i minisatelity w tej samej skali">
+<line x1="120" y1="62" x2="600" y2="62" class="axis"/>
+<line x1="120" y1="62" x2="120" y2="66" class="axis"/>
+<text x="120" y="78" class="t-xs mid muted">0</text>
+<line x1="216" y1="62" x2="216" y2="66" class="axis"/>
+<text x="216" y="78" class="t-xs mid muted">1 tys.</text>
+<line x1="312" y1="62" x2="312" y2="66" class="axis"/>
+<text x="312" y="78" class="t-xs mid muted">2 tys.</text>
+<line x1="408" y1="62" x2="408" y2="66" class="axis"/>
+<text x="408" y="78" class="t-xs mid muted">3 tys.</text>
+<line x1="504" y1="62" x2="504" y2="66" class="axis"/>
+<text x="504" y="78" class="t-xs mid muted">4 tys.</text>
+<line x1="600" y1="62" x2="600" y2="66" class="axis"/>
+<text x="600" y="78" class="t-xs mid muted">5 tys.</text>
+<text x="606" y="78" class="t-xs muted">pz</text>
+<rect x="129.6" y="12" width="19.2" height="12" rx="2" class="f-teal"/>
+<text x="10" y="22" class="t-s sb f-teal">allel STR</text>
+<text x="156.8" y="22" class="t-s">100–300 pz</text>
+<rect x="120" y="34" width="480" height="12" rx="2" class="f-violet"/>
+<path d="M600,40 H626" class="arrow" />
+<text x="10" y="44" class="t-s sb f-violet">minisatelita</text>
+<text x="360" y="44" class="t-xs mid f-white sb">kilka, a nawet kilkanaście tysięcy pz →</text>
+</svg>
+    </div>
+    <figcaption>A – minisatelita: długie jednostki powtórzone setki–tysiące razy (rycina nie w skali). B – układ STR: krótka jednostka (tu 4 nt, AATG) powtórzona kilka razy. Startery przyłączają się do sekwencji flankujących, więc u osoby z większą liczbą powtórzeń produkt PCR jest dłuższy – allel rozpoznaje się po długości. C – w tej samej skali allel STR jest wielokrotnie krótszy niż allel minisatelity.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 765–766, 770</p>
+  </figure>
+
+  <p>Innym skutkiem tych różnic jest <b>mniejsza zmienność genetyczna</b> układów STR. Mają one zwykle od kilku do kilkunastu, czasem ok. 20 wariantów (alleli) różniących się liczbą powtórzeń. W minisatelitach obserwuje się dziesiątki, a nawet setki wariantów.</p>
+
+  <table class="tbl full">
+    <thead><tr><th style="width:34%">Cecha</th><th>Minisatelity</th><th>Mikrosatelity (STR)</th></tr></thead>
+    <tbody>
+      <tr><td>Długość jednostki powtarzalnej</td><td>od kilkunastu do kilkudziesięciu pz</td><td>2–6 pz</td></tr>
+      <tr><td>Liczba powtórzeń</td><td>setki, a nawet tysiące</td><td>zwykle 5–50</td></tr>
+      <tr><td>Długość allelu</td><td>tysiące pz (kilka–kilkanaście tys.)</td><td>zwykle 100–300 pz</td></tr>
+      <tr><td>Liczba alleli w układzie</td><td>dziesiątki, a nawet setki</td><td>od kilku do kilkunastu, czasem ok. 20</td></tr>
+      <tr><td>Przydatność do PCR</td><td>praktycznie nieprzydatne na szerszą skalę</td><td>amplifikacja łatwa i wydajna</td></tr>
+    </tbody>
+  </table>
+
+  <aside class="note liceum"><p>Układ <b>AB0</b> to klasyczna cecha polimorficzna: trzy allele (I<sup>A</sup>, I<sup>B</sup>, i) dają sześć genotypów, ale tylko cztery fenotypy – grupy A, B, AB i 0.</p></aside>
+  <p>Mimo to układy STR są bardzo zróżnicowane. W niemal każdym z nich istnieją <b>co najmniej trzy allele stosunkowo częste</b> w populacji (o częstości <b>&gt;10%</b>). Oznacza to, że zróżnicowanie <b>genotypów</b> przeciętnego układu STR jest znacznie wyższe niż zróżnicowanie <b>fenotypów</b> przeciętnego układu grupowego krwi.</p>
+
+  <aside class="note liceum"><p><b>Genotyp</b> to para alleli danego locus. <b>Homozygota</b> ma dwa jednakowe allele (np. 10, 10), <b>heterozygota</b> – dwa różne (np. 9, 10).</p></aside>
+  <p>Skąd ta przewaga? Gdy w układzie jest kilka częstych alleli, losowa osoba z dużym prawdopodobieństwem ma dwa różne allele, a liczba możliwych par alleli szybko rośnie z liczbą alleli: przy 3 allelach jest 6 genotypów, przy 7 – już 28. W układzie grupowym krwi wiele genotypów daje ten sam fenotyp (np. I<sup>A</sup>I<sup>A</sup> i I<sup>A</sup>i to grupa A), więc rozróżnia się tylko kilka klas.</p>
+
+  <div class="box obraz"><p>Allel STR to <b>pociąg z jednakowych wagonów</b> między dwiema lokomotywami (starterami). Nazwa allelu to po prostu liczba wagonów, a długość pociągu mówi, ile ich jest. Minisatelita to pociąg towarowy z setkami długich wagonów – za długi, żeby PCR „przejechał” go w całości.</p></div>
+
+  <p class="src">Źródło: Drewa s. 766, 770</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c09-zalety">Zalety STR: zdegradowany DNA i amplifikacja multipleksowa</h2>
+
+  <p>Mniejsza zmienność mikrosatelitów jest <b>z nawiązką rekompensowana</b> łatwością, z jaką poddają się one amplifikacji PCR. Wynikają z tego dwie zasadnicze zalety.</p>
+
+  <h3>Analiza DNA silnie zdegradowanego</h3>
+  <aside class="note pojecie" data-term="Degradacja DNA"><p>przede wszystkim fragmentacja: długie nici chromosomowego DNA rozpadają się na coraz krótsze odcinki.</p></aside>
+  <p>Odcinki DNA z allelami STR można amplifikować z wysoką wydajnością nawet z próbek zawierających materiał <b>silnie zdegradowany</b> – np. ze śladów biologicznych długo narażonych na niszczące warunki środowiska. <b>Degradacja DNA</b> polega przede wszystkim na jego <b>fragmentacji</b>. Nici liczące miliony par zasad, które w żywej komórce tworzą chromosomy, rozpadają się na mniejsze fragmenty, a te – na jeszcze mniejsze.</p>
+
+  <p>Fragmentacja może być tak silna, że <b>żaden allel minisatelity</b> nie zachowa się w badanym materiale w całości. Znacznie krótsze fragmenty z allelami mikrosatelitarnymi wciąż mogą być w na tyle dobrym stanie, aby dało się je namnożyć w PCR. Warunek jest prosty: PCR namnoży odcinek tylko wtedy, gdy cały odcinek między starterami jest zachowany w jednej nici.</p>
+
+  <div class="box obraz"><p>Degradacja jest jak <b>losowe przecinanie sznura korali</b>. Długi naszyjnik (allel minisatelity, tysiące pz) po kilkunastu cięciach prawie na pewno nie zostanie nigdzie w całości. Krótka bransoletka (allel STR, 100–300 pz) ma dużą szansę przetrwać nienaruszona między cięciami.</p></div>
+
+  <h3>Amplifikacja multipleksowa</h3>
+  <aside class="note pojecie" data-term="Amplifikacja multipleksowa"><p>jednoczesne namnożenie wielu układów STR w jednej reakcji PCR (wiele par starterów w jednej probówce).</p></aside>
+  <p>Połączenie PCR z analizą mikrosatelitów pozwala też <b>namnażać jednocześnie wiele układów STR</b>. Ta technika, zwana <b>amplifikacją multipleksową</b>, daje kilka korzyści:</p>
+  <ul>
+    <li>znacznie <b>mniej DNA</b> potrzebnego do uzyskania profilu genetycznego;</li>
+    <li>mniejsze zużycie <b>odczynników i sprzętu jednorazowego</b> potrzebnych do przygotowania reakcji;</li>
+    <li>znaczne <b>skrócenie czasu</b> od rozpoczęcia badań próbki do uzyskania jej <b>pełnego profilu</b>, czyli danych dla wszystkich badanych układów STR.</li>
+  </ul>
+
+  <div class="box zapamietaj"><p>Dwie zalety STR: (1) krótkie allele <b>przetrwają degradację</b> (fragmentację) DNA, więc można je amplifikować ze starych, zniszczonych śladów; (2) wiele układów można namnożyć naraz – <b>multipleks</b> oszczędza DNA, odczynniki i czas.</p></div>
+
+  <p class="src">Źródło: Drewa s. 770</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c09-multipleks">Jak zaprojektować multipleks: długość i kolor</h2>
+
+  <p>Skuteczna amplifikacja multipleksowa układów STR wymaga spełnienia kilku warunków. Chodzi o to, żeby po reakcji dało się powiedzieć, <b>który produkt pochodzi z którego układu</b>.</p>
+
+  <ol>
+    <li><b>Różne długości produktów.</b> Startery projektuje się tak, aby produkty dla różnych układów różniły się długością. Wtedy produkt przypisuje się do układu na podstawie szybkości migracji w żelu poliakrylamidowym.</li>
+    <li><b>Grupy starterów rozróżniane kolorem.</b> W jednej reakcji można umieścić kilka grup starterów o <b>nakładających się</b> długościach produktów. Każda grupa musi mieć jednak <b>unikalny identyfikator</b>. Jest nim najczęściej cząsteczka chemiczna, która po wzbudzeniu laserem emituje fluorescencję o określonej długości fali, czyli w określonym kolorze – <b>barwnik fluorescencyjny</b>.</li>
+  </ol>
+
+  <aside class="note liceum"><p><b>Fluorescencja</b> – cząsteczka pochłania światło o krótszej fali (tu: z lasera) i natychmiast emituje światło o dłuższej fali. Każdy barwnik ma własny kolor emisji, więc detektor może je rozróżnić.</p></aside>
+  <p>Przykład z podręcznika: mając <b>trzy barwniki</b> fluorescencyjne, można w jednej reakcji umieścić trzy grupy starterów, a w każdej grupie – startery dla <b>trzech układów</b> różniących się długością produktów. W jednej reakcji amplifikuje się więc <b>dziewięć układów STR</b>. Produkt każdego z nich jest zdefiniowany przez dwie cechy: <b>długość</b> fragmentu i <b>barwnik</b> (<a class="figref" href="#c09-fig-multipleks"></a>).</p>
+
+  <figure class="fig" id="c09-fig-multipleks" data-title="Multipleks: 3 barwniki × 3 układy = 9 układów STR">
+    <div class="panel" data-badge="A" data-title="Sygnał łączny – kolory nałożone">
+<svg viewBox="0 0 640 132" role="img" aria-label="Elektroforegram multipleksu – sygnały wszystkich barwników nałożone na siebie">
+<path d="M70,12 V100 H616" class="axis"/>
+<line x1="70" y1="100" x2="70" y2="104" class="axis"/>
+<text x="70" y="116" class="t-xs mid muted">100</text>
+<line x1="160" y1="100" x2="160" y2="104" class="axis"/>
+<text x="160" y="116" class="t-xs mid muted">150</text>
+<line x1="250" y1="100" x2="250" y2="104" class="axis"/>
+<text x="250" y="116" class="t-xs mid muted">200</text>
+<line x1="340" y1="100" x2="340" y2="104" class="axis"/>
+<text x="340" y="116" class="t-xs mid muted">250</text>
+<line x1="430" y1="100" x2="430" y2="104" class="axis"/>
+<text x="430" y="116" class="t-xs mid muted">300</text>
+<line x1="520" y1="100" x2="520" y2="104" class="axis"/>
+<text x="520" y="116" class="t-xs mid muted">350</text>
+<line x1="610" y1="100" x2="610" y2="104" class="axis"/>
+<text x="610" y="116" class="t-xs mid muted">400</text>
+<text x="343" y="130" class="t-xs mid muted">długość fragmentu [pz] ← czas retencji</text>
+<text x="60" y="56" class="t-xs mid muted" transform="rotate(-90 60 56)">fluorescencja</text>
+<path d="M71,100 L111,100 L112,99.9 L113,99.5 L114,98.2 L115,95 L116,88.4 L117,77.1 L118,62.2 L119,47.4 L120,38.5 L121,39.5 L122,50 L123,65.3 L124,79.7 L125,90 L126,95.8 L127,98.3 L128,98.5 L129,96.8 L130,92.2 L131,83.6 L132,70.8 L133,56.5 L134,45.5 L135,42.6 L136,49.2 L137,62.2 L138,76.3 L139,87.5 L140,94.5 L141,98 L142,99.4 L143,99.8 L144,100 L266,100 L267,99.8 L268,99.2 L269,97.4 L270,93.1 L271,84.4 L272,70.4 L273,52.7 L274,36.5 L275,28.2 L276,31.9 L277,45.7 L278,63.5 L279,79.4 L280,90.3 L281,96.1 L282,98.7 L283,99.6 L284,99.9 L285,100 L421,100 L422,99.8 L423,99.2 L424,97.7 L425,94 L426,86.8 L427,75.8 L428,62.7 L429,51.6 L430,47.2 L431,51.6 L432,62.7 L433,75.8 L434,86.8 L435,94 L436,97.7 L437,99.2 L438,99.8 L439,100 L449,100 L450,99.9 L451,99.7 L452,99.1 L453,97.3 L454,93.2 L455,85.6 L456,74.5 L457,62 L458,52.3 L459,49.8 L460,55.5 L461,66.9 L462,79.3 L463,89.1 L464,95.2 L465,98.2 L466,99.4 L467,99.9 L468,100 L614,100" class="trace blue"/>
+<path d="M71,100 L133,100 L134,99.8 L135,99.2 L136,97.7 L137,94 L138,86.8 L139,75.8 L140,62.7 L141,51.6 L142,47.2 L143,51.6 L144,62.7 L145,75.8 L146,86.8 L147,93.9 L148,97.6 L149,98.8 L150,98.2 L151,95.6 L152,89.7 L153,79.8 L154,66.5 L155,53.4 L156,45.6 L157,46.5 L158,55.8 L159,69.3 L160,82.1 L161,91.2 L162,96.4 L163,98.7 L164,99.6 L165,99.9 L166,100 L280,100 L281,99.9 L282,99.6 L283,98.6 L284,96.1 L285,90.4 L286,80.5 L287,66.6 L288,52 L289,41.8 L290,40.8 L291,49.4 L292,63.6 L293,78 L294,88.8 L295,95.2 L296,98.3 L297,99.5 L298,99.9 L299,100 L302,100 L303,99.8 L304,99.4 L305,98 L306,94.5 L307,87.5 L308,76.3 L309,62.2 L310,49.2 L311,42.6 L312,45.5 L313,56.5 L314,70.8 L315,83.6 L316,92.2 L317,96.9 L318,99 L319,99.7 L320,99.9 L321,100 L474,100 L475,99.9 L476,99.7 L477,99 L478,96.8 L479,91.8 L480,82 L481,67 L482,49.1 L483,34 L484,28 L485,34 L486,49.1 L487,67 L488,82 L489,91.8 L490,96.8 L491,99 L492,99.7 L493,99.9 L494,100 L614,100" class="trace teal"/>
+<path d="M71,100 L96,100 L97,99.9 L98,99.7 L99,99 L100,96.8 L101,91.8 L102,82 L103,67 L104,49.1 L105,34 L106,28 L107,34 L108,49.1 L109,67 L110,82 L111,91.8 L112,96.8 L113,99 L114,99.7 L115,99.9 L116,100 L233,100 L234,99.9 L235,99.7 L236,99 L237,96.9 L238,92.2 L239,83.6 L240,70.8 L241,56.5 L242,45.5 L243,42.6 L244,49.2 L245,62.2 L246,76.3 L247,87.5 L248,94.5 L249,98 L250,99.4 L251,99.8 L252,100 L255,100 L256,99.9 L257,99.5 L258,98.5 L259,95.8 L260,90.2 L261,80.6 L262,68 L263,55.5 L264,47.9 L265,48.8 L266,57.7 L267,70.6 L268,82.9 L269,91.6 L270,96.5 L271,98.8 L272,99.6 L273,99.9 L274,100 L406,100 L407,99.9 L408,99.6 L409,98.7 L410,96.2 L411,90.8 L412,81.3 L413,68 L414,53.9 L415,44.2 L416,43.2 L417,51.4 L418,65.1 L419,78.9 L420,89.3 L421,95.4 L422,98.4 L423,99.5 L424,99.9 L425,100 L449,100 L450,99.9 L451,99.7 L452,98.9 L453,96.8 L454,91.9 L455,82.9 L456,69.6 L457,54.7 L458,43.2 L459,40.2 L460,47.1 L461,60.6 L462,75.3 L463,87 L464,94.3 L465,97.9 L466,99.3 L467,99.8 L468,100 L614,100" class="trace" stroke="#e8b200"/>
+<path d="M71,69.2 L72,76.3 L73,84.6 L74,91.6 L75,96.2 L76,98.5 L77,99.5 L78,99.9 L79,100 L151,100 L152,99.9 L153,99.5 L154,98.5 L155,96.2 L156,91.6 L157,84.6 L158,76.3 L159,69.2 L160,66.4 L161,69.2 L162,76.3 L163,84.6 L164,91.6 L165,96.2 L166,98.5 L167,99.5 L168,99.9 L169,100 L241,100 L242,99.9 L243,99.5 L244,98.5 L245,96.2 L246,91.6 L247,84.6 L248,76.3 L249,69.2 L250,66.4 L251,69.2 L252,76.3 L253,84.6 L254,91.6 L255,96.2 L256,98.5 L257,99.5 L258,99.9 L259,100 L331,100 L332,99.9 L333,99.5 L334,98.5 L335,96.2 L336,91.6 L337,84.6 L338,76.3 L339,69.2 L340,66.4 L341,69.2 L342,76.3 L343,84.6 L344,91.6 L345,96.2 L346,98.5 L347,99.5 L348,99.9 L349,100 L421,100 L422,99.9 L423,99.5 L424,98.5 L425,96.2 L426,91.6 L427,84.6 L428,76.3 L429,69.2 L430,66.4 L431,69.2 L432,76.3 L433,84.6 L434,91.6 L435,96.2 L436,98.5 L437,99.5 L438,99.9 L439,100 L511,100 L512,99.9 L513,99.5 L514,98.5 L515,96.2 L516,91.6 L517,84.6 L518,76.3 L519,69.2 L520,66.4 L521,69.2 L522,76.3 L523,84.6 L524,91.6 L525,96.2 L526,98.5 L527,99.5 L528,99.9 L529,100 L601,100 L602,99.9 L603,99.5 L604,98.5 L605,96.2 L606,91.6 L607,84.6 L608,76.3 L609,69.2 L610,66.4 L611,69.2 L612,76.3 L613,84.6 L614,91.6" class="trace red" stroke-width="1.6"/>
+<text x="616" y="20" class="t-xs end muted">wszystkie kolory na jednym wykresie</text>
+</svg>
+    </div>
+    <div class="panel" data-badge="B" data-title="Po „rozdzieleniu” na kolory składowe">
+<svg viewBox="0 0 640 272" role="img" aria-label="Ten sam elektroforegram po rozdzieleniu na kolory: trzy barwniki po trzy układy STR i czerwony marker wielkości">
+<rect x="88" y="5" width="99" height="14" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="137.5" y="15.5" class="t-xs mid sb muted">układ 1</text>
+<rect x="241" y="5" width="108" height="14" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="295" y="15.5" class="t-xs mid sb muted">układ 2</text>
+<rect x="403" y="5" width="117" height="14" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="461.5" y="15.5" class="t-xs mid sb muted">układ 3</text>
+<line x1="70" y1="54" x2="616" y2="54" class="axis"/>
+<path d="M71,54 L111,54 L112,53.9 L113,53.8 L114,53.3 L115,51.9 L116,49.2 L117,44.5 L118,38.2 L119,32.1 L120,28.4 L121,28.8 L122,33.2 L123,39.5 L124,45.6 L125,49.9 L126,52.3 L127,53.3 L128,53.4 L129,52.7 L130,50.7 L131,47.1 L132,41.8 L133,35.9 L134,31.3 L135,30.1 L136,32.8 L137,38.2 L138,44.1 L139,48.8 L140,51.7 L141,53.1 L142,53.7 L143,53.9 L144,54 L266,54 L267,53.9 L268,53.7 L269,52.9 L270,51.1 L271,47.5 L272,41.7 L273,34.3 L274,27.5 L275,24.1 L276,25.6 L277,31.4 L278,38.8 L279,45.4 L280,49.9 L281,52.4 L282,53.5 L283,53.8 L284,54 L421,54 L422,53.9 L423,53.7 L424,53 L425,51.5 L426,48.5 L427,43.9 L428,38.5 L429,33.8 L430,32 L431,33.8 L432,38.5 L433,43.9 L434,48.5 L435,51.5 L436,53 L437,53.7 L438,53.9 L439,54 L450,54 L451,53.9 L452,53.6 L453,52.9 L454,51.2 L455,48 L456,43.4 L457,38.1 L458,34.1 L459,33.1 L460,35.5 L461,40.2 L462,45.4 L463,49.5 L464,52 L465,53.3 L466,53.8 L467,53.9 L468,54 L614,54" class="trace blue"/>
+<text x="8" y="40" class="t-xs sb">niebieski</text>
+<text x="8" y="52" class="t-xs muted">3 układy</text>
+<rect x="106" y="63" width="99" height="14" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="155.5" y="73.5" class="t-xs mid sb muted">układ 4</text>
+<rect x="250" y="63" width="111.6" height="14" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="305.8" y="73.5" class="t-xs mid sb muted">układ 5</text>
+<rect x="415.6" y="63" width="117" height="14" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="474.1" y="73.5" class="t-xs mid sb muted">układ 6</text>
+<line x1="70" y1="112" x2="616" y2="112" class="axis"/>
+<path d="M71,112 L133,112 L134,111.9 L135,111.7 L136,111 L137,109.5 L138,106.5 L139,101.9 L140,96.5 L141,91.8 L142,90 L143,91.8 L144,96.5 L145,101.9 L146,106.5 L147,109.5 L148,111 L149,111.5 L150,111.3 L151,110.2 L152,107.7 L153,103.6 L154,98 L155,92.6 L156,89.3 L157,89.7 L158,93.6 L159,99.2 L160,104.5 L161,108.3 L162,110.5 L163,111.5 L164,111.8 L165,112 L281,112 L282,111.8 L283,111.4 L284,110.4 L285,108 L286,103.9 L287,98.1 L288,92 L289,87.8 L290,87.3 L291,90.9 L292,96.8 L293,102.8 L294,107.3 L295,110 L296,111.3 L297,111.8 L298,111.9 L299,112 L302,112 L303,111.9 L304,111.7 L305,111.1 L306,109.7 L307,106.8 L308,102.1 L309,96.2 L310,90.8 L311,88.1 L312,89.3 L313,93.9 L314,99.8 L315,105.1 L316,108.8 L317,110.7 L318,111.6 L319,111.9 L320,112 L475,112 L476,111.9 L477,111.6 L478,110.7 L479,108.6 L480,104.5 L481,98.3 L482,90.8 L483,84.5 L484,82 L485,84.5 L486,90.8 L487,98.3 L488,104.5 L489,108.6 L490,110.7 L491,111.6 L492,111.9 L493,112 L614,112" class="trace teal"/>
+<text x="8" y="98" class="t-xs sb">zielony</text>
+<text x="8" y="110" class="t-xs muted">3 układy</text>
+<rect x="77.2" y="121" width="100.8" height="14" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="127.6" y="131.5" class="t-xs mid sb muted">układ 7</text>
+<rect x="214" y="121" width="108" height="14" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="268" y="131.5" class="t-xs mid sb muted">układ 8</text>
+<rect x="376" y="121" width="115.2" height="14" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="433.6" y="131.5" class="t-xs mid sb muted">układ 9</text>
+<line x1="70" y1="170" x2="616" y2="170" class="axis"/>
+<path d="M71,170 L97,170 L98,169.9 L99,169.6 L100,168.7 L101,166.6 L102,162.5 L103,156.3 L104,148.8 L105,142.5 L106,140 L107,142.5 L108,148.8 L109,156.3 L110,162.5 L111,166.6 L112,168.7 L113,169.6 L114,169.9 L115,170 L234,170 L235,169.9 L236,169.6 L237,168.7 L238,166.8 L239,163.1 L240,157.8 L241,151.9 L242,147.3 L243,146.1 L244,148.8 L245,154.2 L246,160.1 L247,164.8 L248,167.7 L249,169.1 L250,169.7 L251,169.9 L252,170 L256,170 L257,169.8 L258,169.4 L259,168.2 L260,165.9 L261,161.9 L262,156.7 L263,151.4 L264,148.3 L265,148.7 L266,152.4 L267,157.8 L268,162.9 L269,166.5 L270,168.6 L271,169.5 L272,169.9 L273,170 L407,170 L408,169.8 L409,169.5 L410,168.4 L411,166.2 L412,162.2 L413,156.7 L414,150.8 L415,146.7 L416,146.3 L417,149.8 L418,155.4 L419,161.2 L420,165.5 L421,168.1 L422,169.3 L423,169.8 L424,169.9 L425,170 L450,170 L451,169.9 L452,169.5 L453,168.7 L454,166.6 L455,162.9 L456,157.3 L457,151.1 L458,146.4 L459,145.1 L460,147.9 L461,153.6 L462,159.7 L463,164.6 L464,167.6 L465,169.1 L466,169.7 L467,169.9 L468,170 L614,170" class="trace" stroke="#e8b200"/>
+<text x="8" y="156" class="t-xs sb">żółty</text>
+<text x="8" y="168" class="t-xs muted">3 układy</text>
+<line x1="70" y1="228" x2="616" y2="228" class="axis"/>
+<path d="M71,215.2 L72,218.1 L73,221.6 L74,224.5 L75,226.4 L76,227.4 L77,227.8 L78,227.9 L79,228 L151,228 L152,227.9 L153,227.8 L154,227.4 L155,226.4 L156,224.5 L157,221.6 L158,218.1 L159,215.2 L160,214 L161,215.2 L162,218.1 L163,221.6 L164,224.5 L165,226.4 L166,227.4 L167,227.8 L168,227.9 L169,228 L241,228 L242,227.9 L243,227.8 L244,227.4 L245,226.4 L246,224.5 L247,221.6 L248,218.1 L249,215.2 L250,214 L251,215.2 L252,218.1 L253,221.6 L254,224.5 L255,226.4 L256,227.4 L257,227.8 L258,227.9 L259,228 L331,228 L332,227.9 L333,227.8 L334,227.4 L335,226.4 L336,224.5 L337,221.6 L338,218.1 L339,215.2 L340,214 L341,215.2 L342,218.1 L343,221.6 L344,224.5 L345,226.4 L346,227.4 L347,227.8 L348,227.9 L349,228 L421,228 L422,227.9 L423,227.8 L424,227.4 L425,226.4 L426,224.5 L427,221.6 L428,218.1 L429,215.2 L430,214 L431,215.2 L432,218.1 L433,221.6 L434,224.5 L435,226.4 L436,227.4 L437,227.8 L438,227.9 L439,228 L511,228 L512,227.9 L513,227.8 L514,227.4 L515,226.4 L516,224.5 L517,221.6 L518,218.1 L519,215.2 L520,214 L521,215.2 L522,218.1 L523,221.6 L524,224.5 L525,226.4 L526,227.4 L527,227.8 L528,227.9 L529,228 L601,228 L602,227.9 L603,227.8 L604,227.4 L605,226.4 L606,224.5 L607,221.6 L608,218.1 L609,215.2 L610,214 L611,215.2 L612,218.1 L613,221.6 L614,224.5" class="trace red" stroke-width="1.6"/>
+<text x="8" y="214" class="t-xs sb">czerwony</text>
+<text x="8" y="226" class="t-xs muted">marker</text>
+<line x1="70" y1="228" x2="70" y2="232" class="axis"/>
+<text x="70" y="244" class="t-xs mid muted">100</text>
+<line x1="160" y1="228" x2="160" y2="232" class="axis"/>
+<text x="160" y="244" class="t-xs mid muted">150</text>
+<line x1="250" y1="228" x2="250" y2="232" class="axis"/>
+<text x="250" y="244" class="t-xs mid muted">200</text>
+<line x1="340" y1="228" x2="340" y2="232" class="axis"/>
+<text x="340" y="244" class="t-xs mid muted">250</text>
+<line x1="430" y1="228" x2="430" y2="232" class="axis"/>
+<text x="430" y="244" class="t-xs mid muted">300</text>
+<line x1="520" y1="228" x2="520" y2="232" class="axis"/>
+<text x="520" y="244" class="t-xs mid muted">350</text>
+<line x1="610" y1="228" x2="610" y2="232" class="axis"/>
+<text x="610" y="244" class="t-xs mid muted">400</text>
+<text x="343" y="258" class="t-xs mid muted">długość fragmentu [pz]</text>
+</svg>
+    </div>
+    <figcaption>A – produkty dziewięciu układów i marker wielkości wędrują razem; w tych samych zakresach długości leżą produkty różnych grup starterów. B – oprogramowanie rozdziela obraz na kolory: w każdym kolorze trzy układy leżą w różnych zakresach długości (szare pola), a czerwony marker wielkości służy do pomiaru. Jeden pik w układzie – homozygota, dwa piki – heterozygota. Długości i układ pików przykładowe; kolory jak w ryc. 29.4 B podręcznika (barwnik „zielony” pokazano kolorem morskim).</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 771–772 (ryc. 29.4 B)</p>
+  </figure>
+
+  <div class="box zapamietaj"><p>Produkt w multipleksie identyfikują <b>dwie współrzędne</b>: <b>długość</b> (zakres, w którym leży) i <b>kolor barwnika</b> (grupa starterów). Układy w tym samym kolorze muszą różnić się długością; układy o nakładających się długościach muszą mieć różne kolory.</p></div>
+
+  <p class="src">Źródło: Drewa s. 770–771</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c09-sekwenator">Sekwenator automatyczny, elektroforegram i marker wielkości</h2>
+
+  <h3>Jak działa sekwenator</h3>
+  <p>Produkty multipleksu znakowane barwnikami fluorescencyjnymi analizuje się w <b>automatycznym sekwenatorze</b>. Urządzenie przeprowadza rozdział elektroforetyczny produktów PCR, a dzięki <b>laserowi</b> wzbudzającemu fluorescencję i odpowiedniemu <b>wyposażeniu optycznemu</b> rozpoznaje poszczególne barwniki („kolory”).</p>
+
+  <aside class="note liceum"><p>W <b>żelu denaturującym</b> DNA występuje w postaci pojedynczych nici. O szybkości wędrówki decyduje wtedy tylko długość fragmentu – krótsze wędrują szybciej (zasada elektroforezy: <a class="chapref" href="#c01"></a>).</p></aside>
+  <p>Rozdział odbywa się zwykle w <b>denaturującym żelu poliakrylamidowym</b> lub jego odpowiedniku. Pozwala on precyzyjnie rozdzielić fragmenty różniące się długością o <b>1 pz</b>, pod warunkiem że ich długość nie przekracza ok. <b>500 pz</b>. Dzisiaj stosuje się przede wszystkim <b>sekwenatory kapilarne</b>: elektroforeza zachodzi w cienkich rurkach (kapilarach) wypełnionych medium rozdzielającym (żelem). Rozdział w kapilarze trwa ok. <b>20 min</b>; taki sam rozdział w tradycyjnej elektroforezie „płytowej” mógłby trwać nawet <b>3 godz.</b></p>
+
+  <p>Niezależnie od techniki rozdziału sekwenator ma <b>system wzbudzania i odczytu fluorescencji</b>. Składa się on najczęściej z:</p>
+  <ul>
+    <li><b>lasera</b> wzbudzającego fluorescencję;</li>
+    <li><b>systemu optycznego</b>, który odczytuje emisję fluorescencji w określonym miejscu żelu;</li>
+    <li><b>komputera</b>, w którym zapisywane są dane.</li>
+  </ul>
+
+  <aside class="note pojecie" data-term="Elektroforegram"><p>wykres z sekwenatora: oś X – czas retencji (odpowiada długości fragmentu), piki w kolorach barwników; każdy pik to fragment DNA o określonej długości.</p></aside>
+  <p>Zebrane dane analizuje <b>dedykowane oprogramowanie</b>: ustala, czy w obrazie są sygnały poszczególnych barwników przyłączonych do starterów użytych w reakcji. Wynikiem jest <b>elektroforegram</b> – wykres z różnokolorowymi <b>„pikami”</b>. Każdy pik odpowiada fragmentowi DNA o określonej długości. Jego <b>kolor</b> zależy od długości fali światła emitowanego przez barwnik przyłączony do pary starterów, która dała ten fragment w PCR. Położenie piku wyznacza współrzędna na osi X, zwana <b>„czasem retencji”</b>, odpowiadająca długości fragmentu.</p>
+
+  <h3>Marker wielkości – zewnętrzny i wewnętrzny</h3>
+  <p>Czas retencji sam w sobie nie podaje długości w parach zasad. Długość określa się za pomocą zestawu sztucznie wytworzonych odcinków DNA – <b>markera wielkości</b>. Marker poddaje się elektroforezie razem z badanymi próbkami; służy jako wzorzec, który pokazuje, jaki czas migracji odpowiada fragmentowi o określonej wielkości (ryc. 29.4 A podręcznika).</p>
+
+  <aside class="note pojecie" data-term="Wewnętrzny marker wielkości"><p>fragmenty DNA o znanej długości, znakowane osobnym barwnikiem, dodane do każdej próbki i rozdzielane w tej samej kapilarze.</p></aside>
+  <p>Szczególną odmianą jest <b>wewnętrzny marker wielkości</b> – zestaw fragmentów DNA o znanej wielkości znakowanych barwnikiem fluorescencyjnym o <b>innym widmie</b> niż barwniki użyte w amplifikacji. Dodaje się go <b>do samej próbki</b>, więc migruje razem z jej fragmentami w <b>tej samej kapilarze</b> (lub linii żelu w elektroforezie płytowej). Dzięki odrębnemu znakowaniu program wyodrębnia piki markera i na ich podstawie oblicza wielkość pozostałych fragmentów z tej samej kapilary.</p>
+
+  <p>Wewnętrzny marker daje <b>niezwykle dokładną</b> ocenę wielkości. Marker złożony z <b>kilkunastu fragmentów</b> o długościach <b>60–600 pz</b> pozwala mierzyć długość fragmentów z dokładnością <b>0,5–1 pz</b>. Tak precyzyjny pomiar ma podstawowe znaczenie dla następnego etapu – <b>genotypowania</b> (<a class="figref" href="#c09-fig-sekwenator"></a>).</p>
+
+  <figure class="fig" id="c09-fig-sekwenator" data-title="Od kapilary do nazwy allelu">
+    <div class="panel" data-badge="A" data-title="Sekwenator kapilarny">
+<svg viewBox="0 0 640 120" role="img" aria-label="Schemat sekwenatora kapilarnego">
+<path d="M22,30 H58 V70 Q58,92 40,96 Q22,92 22,70 Z" fill="#ffffff" stroke="#5d6d78" stroke-width="1.4"/>
+<rect x="18" y="24" width="44" height="7" rx="2" fill="#5d6d78"/>
+<circle cx="32" cy="60" r="2.8" fill="#4387b7"/>
+<circle cx="44" cy="56" r="2.8" fill="#007e83"/>
+<circle cx="38" cy="72" r="2.8" fill="#e8b200"/>
+<circle cx="48" cy="70" r="2.8" fill="#c84d42"/>
+<circle cx="30" cy="80" r="2.8" fill="#c84d42"/>
+<circle cx="46" cy="84" r="2.8" fill="#4387b7"/>
+<circle cx="40" cy="64" r="2.8" fill="#007e83"/>
+<text x="40" y="110" class="t-xs mid">próbka + marker</text>
+<path d="M66,56 H92" class="arrow"/>
+<text x="100" y="45" class="pole minus">–</text>
+<rect x="104" y="50" width="300" height="12" rx="6" class="f-tile" stroke="#8a98a3" stroke-width="1.4"/>
+<rect x="150" y="52" width="4" height="8" rx="1" fill="#4387b7"/>
+<rect x="176" y="52" width="4" height="8" rx="1" fill="#c84d42"/>
+<rect x="205" y="52" width="4" height="8" rx="1" fill="#007e83"/>
+<rect x="232" y="52" width="4" height="8" rx="1" fill="#e8b200"/>
+<rect x="262" y="52" width="4" height="8" rx="1" fill="#c84d42"/>
+<rect x="290" y="52" width="4" height="8" rx="1" fill="#4387b7"/>
+<rect x="318" y="52" width="4" height="8" rx="1" fill="#007e83"/>
+<rect x="346" y="52" width="4" height="8" rx="1" fill="#c84d42"/>
+<text x="414" y="61" class="pole plus">+</text>
+<text x="230" y="80" class="t-xs mid muted">kapilara wypełniona żelem – rozdział ok. 20 min</text>
+<rect x="372" y="44" width="18" height="24" rx="3" fill="none" stroke="#007e83" stroke-width="1.6"/>
+<path d="M350,12 L374,42" class="arrow red"/>
+<text x="346" y="16" class="t-xs end sb f-red">laser</text>
+<path d="M381,70 V88" class="arrow teal"/>
+<rect x="336" y="90" width="90" height="20" rx="4" fill="#153144"/>
+<text x="381" y="104" class="t-xs mid f-white sb">układ optyczny</text>
+<path d="M428,100 Q452,100 458,76" class="arrow"/>
+<rect x="448" y="30" width="78" height="44" rx="5" class="card"/>
+<text x="487" y="49" class="t-xs mid sb">komputer</text>
+<text x="487" y="63" class="t-xs mid muted">analiza</text>
+<path d="M530,52 H552" class="arrow"/>
+<path d="M560,24 V88 H634" class="axis"/>
+<path d="M561,88 L565,88 L566,87.9 L567,87.4 L568,85.5 L569,80.5 L570,71.8 L571,62.3 L572,58 L573,62.3 L574,71.8 L575,80.5 L576,85.5 L577,87.4 L578,87.9 L579,88 L583,88 L584,87.8 L585,87 L586,84.1 L587,76.5 L588,63.2 L589,48.6 L590,42 L591,48.6 L592,63.2 L593,76.5 L594,84.1 L595,87 L596,87.8 L597,88 L599,88 L600,87.9 L601,87.2 L602,85 L603,79 L604,68.6 L605,57.1 L606,52 L607,57.1 L608,68.6 L609,79 L610,85 L611,87.2 L612,87.9 L613,88 L615,88 L616,87.9 L617,87.5 L618,86 L619,82 L620,75.1 L621,67.4 L622,64 L623,67.4 L624,75.1 L625,82 L626,86 L627,87.5 L628,87.9 L629,88 L632,88" class="trace blue" stroke-width="1.6"/>
+<path d="M561,88 L573,88 L574,87.8 L575,87.2 L576,84.6 L577,78 L578,66.4 L579,53.7 L580,48 L581,53.7 L582,66.4 L583,78 L584,84.6 L585,87.2 L586,87.8 L587,88 L607,88 L608,87.9 L609,87.4 L610,85.5 L611,80.5 L612,71.8 L613,62.3 L614,58 L615,62.3 L616,71.8 L617,80.5 L618,85.5 L619,87.4 L620,87.9 L621,88 L632,88" class="trace teal" stroke-width="1.6"/>
+<path d="M561,87.9 L562,87.3 L563,85.2 L564,80.7 L565,74.8 L566,72 L567,74.8 L568,80.7 L569,85.2 L570,87.3 L571,87.9 L572,88 L592,88 L593,87.9 L594,87.3 L595,85.2 L596,80.7 L597,74.8 L598,72 L599,74.8 L600,80.7 L601,85.2 L602,87.3 L603,87.9 L604,88 L624,88 L625,87.9 L626,87.3 L627,85.2 L628,80.7 L629,74.8 L630,72 L631,74.8 L632,80.7" class="trace red" stroke-width="1.3"/>
+<text x="597" y="104" class="t-xs mid">elektroforegram</text>
+</svg>
+    </div>
+    <div class="panels cols-2">
+      <div class="panel" data-badge="B" data-title="Detekcja jednokolorowa (ryc. 29.4 A)">
+<svg viewBox="0 0 296 176" role="img" aria-label="Marker wielkości w osobnej linii żelu">
+<rect x="56" y="22" width="196" height="116" rx="6" class="gel"/>
+<text x="88" y="15" class="lane-label">M</text>
+<text x="136" y="15" class="lane-label">1</text>
+<text x="184" y="15" class="lane-label">2</text>
+<text x="232" y="15" class="lane-label">3</text>
+<text x="50" y="35.5" class="size-label">240</text>
+<text x="50" y="55.5" class="size-label">220</text>
+<text x="50" y="75.5" class="size-label">200</text>
+<text x="50" y="95.5" class="size-label">180</text>
+<text x="50" y="115.5" class="size-label">160</text>
+<rect x="74" y="30.5" width="28" height="3.5" rx="1.5" class="band ladder"/>
+<rect x="74" y="50.5" width="28" height="3.5" rx="1.5" class="band ladder"/>
+<rect x="74" y="70.5" width="28" height="3.5" rx="1.5" class="band ladder"/>
+<rect x="74" y="90.5" width="28" height="3.5" rx="1.5" class="band ladder"/>
+<rect x="74" y="110.5" width="28" height="3.5" rx="1.5" class="band ladder"/>
+<rect x="122" y="58" width="28" height="4.5" rx="2" class="band navy"/>
+<rect x="122" y="82" width="28" height="4.5" rx="2" class="band navy"/>
+<rect x="170" y="42" width="28" height="4.5" rx="2" class="band navy"/>
+<rect x="170" y="96" width="28" height="4.5" rx="2" class="band navy"/>
+<rect x="218" y="64" width="28" height="4.5" rx="2" class="band navy"/>
+<rect x="218" y="102" width="28" height="4.5" rx="2" class="band navy"/>
+<text x="154" y="155" class="t-xs mid">marker tylko w linii M; jeden kolor</text>
+<text x="154" y="169" class="t-xs mid sb f-red">198,1 pz → allel „9 czy 9,1?”</text>
+</svg>
+      </div>
+      <div class="panel" data-badge="C" data-title="Detekcja wielokolorowa (ryc. 29.4 B)">
+<svg viewBox="0 0 296 176" role="img" aria-label="Wewnętrzny marker wielkości w każdej linii">
+<rect x="56" y="22" width="196" height="116" rx="6" class="gel"/>
+<text x="88" y="15" class="lane-label">1</text>
+<text x="136" y="15" class="lane-label">2</text>
+<text x="184" y="15" class="lane-label">3</text>
+<text x="232" y="15" class="lane-label">4</text>
+<text x="50" y="35.5" class="size-label">240</text>
+<text x="50" y="55.5" class="size-label">220</text>
+<text x="50" y="75.5" class="size-label">200</text>
+<text x="50" y="95.5" class="size-label">180</text>
+<text x="50" y="115.5" class="size-label">160</text>
+<rect x="74" y="31" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="74" y="51" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="74" y="71" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="74" y="91" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="74" y="111" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="74" y="58" width="28" height="4.5" rx="2" class="band blue"/>
+<rect x="74" y="82" width="28" height="4.5" rx="2" class="band teal"/>
+<rect x="122" y="31" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="122" y="51" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="122" y="71" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="122" y="91" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="122" y="111" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="122" y="42" width="28" height="4.5" rx="2" class="band blue"/>
+<rect x="122" y="96" width="28" height="4.5" rx="2" fill="#e8b200"/>
+<rect x="170" y="31" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="170" y="51" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="170" y="71" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="170" y="91" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="170" y="111" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="170" y="64" width="28" height="4.5" rx="2" class="band teal"/>
+<rect x="170" y="102" width="28" height="4.5" rx="2" fill="#e8b200"/>
+<rect x="218" y="31" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="218" y="51" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="218" y="71" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="218" y="91" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="218" y="111" width="28" height="2.5" rx="1" class="band red"/>
+<rect x="218" y="76" width="28" height="4.5" rx="2" class="band blue"/>
+<rect x="218" y="48" width="28" height="4.5" rx="2" class="band teal"/>
+<text x="154" y="155" class="t-xs mid">czerwony marker w każdej linii</text>
+<text x="154" y="169" class="t-xs mid sb f-teal">dokładność pomiaru 0,5–1 pz</text>
+</svg>
+      </div>
+    </div>
+    <div class="panel" data-badge="D" data-title="Genotypowanie – porównanie z drabiną alleliczną">
+<svg viewBox="0 0 640 214" role="img" aria-label="Przypisanie alleli przez porównanie z drabiną alleliczną">
+<line x1="70" y1="84" x2="616" y2="84" class="axis"/>
+<path d="M71,84 L121,84 L122,83.9 L123,83.7 L124,83.1 L125,81.7 L126,78.6 L127,73.2 L128,65.2 L129,56 L130,48 L131,44.1 L132,45.8 L133,52.5 L134,61.6 L135,70.3 L136,76.7 L137,80.7 L138,82.7 L139,83.6 L140,83.9 L141,84 L189,84 L190,83.9 L191,83.7 L192,83.1 L193,81.7 L194,78.6 L195,73.2 L196,65.2 L197,56 L198,48 L199,44.1 L200,45.8 L201,52.5 L202,61.6 L203,70.3 L204,76.7 L205,80.7 L206,82.7 L207,83.6 L208,83.9 L209,84 L257,84 L258,83.9 L259,83.7 L260,83.1 L261,81.7 L262,78.6 L263,73.2 L264,65.2 L265,56 L266,48 L267,44.1 L268,45.8 L269,52.5 L270,61.6 L271,70.3 L272,76.7 L273,80.7 L274,82.7 L275,83.6 L276,83.9 L277,84 L325,84 L326,83.9 L327,83.7 L328,83.1 L329,81.7 L330,78.6 L331,73.2 L332,65.2 L333,56 L334,48 L335,44.1 L336,45.8 L337,52.5 L338,61.6 L339,70.3 L340,76.7 L341,80.7 L342,82.7 L343,83.6 L344,83.9 L345,84 L376,84 L377,83.9 L378,83.7 L379,83.1 L380,81.7 L381,78.6 L382,73.2 L383,65.2 L384,56 L385,48 L386,44.1 L387,45.8 L388,52.5 L389,61.6 L390,70.3 L391,76.7 L392,80.7 L393,82.7 L394,83.5 L395,83.6 L396,83.1 L397,81.7 L398,78.6 L399,73.1 L400,65.2 L401,56 L402,48 L403,44.1 L404,45.8 L405,52.5 L406,61.6 L407,70.3 L408,76.7 L409,80.7 L410,82.7 L411,83.6 L412,83.9 L413,84 L461,84 L462,83.9 L463,83.7 L464,83.1 L465,81.7 L466,78.6 L467,73.2 L468,65.2 L469,56 L470,48 L471,44.1 L472,45.8 L473,52.5 L474,61.6 L475,70.3 L476,76.7 L477,80.7 L478,82.7 L479,83.6 L480,83.9 L481,84 L614,84" class="trace blue"/>
+<path d="M71,84 L95,84 L96,83.9 L97,83.6 L98,82.9 L99,81.5 L100,79.1 L101,75.8 L102,72.1 L103,69.1 L104,68 L105,69.1 L106,72.1 L107,75.8 L108,79.1 L109,81.5 L110,82.9 L111,83.6 L112,83.9 L113,84 L435,84 L436,83.9 L437,83.6 L438,82.9 L439,81.5 L440,79.1 L441,75.8 L442,72.1 L443,69.1 L444,68 L445,69.1 L446,72.1 L447,75.8 L448,79.1 L449,81.5 L450,82.9 L451,83.6 L452,83.9 L453,84 L614,84" class="trace red" stroke-width="1.5"/>
+<text x="131.2" y="36" class="t-xs mid sb f-blue">6</text>
+<text x="199.2" y="36" class="t-xs mid sb f-blue">7</text>
+<text x="267.2" y="36" class="t-xs mid sb f-blue">8</text>
+<text x="335.2" y="36" class="t-xs mid sb f-blue">9</text>
+<text x="386.2" y="22" class="t-xs mid sb f-blue">9.3</text>
+<text x="403.2" y="36" class="t-xs mid sb f-blue">10</text>
+<text x="471.2" y="36" class="t-xs mid sb f-blue">11</text>
+<text x="8" y="60" class="t-xs sb">drabina</text>
+<text x="8" y="72" class="t-xs sb">alleliczna</text>
+<line x1="70" y1="164" x2="616" y2="164" class="axis"/>
+<path d="M71,164 L327,164 L328,163.9 L329,163.6 L330,162.8 L331,160.8 L332,156.9 L333,150.4 L334,141.5 L335,131.8 L336,124.4 L337,122 L338,125.6 L339,133.7 L340,143.4 L341,151.9 L342,157.9 L343,161.3 L344,163 L345,163.7 L346,163.9 L347,164 L391,164 L392,163.9 L393,163.8 L394,163.4 L395,162.2 L396,159.7 L397,155.1 L398,147.8 L399,138.8 L400,130.1 L401,124.7 L402,124.7 L403,130.1 L404,138.8 L405,147.8 L406,155.1 L407,159.7 L408,162.2 L409,163.4 L410,163.8 L411,163.9 L412,164 L614,164" class="trace blue"/>
+<path d="M71,164 L95,164 L96,163.9 L97,163.6 L98,162.9 L99,161.5 L100,159.1 L101,155.8 L102,152.1 L103,149.1 L104,148 L105,149.1 L106,152.1 L107,155.8 L108,159.1 L109,161.5 L110,162.9 L111,163.6 L112,163.9 L113,164 L435,164 L436,163.9 L437,163.6 L438,162.9 L439,161.5 L440,159.1 L441,155.8 L442,152.1 L443,149.1 L444,148 L445,149.1 L446,152.1 L447,155.8 L448,159.1 L449,161.5 L450,162.9 L451,163.6 L452,163.9 L453,164 L614,164" class="trace red" stroke-width="1.5"/>
+<text x="8" y="152" class="t-xs sb">próbka</text>
+<line x1="336.9" y1="120" x2="336.9" y2="86" class="guide"/>
+<line x1="401.5" y1="120" x2="401.5" y2="86" class="guide"/>
+<text x="326.9" y="136" class="t-xs end sb f-red">173,7 pz → allel 9</text>
+<text x="411.5" y="136" class="t-xs sb f-red">177,5 pz → allel 10</text>
+<text x="452" y="158" class="t-xs f-red">marker</text>
+<text x="452" y="78" class="t-xs f-red">marker</text>
+<text x="616" y="124" class="t-xs end sb">genotyp próbki: 9, 10</text>
+<text x="616" y="138" class="t-xs end muted">(heterozygota)</text>
+<line x1="104" y1="164" x2="104" y2="168" class="axis"/>
+<text x="104" y="180" class="t-xs mid muted">160</text>
+<line x1="189" y1="164" x2="189" y2="168" class="axis"/>
+<text x="189" y="180" class="t-xs mid muted">165</text>
+<line x1="274" y1="164" x2="274" y2="168" class="axis"/>
+<text x="274" y="180" class="t-xs mid muted">170</text>
+<line x1="359" y1="164" x2="359" y2="168" class="axis"/>
+<text x="359" y="180" class="t-xs mid muted">175</text>
+<line x1="444" y1="164" x2="444" y2="168" class="axis"/>
+<text x="444" y="180" class="t-xs mid muted">180</text>
+<line x1="529" y1="164" x2="529" y2="168" class="axis"/>
+<text x="529" y="180" class="t-xs mid muted">185</text>
+<line x1="614" y1="164" x2="614" y2="168" class="axis"/>
+<text x="614" y="180" class="t-xs mid muted">190</text>
+<text x="343" y="196" class="t-xs mid muted">wielkość wyznaczona względem wewnętrznego markera [pz]</text>
+</svg>
+    </div>
+    <figcaption>A – próbka (produkty PCR w trzech kolorach + czerwony marker wewnętrzny) wędruje w kapilarze; w oknie detekcji laser wzbudza fluorescencję, układ optyczny ją odczytuje, komputer tworzy elektroforegram. B – marker w osobnej linii, jeden kolor: pomiar mało dokładny, stąd wątpliwości przy nazywaniu alleli. C – marker w każdej linii, osobny kolor dla markera i dla grup starterów: pomiar dokładny, a rozdzielenie kolorów pozwala oznaczyć więcej układów naraz. D – zmierzone długości (przykładowe) odbiegają od rzeczywistych (allel 9 to naprawdę 176 pz), ale drabina przechodzi te same warunki, więc piki próbki przypisuje się do jej szczebli.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 772–774 (ryc. 29.4)</p>
+  </figure>
+
+  <p>Rycina 29.4 podręcznika porównuje dwa sposoby detekcji:</p>
+  <ul>
+    <li><b>Detekcja jednokolorowa</b> (panel A): fragmenty mają znaczniki fluorescencyjne odczytywane przez sekwenator, a obecność fragmentu sygnalizuje pik. Marker wielkości rozdziela się w <b>jednej, osobnej linii</b> żelu i komputer używa go do oceny wielkości fragmentów na całym żelu. Na podstawie wielkości fragmentom przypisuje się oznaczenia standardowe, np. nazwy alleli STR. Metoda była jednak <b>niedokładna</b> i często pojawiały się wątpliwości, jak oznaczyć fragment – na rycinie: „9 czy 9,1?”.</li>
+    <li><b>Detekcja wielokolorowa</b> (panel B): znaczniki emitują światło w <b>różnych kolorach</b>; marker wielkości, wyznakowany specyficznym barwnikiem (np. czerwonym), jest <b>w każdej linii</b>. Pomiar wielkości jest niezwykle dokładny, a komputer może „rozdzielić” obraz na kolory składowe, co zwiększa liczbę układów oznaczanych w jednej elektroforezie.</li>
+  </ul>
+
+  <div class="numbers">
+    <div class="n"><span class="v">1<small>pz</small></span><span class="d">rozdzielczość żelu denaturującego</span></div>
+    <div class="n"><span class="v">~500<small>pz</small></span><span class="d">do tej długości rozdział co 1 pz</span></div>
+    <div class="n"><span class="v">~20<small>min</small></span><span class="d">rozdział w kapilarze (płytowy – do 3 godz.)</span></div>
+    <div class="n"><span class="v">60–600<small>pz</small></span><span class="d">fragmenty wewnętrznego markera</span></div>
+    <div class="n"><span class="v">kilkanaście</span><span class="d">liczba fragmentów markera</span></div>
+    <div class="n"><span class="v">0,5–1<small>pz</small></span><span class="d">dokładność pomiaru z markerem wewnętrznym</span></div>
+  </div>
+
+  <p class="src">Źródło: Drewa s. 772–773</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c09-genotypowanie">Genotypowanie: drabina alleliczna i nazwy alleli</h2>
+
+  <p><b>Genotypowanie</b> polega na przypisaniu fragmentom DNA uzyskanym w amplifikacji <b>standardowych symboli</b> zgodnych z przyjętym, uniwersalnym nazewnictwem. Podstawowym wymogiem jest dysponowanie <b>drabiną alleliczną</b>.</p>
+
+  <aside class="note pojecie" data-term="Drabina alleliczna"><p>zestaw wszystkich możliwych (a przynajmniej najczęstszych w populacji) alleli badanych układów STR, o sekwencji znanej z wcześniejszego sekwencjonowania.</p></aside>
+  <p><b>Drabina alleliczna</b> to zestaw wszystkich możliwych, a przynajmniej najczęściej występujących w danej populacji, alleli badanych układów mikrosatelitarnych. Allele umieszczone w drabinie są <b>wcześniej sekwencjonowane</b>, więc wiadomo dokładnie, ile i jakich jednostek powtarzalnych zawiera każdy z nich. Drabinę poddaje się elektroforezie w warunkach <b>identycznych</b> jak badane próbki.</p>
+
+  <p>Znając czas migracji poszczególnych, znanych alleli drabiny, można przypisać <b>anonimowym fragmentom</b> z dowolnej próbki unikalne symbole. Wystarczą do tego dwie informacje: <b>jakim barwnikiem</b> jest wyznakowany fragment i <b>jakiej jest długości</b> (<a class="figref" href="#c09-fig-sekwenator" data-panel="D"></a>).</p>
+
+  <h3>Nazwa allelu = liczba powtórzeń</h3>
+  <aside class="note liceum"><p><b>Intron</b> – odcinek genu, który jest przepisywany na pre-mRNA, ale zostaje wycięty podczas splicingu i nie koduje białka.</p></aside>
+  <p>Nazewnictwo alleli STR opiera się na <b>liczbie powtórzeń</b> w obrębie sekwencji mikrosatelitarnej. Przykładem jest układ <b>TH01</b>, położony na <b>krótkim ramieniu chromosomu 11</b>, w <b>pierwszym intronie genu hydroksylazy tyrozynowej</b>. Zawiera on jednostkę powtarzalną o sekwencji <span class="seq">AATG</span>.</p>
+
+  <aside class="note warto"><p><b>GenBank</b> to publiczna baza sekwencji; „numer dostępu” (tu D00269) wskazuje konkretny rekord, a numery nukleotydów – fragment w tym rekordzie.</p></aside>
+  <p>Allel TH01 opisany w bazie <b>GenBank</b> (numer dostępu <b>D00269</b>, nukleotydy <b>1169–1205</b>) zawiera <b>9 powtórzeń</b> motywu <span class="seq">TCAT</span>, dlatego zgodnie z konwencją nazywa się go <b>allelem 9</b>. Amplifikacja tego allelu jednym z zestawów starterów daje produkt o długości rzeczywistej <b>176 pz</b>.</p>
+
+  <p>W praktyce długość produktu zmierzona w sekwenatorze kapilarnym może różnić się od rzeczywistej <b>nawet o kilka nukleotydów</b>. Dlatego wielkość fragmentów odpowiadających poszczególnym allelom trzeba <b>weryfikować</b> elektroforezą i analizą drabiny allelicznej – drabina przechodzi te same warunki co próbka, więc jej allele „przesuwają się” tak samo.</p>
+
+  <h3>Allele pośrednie – przykład 9.3</h3>
+  <p>Nomenklatura alleli STR jest na tyle elastyczna, że uwzględnia także niektóre <b>mutacje punktowe</b> utrwalone w populacji. W układzie TH01 istnieje np. allel, w którym w <b>allelu 10</b> doszło do <b>delecji jednego nukleotydu</b> w jednej z jednostek powtarzalnych. Powstał allel z <b>9 pełnymi jednostkami</b> i <b>jedną niepełną</b>, o długości <b>trzech nukleotydów</b>. Oznacza się go jako <b>allel 9.3</b> (liczba pełnych jednostek, kropka, liczba nukleotydów w jednostce niepełnej).</p>
+
+  <p>Zgodnie z tą logiką produkt amplifikacji allelu 9.3 tą samą parą starterów powinien liczyć <b>179 pz</b>, a allelu 10 – <b>180 pz</b> (<a class="figref" href="#c09-fig-th01"></a>). Każda pełna jednostka to 4 pz, więc allele 9 i 10 różnią się o 4 pz, a allele 9.3 i 10 – tylko o <b>1 pz</b>. Właśnie dlatego tak ważna jest dokładność pomiaru 0,5–1 pz.</p>
+
+  <figure class="fig" id="c09-fig-th01" data-title="Układ TH01 – allele 9, 9.3 i 10">
+    <div class="panel" data-badge="A" data-title="Budowa alleli i długość produktu PCR">
+<svg viewBox="0 0 640 222" role="img" aria-label="Allele 9, 9.3 i 10 układu TH01 zbudowane z jednostek powtarzalnych">
+<text x="10" y="44" class="t-s sb">allel 9</text>
+<line x1="92" y1="40" x2="532" y2="40" stroke="#8a98a3" stroke-width="2"/>
+<rect x="169" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="184" y="43.5" class="t-xs mid sb f-teal">1</text>
+<rect x="201" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="216" y="43.5" class="t-xs mid sb f-teal">2</text>
+<rect x="233" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="248" y="43.5" class="t-xs mid sb f-teal">3</text>
+<rect x="265" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="280" y="43.5" class="t-xs mid sb f-teal">4</text>
+<rect x="297" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="312" y="43.5" class="t-xs mid sb f-teal">5</text>
+<rect x="329" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="344" y="43.5" class="t-xs mid sb f-teal">6</text>
+<rect x="361" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="376" y="43.5" class="t-xs mid sb f-teal">7</text>
+<rect x="393" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="408" y="43.5" class="t-xs mid sb f-teal">8</text>
+<rect x="425" y="31" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="440" y="43.5" class="t-xs mid sb f-teal">9</text>
+<path d="M98,25 H142" class="arrow navy"/>
+<path d="M526,55 H482" class="arrow navy"/>
+<text x="634" y="45" class="t-l b end">176 pz</text>
+<path d="M168,54 V59 H456 V54" fill="none" stroke="#007e83" stroke-width="1.2"/>
+<text x="312" y="72" class="t-xs mid f-teal sb">9 jednostek × 4 nt = 36 pz</text>
+<text x="10" y="116" class="t-s sb">allel 9.3</text>
+<line x1="92" y1="112" x2="556" y2="112" stroke="#8a98a3" stroke-width="2"/>
+<rect x="169" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="184" y="115.5" class="t-xs mid sb f-teal">1</text>
+<rect x="201" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="216" y="115.5" class="t-xs mid sb f-teal">2</text>
+<rect x="233" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="248" y="115.5" class="t-xs mid sb f-teal">3</text>
+<rect x="265" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="280" y="115.5" class="t-xs mid sb f-teal">4</text>
+<rect x="297" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="312" y="115.5" class="t-xs mid sb f-teal">5</text>
+<rect x="329" y="103" width="22" height="18" rx="2.5" class="f-red-bg s-red sw15"/>
+<text x="340" y="115.5" class="t-xs mid sb f-red">·3</text>
+<rect x="353" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="368" y="115.5" class="t-xs mid sb f-teal">6</text>
+<rect x="385" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="400" y="115.5" class="t-xs mid sb f-teal">7</text>
+<rect x="417" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="432" y="115.5" class="t-xs mid sb f-teal">8</text>
+<rect x="449" y="103" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="464" y="115.5" class="t-xs mid sb f-teal">9</text>
+<path d="M98,97 H142" class="arrow navy"/>
+<path d="M550,127 H506" class="arrow navy"/>
+<text x="634" y="117" class="t-l b end">179 pz</text>
+<text x="340" y="142" class="t-xs mid f-red sb">jednostka niepełna: 3 nt (delecja 1 nt w allelu 10)</text>
+<text x="10" y="188" class="t-s sb">allel 10</text>
+<line x1="92" y1="184" x2="564" y2="184" stroke="#8a98a3" stroke-width="2"/>
+<rect x="169" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="184" y="187.5" class="t-xs mid sb f-teal">1</text>
+<rect x="201" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="216" y="187.5" class="t-xs mid sb f-teal">2</text>
+<rect x="233" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="248" y="187.5" class="t-xs mid sb f-teal">3</text>
+<rect x="265" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="280" y="187.5" class="t-xs mid sb f-teal">4</text>
+<rect x="297" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="312" y="187.5" class="t-xs mid sb f-teal">5</text>
+<rect x="329" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="344" y="187.5" class="t-xs mid sb f-teal">6</text>
+<rect x="361" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="376" y="187.5" class="t-xs mid sb f-teal">7</text>
+<rect x="393" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="408" y="187.5" class="t-xs mid sb f-teal">8</text>
+<rect x="425" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="440" y="187.5" class="t-xs mid sb f-teal">9</text>
+<rect x="457" y="175" width="30" height="18" rx="2.5" class="f-teal-bg s-teal sw15"/>
+<text x="472" y="187.5" class="t-xs mid sb f-teal">10</text>
+<path d="M98,169 H142" class="arrow navy"/>
+<path d="M558,199 H514" class="arrow navy"/>
+<text x="634" y="189" class="t-l b end">180 pz</text>
+<path d="M168,198 V203 H488 V198" fill="none" stroke="#007e83" stroke-width="1.2"/>
+<text x="328" y="216" class="t-xs mid f-teal sb">10 jednostek × 4 nt = 40 pz</text>
+</svg>
+    </div>
+    <div class="panel" data-badge="B" data-title="AATG i TCAT – ten sam powtórzony motyw na dwóch niciach">
+<svg viewBox="0 0 640 128" role="img" aria-label="Powtórzenie AATG na jednej nici odpowiada powtórzeniu TCAT na nici komplementarnej">
+<text x="10" y="30" class="t-xs sb">nić górna (5′→3′)</text>
+<text x="10" y="50" class="t-xs sb">nić komplementarna</text>
+<text x="10" y="104" class="t-xs sb">nić komplementarna</text>
+<text x="10" y="117" class="t-xs muted">zapisana 5′→3′</text>
+<text x="242" y="30" class="t-s mono end muted">5′–</text>
+<text x="256.5" y="30" class="t-m mono mid f-teal sb">A</text>
+<text x="269.5" y="30" class="t-m mono mid f-teal sb">A</text>
+<text x="282.5" y="30" class="t-m mono mid f-teal sb">T</text>
+<text x="295.5" y="30" class="t-m mono mid f-teal sb">G</text>
+<text x="308.5" y="30" class="t-m mono mid f-teal sb">A</text>
+<text x="321.5" y="30" class="t-m mono mid f-teal sb">A</text>
+<text x="334.5" y="30" class="t-m mono mid f-teal sb">T</text>
+<text x="347.5" y="30" class="t-m mono mid f-teal sb">G</text>
+<text x="360.5" y="30" class="t-m mono mid f-teal sb">A</text>
+<text x="373.5" y="30" class="t-m mono mid f-teal sb">A</text>
+<text x="386.5" y="30" class="t-m mono mid f-teal sb">T</text>
+<text x="399.5" y="30" class="t-m mono mid f-teal sb">G</text>
+<text x="412.5" y="30" class="t-m mono mid f-teal sb">A</text>
+<text x="425.5" y="30" class="t-m mono mid f-teal sb">A</text>
+<text x="438.5" y="30" class="t-m mono mid f-teal sb">T</text>
+<text x="451.5" y="30" class="t-m mono mid f-teal sb">G</text>
+<text x="466" y="30" class="t-s mono muted">–3′</text>
+<text x="242" y="50" class="t-s mono end muted">3′–</text>
+<text x="256.5" y="50" class="t-m mono mid f-ink">T</text>
+<text x="269.5" y="50" class="t-m mono mid f-ink">T</text>
+<text x="282.5" y="50" class="t-m mono mid f-ink">A</text>
+<text x="295.5" y="50" class="t-m mono mid f-ink">C</text>
+<text x="308.5" y="50" class="t-m mono mid f-ink">T</text>
+<text x="321.5" y="50" class="t-m mono mid f-ink">T</text>
+<text x="334.5" y="50" class="t-m mono mid f-ink">A</text>
+<text x="347.5" y="50" class="t-m mono mid f-ink">C</text>
+<text x="360.5" y="50" class="t-m mono mid f-ink">T</text>
+<text x="373.5" y="50" class="t-m mono mid f-ink">T</text>
+<text x="386.5" y="50" class="t-m mono mid f-ink">A</text>
+<text x="399.5" y="50" class="t-m mono mid f-ink">C</text>
+<text x="412.5" y="50" class="t-m mono mid f-ink">T</text>
+<text x="425.5" y="50" class="t-m mono mid f-ink">T</text>
+<text x="438.5" y="50" class="t-m mono mid f-ink">A</text>
+<text x="451.5" y="50" class="t-m mono mid f-ink">C</text>
+<text x="466" y="50" class="t-s mono muted">–5′</text>
+<path d="M251.5,18 V14 H300.5 V18" fill="none" stroke="#007e83" stroke-width="1.2"/>
+<path d="M303.5,18 V14 H352.5 V18" fill="none" stroke="#007e83" stroke-width="1.2"/>
+<path d="M355.5,18 V14 H404.5 V18" fill="none" stroke="#007e83" stroke-width="1.2"/>
+<path d="M407.5,18 V14 H456.5 V18" fill="none" stroke="#007e83" stroke-width="1.2"/>
+<text x="498" y="30" class="t-xs sb f-teal">(AATG)n</text>
+<path d="M354,58 V86" class="arrow"/>
+<text x="362" y="76" class="t-xs muted">odczyt od prawej do lewej</text>
+<text x="242" y="104" class="t-s mono end muted">5′–</text>
+<text x="256.5" y="104" class="t-m mono mid f-ink">C</text>
+<text x="269.5" y="104" class="t-m mono mid f-ink">A</text>
+<text x="282.5" y="104" class="t-m mono mid f-ink">T</text>
+<text x="295.5" y="104" class="t-m mono mid f-ink">T</text>
+<text x="308.5" y="104" class="t-m mono mid f-ink">C</text>
+<text x="321.5" y="104" class="t-m mono mid f-ink">A</text>
+<text x="334.5" y="104" class="t-m mono mid f-ink">T</text>
+<text x="347.5" y="104" class="t-m mono mid f-ink">T</text>
+<text x="360.5" y="104" class="t-m mono mid f-ink">C</text>
+<text x="373.5" y="104" class="t-m mono mid f-ink">A</text>
+<text x="386.5" y="104" class="t-m mono mid f-ink">T</text>
+<text x="399.5" y="104" class="t-m mono mid f-ink">T</text>
+<text x="412.5" y="104" class="t-m mono mid f-ink">C</text>
+<text x="425.5" y="104" class="t-m mono mid f-ink">A</text>
+<text x="438.5" y="104" class="t-m mono mid f-ink">T</text>
+<text x="451.5" y="104" class="t-m mono mid f-ink">T</text>
+<text x="466" y="104" class="t-s mono muted">–3′</text>
+<rect x="289.5" y="91" width="51.0" height="18" rx="3" fill="none" stroke="#c84d42" stroke-width="1.3"/>
+<rect x="341.5" y="91" width="51.0" height="18" rx="3" fill="none" stroke="#c84d42" stroke-width="1.3"/>
+<rect x="393.5" y="91" width="51.0" height="18" rx="3" fill="none" stroke="#c84d42" stroke-width="1.3"/>
+<text x="498" y="104" class="t-xs sb f-red">(TCAT)n</text>
+</svg>
+    </div>
+    <figcaption>A – produkt PCR = sekwencje flankujące ze starterami (stała część: 176 − 36 = 140 pz) + jednostki powtarzalne po 4 nt. Allel 9: 140 + 36 = 176 pz; allel 10: 140 + 40 = 180 pz; allel 9.3 (9 pełnych jednostek + 1 jednostka 3-nukleotydowa): 179 pz. Położenie jednostki niepełnej narysowano umownie. B – powtórzenie (AATG)n na jednej nici to na nici komplementarnej, zapisanej 5′→3′, ciąg CATTCATT…, w którym w przesuniętej ramce odczytu leżą jednostki TCAT.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 766, 774</p>
+  </figure>
+
+  <div class="box uwaga"><p>Drewa podaje dla TH01 jednostkę <b>AATG</b>, a dwa zdania dalej mówi o allelu z 9 powtórzeniami motywu <b>TCAT</b> (ryc. 29.1 też pokazuje AATG). To nie sprzeczność, tylko zapis tego samego powtórzenia z <b>drugiej, komplementarnej nici</b>: odwrotnie komplementarny do AATG jest CATT, a ciąg CATTCATT… odczytany z przesunięciem o jedną pozycję to TCATTCAT…, czyli (TCAT)n (<a class="figref" href="#c09-fig-th01" data-panel="B"></a>). Nazwa allelu (liczba powtórzeń) jest w obu zapisach taka sama.</p></div>
+
+  <h3>Wynik genotypowania</h3>
+  <p>Znając zależność między liczbą powtórzeń w allelach badanych układów a ich wielkością zmierzoną w określonych warunkach elektroforezy, można <b>jednoznacznie oznaczyć</b> fragmenty z nieznanej próbki – porównując ich wielkość z wielkością fragmentów wzorcowych. Wynikiem jest <b>profil genetyczny</b> próbki: po prostu <b>lista alleli</b> układów mikrosatelitarnych otrzymanych w amplifikacji jej DNA.</p>
+
+  <div class="box zapamietaj"><p>Allel STR nazywa się <b>liczbą powtórzeń</b> (TH01: allel 9 = 9 jednostek = 176 pz). Jednostka niepełna daje allel pośredni (9.3 = 9 jednostek + 3 nt = 179 pz). Nazwę przypisuje się przez porównanie z <b>drabiną alleliczną</b> rozdzielaną w tych samych warunkach, bo zmierzona długość może odbiegać od rzeczywistej o kilka nukleotydów. <b>Profil</b> = lista alleli wszystkich badanych układów.</p></div>
+
+  <p class="src">Źródło: Drewa s. 766, 773–774</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c09-profil">Profil genetyczny i baza częstości alleli</h2>
+
+  <p>Profil genetyczny otrzymany z DNA śladu lub osoby <b>nie może być traktowany jako unikalny</b>, dopóki jego częstość nie zostanie zweryfikowana odpowiednimi <b>obliczeniami statystycznymi</b>. Do obliczeń potrzebne są informacje o <b>częstości wszystkich alleli</b> układów tworzących profil w populacji, z której pochodzi badana osoba.</p>
+
+  <aside class="note warto"><p>Każda osoba ma dwa egzemplarze każdego autosomu, więc badanie N osób daje 2N chromosomów; dlatego baza liczy <b>chromosomy</b>, nie osoby.</p></aside>
+  <p>Takie dane zbiera się w badaniach obejmujących <b>kilkaset losowo wybranych osób</b> z populacji:</p>
+  <ol>
+    <li>od każdej osoby pobiera się <b>anonimowo</b> próbkę krwi lub <b>wymaz z ust</b>;</li>
+    <li>z próbki izoluje się DNA i oznacza jego profil w zakresie wybranych układów STR;</li>
+    <li>na podstawie profili całej grupy tworzy się <b>bazę danych</b> z informacją o allelach wykrytych w poszczególnych układach i o częstości każdego allelu w badanej populacji.</li>
+  </ol>
+
+  <p>Przykładową bazę dla sześciu układów STR pokazuje tabela 29.2 podręcznika. Dla każdego allelu podano <b>N</b> – liczbę chromosomów w badanej próbce populacji, które mają dany allel – oraz częstość. Na dole kolumny stoi <b>Σ</b> – sumaryczna liczba przebadanych chromosomów. Częstość allelu to po prostu <b>N / Σ</b>. Poniżej dwa układy z tej tabeli, odczytane w całości.</p>
+
+  <table class="tbl wide">
+    <caption>Fragment tab. 29.2 Drewy – częstości alleli w układach D3S1358 i LPL</caption>
+    <thead><tr><th>D3S1358 – allel</th><th>N</th><th>Częstość</th><th>LPL – allel</th><th>N</th><th>Częstość</th></tr></thead>
+    <tbody>
+      <tr><td>11</td><td class="num">1</td><td class="num">0,004</td><td><b>6</b></td><td class="num">1</td><td class="num">0,001</td></tr>
+      <tr><td>14</td><td class="num">29</td><td class="num">0,113</td><td><b>7</b></td><td class="num">1</td><td class="num">0,001</td></tr>
+      <tr><td>15</td><td class="num">47</td><td class="num">0,184</td><td><b>9</b></td><td class="num">46</td><td class="num">0,046</td></tr>
+      <tr><td>16</td><td class="num">65</td><td class="num">0,254</td><td><b>10</b></td><td class="num">452</td><td class="num">0,452</td></tr>
+      <tr><td>17</td><td class="num">70</td><td class="num">0,273</td><td><b>11</b></td><td class="num">275</td><td class="num">0,275</td></tr>
+      <tr><td>18</td><td class="num">39</td><td class="num">0,152</td><td><b>12</b></td><td class="num">202</td><td class="num">0,202</td></tr>
+      <tr><td>19</td><td class="num">5</td><td class="num">0,020</td><td><b>13</b></td><td class="num">23</td><td class="num">0,023</td></tr>
+      <tr><td>Σ</td><td class="num">256</td><td class="num">1,000</td><td><b>Σ</b></td><td class="num">1000</td><td class="num">1,000</td></tr>
+    </tbody>
+  </table>
+
+  <p>Jak czytać tabelę? W układzie D3S1358 przebadano 256 chromosomów; allel 17 miało 70 z nich, więc jego częstość to 70/256 ≈ 0,273. Suma N w kolumnie równa się Σ, a suma częstości – 1,000. Widać też regułę z wcześniejszej części rozdziału: w D3S1358 aż pięć alleli (14–18) ma częstość &gt;10%, w LPL – trzy (10, 11, 12).</p>
+
+  <div class="box przyklad"><p>Elektroforegram próbki (liczby przykładowe): w układzie D3S1358 widać <b>dwa piki</b> – allele 15 i 17, a w układzie LPL <b>jeden pik</b> – allel 10.</p>
+  <ul>
+    <li>D3S1358: <b>heterozygota 15, 17</b>; częstości: 47/256 = 0,184 i 70/256 = 0,273.</li>
+    <li>LPL: <b>homozygota 10, 10</b> (oba allele jednakowe – jeden pik); częstość: 452/1000 = 0,452.</li>
+  </ul>
+  <p>Profil tej próbki w dwóch układach: D3S1358 15, 17; LPL 10, 10.</p></div>
+
+  <p>Kompletny profil składa się z <b>genotypów</b> poszczególnych układów STR, a każdy genotyp – z jednego lub dwóch alleli (jest <b>homo-</b> lub <b>heterozygotyczny</b>). Jak z częstości alleli oblicza się częstość profilu i prawdopodobieństwo w badaniach śladów i ojcostwa – <a class="chapref" href="#c10"></a>.</p>
+
+  <p class="src">Źródło: Drewa s. 771, 774–775</p>
+
+  <!-- ============================================================ -->
+  <div class="w60">
+    <ul>
+      <li><b>PCR</b> umożliwił analizę śladów z minimalną ilością DNA, ale minisatelity (allele tysięcy pz) się do niego nie nadają – zastąpiły je <b>układy STR</b>.</li>
+      <li><b>STR</b>: jednostka 2–6 pz, 5–50 powtórzeń, allel 100–300 pz, kilka–kilkanaście (ok. 20) alleli; zwykle ≥ 3 allele o częstości &gt;10%.</li>
+      <li>Zalety: amplifikacja ze <b>zdegradowanego DNA</b> i <b>multipleks</b> – układy rozróżnia długość produktu i <b>kolor barwnika</b> (np. 3 × 3 = 9 układów).</li>
+      <li><b>Sekwenator kapilarny</b>: rozdział co 1 pz do ok. 500 pz w ok. 20 min; laser + optyka + komputer → <b>elektroforegram</b>; <b>wewnętrzny marker</b> (60–600 pz) daje dokładność 0,5–1 pz.</li>
+      <li><b>Drabina alleliczna</b> → nazwa allelu = liczba powtórzeń (TH01: 9 = 176 pz, 9.3 = 179 pz, 10 = 180 pz); <b>profil</b> = lista alleli; jego wagę ocenia się z bazy częstości (częstość = N/Σ).</li>
+    </ul>
+  </div>
+
+  <div class="quiz">
+    <ol>
+      <li id="c09-q-1">Dlaczego metoda PCR wymusiła odejście od minisatelitów w identyfikacji genetycznej?
+        <div class="answer"><p>Allele minisatelitów liczą często kilka–kilkanaście <b>tysięcy pz</b>; ich amplifikacja wymaga DNA <b>wysokiej jakości</b> i nawet wtedy jest trudna. Potrzebne były krótkie markery o podobnej zmienności – <b>układy STR</b> (allele 100–300 pz).</p></div></li>
+      <li id="c09-q-2">Porównaj minisatelity i układy STR pod względem długości jednostki, liczby powtórzeń, długości allelu i liczby alleli.
+        <div class="answer"><p>Minisatelity: jednostka od kilkunastu do kilkudziesięciu pz, setki–tysiące powtórzeń, allele tysiące pz, dziesiątki–setki alleli. STR: jednostka <b>2–6 pz</b>, <b>5–50</b> powtórzeń, allele <b>100–300 pz</b>, od kilku do kilkunastu (czasem ok. 20) alleli.</p></div></li>
+      <li id="c09-q-3">Z próbki DNA ze starego śladu nie udało się uzyskać alleli minisatelitarnych, ale uzyskano pełny profil STR. Wyjaśnij dlaczego.
+        <div class="answer"><p>Degradacja DNA to głównie <b>fragmentacja</b>. Długie allele minisatelitów nie zachowały się w całości, a krótkie fragmenty z allelami STR (100–300 pz) przetrwały na tyle, że PCR mógł je namnożyć.</p></div></li>
+      <li id="c09-q-4">Jakie warunki musi spełniać multipleks STR, by można było rozróżnić produkty różnych układów? Ile układów oznaczymy przy 3 barwnikach?
+        <div class="answer"><p>Produkty układów w jednej grupie starterów muszą różnić się <b>długością</b>; grupy o nakładających się długościach muszą mieć różne <b>barwniki fluorescencyjne</b>. Przy 3 barwnikach po 3 układy – <b>9 układów</b> w jednej reakcji.</p></div></li>
+      <li id="c09-q-5">Czym jest wewnętrzny marker wielkości i dlaczego daje dokładniejszy pomiar niż marker w osobnej linii?
+        <div class="answer"><p>To fragmenty DNA o znanej długości (kilkanaście, 60–600 pz) znakowane barwnikiem o innym widmie niż produkty PCR, dodane <b>do próbki</b>. Wędrują w <b>tej samej kapilarze</b> co badane fragmenty, więc służą do obliczenia ich wielkości z dokładnością <b>0,5–1 pz</b>.</p></div></li>
+      <li id="c09-q-6">Co to jest drabina alleliczna i po co ją stosować, skoro sekwenator mierzy długość fragmentów?
+        <div class="answer"><p>Zestaw wszystkich (lub najczęstszych) alleli układów, <b>wcześniej zsekwencjonowanych</b>, rozdzielany w tych samych warunkach co próbki. Zmierzona długość może różnić się od rzeczywistej <b>o kilka nukleotydów</b>, więc nazwę allelu ustala się przez porównanie z drabiną.</p></div></li>
+      <li id="c09-q-7">Allel 9 układu TH01 daje produkt 176 pz. Jakiej długości będą produkty alleli 10 i 9.3 i z czego wynika oznaczenie „9.3”?
+        <div class="answer"><p>Allel 10 – <b>180 pz</b> (o jedną jednostkę 4 nt więcej), allel 9.3 – <b>179 pz</b>. „9.3” oznacza <b>9 pełnych jednostek + 1 niepełną z 3 nukleotydów</b> (delecja jednego nukleotydu w allelu 10).</p></div></li>
+      <li id="c09-q-8">W bazie przebadano 256 chromosomów; allel 16 wystąpił w 65 z nich. Podaj jego częstość. Co oznacza jeden pik w danym układzie na elektroforegramie?
+        <div class="answer"><p>Częstość = N/Σ = 65/256 ≈ <b>0,254</b>. Jeden pik – <b>homozygota</b> (dwa jednakowe allele); dwa piki – heterozygota.</p></div></li>
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,721 @@
+<section class="chapter"
+  data-num="07"
+  data-title="Hybrydyzacja z użyciem mikromacierzy"
+  data-short="Mikromacierze"
+  data-kicker="Mikromacierze · DNA badane i referencyjne · ChIP-chip">
+
+  <p class="lead">Mikromacierz to nośnik, na którym w zaplanowanym porządku naniesiono liczne znane sekwencje – każdą w swoim miejscu. Materiał badany hybrydyzuje z nimi wszystkimi naraz, dlatego jedno doświadczenie może objąć wybrane geny, grupy genów, a nawet cały genom.</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c07-istota">Na czym polega mikromacierz</h2>
+
+  <p>Mikromacierze wykorzystują tę samą <b>zasadę hybrydyzacji</b>, co metody omówione wcześniej – łączenie się komplementarnych sekwencji kwasów nukleinowych (zasadę i sondy opisuje <a class="chapref" href="#c04"></a>). Technikę nazywa się po angielsku <b>microarray chip technology</b>, a po polsku także <b>mikroczipami</b> lub <b>mikromatrycami</b>.</p>
+
+  <aside class="note pojecie" data-term="Mikromacierz"><p>nośnik (matryca, macierz) z licznymi wzorcowymi sekwencjami naniesionymi w zaplanowanym, uporządkowanym układzie; ang. <i>array</i> – szereg, uporządkowany układ.</p></aside>
+  <p>Istota metody: na odpowiedni <b>nośnik</b> (matrycę, macierz) nanosi się – w sposób zaplanowany i uporządkowany – liczne (<i>array</i>) <b>wzorcowe sekwencje</b> (cząsteczki, związki chemiczne). Są one <b>podłożem do hybrydyzacji materiału badanego</b>. Ponieważ wiadomo, co leży w którym miejscu nośnika, położenie sygnału od razu mówi, z jaką sekwencją związał się badany materiał.</p>
+
+  <div class="box obraz"><p>Mikromacierz przypomina <b>arkusz z tysiącem ponumerowanych kratek</b>, w których z góry rozłożono znane „haczyki”. Badany materiał wylewa się na cały arkusz naraz. Nie trzeba sprawdzać każdej kratki osobno – wystarczy zobaczyć, które kratki się zaświeciły i jak mocno, a ich numery mówią, czego dotyczy sygnał.</p></div>
+
+  <aside class="note liceum"><p><b>Odwrotna transkryptaza</b> (enzym retrowirusów, np. HIV) przepisuje RNA na DNA – odwrotnie niż transkrypcja. DNA przepisane z mRNA to <b>cDNA</b> (DNA komplementarny); zawiera tylko sekwencje obecne w dojrzałym mRNA, czyli bez intronów.</p></aside>
+  <p>Materiałem wzorcowym naniesionym na mikromacierz mogą być:</p>
+  <ul>
+    <li><b>sekwencje oligonukleotydowe</b> – w badaniach DNA; mogą to być fragmenty genów albo sekwencje reprezentujące każdy inny, dowolny odcinek genomu;</li>
+    <li><b>fragmenty cDNA</b> powstałe w procesie odwrotnej transkrypcji z mRNA – macierze takie służą badaniom <b>ekspresji genów</b>;</li>
+    <li><b>fragmenty RNA</b>;</li>
+    <li><b>białka i ich metabolity</b> – tu działa nieco inna zasada wiązania materiału wzorcowego z badanym: wykorzystuje się <b>swoiste przeciwciała</b>.</li>
+  </ul>
+
+  <aside class="note liceum"><p><b>Przeciwciało</b> to białko układu odpornościowego, które wiąże się swoiście z jednym antygenem – jak klucz z zamkiem. Dzięki tej swoistości przeciwciała „rozpoznają” wybrane białko w mieszaninie.</p></aside>
+  <aside class="note liceum"><p><b>Genom</b> – cała informacja genetyczna komórki (DNA). <b>Transkryptom</b> – zbiór wszystkich transkryptów (RNA) obecnych w komórce w danym momencie. <b>Proteom</b> – zbiór wszystkich jej białek. Końcówka „-ika” oznacza naukę o danym zbiorze.</p></aside>
+  <p>Technologia mikromacierzy może więc służyć badaniom z zakresu trzech dziedzin: <b>genomiki</b> (DNA), <b>transkryptomiki</b> (RNA, ekspresja genów) i <b>proteomiki</b> (białka).</p>
+
+  <p>Warto zauważyć odwrócenie ról w porównaniu z hybrydyzacją typu Southern (<a class="chapref" href="#c05"></a>). Tam na membranie unieruchamia się DNA badane, a znakowana sonda jest jedna. Na mikromacierzy unieruchomione są liczne <b>znane sekwencje wzorcowe</b>, a znakuje się materiał badany. Drewa w klasyfikacji mikromacierzy nazywa te naniesione sekwencje także <b>sondami</b>.</p>
+
+  <p class="src">Źródło: Drewa s. 717</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c07-nosniki">Nośniki i nanoszenie sekwencji</h2>
+
+  <p>Fragmenty DNA lub oligonukleotydy można nanosić na różne matryce. <b>Pierwowzorem</b> mikromacierzy były <b>paski lub krążki bibułowe</b>, na które nanoszono wzorcowe próby DNA. W ogólnym zarysie przypominało to hybrydyzację typu Southern – DNA unieruchomione na płaskim nośniku i hybrydyzacja na jego powierzchni.</p>
+
+  <p>Współcześnie matrycami mogą być:</p>
+  <ul>
+    <li><b>membrany nylonowe</b>,</li>
+    <li><b>szkiełka mikroskopowe</b>,</li>
+    <li><b>płytki plastikowe lub krzemowe</b> itp.</li>
+  </ul>
+
+  <p>Sekwencje wzorcowe można nanosić przez <b>nakrapianie</b>. Do nanoszenia oligonukleotydów zastosowano też, zamiast nakrapiania, <b>systemy mikrodrukowania</b> – przypominające komputerowe <b>drukarki atramentowe</b> lub <b>drukowanie mikroprocesorów</b> na potrzeby elektroniki. Precyzja nanoszenia ma znaczenie praktyczne: im gęściej upakowane sekwencje, tym większa rozdzielczość mikromacierzy (<a class="pageref" href="#c07-rozdz"></a>).</p>
+
+  <div class="box zapamietaj"><p>Pierwowzór: <b>paski lub krążki bibułowe</b> (podobieństwo do Southerna). Dziś: <b>membrany nylonowe, szkiełka mikroskopowe, płytki plastikowe lub krzemowe</b>. Nanoszenie: <b>nakrapianie</b> albo <b>mikrodrukowanie</b> (jak drukarka atramentowa lub druk mikroprocesorów).</p></div>
+
+  <p class="src">Źródło: Drewa s. 717</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c07-przebieg">Doświadczenie dwukolorowe – DNA badane i referencyjne</h2>
+
+  <p>Najlepiej opisanym w podręczniku zastosowaniem jest wykrywanie zmian w DNA badanym przez porównanie go z <b>DNA referencyjnym</b> (kontrolnym). Oba DNA nanosi się na mikromacierz jednocześnie, a odróżnia się je dzięki znakowaniu różnymi barwnikami fluorescencyjnymi (<a class="figref" href="#c07-fig-dwukolor"></a>).</p>
+
+  <aside class="note pojecie" data-term="Fluorochrom"><p>związek, który po wzbudzeniu emituje światło o określonej długości fali. Dwa różne fluorochromy emitują różne długości fal, więc ich sygnały można zmierzyć osobno.</p></aside>
+  <ol>
+    <li><b>Znakowanie</b> – DNA badane i DNA referencyjne znakuje się <b>innymi fluorochromami</b>, emitującymi po wzbudzeniu <b>różne długości fal</b> świetlnych.</li>
+    <li><b>Mieszanie</b> – oba DNA łączy się w <b>proporcji 1:1</b>.</li>
+    <li><b>Hybrydyzacja</b> – mieszaninę nanosi się na przygotowaną mikromacierz. Sekwencje DNA badanego i referencyjnego <b>„konkurują” ze sobą</b> o miejsca do hybrydyzacji z komplementarnymi sekwencjami wzorcowymi.</li>
+    <li><b>Odczyt</b> – w każdej plamce mierzy się siłę sygnału obu fluorochromów; długości fal przetwarza się na określoną <b>barwę sygnału</b> za pomocą zestawu <b>filtrów</b> i <b>oprogramowania komputerowego</b>.</li>
+    <li><b>Interpretacja</b> – porównanie, który sygnał przeważa w danej plamce (<a class="pageref" href="#c07-odczyt"></a>).</li>
+  </ol>
+
+  <p>Dlaczego mieszanina 1:1? Jeśli danej sekwencji jest w obu DNA tyle samo, obie pule mają równe szanse na związanie się z odpowiadającą jej sekwencją wzorcową – sygnały obu fluorochromów w plamce są zrównoważone. Każde odchylenie od tej równowagi wskazuje, że w DNA badanym tej sekwencji jest mniej lub więcej niż w kontrolnym. Wynik ma charakter <b>ilościowy</b> – wnioskuje się z siły sygnału.</p>
+
+  <div class="box obraz"><p>Konkurencję o miejsca hybrydyzacji można porównać do <b>dwóch drużyn walczących o krzesła</b>. Gdy obie drużyny są równie liczne, każda zajmie mniej więcej połowę krzeseł. Jeśli jednej drużynie brakuje zawodników – druga zajmie większość krzeseł. Liczba zajętych krzeseł mówi, ilu zawodników miała każda drużyna.</p></div>
+
+  <figure class="fig" id="c07-fig-dwukolor" data-title="Doświadczenie dwukolorowe na mikromacierzy">
+    <div class="panel">
+<svg viewBox="0 0 640 262" role="img" aria-label="Przebieg doswiadczenia dwukolorowego na mikromacierzy">
+<g class="step" transform="translate(21,14)"><circle r="9"/><text y="3.8">1</text></g><text x="35" y="18" class="step-title">Znakowanie</text>
+<g class="step" transform="translate(181,14)"><circle r="9"/><text y="3.8">2</text></g><text x="195" y="18" class="step-title">Mieszanie 1:1</text>
+<g class="step" transform="translate(341,14)"><circle r="9"/><text y="3.8">3</text></g><text x="355" y="18" class="step-title">Hybrydyzacja</text>
+<g class="step" transform="translate(501,14)"><circle r="9"/><text y="3.8">4</text></g><text x="515" y="18" class="step-title">Odczyt</text>
+<rect x="8" y="34" width="132" height="58" rx="6" class="card"/>
+<text x="74" y="50" class="t-xs mid sb f-teal">DNA badane</text>
+<path d="M24,72 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="49" cy="72" r="3" fill="#007e83"/>
+<path d="M60,72 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="85" cy="72" r="3" fill="#007e83"/>
+<path d="M96,72 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="121" cy="72" r="3" fill="#007e83"/>
+<rect x="8" y="100" width="132" height="58" rx="6" class="card"/>
+<text x="74" y="116" class="t-xs mid sb f-ochre">DNA referencyjne</text>
+<path d="M24,138 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="49" cy="138" r="3" fill="#b77a20"/>
+<path d="M60,138 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="85" cy="138" r="3" fill="#b77a20"/>
+<path d="M96,138 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="121" cy="138" r="3" fill="#b77a20"/>
+<text x="74" y="180" class="t-xs mid sb">dwa różne fluorochromy</text>
+<text x="74" y="193" class="t-xs mid muted">inna długość fali emisji</text>
+<path d="M144,96 H164" class="arrow"/>
+<path d="M206,40 V136 a26,26 0 0 0 52,0 V40" fill="#f7fafb" stroke="#8a98a3" stroke-width="1.6"/>
+<line x1="200" y1="40" x2="264" y2="40" stroke="#8a98a3" stroke-width="2"/>
+<path d="M207,70 H257 V136 a25,25 0 0 1 -50,0 Z" fill="#eaf3f4"/>
+<path d="M214,86 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="231" cy="86" r="3" fill="#007e83"/>
+<path d="M234,98 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="251" cy="98" r="3" fill="#b77a20"/>
+<path d="M216,112 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="233" cy="112" r="3" fill="#b77a20"/>
+<path d="M236,124 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="253" cy="124" r="3" fill="#007e83"/>
+<path d="M214,140 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="231" cy="140" r="3" fill="#007e83"/>
+<path d="M232,150 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="249" cy="150" r="3" fill="#b77a20"/>
+<text x="232" y="180" class="t-xs mid sb">równe ilości obu DNA</text>
+<text x="232" y="193" class="t-xs mid muted">w jednej mieszaninie</text>
+<path d="M276,96 H316" class="arrow"/>
+<rect x="332" y="40" width="132" height="112" rx="5" fill="#f2f5f7" stroke="#8a98a3" stroke-width="1.2"/>
+<circle cx="350.0" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="369.2" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="388.4" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="407.6" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="426.8" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="446.0" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="350.0" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="369.2" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="388.4" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="407.6" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="426.8" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="446.0" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="350.0" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="369.2" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="388.4" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="407.6" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="426.8" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="446.0" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="350.0" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="369.2" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="388.4" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="407.6" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="426.8" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="446.0" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="350.0" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="369.2" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="388.4" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="407.6" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="426.8" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="446.0" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<text x="398" y="180" class="t-xs mid sb">sekwencje wzorcowe na płytce</text>
+<text x="398" y="193" class="t-xs mid muted">oba DNA „konkurują” o miejsca</text>
+<path d="M470,96 H490" class="arrow"/>
+<rect x="500" y="30" width="132" height="24" rx="4" fill="#153144"/>
+<text x="566" y="46" class="t-xs mid f-white sb">skaner laserowy</text>
+<path d="M548,54 L548,70" stroke="#c84d42" stroke-width="1.6" marker-end="url(#k6-arrow-red)"/>
+<path d="M584,70 L584,56" class="arrow teal"/>
+<rect x="500" y="74" width="132" height="84" rx="5" fill="#1d3444"/>
+<circle cx="517.0" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="536.6" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="556.2" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="575.8" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="595.4" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="615.0" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="517.0" cy="108.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="536.6" cy="108.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="556.2" cy="108.5" r="6.4" fill="#b77a20" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="575.8" cy="108.5" r="6.4" fill="#b77a20" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="595.4" cy="108.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="615.0" cy="108.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="517.0" cy="127.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="536.6" cy="127.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="556.2" cy="127.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="575.8" cy="127.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="595.4" cy="127.0" r="6.4" fill="#007e83" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="615.0" cy="127.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="517.0" cy="145.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="536.6" cy="145.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="556.2" cy="145.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="575.8" cy="145.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="595.4" cy="145.5" r="6.4" fill="#007e83" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="615.0" cy="145.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<text x="566" y="180" class="t-xs mid sb">filtry + oprogramowanie</text>
+<text x="566" y="193" class="t-xs mid muted">sygnał → barwa plamki</text>
+<line x1="8" y1="210" x2="632" y2="210" class="divider"/>
+<circle cx="30" cy="232" r="7" fill="#007e83"/><text x="43" y="236" class="t-xs">przewaga sygnału DNA badanego</text>
+<circle cx="248" cy="232" r="7" fill="#5c7c52"/><text x="261" y="236" class="t-xs">równowaga obu sygnałów</text>
+<circle cx="420" cy="232" r="7" fill="#b77a20"/><text x="433" y="236" class="t-xs">przewaga sygnału DNA referencyjnego</text>
+<text x="320" y="256" class="t-xs mid faint">barwy przyjęte umownie w tym opracowaniu – Drewa nie podaje konkretnych barw</text>
+</svg>
+    </div>
+    <figcaption>DNA badane i referencyjne znakuje się różnymi fluorochromami (1) i miesza w proporcji 1:1 (2). Mieszanina hybrydyzuje z sekwencjami wzorcowymi naniesionymi na płytkę – oba DNA konkurują o te same miejsca (3). Skaner laserowy odczytuje sygnały, a filtry i oprogramowanie przetwarzają długości fal na barwę każdej plamki (4). Barwa mówi, który sygnał przeważa.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 717–718</p>
+  </figure>
+
+  <aside class="note warto"><p>W klasycznej CGH (Drewa s. 722–723) mieszanina DNA badanego i kontrolnego (1:1) hybrydyzuje z <b>chromosomami metafazowymi</b> na szkiełku. W wersji z mikromacierzą (aCGH, <i>array CGH</i>) chromosomy zastąpiono sekwencjami na mikromacierzy, np. oligonukleotydami lub klonami BAC/PAC.</p></aside>
+  <p>Zasada hybrydyzacji i odczytu wyniku jest w ogólnych zarysach podobna do klasycznej <b>CGH</b> – porównawczej hybrydyzacji genomowej (<i>comparative genome hybridization</i>). W obu metodach porównuje się siłę sygnałów dwóch różnie znakowanych DNA hybrydyzujących z tym samym wzorcem. Drewa nie podaje konkretnych barw fluorochromów; na rycinach tego rozdziału przyjęto umownie: teal – fluorochrom DNA badanego, ochra – fluorochrom DNA referencyjnego, barwa pośrednia – równowaga sygnałów.</p>
+
+  <p class="src">Źródło: Drewa s. 717–718 · Drewa s. 722–723</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c07-odczyt">Jak czytać wynik – delecja czy duplikacja</h2>
+
+  <aside class="note liceum"><p><b>Delecja</b> to utrata fragmentu chromosomu (DNA), <b>duplikacja</b> – podwojenie fragmentu. Obie należą do aberracji strukturalnych chromosomów i zmieniają liczbę kopii sekwencji leżących w zmienionym fragmencie.</p></aside>
+  <p>Wniosek wyciąga się z tego, <b>który sygnał przeważa</b> w danej plamce. Siłę sygnału można określić ilościowo, bo pochodzi z fluorochromu wbudowanego w dany DNA. Przewaga sekwencji zhybrydyzowanych z DNA <b>kontrolnego</b> świadczy o braku takich samych sekwencji w DNA badanym – to <b>delecja</b>. Przewaga sygnału fluorochromu znakującego DNA <b>badane</b> świadczy o <b>duplikacji</b> w analizowanym fragmencie w porównaniu z DNA kontrolnym. Równowaga sygnałów oznacza brak zmiany (<a class="figref" href="#c07-fig-odczyt"></a>).</p>
+  <figure class="fig" id="c07-fig-odczyt" data-title="Interpretacja plamek mikromacierzy">
+    <div class="panel" data-badge="A" data-title="Konkurencja w pojedynczej plamce">
+<svg viewBox="0 0 640 160" role="img" aria-label="Trzy plamki mikromacierzy: rownowaga, przewaga DNA referencyjnego, przewaga DNA badanego">
+<rect x="9" y="4" width="196" height="152" rx="8" class="tile"/>
+<text x="107" y="22" class="t-s mid sb">równowaga sygnałów</text>
+<rect x="27" y="100" width="160" height="7" rx="2" fill="#c9d3d9"/>
+<line x1="49" y1="100" x2="49" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="55" y1="96" x2="55" y2="46" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="55" cy="40" r="3.6" fill="#007e83"/>
+<line x1="71" y1="100" x2="71" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="77" y1="96" x2="77" y2="46" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="77" cy="40" r="3.6" fill="#b77a20"/>
+<line x1="93" y1="100" x2="93" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="99" y1="96" x2="99" y2="46" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="99" cy="40" r="3.6" fill="#007e83"/>
+<line x1="115" y1="100" x2="115" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="121" y1="96" x2="121" y2="46" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="121" cy="40" r="3.6" fill="#b77a20"/>
+<line x1="137" y1="100" x2="137" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="143" y1="96" x2="143" y2="46" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="143" cy="40" r="3.6" fill="#007e83"/>
+<line x1="159" y1="100" x2="159" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="165" y1="96" x2="165" y2="46" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="165" cy="40" r="3.6" fill="#b77a20"/>
+<circle cx="61" cy="128" r="9" fill="#5c7c52"/>
+<text x="75" y="126" class="t-xs muted">barwa plamki</text>
+<text x="75" y="140" class="t-s sb">→ brak zmiany</text>
+<rect x="222" y="4" width="196" height="152" rx="8" class="tile"/>
+<text x="320" y="22" class="t-s mid sb">przewaga DNA referencyjnego</text>
+<rect x="240" y="100" width="160" height="7" rx="2" fill="#c9d3d9"/>
+<line x1="262" y1="100" x2="262" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="268" y1="96" x2="268" y2="46" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="268" cy="40" r="3.6" fill="#007e83"/>
+<line x1="284" y1="100" x2="284" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="290" y1="96" x2="290" y2="46" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="290" cy="40" r="3.6" fill="#b77a20"/>
+<line x1="306" y1="100" x2="306" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="312" y1="96" x2="312" y2="46" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="312" cy="40" r="3.6" fill="#b77a20"/>
+<line x1="328" y1="100" x2="328" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="334" y1="96" x2="334" y2="46" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="334" cy="40" r="3.6" fill="#b77a20"/>
+<line x1="350" y1="100" x2="350" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="356" y1="96" x2="356" y2="46" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="356" cy="40" r="3.6" fill="#b77a20"/>
+<line x1="372" y1="100" x2="372" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="378" y1="96" x2="378" y2="46" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="378" cy="40" r="3.6" fill="#b77a20"/>
+<circle cx="274" cy="128" r="9" fill="#b77a20"/>
+<text x="288" y="126" class="t-xs muted">barwa plamki</text>
+<text x="288" y="140" class="t-s sb f-ochre">→ delecja</text>
+<text x="288" y="152" class="t-xs muted">w DNA badanym</text>
+<rect x="435" y="4" width="196" height="152" rx="8" class="tile"/>
+<text x="533" y="22" class="t-s mid sb">przewaga DNA badanego</text>
+<rect x="453" y="100" width="160" height="7" rx="2" fill="#c9d3d9"/>
+<line x1="475" y1="100" x2="475" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="481" y1="96" x2="481" y2="46" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="481" cy="40" r="3.6" fill="#007e83"/>
+<line x1="497" y1="100" x2="497" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="503" y1="96" x2="503" y2="46" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="503" cy="40" r="3.6" fill="#007e83"/>
+<line x1="519" y1="100" x2="519" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="525" y1="96" x2="525" y2="46" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="525" cy="40" r="3.6" fill="#007e83"/>
+<line x1="541" y1="100" x2="541" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="547" y1="96" x2="547" y2="46" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="547" cy="40" r="3.6" fill="#007e83"/>
+<line x1="563" y1="100" x2="563" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="569" y1="96" x2="569" y2="46" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="569" cy="40" r="3.6" fill="#007e83"/>
+<line x1="585" y1="100" x2="585" y2="46" stroke="#153144" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="591" y1="96" x2="591" y2="46" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="591" cy="40" r="3.6" fill="#b77a20"/>
+<circle cx="487" cy="128" r="9" fill="#007e83"/>
+<text x="501" y="126" class="t-xs muted">barwa plamki</text>
+<text x="501" y="140" class="t-s sb f-teal">→ duplikacja</text>
+<text x="501" y="152" class="t-xs muted">w DNA badanym</text>
+</svg>
+    </div>
+    <div class="panel" data-badge="B" data-title="Stosunek sygnałów wzdłuż chromosomu">
+<svg viewBox="0 0 640 184" role="img" aria-label="Stosunek sygnalow wzdluz chromosomu z delecja i duplikacja">
+<rect x="100" y="6" width="526" height="38" fill="#e6f2f2"/>
+<rect x="100" y="80" width="526" height="38" fill="#f7eedf"/>
+<path d="M100,4 V118 H626" class="axis"/>
+<line x1="100" y1="62" x2="626" y2="62" stroke="#5d6d78" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="94" y="66" class="t-xs end sb">1 : 1</text>
+<text x="94" y="22" class="t-xs end f-teal sb">przewaga</text><text x="94" y="35" class="t-xs end f-teal sb">badanego</text>
+<text x="94" y="96" class="t-xs end f-ochre sb">przewaga</text><text x="94" y="109" class="t-xs end f-ochre sb">referencyjnego</text>
+<circle cx="112.0" cy="59.4" r="3.6" fill="#5c7c52"/>
+<circle cx="123.7" cy="62.4" r="3.6" fill="#5c7c52"/>
+<circle cx="135.3" cy="60.7" r="3.6" fill="#5c7c52"/>
+<circle cx="147.0" cy="63.0" r="3.6" fill="#5c7c52"/>
+<circle cx="158.7" cy="63.3" r="3.6" fill="#5c7c52"/>
+<circle cx="170.4" cy="57.7" r="3.6" fill="#5c7c52"/>
+<circle cx="182.0" cy="57.1" r="3.6" fill="#5c7c52"/>
+<circle cx="193.7" cy="65.4" r="3.6" fill="#5c7c52"/>
+<circle cx="205.4" cy="59.6" r="3.6" fill="#5c7c52"/>
+<circle cx="217.1" cy="59.3" r="3.6" fill="#5c7c52"/>
+<circle cx="228.7" cy="67.0" r="3.6" fill="#5c7c52"/>
+<circle cx="240.4" cy="61.7" r="3.6" fill="#5c7c52"/>
+<circle cx="252.1" cy="65.4" r="3.6" fill="#5c7c52"/>
+<circle cx="263.8" cy="98.8" r="3.6" fill="#b77a20"/>
+<circle cx="275.4" cy="100.1" r="3.6" fill="#b77a20"/>
+<circle cx="287.1" cy="96.2" r="3.6" fill="#b77a20"/>
+<circle cx="298.8" cy="100.1" r="3.6" fill="#b77a20"/>
+<circle cx="310.5" cy="101.9" r="3.6" fill="#b77a20"/>
+<circle cx="322.1" cy="99.2" r="3.6" fill="#b77a20"/>
+<circle cx="333.8" cy="64.4" r="3.6" fill="#5c7c52"/>
+<circle cx="345.5" cy="63.7" r="3.6" fill="#5c7c52"/>
+<circle cx="357.2" cy="57.6" r="3.6" fill="#5c7c52"/>
+<circle cx="368.8" cy="64.6" r="3.6" fill="#5c7c52"/>
+<circle cx="380.5" cy="62.9" r="3.6" fill="#5c7c52"/>
+<circle cx="392.2" cy="60.0" r="3.6" fill="#5c7c52"/>
+<circle cx="403.9" cy="57.3" r="3.6" fill="#5c7c52"/>
+<circle cx="415.5" cy="65.7" r="3.6" fill="#5c7c52"/>
+<circle cx="427.2" cy="61.7" r="3.6" fill="#5c7c52"/>
+<circle cx="438.9" cy="64.2" r="3.6" fill="#5c7c52"/>
+<circle cx="450.6" cy="65.8" r="3.6" fill="#5c7c52"/>
+<circle cx="462.2" cy="64.1" r="3.6" fill="#5c7c52"/>
+<circle cx="473.9" cy="28.4" r="3.6" fill="#007e83"/>
+<circle cx="485.6" cy="24.2" r="3.6" fill="#007e83"/>
+<circle cx="497.3" cy="27.4" r="3.6" fill="#007e83"/>
+<circle cx="508.9" cy="24.6" r="3.6" fill="#007e83"/>
+<circle cx="520.6" cy="28.5" r="3.6" fill="#007e83"/>
+<circle cx="532.3" cy="65.8" r="3.6" fill="#5c7c52"/>
+<circle cx="544.0" cy="58.0" r="3.6" fill="#5c7c52"/>
+<circle cx="555.6" cy="58.4" r="3.6" fill="#5c7c52"/>
+<circle cx="567.3" cy="59.2" r="3.6" fill="#5c7c52"/>
+<circle cx="579.0" cy="66.7" r="3.6" fill="#5c7c52"/>
+<circle cx="590.7" cy="61.4" r="3.6" fill="#5c7c52"/>
+<circle cx="602.3" cy="63.3" r="3.6" fill="#5c7c52"/>
+<circle cx="614.0" cy="60.0" r="3.6" fill="#5c7c52"/>
+<rect x="100" y="131" width="294.0" height="14" rx="7" fill="#dfe6ea" stroke="#8a98a3" stroke-width="1"/>
+<rect x="402.0" y="131" width="224.0" height="14" rx="7" fill="#dfe6ea" stroke="#8a98a3" stroke-width="1"/>
+<rect x="257.8" y="131" width="70.4" height="14" fill="#b77a20" opacity=".85"/>
+<rect x="467.9" y="131" width="58.7" height="14" fill="#007e83" opacity=".85"/>
+<line x1="257.8" y1="118" x2="257.8" y2="131" class="divider"/>
+<line x1="328.1" y1="118" x2="328.1" y2="131" class="divider"/>
+<line x1="467.9" y1="118" x2="467.9" y2="131" class="divider"/>
+<line x1="526.6" y1="118" x2="526.6" y2="131" class="divider"/>
+<text x="293.0" y="158" class="t-xs mid sb f-ochre">delecja</text>
+<text x="497.3" y="158" class="t-xs mid sb f-teal">duplikacja</text>
+<text x="94" y="142" class="t-xs end muted">chromosom</text>
+<text x="363" y="178" class="t-xs mid muted">położenie sekwencji wzorcowych wzdłuż chromosomu (każdy punkt = jedna plamka)</text>
+</svg>
+    </div>
+    <figcaption>A – do sekwencji wzorcowych (granatowe, przytwierdzone do płytki) przyłączają się fragmenty DNA badanego (teal) i referencyjnego (ochra). Przy równych ilościach obu DNA sygnały są zrównoważone; gdy w DNA badanym brakuje sekwencji, przeważa sygnał referencyjny (delecja); gdy jest jej więcej – sygnał badanego (duplikacja). B – plamki ułożone według położenia sekwencji w chromosomie: kilka sąsiednich plamek z tym samym odchyleniem wyznacza zmieniony fragment.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 717</p>
+  </figure>
+
+  <table class="tbl full">
+    <caption>Jak czytać kolor plamki</caption>
+    <thead><tr><th style="width:34%">Stosunek sygnałów w plamce</th><th style="width:24%">Barwa na rycinach</th><th>Wniosek o DNA badanym</th></tr></thead>
+    <tbody>
+      <tr><td>badany = referencyjny</td><td>pośrednia</td><td>tyle samo sekwencji co w DNA kontrolnym – brak zmiany</td></tr>
+      <tr><td>referencyjny &gt; badany</td><td>ochra</td><td>brak takich samych sekwencji – <b>delecja</b></td></tr>
+      <tr><td>badany &gt; referencyjny</td><td>teal</td><td>więcej kopii fragmentu – <b>duplikacja</b></td></tr>
+    </tbody>
+  </table>
+
+  <div class="box przyklad"><p>(Dane wymyślone.) Mikromacierz zawiera 40 sekwencji wzorcowych z jednego chromosomu, ułożonych w kolejności ich położenia. Plamki 1–14 mają barwę pośrednią. W plamkach 15–19 sygnał DNA referencyjnego jest wyraźnie silniejszy niż badanego. Plamki 20–40 znów są w równowadze. Wniosek: w DNA badanym występuje <b>delecja</b> obejmującą fragment chromosomu reprezentowany przez sekwencje 15–19. Gdyby w tych plamkach przeważał sygnał DNA badanego – byłaby to <b>duplikacja</b>.</p></div>
+
+  <h3 id="c07-rozdz">Rozdzielczość i zakres badania</h3>
+  <p>Rozdzielczość mikromacierzy w analizie zmian strukturalnych genomu zależy od trzech czynników:</p>
+  <ul>
+    <li><b>wielkości nanoszonych sekwencji wzorcowych</b> – każda plamka „widzi” odcinek odpowiadający swojej sekwencji;</li>
+    <li><b>gęstości ich upakowania na nośniku</b> – im gęściej, tym mniejsze odstępy między badanymi miejscami genomu;</li>
+    <li><b>rozdzielczości czytnika</b> – musi on odróżnić od siebie sąsiednie plamki.</li>
+  </ul>
+  <p>Zakres badania zależy od <b>projektowanego przeznaczenia</b> mikromacierzy: może ona służyć badaniom określonych genów, grup genów, wybranych sekwencji, a nawet <b>całego genomu</b>.</p>
+
+  <aside class="note warto"><p>Paradoks kosztów: sama metoda jest stosunkowo tania, ale bez skanera i analizy komputerowej wyniku nie da się odczytać – plamek są tysiące, a każda wymaga ilościowego pomiaru dwóch sygnałów.</p></aside>
+  <p>Metody mikromacierzowe są <b>stosunkowo tanie</b>, ale wymagają <b>bardzo drogiego oprzyrządowania</b>: precyzyjnego <b>skanera laserowego</b> do odczytu i <b>technik komputerowych</b> do analizy danych.</p>
+
+  <div class="box zapamietaj"><p>DNA badane i referencyjne, różne fluorochromy, <b>1:1</b>, konkurencja o sekwencje wzorcowe. Przewaga sygnału <b>referencyjnego</b> → <b>delecja</b>; przewaga sygnału <b>badanego</b> → <b>duplikacja</b>. Rozdzielczość: wielkość sekwencji, gęstość upakowania, rozdzielczość czytnika. Tanie metody – drogi sprzęt (skaner laserowy, komputer).</p></div>
+
+  <p class="src">Źródło: Drewa s. 717–718</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c07-rodzaje">Rodzaje mikromacierzy</h2>
+
+  <p>W zależności od rodzaju przeprowadzanego eksperymentu Drewa wymienia pięć grup zastosowań mikromacierzy: <b>analizę transkryptomiczną</b> (RNA), <b>badanie DNA</b>, <b>badanie sekwencji genów</b> (genotypowanie), <b>analizę polimorfizmów SNP</b> oraz <b>badanie oddziaływań DNA z białkami</b> i modyfikacji chromatyny (ChIP-chip). Pełną klasyfikację zestawia tabela.</p>
+  <aside class="note pojecie" data-term="BAC i PAC"><p>wektory do klonowania dużych fragmentów DNA (Drewa s. 707–708). <b>BAC</b> – sztuczny chromosom bakteryjny, oparty na DNA plazmidu F <i>E. coli</i>. <b>PAC</b> – sztuczny chromosom wyprowadzony z faga P1; mieści wstawkę ok. 150 kpz.</p></aside>
+  <aside class="note liceum"><p><b>Mutacja punktowa</b> to zamiana jednego nukleotydu na inny. Gdy dany wariant jest w populacji częsty, mówi się o <b>polimorfizmie</b>. SNP to właśnie polimorfizm pojedynczego nukleotydu.</p></aside>
+  <p>W grupie „badanie DNA” podział oparto na budowie sond: ich długość rośnie od oligonukleotydów (25–70 nt), przez cDNA (zwykle pełna sekwencja mRNA), po klony BAC/PAC. Mikromacierz BAC/PAC-owa zawiera kilka tysięcy klonów upakowanych w wektorach typu BAC i PAC i pozwala analizować cały genom z rozdzielczością ok. 1 Mpz.</p>
+
+  <table class="tbl wide">
+    <thead><tr><th style="width:26%">Rodzaj mikromacierzy</th><th style="width:34%">Co jest naniesione</th><th>Do czego służy</th></tr></thead>
+    <tbody>
+      <tr><td colspan="3">1. Analiza transkryptomiczna (RNA)</td></tr>
+      <tr><td>ekspresyjna (w wyliczeniu Drewy: „sekwencje mRNA”)</td><td>11–20 sond oligonukleotydowych na fragment 3′ każdego znanego transkryptu</td><td>badanie ekspresji genów; najpopularniejsza, dla największej liczby gatunków pro- i eukariotycznych</td></tr>
+      <tr><td>eksonowa</td><td>sondy homologiczne dla poszczególnych eksonów transkryptu</td><td>wzór ekspresji genów + alternatywne składanie</td></tr>
+      <tr><td>pokrywająca genom, dachówkowa (<i>tiling array</i>)</td><td>sondy równomiernie pokrywające genom</td><td>aktywność transkrypcyjna całego genomu, także ekspresja obszarów pozagenowych</td></tr>
+      <tr><td><i>splicing array</i></td><td>(Drewa nie precyzuje)</td><td>alternatywne składanie transkryptu (<i>splicing</i>)</td></tr>
+      <tr><td colspan="3">2. Badanie DNA – podział ze względu na budowę sond</td></tr>
+      <tr><td>oligonukleotydowa (<i>oligo array</i>)</td><td>krótkie sondy, na ogół 25–70-nukleotydowe</td><td>badanie DNA</td></tr>
+      <tr><td>cDNA (<i>cDNA array</i>)</td><td>sondy znacznie dłuższe – zwykle pełne sekwencje mRNA (kompletna sekwencja wariantu genu)</td><td>badanie DNA</td></tr>
+      <tr><td>BAC/PAC-owa (<i>BAC/PAC-array</i>)</td><td>kilka tysięcy klonów w wektorach BAC i PAC</td><td>analiza całego genomu, rozdzielczość ok. 1 Mpz</td></tr>
+      <tr><td>z produktami PCR</td><td>wybrane produkty reakcji PCR</td><td>badanie DNA</td></tr>
+      <tr><td colspan="3">3–5. Inne zastosowania</td></tr>
+      <tr><td>do genotypowania</td><td>(Drewa nie precyzuje)</td><td>badanie sekwencji genów</td></tr>
+      <tr><td>SNP (<i>SNP array</i>)</td><td>(Drewa nie precyzuje)</td><td>analiza jednonukleotydowych polimorfizmów DNA typu SNP</td></tr>
+      <tr><td>ChIP-chip</td><td>mikromacierz + pula kwasów nukleinowych z immunoprecypitacji chromatyny</td><td>oddziaływania DNA z białkami oraz modyfikacje chromatyny</td></tr>
+    </tbody>
+  </table>
+
+  <div class="numbers">
+    <div class="n"><span class="v">1:1</span><span class="d">proporcja DNA badanego i referencyjnego</span></div>
+    <div class="n"><span class="v">25–70<small>nt</small></span><span class="d">długość sond na mikromacierzy oligonukleotydowej</span></div>
+    <div class="n"><span class="v">11–20</span><span class="d">sond na transkrypt w mikromacierzy ekspresyjnej</span></div>
+    <div class="n"><span class="v">kilka<small>tys.</small></span><span class="d">klonów na mikromacierzy BAC/PAC-owej</span></div>
+    <div class="n"><span class="v">~1<small>Mpz</small></span><span class="d">rozdzielczość mikromacierzy BAC/PAC-owej</span></div>
+    <div class="n"><span class="v">2</span><span class="d">poziomy analizy mikromacierzy eksonowej</span></div>
+  </div>
+
+  <div class="box uwaga"><p>Klasyfikacja w podręczniku łączy dwa kryteria: <b>rodzaj eksperymentu</b> (transkryptom, DNA, SNP, białka) i <b>budowę sond</b> (tylko w grupie „badanie DNA”). Grupy nie są więc rozłączne. Przykładowo mikromacierze dachówkowe stoją w grupie transkryptomicznej, a dalej Drewa przypisuje im identyfikację miejsc wiązania czynników transkrypcyjnych i modyfikacji histonów – czyli tematy, które w wyliczeniu przypisano ChIP-chip. Listę warto znać w kolejności z książki, pamiętając, że ten sam typ płytki może służyć różnym eksperymentom.</p></div>
+
+  <p class="src">Źródło: Drewa s. 717–718 · Drewa s. 707–708</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c07-transkryptom">Mikromacierze ekspresyjne, eksonowe i dachówkowe</h2>
+
+  <p>Trzy rodzaje mikromacierzy transkryptomicznych różnią się tym, <b>gdzie względem genu</b> leżą naniesione sondy (<a class="figref" href="#c07-fig-sondy"></a>).</p>
+
+  <h3>Mikromacierze ekspresyjne</h3>
+  <p>Wśród mikromacierzy transkryptomicznych <b>najpopularniejsze</b> są <b>mikromacierze ekspresyjne</b>. Dedykowane są największej liczbie gatunków – zarówno pro-, jak i eukariotycznych. Zawierają <b>11–20 sond oligonukleotydowych</b> obejmujących <b>fragmenty 3′</b> każdego ze znanych transkryptów danego organizmu.</p>
+
+  <figure class="fig" id="c07-fig-sondy" data-title="Rozmieszczenie sond względem genu">
+    <div class="panel" data-badge="A" data-title="Mikromacierz ekspresyjna, eksonowa i dachówkowa">
+<svg viewBox="0 0 640 200" role="img" aria-label="Rozmieszczenie sond wzgledem genu w mikromacierzy ekspresyjnej, eksonowej i dachowkowej">
+<rect x="236" y="20" width="34" height="156" fill="#e6f2f2"/>
+<rect x="314" y="20" width="32" height="156" fill="#e6f2f2"/>
+<rect x="390" y="20" width="32" height="156" fill="#e6f2f2"/>
+<rect x="466" y="20" width="90" height="156" fill="#e6f2f2"/>
+<line x1="172" y1="32" x2="236" y2="32" stroke="#8a98a3" stroke-width="2" stroke-dasharray="5 3"/>
+<line x1="556" y1="32" x2="630" y2="32" stroke="#8a98a3" stroke-width="2" stroke-dasharray="5 3"/>
+<line x1="270" y1="32" x2="466" y2="32" stroke="#153144" stroke-width="1.6"/>
+<rect x="236" y="23" width="34" height="18" rx="2" fill="#153144"/>
+<text x="253.0" y="36" class="t-xs mid f-white sb">E1</text>
+<rect x="314" y="23" width="32" height="18" rx="2" fill="#153144"/>
+<text x="330.0" y="36" class="t-xs mid f-white sb">E2</text>
+<rect x="390" y="23" width="32" height="18" rx="2" fill="#153144"/>
+<text x="406.0" y="36" class="t-xs mid f-white sb">E3</text>
+<rect x="466" y="23" width="90" height="18" rx="2" fill="#153144"/>
+<text x="511.0" y="36" class="t-xs mid f-white sb">E4</text>
+<text x="204.0" y="19" class="t-xs mid muted">pozagenowy</text>
+<text x="593.0" y="19" class="t-xs mid muted">pozagenowy</text>
+<text x="292.0" y="19" class="t-xs mid muted">intron</text>
+<text x="236" y="54" class="t-xs mid sb">5′</text>
+<text x="556" y="54" class="t-xs mid sb">3′</text>
+<text x="8" y="36" class="t-s sb">gen</text>
+<line x1="172" y1="78" x2="630" y2="78" stroke="#e3e8ec" stroke-width="1"/>
+<text x="8" y="76" class="t-s sb">ekspresyjna</text>
+<text x="8" y="89" class="t-xs muted">11–20 sond, koniec 3′</text>
+<line x1="172" y1="120" x2="630" y2="120" stroke="#e3e8ec" stroke-width="1"/>
+<text x="8" y="118" class="t-s sb">eksonowa</text>
+<text x="8" y="131" class="t-xs muted">sondy w każdym eksonie</text>
+<line x1="172" y1="160" x2="630" y2="160" stroke="#e3e8ec" stroke-width="1"/>
+<text x="8" y="158" class="t-s sb">dachówkowa</text>
+<text x="8" y="171" class="t-xs muted">równomiernie,</text>
+<text x="8" y="183" class="t-xs muted">także poza genem</text>
+<rect x="549.0" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="542.4" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="535.8" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="529.2" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="522.6" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="516.0" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="509.4" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="502.8" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="496.2" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="489.6" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="483.0" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="476.4" y="73" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="241.2" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="250.5" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="259.8" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="318.8" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="327.5" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="336.2" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="394.8" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="403.5" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="412.2" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="474.9" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="491.7" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="508.5" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="525.3" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="542.1" y="115" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="174.0" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="186.2" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="198.4" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="210.6" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="222.8" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="235.0" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="247.2" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="259.4" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="271.6" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="283.8" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="296.0" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="308.2" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="320.4" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="332.6" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="344.8" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="357.0" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="369.2" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="381.4" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="393.6" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="405.8" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="418.0" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="430.2" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="442.4" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="454.6" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="466.8" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="479.0" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="491.2" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="503.4" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="515.6" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="527.8" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="540.0" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="552.2" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="564.4" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="576.6" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="588.8" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="601.0" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<rect x="613.2" y="155" width="5" height="10" rx="1.5" fill="#c84d42"/>
+<text x="172" y="194" class="t-xs muted">czerwone kreski – sondy naniesione na płytkę; jasne pasy – eksony</text>
+</svg>
+    </div>
+    <div class="panel" data-badge="B" data-title="Sondy eksonowe a alternatywne składanie">
+<svg viewBox="0 0 640 132" role="img" aria-label="Sondy eksonowe ujawniaja wariant mRNA bez eksonu 3">
+<text x="8" y="14" class="t-xs muted">sygnał sondy eksonowej:</text>
+<circle cx="134" cy="10" r="5.5" class="spot"/><text x="144" y="14" class="t-xs">jest</text>
+<circle cx="184" cy="10" r="5.5" fill="#ffffff" stroke="#c84d42" stroke-width="1.6"/><text x="194" y="14" class="t-xs">brak</text>
+<text x="8" y="56" class="t-s sb">wariant 1</text>
+<rect x="110" y="43" width="50" height="18" rx="2" fill="#153144"/>
+<text x="135.0" y="56" class="t-xs mid f-white sb">E1</text>
+<rect x="162" y="43" width="50" height="18" rx="2" fill="#153144"/>
+<text x="187.0" y="56" class="t-xs mid f-white sb">E2</text>
+<rect x="214" y="43" width="50" height="18" rx="2" fill="#153144"/>
+<text x="239.0" y="56" class="t-xs mid f-white sb">E3</text>
+<rect x="266" y="43" width="80" height="18" rx="2" fill="#153144"/>
+<text x="306.0" y="56" class="t-xs mid f-white sb">E4</text>
+<text x="354" y="56" class="t-xs muted">mRNA</text>
+<circle cx="500" cy="52" r="8" class="spot"/>
+<circle cx="540" cy="52" r="8" class="spot"/>
+<circle cx="580" cy="52" r="8" class="spot"/>
+<circle cx="620" cy="52" r="8" class="spot"/>
+<text x="8" y="96" class="t-s sb">wariant 2</text>
+<rect x="110" y="83" width="50" height="18" rx="2" fill="#153144"/>
+<text x="135.0" y="96" class="t-xs mid f-white sb">E1</text>
+<rect x="162" y="83" width="50" height="18" rx="2" fill="#153144"/>
+<text x="187.0" y="96" class="t-xs mid f-white sb">E2</text>
+<rect x="214" y="83" width="80" height="18" rx="2" fill="#153144"/>
+<text x="254.0" y="96" class="t-xs mid f-white sb">E4</text>
+<text x="302" y="96" class="t-xs muted">mRNA</text>
+<circle cx="500" cy="92" r="8" class="spot"/>
+<circle cx="540" cy="92" r="8" class="spot"/>
+<circle cx="580" cy="92" r="8" fill="#ffffff" stroke="#c84d42" stroke-width="1.6"/>
+<circle cx="620" cy="92" r="8" class="spot"/>
+<text x="500" y="32" class="t-xs mid sb">E1</text>
+<text x="540" y="32" class="t-xs mid sb">E2</text>
+<text x="580" y="32" class="t-xs mid sb">E3</text>
+<text x="620" y="32" class="t-xs mid sb">E4</text>
+<text x="560" y="14" class="t-xs mid muted">plamki sond eksonowych</text>
+<line x1="476" y1="22" x2="476" y2="104" class="divider"/>
+<text x="8" y="126" class="t-xs muted">ten sam pre-mRNA → dwa warianty mRNA; brak sygnału sondy dla E3 wskazuje wariant bez eksonu 3</text>
+</svg>
+    </div>
+    <figcaption>A – gen z czterema eksonami (E1–E4), intronami i obszarami pozagenowymi. Mikromacierz ekspresyjna ma 11–20 sond w obrębie fragmentu 3′ transkryptu, eksonowa – sondy w każdym eksonie, dachówkowa – sondy równomiernie wzdłuż całego genomu, także w intronach i poza genem. B – schemat: dwa warianty mRNA z jednego pre-mRNA; wariant pozbawiony eksonu 3 nie daje sygnału w plamce sondy dla E3.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 718</p>
+  </figure>
+
+  <h3>Mikromacierze eksonowe</h3>
+  <aside class="note liceum"><p>Gen eukariotyczny składa się z <b>eksonów</b> (zostają w dojrzałym mRNA) i <b>intronów</b> (wycinanych). Pre-mRNA podlega <b>składaniu</b> (<i>splicing</i>). Przy <b>alternatywnym składaniu</b> z jednego pre-mRNA powstają różne warianty mRNA, np. z pominięciem jednego eksonu – a więc różne białka.</p></aside>
+  <p><b>Mikromacierze eksonowe</b> zawierają sondy <b>homologiczne dla poszczególnych eksonów</b> danego transkryptu. Umożliwiają dwa uzupełniające się <b>poziomy analizy</b>:</p>
+  <ol>
+    <li>badanie <b>zmian wzoru ekspresji genów</b>;</li>
+    <li>ocenę różnic w procesie <b>alternatywnego składania transkryptów</b> – procesu, dzięki któremu z tej samej cząsteczki prekursorowej (<b>pre-mRNA</b>) powstają różne warianty mRNA.</li>
+  </ol>
+  <p>Skoro każdy ekson ma własne sondy, wariant mRNA pozbawiony jednego eksonu da sygnał we wszystkich plamkach oprócz tej, która odpowiada brakującemu eksonowi (<a class="figref" href="#c07-fig-sondy" data-panel="B"></a>).</p>
+
+  <h3>Mikromacierze dachówkowe</h3>
+  <p>Do <b>kompleksowej analizy aktywności transkrypcyjnej całych genomów</b> opracowano <b>mikromacierze równomiernie pokrywające genom</b> (<i>genome tiling arrays</i>), nazywane też <b>mikromacierzami dachówkowymi</b>. Ich sondy obejmują nie tylko geny, lecz także obszary pozagenowe – dlatego służą m.in. do badania ekspresji obszarów pozagenowych.</p>
+
+  <aside class="note liceum"><p><b>Czynniki transkrypcyjne</b> – białka wiążące DNA (np. promotor), włączające lub wyłączające transkrypcję. DNA nawija się na <b>histony</b> (chromatyna); modyfikacje histonów i <b>metylacja DNA</b> zmieniają dostępność genów bez zmiany sekwencji.</p></aside>
+  <p>Mikromacierze dachówkowe umożliwiają identyfikację:</p>
+  <ul>
+    <li>miejsc wiązania się <b>czynników transkrypcyjnych</b>,</li>
+    <li><b>modyfikacji histonów</b>,</li>
+    <li><b>metylacji DNA</b>,</li>
+    <li>innych elementów związanych z <b>regulacją transkrypcji</b>.</li>
+  </ul>
+  <p>Uzyskane w ten sposób informacje dostarczają wiedzy o <b>roli niekodujących fragmentów genomu</b>.</p>
+
+  <div class="box obraz"><p>Nazwa „dachówkowe” dobrze oddaje układ sond: leżą jedna przy drugiej, <b>jak dachówki na dachu</b>, i pokrywają cały odcinek genomu bez luk – razem z intronami i obszarami między genami, a nie tylko „ciekawe” fragmenty.</p></div>
+
+  <p>Mikromacierze dachówkowe często stosuje się w <b>porównawczej analizie funkcjonalnej genomów</b> – podobnie jak klasyczne mikromacierze ekspresyjne. Doświadczenia takie są źródłem informacji o <b>potencjalnej roli odkrytych transkryptów</b>. Dają też szansę wglądu w regulację wielu procesów słabo dotąd poznanych pod kątem genetycznym, takich jak:</p>
+  <ul>
+    <li><b>embriogeneza</b>,</li>
+    <li><b>różnicowanie tkanek</b>,</li>
+    <li><b>odpowiedzi komórki/organizmów na warunki środowiska zewnętrznego</b>.</li>
+  </ul>
+
+  <div class="box zapamietaj"><p><b>Ekspresyjna</b>: 11–20 sond na fragment 3′ każdego transkryptu; najpopularniejsza. <b>Eksonowa</b>: sondy dla każdego eksonu – ekspresja + alternatywne składanie. <b>Dachówkowa</b> (<i>genome tiling array</i>): sondy równomiernie w całym genomie – czynniki transkrypcyjne, histony, metylacja DNA, rola niekodujących fragmentów genomu.</p></div>
+
+  <p class="src">Źródło: Drewa s. 717–718</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c07-chip">ChIP-chip – mapowanie interakcji białko–DNA</h2>
+
+  <aside class="note liceum"><p>Każdy proces na DNA wymaga białek, które się z nim wiążą: w <b>replikacji</b> działają m.in. helikaza i polimeraza DNA, w <b>transkrypcji</b> – polimeraza RNA i czynniki transkrypcyjne, w <b>naprawie</b> – enzymy rozpoznające uszkodzenia.</p></aside>
+  <p>Podstawą wielu ważnych procesów zachodzących w komórce są <b>interakcje pomiędzy białkami i DNA</b>. Należą do nich: <b>replikacja DNA</b>, <b>transkrypcja</b>, <b>rekombinacja</b>, <b>naprawa DNA</b> oraz <b>regulacja upakowania chromatyny</b>.</p>
+
+  <aside class="note pojecie" data-term="Immunoprecypitacja"><p>„immuno-” – z użyciem przeciwciała; precypitacja – wytrącenie. Wyłapanie z mieszaniny wybranego składnika za pomocą swoistego przeciwciała. ChIP – immunoprecypitacja chromatyny (<i>chromatin immunoprecipitation</i>).</p></aside>
+  <p>Jedną z najnowocześniejszych metod badania tych interakcji jest technika <b>ChIP on chip</b>, inaczej <b>ChIP-chip</b>. Łączy ona dwa elementy:</p>
+  <ul>
+    <li><b>immunoprecypitację chromatyny</b> – <b>ChIP</b> (<i>chromatin immunoprecipitation</i>) – z wykorzystaniem <b>specyficznych przeciwciał</b>;</li>
+    <li><b>analizę techniką mikromacierzy</b> (<i>chip</i>) <b>wyselekcjonowanej puli kwasów nukleinowych</b>.</li>
+  </ul>
+
+  <p>Logikę metody można przedstawić w czterech krokach (<a class="figref" href="#c07-fig-chip"></a>):</p>
+  <ol>
+    <li><b>chromatyna</b> – w komórce badane białko jest związane z DNA w określonych miejscach;</li>
+    <li><b>immunoprecypitacja</b> – specyficzne przeciwciało wybiera chromatynę z badanym białkiem;</li>
+    <li><b>pula kwasów nukleinowych</b> – wyselekcjonowane w ten sposób DNA pochodzi z miejsc, które białko wiązało;</li>
+    <li><b>mikromacierz</b> – analiza puli pokazuje, które sekwencje genomu w niej występują i w jakiej ilości.</li>
+  </ol>
+
+  <figure class="fig" id="c07-fig-chip" data-title="ChIP-chip krok po kroku">
+    <div class="panel">
+<svg viewBox="0 0 640 214" role="img" aria-label="ChIP-chip krok po kroku">
+<g class="step" transform="translate(21,14)"><circle r="9"/><text y="3.8">1</text></g><text x="35" y="18" class="step-title">Chromatyna</text>
+<g class="step" transform="translate(181,14)"><circle r="9"/><text y="3.8">2</text></g><text x="195" y="18" class="step-title">Immunoprecypitacja</text>
+<g class="step" transform="translate(341,14)"><circle r="9"/><text y="3.8">3</text></g><text x="355" y="18" class="step-title">Wybrana pula DNA</text>
+<g class="step" transform="translate(501,14)"><circle r="9"/><text y="3.8">4</text></g><text x="515" y="18" class="step-title">Mikromacierz</text>
+<path d="M10,104 C40,84 60,124 90,104 S130,84 150,104" class="dna"/>
+<ellipse cx="40" cy="96" rx="11" ry="8" fill="#7867a8"/>
+<ellipse cx="74" cy="111" rx="9" ry="7" fill="#b9c6ce"/>
+<ellipse cx="116" cy="94" rx="11" ry="8" fill="#7867a8"/>
+<ellipse cx="140" cy="104" rx="8" ry="6" fill="#b9c6ce"/>
+<text x="80" y="150" class="t-xs mid sb">DNA z białkami</text>
+<text x="80" y="163" class="t-xs mid muted">fiolet – badane białko</text>
+<path d="M152,100 H170" class="arrow"/>
+<path d="M188,112 C204,102 220,122 236,112 S262,102 274,112" class="dna"/>
+<ellipse cx="232" cy="103" rx="12" ry="8.5" fill="#7867a8"/>
+<path d="M232,62 V76 M232,76 L223,88 M232,76 L241,88" stroke="#4387b7" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+<text x="256" y="72" class="t-xs f-blue sb">przeciwciało</text>
+<text x="232" y="150" class="t-xs mid sb">swoiste przeciwciało</text>
+<text x="232" y="163" class="t-xs mid muted">wybiera chromatynę</text>
+<text x="232" y="176" class="t-xs mid muted">z badanym białkiem</text>
+<path d="M290,100 H312" class="arrow"/>
+<path d="M336,82 c8,-6 16,6 24,0 s12,-6 18,0" fill="none" stroke="#153144" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M372,98 c8,-6 16,6 24,0 s12,-6 18,0" fill="none" stroke="#153144" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M344,114 c8,-6 16,6 24,0 s12,-6 18,0" fill="none" stroke="#153144" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M384,70 c8,-6 16,6 24,0 s12,-6 18,0" fill="none" stroke="#153144" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M392,124 c8,-6 16,6 24,0 s12,-6 18,0" fill="none" stroke="#153144" stroke-width="2.6" stroke-linecap="round"/>
+<text x="392" y="150" class="t-xs mid sb">wyselekcjonowana pula</text>
+<text x="392" y="163" class="t-xs mid muted">kwasów nukleinowych</text>
+<text x="392" y="176" class="t-xs mid muted">(miejsca wiązania białka)</text>
+<path d="M452,100 H474" class="arrow"/>
+<rect x="500" y="32" width="132" height="68" rx="5" fill="#f2f5f7" stroke="#8a98a3" stroke-width="1.2"/>
+<circle cx="517.0" cy="48" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="536.6" cy="48" r="6" fill="#7867a8" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="556.2" cy="48" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="575.8" cy="48" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="595.4" cy="48" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="615.0" cy="48" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="517.0" cy="66" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="536.6" cy="66" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="556.2" cy="66" r="6" fill="#7867a8" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="575.8" cy="66" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="595.4" cy="66" r="6" fill="#7867a8" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="615.0" cy="66" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="517.0" cy="84" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="536.6" cy="84" r="6" fill="#7867a8" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="556.2" cy="84" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="575.8" cy="84" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="595.4" cy="84" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="615.0" cy="84" r="6" fill="#7867a8" stroke="#b9c6ce" stroke-width="1.2"/>
+<rect x="504" y="128" width="124" height="8" rx="4" fill="#dfe6ea" stroke="#8a98a3" stroke-width="1"/>
+<rect x="520" y="116" width="6" height="10" fill="#7867a8"/>
+<rect x="548" y="106" width="6" height="20" fill="#7867a8"/>
+<rect x="590" y="112" width="6" height="14" fill="#7867a8"/>
+<rect x="612" y="120" width="6" height="6" fill="#7867a8"/>
+<text x="566" y="150" class="t-xs mid sb">mapa interakcji białko–DNA</text>
+<text x="566" y="163" class="t-xs mid muted">gdzie w genomie i jak często</text>
+<text x="566" y="176" class="t-xs mid muted">wiązane jest białko</text>
+<line x1="8" y1="190" x2="632" y2="190" class="divider"/>
+<text x="320" y="206" class="t-xs mid muted">ChIP (immunoprecypitacja chromatyny) + chip (mikromacierz) = ChIP-chip, inaczej ChIP on chip</text>
+</svg>
+    </div>
+    <figcaption>Badane białko (fiolet) wiąże się z DNA w określonych miejscach (1). Specyficzne przeciwciało wybiera chromatynę zawierającą to białko (2). Uzyskuje się wyselekcjonowaną pulę kwasów nukleinowych z miejsc wiązania (3). Jej analiza na mikromacierzy pokazuje, w jakich miejscach genomu i jak często białko jest wiązane (4).</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 718</p>
+  </figure>
+
+  <p>Metoda ChIP-chip pozwala określić <b>z dużą dokładnością</b>, <b>jak często</b> i <b>w jakich miejscach genomu</b> wiązane są konkretne białka. Stwarza to możliwość swoistego <b>mapowania interakcji białko–DNA</b>. Według wyliczenia Drewy technikę ChIP-chip stosuje się do badania oddziaływań DNA z białkami oraz <b>modyfikacji chromatyny</b>.</p>
+
+  <div class="box zapamietaj"><p><b>ChIP-chip</b> (ChIP on chip) = <b>immunoprecypitacja chromatyny</b> specyficznym przeciwciałem + <b>analiza mikromacierzowa</b> wyselekcjonowanej puli kwasów nukleinowych. Wynik: <b>gdzie</b> w genomie i <b>jak często</b> wiązane jest dane białko – mapa interakcji białko–DNA (replikacja, transkrypcja, rekombinacja, naprawa DNA, upakowanie chromatyny).</p></div>
+
+  <p class="src">Źródło: Drewa s. 718</p>
+
+  <!-- ============================================================ -->
+  <div class="w60">
+    <ul>
+      <li><b>Mikromacierz</b> (mikroczip, mikromatryca) – liczne <b>sekwencje wzorcowe</b> naniesione w uporządkowany sposób na nośnik; materiał badany hybrydyzuje z nimi naraz. Wzorcem mogą być oligonukleotydy, cDNA, RNA, a nawet białka (przez przeciwciała) – genomika, transkryptomika, proteomika.</li>
+      <li>Nośniki: pierwowzór – <b>paski/krążki bibułowe</b>; dziś membrany nylonowe, szkiełka, płytki plastikowe lub krzemowe; nanoszenie: <b>nakrapianie</b> lub <b>mikrodrukowanie</b>.</li>
+      <li>DNA badane + referencyjne, <b>różne fluorochromy</b>, <b>1:1</b>, konkurencja (jak w CGH): przewaga sygnału referencyjnego → <b>delecja</b>, przewaga badanego → <b>duplikacja</b>.</li>
+      <li>Rozdzielczość: wielkość sekwencji, gęstość upakowania, czytnik. Rodzaje: transkryptomiczne (ekspresyjne – 11–20 sond na koniec 3′; eksonowe; dachówkowe; <i>splicing array</i>), DNA (oligo 25–70 nt, cDNA, BAC/PAC ~1 Mpz, PCR), genotypowanie, SNP, ChIP-chip.</li>
+      <li><b>ChIP-chip</b>: immunoprecypitacja chromatyny + mikromacierz → mapa miejsc wiązania białek. Metody tanie, ale <b>drogi sprzęt</b> (skaner laserowy, komputer).</li>
+    </ul>
+  </div>
+
+  <div class="quiz">
+    <ol>
+      <li id="c07-q-1">Na czym polega istota mikromacierzy i co może być na nią naniesione jako materiał wzorcowy?
+        <div class="answer"><p>Na nośnik nanosi się w zaplanowany, uporządkowany sposób liczne <b>sekwencje wzorcowe</b>, które są podłożem do hybrydyzacji materiału badanego. Wzorcem mogą być oligonukleotydy (fragmenty genów lub dowolne odcinki genomu), fragmenty cDNA (badanie ekspresji), fragmenty RNA, a także białka i ich metabolity – wtedy wiązanie zachodzi przez swoiste przeciwciała.</p></div></li>
+      <li id="c07-q-2">Wymień nośniki stosowane w mikromacierzach – dawniej i współcześnie – oraz sposoby nanoszenia sekwencji.
+        <div class="answer"><p>Pierwowzór: <b>paski lub krążki bibułowe</b>. Współcześnie: <b>membrany nylonowe, szkiełka mikroskopowe, płytki plastikowe lub krzemowe</b>. Nanoszenie: <b>nakrapianie</b> albo <b>mikrodrukowanie</b> (jak drukarki atramentowe lub druk mikroprocesorów).</p></div></li>
+      <li id="c07-q-3">Dlaczego DNA badane i referencyjne znakuje się różnymi fluorochromami i miesza w proporcji 1:1?
+        <div class="answer"><p>Różne fluorochromy emitują <b>różne długości fal</b>, więc sygnał każdego DNA można zmierzyć osobno w tej samej plamce. Przy proporcji 1:1 oba DNA <b>konkurują</b> o te same sekwencje wzorcowe na równych prawach – równowaga sygnałów oznacza brak zmiany, a każde odchylenie wskazuje różnicę w liczbie kopii sekwencji.</p></div></li>
+      <li id="c07-q-4">W kilku sąsiednich plamkach mikromacierzy przeważa sygnał fluorochromu DNA referencyjnego. Jaki to wynik?
+        <div class="answer"><p>W DNA badanym <b>brakuje</b> sekwencji odpowiadających tym plamkom – to <b>delecja</b> fragmentu reprezentowanego przez te sekwencje wzorcowe. Przewaga sygnału DNA badanego oznaczałaby <b>duplikację</b>.</p></div></li>
+      <li id="c07-q-5">Od czego zależy rozdzielczość mikromacierzy w analizie zmian strukturalnych genomu?
+        <div class="answer"><p>Od <b>wielkości nanoszonych sekwencji wzorcowych</b>, <b>gęstości ich upakowania</b> na nośniku i <b>rozdzielczości czytnika</b>. Przykład: mikromacierz BAC/PAC-owa (kilka tysięcy klonów) bada cały genom z rozdzielczością ok. 1 Mpz.</p></div></li>
+      <li id="c07-q-6">Porównaj mikromacierze oligonukleotydowe, cDNA i BAC/PAC-owe pod względem budowy sond.
+        <div class="answer"><p><b>Oligonukleotydowe</b> – krótkie sondy, na ogół 25–70 nt. <b>cDNA</b> – sondy znacznie dłuższe, zwykle pełne sekwencje mRNA (kompletna sekwencja wariantu genu). <b>BAC/PAC-owe</b> – kilka tysięcy klonów w wektorach BAC i PAC, analiza całego genomu z rozdzielczością ok. 1 Mpz.</p></div></li>
+      <li id="c07-q-7">Czym różnią się mikromacierze ekspresyjne, eksonowe i dachówkowe?
+        <div class="answer"><p><b>Ekspresyjne</b> mają 11–20 sond oligonukleotydowych na fragment 3′ każdego znanego transkryptu (badanie ekspresji). <b>Eksonowe</b> mają sondy dla każdego eksonu – pozwalają badać wzór ekspresji i <b>alternatywne składanie</b>. <b>Dachówkowe</b> równomiernie pokrywają cały genom, także obszary pozagenowe – identyfikują miejsca wiązania czynników transkrypcyjnych, modyfikacje histonów, metylację DNA i dają wiedzę o roli niekodujących fragmentów genomu.</p></div></li>
+      <li id="c07-q-8">Na czym polega technika ChIP-chip i jaką informację daje?
+        <div class="answer"><p>To połączenie <b>immunoprecypitacji chromatyny</b> (ChIP) z użyciem specyficznych przeciwciał z <b>analizą mikromacierzową</b> wyselekcjonowanej puli kwasów nukleinowych. Pozwala z dużą dokładnością ustalić, <b>w jakich miejscach genomu i jak często</b> wiązane jest dane białko – czyli zmapować interakcje białko–DNA.</p></div></li>
+    </ol>
+  </div>
+</section>

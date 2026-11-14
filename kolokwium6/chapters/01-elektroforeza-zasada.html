@@ -1,0 +1,357 @@
+<section class="chapter"
+  data-num="01"
+  data-title="Elektroforeza kwasów nukleinowych – zasada i odczyt żelu"
+  data-short="Elektroforeza – zasada i odczyt żelu"
+  data-kicker="Ilość i jakość preparatu · wędrówka do anody · jak czytać żel · RNA całkowity">
+
+  <p class="lead">Zanim wyizolowany DNA lub RNA posłuży do badania, trzeba sprawdzić, ile go jest i czy jest dobrej jakości. Najprostszym narzędziem jest elektroforeza: rozdziela kwasy nukleinowe w żelu i pokazuje ich wielkość, ilość, degradację oraz zanieczyszczenia.</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c01-jakosc">Zanim preparat trafi na żel – ilość i jakość</h2>
+
+  <p>Oznaczenie <b>ilości i jakości</b> otrzymanego preparatu kwasów nukleinowych to bardzo ważny etap badań molekularnych. Jakość DNA i RNA ma bezpośredni wpływ na wynik eksperymentu: zdegradowany lub zanieczyszczony materiał da wynik błędny albo żaden.</p>
+
+  <p>Jakość kwasów nukleinowych ocenia się trzema metodami:</p>
+  <ul>
+    <li><b>elektroforezą analityczną w żelu</b> – w żelu agarozowym z bromkiem etydyny (opisaną w dalszej części rozdziału);</li>
+    <li><b>metodą spektrofotometryczną</b> – pomiarem absorbancji;</li>
+    <li><b>metodą mikromacierzy w połączeniu z elektroforezą mikrokapilarną</b>.</li>
+  </ul>
+
+  <h3>Spektrofotometria – cztery długości fali</h3>
+  <aside class="note liceum"><p><b>Długość fali</b> światła podaje się w nanometrach. Światło widzialne to ok. 400–700 nm; krótsze fale (np. 260 nm) to <b>nadfiolet (UV)</b>, niewidoczny dla oka. Substancja, która pochłania daną falę, osłabia przechodzące przez nią światło.</p></aside>
+  <p>W pomiarze spektrofotometrycznym mierzy się, ile światła pochłania roztwór preparatu, czyli <b>gęstość optyczną</b> (<b>OD</b>, <i>optical density</i>). Pomiar wykonuje się przy czterech długościach fali, a każda mówi o czymś innym (<a class="figref" href="#c01-fig-spektro"></a>):</p>
+  <ul>
+    <li><b>240 nm</b> – tło i kontaminacje (zanieczyszczenia);</li>
+    <li><b>260 nm</b> – długość specyficzna dla <b>kwasów nukleinowych</b>;</li>
+    <li><b>280 nm</b> – długość specyficzna dla <b>białek</b>;</li>
+    <li><b>320 nm</b> – tło i możliwe kontaminacje.</li>
+  </ul>
+
+  <figure class="fig" id="c01-fig-spektro" data-title="Spektrofotometryczna ocena preparatu – co mówi każdy pomiar">
+    <div class="panel">
+      <svg viewBox="0 0 640 196" role="img" aria-label="Oś długości fali z czterema punktami pomiaru i stosunkami OD">
+        <!-- karty pomiarów: x(nm) = 40 + (nm-230)*5.6 -->
+        <rect x="44" y="8" width="104" height="44" rx="6" class="card"/>
+        <text x="96" y="26" class="t-m mid b">240 nm</text><text x="96" y="42" class="t-xs mid muted">tło, kontaminacje</text>
+        <rect x="156" y="8" width="104" height="44" rx="6" class="f-teal-bg s-teal sw15"/>
+        <text x="208" y="26" class="t-m mid b f-teal">260 nm</text><text x="208" y="42" class="t-xs mid f-teal sb">kwasy nukleinowe</text>
+        <rect x="268" y="8" width="104" height="44" rx="6" class="f-ochre-bg s-ochre sw15"/>
+        <text x="320" y="26" class="t-m mid b f-ochre">280 nm</text><text x="320" y="42" class="t-xs mid f-ochre sb">białka</text>
+        <rect x="492" y="8" width="104" height="44" rx="6" class="card"/>
+        <text x="544" y="26" class="t-m mid b">320 nm</text><text x="544" y="42" class="t-xs mid muted">tło, kontaminacje</text>
+        <!-- łączniki do osi -->
+        <g stroke="#8a98a3" stroke-width="1.2"><line x1="96" y1="52" x2="96" y2="76"/><line x1="320" y1="52" x2="320" y2="76"/><line x1="544" y1="52" x2="544" y2="76"/></g>
+        <line x1="208" y1="52" x2="208" y2="76" stroke="#007e83" stroke-width="1.6"/>
+        <!-- oś -->
+        <path d="M30,80 H612" class="axis"/>
+        <g stroke="#5d6d78" stroke-width="1.2"><line x1="40" y1="76" x2="40" y2="84"/><line x1="152" y1="77" x2="152" y2="83"/><line x1="264" y1="77" x2="264" y2="83"/><line x1="376" y1="77" x2="376" y2="83"/><line x1="432" y1="77" x2="432" y2="83"/><line x1="488" y1="77" x2="488" y2="83"/><line x1="600" y1="76" x2="600" y2="84"/></g>
+        <circle cx="96" cy="80" r="4" class="f-gray"/><circle cx="208" cy="80" r="4.5" class="f-teal"/><circle cx="320" cy="80" r="4.5" class="f-ochre"/><circle cx="544" cy="80" r="4" class="f-gray"/>
+        <text x="40" y="96" class="t-xs mid faint">230</text><text x="600" y="96" class="t-xs mid faint">330</text>
+        <text x="432" y="96" class="t-xs mid muted">długość fali [nm] →</text>
+        <!-- stosunki -->
+        <path d="M96,104 V112 H206 V104" fill="none" stroke="#4387b7" stroke-width="1.6"/>
+        <text x="151" y="128" class="t-s mid sb f-blue">260/240</text><text x="151" y="142" class="t-xs mid muted">czystość próbki</text>
+        <path d="M210,104 V112 H320 V104" fill="none" stroke="#b77a20" stroke-width="1.6"/>
+        <text x="272" y="128" class="t-s mid sb f-ochre">260/280</text><text x="272" y="142" class="t-xs mid muted">jakość; &gt; 1,8 = dobra</text>
+        <path d="M208,118 V160 H544 V104" fill="none" stroke="#4387b7" stroke-width="1.6"/>
+        <text x="430" y="178" class="t-s mid sb f-blue">260/320 – czystość próbki</text>
+        <text x="96" y="178" class="t-s mid sb f-teal">OD<tspan baseline-shift="sub" class="t-xs">260</tspan> → ilość DNA/RNA</text>
+      </svg>
+    </div>
+    <figcaption>Na osi zaznaczono cztery długości fali, przy których mierzy się absorbancję preparatu. Sam pomiar przy 260 nm służy do obliczenia ilości kwasu nukleinowego. Stosunek 260/280 (kwasy nukleinowe względem białek) mówi o jakości – powyżej 1,8 preparat jest dobry; stosunki 260/240 i 260/320 (sygnał względem tła) mówią o czystości.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 712</p>
+  </figure>
+
+  <p>Z pomiarów wyciąga się trzy rodzaje informacji:</p>
+  <ul>
+    <li><b>ilość</b> DNA/RNA – oblicza się z gęstości optycznej przy <b>260 nm</b>;</li>
+    <li><b>jakość</b> preparatu – mówi o niej stosunek <b>OD 260/280</b>; jeśli jest <b>większy niż 1,8</b>, preparat jest dobrej jakości;</li>
+    <li><b>czystość</b> próbki – mówi o niej stosunek <b>260/240</b> lub <b>260/320</b>.</li>
+  </ul>
+
+  <div class="box obraz"><p>Stosunek 260/280 to <b>„ile kwasu nukleinowego na jedno białko”</b>. Licznik rośnie z ilością DNA, mianownik – z ilością białek. Im więcej białka w preparacie, tym większy mianownik i tym mniejszy wynik. Podobnie 260/240 i 260/320 porównują sygnał kwasu nukleinowego z tłem: im brudniejsza próbka, tym mniejszy iloraz.</p></div>
+
+  <h3>Zastrzeżenia przy RNA</h3>
+  <p>W przypadku RNA trafność pomiaru stosunku OD 260/280 jest kwestionowana. Według Drewy odpowiada on tylko 40% zawartości RNA i może zawierać zanieczyszczenia białkowe. Bardziej specyficzny jest pomiar z użyciem odpowiednich <b>sond znakujących</b>, np. barwnika <b>RiboGreen</b> (<i>RNA RiboGreen dye</i>). Sondy wykrywają już <b>1 ng RNA/ml</b> i – w przeciwieństwie do pomiaru 260/280 – nie oznaczają ewentualnych zanieczyszczeń białkami i DNA.</p>
+
+  <div class="box uwaga"><p>Zdanie „odpowiada on tylko 40% zawartości RNA” jest niejasne – nie wiadomo, co i czemu odpowiada. Pewny jest wniosek: dla <b>RNA</b> stosunek 260/280 jest mało wiarygodny i nie wyklucza zanieczyszczeń białkiem. Słowo „spektroforetycznym” to literówka podręcznika (pomiar spektrofotometryczny).</p></div>
+
+  <h3>Liczba integralności 1–10</h3>
+  <aside class="note pojecie" data-term="Integralność"><p>„nienaruszoność” kwasu nukleinowego – to, w jakim stopniu cząsteczki są całe, a nie pocięte na fragmenty.</p></aside>
+  <p>Jedną z nowszych metod jest określenie <b>integralności</b> kwasów nukleinowych jako liczby od <b>1 do 10</b>. Pomiar wykonuje automatycznie urządzenie, które łączy <b>elektroforezę mikrokapilarną</b>, <b>mikromacierz</b> i <b>detekcję fluorescencyjną</b>. Wystarcza niewielka ilość materiału – już od <b>200 pg</b>. Oprogramowanie ocenia całościowe DNA/RNA w skali 1–10: <b>1</b> oznacza kwas nukleinowy najbardziej zdegradowany, <b>10</b> – najlepszej jakości. Wynik otrzymuje się w postaci wykresu.</p>
+
+  <div class="numbers">
+    <div class="n"><span class="v">260<small>nm</small></span><span class="d">kwasy nukleinowe; OD<sub>260</sub> → ilość</span></div>
+    <div class="n"><span class="v">280<small>nm</small></span><span class="d">białka</span></div>
+    <div class="n"><span class="v">240/320<small>nm</small></span><span class="d">tło i kontaminacje</span></div>
+    <div class="n"><span class="v">&gt; 1,8</span><span class="d">OD 260/280 preparatu dobrej jakości</span></div>
+    <div class="n"><span class="v">1<small>ng/ml</small></span><span class="d">próg wykrywania RNA sondą RiboGreen</span></div>
+    <div class="n"><span class="v">200<small>pg</small></span><span class="d">minimum materiału do oceny integralności</span></div>
+  </div>
+
+  <div class="box zapamietaj"><p>Trzy metody oceny jakości: <b>elektroforeza analityczna</b>, <b>spektrofotometria</b>, <b>mikromacierz + elektroforeza mikrokapilarna</b>. OD<sub>260</sub> → ilość; 260/280 → jakość (dobra &gt; 1,8); 260/240 lub 260/320 → czystość. Dla RNA lepsza jest sonda (RiboGreen, od 1 ng/ml). Integralność: skala 1 (najbardziej zdegradowany) – 10 (najlepszy), od 200 pg materiału.</p></div>
+
+  <p class="src">Źródło: Drewa s. 711–712</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c01-anoda">Dlaczego kwasy nukleinowe wędrują do anody</h2>
+  <aside class="note liceum"><p><b>Nukleotyd</b> to cukier (deoksyryboza lub ryboza), zasada azotowa i reszta fosforanowa. Reszty fosforanowe łączą kolejne nukleotydy w szkielet łańcucha – to one niosą ładunek ujemny.</p></aside>
+  <p><b>Elektroforeza</b> to rozdział cząsteczek obdarzonych ładunkiem w polu elektrycznym. Cząsteczki kwasów nukleinowych w buforach o pH zbliżonym do neutralnego mają <b>ładunek ujemny</b>. Dlatego podczas elektroforezy przemieszczają się w żelu <b>zawsze</b> w tym samym kierunku: od <b>katody</b> (elektrody –) do <b>anody</b> (elektrody +) (<a class="figref" href="#c01-fig-aparat"></a>).</p>
+
+  <aside class="note liceum"><p>Ładunki <b>różnoimienne się przyciągają</b>: cząsteczka ujemna jest odpychana od elektrody ujemnej (katody) i przyciągana do dodatniej (anody). Prąd płynący przez przewodnik wydziela <b>ciepło</b> – tym więcej, im wyższe napięcie.</p></aside>
+  <p>Poprawny rozdział wymaga napięcia dobranego do <b>długości drogi elektroforezy</b>. W praktyce stosuje się <b>5–8 V na każdy centymetr długości żelu</b>. Zbyt wysokie napięcie podnosi temperaturę żelu. Skutek jest podwójny: żel może się <b>roztopić</b>, a DNA ulega <b>denaturacji</b>, czyli rozdzieleniu nici.</p>
+
+  <figure class="fig" id="c01-fig-aparat" data-title="Aparat do elektroforezy i dobór napięcia">
+    <div class="panels cols-2">
+      <div class="panel" data-badge="A" data-title="Przekrój aparatu poziomego">
+        <svg viewBox="0 0 296 200" role="img" aria-label="Przekrój wanny do elektroforezy z żelem, buforem i elektrodami">
+          <text x="26" y="20" class="t-l mid b">–</text><text x="270" y="20" class="t-l mid b f-red">+</text>
+          <text x="26" y="34" class="t-xs mid muted">katoda</text><text x="270" y="34" class="t-xs mid f-red">anoda</text>
+          <!-- wanna i bufor -->
+          <rect x="8" y="44" width="280" height="116" rx="6" class="card"/>
+          <rect x="10" y="66" width="276" height="92" rx="4" class="f-blue-bg"/>
+          <line x1="10" y1="66" x2="286" y2="66" stroke="#4387b7" stroke-width="1"/>
+          <!-- elektrody -->
+          <line x1="26" y1="40" x2="26" y2="150" stroke="#23323e" stroke-width="3"/>
+          <line x1="270" y1="40" x2="270" y2="150" stroke="#c84d42" stroke-width="3"/>
+          <!-- żel -->
+          <rect x="54" y="112" width="188" height="24" rx="3" class="gel"/>
+          <rect x="70" y="112" width="8" height="10" class="well"/>
+          <text x="160" y="128" class="t-xs mid muted">żel</text>
+          <!-- wędrówka DNA -->
+          <g class="f-teal"><circle cx="96" cy="100" r="5"/><circle cx="130" cy="100" r="5"/><circle cx="164" cy="100" r="5"/></g>
+          <g class="t-xs mid f-white b"><text x="96" y="103.5">–</text><text x="130" y="103.5">–</text><text x="164" y="103.5">–</text></g>
+          <path d="M178,100 H230" class="arrow teal"/>
+          <text x="148" y="84" class="t-xs mid f-teal sb">DNA / RNA (ładunek –)</text>
+          <!-- podpisy -->
+          <path d="M74,140 V170" stroke="#8a98a3" stroke-width="1"/>
+          <text x="74" y="182" class="t-xs mid muted">studzienka (kieszonka)</text>
+          <text x="226" y="182" class="t-xs mid muted">bufor, pH ≈ 7</text>
+          <path d="M226,170 V150" stroke="#8a98a3" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="panel" data-badge="B" data-title="Napięcie a długość żelu">
+        <svg viewBox="0 0 296 200" role="img" aria-label="Właściwe i zbyt wysokie napięcie i ich skutki">
+          <!-- właściwe -->
+          <rect x="8" y="10" width="280" height="62" rx="8" class="f-teal-bg"/>
+          <text x="20" y="32" class="t-m b f-teal">5–8 V na 1 cm długości żelu</text>
+          <text x="20" y="50" class="t-s">właściwe napięcie</text>
+          <text x="20" y="64" class="t-s muted">→ poprawny rozdział</text>
+          <!-- za wysokie -->
+          <rect x="8" y="84" width="280" height="108" rx="8" class="f-red-bg"/>
+          <text x="20" y="106" class="t-m b f-red">napięcie zbyt wysokie</text>
+          <path d="M148,114 V128" class="arrow red"/>
+          <rect x="74" y="132" width="148" height="22" rx="5" class="f-white s-red sw1"/>
+          <text x="148" y="147" class="t-s mid sb">temperatura żelu rośnie</text>
+          <path d="M120,156 L84,166" class="arrow red"/><path d="M176,156 L212,166" class="arrow red"/>
+          <text x="70" y="182" class="t-s mid sb f-red">roztopienie żelu</text>
+          <text x="222" y="182" class="t-s mid sb f-red">denaturacja DNA</text>
+        </svg>
+      </div>
+    </div>
+    <figcaption>A – żel leży w wannie wypełnionej buforem o pH zbliżonym do obojętnego. Próbki nakłada się do studzienek po stronie katody; ujemnie naładowane kwasy nukleinowe wędrują przez żel w stronę anody. B – napięcie dobiera się do długości żelu (5–8 V/cm); zbyt wysokie podgrzewa żel, który się topi, a DNA ulega denaturacji.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 712</p>
+  </figure>
+
+  <div class="box przyklad"><p>Żel ma długość <b>15 cm</b> (wartość przykładowa). Napięcie: 5 V/cm · 15 cm = <b>75 V</b>, 8 V/cm · 15 cm = <b>120 V</b>. Właściwy zakres to więc 75–120 V. Ustawienie np. 300 V (20 V/cm) grozi przegrzaniem: żel może się roztopić, a DNA – zdenaturować.</p></div>
+
+  <div class="box zapamietaj"><p>W pH ok. obojętnym kwasy nukleinowe mają <b>ładunek ujemny</b> i wędrują zawsze <b>od katody (–) do anody (+)</b>. Napięcie: <b>5–8 V/cm długości żelu</b>. Za wysokie → wzrost temperatury → <b>roztopienie żelu</b> i <b>denaturacja DNA</b>.</p></div>
+
+  <p class="src">Źródło: Drewa s. 712</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c01-cele">Elektroforeza preparatywna i analityczna</h2>
+  <p>Techniki elektroforetyczne w biologii molekularnej stosuje się w dwóch celach:</p>
+  <ul>
+    <li><b>elektroforeza preparatywna</b> – umożliwia izolację z żelu tej części preparatu, która jest niezbędna do dalszych prac (np. jednego prążka); do odzyskania materiału z żelu stosuje się też różne <b>techniki elucji</b>;</li>
+    <li><b>elektroforeza analityczna</b> – służy do <b>charakterystyki</b> badanego preparatu na danym etapie doświadczenia.</li>
+  </ul>
+
+  <aside class="note pojecie" data-term="Elucja"><p>wymywanie – tu: uwolnienie cząsteczek kwasu nukleinowego z wyciętego fragmentu żelu do roztworu.</p></aside>
+  <p>Różnicę łatwo zapamiętać po tym, co dzieje się z materiałem. W elektroforezie preparatywnej żel jest narzędziem oczyszczania – kończy się wycięciem i odzyskaniem fragmentu. W analitycznej żel jest wynikiem samym w sobie – patrzy się na niego i wyciąga wnioski o preparacie.</p>
+
+  <p class="src">Źródło: Drewa s. 712</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c01-odczyt">Co można odczytać z żelu analitycznego</h2>
+  <p>W przypadku kwasów nukleinowych elektroforeza analityczna pozwala ustalić cztery rzeczy (<a class="figref" href="#c01-fig-odczyt"></a>).</p>
+
+  <h3>1. Wielkość fragmentów</h3>
+  <aside class="note pojecie" data-term="Wzorzec mas cząsteczkowych"><p>preparat zawierający fragmenty DNA o znanych wielkościach; nakłada się go na ten sam żel co próbki i służy jako „linijka”.</p></aside>
+  <p>Wielkość fragmentów DNA lub cząsteczek RNA ustala się, porównując <b>tempo migracji</b> badanych prążków z <b>wzorcem mas cząsteczkowych</b>. Punktem odniesienia jest wzorcowy preparat zawierający fragmenty DNA o znanych wielkościach. Prążek, który przewędrował tyle samo co prążek wzorca, ma podobną wielkość.</p>
+
+  <h3>2. Ilość preparatu</h3>
+  <p>Ilość ustala się, porównując <b>intensywność fluorescencji</b> badanego prążka z preparatem DNA wzorcowym. Im więcej DNA w prążku, tym mocniej świeci po wybarwieniu.</p>
+
+  <h3>3. Degradacja</h3>
+  <aside class="note liceum"><p><b>Nukleazy</b> to enzymy hydrolizujące wiązania między nukleotydami (DNazy tną DNA, RNazy – RNA). Ich działanie rozcina długie cząsteczki na wiele krótszych kawałków o przypadkowej długości.</p></aside>
+  <p><b>Degradacja</b> to rozpad DNA lub RNA na mniejsze fragmenty. Fragmenty mają różne długości, więc wędrują z różną szybkością i nie tworzą jednego ostrego prążka. Na żelu degradacja jest widoczna w postaci <b>smugi</b>.</p>
+
+  <h3>4. Zanieczyszczenia</h3>
+  <aside class="note pojecie" data-term="Błękit bromofenolowy"><p>barwnik dodawany do próbek; widoczny gołym okiem, wędruje w żelu przed większością fragmentów i pokazuje, jak daleko zaszedł rozdział.</p></aside>
+  <p>Żel pokazuje też dwa typowe zanieczyszczenia:</p>
+  <ul>
+    <li><b>białka</b> towarzyszące kwasom nukleinowym – widoczne jako <b>kompleksy DNA–białko zalegające w kieszonkach</b> (studzienkach); kompleks jest zbyt duży, by wejść w żel;</li>
+    <li><b>RNA</b> zanieczyszczający preparaty DNA – widoczny jako <b>smuga migrująca przed błękitem bromofenolowym</b>, czyli w samym dole ścieżki.</li>
+  </ul>
+
+  <figure class="fig" id="c01-fig-odczyt" data-title="Jak czytać żel analityczny – wielkość, ilość, degradacja, zanieczyszczenia">
+    <div class="panel">
+      <svg viewBox="0 0 640 286" role="img" aria-label="Żel z wzorcem i pięcioma ścieżkami ilustrującymi różne wyniki">
+        <defs>
+          <linearGradient id="c01-smuga-dol" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#007e83" stop-opacity=".55"/><stop offset="1" stop-color="#007e83" stop-opacity=".12"/></linearGradient>
+          <linearGradient id="c01-smuga-rna" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7867a8" stop-opacity=".15"/><stop offset=".5" stop-color="#7867a8" stop-opacity=".6"/><stop offset="1" stop-color="#7867a8" stop-opacity=".15"/></linearGradient>
+        </defs>
+        <!-- etykiety ścieżek: x środków 84,140,196,252,308,364 -->
+        <text x="84" y="14" class="lane-label">M</text><text x="140" y="14" class="lane-label">1</text><text x="196" y="14" class="lane-label">2</text>
+        <text x="252" y="14" class="lane-label">3</text><text x="308" y="14" class="lane-label">4</text><text x="364" y="14" class="lane-label">5</text>
+        <text x="40" y="34" class="pole minus">–</text>
+        <rect x="56" y="22" width="336" height="246" rx="7" class="gel"/>
+        <g class="well"><rect x="70" y="32" width="28" height="7" rx="1.5"/><rect x="126" y="32" width="28" height="7" rx="1.5"/><rect x="182" y="32" width="28" height="7" rx="1.5"/><rect x="238" y="32" width="28" height="7" rx="1.5"/><rect x="294" y="32" width="28" height="7" rx="1.5"/><rect x="350" y="32" width="28" height="7" rx="1.5"/></g>
+        <!-- wzorzec -->
+        <g class="band ladder"><rect x="71" y="56" width="26" height="4" rx="2"/><rect x="71" y="74" width="26" height="4" rx="2"/><rect x="71" y="94" width="26" height="4" rx="2"/><rect x="71" y="116" width="26" height="4" rx="2"/><rect x="71" y="140" width="26" height="4" rx="2"/><rect x="71" y="166" width="26" height="4" rx="2"/><rect x="71" y="194" width="26" height="4" rx="2"/></g>
+        <text x="50" y="62" class="size-label">duże</text><text x="50" y="199" class="size-label">małe</text>
+        <!-- 1 dobry -->
+        <rect x="127" y="60" width="26" height="6" rx="2" class="band"/>
+        <!-- 2 mało DNA -->
+        <rect x="183" y="60" width="26" height="6" rx="2" class="band faint"/>
+        <!-- 3 degradacja -->
+        <rect x="239" y="58" width="26" height="5" rx="2" class="band faint"/>
+        <rect x="240" y="64" width="24" height="170" rx="6" fill="url(#c01-smuga-dol)"/>
+        <!-- 4 białko w kieszonce -->
+        <rect x="294" y="32" width="28" height="9" rx="2" class="band ochre"/>
+        <rect x="295" y="60" width="26" height="6" rx="2" class="band"/>
+        <!-- 5 RNA przed błękitem -->
+        <rect x="351" y="60" width="26" height="6" rx="2" class="band"/>
+        <rect x="351" y="226" width="26" height="30" rx="6" fill="url(#c01-smuga-rna)"/>
+        <!-- błękit bromofenolowy -->
+        <line x1="64" y1="218" x2="384" y2="218" stroke="#4387b7" stroke-width="1.6" stroke-dasharray="5 3"/>
+        <text x="40" y="276" class="pole plus">+</text>
+        <!-- legenda -->
+        <text x="108" y="236" class="t-xs f-blue sb">błękit bromofenolowy</text>
+        <path d="M410,48 V256" class="arrow"/>
+        <text x="420" y="152" class="t-xs muted mid" transform="rotate(90 420 152)">kierunek wędrówki</text>
+        <g transform="translate(446,44)">
+          <g class="step"><circle r="9"/><text y="3.8">1</text></g>
+          <text x="16" y="4" class="t-s sb">ostry prążek wysoko</text><text x="16" y="18" class="t-xs muted">preparat nienaruszony</text>
+          <g class="step" transform="translate(0,42)"><circle r="9"/><text y="3.8">2</text></g>
+          <text x="16" y="46" class="t-s sb">ten sam prążek, słabszy</text><text x="16" y="60" class="t-xs muted">mniej DNA (porównanie ze wzorcem)</text>
+          <g class="step" transform="translate(0,84)"><circle r="9"/><text y="3.8">3</text></g>
+          <text x="16" y="88" class="t-s sb">smuga wzdłuż ścieżki</text><text x="16" y="102" class="t-xs muted">degradacja (różne długości)</text>
+          <g class="step" transform="translate(0,126)"><circle r="9"/><text y="3.8">4</text></g>
+          <text x="16" y="130" class="t-s sb">świecenie w kieszonce</text><text x="16" y="144" class="t-xs muted">kompleksy DNA–białko</text>
+          <g class="step" transform="translate(0,168)"><circle r="9"/><text y="3.8">5</text></g>
+          <text x="16" y="172" class="t-s sb">smuga przed błękitem</text><text x="16" y="186" class="t-xs muted">RNA w preparacie DNA</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>Schemat żelu agarozowego z preparatami DNA. M – wzorzec mas cząsteczkowych: im niżej prążek, tym mniejszy fragment. 1 – dobry preparat: jeden ostry prążek. 2 – ten sam materiał w mniejszej ilości: prążek o słabszej fluorescencji. 3 – degradacja: smuga. 4 – zanieczyszczenie białkiem: kompleksy DNA–białko zalegają w kieszonce. 5 – zanieczyszczenie RNA: smuga przed błękitem bromofenolowym (linia przerywana).</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 712–713</p>
+  </figure>
+
+  <div class="box przyklad"><p>Opis żelu (przypadek wymyślony): w ścieżce z DNA genomowym widać ostry prążek wysoko, silne świecenie w kieszonce i rozmytą smugę poniżej błękitu bromofenolowego; smugi między nimi brak. Wniosek: preparat <b>nie jest zdegradowany</b> (brak smugi wzdłuż ścieżki), ale jest zanieczyszczony <b>białkiem</b> (kieszonka) i <b>RNA</b> (smuga przed błękitem bromofenolowym).</p></div>
+
+  <div class="box zapamietaj" data-title="Żel analityczny – cztery odczyty"><p><b>Wielkość</b> – położenie prążka względem wzorca mas. <b>Ilość</b> – intensywność fluorescencji względem wzorca. <b>Degradacja</b> – smuga. <b>Zanieczyszczenia</b> – białko: kompleksy DNA–białko w kieszonkach; RNA w preparacie DNA: smuga przed błękitem bromofenolowym.</p></div>
+
+  <p class="src">Źródło: Drewa s. 712–713</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c01-rna">Rozdział całkowitego RNA</h2>
+  <aside class="note liceum"><p><b>Rybosom</b> eukariotyczny (80S) zbudowany jest z rRNA i białek. <b>S</b> (swedberg) – jednostka szybkości sedymentacji; większa cząsteczka ma większą wartość S.</p></aside>
+  <p>Po rozdziale <b>całkowitego RNA</b> w żelu agarozowym najlepiej widoczne są frakcje <b>rybosomalnego RNA (rRNA)</b>. Wielkości podstawowych frakcji rRNA u poszczególnych organizmów są znane, dlatego ich rozkład może służyć jako <b>orientacyjny marker mas cząsteczkowych</b>. U człowieka (<a class="figref" href="#c01-fig-rna"></a>):</p>
+  <ul>
+    <li><b>28S rRNA – 5,0 kpz</b> (prążek wyżej, bo cząsteczka większa);</li>
+    <li><b>18S rRNA – 1,9 kpz</b> (prążek niżej).</li>
+  </ul>
+
+  <p><b>Intensywność prążków rRNA</b> informuje o jakości preparatu. Ich <b>zanikanie świadczy o postępującej degradacji RNA</b> – w miarę rozpadu cząsteczek ostre prążki słabną, a w ich miejsce pojawia się smuga krótszych fragmentów.</p>
+
+  <aside class="note liceum"><p><b>mRNA</b> to kopia informacji jednego genu, przenoszona do rybosomów. Różne geny mają różną długość, więc i ich transkrypty mają różne wielkości.</p></aside>
+  <p>Frakcji <b>mRNA</b> nie widać na żelu po rozdziale RNA całkowitego. Są dwa powody: mRNA jest w preparacie <b>niewiele</b>, a cząsteczki mają <b>zróżnicowaną wielkość</b>, charakterystyczną dla poszczególnych genów. Każdy rodzaj mRNA wędruje więc w inne miejsce, a ilość żadnego z nich nie wystarcza do utworzenia widocznego prążka.</p>
+
+  <figure class="fig" id="c01-fig-rna" data-title="Całkowite RNA w żelu agarozowym – prążki rRNA jako miara jakości">
+    <div class="panel">
+      <svg viewBox="0 0 640 250" role="img" aria-label="Żel z trzema próbkami RNA o różnym stopniu degradacji">
+        <defs>
+          <linearGradient id="c01-smuga-rna2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7867a8" stop-opacity=".1"/><stop offset="1" stop-color="#7867a8" stop-opacity=".5"/></linearGradient>
+          <linearGradient id="c01-smuga-rna3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7867a8" stop-opacity=".05"/><stop offset=".6" stop-color="#7867a8" stop-opacity=".45"/><stop offset="1" stop-color="#7867a8" stop-opacity=".7"/></linearGradient>
+        </defs>
+        <!-- ścieżki: 210, 276, 342 -->
+        <text x="210" y="16" class="lane-label">1</text><text x="276" y="16" class="lane-label">2</text><text x="342" y="16" class="lane-label">3</text>
+        <rect x="170" y="24" width="212" height="210" rx="7" class="gel"/>
+        <text x="156" y="36" class="pole minus">–</text><text x="156" y="232" class="pole plus">+</text>
+        <g class="well"><rect x="194" y="34" width="32" height="7" rx="1.5"/><rect x="260" y="34" width="32" height="7" rx="1.5"/><rect x="326" y="34" width="32" height="7" rx="1.5"/></g>
+        <!-- 1 nienaruszone -->
+        <rect x="195" y="86" width="30" height="7" rx="2" class="band violet"/>
+        <rect x="195" y="140" width="30" height="7" rx="2" class="band violet"/>
+        <!-- 2 częściowa degradacja -->
+        <rect x="261" y="86" width="30" height="6" rx="2" class="band violet faint"/>
+        <rect x="261" y="140" width="30" height="6" rx="2" class="band violet faint"/>
+        <rect x="262" y="96" width="28" height="122" rx="6" fill="url(#c01-smuga-rna2)"/>
+        <!-- 3 silna degradacja -->
+        <rect x="328" y="100" width="28" height="122" rx="6" fill="url(#c01-smuga-rna3)"/>
+        <!-- etykiety rRNA po lewej -->
+        <text x="138" y="88" class="t-s end sb f-violet">28S rRNA</text><text x="138" y="101" class="t-xs end muted">5,0 kpz</text>
+        <text x="138" y="142" class="t-s end sb f-violet">18S rRNA</text><text x="138" y="155" class="t-xs end muted">1,9 kpz</text>
+        <line x1="144" y1="89.5" x2="190" y2="89.5" class="guide"/><line x1="144" y1="143.5" x2="190" y2="143.5" class="guide"/>
+        <!-- podpisy ścieżek -->
+        <text x="210" y="246" class="t-xs mid muted">dobry</text><text x="276" y="246" class="t-xs mid muted">częściowa</text><text x="342" y="246" class="t-xs mid muted">silna</text>
+        <!-- uwagi po prawej -->
+        <rect x="404" y="30" width="228" height="56" rx="6" class="f-violet-bg"/>
+        <text x="416" y="50" class="t-s sb">prążki rRNA = orientacyjny</text>
+        <text x="416" y="64" class="t-s sb">marker mas cząsteczkowych</text>
+        <text x="416" y="78" class="t-xs muted">znane wielkości frakcji rRNA</text>
+        <rect x="404" y="96" width="228" height="56" rx="6" class="f-red-bg"/>
+        <text x="416" y="116" class="t-s sb">zanikanie prążków rRNA</text>
+        <text x="416" y="130" class="t-s sb">= postępująca degradacja</text>
+        <text x="416" y="144" class="t-xs muted">ścieżki 1 → 2 → 3</text>
+        <rect x="404" y="162" width="228" height="56" rx="6" class="tile"/>
+        <text x="416" y="182" class="t-s sb">mRNA – brak prążka</text>
+        <text x="416" y="196" class="t-xs muted">mała ilość w preparacie i różne</text>
+        <text x="416" y="209" class="t-xs muted">wielkości charakterystyczne dla genów</text>
+      </svg>
+    </div>
+    <figcaption>Schemat rozdziału całkowitego RNA człowieka. 1 – preparat dobrej jakości: wyraźne prążki 28S (5,0 kpz) i 18S (1,9 kpz). 2 – częściowa degradacja: prążki rRNA słabną, pojawia się smuga krótszych fragmentów. 3 – silna degradacja: prążki rRNA zanikły, została tylko smuga. W żadnej ścieżce nie widać prążków mRNA.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 713</p>
+  </figure>
+
+  <div class="box uwaga"><p>Drewa podaje wielkości rRNA w <b>kpz</b> (tysiącach par zasad). RNA rybosomalny jest jednak cząsteczką jednoniciową, więc ściśle biorąc jego długość wyraża się w tysiącach <b>nukleotydów</b>, a nie par zasad. Same liczby (18S – 1,9; 28S – 5,0) zapamiętaj tak, jak w podręczniku.</p></div>
+
+  <div class="box zapamietaj"><p>W całkowitym RNA widać głównie <b>rRNA</b>: u człowieka <b>28S – 5,0 kpz</b> i <b>18S – 1,9 kpz</b>. Służą jako orientacyjny marker mas, a ich intensywność – jako miara jakości: <b>zanikanie = degradacja</b>. <b>mRNA nie widać</b> – jest go mało i ma różne wielkości.</p></div>
+
+  <p class="src">Źródło: Drewa s. 713</p>
+
+  <!-- ============================================================ -->
+  <div class="w60">
+    <ul>
+      <li>Jakość kwasów nukleinowych ocenia się <b>elektroforezą analityczną</b>, <b>spektrofotometrią</b> oraz <b>mikromacierzą z elektroforezą mikrokapilarną</b> (integralność 1–10, od 200 pg).</li>
+      <li>OD<sub>260</sub> → <b>ilość</b>; 260/280 → <b>jakość</b> (dobra &gt; 1,8); 260/240 i 260/320 → <b>czystość</b>. Dla RNA lepsza sonda RiboGreen (od 1 ng/ml).</li>
+      <li>Ujemnie naładowane kwasy nukleinowe wędrują <b>od katody do anody</b>; napięcie <b>5–8 V/cm</b>, za wysokie topi żel i denaturuje DNA.</li>
+      <li>Elektroforeza <b>preparatywna</b> – izolacja fragmentu z żelu; <b>analityczna</b> – charakterystyka preparatu.</li>
+      <li>Z żelu: <b>wielkość</b> (wzorzec mas), <b>ilość</b> (fluorescencja), <b>degradacja</b> (smuga), <b>białko</b> (kieszonki), <b>RNA</b> (smuga przed błękitem bromofenolowym).</li>
+      <li>Całkowite RNA: prążki <b>28S (5,0 kpz)</b> i <b>18S (1,9 kpz)</b>; ich zanikanie = degradacja; mRNA niewidoczne.</li>
+    </ul>
+  </div>
+
+  <div class="quiz">
+    <ol>
+      <li id="c01-q-1">Wymień długości fali stosowane w spektrofotometrycznej ocenie preparatu kwasu nukleinowego i podaj, czego dotyczy każda z nich.
+        <div class="answer"><p><b>240 nm</b> – tło i kontaminacje; <b>260 nm</b> – kwasy nukleinowe; <b>280 nm</b> – białka; <b>320 nm</b> – tło i możliwe kontaminacje.</p></div></li>
+      <li id="c01-q-2">Preparat DNA ma stosunek OD 260/280 równy 1,4. Co to oznacza? Który pomiar posłuży do obliczenia ilości DNA?
+        <div class="answer"><p>Stosunek <b>poniżej 1,8</b> – preparat nie jest dobrej jakości; względnie dużo absorbancji przy 280 nm wskazuje na <b>zanieczyszczenie białkami</b>. Ilość DNA oblicza się z <b>OD przy 260 nm</b>.</p></div></li>
+      <li id="c01-q-3">Dlaczego do oceny RNA lepiej użyć sondy RiboGreen niż stosunku OD 260/280?
+        <div class="answer"><p>Trafność stosunku 260/280 dla RNA jest kwestionowana i nie wyklucza zanieczyszczeń białkowych. Sonda jest <b>bardziej specyficzna</b> – nie oznacza zanieczyszczeń białkami i DNA – i wykrywa już <b>1 ng RNA/ml</b>.</p></div></li>
+      <li id="c01-q-4">Dlaczego DNA wędruje w żelu do anody? Jakie napięcie się stosuje i co się stanie, gdy będzie za wysokie?
+        <div class="answer"><p>W buforze o pH zbliżonym do obojętnego kwasy nukleinowe mają <b>ładunek ujemny</b>, więc wędrują od katody (–) do anody (+). Napięcie: <b>5–8 V/cm długości żelu</b>. Zbyt wysokie podnosi temperaturę – żel się <b>roztapia</b>, a DNA ulega <b>denaturacji</b>.</p></div></li>
+      <li id="c01-q-5">Czym różni się elektroforeza preparatywna od analitycznej?
+        <div class="answer"><p><b>Preparatywna</b> służy do izolacji z żelu części preparatu potrzebnej do dalszych prac (z użyciem technik elucji). <b>Analityczna</b> służy do charakterystyki preparatu na danym etapie doświadczenia (wielkość, ilość, degradacja, zanieczyszczenia).</p></div></li>
+      <li id="c01-q-6">W ścieżce z DNA widać silny sygnał w kieszonce i smugę na samym dole żelu, przed błękitem bromofenolowym. Zinterpretuj wynik.
+        <div class="answer"><p>Sygnał w kieszonce to <b>kompleksy DNA–białko</b> – preparat zanieczyszczony białkiem. Smuga przed błękitem bromofenolowym to <b>RNA</b> zanieczyszczający preparat DNA.</p></div></li>
+      <li id="c01-q-7">Jak na żelu wygląda degradacja DNA i dlaczego właśnie tak?
+        <div class="answer"><p>Jako <b>smuga</b>. Degradacja to rozpad cząsteczek na mniejsze fragmenty o różnych długościach; każdy wędruje z inną szybkością, więc zamiast jednego prążka powstaje ciągły rozmyty pas.</p></div></li>
+      <li id="c01-q-8">Jakie prążki widać po rozdziale całkowitego RNA człowieka, o czym świadczy ich zanikanie i dlaczego nie widać mRNA?
+        <div class="answer"><p>Prążki rRNA: <b>28S (5,0 kpz)</b> i <b>18S (1,9 kpz)</b>. Ich zanikanie świadczy o <b>postępującej degradacji RNA</b>. mRNA nie widać, bo jest go w preparacie <b>mało</b> i ma <b>zróżnicowaną wielkość</b> charakterystyczną dla poszczególnych genów.</p></div></li>
+    </ol>
+  </div>
+</section>
