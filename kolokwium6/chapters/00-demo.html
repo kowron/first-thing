@@ -1,0 +1,359 @@
+<!-- ROZDZIAŁ DEMONSTRACYJNY – pokazuje każdy komponent systemu.
+     Budowany tylko z: node build.mjs --demo   albo   node build.mjs --only 00
+     Treść jest merytorycznie poprawna, ale to wzór techniczny, nie rozdział do opracowania. -->
+<section class="chapter"
+  data-num="00"
+  data-title="Elektroforeza DNA – rozdział wzorcowy"
+  data-short="Elektroforeza DNA (demo)"
+  data-kicker="Rozdział demonstracyjny · elektroforeza · Southern blot">
+
+  <p class="lead">Elektroforeza to podstawowe narzędzie każdego laboratorium biologii molekularnej: rozdziela cząsteczki według wielkości i&nbsp;pozwala je zobaczyć. Ten rozdział pokazuje, jak działa żel, jak odczytać wielkość fragmentu i&nbsp;jak przenieść DNA na membranę.</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c00-zasada">Na czym polega elektroforeza</h2>
+
+  <aside class="note liceum"><p><b>Nukleotyd</b> składa się z cukru, zasady azotowej i reszty fosforanowej. W szkielecie DNA reszty fosforanowe łączą kolejne cukry i w obojętnym pH mają ładunek ujemny.</p></aside>
+  <p><b>Elektroforeza</b> to rozdział cząsteczek obdarzonych ładunkiem w polu elektrycznym. Kwasy nukleinowe w buforze o pH zbliżonym do obojętnego mają <b>ładunek ujemny</b> – pochodzi on od reszt fosforanowych szkieletu. Dlatego w polu elektrycznym DNA i RNA wędrują zawsze w jedną stronę: od <b>katody (–)</b> do <b>anody (+)</b>.</p>
+
+  <aside class="note pojecie" data-term="Elektroforeza"><p>rozdział cząsteczek naładowanych w polu elektrycznym; w biologii molekularnej prawie zawsze w żelu, który działa jak sito.</p></aside>
+  <p>Ładunek przypadający na jeden nukleotyd jest stały, więc stosunek ładunku do masy jest dla wszystkich fragmentów DNA praktycznie taki sam. O szybkości wędrówki decyduje zatem nie ładunek, lecz <b>opór ośrodka</b>. Żel tworzy gęstą sieć porów: krótkie fragmenty przeciskają się przez nią łatwo i wędrują daleko, długie – zostają w tyle. Po kilkudziesięciu minutach fragmenty układają się w <b>prążki</b> według długości.</p>
+
+  <p>Szybkość migracji zależy od kilku czynników, które trzeba znać, bo każdy z nich zmienia wynik:</p>
+  <ul>
+    <li><b>długość cząsteczki</b> – im krótszy fragment, tym szybciej wędruje;</li>
+    <li><b>stężenie żelu</b> – gęstszy żel lepiej rozdziela krótkie fragmenty, rzadszy – długie;</li>
+    <li><b>konformacja DNA</b> – plazmid superzwinięty, liniowy i kolisty otwarty wędrują różnie mimo tej samej długości;</li>
+    <li><b>napięcie</b> – w praktyce 5–8 V na centymetr długości żelu;</li>
+    <li><b>bufor</b> – najczęściej TAE (Tris, octan, EDTA) albo TBE (Tris, boran, EDTA).</li>
+  </ul>
+
+  <aside class="note warto"><p>Za wysokie napięcie podgrzewa żel. Agaroza może się wtedy częściowo roztopić, prążki „uśmiechają się” (wyginają ku górze na brzegach), a DNA może ulec denaturacji.</p></aside>
+  <p>Elektroforezę stosuje się w dwóch celach. <b>Analityczna</b> służy do opisania preparatu – ustalenia wielkości fragmentów, sprawdzenia, czy reakcja PCR zadziałała, albo oceny jakości wyizolowanego DNA. <b>Preparatywna</b> pozwala wyciąć z żelu wybrany prążek i odzyskać z niego czysty fragment do dalszej pracy, np. do klonowania lub sekwencjonowania.</p>
+
+  <div class="box zapamietaj"><p>DNA ma ładunek ujemny i w żelu wędruje do <b>anody (+)</b>. O kolejności prążków decyduje <b>długość</b> fragmentów: najkrótsze są najdalej od studzienek. Napięcie: <b>5–8 V/cm</b>.</p></div>
+
+  <p class="src">Źródło: Drewa s. 712–713</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c00-zele">Żel agarozowy i poliakrylamidowy</h2>
+  <p>Do rozdziału kwasów nukleinowych używa się dwóch rodzajów żeli. Różnią się wielkością porów, a więc zakresem długości fragmentów, które dobrze rozdzielają (<a class="figref" href="#c00-fig-sita"></a>).</p>
+
+  <h3>Żel agarozowy</h3>
+  <aside class="note liceum"><p><b>Agaroza</b> to polisacharyd z krasnorostów. Po rozpuszczeniu w gorącym buforze i ostudzeniu tworzy porowaty, galaretowaty żel – podobnie jak żelatyna w deserze.</p></aside>
+  <p><b>Agaroza</b> tworzy żel o dużych porach. Stosuje się ją w stężeniu zwykle od 0,5 do 2%, a żel wylewa się poziomo w specjalnej formie z grzebieniem, który wyciska <b>studzienki</b> na próbki. Żel agarozowy dobrze rozdziela fragmenty od około 100 pz do kilkudziesięciu kpz. To podstawowy żel do sprawdzania produktów PCR i trawienia enzymami restrykcyjnymi.</p>
+
+  <h3>Żel poliakrylamidowy</h3>
+  <p><b>Poliakrylamid</b> powstaje w reakcji polimeryzacji akrylamidu z bisakrylamidem, który tworzy wiązania poprzeczne. Pory są znacznie mniejsze niż w agarozie, dlatego żel poliakrylamidowy (PAGE) rozdziela krótkie fragmenty z bardzo dużą rozdzielczością – nawet takie, które różnią się <b>jednym nukleotydem</b>. Żel wylewa się zwykle pionowo, między dwiema szybami.</p>
+
+  <aside class="note warto"><p>Monomer akrylamidu jest <b>neurotoksyczny</b>, dlatego pracuje się z nim w rękawiczkach. Spolimeryzowany żel jest już znacznie bezpieczniejszy.</p></aside>
+  <table class="tbl">
+    <thead><tr><th>Żel</th><th>Stężenie</th><th>Zakres rozdziału</th></tr></thead>
+    <tbody>
+      <tr><td>agarozowy</td><td>0,5–2%</td><td>ok. 100 pz – 25 kpz</td></tr>
+      <tr><td>agarozowy rzadki</td><td>0,3%</td><td>do ok. 60 kpz</td></tr>
+      <tr><td>poliakrylamidowy</td><td>4–20%</td><td>1–1000 pz; różnica 1 nt</td></tr>
+      <tr><td>pulsacyjny (PFGE)</td><td>1% agaroza</td><td>do kilku Mpz</td></tr>
+    </tbody>
+  </table>
+
+  <p>Bardzo długich cząsteczek – całych chromosomów drożdży czy dużych fragmentów genomu bakterii – nie da się rozdzielić w zwykłym żelu, bo wszystkie wędrują z podobną szybkością. Służy do tego <b>elektroforeza pulsacyjna</b> (PFGE), w której kierunek pola elektrycznego co pewien czas się zmienia. Długie cząsteczki potrzebują więcej czasu na zmianę orientacji, więc zostają w tyle.</p>
+
+  <div class="box obraz"><p>Żel jest jak <b>las z gęsto rosnącymi drzewami</b>. Mała sarna przemyka między pniami szybko, łoś z wielkim porożem co chwilę się zaczepia. W gęstszym lesie (poliakrylamid) różnice między małymi zwierzętami stają się wyraźniejsze, w rzadszym (agaroza) – da się rozróżnić nawet duże.</p></div>
+
+  <p>Przygotowanie i uruchomienie typowego rozdziału w żelu agarozowym przebiega w kilku krokach:</p>
+  <ol>
+    <li><b>wylanie żelu</b> – agarozę rozpuszcza się w buforze, studzi do ok. 55&nbsp;°C, wlewa do formy z grzebieniem;</li>
+    <li><b>nałożenie próbek</b> – DNA miesza się z buforem obciążającym (glicerol zwiększa gęstość, barwnik pokazuje postęp rozdziału) i nakłada do studzienek, razem ze wzorcem wielkości;</li>
+    <li><b>rozdział</b> – żel zanurzony w buforze podłącza się do zasilacza; studzienki są po stronie katody;</li>
+    <li><b>wybarwienie i odczyt</b> – prążki uwidacznia się barwnikiem fluorescencyjnym w świetle UV.</li>
+  </ol>
+
+  <figure class="fig" id="c00-fig-sita" data-title="Agaroza i poliakrylamid – dwa różne sita">
+    <div class="panels cols-2">
+      <div class="panel" data-badge="A" data-title="Agaroza – duże pory">
+        <svg viewBox="0 0 296 150" role="img" aria-label="Sieć agarozy z dużymi porami">
+          <rect x="4" y="6" width="288" height="110" rx="8" class="tile"/>
+          <g fill="none" stroke="#b9c6ce" stroke-width="2">
+            <path d="M14,30 C60,10 90,60 140,34 S230,10 282,40"/><path d="M14,70 C50,50 100,96 150,70 S240,48 282,80"/>
+            <path d="M14,104 C60,84 110,118 160,98 S250,86 282,106"/>
+            <path d="M40,8 C30,40 70,70 44,114"/><path d="M120,8 C140,44 100,80 128,114"/><path d="M210,8 C190,40 236,76 206,114"/>
+          </g>
+          <path d="M30,52 C70,46 96,58 120,52" class="dna thin"/>
+          <path d="M160,88 C200,84 230,92 268,86" class="dna thin teal"/>
+          <text x="148" y="136" class="t-s mid muted">fragmenty od ok. 100 pz do kilkudziesięciu kpz</text>
+        </svg>
+      </div>
+      <div class="panel" data-badge="B" data-title="Poliakrylamid – małe pory">
+        <svg viewBox="0 0 296 150" role="img" aria-label="Gęsta sieć poliakrylamidu">
+          <rect x="4" y="6" width="288" height="110" rx="8" class="tile"/>
+          <g stroke="#b9c6ce" stroke-width="1.4">
+            <path d="M14,20 H282 M14,36 H282 M14,52 H282 M14,68 H282 M14,84 H282 M14,100 H282"/>
+            <path d="M30,10 V112 M54,10 V112 M78,10 V112 M102,10 V112 M126,10 V112 M150,10 V112 M174,10 V112 M198,10 V112 M222,10 V112 M246,10 V112 M270,10 V112"/>
+          </g>
+          <path d="M40,44 h40" class="dna thin violet"/>
+          <path d="M150,76 h46" class="dna thin ochre"/>
+          <text x="148" y="136" class="t-s mid muted">krótkie fragmenty, rozdzielczość do 1 nukleotydu</text>
+        </svg>
+      </div>
+    </div>
+    <figcaption>A – agaroza tworzy luźną sieć polisacharydowych włókien; długie cząsteczki DNA przechodzą przez duże pory. B – poliakrylamid tworzy gęstą sieć z wiązaniami poprzecznymi (bisakrylamid), dlatego rozdziela krótkie fragmenty z dużą rozdzielczością.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 713</p>
+  </figure>
+
+  <p class="src">Źródło: Drewa s. 713–714</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c00-odczyt">Jak odczytać wielkość fragmentu</h2>
+  <aside class="note pojecie" data-term="Wzorzec wielkości"><p>(marker, drabinka, ang. <i>ladder</i>) – mieszanina fragmentów DNA o znanych długościach, rozdzielana w tym samym żelu co badane próbki.</p></aside>
+  <p>Sam prążek w żelu nie mówi, ile ma par zasad. Wielkość odczytuje się przez porównanie ze <b>wzorcem wielkości</b>, który nakłada się do jednej ze studzienek tego samego żelu. Fragmenty wzorca tworzą „drabinkę” prążków o znanych długościach; badany prążek leży między dwoma szczeblami, a jego wielkość szacuje się z położenia (<a class="figref" href="#c00-fig-zel"></a>).</p>
+
+  <p>Droga przebyta przez fragment jest w przybliżeniu proporcjonalna do <b>logarytmu</b> jego długości. Jeśli na osi poziomej odłożyć drogę migracji, a na pionowej – długość w skali logarytmicznej, punkty wzorca układają się wzdłuż prostej, tzw. <b>krzywej wzorcowej</b>. Z niej odczytuje się wielkość nieznanego fragmentu (<a class="figref" href="#c00-fig-zel" data-panel="B"></a>).</p>
+
+  <figure class="fig" id="c00-fig-zel" data-title="Odczyt wielkości fragmentów w żelu agarozowym">
+    <div class="panels cols-2">
+      <div class="panel" data-badge="A" data-title="Żel po rozdziale">
+        <svg viewBox="0 0 296 262" role="img" aria-label="Żel agarozowy z wzorcem wielkości i czterema próbkami">
+          <text x="70" y="14" class="lane-label">M</text><text x="110" y="14" class="lane-label">1</text><text x="150" y="14" class="lane-label">2</text><text x="190" y="14" class="lane-label">3</text><text x="230" y="14" class="lane-label">4</text>
+          <rect x="48" y="22" width="204" height="224" rx="7" class="gel"/>
+          <g class="well"><rect x="57" y="32" width="26" height="6" rx="1.5"/><rect x="97" y="32" width="26" height="6" rx="1.5"/><rect x="137" y="32" width="26" height="6" rx="1.5"/><rect x="177" y="32" width="26" height="6" rx="1.5"/><rect x="217" y="32" width="26" height="6" rx="1.5"/></g>
+          <!-- wzorzec: 10000…100 pz; y = 50 + 85·(4 − log10 s) -->
+          <g class="band ladder">
+            <rect x="58" y="48" width="24" height="4" rx="2"/><rect x="58" y="73.6" width="24" height="4" rx="2"/><rect x="58" y="92.4" width="24" height="4" rx="2"/>
+            <rect x="58" y="107.4" width="24" height="4" rx="2"/><rect x="58" y="118" width="24" height="4" rx="2"/><rect x="58" y="133" width="24" height="5" rx="2"/>
+            <rect x="58" y="146.2" width="24" height="4" rx="2"/><rect x="58" y="158.6" width="24" height="4" rx="2"/><rect x="58" y="177.4" width="24" height="4" rx="2"/><rect x="58" y="218" width="24" height="4" rx="2"/>
+          </g>
+          <g>
+            <text x="44" y="53" class="size-label">10 000</text><text x="44" y="78.6" class="size-label">5000</text><text x="44" y="97.4" class="size-label">3000</text>
+            <text x="44" y="112.4" class="size-label">2000</text><text x="44" y="138.5" class="size-label">1000</text><text x="44" y="163.6" class="size-label">500</text>
+            <text x="44" y="182.4" class="size-label">300</text><text x="44" y="223" class="size-label">100</text>
+          </g>
+          <!-- 1: produkt PCR 500 pz -->
+          <rect x="98" y="158" width="24" height="5.5" rx="2" class="band"/>
+          <!-- 2: plazmid nietrawiony: kolista otwarta (wolno) i superzwinięta (szybko) -->
+          <rect x="138" y="98" width="24" height="5" rx="2" class="band violet"/>
+          <rect x="138" y="126" width="24" height="5" rx="2" class="band violet"/>
+          <!-- 3: trawienie: 3000 + 1500 + 700 -->
+          <rect x="178" y="92.4" width="24" height="5" rx="2" class="band ochre"/><rect x="178" y="118" width="24" height="4.5" rx="2" class="band ochre"/><rect x="178" y="146.2" width="24" height="4" rx="2" class="band ochre"/>
+          <!-- 4: zdegradowane DNA genomowe: smuga -->
+          <rect x="218" y="44" width="24" height="5" rx="2" class="band blue"/>
+          <rect x="219" y="52" width="22" height="160" rx="6" class="band blue smear"/>
+          <text x="150" y="258" class="pole plus">+</text><text x="34" y="30" class="pole minus">–</text>
+          <path d="M276,48 V226" class="arrow"/>
+          <text x="284" y="140" class="t-xs muted" transform="rotate(90 284 140)" text-anchor="middle">kierunek wędrówki</text>
+        </svg>
+      </div>
+      <div class="panel" data-badge="B" data-title="Krzywa wzorcowa">
+        <svg viewBox="0 0 296 262" role="img" aria-label="Wykres zależności logarytmu długości od drogi migracji">
+          <g class="gridline"><line x1="56" y1="30" x2="282" y2="30"/><line x1="56" y1="81" x2="282" y2="81"/><line x1="56" y1="115" x2="282" y2="115"/><line x1="56" y1="166" x2="282" y2="166"/><line x1="56" y1="200" x2="282" y2="200"/></g>
+          <path d="M56,14 V200 H284" class="axis"/>
+          <text x="50" y="34" class="size-label">10 000</text><text x="50" y="85" class="size-label">3000</text><text x="50" y="119" class="size-label">1000</text><text x="50" y="170" class="size-label">300</text><text x="50" y="204" class="size-label">100</text>
+          <line x1="72" y1="34" x2="276" y2="200" stroke="#5d6d78" stroke-width="1.4"/>
+          <g fill="#5d6d78"><circle cx="76" cy="30" r="3.2"/><circle cx="106" cy="55.6" r="3.2"/><circle cx="128" cy="74.4" r="3.2"/><circle cx="146" cy="89.4" r="3.2"/><circle cx="168" cy="115" r="3.2"/><circle cx="191" cy="128.2" r="3.2"/><circle cx="208" cy="140.6" r="3.2"/><circle cx="230" cy="159.4" r="3.2"/><circle cx="276" cy="200" r="3.2"/></g>
+          <path d="M184,200 V123 H56" class="guide"/>
+          <circle cx="184" cy="123" r="4.6" fill="#c84d42"/>
+          <rect x="192" y="96" width="92" height="20" rx="4" fill="#fff0ec"/>
+          <text x="238" y="110" class="t-s mid sb f-red">nieznany: ok. 800 pz</text>
+          <text x="170" y="222" class="t-s mid muted">droga migracji [mm]</text>
+          <text x="14" y="112" class="t-s mid muted" transform="rotate(-90 14 112)">długość [pz], skala log</text>
+          <text x="170" y="246" class="t-xs mid faint">punkty: prążki wzorca M z panelu A</text>
+        </svg>
+      </div>
+    </div>
+    <figcaption>A – żel agarozowy po rozdziale i wybarwieniu: M – wzorzec wielkości; 1 – produkt PCR (ok. 500 pz); 2 – nietrawiony plazmid: forma kolista otwarta (wyżej) i superzwinięta (niżej); 3 – plazmid strawiony enzymem restrykcyjnym na trzy fragmenty; 4 – zdegradowane DNA genomowe daje smugę. B – krzywa wzorcowa: droga migracji jest proporcjonalna do logarytmu długości, więc z położenia prążka odczytuje się jego wielkość.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 714</p>
+  </figure>
+
+  <div class="box przyklad"><p>Prążek badanej próbki leży między prążkami wzorca 1000 pz i 700 pz, mniej więcej w <b>jednej trzeciej</b> odległości od prążka 1000 pz. Ponieważ skala jest logarytmiczna, nie liczymy średniej arytmetycznej: log 1000 = 3,00, log 700 = 2,85; 3,00 − ⅓ · 0,15 = 2,95, a 10<sup>2,95</sup> ≈ <b>890 pz</b>. Odczyt z krzywej wzorcowej daje ten sam wynik bez rachunków.</p></div>
+
+  <h4>Formy plazmidu w żelu</h4>
+  <aside class="note warto"><p>Kolejność form plazmidu zależy od warunków rozdziału (stężenia agarozy, napięcia, obecności bromku etydyny w żelu). Najczęściej forma superzwinięta jest najszybsza, a kolista otwarta – najwolniejsza.</p></aside>
+  <p>Nietrawiony plazmid daje w żelu kilka prążków, choć to jedna cząsteczka o jednej długości. Forma <b>superzwinięta</b> jest zwarta i wędruje najszybciej. Pęknięcie jednej nici daje formę <b>kolistą otwartą</b> – luźny pierścień, który wędruje najwolniej. Przecięcie obu nici w jednym miejscu daje formę <b>liniową</b>, która wędruje zgodnie ze swoją długością.</p>
+
+  <div class="box zapamietaj" data-title="Jak czytać nietypowy wzór prążków"><p><b>Smuga</b> zamiast prążka – DNA zdegradowane albo za dużo materiału. <b>Prążek w studzience</b> – DNA zbyt długie lub zanieczyszczone białkiem. <b>Dodatkowe prążki</b> plazmidu bez trawienia – różne formy tej samej cząsteczki, nie zanieczyszczenie.</p></div>
+
+  <div class="numbers">
+    <div class="n"><span class="v">5–8<small>V/cm</small></span><span class="d">napięcie rozdziału w żelu agarozowym</span></div>
+    <div class="n"><span class="v">0,5–2<small>%</small></span><span class="d">typowe stężenie agarozy</span></div>
+    <div class="n"><span class="v">1<small>nt</small></span><span class="d">rozdzielczość żelu poliakrylamidowego</span></div>
+    <div class="n"><span class="v">55<small>°C</small></span><span class="d">temperatura wylewania agarozy</span></div>
+    <div class="n"><span class="v">~25<small>kpz</small></span><span class="d">górna granica zwykłego żelu agarozowego</span></div>
+    <div class="n"><span class="v">Mpz</span><span class="d">rząd wielkości cząsteczek w PFGE</span></div>
+  </div>
+
+  <p class="src">Źródło: Drewa s. 714–715</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c00-barwienie">Barwienie i wizualizacja</h2>
+  <aside class="note liceum"><p>Promieniowanie <b>UV</b> ma krótszą falę niż światło fioletowe i jest niewidoczne dla oka. Substancje <b>fluorescencyjne</b> pochłaniają UV i oddają energię jako światło widzialne.</p></aside>
+  <p>DNA w żelu jest niewidoczne – prążki trzeba wybarwić. Klasycznym barwnikiem jest <b>bromek etydyny</b>, który <b>interkaluje</b>, czyli wsuwa się między pary zasad podwójnej helisy. Związany z DNA silnie fluoryzuje na pomarańczowo w świetle UV, a intensywność świecenia rośnie z ilością DNA w prążku. Bromek etydyny jest jednak mutagenny, dlatego coraz częściej zastępuje się go bezpieczniejszymi barwnikami, np. z rodziny SYBR.</p>
+
+  <aside class="note poza"><p>Nowoczesne transiluminatory używają światła niebieskiego (ok. 470 nm) zamiast UV – barwniki typu SYBR świecą w nim równie dobrze, a DNA nie ulega uszkodzeniu.</p></aside>
+  <p>Żeby wiedzieć, kiedy przerwać rozdział, do próbek dodaje się <b>bufor obciążający</b> z barwnikami śledzącymi, np. błękitem bromofenolowym. Barwnik wędruje w żelu jak krótki fragment DNA i jest widoczny gołym okiem – gdy dojdzie do ok. dwóch trzecich długości żelu, zasilacz się wyłącza.</p>
+
+  <div class="box uwaga"><p>(Przykład ramki w rozdziale demo.) W niektórych instrukcjach do ćwiczeń błękit bromofenolowy bywa opisany jako barwnik, który „barwi DNA na niebiesko”. To nieporozumienie: barwnik śledzący <b>nie wiąże się</b> z DNA – tylko wędruje obok i pokazuje postęp rozdziału. Prążki DNA widać dopiero po barwieniu barwnikiem fluorescencyjnym.</p></div>
+
+  <p>Ilość DNA w prążku można oszacować, porównując jego jasność z prążkami wzorca o znanej masie. To metoda przybliżona – dokładniejszy jest pomiar spektrofotometryczny – ale wystarcza do szybkiej oceny, czy preparatu jest dość do dalszej pracy.</p>
+
+  <div class="box poza"><p>Zamiast barwić żel po rozdziale, można dodać barwnik do agarozy przed wylaniem albo do próbki. W elektroforezie kapilarnej i w sekwenatorach DNA znakuje się z góry barwnikami fluorescencyjnymi, a sygnał rejestruje detektor – bez żadnego barwienia.</p></div>
+
+  <p class="src">Źródło: Drewa s. 715–716</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c00-kapilarna">Elektroforeza kapilarna</h2>
+  <aside class="note pojecie" data-term="Kapilara"><p>cienka rurka ze szkła kwarcowego o średnicy wewnętrznej 50–100 µm, wypełniona polimerem, który zastępuje żel.</p></aside>
+  <p>W <b>elektroforezie kapilarnej</b> (CE) rozdział zachodzi nie w płaskim żelu, ale w cienkiej kapilarze wypełnionej roztworem polimeru. Cienka kapilara dobrze odprowadza ciepło, więc można stosować wysokie napięcie – rozdział trwa minuty, a nie godziny. Fragmenty DNA są wcześniej znakowane barwnikami fluorescencyjnymi. Przy końcu kapilary <b>laser</b> wzbudza fluorescencję, a <b>detektor</b> zapisuje sygnał w czasie (<a class="figref" href="#c00-fig-ce"></a>).</p>
+
+  <p>Wynikiem nie jest obraz żelu, ale <b>elektroferogram</b> – wykres natężenia fluorescencji w funkcji czasu. Każdy pik odpowiada jednemu fragmentowi, a jego położenie – długości. Ponieważ można użyć kilku barwników naraz, w jednej kapilarze rozdziela się jednocześnie wiele produktów. Na tej zasadzie działają sekwenatory metodą Sangera i analiza markerów STR w identyfikacji genetycznej; o odczycie wielkości ze wzorca piszemy na <a class="pageref" href="#c00-odczyt"></a>.</p>
+
+  <figure class="fig" id="c00-fig-ce" data-title="Elektroforeza kapilarna i elektroferogram">
+    <div class="panel">
+      <svg viewBox="0 0 640 200" role="img" aria-label="Schemat aparatu do elektroforezy kapilarnej i elektroferogram">
+        <!-- naczynka z buforem -->
+        <rect x="12" y="110" width="64" height="60" rx="6" class="card"/><rect x="14" y="128" width="60" height="40" rx="4" class="f-blue-bg"/>
+        <rect x="196" y="110" width="64" height="60" rx="6" class="card"/><rect x="198" y="128" width="60" height="40" rx="4" class="f-blue-bg"/>
+        <text x="44" y="186" class="t-xs mid muted">próbka (–)</text><text x="228" y="186" class="t-xs mid muted">bufor (+)</text>
+        <line x1="30" y1="96" x2="30" y2="150" stroke="#23323e" stroke-width="2.4"/><line x1="242" y1="96" x2="242" y2="150" stroke="#c84d42" stroke-width="2.4"/>
+        <text x="30" y="90" class="t-m mid b">–</text><text x="242" y="90" class="t-m mid b f-red">+</text>
+        <!-- kapilara -->
+        <path d="M52,150 V60 Q52,40 72,40 H200 Q220,40 220,60 V150" fill="none" stroke="#8a98a3" stroke-width="3.2"/>
+        <path d="M52,150 V60 Q52,40 72,40 H200 Q220,40 220,60 V150" fill="none" stroke="#e8eef2" stroke-width="1.2"/>
+        <!-- okno detekcji -->
+        <rect x="160" y="30" width="16" height="20" rx="3" fill="none" stroke="#007e83" stroke-width="1.6"/>
+        <path d="M120,8 L162,34" stroke="#c84d42" stroke-width="2" marker-end="url(#k6-arrow-red)"/>
+        <text x="96" y="12" class="t-xs end f-red sb">laser</text>
+        <path d="M176,44 L232,22" class="arrow teal"/>
+        <rect x="234" y="8" width="54" height="22" rx="4" fill="#153144"/><text x="261" y="23" class="t-xs mid f-white sb">detektor</text>
+        <text x="136" y="70" class="t-xs mid muted">kapilara z polimerem</text>
+        <!-- strzałka do wykresu -->
+        <path d="M300,100 H336" class="arrow"/>
+        <!-- elektroferogram -->
+        <path d="M356,20 V168 H630" class="axis"/>
+        <text x="493" y="190" class="t-xs mid muted">czas migracji → (długość fragmentu)</text>
+        <text x="348" y="94" class="t-xs mid muted" transform="rotate(-90 348 94)">fluorescencja</text>
+        <path d="M360,166 L392,166 C396,166 398,120 402,120 C406,120 408,166 412,166 L452,166 C456,166 458,60 462,60 C466,60 468,166 472,166 L500,166 C504,166 506,96 510,96 C514,96 516,166 520,166 L560,166 C564,166 566,40 570,40 C574,40 576,166 580,166 L626,166" class="trace teal"/>
+        <path d="M360,166 L420,166 C424,166 426,132 430,132 C434,132 436,166 440,166 L530,166 C534,166 536,110 540,110 C544,110 546,166 550,166 L600,166 C604,166 606,140 610,140 C614,140 616,166 620,166 L626,166" class="trace ochre"/>
+        <text x="462" y="52" class="t-xs mid sb f-teal">pik = fragment</text>
+        <line x1="356" y1="150" x2="630" y2="150" class="guide"/>
+        <line x1="372" y1="27" x2="392" y2="27" class="guide"/><text x="398" y="30.5" class="t-xs f-red">próg detekcji</text>
+      </svg>
+    </div>
+    <figcaption>Fragmenty DNA znakowane barwnikami fluorescencyjnymi wędrują w kapilarze od katody do anody. W oknie detekcji laser wzbudza fluorescencję, a detektor rejestruje sygnał w czasie. Elektroferogram pokazuje piki – każdy odpowiada fragmentowi o określonej długości; dwa kolory to dwa różne barwniki w jednej kapilarze.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 716–717</p>
+  </figure>
+
+  <table class="tbl wide">
+    <thead><tr><th style="width:22%">Metoda</th><th>Ośrodek</th><th>Co rozdziela</th><th>Jak widać wynik</th><th>Typowe zastosowanie</th></tr></thead>
+    <tbody>
+      <tr><td>Żel agarozowy</td><td>agaroza 0,5–2%, poziomo</td><td>DNA ok. 100 pz – 25 kpz</td><td>prążki po barwieniu, UV</td><td>kontrola PCR, trawienie restrykcyjne, ocena DNA</td></tr>
+      <tr><td>PAGE</td><td>poliakrylamid, pionowo</td><td>krótkie DNA, różnica 1 nt; białka</td><td>prążki po barwieniu</td><td>SSCP, heterodupleksy, białka (SDS-PAGE)</td></tr>
+      <tr><td>PFGE</td><td>agaroza, pole zmienne</td><td>cząsteczki do kilku Mpz</td><td>prążki po barwieniu</td><td>typowanie szczepów bakterii, chromosomy drożdży</td></tr>
+      <tr><td>Kapilarna (CE)</td><td>kapilara z polimerem</td><td>fragmenty znakowane fluorescencyjnie</td><td>elektroferogram – piki</td><td>sekwencjonowanie Sangera, profile STR</td></tr>
+      <tr><td>W gradiencie (DGGE)</td><td>poliakrylamid z gradientem mocznika</td><td>fragmenty o tej samej długości, różnej sekwencji</td><td>prążki w różnych miejscach</td><td>wykrywanie mutacji punktowych</td></tr>
+      <tr><td>Dwukierunkowa (2D)</td><td>IEF + SDS-PAGE</td><td>białka wg pI i masy</td><td>plamki na żelu</td><td>proteomika, porównywanie profili białek</td></tr>
+    </tbody>
+  </table>
+
+  <p class="src">Źródło: Drewa s. 716–717 · Jorde s. 42</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c00-southern">Transfer na membranę – Southern blot</h2>
+  <aside class="note liceum"><p><b>Hybrydyzacja</b> to łączenie się dwóch komplementarnych nici kwasu nukleinowego na zasadzie parowania zasad A–T i G–C. Tak samo nici DNA łączą się po rozdzieleniu w PCR.</p></aside>
+  <p>W żelu z całym genomowym DNA po trawieniu powstaje nie kilka prążków, lecz ciągła smuga tysięcy fragmentów. Żeby znaleźć wśród nich ten jeden, który zawiera badany gen, trzeba go „oznaczyć”. Służy do tego <b>sonda</b> – znakowany, jednoniciowy fragment DNA komplementarny do szukanej sekwencji. Sonda nie przeniknie jednak w głąb żelu, dlatego DNA przenosi się najpierw na cienką <b>membranę</b> z nitrocelulozy lub nylonu. Metodę opracował Edwin Southern w 1975 roku i od jego nazwiska pochodzi nazwa (<a class="figref" href="#c00-fig-southern"></a>).</p>
+
+  <ol>
+    <li><b>Trawienie</b> – genomowe DNA tnie się enzymem restrykcyjnym na fragmenty.</li>
+    <li><b>Elektroforeza</b> – fragmenty rozdziela się w żelu agarozowym według długości.</li>
+    <li><b>Denaturacja i transfer</b> – żel zanurza się w roztworze zasadowym (NaOH), żeby rozdzielić nici, a potem DNA przenosi się na membranę. Bufor podsiąka przez żel do warstwy bibuły, porywając DNA na membranę – układ prążków zostaje zachowany.</li>
+    <li><b>Utrwalenie i hybrydyzacja</b> – DNA wiąże się z membraną (UV lub ogrzanie do 80&nbsp;°C), a następnie membranę inkubuje się z sondą.</li>
+    <li><b>Detekcja</b> – po odpłukaniu niezwiązanej sondy sygnał (radioaktywny, fluorescencyjny lub chemiluminescencyjny) pokazuje prążek z badanym genem.</li>
+  </ol>
+
+  <figure class="fig" id="c00-fig-southern" data-title="Southern blot – od żelu do prążka z badanym genem">
+    <div class="panel" data-title="Pięć etapów hybrydyzacji typu Southern">
+      <svg viewBox="0 0 640 196" role="img" aria-label="Pięć etapów metody Southerna">
+        <!-- kolumny co 128 -->
+        <g class="step" transform="translate(14,12)"><circle r="9"/><text y="3.8">1</text></g><text x="28" y="16" class="step-title">Trawienie</text>
+        <g class="step" transform="translate(142,12)"><circle r="9"/><text y="3.8">2</text></g><text x="156" y="16" class="step-title">Elektroforeza</text>
+        <g class="step" transform="translate(270,12)"><circle r="9"/><text y="3.8">3</text></g><text x="284" y="16" class="step-title">Transfer</text>
+        <g class="step" transform="translate(398,12)"><circle r="9"/><text y="3.8">4</text></g><text x="412" y="16" class="step-title">Hybrydyzacja</text>
+        <g class="step" transform="translate(526,12)"><circle r="9"/><text y="3.8">5</text></g><text x="540" y="16" class="step-title">Detekcja</text>
+        <!-- 1: DNA i nożyczki -->
+        <path d="M10,72 H104" class="dna"/><path d="M10,80 H104" class="dna blue"/>
+        <path d="M14,72 V80 M22,72 V80 M30,72 V80 M38,72 V80 M46,72 V80 M54,72 V80 M62,72 V80 M70,72 V80 M78,72 V80 M86,72 V80 M94,72 V80 M102,72 V80" class="rungs" style="stroke-dasharray:none"/>
+        <path d="M40,60 L40,92 M76,60 L76,92" stroke="#c84d42" stroke-width="1.6" stroke-dasharray="3 2"/>
+        <polygon points="36,56 44,56 40,63" class="f-red"/><polygon points="72,56 80,56 76,63" class="f-red"/>
+        <text x="58" y="118" class="t-xs mid sb">DNA genomowe</text><text x="58" y="131" class="t-xs mid muted">+ enzym restrykcyjny</text>
+        <path d="M110,78 H130" class="arrow"/>
+        <!-- 2: żel ze smugą -->
+        <rect x="146" y="38" width="90" height="74" rx="5" class="gel"/>
+        <g class="well"><rect x="154" y="44" width="18" height="4" rx="1"/><rect x="182" y="44" width="18" height="4" rx="1"/><rect x="210" y="44" width="18" height="4" rx="1"/></g>
+        <rect x="155" y="52" width="16" height="52" rx="4" class="band blue smear"/><rect x="183" y="52" width="16" height="52" rx="4" class="band blue smear"/>
+        <g class="band ladder"><rect x="211" y="56" width="16" height="3" rx="1.5"/><rect x="211" y="68" width="16" height="3" rx="1.5"/><rect x="211" y="82" width="16" height="3" rx="1.5"/><rect x="211" y="98" width="16" height="3" rx="1.5"/></g>
+        <text x="191" y="128" class="t-xs mid sb">smuga fragmentów</text><text x="191" y="141" class="t-xs mid muted">w żelu agarozowym</text>
+        <path d="M240,78 H258" class="arrow"/>
+        <!-- 3: stos do transferu kapilarnego -->
+        <rect x="270" y="98" width="104" height="14" rx="3" class="f-blue-bg" stroke="#4387b7" stroke-width="1"/>
+        <rect x="282" y="86" width="80" height="12" rx="2" class="gel"/>
+        <rect x="282" y="80" width="80" height="6" fill="#f7f4ec" stroke="#a8a08c" stroke-width="1"/>
+        <rect x="282" y="58" width="80" height="22" fill="#ffffff" stroke="#c9d3d9" stroke-width="1"/>
+        <path d="M282,64 H362 M282,70 H362 M282,76 H362" stroke="#e3e8ec" stroke-width="1"/>
+        <rect x="300" y="44" width="44" height="14" rx="2" fill="#5d6d78"/>
+        <path d="M376,104 C390,104 390,70 376,66" class="arrow teal dashed"/>
+        <text x="322" y="128" class="t-xs mid sb">denaturacja (NaOH)</text><text x="322" y="141" class="t-xs mid muted">DNA na membranę</text>
+        <text x="322" y="154" class="t-xs mid muted">bufor podsiąka w górę</text>
+        <path d="M392,78 H410" class="arrow"/>
+        <!-- 4: membrana z sondą -->
+        <rect x="418" y="40" width="92" height="72" rx="4" class="membrane"/>
+        <g fill="#c9c0aa"><rect x="426" y="52" width="18" height="3" rx="1.5"/><rect x="452" y="60" width="18" height="3" rx="1.5"/><rect x="426" y="74" width="18" height="3" rx="1.5"/><rect x="452" y="88" width="18" height="3" rx="1.5"/><rect x="478" y="66" width="18" height="3" rx="1.5"/><rect x="478" y="96" width="18" height="3" rx="1.5"/></g>
+        <path d="M440,30 h34" class="probe"/><circle cx="478" cy="30" r="3.5" class="f-gold"/>
+        <path d="M456,34 L462,62" class="arrow red"/>
+        <text x="464" y="128" class="t-xs mid sb">sonda znakowana</text><text x="464" y="141" class="t-xs mid muted">łączy się z celem</text>
+        <path d="M516,78 H534" class="arrow"/>
+        <!-- 5: kliszа/obraz -->
+        <rect x="544" y="40" width="88" height="72" rx="4" fill="#1d3444"/>
+        <rect x="554" y="62" width="18" height="4" rx="2" fill="#f2a8d8"/><rect x="580" y="74" width="18" height="4" rx="2" fill="#f2a8d8"/>
+        <rect x="606" y="62" width="18" height="4" rx="2" fill="#f2a8d8" opacity=".5"/>
+        <text x="588" y="128" class="t-xs mid sb">prążek z badanym</text><text x="588" y="141" class="t-xs mid muted">genem</text>
+      </svg>
+    </div>
+    <figcaption>Genomowe DNA trawi się enzymem restrykcyjnym (1) i rozdziela w żelu (2) – powstaje smuga. Po denaturacji DNA przenosi się kapilarnie na membranę (3), na której hybrydyzuje z nim znakowana sonda (4). Detekcja (5) pokazuje tylko prążki zawierające sekwencję komplementarną do sondy.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 730–731</p>
+  </figure>
+
+  <aside class="note warto"><p>Nazwy <b>Northern</b> (RNA) i <b>Western</b> (białka) to żartobliwe nawiązanie do nazwiska Southerna – „południe” zainspirowało „północ” i „zachód”. Nie są to nazwiska odkrywców.</p></aside>
+  <p>Analogiczną metodę dla RNA nazwano <b>Northern blot</b>: RNA rozdziela się w żelu w warunkach denaturujących i po transferze wykrywa sondą DNA. Pozwala to ocenić, czy dany gen ulega ekspresji i jak duży jest jego transkrypt. Dla białek stosuje się <b>Western blot</b> – po elektroforezie SDS-PAGE białka przenosi się na membranę i wykrywa przeciwciałami. Szczegółowo opisujemy je w kolejnych rozdziałach; zasady hybrydyzacji przypomina <a class="chapref" href="#c00"></a>.</p>
+
+  <div class="box przyklad"><p>Badamy, czy u pacjenta doszło do delecji fragmentu genu. DNA trawimy enzymem, który tnie przed genem i za nim. U zdrowej osoby sonda wykrywa fragment <b>8 kpz</b>. U pacjenta z delecją 2 kpz ten sam fragment ma <b>6 kpz</b> – prążek leży niżej. U heterozygoty widać <b>oba prążki</b>.</p></div>
+
+  <p>Metoda Southerna jest pracochłonna i wymaga dużo DNA (kilka mikrogramów), dlatego w diagnostyce w dużej mierze zastąpiły ją metody oparte na PCR. Wciąż jednak bywa niezastąpiona, gdy trzeba wykryć duże delecje, rearanżacje lub bardzo długie powtórzenia, których PCR nie jest w stanie namnożyć – np. w zespole łamliwego chromosomu X.</p>
+
+  <p class="src">Źródło: Drewa s. 730–732</p>
+
+  <!-- ============================================================ -->
+  <div class="w60">
+    <ul>
+      <li>DNA ma <b>ładunek ujemny</b> i w żelu wędruje do <b>anody (+)</b>; o kolejności prążków decyduje długość.</li>
+      <li><b>Agaroza</b> (0,5–2%) – fragmenty od ok. 100 pz do 25 kpz; <b>poliakrylamid</b> – krótkie fragmenty z rozdzielczością 1 nt; <b>PFGE</b> – do kilku Mpz.</li>
+      <li>Wielkość odczytuje się ze <b>wzorca</b> – droga migracji jest proporcjonalna do <b>logarytmu</b> długości.</li>
+      <li><b>Elektroforeza kapilarna</b>: kapilara z polimerem, znakowanie fluorescencyjne, laser i detektor – wynik to elektroferogram.</li>
+      <li><b>Southern</b>: trawienie → żel → denaturacja i transfer → hybrydyzacja z sondą → detekcja.</li>
+    </ul>
+  </div>
+
+  <div class="quiz">
+    <ol>
+      <li id="c00-q-1">Dlaczego wszystkie fragmenty DNA wędrują w żelu w stronę anody i co decyduje o ich kolejności?
+        <div class="answer"><p>Reszty fosforanowe szkieletu nadają DNA <b>ładunek ujemny</b>, proporcjonalny do długości – stosunek ładunku do masy jest stały. O kolejności decyduje więc opór żelu: krótkie fragmenty wędrują najdalej.</p></div></li>
+      <li id="c00-q-2">Który żel wybierzesz do rozdzielenia fragmentów różniących się jednym nukleotydem, a który do produktu PCR o długości 800 pz?
+        <div class="answer"><p>Różnica 1 nt – <b>żel poliakrylamidowy</b> (małe pory, duża rozdzielczość). Produkt 800 pz – <b>żel agarozowy</b> ok. 1–1,5%.</p></div></li>
+      <li id="c00-q-3">Prążek leży między prążkami wzorca 1000 i 700 pz. Dlaczego jego wielkości nie liczy się jako średniej arytmetycznej?
+        <div class="answer"><p>Droga migracji zależy liniowo od <b>logarytmu</b> długości, nie od samej długości – interpolować trzeba w skali logarytmicznej albo odczytać wynik z krzywej wzorcowej (<a class="figref" href="#c00-fig-zel" data-panel="B"></a>).</p></div></li>
+      <li id="c00-q-4">Nietrawiony plazmid dał w żelu dwa prążki. Czy to zanieczyszczenie?
+        <div class="answer"><p>Nie – to dwie <b>formy tej samej cząsteczki</b>: superzwinięta (wędruje szybciej) i kolista otwarta (wolniej). Forma liniowa pojawia się po przecięciu obu nici.</p></div></li>
+      <li id="c00-q-5">Wymień kolejne etapy metody Southerna i wyjaśnij, po co DNA przenosi się na membranę.
+        <div class="answer"><p>Trawienie → elektroforeza → denaturacja i transfer → utrwalenie i hybrydyzacja z sondą → detekcja. Membrana jest potrzebna, bo <b>sonda nie przenika w głąb żelu</b>, a na membranie DNA jest unieruchomione w tym samym układzie co w żelu.</p></div></li>
+      <li id="c00-q-6">Co oznacza smuga zamiast wyraźnego prążka w ścieżce z DNA genomowym?
+        <div class="answer"><p>DNA jest <b>zdegradowane</b> (pocięte na fragmenty różnej długości) albo nałożono go za dużo.</p></div></li>
+    </ol>
+  </div>
+</section>
