@@ -2,7 +2,7 @@
   data-num="08"
   data-title="Sekwencjonowanie kwasów nukleinowych"
   data-short="Sekwencjonowanie"
-  data-kicker="Metody przesiewowe · Sanger · cycle sequencing · pirosekwencjonowanie · SMRT">
+  data-kicker="Przesiew · Sanger · cycle sequencing · pirosekwencjonowanie · SMRT">
 
   <p class="lead">Sekwencjonowanie odczytuje kolejność nukleotydów w DNA – to najczulsza technika wykrywania zmian w materiale genetycznym, pozwalająca zarazem w pełni je scharakteryzować. Rozdział prowadzi od metod przesiewowych przez automatyczny odczyt i cycle sequencing do technik nowej generacji i markerów molekularnych.</p>
 
@@ -31,7 +31,7 @@
   <p>Odczyt sekwencji zautomatyzowano dzięki <b>fluorescencyjnemu znakowaniu trifosforanów dideoksynukleotydów</b> (ddNTP), co pozwala odczytać <b>300–1000 par zasad z jednej kapilary lub linii na żelu</b> (<a class="figref" href="#c08-fig-sanger"></a>). W <b>automatycznych sekwenatorach</b> barwniki wzbudza się <b>światłem lasera</b>, a <b>detektory fluorescencji</b> zbierają w <b>czasie rzeczywistym</b> informację o separacji kolejnych nukleotydów. Sekwencję porównuje się następnie z <b>sekwencją prawidłową</b> z dostępnych baz danych – <b>GenBank</b> i <b>EMBL</b>.</p>
 
   <figure class="fig" id="c08-fig-sanger" data-title="Terminacja łańcucha i odczyt sekwencji z kapilary">
-    <div class="panel" data-badge="A" data-title="Produkty reakcji – fragmenty zakończone znakowanym ddNTP">
+    <div class="panel" data-badge="A" data-title="Produkty reakcji – fragmenty zakończone znakowanym dideoksynukleotydem">
 <svg viewBox="0 0 640 192" role="img" aria-label="Fragmenty DNA o rosnącej długości, każdy zakończony dideoksynukleotydem znakowanym innym kolorem">
 <text x="60" y="28" class="t-xs sb muted">matryca</text>
 <line x1="58" y1="34" x2="320" y2="34" stroke="#153144" stroke-width="2" stroke-linecap="round"/>
@@ -307,7 +307,7 @@
   <!-- ============================================================ -->
   <h2 id="c08-piro">Pirosekwencjonowanie i metoda 454</h2>
 
-  <p>W <b>1996 r.</b> opracowano nowatorską, stosunkowo prostą technikę <b>pirosekwencjonowania</b> („<b>sekwencjonowania poprzez syntezę</b>”). Jest to metoda sekwencjonowania DNA <b>w czasie rzeczywistym</b> – sekwencję odczytuje się w trakcie budowania nici komplementarnej.</p>
+  <p>W <b>1996&nbsp;r.</b> opracowano nowatorską, stosunkowo prostą technikę <b>pirosekwencjonowania</b> („<b>sekwencjonowania poprzez syntezę</b>”). Jest to metoda sekwencjonowania DNA <b>w czasie rzeczywistym</b> – sekwencję odczytuje się w trakcie budowania nici komplementarnej.</p>
 
   <aside class="note liceum"><p>Z <b>dNTP</b> (trzy reszty fosforanowe) polimeraza wbudowuje nukleotyd z jedną resztą, a dwie pozostałe odłączają się jako <b>pirofosforan</b> (PP<sub>i</sub>).</p></aside>
   <p>DNA będący matrycą dla syntezy jest <b>unieruchamiany na podłożu stałym</b>. Na każdym etapie syntezy inkubuje się go w obecności <b>czterech enzymów</b>: <b>polimerazy DNA</b>, <b>sulfurylazy ATP</b>, <b>lucyferazy</b> oraz <b>apyrazy</b>, i dodaje <b>jeden z czterech</b> trifosforanów nukleozydów (dNTP) (<a class="figref" href="#c08-fig-piro"></a>).</p>
@@ -325,18 +325,18 @@
   <p>W ten sposób „<b>krok po kroku</b>” zachodzi synteza nici komplementarnej i jednocześnie zbierana jest informacja o jej sekwencji. Podejście to pozwala znacząco <b>przyśpieszyć</b> cały proces przy znacznej <b>redukcji kosztów</b>.</p>
 
   <figure class="fig" id="c08-fig-piro" data-title="Pirosekwencjonowanie – światło jako odpowiedź „tak”">
-    <div class="panel" data-badge="A" data-title="Cztery enzymy: pasujący i niewłaściwy dNTP">
+    <div class="panel" data-badge="A" data-title="Cztery enzymy: pasujący i niewłaściwy nukleotyd">
 <svg viewBox="0 0 640 216" role="img" aria-label="Kaskada reakcji pirosekwencjonowania z udziałem czterech enzymów">
 <circle cx="34" cy="86" r="20" fill="#c9d3d9"/>
 <text x="34" y="122" class="t-xs mid muted">podłoże</text><text x="34" y="134" class="t-xs mid muted">stałe</text>
 <path d="M54,92 H178" class="dna thin"/><path d="M54,82 H114" class="dna thin teal"/>
 <ellipse cx="128" cy="84" rx="15" ry="13" class="f-violet-bg s-violet sw15"/>
-<text x="128" y="112" class="t-xs mid sb f-violet">polimeraza DNA</text>
-<text x="166" y="102" class="t-xs muted">matryca</text>
+<text x="128" y="116" class="t-xs mid sb f-violet">polimeraza DNA</text>
+<text x="148" y="103" class="t-xs muted">matryca</text>
 <circle cx="128" cy="26" r="9" fill="#007e83"/>
 <text x="142" y="30" class="t-xs sb f-teal">pasujący dNTP</text>
 <path d="M128,37 V67" class="arrow teal"/>
-<g class="step" transform="translate(102,60)"><circle r="9"/><text y="3.8">1</text></g>
+<g class="step teal" transform="translate(102,60)"><circle r="9"/><text y="3.8">1</text></g>
 <path d="M148,84 H202" class="arrow"/>
 <circle cx="222" cy="84" r="17" class="f-ochre-bg s-ochre sw15"/>
 <text x="222" y="88" class="t-s mid b">PP<tspan dy="3" font-size="10">i</tspan></text>
@@ -371,7 +371,7 @@
 <polygon points="582.0,178.0 584.3,186.5 591.9,182.1 587.5,189.7 596.0,192.0 587.5,194.3 591.9,201.9 584.3,197.5 582.0,206.0 579.7,197.5 572.1,201.9 576.5,194.3 568.0,192.0 576.5,189.7 572.1,182.1 579.7,186.5" fill="none" stroke="#8a98a3" stroke-width="1.2" stroke-dasharray="2 2"/>
 </svg>
     </div>
-    <div class="panel" data-badge="B" data-title="Zapis błysków przy kolejno dodawanych dNTP">
+    <div class="panel" data-badge="B" data-title="Zapis błysków przy kolejno dodawanych nukleotydach">
 <svg viewBox="0 0 640 152" role="img" aria-label="Zapis błysków światła po kolejnym dodawaniu nukleotydów">
 <path d="M52,16 V108 H630" class="axis"/>
 <text x="38" y="62" class="t-xs mid muted" transform="rotate(-90 38 62)">światło</text>
@@ -415,7 +415,7 @@
   <p class="src">Źródło: Drewa s. 731</p>
 
   <!-- ============================================================ -->
-  <h2 id="c08-smrt">Masowe sekwencjonowanie na płytce i metoda SMRT</h2>
+  <h2 id="c08-smrt">Masowe sekwencjonowanie na płytce i metoda&nbsp;SMRT</h2>
 
   <figure class="fig" id="c08-fig-ngs" data-title="Sekwencjonowanie masowe: płytka z odwracalnymi terminatorami i komora SMRT">
     <div class="panel" data-badge="A" data-title="Szklana płytka – sekwencjonowanie przez syntezę z odwracalnymi terminatorami">
@@ -559,14 +559,14 @@
 
   <p>Do syntezy używa się dNTP znakowanych <b>różnymi znacznikami fluorescencyjnymi</b> dołączonymi do <b>końcowego atomu fosforu</b>. Gdy do komory wprowadza się pasujący substrat, polimeraza włącza nukleotyd, a fluorofor znajduje się <b>w zasięgu detekcji o rząd wielkości dłużej</b>, niż trwa dyfuzja cząsteczki z komory. Po włączeniu nukleotydu <b>znakowany pirofosforan dyfunduje</b> (znacznik odchodzi z końcowym fosforanem, więc nić pozostaje nieznakowana) i proces się powtarza. Podstawową zaletą jest <b>szybkość</b>: synteza biegnie z szybkością <b>10 par zasad na sekundę</b>, więc teoretycznie jeden chip pozwala zsekwencjonować <b>ponad milion par zasad w ciągu minuty</b>, co stanowi niebywały postęp w tej dziedzinie.</p>
 
-  <div class="box przyklad"><p>Skąd „ponad milion par zasad na minutę”? Jedna polimeraza: 10 pz/s × 60 s = <b>600 pz/min</b>. Aby przekroczyć 1 000 000 pz/min, potrzeba 1 000 000 : 600 ≈ <b>1667</b> komór pracujących równolegle – a chip ma ich <b>kilka tysięcy</b>. (Rachunek własny).</p></div>
+  <div class="box przyklad"><p>Skąd „ponad milion par zasad na minutę”? Jedna polimeraza: 10&nbsp;pz/s × 60 s = <b>600&nbsp;pz/min</b>. Aby przekroczyć 1&nbsp;000&nbsp;000&nbsp;pz/min, potrzeba 1&nbsp;000&nbsp;000 : 600 ≈ <b>1667</b> komór pracujących równolegle – a chip ma ich <b>kilka tysięcy</b>. (Rachunek własny).</p></div>
 
   <div class="numbers">
     <div class="n"><span class="v">300–1000<small>pz</small></span><span class="d">odczyt z jednej kapilary</span></div>
     <div class="n"><span class="v">200<small>próbek</small></span><span class="d">na dobę w DHPLC</span></div>
     <div class="n"><span class="v">1996<small>r.</small></span><span class="d">pirosekwencjonowanie</span></div>
     <div class="n"><span class="v">≥ 1000<small>kopii</small></span><span class="d">każdej matrycy na płytce</span></div>
-    <div class="n"><span class="v">10<small>nm</small></span><span class="d">komora SMRT (20 zl)</span></div>
+    <div class="n"><span class="v">10<small>nm</small></span><span class="d">komora SMRT (20&nbsp;zl)</span></div>
     <div class="n"><span class="v">10<small>pz/s</small></span><span class="d">synteza w SMRT</span></div>
   </div>
 
@@ -582,11 +582,11 @@
     <tbody>
       <tr><td>Sekwenator automatyczny</td><td>ddNTP znakowane fluorescencyjnie; rozdział w kapilarze lub żelu</td><td>fluorescencja wzbudzana laserem, detekcja w czasie rzeczywistym</td><td>300–1000 pz z jednej kapilary/linii; porównanie z GenBank i EMBL</td></tr>
       <tr><td>Cycle sequencing</td><td>preparatywny PCR → asymetryczny PCR z ddNTP → denaturujący PAGE → analiza komputerowa</td><td>znakowane fluorescencyjnie produkty obu nici</td><td>„najbardziej dogodna”; zmiana prawdziwa = w obu niciach; aparaty: miliony pz/h</td></tr>
-      <tr><td>Pirosekwencjonowanie</td><td>synteza na matrycy unieruchomionej na podłożu stałym; jeden dNTP na krok; 4 enzymy</td><td>światło z lucyferazy (ATP z pirofosforanu)</td><td>1996 r.; w czasie rzeczywistym; szybciej i taniej</td></tr>
+      <tr><td>Pirosekwencjonowanie</td><td>synteza na matrycy unieruchomionej na podłożu stałym; jeden dNTP na krok; 4 enzymy</td><td>światło z lucyferazy (ATP z pirofosforanu)</td><td>1996&nbsp;r.; w czasie rzeczywistym; szybciej i taniej</td></tr>
       <tr><td>Metoda 454</td><td>równoległe pirosekwencjonowanie wielu fragmentów</td><td>jak w pirosekwencjonowaniu</td><td>jedna z pierwszych technik nowej generacji</td></tr>
       <tr><td>Szklana płytka</td><td>fragmenty zakotwiczone i powielone; synteza z odwracalnymi terminatorami</td><td>usuwalne barwniki fluorescencyjne, laser + system optyczny</td><td>≥ 1000 kopii każdej matrycy; bardzo wysokie pokrycie płytki</td></tr>
-      <tr><td>SMRT</td><td>pojedyncza polimeraza w trybie ciągłym, w komorze na chipie</td><td>fluorofor na końcowym fosforanie dNTP w zasięgu detekcji</td><td>komora 10 nm, 20 zl; kilka tysięcy komór; 10 pz/s; &gt; 1 mln pz/min z chipu</td></tr>
-      <tr><td>Bezpośrednie (przyszłość)</td><td>fizykochemiczna analiza DNA bez PCR (nanotechnologia)</td><td>pojedynczy czujnik nanometrowy</td><td>300 pz/s</td></tr>
+      <tr><td>SMRT</td><td>pojedyncza polimeraza w trybie ciągłym, w komorze na chipie</td><td>fluorofor na końcowym fosforanie dNTP w zasięgu detekcji</td><td>komora 10 nm, 20&nbsp;zl; kilka tysięcy komór; 10&nbsp;pz/s; &gt; 1 mln pz/min z chipu</td></tr>
+      <tr><td>Bezpośrednie (przyszłość)</td><td>fizykochemiczna analiza DNA bez PCR (nanotechnologia)</td><td>pojedynczy czujnik nanometrowy</td><td>300&nbsp;pz/s</td></tr>
     </tbody>
   </table>
 
@@ -643,9 +643,9 @@
       <li id="c08-q-5">Dodawano kolejno dATP, dCTP, dGTP, dTTP; światło pojawiło się po dCTP i dTTP. Jaki odcinek dobudowano i co stało się z dATP i dGTP?
         <div class="answer"><p>Nić rośnie o <b>C, potem T</b> (5′-CT-3′). dATP i dGTP nie pasowały – nie zostały wbudowane, nie było światła, a apyraza je rozłożyła.</p></div></li>
       <li id="c08-q-6">Dlaczego w SMRT sygnał daje nukleotyd wbudowywany, a nie swobodnie pływające? Gdzie jest znacznik i co się z nim dzieje?
-        <div class="answer"><p>Wbudowywany nukleotyd przebywa w zasięgu detekcji <b>o rząd wielkości dłużej</b> niż trwa dyfuzja cząsteczki z komory. Znacznik jest na <b>końcowym atomie fosforu</b> dNTP, więc po włączeniu nukleotydu odchodzi ze <b>znakowanym pirofosforanem</b>, który dyfunduje z komory.</p></div></li>
-      <li id="c08-q-7">Polimeraza w SMRT syntetyzuje 10 pz/s. Ile par zasad odczyta w ciągu minuty jedna komora, a ile chip z 3000 pracujących komór?
-        <div class="answer"><p>Jedna komora: 10 × 60 = <b>600 pz/min</b>. 3000 komór: 3000 × 600 = <b>1 800 000 pz/min</b> – zgodnie z podaną przez Drewę wartością „ponad milion par zasad w ciągu minuty”.</p></div></li>
+        <div class="answer"><p>Wbudowywany nukleotyd przebywa w zasięgu detekcji <b>o rząd wielkości dłużej</b>, niż trwa dyfuzja cząsteczki z komory. Znacznik jest na <b>końcowym atomie fosforu</b> dNTP, więc po włączeniu nukleotydu odchodzi ze <b>znakowanym pirofosforanem</b>, który dyfunduje z komory.</p></div></li>
+      <li id="c08-q-7">Polimeraza w SMRT syntetyzuje 10&nbsp;pz/s. Ile par zasad odczyta w ciągu minuty jedna komora, a ile chip z 3000 pracujących komór?
+        <div class="answer"><p>Jedna komora: 10 × 60 = <b>600&nbsp;pz/min</b>. 3000 komór: 3000 × 600 = <b>1&nbsp;800&nbsp;000&nbsp;pz/min</b> – zgodnie z podaną przez Drewę wartością „ponad milion par zasad w ciągu minuty”.</p></div></li>
       <li id="c08-q-8">Podaj definicję markera molekularnego i wyjaśnij, dlaczego geny nie są idealnymi markerami.
         <div class="answer"><p>Marker molekularny to każda sekwencja nukleotydowa, której polimorfizm (co najmniej <b>dwa łatwo rozróżnialne allele</b>) pozwala ustalać różnice genetyczne między osobnikami; dziedziczy się po mendlowsku i nie zależy od środowiska. Geny nie są idealne, bo <b>tylko część z nich</b> ma łatwo odróżnialne formy alleliczne, a mapa z samych genów byłaby niedokładna – geny przedzielają odcinki DNA niekodującego.</p></div></li>
     </ol>

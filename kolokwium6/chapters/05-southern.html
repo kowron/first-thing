@@ -52,6 +52,7 @@
         <path d="M176,72 H196" class="arrow"/>
 
         <!-- 2: żel -->
+        <g transform="translate(0,6)">
         <text x="239" y="29" class="lane-label">M</text>
         <text x="289" y="29" class="lane-label">1</text>
         <text x="339" y="29" class="lane-label">2</text>
@@ -74,6 +75,7 @@
         <text x="374" y="118" class="pole plus">+</text>
         <text x="289" y="134" class="t-xs mid sb">rozdział według wielkości</text>
         <text x="289" y="147" class="t-xs mid muted">żel agarozowy – smuga fragmentów</text>
+        </g>
         <path d="M384,72 H400" class="arrow"/>
 
         <!-- 3: trzy kąpiele -->
@@ -267,11 +269,11 @@
       </div>
       <div class="panel" data-badge="B" data-title="Denaturacja">
         <svg viewBox="0 0 180 160" role="img" aria-label="Dwuniciowy DNA rozdziela się na dwie pojedyncze nici">
-          <text x="90" y="11" class="t-s mid sb f-violet">0,5 M NaOH</text>
+          <text x="90" y="13" class="t-s mid sb f-violet">0,5 M NaOH</text>
           <path d="M30,36 H150" class="dna thin"/>
           <path d="M30,44 H150" class="dna thin blue"/>
           <path d="M36,37 V43 M44,37 V43 M52,37 V43 M60,37 V43 M68,37 V43 M76,37 V43 M84,37 V43 M92,37 V43 M100,37 V43 M108,37 V43 M116,37 V43 M124,37 V43 M132,37 V43 M140,37 V43" stroke="#9aa7b0" stroke-width="1"/>
-          <text x="90" y="27" class="t-xs mid muted">dwuniciowe</text>
+          <text x="90" y="28" class="t-xs mid muted">dwuniciowe</text>
           <path d="M90,54 V68" class="arrow"/>
           <path d="M30,80 C60,76 120,84 150,78" class="dna thin"/>
           <path d="M30,100 C60,104 120,96 150,102" class="dna thin blue"/>
@@ -342,15 +344,6 @@
   </ul>
 
   <div class="box zapamietaj"><p>Kolejność: <b>trawienie → żel agarozowy → depurynacja (0,25 M HCl) → denaturacja (0,5 M NaOH) → neutralizacja (0,5 M Tris pH 8,5) → transfer → utrwalenie (UV / +80 °C) → hybrydyzacja z sondą → prążek</b>. Intensywność prążka zależy od aktywności sondy i ilości komplementarnego DNA.</p></div>
-
-  <div class="numbers">
-    <div class="n"><span class="v">0,25<small>M HCl</small></span><span class="d">depurynacja – fragmentacja długich odcinków</span></div>
-    <div class="n"><span class="v">0,5<small>M NaOH</small></span><span class="d">denaturacja – forma jednoniciowa</span></div>
-    <div class="n"><span class="v">0,5<small>M Tris</small></span><span class="d">neutralizacja żelu po denaturacji</span></div>
-    <div class="n"><span class="v">8,5<small>pH</small></span><span class="d">pH buforu Tris do neutralizacji</span></div>
-    <div class="n"><span class="v">+80<small>°C</small></span><span class="d">utrwalenie DNA (zamiennie z UV)</span></div>
-    <div class="n"><span class="v">&gt;100<small>enzymów</small></span><span class="d">restrykcyjnych poznanych – podstawa diagnostyki RFLP</span></div>
-  </div>
 
   <p class="src">Źródło: Drewa s. 714–716</p>
 
@@ -499,6 +492,15 @@
 
 
   <div class="box zapamietaj" data-title="Jak czytać wynik Southerna"><p><b>Prążek niżej</b> niż u zdrowego – fragment krótszy, np. <b>niewielka delecja</b>; różnica ruchliwości to miara utraconego odcinka. Mutacja niszcząca miejsce restrykcyjne: <b>nosiciel – dwa prążki</b> (prawidłowy i dłuższy), <b>homozygota – jeden prążek o większej masie</b>. Ta zasada to <b>RFLP</b>.</p></div>
+
+  <div class="numbers">
+    <div class="n"><span class="v">0,25<small>M HCl</small></span><span class="d">depurynacja – fragmentacja długich odcinków</span></div>
+    <div class="n"><span class="v">0,5<small>M NaOH</small></span><span class="d">denaturacja – forma jednoniciowa</span></div>
+    <div class="n"><span class="v">0,5<small>M Tris</small></span><span class="d">neutralizacja żelu po denaturacji</span></div>
+    <div class="n"><span class="v">8,5<small>pH</small></span><span class="d">pH buforu Tris do neutralizacji</span></div>
+    <div class="n"><span class="v">+80<small>°C</small></span><span class="d">utrwalenie DNA (zamiennie z UV)</span></div>
+    <div class="n"><span class="v">&gt;100<small>enzymów</small></span><span class="d">restrykcyjnych poznanych – podstawa diagnostyki RFLP</span></div>
+  </div>
 
   <p class="src">Źródło: Drewa s. 716</p>
 
