@@ -1,43 +1,178 @@
-<!-- ŚCIĄGA – PLIK PRZYKŁADOWY (zaślepka). Treść napisze autor ściągi.
-     Format: <section class="back cheat" id="b-sciaga" data-title="Ściąga">, w środku <div class="cheat-cols">
-     z blokami <div class="cheat-block"><h3><span class="n">01</span>Tytuł</h3>…</div>.
-     Bloki nie łamią się między kolumnami/stronami – pisz je krótkie (ok. 6–12 wierszy).
-     Cel: 1–2 strony. Id wewnątrz: prefiks „b-”. -->
+<!-- ŚCIĄGA – „na ostatnią chwilę przed wejściem na salę”. Każdy fakt przepisany z rozdziałów 01–11.
+     „uzup.” = treść oznaczona w rozdziałach jako „Poza Drewą”. -->
 <section class="back cheat" id="b-sciaga" data-title="Ściąga">
-  <p class="intro">Najważniejsze fakty ze wszystkich rozdziałów na dwóch stronach – do powtórki w dniu kolokwium. Numery w nagłówkach bloków to numery rozdziałów.</p>
+  <p class="intro">Cały tom w pigułce – do przejrzenia tuż przed wejściem na salę. Numer w nagłówku bloku to numer rozdziału; <b>uzup.</b> oznacza treść spoza Drewy (ramki „Poza Drewą”).</p>
   <div class="cheat-cols">
+
     <div class="cheat-block">
-      <h3><span class="n">00</span>Elektroforeza DNA – zasada</h3>
+      <h3><span class="n">01</span>Ocena preparatu i odczyt żelu</h3>
       <ul>
-        <li>DNA ma <b>ładunek ujemny</b> (reszty fosforanowe) → wędruje od <b>katody (–)</b> do <b>anody (+)</b>.</li>
-        <li>Krótsze fragmenty wędrują <b>dalej</b>; wielkość odczytuje się ze <b>wzorca</b>.</li>
-        <li>Napięcie: <b>5–8 V na cm</b> żelu; za wysokie – żel się nagrzewa.</li>
+        <li>Jakość: <b>elektroforeza analityczna</b>, <b>spektrofotometria</b>, <b>mikromacierz + elektroforeza mikrokapilarna</b>.</li>
+        <li>240 nm i 320 nm – tło, kontaminacje; <b>260 nm</b> – kwasy nukleinowe (OD<sub>260</sub> → <b>ilość</b>); <b>280 nm</b> – białka.</li>
+        <li><b>260/280 &gt; 1,8</b> – dobra jakość; 260/240 lub 260/320 – czystość. Dla RNA 260/280 mało wiarygodny → sonda <b>RiboGreen</b> (od 1 ng RNA/ml).</li>
+        <li>Integralność <b>1–10</b> (1 – najbardziej zdegradowany, 10 – najlepszy), od 200 pg.</li>
+        <li>Ładunek ujemny → od <b>katody (–)</b> do <b>anody (+)</b>; <b>5–8 V/cm</b> długości żelu; za wysokie → żel się topi, DNA się denaturuje.</li>
+        <li>Preparatywna – izolacja fragmentu z żelu (elucja); analityczna – charakterystyka preparatu.</li>
+        <li>Wielkość – wzorzec mas; ilość – intensywność fluorescencji; <b>smuga</b> – degradacja; <b>kieszonki</b> – kompleksy DNA–białko; <b>smuga przed błękitem bromofenolowym</b> – RNA w preparacie DNA.</li>
+        <li>Całkowite RNA: <b>28S – 5,0 kpz</b>, <b>18S – 1,9 kpz</b>; zanikanie = degradacja; mRNA niewidoczne (mało, różne wielkości).</li>
       </ul>
     </div>
+
     <div class="cheat-block">
-      <h3><span class="n">00</span>Agaroza czy poliakrylamid?</h3>
+      <h3><span class="n">02</span>Żele, barwniki, kapilara, transfer</h3>
       <table class="tbl">
-        <thead><tr><th>Żel</th><th>Rozdziela</th></tr></thead>
+        <thead><tr><th>Rozdział</th><th>Zakres</th><th>Uwagi</th></tr></thead>
         <tbody>
-          <tr><td>agarozowy</td><td>ok. 100 pz – 25 kpz</td></tr>
-          <tr><td>poliakrylamidowy</td><td>do różnicy 1 nukleotydu</td></tr>
-          <tr><td>pulsacyjny (PFGE)</td><td>do kilku Mpz</td></tr>
+          <tr><td>agaroza</td><td>0,1–20 kpz</td><td>niższa rozdzielczość</td></tr>
+          <tr><td>poliakrylamid</td><td>5–1000 pz</td><td>do 1 nukleotydu</td></tr>
+          <tr><td>pole pulsacyjne</td><td>20 kpz – 10 Mpz</td><td>całe chromosomy; pole zmienia kierunek o 90° lub 180°</td></tr>
         </tbody>
       </table>
+      <ul>
+        <li><b>Bromek etydyny</b> – interkaluje, fluoryzuje w UV; od ok. <b>10 ng</b> DNA w prążku; RNA słabo; silny mutagen.</li>
+        <li>W PAA czulsze: <b>AgNO<sub>3</sub></b> i <b>SYBR</b> (dsDNA; absorpcja <b>498 nm</b>, emisja <b>522 nm</b>; nietoksyczny; sygnał ∝ ilość DNA → qRTPCR). Czwarta metoda – <b>autoradiografia</b>.</li>
+        <li><b>CE</b> – kapilara kwarcowa, „wolny bufor”; <b>HPCE</b> – pojęcie ogólne; <b>µCE</b> – z mikromacierzami DNA.</li>
+        <li>Transfer: <b>elektrotransfer</b> (prąd przez grubość żelu), <b>kapilarny</b> (warstwa higroskopijna), <b>próżniowy</b> (podciśnienie).</li>
+      </ul>
     </div>
+
     <div class="cheat-block">
-      <h3><span class="n">00</span>Liczby</h3>
-      <div class="numbers">
-        <div class="n"><span class="v">260<small>nm</small></span><span class="d">absorpcja kwasów nukleinowych</span></div>
-        <div class="n"><span class="v">&gt;1,8</span><span class="d">A260/A280 – czyste DNA</span></div>
-      </div>
+      <h3><span class="n">03</span>Elektroforeza białek</h3>
+      <ul>
+        <li>Białka rybosomów: <b>S</b> (<i>small</i>) / <b>L</b> (<i>large</i>) + numer wg <b>ruchliwości elektroforetycznej</b> (S3); w 40S „S” to stała sedymentacji.</li>
+        <li><b>AChE</b> (otwarte wady cewy nerwowej) od ChE – elektroforezą z <b>selektywnymi inhibitorami</b>; prążek AChE też przy domieszce krwi lub zaawansowanym wieku ciąży.</li>
+        <li><b>western</b> – białko; <b>eastern</b> – białka po elektroforezie dwukierunkowej.</li>
+        <li><b>PTT</b> (IVTT): RT-PCR → białko in vitro → elektroforeza, nitroceluloza → <b>długość białka</b> (delecje, insercje, kodon stop, mutacje „splicingowe”).</li>
+        <li><i>uzup.:</i> ładunek białka zależy od aminokwasów i pH (w pH = pI – zero); <b>SDS-PAGE</b> – wg masy, <b>IEF</b> – wg pI, <b>2D</b> – oba (plamki).</li>
+        <li><i>uzup.:</i> western: rozdział → transfer → blokowanie → przeciwciała → detekcja.</li>
+        <li><i>uzup.:</i> <b>HbS</b> (Glu → Val) – mniejszy ładunek ujemny, wolniej do anody; AA – prążek HbA, SS – HbS, AS – oba.</li>
+      </ul>
     </div>
+
     <div class="cheat-block">
-      <h3><span class="n">00</span>Blotting – nie pomyl</h3>
-      <div class="pair">
-        <p><b>Southern</b> – DNA<br><b>Northern</b> – RNA</p>
-        <p><b>Western</b> – białko (przeciwciało)<br><span class="vs">„Eastern”</span> – nie ma w Drewie</p>
-      </div>
+      <h3><span class="n">04</span>Hybrydyzacja i sondy</h3>
+      <ul>
+        <li>Podwójna helisa z komplementarnych nici DNA lub RNA z <b>różnych źródeł</b>. Badane DNA – zdenaturowane, na membranie (nitroceluloza, nylon); sonda – zdenaturowana, w <b>roztworze hybrydyzacyjnym</b>.</li>
+        <li>Sondy: DNA/cDNA/RNA <b>sklonowanego genu</b>; <b>syntetyczny oligonukleotyd</b> z sekwencji białka – cała <b>rodzina</b> (kod zdegenerowany; liczba = iloczyn liczb kodonów); produkt <b>PCR</b>.</li>
+        <li><b>Radioaktywne</b> → autoradiografia; <b>fluorescencyjne</b> (rodamina, fluoresceina) → mikroskop fluorescencyjny; <b>immunochemiczne</b> – hapten (biotyna, digoksygenina, fluoresceina) + przeciwciało (alkaliczna fosfataza, peroksydaza, barwnik fluorescencyjny, koloidalne złoto); <b>enzymatyczne</b> → reakcja barwna.</li>
+        <li><b>In situ</b> – rozmazy komórkowe, skrawki tkanek; trawienie odsłania i denaturuje.</li>
+      </ul>
     </div>
+
+    <div class="cheat-block">
+      <h3><span class="n">05</span>Southern – kolejność etapów</h3>
+      <p>Trawienie enzymami restrykcyjnymi → żel agarozowy → <b>depurynacja</b> 0,25 M HCl (fragmentacja → łatwiejszy transfer) → <b>denaturacja</b> 0,5 M NaOH (forma jednoniciowa → hybrydyzacja) → <b>neutralizacja</b> 0,5 M Tris pH 8,5 (wiązanie z membraną) → transfer na nitrocelulozę lub nylon → utrwalenie <b>UV lub +80 °C</b> (wiązania kowalencyjne) → hybrydyzacja ze znakowaną sondą → prążek.</p>
+      <ul>
+        <li>Intensywność: aktywność sondy + ilość komplementarnego DNA; położenie: wielkość fragmentu.</li>
+        <li><b>Niewielka delecja</b> → prążek niżej (szybsza migracja).</li>
+        <li><b>Utrata miejsca restrykcyjnego</b>: nosiciel – 2 prążki (prawidłowy + dłuższy); homozygota – 1 prążek o większej masie. To <b>RFLP</b> (ponad 100 enzymów).</li>
+      </ul>
+    </div>
+
+    <div class="cheat-block">
+      <h3><span class="n">06</span>Dot blot, kolonie, łysinki, northern</h3>
+      <ul>
+        <li><b>Dot blot</b> – krople DNA, wiele próbek, jedna sonda, bez rozdziału; <b>slot blot</b> – wzorzec szczelin; ilościowo tylko ze <b>wzorcami ilości DNA</b>.</li>
+        <li><b>Kolonijna</b>: transformacja plazmidem → szalki Petriego → replika na filtr → hybrydyzacja → autoradiografia → kolonia na <b>szalce wzorcowej</b>. <b>Łysinkowa</b> – wektor fagowy. Obie: przeglądanie <b>bibliotek genomowych i cDNA</b>.</li>
+        <li><b>Northern</b> (RNA–DNA) – ekspresja genów: czy gen jest transkrybowany, <b>długość RNA</b> (położenie), <b>intensywność</b> transkrypcji.</li>
+        <li>Etapy: denaturacja RNA i <b>denaturujący żel agarozowy</b> (aldehyd mrówkowy lub glioksal) → transfer i utrwalenie <b>bez fragmentacji</b> → hybrydyzacja ze znakowaną sondą.</li>
+      </ul>
+    </div>
+
+    <div class="cheat-block">
+      <h3><span class="n">07</span>Mikromacierze</h3>
+      <ul>
+        <li>Nośnik z licznymi <b>sekwencjami wzorcowymi</b> w uporządkowanym układzie; <b>położenie sygnału</b> = sekwencja; znakuje się materiał badany.</li>
+        <li>Wzorzec: oligonukleotydy, cDNA (ekspresja), RNA, białka (przeciwciała). Nośnik: dawniej bibuła; dziś nylon, szkiełka, płytki plastikowe lub krzemowe; nakrapianie lub mikrodrukowanie.</li>
+        <li>DNA badane + referencyjne, <b>różne fluorochromy</b>, <b>1:1</b>, konkurencja (jak CGH): przewaga referencyjnego → <b>delecja</b>, badanego → <b>duplikacja</b>, równowaga → brak zmiany.</li>
+        <li>Ekspresyjne – 11–20 sond na fragment 3′; eksonowe – + alternatywne składanie; dachówkowe – cały genom, regulacja transkrypcji. Oligo 25–70 nt; BAC/PAC ~1 Mpz.</li>
+        <li>Tanie metody, drogi sprzęt (skaner laserowy). <b>ChIP-chip</b> = immunoprecypitacja chromatyny + mikromacierz → gdzie i jak często białko wiąże DNA.</li>
+      </ul>
+    </div>
+
+    <div class="cheat-block">
+      <h3><span class="n">08</span>Sekwencjonowanie</h3>
+      <ul>
+        <li>Nieznana mutacja: <b>przesiew</b> (SSCP, DGGE, TGGE, HA, CMC, DHPLC – tylko podejrzenie) → <b>sekwencjonowanie</b>. DHPLC: czułość do 100%, 200 próbek na dobę.</li>
+        <li>Historycznie: <b>Sanger</b> (terminacja łańcucha), <b>Maxam–Gilbert</b> (chemiczna degradacja). Automat: ddNTP znakowane fluorescencyjnie, laser; <b>300–1000 pz</b> z kapilary; GenBank, EMBL.</li>
+        <li><b>Cycle sequencing</b>: preparatywny PCR → asymetryczny PCR (każdy starter osobno, ddNTP) → denaturujący PAGE z detekcją → analiza komputerowa; zmiana prawdziwa – <b>w obu niciach</b>.</li>
+        <li><b>Pirosekwencjonowanie</b> (1996): dNTP → PP<sub>i</sub> → ATP (sulfurylaza) → światło (lucyferaza); niewłaściwy dNTP rozkłada apyraza. <b>454</b> – równoległe pirosekwencjonowanie.</li>
+        <li>Płytka szklana: ≥ 1000 kopii matrycy, odwracalne terminatory. <b>SMRT</b>: 1 polimeraza, komora 10 nm (20 zl), znacznik na końcowym fosforanie, 10 pz/s, &gt; 1 mln pz/min z chipu.</li>
+        <li><b>Marker molekularny</b>: ≥ 2 łatwo rozróżnialne allele, dziedziczenie mendlowskie, brak wpływu środowiska.</li>
+      </ul>
+    </div>
+
+    <div class="cheat-block">
+      <h3><span class="n">09</span>Autosomalne układy STR</h3>
+      <ul>
+        <li>Minisatelity: RFLP z sondą; MLP – kilka µg DNA, SLP – ok. 1 µg; allele tysiące pz – nie dla PCR.</li>
+        <li><b>STR</b>: jednostka <b>2–6 pz</b>, <b>5–50</b> powtórzeń, allel <b>100–300 pz</b>, kilka–kilkanaście (ok. 20) alleli; ≥ 3 allele o częstości &gt;10%.</li>
+        <li>Zalety: <b>zdegradowany DNA</b> i <b>multipleks</b> – produkt rozpoznaje się po długości i barwniku (3 barwniki × 3 = 9 układów).</li>
+        <li>Sekwenator: denaturujący PAA (1 pz do ok. 500 pz), kapilara ok. 20 min (płytowa do 3 godz.) → <b>elektroforegram</b>.</li>
+        <li><b>Marker wewnętrzny</b>: inne widmo, ta sama kapilara; 60–600 pz; dokładność <b>0,5–1 pz</b>.</li>
+        <li><b>Drabina alleliczna</b> → nazwa allelu = liczba powtórzeń. TH01: 9 – 176 pz, 9.3 – 179 pz, 10 – 180 pz.</li>
+        <li>Profil = lista alleli; 1 pik – homozygota, 2 – heterozygota; częstość = N/Σ (chromosomy).</li>
+      </ul>
+    </div>
+
+    <div class="cheat-block">
+      <h3><span class="n">10</span>Ojcostwo i ślady</h3>
+      <ul>
+        <li>Brak wspólnego allelu rodzica i dziecka → <b>wykluczenie</b>. <b>PI</b> (odpowiednik LR) – ile razy bardziej prawdopodobny wynik przy pokrewieństwie niż bez; PI &gt; 1 – za; sumaryczny PI = iloczyn (układy niesprzężone).</li>
+        <li>D21S11, p<sub>26</sub> = 0,004: ojciec + dziecko <b>1/(4 × p<sub>26</sub>) = 62,5</b>; z matką <b>0,5/p<sub>26</sub> = 125</b>.</li>
+        <li><b>Ojcostwo, 5 etapów</b>: pobranie (≥ 2 wymazy) → izolacja → amplifikacja i elektroforeza → analiza i statystyka → opinia. 15 STR → PI ≥ 1&nbsp;000&nbsp;000; 99,9999%; 1–2 tyg.</li>
+        <li>Wykluczenie <b>kategoryczne</b>; potwierdzenie „z prawdopodobieństwem graniczącym z pewnością”.</li>
+        <li><b>Ślady, 7 etapów</b>: zabezpieczenie → wstępna ocena → izolacja → ocena DNA („RT-PCR”), amplifikacja, elektroforeza → materiał porównawczy → analiza i statystyka → opinia.</li>
+        <li>Mieszaniny: odczyt do <b>1:10–20</b>; przy 100–1000× – jak jedna osoba. DNA od rodzica 50%, od dziadka 25%.</li>
+      </ul>
+    </div>
+
+    <div class="cheat-block">
+      <h3><span class="n">11</span>Część praktyczna</h3>
+      <ul>
+        <li>Czytanie żelu: <b>wzorzec</b> → <b>jakość</b> → <b>wielkość</b> → porównanie z oczekiwanym wzorem. Wielkość tylko względem wzorca w tym samym żelu (<i>uzup.:</i> interpolacja w skali log).</li>
+        <li>Restryktazy: sekwencja 4–8 pz; czwórkowe – średnio co 256 pz, szóstkowe – co ok. 4096 pz; nieoptymalne warunki → aktywność „star”.</li>
+        <li>Utrata miejsca: +/+ – fragmenty cięcia; +/– – produkt nietrawiony + fragmenty; –/– – tylko większy prążek. Suma fragmentów = produkt nietrawiony; 2 równe fragmenty = 1 prążek.</li>
+        <li>Sekwencje <b>Alu</b> (SINE, retrotranspozony) – nazwa od <b>AluI</b>. <i>uzup.:</i> AluI tnie AGCT między G i C.</li>
+        <li><i>uzup.:</i> <b>ACE I/D</b> – Alu ok. 287 pz w intronie 16; I ok. 490 pz, D ok. 190 pz; II – górny, DD – dolny, ID – oba.</li>
+        <li>Hybrydyzacja: sygnał = sekwencja komplementarna do sondy. <i>uzup.:</i> pasek HPV – najpierw kontrola (bez niej wynik nieważny); ujemny tylko dla typów na pasku.</li>
+      </ul>
+    </div>
+
   </div>
+
+  <h2 id="b-sciaga-liczby">Liczby, które trzeba znać</h2>
+  <table class="tbl wide">
+    <thead><tr><th style="width:17%">Liczba</th><th style="width:33%">Co oznacza</th><th style="width:17%">Liczba</th><th>Co oznacza</th></tr></thead>
+    <tbody>
+      <tr><td>260 / 280 nm</td><td>kwasy nukleinowe / białka; dobra jakość: 260/280 &gt; 1,8</td><td>0,25 · 0,5 · 0,5 M</td><td>HCl · NaOH · Tris pH 8,5 (Southern)</td></tr>
+      <tr><td>5–8 V/cm</td><td>napięcie na cm długości żelu</td><td>UV lub +80 °C</td><td>utrwalenie DNA na membranie</td></tr>
+      <tr><td>5,0 / 1,9 kpz</td><td>28S / 18S rRNA człowieka</td><td>1:1</td><td>DNA badane : referencyjne na mikromacierzy</td></tr>
+      <tr><td>0,1–20 kpz</td><td>zakres żelu agarozowego</td><td>300–1000 pz</td><td>odczyt z jednej kapilary lub linii żelu</td></tr>
+      <tr><td>5–1000 pz · 1 nt</td><td>zakres i dokładność żelu poliakrylamidowego</td><td>2–6 · 5–50 · 100–300</td><td>STR: jednostka (pz) · liczba powtórzeń · allel (pz)</td></tr>
+      <tr><td>20 kpz – 10 Mpz</td><td>elektroforeza w polu pulsacyjnym</td><td>0,5–1 pz</td><td>dokładność pomiaru z markerem wewnętrznym (60–600 pz)</td></tr>
+      <tr><td>10 ng</td><td>DNA w prążku wykrywane bromkiem etydyny</td><td>62,5 · 125</td><td>PI bez matki · z matką (D21S11, p<sub>26</sub> = 0,004)</td></tr>
+      <tr><td>498 / 522 nm</td><td>absorpcja / emisja kompleksu SYBR–DNA</td><td>15 STR · 99,9999%</td><td>PI ≥ 1&nbsp;000&nbsp;000 · typowe prawdopodobieństwo ojcostwa</td></tr>
+      <tr><td>200 pg · 1 ng/ml</td><td>minimum do oceny integralności · próg RiboGreen</td><td>5 / 7 · 1:10–20</td><td>etapy: ojcostwo / ślady · granica odczytu mieszaniny</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="b-sciaga-mylone">Najczęściej mylone</h2>
+  <table class="tbl wide plain-first">
+    <thead><tr><th style="width:50%">To…</th><th>…a nie to</th></tr></thead>
+    <tbody>
+      <tr><td><b>Southern</b> – DNA, hybrydyzacja DNA–DNA; trawienie restrykcyjne, depurynacja; budowa genu (delecje, RFLP)</td><td><b>northern</b> – RNA, hybrydyzacja RNA–DNA; denaturujący żel agarozowy, bez fragmentacji; ekspresja genu</td></tr>
+      <tr><td><b>dot blot</b> – próbki DNA nakrapiane kroplami</td><td><b>slot blot</b> – DNA nanoszone przez wzorzec szczelin (oba bez rozdziału w żelu)</td></tr>
+      <tr><td><b>agaroza</b> – 0,1–20 kpz, niższa rozdzielczość</td><td><b>poliakrylamid</b> – 5–1000 pz, rozdział do 1 nukleotydu</td></tr>
+      <tr><td><b>marker wielkości</b> – fragmenty o znanej długości; mierzy się nim długość w pz</td><td><b>drabina alleliczna</b> – wcześniej zsekwencjonowane allele; nadaje się z niej nazwę allelu</td></tr>
+      <tr><td><b>STR</b> – jednostka 2–6 pz, 5–50 powtórzeń, allele 100–300 pz</td><td><b>minisatelity</b> – jednostka kilkanaście–kilkadziesiąt pz, setki–tysiące kopii, allele tysiące pz</td></tr>
+      <tr><td><b>depurynacja</b> (0,25 M HCl) – fragmentuje · <b>denaturacja</b> (0,5 M NaOH) – rozdziela nici</td><td><b>neutralizacja</b> (0,5 M Tris pH 8,5) – przywraca obojętne pH; zawsze po denaturacji</td></tr>
+      <tr><td><b>PI</b> – wskaźnik ojcostwa, liczony dla jednego układu STR</td><td><b>LR</b> – stosunek szans przy śladach; PI jest jego odpowiednikiem</td></tr>
+      <tr><td><b>delecja</b> – krótszy fragment, prążek niżej</td><td><b>utrata miejsca restrykcyjnego</b> – dłuższy fragment, prążek wyżej</td></tr>
+      <tr><td><b>western</b> – transfer białka</td><td><b>eastern</b> – białka po elektroforezie dwukierunkowej</td></tr>
+      <tr><td><b>immunochemiczne</b> – hapten na sondzie, sygnał niesie przeciwciało</td><td><b>enzymatyczne</b> – enzym sprzężony wprost z nukleotydem sondy</td></tr>
+      <tr><td><b>RT-PCR</b> w teście PTT – z odwrotną transkrypcją (cDNA)</td><td><b>„RT-PCR”</b> w badaniu śladów – PCR w czasie rzeczywistym (ocena DNA)</td></tr>
+      <tr><td>zwykła <b>elektroforeza</b> – prąd wzdłuż płaszczyzny żelu</td><td><b>elektrotransfer</b> – prąd przez całą grubość żelu</td></tr>
+    </tbody>
+  </table>
 </section>
