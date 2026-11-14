@@ -1,0 +1,143 @@
+<section class="chapter"
+  data-num="04"
+  data-title="Sekwencjonowanie kwasów nukleinowych"
+  data-short="Sekwencjonowanie"
+  data-kicker="Przesiew · cycle sequencing · pirosekwencjonowanie · SMRT · markery">
+
+  <p class="lead">Od metod przesiewowych, przez automatyczny odczyt i techniki nowej generacji, do markerów molekularnych.</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c04-przesiew">Metody przesiewowe</h2>
+  <aside class="note pojecie" data-term="Heterodupleks"><p>dwuniciowy DNA, którego nici nie są w pełni komplementarne – w miejscu różnicy jest niesparowanie.</p></aside>
+  <p>Metody przesiewowe nie odczytują sekwencji – oceniają zmiany <b>właściwości fizykochemicznych DNA</b> spowodowane różnicami składu nukleotydowego. Nawet <b>punktowa mutacja</b> może zmienić <b>konformację</b> badanego fragmentu, a przez to jego <b>mobilność</b> w żelu.</p>
+  <ul>
+    <li><b>PCR-SSCP</b> (<i>single strand conformation polymorphism</i>, analiza polimorfizmu konformacji pojedynczej nici) – obie nici poddaje się <b>denaturacji</b> i pozwala im przyjąć struktury przestrzenne właściwe dla sekwencji. Fragment o konfiguracji zmienionej przez mutację wędruje w żelu z inną prędkością – daje to <b>podejrzenie mutacji</b> i podstawę decyzji o dalszej analizie, np. sekwencjonowaniu. SSCP wykrywa też <b>różnice między allelami</b> danego genu.</li>
+    <li><b>PCR-DGGE</b> (<i>denaturing gradient gel electrophoresis</i>) – zamiast denaturacji przed rozdziałem czynnik denaturujący jest <b>w samym żelu</b>; <b>PCR-TGGE</b> (<i>temperature gradient gel electrophoresis</i>) – czynnikiem denaturującym jest <b>gradient temperatury</b>.</li>
+    <li>Częściej używane są też: <b>HA</b> – analiza heterodupleksów (<i>heteroduplex analysis</i>) i <b>CMC</b> – chemiczne rozszczepianie niesparowań heterodupleksów (<i>chemical mismatch cleavage</i>).</li>
+    <li><b>DHPLC</b> – denaturująca wysokosprawna chromatografia cieczowa (<i>denaturing high-performance liquid chromatography</i>), odmiana HA wykorzystująca wysoką rozdzielczość nowoczesnych wypełnień kolumn chromatograficznych. Łączy zalety dotychczasowych metod: <b>czułość sięga 100%</b> przy stosunkowo niskich kosztach, jest szybka, a z automatycznym podajnikiem (<b>autosamplerem</b>) pozwala zbadać <b>200 próbek na dobę</b>.</li>
+  </ul>
+
+  <p class="src">Źródło: Drewa s. 730</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c04-auto">Sekwencjonowanie i jego automatyzacja</h2>
+  <p><b>Sekwencjonowanie</b> jest <b>najbardziej czułą techniką</b> wykrywania zmian w materiale genetycznym i jednocześnie umożliwia ich <b>pełną charakterystykę</b>. Usprawnienia techniczne i lepsza <b>bioinformatyczna obróbka danych</b> przyśpieszyły je, co pozwoliło poznać pełny genom człowieka i wielu innych organizmów. Historycznie należy wymienić pierwszą stosowaną <b>metodę terminacji łańcucha (Sangera)</b> i <b>metodę chemicznej degradacji (Maxama–Gilberta)</b>.</p>
+
+  <p>Odczyt zautomatyzowano dzięki <b>fluorescencyjnemu znakowaniu trifosforanów dideoksynukleotydów</b> – pozwala to odczytać <b>300–1000 par zasad z jednej kapilary lub linii na żelu</b>. W automatycznych sekwenatorach barwniki wzbudza się <b>światłem lasera</b>, a <b>detektory fluorescencji</b> zbierają w czasie rzeczywistym informację o separacji kolejnych nukleotydów. Sekwencję porównuje się z <b>sekwencją prawidłową</b> z baz danych <b>GenBank</b> i <b>EMBL</b>.</p>
+
+  <h3>Cycle sequencing</h3>
+  <p>Najbardziej dogodną techniką jest tzw. <b>cycle sequencing</b>. Ocenia się w nim sekwencje produktów PCR <b>obu nici DNA</b>: <b>rzeczywistą zmianę</b>, w odróżnieniu od <b>artefaktów</b>, wykrywa się <b>w obu niciach</b>. Etapy:</p>
+  <ol>
+    <li><b>preparatywna reakcja PCR</b> – namnożenie wybranego fragmentu genu przy użyciu <b>pary specyficznych starterów</b>;</li>
+    <li><b>asymetryczna reakcja PCR</b> – dla każdej próbki amplifikację prowadzi się <b>osobno z każdym ze starterów</b>, z <b>dideoksynukleotydami znakowanymi barwnikami fluorescencyjnymi</b>;</li>
+    <li><b>elektroforeza na denaturującym żelu poliakrylamidowym</b> z równoczesną detekcją i rejestracją przepływających produktów;</li>
+    <li><b>analiza wyników</b> pakietem programów komputerowych.</li>
+  </ol>
+
+  <p>Nowoczesne aparaty do sekwencjonowania mogą pracować z szybkością <b>milionów par zasad na godzinę</b>.</p>
+
+  <p class="src">Źródło: Drewa s. 730–731</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c04-piro">Pirosekwencjonowanie i metoda 454</h2>
+  <aside class="note pojecie" data-term="Pirofosforan"><p>powstaje przy włączeniu dNTP do nici przez polimerazę.</p></aside>
+  <p>W <b>1996 r.</b> opracowano nowatorską, stosunkowo prostą technikę <b>pirosekwencjonowania</b> („<b>sekwencjonowania poprzez syntezę</b>”) – metodę sekwencjonowania DNA <b>w czasie rzeczywistym</b>. Matrycowy DNA jest <b>unieruchomiony na podłożu stałym</b>. Na każdym etapie syntezy inkubuje się go z <b>czterema enzymami</b> – <b>polimerazą DNA</b>, <b>sulfurylazą ATP</b>, <b>lucyferazą</b> i <b>apyrazą</b> – i dodaje <b>jeden z czterech dNTP</b> (<a class="figref" href="#c04-fig-piro"></a>):</p>
+  <ol>
+    <li>dNTP <b>komplementarny</b> do matrycy polimeraza DNA włącza do tworzonej nici; powstaje <b>pirofosforan</b>;</li>
+    <li>pirofosforan reaguje z <b>5′-fosfosiarczanem adenozyny</b>, dając <b>ATP</b> (katalizuje <b>sulfurylaza</b>);</li>
+    <li>ATP jest rozkładany przez <b>lucyferazę</b>, czego efektem jest <b>emisja światła</b> rejestrowanego przez aparaturę;</li>
+    <li>po dodaniu <b>niewłaściwego dNTP</b> światła nie ma, a związek rozkłada <b>apyraza</b>.</li>
+  </ol>
+
+  <figure class="fig" id="c04-fig-piro" data-title="Kaskada pirosekwencjonowania – cztery enzymy">
+    <div class="panel">
+<svg viewBox="0 0 640 216" role="img" aria-label="Kaskada reakcji pirosekwencjonowania z udziałem czterech enzymów">
+<circle cx="34" cy="86" r="20" fill="#c9d3d9"/>
+<text x="34" y="122" class="t-xs mid muted">podłoże</text><text x="34" y="134" class="t-xs mid muted">stałe</text>
+<path d="M54,92 H178" class="dna thin"/><path d="M54,82 H114" class="dna thin teal"/>
+<ellipse cx="128" cy="84" rx="15" ry="13" class="f-violet-bg s-violet sw15"/>
+<text x="128" y="116" class="t-xs mid sb f-violet">polimeraza DNA</text>
+<text x="148" y="103" class="t-xs muted">matryca</text>
+<circle cx="128" cy="26" r="9" fill="#007e83"/>
+<text x="142" y="30" class="t-xs sb f-teal">pasujący dNTP</text>
+<path d="M128,37 V67" class="arrow teal"/>
+<g class="step teal" transform="translate(102,60)"><circle r="9"/><text y="3.8">1</text></g>
+<path d="M148,84 H202" class="arrow"/>
+<circle cx="222" cy="84" r="17" class="f-ochre-bg s-ochre sw15"/>
+<text x="222" y="88" class="t-s mid b">PP<tspan dy="3" font-size="10">i</tspan></text>
+<text x="222" y="116" class="t-xs mid muted">pirofosforan</text>
+<path d="M240,84 H266" class="arrow"/>
+<rect x="270" y="64" width="96" height="40" rx="6" fill="#fff" class="s-teal sw15"/>
+<text x="318" y="81" class="t-s mid sb f-teal">sulfurylaza</text><text x="318" y="96" class="t-s mid sb f-teal">ATP</text>
+<g class="step teal" transform="translate(270,52)"><circle r="9"/><text y="3.8">2</text></g>
+<path d="M318,130 V108" class="arrow"/>
+<text x="318" y="143" class="t-xs mid">5′-fosfosiarczan</text><text x="318" y="155" class="t-xs mid">adenozyny</text>
+<path d="M366,84 H390" class="arrow"/>
+<circle cx="410" cy="84" r="17" fill="#fbf2dc" class="s-ochre sw15"/>
+<text x="410" y="88" class="t-s mid b">ATP</text>
+<path d="M428,84 H444" class="arrow"/>
+<rect x="448" y="64" width="88" height="40" rx="6" fill="#fff" class="s-ochre sw15"/>
+<text x="492" y="81" class="t-s mid sb f-ochre">lucyferaza</text><text x="492" y="96" class="t-xs mid muted">rozkład ATP</text>
+<g class="step teal" transform="translate(448,52)"><circle r="9"/><text y="3.8">3</text></g>
+<path d="M536,84 H554" class="arrow"/>
+<polygon points="582.0,67.0 584.7,77.5 594.0,72.0 588.5,81.3 599.0,84.0 588.5,86.7 594.0,96.0 584.7,90.5 582.0,101.0 579.3,90.5 570.0,96.0 575.5,86.7 565.0,84.0 575.5,81.3 570.0,72.0 579.3,77.5" class="f-gold"/>
+<text x="582" y="116" class="t-xs mid sb">światło</text><text x="582" y="128" class="t-xs mid muted">rejestrowane</text><text x="582" y="140" class="t-xs mid muted">przez aparaturę</text>
+<line x1="10" y1="166" x2="630" y2="166" class="divider"/>
+<circle cx="34" cy="192" r="9" fill="#b77a20"/>
+<text x="50" y="196" class="t-xs sb f-red">niewłaściwy dNTP</text>
+<path d="M146,192 H264" class="arrow red dashed"/>
+<path d="M198,184 L210,200 M210,184 L198,200" stroke="#c84d42" stroke-width="2"/>
+<text x="204" y="180" class="t-xs mid muted">brak inkorporacji</text>
+<rect x="270" y="176" width="96" height="32" rx="6" fill="#fff" class="s-red sw15"/>
+<text x="318" y="196" class="t-s mid sb f-red">apyraza</text>
+<path d="M366,192 H444" class="arrow"/>
+<text x="405" y="184" class="t-xs mid muted">rozkład dNTP</text>
+<text x="492" y="196" class="t-s mid sb muted">brak światła</text>
+<polygon points="582.0,178.0 584.3,186.5 591.9,182.1 587.5,189.7 596.0,192.0 587.5,194.3 591.9,201.9 584.3,197.5 582.0,206.0 579.7,197.5 572.1,201.9 576.5,194.3 568.0,192.0 576.5,189.7 572.1,182.1 579.7,186.5" fill="none" stroke="#8a98a3" stroke-width="1.2" stroke-dasharray="2 2"/>
+</svg>
+    </div>
+    <figcaption>Góra: pasujący dNTP → pirofosforan → ATP (sulfurylaza) → światło (lucyferaza). Dół: niewłaściwy dNTP nie jest wbudowany i rozkłada go apyraza – brak światła.</figcaption>
+    <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 731</p>
+  </figure>
+
+  <p>Tak „krok po kroku” syntetyzuje się nić komplementarną i jednocześnie zbiera informację o jej sekwencji; proces jest znacznie szybszy i tańszy. Jedną z pierwszych technik <b>sekwencjonowania nowej generacji</b> jest <b>metoda 454</b> – <b>równoległe pirosekwencjonowanie wielu fragmentów DNA</b> w tym samym czasie, co znacząco zwiększa szybkość. Zastosowania: badanie sekwencji odcinków DNA, wykrywanie mutacji i polimorfizmów pojedynczych nukleotydów, genotypowanie wirusów i bakterii, badanie mitochondrialnego DNA i wiele innych.</p>
+
+  <p class="src">Źródło: Drewa s. 731</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c04-ngs">Płytka szklana, SMRT, sekwencjonowanie bezpośrednie</h2>
+  <aside class="note pojecie" data-term="Odwracalny terminator"><p>nukleotyd zatrzymujący syntezę, którego działanie (i barwnik) można usunąć, by wydłużać nić dalej.</p></aside>
+  <p>Inna metoda <b>masowego sekwencjonowania</b> to jednoczesne sekwencjonowanie wielu fragmentów DNA <b>zakotwiczonych na szklanej płytce</b>. Fragmenty <b>amplifikuje się</b> tak, by każda matryca miała <b>co najmniej 1000</b> powtórzeń, a następnie sekwencjonuje <b>poprzez syntezę</b> z <b>odwracalnymi terminatorami z usuwalnymi barwnikami fluorescencyjnymi</b>. Bardzo wysoki <b>stopień pokrycia płytki</b> sprawia, że proces jest bardzo szybki; wysoką czułość detekcji daje <b>wzbudzanie fluoroforu laserem</b> i specjalnie zaprojektowany system optyczny.</p>
+
+  <aside class="note warto"><p>Zeptolitr = 10<sup>−21</sup> litra.</p></aside>
+  <p>Rozwijana obecnie metoda <b>SMRT</b> (<i>single molecule real-time sequencing</i>) wykorzystuje <b>pojedynczą cząsteczkę polimerazy DNA</b> pracującą w trybie ciągłym, <b>przytwierdzoną kowalencyjnie do ściany komory</b>. Komora ma <b>średnicę 10 nm</b> i objętość <b>20 zeptolitrów</b> (na cienkiej metalowej warstewce nadrukowanej na kwarcową płytkę); <b>chip</b> ma <b>kilka tysięcy</b> komór, a ta miniaturyzacja umożliwia pomiar aktywności pojedynczej polimerazy. dNTP są znakowane <b>różnymi znacznikami fluorescencyjnymi</b> dołączonymi do <b>końcowego atomu fosforu</b>. Po wprowadzeniu pasującego substratu polimeraza włącza nukleotyd, a fluorofor pozostaje w zasięgu detekcji <b>o rząd wielkości dłużej</b>, niż trwa dyfuzja cząsteczki z komory. Następnie znakowany <b>pirofosforan dyfunduje</b> i proces się powtarza. Główna zaleta to <b>szybkość</b>: <b>10 pz na sekundę</b>, więc teoretycznie jeden chip może zsekwencjonować <b>ponad milion par zasad w ciągu minuty</b> – niebywały postęp w tej dziedzinie.</p>
+
+  <p>Dzięki nanotechnologii może wkrótce nastąpić rozwój <b>sekwencjonowania bezpośredniego</b> – poprzez fizykochemiczną analizę DNA, <b>bez reakcji PCR</b>; odczyt może przebiegać z szybkością <b>300 pz na sekundę</b> w pojedynczym <b>czujniku nanometrowym</b>.</p>
+
+  <p class="src">Źródło: Drewa s. 731–732</p>
+
+  <!-- ============================================================ -->
+  <h2 id="c04-markery">Mapy genomu i markery molekularne</h2>
+  <p>Efektywną analizę DNA umożliwiło opracowanie <b>map genomu opartych na częstości rekombinacji i analizie sprzężeń</b> oraz <b>mapy fizycznej</b>, pokazującej pozycje różnych typów sekwencji i genów w danym locus z określeniem <b>fizycznych odległości</b> między nimi. Pierwsze mapy genomu człowieka opierały się na <b>cechach fenotypowych</b>, takich jak grupy krwi lub zespoły dziedziczne sprzężone z danym chromosomem (np. <b>zespół Nail-Patella – chromosom 9</b>). Przed technologią molekularną dodano <b>wykrywany elektroforetycznie polimorfizm białek (enzymów)</b>, ale liczba i rozmieszczenie tych markerów nie wystarczały do opracowania projektu sekwencjonowania. W <b>pierwszej znacznie ulepszonej mapie</b> użyto <b>180 markerowych loci</b> określonych przez polimorfizm długości anonimowych fragmentów restrykcyjnych (analiza <b>RFLP</b>).</p>
+
+  <p>Mapa genomu musi pokazywać pozycje genów względem markerów:</p>
+  <ul>
+    <li><b>marker</b> – wyznacznik: dowolna, genetycznie kontrolowana cecha fenotypowa lub dowolna różnica genetyczna wykorzystywana do ujawnienia <b>polimorfizmu osobniczego</b>;</li>
+    <li><b>marker genetyczny</b> – każdy określony fragment DNA, białko lub fenotyp;</li>
+    <li><b>marker molekularny</b> – każda sekwencja nukleotydowa, której <b>polimorfizm</b> (co najmniej <b>dwa łatwo rozróżnialne allele</b>) pozwala ustalać różnice genetyczne między osobnikami.</li>
+  </ul>
+
+  <p>Pierwszymi markerami map genetycznych były <b>geny</b>, później uzupełnione markerami molekularnymi. Geny nie są markerami idealnymi: tylko część z nich występuje w formach allelicznych łatwych do odróżnienia, co dotyczy przede wszystkim większych genomów kręgowców, w tym człowieka. Markerami molekularnymi <b>związanymi z genami</b> są polimorfizmy w obrębie <b>intronów i eksonów</b> oraz w obrębie <b>rodzin genowych</b>, np. genów rRNA. Mapa oparta wyłącznie na genach nie byłaby dość dokładna, bo geny są poprzedzielane <b>DNA niekodującym</b>; mapowane cechy sekwencji niebędących genami nazywa się <b>markerami molekularnymi</b> lub <b>markerami DNA</b>. Aby były użyteczne, muszą – jak markery genowe – występować w co najmniej dwóch formach allelicznych. Markery molekularne dziedziczą się <b>zgodnie z genetyką mendlowską</b> i <b>nie podlegają modyfikującemu wpływowi środowiska</b>, dzięki czemu pozwalają na dokładną analizę.</p>
+
+  <p class="src">Źródło: Drewa s. 732</p>
+
+  <!-- ============================================================ -->
+  <div class="w60">
+    <ul>
+      <li><b>Przesiew</b> (SSCP, DGGE, TGGE, HA, CMC, DHPLC) – zmiana mobilności DNA = podejrzenie mutacji.</li>
+      <li>Odczyt: <b>ddNTP znakowane fluorescencyjnie</b>; <b>cycle sequencing</b> – obie nici, 4 etapy.</li>
+      <li><b>Pirosekwencjonowanie</b>: PP<sub>i</sub> → ATP → światło; <b>454</b> – równolegle; <b>SMRT</b> – jedna polimeraza, 10 pz/s.</li>
+      <li><b>Marker molekularny</b> – polimorficzna sekwencja (≥ 2 allele), dziedziczona mendlowsko.</li>
+    </ul>
+  </div>
+</section>
