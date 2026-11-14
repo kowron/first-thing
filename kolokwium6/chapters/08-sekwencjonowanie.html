@@ -411,10 +411,6 @@
   <!-- ============================================================ -->
   <h2 id="c08-smrt">Masowe sekwencjonowanie na płytce i metoda SMRT</h2>
 
-  <h3>Fragmenty zakotwiczone na szklanej płytce</h3>
-  <aside class="note pojecie" data-term="Odwracalny terminator"><p>nukleotyd, który po wbudowaniu zatrzymuje syntezę, ale blokadę (i barwnik) można usunąć – wtedy nić może być wydłużona o kolejny nukleotyd.</p></aside>
-  <p>Inną metodą <b>masowego sekwencjonowania</b> jest jednoczesne sekwencjonowanie znacznej liczby fragmentów DNA <b>zakotwiczonych na szklanej płytce</b> (<a class="figref" href="#c08-fig-ngs" data-panel="A"></a>). Naniesione fragmenty <b>amplifikuje się</b> tak, aby liczba powtórzeń każdej matrycy wynosiła <b>co najmniej 1000</b>. Sekwencjonuje się je <b>poprzez syntezę</b> z wykorzystaniem <b>odwracalnych terminatorów z usuwalnymi barwnikami fluorescencyjnymi</b>. Ponieważ <b>stopień pokrycia płytki jest bardzo wysoki</b>, cały proces zachodzi bardzo szybko. Wysoką czułość detekcji zapewnia <b>wzbudzanie fluoroforu laserem</b> i specjalnie zaprojektowany <b>system optyczny</b>.</p>
-
   <figure class="fig" id="c08-fig-ngs" data-title="Sekwencjonowanie masowe: płytka z odwracalnymi terminatorami i komora SMRT">
     <div class="panel" data-badge="A" data-title="Szklana płytka – sekwencjonowanie przez syntezę z odwracalnymi terminatorami">
 <svg viewBox="0 0 640 166" role="img" aria-label="Szklana płytka z zakotwiczonymi fragmentami DNA i cykl sekwencjonowania z odwracalnymi terminatorami">
@@ -547,6 +543,10 @@
     <p class="fig-src">Źródło: opracowanie własne na podstawie Drewa s. 731–732</p>
   </figure>
 
+  <h3>Fragmenty zakotwiczone na szklanej płytce</h3>
+  <aside class="note pojecie" data-term="Odwracalny terminator"><p>nukleotyd, który po wbudowaniu zatrzymuje syntezę, ale blokadę (i barwnik) można usunąć – wtedy nić może być wydłużona o kolejny nukleotyd.</p></aside>
+  <p>Inną metodą <b>masowego sekwencjonowania</b> jest jednoczesne sekwencjonowanie znacznej liczby fragmentów DNA <b>zakotwiczonych na szklanej płytce</b> (<a class="figref" href="#c08-fig-ngs" data-panel="A"></a>). Naniesione fragmenty <b>amplifikuje się</b> tak, aby liczba powtórzeń każdej matrycy wynosiła <b>co najmniej 1000</b>. Sekwencjonuje się je <b>poprzez syntezę</b> z wykorzystaniem <b>odwracalnych terminatorów z usuwalnymi barwnikami fluorescencyjnymi</b>. Ponieważ <b>stopień pokrycia płytki jest bardzo wysoki</b>, cały proces zachodzi bardzo szybko. Wysoką czułość detekcji zapewnia <b>wzbudzanie fluoroforu laserem</b> i specjalnie zaprojektowany <b>system optyczny</b>.</p>
+
   <h3>SMRT – pojedyncza cząsteczka w czasie rzeczywistym</h3>
   <aside class="note pojecie" data-term="Zeptolitr"><p>10<sup>−21</sup> litra (przedrostek „zepto-” = 10<sup>−21</sup>).</p></aside>
   <p>Jedną z obecnie rozwijanych technik jest metoda <b>SMRT</b> (<i>single molecule real-time sequencing</i>). Jak wskazuje nazwa, wykorzystuje ona <b>pojedynczą cząsteczkę polimerazy DNA pracującą w trybie ciągłym</b>. Sekwencjonowanie przebiega w małej <b>komorze o średnicy 10 nm</b> i objętości <b>20 zeptolitrów</b>, utworzonej na cienkiej <b>metalowej warstewce nadrukowanej na kwarcową płytkę</b>; każdy <b>chip</b> zawiera <b>kilka tysięcy</b> takich komór (<a class="figref" href="#c08-fig-ngs" data-panel="B"></a>). Taka miniaturyzacja pozwala mierzyć aktywność <b>pojedynczej cząsteczki polimerazy przytwierdzonej kowalencyjnie do ściany komory</b>.</p>
@@ -566,8 +566,6 @@
     <caption>Techniki sekwencjonowania w ujęciu Drewy</caption>
     <thead><tr><th style="width:18%">Metoda</th><th style="width:32%">Zasada</th><th style="width:24%">Sygnał</th><th>Liczby i cechy</th></tr></thead>
     <tbody>
-      <tr><td>Sangera</td><td>terminacja łańcucha</td><td>—</td><td>pierwsza stosowana metoda (historyczna)</td></tr>
-      <tr><td>Maxama–Gilberta</td><td>chemiczna degradacja</td><td>—</td><td>metoda historyczna</td></tr>
       <tr><td>Sekwenator automatyczny</td><td>ddNTP znakowane fluorescencyjnie; rozdział w kapilarze lub żelu</td><td>fluorescencja wzbudzana laserem, detekcja w czasie rzeczywistym</td><td>300–1000 pz z jednej kapilary/linii; porównanie z GenBank i EMBL</td></tr>
       <tr><td>Cycle sequencing</td><td>preparatywny PCR → asymetryczny PCR z ddNTP → denaturujący PAGE → analiza komputerowa</td><td>znakowane fluorescencyjnie produkty obu nici</td><td>„najbardziej dogodna”; zmiana prawdziwa = w obu niciach; aparaty: miliony pz/h</td></tr>
       <tr><td>Pirosekwencjonowanie</td><td>synteza na matrycy unieruchomionej na podłożu stałym; jeden dNTP na krok; 4 enzymy</td><td>światło z lucyferazy (ATP z pirofosforanu)</td><td>1996 r.; w czasie rzeczywistym; szybciej i taniej</td></tr>
@@ -589,7 +587,7 @@
   <p>Pierwsze mapy genomu człowieka tworzono na podstawie dających się zidentyfikować <b>cech fenotypowych</b>, takich jak <b>grupy krwi</b> lub <b>zespoły dziedziczne</b> sprzężone z danym chromosomem – np. <b>zespół Nail-Patella</b> sprzężony z <b>chromosomem 9</b>. Przed wprowadzeniem technologii molekularnej grupę markerów genetycznych poszerzono o <b>wykrywany elektroforetycznie polimorfizm białek (enzymów)</b>, ale liczba i rozmieszczenie tych markerów nadal nie były satysfakcjonujące ani wystarczające do opracowania projektu sekwencjonowania. W <b>pierwszej znacznie ulepszonej mapie</b> genomu użyto <b>180 markerowych loci</b>, określonych przez polimorfizm długości anonimowych fragmentów restrykcyjnych uzyskanych na drodze analizy <b>RFLP</b>.</p>
 
   <h3>Definicje</h3>
-  <aside class="note liceum"><p><b>Allele</b> to różne wersje tego samego genu w tym samym locus. Zgodnie z <b>prawami Mendla</b> osobnik ma dwa allele danego genu (po jednym od każdego rodzica), a do gamety trafia jeden z nich.</p></aside>
+  <aside class="note liceum"><p><b>Allele</b> – różne wersje genu w tym samym locus. Osobnik ma dwa (po jednym od rodzica), do gamety trafia jeden (prawa Mendla).</p></aside>
   <p>Mapa genomu człowieka, jak każda mapa, musi pokazywać położenie poszczególnych genów względem określonych <b>markerów</b>.</p>
   <ul>
     <li><b>Marker</b> to wyznacznik: dowolna, genetycznie kontrolowana cecha fenotypowa lub dowolna różnica genetyczna, wykorzystywana do ujawnienia <b>polimorfizmu osobniczego</b>.</li>
