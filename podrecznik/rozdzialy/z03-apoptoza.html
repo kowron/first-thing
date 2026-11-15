@@ -1,0 +1,658 @@
+<section class="chapter" data-num="03" data-title="Apoptoza i starzenie komórek"
+  data-kicker="Bcl-2 · kaspazy · szlaki apoptozy · znaczniki starzenia">
+
+  <p class="lead">Apoptoza to kontrolowana, „samobójcza” śmierć komórki, która nie wywołuje zapalenia. Rozdział pokazuje, jak wygląda komórka w apoptozie, które białka sterują tym procesem, jakimi szlakami biegnie sygnał, po co organizm usuwa komórki i co się dzieje, gdy apoptoza zawodzi. Ostatnia część opisuje znaczniki komórek, które się zestarzały.</p>
+
+  <!-- ===================== 1. APOPTOZA ===================== -->
+  <h2 id="c03-apoptoza">Czym jest apoptoza</h2>
+  <aside class="note pojecie" data-term="Apoptoza"><p>kontrolowana śmierć komórki, wymagająca ekspresji genów i energii, przebiegająca bez zapalenia; komórka rozpada się na ciałka apoptotyczne, które pochłaniają sąsiednie komórki lub makrofagi.</p></aside>
+  <p>Nazwa „apoptoza” pochodzi od greckiego słowa oznaczającego opadanie płatków kwiatów lub liści z drzew. <b>Apoptoza</b> to zespół zmian morfologicznych i biochemicznych, które prowadzą do <b>kontrolowanej śmierci komórki z pominięciem procesu zapalnego</b>. Jest stanem fizjologicznym: wymaga ekspresji wielu genów i nakładu energii. Nazywa się ją też <b>programowaną</b> lub <b>samobójczą śmiercią komórki</b> (PCD, ang. <i>programmed cell death</i>) – terminy te często stosuje się zamiennie.</p>
+  <p>Pierwotnie określenie „programowana śmierć komórki” stosowano tylko do śmierci zachodzącej w procesach fizjologicznych – w okresie zarodkowym i później. Dziś terminem „apoptoza” opisuje się zmiany w umierającej komórce niezależnie od tego, czy śmierć następuje w trakcie rozwoju organizmu, czy wywołały ją czynniki zewnętrzne. Apoptoza dotyczy przeważnie <b>pojedynczych komórek</b> i trwa od kilku do kilkunastu godzin.</p>
+
+  <h3>Zmiany w komórce krok po kroku</h3>
+  <p>Komórka w apoptozie traci wodę i w efekcie się obkurcza. Kolejne zmiany morfologiczne pokazuje <a class="figref" href="#c03-fig-zmiany"></a>:</p>
+  <ol>
+    <li><b>Kondensacja i marginalizacja chromatyny</b> – pierwszym objawem morfologicznym są zmiany w jądrze: chromatyna zagęszcza się i układa pod otoczką jądrową.</li>
+    <li><b>Obkurczenie i fragmentacja jądra</b> – jądro kurczy się, a następnie rozpada na fragmenty.</li>
+    <li><b>Kondensacja cytoplazmy i pęcherzyki</b> – cytoplazma się zagęszcza, komórka się obkurcza, a na jej powierzchni tworzą się charakterystyczne pęcherzyki.</li>
+    <li><b>Ciałka apoptotyczne</b> – komórka rozpada się na fragmenty otoczone błoną komórkową. Zawierają one resztki chromatyny i cytoplazmy oraz niezmienione organella.</li>
+    <li><b>Fagocytoza</b> – ciałka apoptotyczne pochłaniają sąsiednie komórki lub makrofagi; nie rozwija się zapalenie.</li>
+  </ol>
+  <figure class="fig" id="c03-fig-zmiany" data-title="Komórka w apoptozie – kolejne zmiany">
+    <svg viewBox="0 0 640 172" role="img" aria-label="Pięć etapów: komórka prawidłowa, kondensacja chromatyny, obkurczenie i pęcherzyki, ciałka apoptotyczne, fagocytoza">
+      <!-- 1 komórka prawidłowa -->
+      <ellipse cx="60" cy="78" rx="48" ry="38" class="f-teal-bg s-teal sw15"/>
+      <ellipse cx="30" cy="64" rx="7" ry="4" transform="rotate(-20 30 64)" class="f-ochre-bg s-ochre sw1"/>
+      <ellipse cx="90" cy="94" rx="7" ry="4" transform="rotate(25 90 94)" class="f-ochre-bg s-ochre sw1"/>
+      <ellipse cx="34" cy="96" rx="7" ry="4" transform="rotate(15 34 96)" class="f-ochre-bg s-ochre sw1"/>
+      <circle cx="60" cy="78" r="18" class="f-white s-navy sw15"/>
+      <g class="f-gray">
+        <circle cx="54" cy="72" r="1.6"/><circle cx="63" cy="70" r="1.6"/><circle cx="68" cy="80" r="1.6"/>
+        <circle cx="57" cy="84" r="1.6"/><circle cx="63" cy="88" r="1.6"/><circle cx="51" cy="80" r="1.6"/><circle cx="66" cy="74" r="1.6"/>
+      </g>
+      <!-- 2 kondensacja i marginalizacja chromatyny -->
+      <ellipse cx="190" cy="78" rx="46" ry="37" class="f-teal-bg s-teal sw15"/>
+      <ellipse cx="160" cy="64" rx="7" ry="4" transform="rotate(-20 160 64)" class="f-ochre-bg s-ochre sw1"/>
+      <ellipse cx="220" cy="94" rx="7" ry="4" transform="rotate(25 220 94)" class="f-ochre-bg s-ochre sw1"/>
+      <circle cx="190" cy="78" r="18" class="f-white s-navy sw15"/>
+      <path d="M175.7,75.5 A14.5,14.5 0 0 1 195,64.4" class="f-none s-navy" stroke-width="5" stroke-linecap="round"/>
+      <path d="M203.6,83 A14.5,14.5 0 0 1 182.8,90.6" class="f-none s-navy" stroke-width="5" stroke-linecap="round"/>
+      <!-- 3 obkurczenie, pęcherzyki -->
+      <g class="f-teal-bg s-teal sw15">
+        <circle cx="349" cy="63" r="8"/><circle cx="295" cy="101" r="7"/><circle cx="343" cy="104" r="7"/><circle cx="298" cy="58" r="6"/>
+      </g>
+      <ellipse cx="320" cy="80" rx="32" ry="27" class="f-teal-bg s-teal sw15"/>
+      <ellipse cx="300" cy="86" rx="5" ry="3" transform="rotate(20 300 86)" class="f-ochre-bg s-ochre sw1"/>
+      <circle cx="322" cy="78" r="11" class="f-navy"/>
+      <!-- 4 fragmentacja jądra, ciałka apoptotyczne -->
+      <g class="f-teal-bg s-teal sw15">
+        <circle cx="428" cy="62" r="12"/><circle cx="460" cy="56" r="10"/><circle cx="474" cy="84" r="13"/>
+        <circle cx="442" cy="98" r="11"/><circle cx="416" cy="88" r="8"/>
+      </g>
+      <g class="f-navy">
+        <circle cx="428" cy="62" r="5"/><circle cx="470" cy="80" r="4"/><circle cx="478" cy="90" r="3.5"/><circle cx="442" cy="98" r="4"/>
+      </g>
+      <ellipse cx="460" cy="56" rx="5" ry="3" class="f-ochre-bg s-ochre sw1"/>
+      <ellipse cx="416" cy="88" rx="4" ry="2.5" class="f-ochre-bg s-ochre sw1"/>
+      <!-- 5 fagocytoza -->
+      <ellipse cx="582" cy="80" rx="50" ry="40" class="f-blue-bg s-blue sw15"/>
+      <ellipse cx="604" cy="94" rx="15" ry="9" class="f-white s-blue sw1"/>
+      <circle cx="562" cy="66" r="12" class="f-none s-blue sw1" stroke-dasharray="3 2"/>
+      <circle cx="562" cy="66" r="9" class="f-teal-bg s-teal sw15"/>
+      <circle cx="562" cy="66" r="3.5" class="f-navy"/>
+      <circle cx="574" cy="98" r="10" class="f-none s-blue sw1" stroke-dasharray="3 2"/>
+      <circle cx="574" cy="98" r="7" class="f-teal-bg s-teal sw15"/>
+      <circle cx="574" cy="98" r="3" class="f-navy"/>
+      <!-- strzałki -->
+      <path d="M112,78 H140" class="arrow"/>
+      <path d="M242,78 H282" class="arrow"/>
+      <path d="M362,78 H402" class="arrow"/>
+      <path d="M492,78 H526" class="arrow"/>
+      <!-- numery etapów -->
+      <g class="step" transform="translate(12,12)"><circle r="9"/><text y="3.8">1</text></g>
+      <g class="step" transform="translate(142,12)"><circle r="9"/><text y="3.8">2</text></g>
+      <g class="step" transform="translate(272,12)"><circle r="9"/><text y="3.8">3</text></g>
+      <g class="step" transform="translate(402,12)"><circle r="9"/><text y="3.8">4</text></g>
+      <g class="step" transform="translate(532,12)"><circle r="9"/><text y="3.8">5</text></g>
+      <!-- podpisy etapów -->
+      <g class="t-s mid">
+        <text x="60" y="136">Komórka</text><text x="60" y="150">prawidłowa</text>
+        <text x="190" y="136">Kondensacja</text><text x="190" y="150">i marginalizacja</text><text x="190" y="164">chromatyny</text>
+        <text x="320" y="136">Obkurczenie komórki</text><text x="320" y="150">i jądra, pęcherzyki</text>
+        <text x="450" y="136">Fragmentacja jądra,</text><text x="450" y="150">ciałka apoptotyczne</text>
+        <text x="580" y="136">Fagocytoza przez</text><text x="580" y="150">makrofag lub</text><text x="580" y="164">sąsiednią komórkę</text>
+      </g>
+    </svg>
+    <figcaption>Najpierw zmienia się jądro: chromatyna zagęszcza się pod otoczką jądrową. Potem komórka obkurcza się i rozpada na otoczone błoną ciałka apoptotyczne, które są fagocytowane bez zapalenia.</figcaption>
+  </figure>
+  <p>Zmienia się też błona komórkowa: <b>fosfatydyloseryna</b> przemieszcza się z wewnętrznej do zewnętrznej warstwy błony, przez co błona traci asymetrię. Przebiegiem apoptozy sterują białka rodziny Bcl-2 i kaspazy, opisane w kolejnych podrozdziałach.</p>
+
+  <div class="box zapamietaj"><p>Apoptoza to kontrolowana śmierć pojedynczych komórek, która wymaga energii i ekspresji genów. Zaczyna się od kondensacji chromatyny, a kończy rozpadem komórki na ciałka apoptotyczne, które są fagocytowane bez zapalenia.</p></div>
+  <p class="src">Źródło: Drewa s. 165–166</p>
+
+  <!-- ===================== 2. BCL-2 ===================== -->
+  <h2 id="c03-bcl2">Rodzina białek Bcl-2</h2>
+  <p>Rodzina <b>Bcl-2</b> (ang. <i>B-cell CLL/lymphoma 2</i>) to duża, niejednorodna grupa białek regulujących apoptozę. Gen <i>bcl-2</i> zidentyfikowano jako onkogen aktywowany przez translokację t(14;18), która występuje w 95% przypadków nieziarniczych chłoniaków grudkowych. U człowieka znanych jest 26 genów tej rodziny. Niektóre z nich dzięki alternatywnemu splicingowi mRNA dają dwa lub więcej białek o przeciwstawnym działaniu, np. Bcl-X<sub>L</sub> i Bcl-X<sub>S</sub>.</p>
+
+  <h3>Dwie grupy białek</h3>
+  <p>Białka rodziny Bcl-2 dzieli się na <b>proapoptotyczne</b> i <b>antyapoptotyczne</b>. Mają od jednej do czterech <b>domen BH</b> (ang. <i>Bcl-2 homology domain</i>), czyli odcinków podobnych do siebie w całej rodzinie. Niektóre mają też hydrofobową <b>domenę transbłonową TM</b>, która prawdopodobnie odpowiada za umiejscowienie tych białek (<a class="figref" href="#c03-fig-bcl2"></a>).</p>
+  <table class="tbl full plain-first">
+    <thead><tr><th style="width:46%">Proapoptotyczne</th><th>Antyapoptotyczne</th></tr></thead>
+    <tbody>
+      <tr><td>Bax, Bak, Bad, Bid, Bim</td><td>Bcl-2, Bcl-X<sub>L</sub>, Mcl-1, Bcl-W</td></tr>
+      <tr><td>domeny BH1–BH3 albo tylko BH3</td><td>większość: domeny BH1–BH4</td></tr>
+      <tr><td>w cytozolu</td><td>głównie w zewnętrznej błonie mitochondrialnej; też w błonie siateczki śródplazmatycznej i w otoczce jądrowej</td></tr>
+      <tr><td>ich nadekspresja prowadzi do śmierci komórki</td><td>zwiększają prawdopodobieństwo przeżycia komórki</td></tr>
+    </tbody>
+  </table>
+  <figure class="fig" id="c03-fig-bcl2" data-title="Rodzina białek Bcl-2">
+    <svg viewBox="0 0 640 226" role="img" aria-label="Domeny BH białek anty- i proapoptotycznych; Bax ułatwia, a Bcl-2 hamuje wypływ cytochromu c z mitochondrium">
+      <!-- lewa część: domeny -->
+      <text x="10" y="16" class="up f-teal">Antyapoptotyczne</text>
+      <text x="152" y="16" class="t-xs muted">głównie zewnętrzna błona mitochondrium</text>
+      <line x1="8" y1="40" x2="194" y2="40" class="s-gray sw1"/>
+      <g class="f-teal-bg s-teal sw1">
+        <rect x="14" y="32" width="32" height="16" rx="2"/><rect x="50" y="32" width="32" height="16" rx="2"/>
+        <rect x="86" y="32" width="32" height="16" rx="2"/><rect x="122" y="32" width="32" height="16" rx="2"/>
+      </g>
+      <rect x="158" y="32" width="32" height="16" rx="2" class="f-tile s-gray sw1"/>
+      <g class="t-xs mid sb">
+        <text x="30" y="43.5">BH4</text><text x="66" y="43.5">BH3</text><text x="102" y="43.5">BH1</text><text x="138" y="43.5">BH2</text><text x="174" y="43.5">TM</text>
+      </g>
+      <text x="204" y="44" class="t-s">Bcl-2, Bcl-X<tspan class="t-xs" dy="3">L</tspan><tspan dy="-3">, Bcl-W, Mcl-1</tspan></text>
+
+      <text x="10" y="80" class="up f-red">Proapoptotyczne</text>
+      <text x="142" y="80" class="t-xs muted">cytozol</text>
+      <line x1="8" y1="102" x2="194" y2="102" class="s-gray sw1"/>
+      <line x1="8" y1="130" x2="194" y2="130" class="s-gray sw1"/>
+      <line x1="8" y1="158" x2="194" y2="158" class="s-gray sw1"/>
+      <g class="f-red-bg s-red sw1">
+        <rect x="50" y="94" width="32" height="16" rx="2"/><rect x="86" y="94" width="32" height="16" rx="2"/><rect x="122" y="94" width="32" height="16" rx="2"/>
+        <rect x="50" y="122" width="32" height="16" rx="2"/>
+        <rect x="50" y="150" width="32" height="16" rx="2"/>
+      </g>
+      <g class="f-tile s-gray sw1">
+        <rect x="158" y="94" width="32" height="16" rx="2"/><rect x="158" y="150" width="32" height="16" rx="2"/>
+      </g>
+      <g class="t-xs mid sb">
+        <text x="66" y="105.5">BH3</text><text x="102" y="105.5">BH1</text><text x="138" y="105.5">BH2</text><text x="174" y="105.5">TM</text>
+        <text x="66" y="133.5">BH3</text>
+        <text x="66" y="161.5">BH3</text><text x="174" y="161.5">TM</text>
+      </g>
+      <g class="t-s">
+        <text x="204" y="106">Bax, Bak</text><text x="204" y="134">Bad, Bid</text><text x="204" y="162">Bim</text>
+      </g>
+      <text x="10" y="194" class="t-xs muted">BH – domena homologii Bcl-2 · TM – domena transbłonowa</text>
+      <line x1="372" y1="8" x2="372" y2="218" class="divider"/>
+
+      <!-- prawa część: błona mitochondrium -->
+      <text x="636" y="16" class="t-xs muted it end">cytozol</text>
+      <text x="465" y="30" class="t-s sb f-red mid">ułatwia wypływ</text>
+      <text x="465" y="43" class="t-s f-red mid">cytochromu c</text>
+      <text x="580" y="30" class="t-s sb f-teal mid">hamuje wypływ</text>
+      <text x="580" y="43" class="t-s f-teal mid">cytochromu c</text>
+      <ellipse cx="408" cy="72" rx="17" ry="10" class="f-red-bg s-red sw1"/>
+      <text x="408" y="75.5" class="t-xs mid sb f-red">tBid</text>
+      <path d="M420,80 L438,98" class="arrow red"/>
+      <path d="M465,70 L465,52" class="arrow red"/>
+      <rect x="390" y="112" width="52" height="14" class="f-ochre-bg s-ochre sw1"/>
+      <rect x="488" y="112" width="148" height="14" class="f-ochre-bg s-ochre sw1"/>
+      <rect x="442" y="104" width="12" height="30" rx="5" class="f-red"/>
+      <rect x="476" y="104" width="12" height="30" rx="5" class="f-red"/>
+      <text x="494" y="103" class="t-xs sb f-red">Bax</text>
+      <ellipse cx="580" cy="119" rx="20" ry="11" class="f-teal"/>
+      <text x="580" y="122.5" class="t-xs mid sb f-white">Bcl-2</text>
+      <line x1="580" y1="52" x2="580" y2="100" class="s-teal sw2"/>
+      <line x1="568" y1="100" x2="592" y2="100" class="s-teal sw3"/>
+      <g class="f-ochre-bg s-ochre sw1">
+        <circle cx="465" cy="80" r="7"/><circle cx="465" cy="119" r="6"/>
+        <circle cx="412" cy="152" r="6"/><circle cx="440" cy="160" r="6"/><circle cx="500" cy="152" r="6"/>
+        <circle cx="530" cy="160" r="6"/><circle cx="562" cy="150" r="6"/><circle cx="606" cy="158" r="6"/>
+      </g>
+      <g class="t-xs mid sb">
+        <text x="465" y="83.5">c</text><text x="465" y="122.5">c</text>
+        <text x="412" y="155.5">c</text><text x="440" y="163.5">c</text><text x="500" y="155.5">c</text>
+        <text x="530" y="163.5">c</text><text x="562" y="153.5">c</text><text x="606" y="161.5">c</text>
+      </g>
+      <text x="392" y="140" class="t-xs muted">błona zewnętrzna</text>
+      <text x="636" y="182" class="t-xs muted end">przestrzeń międzybłonowa</text>
+      <path d="M390,198 q10,-12 20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0" class="f-none s-ochre sw15"/>
+      <text x="392" y="220" class="t-xs muted">błona wewnętrzna</text>
+    </svg>
+    <figcaption>Po lewej – domeny BH w wybranych białkach obu grup. Po prawej – Bax, zmieniony przez tBid, tworzy pory w zewnętrznej błonie mitochondrium i ułatwia wypływ cytochromu c (c), a Bcl-2 stabilizuje błonę i hamuje jego uwalnianie.</figcaption>
+  </figure>
+
+  <h3>Bcl-2 a uwolnienie cytochromu c</h3>
+  <p>Białka antyapoptotyczne stabilizują błonę mitochondrialną, przeciwdziałają stresowi oksydacyjnemu i <b>zapobiegają uwalnianiu cytochromu c</b> z mitochondrium. Cytochrom c, który nie wyjdzie z mitochondrium, nie może się połączyć z czynnikiem aktywującym apoptozę <b>Apaf-1</b>, a to połączenie uruchamia szlak wewnętrzny (<a class="pageref" href="#c03-szlaki"></a>).</p>
+  <p>Białka proapoptotyczne znajdują się w cytozolu. Po odpowiednim sygnale oddziałują z białkami antyapoptotycznymi i w ten sposób hamują albo rozpoczynają śmierć komórki. Przykładem jest <b>Bax</b>: po zmianie konformacji przyłącza się do poryny VDAC w błonie mitochondrium i uczestniczy w tworzeniu porów, przez które wypływa cytochrom c. Białka Bcl-2 regulują też działanie kaspaz we wszystkich szlakach apoptozy oraz stężenie jonów Ca<sup>2+</sup> w komórce. Skoro nadmiar białek proapoptotycznych prowadzi do śmierci, a antyapoptotyczne zwiększają szansę przeżycia, o losie komórki decyduje przewaga jednej z grup (np. Bax nad Bcl-2 albo odwrotnie).</p>
+
+  <div class="box zapamietaj"><p>Białka antyapoptotyczne (Bcl-2, Bcl-X<sub>L</sub>, Mcl-1) mają zwykle domeny BH1–BH4 i chronią mitochondrium przed uwolnieniem cytochromu c. Białka proapoptotyczne (Bax, Bak, Bad, Bid) mają BH1–BH3 lub tylko BH3; Bax tworzy pory, przez które cytochrom c wypływa.</p></div>
+  <p class="src">Źródło: Drewa s. 166–167, 171</p>
+
+  <!-- ===================== 3. KASPAZY ===================== -->
+  <h2 id="c03-kaspazy">Kaspazy</h2>
+  <aside class="note pojecie" data-term="Kaspaza"><p>proteaza cysteinowa, która tnie białka w sąsiedztwie kwasu asparaginowego; powstaje jako nieaktywna prokaspaza, a po aktywacji tnie białka komórki w trakcie apoptozy.</p></aside>
+  <p><b>Kaspazy</b> to rodzina wysoko konserwatywnych <b>proteaz cysteinowych</b>: reszta cysteiny pełni w nich funkcję katalitycznego nukleofila. Kaspazy hydrolizują wiązania peptydowe w sąsiedztwie <b>kwasu asparaginowego</b> (Asp). Znanych jest 14 kaspaz. Dzieli się je na <b>inicjatorowe</b>, które rozpoczynają apoptozę, i <b>wykonawcze</b> (efektorowe).</p>
+
+  <h3>Prokaspazy i ich aktywacja</h3>
+  <p>Wszystkie kaspazy występują w komórce jako nieaktywne proformy – <b>zymogeny</b>, czyli <b>prokaspazy</b>. Prokaspaza składa się z trzech części: N-końcowej <b>prodomeny</b>, zwanej domeną śmierci DD, dużej podjednostki <b>p20</b> z centrum katalitycznym i małej, C-końcowej podjednostki <b>p10</b>. W domenie DD wyróżnia się dwie subdomeny: <b>DED</b> (ang. <i>death effector domain</i>) i <b>CARD</b> (ang. <i>caspase recruitment domain</i>). Za ich pośrednictwem prokaspazy łączą się z białkami adaptorowymi, np. z FADD lub Apaf-1 (<a class="pageref" href="#c03-szlaki"></a>).</p>
+  <p>Kaspazy inicjatorowe aktywują się przez <b>autoproteolizę</b>. Kaspazy wykonawcze są aktywowane przez proteolizę, której dokonują wcześniej aktywowane kaspazy inicjatorowe. Prokaspaza zostaje przecięta w miejscach za resztami kwasu asparaginowego, a aktywny enzym tworzą podjednostki p20 i p10.</p>
+
+  <table class="tbl wide" id="c03-tab-kaspazy">
+    <thead><tr><th style="width:13%">Grupa</th><th style="width:17%">Kaspazy</th><th style="width:23%">Budowa</th><th style="width:22%">Aktywacja</th><th>Rola</th></tr></thead>
+    <tbody>
+      <tr><td>Inicjatorowe</td><td>2, 8, 9, 10 (oraz 12 – tylko w szlaku indukowanym stresem)</td><td>prodomena z CARD (2, 9) lub z dwiema DED (8, 10) + p20 + p10</td><td>autoproteoliza; kaspazy 8 i 10 w kompleksie DISC, kaspaza 9 w apoptosomie</td><td>rozpoczynają apoptozę – aktywują kaspazy wykonawcze</td></tr>
+      <tr><td>Wykonawcze</td><td>3, 6, 7</td><td>p20 + p10</td><td>proteoliza przez aktywne kaspazy inicjatorowe</td><td>tną liczne białka cytoplazmatyczne i jądrowe</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Co tną kaspazy wykonawcze</h3>
+  <ul>
+    <li>białka cytoszkieletu: <b>laminy</b>, <b>aktynę</b>, <b>fodrynę</b>;</li>
+    <li><b>ICAD</b> – inhibitor DNazy aktywowanej przez kaspazy (CAD);</li>
+    <li><b>PARP</b> – polimerazę poli(ADP-rybozy);</li>
+    <li><b>DNA-PK</b> – kinazę białkową zależną od DNA;</li>
+    <li>białka <b>Rb</b> i <b>MDM2</b>.</li>
+  </ul>
+  <p>Proteoliza lamin i białek cytoszkieletu nieuchronnie prowadzi do śmierci komórki.</p>
+
+  <div class="box zapamietaj"><p>Kaspazy to proteazy cysteinowe tnące za kwasem asparaginowym; powstają jako nieaktywne prokaspazy. Inicjatorowe (2, 8, 9, 10) aktywują się przez autoproteolizę i aktywują wykonawcze (3, 6, 7), które tną m.in. laminy, aktynę i PARP.</p></div>
+  <p class="src">Źródło: Drewa s. 167–169, 171</p>
+
+  <!-- ===================== 4. SZLAK ZEWNĘTRZNY I WEWNĘTRZNY ===================== -->
+  <h2 id="c03-szlaki">Szlak zewnętrzny i wewnętrzny</h2>
+  <p>Apoptoza może przebiegać różnymi szlakami – zależnie od rodzaju komórki i od czynnika, który ją wywołał. Najlepiej poznane są: szlak <b>zewnętrzny</b>, związany z błoną komórkową, szlak <b>wewnętrzny</b>, czyli mitochondrialny, oraz szlak <b>pseudoreceptorowy</b>, z udziałem perforyny i granzymu B. Apoptoza może też przebiegać szlakiem <b>sfingomielinowo-ceramidowym</b> i szlakiem <b>indukowanym stresem</b>. Niemal wszystkie szlaki kończą się uruchomieniem kaskady kaspaz wykonawczych; wyjątkiem jest droga z udziałem granzymu A (<a class="pageref" href="#c03-dodatkowe"></a>). Szlak zewnętrzny i wewnętrzny oraz ich połączenie pokazuje <a class="figref" href="#c03-fig-szlaki"></a>.</p>
+  <figure class="fig" id="c03-fig-szlaki" data-title="Szlak zewnętrzny i wewnętrzny">
+    <svg viewBox="0 0 640 286" role="img" aria-label="Szlak receptorowy: FasL, Fas, FADD, kaspaza 8; szlak mitochondrialny: cytochrom c, apoptosom, kaspaza 9; połączenie przez Bid; kaspazy wykonawcze">
+      <!-- błona komórkowa -->
+      <rect x="70" y="32" width="8" height="248" class="f-ochre-bg s-ochre sw1"/>
+      <text transform="translate(63,236) rotate(-90)" class="t-xs muted mid">błona komórkowa</text>
+      <!-- szlak zewnętrzny -->
+      <text x="30" y="27" class="t-xs muted mid">ligand</text>
+      <text x="56" y="27" class="t-xs muted">receptor śmierci</text>
+      <rect x="46" y="34" width="222" height="32" rx="6" class="divider"/>
+      <text x="266" y="79" class="t-xs b muted end">DISC</text>
+      <ellipse cx="30" cy="50" rx="19" ry="11" class="f-ochre-bg s-ochre sw15"/>
+      <text x="30" y="53.5" class="t-xs mid sb">FasL</text>
+      <rect x="50" y="41" width="50" height="18" rx="3" class="f-blue-bg s-blue sw15"/>
+      <text x="89" y="53.5" class="t-xs mid sb">Fas</text>
+      <rect x="114" y="41" width="46" height="18" rx="3" class="card"/>
+      <text x="137" y="53.5" class="t-xs mid sb">FADD</text>
+      <rect x="170" y="41" width="92" height="18" rx="3" class="card"/>
+      <text x="216" y="53.5" class="t-xs mid">prokaspaza 8/10</text>
+      <rect x="286" y="41" width="80" height="18" rx="3" class="f-teal"/>
+      <text x="326" y="53.5" class="t-xs mid b f-white">kaspaza 8/10</text>
+      <path d="M100,50 H112" class="arrow"/>
+      <path d="M160,50 H168" class="arrow"/>
+      <path d="M262,50 H284" class="arrow teal"/>
+      <path d="M366,50 H500 V114" class="arrow navy"/>
+      <text x="114" y="96" class="up f-teal">Szlak zewnętrzny</text>
+      <!-- połączenie: Bid -->
+      <path d="M326,59 V90" class="arrow red"/>
+      <rect x="290" y="92" width="72" height="20" rx="3" class="f-red-bg s-red sw1"/>
+      <text x="326" y="105.5" class="t-xs mid sb">Bid → tBid</text>
+      <path d="M318,112 L303,190" class="arrow red"/>
+      <!-- szlak wewnętrzny -->
+      <text x="88" y="196" class="up f-teal">Szlak wewnętrzny</text>
+      <rect x="88" y="206" width="114" height="52" rx="5" class="card"/>
+      <g class="t-xs">
+        <text x="96" y="222">ROS, Ca²⁺,</text><text x="96" y="236">szok termiczny,</text><text x="96" y="250">uszkodzenia DNA</text>
+      </g>
+      <path d="M202,230 H215" class="arrow"/>
+      <ellipse cx="272" cy="230" rx="55" ry="32" class="f-ochre-bg s-ochre sw15"/>
+      <path d="M232,246 q8,-14 16,0 t16,0 t16,0 t16,0 t16,0" class="f-none s-ochre sw1"/>
+      <text x="272" y="226" class="t-xs mid sb">otwarcie PTP</text>
+      <ellipse cx="300" cy="202" rx="14" ry="8" class="f-red"/>
+      <text x="300" y="205.5" class="t-xs mid b f-white">Bax</text>
+      <ellipse cx="306" cy="255" rx="17" ry="8" class="f-teal"/>
+      <text x="306" y="258.5" class="t-xs mid b f-white">Bcl-2</text>
+      <line x1="318" y1="249" x2="336" y2="236" class="s-teal sw2"/>
+      <line x1="332.5" y1="231.5" x2="339.5" y2="241" class="s-teal sw2"/>
+      <text x="272" y="279" class="t-xs muted mid">mitochondrium</text>
+      <path d="M327,229 H350" class="arrow"/>
+      <circle cx="360" cy="229" r="8" class="f-ochre-bg s-ochre sw15"/>
+      <text x="360" y="232.5" class="t-xs mid sb">c</text>
+      <text x="360" y="212" class="t-xs muted mid">cytochrom c</text>
+      <path d="M368,229 H382" class="arrow"/>
+      <rect x="384" y="204" width="116" height="52" rx="6" class="f-white s-teal sw15" stroke-dasharray="4 3"/>
+      <text x="442" y="219" class="up mid f-teal">Apoptosom</text>
+      <text x="442" y="234" class="t-xs mid">cytochrom c + Apaf-1</text>
+      <text x="442" y="248" class="t-xs mid">+ prokaspaza 9 (ATP)</text>
+      <path d="M500,229 H512" class="arrow teal"/>
+      <rect x="514" y="219" width="64" height="20" rx="3" class="f-teal"/>
+      <text x="546" y="232.5" class="t-xs mid b f-white">kaspaza 9</text>
+      <path d="M546,219 V162" class="arrow navy"/>
+      <!-- wspólny koniec -->
+      <rect x="440" y="118" width="120" height="40" rx="5" class="f-navy"/>
+      <text x="500" y="134" class="t-xs mid b f-white">kaspazy wykonawcze</text>
+      <text x="500" y="149" class="t-s mid b f-white">3, 6, 7</text>
+      <path d="M560,138 H570" class="arrow navy"/>
+      <rect x="572" y="96" width="66" height="100" rx="5" class="card"/>
+      <g class="t-xs mid">
+        <text x="605" y="111" class="muted">cięcie:</text>
+        <text x="605" y="125">laminy</text><text x="605" y="138">aktyna</text><text x="605" y="151">PARP</text><text x="605" y="164">DNA-PK</text>
+      </g>
+      <text x="605" y="185" class="up mid f-red">Apoptoza</text>
+    </svg>
+    <figcaption>U góry szlak zewnętrzny (kompleks DISC → kaspaza 8 lub 10), u dołu wewnętrzny (cytochrom c → apoptosom → kaspaza 9). Oba aktywują kaspazy wykonawcze; łączy je Bid, cięty przez kaspazę 8 do tBid, który zmienia Bax.</figcaption>
+  </figure>
+
+  <h3>Szlak zewnętrzny (receptorowy)</h3>
+  <p>Szlak zewnętrzny, zwany też <b>receptorowym</b>, poznano najwcześniej i najlepiej. Biorą w nim udział <b>receptory śmierci</b> i ich ligandy. Receptory śmierci to białka transbłonowe z nadrodziny receptorów czynnika martwicy nowotworów (TNF, ang. <i>tumor necrosis factor</i>). Mają trzy domeny: zewnątrzkomórkową, która rozpoznaje ligand, transbłonową oraz cytoplazmatyczną z <b>domeną śmierci DD</b>. Przyłączenie liganda do receptora uruchamia szlak.</p>
+  <table class="tbl full">
+    <thead><tr><th style="width:55%">Receptor śmierci</th><th>Ligand</th></tr></thead>
+    <tbody>
+      <tr><td>Fas (CD95, Apo1)</td><td>FasL</td></tr>
+      <tr><td>TNFR1</td><td>TNFα</td></tr>
+      <tr><td>TRAIL-R1, TRAIL-R2</td><td>TRAIL</td></tr>
+    </tbody>
+  </table>
+  <p>Najlepiej poznana jest ścieżka z udziałem receptora Fas:</p>
+  <ol>
+    <li><b>Sygnał</b> – ligand FasL wiąże się z receptorem Fas.</li>
+    <li><b>Białko adaptorowe</b> – domena DD receptora łączy się z domeną DD na C-końcu białka adaptorowego <b>FADD</b>.</li>
+    <li><b>Kompleks DISC</b> – domena DED na N-końcu FADD łączy się z domeną DED prokaspazy 8 lub 10. Powstaje kompleks sygnałowy <b>DISC</b> (ang. <i>death inducing signaling complex</i>).</li>
+    <li><b>Kaspaza inicjatorowa</b> – w DISC prokaspaza 8 (lub 10) przekształca się w aktywną kaspazę 8 (lub 10).</li>
+    <li><b>Kaspazy wykonawcze</b> – aktywowane zostają kaspazy 3, 6 i 7.</li>
+    <li><b>Skutek</b> – kaspazy wykonawcze tną m.in. laminy i białka cytoszkieletu; komórka ginie.</li>
+  </ol>
+  <p>W niektórych typach komórek receptor Fas przekazuje sygnał także przez inne białko adaptorowe – <b>DAXX</b>. Angażuje ono kinazę JNK, która fosforyluje czynnik transkrypcyjny c-Jun i kinazę ERK i w ten sposób uruchamia kaskadę kaspaz.</p>
+
+  <h3>Połączenie szlaków: białko Bid</h3>
+  <p>Szlak receptorowy może się łączyć ze szlakiem wewnętrznym przez białko <b>Bid</b> z rodziny Bcl-2:</p>
+  <ol>
+    <li>kaspaza 8 tnie Bid do skróconej formy <b>tBid</b> (ang. <i>truncated Bid</i>);</li>
+    <li>tBid wiąże się z białkiem <b>Bax</b> i zmienia jego konformację;</li>
+    <li>zmieniony Bax przyłącza się do poryny <b>VDAC</b> w błonie mitochondrium i współtworzy pory;</li>
+    <li>przez pory wypływa cytochrom c i uruchamia się szlak mitochondrialny.</li>
+  </ol>
+  <p>Z mitochondrium wypływa wtedy 100 razy więcej cytochromu c niż w typowym szlaku wewnętrznym.</p>
+
+  <h3>Szlak wewnętrzny (mitochondrialny)</h3>
+  <p>Kluczową rolę w szlaku wewnętrznym odgrywają mitochondria. Szlak zaczyna się od <b>wzrostu przepuszczalności błony mitochondrialnej</b>. Wywołują go: wzrost poziomu reaktywnych form tlenu (ROS), wzrost stężenia jonów Ca<sup>2+</sup> w cytoplazmie, szok termiczny, zaburzenia transportu elektronów i uszkodzenia DNA.</p>
+  <aside class="note pojecie" data-term="Apoptosom"><p>kompleks cytochromu c, białka adaptorowego Apaf-1 i prokaspazy 9, który powstaje w cytoplazmie z udziałem ATP; aktywuje kaspazę 9.</p></aside>
+  <ol>
+    <li><b>Otwarcie megakanałów</b> – otwierają się megakanały mitochondrialne, czyli pory przepuszczalności <b>PTP</b> (ang. <i>permeability transition pore</i>), na styku obu błon mitochondrium. W najczęściej przyjmowanym modelu ich zasadniczym elementem jest translokator nukleotydów adeninowych <b>ANT</b> w błonie wewnętrznej, połączony z poryną <b>VDAC</b> w błonie zewnętrznej. Od strony cytoplazmy z kanałem łączą się m.in. białka Bcl-2 i Bax.</li>
+    <li><b>Zmiany w mitochondrium</b> – spada potencjał transbłonowy, zostaje zahamowana synteza ATP, rośnie stężenie Ca<sup>2+</sup> w macierzy.</li>
+    <li><b>Uwolnienie białek</b> – z przestrzeni międzybłonowej do cytoplazmy wychodzą: cytochrom c (zwany też Apaf-2), czynnik indukujący apoptozę <b>AIF</b>, prokaspazy 2, 3 i 9 oraz białko <b>Smac/DIABLO</b>.</li>
+    <li><b>Apoptosom</b> – w cytoplazmie, z udziałem ATP, powstaje kompleks z cytochromu c, białka adaptorowego <b>Apaf-1</b> i prokaspazy 9. Apaf-1 wiąże prokaspazę 9 domeną CARD (na N-końcu), a cytochrom c i dATP/ATP – domeną powtórzeń WD-40 (na C-końcu).</li>
+    <li><b>Kaspaza inicjatorowa</b> – w apoptosomie prokaspaza 9 zostaje aktywowana.</li>
+    <li><b>Kaspazy wykonawcze</b> – kaspaza 9 uruchamia ich kaskadę; tną one białka ważne dla przeżycia komórki: laminy, aktynę, PARP i DNA-PK.</li>
+  </ol>
+
+  <div class="box zapamietaj"><p>Szlak zewnętrzny: ligand → receptor śmierci → FADD → DISC → kaspaza 8 (10) → kaspazy 3, 6, 7. Szlak wewnętrzny: otwarcie PTP → cytochrom c → apoptosom z Apaf-1 → kaspaza 9 → kaspazy wykonawcze. Oba szlaki łączy Bid, cięty przez kaspazę 8 do tBid.</p></div>
+  <p class="src">Źródło: Drewa s. 168–171</p>
+
+  <!-- ===================== 5. TRZY SZLAKI DODATKOWE ===================== -->
+  <h2 id="c03-dodatkowe">Trzy szlaki dodatkowe</h2>
+  <p>Trzy pozostałe szlaki różnią się przede wszystkim źródłem sygnału śmierci. W szlaku pseudoreceptorowym sygnał przychodzi z innej komórki (limfocytu cytotoksycznego lub komórki NK), w szlaku sfingomielinowo-ceramidowym przekazuje go lipid błony komórkowej, a w szlaku indukowanym stresem – siateczka śródplazmatyczna (<a class="figref" href="#c03-fig-dodatkowe"></a>, tabela na końcu podrozdziału).</p>
+  <figure class="fig" id="c03-fig-dodatkowe" data-title="Trzy szlaki dodatkowe">
+    <div class="panels cols-3">
+      <div class="panel" data-badge="A" data-title="Pseudoreceptorowy">
+        <svg viewBox="0 0 180 232" role="img" aria-label="CTL lub NK, perforyna i granzym B, kaspaza 3 i 7 oraz tBid i Bax, kaskada kaspaz; granzym A działa w jądrze bez kaspaz">
+          <text x="90" y="14" class="t-xs mid it muted">limfocyt cytotoksyczny T</text>
+          <text x="90" y="27" class="t-xs mid it muted">lub komórka NK</text>
+          <path d="M90,32 V44" class="arrow"/>
+          <rect x="10" y="46" width="160" height="34" rx="4" class="f-blue-bg s-blue sw1"/>
+          <text x="90" y="60" class="t-xs mid sb">perforyna + granzym B</text>
+          <text x="90" y="73" class="t-xs mid muted">(uwalniane przez egzocytozę)</text>
+          <path d="M60,80 L48,94" class="arrow"/>
+          <path d="M120,80 L132,94" class="arrow"/>
+          <rect x="6" y="96" width="82" height="34" rx="4" class="f-teal-bg s-teal sw1"/>
+          <text x="47" y="110" class="t-xs mid sb">kaspaza 3</text>
+          <text x="47" y="123" class="t-xs mid sb">→ kaspaza 7</text>
+          <rect x="92" y="96" width="84" height="34" rx="4" class="f-red-bg s-red sw1"/>
+          <text x="134" y="110" class="t-xs mid sb">tBid + Bax →</text>
+          <text x="134" y="123" class="t-xs mid">mitochondrium</text>
+          <path d="M47,130 L70,144" class="arrow"/>
+          <path d="M134,130 L110,144" class="arrow"/>
+          <rect x="10" y="146" width="160" height="24" rx="4" class="f-navy"/>
+          <text x="90" y="162" class="t-xs mid b f-white">kaskada kaspaz wykonawczych</text>
+          <rect x="10" y="182" width="160" height="46" rx="4" class="divider"/>
+          <text x="90" y="197" class="t-xs mid sb">granzym A → jądro:</text>
+          <text x="90" y="210" class="t-xs mid">laminy, histon H1, SET</text>
+          <text x="90" y="223" class="t-xs mid muted">– bez udziału kaspaz</text>
+        </svg>
+      </div>
+      <div class="panel" data-badge="B" data-title="Sfingomielinowo-ceramidowy">
+        <svg viewBox="0 0 180 232" role="img" aria-label="Fas aktywuje sfingomielinazę, powstaje ceramid, kinazy SAPK/JNK, kaskada kaspaz">
+          <text x="90" y="14" class="t-xs mid it muted">promieniowanie, wirusy,</text>
+          <text x="90" y="27" class="t-xs mid it muted">brak czynników wzrostu</text>
+          <path d="M90,32 V44" class="arrow"/>
+          <rect x="10" y="46" width="160" height="34" rx="4" class="f-blue-bg s-blue sw1"/>
+          <text x="90" y="60" class="t-xs mid sb">FasL + Fas</text>
+          <text x="90" y="73" class="t-xs mid">→ sfingomielinaza</text>
+          <path d="M90,80 V94" class="arrow"/>
+          <rect x="10" y="96" width="160" height="34" rx="4" class="f-ochre-bg s-ochre sw1"/>
+          <text x="90" y="110" class="t-xs mid sb">sfingomielina → ceramid</text>
+          <text x="90" y="123" class="t-xs mid">→ kinazy SAPK/JNK</text>
+          <path d="M90,130 V144" class="arrow"/>
+          <rect x="10" y="146" width="160" height="24" rx="4" class="f-navy"/>
+          <text x="90" y="162" class="t-xs mid b f-white">kaskada kaspaz wykonawczych</text>
+          <rect x="10" y="182" width="160" height="46" rx="4" class="divider"/>
+          <text x="90" y="197" class="t-xs mid">lipidy zwiększają też</text>
+          <text x="90" y="210" class="t-xs mid">przepuszczalność błony</text>
+          <text x="90" y="223" class="t-xs mid">mitochondrialnej</text>
+        </svg>
+      </div>
+      <div class="panel" data-badge="C" data-title="Indukowany stresem">
+        <svg viewBox="0 0 180 232" role="img" aria-label="Stres siateczki śródplazmatycznej aktywuje prokaspazę 12, kaspaza 12 uruchamia kaskadę kaspaz">
+          <text x="90" y="14" class="t-xs mid it muted">zaburzenia Ca²⁺, błędnie</text>
+          <text x="90" y="27" class="t-xs mid it muted">pofałdowane białka</text>
+          <path d="M90,32 V44" class="arrow"/>
+          <rect x="10" y="46" width="160" height="34" rx="4" class="f-ochre-bg s-ochre sw1"/>
+          <text x="90" y="60" class="t-xs mid sb">siateczka</text>
+          <text x="90" y="73" class="t-xs mid sb">śródplazmatyczna</text>
+          <path d="M90,80 V94" class="arrow"/>
+          <rect x="10" y="96" width="160" height="34" rx="4" class="f-teal-bg s-teal sw1"/>
+          <text x="90" y="110" class="t-xs mid sb">prokaspaza 12 (w błonie)</text>
+          <text x="90" y="123" class="t-xs mid sb">→ kaspaza 12</text>
+          <path d="M90,130 V144" class="arrow"/>
+          <rect x="10" y="146" width="160" height="24" rx="4" class="f-navy"/>
+          <text x="90" y="162" class="t-xs mid b f-white">kaskada kaspaz wykonawczych</text>
+          <rect x="10" y="182" width="160" height="46" rx="4" class="divider"/>
+          <text x="90" y="197" class="t-xs mid">niezależny od receptorów</text>
+          <text x="90" y="210" class="t-xs mid">i mitochondrium, ale może</text>
+          <text x="90" y="223" class="t-xs mid">angażować Apaf-1</text>
+        </svg>
+      </div>
+    </div>
+    <figcaption>Różnią się źródłem sygnału: w A działają komórki odpornościowe (granzym B; granzym A – bez kaspaz), w B lipid błony – ceramid, w C stres siateczki śródplazmatycznej i kaspaza 12.</figcaption>
+  </figure>
+
+  <h3>Szlak pseudoreceptorowy</h3>
+  <p>To szlak zewnątrzpochodny, wywoływany przez komórki układu odpornościowego: <b>cytotoksyczne limfocyty T</b> (CTL) i <b>komórki NK</b>. Działa w nim układ <b>perforyna–granzym B</b> (GrB, fragmentyna-2). CTL i komórki NK wytwarzają perforynę i granzym B, który jest proteazą serynową, i uwalniają je na drodze egzocytozy.</p>
+  <ol>
+    <li><b>Wniknięcie granzymu B</b> – początkowo uważano, że perforyna wbudowuje się w błonę komórki niszczonej i tworzy kanał dla granzymu B. Granzym B może też wnikać bez udziału perforyny – przez endocytozę lub z udziałem receptora mannozo-6-fosforanu.</li>
+    <li><b>Aktywacja kaspaz</b> – w cytoplazmie granzym B, podobnie jak kaspazy, tnie różne substraty i aktywuje kaspazę 3. Ta odcina prodomenę kaspazy 7, aktywując ją, i uruchamia kaskadę kaspaz wykonawczych.</li>
+    <li><b>Droga przez mitochondrium</b> – granzym B tnie też Bid do tBid, który po połączeniu z Bax uruchamia szlak mitochondrialny.</li>
+  </ol>
+  <p>Szlak może przebiegać także z udziałem <b>granzymu A</b> (GrA, fragmentyna-1), wydzielanego również przez CTL i komórki NK. Granzym A wnika do komórki z udziałem perforyny. Jego mechanizm nie jest do końca wyjaśniony, ale wiadomo, że ta apoptoza <b>nie zależy od kaspaz</b> i angażuje jądro: granzym A przechodzi do jądra i tnie laminy, histon H1 i kompleks SET, a na pociętą chromatynę działa uaktywniona DNaza. Tę drogę indukują wzrost stężenia ROS i zaburzenia potencjału błonowego mitochondrium.</p>
+
+  <h3>Szlak sfingomielinowo-ceramidowy</h3>
+  <p>W tym szlaku rolę <b>wtórnego przekaźnika</b> pełni lipid – <b>ceramid</b>. Szlak uruchamiają promieniowanie jonizujące, zakażenia wirusowe lub brak czynników wzrostu.</p>
+  <ol>
+    <li><b>Receptor</b> – ligand FasL łączy się z receptorem Fas.</li>
+    <li><b>Sfingomielinaza</b> – aktywuje się kwaśna lub obojętna sfingomielinaza. Enzym ten hydrolizuje sfingomielinę błony komórkowej do ceramidu i fosfocholiny.</li>
+    <li><b>Ceramid</b> – jako wtórny przekaźnik aktywuje kinazy i fosfatazy (m.in. CAPK, MAPK, CAPP i kaskadę kinaz SAPK/JNK). Które z nich – zależy od bodźca, typu komórki i rodzaju sfingomielinazy.</li>
+    <li><b>Kaspazy</b> – ceramid powstały z udziałem kwaśnej sfingomielinazy prawdopodobnie aktywuje kinazy SAPK/JNK, które uruchamiają kaskadę kaspaz wykonawczych.</li>
+  </ol>
+  <p>Lipidy tego szlaku mogą też zwiększać przepuszczalność błony mitochondrialnej, czyli włączać szlak wewnętrzny.</p>
+
+  <h3>Szlak indukowany stresem</h3>
+  <p>Ten szlak nie zależy ani od receptorów w błonie komórkowej, ani od mitochondrium. Kluczową rolę odgrywa w nim <b>siateczka śródplazmatyczna</b>.</p>
+  <ol>
+    <li><b>Stres</b> – zaburzenia homeostazy jonów Ca<sup>2+</sup> albo nadmierne gromadzenie w siateczce białek niewłaściwie zmodyfikowanych lub błędnie pofałdowanych.</li>
+    <li><b>Kaspaza 12</b> – czynniki te aktywują prokaspazę 12 umiejscowioną w błonie siateczki.</li>
+    <li><b>Kaspazy wykonawcze</b> – kaspaza 12 uruchamia ich kaskadę, która prowadzi do śmierci komórki.</li>
+  </ol>
+  <p>Kaspaza 12 nie jest potrzebna w innych szlakach, dlatego uznano ją za enzym inicjujący wyłącznie szlak indukowany stresem. Szlak ten odpowiada za apoptozę neuronów w chorobie Alzheimera. Apoptoza z udziałem siateczki może przebiegać także z udziałem Apaf-1 i szlaku mitochondrialnego.</p>
+
+  <table class="tbl wide" id="c03-tab-dodatkowe">
+    <thead><tr><th style="width:17%">Szlak</th><th style="width:23%">Co go uruchamia</th><th style="width:22%">Przekaźnik sygnału</th><th style="width:18%">Enzym inicjujący</th><th>Związek z mitochondrium</th></tr></thead>
+    <tbody>
+      <tr><td>Pseudoreceptorowy</td><td>limfocyty cytotoksyczne T i komórki NK</td><td>perforyna, granzym B (lub A)</td><td>granzym B → kaspaza 3; granzym A – bez kaspaz</td><td>granzym B tnie Bid → tBid → Bax</td></tr>
+      <tr><td>Sfingomielinowo-ceramidowy</td><td>promieniowanie jonizujące, wirusy, brak czynników wzrostu; receptor Fas</td><td>sfingomielinaza → ceramid → kinazy (SAPK/JNK)</td><td>kaskada kaspaz wykonawczych</td><td>lipidy zwiększają przepuszczalność błony mitochondrialnej</td></tr>
+      <tr><td>Indukowany stresem</td><td>zaburzenia Ca<sup>2+</sup>, błędnie pofałdowane białka w siateczce</td><td>siateczka śródplazmatyczna</td><td>kaspaza 12</td><td>niezależny; może jednak angażować Apaf-1 i mitochondrium</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Źródło: Drewa s. 168, 172–174</p>
+
+  <!-- ===================== 6. FIZJOLOGIA ===================== -->
+  <h2 id="c03-fizjologia">Znaczenie apoptozy w fizjologii człowieka</h2>
+  <p>Apoptoza usuwa komórki <b>nadmiarowe, niefunkcjonalne albo niebezpieczne</b> dla organizmu. W dużym stopniu zależą od niej cztery typy procesów:</p>
+  <ol>
+    <li><b>Rozwój embrionalny.</b> Już w zarodku trzeba usuwać komórki, które spełniły swoją rolę i są niepotrzebne. Na drodze apoptozy formują się i kształtują też niektóre narządy. Przykład: początkowo połączone zawiązki palców rozdzielają się dzięki apoptozie komórek leżących między nimi. Zahamowanie tego procesu może spowodować <b>syndaktylię</b>, czyli zrośnięcie dwóch lub więcej palców.</li>
+    <li><b>Modelowanie układu odpornościowego.</b> Przez całe życie w grasicy rozwijają się limfocyty T, które rozpoznają różne antygeny – także antygeny własne organizmu. Limfocyt T skierowany przeciw antygenom własnym zostaje skierowany na drogę apoptozy. Ten proces, <b>selekcja negatywna</b>, chroni organizm przed chorobą autoimmunizacyjną.</li>
+    <li><b>Eliminacja uszkodzonych komórek.</b> Komórki zakażone wirusem lub uszkodzone przez toksyny, których nie da się uratować, giną przez apoptozę, najczęściej na drodze stresu oksydacyjnego. Podobnie giną komórki uszkodzone przez zbyt niski poziom tlenu lub substancji odżywczych – np. w nowotworach, które rosną szybciej, niż powstają odżywiające je nowe naczynia krwionośne.</li>
+    <li><b>Eliminacja komórek z uszkodzonym DNA.</b> Uszkodzenie DNA, np. przez promieniowanie jonizujące, aktywuje białko <b>p53</b>. p53 najpierw zatrzymuje cykl komórkowy na przejściu z fazy G1 do S i daje komórce czas na naprawę. Jeśli naprawa nie jest możliwa, p53 zwiększa ekspresję <b>Bax</b>. Bax tworzy kanały w błonie mitochondrium, przez które cytochrom c wypływa do cytoplazmy, i zaczyna się faza efektorowa apoptozy.</li>
+  </ol>
+  <p>Ostatni mechanizm wykorzystuje <b>radioterapia</b>: napromieniowanie uszkadza DNA komórki nowotworowej i uruchamia apoptozę. Apoptoza jest tu jednak tylko jednym z kilku mechanizmów eliminacji komórek.</p>
+
+  <div class="box zapamietaj"><p>Apoptoza rozdziela palce w zarodku, usuwa w grasicy limfocyty T skierowane przeciw własnym antygenom (selekcja negatywna) oraz eliminuje komórki uszkodzone i komórki z nienaprawialnym uszkodzeniem DNA (p53 → Bax → cytochrom c).</p></div>
+  <p class="src">Źródło: Jóźwiak s. 126</p>
+
+  <!-- ===================== 7. ZABURZENIA ===================== -->
+  <h2 id="c03-zaburzenia">Zaburzenia apoptozy</h2>
+  <p>Ponieważ apoptoza jest tak ważna, jej zaburzenia – zarówno <b>nasilenie</b>, jak i <b>zablokowanie</b> – prowadzą do wielu procesów chorobowych lub się do nich przyczyniają. Nadmiar apoptozy oznacza utratę potrzebnych komórek, a jej zablokowanie pozwala przetrwać komórkom, które powinny zginąć.</p>
+  <table class="tbl full plain-first" id="c03-tab-choroby">
+    <thead><tr><th style="width:50%">Nasilenie apoptozy</th><th>Zahamowanie apoptozy</th></tr></thead>
+    <tbody>
+      <tr><td>cukrzyca typu I</td><td>białaczka</td></tr>
+      <tr><td>zawał mięśnia serca</td><td>chłoniak</td></tr>
+      <tr><td>choroba Alzheimera</td><td>raki (np. piersi, prostaty)</td></tr>
+      <tr><td>choroba Parkinsona</td><td>nadczynność tarczycy</td></tr>
+      <tr><td>stwardnienie rozsiane</td><td>osteoporoza</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Nowotwory</h3>
+  <p>Nowotworzenie to jeden z najlepszych przykładów skutków zaburzeń apoptozy. Białko p53, główny „strażnik genomu”, nasila apoptozę, gdy wykryje uszkodzenie DNA. Wynika z tego, że w rozwijającym się nowotworze apoptoza musi zostać <b>zablokowana</b> – tylko wtedy w trakcie często długiego rozwoju komórki nowotworowej mogą się w niej niekontrolowanie gromadzić mutacje.</p>
+  <p>Zaburzenia apoptozy odpowiadają też w wielu przypadkach za <b>oporność na leki przeciwnowotworowe</b>, ponieważ leki te często wywołują w komórkach apoptozę. Dlatego opracowano wiele leków przeciwnowotworowych działających na szlaki związane z apoptozą. Najczęstsze zaburzenia apoptozy w komórkach nowotworowych to:</p>
+  <ul>
+    <li><b>nadekspresja antyapoptotycznych białek z rodziny Bcl-2</b> – chłoniaki, rak sutka, rak płuc;</li>
+    <li><b>inaktywacja apoptosomu</b> – czerniak, białaczki, rak szyjki macicy;</li>
+    <li><b>obniżenie ekspresji białka Fas</b> – rak wątrobowokomórkowy, rak przełyku, rak jelita grubego;</li>
+    <li><b>obniżenie aktywności kaspaz</b>.</li>
+  </ul>
+
+  <h3>Choroby neurodegeneracyjne</h3>
+  <p>W <b>chorobie Alzheimera</b> w przestrzeni międzykomórkowej odkłada się <b>amyloid β</b> (Aβ), a wewnątrz komórek – białko <b>tau</b>. Aβ aktywuje kaspazę 3 i nasila apoptozę neuronów. Jednym z substratów kaspazy 3 jest właśnie białko tau – jego przecięcie przez kaspazę prowadzi do gromadzenia się agregatów tau w neuronie. Za apoptozę neuronów w tej chorobie odpowiada też szlak indukowany stresem (<a class="pageref" href="#c03-dodatkowe"></a>).</p>
+  <p>W <b>chorobie Parkinsona</b> giną neurony dopaminergiczne w układzie nigrostriatalnym mózgu. Również tu dochodzi do aktywacji kaspazy 3, blokowania Bcl-2 i zwiększenia ekspresji receptora Fas. Takie zmiany nasilające apoptozę prawdopodobnie przyczyniają się w chorobach neurodegeneracyjnych do utraty neuronów w ośrodkowym układzie nerwowym.</p>
+
+  <div class="box zapamietaj"><p>W nowotworach apoptoza jest zablokowana (nadmiar antyapoptotycznych Bcl-2, nieczynny apoptosom, mniej Fas, słabsze kaspazy), co sprzyja gromadzeniu mutacji i oporności na leki. W chorobach Alzheimera i Parkinsona apoptoza neuronów jest nasilona, m.in. przez aktywację kaspazy 3.</p></div>
+  <p class="src">Źródło: Jóźwiak s. 126–127 · Drewa s. 174</p>
+
+  <!-- ===================== 8. STARZENIE ===================== -->
+  <h2 id="c03-starzenie">Znaczniki starzenia komórkowego</h2>
+  <p><b>Starzenie komórkowe</b> to złożony, wieloetapowy proces związany z <b>nieodwracalnym zatrzymaniem komórek w cyklu</b>. Wyróżnia się dwa jego rodzaje:</p>
+  <ul>
+    <li><b>starzenie replikacyjne</b> – zależne od skracania telomerów; w hodowli widać je jako skończoną liczbę podziałów komórek, po kilku tygodniach lub miesiącach (zależnie od typu komórek);</li>
+    <li><b>starzenie przyspieszone</b> – niezależne od skracania telomerów; pojawia się już po kilku dniach od zadziałania czynnika, który je wywołuje.</li>
+  </ul>
+  <aside class="note pojecie" data-term="Znacznik starzenia"><p>cecha komórki – morfologiczna lub biochemiczna – która towarzyszy starzeniu; żadna nie jest typowa wyłącznie dla starzenia, dlatego bada się kilka znaczników naraz.</p></aside>
+  <p>Nie istnieje jeden znacznik typowy wyłącznie dla starzenia, ale opisano wiele cech, które je charakteryzują – uniwersalnych i swoistych dla określonych komórek. Znaczniki dzieli się na grupy: zmiany struktury i morfologii komórki, zmiany związane z proliferacją i cyklem komórkowym, znaczniki związane z DNA i chromatyną oraz fenotyp wydzielniczy. Osobno opisuje się znaczniki starzenia wywołanego aktywacją onkogenów (<a class="figref" href="#c03-fig-starzenie"></a>).</p>
+  <figure class="fig" id="c03-fig-starzenie" data-title="Znaczniki starzenia komórkowego">
+    <svg viewBox="0 0 640 272" role="img" aria-label="Komórka po zadziałaniu czynnika indukującego starzenie z zaznaczonymi grupami znaczników">
+      <!-- komórka prawidłowa i czynnik -->
+      <ellipse cx="38" cy="42" rx="28" ry="22" class="f-teal-bg s-teal sw15"/>
+      <circle cx="38" cy="42" r="9" class="f-white s-navy sw1"/>
+      <polygon points="92,8 80,34 90,34 82,58 104,28 93,28 100,8" class="f-red"/>
+      <g class="t-xs">
+        <text x="108" y="22">czynnik</text><text x="108" y="35">indukujący</text><text x="108" y="48">starzenie</text>
+      </g>
+      <path d="M66,58 Q112,84 164,94" class="arrow"/>
+      <!-- SASP -->
+      <text x="172" y="16" class="t-s b f-ochre">Fenotyp sekrecyjny (SASP)</text>
+      <text x="172" y="31" class="t-xs">cytokiny (IL-1α, IL-6, IL-8),</text>
+      <text x="172" y="44" class="t-xs">proteazy, czynniki wzrostu</text>
+      <g class="f-ochre">
+        <rect x="-4" y="-4" width="8" height="8" transform="translate(372,50) rotate(45)"/>
+        <rect x="-4" y="-4" width="8" height="8" transform="translate(392,30) rotate(45)"/>
+        <rect x="-4" y="-4" width="8" height="8" transform="translate(410,52) rotate(45)"/>
+        <rect x="-4" y="-4" width="8" height="8" transform="translate(428,20) rotate(45)"/>
+        <rect x="-4" y="-4" width="8" height="8" transform="translate(446,42) rotate(45)"/>
+        <rect x="-4" y="-4" width="8" height="8" transform="translate(462,16) rotate(45)"/>
+      </g>
+      <!-- komórka stara: duża i płaska -->
+      <rect x="168" y="64" width="302" height="196" rx="34" class="f-teal-bg s-teal sw2"/>
+      <g class="f-none s-gray sw1">
+        <path d="M190,84 C260,74 380,96 452,82"/>
+        <path d="M190,242 C260,252 380,232 452,244"/>
+        <path d="M178,112 C186,160 184,200 180,232"/>
+      </g>
+      <g class="f-ochre-bg s-ochre sw1">
+        <circle cx="210" cy="116" r="9"/><circle cx="234" cy="134" r="7"/><circle cx="206" cy="150" r="8"/>
+        <circle cx="230" cy="168" r="7"/><circle cx="208" cy="184" r="7"/>
+      </g>
+      <g class="f-ochre">
+        <circle cx="207" cy="113" r="1.6"/><circle cx="213" cy="119" r="1.6"/><circle cx="234" cy="134" r="1.6"/>
+        <circle cx="203" cy="150" r="1.6"/><circle cx="209" cy="152" r="1.6"/><circle cx="230" cy="168" r="1.6"/><circle cx="208" cy="184" r="1.6"/>
+      </g>
+      <g class="t-xs">
+        <text x="190" y="210" class="sb">lizosomy:</text><text x="190" y="223">SA-β-Gal ↑,</text><text x="190" y="236">lipofuscyna ↑</text>
+      </g>
+      <text x="452" y="232" class="t-xs muted end">cytoszkielet</text>
+      <!-- jądro -->
+      <ellipse cx="340" cy="160" rx="82" ry="56" class="f-white s-navy sw15"/>
+      <g class="f-navy">
+        <circle cx="290" cy="150" r="5"/><circle cx="304" cy="136" r="5"/><circle cx="318" cy="152" r="5"/>
+        <circle cx="300" cy="172" r="5"/><circle cx="322" cy="180" r="5"/><circle cx="334" cy="138" r="5"/>
+      </g>
+      <text x="306" y="203" class="t-xs b mid f-navy">SAHF</text>
+      <g class="f-red">
+        <circle cx="369" cy="135" r="2"/><circle cx="374" cy="133" r="2"/><circle cx="371" cy="140" r="2"/><circle cx="376" cy="139" r="2"/>
+        <circle cx="389" cy="176" r="2"/><circle cx="394" cy="174" r="2"/><circle cx="391" cy="181" r="2"/><circle cx="396" cy="180" r="2"/>
+      </g>
+      <text x="381" y="161" class="t-xs b mid f-red">DNA-SCARS</text>
+      <text x="340" y="124" class="t-xs muted mid">jądro</text>
+      <g class="t-xs b mid f-violet">
+        <text x="447" y="152">p16 ↑</text><text x="447" y="168">p21 ↑</text>
+      </g>
+      <!-- ramki: grupy znaczników -->
+      <rect x="0" y="108" width="156" height="126" rx="6" class="card"/>
+      <text x="10" y="126" class="t-s b f-teal">Struktura i morfologia</text>
+      <g class="t-xs">
+        <text x="10" y="143">• komórka duża i płaska</text>
+        <text x="10" y="157">• SA-β-Gal ↑</text>
+        <text x="10" y="171">• ziarnistość ↑</text>
+        <text x="10" y="185">• lipofuscyna ↑</text>
+        <text x="10" y="199">• wimentyna ↑,</text>
+        <text x="18" y="212">aktyna i tubulina ↓</text>
+      </g>
+      <text x="10" y="252" class="t-xs sb">Starzenie po onkogenach:</text>
+      <text x="10" y="265" class="t-xs">DEC1, DCR2 ↑</text>
+
+      <rect x="482" y="2" width="156" height="104" rx="6" class="card"/>
+      <text x="490" y="20" class="t-s b f-violet">Proliferacja i cykl</text>
+      <g class="t-xs">
+        <text x="490" y="37">• zahamowanie proliferacji</text>
+        <text x="490" y="51">• p16, p21 ↑ (też p15, p27,</text>
+        <text x="498" y="64">p57, cyklina D1)</text>
+        <text x="490" y="78">• zatrzymanie w G1 lub G2</text>
+        <text x="498" y="91">(nieodwracalne)</text>
+      </g>
+
+      <rect x="482" y="114" width="156" height="132" rx="6" class="card"/>
+      <text x="490" y="132" class="t-s b f-navy">DNA i chromatyna</text>
+      <g class="t-xs">
+        <text x="490" y="149">• DNA-SCARS (γH2AX, 53BP1)</text>
+        <text x="490" y="163">• SAHF (30–50 skupisk)</text>
+        <text x="490" y="177">• PML-NB ↑</text>
+        <text x="490" y="191">• krótsze telomery</text>
+        <text x="490" y="205">• lamina B1 ↓</text>
+        <text x="490" y="219">• 8-oksyGua, 8-oksydG ↑</text>
+        <text x="490" y="233">• globalna demetylacja DNA</text>
+      </g>
+    </svg>
+    <figcaption>Komórka, która uległa starzeniu: duża i płaska, z wyższą aktywnością SA-β-Gal, z p16 i p21, ze skupiskami SAHF i DNA-SCARS w jądrze i wydzielanym SASP. W ramkach – grupy znaczników; żaden z nich osobno nie wystarcza do rozpoznania starzenia.</figcaption>
+  </figure>
+
+  <h3>Struktura i morfologia komórki</h3>
+  <p><b>Powiększenie i spłaszczenie komórek.</b> Komórki ulegające starzeniu replikacyjnemu i przyspieszonemu stają się duże i płaskie. Dotyczy to komórek prawidłowych, np. fibroblastów i komórek mięśni gładkich, i komórek nowotworowych.</p>
+  <p><b>Wzrost aktywności i poziomu SA-β-Gal.</b> SA-β-Gal to <b>β-galaktozydaza związana ze starzeniem</b>, enzym lizosomalny. Jest to podstawowy, najbardziej znany i najpowszechniej używany znacznik starzenia – in vitro i in vivo, w starzeniu replikacyjnym i przyspieszonym. Występuje w komórkach starych, ale nie w spoczynkowych fibroblastach ani zróżnicowanych keratynocytach, a jego aktywność rośnie z wiekiem dawcy komórek. Wzrost aktywności koreluje ze wzrostem masy lizosomów. Funkcja SA-β-Gal w starzeniu nie jest znana; przypuszcza się, że wzrost jej aktywności wynika jedynie ze wzrostu liczby lizosomów, a nie jest przyczyną starzenia. Znacznik nie jest swoisty – jego aktywność rośnie też np. w nieprawidłowych warunkach hodowli i w hodowli przegęszczonej. Dlatego bada się go razem z innym znacznikiem, np. zatrzymaniem komórek w cyklu. SA-β-Gal nie jest też niezbędna do starzenia: fibroblasty osób z gangliozydozą GM1 (chorobą spichrzeniową z brakiem β-galaktozydazy) starzeją się bez wzrostu SA-β-Gal.</p>
+  <p><b>Wzrost ziarnistości.</b> Komórki stają się bardziej ziarniste, prawdopodobnie z powodu wzrostu masy lizosomów.</p>
+  <p><b>Wzrost poziomu lipofuscyny.</b> Lipofuscyna to brązowożółty barwnik, który powstaje podczas utleniania lipoprotein w lizosomach. Jej ilość rośnie w komórkach starych organizmów.</p>
+  <p><b>Zmiany cytoszkieletu.</b> Zmienia się poziom wimentyny, β-aktyny i tubuliny. Wimentyna – białko filamentów pośrednich (grupy III) obecne w komórkach pochodzenia mezenchymalnego – przybywa wraz z liczbą podziałów, a komórki stare mają mniej aktyny i tubuliny niż młode.</p>
+
+  <h3>Proliferacja i cykl komórkowy</h3>
+  <p>Cykl komórkowy regulują <b>cykliny</b>, <b>kinazy zależne od cyklin</b> (CDK) i <b>inhibitory tych kinaz</b> (CKI). W fazie G1 kluczowe są kompleksy cyklina D–CDK4/CDK6 i cyklina E–CDK2. Inhibitory należą do dwóch klas:</p>
+  <ul>
+    <li><b>INK4/ARF</b> (p15, p16, p18, p19) – wiążą CDK4 i CDK6; zmiana allosteryczna uniemożliwia kinazom oddziaływanie z cyklinami D;</li>
+    <li><b>CIP/KIP</b> (p21, p27, p57) – wiążą się ze szczeliną katalityczną kompleksu cyklina–CDK i hamują jego działanie.</li>
+  </ul>
+  <p>W starzeniu kluczową rolę odgrywają dwa szlaki: <b>p53–p21</b> (głównie w starzeniu wywołanym uszkodzeniami DNA i w replikacyjnym) oraz <b>p16–pRb</b> (w starzeniu wywołanym nadekspresją onkogenów); część białek jest wspólna dla obu szlaków.</p>
+  <p><b>Zahamowanie proliferacji.</b> To podstawowy znacznik: liczba komórek przestaje się zmieniać. Komórki, które się nie dzielą, nie syntetyzują DNA, więc nie wbudowują do niego bromodeoksyurydyny (BrdU) ani 5-etynylo-2′-deoksyurydyny (EdU); brak takich komórek oznacza zatrzymanie w cyklu. Innym powszechnie stosowanym znacznikiem proliferacji jest białko Ki67 – brak jego skupisk w komórkach świadczy o zatrzymaniu proliferacji.</p>
+  <p><b>Wzrost poziomu inhibitorów cyklu.</b> Synteza p21 i p16 rośnie w starzeniu replikacyjnym i przyspieszonym. Poziom p16 rośnie z wiekiem u ludzi (wykazano to w skórze i w limfocytach T) i u myszy. W starzeniu komórek podczas rozwoju zarodkowego rośnie p21, ale nie p16. Wzrost p16 nie jest swoisty – występuje też w komórkach gruczołu mlekowego. W wielu nowotworach, np. w glejaku wielopostaciowym, czerniaku i gruczolakoraku trzustki, p16 brak, z czego wnioskuje się, że p16 hamuje rozwój nowotworu. Znacznikami są też inne inhibitory: poziom p15 rośnie w starzeniu (w zmianach łagodnych, ale nie w nowotworach złośliwych), a nadprodukcja p57, p21 lub p27 wywołuje cechy starzenia. Znacznikiem starzenia nowotworowych komórek nabłonkowych jest cyklina D1.</p>
+  <p><b>Zatrzymanie w cyklu.</b> Uważa się je za nieodwracalne, bo nie są znane czynniki fizjologiczne, które mogłyby je odwrócić. Zależnie od typu komórek i czynnika komórka zatrzymuje się w fazie G1 lub G2: w starzeniu replikacyjnym zwykle w G1, w przyspieszonym – w G2.</p>
+
+  <h3>DNA i chromatyna</h3>
+  <p><b>Skupiska białek odpowiedzi na uszkodzenia DNA (DNA-SCARS).</b> Uszkodzenia DNA, które trwale aktywują szlak odpowiedzi na uszkodzenia DNA (DDR, ang. <i>DNA damage response</i>), wywołują starzenie przyspieszone. Trwała aktywacja – w przeciwieństwie do przejściowej – objawia się długo utrzymującymi się w jądrze skupiskami białek DDR, m.in. ATM, γH2AX i 53BP1; to właśnie DNA-SCARS. Trwała aktywacja DDR wynika z uszkodzeń w odcinkach telomerowych – wystarczy kilka takich uszkodzeń. Skupiska powstające przy uszkodzonych lub zbyt krótkich telomerach nazywa się TIF. DNA-SCARS często współwystępują z białkiem PML.</p>
+  <p><b>Skupiska heterochromatyny związane ze starzeniem (SAHF).</b> W jądrze starej komórki, np. ludzkiego fibroblastu, heterochromatyna tworzy 30–50 skupisk. Powstają one w obszarach promotorowych genów kodujących białka regulujące fazę S cyklu. Wykrywa się w nich histon H3 metylowany na lizynie 9 (H3K9me), białko HP1, histon makroH2A i białko HMGA. SAHF powstają etapami: białka HIRA i HP1 przemieszczają się do ciałek PML; białka opiekuńcze histonów HIRA i ASF1a kondensują chromosomy; histon H3 zostaje zmetylowany na lizynie 9; powstaje miejsce wiązania HP1 i wbudowuje się makroH2A. SAHF występują w starzeniu replikacyjnym i wywołanym onkogenami, ale zależnie od typu komórek.</p>
+  <p><b>Wzrost zawartości białka PML.</b> PML jest głównym składnikiem jądrowych ciałek PML (PML-NB), w których znajduje się ponad 50 białek, m.in. Rb, p53, ATM, ATR i białka naprawy DNA. Synteza PML w komórkach prawidłowych prowadzi do nieodwracalnego zatrzymania w cyklu i starzenia, a bez PML nie dochodzi do starzenia wywołanego onkogenem RAS. W starzeniu liczba i wielkość PML-NB rośnie, a w nowotworzeniu maleje. Zatrzymanie cyklu z innych przyczyn – brak surowicy, konfluencja hodowli, nadprodukcja p53 – nie zwiększa liczby PML-NB. PML-NB biorą też udział w powstawaniu SAHF.</p>
+  <p><b>Skracanie telomerów.</b> Telomery to fragmenty DNA na końcach chromosomów; u ssaków zbudowane są z powtórzeń sekwencji <span class="seq">TTAGGG</span>. Razem z kompleksem sześciu białek – <b>szelteryn</b> (m.in. TRF1, TRF2, POT1) – pełnią funkcję ochronną. Z każdym podziałem telomery się skracają. Maksymalna liczba podziałów komórki to <b>limit Hayflicka</b>, a starzenie spowodowane skracaniem telomerów to starzenie replikacyjne. Telomery odbudowuje <b>telomeraza</b>; u myszy jest ona aktywna w komórkach somatycznych, u ludzi – rzadko. Długość telomerów jest znacznikiem starzenia replikacyjnego.</p>
+  <p><b>Spadek poziomu laminy B1.</b> Laminy to filamenty pośrednie typu V wchodzące w skład błony jądrowej. Poziom laminy B1 spada w starzeniu replikacyjnym, wywołanym onkogenami i uszkodzeniami DNA – in vitro i in vivo. Wymaga to aktywności szlaku p16–pRb albo p53–p21.</p>
+  <p><b>Oksydacyjne modyfikacje zasad azotowych.</b> Według wolnorodnikowej teorii starzenia wolne rodniki uszkadzają makrocząsteczki komórki: DNA, lipidy i białka. Znacznikiem jest poziom utlenionych zasad i nukleozydów, np. 8-oksyguaniny (8-oksyGua) i 8-oksy-2′-deoksyguanozyny (8-oksydG). Poziom 8-oksydG rośnie z wiekiem – w tkankach zwierząt i u ludzi (w leukocytach i moczu). 8-oksyGua w moczu uważa się za najczulszy znacznik wpływu stresu oksydacyjnego na DNA.</p>
+  <p><b>Zmiany metylacji DNA.</b> Starzeniu towarzyszy globalna demetylacja – w hodowli poziom 5-metylocytozyny spada wraz z liczbą pasaży – oraz demetylacja konkretnych genów, np. <i>MYC</i> i genu β-aktyny. W starzeniu replikacyjnym fibroblastów obok hipometylacji występuje skupiskowa hipermetylacja określonych genów; profil metylacji przypomina wtedy profil komórek nowotworowych.</p>
+
+  <h3>Fenotyp sekrecyjny (SASP)</h3>
+  <p>Stare komórki wydzielają zespół czynników nazywany <b>fenotypem sekrecyjnym związanym ze starzeniem</b> (SASP, ang. <i>senescence associated secretory phenotype</i>; inaczej SMS). Należą do nich cytokiny, proteazy, czynniki wzrostu i inne związki działające autokrynnie lub parakrynnie. Skład SASP zależy od bodźca, który wywołał starzenie, i od typu komórek. SASP pojawia się przy <b>trwałej</b> aktywacji szlaku odpowiedzi na uszkodzenia DNA; przy przejściowej aktywacji komórki tych czynników nie wydzielają. Regulują go białka szlaku DDR (ATM, NBS1, CHK2), czynniki transkrypcyjne NF-κB i C/EBP-β oraz kinaza p38MAPK, działająca przez NF-κB; inaktywacja p53 zwiększa wydzielanie niektórych składników SASP.</p>
+  <p>Jedną z pierwszych cytokin wydzielanych po indukcji starzenia jest <b>IL-1α</b>. Wiąże się ona z receptorem IL1R, co aktywuje NF-κB, a ten indukuje transkrypcję genów prozapalnych cytokin IL-6 i IL-8. Czynniki SASP mogą działać korzystnie i niekorzystnie: indukują angiogenezę, proliferację i różnicowanie komórek, naprawę tkanek, transformację epitelialno-mezenchymalną i oporność na chemioterapię, a także aktywują układ odpornościowy.</p>
+
+  <h3>Znaczniki starzenia wywołanego onkogenami</h3>
+  <p>W starzeniu przyspieszonym wywołanym aktywacją onkogenów rośnie poziom białek <b>DEC1</b> i <b>DCR2</b> (ang. <i>decoy death receptor-2</i>); oba aktywuje p53. Podwyższony poziom tych białek obserwowano w zmianach łagodnych w skórze, płucach i trzustce, ale nie w nowotworach złośliwych tych narządów; współwystępował on z SA-β-Gal i SAHF.</p>
+
+  <div class="box zapamietaj"><p>Żaden znacznik nie jest typowy wyłącznie dla starzenia – np. SA-β-Gal rośnie też w przegęszczonej hodowli, a p16 w gruczole mlekowym. Trzeba zbadać kilka znaczników naraz; dopiero ich współwystępowanie daje pewność, że komórki uległy starzeniu.</p></div>
+  <p class="src">Źródło: Alster s. 138–144</p>
+
+  <div class="w60">
+    <ul>
+      <li><b>Apoptoza</b> – kontrolowana śmierć komórki bez zapalenia: kondensacja chromatyny → fragmentacja jądra → ciałka apoptotyczne → fagocytoza.</li>
+      <li><b>Bcl-2</b> – białka antyapoptotyczne (Bcl-2, Bcl-X<sub>L</sub>) chronią mitochondrium przed wypływem cytochromu c, proapoptotyczne (Bax, Bak, Bid) go ułatwiają.</li>
+      <li><b>Kaspazy</b> – proteazy cysteinowe tnące za Asp; inicjatorowe 2, 8, 9, 10 aktywują wykonawcze 3, 6, 7.</li>
+      <li><b>Szlaki</b> – zewnętrzny: Fas → FADD → kaspaza 8; wewnętrzny: cytochrom c → apoptosom → kaspaza 9; łączy je tBid. Dodatkowe: pseudoreceptorowy, ceramidowy, stresowy (kaspaza 12).</li>
+      <li><b>Fizjologia i choroby</b> – apoptoza rozdziela palce i usuwa limfocyty T skierowane przeciw własnym antygenom; w nowotworach jest zablokowana, w chorobach Alzheimera i Parkinsona nasilona.</li>
+      <li><b>Starzenie</b> – nieodwracalne zatrzymanie w cyklu; znaczniki (SA-β-Gal, p16/p21, DNA-SCARS, SAHF, SASP) bada się łącznie.</li>
+    </ul>
+  </div>
+</section>
