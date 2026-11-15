@@ -79,6 +79,7 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
         parts=[
           'część górna, szyjna – m. równoległoboczny mniejszy [[m. rhomboideus minor]]',
           'część dolna, grzbietowa – m. równoległoboczny większy [[m. rhomboideus major]]',
+          'rzadka odmiana – m. potyliczno-łopatkowy, od kości potylicznej do łopatki [[m. occipitoscapularis]] (s. 657)',
         ],
         o=[
           'dolny odcinek więzadła karkowego [[ligamentum nuchae]]',
@@ -262,9 +263,9 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
           warn=['W streszczeniu (s. 676) Bochenek podaje koniec na wyrostkach kolczystych C2–Th1. Notatka podaje opis ze s. 668.']),
         M('m. półkolcowy głowy', 'm. semispinalis capitis', '668',
           layer='warstwa powierzchowna',
-          parts=[
-            'część przyśrodkowa – m. dwubrzuścowy głowy [[m. biventer capitis]]',
-            'część boczna – m. spleciony większy [[m. complexus major]]',
+          sub=[
+            S('m. dwubrzuścowy głowy', 'm. biventer capitis', note='część przyśrodkowa'),
+            S('m. spleciony większy', 'm. complexus major', note='część boczna'),
           ],
           o=[
             'wyrostki poprzeczne Th1–Th6 [[processus transversus]]',
@@ -292,10 +293,12 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
           warn=['W streszczeniu (s. 676) Bochenek zamiast wyrostków suteczkowatych podaje wyrostki poprzeczne kręgów lędźwiowych. Notatka podaje opis ze s. 669.']),
         M('mm. skręcające', 'mm. rotatores', '669',
           layer='warstwa głęboka',
-          parts=[
-            'krótkie – dochodzą do sąsiedniego, wyżej leżącego kręgu [[mm. rotatores breves]]',
-            'długie – mijają jeden kręg [[mm. rotatores longi]]',
-            'wg odcinków: lędźwi, klatki piersiowej, szyi [[mm. rotatores lumborum, thoracis, cervicis]]',
+          sub=[
+            S('mm. skręcające długie', 'mm. rotatores longi', note='mijają jeden kręg'),
+            S('mm. skręcające krótkie', 'mm. rotatores breves', note='dochodzą do sąsiedniego, wyżej leżącego kręgu'),
+            S('mm. skręcające klatki piersiowej', 'mm. rotatores thoracis', note='najsilniej rozwinięte'),
+            S('mm. skręcające szyi', 'mm. rotatores cervicis'),
+            S('mm. skręcające lędźwi', 'mm. rotatores lumborum'),
           ],
           o=['tylne i górne brzegi wyrostków poprzecznych (od kości krzyżowej do C2) [[processus transversus]]',
              'w odcinku szyjnym: wyrostki stawowe dolne [[processus articularis inferior]]',
@@ -312,35 +315,39 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
       intro='Łączą dwa sąsiednie kręgi (s. 669).',
       items=[
       M('mm. międzykolcowe', 'mm. interspinales', '669–670',
-        parts=[
-          'szyi – parzyste [[mm. interspinales cervicis]]',
-          'lędźwi – nieparzyste [[mm. interspinales lumborum]]',
-          'klatki piersiowej – przeważnie zanikłe [[mm. interspinales thoracis]]',
-          'okolica krzyżowa – zanikłe; ich szczątkową pozostałością między kością krzyżową a guziczną jest m. krzyżowo-guziczny tylny [[m. sacrococcygeus dorsalis]]',
+        sub=[
+          S('mm. międzykolcowe szyi', 'mm. interspinales cervicis', note='parzyste'),
+          S('mm. międzykolcowe lędźwi', 'mm. interspinales lumborum', note='nieparzyste'),
+          S('mm. międzykolcowe klatki piersiowej', 'mm. interspinales thoracis', note='przeważnie zanikłe'),
+          S('m. krzyżowo-guziczny tylny', 'm. sacrococcygeus dorsalis', note='szczątkowa pozostałość mm. międzykolcowych między kością krzyżową a guziczną'),
         ],
         att=['wierzchołki wyrostków kolczystych dwóch sąsiednich kręgów – w odcinku szyjnym i lędźwiowym [[processus spinosus]]'],
         f=['prostują kręgosłup w odcinku szyjnym i lędźwiowym'],
+        extra=[('m. krzyżowo-guziczny tylny', 'm. sacrococcygeus dorsalis',
+                'szczątkowa pozostałość mm. międzykolcowych między kością krzyżową a guziczną (s. 670)')],
         warn=['W streszczeniu (s. 676) Bochenek pisze: „Służą głównie ruchom obrotowym”. Notatka podaje opis ze s. 670.']),
 
-      M('mm. międzypoprzeczne tylne szyi', 'mm. intertransversarii posteriores cervicis', '670',
-        att=['łączą guzki tylne wyrostków poprzecznych sąsiednich kręgów szyjnych [[processus transversus – tuberculum posterius]]'],
-        f=['zginają kręgosłup bocznie']),
-      M('mm. międzypoprzeczne przyśrodkowe lędźwi', 'mm. intertransversarii mediales lumborum', '670',
-        att=['łączą wyrostki dodatkowe z wyrostkami suteczkowatymi [[processus accessorius; processus mamillaris]]'],
-        f=['zginają kręgosłup bocznie']),
-      M('mm. międzypoprzeczne przednie szyi', 'mm. intertransversarii anteriores cervicis', '670',
-        att=['łączą guzki przednie wyrostków poprzecznych sąsiednich kręgów szyjnych [[processus transversus – tuberculum anterius]]'],
-        f=['zginają kręgosłup bocznie']),
-      M('mm. międzypoprzeczne boczne lędźwi', 'mm. intertransversarii laterales lumborum', '670',
-        parts=['do tej samej grupy należy m. krzyżowo-guziczny przedni – parzysty, szczątkowy, niestały [[m. sacrococcygeus ventralis]]'],
-        att=['łączą wyrostki żebrowe sąsiednich kręgów lędźwiowych [[processus costalis]]'],
-        f=['zginają kręgosłup bocznie']),
+      M('mm. międzypoprzeczne', 'mm. intertransversarii', '670',
+        sub=[
+          S('mm. międzypoprzeczne przednie szyi', 'mm. intertransversarii anteriores cervicis',
+            att=['łączą guzki przednie wyrostków poprzecznych sąsiednich kręgów szyjnych [[processus transversus – tuberculum anterius]]']),
+          S('mm. międzypoprzeczne tylne szyi', 'mm. intertransversarii posteriores cervicis',
+            att=['łączą guzki tylne wyrostków poprzecznych sąsiednich kręgów szyjnych [[processus transversus – tuberculum posterius]]']),
+          S('mm. międzypoprzeczne boczne lędźwi', 'mm. intertransversarii laterales lumborum',
+            att=['łączą wyrostki żebrowe sąsiednich kręgów lędźwiowych [[processus costalis]]']),
+          S('mm. międzypoprzeczne przyśrodkowe lędźwi', 'mm. intertransversarii mediales lumborum',
+            att=['łączą wyrostki dodatkowe z wyrostkami suteczkowatymi [[processus accessorius; processus mamillaris]]']),
+          S('m. krzyżowo-guziczny przedni', 'm. sacrococcygeus ventralis', note='niestały, szczątkowy; ta sama grupa co mm. międzypoprzeczne boczne lędźwi'),
+        ],
+        f=['zginają kręgosłup bocznie'],
+        extra=[('m. krzyżowo-guziczny przedni', 'm. sacrococcygeus ventralis',
+                'niestały, szczątkowy; od przedniej powierzchni części bocznych ostatnich kręgów krzyżowych do przedniej powierzchni ostatniego kręgu guzicznego (s. 670–671)')]),
 
       M('mm. dźwigacze żeber', 'mm. levatores costarum', '671',
         note='12 z każdej strony',
-        parts=[
-          'krótkie – do następnego żebra [[mm. levatores costarum breves]]',
-          'długie – w 3–4 dolnych przestrzeniach, mijają jedną przestrzeń międzyżebrową [[mm. levatores costarum longi]]',
+        sub=[
+          S('mm. dźwigacze żeber krótkie', 'mm. levatores costarum breves', note='do następnego żebra'),
+          S('mm. dźwigacze żeber długie', 'mm. levatores costarum longi', note='w 3–4 dolnych przestrzeniach; mijają jedną przestrzeń międzyżebrową'),
         ],
         o=['wyrostki poprzeczne C7 i Th1–Th11 [[processus transversus]]'],
         i=['następne żebro; mięśnie długie – drugie z kolei żebro [[costa]]'],
@@ -455,9 +462,9 @@ KLATKA = G('Mięśnie klatki piersiowej', 'musculi thoracis°', '677–702', [
          'razem z mm. międzyżebrowymi wewnętrznymi napinają ścianę międzyżebrzy, dzięki czemu w każdej fazie oddechu pozostaje ona równa (s. 687–688)']),
     M('mm. międzyżebrowe wewnętrzne', 'mm. intercostales interni', '686–687',
       note='od kątów żeber do mostka; dalej do tyłu – błony międzyżebrowe wewnętrzne [[membranae intercostales internae]]',
-      parts=[
-        'warstwa zewnętrzna – mm. międzyżebrowe pośrednie: zaczynają się, jak mm. zewnętrzne, na zewnątrz od bruzdy żebra i sięgają do mostka [[mm. intercostales intermedii]]',
-        'warstwa wewnętrzna – mm. międzyżebrowe najgłębsze, kończą się na granicy chrzęstno-kostnej [[mm. intercostales intimi]]',
+      sub=[
+        S('mm. międzyżebrowe pośrednie', 'mm. intercostales intermedii', note='warstwa zewnętrzna; od bruzdy żebra do mostka'),
+        S('mm. międzyżebrowe najgłębsze', 'mm. intercostales intimi', note='warstwa wewnętrzna; do granicy chrzęstno-kostnej'),
       ],
       o=['dolny brzeg wyżej leżącego żebra, do wewnątrz od bruzdy żebra [[sulcus costae]]'],
       i=['górny brzeg niżej leżącego żebra [[costa]]'],

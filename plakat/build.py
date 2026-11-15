@@ -34,13 +34,6 @@ def M(pl):
                 return it
     raise KeyError(pl)
 
-def REFM(pl):
-    for ch in ALL:
-        for it in walk(ch):
-            if it['kind'] == 'ref' and it['pl'] == pl:
-                return it
-    raise KeyError(pl)
-
 def G(title):
     for ch in ALL:
         for it in walk(ch):
@@ -69,7 +62,7 @@ STAR_M = {'mm. międzyżebrowe zewnętrzne', 'mm. międzyżebrowe wewnętrzne', 
           'm. skośny wewnętrzny brzucha', 'm. poprzeczny brzucha', 'm. prosty brzucha'}     # ★ tematy wskazane jako ważne na zaliczeniu
 STAR_P = {'tlocznia', 'pochewka', 'powiez_poprzeczna', 'kanal'}
 NAMES_ONLY = ['m. płatowaty głowy', 'm. płatowaty szyi', 'm. kolcowy', 'm. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy',
-              'm. wielodzielny', 'mm. skręcające', 'mm. międzykolcowe', 'mm. międzypoprzeczne tylne szyi', 'mm. międzypoprzeczne przyśrodkowe lędźwi', 'mm. międzypoprzeczne przednie szyi', 'mm. międzypoprzeczne boczne lędźwi', 'm. skośny górny głowy',
+              'm. wielodzielny', 'mm. skręcające', 'mm. międzykolcowe', 'mm. międzypoprzeczne', 'm. skośny górny głowy',
               'm. prosty tylny mniejszy głowy', 'm. prosty tylny większy głowy', 'm. skośny dolny głowy', 'm. prosty boczny głowy']
 for _m in NAMES_ONLY:
     L3M.pop(_m, None)
@@ -221,7 +214,7 @@ def card(m, col, wide=False, extra_rows=None, extra_warn=None, kids_html=''):
         h.append('<div class="parts"><span class="k">CZĘŚCI</span><ul>' + ''.join(f'<li>{mk(p)}</li>' for p in m['parts']) + '</ul></div>')
     h.append(att(m, wide))
     for s in m.get('sub', []):
-        h.append(f'<div class="sm"><div class="sh"><span class="snm">{s["pl"]}</span> {lat(s["lat"], "slt")}{tags(s)}</div>{att(s, wide)}</div>')
+        h.append(f'<div class="sm"><div class="sh"><span class="snm">{s["pl"]}</span> {lat(s["lat"], "slt")}{tags(s)}{(' <span class="snote">– ' + mk(s['note']) + '</span>') if s.get('note') else ''}</div>{att(s, wide)}</div>')
     for (lab, items) in (extra_rows or []):
         h.append(f'<div class="xrow"><div class="k">{lab}</div><ul>' + ''.join(f'<li>{mk(x)}</li>' for x in items) + '</ul></div>')
     if m.get('f'):
@@ -247,10 +240,10 @@ def gfcard(g, col):
 # wiersze kart, które po wstawieniu rozbudowanej sekcji ★ (explain_*.json) są zbędne (indeksy w listach; ujemne = od końca)
 TRIM = {
     'mm. międzyżebrowe zewnętrzne': {'note': True, 'f': [0, 1]},
-    'mm. międzyżebrowe wewnętrzne': {'note': True, 'parts': [0, 1], 'f': [0]},
+    'mm. międzyżebrowe wewnętrzne': {'note': True, 'f': [0]},
     'mm. podżebrowe': {'f': [0]},
     'm. poprzeczny klatki piersiowej': {'f': [0, 1]},
-    'mm. dźwigacze żeber': {'note': True, 'parts': [0, 1], 'f': [0, 1]},
+    'mm. dźwigacze żeber': {'note': True, 'f': [0, 1]},
     'm. zębaty tylny górny': {'f': [0], 'warn': [0]},
     'm. zębaty tylny dolny': {'f': [0], 'warn': [0]},
     'm. piersiowy większy': {'f': [2, 3]},
@@ -278,7 +271,7 @@ def bare(n):
         m.pop(k, None)
     m['sub'] = [sm for sm in m.get('sub', []) if 'odmian' not in (str(sm.get('layer', '')) + str(sm.get('tag', ''))).lower()]
     for sm in m.get('sub', []):
-        for k in ('o', 'i', 'att', 'omax', 'f', 'note', 'extra', 'warn'):
+        for k in ('o', 'i', 'att', 'omax', 'f', 'extra', 'warn'):
             sm.pop(k, None)
     return m
 
@@ -331,14 +324,14 @@ PU, TE, CO, BL, PK, RE, GN, AM = 'purple', 'teal', 'coral', 'blue', 'pink', 'red
 g_ram = sub(gnode('Mięśnie kolcowo-ramienne', 'mm. spinohumerales', 'grp', PU, 'do łopatki i k. ramiennej', '650'),
             cards(['m. czworoboczny', 'm. najszerszy grzbietu', 'm. równoległoboczny', 'dźwigacz łopatki'], PU, True),
             'list', col=PU)
-g_zeb = sub(gnode('Mięśnie kolcowo-żebrowe', 'mm. spinocostales', 'grp', PU, 'do żeber', '658'),
+g_zeb = sub(gnode('Mięśnie kolcowo-żebrowe', 'mm. spinocostales', 'grp', PU, 'do żeber · mm. zębate tylne (mm. serrati posteriores)', '658'),
             cards(['m. zębaty tylny górny', 'm. zębaty tylny dolny'], PU, True),
             'list', col=PU)
 POW_G = sub(gnode('Powierzchowne mięśnie grzbietu', '', 'world', PU,
                   'głównie mm. kończyny górnej, które przewędrowały na grzbiet · gałęzie przednie nn. rdzeniowych', '649–650'),
             g_ram + g_zeb, 'list', q('2', 'do czego dochodzą?', '650'), width=W['pow'], col=PU, id='pow')
 
-kp = sub(gnode('Mięśnie kolcowo-poprzeczne', 'm. spinotransversalis', 'sg', TE, 'od wyr. kolczystych do poprzecznych', '659'),
+kp = sub(gnode('Mięśnie kolcowo-poprzeczne', 'm. spinotransversalis', 'sg', TE, 'mm. płatowate (mm. splenii) · od wyr. kolczystych do poprzecznych', '659'),
          barecards(['m. płatowaty głowy', 'm. płatowaty szyi'], TE), 'list', col=TE)
 kg_card = card(M('m. krzyżowo-grzbietowy – wspólny początek'), TE, True,
                kids_html=card(M('m. biodrowo-żebrowy'), TE, True) + card(M('m. najdłuższy'), TE, True))
@@ -358,12 +351,8 @@ p_przysr = sub(gnode('pasmo przyśrodkowe', '', 'band', CO, 'włókna do wyr. ko
 
 DLUGIE = sub(gnode('Długie mięśnie grzbietu', '', 'grp', TE, 'włókna biegną przez wiele kręgów', '659'),
              p_boczne + p_przysr, 'row', q('4', 'do których wyrostków biegną włókna?', '659'), width=W['dlugie'], col=TE, id='dlugie')
-k_wl = sub(gnode('właściwe mięśnie grzbietu', '', 'band', BL, 'gałęzie tylne nn. rdzeniowych', '669'),
-           barecards(['mm. międzykolcowe', 'mm. międzypoprzeczne tylne szyi', 'mm. międzypoprzeczne przyśrodkowe lędźwi'], BL), 'list', col=BL)
-k_we = sub(gnode('pochodzenia wentralnego', '', 'band', BL, 'gałęzie przednie nn. rdzeniowych – nie są właściwymi mm. grzbietu', '669–671'),
-           barecards(['mm. międzypoprzeczne przednie szyi', 'mm. międzypoprzeczne boczne lędźwi'], BL) + cards(['mm. dźwigacze żeber'], BL), 'list', col=BL)
-KROTKIE = sub(gnode('Krótkie mięśnie grzbietu', '', 'grp', BL, 'między dwoma sąsiednimi kręgami; budowa metameryczna', '669'),
-              k_wl + k_we, 'list', q('5', 'skąd pochodzą – jaki mają nerw?', '669'), width=W['krot'], col=BL, id='krot')
+KROTKIE = sub(gnode('Krótkie mięśnie grzbietu', '', 'grp', BL, 'między dwoma sąsiednimi kręgami', '669'),
+              barecards(['mm. międzykolcowe', 'mm. międzypoprzeczne'], BL) + cards(['mm. dźwigacze żeber'], BL), 'list', width=W['krot'], col=BL, id='krot')
 PODPOT = sub(gnode('Mięśnie podpotyliczne', 'mm. suboccipitales', 'grp', PK, 'potylica ↔ dwa górne kręgi · 5 mięśni', '671'),
              barecards(['m. skośny górny głowy', 'm. prosty tylny mniejszy głowy', 'm. prosty tylny większy głowy',
                         'm. skośny dolny głowy', 'm. prosty boczny głowy'], PK), 'list', width=W['podp'], col=PK, id='podp')
@@ -487,7 +476,7 @@ b_przed = sub(gnode('przednie', '', 'sg', AM, 'układ mięśni prostych', '704')
 b_bp = sub(gnode('Boczne i przednie mięśnie brzucha', '', 'grp', AM, 'z boku 3 warstwy, z przodu pas mięśni prostych', '702–712'),
            b_bocz + b_przed, 'row', q('2', 'z boku czy z przodu?', '702'), width=W['bbp'], col=AM, id='bbp')
 b_tyl = sub(gnode('Tylne mięśnie brzucha', '', 'grp', AM, 'po bokach kręgosłupa lędźwiowego', '712–715'),
-            card(REFM('mm. międzypoprzeczne boczne lędźwi'), AM) + card(M('m. czworoboczny lędźwi'), AM),
+            card(M('mm. międzypoprzeczne boczne lędźwi'), AM) + card(M('m. czworoboczny lędźwi'), AM),
             'list', width=W['btyl'], col=AM, id='btyl')
 CH_BRZUCH = sub(gnode('Mięśnie brzucha', 'musculi abdominis°', 'chap', 'c3', '', '702–733'),
                 b_bp + b_tyl, 'row', q('1', 'gdzie leżą?', '702'), width=W['brz'], col='c3', id='brz')
