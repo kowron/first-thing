@@ -1,0 +1,21 @@
+{
+  "title": "Elektroforeza, hybrydyzacja, sekwencjonowanie – kolokwium 6 (dla osób, które chcą 5)",
+  "author": "Opracowanie do kolokwium 6 z biologii molekularnej",
+  "subject": "Biologia molekularna – kolokwium 6: elektroforeza kwasów nukleinowych, hybrydyzacja, mikromacierze, sekwencjonowanie, identyfikacja genetyczna (STR)",
+  "keywords": "elektroforeza, żel agarozowy, żel poliakrylamidowy, elektroforeza kapilarna, Southern, northern, mikromacierze, sekwencjonowanie, STR, sporne ojcostwo, ślady biologiczne",
+  "header": "ELEKTROFOREZA I HYBRYDYZACJA · KOLOKWIUM 6",
+  "footer": "Biologia molekularna · zajęcia nr 6 · wersja dla osób, które chcą 5",
+  "output": "Elektroforeza_hybrydyzacja_sekwencjonowanie_kolokwium_6_dla_osob_ktore_chca_5.pdf",
+  "buildDir": "/tmp/claude-0/-home-user-first-thing/600b873f-e07d-5766-b2f4-6a90b68ae091/scratchpad/build",
+  "tocIntro": "Rozdziały idą od rozdziału cząsteczek w żelu, przez przeniesienie ich na membranę i hybrydyzację, do odczytu sekwencji i współczesnej identyfikacji genetycznej.",
+  "autoSections": {},
+  "sourcesIntro": "",
+  "sources": [
+    {
+      "key": "Drewa",
+      "html": "Drewa G., Ferenc T.: <i>Genetyka medyczna. Podręcznik dla studentów</i>. Edra Urban &amp; Partner, Wrocław 2011. Rozdz. 27 (s. 712–718, 730–732) i rozdz. 29 (s. 769–774, 780–782).",
+      "note": "Jedyne źródło treści – strony podano pod każdym podrozdziałem."
+    }
+  ],
+  "sourcesNote": ""
+}

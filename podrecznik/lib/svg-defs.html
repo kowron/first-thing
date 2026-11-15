@@ -1,0 +1,33 @@
+<!-- Globalne definicje SVG wstawiane przez build na początek <body>.
+     Każda rycina może się do nich odwoływać: marker-end="url(#k6-arrow)" albo klasą .arrow -->
+<svg class="k6-defs" aria-hidden="true" width="0" height="0" focusable="false">
+  <defs>
+    <marker id="k6-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#8a98a3"/>
+    </marker>
+    <marker id="k6-arrow-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#007e83"/>
+    </marker>
+    <marker id="k6-arrow-navy" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#153144"/>
+    </marker>
+    <marker id="k6-arrow-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#c84d42"/>
+    </marker>
+    <marker id="k6-arrow-start" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#8a98a3"/>
+    </marker>
+    <!-- gradient denaturujący (DGGE/TGGE), od góry jasny do dołu ciemny -->
+    <linearGradient id="k6-grad-denat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf6ee"/><stop offset="1" stop-color="#e2cfa8"/>
+    </linearGradient>
+    <!-- poświata prążka w żelu UV -->
+    <linearGradient id="k6-grad-band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6c1e3" stop-opacity=".2"/><stop offset=".5" stop-color="#f6c1e3"/><stop offset="1" stop-color="#f6c1e3" stop-opacity=".2"/>
+    </linearGradient>
+    <!-- kreskowanie (np. obszar niewykrywalny) -->
+    <pattern id="k6-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#c9d3d9" stroke-width="2"/>
+    </pattern>
+  </defs>
+</svg>

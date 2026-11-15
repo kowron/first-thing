@@ -1,0 +1,658 @@
+/* =====================================================================
+   Kolokwium 6 – system graficzny (druk natywny Chromium, A4)
+   Odwzorowanie wzorca „Analiza DNA i RNA – kolokwium 5”.
+   Wymiary w pt/mm; 1 px CSS = 0,75 pt.
+   ===================================================================== */
+
+/* ---------- Czcionki ------------------------------------------------- */
+/* Source Serif 4: latin + latin-ext (polskie znaki) + greek (α β γ µ). */
+@font-face { font-family: 'Source Serif 4'; font-style: normal; font-weight: 400; src: url(../fonts/source-serif-4-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Source Serif 4'; font-style: normal; font-weight: 400; src: url(../fonts/source-serif-4-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: normal; font-weight: 400; src: url(../fonts/source-serif-4-greek-400-normal.woff2) format('woff2'); unicode-range: U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: italic; font-weight: 400; src: url(../fonts/source-serif-4-latin-400-italic.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Source Serif 4'; font-style: italic; font-weight: 400; src: url(../fonts/source-serif-4-latin-ext-400-italic.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: italic; font-weight: 400; src: url(../fonts/source-serif-4-greek-400-italic.woff2) format('woff2'); unicode-range: U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: normal; font-weight: 600; src: url(../fonts/source-serif-4-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Source Serif 4'; font-style: normal; font-weight: 600; src: url(../fonts/source-serif-4-latin-ext-600-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: normal; font-weight: 600; src: url(../fonts/source-serif-4-greek-600-normal.woff2) format('woff2'); unicode-range: U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: italic; font-weight: 600; src: url(../fonts/source-serif-4-latin-600-italic.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Source Serif 4'; font-style: italic; font-weight: 600; src: url(../fonts/source-serif-4-latin-ext-600-italic.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: italic; font-weight: 600; src: url(../fonts/source-serif-4-greek-600-italic.woff2) format('woff2'); unicode-range: U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: normal; font-weight: 700; src: url(../fonts/source-serif-4-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Source Serif 4'; font-style: normal; font-weight: 700; src: url(../fonts/source-serif-4-latin-ext-700-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: normal; font-weight: 700; src: url(../fonts/source-serif-4-greek-700-normal.woff2) format('woff2'); unicode-range: U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: italic; font-weight: 700; src: url(../fonts/source-serif-4-latin-700-italic.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Source Serif 4'; font-style: italic; font-weight: 700; src: url(../fonts/source-serif-4-latin-ext-700-italic.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Source Serif 4'; font-style: italic; font-weight: 700; src: url(../fonts/source-serif-4-greek-700-italic.woff2) format('woff2'); unicode-range: U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF; }
+
+/* Inter / Inter Display: systemowe pliki OTF (CFF) Chromium osadza jako Type 3,
+   dlatego build używa własnych kopii przekonwertowanych do TrueType (fonts/Inter*.woff2,
+   podzbiór: łacina + rozszerzenia, greka, interpunkcja, strzałki, symbole matematyczne). */
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; src: url(../fonts/Inter-Regular.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: italic; font-weight: 400; src: url(../fonts/Inter-Italic.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; src: url(../fonts/Inter-Medium.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: italic; font-weight: 500; src: url(../fonts/Inter-MediumItalic.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; src: url(../fonts/Inter-SemiBold.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: italic; font-weight: 600; src: url(../fonts/Inter-SemiBoldItalic.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700 900; src: url(../fonts/Inter-Bold.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: italic; font-weight: 700 900; src: url(../fonts/Inter-BoldItalic.woff2) format('woff2'); }
+@font-face { font-family: 'Inter Display'; font-style: normal; font-weight: 100 200; src: url(../fonts/InterDisplay-ExtraLight.woff2) format('woff2'); }
+@font-face { font-family: 'Inter Display'; font-style: normal; font-weight: 300 400; src: url(../fonts/InterDisplay-Light.woff2) format('woff2'); }
+@font-face { font-family: 'Inter Display'; font-style: normal; font-weight: 500 600; src: url(../fonts/InterDisplay-SemiBold.woff2) format('woff2'); }
+@font-face { font-family: 'Inter Display'; font-style: normal; font-weight: 700 900; src: url(../fonts/InterDisplay-Bold.woff2) format('woff2'); }
+
+/* ---------- Paleta i wymiary ----------------------------------------- */
+:root {
+  --navy: #153144;      /* okładka, tytuły, nagłówki tabel */
+  --navy-2: #1b3b50;    /* panele na okładce */
+  --ink: #23323e;       /* tekst główny */
+  --ink-2: #3d4a55;     /* lead */
+  --muted: #656f78;     /* podpisy, opisy */
+  --faint: #8d959b;     /* pagina, źródła */
+  --rule: #dde5e9;      /* linie tabel, ramki paneli */
+  --rule-2: #d3dce1;
+  --zebra: #f6f9fa;
+  --tile: #f2f5f7;      /* szare kafelki w rycinach */
+
+  --teal: #007e83;      /* akcent */
+  --teal-l: #6cc7c9;    /* akcent na granacie */
+  --teal-bg: #e5f2f2;
+  --blue: #4387b7;  --blue-bg: #eef5fb;  --blue-l: #92b5d1;
+  --violet: #7867a8; --violet-bg: #f1eef7; --violet-l: #a79cc6;
+  --ochre: #b77a20; --ochre-bg: #fbf3e5; --ochre-l: #ceb16b;
+  --red: #c84d42;   --red-bg: #fff0ec;   --red-l: #d29675;
+  --gold: #e8b200;
+  --gray-bg: #f3f5f6; --gray-line: #9aa5ad;
+
+  --main: 120mm;   /* kolumna tekstu */
+  --gap: 6mm;
+  --side: 53mm;    /* kolumna marginesowa */
+  --full: 179mm;   /* pole zadruku = main + gap + side */
+  --pull: calc(-1 * (var(--side) + var(--gap)));
+
+  --sans: 'Inter', 'DejaVu Sans', sans-serif;
+  --display: 'Inter Display', 'Inter', sans-serif;
+  --serif: 'Source Serif 4', 'Inter', 'DejaVu Serif', serif;
+  --mono: 'JetBrains Mono', 'DejaVu Sans Mono', monospace;
+}
+
+/* ---------- Strony ---------------------------------------------------- */
+@page {
+  size: A4;
+  margin: 22mm 15.5mm 25mm 15.5mm;
+  @top-left {
+    font-family: 'Inter'; font-size: 6.8pt; font-weight: 600; letter-spacing: 0.15em;
+    color: #8d959b; vertical-align: bottom; padding-bottom: 12.5pt;
+  }
+  @top-right {
+    font-family: 'Inter'; font-size: 7pt; font-weight: 600; color: #3a4752;
+    vertical-align: bottom; padding-bottom: 12.5pt; text-align: right;
+  }
+  @bottom-left {
+    font-family: 'Inter'; font-size: 6.4pt; font-weight: 400; color: #a3abb1;
+    vertical-align: top; padding-top: 26pt;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-family: 'Inter'; font-size: 8pt; font-weight: 700; color: #153144;
+    vertical-align: top; padding-top: 25pt; text-align: right;
+  }
+}
+@page cover {
+  margin: 0;
+  @top-left { content: none; } @top-right { content: none; }
+  @bottom-left { content: none; } @bottom-right { content: none; }
+}
+
+/* ---------- Podstawy --------------------------------------------------- */
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  margin: 0; background: #fff; color: var(--ink);
+  font-family: var(--serif); font-size: 10.5pt; line-height: 15.5pt;
+  font-kerning: normal; font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+/* Szerokość jak w druku. Potrzebne, żeby pomiary w widoku ekranowym (kontrole, zamrażanie dywizów)
+   zgadzały się z PDF co do ułamka piksela. Wartość zmierzona w druku Chromium (A4, marginesy 15,5 mm):
+   pole zadruku = 677,03125 px (43330/64 – LayoutUnit). Dawne calc(794px − 31mm) = 676,83 px było
+   o 0,2 px węższe i wiersze „na styk” łamały się na ekranie inaczej niż w druku (zamrażanie miękkich
+   łączników nie przechodziło kontroli). Na ekranie bierzemy 677 px – o 1/32 px mniej: przy remisie
+   lepiej złamać wcześniej na miękkim łączniku (twardy dywiz w druku złamie się tak samo) niż za późno.
+   Jeśli zmienisz rozmiar strony lub marginesy w @page, zmierz to na nowo (build zgłosi wtedy
+   „Zamiana miękkich łączników zmieniłaby łamanie”). */
+@media screen { body { width: 677px; margin: 0 auto; } }
+p { margin: 0 0 6.5pt; orphans: 2; widows: 2; }
+strong, b { font-weight: 700; color: var(--navy); }
+em, i { font-style: italic; }
+a { color: inherit; text-decoration: none; }
+sub, sup { font-size: 70%; line-height: 0; }
+code, .mono { font-family: var(--mono); font-size: 0.86em; }
+.seq { font-family: var(--mono); font-size: 0.86em; letter-spacing: 0.04em; }
+.sc { font-variant: all-small-caps; letter-spacing: .04em; }
+.nowrap { white-space: nowrap; }
+/* dywiz przeniesienia wstawiany przez build (zamrażanie miękkich łączników) – bez kerningu, jak miękki łącznik */
+.k6-hy { font-kerning: none; }
+.k6-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.ghost-links { position: absolute; left: 0; top: 0; width: 1px; height: 1px; overflow: hidden; color: transparent; font-size: 1px; line-height: 1px; }
+
+/* Odsyłacze generowane przez build */
+a.figref, a.pageref, a.chapref, a.qref { color: var(--teal); font-family: var(--sans); font-weight: 600; font-size: 0.86em; white-space: nowrap; }
+a.broken { color: #fff; background: var(--red); padding: 0 2pt; }
+
+/* ---------- Rozdział: układ dwukolumnowy -------------------------------- */
+section.chapter {
+  break-before: page;
+  padding-right: calc(var(--side) + var(--gap));
+}
+section.chapter::after { content: ""; display: block; clear: both; }
+/* nic nie może poszerzyć strony (Chromium zmniejszyłby wtedy cały wydruk) */
+section.chapter, section.back, section.front { overflow-x: clip; }
+
+/* Elementy na pełną szerokość (obie kolumny) */
+.opener, figure.fig, .wide, table.tbl.wide, .numbers.wide, .box.wide, .quiz, .w60.wide {
+  margin-right: var(--pull);
+  clear: right;
+}
+
+/* ---------- Otwarcie rozdziału ------------------------------------------- */
+.opener {
+  display: grid; grid-template-columns: 92pt minmax(0, 1fr);
+  padding-bottom: 14pt; margin-bottom: 13pt;
+  border-bottom: 1.6pt solid var(--navy);
+  break-inside: avoid; break-after: avoid;
+}
+.opener-num {
+  font-family: var(--display); font-weight: 200; font-size: 64pt; line-height: 52pt;
+  color: var(--teal); letter-spacing: -0.02em; margin-top: 2pt;
+}
+.opener-kicker {
+  font-family: var(--sans); font-weight: 700; font-size: 6.8pt; line-height: 9pt;
+  letter-spacing: 0.25em; text-transform: uppercase; color: var(--teal); margin: 0 0 3pt;
+}
+.opener h1 {
+  font-family: var(--display); font-weight: 700; font-size: 23pt; line-height: 26pt;
+  color: var(--navy); margin: 0 0 6pt; letter-spacing: -0.012em; hyphens: none;
+}
+.opener .lead {
+  font-family: var(--serif); font-style: italic; font-size: 11.3pt; line-height: 16pt;
+  color: var(--ink-2); margin: 0 0 8pt;
+}
+.opener-meta {
+  font-family: var(--sans); font-size: 7.6pt; line-height: 11.6pt; color: var(--muted); margin: 0;
+}
+.opener-meta b { color: var(--ink); font-weight: 600; }
+
+/* ---------- Nagłówki ------------------------------------------------------ */
+h2, h3, h4 { hyphens: none; break-after: avoid; break-inside: avoid; }
+section.chapter h2 {
+  clear: right;
+  font-family: var(--display); font-weight: 700; font-size: 14.5pt; line-height: 18pt;
+  color: var(--navy); margin: 24pt 0 7pt; padding-top: 10.5pt; position: relative;
+  letter-spacing: -0.005em;
+}
+section.chapter h2::before {
+  content: ""; position: absolute; left: 0; top: 0; width: 23pt; height: 2pt; background: var(--teal);
+}
+.opener + h2, .opener + aside + h2, section.chapter > h2:first-child { margin-top: 2pt; }
+h3 {
+  font-family: var(--sans); font-weight: 600; font-size: 10.5pt; line-height: 13pt;
+  color: var(--teal); margin: 13pt 0 4pt;
+}
+h4 {
+  font-family: var(--sans); font-weight: 700; font-size: 8.5pt; line-height: 12pt;
+  color: var(--navy); margin: 9pt 0 2pt;
+}
+
+/* ---------- Listy ---------------------------------------------------------- */
+section.chapter ul, section.chapter ol, .back ul.std, .front ul.std { margin: 0 0 7pt; padding: 0; list-style: none; }
+section.chapter li, .front ul.std li { position: relative; margin: 0 0 3pt; break-inside: avoid; }
+section.chapter ul > li { padding-left: 13pt; }
+section.chapter ul > li::before {
+  content: ""; position: absolute; left: 1pt; top: 5.4pt; width: 4.6pt; height: 4.6pt;
+  border-radius: 50%; background: var(--teal);
+}
+section.chapter ol { counter-reset: k6ol; }
+section.chapter ol > li { padding-left: 17pt; counter-increment: k6ol; }
+section.chapter ol > li::before {
+  content: counter(k6ol); position: absolute; left: 0; top: 3pt;
+  width: 10pt; height: 10pt; border-radius: 50%; background: var(--navy); color: #fff;
+  font-family: var(--sans); font-weight: 700; font-size: 6.2pt; line-height: 10pt; text-align: center;
+}
+section.chapter li > ul, section.chapter li > ol { margin: 3pt 0 0; }
+section.chapter li > ul > li::before { background: none; border: 1pt solid var(--teal); width: 3.4pt; height: 3.4pt; }
+
+/* ---------- Notatki marginesowe ------------------------------------------- */
+aside.note {
+  float: right; clear: right;
+  width: var(--side); margin: 3pt var(--pull) 9pt 0;
+  box-sizing: border-box;
+  font-family: var(--sans); font-size: 7.5pt; line-height: 10.6pt; color: var(--ink);
+  border-top: 1.5pt solid var(--teal); padding: 6pt 0 0;
+  break-inside: avoid; hyphens: manual;
+}
+aside.note p { margin: 0 0 3pt; }
+aside.note p:last-child { margin-bottom: 0; }
+aside.note strong, aside.note b { color: var(--navy); font-weight: 700; }
+aside.note ul { margin: 2pt 0 0; padding-left: 9pt; }
+aside.note ul li { padding-left: 0; margin: 0 0 1pt; }
+aside.note ul li::before { display: none; }
+aside.note ul li { list-style: disc; }
+.lbl {
+  display: block; font-family: var(--sans); font-weight: 700; font-size: 5.8pt; line-height: 8pt;
+  letter-spacing: 0.22em; text-transform: uppercase; margin: 0 0 2.5pt; color: var(--teal);
+}
+aside.note.liceum { background: var(--blue-bg); border-top-color: var(--blue); padding: 6pt 7pt 7pt; border-radius: 0 0 4pt 4pt; }
+aside.note.liceum .lbl { color: var(--blue); }
+aside.note.pojecie .lbl { color: var(--teal); }
+aside.note.pojecie .term { display: block; font-weight: 700; font-size: 8pt; line-height: 11pt; color: var(--navy); margin-bottom: 1pt; }
+aside.note.warto { border-top-color: var(--violet); }
+aside.note.warto .lbl { color: var(--violet); }
+aside.note.poza { background: var(--gray-bg); border: 1pt dashed var(--gray-line); border-top: 1.5pt dashed var(--gray-line); padding: 6pt 7pt 7pt; border-radius: 4pt; }
+aside.note.poza .lbl { color: #5b6770; }
+
+/* ---------- Ramki w tekście ------------------------------------------------ */
+.box {
+  font-family: var(--sans); font-size: 8.7pt; line-height: 13pt; color: var(--ink);
+  border-left: 3pt solid var(--teal); background: var(--teal-bg);
+  padding: 10pt 13pt 10pt 12pt; margin: 11pt 0 13pt;
+  border-radius: 0 6pt 6pt 0; break-inside: avoid;
+}
+.box p { margin: 0 0 4pt; } .box p:last-child { margin-bottom: 0; }
+.box .lbl { font-size: 6.4pt; line-height: 9pt; margin-bottom: 4pt; }
+.box ul, .box ol { margin: 3pt 0 4pt !important; }
+.box li { margin-bottom: 2pt !important; }
+.box ul > li::before { top: 4.6pt !important; width: 4pt !important; height: 4pt !important; }
+.box ol > li::before { top: 1.6pt !important; }
+.box.zapamietaj { border-color: var(--teal); background: var(--teal-bg); } .box.zapamietaj .lbl { color: var(--teal); }
+.box.przyklad { border-color: var(--ochre); background: var(--ochre-bg); } .box.przyklad .lbl { color: var(--ochre); }
+.box.przyklad ul > li::before { background: var(--ochre); }
+.box.obraz { border-color: var(--violet); background: var(--violet-bg); } .box.obraz .lbl { color: var(--violet); }
+.box.obraz ul > li::before { background: var(--violet); }
+.box.uwaga { border-color: var(--red); background: var(--red-bg); } .box.uwaga .lbl { color: var(--red); }
+.box.uwaga ul > li::before { background: var(--red); }
+.box.poza {
+  border: 1pt dashed var(--gray-line); border-left: 3pt dashed var(--gray-line);
+  background: var(--gray-bg); border-radius: 0 6pt 6pt 0;
+}
+.box.poza .lbl { color: #5b6770; }
+.box.poza ul > li::before { background: #7d8a93; }
+.box.wide { margin-right: var(--pull); }
+
+/* W 60 sekund – granatowe podsumowanie */
+.w60 {
+  clear: right; break-inside: avoid;
+  background: var(--navy); color: #e6edf1; border-radius: 8pt;
+  padding: 13pt 16pt 12pt; margin: 16pt 0 14pt;
+  font-family: var(--sans); font-size: 8.8pt; line-height: 13pt;
+}
+.w60 .lbl { color: var(--teal-l); font-size: 6.4pt; line-height: 9pt; margin-bottom: 6pt; display: flex; align-items: center; gap: 6pt; }
+.w60 .lbl svg { width: 10pt; height: 10pt; }
+.w60 ul, .w60 ol { margin: 0 !important; padding: 0; list-style: none; }
+.w60 li { position: relative; padding-left: 15pt !important; margin: 0 0 4pt !important; }
+.w60 li:last-child { margin-bottom: 0 !important; }
+.w60 ul > li::before, .w60 ol > li::before {
+  content: "" !important; position: absolute; left: 0 !important; top: 4.2pt !important;
+  width: 6pt !important; height: 2pt !important; border-radius: 1pt !important; background: var(--teal-l) !important; border: 0 !important;
+}
+.w60 strong, .w60 b { color: #fff; }
+.w60 a.figref, .w60 a.pageref, .w60 a.chapref { color: var(--teal-l); }
+
+/* Liczby do zapamiętania */
+.numbers {
+  break-inside: avoid; margin: 12pt 0 14pt; padding: 10pt 0 2pt;
+  border-top: 1.6pt solid var(--navy); font-family: var(--sans);
+}
+.numbers > .lbl { color: var(--navy); font-size: 6.4pt; margin-bottom: 7pt; }
+.numbers .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 12pt; }
+.numbers.wide .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.numbers.cols-2 .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.numbers .n { padding: 5pt 0 7pt; border-bottom: 0.6pt solid var(--rule); break-inside: avoid; }
+.numbers .v {
+  display: block; font-family: var(--display); font-weight: 600; font-size: 17pt; line-height: 20pt;
+  color: var(--teal); letter-spacing: -0.01em; white-space: nowrap;
+}
+.numbers .v small { font-size: 9pt; font-weight: 600; color: var(--teal); letter-spacing: 0; margin-left: 1pt; }
+.numbers .d { display: block; font-size: 7.4pt; line-height: 10pt; color: var(--muted); margin-top: 1pt; }
+.numbers .d b { color: var(--ink); font-weight: 600; }
+
+/* Sprawdź się */
+.quiz {
+  break-inside: auto; margin-top: 18pt; margin-bottom: 10pt;
+  border: 1pt solid var(--rule-2); border-radius: 8pt; padding: 12pt 16pt 10pt;
+  font-family: var(--serif);
+}
+.quiz-head { display: flex; align-items: baseline; gap: 10pt; margin-bottom: 8pt; break-after: avoid; }
+.quiz-head .lbl { color: var(--teal); font-size: 6.4pt; margin: 0; }
+.quiz-head .quiz-title { font-family: var(--display); font-weight: 600; font-size: 12pt; color: var(--navy); }
+.quiz-head .quiz-count { margin-left: auto; font-family: var(--sans); font-size: 7pt; color: var(--faint); }
+.quiz ol { columns: 2; column-gap: 20pt; margin: 0 !important; }
+.quiz ol.one-col { columns: 1; }
+.quiz ol > li {
+  padding-left: 19pt !important; margin: 0 0 6pt !important;
+  font-size: 9.6pt; line-height: 13.6pt; break-inside: avoid;
+}
+.quiz ol > li::before {
+  content: counter(k6ol) !important; background: #fff !important; color: var(--teal) !important;
+  border: 1pt solid var(--teal); width: 11pt !important; height: 11pt !important; line-height: 11pt !important;
+  top: 1pt !important; font-size: 6.4pt !important; box-sizing: content-box;
+}
+.quiz .q-level { font-family: var(--sans); font-size: 6pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ochre); margin-left: 3pt; }
+.quiz-foot { font-family: var(--sans); font-size: 7pt; color: var(--faint); margin-top: 6pt; padding-top: 6pt; border-top: 0.6pt solid var(--rule); }
+.answer { display: none; }
+
+/* Linia źródła */
+.src {
+  clear: right;
+  font-family: var(--sans); font-size: 7pt; line-height: 10pt; color: var(--faint);
+  margin: 10pt 0 0; padding-top: 0; break-before: avoid;
+}
+
+/* ---------- Ryciny --------------------------------------------------------- */
+figure.fig { margin-top: 14pt; margin-bottom: 14pt; margin-left: 0; break-inside: avoid; }
+.fig-label { font-family: var(--sans); color: var(--navy); font-size: 9.6pt; line-height: 12pt; font-weight: 600; margin: 0 0 7pt; break-after: avoid; }
+.fig-label .fig-num { font-size: 6.6pt; font-weight: 700; letter-spacing: 0.22em; color: var(--teal); margin-right: 7pt; text-transform: uppercase; }
+.panel {
+  border: 1.1pt solid var(--rule-2); border-radius: 10pt; background: #fff;
+  padding: 11pt 17px 12pt; margin: 0 0 8pt; break-inside: avoid;
+}
+.panel:last-of-type { margin-bottom: 0; }
+.panel-head { display: flex; align-items: center; gap: 9pt; margin: 2pt 0 9pt; }
+.panel-head .badge {
+  display: inline-block; width: 16pt; height: 16pt; border-radius: 3.5pt; background: var(--teal);
+  color: #fff; font-family: var(--sans); font-weight: 700; font-size: 9pt; line-height: 16pt; text-align: center;
+}
+.panel-head .ptitle {
+  font-family: var(--sans); font-weight: 700; font-size: 8.6pt; line-height: 11pt;
+  letter-spacing: 0.04em; text-transform: uppercase; color: var(--navy);
+}
+.panels { display: grid; gap: 8pt; margin-bottom: 8pt; }
+.panels.cols-2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.panels.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.panels .panel { margin: 0; }
+figure.fig figcaption {
+  font-family: var(--sans); font-size: 7.6pt; line-height: 11.4pt; color: var(--muted);
+  margin: 7pt 0 0; max-width: 150mm; hyphens: manual;
+}
+figure.fig figcaption b { color: var(--ink); font-weight: 600; }
+.fig-src { font-family: var(--sans); font-size: 6.8pt; line-height: 9.5pt; color: var(--faint); margin: 3pt 0 0; }
+/* Rycina w kolumnie tekstu (wąska) */
+figure.fig.narrow { margin-right: 0; clear: none; }
+
+/* ---------- SVG: zestaw dla autorów ---------------------------------------
+   viewBox szerokości 640 dla ryciny na pełną szerokość (1 jedn. ≈ 0,75 pt).
+   Minimalny tekst: font-size 10 (≈ 7,5 pt po wydruku).                     */
+figure.fig svg, .cover svg { display: block; width: 100%; height: auto; overflow: visible; }
+/* Domyślne wartości dziedziczone z <svg> – atrybuty fill="…" / font-size="…" na elementach nadal działają. */
+figure.fig svg, .cover svg { font-family: 'Inter', sans-serif; font-size: 11px; fill: var(--ink); }
+svg .t-xs { font-size: 10px; }   /* minimum! */
+svg .t-s  { font-size: 11px; }
+svg .t-m  { font-size: 12px; }
+svg .t-l  { font-size: 14px; }
+svg .t-xl { font-size: 18px; }
+svg .b  { font-weight: 700; }  svg .sb { font-weight: 600; }  svg .md { font-weight: 500; }
+svg .it { font-style: italic; }
+svg .up { text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; font-size: 10px; }
+svg .mono { font-family: 'JetBrains Mono', monospace; }
+svg .mid { text-anchor: middle; }  svg .end { text-anchor: end; }
+svg .muted { fill: var(--muted); }  svg .faint { fill: var(--faint); }
+svg .f-navy { fill: var(--navy); } svg .f-ink { fill: var(--ink); } svg .f-teal { fill: var(--teal); }
+svg .f-blue { fill: var(--blue); } svg .f-violet { fill: var(--violet); } svg .f-ochre { fill: var(--ochre); }
+svg .f-red { fill: var(--red); } svg .f-gold { fill: var(--gold); } svg .f-white { fill: #fff; }
+svg .f-gray { fill: #8a98a3; } svg .f-tile { fill: var(--tile); } svg .f-none { fill: none; }
+svg .f-teal-bg { fill: var(--teal-bg); } svg .f-blue-bg { fill: var(--blue-bg); } svg .f-violet-bg { fill: var(--violet-bg); }
+svg .f-ochre-bg { fill: var(--ochre-bg); } svg .f-red-bg { fill: var(--red-bg); }
+svg .s-navy { stroke: var(--navy); } svg .s-teal { stroke: var(--teal); } svg .s-blue { stroke: var(--blue); }
+svg .s-violet { stroke: var(--violet); } svg .s-ochre { stroke: var(--ochre); } svg .s-red { stroke: var(--red); }
+svg .s-gray { stroke: #8a98a3; } svg .s-rule { stroke: var(--rule-2); } svg .s-white { stroke: #fff; }
+svg .sw1 { stroke-width: 1; } svg .sw15 { stroke-width: 1.5; } svg .sw2 { stroke-width: 2; } svg .sw3 { stroke-width: 3; }
+/* kafelek / podłoże */
+svg .tile { fill: var(--tile); }
+svg .card { fill: #fff; stroke: var(--rule-2); stroke-width: 1; }
+svg .divider { stroke: #c9d3d9; stroke-width: 1; stroke-dasharray: 3 3; fill: none; }
+/* żel */
+svg .gel { fill: #e8eef2; stroke: #5d6d78; stroke-width: 1.5; }
+svg .gel-uv { fill: #1d3444; stroke: #0e2433; stroke-width: 1.5; }
+svg .well { fill: #4f5e69; }
+svg .band { fill: var(--teal); }
+svg .band.ladder { fill: #5d6d78; }
+svg .band.blue { fill: var(--blue); } svg .band.violet { fill: var(--violet); }
+svg .band.ochre { fill: var(--ochre); } svg .band.red { fill: var(--red); } svg .band.navy { fill: var(--navy); }
+svg .band.faint { opacity: 0.45; } svg .band.smear { opacity: 0.35; }
+svg .gel-uv .band, svg .band.glow { fill: #f2a8d8; }
+svg .lane-label { font-size: 10px; font-weight: 600; text-anchor: middle; fill: var(--ink); }
+svg .size-label { font-size: 10px; text-anchor: end; fill: var(--muted); }
+svg .pole { font-size: 14px; font-weight: 700; text-anchor: middle; }
+svg .pole.minus { fill: var(--ink); } svg .pole.plus { fill: var(--red); }
+/* membrana, sonda, plamki */
+svg .membrane { fill: #f7f4ec; stroke: #a8a08c; stroke-width: 1.2; }
+svg .spot { fill: var(--violet); }
+svg .probe { stroke: var(--red); stroke-width: 3; stroke-linecap: round; fill: none; }
+/* DNA */
+svg .dna { stroke: var(--navy); stroke-width: 3; fill: none; stroke-linecap: round; }
+svg .dna.b, svg .dna.blue { stroke: var(--blue); }
+svg .dna.teal { stroke: var(--teal); } svg .dna.violet { stroke: var(--violet); }
+svg .dna.ochre { stroke: var(--ochre); } svg .dna.red { stroke: var(--red); }
+svg .dna.thin { stroke-width: 2; }
+svg .rungs { stroke: #9aa7b0; stroke-width: 1; stroke-dasharray: 1 5; fill: none; }
+/* strzałki (markery zdefiniowane globalnie w lib/svg-defs.html) */
+svg .arrow { stroke: #8a98a3; stroke-width: 1.6; fill: none; marker-end: url(#k6-arrow); }
+svg .arrow.teal { stroke: var(--teal); marker-end: url(#k6-arrow-teal); }
+svg .arrow.navy { stroke: var(--navy); marker-end: url(#k6-arrow-navy); }
+svg .arrow.red { stroke: var(--red); marker-end: url(#k6-arrow-red); }
+svg .arrow.dashed { stroke-dasharray: 4 3; }
+svg .arrow.both { marker-start: url(#k6-arrow-start); }
+/* plakietka kroku */
+svg .step circle { fill: var(--navy); }
+svg .step text { fill: #fff; font-weight: 700; font-size: 10.5px; text-anchor: middle; }
+svg .step.teal circle { fill: var(--teal); }
+svg .step-title { font-size: 11.5px; font-weight: 700; fill: var(--ink); }
+svg .badge rect { fill: var(--teal); }
+svg .badge text { fill: #fff; font-weight: 700; font-size: 12px; text-anchor: middle; }
+/* wykresy */
+svg .axis { stroke: #5d6d78; stroke-width: 1.2; fill: none; }
+svg .gridline { stroke: #e3e8ec; stroke-width: 1; }
+svg .trace { fill: none; stroke-width: 2; stroke-linejoin: round; }
+svg .trace.teal { stroke: var(--teal); } svg .trace.blue { stroke: var(--blue); }
+svg .trace.violet { stroke: var(--violet); } svg .trace.ochre { stroke: var(--ochre); }
+svg .trace.red { stroke: var(--red); } svg .trace.navy { stroke: var(--navy); }
+svg .guide { stroke: var(--red); stroke-width: 1.2; stroke-dasharray: 4 3; fill: none; }
+
+/* ---------- Tabele ---------------------------------------------------------- */
+table.tbl {
+  border-collapse: separate; border-spacing: 0; margin: 10pt 0 13pt;
+  font-family: var(--sans); font-size: 8.3pt; line-height: 11.6pt; color: var(--ink);
+  min-width: 62%; max-width: 100%;
+}
+table.tbl.full { width: 100%; }
+table.tbl.wide { width: calc(100% + var(--side) + var(--gap)); max-width: none; }
+.back table.tbl.wide, .front table.tbl.wide { width: 100%; margin-right: 0; }
+table.tbl thead { display: table-header-group; }
+table.tbl th {
+  background: var(--navy); color: #fff; text-align: left; vertical-align: bottom;
+  font-weight: 600; font-size: 6.9pt; line-height: 9pt; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 7.5pt 9pt 6.5pt;
+}
+table.tbl th + th { border-left: 0.6pt solid #2d4a5e; }
+table.tbl thead tr:first-child th:first-child { border-top-left-radius: 5pt; }
+table.tbl thead tr:first-child th:last-child { border-top-right-radius: 5pt; }
+table.tbl td { padding: 6.5pt 9pt 6pt; border-bottom: 0.6pt solid var(--rule); vertical-align: top; }
+table.tbl tbody tr:nth-child(even) td { background: var(--zebra); }
+table.tbl td:first-child { font-weight: 600; color: var(--navy); }
+table.tbl.plain-first td:first-child { font-weight: 400; color: var(--ink); }
+table.tbl tr { break-inside: avoid; }
+table.tbl td.num, table.tbl th.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.tbl caption { caption-side: top; text-align: left; font-family: var(--sans); font-size: 9.6pt; font-weight: 600; color: var(--navy); padding-bottom: 6pt; }
+table.tbl caption .tnum { font-size: 6.6pt; font-weight: 700; letter-spacing: .22em; color: var(--teal); margin-right: 7pt; }
+
+/* ---------- Strony przednie i końcowe --------------------------------------- */
+section.front, section.back { break-before: page; }
+section.front { page: front; }
+.front-head h1, .back-head h1 {
+  font-family: var(--display); font-weight: 700; font-size: 24pt; line-height: 28pt;
+  color: var(--navy); margin: 0 0 6pt; letter-spacing: -0.015em;
+}
+.front-head { position: relative; padding-top: 12pt; }
+.front-head::before { content: ""; position: absolute; left: 0; top: 0; width: 23pt; height: 2pt; background: var(--teal); }
+.front .intro, .back .intro {
+  font-family: var(--sans); font-size: 9.4pt; line-height: 14.6pt; color: var(--muted); margin: 0 0 16pt;
+}
+.front .intro b, .back .intro b { color: var(--ink); }
+.back-head { border-bottom: 1.6pt solid var(--navy); padding-bottom: 14pt; margin-bottom: 16pt; }
+.back-head .kicker { font-family: var(--sans); font-weight: 700; font-size: 6.8pt; letter-spacing: 0.25em; color: var(--teal); text-transform: uppercase; margin: 0 0 6pt; }
+.back-head h1 { margin: 0; }
+section.back { font-family: var(--sans); font-size: 8.6pt; line-height: 12.6pt; }
+section.back h2 { font-family: var(--display); font-weight: 600; font-size: 12pt; color: var(--navy); margin: 14pt 0 6pt; }
+section.back h3 { font-size: 9pt; margin: 9pt 0 3pt; }
+
+/* Jak korzystać */
+.card-version {
+  border: 1.2pt solid var(--rule-2); border-radius: 8pt; padding: 11pt 16pt 12pt; margin: 0 0 16pt;
+  font-family: var(--sans); font-size: 9pt; line-height: 13.4pt;
+}
+.card-version .lbl { color: var(--ochre); font-size: 6.4pt; margin-bottom: 4pt; }
+.legend { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 14pt; margin-bottom: 8pt; }
+.legend aside.note { float: none; width: auto; margin: 0 0 9pt; }
+.legend .box { margin: 0 0 9pt; }
+.legend .w60, .legend .numbers, .legend .quiz-mini { margin: 0 0 9pt; }
+.legend .quiz-mini { border: 1pt solid var(--rule-2); border-radius: 8pt; padding: 9pt 13pt; font-family: var(--sans); font-size: 8.7pt; line-height: 13pt; }
+.legend .quiz-mini .lbl { color: var(--teal); font-size: 6.4pt; }
+.front h2.sub { font-family: var(--sans); font-weight: 600; font-size: 11pt; color: var(--teal); margin: 16pt 0 6pt; }
+
+/* Spis treści */
+.toc-cols { columns: 2; column-gap: 22pt; column-fill: balance; font-family: var(--sans); line-height: 10.4pt; }
+.toc-cols a .t, .figlist a .t { min-width: 0; }
+.toc-cols a { display: flex; align-items: baseline; gap: 6pt; color: inherit; }
+.toc-ch { break-inside: avoid; break-after: avoid; margin-top: 6pt; border-bottom: 0.7pt solid var(--rule); padding: 3pt 0 3.5pt; line-height: 13pt; }
+.toc-ch:first-child { margin-top: 0; }
+.toc-ch .n { width: 26pt; flex: none; color: var(--teal); font-weight: 700; font-size: 10pt; }
+.toc-ch .t { flex: 1; font-size: 10pt; line-height: 13pt; color: var(--navy); font-weight: 500; }
+.toc-ch .p { font-weight: 700; font-size: 9pt; color: var(--navy); font-variant-numeric: tabular-nums; }
+.toc-sec { break-inside: avoid; margin-left: 26pt; border-bottom: 0.6pt solid #e8edf0; padding: 2.4pt 0 2.2pt; }
+.toc-sec .t { flex: 1; font-size: 7.6pt; line-height: 10.4pt; color: var(--muted); padding-right: 10pt; }
+.toc-sec .p { font-size: 7.6pt; color: var(--muted); font-variant-numeric: tabular-nums; }
+.toc-end { break-inside: avoid; break-after: avoid; font-weight: 700; font-size: 6.6pt; letter-spacing: 0.25em; color: var(--faint); margin: 14pt 0 2pt; }
+.toc-back .n { color: var(--teal); }
+
+/* Spis rycin */
+.figlist { columns: 2; column-gap: 22pt; font-family: var(--sans); font-size: 8pt; line-height: 11pt; }
+.figlist a, .figlist span { line-height: 11pt; }
+.figlist a { display: flex; gap: 6pt; align-items: baseline; padding: 3.6pt 0; border-bottom: 0.6pt solid var(--rule); break-inside: avoid; }
+.figlist .n { flex: none; width: 36pt; color: var(--teal); font-weight: 700; }
+.figlist .t { flex: 1; color: var(--ink); padding-right: 6pt; }
+.figlist .p { font-weight: 700; color: var(--navy); font-variant-numeric: tabular-nums; }
+
+/* Klucz odpowiedzi */
+.key-ch { break-inside: auto; margin: 0 0 10pt; }
+.key-ch h2 { display: flex; align-items: baseline; gap: 8pt; border-bottom: 0.8pt solid var(--rule); padding-bottom: 3pt; break-after: avoid; }
+.key-ch h2 .n { color: var(--teal); font-weight: 700; }
+.key-ch h2 .p { margin-left: auto; font-family: var(--sans); font-size: 7.4pt; color: var(--faint); font-weight: 400; }
+.key-list { columns: 2; column-gap: 20pt; }
+.key-item { break-inside: avoid; display: grid; grid-template-columns: 16pt minmax(0, 1fr); gap: 0 4pt; margin: 0 0 6pt; font-size: 8.2pt; line-height: 11.8pt; }
+.key-item .qn { color: var(--teal); font-weight: 700; }
+.key-item .qtext { color: var(--muted); font-size: 7.4pt; line-height: 10.4pt; margin-bottom: 1pt; }
+.key-item .qtext a { color: var(--faint); }
+.key-item p { margin: 0 0 2pt; }
+
+/* Słownik skrótów */
+dl.glossary { columns: 2; column-gap: 22pt; margin: 0; font-family: var(--sans); font-size: 8pt; line-height: 11pt; }
+dl.glossary > div { display: grid; grid-template-columns: 52pt minmax(0, 1fr); gap: 6pt; padding: 3.6pt 0; border-bottom: 0.6pt solid var(--rule); break-inside: avoid; }
+dl.glossary dt { font-weight: 700; color: var(--teal); }
+dl.glossary dd { margin: 0; color: var(--ink); }
+dl.glossary .en { color: var(--faint); }
+
+/* Źródła */
+ol.sources { list-style: none; margin: 0 0 12pt; padding: 0; font-family: var(--sans); font-size: 8pt; line-height: 11.6pt; }
+ol.sources li { display: grid; grid-template-columns: 26pt minmax(0, 1fr); padding: 5pt 0; border-bottom: 0.6pt solid var(--rule); break-inside: avoid; }
+ol.sources .k { color: var(--teal); font-weight: 700; }
+ol.sources .note { color: var(--faint); }
+table.cited { width: 100%; }
+
+/* Ściąga */
+section.back.cheat { font-size: 7.9pt; line-height: 11pt; }
+.cheat-cols { columns: 2; column-gap: 14pt; column-rule: 0.6pt solid var(--rule); column-fill: balance; }
+/* ostatnia strona ściągi – osobny kontener tworzony przez build (balanceColumns), Chromium wyrównuje jego kolumny */
+.cheat-cols-last { break-before: page; }
+.cheat-cont[data-cont]::before {
+  content: attr(data-cont) " (cd.)"; display: block; font-family: var(--sans); font-weight: 600;
+  font-size: 7pt; line-height: 9pt; color: var(--navy); border-bottom: 1pt solid var(--navy);
+  padding: 0 0 2pt; margin: 0 0 4pt;
+}
+/* Bloki mogą łamać się między punktami (nagłówek zostaje z pierwszym punktem) – dzięki temu kolumny
+   wypełniają się do dołu strony i nie zostają w nich białe dziury wielkości całego bloku. */
+.cheat-block { break-inside: auto; margin: 0 0 9pt; orphans: 2; widows: 2; }
+section.back .cheat-block h3 {
+  font-family: var(--sans); font-size: 8.4pt; line-height: 11pt; color: #fff; background: var(--navy);
+  padding: 3pt 7pt; border-radius: 3pt; margin: 0 0 4pt; font-weight: 600; break-after: avoid;
+}
+.cheat-block h3 .n { color: var(--teal-l); margin-right: 5pt; font-weight: 700; }
+.cheat-block p { margin: 0 0 3pt; break-inside: avoid; }
+.cheat-block ul { list-style: none; margin: 0 0 3pt; padding: 0; }
+.cheat-block li { position: relative; padding-left: 9pt; margin: 0 0 1.5pt; break-inside: avoid; }
+.cheat-block li::before { content: ""; position: absolute; left: 1pt; top: 4.2pt; width: 3.4pt; height: 3.4pt; border-radius: 50%; background: var(--teal); }
+/* Tabele w ściądze – gęsty wariant (także table.tbl.wide poza blokami): pismo i odstępy jak w reszcie ściągi */
+section.cheat table.tbl { margin: 3pt 0 6pt; font-size: 7.3pt; line-height: 9.8pt; width: 100%; min-width: 0; }
+section.cheat table.tbl th { padding: 3.5pt 5pt 3pt; font-size: 5.9pt; line-height: 7.6pt; letter-spacing: 0.08em; }
+section.cheat table.tbl td { padding: 2.6pt 5pt 2.4pt; }
+section.cheat table.tbl thead tr:first-child th:first-child { border-top-left-radius: 3pt; }
+section.cheat table.tbl thead tr:first-child th:last-child { border-top-right-radius: 3pt; }
+section.cheat table.tbl caption { font-size: 8.4pt; padding-bottom: 3pt; }
+.cheat-block table.tbl { break-inside: avoid; }
+.cheat-block .numbers > .lbl { display: none; }
+.cheat-block .numbers { margin: 3pt 0 4pt; padding-top: 6pt; border-top-width: 1pt; }
+.cheat-block .numbers .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cheat-block .numbers .v { font-size: 13pt; line-height: 15pt; }
+.cheat-block .numbers .n { padding: 3pt 0 4pt; }
+.cheat-block .pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6pt; break-inside: avoid; }
+.cheat-block .vs { color: var(--red); font-weight: 700; }
+
+/* ---------- Okładka ----------------------------------------------------------- */
+section.cover {
+  page: cover; position: relative; width: 210mm; height: 297mm; overflow: hidden;
+  background: var(--navy); color: #fff; font-family: var(--sans);
+  break-after: page;
+}
+.cover .c-kicker { position: absolute; left: 22mm; top: 26mm; font-size: 7.2pt; font-weight: 700; letter-spacing: 0.32em; color: var(--teal-l); }
+.cover .c-badge {
+  position: absolute; left: 154mm; top: 21mm; width: 32mm; height: 32mm; box-sizing: border-box;
+  border: 1.6pt solid var(--gold); border-radius: 50%; text-align: center; color: var(--gold);
+}
+.cover .c-badge .l1 { display: block; margin-top: 7.4mm; font-size: 5.8pt; font-weight: 700; letter-spacing: 0.28em; }
+.cover .c-badge .l2 { display: block; font-family: var(--display); font-size: 29pt; line-height: 30pt; font-weight: 700; }
+.cover .c-badge .l3 { display: block; font-size: 5.4pt; color: #d9c58a; margin-top: 1pt; }
+.cover h1.c-title {
+  position: absolute; left: 22mm; top: 57mm; width: 168mm; margin: 0;
+  font-family: var(--display); font-weight: 700; font-size: 43pt; line-height: 45pt; letter-spacing: -0.02em; color: #fff; hyphens: none;
+}
+.cover .c-sub { position: absolute; left: 22mm; top: 110mm; width: 98mm; font-family: var(--display); font-weight: 300; font-size: 17pt; line-height: 21pt; color: #dce7ee; margin: 0; }
+.cover .c-bar { position: absolute; left: 22mm; top: 134mm; width: 36mm; height: 1.6mm; background: var(--red); }
+.cover .c-desc { position: absolute; left: 22mm; top: 143mm; width: 98mm; font-family: var(--serif); font-style: italic; font-size: 12.4pt; line-height: 19pt; color: #c9d5dd; margin: 0; }
+.cover .c-stats { position: absolute; left: 22mm; top: 191mm; width: 170mm; display: flex; gap: 0; }
+.cover .c-stat { width: 42mm; }
+.cover .c-stat .v { display: block; font-family: var(--display); font-weight: 600; font-size: 31pt; line-height: 34pt; color: var(--teal-l); letter-spacing: -0.02em; }
+.cover .c-stat .d { display: block; font-size: 7.4pt; color: #a8b8c4; margin-top: 2pt; }
+.cover .c-art1 { position: absolute; left: 128mm; top: 108mm; width: 64mm; }
+.cover .c-art2 { position: absolute; left: 86mm; top: 213mm; width: 110mm; }
+.cover .c-scope { position: absolute; left: 22mm; top: 264mm; width: 160mm; font-size: 7.2pt; line-height: 10.6pt; color: #8fa3b1; margin: 0; }
+.cover .c-scope b { color: #fff; font-weight: 600; }
+.cover .c-scope i { font-style: italic; }
+
+/* ---------- Pomocnicze --------------------------------------------------------- */
+.clear { clear: both; }
+.keep { break-inside: avoid; }
+.page-break { break-before: page; }
+.small { font-size: 0.88em; }
+.muted { color: var(--muted); }
+.teal { color: var(--teal); }
+
+/* Jak korzystać – wersja zwarta (musi zmieścić się na jednej stronie) */
+.howto .legend .box { padding: 7pt 12pt 7pt 11pt; margin-bottom: 7pt; }
+.howto .legend aside.note { margin-bottom: 7pt; }
+.howto .legend .w60 { padding: 9pt 13pt; margin-bottom: 7pt; }
+.howto .legend .quiz-mini { padding: 7pt 12pt; margin-bottom: 7pt; }
+.howto .legend .numbers { margin: 2pt 0 0; padding-top: 7pt; }
+.howto .legend .numbers .grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.howto .legend .numbers .v { font-size: 14pt; line-height: 16pt; }
+.howto .card-version { padding: 9pt 14pt 10pt; margin-bottom: 12pt; }
+.howto .intro { margin-bottom: 12pt; }
+.howto table.tbl td { padding: 4.5pt 9pt 4pt; }
+.howto h2.sub { margin-top: 10pt; }

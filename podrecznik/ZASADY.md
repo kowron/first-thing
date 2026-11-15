@@ -1,5 +1,8 @@
 # Zasady dla agentów piszących rozdziały (obowiązują wszystkich)
 
+## Podział ról
+Zakres, źródła, cięcia i listę rycin ustala szef (Fable) w handoffie rozdziału („Mapa” i „Ryciny”). Autor (Opus) pisze tekst i wykonuje ryciny dokładnie według tej mapy: czyta tylko wskazane fragmenty, nie dodaje tematów ani rycin spoza listy, nie przywraca treści oznaczonych jako „tniemy”. Wyciąg (krok 1) rozpisuje mapę na pojedyncze fakty.
+
 ## Treść
 1. **Tylko źródła z handoffu.** Każdy fakt, liczba, nazwa musi być w paczce źródeł rozdziału. Zero własnej wiedzy, zero „z liceum”, zero treści z innych rozdziałów podręcznika źródłowego.
 2. **Zakres = zagadnienia z rozpiski** (lista w handoffie). Fragmenty źródła, które nie dotyczą żadnego zagadnienia – pomijamy w całości.

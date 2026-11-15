@@ -1,0 +1,57 @@
+# Ręczne wyjątki dzielenia wyrazów (czyta build.mjs -> lib/browser.js, hyphenPoints).
+# Jedna pozycja w wierszu, wielkość liter bez znaczenia, „#” zaczyna komentarz. Trzy rodzaje wpisów:
+#   po-li-mer   – wymusza dokładnie te miejsca podziału (tylko ta forma wyrazu),
+#   maxama      – słowo bez dywizu: zakaz dzielenia (tylko ta forma),
+#   li3a4kry    – dodatkowy wzorzec Lianga dla wszystkich wyrazów zawierających te litery:
+#                 cyfra nieparzysta między literami = wolno dzielić, parzysta = nie wolno
+#                 (wyższa cyfra wygrywa z wzorcami plhyph, które sięgają poziomu 5, a na początku wyrazu 8).
+# Po zmianie: pełny build i przegląd <buildDir>/pelny-przeniesienia.txt.
+
+# --- wzorce: granice morfologiczne i grupy spółgłosek, których wzorce plhyph nie znają ---
+li5a6kr        # po-li-akry-la-mid (nie: polia-kry-la-mid)
+.zi6d          # ziden-ty-fi-ko-wać (nie: zi-den…; z- + identyfikować)
+.ek5s6on       # ek-so-ny, ek-so-no-wy (nie: eks-o-ny)
+macie5r6z      # ma-cie-rzach (rz to dwuznak; nie: macier-zach)
+rozsz6cz       # roz-szcze-pia-nie (nie: rozsz-cze-…)
+kr6w           # sier-po-wa-to-krwin-ko-wa (nie: …to-kr-win…)
+tro6ln         # kon-trol-ne (nie: kon-tro-l-ne)
+o6stc          # jed-nost-ce (nie: jed-no-st-ce)
+ale6dw         # za-led-wie (nie: za-le-d-wie)
+
+# --- nazwy własne ---
+maxama         # Maxam (Maxam–Gilbert): nie dzielić „Ma-xa-ma”
+bayesa         # Bayes
+ar-thro-bac-ter
+bi-no-ku-la-ry
+
+# --- wyrazy angielskie (podział wg zasad angielskich) ---
+south-ern
+south-erna
+north-ern
+west-ern
+east-ern
+like-li-hood
+liq-uid
+quan-ti-ta-tive
+se-quenc-ing
+re-peats
+pro-tein
+cleav-age
+com-par-a-tive
+tem-per-a-ture
+de-na-tur-ing
+mol-e-cule
+chem-i-cal
+chro-ma-tog-ra-phy
+ge-nome
+het-ero-du-plex
+hy-brid-iza-tion
+im-mu-no-pre-cip-i-ta-tion
+mis-match
+op-ti-cal
+per-for-mance
+poly-mor-phism
+splic-ing
+til-ing
+tran-scrip-tion
+splicin-go-wych  # polski przymiotnik od „splicing” – nie rozdzielać „splic-ing”

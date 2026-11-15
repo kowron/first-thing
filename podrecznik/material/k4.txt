@@ -1,0 +1,2807 @@
+[Strona 1]
+BIOLOGIA MOLEKULARNA · ZAJĘCIA NR 4 · KOLOKWIUM
+
+
+
+
+Kwasy
+nukleinowe
+DNA, RNA, chromosom
+i replikacja
+
+
+Każdy temat z kolokwium wyjaśniony prosto
+i pokazany na rycinach. Na końcu – odpowiedzi na
+wszystkie pytania z ostatnich kolokwiów: za 1 i za 2
+punkty.
+
+
+
+
+22
+pytania z kolokwiów
+                                          18
+                                          ryciny
+                                                                                    5
+                                                                                    przeanalizowanych kolokwiów
+
+
+
+
+Zakres: Zajęcia nr 4 – „Molekularna organizacja informacji genetycznej” i „Metody analizy kwasów nukleinowych”.
+Na podstawie: Drewa G., Ferenc T., Genetyka medyczna (rozdz. 3, 18, 27) · kierunek lekarski, ŚUM
+[Strona 2]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4
+
+
+
+
+Jak korzystać z opracowania
+Opracowanie obejmuje to, o co pytano na kolokwiach – wyjaśnione od podstaw, z rycinami. Tematy, z których nie było
+pytań, są krótsze i oznaczone gwiazdką.
+
+
+ PY TANIE · 5/5
+
+Ten podtemat był na kolokwium. Liczba mówi, na ilu                                    Z LICEUM
+z pięciu ostatnich kolokwiów padło pytanie – im wyższa,                               Most do tego, co znasz z rozszerzonej biologii.
+tym ważniej.
+
+ ★ NIE BYŁO PY TANIA
+                                                                                      OBRAZ W GŁOWIE
+Z tego podtematu nie było pytań. Wystarczy go przeczytać
+                                                                                      Porównanie, które pomaga zapamiętać mechanizm.
+i zrozumieć.
+
+
+    NA KOLOKWIUM
+                                                                                      U WAG A D O P O D R Ę C Z N I K A
+    Co dokładnie napisać, żeby dostać punkty.                                         Miejsca, w których plik z Drewą zawiera błąd albo
+                                                                                      niekonsekwencję – z poprawną wersją.
+
+
+
+Pod każdym podrozdziałem podano strony w pliku z Drewą (numeracja stron PDF, nie numery wydrukowane w książ‐
+ce). Numery stron i rycin w tym pliku są klikalne.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                           2
+[Strona 3]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4
+
+
+
+
+Mapa kolokwium
+Wszystkie pytania z pięciu kolokwiów i strony, na których je omówiono. Pytanie z opracowaną odpowiedzią znajdziesz
+na końcu pliku.
+
+
+  BLOK                                CO TRZEBA UMIEĆ                                                     CZĘSTOŚĆ         STRONA
+
+  Budowa DNA                          Opisz strukturę pierwszorzędową DNA.                                           1/5      s. 6
+                                      Wymień formy DNA.                                                              5/5      s. 8
+                                      Przyporządkuj formom DNA prawo- lub lewoskrętność.                             4/5      s. 8
+                                      Wskaż najczęstszą formę DNA w przyrodzie.                                      1/5      s. 9
+  Podstawowe pojęcia                  Wyjaśnij pojęcie: nukleotyd.                                                   2/5      s. 5
+                                      Wyjaśnij pojęcie: nukleozyd.                                                   2/5      s. 5
+                                      Wyjaśnij pojęcie: nukleosom.                                                   2/5      s. 11
+                                      Wyjaśnij pojęcie: solenoid.                                                    1/5      s. 11
+  DNA a RNA                           Porównaj DNA i RNA – podaj co najmniej 4 różnice.                              2/5     s. 15
+                                      Wymień 4 cechy RNA.                                                            1/5     s. 14
+  Rodzaje RNA                         Wymień rodzaje RNA.                                                            1/5     s. 17
+                                      Opisz tRNA.                                                                    1/5     s. 19
+                                      Wyjaśnij znaczenie miRNA.                                                      2/5     s. 22
+                                      Wyjaśnij znaczenie siRNA.                                                      1/5     s. 23
+                                      Opisz działanie snRNA.                                                         1/5     s. 20
+                                      Opisz działanie snoRNA.                                                        1/5     s. 21
+                                      Wskaż RNA w telomerazie i jego inną funkcję.                                   1/5     s. 21
+  Procesy związane z RNA              Wyjaśnij, czym jest splicing.                                                  2/5     s. 24
+                                      Wyjaśnij, czym jest interferencja RNA.                                         1/5     s. 25
+  Replikacja                          Wymień białka i enzymy uczestniczące w replikacji i opisz funkcję              3/5     s. 33
+                                      jednego z nich.
+                                      Wymień etapy replikacji i opisz jeden z nich.                                  1/5     s. 28
+                                      Wyjaśnij pojęcie: topoizomeraza.                                               1/5     s. 35
+
+
+  BEZ PYTAŃ                           PODTEMAT                                                                             STRONA
+
+    ★ BEZ PY TANIA                    Zasady azotowe: puryny i pirymidyny                                  –                  s. 6
+
+    ★ BEZ PY TANIA                    Komplementarność, wymiary helisy B                                   –                  s. 7
+
+    ★ BEZ PY TANIA                    Superskręcenie DNA                                                   –                 s. 10
+
+    ★ BEZ PY TANIA                    Chromatyna i histony                                                 –                  s. 11
+
+    ★ BEZ PY TANIA                    Wyższe poziomy upakowania, chromosom metafazowy                      –                 s. 12
+
+    ★ BEZ PY TANIA                    mRNA – budowa                                                        –                 s. 18
+
+    ★ BEZ PY TANIA                    rRNA – budowa rybosomu                                               –                 s. 19
+
+    ★ BEZ PY TANIA                    Dojrzewanie końców mRNA                                              –                 s. 24
+
+    ★ BEZ PY TANIA                    Replikacja semikonserwatywna, Meselson i Stahl                       –                 s. 27
+
+    ★ BEZ PY TANIA                    Replikacja u eukariontów                                             –                 s. 31
+
+    ★ BEZ PY TANIA                    Korekta błędów                                                       –                 s. 32
+
+    ★ BEZ PY TANIA                    Telomery i problem końców                                            –                 s. 36
+
+    ★ BEZ PY TANIA                    Izolacja DNA i RNA, ocena jakości (zagadnienia 6–9)                  –                 s. 38
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                       3
+[Strona 4]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4
+
+
+
+
+Spis treści
+Rozdziały idą w kolejności zagadnień z listy „Zajęcia nr 4”.
+
+
+ROZDZIAŁY
+
+01      Budowa DNA                                                                                 5
+
+02      Od DNA do chromosomu                                                                      11
+
+03      DNA a RNA                                                                                 14
+
+04      Rodzaje RNA                                                                               17
+
+05      Splicing i interferencja RNA                                                              24
+
+06      Replikacja: zasady i etapy                                                                27
+
+07      Enzymy i białka replikacji                                                                33
+
+08      Izolacja i ocena DNA i RNA                                                                38
+
+
+NA KONIEC
+
+·       Pytania z kolokwiów – opracowanie                                                         41
+
+·       Źródła                                                                                    48
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna    4
+[Strona 5]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                 01 Budowa DNA
+
+
+
+
+01
+                             Z AGA D N I E N I E 1 · B U D OWA K WA S ÓW N U K L E I N OW YC H I P O DWÓ J N A H E L I S A
+
+
+                             Budowa DNA
+                             Z czego składa się nukleotyd, jak nukleotydy łączą się w nić i jakie kształty może przyj‐
+                             mować podwójna helisa. Pytanie o formy DNA padło na każdym z pięciu kolokwiów.
+                             W rozdziale: Nukleotyd – cegiełka DNA i RNA · Nić DNA i podwójna helisa · Formy podwójnej helisy ·
+                             Superskręcenie DNA · Ryciny: 3
+
+
+
+
+Nukleotyd – cegiełka DNA i RNA
+Trzy części nukleotydu                    PY TANIE · 2/5
+
+
+DNA to bardzo długi łańcuch zbudowany z powtarzających się jedno‐
+stek – nukleotydów. Każdy nukleotyd ma trzy części:
+
+ 1   cukier – pięciowęglową pentozę; w DNA jest to deoksyryboza,
+     w RNA ryboza;
+ 2   zasadę azotową – w DNA: adeninę (A), guaninę (G), cytozynę (C)
+     lub tyminę (T);
+ 3   od jednej do trzech reszt fosforanowych.
+
+Części są połączone w stałych miejscach cukru. Zasada przyłącza się                                  POJĘCIE
+do węgla 1′ wiązaniem N-glikozydowym. Fosforan przyłącza się do                                      Numeracja z primem
+węgla 5′. Na węglu 3′ zostaje wolna grupa –OH – to do niej dołączy się                               Węgle cukru oznacza się 1′–5′ („jeden
+                                                                                                     prim”), żeby odróżnić je od atomów
+następny nukleotyd w łańcuchu.                                                                       w pierścieniu zasady.
+
+Nazwa nukleotydu mówi, ile ma fosforanów: monofosforan (1 P, np.
+dAMP), difosforan (2 P, dADP), trifosforan (3 P, dATP). Litera „d” ozna‐
+cza deoksy, czyli nukleotyd DNA. Polimeraza buduje DNA z trifosfora‐
+nów (dNTP): przy dołączaniu odcina dwa fosforany, a energia z tego
+wiązania napędza syntezę.
+
+Nukleozyd             PY TANIE · 2/5
+
+
+Nukleozyd to sama zasada azotowa połączona z cukrem – bez fosfora‐
+nu. Najłatwiej zapamiętać to jako równanie:
+
+
+                            nukleozyd = zasada + cukier
+                          nukleotyd = nukleozyd + 1–3 reszty fosforanowe
+
+
+
+Nukleozydy mają własne nazwy: adenozyna, guanozyna, cytydyna,
+tymidyna i urydyna. W DNA dochodzi przedrostek „deoksy-”, np. de‐
+oksyadenozyna.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                              5
+[Strona 6]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                        01 Budowa DNA
+
+
+RYC . 1    Nukleotyd i nukleozyd
+
+
+      A       BUDOWA NUKLEOTYDU
+
+
+                                                                                                      NUKLEOZYD
+   reszty fosforanowe (1–3)                                            zasada azotowa
+                                                                                                      zasada + cukier
+                                    5′                                                                bez fosforanu, np. adenozyna,
+          P       P      P                       O                              A                     w DNA: deoksyadenozyna
+
+          γ       β      α
+                                    4′                      1′
+                                                                       adenina (puryna)               NUKLEOTYD
+               fosforan łączy się
+               z węglem 5′               3′              2′                                           nukleozyd + 1–3 fosforany
+                                                                   wiązanie N-glikozydowe             1P   monofosforan                        dAMP
+                                         OH             H          (C1′ cukru – azot zasady)          2P   difosforan                          dADP
+                                 pentoza: deoksyryboza                                                3P   trifosforan                         dATP
+                                         (pięć węgli: 1′–5′)
+
+
+
+
+      B       ZASADY AZOTOWE: PURYNY I PIRYMIDYNY
+
+       Puryny – dwa pierścienie                                                  Pirymidyny – jeden pierścień
+
+
+                        A                                 G                                  C                  T                       U
+
+                       adenina                           guanina                          cytozyna            tymina                  uracyl
+                      DNA i RNA                        DNA i RNA                          DNA i RNA         tylko DNA             tylko RNA
+
+
+                                  Para zasad to zawsze puryna + pirymidyna: A–T (w RNA A–U) oraz G–C.
+
+
+A – trzy części nukleotydu i numeracja węgli cukru. Zasada wisi na węglu 1′, fosforan na węglu 5′, a wolne
+3′-OH czeka na kolejny nukleotyd. Po prawej: różnica między nukleozydem a nukleotydem. B – puryny mają
+dwa pierścienie, pirymidyny jeden.
+
+
+Zasady azotowe: puryny i pirymidyny                                   ★ NIE BYŁO PY TANIA
+
+Zasady dzielą się na dwie grupy według budowy pierścienia. Puryny –
+adenina i guanina – mają dwa połączone pierścienie. Pirymidyny –
+cytozyna, tymina i uracyl – mają jeden pierścień. Tymina występuje
+tylko w DNA, a uracyl tylko w RNA.
+
+Płaski kształt zasad pozwala ułożyć je jedna nad drugą wewnątrz heli‐
+sy. Zasady pochłaniają światło UV o długości 260 nm – z tej cechy ko‐
+rzysta się przy mierzeniu ilości DNA (rozdział 8).
+
+W pliku z Drewą (PDF): s. 3–6
+
+
+
+
+Nić DNA i podwójna helisa
+Struktura pierwszorzędowa                            PY TANIE · 1/5
+
+
+Struktura pierwszorzędowa DNA to kolejność nukleotydów w nici,
+czyli sekwencja. To w niej zapisana jest informacja genetyczna – tak
+jak znaczenie zdania zależy od kolejności liter.
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                       6
+[Strona 7]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                 01 Budowa DNA
+
+
+Sąsiednie nukleotydy łączą się wiązaniami 3′→5′-fosfodiestrowymi:
+fosforan przy węglu 5′ jednego nukleotydu łączy się z grupą –OH przy
+węglu 3′ poprzedniego. Powstaje szkielet „cukier – fosforan – cukier –
+fosforan”, a zasady sterczą z niego na bok.
+
+Nić ma dwa różne końce. Na końcu 5′ jest wolny fosforan, na końcu 3′                                     POJĘCIE
+wolna grupa –OH. Sekwencję zapisuje się zawsze od końca 5′ do 3′, np.                                    Polarność nici
+5′-ATGC-3′. W tym samym kierunku pracują polimerazy: nowy nukle‐                                         Nić ma dwa różne końce, więc ma też kie‐
+                                                                                                         runek – jak strzałka.
+otyd zawsze dołącza się do końca 3′.
+
+RYC . 2    Nić DNA i para nici
+
+
+      A        JEDNA NIĆ = SEKWENCJA                                                  B      DWIE NICI: PARY ZASAD
+          5′                                                                        5′             A=T: 2 wiązania H · G≡C: 3                3′
+                                     koniec 5′:                                                                                         OH
+           P                         wolny fosforan                                  P
+                    O                                                                        O
+                           A                                                                      A                        T
+                                                                                                                                    O
+                                                                                                                                             P
+           P                                                                         P
+                    O
+                                     wiązanie 3′→5′-                                         O
+                           T         fosfodiestrowe                                               T                        A
+                                     (cukier – P – cukier)                                                                          O
+                                                                                                                                             P
+           P                                                                         P
+                    O                                                                        O
+                           G         zasady = „litery”                                            G                        C
+                                     zapisu informacji                                                                              O
+                                                                                                                                             P
+           P                                                                         P
+                    O                                                                        O
+                           C                                                                      C                        G
+                                                                                                                                    O
+                                                                                                                                             P
+                                     koniec 3′:
+          3′ OH                                                                     3′ OH
+                                     wolna grupa –OH
+                                                                                                          nici biegną                        5′
+                         zapis: 5′–ATGC–3′                                                            w przeciwne strony
+
+
+
+A – jedna nić: szkielet cukrowo-fosforanowy, wiązania 3′→5′-fosfodiestrowe i dwa różne końce. B – dwie nici łą‐
+czą się parami zasad (A z T, G z C) i biegną w przeciwnych kierunkach.
+
+
+Komplementarność i podwójna helisa                              ★ NIE BYŁO PY TANIA
+
+
+    Z LICEUM
+
+    Model Watsona i Cricka (1953) znasz z liceum: dwie nici skręcone wokół
+    wspólnej osi, zasady w środku, szkielet na zewnątrz. Tutaj dochodzą liczby,
+    które opisują ten kształt.
+
+
+Dwie nici DNA są komplementarne – zasady łączą się w stałe pary:
+A z T (dwa wiązania wodorowe) i G z C (trzy wiązania wodorowe). Nici
+są też przeciwrównoległe: naprzeciw końca 5′ jednej nici leży koniec
+3′ drugiej.
+
+Pojedyncze wiązanie wodorowe jest słabe, ale w genomie są ich mi‐
+liardy, więc helisa jest bardzo trwała. Dodatkowo stabilizują ją oddzia‐
+ływania między sąsiednimi zasadami ułożonymi jedna nad drugą (od‐
+działywania warstwowe, w podręczniku: π–π).
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                   7
+[Strona 8]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                  01 Budowa DNA
+
+
+Klasyczna helisa B ma ok. 10 par zasad na jeden skręt. Skok helisy
+wynosi 3,4 nm, a odległość między sąsiednimi parami 0,34 nm. Szero‐
+kość helisy to ok. 2 nm. Na powierzchni widać dwie bruzdy – większą
+i mniejszą; to w nich białka „odczytują” sekwencję bez rozplatania
+nici.
+
+W pliku z Drewą (PDF): s. 5–7
+
+
+
+
+Formy podwójnej helisy                                     PY TANIE · 5/5
+
+
+
+Sześć form: A, B, C, D, E i Z
+Podwójna helisa nie zawsze wygląda tak samo. Zależnie od warunków
+otoczenia – głównie wilgotności i jonów w roztworze – DNA przyjmu‐
+je różne formy. Różnią się liczbą par zasad na skręt, szerokością,
+kształtem bruzd i kierunkiem skrętu.
+
+  FORMA               SKRĘT                             NAJWAŻNIEJSZE CECHY
+
+  B-DNA               prawoskrętna                      najczęstsza w komórkach; ok. 10 par na skręt; wysoka wilgotność (92%)
+
+  A-DNA               prawoskrętna                      krótsza i szersza (ok. 11 par na skręt); wilgotność 75%, jony Na+, K+
+
+  C-DNA               prawoskrętna                      wilgotność 60%, jony litu (Li+)
+
+  D-DNA               prawoskrętna                      8 par na skręt; rzadka, w DNA bez guaniny
+
+  E-DNA               prawoskrętna                      7,5 pary na skręt; rzadka, w DNA bez guaniny
+
+  Z-DNA               lewoskrętna                       12 par na skręt; szkielet ułożony zygzakiem; forma przejściowa
+
+
+Prawoskrętne i lewoskrętna                          PY TANIE · 4/5
+
+
+Reguła jest prosta: A, B, C, D i E są prawoskrętne, a Z jest jedyną for‐
+mą lewoskrętną. Przez wiele lat uważano, że DNA bywa wyłącznie
+prawoskrętne, dlatego odkrycie Z-DNA było dużym zaskoczeniem.
+Wykryto ją w żywych komórkach za pomocą przeciwciał, które wiążą
+tylko helisę lewoskrętną.
+
+Z-DNA ma kilka cech, które łatwo zapamiętać. Szkielet cukrowo-fosfo‐                                    POJĘCIE
+ranowy tworzy zygzak (stąd litera Z). Powtarzającą się jednostką jest                                   Prawoskrętna helisa
+para nukleotydów (dinukleotyd), a nie pojedynczy nukleotyd. Jeden                                       Skręca się tak jak gwint zwykłej śruby czy
+                                                                                                        korkociągu. Lewoskrętna – w drugą stro‐
+skręt to 12 par zasad i 4,5 nm, czyli helisa jest dłuższa i węższa niż B.                               nę, jak lustrzane odbicie.
+Z-DNA pojawia się przejściowo, np. przy rozluźnianiu DNA w czasie
+transkrypcji; jej rola wciąż jest badana.
+
+  CECHA                          B-DNA                          Z-DNA
+
+  Kierunek skrętu                prawoskrętna                   lewoskrętna
+
+  Pary zasad na skręt            ok. 10                         12
+
+  Długość skrętu                 3,4 nm                         4,5 nm
+
+  Szkielet                       gładka spirala                 zygzak
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                 8
+[Strona 9]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                   01 Budowa DNA
+
+
+Najczęstsza forma w przyrodzie                         PY TANIE · 1/5
+
+
+Najczęściej występującą formą jest prawoskrętna B-DNA – to właśnie
+helisa opisana przez Watsona i Cricka. Odpowiada warunkom panują‐
+cym w komórce: wysokiej wilgotności i niskiemu stężeniu soli.
+
+RYC . 3    Formy podwójnej helisy
+
+
+      A      TRZY NAJWAŻNIEJSZE FORMY PODWÓJNEJ HELISY
+                                                                            2 nm
+
+
+
+
+                                                        3,4 nm
+                                                        1 skręt
+                                                       ≈ 10 par
+
+
+
+
+                         A-DNA                                            B-DNA                                      Z-DNA
+                     prawoskrętna                                        prawoskrętna                               lewoskrętna
+
+                   ok. 11 par na skręt                            ok. 10 par na skręt                        12 par na skręt (4,5 nm)
+                   krótsza i szersza                          NAJCZĘSTSZA W KOMÓRCE                            szkielet jak zygzak
+
+
+
+
+      B      WSZYSTKIE FORMY DNA – DO ZAPAMIĘTANIA
+                                                PRAWOSKRĘTNE: A, B, C, D, E                                                LEWOSKRĘTNA
+
+
+
+              A                          B                        C                       D                  E                     Z
+       75% wilgotności           92% wilgotności          60% wilgotności            8 par na skręt   7,5 pary na skręt      12 par na skręt
+          jony Na+, K+              najczęstsza               jony Li+                   rzadka            rzadka             przejściowa
+
+
+                     Formę A, B lub C wyznaczają warunki otoczenia: wilgotność i jony. Z jak „zygzak” – jedyna lewoskrętna.
+
+
+A – trzy najważniejsze formy w tej samej skali: szeroka A, typowa B i wydłużona, zygzakowata Z. B – wszystkie
+sześć form; prawoskrętne to A, B, C, D i E, lewoskrętna jest tylko Z.
+
+
+
+    NA KOLOKWIUM
+
+    To pytanie padło na 5 z 5 kolokwiów. Wypisz sześć liter A, B, C, D, E – pra‐
+    woskrętne; Z – lewoskrętna i dopisz, że najczęstsza jest B.
+
+
+W pliku z Drewą (PDF): s. 1, 6–8
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                9
+[Strona 10]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                 01 Budowa DNA
+
+
+
+
+Superskręcenie DNA                                  ★ NIE BYŁO PY TANIA
+
+
+Podwójna helisa może się dodatkowo skręcać jako całość – wtedy oś
+helisy owija się sama wokół siebie, jak przekręcony kabel od słuchaw‐
+ki. Takie DNA nazywa się superskręconym (superhelikalnym). DNA
+bez dodatkowych skrętów to DNA zrelaksowane.
+
+Superskręty mogą być ujemne (DNA lekko „niedokręcone”) albo do‐
+datnie (DNA „przekręcone”). DNA w komórkach jest zwykle lekko
+ujemnie superskręcone – dzięki temu nici łatwiej rozdzielić przy re‐
+plikacji i transkrypcji. Dodatnie superskręty powstają przed przesu‐
+wającymi się widełkami replikacyjnymi. Liczbę superskrętów zmie‐
+niają enzymy topoizomerazy (rozdział 7).
+
+W pliku z Drewą (PDF): s. 8–11
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna             10
+[Strona 11]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                02 Od DNA do chromosomu
+
+
+
+
+02
+                             ZAGADNIENIE 2 · STRUKTURA CHROMOSOMU
+
+
+                             Od DNA do chromosomu
+                             Rozciągnięte DNA jednego zestawu chromosomów ma ok. 1 m długości, a musi zmie‐
+                             ścić się w jądrze. Komórka zwija je stopniowo – zaczynając od nukleosomów.
+                             W rozdziale: Chromatyna i histony · Nukleosom · Solenoid · Wyższe poziomy i chromosom metafazowy · Ryciny: 2
+
+
+
+
+Chromatyna i histony                                ★ NIE BYŁO PY TANIA
+
+
+W jądrze DNA nie leży „gołe”. Tworzy kompleks z białkami, który na‐
+zywa się chromatyną. Jako osobne, wyraźne chromosomy widać ją
+dopiero w czasie podziału komórki, kiedy jest najmocniej zwinięta.
+
+Najważniejsze białka chromatyny to histony. Jest ich pięć rodzajów:
+H1, H2A, H2B, H3 i H4. Histony mają dużo aminokwasów o ładunku
+dodatnim – lizyny i argininy. DNA ma ładunek ujemny dzięki resztom
+fosforanowym, więc histony i DNA się przyciągają. Pozostałe białka
+chromatyny (niehistonowe) stabilizują ją i regulują jej pracę.
+
+W pliku z Drewą (PDF): s. 33
+
+
+
+
+Nukleosom                     PY TANIE · 2/5
+
+
+Nukleosom to podstawowa jednostka chromatyny. Ma dwie części:
+
+    rdzeń – oktamer histonowy, czyli osiem białek: po dwie kopie hi‐
+    stonów H2A, H2B, H3 i H4; ma kształt walca o średnicy ok. 11 nm;
+    DNA owinięte wokół rdzenia – odcinek ok. 146 par zasad, owinięty
+    prawie dwa razy.
+
+Sąsiednie nukleosomy łączy DNA łącznikowe. Na zewnątrz rdzenia,
+w miejscu, gdzie DNA wchodzi i wychodzi, siedzi histon H1 – tzw. hi‐
+ston łącznikowy. Spina on DNA na nukleosomie i pomaga zwijać chro‐
+matynę dalej.
+
+Pod mikroskopem elektronowym rozluźniona chromatyna wygląda
+jak koraliki nawleczone na nitkę: koraliki to nukleosomy, a nitka to
+DNA łącznikowe. To włókno ma grubość ok. 11 nm.
+
+    OBRAZ W GŁOWIE
+
+    Nukleosom = szpulka z nawiniętą nicią. Szpulka to osiem histonów, nić to
+    DNA owinięte prawie dwa razy, a klips na wejściu i wyjściu nici to histon H1.
+
+
+
+
+Solenoid                 PY TANIE · 1/5
+
+
+Solenoid to kolejny poziom zwinięcia: włókno chromatynowe o gru‐
+bości ok. 30 nm. Powstaje, gdy „koraliki na nitce” zwijają się w spira‐
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                         11
+[Strona 12]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                      02 Od DNA do chromosomu
+
+
+lę, w której na jeden skręt przypada ok. 6 nukleosomów. Histony H1
+skupiają się we wnętrzu spirali i utrzymują ją w całości.
+
+Solenoid jest więc ciasno ściśniętym szeregiem nukleosomów – trze‐
+cim poziomem upakowania po podwójnej helisie (2 nm) i nukleoso‐
+mach (11 nm).
+
+RYC . 4     Nukleosom i solenoid
+
+
+      A      NUKLEOSOM – PODSTAWOWA JEDNOSTKA CHROMATYNY
+
+
+                                                                     rdzeń: oktamer histonów                               Dlaczego
+                                                                     8 białek: po 2 × H2A, H2B, H3, H4
+                                                                                                                         się trzymają?
+                                                                          H2A          H2B        H3       H4
+
+
+                                                                     DNA owinięte wokół rdzenia                          +           –
+                                                                     ok. 146 par zasad, prawie 2 zwoje
+                                                                                                                      histony       DNA
+
+    DNA łącznikowe                                                                                                      histony mają dużo
+                          H1                                         H1 – histon łącznikowy
+                                                                                                                         lizyny i argininy
+                                                                     spina DNA wchodzące i wychodzące
+                                                                                                                       (ładunek +), a DNA
+                                                                                                                         ma fosforany (–)
+
+
+
+
+      B      OD „KORALIKÓW NA SZNURKU” DO SOLENOIDU
+                   włókno 11 nm                                            solenoid – widok z góry       widok z boku: włókno 30 nm
+
+
+
+                                                               H1
+                                                                                                                                       30 nm
+
+
+
+
+               nukleosomy jak koraliki
+                    na nitce DNA
+                                                                                                          nukleosomy ułożone spiralnie,
+                                                                            6 nukleosomów na 1 skręt          H1 we wnętrzu włókna
+
+
+A – nukleosom: oktamer histonów z owiniętym DNA i histonem H1 na zewnątrz. Po prawej: dodatnie histony
+przyciągają ujemne DNA. B – nukleosomy jak koraliki (11 nm) zwijają się w solenoid (30 nm), ok. 6 nukleosomów
+na skręt.
+
+
+W pliku z Drewą (PDF): s. 34
+
+
+
+
+Wyższe poziomy i chromosom metafazowy
+    ★ NIE BYŁO PY TANIA
+
+
+Solenoid tworzy dalej pętle przyczepione do białkowego rusztowania
+(ok. 300 nm). Pętle zwijają się w coraz grubsze struktury (ok. 700 nm),
+aż powstaje chromosom metafazowy o szerokości ok. 1400 nm. Składa
+się on z dwóch chromatyd połączonych w centromerze.
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                12
+[Strona 13]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                  02 Od DNA do chromosomu
+
+
+W chromosomie metafazowym DNA jest ok. 10 000 razy krótsze niż
+po rozciągnięciu. W czasie interfazy chromatyna jest luźniejsza – ma
+postać nukleosomów i włókien, dzięki czemu enzymy mają dostęp do
+genów.
+
+RYC . 5    Poziomy upakowania DNA
+
+
+    POZIOMY UPAKOWANIA DNA W CHROMOSOMIE
+
+
+
+
+             2 nm                     11 nm                   30 nm                   300 nm        700 nm             1400 nm
+           podwójna                 nukleosomy               solenoid                    pętle     skondensowany       chromosom
+           helisa DNA                (koraliki)          (włókno chromat.)             solenoidu      fragment         metafazowy
+
+
+                                       Każdy kolejny poziom to ciaśniejsze zwinięcie poprzedniego.
+                             W chromosomie metafazowym DNA jest ok. 10 000 razy krótsze niż po rozciągnięciu.
+
+
+
+Sześć kolejnych poziomów: od podwójnej helisy (2 nm) do chromosomu metafazowego (1400 nm). Na kolo‐
+kwium pytano o nukleosomy (11 nm) i solenoid (30 nm).
+
+
+W pliku z Drewą (PDF): s. 33–34
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                        13
+[Strona 14]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                    03 DNA a RNA
+
+
+
+
+03
+                             Z AGA D N I E N I E 4 · R Ó Ż N I C E M I Ę D Z Y K WA S A M I N U K L E I N OW Y M I
+
+
+                             DNA a RNA
+                             RNA zbudowane jest z tych samych rodzajów cegiełek co DNA, ale kilka drobnych róż‐
+                             nic w budowie sprawia, że pełni zupełnie inne zadania.
+                             W rozdziale: Cechy RNA · Różnice między DNA a RNA · Ryciny: 1
+
+
+
+
+Cechy RNA                     PY TANIE · 1/5
+
+
+RNA (kwas rybonukleinowy) to drugi rodzaj kwasu nukleinowego.
+Też jest łańcuchem nukleotydów połączonych wiązaniami fosfodie‐
+strowymi, ale ma własne cechy:
+
+ 1   cukrem jest ryboza – ma grupę –OH przy węglu 2′;
+ 2   zamiast tyminy ma uracyl (U) – zasady RNA to A, G, C i U; uracyl
+     paruje z adeniną;
+ 3   jest zwykle jednoniciowy – nie ma stałej drugiej, komplementar‐
+     nej nici;
+ 4   tworzy struktury przestrzenne – nić zagina się i paruje sama ze
+     sobą, tworząc spinki do włosów, pętle i wybrzuszenia;
+ 5   jest mniej trwały niż DNA – wiązania w łańcuchu łatwiej się roz‐
+     padają;
+ 6   jest krótszy – zwykle nie dłuższy niż kilka tysięcy nukleotydów;
+ 7   zawiera zmodyfikowane zasady – szczególnie dużo w tRNA, np.
+     pseudourydynę;
+ 8   pełni wiele różnych funkcji – przenosi informację, buduje ryboso‐
+     my, dowozi aminokwasy, reguluje geny.
+
+Ostatnia cecha wynika z poprzednich. Jedna nić, która może się do‐
+wolnie fałdować, przyjmuje wiele kształtów – a różne kształty pozwa‐
+lają RNA wykonywać różne zadania. Dlatego rodzajów RNA jest dużo
+więcej niż rodzajów DNA (rozdział 4).
+
+W pliku z Drewą (PDF): s. 11
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                               14
+[Strona 15]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                    03 DNA a RNA
+
+
+
+
+Różnice między DNA a RNA                                         PY TANIE · 2/5
+
+
+
+  CECHA                                   DNA                                                     RNA
+
+  Cukier                                  deoksyryboza (przy 2′ tylko H)                          ryboza (przy 2′ grupa –OH)
+
+  Zasady                                  A, G, C, T                                              A, G, C, U
+
+  Pary zasad                              A–T, G–C                                                A–U, G–C
+
+  Liczba nici                             dwie – podwójna helisa                                  zwykle jedna, miejscami sparowana sama ze
+                                                                                                  sobą
+
+  Kształt                                 podwójna helisa                                         spinki do włosów, pętle, wybrzuszenia
+
+  Gdzie występuje                         jądro, mitochondria                                     jądro, cytoplazma, mitochondria
+
+  Trwałość                                bardzo trwały                                           nietrwały, szybko rozkładany
+
+  Długość                                 bardzo długi (miliony nukleotydów)                      krótki (do kilku tysięcy nukleotydów)
+
+  Funkcja                                 przechowuje i przekazuje informację                     synteza białek, regulacja ekspresji genów
+                                          genetyczną
+
+  Enzym, który go buduje                  polimeraza DNA                                          polimeraza RNA
+
+
+
+    NA KOLOKWIUM
+
+    Na kolokwium trzeba podać co najmniej 4 różnice. Najpewniejsze cztery:
+    cukier, tymina/uracyl, liczba nici i funkcja. Każda kolejna z tabeli to zapas.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                               15
+[Strona 16]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                              03 DNA a RNA
+
+
+RYC . 6     DNA a RNA
+
+
+      A         TRZY RÓŻNICE, KTÓRE WIDAĆ W BUDOWIE
+
+
+       1. CUKIER                                             2. ZASADA                                    3. LICZBA NICI
+
+                DNA                     RNA                       DNA                    RNA                       DNA                   RNA
+
+                O                       O                                   CH3                    H
+
+                      2′                      2′                   T                      U
+
+           OH       H              OH       OH
+          deoksyryboza               ryboza                    tymina (T)             uracyl (U)                 dwie nici            jedna nić
+          przy 2′ tylko H        przy 2′ grupa OH          ma grupę metylową      bez grupy metylowej      podwójna helisa          sama się zwija
+
+
+
+
+      B         JEDNA NIĆ RNA TWORZY KSZTAŁTY PRZESTRZENNE
+
+
+
+
+            spinka do włosów                          wybrzuszenie                    pętla wewnętrzna                           pętla
+                łodyga + pętla                      nadmiarowy nukleotyd          niesparowane po obu stronach               odcinek bez par
+
+A – trzy różnice widoczne w budowie: grupa –OH przy 2′ w rybozie, grupa metylowa w tyminie, której brak
+w uracylu, oraz liczba nici. B – kształty, które tworzy jedna nić RNA, gdy jej fragmenty parują ze sobą.
+
+
+
+    Z LICEUM
+
+    Ryboza i deoksyryboza różnią się tylko jednym atomem tlenu przy węglu
+    2′ – stąd nazwa „deoksy” (bez tlenu). Ta drobna różnica wystarcza, żeby
+    DNA było znacznie trwalsze od RNA.
+
+
+W pliku z Drewą (PDF): s. 11, 14–15
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                         16
+[Strona 17]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                            04 Rodzaje RNA
+
+
+
+
+04
+                             ZAGADNIENIE 3 · RODZAJE RNA
+
+
+                             Rodzaje RNA
+                             Jeden rodzaj RNA niesie przepis na białko, a cała reszta pracuje jako „narzędzia”: bu‐
+                             duje rybosomy, dowozi aminokwasy, wycina introny albo wycisza geny.
+                             W rozdziale: Podział RNA · mRNA – przepis na białko · rRNA – szkielet rybosomu · tRNA – dowozi aminokwasy ·
+                             snRNA – wycina introny · snoRNA – modyfikuje rRNA · RNA w telomerazie · miRNA – hamuje translację · siRNA –
+                             niszczy mRNA · Ryciny: 3
+
+
+
+
+Podział RNA                     PY TANIE · 1/5
+
+
+RNA dzieli się na dwie grupy:
+
+    RNA kodujące – to mRNA (informacyjne), czyli kopia genu z prze‐
+    pisem na białko; stanowi tylko ok. 4% RNA w komórce;
+    RNA niekodujące (funkcjonalne) – ok. 96% RNA; samo wykonuje
+    pracę i nie ulega translacji.
+
+Do RNA funkcjonalnego należą: rRNA (rybosomalne), tRNA (transpor‐
+tujące), snRNA (małe jądrowe), snoRNA (małe jąderkowe), miRNA
+(mikroRNA) i siRNA (małe interferujące). W komórce występuje też
+RNA prekursorowe (np. pre-mRNA), które musi dojrzeć, zanim za‐
+cznie działać.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                            17
+[Strona 18]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                            04 Rodzaje RNA
+
+
+RYC . 7    Rodzaje RNA i miejsca ich działania
+
+
+      A      PODZIAŁ RNA
+
+
+                                                                            RNA
+
+
+
+                 kodujące: mRNA                                        niekodujące (funkcjonalne) · ok. 96% RNA w komórce
+             przepis na białko · ok. 4%
+
+                                                          rRNA             tRNA            snRNA           snoRNA          miRNA             siRNA
+      Najliczniejszy w komórce                            buduje          dowozi            wycina         modyfikuje    wycisza geny      wycisza geny
+      jest rRNA – buduje miliony                         rybosom        aminokwasy          introny          rRNA       (hamuje transl.)   (tnie mRNA)
+      rybosomów.
+
+
+
+
+      B      GDZIE W KOMÓRCE DZIAŁA KAŻDY RODZAJ RNA
+
+
+                                                                                                                                CYTOPLAZMA
+
+
+
+
+                     JĄDRO                                                        wyjście                                        tRNA
+                                                                                  do cytoplazmy                                  dowozi aminokwas
+                             jąderko                                                                                                  miRNA, siRNA
+                                                          snRNA                                            rybosom                   wyciszają mRNA
+                                                      wycina introny
+                              snoRNA
+                              modyfikuje
+                              rRNA                                                                                                             mRNA
+                                                          RNA telomerazy                              rRNA – szkielet rybosomu
+                                                        na końcu chromosomu
+
+
+
+
+A – podział RNA na kodujące i niekodujące wraz z jednym słowem o funkcji każdego rodzaju. B – gdzie w ko‐
+mórce działa każdy rodzaj: snoRNA w jąderku, snRNA w jądrze, mRNA, tRNA, rRNA oraz miRNA i siRNA w cyto‐
+plazmie.
+
+
+
+     NA KOLOKWIUM
+
+     Przy pytaniu „wymień rodzaje RNA” wypisz: mRNA, rRNA, tRNA, snRNA,
+     snoRNA, miRNA, siRNA i dodaj podział na kodujące (mRNA) i niekodujące
+     (reszta).
+
+
+W pliku z Drewą (PDF): s. 11–12
+
+
+
+
+mRNA – przepis na białko                                    ★ NIE BYŁO PY TANIA
+
+
+mRNA to kopia genu kodującego białko. Dojrzałe mRNA u eukarion‐
+tów ma pięć części:
+
+ 1   czapeczkę na końcu 5′ – nietypowy nukleotyd guanylowy; chroni
+     mRNA przed rozkładem, pomaga w wyjściu z jądra i w rozpoczę‐
+     ciu translacji;
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                           18
+[Strona 19]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                 04 Rodzaje RNA
+
+
+ 2    5′UTR – odcinek przed kodonem START, który nie jest tłumaczony
+      na aminokwasy;
+ 3    sekwencję kodującą – od kodonu START do STOP; to ona wyzna‐
+      cza kolejność aminokwasów w białku;
+ 4    3′UTR – odcinek za kodonem STOP;
+ 5    ogon poli(A) – 200–250 adenin na końcu 3′; chroni przed rozkła‐
+      dem i pomaga w translacji.
+
+mRNA żyje krótko: po translacji zostaje rozłożone. Dzięki temu ko‐
+mórka może szybko zmieniać, jakie białka produkuje.
+
+     U WAG A D O P O D R Ę C Z N I K A
+
+     W pliku z Drewą (s. 12) napisano, że czapeczkę i ogon poli(A) ma mRNA
+     „u Prokaryota”. Te elementy są typowe dla eukariontów – powstają w jądrze
+     podczas dojrzewania mRNA.
+
+
+W pliku z Drewą (PDF): s. 12, 14
+
+
+
+
+rRNA – szkielet rybosomu                                     ★ NIE BYŁO PY TANIA
+
+
+rRNA (rybosomalne RNA) to najliczniejszy rodzaj RNA w komórce.
+Stanowi 50–70% masy rybosomu i decyduje o jego kształcie oraz o roz‐
+mieszczeniu białek rybosomalnych. Rybosom składa się z małej i du‐
+żej podjednostki:
+
+  RYBOSOM                    MAŁA PODJEDNOSTKA                   DUŻA PODJEDNOSTKA
+
+  eukarionty – 80S           40S: 18S rRNA                       60S: 28S, 5,8S i 5S rRNA
+
+  bakterie – 70S             30S: 16S rRNA                       50S: 23S i 5S rRNA
+
+
+rRNA zawiera wiele zmodyfikowanych nukleotydów (np. pseudoury‐
+dynę). Te modyfikacje wprowadzane są w jąderku z pomocą snoRNA.
+
+W pliku z Drewą (PDF): s. 12–13
+
+
+
+
+tRNA – dowozi aminokwasy                                         PY TANIE · 1/5
+
+
+tRNA (transportujące RNA) to mała cząsteczka: 74–93 nukleotydy. Jej
+zadaniem jest rozpoznać kodon w mRNA i przynieść do rybosomu pa‐
+sujący aminokwas.
+
+Jedna nić tRNA zagina się w kilku miejscach i tworzy kształt koniczy‐
+ny – cztery ramiona ze sparowanych odcinków i trzy pętle. Dwa miej‐
+sca są najważniejsze:
+
+     antykodon – trzy nukleotydy w pętli na dole „koniczyny”; są kom‐
+     plementarne do kodonu w mRNA;
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna              19
+[Strona 20]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                      04 Rodzaje RNA
+
+
+    koniec 3′ (zakończony sekwencją CCA) – tu przyłączony jest ami‐
+    nokwas.
+
+tRNA z przyłączonym aminokwasem to aminoacylo-tRNA. Każdy ro‐
+dzaj tRNA przenosi jeden określony aminokwas, a w komórce jest do
+50 różnych rodzajów tRNA. tRNA zawiera też dużo zmodyfikowanych
+zasad.
+
+RYC . 8    tRNA
+
+
+      A      BUDOWA tRNA: „KONICZYNA”                                                              B       ODCZYT KODONU
+
+                                                                aminokwas przyłączony
+                                                          aa                                                          Met
+                                              3′                do końca 3′ (…CCA)
+                                                      A
+                                                      C
+                                         5′
+                                                      C
+
+
+                                                                                                                              tRNA
+                                                                ramię akceptorowe
+                                                                (łodyga z par zasad)
+
+
+
+
+                                                                                                             3′   U     A    C    5′
+
+
+                                                               pętla zmienna
+                                                                                                       G    C     A     U    G     G      C
+                 pętla D                                                  pętla T
+
+                                                                                                  5′                  mRNA                     3′
+
+                                                                                                           kodon AUG = start, metionina
+        74–93 nukleotydy
+        jedna nić złożona
+        w 4 ramiona                           C       U
+                                                  A                                               Antykodon jest komplementarny
+        dużo zmodyfik. zasad                                                                      do kodonu, więc tRNA przynosi
+                                    pętla antykodonowa                                            właściwy aminokwas. tRNA
+                                                                                                  z aminokwasem = aminoacylo-tRNA.
+                                  antykodon: 3′-UAC-5′
+
+
+
+A – „koniczyna”: ramię akceptorowe z aminokwasem na końcu 3′, pętle D i T oraz pętla antykodonowa. B – anty‐
+kodon 3′-UAC-5′ paruje z kodonem 5′-AUG-3′, więc tRNA przynosi metioninę.
+
+
+W pliku z Drewą (PDF): s. 13
+
+
+
+
+snRNA – wycina introny                                         PY TANIE · 1/5
+
+
+snRNA (małe jądrowe RNA) działa w jądrze komórkowym. Nazywa się
+je też U-RNA, bo mają dużo urydyny. Najważniejsze to U1, U2, U4/U6
+i U5.
+
+snRNA łączą się z białkami w kompleksy snRNP. Razem tworzą spli‐
+ceosom – maszynę, która wycina introny z pre-mRNA i łączy eksony
+(splicing, rozdział 5). snRNA rozpoznaje granice intronu, parując
+z nimi na zasadzie komplementarności.
+
+W pliku z Drewą (PDF): s. 13
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                     20
+[Strona 21]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                 04 Rodzaje RNA
+
+
+
+
+snoRNA – modyfikuje rRNA                                         PY TANIE · 1/5
+
+
+snoRNA (małe jąderkowe RNA) działa w jąderku, czyli tam, gdzie po‐
+wstają rybosomy. Jego główne zadanie to kierowanie chemicznymi
+modyfikacjami rRNA, np. zamianą urydyny na pseudourydynę albo
+dołączeniem grupy metylowej.
+
+Działa jak „wskaźnik”: snoRNA paruje z komplementarnym fragmen‐
+tem rRNA i pokazuje enzymowi, który dokładnie nukleotyd zmienić.
+Razem z białkami tworzy kompleksy snoRNP. Według podręcznika
+snoRNA bierze też udział w imprintingu genów i wchodzi w skład te‐
+lomerazy u ssaków.
+
+W pliku z Drewą (PDF): s. 13
+
+
+
+
+RNA w telomerazie                               PY TANIE · 1/5
+
+
+Telomeraza to enzym zbudowany z białka i RNA. Wydłuża końce
+chromosomów – telomery – które przy każdej replikacji by się skraca‐
+ły (rozdział 7).
+
+RNA telomerazy zawiera krótką sekwencję komplementarną do po‐
+wtórzeń telomeru. U człowieka telomer to wiele powtórzeń TTAGGG,
+a RNA telomerazy jest dla nich matrycą: telomeraza „przepisuje” wła‐
+sne RNA na DNA i dobudowuje kolejne powtórzenia.
+
+U ssaków RNA telomerazy należy do rodziny snoRNA. Stąd odpowiedź
+na pytanie o „inną funkcję”: ta sama grupa RNA w jąderku kieruje
+modyfikacjami rRNA.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna              21
+[Strona 22]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                         04 Rodzaje RNA
+
+
+RYC . 9    snoRNA i RNA telomerazy
+
+
+      A      snoRNA W JĄDERKU                                                          B      RNA W TELOMERAZIE
+
+       wskazuje, który nukleotyd rRNA zmienić                                           jest matrycą do dobudowania końca
+
+
+                                   enzym
+
+                                                                                                                                 dobudowane
+      rRNA                 G A C U A G C
+                                                                                                              G G G T T A G G G T T A G 3′
+
+
+                           C U G A U C G                                              koniec chromosomu
+                                                                                                                3′ C A A U C C C A A U C 5′
+
+
+                      snoRNA (z białkami: snoRNP)                                                                     telomeraza (białko + RNA)
+
+
+                 Efekt: zmodyfikowany nukleotyd w rRNA                                                u człowieka powtórzenie TTAGGG
+                np. U → pseudourydyna (Ψ) albo metylacja                                          to RNA u ssaków należy do rodziny snoRNA
+
+
+
+
+                              RNA telomerazy ma dwie role: w telomerazie jest matrycą końców chromosomów,
+                                         a jako snoRNA kieruje też modyfikacjami rRNA w jąderku.
+
+
+A – snoRNA paruje z rRNA i wskazuje enzymowi nukleotyd do zmiany. B – RNA telomerazy jest matrycą: paruje
+z końcem chromosomu, a telomeraza dobudowuje kolejne GGTTAG.
+
+
+W pliku z Drewą (PDF): s. 13, 25–26, 29
+
+
+
+
+miRNA – hamuje translację                                      PY TANIE · 2/5
+
+
+miRNA (mikroRNA) to małe regulatorowe RNA o długości 20–26 nu‐
+kleotydów. Wycisza ekspresję genów, hamując translację. Jest szcze‐
+gólnie ważne w rozwoju zarodkowym, gdy geny trzeba precyzyjnie
+włączać i wyłączać.
+
+Powstaje w kilku krokach:
+
+ 1   gen miRNA w jądrze daje cząsteczkę w kształcie spinki –
+     pre-miRNA (ok. 75 nukleotydów);
+ 2   pre-miRNA przechodzi do cytoplazmy;
+ 3   enzym Dicer tnie ją na krótkie, dojrzałe miRNA;
+ 4   miRNA przyłącza się do mRNA – pasuje do niego tylko częściowo;
+ 5   translacja zostaje wstrzymana, więc powstaje mniej białka.
+
+To przykład interferencji RNA (rozdział 5, ryc. 11). miRNA reguluje
+własne geny komórki – działa jak pokrętło głośności: białka powstaje
+mniej.
+
+W pliku z Drewą (PDF): s. 13–14
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                      22
+[Strona 23]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                   04 Rodzaje RNA
+
+
+
+
+siRNA – niszczy mRNA                                  PY TANIE · 1/5
+
+
+siRNA (małe interferujące RNA) to krótkie, dwuniciowe odcinki RNA
+o długości 21–25 nukleotydów. Też uczestniczy w interferencji RNA
+i wycisza wybrane geny.
+
+Powstaje z dłuższego dwuniciowego RNA (dsRNA), które trafiło do cy‐
+toplazmy – np. z wirusa albo wprowadzone do komórki z zewnątrz.
+Enzym Dicer tnie dsRNA na krótkie siRNA. Jedna nić siRNA przyłącza
+się do mRNA, do którego pasuje w całości. Takie mRNA zostaje prze‐
+cięte i rozłożone, więc translacja nie zachodzi.
+
+  CECHA                                  MIRNA                                         SIRNA
+
+  Długość                                20–26 nt                                      21–25 nt
+
+  Pochodzenie                            własne geny komórki (pre-miRNA)               dwuniciowe RNA, np. wirusa
+
+  Dopasowanie do mRNA                    częściowe                                     pełne
+
+  Skutek                                 hamowanie translacji                          pocięcie i rozkład mRNA
+
+
+W pliku z Drewą (PDF): s. 14
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                23
+[Strona 24]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                 05 Splicing i interferencja RNA
+
+
+
+
+05
+                             ZAGADNIENIE 3 · PROCESY ZWIĄZANE Z RNA
+
+
+                             Splicing i interferencja RNA
+                             Dwa procesy, o które pytano na kolokwiach: jak z pre-mRNA powstaje dojrzałe mRNA
+                             oraz jak krótkie RNA potrafią wyciszyć gen.
+                             W rozdziale: Dojrzewanie mRNA: końce cząsteczki · Splicing · Interferencja RNA · Ryciny: 2
+
+
+
+
+Dojrzewanie mRNA: końce cząsteczki
+     ★ NIE BYŁO PY TANIA
+
+
+U eukariontów transkrypcja daje najpierw pre-mRNA – niedojrzałą
+kopię genu. Zanim opuści jądro, przechodzi trzy zmiany: na końcu 5′
+dostaje czapeczkę, na końcu 3′ ogon poli(A), a ze środka zostają wy‐
+cięte introny. Dwie pierwsze zmiany chronią cząsteczkę przed rozkła‐
+dem i przygotowują ją do translacji. Trzecia to splicing.
+
+Prekursory rRNA i tRNA też dojrzewają: są cięte na mniejsze kawałki
+i modyfikowane chemicznie.
+
+W pliku z Drewą (PDF): s. 12, 14
+
+
+
+
+Splicing               PY TANIE · 2/5
+
+
+
+     Z LICEUM
+
+     Gen eukariotyczny jest „poprzerywany”: eksony to odcinki, które zostają
+     w dojrzałym mRNA, a introny to wstawki między nimi. Podczas transkrypcji
+     przepisywane są jedne i drugie.
+
+
+Splicing (składanie RNA) to wycinanie intronów z pre-mRNA i łącze‐
+nie eksonów w jedną ciągłą cząsteczkę. Zachodzi w jądrze, zanim
+mRNA trafi do cytoplazmy.
+
+Splicing wykonuje spliceosom – duży kompleks zbudowany z snRNA
+(U1, U2, U4/U6, U5) i białek. Przebiega tak:
+
+ 1    snRNA rozpoznają granice intronu – intron zwykle zaczyna się od
+      GU, a kończy na AG;
+ 2    spliceosom przecina RNA na początku intronu; intron zwija się
+      w pętlę w kształcie lassa;
+ 3    spliceosom przecina koniec intronu i łączy sąsiednie eksony;
+ 4    wycięty intron zostaje rozłożony, a mRNA jest gotowe do wyjścia
+      z jądra.
+
+Eksony można łączyć na różne sposoby – to alternatywny splicing. Na
+przykład raz powstaje mRNA z eksonami 1-2-3, a raz 1-3. Dzięki temu
+jeden gen może dać kilka różnych białek.
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                              24
+[Strona 25]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                   05 Splicing i interferencja RNA
+
+
+RYC . 1 0       Dojrzewanie mRNA i splicing
+
+
+      A         DOJRZEWANIE mRNA: KOŃCE I SPLICING
+
+                                                                         intron                                 intron
+       1    pre-mRNA                                 1                                      2                                         3
+            tuż po transkrypcji                                 GU                AG                     GU                AG
+
+
+                                  czapeczka 5′                                                                                                  ogon poli(A)
+                                                                         intron                                 intron
+      2     końce                       G            1                                      2                                         3         AAAA…
+            czapeczka + poli(A)
+
+
+
+
+      3     splicing                    G            1                                      2                                         3         AAAA…
+            wycięcie intronów
+                                                             spliceosom: snRNA + białka               intron wycięty jako „lasso”
+
+
+
+                                                                                                                           eksony połączone
+      4     mRNA                            G            1                   2                  3             AAAA…        w jedną ciągłą
+            dojrzałe → cytoplazma                                                                                          cząsteczkę
+                                                 5′UTR         część kodująca: AUG … STOP             3′UTR
+
+
+
+
+      B         ALTERNATYWNY SPLICING: JEDEN GEN, KILKA BIAŁEK
+
+
+                                                                     1        2        3            mRNA A (eksony 1-2-3)                    białko A
+                  pre-mRNA
+
+            1          2           3
+
+                                                                     1        3        mRNA B (eksony 1-3)                                   białko B
+
+
+A – od pre-mRNA do dojrzałego mRNA: najpierw czapeczka i ogon poli(A), potem spliceosom wycina introny
+(w kształcie lassa) i łączy eksony. B – alternatywny splicing: z jednego pre-mRNA powstają dwa różne mRNA
+i dwa białka.
+
+
+
+    OBRAZ W GŁOWIE
+
+    Splicing jest jak montaż filmu: wycinasz niepotrzebne ujęcia (introny) i skle‐
+    jasz te, które zostają (eksony). Inny montaż tego samego materiału daje
+    inny film – to alternatywny splicing.
+
+
+W pliku z Drewą (PDF): s. 12–14
+
+
+
+
+Interferencja RNA                            PY TANIE · 1/5
+
+
+Interferencja RNA (RNAi) to wyciszanie ekspresji genu przez krótkie
+cząsteczki RNA. Gen zostaje przepisany na mRNA, ale białko z niego
+nie powstaje albo powstaje go mniej.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                                25
+[Strona 26]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                          05 Splicing i interferencja RNA
+
+
+Biorą w niej udział dwa rodzaje krótkiego RNA: miRNA i siRNA. Me‐
+chanizm ma wspólny schemat:
+
+ 1   dłuższe RNA w kształcie spinki (pre-miRNA) albo dwuniciowe
+     RNA (dsRNA) trafia do cytoplazmy;
+ 2   enzym Dicer tnie je na krótkie odcinki (ok. 20–25 nukleotydów);
+ 3   krótkie RNA łączy się z białkami i odnajduje mRNA, do którego
+     jest komplementarne;
+ 4   gen zostaje wyciszony: miRNA (dopasowanie częściowe) hamuje
+     translację, a siRNA (dopasowanie pełne) prowadzi do pocięcia
+     i rozkładu mRNA.
+
+Interferencja RNA reguluje rozwój organizmu (miRNA) i pomaga bro‐
+nić się przed obcym RNA, np. wirusowym (siRNA). W laboratorium
+wprowadza się siRNA, żeby wyłączyć wybrany gen i sprawdzić, co się
+stanie.
+
+RYC . 1 1    Interferencja RNA: miRNA i siRNA
+
+
+      A          miRNA – HAMUJE TRANSLACJĘ                                             B        siRNA – NISZCZY mRNA
+
+                                                gen miRNA w jądrze                                                          dwuniciowe RNA
+      1                                         daje spinkę: pre-miRNA                 1                                    (dsRNA), np. z wirusa
+                                                (ok. 75 nt)                                                                 albo wprowadzone
+
+
+
+                                                pre-miRNA wychodzi                                                          dsRNA trafia
+      2                                         do cytoplazmy                          2                                    do cytoplazmy
+
+             jądro | cytoplazma
+
+
+
+                                                enzym Dicer tnie                                                            enzym Dicer tnie
+      3           Dicer                         spinkę na krótkie                      3          Dicer                     je na krótkie
+                                                miRNA (20–26 nt)                                                            siRNA (21–25 nt)
+
+
+
+
+                                                miRNA z białkami                                                            siRNA z białkami
+      4     5′                            3′                                           4   5′                         3′
+                                                przyłącza się do mRNA                                                       przyłącza się do mRNA
+                                                – pasuje częściowo                                                          – pasuje w całości
+                     niedopasowanie
+
+
+
+
+                                                translacja zostaje                                                          mRNA zostaje
+      5     5′                            3′                                           5
+                                                zahamowana                                                                  przecięte i rozłożone
+                                                → mniej białka                                                              → brak białka
+                                                                                                     fragmenty mRNA
+
+
+
+
+                                    Oba mechanizmy to interferencja RNA (RNAi): krótkie RNA wycisza gen,
+                                       bo przyłącza się do jego mRNA na zasadzie komplementarności.
+
+Obie drogi zaczynają się od dłuższego RNA, które Dicer tnie na krótkie fragmenty. miRNA pasuje do mRNA czę‐
+ściowo i hamuje translację; siRNA pasuje w całości i prowadzi do zniszczenia mRNA.
+
+
+W pliku z Drewą (PDF): s. 13–14
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                       26
+[Strona 27]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                   06 Replikacja: zasady i etapy
+
+
+
+
+06
+                             ZAGADNIENIE 5 · REPLIKACJA GENOMU
+
+
+                             Replikacja: zasady i etapy
+                             Przed każdym podziałem komórka musi skopiować cały genom – szybko i prawie bez
+                             błędów. Ten rozdział pokazuje, jak przebiega kopiowanie krok po kroku.
+                             W rozdziale: Replikacja semikonserwatywna · Etapy replikacji · Replikacja u eukariontów · Korekta błędów · Ryciny:
+                             3
+
+
+
+
+Replikacja semikonserwatywna                                              ★ NIE BYŁO PY TANIA
+
+
+Replikacja to kopiowanie DNA. Dwie nici helisy rozchodzą się, a każ‐
+da staje się matrycą dla nowej, komplementarnej nici. Każda z dwóch
+nowych cząsteczek DNA zawiera więc jedną nić starą i jedną nową –
+to replikacja semikonserwatywna (półzachowawcza).
+
+Zanim to udowodniono, rozważano trzy modele: konserwatywny, se‐
+mikonserwatywny i dyspersyjny. Rozstrzygnęli to w 1958 r. Meselson
+i Stahl. Hodowali bakterie E. coli na pożywce z ciężkim azotem 15N,
+potem przenieśli je na pożywkę z lekkim azotem 14N. DNA rozdzielali
+przez wirowanie w gradiencie chlorku cezu – cięższe DNA opada ni‐
+żej.
+
+    po jednym podziale był jeden prążek pośredni – to wykluczyło mo‐
+    del konserwatywny;
+    po dwóch podziałach były dwa prążki: pośredni i lekki – to wyklu‐
+    czyło model dyspersyjny.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                               27
+[Strona 28]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                06 Replikacja: zasady i etapy
+
+
+RYC . 1 2    Replikacja semikonserwatywna
+
+
+      A      TRZY HIPOTEZY: JAK MOGŁYBY ROZDZIELIĆ SIĘ NICI?
+
+                                                                                            prawdziwy
+
+
+
+
+       konserwatywny                                       semikonserwatywny                                  dyspersyjny
+       jedna cząsteczka cała stara,                        w każdej cząsteczce                                stare i nowe fragmenty
+       druga cała nowa                                     jedna nić stara + jedna nowa                       wymieszane w każdej nici
+
+
+            nić stara (rodzicielska)                nić nowa (potomna)
+
+
+
+
+      B      DOŚWIADCZENIE MESELSONA I STAHLA (1958)
+
+
+       1    E. coli rosną na pożywce
+            z ciężkim azotem 15N
+                                                                                                                                 lekkie (14N + 14N)
+
+       2    przeniesienie na pożywkę
+                                                                                                                                 pośrednie (15N + 14N)
+            z lekkim azotem 14N
+
+                                                                                                                                 ciężkie (15N + 15N)
+       3    DNA wirowane w gradiencie
+            CsCl: cięższe opada niżej
+
+                                                                             start                20 min             40 min
+                                                                          0 podziałów             1 podział         2 podziały
+
+
+A – trzy hipotezy rozdzielenia nici; prawdziwa jest semikonserwatywna. B – doświadczenie Meselsona i Stahla:
+położenie prążków DNA po 0, 1 i 2 podziałach w ciężkim, a potem lekkim azocie.
+
+
+W pliku z Drewą (PDF): s. 15–17
+
+
+
+
+Etapy replikacji                       PY TANIE · 1/5
+
+
+Replikacja ma trzy etapy: inicjację, elongację i terminację.
+
+1. Inicjacja – start w miejscu ori
+Replikacja zaczyna się zawsze w określonych miejscach – ori (miej‐                                            POJĘCIE
+scach początku replikacji). Do sekwencji ori przyłączają się białka ini‐                                      ori
+cjatorowe. Zmieniają one kształt DNA tak, że nici zaczynają się roz‐                                          Origin of replication – miejsce początku
+                                                                                                              replikacji. Często bogate w pary A–T, bo
+chodzić. Następnie przyłącza się helikaza, która rozplata DNA dalej.                                          łączą je tylko dwa wiązania wodorowe
+                                                                                                              i łatwiej je rozdzielić.
+Powstaje „oczko” rozplecionego DNA – bańka replikacyjna. Na jej
+dwóch końcach są widełki replikacyjne, które przesuwają się w prze‐
+ciwne strony. Replikacja jest więc zwykle dwukierunkowa.
+
+Bakterie mają jedno ori na kolistym chromosomie. Eukarionty mają
+ich tysiące na każdym chromosomie. Odcinek DNA kopiowany z jed‐
+nego ori to replikon.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                           28
+[Strona 29]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                 06 Replikacja: zasady i etapy
+
+
+2. Elongacja – wydłużanie nowych nici
+W czasie elongacji powstają nowe nici. Polimeraza DNA ma dwa ogra‐
+niczenia, które wyjaśniają całą resztę:
+
+    dobudowuje nukleotydy tylko do końca 3′, więc nowa nić rośnie
+    wyłącznie w kierunku 5′→3′;
+    potrzebuje startera – krótkiego odcinka RNA, który robi prymaza;
+    dopiero do niego polimeraza dołącza nukleotydy.
+
+Nici matrycy biegną w przeciwnych kierunkach, więc dwie nowe nici
+powstają inaczej:
+
+    nić wiodąca rośnie w sposób ciągły, w tę samą stronę, w którą idą
+    widełki; wystarczy jej jeden starter;
+    nić opóźniona rośnie w stronę przeciwną do ruchu widełek, więc
+    powstaje w kawałkach – fragmentach Okazaki (100–200 nukleoty‐
+    dów u eukariontów, 1000–2000 u bakterii). Każdy fragment zaczyna
+    się od własnego startera.
+
+Potem startery są usuwane, luki wypełniane DNA, a fragmenty łączo‐
+ne przez ligazę w ciągłą nić.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                            29
+[Strona 30]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                               06 Replikacja: zasady i etapy
+
+
+RYC . 1 3    Trzy etapy replikacji
+
+
+      A      INICJACJA                                                                 B        ELONGACJA
+
+
+                              ori (bogate w A–T)
+                                                                                                            replikacja w obie strony
+
+
+
+
+                         białka inicjatorowe wiążą ori
+
+
+
+
+                                    bańka
+
+                                                                                             nić wiodąca               fragmenty Okazaki
+
+                   helikazy rozplatają DNA w obie strony                                     startery RNA              każde widełki: 1 wiodąca + 1 opóźniona
+
+
+
+
+      C      TERMINACJA
+
+                            ori
+                                                                                                    ori                ori                 ori
+                                                    BAKTERIE
+                                                    jedno ori na kolistym DNA;
+                                                    widełki idą w dwie strony
+                                                    i spotykają się naprzeciwko,
+                                                                                      telomer                                                        telomer
+                                                    w rejonie ter
+                                                                                                  tu widełki sąsiednich replikonów się spotykają
+
+                                                                                         EUKARIONTY
+                                                                                         wiele ori na każdym chromosomie (replikony);
+                                                                                         koniec, gdy sąsiednie widełki się zetkną
+                    ter + białko Tus
+
+
+A – inicjacja: białka wiążą ori, DNA się rozplata, powstaje bańka z dwojgiem widełek. B – elongacja: w każdych
+widełkach jedna nić powstaje w sposób ciągły, druga we fragmentach Okazaki. C – terminacja u bakterii (spo‐
+tkanie w rejonie ter) i u eukariontów (zetknięcie widełek sąsiednich replikonów).
+
+
+3. Terminacja – koniec kopiowania
+U bakterii widełki obchodzą koło chromosomu z dwóch stron i spoty‐
+kają się naprzeciwko ori, w rejonie sekwencji ter. Tam wiąże się biał‐
+ko Tus, które zatrzymuje helikazę. U eukariontów replikacja danego
+odcinka kończy się, gdy zetkną się widełki z sąsiednich replikonów.
+Końce liniowych chromosomów wymagają osobnego rozwiązania –
+telomerów (rozdział 7).
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                             30
+[Strona 31]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                            06 Replikacja: zasady i etapy
+
+
+RYC . 1 4    Nić opóźniona krok po kroku
+
+
+    NIĆ OPÓŹNIONA KROK PO KROKU: OD STARTERA DO CIĄGŁEJ NICI
+
+                                                                                                  w stronę widełek
+
+                                                                  starszy fragment Okazaki                     nowy starter
+
+
+       1    Prymaza
+            robi krótki starter RNA                       5′                                                                        3′
+
+
+
+
+      2     Polimeraza DNA
+            wydłuża starter → fragment                    5′                                                                        3′
+
+
+
+
+      3     RNaza H
+            usuwa starter poprzedniego                    5′                                                                        3′
+
+
+
+
+      4     Polimeraza DNA
+            wypełnia lukę po starterze                    5′                                                                        3′
+
+
+
+
+      5     Ligaza DNA
+            łączy fragmenty w jedną nić                   5′                                                                        3′
+
+
+
+
+Pięć kroków, które zamieniają fragmenty Okazaki w ciągłą nić: starter od prymazy, wydłużenie przez polimera‐
+zę, usunięcie startera, wypełnienie luki, połączenie przez ligazę.
+
+
+
+    NA KOLOKWIUM
+
+    W pytaniu „wymień etapy i opisz jeden” najprościej opisać inicjację: ori,
+    białka inicjatorowe, helikaza, bańka i dwoje widełek. Jeśli opisujesz elonga‐
+    cję, wymień nić wiodącą, nić opóźnioną i fragmenty Okazaki.
+
+
+W pliku z Drewą (PDF): s. 17–19, 21, 24–25
+
+
+
+
+Replikacja u eukariontów                                   ★ NIE BYŁO PY TANIA
+
+
+U eukariontów replikacja zachodzi w fazie S cyklu komórkowego – raz
+przed każdym podziałem. W tym samym czasie komórka podwaja
+ilość histonów, żeby nowe DNA od razu mogło się upakować.
+
+Genom eukariontów jest ogromny, dlatego replikacja startuje jedno‐
+cześnie w wielu ori. Skopiowanie całego genomu trwa średnio 5–10
+godzin; bakteria E. coli robi to w ok. 30 minut. Główne polimerazy eu‐
+kariotyczne to polimeraza ε (nić wiodąca), polimeraza δ (nić opóźnio‐
+na) i polimeraza α z prymazą (startery); pomaga im białko PCNA.
+
+W pliku z Drewą (PDF): s. 17–18, 22–23
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                          31
+[Strona 32]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                 06 Replikacja: zasady i etapy
+
+
+
+
+Korekta błędów                          ★ NIE BYŁO PY TANIA
+
+
+Polimerazy sprawdzają na bieżąco, czy właśnie dołączony nukleotyd
+tworzy prawidłową parę. Jeśli wstawiły zły nukleotyd (np. G naprze‐
+ciw T), cofają się i go wycinają – to aktywność egzonukleazy 3′→5′,
+czyli korekta (ang. proofreading). Dzięki temu błąd zdarza się średnio
+raz na 107–1010 nukleotydów.
+
+Jeśli uszkodzenia DNA są poważne, komórka wstrzymuje replikację.
+Gdy naprawa się nie uda, białko p53 kieruje komórkę na drogę apop‐
+tozy, czyli zaprogramowanej śmierci.
+
+W pliku z Drewą (PDF): s. 16, 23–24, 28
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                            32
+[Strona 33]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                    07 Enzymy i białka replikacji
+
+
+
+
+07
+                             ZAGADNIENIE 5 · ENZYMY BIORĄCE UDZIAŁ W REPLIKACJI
+
+
+                             Enzymy i białka replikacji
+                             Replikację wykonuje zespół białek, z których każde ma jedno zadanie. To najczęstsze
+                             pytanie z replikacji: wymień je i opisz funkcję jednego.
+                             W rozdziale: Kto co robi przy widełkach · Topoizomerazy · Telomery i telomeraza · Ryciny: 3
+
+
+
+
+Kto co robi przy widełkach                                     PY TANIE · 3/5
+
+
+Najłatwiej zapamiętać białka w kolejności, w jakiej „spotykasz” je,
+idąc od DNA przed widełkami do gotowej nici:
+
+  BIAŁKO / ENZYM                          FUNKCJA
+
+  Białka inicjatorowe                     rozpoznają ori i zaczynają rozplatać DNA (u E. coli: DnaA)
+
+  Topoizomeraza                           usuwa napięcie (skręcenie) DNA przed widełkami; u bakterii – gyraza
+
+  Helikaza                                rozrywa wiązania wodorowe między zasadami i rozplata podwójną helisę; zużywa ATP (u E.
+                                          coli: DnaB)
+
+  Białka SSB                              przyłączają się do pojedynczych nici i nie pozwalają im znów się połączyć ani zwinąć
+
+  Prymaza                                 syntetyzuje krótkie startery RNA (10–20 nukleotydów): jeden dla nici wiodącej, wiele dla nici
+                                          opóźnionej
+
+  Polimeraza DNA                          dobudowuje nukleotydy do końca 3′ startera, w kierunku 5′→3′, zgodnie z matrycą; wiele ma
+                                          też funkcję korekty
+
+  PCNA („klamra”)                         obejmuje DNA jak pierścień i trzyma polimerazę na nici, żeby nie odpadła
+
+  RNaza H                                 usuwa startery RNA (u bakterii robi to polimeraza DNA I)
+
+  Ligaza DNA                              łączy fragmenty Okazaki w ciągłą nić – tworzy brakujące wiązanie fosfodiestrowe
+
+  Telomeraza                              wydłuża końce chromosomów (telomery), korzystając z własnego RNA jako matrycy
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                               33
+[Strona 34]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                        07 Enzymy i białka replikacji
+
+
+RYC . 1 5     Widełki replikacyjne
+
+
+       WIDEŁKI REPLIKACYJNE: KTO CO ROBI
+
+                                                                                                         widełki przesuwają się
+
+        starter RNA                  PCNA – „klamra”                          polimeraza DNA ε
+        jeden na całą nić            trzyma polimerazę na DNA                 dobudowuje nić wiodącą
+
+                                                                              (u bakterii: polimeraza III)
+                                                                                                                            topoizomeraza
+                                                                                                                            usuwa skręcenia przed
+  3′                                                                                                                        widełkami
+                                                                               Pol ε
+
+         NIĆ WIODĄCA
+         ciągła – w stronę widełek                                                                                                                             5′
+                                                                                                                                            topo
+         NIĆ OPÓŹNIONA
+                                                                                                                                                               3′
+         fragmenty Okazaki – od widełek
+                                                                                                                            helikaza
+                                                                  Pol δ                                                     rozrywa wiązania wodorowe,
+  5′                                                                                                                        rozplata nici (zużywa ATP)
+
+
+                                                                                                                            białka SSB
+        ligaza DNA                   RNaza H                         polimeraza DNA δ             prymaza                   trzymają nici osobno
+        łączy fragmenty              usuwa starter RNA               buduje fragmenty             robi starter RNA
+                                     (u bakterii: polimeraza I)      Okazaki                      (u eukariontów z pol α)
+
+
+
+
+                             Polimeraza DNA umie dobudowywać nić tylko w kierunku 5′→3′ i tylko do gotowego startera.
+                            Dlatego jedna nić powstaje w sposób ciągły, a druga we fragmentach, które potem są łączone.
+
+
+
+
+Wszystkie białka z tabeli w jednym miejscu. Na górze nić wiodąca rośnie w sposób ciągły; na dole nić opóźnio‐
+na powstaje z fragmentów Okazaki, które prymaza zaczyna, polimeraza wydłuża, RNaza H oczyszcza ze star‐
+terów, a ligaza łączy.
+
+
+Polimerazy DNA – które do czego
+Bakterie mają trzy główne polimerazy DNA, eukarionty co najmniej
+dziewięć. Wystarczy znać te najważniejsze:
+
+  POLIMERAZA                              ZADANIE
+
+  bakteryjna III                          główny enzym replikacji – buduje obie nowe nici
+
+  bakteryjna I                            usuwa startery RNA i wypełnia luki; naprawa DNA
+
+  eukariotyczna α                         razem z prymazą zaczyna syntezę (startery)
+
+  eukariotyczna ε                         buduje nić wiodącą
+
+  eukariotyczna δ                         buduje nić opóźnioną (fragmenty Okazaki)
+
+  eukariotyczna γ                         kopiuje DNA mitochondrialne
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                                     34
+[Strona 35]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                 07 Enzymy i białka replikacji
+
+
+      U WAG A D O P O D R Ę C Z N I K A
+
+      W pliku z Drewą (s. 23 i 29) przypisanie polimeraz jest niekonsekwentne:
+      nić wiodąca raz przypada polimerazie δ, raz ε. Dziś przyjmuje się: ε – nić
+      wiodąca, δ – nić opóźniona. Na kolokwium bezpiecznie jest napisać po pro‐
+      stu „polimeraza DNA dobudowuje nową nić w kierunku 5′→3′”.
+
+
+
+      NA KOLOKWIUM
+
+      Pytanie padło na 3 z 5 kolokwiów. Wymień co najmniej: helikaza, SSB, to‐
+      poizomeraza, prymaza, polimeraza DNA, ligaza. Do opisu wybierz helikazę
+      albo ligazę – mają jedną, prostą funkcję.
+
+
+W pliku z Drewą (PDF): s. 23, 26–29
+
+
+
+
+Topoizomerazy                           PY TANIE · 1/5
+
+
+Helikaza rozplata helisę jak rozkręcanie skręconego sznurka. Przed
+widełkami DNA skręca się przez to coraz mocniej – powstają dodatnie
+superskręty i rośnie napięcie. Bez pomocy replikacja szybko by stanę‐
+ła.
+
+Topoizomerazy to enzymy, które zmieniają superskręcenie DNA:
+przecinają nić (albo obie nici), pozwalają DNA się obrócić lub przejść
+przez przerwę, a potem z powrotem łączą przecięte końce. Sekwen‐
+cja DNA się nie zmienia – zmienia się tylko jego skręcenie.
+
+      Topoizomeraza I przecina jedną nić. Nić obraca się wokół drugiej,
+      napięcie się zmniejsza, a potem przerwa zostaje zamknięta. Nie po‐
+      trzebuje ATP.
+      Topoizomeraza II przecina obie nici. Przez powstałą przerwę prze‐
+      prowadza inny odcinek helisy, a potem łączy nici. Zużywa ATP.
+      U bakterii jej odmianą jest gyraza, która wprowadza ujemne super‐
+      skręty.
+
+Na czas cięcia enzym trzyma przecięty koniec DNA przy sobie (wiąza‐
+niem z tyrozyną), więc energia wiązania nie ginie i nić można łatwo
+zszyć. Topoizomerazy są celem leków: niektórych antybiotyków (blo‐
+kują gyrazę bakterii) i leków przeciwnowotworowych (zatrzymują po‐
+działy komórek raka).
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                            35
+[Strona 36]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                07 Enzymy i białka replikacji
+
+
+RYC . 1 6    Topoizomerazy
+
+
+      A      PROBLEM: SKRĘCENIE DNA
+
+
+                                                                                     helikaza rozplata
+
+                                                                                                                                           usuwa napięcie
+
+
+                                                                                                                                               topo
+
+
+
+                                                                                                                 przed widełkami DNA
+            zrelaksowane                     superskręcone                                                      skręca się coraz mocniej
+          (bez superskrętów)             (oś helisy sama się owija)
+
+
+
+
+      B      TOPOIZOMERAZA I                                                           C      TOPOIZOMERAZA II
+
+       przecina JEDNĄ nić                                                               przecina OBIE nici
+
+                                                                                                                drugi odcinek
+                                                                                                                przechodzi przez
+                                                                                                                przerwę
+
+
+
+                                                      nić połączona,                                                                  potem obie nici
+                                                    jeden skręt mniej                                                                   są łączone
+              nić obraca się
+              wokół drugiej
+
+                          bez ATP · usuwa napięcie                                                       zużywa ATP · u bakterii: gyraza
+
+
+A – DNA zrelaksowane i superskręcone; przed widełkami helikaza wytwarza napięcie, które usuwa topoizome‐
+raza. B – topoizomeraza I tnie jedną nić. C – topoizomeraza II tnie obie nici i przeprowadza przez przerwę drugi
+odcinek DNA.
+
+
+W pliku z Drewą (PDF): s. 10–11, 27
+
+
+
+
+Telomery i telomeraza                                  ★ NIE BYŁO PY TANIA
+
+
+Na końcu liniowego chromosomu nić opóźniona ma problem. Ostatni
+starter leży na samym końcu matrycy. Po jego usunięciu zostaje luka,
+której polimeraza nie wypełni – nie ma przed nią żadnego końca 3′, do
+którego mogłaby dobudowywać. Każda replikacja skraca więc koniec
+chromosomu.
+
+Końce chromosomów chronią telomery – wiele powtórzeń krótkiej
+sekwencji (u człowieka TTAGGG). Telomery są „zapasem”, który może
+się skracać bez utraty genów. Chronią też chromosomy przed skleja‐
+niem się ze sobą i przed nukleazami.
+
+Telomeraza dobudowuje telomery. Jej RNA paruje z końcem 3′ chro‐
+mosomu i służy za matrycę dla nowych powtórzeń. Telomeraza prze‐
+suwa się i powtarza to wiele razy, a drugą nić uzupełnia zwykła repli‐
+kacja. Enzym jest aktywny w komórkach rozrodczych, macierzystych
+i nowotworowych. W większości komórek ciała jest nieaktywny, więc
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                             36
+[Strona 37]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                             07 Enzymy i białka replikacji
+
+
+ich telomery z wiekiem się skracają, co wiąże się ze starzeniem komó‐
+rek.
+
+RYC . 1 7    Telomery i telomeraza
+
+
+       A     PROBLEM KOŃCÓW CHROMOSOMU                                                 B      TELOMERAZA WYDŁUŻA KONIEC
+
+
+       1    nić opóźniona przy samym końcu                                              1    RNA telomerazy łączy się
+                                                                                             z końcem 3′ nici
+                                                                             3′
+
+
+                                                                   starter
+                                                                                                                    telomeraza
+
+
+       2    starter usunięty – zostaje luka                                             2    dobudowuje powtórzenie
+                                                                                             TTAGGG (wg własnego RNA)
+                                                                             3′
+
+
+                                             tu brak miejsca na starter                                             telomeraza
+
+
+       3    nowa nić jest krótsza                                                       3    przesuwa się i powtarza
+                                                                                             wiele razy
+                                                                             3′
+
+
+                                                                                                                               telomeraza
+                                                                   ubytek
+       co podział: koniec krótszy
+                                                                                                      drugą nić dobudowuje potem
+                                                                                                  zwykła replikacja (starter + polimeraza)
+
+
+
+
+       C     GDZIE TELOMERAZA JEST AKTYWNA?
+
+
+            komórki rozrodcze                       komórki macierzyste              komórki nowotworowe                większość komórek ciała
+                  aktywna                                aktywna                              aktywna                    nieaktywna → starzenie
+
+
+
+A – problem końców: po usunięciu ostatniego startera nowa nić jest krótsza. B – telomeraza wydłuża koniec 3′
+według matrycy z własnego RNA. C – w których komórkach telomeraza działa.
+
+
+W pliku z Drewą (PDF): s. 25–26, 29
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                        37
+[Strona 38]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                      08 Izolacja i ocena DNA i RNA
+
+
+
+
+08
+                             Z AGA D N I E N I A 6 – 9 · M E TO DY B A DA N I A K WA S ÓW N U K L E I N OW YC H
+
+
+                             Izolacja i ocena DNA i RNA
+                             Część ćwiczeniowa: jak wydobyć DNA z komórek, czym różni się izolacja RNA i jak
+                             sprawdzić, czy preparat jest dobry. Na kolokwiach nie było z tego pytań – wystarczy
+                             znać zasadę.
+                             W rozdziale: Izolacja i oczyszczanie DNA · Izolacja RNA · Ocena ilości i jakości · Pobieranie i przesyłanie materiału ·
+                             Ryciny: 1
+
+
+
+
+Izolacja i oczyszczanie DNA                                       ★ NIE BYŁO PY TANIA
+
+
+Każda metoda izolacji DNA ma te same podstawowe etapy:
+
+ 1   liza komórek – rozbicie błon, żeby uwolnić DNA;
+ 2   rozkład białek – także nukleaz, które mogłyby pociąć DNA;
+ 3   usunięcie białek (odbiałczanie);
+ 4   zagęszczenie DNA – zebranie go w małej objętości.
+
+Białka usuwa się na jeden z trzech sposobów: fenolem i chlorofor‐
+mem (daje najczystsze DNA), przez wysalanie białek albo przez zwią‐
+zanie DNA z nośnikiem w kolumnie (np. ze złożem krzemionkowym),
+odmycie zanieczyszczeń i uwolnienie czystego DNA.
+
+Na ćwiczeniach izolujesz DNA z wymazu z jamy ustnej (komórki na‐
+błonka) gotowym zestawem GeneMATRIX Swab-Extract. Zestawy do‐
+biera się do rodzaju materiału i do tego, do czego DNA ma posłużyć.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                  38
+[Strona 39]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                    08 Izolacja i ocena DNA i RNA
+
+
+RYC . 1 8      Izolacja i ocena DNA
+
+
+      A         IZOLACJA DNA – METODA KOLUMNOWA
+
+          1    Pobranie                 2   Liza                     3   Wiązanie                 4 Płukanie           5   Elucja
+
+
+
+
+        wymaz z jamy ustnej              rozbicie komórek,              DNA wiąże się             zanieczyszczenia         czyste DNA
+         (komórki nabłonka)               trawienie białek          ze złożem w kolumnie           są wypłukiwane      spływa do probówki
+
+
+
+
+      B         OCENA ILOŚCI I JAKOŚCI
+              spektrofotometr: absorbancja światła UV                                   wzorzec         próbki
+
+                                                    A260 → ilość DNA
+                                                                                  –
+                                                        A280 → białka                                                 DNA ma ładunek
+                                                      A260/A280 > 1,8                                                 ujemny, więc
+                                                     = czysty preparat                                                wędruje do
+                                                                                                                      anody (+);
+                                                                                                                      krótsze
+                                                                                                                      szybciej
+
+
+
+
+                           260 nm        280 nm                                   +
+
+
+A – pięć kroków izolacji metodą kolumnową. B – spektrofotometr mierzy, ile światła UV pochłania próbka (kwasy
+nukleinowe przy 260 nm, białka przy 280 nm); elektroforeza w żelu rozdziela DNA według długości.
+
+
+W pliku z Drewą (PDF): s. 35
+
+
+
+
+Izolacja RNA                     ★ NIE BYŁO PY TANIA
+
+
+RNA izoluje się podobnie jak DNA, ale trzeba uważać na dwie rzeczy:
+
+    RNazy – enzymy rozkładające RNA są wszędzie i są bardzo trwałe.
+    Niszczy się je silnymi związkami (np. izotiocyjanianem guanidyny)
+    i inhibitorami (np. DEPC).
+    DNA w preparacie – usuwa się je np. DNA-zą albo kwaśnym feno‐
+    lem.
+
+Jeśli potrzebne jest tylko mRNA, wykorzystuje się jego ogon poli(A):
+wiąże się on z odcinkami poli(T) przyczepionymi do kolumny albo ku‐
+lek magnetycznych, a reszta RNA zostaje wypłukana.
+
+W pliku z Drewą (PDF): s. 35–36
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                                39
+[Strona 40]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                   08 Izolacja i ocena DNA i RNA
+
+
+
+
+Ocena ilości i jakości                              ★ NIE BYŁO PY TANIA
+
+
+Spektrofotometria mierzy pochłanianie światła UV. Kwasy nukleino‐
+we pochłaniają je najmocniej przy 260 nm, a białka przy 280 nm. Z po‐
+miaru przy 260 nm oblicza się ilość DNA lub RNA. Stosunek A260/
+A280 powyżej 1,8 oznacza preparat dobrej jakości, bez dużej ilości
+białek.
+
+Elektroforeza w żelu agarozowym rozdziela cząsteczki według długo‐
+ści. DNA ma ładunek ujemny, więc w polu elektrycznym wędruje od
+katody (–) do anody (+); krótsze fragmenty przesuwają się szybciej.
+Wielkość odczytuje się, porównując prążki ze wzorcem o znanych
+długościach. Prążki uwidacznia barwnik, np. bromek etydyny.
+
+Nowsze aparaty oceniają też integralność kwasu nukleinowego w ska‐
+li od 1 (całkowicie rozłożony) do 10 (najlepsza jakość).
+
+W pliku z Drewą (PDF): s. 37
+
+
+
+
+Pobieranie i przesyłanie materiału                                            ★ NIE BYŁO PY TANIA
+
+
+Zasady pobierania, zabezpieczania i przesyłania materiału do badań
+opisuje skrypt Z. Ostrowskiej i B. Mazura (Diagnostyka laboratoryjna
+dla studentów medycyny, rozdz. 6, s. 53–54 i 56). Tego skryptu nie ma
+w pliku z Drewą, dlatego temat nie jest tu omówiony.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                              40
+[Strona 41]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                            Pytania z kolokwiów – opracowanie
+
+NA KONIEC
+
+
+
+Pytania z kolokwiów – opracowanie
+Wszystkie 22 pytania, które pojawiły się na pięciu ostatnich kolokwiach, w kolejności z tabeli. Przy każdym: odpowiedź za 1
+punkt (najprostsza, wystarcza do połowy punktów), odpowiedź za 2 punkty (pełna, ale zwięzła) oraz strona, na której temat
+omówiono dokładniej. Liczba w rogu mówi, na ilu z pięciu kolokwiów padło pytanie.
+
+B U D O WA D N A
+
+
+      1     Opisz strukturę pierwszorzędową DNA.                                                                         1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Struktura pierwszorzędowa DNA to kolej‐                         Struktura pierwszorzędowa DNA to liniowa kolejność nukleoty‐
+   ność (sekwencja) nukleotydów w nici. Nu‐                        dów w nici, czyli sekwencja – to w niej zapisana jest informacja
+   kleotydy łączą się ze sobą wiązaniami                           genetyczna. Sąsiednie nukleotydy łączą się wiązaniami 3′→5′-fos‐
+   3′→5′-fosfodiestrowymi.                                         fodiestrowymi: fosforan przy węglu 5′ jednego nukleotydu wiąże
+                                                                   się z grupą –OH przy węglu 3′ poprzedniego. Powstaje szkielet cu‐
+                                                                   krowo-fosforanowy, z którego odchodzą zasady azotowe. Nić ma
+                                                                   polarność: na końcu 5′ jest wolny fosforan, a na końcu 3′ wolna
+                                                                   grupa –OH, dlatego sekwencję zapisuje się w kierunku 5′→3′.
+
+   Omówione głębiej: s. 6 tego opracowania · plik z Drewą (PDF): s. 5–6
+
+
+
+
+      2     Wymień formy DNA.                                                                                            5/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Formy podwójnej helisy DNA to A, B, C, D,                       Wyróżnia się formy A-DNA, B-DNA, C-DNA, D-DNA, E-DNA
+   E i Z. Najważniejsze z nich to A-DNA,                           i Z-DNA. Formy A, B, C, D i E są prawoskrętne, a Z-DNA jest lewo‐
+   B-DNA i Z-DNA.                                                  skrętna. Najczęściej w komórkach występuje B-DNA (ok. 10 par za‐
+                                                                   sad na skręt), opisana przez Watsona i Cricka. To, którą formę
+                                                                   przyjmie DNA, zależy od warunków otoczenia – głównie od wil‐
+                                                                   gotności i jonów w roztworze.
+
+   Omówione głębiej: s. 8 tego opracowania · plik z Drewą (PDF): s. 1, 7–8
+
+
+
+
+      3     Przyporządkuj formom DNA prawo- lub lewoskrętność.                                                           4/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Prawoskrętne są formy A, B, C, D i E. Le‐                       Prawoskrętne są formy A-DNA, B-DNA, C-DNA, D-DNA i E-DNA. Je‐
+   woskrętna jest tylko forma Z.                                   dyną lewoskrętną formą jest Z-DNA. Z-DNA ma 12 par zasad na
+                                                                   skręt (B-DNA ok. 10), jest dłuższa i węższa, a jej szkielet cukrowo-
+                                                                   fosforanowy układa się w zygzak. Powstaje przejściowo, np. przy
+                                                                   rozluźnianiu DNA podczas transkrypcji.
+
+   Omówione głębiej: s. 8 tego opracowania · plik z Drewą (PDF): s. 7–8
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                            41
+[Strona 42]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                          Pytania z kolokwiów – opracowanie
+
+
+
+     4      Wskaż najczęstszą formę DNA w przyrodzie.                                                                  1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Najczęstsza jest forma B-DNA. Jest to pra‐                      Najczęstszą formą DNA w przyrodzie jest prawoskrętna B-DNA –
+   woskrętna podwójna helisa.                                      podwójna helisa opisana przez Watsona i Cricka. Ma ok. 10 par za‐
+                                                                   sad na jeden skręt, skok helisy 3,4 nm i szerokość ok. 2 nm. Po‐
+                                                                   wstaje w warunkach wysokiej wilgotności i niskiego stężenia soli,
+                                                                   czyli takich, jakie panują w komórce. Na jej powierzchni widać
+                                                                   bruzdę większą i mniejszą.
+
+   Omówione głębiej: s. 9 tego opracowania · plik z Drewą (PDF): s. 1, 6–7
+
+
+
+P O D S TAW O W E P O J Ę C I A
+
+
+      5     Wyjaśnij pojęcie: nukleotyd.                                                                               2/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Nukleotyd to podstawowa jednostka bu‐                           Nukleotyd to podstawowa jednostka (monomer) kwasów nukle‐
+   dująca DNA i RNA. Składa się z zasady azo‐                      inowych. Składa się z zasady azotowej, pięciowęglowego cukru
+   towej, cukru (pentozy) i od jednej do                           (deoksyrybozy w DNA, rybozy w RNA) i od jednej do trzech reszt
+   trzech reszt fosforanowych.                                     fosforanowych. Zasada łączy się z węglem 1′ cukru wiązaniem N-
+                                                                   glikozydowym, a fosforan przyłącza się do węgla 5′. Zależnie od
+                                                                   liczby fosforanów wyróżnia się mono-, di- i trifosforany, np.
+                                                                   dAMP, dADP i dATP. W nici nukleotydy łączą się wiązaniami fosfo‐
+                                                                   diestrowymi.
+
+   Omówione głębiej: s. 5 tego opracowania · plik z Drewą (PDF): s. 3, 5–6
+
+
+
+
+      6     Wyjaśnij pojęcie: nukleozyd.                                                                               2/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Nukleozyd to zasada azotowa połączona                           Nukleozyd to cząsteczka złożona z zasady azotowej i pentozy, po‐
+   z cukrem (pentozą). Nie zawiera reszty                          łączonych wiązaniem N-glikozydowym przy węglu 1′ cukru. Po
+   fosforanowej.                                                   dołączeniu od jednej do trzech reszt fosforanowych nukleozyd
+                                                                   staje się nukleotydem. Przykłady to adenozyna, guanozyna, cyty‐
+                                                                   dyna, tymidyna i urydyna. W DNA nazwy mają przedrostek deok‐
+                                                                   sy-, np. deoksyadenozyna.
+
+   Omówione głębiej: s. 5 tego opracowania · plik z Drewą (PDF): s. 5
+
+
+
+
+      7     Wyjaśnij pojęcie: nukleosom.                                                                               2/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Nukleosom to podstawowa jednostka                               Nukleosom to podstawowa jednostka budowy chromatyny. Jego
+   chromatyny. Składa się z rdzenia z ośmiu                        rdzeń to oktamer histonowy – po dwie kopie histonów H2A, H2B,
+   histonów, wokół którego owinięte jest                           H3 i H4. Wokół rdzenia owinięty jest odcinek DNA o długości ok.
+   DNA.                                                            146 par zasad (prawie dwa zwoje). Sąsiednie nukleosomy łączy
+                                                                   DNA łącznikowe, a na zewnątrz, w miejscu wejścia i wyjścia DNA,
+                                                                   leży histon H1. Łańcuch nukleosomów tworzy włókno o grubości
+                                                                   11 nm, wyglądające jak koraliki na nitce.
+
+   Omówione głębiej: s. 11 tego opracowania · plik z Drewą (PDF): s. 34
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                          42
+[Strona 43]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                           Pytania z kolokwiów – opracowanie
+
+
+
+      8     Wyjaśnij pojęcie: solenoid.                                                                                 1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Solenoid to włókno chromatynowe o śred‐                         Solenoid to włókno chromatynowe o średnicy ok. 30 nm – kolejny
+   nicy ok. 30 nm. Powstaje przez spiralne                         po nukleosomach poziom upakowania DNA. Powstaje, gdy łań‐
+   zwinięcie łańcucha nukleosomów.                                 cuch nukleosomów (włókno 11 nm) zwija się w spiralę, w której
+                                                                   na jeden skręt przypada ok. 6 nukleosomów. Spiralę stabilizują hi‐
+                                                                   stony H1 skupione w jej wnętrzu. Solenoid tworzy dalej pętle i ko‐
+                                                                   lejne poziomy upakowania, aż do chromosomu metafazowego.
+
+   Omówione głębiej: s. 11 tego opracowania · plik z Drewą (PDF): s. 34
+
+
+
+DNA A RNA
+
+
+      9     Porównaj DNA i RNA – podaj co najmniej 4 różnice.                                                           2/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   DNA zawiera deoksyrybozę i tyminę,                              1) Cukier: w DNA jest deoksyryboza, w RNA ryboza z grupą –OH
+   a RNA rybozę i uracyl. DNA ma dwie nici,                        przy węglu 2′. 2) Zasady: DNA ma A, G, C i T, a RNA zamiast tymi‐
+   a RNA zwykle jedną. DNA przechowuje in‐                         ny ma uracyl (pary A–U). 3) Budowa: DNA to podwójna helisa
+   formację genetyczną, a RNA uczestniczy                          z dwóch nici, a RNA to zwykle jedna nić, która tworzy spinki i pę‐
+   w syntezie białek.                                              tle. 4) Funkcja: DNA przechowuje i przekazuje informację gene‐
+                                                                   tyczną, a RNA bierze udział w syntezie białek i regulacji genów. 5)
+                                                                   Miejsce i trwałość: DNA jest w jądrze i mitochondriach i jest bar‐
+                                                                   dzo trwałe, a RNA występuje też w cytoplazmie i szybko się roz‐
+                                                                   kłada. 6) Długość: DNA jest bardzo długie, a RNA ma najwyżej kil‐
+                                                                   ka tysięcy nukleotydów.
+
+   Omówione głębiej: s. 15 tego opracowania · plik z Drewą (PDF): s. 11, 14–15
+
+
+
+
+     10     Wymień 4 cechy RNA.                                                                                         1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   RNA jest zwykle jednoniciowe. Zawiera                           RNA jest zwykle jednoniciowe, ale jego nić paruje sama ze sobą
+   rybozę i uracyl zamiast tyminy. Jest mniej                      i tworzy struktury przestrzenne: spinki do włosów, pętle i wy‐
+   trwałe niż DNA.                                                 brzuszenia. Cukrem w RNA jest ryboza, a zamiast tyminy wystę‐
+                                                                   puje uracyl, który paruje z adeniną. RNA jest krótsze od DNA (do
+                                                                   kilku tysięcy nukleotydów) i mniej trwałe – szybko ulega rozkła‐
+                                                                   dowi. Zawiera zmodyfikowane zasady, szczególnie w tRNA, np.
+                                                                   pseudourydynę. Pełni wiele funkcji: przenosi informację (mRNA),
+                                                                   buduje rybosomy (rRNA), dowozi aminokwasy (tRNA) i reguluje
+                                                                   geny (miRNA, siRNA).
+
+   Omówione głębiej: s. 14 tego opracowania · plik z Drewą (PDF): s. 11
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                           43
+[Strona 44]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                          Pytania z kolokwiów – opracowanie
+
+RODZAJE RNA
+
+
+     11     Wymień rodzaje RNA.                                                                                        1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Rodzaje RNA to mRNA, rRNA, tRNA, snR‐                           RNA dzieli się na kodujące i niekodujące (funkcjonalne). Kodujące
+   NA, snoRNA, miRNA i siRNA. mRNA jest                            to mRNA – przepis na białko. Niekodujące to rRNA (buduje rybo‐
+   kodujące, a pozostałe są niekodujące                            somy), tRNA (dowozi aminokwasy), snRNA (wycina introny),
+   (funkcjonalne).                                                 snoRNA (modyfikuje rRNA) oraz miRNA i siRNA (wyciszają geny).
+                                                                   W komórce występuje też RNA prekursorowe, np. pre-mRNA, któ‐
+                                                                   re musi dojrzeć, zanim zacznie działać.
+
+   Omówione głębiej: s. 17 tego opracowania · plik z Drewą (PDF): s. 11–14
+
+
+
+
+     12     Opisz tRNA.                                                                                                1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   tRNA (transportujące RNA) dowozi amino‐                         tRNA (transportujące RNA) to mała cząsteczka (74–93 nukleotydy),
+   kwasy do rybosomu podczas translacji.                           która rozpoznaje kodon w mRNA i przynosi do rybosomu pasują‐
+   Ma kształt koniczyny i antykodon komple‐                        cy aminokwas. Jej nić zagina się w strukturę w kształcie koniczy‐
+   mentarny do kodonu w mRNA.                                      ny: ramiona ze sparowanych odcinków zakończone pętlami.
+                                                                   W pętli antykodonowej leży antykodon – trzy nukleotydy komple‐
+                                                                   mentarne do kodonu mRNA. Aminokwas przyłącza się do końca 3′
+                                                                   (zakończonego sekwencją CCA), a tRNA z aminokwasem to
+                                                                   aminoacylo-tRNA. tRNA zawiera dużo zmodyfikowanych zasad,
+                                                                   a w komórce jest do 50 jego rodzajów.
+
+   Omówione głębiej: s. 19 tego opracowania · plik z Drewą (PDF): s. 13
+
+
+
+
+     13     Wyjaśnij znaczenie miRNA.                                                                                  2/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   miRNA to krótkie (20–26 nukleotydów) re‐                        miRNA (mikroRNA) to krótkie RNA o długości 20–26 nukleotydów,
+   gulatorowe RNA, które wycisza ekspresję                         które reguluje ekspresję genów, szczególnie w rozwoju zarodko‐
+   genów. Wiąże się z mRNA i hamuje jego                           wym. Powstaje z własnego genu jako spinka pre-miRNA (ok. 75
+   translację.                                                     nukleotydów), którą po przejściu do cytoplazmy tnie enzym Dicer.
+                                                                   Dojrzałe miRNA wiąże się z mRNA na zasadzie częściowej komple‐
+                                                                   mentarności. Skutkiem jest zahamowanie translacji, więc powsta‐
+                                                                   je mniej białka. Jest to jeden z mechanizmów interferencji RNA.
+
+   Omówione głębiej: s. 22 tego opracowania · plik z Drewą (PDF): s. 13–14
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                          44
+[Strona 45]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                           Pytania z kolokwiów – opracowanie
+
+
+
+     14     Wyjaśnij znaczenie siRNA.                                                                                   1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   siRNA to małe, dwuniciowe interferujące                         siRNA (małe interferujące RNA) to krótkie, dwuniciowe cząsteczki
+   RNA (21–25 nukleotydów). Wycisza wy‐                            RNA o długości 21–25 nukleotydów. Powstają z dłuższego dwuni‐
+   brane geny, prowadząc do zniszczenia ich                        ciowego RNA (np. wirusowego albo wprowadzonego do komórki),
+   mRNA.                                                           które enzym Dicer tnie na krótkie odcinki. Jedna nić siRNA wiąże
+                                                                   się z mRNA w pełni komplementarnie. Takie mRNA zostaje prze‐
+                                                                   cięte i rozłożone, więc translacja nie zachodzi i gen zostaje wyci‐
+                                                                   szony. siRNA chroni komórkę przed obcym RNA i służy w labora‐
+                                                                   torium do wyłączania wybranych genów.
+
+   Omówione głębiej: s. 23 tego opracowania · plik z Drewą (PDF): s. 14
+
+
+
+
+     15     Opisz działanie snRNA.                                                                                      1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   snRNA to małe jądrowe RNA, które bierze                         snRNA (małe jądrowe RNA, zwane U-RNA, bo bogate w urydynę)
+   udział w splicingu. Razem z białkami two‐                       działa w jądrze komórkowym. Łączy się z białkami w kompleksy
+   rzy spliceosom, który wycina introny                            snRNP; najważniejsze to U1, U2, U4/U6 i U5. Kompleksy te tworzą
+   z pre-mRNA.                                                     spliceosom, który wycina introny z pre-mRNA i łączy eksony. snR‐
+                                                                   NA rozpoznaje granice intronów (zwykle GU…AG), parując z nimi
+                                                                   na zasadzie komplementarności.
+
+   Omówione głębiej: s. 20 tego opracowania · plik z Drewą (PDF): s. 13
+
+
+
+
+     16     Opisz działanie snoRNA.                                                                                     1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   snoRNA to małe jąderkowe RNA, które                             snoRNA (małe jąderkowe RNA) występuje w jąderku i tworzy
+   kieruje chemicznymi modyfikacjami                               z białkami kompleksy snoRNP. Kieruje chemicznymi modyfika‐
+   rRNA. Działa w jąderku.                                         cjami rRNA, takimi jak pseudourydylacja i 2′-O-metylacja. snoR‐
+                                                                   NA paruje z komplementarnym fragmentem rRNA i wskazuje en‐
+                                                                   zymowi, który nukleotyd ma zostać zmieniony. Według podręcz‐
+                                                                   nika wchodzi też w skład telomerazy u ssaków i uczestniczy w im‐
+                                                                   printingu genów.
+
+   Omówione głębiej: s. 21 tego opracowania · plik z Drewą (PDF): s. 13
+
+
+
+
+     17     Wskaż RNA w telomerazie i jego inną funkcję.                                                                1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   W telomerazie występuje snoRNA, które                           Telomeraza to enzym zbudowany z białka i RNA; u ssaków to RNA
+   służy jako matryca do dobudowywania te‐                         należy do rodziny snoRNA. RNA telomerazy zawiera sekwencję
+   lomerów. Jego inna funkcja to kierowanie                        komplementarną do powtórzeń telomeru (u człowieka TTAGGG)
+   modyfikacjami rRNA w jąderku.                                   i jest matrycą do wydłużania końca 3′ chromosomu. Dzięki temu
+                                                                   telomery nie skracają się przy podziałach, np. w komórkach roz‐
+                                                                   rodczych i macierzystych. Inna funkcja snoRNA to kierowanie
+                                                                   chemicznymi modyfikacjami rRNA w jąderku (pseudourydylacja,
+                                                                   metylacja); według podręcznika uczestniczy ono też w imprintin‐
+                                                                   gu genów.
+
+   Omówione głębiej: s. 21 tego opracowania · plik z Drewą (PDF): s. 13, 25–26, 29
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                           45
+[Strona 46]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                           Pytania z kolokwiów – opracowanie
+
+PROCESY ZWIĄZANE Z RNA
+
+
+     18     Wyjaśnij, czym jest splicing.                                                                               2/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Splicing to wycinanie intronów                                  Splicing (składanie RNA) to etap dojrzewania pre-mRNA u euka‐
+   z pre-mRNA i łączenie eksonów. Zachodzi                         riontów: wycięcie intronów i połączenie eksonów w ciągłą czą‐
+   w jądrze, a wykonuje go spliceosom.                             steczkę mRNA. Zachodzi w jądrze, zanim mRNA trafi do cytopla‐
+                                                                   zmy. Wykonuje go spliceosom zbudowany z snRNA (U1, U2, U4/
+                                                                   U6, U5) i białek, który rozpoznaje granice intronów (zwykle GU na
+                                                                   początku i AG na końcu). Intron zostaje wycięty w kształcie lassa
+                                                                   i rozłożony. Dzięki alternatywnemu splicingowi z jednego genu
+                                                                   mogą powstać różne mRNA i różne białka.
+
+   Omówione głębiej: s. 24 tego opracowania · plik z Drewą (PDF): s. 12–14
+
+
+
+
+     19     Wyjaśnij, czym jest interferencja RNA.                                                                      1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Interferencja RNA to wyciszanie ekspresji                       Interferencja RNA (RNAi) to wyciszanie ekspresji genów po trans‐
+   genu przez krótkie cząsteczki RNA (miR‐                         krypcji przez krótkie cząsteczki RNA – miRNA i siRNA. Dłuższe
+   NA, siRNA). Wiążą się one z mRNA i ha‐                          RNA w kształcie spinki albo dwuniciowe RNA zostaje pocięte
+   mują jego translację albo powodują jego                         przez enzym Dicer na odcinki o długości ok. 20–25 nukleotydów.
+   rozkład.                                                        Krótkie RNA łączy się z białkami i odnajduje komplementarne
+                                                                   mRNA. miRNA (dopasowanie częściowe) hamuje translację, a siR‐
+                                                                   NA (dopasowanie pełne) prowadzi do pocięcia i rozkładu mRNA.
+                                                                   W efekcie białko nie powstaje albo powstaje go mniej.
+
+   Omówione głębiej: s. 25 tego opracowania · plik z Drewą (PDF): s. 13–14
+
+
+
+REPLIKACJA
+
+
+     20     Wymień białka i enzymy uczestniczące w replikacji i opisz funkcję jednego z nich.                           3/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   W replikacji uczestniczą: helikaza, białka                      W replikacji uczestniczą: białka inicjatorowe, helikaza, białka
+   SSB, topoizomeraza, prymaza, polimeraza                         SSB, topoizomeraza (u bakterii gyraza), prymaza, polimerazy
+   DNA i ligaza. Helikaza rozrywa wiązania                         DNA, białko PCNA, RNaza H, ligaza i telomeraza. Helikaza rozpla‐
+   wodorowe między zasadami i rozplata po‐                         ta helisę, zużywając ATP, białka SSB utrzymują pojedyncze nici
+   dwójną helisę.                                                  osobno, a topoizomeraza usuwa napięcie przed widełkami. Pry‐
+                                                                   maza tworzy startery RNA, a polimeraza DNA dobudowuje do
+                                                                   nich nukleotydy w kierunku 5′→3′ i poprawia własne błędy. Opis
+                                                                   jednego enzymu: ligaza DNA łączy fragmenty Okazaki nici opóź‐
+                                                                   nionej w ciągłą nić. Robi to, tworząc brakujące wiązania fosfodie‐
+                                                                   strowe między sąsiednimi nukleotydami.
+
+   Omówione głębiej: s. 33 tego opracowania · plik z Drewą (PDF): s. 23, 26–29
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                           46
+[Strona 47]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                            Pytania z kolokwiów – opracowanie
+
+
+
+     21     Wymień etapy replikacji i opisz jeden z nich.                                                                1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Etapy replikacji to inicjacja, elongacja                        Replikacja ma trzy etapy: inicjację, elongację i terminację. Inicja‐
+   i terminacja. Inicjacja zaczyna się w miej‐                     cja zaczyna się w określonym miejscu DNA – ori (miejscu począt‐
+   scu ori, gdzie białka inicjatorowe i helika‐                    ku replikacji), zwykle bogatym w pary A–T. Przyłączają się tam
+   za rozplatają DNA.                                              białka inicjatorowe, które zaczynają rozdzielać nici, a następnie
+                                                                   helikaza rozplata DNA dalej. Powstaje bańka replikacyjna z dwoj‐
+                                                                   giem widełek, które przesuwają się w przeciwne strony. U bakterii
+                                                                   jest jedno ori, a u eukariontów wiele, więc ich chromosomy są ko‐
+                                                                   piowane w wielu miejscach naraz.
+
+   Omówione głębiej: s. 28 tego opracowania · plik z Drewą (PDF): s. 17, 24–25
+
+
+
+
+     22     Wyjaśnij pojęcie: topoizomeraza.                                                                             1/5 KOLOKWIÓW
+
+
+   ZA 1 PUNKT                                                      ZA 2 PUNKTY
+
+   Topoizomerazy to enzymy, które zmienia‐                         Topoizomerazy to enzymy zmieniające stopień superskręcenia
+   ją superskręcenie DNA. Przecinają jedną                         DNA bez zmiany jego sekwencji. Topoizomeraza I przecina jedną
+   lub obie nici, pozwalają DNA się obrócić                        nić, pozwala jej obrócić się wokół drugiej i zamyka przerwę. Topo‐
+   i ponownie łączą nici.                                          izomeraza II przecina obie nici, przeprowadza przez przerwę inny
+                                                                   odcinek DNA i łączy nici, zużywając ATP; u bakterii jej odmianą
+                                                                   jest gyraza. W replikacji usuwają napięcie, które powstaje przed
+                                                                   widełkami, gdy helikaza rozplata DNA. Są celem niektórych anty‐
+                                                                   biotyków i leków przeciwnowotworowych.
+
+   Omówione głębiej: s. 35 tego opracowania · plik z Drewą (PDF): s. 10–11, 27
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                            47
+[Strona 48]
+K WA S Y N U K L E I N O W E · KO L O K W I U M 4                                                                                Źródła
+
+P O D S TAWA
+
+
+
+Źródła
+[1]     Drewa G., Ferenc T. (red.): Genetyka medyczna. Podręcznik dla studentów. Edra Urban & Partner, Wrocław 2011. Rozdz. 3 „Kwasy
+        nukleinowe” (M. Siwek, A. Sławińska), s. 27–58 – w pliku z Drewą s. 1–32.
+
+[2]     Tamże, rozdz. 18 „Cytogenetyka” (T. Ferenc, A. Mordalska, W. Bratkowska), s. 431–432 – w pliku s. 33–34.
+
+[3]     Tamże, rozdz. 27 „Metody molekularne badania genomu”, s. 710–712 – w pliku s. 35–37.
+
+[4]     Ostrowska Z., Mazur B.: Diagnostyka laboratoryjna dla studentów medycyny. Wyd. ŚUM, Katowice 2011, rozdz. 6 (s. 53–54, 56) –
+        pobieranie i przesyłanie materiału; nie ma go w pliku.
+
+[5]     Tabela pytań z pięciu kolokwiów oraz lista zagadnień „Zajęcia nr 4” – materiały przesłane przez studenta.
+
+
+Kilka szczegółów spoza pliku z Drewą to standardowa wiedza podręcznikowa: ok. 6 nukleosomów na skręt solenoidu,
+przyłączenie aminokwasu do końca 3′ (CCA) tRNA, reguła GU…AG w splicingu, rozkład mRNA przez siRNA oraz przypisa‐
+nie polimeraz ε i δ do nici wiodącej i opóźnionej. Miejsca, w których plik z Drewą zawiera nieścisłości, oznaczono ramka‐
+mi „Uwaga do podręcznika”.
+
+
+
+
+Biologia molekularna · zajęcia nr 4 · opracowanie na podstawie Drewa, Ferenc: Genetyka medyczna                                     48
