@@ -34,6 +34,13 @@ def M(pl):
                 return it
     raise KeyError(pl)
 
+def REFM(pl):
+    for ch in ALL:
+        for it in walk(ch):
+            if it['kind'] == 'ref' and it['pl'] == pl:
+                return it
+    raise KeyError(pl)
+
 def G(title):
     for ch in ALL:
         for it in walk(ch):
@@ -62,7 +69,7 @@ STAR_M = {'mm. międzyżebrowe zewnętrzne', 'mm. międzyżebrowe wewnętrzne', 
           'm. skośny wewnętrzny brzucha', 'm. poprzeczny brzucha', 'm. prosty brzucha'}     # ★ tematy wskazane jako ważne na zaliczeniu
 STAR_P = {'tlocznia', 'pochewka', 'powiez_poprzeczna', 'kanal'}
 NAMES_ONLY = ['m. płatowaty głowy', 'm. płatowaty szyi', 'm. kolcowy', 'm. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy',
-              'm. wielodzielny', 'mm. skręcające', 'mm. międzykolcowe', 'mm. międzypoprzeczne', 'm. skośny górny głowy',
+              'm. wielodzielny', 'mm. skręcające', 'mm. międzykolcowe', 'mm. międzypoprzeczne tylne szyi', 'mm. międzypoprzeczne przyśrodkowe lędźwi', 'mm. międzypoprzeczne przednie szyi', 'mm. międzypoprzeczne boczne lędźwi', 'm. skośny górny głowy',
               'm. prosty tylny mniejszy głowy', 'm. prosty tylny większy głowy', 'm. skośny dolny głowy', 'm. prosty boczny głowy']
 for _m in NAMES_ONLY:
     L3M.pop(_m, None)
@@ -341,7 +348,8 @@ p_boczne = sub(gnode('pasmo boczne', '', 'band', TE, 'włókna do wyr. poprzeczn
                kp + kg, 'list', width=W['band'], col=TE, id='pbocz')
 
 pk = sub(gnode('Mięśnie poprzeczno-kolcowe', 'mm. transversospinales', 'sg', CO, '3 warstwy – coraz krótsze w głąb', '667'),
-         barecards(['m. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy', 'm. wielodzielny', 'mm. skręcające'], CO),
+         barecards(['m. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy', 'm. wielodzielny', 'mm. skręcające'], CO)
+         + '<div class="pknote">mm. skręcające są krótkie, ale Bochenek „ze względów klasyfikacyjnych” umieszcza je wśród mięśni długich (s. 669)</div>',
          'list', col=CO)
 kol = sub(gnode('Mięsień kolcowy', 'm. spinalis', 'sg', CO, 'po wyrostkach kolczystych', '667'),
           barecards(['m. kolcowy'], CO), 'list', col=CO)
@@ -350,13 +358,17 @@ p_przysr = sub(gnode('pasmo przyśrodkowe', '', 'band', CO, 'włókna do wyr. ko
 
 DLUGIE = sub(gnode('Długie mięśnie grzbietu', '', 'grp', TE, 'włókna biegną przez wiele kręgów', '659'),
              p_boczne + p_przysr, 'row', q('4', 'do których wyrostków biegną włókna?', '659'), width=W['dlugie'], col=TE, id='dlugie')
-KROTKIE = sub(gnode('Krótkie mięśnie grzbietu', '', 'grp', BL, 'między dwoma sąsiednimi kręgami', '669'),
-              barecards(['mm. międzykolcowe', 'mm. międzypoprzeczne'], BL) + cards(['mm. dźwigacze żeber'], BL), 'list', width=W['krot'], col=BL, id='krot')
+k_wl = sub(gnode('właściwe mięśnie grzbietu', '', 'band', BL, 'gałęzie tylne nn. rdzeniowych', '669'),
+           barecards(['mm. międzykolcowe', 'mm. międzypoprzeczne tylne szyi', 'mm. międzypoprzeczne przyśrodkowe lędźwi'], BL), 'list', col=BL)
+k_we = sub(gnode('pochodzenia wentralnego', '', 'band', BL, 'gałęzie przednie nn. rdzeniowych – nie są właściwymi mm. grzbietu', '669–671'),
+           barecards(['mm. międzypoprzeczne przednie szyi', 'mm. międzypoprzeczne boczne lędźwi'], BL) + cards(['mm. dźwigacze żeber'], BL), 'list', col=BL)
+KROTKIE = sub(gnode('Krótkie mięśnie grzbietu', '', 'grp', BL, 'między dwoma sąsiednimi kręgami; budowa metameryczna', '669'),
+              k_wl + k_we, 'list', q('5', 'skąd pochodzą – jaki mają nerw?', '669'), width=W['krot'], col=BL, id='krot')
 PODPOT = sub(gnode('Mięśnie podpotyliczne', 'mm. suboccipitales', 'grp', PK, 'potylica ↔ dwa górne kręgi · 5 mięśni', '671'),
              barecards(['m. skośny górny głowy', 'm. prosty tylny mniejszy głowy', 'm. prosty tylny większy głowy',
                         'm. skośny dolny głowy', 'm. prosty boczny głowy'], PK), 'list', width=W['podp'], col=PK, id='podp')
 GLEB_G = sub(gnode('Głębokie mięśnie grzbietu', 'erector spinae', 'world', TE,
-                   'właściwe mięśnie grzbietu · gałęzie tylne nn. rdzeniowych', '650, 659'),
+                   'przeważnie, choć nie wyłącznie, właściwe mięśnie grzbietu · gałęzie tylne nn. rdzeniowych', '650, 658'),
              DLUGIE + KROTKIE + PODPOT, 'row', q('3', 'jak długie są włókna?', '659'), width=W['gleb'], col=TE, id='gleb')
 
 CH_GRZBIET = sub(gnode('Mięśnie grzbietu', 'musculi dorsi°', 'chap', 'c1', '', '649–677'),
@@ -475,7 +487,7 @@ b_przed = sub(gnode('przednie', '', 'sg', AM, 'układ mięśni prostych', '704')
 b_bp = sub(gnode('Boczne i przednie mięśnie brzucha', '', 'grp', AM, 'z boku 3 warstwy, z przodu pas mięśni prostych', '702–712'),
            b_bocz + b_przed, 'row', q('2', 'z boku czy z przodu?', '702'), width=W['bbp'], col=AM, id='bbp')
 b_tyl = sub(gnode('Tylne mięśnie brzucha', '', 'grp', AM, 'po bokach kręgosłupa lędźwiowego', '712–715'),
-            card(M('mm. międzypoprzeczne boczne lędźwi'), AM) + card(M('m. czworoboczny lędźwi'), AM),
+            card(REFM('mm. międzypoprzeczne boczne lędźwi'), AM) + card(M('m. czworoboczny lędźwi'), AM),
             'list', width=W['btyl'], col=AM, id='btyl')
 CH_BRZUCH = sub(gnode('Mięśnie brzucha', 'musculi abdominis°', 'chap', 'c3', '', '702–733'),
                 b_bp + b_tyl, 'row', q('1', 'gdzie leżą?', '702'), width=W['brz'], col='c3', id='brz')
