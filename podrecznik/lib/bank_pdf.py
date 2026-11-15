@@ -106,7 +106,13 @@ def main():
                 x0, y0, x1, y1 = manual[fid]
             caption = ''
             if cap:
-                blk = sorted([o for o in cap['blk'] if o['y0'] >= cap['y0'] - 1], key=lambda o: (round(o['y0']), o['x0']))
+                # kolejne wiersze podpisu przy lewym marginesie, odstęp między wierszami < 6 pt
+                rest = sorted([o for o in pg['lines'] if o['y0'] >= cap['y0'] - 1 and o['x0'] < MARGIN_X], key=lambda o: o['y0'])
+                blk = [rest[0]]
+                for o in rest[1:]:
+                    if o['y0'] - blk[-1]['y1'] > 6:
+                        break
+                    blk.append(o)
                 caption = re.sub(r'\s+', ' ', ' '.join(o['t'] for o in blk)).replace('‐ ', '').strip()
             figs.append(dict(id=fid, n=n, title=title, page=pno, box=[round(v, 1) for v in (x0, y0, x1, y1)],
                              w_mm=round((x1 - x0) / 72 * 25.4), h_mm=round((y1 - y0) / 72 * 25.4), caption=caption))
