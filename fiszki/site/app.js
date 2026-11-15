@@ -140,6 +140,7 @@ function lessonView(L){setView('lesson');nav('home');setTis(L.tis);curL=L;T=null
   var s=lstat(L),lq=learnQ(L),dq=reviewQ(false,L),pq=reviewQ(true,L),wl=0,wd=0;L.words.forEach(function(w){if(learned(w.key))wl++;if(done(w.key))wd++});
   var h='<div><button class="back" data-a="home">'+ICO.back+' Wszystkie lekcje</button></div><div><h1>'+esc(L.t)+'</h1><p class="mut" style="margin-top:8px">'+esc(L.d)+'</p></div>';
   var lp=pgfmt(pgs(L.units.map(function(u){return u.src}).join(';')));if(lp)h+=bkBox('Przed lekcją przeczytaj w Bochenku',lp);
+  if(window.WYJ_UI&&L.id===window.WYJ_UI.lesson)h+=window.WYJ_UI.btn('');
   h+='<div><div class="lbl">Pytania prowadzącego</div><div class="list">'+L.units.map(function(u){return urow(u,'lesson')}).join('')+'</div></div>';
   var p,links='';
   if(lq.length)p='<button class="btn" data-a="learn" data-l="'+L.id+'">'+(s.l?'Dokończ lekcję':'Zacznij lekcję')+', ok. '+mins(lq)+' min</button>';
@@ -150,7 +151,7 @@ function lessonView(L){setView('lesson');nav('home');setTis(L.tis);curL=L;T=null
 function unitView(u,from){setView('unit');nav(from==='notes'?'notes':'home');setTis(u.L.tis);T=null;noteFrom=from;curL=u.L;
   var h='<div><button class="back" data-a="'+(from==='notes'?'notes':'lesson')+'" data-l="'+u.L.id+'">'+ICO.back+' '+(from==='notes'?'Notatki':esc(u.L.t))+'</button></div>';
   var pc=priChip(u);if(pc)h+='<div class="chips">'+pc+'</div>';
-  h+='<h2 class="ask">'+esc(u.q)+'</h2>'+bkBox('Przed nauką przeczytaj w Bochenku',u.src)+(u.fig?FIG[u.fig]:'')+answerHtml(u);
+  h+='<h2 class="ask">'+esc(u.q)+'</h2>'+bkBox('Przed nauką przeczytaj w Bochenku',u.src)+(window.WYJ_UI&&window.WYJ_UI.units[u.id]?window.WYJ_UI.btn('u:'+u.id):'')+(u.fig?FIG[u.fig]:'')+answerHtml(u);
   if(u.fu.length)h+='<div><div class="lbl" style="margin-bottom:8px">O to prowadzący może dopytać</div><div class="fus">'+u.fu.map(function(f){return '<details><summary>'+esc(f.q)+'</summary><p>'+f.a+pgTag(f.s)+'</p></details>'}).join('')+'</div></div>';
   h+=xnote(u);
   page(h+dock('<button class="btn" data-a="one" data-u="'+u.id+'">Przećwicz to pytanie</button>'))}
@@ -357,6 +358,6 @@ function initCaps(){var c=window.claude;if(!c||!c.use){if(capTry++<6)setTimeout(
         if(view==='home'){var y=window.scrollY;home();window.scrollTo(0,y)}else if(view==='set')settings()})})}).catch(function(){})}
 
 home();initCaps();
-window.__so5={page:page,dock:dock,nav:nav,setView:setView,setTis:setTis,toast:toast,esc:esc,pl:pl,ICO:ICO,bkBox:bkBox,S:S,LESSONS:LESSONS,UNITS:UNITS,ALLU:ALLU,nlat:nlat,learnQ:learnQ,reviewQ:reviewQ,lstat:lstat,dayKey:dayKey,save:save,home:home,
+window.__so5={unitView:unitView,lessonView:lessonView,page:page,dock:dock,nav:nav,setView:setView,setTis:setTis,toast:toast,esc:esc,pl:pl,ICO:ICO,bkBox:bkBox,S:S,LESSONS:LESSONS,UNITS:UNITS,ALLU:ALLU,nlat:nlat,learnQ:learnQ,reviewQ:reviewQ,lstat:lstat,dayKey:dayKey,save:save,home:home,
   get T(){return T},get view(){return view},get cap(){return cap}};
 })();
