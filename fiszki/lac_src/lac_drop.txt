@@ -3,3 +3,11 @@ panniculus carnosus
 musculus depressor scapulae
 # duplikat: ten sam mięsień jest na s. 659 jako „prostownik grzbietu” (erector spinae)
 musculus erector spinae
+# 15.11: powięzie (i blaszki powięzi), anatomia ogólna / rozwój
+fascia thoracolumbalis
+fascia superficialis
+fascia cremasterica
+lamina superficialis
+lamina profunda
+chorda dorsalis
+loci minoris resistentiae
