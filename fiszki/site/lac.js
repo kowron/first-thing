@@ -15,13 +15,13 @@ function st(){var S=A.S;if(!S.lt||!S.lt.c)S.lt={ts:0,r:1,q:null,i:0,c:{}};var L=
   if(L._inh!==2){L._inh=2;CARDS.forEach(function(c){if(c.k.slice(-2)!=='#2')return;var b=c.k.slice(0,-2);if(!L.c[c.k]&&L.c[b]){L.c[c.k]={c:L.c[b].c,ok:0,n:0};if(L.q&&L.q.indexOf(b)>=0&&L.q.indexOf(c.k)<0)L.q.push(c.k)}})}
   return L}
 function save(){st().ts=Date.now();A.save()}
-function cs(k){return st().c[k]||null}
-function toTriage(){return CARDS.filter(function(c){return !cs(c.k)})}
+function cs(k){return st().c[k]||{c:'u',ok:0,n:0}}   /* brak zapisu = jeszcze nienapisana */
+function toTriage(){return []}
 function toLearn(){return CARDS.filter(function(c){var x=cs(c.k);return x&&x.c!=='k'&&!x.ok})}
 function counts(){round();var r={all:CARDS.length,k:0,u:0,n:0,ok:0,left:0};CARDS.forEach(function(c){var x=cs(c.k);if(!x){r.left++;return}if(x.c==='k'||x.ok){r.k++;return}r.u++});return r}
 /* bieżąca runda: 1 = przegląd, dopóki zostały nieocenione; potem pisanie w rundach */
 /* bez przeglądu: każda nieoceniona fiszka od razu idzie do pisania */
-function round(){var L=st(),t=toTriage();if(t.length){t.forEach(function(c){L.c[c.k]={c:'u',ok:0,n:0};if(L.q&&L.q.indexOf(c.k)<0)L.q.push(c.k)});save()}if(L.r<2){L.r=2;L.q=null}return L.r}
+function round(){var L=st();if(L.r<2){L.r=2;L.q=null}return L.r}   /* samo otwarcie strony niczego nie zapisuje */
 function queue(){var L=st();if(round()===1)return toTriage().map(function(c){return c.k});
   if(!L.q){L.q=toLearn().map(function(c){return c.k});L.i=0;save()}return L.q}
 

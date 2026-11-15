@@ -63,7 +63,15 @@ function mergeRemote(R){if(!R||R.v!==5||!R.u)return;var ch=false;
   Object.keys(R.u).forEach(function(k){var r=R.u[k];if((r.t||0)<(S.rs||0))return;if(!S.u[k]||(r.t||0)>(S.u[k].t||0)){S.u[k]=r;ch=true}});
   if(R.g){S.g=S.g||{};Object.keys(R.g).forEach(function(k){var r=R.g[k];if((r.at||0)<(S.rs||0))return;if(!S.g[k]||(r.p||0)>(S.g[k].p||0)){S.g[k]=r;ch=true}})}
   if(R.gm&&!S.gm){S.gm=R.gm;ch=true}
-  if(R.lt&&(!S.lt||(R.lt.ts||0)>(S.lt.ts||0))&&(R.lt.ts||0)>=(S.rs||0)){S.lt=R.lt;ch=true}
+  /* łacina: scalanie fiszka po fiszce (zaliczona wygrywa), żeby urządzenie z pustym zapisem nie nadpisało postępu z innego */
+  if(R.lt&&R.lt.c&&(R.lt.ts||0)>=(S.rs||0)){
+    if(!S.lt||!S.lt.c){S.lt=R.lt;ch=true}
+    else{var Lc=S.lt.c,Rc=R.lt.c,mine=false,theirs=false;
+      Object.keys(Rc).forEach(function(k){var r=Rc[k],l=Lc[k];if(!l||(r.ok&&!l.ok)||(!!r.ok===!!l.ok&&(r.n||0)>(l.n||0))){Lc[k]=r;theirs=true}});
+      Object.keys(Lc).forEach(function(k){var r=Rc[k],l=Lc[k];if(!r||(l.ok&&!r.ok)||(l.n||0)>(r.n||0))mine=true});
+      S.lt.r=Math.max(S.lt.r||1,R.lt.r||1);
+      if(theirs){S.lt.q=null;S.lt.i=0;ch=true}
+      if(mine){S.lt.ts=Date.now();S.ts=Date.now()}}}
   if(ch)persist()}
 
 /* ---------- postęp ---------- */
