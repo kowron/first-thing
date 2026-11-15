@@ -1,4 +1,4 @@
-/* Kolokwium 6 – transformacje wykonywane w przeglądarce przed drukiem.
+/* Podręcznik (na bazie systemu kolokwium 6) – transformacje wykonywane w przeglądarce przed drukiem.
    Uruchamiane przez build.mjs (page.evaluate). Nie edytuj, jeśli piszesz rozdział. */
 (function () {
   'use strict';
@@ -8,12 +8,12 @@
   const error = (m) => W.push({ level: 'error', msg: m });
 
   const LABELS = {
-    liceum: 'To było w liceum', pojecie: 'Pojęcie', warto: 'Warto wiedzieć', poza: 'Poza Drewą · uzupełnienie',
-    zapamietaj: 'Zapamiętaj', przyklad: 'Przykład', obraz: 'Obraz w głowie', uwaga: 'Uwaga do źródła',
-    w60: 'W 60 sekund', numbers: 'Liczby do zapamiętania', quiz: 'Sprawdź się',
+    pojecie: 'Pojęcie', zapamietaj: 'Zapamiętaj', uwaga: 'Uwaga do źródła',
+    w60: 'W 60 sekund', numbers: 'Liczby do zapamiętania',
   };
-  const NOTE_KINDS = ['liceum', 'pojecie', 'warto', 'poza'];
-  const BOX_KINDS = ['zapamietaj', 'przyklad', 'obraz', 'uwaga', 'poza'];
+  // podręcznik: tylko komponenty z ZASADY.md (inne typy -> UWAGA „bez typu”)
+  const NOTE_KINDS = ['pojecie'];
+  const BOX_KINDS = ['zapamietaj', 'uwaga'];
   const PH = '00'; // zaślepka numeru strony w 1. przebiegu
 
   const $ = (sel, root = document) => root.querySelector(sel);
@@ -39,11 +39,10 @@
     const chapters = $$('section.chapter');
     const backs = $$('section.back');
     const fronts = $$('section.front');
-    const stats = { chapters: chapters.length, figures: 0, liceum: 0, questions: 0, notes: 0, boxes: 0 };
+    const stats = { chapters: chapters.length, figures: 0, bank: 0, notes: 0, boxes: 0 };
     const outline = [];
     const sections = [];
-    const answers = [];
-    const notePairs = [];
+        const notePairs = [];
 
     /* ---------- Rozdziały: id, otwarcie ---------- */
     const chNums = new Set();
@@ -80,7 +79,7 @@
       let i = 0;
       for (const h of $$('h2', ch)) {
         i++;
-        if (h.closest('.box, .quiz, .w60, figure, aside')) { warn(`${where(h)}: h2 wewnątrz ramki/ryciny – użyj h3 albo h4`); continue; }
+        if (h.closest('.box, .w60, figure, aside')) { warn(`${where(h)}: h2 wewnątrz ramki/ryciny – użyj h3 albo h4`); continue; }
         if (!h.id) h.id = `c${num}-h2-${i}`;
       }
       for (const h of $$('h1', ch)) error(`${where(h)}: nie używaj h1 w rozdziale (tytuł bierze się z data-title)`);
@@ -109,31 +108,21 @@
           p.prepend(html(`<div class="panel-head">${p.dataset.badge ? `<span class="badge">${esc(p.dataset.badge)}</span>` : ''}${p.dataset.title ? `<span class="ptitle">${esc(p.dataset.title)}</span>` : ''}</div>`));
         }
       }
-      if (sec && sec.classList.contains('chapter')) stats.figures++;
+      if (sec && sec.classList.contains('chapter')) { stats.figures++; if (f.dataset.bank) stats.bank++; }
     }
 
     /* ---------- Notatki marginesowe ---------- */
     for (const n of $$('aside.note')) {
       const kind = NOTE_KINDS.find((k) => n.classList.contains(k));
-      if (!kind) warn(`${where(n)}: notatka bez typu (dodaj klasę liceum / pojecie / warto / poza)`);
+      if (!kind) warn(`${where(n)}: notatka bez typu – w podręczniku tylko <aside class="note pojecie" data-term="…">`);
       const inLegend = n.closest('.legend');
       if (!inLegend && !(n.parentElement && n.parentElement.matches('section.chapter'))) {
-        warn(`${where(n)}: notatka marginesowa musi być bezpośrednim dzieckiem <section class="chapter"> (nie wewnątrz akapitu, listy ani ramki)`);
+        warn(`${where(n)}: „Pojęcie” musi być bezpośrednim dzieckiem <section class="chapter"> (nie wewnątrz akapitu, listy ani ramki)`);
       }
       if (n.closest('section.chapter') && !inLegend) {
         const nx = n.nextElementSibling;
-        if (nx && nx.matches('h2')) warn(`${where(n)}: notatka stoi tuż przed h2 – przenieś ją za nagłówek, przed akapit, którego dotyczy`);
+        if (nx && nx.matches('h2')) warn(`${where(n)}: „Pojęcie” stoi tuż przed h2 – przenieś je za nagłówek, obok akapitu, którego dotyczy`);
         stats.notes++;
-        if (kind === 'liceum') stats.liceum++;
-      }
-      if (n.closest('section.chapter') && !inLegend) {
-        if (!n.id) n.id = `k6-note-${notePairs.length + 1}`;
-        let anc = n.nextElementSibling;
-        while (anc && anc.matches('aside.note')) anc = anc.nextElementSibling;
-        if (anc) {
-          if (!anc.id) anc.id = `k6-anc-${notePairs.length + 1}`;
-          notePairs.push({ note: n.id, anchor: anc.id, text: txt(n).slice(0, 40), file: n.closest('section').dataset.srcFile || '' });
-        }
       }
       if ($(':scope > .lbl', n)) continue;
       const lbl = n.dataset.label || LABELS[kind] || 'Notatka';
@@ -145,7 +134,7 @@
     /* ---------- Ramki ---------- */
     for (const b of $$('.box')) {
       const kind = BOX_KINDS.find((k) => b.classList.contains(k));
-      if (!kind) warn(`${where(b)}: ramka bez typu (zapamietaj / przyklad / obraz / uwaga / poza)`);
+      if (!kind) warn(`${where(b)}: ramka bez typu – w podręczniku tylko box zapamietaj / box uwaga`);
       if (b.closest('section.chapter')) stats.boxes++;
       if ($(':scope > .lbl', b)) continue;
       const lbl = b.dataset.title || LABELS[kind] || '';
@@ -155,7 +144,7 @@
       if ($(':scope > .lbl', b)) continue;
       const items = $$(':scope > ul > li, :scope > ol > li', b).length;
       if (b.closest('section.chapter') && (items < 3 || items > 6)) warn(`${where(b)}: „W 60 sekund” powinno mieć 3–6 punktów (jest ${items})`);
-      b.prepend(html(`<div class="lbl"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="11" r="7.2" fill="none" stroke="#6cc7c9" stroke-width="1.8"/><path d="M10 11 L10 6.5 M7.5 1.8 h5" stroke="#6cc7c9" stroke-width="1.8" stroke-linecap="round"/></svg>${esc(b.dataset.title || LABELS.w60)}</div>`));
+      b.prepend(html(`<div class="lbl"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="11" r="7.2" fill="none" stroke="#8fd3a6" stroke-width="1.8"/><path d="M10 11 L10 6.5 M7.5 1.8 h5" stroke="#8fd3a6" stroke-width="1.8" stroke-linecap="round"/></svg>${esc(b.dataset.title || LABELS.w60)}</div>`));
     }
     for (const b of $$('.numbers')) {
       if (!$(':scope > .grid', b)) {
@@ -164,37 +153,6 @@
         b.appendChild(g);
       }
       if (!$(':scope > .lbl', b)) b.prepend(html(`<div class="lbl">${esc(b.dataset.title || LABELS.numbers)}</div>`));
-    }
-
-    /* ---------- Sprawdź się ---------- */
-    const keySection = $('section[data-auto="answers"]');
-    for (const ch of chapters) {
-      const num = ch.dataset.num;
-      const quizzes = $$('.quiz', ch);
-      if (quizzes.length > 1) warn(`Rozdział ${num}: więcej niż jeden blok „Sprawdź się” – zalecany jeden, na końcu rozdziału`);
-      quizzes.forEach((q, qi) => {
-        if (!q.id) q.id = `c${num}-quiz${qi ? '-' + (qi + 1) : ''}`;
-        const items = $$(':scope > ol > li', q);
-        if (!items.length) warn(`${where(q)}: blok „Sprawdź się” bez pytań (<ol><li>…)`);
-        items.forEach((li, i) => {
-          if (!li.id) { li.id = `c${num}-q-auto-${i + 1}`; warn(`Rozdział ${num}, pytanie ${i + 1}: brak id (nadano ${li.id})`); }
-          const ans = $(':scope > .answer', li) || $('.answer', li);
-          const clone = li.cloneNode(true);
-          $$('.answer', clone).forEach((a) => a.remove());
-          const qhtml = clone.innerHTML.trim();
-          if (!ans) warn(`Rozdział ${num}, pytanie ${i + 1} (${li.id}): brak odpowiedzi <div class="answer">`);
-          answers.push({ num, title: ch.dataset.title, qid: li.id, n: i + 1, q: qhtml, a: ans ? ans.innerHTML.trim() : '<p><i>(brak odpowiedzi)</i></p>' });
-          if (ans) ans.remove();
-          stats.questions++;
-        });
-        if (!$(':scope > .quiz-head', q)) {
-          const c = items.length;
-          q.prepend(html(`<div class="quiz-head"><span class="lbl">${LABELS.quiz}</span><span class="quiz-title">${esc(q.dataset.title || 'Pytania kontrolne')}</span><span class="quiz-count">${c} ${plural(c, 'pytanie', 'pytania', 'pytań')}</span></div>`));
-        }
-        if (keySection && !$(':scope > .quiz-foot', q)) {
-          q.append(html(`<div class="quiz-foot">Odpowiedzi z krótkim uzasadnieniem: klucz odpowiedzi, <a class="pageref" href="#b-key-c${num}"></a></div>`));
-        }
-      });
     }
 
     /* ---------- Otwarcie rozdziału (po autoid h2 i rycinach) ---------- */
@@ -207,7 +165,7 @@
       const h2s = $$(':scope > h2', ch);
       const nf = $$('figure.fig', ch).length;
       const list = h2s.map((h) => esc(h.dataset.toc || txt(h))).join(' · ');
-      const head = html(`<header class="opener"><div class="opener-num">${num}</div><div class="opener-body">${ch.dataset.kicker ? `<p class="opener-kicker">${esc(ch.dataset.kicker)}</p>` : ''}<h1 class="ch-title">${esc(title)}</h1><div class="lead-slot"></div><p class="opener-meta"><b>W rozdziale:</b> ${list}${list ? ' · ' : ''}<b>Ryciny:</b> ${nf}</p></div></header>`);
+      const head = html(`<header class="opener"><div class="opener-num">${esc(ch.dataset.label || num)}</div><div class="opener-body">${ch.dataset.kicker ? `<p class="opener-kicker">${esc(ch.dataset.kicker)}</p>` : ''}<h1 class="ch-title">${esc(title)}</h1><div class="lead-slot"></div><p class="opener-meta"><b>W rozdziale:</b> ${list}${list ? ' · ' : ''}<b>Ryciny:</b> ${nf}</p></div></header>`);
       ch.prepend(head);
       if (lead) $('.lead-slot', ch).replaceWith(lead); else $('.lead-slot', ch).remove();
       sections.push({ id: ch.id, kind: 'chapter', title: `${num} ${title}`, file: ch.dataset.srcFile || '' });
@@ -229,24 +187,6 @@
     for (const f of fronts) {
       if (!f.id) error(`${where(f)}: sekcja przednia bez id`);
       sections.push({ id: f.id, kind: 'front', title: f.dataset.title || txt($('h1', f)), file: f.dataset.srcFile || '' });
-    }
-
-    /* ---------- Klucz odpowiedzi ---------- */
-    if (keySection) {
-      const groups = {};
-      for (const a of answers) (groups[a.num] = groups[a.num] || []).push(a);
-      let out = `<p class="intro">Odpowiedzi do bloków „Sprawdź się” z końca każdego rozdziału. Najpierw spróbuj odpowiedzieć sam – numer strony obok rozdziału prowadzi z powrotem do pytań.</p>`;
-      const nums = Object.keys(groups).sort();
-      if (!nums.length) out += `<p class="intro"><i>Brak pytań kontrolnych w rozdziałach.</i></p>`;
-      for (const num of nums) {
-        const g = groups[num];
-        out += `<div class="key-ch" id="b-key-c${num}"><h2><span class="n">${num}</span>${esc(g[0].title || '')}<span class="p">pytania: <a class="pageref" href="#c${num}-quiz"></a></span></h2><div class="key-list">`;
-        for (const a of g) {
-          out += `<div class="key-item"><span class="qn">${a.n}</span><div><div class="qtext">${a.q} <a class="pageref" href="#${a.qid}"></a></div>${a.a}</div></div>`;
-        }
-        out += `</div></div>`;
-      }
-      keySection.append(html(out));
     }
 
     /* ---------- Spis rycin ---------- */
@@ -291,7 +231,7 @@
     if (toc) {
       let out = '<div class="toc-cols">';
       for (const ch of chapters) {
-        out += `<div class="toc-ch"><a href="#${ch.id}"><span class="n">${ch.dataset.num}</span><span class="t">${esc(ch.dataset.title || '')}</span><span class="p" data-page-of="${ch.id}">${PH}</span></a></div>`;
+        out += `<div class="toc-ch"><a href="#${ch.id}"><span class="n">${esc(ch.dataset.label || ch.dataset.num)}</span><span class="t">${esc(ch.dataset.title || '')}</span><span class="p" data-page-of="${ch.id}">${PH}</span></a></div>`;
         for (const h of $$(':scope > h2', ch)) {
           out += `<div class="toc-sec"><a href="#${h.id}"><span class="t">${esc(h.dataset.toc || txt(h))}</span><span class="p" data-page-of="${h.id}">${PH}</span></a></div>`;
         }
@@ -328,7 +268,7 @@
       } else if (cls === 'chapref') {
         const t = document.getElementById(id);
         if (!t.matches('section.chapter')) { warn(`chapref powinien wskazywać rozdział (#c03), a wskazuje #${id}: ${where(a)}`); }
-        const n = t.dataset.num ? stripNum(t.dataset.num) : '?';
+        const n = t.dataset.label || (t.dataset.num ? stripNum(t.dataset.num) : '?');
         a.innerHTML = `${cap ? 'Rozdz.' : 'rozdz.'}\u00A0${n} (s.\u00A0<span data-page-of="${id}">${PH}</span>)`;
       } else {
         a.innerHTML = `${cap ? 'S.' : 's.'}\u00A0<span data-page-of="${id}">${PH}</span>`;
@@ -373,11 +313,24 @@
     for (const s of sections) need.add(s.id);
     for (const o of outline) for (const c of o.children) need.add(c.id);
     for (const id of Object.keys(figMap)) need.add(id);
-    for (const a of answers) need.add(a.qid);
     for (const np of notePairs) { need.add(np.note); need.add(np.anchor); }
     const gl = document.createElement('div'); gl.className = 'ghost-links'; gl.setAttribute('aria-hidden', 'true');
     for (const id of need) if (id && document.getElementById(id)) { const a = document.createElement('a'); a.href = '#' + id; a.textContent = '.'; gl.appendChild(a); }
     document.body.prepend(gl);
+
+    /* ---------- Dwie kolumny: każdy ciąg elementów między elementami „na obie kolumny” -> <div class="cols">.
+       Osobny kontener wielokolumnowy na każdy ciąg, bo Chromium w druku wyrównuje (balance) tylko ostatni
+       fragment kontenera – przy jednym kontenerze na rozdział kolumny po przejściu strony się nie wyrównywały. */
+    const SPAN = '.opener, figure.fig:not(.narrow), .wide, table.tbl.wide, .box.wide, .w60';
+    for (const ch of chapters) {
+      let run = null;
+      for (const el of [...ch.childNodes]) {
+        if (el.nodeType === 1 && el.matches(SPAN)) { run = null; continue; }
+        if (el.nodeType !== 1 && !(el.nodeType === 3 && el.textContent.trim())) { if (run) run.appendChild(el); continue; }
+        if (!run) { run = document.createElement('div'); run.className = 'cols'; el.before(run); }
+        run.appendChild(el);
+      }
+    }
 
     /* ---------- Typografia: twarde spacje + dzielenie wyrazów ---------- */
     typography();
@@ -386,7 +339,7 @@
     let css = `@page { @top-left { content: ${cssStr(book.header || '')}; } @bottom-left { content: ${cssStr(book.footer || '')}; } }\n`;
     for (const ch of chapters) {
       const num = ch.dataset.num;
-      css += `#${ch.id} { page: ch${num}; }\n@page ch${num} { @top-right { content: ${cssStr(num + ' ' + (ch.dataset.short || ch.dataset.title || ''))}; } }\n`;
+      css += `#${ch.id} { page: ch${num}; }\n@page ch${num} { @top-right { content: ${cssStr((ch.dataset.label || num) + ' ' + (ch.dataset.short || ch.dataset.title || ''))}; } }\n`;
     }
     for (const b of backOrder) {
       const pn = 'bk-' + b.id.replace(/[^\w-]/g, '');
@@ -491,7 +444,7 @@
 
   /* ---------- Typografia ------------------------------------------------ */
   const NO_TYPO = 'svg, code, pre, script, style, .mono, .seq, .ghost-links, .k6-defs';
-  const NO_HYPH = NO_TYPO + ', h1, h2, h3, h4, .lbl, table, .toc-cols, .figlist, .fig-label, .src, .fig-src, a.figref, a.pageref, a.chapref, .numbers .v, .ptitle, section.cover, .opener-meta, .opener-kicker, dt, .nohyph, .quiz-head, .key-ch h2, .badge';
+  const NO_HYPH = NO_TYPO + ', h1, h2, h3, h4, .lbl, table, .toc-cols, .figlist, .fig-label, .src, .fig-src, a.figref, a.pageref, a.chapref, .numbers .v, .ptitle, section.cover, .opener-meta, .opener-kicker, dt, .nohyph, .badge';
   const SINGLE = /(^|[\s\u00A0(„"'–—\/])([aiouwzAIOUWZ])[ \t\n\r]+/g;
   const UNITS = /(\d)[ \t\n\r]+(%|‰|°C|°|pz|kpz|Mpz|kb|Mb|bp|kDa|Da|nt|nm|µm|mm|cm|m|ml|µl|μl|l|mg|µg|μg|ng|pg|g|kg|V|mA|W|h|min|s|M|mM|µM|μM|pmol|rpm|×|x|cykli|cykle|cykl|razy|tys\.|mln|kopii|zasad|nukleotydów|aminokwasów|pz\.)(?=[\s\u00A0.,;:)\]–]|$)/g;
   const ABBR = /(^|[\s\u00A0(])(s\.|nr|rozdz\.|ryc\.|tab\.|pkt|ok\.|np\.|tzw\.|tj\.|ang\.|łac\.|wg|zob\.|por\.)[ \t\n\r]+/g;
@@ -601,26 +554,29 @@
   /* ---------- Kontrole układu (w widoku ekranowym o szerokości pola zadruku) ---------- */
   function measure() {
     const M = [];
-    const wide = '.opener, figure.fig:not(.narrow), .wide, table.tbl.wide, .numbers.wide, .box.wide, .quiz, aside.note, .w60.wide, .ghost-links, .k6-defs';
+    const wide = '.opener, figure.fig:not(.narrow), .wide, table.tbl.wide, .numbers.wide, .box.wide, .w60, .ghost-links, .k6-defs';
     for (const sec of $$('section.chapter, section.back, section.front')) {
       const r0 = sec.getBoundingClientRect();
       const cs = getComputedStyle(sec);
       const fullRight = r0.left + sec.offsetWidth;
-      const mainRight = r0.right - parseFloat(cs.paddingRight);
+      const gap = parseFloat(getComputedStyle(document.querySelector('.cols') || sec).columnGap) || 0;
+      const colW = (sec.clientWidth - gap) / 2;
       const reported = new Set();
       for (const el of $$('*', sec)) {
         if (el.closest('svg') && el.tagName.toLowerCase() !== 'svg') continue;
-        if (el.closest('.ghost-links, .answer')) continue;
+        if (el.closest('.ghost-links')) continue;
         const r = el.getBoundingClientRect();
         if (!r.width) continue;
+        // element podzielony między kolumny: getBoundingClientRect obejmuje obie – liczy się najszerszy fragment
+        const fw = Math.max(0, ...[...el.getClientRects()].map((x) => x.width));
         const top = el.closest('section > *') || el;
         if (reported.has(top)) continue;
         if (r.right > fullRight + 1.5) {
           M.push({ level: 'warn', msg: `Element wystaje poza pole zadruku o ${((r.right - fullRight) * 0.75).toFixed(1)} pt: ${where(el)}` });
           reported.add(top); continue;
         }
-        if (sec.classList.contains('chapter') && !el.closest(wide) && r.right > mainRight + 1.5) {
-          M.push({ level: 'warn', msg: `Element wchodzi na kolumnę marginesową o ${((r.right - mainRight) * 0.75).toFixed(1)} pt (dodaj klasę wide albo zmniejsz): ${where(el)}` });
+        if (sec.classList.contains('chapter') && !el.matches('.cols') && el.closest('.cols') && !el.closest(wide) && fw > colW + 1.5) {
+          M.push({ level: 'warn', msg: `Element szerszy niż kolumna o ${((fw - colW) * 0.75).toFixed(1)} pt (dodaj klasę wide albo zmniejsz): ${where(el)}` });
           reported.add(top);
         }
       }

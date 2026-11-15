@@ -1,8 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="513.6" height="356.64" viewBox="0 0 513.6 356.64">
 <defs>
-<filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
-<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-</filter>
 <g>
 <g id="glyph-0-0">
 <path d="M 0.23 0 L 1.87 0 L 2.42 -1.68 L 5 -1.68 L 5.56 0 L 7.21 0 L 4.67 -7.26 L 2.71 -7.26 Z M 2.79 -2.85 L 3 -3.5 C 3.21 -4.23 3.43 -5.09 3.68 -6.09 C 3.93 -5.10 4.15 -4.25 4.39 -3.5 L 4.60 -2.85 Z M 2.79 -2.85 "/>
@@ -595,11 +592,6 @@
 <use xlink:href="#glyph-0-0" x="10.38" y="20.13"/>
 </g>
 </g>
-<mask id="mask-0">
-<g filter="url(#filter-remove-color)">
-<rect x="-51.36" y="-35.66" width="616.32" height="427.96" fill="rgb(0%, 0%, 0%)" fill-opacity="0.14"/>
-</g>
-</mask>
 <clipPath id="clip-3">
 <path clip-rule="nonzero" d="M 0.09 0.08 L 72.02 0.08 L 72.02 28.06 L 0.09 28.06 Z M 0.09 0.08 "/>
 </clipPath>
@@ -611,11 +603,6 @@
 <path fill-rule="nonzero" fill="rgb(71.76%, 47.84%, 12.54%)" fill-opacity="1" d="M 3.09 0.08 L 69.02 0.08 C 70.67 0.08 72.02 1.74 72.02 3.08 L 72.02 25.06 C 72.02 26.72 70.67 28.06 69.02 28.06 L 3.09 28.06 C 1.43 28.06 0.09 26.41 0.09 25.06 L 0.09 3.08 C 0.09 1.43 1.43 0.08 3.09 0.08 Z M 3.09 0.08 "/>
 </g>
 </g>
-<mask id="mask-1">
-<g filter="url(#filter-remove-color)">
-<rect x="-51.36" y="-35.66" width="616.32" height="427.96" fill="rgb(0%, 0%, 0%)" fill-opacity="0.14"/>
-</g>
-</mask>
 <clipPath id="clip-5">
 <path clip-rule="nonzero" d="M 0.98 0.08 L 42.94 0.08 L 42.94 28.06 L 0.98 28.06 Z M 0.98 0.08 "/>
 </clipPath>
@@ -627,11 +614,6 @@
 <path fill-rule="nonzero" fill="rgb(71.76%, 47.84%, 12.54%)" fill-opacity="1" d="M 3.98 0.08 L 39.94 0.08 C 41.60 0.08 42.94 1.74 42.94 3.08 L 42.94 25.06 C 42.94 26.72 41.60 28.06 39.94 28.06 L 3.98 28.06 C 2.32 28.06 0.98 26.41 0.98 25.06 L 0.98 3.08 C 0.98 1.43 2.32 0.08 3.98 0.08 Z M 3.98 0.08 "/>
 </g>
 </g>
-<mask id="mask-2">
-<g filter="url(#filter-remove-color)">
-<rect x="-51.36" y="-35.66" width="616.32" height="427.96" fill="rgb(0%, 0%, 0%)" fill-opacity="0.14"/>
-</g>
-</mask>
 <clipPath id="clip-7">
 <path clip-rule="nonzero" d="M 0.89 0.08 L 68.82 0.08 L 68.82 28.06 L 0.89 28.06 Z M 0.89 0.08 "/>
 </clipPath>
@@ -1783,13 +1765,13 @@
 <g fill="rgb(8.23%, 19.21%, 26.66%)" fill-opacity="1">
 <use xlink:href="#glyph-1-11" x="326.13" y="30.63"/>
 </g>
-<g mask="url(#mask-0)">
+<g opacity="0.14">
 <use xlink:href="#source-8" transform="matrix(1, 0, 0, 1, 43, 75)"/>
 </g>
-<g mask="url(#mask-1)">
+<g opacity="0.14">
 <use xlink:href="#source-11" transform="matrix(1, 0, 0, 1, 152, 75)"/>
 </g>
-<g mask="url(#mask-2)">
+<g opacity="0.14">
 <use xlink:href="#source-14" transform="matrix(1, 0, 0, 1, 240, 75)"/>
 </g>
 <path fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(8.23%, 19.21%, 26.66%)" stroke-opacity="1" stroke-miterlimit="4" d="M 20.00 82.50 L 326.00 82.50 " transform="matrix(0.99, 0, 0, 0.99, 3.13, 3.16)"/>

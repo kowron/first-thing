@@ -1,8 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="513.6" height="406.32" viewBox="0 0 513.6 406.32">
 <defs>
-<filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
-<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-</filter>
 <g>
 <g id="glyph-0-0">
 <path d="M 0.23 0 L 1.87 0 L 2.42 -1.68 L 5 -1.68 L 5.56 0 L 7.21 0 L 4.67 -7.26 L 2.71 -7.26 Z M 2.79 -2.85 L 3 -3.5 C 3.21 -4.23 3.43 -5.09 3.68 -6.09 C 3.93 -5.10 4.15 -4.25 4.39 -3.5 L 4.60 -2.85 Z M 2.79 -2.85 "/>
@@ -1497,11 +1494,6 @@
 <use xlink:href="#glyph-7-19" x="28.69" y="14.44"/>
 </g>
 </g>
-<mask id="mask-0">
-<g filter="url(#filter-remove-color)">
-<rect x="-51.36" y="-40.63" width="616.32" height="487.58" fill="rgb(0%, 0%, 0%)" fill-opacity="0.85"/>
-</g>
-</mask>
 <clipPath id="clip-30">
 <path clip-rule="nonzero" d="M 0.99 0.47 L 20.95 0.47 L 20.95 14.44 L 0.99 14.44 Z M 0.99 0.47 "/>
 </clipPath>
@@ -1577,11 +1569,6 @@
 <use xlink:href="#glyph-9-3" x="49.34" y="13.40"/>
 </g>
 </g>
-<mask id="mask-1">
-<g filter="url(#filter-remove-color)">
-<rect x="-51.36" y="-40.63" width="616.32" height="487.58" fill="rgb(0%, 0%, 0%)" fill-opacity="0.6"/>
-</g>
-</mask>
 <clipPath id="clip-34">
 <path clip-rule="nonzero" d="M 0.99 0.38 L 56.90 0.38 L 56.90 8.36 L 0.99 8.36 Z M 0.99 0.38 "/>
 </clipPath>
@@ -1713,11 +1700,6 @@
 <use xlink:href="#glyph-8-5" x="25.90" y="15.36"/>
 </g>
 </g>
-<mask id="mask-2">
-<g filter="url(#filter-remove-color)">
-<rect x="-51.36" y="-40.63" width="616.32" height="487.58" fill="rgb(0%, 0%, 0%)" fill-opacity="0.85"/>
-</g>
-</mask>
 <clipPath id="clip-40">
 <path clip-rule="nonzero" d="M 0.74 0.41 L 40.67 0.41 L 40.67 20.38 L 0.74 20.38 Z M 0.74 0.41 "/>
 </clipPath>
@@ -2276,12 +2258,12 @@
 <path fill-rule="nonzero" fill="rgb(0%, 49.41%, 51.37%)" fill-opacity="1" d="M 222.93 288.46 L 236.91 288.46 C 238.01 288.46 238.91 289.57 238.91 290.46 L 238.91 294.45 C 238.91 295.56 238.01 296.45 236.91 296.45 L 222.93 296.45 C 221.83 296.45 220.94 295.35 220.94 294.45 L 220.94 290.46 C 220.94 289.36 221.83 288.46 222.93 288.46 Z M 222.93 288.46 "/>
 <path fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(35.29%, 42.74%, 47.05%)" stroke-opacity="1" stroke-miterlimit="4" d="M 176.00 289.99 L 187.99 289.99 " transform="matrix(0.99, 0, 0, 0.99, 3.30, 2.94)"/>
 <path fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(35.29%, 42.74%, 47.05%)" stroke-opacity="1" stroke-miterlimit="4" d="M 206.00 289.99 L 218.00 289.99 " transform="matrix(0.99, 0, 0, 0.99, 3.30, 2.94)"/>
-<g mask="url(#mask-0)">
+<g opacity="0.85">
 <use xlink:href="#source-83" transform="matrix(1, 0, 0, 1, 189, 286)"/>
 </g>
 <use xlink:href="#source-86" transform="matrix(1, 0, 0, 1, 179, 299)"/>
 <use xlink:href="#source-89" transform="matrix(1, 0, 0, 1, 170, 311)"/>
-<g mask="url(#mask-1)">
+<g opacity="0.6">
 <use xlink:href="#source-92" transform="matrix(1, 0, 0, 1, 186, 340)"/>
 </g>
 <path fill-rule="nonzero" fill="rgb(47.05%, 40.39%, 65.88%)" fill-opacity="1" d="M 255.88 344.37 C 255.88 348.88 251.96 352.36 246.89 352.36 C 241.82 352.36 237.91 348.88 237.91 344.37 C 237.91 339.87 241.82 336.38 246.89 336.38 C 251.96 336.38 255.88 339.87 255.88 344.37 Z M 255.88 344.37 "/>
@@ -2351,7 +2333,7 @@
 </g>
 <path fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke="rgb(0%, 49.41%, 51.37%)" stroke-opacity="1" stroke-miterlimit="4" d="M 318.00 333.99 L 486.00 333.99 " transform="matrix(0.99, 0, 0, 0.99, 3.30, 2.94)"/>
 <use xlink:href="#source-101" transform="matrix(1, 0, 0, 1, 453, 333)"/>
-<g mask="url(#mask-2)">
+<g opacity="0.85">
 <use xlink:href="#source-104" transform="matrix(1, 0, 0, 1, 338, 320)"/>
 </g>
 <path fill-rule="nonzero" fill="rgb(71.76%, 47.84%, 12.54%)" fill-opacity="1" d="M 383.66 313.42 C 383.66 321.31 372.78 327.40 358.71 327.40 C 344.62 327.40 333.75 321.31 333.75 313.42 C 333.75 305.54 344.62 299.44 358.71 299.44 C 372.78 299.44 383.66 305.54 383.66 313.42 Z M 383.66 313.42 "/>

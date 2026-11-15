@@ -1,8 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="513.6" height="406.32" viewBox="0 0 513.6 406.32">
 <defs>
-<filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
-<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-</filter>
 <g>
 <g id="glyph-0-0">
 <path d="M 0.23 0 L 1.87 0 L 2.42 -1.68 L 5 -1.68 L 5.56 0 L 7.21 0 L 4.67 -7.26 L 2.71 -7.26 Z M 2.79 -2.85 L 3 -3.5 C 3.21 -4.23 3.43 -5.09 3.68 -6.09 C 3.93 -5.10 4.15 -4.25 4.39 -3.5 L 4.60 -2.85 Z M 2.79 -2.85 "/>
@@ -855,11 +852,6 @@
 <use xlink:href="#glyph-5-2" x="8.03" y="15.86"/>
 </g>
 </g>
-<mask id="mask-0">
-<g filter="url(#filter-remove-color)">
-<rect x="-51.36" y="-40.63" width="616.32" height="487.58" fill="rgb(0%, 0%, 0%)" fill-opacity="0.9"/>
-</g>
-</mask>
 <clipPath id="clip-25">
 <path clip-rule="nonzero" d="M 0.98 0.68 L 20.95 0.68 L 20.95 16.66 L 0.98 16.66 Z M 0.98 0.68 "/>
 </clipPath>
@@ -871,11 +863,6 @@
 <path fill-rule="nonzero" fill="rgb(71.76%, 47.84%, 12.54%)" fill-opacity="1" d="M 20.95 8.67 C 20.95 13.17 16.60 16.66 10.96 16.66 C 5.33 16.66 0.98 13.17 0.98 8.67 C 0.98 4.16 5.33 0.68 10.96 0.68 C 16.60 0.68 20.95 4.16 20.95 8.67 Z M 20.95 8.67 "/>
 </g>
 </g>
-<mask id="mask-1">
-<g filter="url(#filter-remove-color)">
-<rect x="-51.36" y="-40.63" width="616.32" height="487.58" fill="rgb(0%, 0%, 0%)" fill-opacity="0.9"/>
-</g>
-</mask>
 <clipPath id="clip-27">
 <path clip-rule="nonzero" d="M 0.89 0.68 L 20.85 0.68 L 20.85 16.66 L 0.89 16.66 Z M 0.89 0.68 "/>
 </clipPath>
@@ -887,11 +874,6 @@
 <path fill-rule="nonzero" fill="rgb(71.76%, 47.84%, 12.54%)" fill-opacity="1" d="M 20.85 8.67 C 20.85 13.17 16.50 16.66 10.87 16.66 C 5.24 16.66 0.89 13.17 0.89 8.67 C 0.89 4.16 5.24 0.68 10.87 0.68 C 16.50 0.68 20.85 4.16 20.85 8.67 Z M 20.85 8.67 "/>
 </g>
 </g>
-<mask id="mask-2">
-<g filter="url(#filter-remove-color)">
-<rect x="-51.36" y="-40.63" width="616.32" height="487.58" fill="rgb(0%, 0%, 0%)" fill-opacity="0.9"/>
-</g>
-</mask>
 <clipPath id="clip-29">
 <path clip-rule="nonzero" d="M 0.77 0.68 L 20.74 0.68 L 20.74 16.66 L 0.77 16.66 Z M 0.77 0.68 "/>
 </clipPath>
@@ -903,11 +885,6 @@
 <path fill-rule="nonzero" fill="rgb(71.76%, 47.84%, 12.54%)" fill-opacity="1" d="M 20.74 8.67 C 20.74 13.17 16.39 16.66 10.76 16.66 C 5.12 16.66 0.77 13.17 0.77 8.67 C 0.77 4.16 5.12 0.68 10.76 0.68 C 16.39 0.68 20.74 4.16 20.74 8.67 Z M 20.74 8.67 "/>
 </g>
 </g>
-<mask id="mask-3">
-<g filter="url(#filter-remove-color)">
-<rect x="-51.36" y="-40.63" width="616.32" height="487.58" fill="rgb(0%, 0%, 0%)" fill-opacity="0.9"/>
-</g>
-</mask>
 <clipPath id="clip-31">
 <path clip-rule="nonzero" d="M 0.68 0.68 L 20.65 0.68 L 20.65 16.66 L 0.68 16.66 Z M 0.68 0.68 "/>
 </clipPath>
@@ -1845,17 +1822,17 @@
 <path fill-rule="nonzero" fill="rgb(0%, 49.41%, 51.37%)" fill-opacity="1" d="M 395.64 162.67 L 439.57 162.67 C 441.22 162.67 442.57 164.33 442.57 165.67 L 442.57 175.65 C 442.57 177.31 441.22 178.65 439.57 178.65 L 395.64 178.65 C 393.99 178.65 392.65 177 392.65 175.65 L 392.65 165.67 C 392.65 164.01 393.99 162.67 395.64 162.67 Z M 395.64 162.67 "/>
 <use xlink:href="#source-71" transform="matrix(1, 0, 0, 1, 407, 158)"/>
 <path fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke="rgb(35.29%, 42.74%, 47.05%)" stroke-opacity="1" stroke-miterlimit="4" d="M 192.00 167.99 C 201.99 137.99 202.99 130.00 229.00 133.99 C 246.99 137.00 243.00 153.99 227.00 151.99 C 216.99 149.99 248.00 161.99 265.99 167.99 " transform="matrix(0.99, 0, 0, 0.99, 3.30, 2.94)"/>
-<g mask="url(#mask-0)">
+<g opacity="0.9">
 <use xlink:href="#source-74" transform="matrix(1, 0, 0, 1, 193, 158)"/>
 </g>
-<g mask="url(#mask-1)">
+<g opacity="0.9">
 <use xlink:href="#source-77" transform="matrix(1, 0, 0, 1, 249, 158)"/>
 </g>
 <path fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke="rgb(35.29%, 42.74%, 47.05%)" stroke-opacity="1" stroke-miterlimit="4" d="M 316.00 167.99 C 325.99 137.99 326.99 130.00 353.00 133.99 C 370.99 137.00 367.00 153.99 351.00 151.99 C 340.99 149.99 372.00 161.99 389.99 167.99 " transform="matrix(0.99, 0, 0, 0.99, 3.30, 2.94)"/>
-<g mask="url(#mask-2)">
+<g opacity="0.9">
 <use xlink:href="#source-80" transform="matrix(1, 0, 0, 1, 317, 158)"/>
 </g>
-<g mask="url(#mask-3)">
+<g opacity="0.9">
 <use xlink:href="#source-83" transform="matrix(1, 0, 0, 1, 373, 158)"/>
 </g>
 <use xlink:href="#source-86" transform="matrix(1, 0, 0, 1, 177, 178)"/>

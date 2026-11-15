@@ -138,6 +138,18 @@ def cut(pdf, pno, box, ph, out, tmp):
     s = open(out, encoding='utf-8').read()
     s = re.sub(r'(\d+\.\d\d)\d+', r'\1', s)                       # mniejszy plik: 0,01 pt wystarczy
     s = re.sub(r'<\?xml[^>]*>\s*', '', s)
+    # maski cairo o stałej przezroczystości -> opacity (Chromium drukuje je wtedy wektorowo)
+    alpha = {}
+    def mask(m):
+        r = re.fullmatch(r'\s*<g filter="url\(#filter-remove-color\)">\s*<rect [^>]*fill-opacity="([\d.]+)"/>\s*</g>\s*', m.group(2))
+        if not r:
+            return m.group(0)
+        alpha[m.group(1)] = r.group(1)
+        return ''
+    s = re.sub(r'<mask id="([^"]+)">(.*?)</mask>\s*', mask, s, flags=re.S)
+    s = re.sub(r'mask="url\(#([^)]+)\)"', lambda m: f'opacity="{alpha[m.group(1)]}"' if m.group(1) in alpha else m.group(0), s)
+    if 'filter="url(#filter-remove-color)"' not in s:
+        s = re.sub(r'<filter id="filter-remove-color".*?</filter>\s*', '', s, flags=re.S)
     open(out, 'w', encoding='utf-8').write(s)
 
 

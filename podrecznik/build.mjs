@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-/* Kolokwium 6 – składanie PDF (natywny druk Chromium + pypdf).
+/* Podręcznik „Biologia molekularna” – składanie PDF (natywny druk Chromium + pypdf; system z kolokwium 6).
  *
- *   node build.mjs                 całość  -> ./<book.output>.pdf
- *   node build.mjs --only 03       jeden rozdział (+ klucz odpowiedzi) -> <buildDir>/rozdzial-03.pdf
- *   node build.mjs --demo          całość z rozdziałem 00-demo -> <buildDir>/demo.pdf
+ *   node build.mjs                 całość (bez z00-demo) -> ./<book.output>.pdf
+ *   node build.mjs --only 05       jeden rozdział (rozdzialy/z05-*.html) -> <buildDir>/rozdzial-05.pdf
+ *   node build.mjs --demo          całość z rozdziałem z00-demo -> <buildDir>/demo.pdf
  *   node build.mjs --png ...       dodatkowo PNG stron (96 dpi) w <buildDir>/<nazwa>-png/
- *   --out-dir DIR                  inny katalog roboczy (albo zmienna K6_BUILD_DIR)
+ *   --out-dir DIR                  inny katalog roboczy (albo zmienna PODR_BUILD_DIR)
  *   --keep                         zostaw złożony HTML i PDF-y pośrednie
  */
 import fs from 'node:fs';
@@ -33,11 +33,11 @@ for (let i = 0; i < argv.length; i++) {
   else if (a === '--help' || a === '-h') { console.log(fs.readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').slice(1, 11).join('\n')); process.exit(0); }
   else { console.error(`Nieznana opcja: ${a}`); process.exit(2); }
 }
-if (opt.only !== null && !/^\d\d$/.test(opt.only)) { console.error('--only wymaga numeru rozdziału, np. --only 03'); process.exit(2); }
+if (opt.only !== null && !/^\d\d$/.test(opt.only)) { console.error('--only wymaga numeru rozdziału, np. --only 05 (Genomika: --only 01)'); process.exit(2); }
 const mode = opt.only ? 'only' : opt.demo ? 'demo' : 'full';
 
 const book = JSON.parse(fs.readFileSync(path.join(ROOT, 'book.json'), 'utf8'));
-let buildDir = opt.outDir || process.env.K6_BUILD_DIR || book.buildDir || path.join(ROOT, 'build');
+let buildDir = opt.outDir || process.env.PODR_BUILD_DIR || book.buildDir || path.join(ROOT, 'build');
 try { fs.mkdirSync(buildDir, { recursive: true }); fs.accessSync(buildDir, fs.constants.W_OK); }
 catch { buildDir = path.join(ROOT, 'build'); fs.mkdirSync(buildDir, { recursive: true }); }
 
@@ -58,23 +58,30 @@ const rd = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
 const listDir = (d, re) => (fs.existsSync(path.join(ROOT, d)) ? fs.readdirSync(path.join(ROOT, d)).filter((f) => re.test(f)).sort() : []);
 const tagFile = (html, rel) => html.replace(/<section\b/, `<section data-src-file="${rel}"`);
 
-let chapterFiles = listDir('chapters', /^\d\d-[\w.-]*\.html$/);
-const strayChapters = listDir('chapters', /\.html$/).filter((f) => !chapterFiles.includes(f));
-for (const f of strayChapters) W.push({ level: 'warn', msg: `Pominięto chapters/${f}: nazwa musi mieć postać NN-nazwa.html (np. 03-elektroforeza-bialek.html)` });
-if (mode === 'full') chapterFiles = chapterFiles.filter((f) => !f.startsWith('00-'));
+const CH = 'rozdzialy';
+let chapterFiles = listDir(CH, /^z\d\d-[\w.-]*\.html$/);
+const strayChapters = listDir(CH, /\.html$/).filter((f) => !chapterFiles.includes(f));
+for (const f of strayChapters) W.push({ level: 'warn', msg: `Pominięto ${CH}/${f}: nazwa musi mieć postać zNN-nazwa.html (np. z05-pcr.html)` });
+if (mode === 'full') chapterFiles = chapterFiles.filter((f) => !f.startsWith('z00-'));
 if (mode === 'only') {
-  chapterFiles = chapterFiles.filter((f) => f.startsWith(opt.only + '-'));
-  if (!chapterFiles.length) { console.error(`Brak pliku chapters/${opt.only}-*.html`); process.exit(2); }
+  chapterFiles = chapterFiles.filter((f) => f.startsWith(`z${opt.only}-`));
+  if (!chapterFiles.length) { console.error(`Brak pliku ${CH}/z${opt.only}-*.html`); process.exit(2); }
 }
+/* rycina z banku: <figure class="fig" data-bank="k5-ryc-04" …> -> build dokleja <img class="bank" src="bank-rycin/k5-ryc-04.svg"> */
+const withBank = (html, rel) => html.replace(/<figure\b[^>]*\bdata-bank="([^"]*)"[^>]*>/g, (tag, id) => {
+  const f = `bank-rycin/${id}.svg`;
+  if (!fs.existsSync(path.join(ROOT, f))) { W.push({ level: 'error', msg: `${rel}: brak ryciny „${id}” w banku (${f}) – sprawdź id w bank-rycin/INDEX.md` }); return tag; }
+  return `${tag}<img class="bank" src="${f}" alt="">`;
+});
 const chapters = chapterFiles.map((f) => {
-  const rel = `chapters/${f}`;
-  let html = rd(rel);
+  const rel = `${CH}/${f}`;
+  let html = withBank(rd(rel), rel);
   const n = (html.match(/<section\b[^>]*class="[^"]*\bchapter\b/g) || []).length;
   if (n !== 1) W.push({ level: 'error', msg: `${rel}: plik musi zawierać dokładnie jedną <section class="chapter"> (jest ${n})` });
   const m = /<section\b[^>]*data-num="(\d\d)"/.exec(html);
-  if (m && m[1] !== f.slice(0, 2)) W.push({ level: 'error', msg: `${rel}: data-num="${m[1]}" nie zgadza się z numerem w nazwie pliku (${f.slice(0, 2)})` });
+  if (m && m[1] !== f.slice(1, 3)) W.push({ level: 'error', msg: `${rel}: data-num="${m[1]}" nie zgadza się z numerem w nazwie pliku (${f.slice(1, 3)})` });
   if (/<(html|head|body)\b/i.test(html)) W.push({ level: 'error', msg: `${rel}: plik rozdziału to fragment – bez <html>, <head>, <body>` });
-  return { file: rel, html: tagFile(html, rel), quiz: /class="[^"]*\bquiz\b/.test(html) };
+  return { file: rel, html: tagFile(html, rel) };
 });
 
 const backItems = [];
@@ -84,7 +91,7 @@ if (mode !== 'only') {
   }
 }
 for (const [kind, a] of Object.entries(book.autoSections || {})) {
-  if (mode === 'only' && (kind !== 'answers' || !chapters.some((c) => c.quiz))) continue;
+  if (mode === 'only') continue;
   backItems.push({ order: a.order, html: `<section class="back auto" id="${a.id}" data-auto="${kind}" data-title="${a.title}"></section>` });
 }
 backItems.sort((a, b) => a.order - b.order);
@@ -320,7 +327,7 @@ try {
   for (const w of uniq) log(`${sym[w.level]} ${w.msg}`);
   const ne = uniq.filter((w) => w.level === 'error').length, nw = uniq.filter((w) => w.level === 'warn').length;
   log('');
-  log(`Tryb: ${mode}${opt.only ? ' (rozdział ' + opt.only + ')' : ''} · rozdziałów: ${prep.stats.chapters} · rycin: ${prep.stats.figures} · notatek „liceum”: ${prep.stats.liceum} · pytań: ${prep.stats.questions}`);
+  log(`Tryb: ${mode}${opt.only ? ' (rozdział ' + opt.only + ')' : ''} · rozdziałów: ${prep.stats.chapters} · rycin: ${prep.stats.figures} (z banku: ${prep.stats.bank}) · „Pojęcie”: ${prep.stats.notes} · ramek: ${prep.stats.boxes}`);
   log(`Stron: ${fin.pages} · przebiegów: ${passes}${stable ? ' (numeracja stabilna)' : ' (NIESTABILNA)'} · kontrola stron sekcji: ${checked - bad}/${checked} OK · linków: ${fin.links} (martwych: ${fin.broken.length}) · zakładek: ${outline.reduce((s, o) => s + 1 + (o.children ? o.children.length : 0), 0)}`);
   if (holes.length) log(`Strony z dużą białą przestrzenią: ${holes.join(', ')}`);
   log(`Czcionki: ${fontNames.join(', ')}`);
