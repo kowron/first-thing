@@ -25,3 +25,21 @@
 - build.mjs: rozdzialy/zNN-*.html, --only NN, data-bank -> <img class="bank" src="bank-rycin/ID.svg">, PODR_BUILD_DIR; book.json buildDir = scratchpad/build-podrecznik.
 - front/cover.html, front/howto.html – zaślepki zielone.
 - Następny krok: rozdzialy/z00-demo.html (2 strony), build --only 00 --png, kontrola łamania, KOMPONENTY.md.
+
+## Krok 4 – łamanie dwukolumnowe DZIAŁA
+- Jeden kontener multicol na rozdział + column-span: Chromium nie wyrównywał kolumn po przejściu strony.
+  Rozwiązanie: browser.js owija ciągi elementów między elementami „na obie kolumny” w <div class="cols">;
+  po 1. przebiegu splitCols() dzieli .cols na czystych przejściach stron (pdftool dests ma teraz [strona, top, left]).
+- Demo rozdzialy/z00-demo.html = 2 strony (rycina z banku k5-ryc-03 w środku s. 1, tabela wide w środku s. 2, tabela w kolumnie,
+  Pojęcie, Zapamiętaj, Uwaga, W 60 sekund). Test 5-stronicowy (3× demo, 3 ryciny z banku) – bez białych dziur; plik testowy usunięty.
+- Gęstość: s. 2 demo ≈ 3850 znaków przy ~22% strony zajętej tabelą -> ok. 5000 znaków na stronę samego tekstu (9,4/13 pt).
+- Następny krok: sprawdzić, czy SVG z banku drukuje się wektorowo; --demo (okładka, spis); KOMPONENTY.md.
+
+## Krok 5 – ZAKOŃCZONE (tura 1: szablon + bank k4/k5/g)
+- KOMPONENTY.md (nowy, krótki). Genomika: rozdzialy/z01-genomika.html, data-num="01", data-label="G", build --only 01 (sprawdzone na pliku testowym, usuniętym).
+- Rycina z banku drukuje się wektorowo (pdfimages: brak obrazów rastrowych); maski cairo zamienione na opacity (lib/bank_pdf.py).
+- Polecenia: node build.mjs --only NN --png | --demo | (pełny). Build: scratchpad/build-podrecznik/rozdzial-NN.pdf.
+- Tura 2 (do zrobienia): bank k6- (inline SVG z kolokwium6/chapters + git show c3e7824^:…), dopisać do INDEX.md
+  (lib/bank_index.py obsługuje tylko k4/k5/g – dopisać sekcję k6 ręcznie albo rozszerzyć skrypt).
+- Ograniczenia: ryciny z banku zawsze na obie kolumny w skali ≈ 1:1 (g-ryc-01/02/07 ≈ 9/10 strony); zostają w kolorach
+  oryginału (granat/turkus); okładka i „Jak korzystać” to zaślepki do fazy 5.

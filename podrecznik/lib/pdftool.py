@@ -35,7 +35,11 @@ def read_dests(reader):
             top = float(top) if top is not None else None
         except Exception:
             top = None
-        out[norm(name)] = [idx, top]
+        try:
+            left = float(d.get('/Left')) if d.get('/Left') is not None else None
+        except Exception:
+            left = None
+        out[norm(name)] = [idx, top, left]
     return out
 
 
@@ -68,7 +72,7 @@ def cmd_finalize(src, dst, meta_path):
         if not d:
             missing.append(item['id'])
             return None
-        idx, top = d
+        idx, top = d[0], d[1]
         top = page_h if top is None else min(page_h, top + 18)
         return writer.add_outline_item(item['title'], idx, parent=parent, fit=Fit.xyz(left=0, top=top, zoom=None))
 

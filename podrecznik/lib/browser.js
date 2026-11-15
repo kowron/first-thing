@@ -306,6 +306,24 @@
       u.dataset.k6cu = '1';
     }
 
+    /* ---------- Dwie kolumny: każdy ciąg elementów między elementami „na obie kolumny” -> <div class="cols">.
+       Osobny kontener wielokolumnowy na każdy ciąg, bo Chromium w druku wyrównuje (balance) tylko ostatni
+       fragment kontenera – przy jednym kontenerze na rozdział kolumny po przejściu strony się nie wyrównywały. */
+    const SPAN = '.opener, figure.fig:not(.narrow), .wide, table.tbl.wide, .box.wide, .w60';
+    let colKids = 0;
+    const colIds = [];
+    for (const ch of chapters) {
+      let run = null;
+      for (const el of [...ch.childNodes]) {
+        if (el.nodeType === 1 && el.matches(SPAN)) { run = null; continue; }
+        if (el.nodeType !== 1 && !(el.nodeType === 3 && el.textContent.trim())) { if (run) run.appendChild(el); continue; }
+        if (!run) { run = document.createElement('div'); run.className = 'cols'; el.before(run); }
+        run.appendChild(el);
+        if (!el.id) el.id = `k6c-${++colKids}`;   // położenie na stronie -> splitCols
+        colIds.push(el.id);
+      }
+    }
+
     /* ---------- Ukryte linki (dla numerów stron) ---------- */
     const need = new Set();
     for (const u of $$('[data-k6cu]')) need.add(u.id);
@@ -314,23 +332,10 @@
     for (const o of outline) for (const c of o.children) need.add(c.id);
     for (const id of Object.keys(figMap)) need.add(id);
     for (const np of notePairs) { need.add(np.note); need.add(np.anchor); }
+    for (const id of colIds) need.add(id);
     const gl = document.createElement('div'); gl.className = 'ghost-links'; gl.setAttribute('aria-hidden', 'true');
     for (const id of need) if (id && document.getElementById(id)) { const a = document.createElement('a'); a.href = '#' + id; a.textContent = '.'; gl.appendChild(a); }
     document.body.prepend(gl);
-
-    /* ---------- Dwie kolumny: każdy ciąg elementów między elementami „na obie kolumny” -> <div class="cols">.
-       Osobny kontener wielokolumnowy na każdy ciąg, bo Chromium w druku wyrównuje (balance) tylko ostatni
-       fragment kontenera – przy jednym kontenerze na rozdział kolumny po przejściu strony się nie wyrównywały. */
-    const SPAN = '.opener, figure.fig:not(.narrow), .wide, table.tbl.wide, .box.wide, .w60';
-    for (const ch of chapters) {
-      let run = null;
-      for (const el of [...ch.childNodes]) {
-        if (el.nodeType === 1 && el.matches(SPAN)) { run = null; continue; }
-        if (el.nodeType !== 1 && !(el.nodeType === 3 && el.textContent.trim())) { if (run) run.appendChild(el); continue; }
-        if (!run) { run = document.createElement('div'); run.className = 'cols'; el.before(run); }
-        run.appendChild(el);
-      }
-    }
 
     /* ---------- Typografia: twarde spacje + dzielenie wyrazów ---------- */
     typography();
@@ -429,6 +434,33 @@
       changed++;
     }
     return changed;
+  }
+
+  /* Dwie kolumny po przejściu strony: Chromium źle wyrównuje ostatni fragment kontenera .cols, gdy poprzednia
+     strona skończyła się MIĘDZY elementami (np. ramka lub h2 nie zmieściły się i przeszły na następną stronę).
+     Po 1. przebiegu dzielimy wtedy .cols w tym miejscu: druga część to nowy kontener od nowej strony
+     (.cols-page) – układ się nie zmienia, a kolumny ostatniej strony wyrównują się poprawnie.
+     dests: id -> [indeks strony, top, left] (pt, z PDF). Element „na górze lewej kolumny” = czyste przejście. */
+  function splitCols(dests) {
+    const TOP = 841.89 - 22 * 72 / 25.4, LEFT = 15.5 * 72 / 25.4;
+    let n = 0;
+    for (const cols of $$('.cols')) {
+      let cur = cols;
+      const kids = [...cols.children];
+      for (let i = 1; i < kids.length; i++) {
+        const a = dests[kids[i - 1].id], b = dests[kids[i].id];
+        if (!a || !b || b[0] <= a[0] || b[1] === null) continue;
+        if (b[1] < TOP - 3 || (b[2] !== null && b[2] !== undefined && b[2] > LEFT + 20)) continue;
+        const nc = document.createElement('div');
+        nc.className = 'cols cols-page';
+        let node = kids[i];
+        while (node) { const nx = node.nextSibling; nc.appendChild(node); node = nx; }
+        cur.after(nc);
+        cur = nc;
+        n++;
+      }
+    }
+    return n;
   }
 
   /* ------------------------------------------------------------------ */
@@ -736,5 +768,5 @@
     return { refrozen, shy, broken };
   }
 
-  window.K6 = { prepare, applyPages, balanceColumns, measure, hyphenateWord, hyphenPoints, freezeHyphens, frozenBreaks, refreezeHyphens };
+  window.K6 = { prepare, applyPages, balanceColumns, splitCols, measure, hyphenateWord, hyphenPoints, freezeHyphens, frozenBreaks, refreezeHyphens };
 })();

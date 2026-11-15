@@ -180,6 +180,11 @@ try {
     applied = got;
     // ściąga: wyrównanie kolumn na ostatniej stronie (potrzebne strony punktów z 1. przebiegu)
     if (pass === 1) await page.evaluate((m) => window.K6.balanceColumns(m), got);
+    // dwie kolumny: podział .cols na czystych przejściach stron (zob. splitCols w lib/browser.js)
+    if (pass === 1) {
+      const ns = await page.evaluate((d) => window.K6.splitCols(d), info.dests);
+      if (ns) W.push({ level: 'info', msg: `Kolumny: ${ns} × podział bloku dwukolumnowego na przejściu strony (wyrównanie kolumn)` });
+    }
   }
   if (!stable) W.push({ level: 'error', msg: 'Numery stron nie ustabilizowały się po 5 przebiegach – sprawdź odsyłacze w pobliżu końca stron' });
   const pageOf = applied;
