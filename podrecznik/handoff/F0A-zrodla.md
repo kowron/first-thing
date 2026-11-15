@@ -25,6 +25,7 @@ Cel: każdy agent rozdziału dostaje małą paczkę czystego tekstu tylko ze swo
    - z11: Drewa r.28, 30, 35
    Jóźwiak ma warstwę tekstu (`pdftotext`), tnij po nagłówkach rozdziałów; Ostrowska też.
    W każdej paczce dodaj `ROZPISKA.txt` (zagadnienia z rozpiski) i `SPIS.md`: pliki, zakres stron, liczba znaków, przy każdym zagadnieniu – w którym pliku i na których stronach jest omówione (na podstawie nagłówków podrozdziałów; nie czytaj całej treści).
+   W `SPIS.md` paczek z08 i z10 oznacz plik Jordego: „STARE WYDANIE (ok. 2000) – źródło pomocnicze, pierwszeństwo ma Drewa” i wypisz, które zagadnienia są omówione także w Drewie.
 3. Zapisz `/tmp/claude-0/-home-user-first-thing/600b873f-e07d-5766-b2f4-6a90b68ae091/scratchpad/zrodla/INDEX.md` (paczka → pliki → rozmiar) i wpisz braki źródeł.
 
 ## Wynik i stan

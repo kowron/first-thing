@@ -9,6 +9,7 @@
 6. Każdy podrozdział kończy linia źródła: `Źródło: Drewa s. X–Y` (albo Jóźwiak / Jorde / Ostrowska / Alster / Twyman / Materiał pomocniczy).
 7. Błąd lub niejasność w źródle: krótka ramka „Uwaga do źródła” (maks. 1–2 na rozdział), tylko gdy pewne.
 8. OCR bywa zniekształcony: nie zgaduj liczb; wątpliwe pomiń i zapisz w stanie.
+9. **Stare wydanie Jordego.** Skan Jordego w paczkach to wydanie z ok. 2000 r. (rozpiska wskazuje wydanie z 2021 r.). Traktuj je ostrożnie: jeśli ta sama informacja jest też w innym źródle podanym do TYCH SAMYCH zajęć (np. w Drewie) – bierz wersję z tego drugiego źródła. Z Jordego bierz tylko to, czego inne źródło tych zajęć nie zawiera; pomijaj dane, które łatwo się dezaktualizują (liczby genów, częstości, „najnowsze” metody, stan wiedzy). Przy rozbieżności między źródłami: wersja drugiego źródła w tekście, rozbieżność zapisana w `stan/zNN.md` dla rewizji. Nadal nie wolno sięgać po żadne źródła spoza rozpiski.
 
 ## Forma
 - Fragment HTML według `podrecznik/KOMPONENTY.md` (wersja dwukolumnowa – powstaje w fazie 0B). Jeden plik = jeden rozdział: `rozdzialy/zNN-nazwa.html`.

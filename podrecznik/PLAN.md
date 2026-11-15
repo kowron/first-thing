@@ -22,7 +22,7 @@ Cel: jeden plik PDF do egzaminu. 1 rozdział = 1 zajęcia. Wersja „żeby zdać
 | Alster, Korwek – Znaczniki starzenia | „o2592 (1).pdf” | gotowy tekst |
 | Materiał pomocniczy do zajęć 8 (Drosophila) | 1 strona | gotowy tekst |
 | Twyman, sekcja M3 (regeneracja kończyny) | „pdf24_przekonwertowany.pdf” – 7 zrzutów ekranu, po angielsku | **wymaga OCR** |
-| Jorde, rozdz. 5 | „pdf24_przekonwertowany (2).pdf” – 24 zrzuty ekranu | **wymaga OCR** |
+| Jorde, rozdz. 5 | „pdf24_przekonwertowany (2).pdf” – 24 zrzuty ekranu, **stare wydanie (ok. 2000; rozpiska: 2021)** | **wymaga OCR**; źródło pomocnicze – pierwszeństwo ma drugie źródło tych samych zajęć |
 | Jorde, rozdz. 3 (s. 41–43), rozdz. 8 (s. 154), rozdz. 13 | – | **BRAK w folderze** |
 | Rozpiska zajęć nr 1 | – | brak (celowo) |
 
