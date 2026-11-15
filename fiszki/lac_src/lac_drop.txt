@@ -18,3 +18,7 @@ junctura sacrococcygea
 articulatio atlantooccipitalis
 musculi spinohumerales
 musculi spinocostales
+# 15.11 (3): z trójkątów zostają tylko trójkąty przepony
+trigonum spinae
+trigonum lumbare
+trigonum suboccipitale
