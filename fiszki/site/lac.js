@@ -12,7 +12,7 @@ D.groups.forEach(function(g,gi){g.i.forEach(function(it){var k=it.id||('l:'+it.l
   var c={k:k,p:it.p,l:it.l,a:it.a||[],s:it.s,g:gi,t:g.t,kl:!!it.k};BYK[k]=c;CARDS.push(c)})});
 var CH={1:'k',2:'u',3:'n'},CHL={k:'umiem',u:'nie jestem pewny',n:'nie umiem'};
 function st(){var S=A.S;if(!S.lt||!S.lt.c)S.lt={ts:0,r:1,q:null,i:0,c:{}};var L=S.lt;
-  if(!L._inh){L._inh=1;CARDS.forEach(function(c){var i=c.k.indexOf('#');if(i>0&&!L.c[c.k]&&L.c[c.k.slice(0,i)]){L.c[c.k]={c:L.c[c.k.slice(0,i)].c,ok:0,n:0};if(L.q&&L.q.indexOf(c.k.slice(0,i))>=0)L.q.push(c.k)}})}
+  if(L._inh!==2){L._inh=2;CARDS.forEach(function(c){if(c.k.slice(-2)!=='#2')return;var b=c.k.slice(0,-2);if(!L.c[c.k]&&L.c[b]){L.c[c.k]={c:L.c[b].c,ok:0,n:0};if(L.q&&L.q.indexOf(b)>=0&&L.q.indexOf(c.k)<0)L.q.push(c.k)}})}
   return L}
 function save(){st().ts=Date.now();A.save()}
 function cs(k){return st().c[k]||null}

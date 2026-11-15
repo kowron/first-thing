@@ -1,69 +1,350 @@
 {
-"l:vertebrae-spuriae":["kręg rzekomy","vertebra spuria"],
-"l:vertebrae-verae":["kręg prawdziwy","vertebra vera"],
-"l:vertebrae-presacrales":["kręg przedkrzyżowy","vertebra presacralis"],
-"l:processus-articulares-superiores-et-inferiores":["wyrostek stawowy górny","processus articularis superior"],
-"l:processus-articulares-superiores-et-inferiores#2":["wyrostek stawowy dolny","processus articularis inferior"],
-"l:processus-transversi":["wyrostek poprzeczny","processus transversus"],
-"l:massae-laterales":["część boczna","massa lateralis"],
-"l:condyli-occipitales":["kłykieć potyliczny","condylus occipitalis"],
-"l:vertebrae-thoracicae":["kręg piersiowy","vertebra thoracica",["vertebra thoracalis"]],
-"l:foveae-costales":["dołek żebrowy","fovea costalis"],
-"l:foveae-costales-processus-transversi":["dołek żebrowy wyrostka poprzecznego","fovea costalis processus transversi"],
-"l:vertebrae-lumbales":["kręg lędźwiowy","vertebra lumbalis"],
-"l:partes-laterales-ossis-sacri":["część boczna kości krzyżowej","pars lateralis ossis sacri"],
-"l:foramina-sacralia-pelvina":["otwór krzyżowy miedniczny","foramen sacrale pelvinum",["foramen sacrale anterius"]],
-"l:cornua-sacralia":["rożek krzyżowy","cornu sacrale"],
-"l:foramina-sacralia-dorsalia":["otwór krzyżowy grzbietowy","foramen sacrale dorsale",["foramen sacrale posterius"]],
-"l:cornua-coccygea":["rożek guziczny","cornu coccygeum"],
-"l:juncturae-zygapophysiales":["połączenie międzykręgowe","junctura zygapophysialis",["articulatio intervertebralis"]],
-"l:ligamenta-flava":["więzadło żółte","ligamentum flavum"],
-"l:ligamenta-intertransversaria":["więzadło międzypoprzeczne","ligamentum intertransversarium"],
-"l:ligamenta-interspinalia":["więzadło międzykolcowe","ligamentum interspinale"],
-"l:foveae-articulares-superiores-atlantis":["dołek stawowy górny kręgu szczytowego","fovea articularis superior atlantis"],
-"l:articulationes-atlantoaxiales-medianae":["staw szczytowo-obrotowy pośrodkowy","articulatio atlantoaxialis mediana"],
-"l:articulationes-atlantoaxiales-laterales":["staw szczytowo-obrotowy boczny","articulatio atlantoaxialis lateralis"],
-"l:fasciculi-longitudinales":["pęczek podłużny","fasciculus longitudinalis"],
-"l:ligamenta-alaria":["więzadło skrzydłowate","ligamentum alare"],
-"l:skolioses":["skrzywienie boczne kręgosłupa","skoliosis"],
-"l:costae":["żebro","costa"],
-"l:costae-verae":["żebro prawdziwe","costa vera"],
-"l:costae-spuriae":["żebro rzekome","costa spuria"],
-"l:costae-fluitantes":["żebro wolne","costa fluitans",["costa fluctuans"]],
-"l:sternebrae":["segment mostka","sternebra"],
-"l:ligamenta-sternocostalia-radiata":["więzadło promieniste mostkowo-żebrowe","ligamentum sternocostale radiatum"],
-"l:ligamenta-costoxiphoidea":["więzadło żebrowo-mieczykowe","ligamentum costoxiphoideum"],
-"l:articulationes-interchondrales":["staw międzychrząstkowy","articulatio interchondralis"],
-"l:synchondroses-sternales":["chrząstkozrost mostkowy","synchondrosis sternalis"],
-"l:musculi-spinohumerales":["mięsień kolcowo-ramienny","musculus spinohumeralis"],
-"l:musculi-spinocostales":["mięsień kolcowo-żebrowy","musculus spinocostalis"],
-"l:fasciculi-cleidooccipitales":["pęczek obojczykowo-potyliczny","fasciculus cleidooccipitalis"],
-"l:musculi-serrati-posteriores":["mięsień zębaty tylny","musculus serratus posterior"],
-"l:musculi-transversospinales":["mięsień poprzeczno-kolcowy","musculus transversospinalis"],
-"l:musculus-spinotransversalis":["mięsień kolcowo-poprzeczny","musculus spinotransversalis",["musculus spinotransversarius"]],
-"l:musculi-suboccipitales":["mięsień podpotyliczny","musculus suboccipitalis"],
-"l:musculi-splenii":["mięsień płatowaty","musculus splenius"],
-"l:musculi-rotatores":["mięsień skręcający","musculus rotator"],
-"l:rotatores-longi":["mięsień skręcający długi","musculus rotator longus"],
-"l:rotatores-breves":["mięsień skręcający krótki","musculus rotator brevis"],
-"l:musculi-rotatores-thoracis":["mięsień skręcający klatki piersiowej","musculus rotator thoracis"],
-"l:musculi-rotatores-cervicis":["mięsień skręcający szyi","musculus rotator cervicis"],
-"l:musculi-rotatores-lumborum":["mięsień skręcający lędźwi","musculus rotator lumborum"],
-"l:musculi-interspinales":["mięsień międzykolcowy","musculus interspinalis"],
-"l:musculi-interspinales-cervicis":["mięsień międzykolcowy szyi","musculus interspinalis cervicis"],
-"l:musculi-interspinales-lumborum":["mięsień międzykolcowy lędźwi","musculus interspinalis lumborum"],
-"l:musculi-interspinales-thoracis":["mięsień międzykolcowy klatki piersiowej","musculus interspinalis thoracis"],
-"l:musculi-intertransversarii":["mięsień międzypoprzeczny","musculus intertransversarius"],
-"l:musculi-intertransversarii-anteriores-cervicis":["mięsień międzypoprzeczny przedni szyi","musculus intertransversarius anterior cervicis"],
-"l:musculi-intertransversarii-posteriores-cervicis":["mięsień międzypoprzeczny tylny szyi","musculus intertransversarius posterior cervicis"],
-"l:musculi-intertransversarii-laterales-lumborum":["mięsień międzypoprzeczny boczny lędźwi","musculus intertransversarius lateralis lumborum"],
-"l:musculi-intertransversarii-mediales-lumborum":["mięsień międzypoprzeczny przyśrodkowy lędźwi","musculus intertransversarius medialis lumborum"],
-"l:musculi-levatores-costarum":["mięsień dźwigacz żebra","musculus levator costae"],
-"l:musculi-levatores-costarum-breves":["mięsień dźwigacz żebra krótki","musculus levator costae brevis"],
-"l:musculi-levatores-costarum-longi":["mięsień dźwigacz żebra długi","musculus levator costae longus"],
-"l:arcus-lumbocostales":["łuk lędźwiowo-żebrowy","arcus lumbocostalis"],
-"l:intersectiones-tendineae":["smuga ścięgnista","intersectio tendinea"],
-"l:herniae-lumbales-inferiores":["przepuklina lędźwiowa dolna","hernia lumbalis inferior"],
-"l:loci-minoris-resistentiae":["miejsce słabszego oporu","locus minoris resistentiae",[]],
-"l:herniae-lineae-albae":["przepuklina kresy białej","hernia lineae albae"]
+"l:processus-transversi": [
+"wyrostek poprzeczny",
+"processus transversus"
+],
+"l:massae-laterales": [
+"część boczna",
+"massa lateralis"
+],
+"l:condyli-occipitales": [
+"kłykieć potyliczny",
+"condylus occipitalis"
+],
+"l:vertebrae-thoracicae": [
+"kręg piersiowy",
+"vertebra thoracica",
+[
+"vertebra thoracalis"
+]
+],
+"l:foveae-costales": [
+"dołek żebrowy",
+"fovea costalis"
+],
+"l:foveae-costales-processus-transversi": [
+"dołek żebrowy wyrostka poprzecznego",
+"fovea costalis processus transversi"
+],
+"l:vertebrae-lumbales": [
+"kręg lędźwiowy",
+"vertebra lumbalis"
+],
+"l:partes-laterales-ossis-sacri": [
+"część boczna kości krzyżowej",
+"pars lateralis ossis sacri"
+],
+"l:foramina-sacralia-pelvina": [
+"otwór krzyżowy miedniczny",
+"foramen sacrale pelvinum",
+[
+"foramen sacrale anterius"
+]
+],
+"l:cornua-sacralia": [
+"rożek krzyżowy",
+"cornu sacrale"
+],
+"l:foramina-sacralia-dorsalia": [
+"otwór krzyżowy grzbietowy",
+"foramen sacrale dorsale",
+[
+"foramen sacrale posterius"
+]
+],
+"l:cornua-coccygea": [
+"rożek guziczny",
+"cornu coccygeum"
+],
+"l:juncturae-zygapophysiales": [
+"połączenie międzykręgowe",
+"junctura zygapophysialis",
+[
+"articulatio intervertebralis"
+]
+],
+"l:ligamenta-flava": [
+"więzadło żółte",
+"ligamentum flavum"
+],
+"l:ligamenta-intertransversaria": [
+"więzadło międzypoprzeczne",
+"ligamentum intertransversarium"
+],
+"l:ligamenta-interspinalia": [
+"więzadło międzykolcowe",
+"ligamentum interspinale"
+],
+"l:foveae-articulares-superiores-atlantis": [
+"dołek stawowy górny kręgu szczytowego",
+"fovea articularis superior atlantis"
+],
+"l:articulationes-atlantoaxiales-medianae": [
+"staw szczytowo-obrotowy pośrodkowy",
+"articulatio atlantoaxialis mediana"
+],
+"l:articulationes-atlantoaxiales-laterales": [
+"staw szczytowo-obrotowy boczny",
+"articulatio atlantoaxialis lateralis"
+],
+"l:fasciculi-longitudinales": [
+"pęczek podłużny",
+"fasciculus longitudinalis"
+],
+"l:ligamenta-alaria": [
+"więzadło skrzydłowate",
+"ligamentum alare"
+],
+"l:skolioses": [
+"skrzywienie boczne kręgosłupa",
+"skoliosis"
+],
+"l:costae": [
+"żebro",
+"costa"
+],
+"l:costae-fluitantes": [
+"żebro wolne",
+"costa fluitans",
+[
+"costa fluctuans"
+]
+],
+"l:sternebrae": [
+"segment mostka",
+"sternebra"
+],
+"l:ligamenta-sternocostalia-radiata": [
+"więzadło promieniste mostkowo-żebrowe",
+"ligamentum sternocostale radiatum"
+],
+"l:ligamenta-costoxiphoidea": [
+"więzadło żebrowo-mieczykowe",
+"ligamentum costoxiphoideum"
+],
+"l:articulationes-interchondrales": [
+"staw międzychrząstkowy",
+"articulatio interchondralis"
+],
+"l:synchondroses-sternales": [
+"chrząstkozrost mostkowy",
+"synchondrosis sternalis"
+],
+"l:fasciculi-cleidooccipitales": [
+"pęczek obojczykowo-potyliczny",
+"fasciculus cleidooccipitalis"
+],
+"l:musculi-serrati-posteriores": [
+"mięsień zębaty tylny",
+"musculus serratus posterior"
+],
+"l:musculi-transversospinales": [
+"mięsień poprzeczno-kolcowy",
+"musculus transversospinalis"
+],
+"l:musculus-spinotransversalis": [
+"mięsień kolcowo-poprzeczny",
+"musculus spinotransversalis",
+[
+"musculus spinotransversarius"
+]
+],
+"l:musculi-suboccipitales": [
+"mięsień podpotyliczny",
+"musculus suboccipitalis"
+],
+"l:musculi-splenii": [
+"mięsień płatowaty",
+"musculus splenius"
+],
+"l:musculi-rotatores": [
+"mięsień skręcający",
+"musculus rotator"
+],
+"l:rotatores-longi": [
+"mięsień skręcający długi",
+"musculus rotator longus"
+],
+"l:rotatores-breves": [
+"mięsień skręcający krótki",
+"musculus rotator brevis"
+],
+"l:musculi-rotatores-thoracis": [
+"mięsień skręcający klatki piersiowej",
+"musculus rotator thoracis"
+],
+"l:musculi-rotatores-cervicis": [
+"mięsień skręcający szyi",
+"musculus rotator cervicis"
+],
+"l:musculi-rotatores-lumborum": [
+"mięsień skręcający lędźwi",
+"musculus rotator lumborum"
+],
+"l:musculi-interspinales": [
+"mięsień międzykolcowy",
+"musculus interspinalis"
+],
+"l:musculi-interspinales-cervicis": [
+"mięsień międzykolcowy szyi",
+"musculus interspinalis cervicis"
+],
+"l:musculi-interspinales-lumborum": [
+"mięsień międzykolcowy lędźwi",
+"musculus interspinalis lumborum"
+],
+"l:musculi-interspinales-thoracis": [
+"mięsień międzykolcowy klatki piersiowej",
+"musculus interspinalis thoracis"
+],
+"l:musculi-intertransversarii": [
+"mięsień międzypoprzeczny",
+"musculus intertransversarius"
+],
+"l:musculi-intertransversarii-anteriores-cervicis": [
+"mięsień międzypoprzeczny przedni szyi",
+"musculus intertransversarius anterior cervicis"
+],
+"l:musculi-intertransversarii-posteriores-cervicis": [
+"mięsień międzypoprzeczny tylny szyi",
+"musculus intertransversarius posterior cervicis"
+],
+"l:musculi-intertransversarii-laterales-lumborum": [
+"mięsień międzypoprzeczny boczny lędźwi",
+"musculus intertransversarius lateralis lumborum"
+],
+"l:musculi-intertransversarii-mediales-lumborum": [
+"mięsień międzypoprzeczny przyśrodkowy lędźwi",
+"musculus intertransversarius medialis lumborum"
+],
+"l:musculi-levatores-costarum": [
+"mięsień dźwigacz żebra",
+"musculus levator costae"
+],
+"l:musculi-levatores-costarum-breves": [
+"mięsień dźwigacz żebra krótki",
+"musculus levator costae brevis"
+],
+"l:musculi-levatores-costarum-longi": [
+"mięsień dźwigacz żebra długi",
+"musculus levator costae longus"
+],
+"l:arcus-lumbocostales": [
+"łuk lędźwiowo-żebrowy",
+"arcus lumbocostalis"
+],
+"l:intersectiones-tendineae": [
+"smuga ścięgnista",
+"intersectio tendinea"
+],
+"l:herniae-lumbales-inferiores": [
+"przepuklina lędźwiowa dolna",
+"hernia lumbalis inferior"
+],
+"l:loci-minoris-resistentiae": [
+"miejsce słabszego oporu",
+"locus minoris resistentiae",
+[]
+],
+"l:herniae-lineae-albae": [
+"przepuklina kresy białej",
+"hernia lineae albae"
+],
+"l:vertebrae-thoracicae#2": [
+"kręgi piersiowe",
+"vertebrae thoracicae",
+[
+"vertebrae thoracales"
+]
+],
+"l:vertebrae-lumbales#2": [
+"kręgi lędźwiowe",
+"vertebrae lumbales"
+],
+"l:vertebrae-cervicales": [
+"kręg szyjny",
+"vertebra cervicalis"
+],
+"l:vertebrae-cervicales#2": [
+"kręgi szyjne",
+"vertebrae cervicales"
+],
+"l:pars-descendens-musculi-trapezii": [
+"część górna mięśnia czworobocznego",
+"pars descendens musculi trapezii"
+],
+"l:pars-transversa-musculi-trapezii": [
+"część środkowa mięśnia czworobocznego",
+"pars transversa musculi trapezii"
+],
+"l:pars-ascendens-musculi-trapezii": [
+"część dolna mięśnia czworobocznego",
+"pars ascendens musculi trapezii"
+],
+"l:foveae-articulares-superiores": [
+"dołek stawowy górny",
+"fovea articularis superior"
+],
+"l:foveae-articulares-inferiores": [
+"dołek stawowy dolny",
+"fovea articularis inferior"
+],
+"l:lineae-transversae": [
+"kresa poprzeczna",
+"linea transversa"
+],
+"l:disci-intervertebrales": [
+"krążek międzykręgowy",
+"discus intervertebralis",
+[
+"fibrocartilago intervertebralis"
+]
+],
+"l:articulationes-capitum-costarum": [
+"staw głowy żebra",
+"articulatio capitis costae"
+],
+"l:articulationes-costotransversariae": [
+"staw żebrowo-poprzeczny",
+"articulatio costotransversaria"
+],
+"l:articulationes-sternocostales": [
+"staw mostkowo-żebrowy",
+"articulatio sternocostalis"
+],
+"l:spatia-intercostalia": [
+"przestrzeń międzyżebrowa",
+"spatium intercostale"
+],
+"l:membranae-intercostales-externae": [
+"błona międzyżebrowa zewnętrzna",
+"membrana intercostalis externa"
+],
+"l:membranae-intercostales-internae": [
+"błona międzyżebrowa wewnętrzna",
+"membrana intercostalis interna"
+],
+"l:musculi-intercostales-intermedii": [
+"mięsień międzyżebrowy pośredni",
+"musculus intercostalis intermedius"
+],
+"l:musculi-intercostales-intimi": [
+"mięsień międzyżebrowy najgłębszy",
+"musculus intercostalis intimus"
+],
+"l:musculi-subcostales": [
+"mięsień podżebrowy",
+"musculus subcostalis"
+],
+"l:plicae-umbilicales-mediales": [
+"fałd pępkowy przyśrodkowy",
+"plica umbilicalis medialis"
+],
+"l:plicae-umbilicales-laterales": [
+"fałd pępkowy boczny",
+"plica umbilicalis lateralis",
+[
+"plica epigastrica"
+]
+]
 }

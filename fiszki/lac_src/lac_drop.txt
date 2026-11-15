@@ -11,3 +11,10 @@ lamina superficialis
 lamina profunda
 chorda dorsalis
 loci minoris resistentiae
+# 15.11 (2): na życzenie użytkownika
+corpus vertebrae
+processus articulares superiores et inferiores
+junctura sacrococcygea
+articulatio atlantooccipitalis
+musculi spinohumerales
+musculi spinocostales
