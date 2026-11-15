@@ -58,6 +58,7 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
 
       M('m. najszerszy grzbietu', 'm. latissimus dorsi', '652–655',
         layer='warstwa I',
+        parts=['Bochenek podaje części tylko po łacinie: [[pars vertebralis]], [[pars iliaca]], [[pars costalis]], [[pars scapularis]] (s. 652)'],
         o=[
           'wyrostki kolczyste Th7–Th12 i L1–L5 oraz grzebień krzyżowy pośrodkowy [[crista sacralis mediana]] – szerokim ścięgnem, które tworzy blaszkę powierzchowną powięzi piersiowo-lędźwiowej [[fascia thoracolumbalis]]',
           'tylna ⅓ wargi zewnętrznej grzebienia biodrowego [[crista iliaca – labium externum]]',
@@ -75,11 +76,11 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
         ]),
 
       M('m. równoległoboczny', 'm. rhomboideus', '655–657',
+        extra=[('m. potyliczno-łopatkowy', 'm. occipitoscapularis', 'rzadka odmiana, nie część mięśnia: pasmo od kości potylicznej, przykryte m. czworobocznym (s. 657)')],
         layer='warstwa II',
         parts=[
           'część górna, szyjna – m. równoległoboczny mniejszy [[m. rhomboideus minor]]',
           'część dolna, grzbietowa – m. równoległoboczny większy [[m. rhomboideus major]]',
-          'rzadka odmiana – m. potyliczno-łopatkowy, od kości potylicznej do łopatki [[m. occipitoscapularis]] (s. 657)',
         ],
         o=[
           'dolny odcinek więzadła karkowego [[ligamentum nuchae]]',
@@ -189,7 +190,7 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
           ]),
 
         M('m. biodrowo-żebrowy', 'm. iliocostalis', '663, 665',
-          note='pasmo boczne m. krzyżowo-grzbietowego',
+          note='część boczna m. krzyżowo-grzbietowego (s. 663)',
           sub=[
             S('m. biodrowo-żebrowy lędźwi', 'm. iliocostalis lumborum',
               o=['wspólna masa m. krzyżowo-grzbietowego'],
@@ -252,6 +253,7 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
       G('Mięśnie poprzeczno-kolcowe', 'mm. transversospinales', '667–669',
         intro='Trzy warstwy: powierzchowna – m. półkolcowy, środkowa – m. wielodzielny, głęboka – mm. skręcające (s. 667).',
         items=[
+        M('m. półkolcowy', 'm. semispinalis', '667–668', layer='warstwa powierzchowna'),
         M('m. półkolcowy klatki piersiowej i szyi', 'm. semispinalis thoracis et cervicis', '668',
           layer='warstwa powierzchowna',
           o=['wyrostki poprzeczne wszystkich kręgów piersiowych [[processus transversus]]'],
@@ -314,7 +316,7 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
     G('Krótkie mięśnie grzbietu', '', '669–671',
       intro='Łączą dwa sąsiednie kręgi (s. 669).',
       items=[
-      M('mm. międzykolcowe', 'mm. interspinales', '669–670',
+      M('mm. międzykolcowe', 'mm. interspinales', '669–670', tag='pasmo przyśrodkowe · układ międzykolcowy',
         sub=[
           S('mm. międzykolcowe szyi', 'mm. interspinales cervicis', note='parzyste'),
           S('mm. międzykolcowe lędźwi', 'mm. interspinales lumborum', note='nieparzyste'),
@@ -327,15 +329,15 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
                 'szczątkowa pozostałość mm. międzykolcowych między kością krzyżową a guziczną (s. 670)')],
         warn=['W streszczeniu (s. 676) Bochenek pisze: „Służą głównie ruchom obrotowym”. Notatka podaje opis ze s. 670.']),
 
-      M('mm. międzypoprzeczne', 'mm. intertransversarii', '670',
+      M('mm. międzypoprzeczne', 'mm. intertransversarii', '670', tag='pasmo boczne · układ międzypoprzeczny',
         sub=[
-          S('mm. międzypoprzeczne przednie szyi', 'mm. intertransversarii anteriores cervicis',
+          S('mm. międzypoprzeczne przednie szyi', 'mm. intertransversarii anteriores cervicis', note='pochodzenia wentralnego',
             att=['łączą guzki przednie wyrostków poprzecznych sąsiednich kręgów szyjnych [[processus transversus – tuberculum anterius]]']),
-          S('mm. międzypoprzeczne tylne szyi', 'mm. intertransversarii posteriores cervicis',
+          S('mm. międzypoprzeczne tylne szyi', 'mm. intertransversarii posteriores cervicis', note='właściwy m. grzbietu',
             att=['łączą guzki tylne wyrostków poprzecznych sąsiednich kręgów szyjnych [[processus transversus – tuberculum posterius]]']),
-          S('mm. międzypoprzeczne boczne lędźwi', 'mm. intertransversarii laterales lumborum',
+          S('mm. międzypoprzeczne boczne lędźwi', 'mm. intertransversarii laterales lumborum', note='pochodzenia wentralnego',
             att=['łączą wyrostki żebrowe sąsiednich kręgów lędźwiowych [[processus costalis]]']),
-          S('mm. międzypoprzeczne przyśrodkowe lędźwi', 'mm. intertransversarii mediales lumborum',
+          S('mm. międzypoprzeczne przyśrodkowe lędźwi', 'mm. intertransversarii mediales lumborum', note='właściwy m. grzbietu',
             att=['łączą wyrostki dodatkowe z wyrostkami suteczkowatymi [[processus accessorius; processus mamillaris]]']),
           S('m. krzyżowo-guziczny przedni', 'm. sacrococcygeus ventralis', note='niestały, szczątkowy; ta sama grupa co mm. międzypoprzeczne boczne lędźwi'),
         ],
@@ -343,7 +345,7 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
         extra=[('m. krzyżowo-guziczny przedni', 'm. sacrococcygeus ventralis',
                 'niestały, szczątkowy; od przedniej powierzchni części bocznych ostatnich kręgów krzyżowych do przedniej powierzchni ostatniego kręgu guzicznego (s. 670–671)')]),
 
-      M('mm. dźwigacze żeber', 'mm. levatores costarum', '671',
+      M('mm. dźwigacze żeber', 'mm. levatores costarum', '671', tag='pochodzenia wentralnego',
         note='12 z każdej strony',
         sub=[
           S('mm. dźwigacze żeber krótkie', 'mm. levatores costarum breves', note='do następnego żebra'),
@@ -360,28 +362,28 @@ GRZBIET = G('Mięśnie grzbietu', 'musculi dorsi°', '649–677', [
     G('Mięśnie podpotyliczne', 'mm. suboccipitales', '671–673',
       intro='Pięć mięśni między kością potyliczną a dwoma górnymi kręgami (s. 671).',
       items=[
-      M('m. skośny górny głowy', 'm. obliquus capitis superior', '671',
+      M('m. skośny górny głowy', 'm. obliquus capitis superior', '671', tag='pasmo boczne',
         o=['wyrostek poprzeczny kręgu szczytowego [[atlas – processus transversus]]'],
         i=['poniżej bocznego odcinka kresy karkowej dolnej [[linea nuchae inferior]]'],
         f=['jednostronnie: obraca głowę twarzą w stronę przeciwległą',
            'razem z mm. prostymi tylnymi i skośnym dolnym: pociąga głowę ku tyłowi'],
         warn=['W streszczeniu (s. 677) Bochenek pisze: „do bocznego odcinka kresy karkowej górnej”. Notatka podaje opis ze s. 671.']),
-      M('m. prosty tylny mniejszy głowy', 'm. rectus capitis posterior minor', '671–672',
+      M('m. prosty tylny mniejszy głowy', 'm. rectus capitis posterior minor', '671–672', tag='pasmo przyśrodkowe',
         o=['guzek tylny kręgu szczytowego [[atlas – tuberculum posterius]]'],
         i=['poniżej przyśrodkowego odcinka kresy karkowej dolnej [[linea nuchae inferior]]'],
         f=['pociąga głowę ku tyłowi',
            'oba mm. proste tylne jednej strony, razem ze skośnym dolnym: obracają głowę twarzą w tę samą stronę']),
-      M('m. prosty tylny większy głowy', 'm. rectus capitis posterior major', '672',
+      M('m. prosty tylny większy głowy', 'm. rectus capitis posterior major', '672', tag='pasmo przyśrodkowe',
         o=['wyrostek kolczysty kręgu obrotowego [[axis – processus spinosus]]'],
         i=['poniżej środkowej części kresy karkowej dolnej [[linea nuchae inferior]]'],
         f=['pociąga głowę ku tyłowi',
            'razem z prostym tylnym mniejszym i skośnym dolnym tej samej strony: obraca głowę twarzą w tę samą stronę']),
-      M('m. skośny dolny głowy', 'm. obliquus capitis inferior', '672',
+      M('m. skośny dolny głowy', 'm. obliquus capitis inferior', '672', tag='pasmo przyśrodkowe',
         o=['wyrostek kolczysty kręgu obrotowego [[axis – processus spinosus]]'],
         i=['wyrostek poprzeczny kręgu szczytowego [[atlas – processus transversus]]'],
         f=['obraca głowę razem z kręgiem szczytowym twarzą w tę samą stronę – jako jedyny bez równoczesnego unoszenia lub opuszczania głowy',
            'razem z mm. prostymi tylnymi: pociąga głowę ku tyłowi']),
-      M('m. prosty boczny głowy', 'm. rectus capitis lateralis', '672–673',
+      M('m. prosty boczny głowy', 'm. rectus capitis lateralis', '672–673', tag='pochodzenia wentralnego',
         o=['wyrostek poprzeczny kręgu szczytowego [[atlas – processus transversus]]'],
         i=['powierzchnia dolna wyrostka szyjnego kości potylicznej [[processus jugularis]]'],
         f=['zgina głowę ku bokowi']),
@@ -569,7 +571,7 @@ BRZUCH = G('Mięśnie brzucha', 'musculi abdominis°', '702–733', [
          'u kobiety pojedyncze włókna dochodzą do więzadła obłego macicy']),
     M('m. prosty brzucha', 'm. rectus abdominis', '710–711',
       layer='przedni',
-      parts=['smugi ścięgniste – najczęściej 3–4 [[intersectiones tendineae]]'],
+      note='smugi ścięgniste – najczęściej 3–4 [[intersectiones tendineae]]; to nie części mięśnia, tylko poprzeczne pasma ścięgniste (s. 710)',
       o=[
         'powierzchnia przednia chrząstek żebrowych V–VII [[cartilago costalis]]',
         'wyrostek mieczykowaty [[processus xiphoideus]]',

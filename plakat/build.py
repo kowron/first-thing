@@ -67,7 +67,7 @@ STAR_M = {'mm. międzyżebrowe zewnętrzne', 'mm. międzyżebrowe wewnętrzne', 
           'm. zębaty tylny górny', 'm. zębaty tylny dolny', 'mm. dźwigacze żeber', 'm. skośny zewnętrzny brzucha',
           'm. skośny wewnętrzny brzucha', 'm. poprzeczny brzucha', 'm. prosty brzucha'}     # ★ tematy wskazane jako ważne na zaliczeniu
 STAR_P = {'tlocznia', 'pochewka', 'powiez_poprzeczna', 'kanal'}
-NAMES_ONLY = ['m. płatowaty głowy', 'm. płatowaty szyi', 'm. kolcowy', 'm. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy',
+NAMES_ONLY = ['m. płatowaty głowy', 'm. płatowaty szyi', 'm. kolcowy', 'm. półkolcowy', 'm. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy',
               'm. wielodzielny', 'mm. skręcające', 'mm. międzykolcowe', 'mm. międzypoprzeczne', 'm. skośny górny głowy',
               'm. prosty tylny mniejszy głowy', 'm. prosty tylny większy głowy', 'm. skośny dolny głowy', 'm. prosty boczny głowy']
 for _m in NAMES_ONLY:
@@ -329,44 +329,44 @@ assert REST >= 0, 'za szeroko'
 # ======================================================================
 PU, TE, CO, BL, PK, RE, GN, AM = 'purple', 'teal', 'coral', 'blue', 'pink', 'red', 'green', 'amber'
 
-g_ram = sub(gnode('Mięśnie kolcowo-ramienne', 'mm. spinohumerales', 'grp', PU, 'do łopatki i k. ramiennej', '650'),
+g_ram = sub(gnode('Mięśnie kolcowo-ramienne', 'mm. spinohumerales', 'grp', PU, 'zdążają do kończyny górnej · 2 warstwy', '650'),
             cards(['m. czworoboczny', 'm. najszerszy grzbietu', 'm. równoległoboczny', 'dźwigacz łopatki'], PU, True),
             'list', col=PU)
-g_zeb = sub(gnode('Mięśnie kolcowo-żebrowe', 'mm. spinocostales', 'grp', PU, 'do żeber · mm. zębate tylne (mm. serrati posteriores)', '658'),
+g_zeb = sub(gnode('Mięśnie kolcowo-żebrowe', 'mm. spinocostales', 'grp', PU, 'trzecia warstwa · mm. zębate tylne (mm. serrati posteriores)', '650, 658'),
             cards(['m. zębaty tylny górny', 'm. zębaty tylny dolny'], PU, True),
             'list', col=PU)
 POW_G = sub(gnode('Powierzchowne mięśnie grzbietu', '', 'world', PU,
-                  'głównie mm. kończyny górnej, które przewędrowały na grzbiet · gałęzie przednie nn. rdzeniowych', '649–650'),
+                  'głównie mm. kończyny górnej, które przewędrowały na grzbiet · gałęzie przednie nn. rdzeniowych · 2 podgrupy, razem 3 warstwy', '649–650'),
             g_ram + g_zeb, 'list', q('2', 'do czego dochodzą?', '650'), width=W['pow'], col=PU, id='pow')
 
 kp = sub(gnode('Mięśnie kolcowo-poprzeczne', 'm. spinotransversalis', 'sg', TE, 'mm. płatowate (mm. splenii) · od wyr. kolczystych do poprzecznych', '659'),
          barecards(['m. płatowaty głowy', 'm. płatowaty szyi'], TE), 'list', col=TE)
 kg_card = card(M('m. krzyżowo-grzbietowy – wspólny początek'), TE, True,
                kids_html=card(M('m. biodrowo-żebrowy'), TE, True) + card(M('m. najdłuższy'), TE, True))
-kg = sub(gnode('Mięsień krzyżowo-grzbietowy', 'm. sacrospinalis', 'sg', TE, 'wspólny pień – wyżej dwa mięśnie; razem prostownik grzbietu', '660–665'),
+kg = sub(gnode('Mięsień krzyżowo-grzbietowy', 'm. sacrospinalis', 'sg', TE, 'układ międzypoprzeczny (razem z mm. międzypoprzecznymi) · wspólny pień – wyżej dwa mięśnie', '659–665'),
          kg_card, 'list', col=TE)
-p_boczne = sub(gnode('pasmo boczne', '', 'band', TE, 'włókna do wyr. poprzecznych i żeber', '659'),
+p_boczne = sub(gnode('pasmo boczne', '', 'band', TE, 'mm. płatowate i m. krzyżowo-grzbietowy · do tego pasma należą też mm. międzypoprzeczne i m. skośny górny głowy', '659, 671'),
                kp + kg, 'list', width=W['band'], col=TE, id='pbocz')
 
-pk = sub(gnode('Mięśnie poprzeczno-kolcowe', 'mm. transversospinales', 'sg', CO, '3 warstwy – coraz krótsze w głąb', '667'),
-         barecards(['m. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy', 'm. wielodzielny', 'mm. skręcające'], CO)
-         + '<div class="pknote">mm. skręcające są krótkie, ale Bochenek „ze względów klasyfikacyjnych” umieszcza je wśród mięśni długich (s. 669)</div>',
+pk = sub(gnode('Mięśnie poprzeczno-kolcowe', 'mm. transversospinales', 'sg', CO, 'układ poprzeczno-kolcowy · 3 warstwy – coraz krótsze w głąb', '659, 667'),
+         card(bare('m. półkolcowy'), CO, True, kids_html=barecards(['m. półkolcowy klatki piersiowej i szyi', 'm. półkolcowy głowy'], CO)) + barecards(['m. wielodzielny', 'mm. skręcające'], CO)
+         + '<div class="pknote">mm. skręcające są krótkie, ale Bochenek „ze względów klasyfikacyjnych” umieszcza je wśród mięśni długich (s. 669); na s. 659 wymienia je wśród krótkich</div>',
          'list', col=CO)
-kol = sub(gnode('Mięsień kolcowy', 'm. spinalis', 'sg', CO, 'po wyrostkach kolczystych', '667'),
+kol = sub(gnode('Mięsień kolcowy', 'm. spinalis', 'sg', CO, 'część główna układu międzykolcowego (razem z mm. międzykolcowymi)', '659, 667'),
           barecards(['m. kolcowy'], CO), 'list', col=CO)
-p_przysr = sub(gnode('pasmo przyśrodkowe', '', 'band', CO, 'włókna do wyr. kolczystych', '659'),
+p_przysr = sub(gnode('pasmo przyśrodkowe', '', 'band', CO, 'układ międzykolcowy i poprzeczno-kolcowy · należą tu też mm. międzykolcowe i 3 mm. podpotyliczne', '659, 671'),
                kol + pk, 'list', width=W['band'], col=CO, id='pprzy')
 
-DLUGIE = sub(gnode('Długie mięśnie grzbietu', '', 'grp', TE, 'włókna biegną przez wiele kręgów', '659'),
-             p_boczne + p_przysr, 'row', q('4', 'do których wyrostków biegną włókna?', '659'), width=W['dlugie'], col=TE, id='dlugie')
-KROTKIE = sub(gnode('Krótkie mięśnie grzbietu', '', 'grp', BL, 'między dwoma sąsiednimi kręgami', '669'),
+DLUGIE = sub(gnode('Długie mięśnie grzbietu', '', 'grp', TE, '„pięć mięśni długich” i mm. skręcające (s. 669) · każdy przeskakuje wiele kręgów', '659, 669'),
+             p_boczne + p_przysr, 'row', q('4', 'do którego pasma należą?', '659'), width=W['dlugie'], col=TE, id='dlugie')
+KROTKIE = sub(gnode('Krótkie mięśnie grzbietu', '', 'grp', BL, 'między dwoma sąsiednimi kręgami · właściwe (gałęzie tylne) i pochodzenia wentralnego (gałęzie przednie) – znaczniki przy mięśniach', '669'),
               barecards(['mm. międzykolcowe', 'mm. międzypoprzeczne'], BL) + cards(['mm. dźwigacze żeber'], BL), 'list', width=W['krot'], col=BL, id='krot')
-PODPOT = sub(gnode('Mięśnie podpotyliczne', 'mm. suboccipitales', 'grp', PK, 'potylica ↔ dwa górne kręgi · 5 mięśni', '671'),
+PODPOT = sub(gnode('Mięśnie podpotyliczne', 'mm. suboccipitales', 'grp', PK, 'potylica ↔ dwa górne kręgi · 5 mięśni · pasmo przy każdym mięśniu', '671'),
              barecards(['m. skośny górny głowy', 'm. prosty tylny mniejszy głowy', 'm. prosty tylny większy głowy',
                         'm. skośny dolny głowy', 'm. prosty boczny głowy'], PK), 'list', width=W['podp'], col=PK, id='podp')
 GLEB_G = sub(gnode('Głębokie mięśnie grzbietu', 'erector spinae', 'world', TE,
-                   'przeważnie, choć nie wyłącznie, właściwe mięśnie grzbietu · gałęzie tylne nn. rdzeniowych', '650, 658'),
-             DLUGIE + KROTKIE + PODPOT, 'row', q('3', 'jak długie są włókna?', '659'), width=W['gleb'], col=TE, id='gleb')
+                   'przeważnie, choć nie wyłącznie, właściwe mięśnie grzbietu · gałęzie tylne nn. rdzeniowych · pasmo boczne i przyśrodkowe obejmują wszystkie 3 grupy', '658–659'),
+             DLUGIE + KROTKIE + PODPOT, 'row', q('3', 'długie, krótkie czy podpotyliczne? (podział opisowy)', '659'), width=W['gleb'], col=TE, id='gleb')
 
 CH_GRZBIET = sub(gnode('Mięśnie grzbietu', 'musculi dorsi°', 'chap', 'c1', '', '649–677'),
                  POW_G + GLEB_G, 'row', q('1', 'skąd pochodzą – jaki mają nerw?', '649–650'), width=W['grz'], col='c1', id='grz')
@@ -394,8 +394,10 @@ PRZ_WARN = ['Na s. 693 Bochenek pisze, że w odnodze prawej biegnie ż. nieparzy
 k_pow = sub(gnode('Powierzchowne mięśnie klatki piersiowej', '', 'grp', PU, 'przyczepiają się do kośćca barku i ramienia', '677–684'),
             cards(['m. piersiowy większy', 'm. piersiowy mniejszy', 'm. podobojczykowy', 'm. zębaty przedni'], PU),
             'list', width=W['kpow'], col=PU, id='kpow')
-k_gleb = sub(gnode('Głębokie albo właściwe mięśnie klatki piersiowej', '', 'grp', RE, 'właściwe mięśnie ściany klatki – ruchy oddechowe', '684–689'),
-             cards(['mm. międzyżebrowe zewnętrzne', 'mm. międzyżebrowe wewnętrzne', 'mm. podżebrowe', 'm. poprzeczny klatki piersiowej'], RE),
+k_gleb = sub(gnode('Głębokie albo właściwe mięśnie klatki piersiowej', '', 'grp', RE, 'właściwe mięśnie ściany klatki – ruchy oddechowe · mm. międzyżebrowe, mm. podżebrowe, m. poprzeczny klatki piersiowej', '684–689'),
+             sub(gnode('Mięśnie międzyżebrowe', 'mm. intercostales', 'sg', RE, 'dwie zasadnicze warstwy: zewnętrzne i wewnętrzne', '685'),
+                 cards(['mm. międzyżebrowe zewnętrzne', 'mm. międzyżebrowe wewnętrzne'], RE), 'list', col=RE)
+             + cards(['mm. podżebrowe', 'm. poprzeczny klatki piersiowej'], RE),
              'list', width=W['kgleb'], col=RE, id='kgleb')
 PRZ_POINTER = os.environ.get('PRZ_POINTER', 'przyczepy szczegółowo, kopuły, otwory, trójkąty i mechanika oddychania – na stronie „Klatka i oddychanie”')
 def przepona_short(col):
@@ -471,15 +473,15 @@ MECH = f'''<div class="panel green">
 
 KWRAP = f'<div class="kwrap" id="kwrap" style="width:{W["kwrap"]}mm"><div class="krow">{k_gleb}{k_prz}</div></div>'
 CH_KLATKA = sub(gnode('Mięśnie klatki piersiowej', 'musculi thoracis°', 'chap', 'c2', '', '677–702'),
-                k_pow + KWRAP, 'row', q('1', 'z czym się łączą?', '677'), width=W['kl'], col='c2', id='kl')
+                k_pow + KWRAP, 'row', q('1', 'który z trzech zespołów?', '677'), width=W['kl'], col='c2', id='kl')
 
 # ======================================================================
 # III. BRZUCH
 # ======================================================================
-b_bocz = sub(gnode('boczne', '', 'sg', AM, '3 warstwy: skośny zewn., skośny wewn., poprzeczny', '702, 704'),
+b_bocz = sub(gnode('mięśnie boczne', '', 'sg', AM, 'trzy boczne mięśnie w 3 warstwach · dźwigacz jądra – z włókien m. skośnego wewn. i poprzecznego', '704, 707'),
              cards(['m. skośny zewnętrzny brzucha', 'm. skośny wewnętrzny brzucha', 'm. poprzeczny brzucha', 'dźwigacz jądra'], AM),
              'list', width=W['bbocz'], col=AM, id='bbocz')
-b_przed = sub(gnode('przednie', '', 'sg', AM, 'układ mięśni prostych', '704'),
+b_przed = sub(gnode('mięśnie przednie', '', 'sg', AM, 'układ mięśni prostych – tu ściana nie dzieli się na warstwy', '704'),
               cards(['m. prosty brzucha', 'm. piramidowy'], AM), 'list', width=W['bprzed'], col=AM, id='bprzed')
 b_bp = sub(gnode('Boczne i przednie mięśnie brzucha', '', 'grp', AM, 'z boku 3 warstwy, z przodu pas mięśni prostych', '702–712'),
            b_bocz + b_przed, 'row', q('2', 'z boku czy z przodu?', '702'), width=W['bbp'], col=AM, id='bbp')
