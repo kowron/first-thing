@@ -30,3 +30,6 @@ Cel: każdy agent rozdziału dostaje małą paczkę czystego tekstu tylko ze swo
 
 ## Wynik i stan
 Stan po każdym źródle dopisuj do `/home/user/first-thing/podrecznik/stan/F0A.md`. Raport ≤ 12 linijek: co zrobione, jakość OCR, braki. Tekstów źródłowych nie commituj (prawa autorskie) – zostają w scratchpadzie.
+
+## Zakres tej tury (pierwsza: rozdziały G, Z02–Z05)
+Zrób TYLKO paczki z02, z03, z04, z05 – wszystkie ich źródła mają już tekst (Drewa OCR txt, Jóźwiak, Ostrowska, Alster–Korwek), więc OCR i instalacja tesseracta NIE są teraz potrzebne. Zadanie 1 (OCR Drewy r. 2, 10, 12, 13, 16, Jordego, Twymana) i paczki z06–z11 zostają na następną turę.

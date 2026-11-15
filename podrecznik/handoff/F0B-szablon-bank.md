@@ -4,6 +4,7 @@ Nie piszesz treści rozdziałów.
 ## A. Szablon
 Baza: działający system składu w `/home/user/first-thing/kolokwium6/` (`build.mjs`, `lib/`, `css/style.css`, `fonts/`, `KOMPONENTY.md`; natywny druk Chromium przez Playwright – nic nie instaluj). Skopiuj go do `/home/user/first-thing/podrecznik/` i przerób:
 - A4, **tekst rozdziału w dwóch kolumnach** (bez kolumny marginesowej); otwarcie rozdziału, ryciny, szerokie tabele i „W 60 sekund” na obie kolumny (`column-span: all`); mała rycina/tabela może stać w jednej kolumnie (`fig narrow`).
+- **Kolor przewodni: zielony** (decyzja zleceniodawcy) zamiast granatu i turkusu: okładka ciemnozielona, akcenty (kreski, numery rozdziałów, h3, punktory, nagłówki tabel, plakietki) w odcieniach zieleni; dobierz spójną, czytelną paletę i zamień zmienne kolorów w CSS oraz klasy kolorów SVG tak, by ryciny z banku nie wymagały przerabiania (ryciny z gotowych PDF-ów zostają w swoich kolorach).
 - Pismo mniejsze niż w kolokwium 6 (cel: ok. 5000 znaków tekstu na stronę), czytelne.
 - „Pojęcie” jako mała ramka w kolumnie; ramka „Zapamiętaj”; „Uwaga do źródła”; bez quizów, klucza, notatek „liceum”, „Poza Drewą”.
 - Rozdziały: `rozdzialy/zNN-*.html`, `data-num` = numer zajęć; żywa pagina, spis treści, numeracja rycin i odsyłacze jak dotąd; tryb `--only NN --png`.
@@ -23,3 +24,6 @@ Przy okazji zapisz tekst trzech opracowań jako `material/k4.txt`, `k5.txt`, `ge
 
 ## Stan i raport
 Stan po każdym kroku: `stan/F0B.md`. Raport ≤ 12 linijek. Nie commituj.
+
+## Zakres tej tury
+Bank rycin teraz tylko z trzech PDF-ów (`k4-`, `k5-`, `g-`); `k6-` w następnej turze. Rozdziały pierwszej tury: G, Z02, Z03, Z04, Z05.
