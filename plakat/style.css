@@ -114,6 +114,8 @@ svg.wires { position: absolute; left: 0; top: 0; z-index: 0; overflow: visible; 
 .note { color: #4f565e; font-size: 7pt; margin-bottom: .6mm; }
 .snote { color: #4f565e; font-weight: 400; }
 .pknote { color: #4f565e; font-size: 7pt; font-style: italic; margin: .8mm 0 0; }
+.desc { font-size: 7.6pt; line-height: 1.38; color: #2b3138; margin: .4mm 0 1mm; }
+.sdesc { font-size: 7pt; margin: .2mm 0 .6mm; }
 .parts { margin: .4mm 0 .6mm; }
 .parts ul { list-style: none; margin: 0; padding: 0; }
 .parts li { position: relative; padding-left: 2.2mm; }

@@ -34,6 +34,12 @@ def M(pl):
                 return it
     raise KeyError(pl)
 
+# krótkie opisy mięśni bez kart szczegółowych (opisy_miesni.json; wg Bochenka)
+import json, os
+OPISY = {}
+if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'opisy_miesni.json')):
+    OPISY = {k: v['opis'] + (' (' + v['s'] + ')' if v.get('s') else '') for k, v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'opisy_miesni.json'))).items()}
+
 def G(title):
     for ch in ALL:
         for it in walk(ch):
@@ -206,6 +212,8 @@ def card(m, col, wide=False, extra_rows=None, extra_warn=None, kids_html=''):
     h.append(f'<div class="ch"><span class="nm">{"<span class=star>★</span> " if m["pl"] in STAR_M else ""}{m["pl"]}</span> {lat(m["lat"])}{tags(m)}</div>')
     h.append('<div class="bd">')
     h.append(f'<div class="pgl">Bochenek s. {m["pg"]}</div>')
+    if OPISY.get(m['pl']):
+        h.append(f'<div class="desc">{mk(OPISY[m["pl"]])}</div>')
     if m['pl'] in EXPL:
         h.append(expl_html(m['pl'], 300))
     if m.get('note'):
@@ -214,7 +222,7 @@ def card(m, col, wide=False, extra_rows=None, extra_warn=None, kids_html=''):
         h.append('<div class="parts"><span class="k">CZĘŚCI</span><ul>' + ''.join(f'<li>{mk(p)}</li>' for p in m['parts']) + '</ul></div>')
     h.append(att(m, wide))
     for s in m.get('sub', []):
-        h.append(f'<div class="sm"><div class="sh"><span class="snm">{s["pl"]}</span> {lat(s["lat"], "slt")}{tags(s)}{(' <span class="snote">– ' + mk(s['note']) + '</span>') if s.get('note') else ''}</div>{att(s, wide)}</div>')
+        h.append(f'<div class="sm"><div class="sh"><span class="snm">{s["pl"]}</span> {lat(s["lat"], "slt")}{tags(s)}{(' <span class="snote">– ' + mk(s['note']) + '</span>') if s.get('note') else ''}</div>{('<div class="desc sdesc">' + mk(OPISY[s['pl']]) + '</div>') if OPISY.get(s['pl']) else ''}{att(s, wide)}</div>')
     for (lab, items) in (extra_rows or []):
         h.append(f'<div class="xrow"><div class="k">{lab}</div><ul>' + ''.join(f'<li>{mk(x)}</li>' for x in items) + '</ul></div>')
     if m.get('f'):
