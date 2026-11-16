@@ -19,3 +19,9 @@
 - Rozbieżność planu: HGVS (s. 55) nie ma w kolumnie „Zostaje” ani „Tniemy” → 2–3 zdania (w razie wątpliwości zostaje).
 - „Uwaga do źródła”: Western/ELISA (slajd: „Western do płynnych, ELISA do stałych”) – 1 ramka; ew. 2.: skala jakości 0–1 vs Phred.
 - Następny krok: 2+3 – tekst rozdz. rozdzialy/z01-genomika.html z rycinami z banku.
+
+## Krok 2+3 – tekst i ryciny (zrobione, przed buildem)
+- Plik: rozdzialy/z01-genomika.html – 7 h2 wg handoffu, linie źródła „prezentacja LMZ 3, slajdy …”, 13 Pojęć, 6 Zapamiętaj, 1 Uwaga do źródła (Western/ELISA), W60 (6 pkt).
+- Ryciny z banku (8): g-ryc-02, 06, 07, 09, 11, 16, 17, 21. Nowych 0. Odsyłacze: chapref #c05 (PCR), #c06 (kapilara, mikromacierze).
+- Tabele: rodzaje wariantów, HTT, chromatogram, strategie, macierze, Q, położenie→skutek, SIFT vs PolyPhen, bazy, gwiazdki ClinVar, 5 klas.
+- Następny krok: 4 – build `node build.mjs --only 01 --png`, limit 14 s.
