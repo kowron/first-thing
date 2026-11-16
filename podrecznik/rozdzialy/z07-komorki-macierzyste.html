@@ -1,0 +1,491 @@
+<section class="chapter" data-num="07" data-title="Komórki macierzyste, różnicowanie i regeneracja"
+  data-short="Komórki macierzyste i regeneracja" data-kicker="potencjał · plastyczność · różnicowanie · regeneracja kończyny">
+
+  <p class="lead">Komórki macierzyste odnawiają własną populację i dają początek komórkom wyspecjalizowanym. Rozdział opisuje ich rodzaje, plastyczność, podziały i starzenie, potem różnicowanie komórek i jego zaburzenia, przerost i rozrost tkanek, a na końcu regenerację kończyny u płazów.</p>
+
+  <!-- ===================== 1. DEFINICJA I POTENCJAŁ ===================== -->
+  <h2 id="c07-definicja">Czym są komórki macierzyste i jak się je dzieli</h2>
+  <aside class="note pojecie" data-term="Komórka macierzysta"><p>komórka zdolna do nieskończonej liczby podziałów (samoodnowa) i do wytwarzania co najmniej jednego rodzaju dojrzałych, zróżnicowanych komórek (różnicowanie).</p></aside>
+  <p><b>Komórki macierzyste</b> to niezróżnicowane komórki, które bytują w określonym mikrośrodowisku, zwanym <b>niszą</b>, i potrafią wytwarzać dojrzałe, zróżnicowane komórki potomne. Definiują je dwie cechy:</p>
+  <ul>
+    <li><b>samoodnowa</b> – zdolność do nieskończonej liczby podziałów;</li>
+    <li><b>różnicowanie</b> – zdolność do wytwarzania przynajmniej jednego rodzaju dojrzałych, zróżnicowanych komórek.</li>
+  </ul>
+  <p>Obie cechy zapewniają podziały symetryczne i niesymetryczne (<a class="pageref" href="#c07-cykl"></a>). Poza nimi różne typy komórek macierzystych dzieli wiele różnic. Podstawowa dotyczy tego, jakie komórki mogą powstać z danej komórki macierzystej, czyli jej <b>potencjału</b> (<a class="figref" href="#c07-fig-potencjal"></a>):</p>
+  <ul>
+    <li><b>totipotencjalne</b> (omnipotencjalne) – dają komórki wszystkich trzech listków zarodkowych, czyli wszystkie komórki dorosłego organizmu, a także komórki tkanek pozazarodkowych (łożyska). Takie są zygota i komórki wczesnego zarodka – do stadium 8 komórek, przed kompakcją;</li>
+    <li><b>pluripotencjalne</b> – dają komórki wszystkich trzech listków zarodkowych, ale nie tkanek pozazarodkowych, np. komórki węzła zarodkowego blastocysty (embrionalne komórki macierzyste) i indukowane komórki pluripotencjalne;</li>
+    <li><b>multipotencjalne</b> – dają różne typy komórek, ale nie wszystkich trzech listków i nie tkanki pozazarodkowe. Należą tu prawie wszystkie komórki macierzyste dorosłego organizmu, np. krwiotwórcze komórki szpiku, komórki macierzyste krypt jelitowych, warstwy podstawnej naskórka, rąbka rogówki i tkanki nerwowej;</li>
+    <li><b>unipotencjalne</b> – różnicują się tylko w jeden określony typ komórek; tak określa się komórki progenitorowe.</li>
+  </ul>
+  <figure class="fig" id="c07-fig-potencjal" data-title="Potencjał komórek macierzystych">
+    <svg viewBox="0 0 640 242" role="img" aria-label="Cztery stopnie potencjału: totipotencjalna zygota, pluripotencjalne komórki węzła zarodkowego, multipotencjalna HSC i unipotencjalna komórka progenitorowa oraz komórki, które z nich powstają">
+      <!-- kierunek -->
+      <text x="122" y="14" class="t-xs muted end">szerszy potencjał</text>
+      <path d="M130,10 H506" class="arrow"/>
+      <text x="514" y="14" class="t-xs muted">węższy potencjał</text>
+      <!-- stopnie -->
+      <g class="f-teal-bg">
+        <rect x="4" y="24" width="152" height="216" rx="6"/>
+        <rect x="162" y="38" width="152" height="202" rx="6"/>
+        <rect x="320" y="52" width="152" height="188" rx="6"/>
+        <rect x="478" y="66" width="152" height="174" rx="6"/>
+      </g>
+      <g class="t-m sb mid f-navy">
+        <text x="80" y="42">Totipotencjalne</text>
+        <text x="238" y="56">Pluripotencjalne</text>
+        <text x="396" y="70">Multipotencjalne</text>
+        <text x="554" y="84">Unipotencjalne</text>
+      </g>
+      <!-- 1 zygota -->
+      <circle cx="80" cy="78" r="24" class="f-none s-teal sw1"/>
+      <circle cx="80" cy="78" r="19" class="f-white s-teal sw15"/>
+      <circle cx="80" cy="78" r="6" class="f-navy"/>
+      <!-- 2 blastocysta -->
+      <circle cx="238" cy="94" r="24" class="f-white s-teal sw15"/>
+      <g class="f-teal">
+        <circle cx="229" cy="81" r="5"/><circle cx="238" cy="78" r="5"/><circle cx="247" cy="81" r="5"/>
+        <circle cx="233" cy="89" r="5"/><circle cx="243" cy="89" r="5"/>
+      </g>
+      <!-- 3 HSC -->
+      <circle cx="396" cy="104" r="15" class="f-white s-teal sw15"/>
+      <circle cx="396" cy="104" r="6" class="f-navy"/>
+      <!-- 4 progenitorowa -->
+      <circle cx="554" cy="114" r="13" class="f-white s-teal sw15"/>
+      <circle cx="554" cy="114" r="5" class="f-navy"/>
+      <!-- przykłady -->
+      <g class="t-xs mid">
+        <text x="80" y="116">zygota i zarodek</text><text x="80" y="128">do stadium 8 komórek</text>
+        <text x="238" y="132">węzeł zarodkowy</text><text x="238" y="144">blastocysty (ESC); iPSC</text>
+        <text x="396" y="134">HSC</text><text x="396" y="146">szpiku kostnego</text>
+        <text x="554" y="142">komórka</text><text x="554" y="154">progenitorowa</text>
+      </g>
+      <!-- strzałki -->
+      <path d="M80,134 V170" class="arrow"/>
+      <path d="M238,150 V170" class="arrow"/>
+      <path d="M396,152 V170" class="arrow"/>
+      <path d="M554,158 V174" class="arrow"/>
+      <!-- co powstaje: 1 -->
+      <circle cx="44" cy="190" r="8" class="f-blue-bg s-blue sw1"/>
+      <circle cx="64" cy="190" r="8" class="f-ochre-bg s-ochre sw1"/>
+      <circle cx="84" cy="190" r="8" class="f-violet-bg s-violet sw1"/>
+      <ellipse cx="114" cy="190" rx="14" ry="8" class="f-red-bg s-red sw1"/>
+      <!-- 2 -->
+      <circle cx="218" cy="190" r="8" class="f-blue-bg s-blue sw1"/>
+      <circle cx="238" cy="190" r="8" class="f-ochre-bg s-ochre sw1"/>
+      <circle cx="258" cy="190" r="8" class="f-violet-bg s-violet sw1"/>
+      <!-- 3 krwinki -->
+      <ellipse cx="372" cy="190" rx="11" ry="7" class="f-red-bg s-red sw1"/>
+      <ellipse cx="372" cy="190" rx="4.5" ry="2.5" class="f-white"/>
+      <circle cx="398" cy="190" r="9" class="f-white s-violet sw1"/>
+      <g class="f-violet"><circle cx="394" cy="188" r="2.6"/><circle cx="398" cy="193" r="2.6"/><circle cx="402" cy="187" r="2.6"/></g>
+      <g class="f-ochre"><ellipse cx="419" cy="186" rx="3" ry="2"/><ellipse cx="425" cy="193" rx="3" ry="2"/><ellipse cx="417" cy="195" rx="3" ry="2"/></g>
+      <!-- 4 jeden typ -->
+      <g class="f-blue-bg s-blue sw1">
+        <circle cx="532" cy="192" r="8"/><circle cx="554" cy="192" r="8"/><circle cx="576" cy="192" r="8"/>
+      </g>
+      <g class="f-navy"><circle cx="532" cy="192" r="2.5"/><circle cx="554" cy="192" r="2.5"/><circle cx="576" cy="192" r="2.5"/></g>
+      <!-- podpisy wyników -->
+      <g class="t-xs mid">
+        <text x="80" y="216">3 listki zarodkowe</text><text x="80" y="228">+ łożysko</text>
+        <text x="238" y="216">3 listki zarodkowe</text><text x="238" y="228">bez łożyska</text>
+        <text x="396" y="216">leukocyty, erytrocyty,</text><text x="396" y="228">płytki krwi</text>
+        <text x="554" y="216">jeden typ</text><text x="554" y="228">komórek</text>
+      </g>
+    </svg>
+    <figcaption>Im wcześniejsze stadium rozwoju, tym szerszy potencjał: zygota daje także łożysko, komórki węzła zarodkowego – wszystkie trzy listki zarodkowe, HSC – komórki krwi, a komórka progenitorowa – jeden typ komórek.</figcaption>
+  </figure>
+  <p>Poza komórkami macierzystymi wyróżnia się wczesne formy rozwojowe komórek. <b>Komórka progenitorowa</b> jest wstępnie zróżnicowana i powstaje bezpośrednio z komórki macierzystej, a <b>komórka prekursorowa</b> bezpośrednio poprzedza powstanie w pełni zróżnicowanej komórki. Granica między nimi jest nieostra.</p>
+  <div class="box zapamietaj"><p>Komórkę macierzystą definiują samoodnowa i zdolność różnicowania. Potencjał maleje od totipotencjalnej zygoty (daje też łożysko) przez komórki pluripotencjalne (trzy listki zarodkowe) i multipotencjalne (kilka typów komórek) do unipotencjalnych (jeden typ).</p></div>
+  <p class="src">Źródło: Jóźwiak s. 97–98 · Drewa s. 692</p>
+
+  <!-- ===================== 2. CZTERY TYPY ===================== -->
+  <h2 id="c07-typy">Cztery typy komórek macierzystych</h2>
+  <h3>Embrionalne komórki macierzyste (ESC)</h3>
+  <p><b>Embrionalne komórki macierzyste</b> (ESC, ang. <i>embryonic stem cells</i>) pobiera się z <b>węzła zarodkowego blastocysty</b>. Blastocysta tworzy się około 5. dnia po zapłodnieniu komórki jajowej; widać w niej węzeł zarodkowy, jamę blastocysty i trofoblast. Kilka dni później zagnieżdża się w endometrium. ESC są pluripotencjalne – mogą wytworzyć wszystkie komórki organizmu poza łożyskiem. Ludzkie ESC uzyskuje się przede wszystkim z niewykorzystanych, nadmiarowych zarodków z zapłodnienia in vitro. Pluripotencję kontrolują w nich trzy czynniki transkrypcyjne: <b>OCT4/3, SOX-2 i Nanog</b>.</p>
+  <p>Komórki muszą spełniać trzy kryteria ESC: pluripotencję (odtwarzanie komórek wszystkich trzech listków zarodkowych), nieśmiertelność w hodowli z zachowaniem braku zróżnicowania przez cały czas hodowli oraz prawidłowy kariotyp. Badania nad ESC postępują powoli, ponieważ:</p>
+  <ul>
+    <li>trudno utrzymać je w stanie niezróżnicowanym;</li>
+    <li>budzą wątpliwości etyczne – uzyskanie linii ESC wymaga zniszczenia blastocysty;</li>
+    <li>wszczepione myszy tworzą <b>potworniaka</b> (<i>teratoma</i>) z komórkami wszystkich trzech listków. Dlatego pacjentom można podawać tylko komórki zróżnicowane uzyskane z ESC, a nie same ESC.</li>
+  </ul>
+
+  <h3>Tkankowe komórki macierzyste</h3>
+  <p><b>Tkankowe komórki macierzyste</b> (somatyczne komórki macierzyste, komórki macierzyste dorosłych) występują w dorosłym organizmie i są bardziej zróżnicowane niż embrionalne. Wytwarzają różne typy komórek potrzebne danemu narządowi, ale nie innym narządom – są więc multipotencjalne. Przykłady:</p>
+  <ul>
+    <li><b>hematopoetyczne komórki macierzyste</b> (HSC, ang. <i>hematopoietic stem cells</i>) szpiku kostnego – wytwarzają leukocyty, erytrocyty i płytki, ale nie komórki innych tkanek, np. nerwowej;</li>
+    <li>komórki macierzyste <b>krypt jelitowych</b> – odnawiają nabłonek jelita, który intensywnie transportuje substancje ze światła przewodu pokarmowego do krwi i dlatego co kilka dni jest w całości wymieniany.</li>
+  </ul>
+  <p>HSC od dawna wykorzystuje się w medycynie jako <b>przeszczep hematopoetycznych komórek macierzystych</b> w trzech wariantach: przeszczep szpiku kostnego (BMT), obwodowych komórek macierzystych krwi (PBSCT) i pępowinowych komórek macierzystych (UCSCT). Głównym wskazaniem są białaczki (ok. 70% przypadków) – ostra i przewlekła białaczka szpikowa oraz ostra białaczka limfoblastyczna.</p>
+
+  <h3>Mezenchymalne komórki macierzyste (MSC)</h3>
+  <p><b>Mezenchymalne komórki macierzyste</b> (MSC, ang. <i>mesenchymal stem cells</i>) występują w zrębie narządów, czyli w tkance łącznej stanowiącej ich podporę – stąd nazwa <b>zrębowe komórki macierzyste</b>. Po raz pierwszy wyizolowano je ze szpiku kostnego; potrafiły odtwarzać komórki chrząstki, kości i tkanki tłuszczowej. Obecnie uzyskuje się je głównie ze szpiku, tkanki tłuszczowej, pępowiny, krwi pępowinowej, łożyska i płynu owodniowego. Minimalne kryteria MSC to:</p>
+  <ul>
+    <li>przywieranie do butelki hodowlanej;</li>
+    <li>określony zestaw markerów powierzchniowych, np. obecność CD73 i CD105 przy braku CD14, CD34, CD45 i HLA-DR;</li>
+    <li>różnicowanie in vitro w adipocyty, chondrocyty i osteoblasty.</li>
+  </ul>
+  <p>Badania nad MSC są trudne, a wiedza o nich mało uporządkowana – istnieją różne typy MSC, różniące się pochodzeniem i właściwościami. MSC z tkanek zarodkowych rosną silniej i mają większy potencjał niż MSC dorosłych; nazywa się je dziewiczymi (ang. <i>naive stem cells</i>) lub wczesnymi komórkami macierzystymi. Są też rzadziej rozpoznawane i odrzucane przez układ odpornościowy biorcy – szczególnie MSC z pępowiny.</p>
+  <p>Szpik kostny jest dogodnym źródłem zarówno HSC, jak i MSC; obie populacje występują razem także w krwi pępowinowej i łożysku.</p>
+  <table class="tbl full">
+    <thead><tr><th style="width:24%"></th><th style="width:36%">HSC</th><th>MSC</th></tr></thead>
+    <tbody>
+      <tr><td>Potencjał</td><td>multipotencjalne</td><td>multipotencjalne</td></tr>
+      <tr><td>Wytwarzają</td><td>leukocyty, erytrocyty, płytki</td><td>adipocyty, chondrocyty, osteoblasty</td></tr>
+      <tr><td>Zastosowanie</td><td>od kilkudziesięciu lat w klinice: choroby rozrostowe krwi, autoimmunizacyjne, genetyczne</td><td>terapie doświadczalne; być może w cukrzycy, udarze, nowotworach</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Indukowane pluripotencjalne komórki macierzyste (iPSC)</h3>
+  <p><b>iPSC</b> (ang. <i>induced pluripotent stem cells</i>) wytwarza się sztucznie, w laboratorium, przez odróżnicowanie komórek pobranych z narządu człowieka do stadium komórek embrionalnych. Mają wiele cech wspólnych z ESC – przede wszystkim są pluripotencjalne. Klasycznie do wywołania pluripotencji trzeba zwiększyć ekspresję czterech czynników transkrypcyjnych: <b>OCT4/3, SOX2, KLF4 i c-MYC</b>. Kolejne kroki:</p>
+  <ol>
+    <li>Pobranie tkanki od pacjenta.</li>
+    <li>Namnożenie komórek w butelce hodowlanej.</li>
+    <li>Transfekcja wirusem, który wprowadza nadekspresję czterech czynników transkrypcyjnych.</li>
+    <li>Odróżnicowanie komórek i przywrócenie pluripotencji podobnej do pluripotencji ESC.</li>
+    <li>Różnicowanie w wybrany typ tkanki (np. neurony, komórki krwi, nabłonki) pod wpływem odpowiednich czynników wzrostu.</li>
+  </ol>
+  <p>Zaletą iPSC jest to, że są specyficzne dla danego pacjenta i mogą odtwarzać komórki jego uszkodzonego narządu. Można je też zmodyfikować genetycznie, np. wyleczyć chorobę przez wprowadzenie prawidłowej kopii genu. Pozwalają przy tym uzyskać komórki pluripotencjalne bez użycia ESC, które budzą wątpliwości etyczne.</p>
+  <p>Pochodzenie komórek decyduje o ich immunogenności. W transplantologii komórki i tkanki dzieli się na <b>autogeniczne</b> (od tego samego pacjenta), <b>syngeniczne</b> (od osoby identycznej genetycznie, np. bliźniaka jednojajowego), <b>allogeniczne</b> (od innego przedstawiciela tego samego gatunku) i <b>ksenogeniczne</b> (od innego gatunku). Komórki allogeniczne aktywują układ odpornościowy biorcy i są powoli odrzucane, dlatego biorca do końca życia przyjmuje leczenie immunosupresyjne. ESC z cudzych zarodków są dla biorcy komórkami allogenicznymi, a iPSC z komórek pacjenta – autogenicznymi.</p>
+  <div class="box zapamietaj"><p>ESC (z węzła zarodkowego blastocysty) i iPSC (z odróżnicowanych komórek pacjenta) są pluripotencjalne, a tkankowe komórki macierzyste, np. HSC, oraz MSC – multipotencjalne. Pluripotencję ESC kontrolują OCT4/3, SOX-2 i Nanog; iPSC uzyskuje się, zwiększając ekspresję OCT4/3, SOX2, KLF4 i c-MYC.</p></div>
+  <p class="src">Źródło: Jóźwiak s. 98–101</p>
+
+  <!-- ===================== 3. PLASTYCZNOŚĆ ===================== -->
+  <h2 id="c07-plastycznosc">Plastyczność komórek macierzystych</h2>
+  <aside class="note pojecie" data-term="Plastyczność"><p>zdolność komórki macierzystej do przybierania form różnych typów komórek, także pochodzących z innego listka zarodkowego.</p></aside>
+  <p>Najważniejszą, a zarazem najbardziej kontrowersyjną właściwością komórek macierzystych jest <b>plastyczność</b>. Pojęcie to wzięło się z obserwacji, że komórki macierzyste dorosłych nie są ściśle przypisane do narządów: potrafią różnicować się szerzej, niż wymaga odnowa ich własnej tkanki.</p>
+  <p>Plastyczność próbuje się tłumaczyć czterema zjawiskami (tabela poniżej), ale dla żadnego z nich nie ma jak dotąd dowodów, że ją wyjaśnia. Utrudnia to brak dokładnych markerów typu i stopnia zróżnicowania komórki macierzystej – może się więc zdarzyć, że porównuje się nie te same, lecz zupełnie inne komórki lub linie komórkowe.</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:20%">Wyjaśnienie</th><th style="width:30%">Na czym polega</th><th>Przykłady i zastrzeżenia</th></tr></thead>
+    <tbody>
+      <tr><td>Transdyferencjacja (przeróżnicowanie)</td><td>zróżnicowana komórka zmienia fenotyp na inny; unieśmiertelnianie komórek in vitro przypomina odróżnicowanie, czyli pierwszy etap transdyferencjacji</td><td>regeneracja tkanek salamandry zaczyna się od odróżnicowania komórek w miejscu uszkodzenia; mysie fibroblasty 3T3 przeprogramowane samym ekstraktem z hodowli ESC (ekspresja Oct-4) użyto do regeneracji niedokrwionego mięśnia sercowego. Procesów biochemicznych nie opisano, a wyniki nie mają szerszego potwierdzenia</td></tr>
+      <tr><td>Fuzja komórek</td><td>zjawisko naturalne, które można też wywołać in vitro; fuzja zmienia fenotyp komórki macierzystej</td><td>przy regeneracji wątroby przez HSC wątrobę odtwarzały komórki powstałe z fuzji, a w hepatocyty kierowało je środowisko. Fuzja in vivo jest jednak rzadka i nierówna w tkankach, a komórki po fuzji są mniej stabilne, żyją krócej lub ulegają transformacji nowotworowej; wyniki są sprzeczne</td></tr>
+      <tr><td>Komórki pluripotencjalne w dorosłym organizmie</td><td>w tkankach dorosłych zachowały się komórki pluripotencjalne</td><td>wbrew założeniu, że wskutek podziałów i starzenia komórki stopniowo tracą potencjał: komórki pluripotencjalne są w krwi pępowinowej przez całe życie wewnątrzmaciczne, komórki o dużej zdolności proliferacji i różnicowania izolowano nawet od osób po 70. r.ż., a komórki mezenchymalne szpiku, krwi obwodowej i skóry miały cechy multi- i pluripotencjalnych</td></tr>
+      <tr><td>Wędrówka komórek macierzystych</td><td>pluripotencjalne komórki krążą po organizmie i docierają do miejsc uszkodzenia</td><td>np. do niedokrwionego mięśnia sercowego lub uszkodzonej wątroby; doświadczenia na zwierzętach dają dowody pośrednie. Koncepcja wyrosła z obserwacji wędrówki komórek multipotencjalnych między matką a płodem i mikrochimeryzmu (przekraczanie bariery łożyskowej)</td></tr>
+    </tbody>
+  </table>
+  <p>Nie dowiedziono, że każda tkanka ma niszę komórek macierzystych ani że w każdej są komórki pluripotencjalne. Podział komórek macierzystych według zajmowanych nisz i stopnia zróżnicowania jest więc sztywny; z biologicznego punktu widzenia należałoby go zastąpić koncepcją wędrówki. Według niej komórki o niskim stopniu zróżnicowania krążą w dojrzałym organizmie i nie mają stałego miejsca, a w niszach tkankowych zakotwiczają się komórki wyżej zróżnicowane, np. unipotencjalne. Idealnym środowiskiem krążenia są szpik kostny i krew, które pełnią funkcję transportową i zarazem nisz. Wędrówka komórek macierzystych zachodzi zarówno w warunkach fizjologicznych, jak i patologicznych.</p>
+  <div class="box zapamietaj"><p>Plastyczność to zdolność komórek macierzystych do przekraczania granic własnej tkanki, a nawet listka zarodkowego. Tłumaczy się ją transdyferencjacją, fuzją komórek, obecnością komórek pluripotencjalnych u dorosłych i wędrówką komórek macierzystych – żadnej z tych teorii nie udowodniono.</p></div>
+  <p class="src">Źródło: Drewa s. 694–696</p>
+
+  <!-- ===================== 4. CYKL ŻYCIOWY ===================== -->
+  <h2 id="c07-cykl">Cykl życiowy, podział i starzenie się komórek macierzystych</h2>
+  <h3>Podział symetryczny i asymetryczny</h3>
+  <p>Komórki macierzyste wytwarzają zróżnicowane komórki danej tkanki, a jednocześnie odtwarzają własną populację. Umożliwiają to dwa rodzaje podziałów (<a class="figref" href="#c07-fig-podzial"></a>):</p>
+  <ul>
+    <li><b>podział asymetryczny</b> (niesymetryczny) – jedna komórka potomna nie zmienia właściwości i pozostaje w niszy jako komórka macierzysta, a druga różnicuje się. To najpowszechniej przyjęta teoria podziału komórek macierzystych. U ssaków taki podział występuje w tkankach nabłonkowych i w tkance nerwowej; w innych tkankach go nie zaobserwowano. Nie wiadomo, czy zapewnia stałą, niewyczerpaną pulę komórek progenitorowych;</li>
+    <li><b>podział symetryczny</b> – powstają dwie identyczne komórki potomne: albo dwie komórki macierzyste, albo dwie komórki różnicujące się.</li>
+  </ul>
+  <figure class="fig" id="c07-fig-podzial" data-title="Podział asymetryczny i symetryczny komórki macierzystej">
+    <div class="panels cols-2">
+      <div class="panel" data-badge="A" data-title="Podział asymetryczny">
+        <svg viewBox="0 0 296 176" role="img" aria-label="Komórka macierzysta w niszy dzieli się na komórkę macierzystą, która zostaje w niszy, i komórkę różnicującą się">
+          <rect x="6" y="100" width="284" height="72" rx="10" class="f-ochre-bg s-ochre sw1"/>
+          <text x="282" y="164" class="t-xs it end f-ochre">nisza</text>
+          <circle cx="40" cy="134" r="17" class="f-teal-bg s-teal sw15"/>
+          <circle cx="40" cy="134" r="6" class="f-navy"/>
+          <path d="M60,126 Q90,104 112,74" class="arrow"/>
+          <path d="M60,136 H110" class="arrow"/>
+          <circle cx="130" cy="136" r="15" class="f-teal-bg s-teal sw15"/>
+          <circle cx="130" cy="136" r="5.5" class="f-navy"/>
+          <text x="152" y="128" class="t-xs">komórka macierzysta</text>
+          <text x="152" y="141" class="t-xs muted">zostaje w niszy</text>
+          <text x="152" y="154" class="t-xs muted">(samoodnowa)</text>
+          <circle cx="130" cy="62" r="15" class="f-blue-bg s-blue sw15"/>
+          <circle cx="130" cy="62" r="5.5" class="f-navy"/>
+          <path d="M150,62 H196" class="arrow"/>
+          <ellipse cx="236" cy="62" rx="28" ry="12" class="f-blue-bg s-blue sw15"/>
+          <ellipse cx="236" cy="62" rx="6" ry="4" class="f-navy"/>
+          <g class="t-xs mid">
+            <text x="130" y="26">komórka</text><text x="130" y="38">różnicująca się</text>
+            <text x="236" y="32">komórka</text><text x="236" y="44">zróżnicowana</text>
+          </g>
+        </svg>
+      </div>
+      <div class="panel" data-badge="B" data-title="Podział symetryczny">
+        <svg viewBox="0 0 296 176" role="img" aria-label="Komórka macierzysta dzieli się na dwie komórki macierzyste albo na dwie komórki różnicujące się">
+          <circle cx="36" cy="48" r="17" class="f-teal-bg s-teal sw15"/>
+          <circle cx="36" cy="48" r="6" class="f-navy"/>
+          <path d="M58,48 H92" class="arrow"/>
+          <g class="f-teal-bg s-teal sw15"><circle cx="114" cy="48" r="15"/><circle cx="148" cy="48" r="15"/></g>
+          <g class="f-navy"><circle cx="114" cy="48" r="5.5"/><circle cx="148" cy="48" r="5.5"/></g>
+          <text x="174" y="44" class="t-xs">dwie komórki</text>
+          <text x="174" y="57" class="t-xs">macierzyste</text>
+          <line x1="8" y1="90" x2="288" y2="90" class="divider"/>
+          <rect x="128" y="82" width="40" height="16" class="f-white"/>
+          <text x="148" y="94" class="t-xs it mid muted">albo</text>
+          <circle cx="36" cy="132" r="17" class="f-teal-bg s-teal sw15"/>
+          <circle cx="36" cy="132" r="6" class="f-navy"/>
+          <path d="M58,132 H92" class="arrow"/>
+          <g class="f-blue-bg s-blue sw15"><circle cx="114" cy="132" r="15"/><circle cx="148" cy="132" r="15"/></g>
+          <g class="f-navy"><circle cx="114" cy="132" r="5.5"/><circle cx="148" cy="132" r="5.5"/></g>
+          <text x="174" y="128" class="t-xs">dwie komórki</text>
+          <text x="174" y="141" class="t-xs">różnicujące się</text>
+        </svg>
+      </div>
+    </div>
+    <figcaption>Zielone – komórki macierzyste, niebieskie – komórki różnicujące się. Podział asymetryczny łączy samoodnowę z różnicowaniem; podział symetryczny daje dwie komórki tego samego rodzaju.</figcaption>
+  </figure>
+  <p>Model <b>selekcji klonalnej</b> zakłada istnienie stałej puli komórek macierzystych, z których tylko wybrane dzielą się symetrycznie i różnicują.</p>
+
+  <h3>Wiek komórki</h3>
+  <p>Komórki zróżnicowane dzielą się symetrycznie, a powstające komórki potomne mają mniejszy potencjał proliferacyjny. Podziały trwają do osiągnięcia <b>starości replikacyjnej</b>, odkrytej w hodowli in vitro. Mechanizmy starzenia komórek macierzystych są podobne, dlatego komórki macierzyste uczestniczą w dwóch przeciwnych procesach: kontrolują podziały tak, by jak najdłużej zachować młodość replikacyjną, i zarazem je ograniczają.</p>
+  <p><b>Wiek mitotyczny</b> (replikacyjny) określa się na podstawie liczby przebytych podziałów, co pozwala wnioskować o dalszym potencjale proliferacyjnym komórki. Metoda ta jest jednak obarczona dużym błędem, a wynik zależy od tkanki. Komórki macierzyste nabłonka jelita dzielą się ciągle, a mieszka włosowego – okresowo, wraz ze wzrostem włosa, i z każdym cyklem wzrostowym bezpowrotnie giną. Inaczej liczy się wiek w tkankach o niskim współczynniku mitotycznym, np. w ośrodkowym układzie nerwowym. <b>Wiek chronologiczny</b> nie zawsze odpowiada mitotycznemu, a wiek mitotyczny różnych tkanek jednego organizmu może się znacznie różnić. Wiek chronologiczny ma znaczenie dla rozwoju płodu: liczba wad rozwojowych rośnie z wiekiem chronologicznym komórek rozrodczych.</p>
+
+  <h3>Starzenie się komórek macierzystych</h3>
+  <p>Starzeją się zarówno komórki macierzyste, jak i zróżnicowane. Na starzenie komórek macierzystych wpływają czynniki epigenetyczne i zmiany informacji zawartej w DNA. Starzejące się komórki macierzyste:</p>
+  <ul>
+    <li>zmieniają ekspresję wielu genów – maleje ekspresja genów związanych z metabolizmem komórki, a rośnie ekspresja genów białek odpowiedzialnych za przyleganie komórek;</li>
+    <li>tracą stabilność genomu, którą zapewnia aparat naprawy DNA. Postępujące zaburzenia funkcji genów, kolejne podziały i utrata zdolności naprawy DNA nieuchronnie prowadzą do śmierci komórki;</li>
+    <li>zmieniają morfologię – starzejące się MSC są zwykle powiększone, a pobrane od starszych pacjentów nie mają typowego wrzecionowatego kształtu. Maleje ich zdolność do różnicowania, tworzenia kolonii i samoodnowy.</li>
+  </ul>
+  <p>Zmiany te ograniczają zdolności regeneracyjne i zarazem zwiększają skłonność do transformacji nowotworowej. Pokazuje to zmieniająca się rola <b>białka p53</b>:</p>
+  <ol>
+    <li><b>Młody organizm</b> – p53 w komórkach macierzystych jest nieaktywne; komórki mają duże możliwości replikacyjne i szybko przechodzą przez punkty kontrolne cyklu. Mutacji jest mało, więc nieczynne p53 nie grozi nowotworem.</li>
+    <li><b>Starzenie się</b> – przy częstej naprawie DNA p53 staje się ważnym czynnikiem ograniczającym podziały. Komórki dzielą się wolniej, więc regeneracja tkanek słabnie, ale ich genom, choć z licznymi mutacjami, jest stabilny.</li>
+    <li><b>Mutacja p53</b> – białko staje się nieaktywne i przestaje kontrolować podziały. Komórki znów dzielą się intensywnie i przekazują mutacje potomnym, co prowadzi do transformacji nowotworowej.</li>
+  </ol>
+  <p>Długowieczność organizmu zależy więc od równowagi między zdolnością komórek macierzystych do regeneracji a procesami zapobiegającymi nowotworzeniu.</p>
+  <div class="box zapamietaj"><p>W podziale asymetrycznym jedna komórka potomna zostaje w niszy jako macierzysta, a druga się różnicuje; w symetrycznym powstają dwie komórki macierzyste albo dwie różnicujące się. Starzenie komórek macierzystych osłabia regenerację i zwiększa ryzyko nowotworu.</p></div>
+  <p class="src">Źródło: Drewa s. 696–698 · Jóźwiak s. 97–98</p>
+
+  <!-- ===================== 5. RÓŻNICOWANIE ===================== -->
+  <h2 id="c07-roznicowanie">Różnicowanie komórek i jego zaburzenia</h2>
+  <aside class="note pojecie" data-term="Różnicowanie"><p>wykształcanie się specjalistycznych cech, których komórka potrzebuje, by pełnić swoją rolę w określonym miejscu organizmu.</p></aside>
+  <p><b>Różnicowanie</b> to proces, w którym komórka wykształca specjalistyczne cechy potrzebne do pełnienia roli w określonym miejscu organizmu. Jest szczególnie charakterystyczne dla okresu zarodkowego: z niewielkiej grupy komórek o podobnych właściwościach powstają wtedy komórki tak różne jak neuron i erytrocyt (komórka bez jądra). U dorosłych różnicowanie trwa na mniejszą skalę, przy odnowie tkanek – np. dojrzałe komórki nabłonka jelita, krwi czy naskórka powstają z odpowiednich komórek macierzystych. W różnicującej się komórce włączają się <b>geny specyficzne tkankowo</b>, w odróżnieniu od genów metabolizmu podstawowego (ang. <i>housekeeping genes</i>), których ekspresja jest potrzebna wszystkim typom komórek.</p>
+
+  <h3>Geny sterujące różnicowaniem w zarodku</h3>
+  <p>Różnicowanie intensywnie badano na muszce owocówce (<i>Drosophila melanogaster</i>) – organizmie łatwym w hodowli, o dobrze poznanym genomie i szybko się namnażającym. Wspólne podstawy rozwoju zarodkowego zwierząt pozwoliły przenieść wyniki na człowieka. Geny sterujące rozwojem zarodkowym i różnicowaniem podzielono na trzy rodziny:</p>
+  <ol>
+    <li><b>geny mateczne</b> (ok. 30) – działają pierwsze, w czasie oogenezy. Wyznaczają główne osie jaja, przód–tył i góra–dół, czyli wstępny wzór rozwoju (np. <i>bicoid</i>, <i>nanos</i>, <i>toll</i>);</li>
+    <li><b>geny segmentacji</b> – odpowiadają za utworzenie segmentów ciała zarodka, ich liczbę i ułożenie (np. <i>hedgehog</i>, <i>wingless</i>);</li>
+    <li><b>geny homeotyczne</b> – sterują końcowym różnicowaniem, czyli wytworzeniem struktur i przydatków charakterystycznych dla danego segmentu (np. <i>antennapedia</i>).</li>
+  </ol>
+
+  <h3>Kontrola różnicowania w dorosłym organizmie</h3>
+  <p>Wiele genów rozwoju zarodkowego, zwłaszcza odpowiedzialnych za różnicowanie końcowe, działa też w dorosłym organizmie przy różnicowaniu komórek macierzystych. Przykładem jest gen <i>hedgehog</i> (<i>Hh</i>), którego ludzkie homologi to <b>Shh</b> (<i>sonic hedgehog</i>), <b>Ihh</b> (<i>Indian hedgehog</i>) i <b>Dhh</b> (<i>desert hedgehog</i>). Ich produkty to <b>ligandy</b> wydzielane przez komórkę, które wiążą się ze swoistymi receptorami w pobliskich lub odległych tkankach i w ten sposób sterują różnicowaniem (tabela). Shh jest np. podstawowym morfogenem dla różnicowania neuronów ruchowych, komórek mieszka włosowego, pneumocytów, limfocytów T i odontoblastów. Zaburzenia szlaku Hh bardzo często leżą u podłoża nowotworzenia.</p>
+  <table class="tbl full plain-first">
+    <thead><tr><th style="width:13%">Gen</th><th style="width:27%">Narząd</th><th>Rola</th></tr></thead>
+    <tbody>
+      <tr><td><b>Shh</b></td><td>mięśnie</td><td>proliferacja prekursorów komórek mięśniowych, regulacja różnicowania</td></tr>
+      <tr><td><b>Shh</b></td><td>móżdżek</td><td>proliferacja prekursorów warstwy ziarnistej</td></tr>
+      <tr><td><b>Ihh</b></td><td>naczynia krwionośne</td><td>proliferacja komórek śródbłonka</td></tr>
+      <tr><td><b>Dhh</b></td><td>jądro</td><td>dojrzewanie jądra, rozwój męskich komórek rozrodczych, maskulinizacja</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Zaburzenia różnicowania</h3>
+  <p>Różnicowanie zwykle prowadzi do specjalizacji komórki i lepszego dopasowania jej fenotypu do funkcji. Zaburzenia różnicowania są charakterystyczne dla <b>onkogenezy</b>: komórki nowotworowe blokują różnicowanie, bo komórka zróżnicowana potrzebuje więcej substancji odżywczych i substratów do wytwarzania swoich produktów, co hamowałoby namnażanie się komórek nowotworu. Komórki nowotworów są zwykle słabiej zróżnicowane niż tkanka, z której pochodzą – zachodzi w nich <b>odróżnicowanie</b>, proces odwrotny do różnicowania. Nasilenie odróżnicowania najczęściej koreluje ze stopniem złośliwości nowotworu. Wyróżnia się trzy typy różnicowania patologicznego:</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:14%">Typ</th><th style="width:38%">Na czym polega</th><th>Przykład</th></tr></thead>
+    <tbody>
+      <tr><td>Dysplazja</td><td>w danym miejscu pojawiają się komórki o nietypowym dla tej tkanki wyglądzie</td><td>dysplazja (neoplazja) nabłonkowa szyjki macicy wywołana przez wirusa HPV – zmiana przedrakowa, z której może rozwinąć się nowotwór; istnieją też dysplazje łagodne, które zanikają samoistnie</td></tr>
+      <tr><td>Metaplazja</td><td>prawidłowa komórka różnicuje się w prawidłową komórkę o innym fenotypie, nietypowym dla danego miejsca; częsta tam, gdzie stały czynnik stresowy (toksyny, niekorzystne warunki) powoduje intensywne obumieranie i odnowę komórek</td><td>metaplazja jelitowa: w żołądku zakażonym <i>Helicobacter pylori</i> nabłonek gruczołów żołądkowych przekształca się w nabłonek jelitowy z komórkami kubkowymi (ryzyko raka żołądka); w przełyku stale drażnionym kwasem żołądkowym nabłonek wielowarstwowy płaski zostaje zastąpiony nabłonkiem jednowarstwowym walcowatym – przełyk Barretta (ryzyko raka przełyku)</td></tr>
+      <tr><td>Anaplazja</td><td>w miejscu komórek zróżnicowanych pojawiają się komórki niezróżnicowane, tak odmienne, że często trudno ocenić, z jakiej tkanki pochodzą</td><td>zaawansowane nowotwory; anaplastyczność bardzo często oznacza wysoki stopień złośliwości i złe rokowanie</td></tr>
+    </tbody>
+  </table>
+  <div class="box zapamietaj"><p>W zarodku różnicowaniem sterują kolejno geny mateczne, segmentacji i homeotyczne; u dorosłych działają te same szlaki, np. Hedgehog (Shh, Ihh, Dhh). Różnicowanie patologiczne to dysplazja, metaplazja i anaplazja; odróżnicowanie jest cechą nowotworów i koreluje z ich złośliwością.</p></div>
+  <p class="src">Źródło: Jóźwiak s. 102–105</p>
+
+  <!-- ===================== 6. HIPERTROFIA I HIPERPLAZJA ===================== -->
+  <h2 id="c07-wzrost">Hipertrofia i hiperplazja</h2>
+  <p>Tkanka może się powiększyć na dwa sposoby: przez wzrost komórek albo przez wzrost ich liczby (<a class="figref" href="#c07-fig-wzrost"></a>).</p>
+  <ul>
+    <li><b>Przerost</b> (<b>hipertrofia</b>) to zwiększenie objętości komórki bez zmiany jej potencjału proliferacyjnego. Komórki hipertroficzne wytwarzają więcej białek, które wypełniają ich cytoplazmę, i powstaje guz – podobnie jak przy rozroście. Przerost nie jest jednak zmianą nowotworową.</li>
+    <li><b>Rozrost</b> (<b>hiperplazja</b>) to pojawienie się nadmiernej liczby komórek o prawidłowej morfologii. Termin ten łączy się nierozerwalnie z nowotworzeniem: rozrost to początkowy etap rozwoju zmiany nowotworowej. Po nagromadzeniu zmian genetycznych komórki wymykają się mechanizmom kontroli podziałów i dzielą się w sposób niekontrolowany, co zwiększa objętość tkanki lub narządu. Komórki wyglądają jeszcze prawidłowo i nie da się ich odróżnić od zdrowych.</li>
+  </ul>
+  <figure class="fig" id="c07-fig-wzrost" data-title="Zaburzenia wzrostu i morfologii komórek">
+    <svg viewBox="0 0 640 266" role="img" aria-label="Dziesięć kafelków tkanki: prawidłowa, hipertrofia, hiperplazja, hipoplazja, atrofia, dysplazja, metaplazja, neoplazja, anaplazja, hamartoma">
+      <!-- Tkanka prawidłowa --><rect x="0" y="6" width="116" height="86" rx="6" class="f-white s-teal sw15"/>
+      <g><rect x="17.5" y="19.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="26.5" cy="28.0" r="3.5" class="f-navy"/></g><g><rect x="38.5" y="19.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="47.5" cy="28.0" r="3.5" class="f-navy"/></g><g><rect x="59.5" y="19.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="68.5" cy="28.0" r="3.5" class="f-navy"/></g><g><rect x="80.5" y="19.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="89.5" cy="28.0" r="3.5" class="f-navy"/></g><g><rect x="17.5" y="40.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="26.5" cy="49.0" r="3.5" class="f-navy"/></g><g><rect x="38.5" y="40.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="47.5" cy="49.0" r="3.5" class="f-navy"/></g><g><rect x="59.5" y="40.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="68.5" cy="49.0" r="3.5" class="f-navy"/></g><g><rect x="80.5" y="40.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="89.5" cy="49.0" r="3.5" class="f-navy"/></g><g><rect x="17.5" y="61.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="26.5" cy="70.0" r="3.5" class="f-navy"/></g><g><rect x="38.5" y="61.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="47.5" cy="70.0" r="3.5" class="f-navy"/></g><g><rect x="59.5" y="61.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="68.5" cy="70.0" r="3.5" class="f-navy"/></g><g><rect x="80.5" y="61.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="89.5" cy="70.0" r="3.5" class="f-navy"/></g>
+      <text x="58.0" y="107" class="t-s sb mid">Tkanka prawidłowa</text>
+      <text x="58.0" y="120" class="t-xs mid muted">dla porównania</text>
+      <!-- Hipertrofia --><rect x="131" y="6" width="116" height="86" rx="6" class="f-white s-teal sw15"/>
+      <g><rect x="140.0" y="12.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="151.5" cy="24.0" r="4.5" class="f-navy"/></g><g><rect x="165.0" y="12.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="176.5" cy="24.0" r="4.5" class="f-navy"/></g><g><rect x="190.0" y="12.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="201.5" cy="24.0" r="4.5" class="f-navy"/></g><g><rect x="215.0" y="12.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="226.5" cy="24.0" r="4.5" class="f-navy"/></g><g><rect x="140.0" y="37.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="151.5" cy="49.0" r="4.5" class="f-navy"/></g><g><rect x="165.0" y="37.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="176.5" cy="49.0" r="4.5" class="f-navy"/></g><g><rect x="190.0" y="37.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="201.5" cy="49.0" r="4.5" class="f-navy"/></g><g><rect x="215.0" y="37.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="226.5" cy="49.0" r="4.5" class="f-navy"/></g><g><rect x="140.0" y="62.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="151.5" cy="74.0" r="4.5" class="f-navy"/></g><g><rect x="165.0" y="62.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="176.5" cy="74.0" r="4.5" class="f-navy"/></g><g><rect x="190.0" y="62.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="201.5" cy="74.0" r="4.5" class="f-navy"/></g><g><rect x="215.0" y="62.5" width="23.0" height="23.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="226.5" cy="74.0" r="4.5" class="f-navy"/></g>
+      <text x="189.0" y="107" class="t-s sb mid">Hipertrofia</text>
+      <text x="189.0" y="120" class="t-xs mid muted">(przerost)</text>
+      <text x="189.0" y="132" class="t-xs mid muted">większe komórki</text>
+      <!-- Hiperplazja --><rect x="262" y="6" width="116" height="86" rx="6" class="f-white s-teal sw15"/>
+      <g><rect x="270.0" y="9.2" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="279.0" cy="18.2" r="3.5" class="f-navy"/></g><g><rect x="290.5" y="9.2" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="299.5" cy="18.2" r="3.5" class="f-navy"/></g><g><rect x="311.0" y="9.2" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="320.0" cy="18.2" r="3.5" class="f-navy"/></g><g><rect x="331.5" y="9.2" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="340.5" cy="18.2" r="3.5" class="f-navy"/></g><g><rect x="352.0" y="9.2" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="361.0" cy="18.2" r="3.5" class="f-navy"/></g><g><rect x="270.0" y="29.8" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="279.0" cy="38.8" r="3.5" class="f-navy"/></g><g><rect x="290.5" y="29.8" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="299.5" cy="38.8" r="3.5" class="f-navy"/></g><g><rect x="311.0" y="29.8" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="320.0" cy="38.8" r="3.5" class="f-navy"/></g><g><rect x="331.5" y="29.8" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="340.5" cy="38.8" r="3.5" class="f-navy"/></g><g><rect x="352.0" y="29.8" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="361.0" cy="38.8" r="3.5" class="f-navy"/></g><g><rect x="270.0" y="50.2" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="279.0" cy="59.2" r="3.5" class="f-navy"/></g><g><rect x="290.5" y="50.2" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="299.5" cy="59.2" r="3.5" class="f-navy"/></g><g><rect x="311.0" y="50.2" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="320.0" cy="59.2" r="3.5" class="f-navy"/></g><g><rect x="331.5" y="50.2" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="340.5" cy="59.2" r="3.5" class="f-navy"/></g><g><rect x="352.0" y="50.2" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="361.0" cy="59.2" r="3.5" class="f-navy"/></g><g><rect x="270.0" y="70.8" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="279.0" cy="79.8" r="3.5" class="f-navy"/></g><g><rect x="290.5" y="70.8" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="299.5" cy="79.8" r="3.5" class="f-navy"/></g><g><rect x="311.0" y="70.8" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="320.0" cy="79.8" r="3.5" class="f-navy"/></g><g><rect x="331.5" y="70.8" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="340.5" cy="79.8" r="3.5" class="f-navy"/></g><g><rect x="352.0" y="70.8" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="361.0" cy="79.8" r="3.5" class="f-navy"/></g>
+      <text x="320.0" y="107" class="t-s sb mid">Hiperplazja</text>
+      <text x="320.0" y="120" class="t-xs mid muted">(rozrost)</text>
+      <text x="320.0" y="132" class="t-xs mid muted">więcej komórek</text>
+      <!-- Hipoplazja --><rect x="393" y="6" width="116" height="86" rx="6" class="tile"/>
+      <g><rect x="421.0" y="29.5" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="430.0" cy="38.5" r="3.5" class="f-navy"/></g><g><rect x="442.0" y="29.5" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="451.0" cy="38.5" r="3.5" class="f-navy"/></g><g><rect x="463.0" y="29.5" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="472.0" cy="38.5" r="3.5" class="f-navy"/></g><g><rect x="421.0" y="50.5" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="430.0" cy="59.5" r="3.5" class="f-navy"/></g><g><rect x="442.0" y="50.5" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="451.0" cy="59.5" r="3.5" class="f-navy"/></g><g><rect x="463.0" y="50.5" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="472.0" cy="59.5" r="3.5" class="f-navy"/></g>
+      <text x="451.0" y="107" class="t-s sb mid">Hipoplazja</text>
+      <text x="451.0" y="120" class="t-xs mid muted">(niedorozwój)</text>
+      <text x="451.0" y="132" class="t-xs mid muted">za mało komórek</text>
+      <!-- Atrofia --><rect x="524" y="6" width="116" height="86" rx="6" class="tile"/>
+      <g><rect x="541.5" y="19.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="550.5" cy="28.0" r="3.5" class="f-navy"/></g><rect x="562.5" y="19.0" width="18" height="18" rx="3" class="f-none s-gray sw1" stroke-dasharray="2 2"/><g><rect x="583.5" y="19.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="592.5" cy="28.0" r="3.5" class="f-navy"/></g><rect x="604.5" y="19.0" width="18" height="18" rx="3" class="f-none s-gray sw1" stroke-dasharray="2 2"/><rect x="541.5" y="40.0" width="18" height="18" rx="3" class="f-none s-gray sw1" stroke-dasharray="2 2"/><g><rect x="562.5" y="40.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="571.5" cy="49.0" r="3.5" class="f-navy"/></g><g><rect x="583.5" y="40.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="592.5" cy="49.0" r="3.5" class="f-navy"/></g><g><rect x="604.5" y="40.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="613.5" cy="49.0" r="3.5" class="f-navy"/></g><g><rect x="541.5" y="61.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="550.5" cy="70.0" r="3.5" class="f-navy"/></g><g><rect x="562.5" y="61.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="571.5" cy="70.0" r="3.5" class="f-navy"/></g><rect x="583.5" y="61.0" width="18" height="18" rx="3" class="f-none s-gray sw1" stroke-dasharray="2 2"/><rect x="604.5" y="61.0" width="18" height="18" rx="3" class="f-none s-gray sw1" stroke-dasharray="2 2"/>
+      <text x="582.0" y="107" class="t-s sb mid">Atrofia</text>
+      <text x="582.0" y="120" class="t-xs mid muted">(zanik)</text>
+      <text x="582.0" y="132" class="t-xs mid muted">ubytek komórek</text>
+      <!-- Dysplazja --><rect x="0" y="138" width="116" height="86" rx="6" class="tile"/>
+      <g transform="rotate(-8 25.0 161.0)"><rect x="17.0" y="151.0" width="16.0" height="20.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="25.0" cy="161.0" r="3" class="f-navy"/></g><g transform="rotate(6 46.0 159.0)"><rect x="35.0" y="150.5" width="22.0" height="17.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="46.0" cy="159.0" r="5" class="f-navy"/></g><g><rect x="62.5" y="150.5" width="15.0" height="15.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="70.0" cy="158.0" r="3" class="f-navy"/></g><g transform="rotate(10 88.0 160.0)"><rect x="79.5" y="149.5" width="17.0" height="21.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="88.0" cy="160.0" r="5" class="f-navy"/></g><g transform="rotate(12 23.0 184.0)"><rect x="13.0" y="176.0" width="20.0" height="16.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="23.0" cy="184.0" r="4" class="f-navy"/></g><g transform="rotate(-6 47.0 181.0)"><rect x="39.5" y="170.0" width="15.0" height="22.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="47.0" cy="181.0" r="3.5" class="f-navy"/></g><g transform="rotate(4 66.0 182.0)"><rect x="54.0" y="173.0" width="24.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="66.0" cy="182.0" r="6" class="f-navy"/></g><g transform="rotate(-12 93.0 183.0)"><rect x="86.0" y="174.5" width="14.0" height="17.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="93.0" cy="183.0" r="3" class="f-navy"/></g><g transform="rotate(5 26.0 205.0)"><rect x="17.5" y="197.5" width="17.0" height="15.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="26.0" cy="205.0" r="3" class="f-navy"/></g><g transform="rotate(-10 48.0 205.0)"><rect x="37.5" y="195.5" width="21.0" height="19.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="48.0" cy="205.0" r="5" class="f-navy"/></g><g transform="rotate(8 72.0 204.0)"><rect x="64.0" y="196.0" width="16.0" height="16.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="72.0" cy="204.0" r="4" class="f-navy"/></g><g><rect x="81.5" y="196.5" width="19.0" height="15.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="91.0" cy="204.0" r="3.5" class="f-navy"/></g>
+      <text x="58.0" y="239" class="t-s sb mid">Dysplazja</text>
+      <text x="58.0" y="252" class="t-xs mid muted">zmiana wielkości</text>
+      <text x="58.0" y="264" class="t-xs mid muted">i kształtu komórek</text>
+      <!-- Metaplazja --><rect x="131" y="138" width="116" height="86" rx="6" class="tile"/>
+      <rect x="148.0" y="156.0" width="12" height="50" rx="3" class="f-violet-bg s-violet sw1"/><circle cx="154.0" cy="197.0" r="3.5" class="f-navy"/><rect x="162.0" y="156.0" width="12" height="50" rx="3" class="f-violet-bg s-violet sw1"/><circle cx="168.0" cy="197.0" r="3.5" class="f-navy"/><rect x="176.0" y="156.0" width="12" height="50" rx="3" class="f-violet-bg s-violet sw1"/><circle cx="182.0" cy="197.0" r="3.5" class="f-navy"/><rect x="190.0" y="156.0" width="12" height="50" rx="3" class="f-violet-bg s-violet sw1"/><circle cx="196.0" cy="197.0" r="3.5" class="f-navy"/><rect x="204.0" y="156.0" width="12" height="50" rx="3" class="f-violet-bg s-violet sw1"/><circle cx="210.0" cy="197.0" r="3.5" class="f-navy"/><rect x="218.0" y="156.0" width="12" height="50" rx="3" class="f-violet-bg s-violet sw1"/><circle cx="224.0" cy="197.0" r="3.5" class="f-navy"/>
+      <text x="189.0" y="239" class="t-s sb mid">Metaplazja</text>
+      <text x="189.0" y="252" class="t-xs mid muted">prawidłowe komórki,</text>
+      <text x="189.0" y="264" class="t-xs mid muted">nietypowe dla miejsca</text>
+      <!-- Neoplazja --><rect x="262" y="138" width="116" height="86" rx="6" class="tile"/>
+      <g transform="rotate(-8.379619825811954 280.0 151.0)"><rect x="271.9" y="142.9" width="16.1" height="16.1" rx="3" class="f-red-bg s-red sw1"/><circle cx="280.0" cy="151.0" r="5.5" class="f-navy"/></g><g transform="rotate(7.710583007791399 300.0 151.0)"><rect x="292.6" y="143.6" width="14.7" height="14.7" rx="3" class="f-red-bg s-red sw1"/><circle cx="300.0" cy="151.0" r="3" class="f-navy"/></g><g transform="rotate(-10.608025805407037 320.0 151.0)"><rect x="311.8" y="142.8" width="16.3" height="16.3" rx="3" class="f-red-bg s-red sw1"/><circle cx="320.0" cy="151.0" r="5.5" class="f-navy"/></g><g transform="rotate(-9.937266391459879 340.0 151.0)"><rect x="332.2" y="143.2" width="15.6" height="15.6" rx="3" class="f-red-bg s-red sw1"/><circle cx="340.0" cy="151.0" r="4.5" class="f-navy"/></g><g transform="rotate(-9.82288767974724 360.0 151.0)"><rect x="352.6" y="143.6" width="14.8" height="14.8" rx="3" class="f-red-bg s-red sw1"/><circle cx="360.0" cy="151.0" r="4.5" class="f-navy"/></g><g transform="rotate(1.570888660633912 280.0 171.0)"><rect x="272.6" y="163.6" width="14.8" height="14.8" rx="3" class="f-red-bg s-red sw1"/><circle cx="280.0" cy="171.0" r="3" class="f-navy"/></g><g transform="rotate(1.9919257070497753 300.0 171.0)"><rect x="291.2" y="162.2" width="17.7" height="17.7" rx="3" class="f-red-bg s-red sw1"/><circle cx="300.0" cy="171.0" r="3" class="f-navy"/></g><g transform="rotate(-2.4796686083812762 320.0 171.0)"><rect x="311.3" y="162.3" width="17.4" height="17.4" rx="3" class="f-red-bg s-red sw1"/><circle cx="320.0" cy="171.0" r="3" class="f-navy"/></g><g transform="rotate(8.60324301716831 340.0 171.0)"><rect x="332.6" y="163.6" width="14.7" height="14.7" rx="3" class="f-red-bg s-red sw1"/><circle cx="340.0" cy="171.0" r="4.5" class="f-navy"/></g><g transform="rotate(0.9764612527714185 360.0 171.0)"><rect x="351.7" y="162.7" width="16.6" height="16.6" rx="3" class="f-red-bg s-red sw1"/><circle cx="360.0" cy="171.0" r="5.5" class="f-navy"/></g><g transform="rotate(7.587032618880755 280.0 191.0)"><rect x="272.0" y="183.0" width="16.0" height="16.0" rx="3" class="f-red-bg s-red sw1"/><circle cx="280.0" cy="191.0" r="3" class="f-navy"/></g><g transform="rotate(1.7089053938830148 300.0 191.0)"><rect x="292.5" y="183.5" width="15.0" height="15.0" rx="3" class="f-red-bg s-red sw1"/><circle cx="300.0" cy="191.0" r="3" class="f-navy"/></g><g transform="rotate(1.1458671770293876 320.0 191.0)"><rect x="311.8" y="182.8" width="16.4" height="16.4" rx="3" class="f-red-bg s-red sw1"/><circle cx="320.0" cy="191.0" r="3" class="f-navy"/></g><g transform="rotate(2.856230236165292 340.0 191.0)"><rect x="331.3" y="182.3" width="17.3" height="17.3" rx="3" class="f-red-bg s-red sw1"/><circle cx="340.0" cy="191.0" r="4.5" class="f-navy"/></g><g transform="rotate(-1.737784663934331 360.0 191.0)"><rect x="351.0" y="182.0" width="17.9" height="17.9" rx="3" class="f-red-bg s-red sw1"/><circle cx="360.0" cy="191.0" r="4.5" class="f-navy"/></g><g transform="rotate(10.162593207332677 280.0 211.0)"><rect x="271.6" y="202.6" width="16.8" height="16.8" rx="3" class="f-red-bg s-red sw1"/><circle cx="280.0" cy="211.0" r="4.5" class="f-navy"/></g><g transform="rotate(7.065107556539786 300.0 211.0)"><rect x="292.0" y="203.0" width="16.0" height="16.0" rx="3" class="f-red-bg s-red sw1"/><circle cx="300.0" cy="211.0" r="5.5" class="f-navy"/></g><g transform="rotate(-10.035479740901524 320.0 211.0)"><rect x="310.8" y="201.8" width="18.4" height="18.4" rx="3" class="f-red-bg s-red sw1"/><circle cx="320.0" cy="211.0" r="4.5" class="f-navy"/></g><g transform="rotate(9.003299893762293 340.0 211.0)"><rect x="331.4" y="202.4" width="17.1" height="17.1" rx="3" class="f-red-bg s-red sw1"/><circle cx="340.0" cy="211.0" r="5.5" class="f-navy"/></g><g transform="rotate(2.6150164568736862 360.0 211.0)"><rect x="351.6" y="202.6" width="16.7" height="16.7" rx="3" class="f-red-bg s-red sw1"/><circle cx="360.0" cy="211.0" r="3" class="f-navy"/></g>
+      <text x="320.0" y="239" class="t-s sb mid">Neoplazja</text>
+      <text x="320.0" y="252" class="t-xs mid muted">hiperplazja</text>
+      <text x="320.0" y="264" class="t-xs mid muted">+ atypia</text>
+      <!-- Anaplazja --><rect x="393" y="138" width="116" height="86" rx="6" class="tile"/>
+      <g transform="rotate(-8 421.0 167.0)"><rect x="402.0" y="150.0" width="38.0" height="34.0" rx="3" class="f-red-bg s-red sw1"/><ellipse cx="415.0" cy="163.0" rx="8" ry="6" class="f-navy"/><ellipse cx="428.0" cy="172.0" rx="6" ry="7" class="f-navy"/></g><g transform="rotate(10 463.0 163.0)"><rect x="445.0" y="148.0" width="36.0" height="30.0" rx="3" class="f-red-bg s-red sw1"/><ellipse cx="463.0" cy="163.0" rx="10" ry="8" class="f-navy"/></g><g transform="rotate(6 427.0 203.0)"><rect x="410.0" y="189.0" width="34.0" height="28.0" rx="3" class="f-red-bg s-red sw1"/><ellipse cx="422.0" cy="203.0" rx="7" ry="8" class="f-navy"/><ellipse cx="434.0" cy="201.0" rx="6" ry="6" class="f-navy"/><ellipse cx="427.0" cy="211.0" rx="5" ry="4" class="f-navy"/></g><g transform="rotate(-6 469.0 199.0)"><rect x="450.0" y="183.0" width="38.0" height="32.0" rx="3" class="f-red-bg s-red sw1"/><ellipse cx="465.0" cy="196.0" rx="9" ry="9" class="f-navy"/><ellipse cx="477.0" cy="205.0" rx="5" ry="5" class="f-navy"/></g>
+      <text x="451.0" y="239" class="t-s sb mid">Anaplazja</text>
+      <text x="451.0" y="252" class="t-xs mid muted">odróżnicowanie,</text>
+      <text x="451.0" y="264" class="t-xs mid muted">duże, mnogie jądra</text>
+      <!-- Hamartoma --><rect x="524" y="138" width="116" height="86" rx="6" class="tile"/>
+      <g transform="rotate(25 544.0 157.0)"><rect x="535.0" y="148.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="544.0" cy="157.0" r="3.5" class="f-navy"/></g><g transform="rotate(-15 570.0 153.0)"><rect x="561.0" y="144.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="570.0" cy="153.0" r="3.5" class="f-navy"/></g><g transform="rotate(40 598.0 161.0)"><rect x="589.0" y="152.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="598.0" cy="161.0" r="3.5" class="f-navy"/></g><g transform="rotate(10 620.0 155.0)"><rect x="611.0" y="146.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="620.0" cy="155.0" r="3.5" class="f-navy"/></g><g transform="rotate(-30 552.0 181.0)"><rect x="543.0" y="172.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="552.0" cy="181.0" r="3.5" class="f-navy"/></g><g transform="rotate(5 578.0 177.0)"><rect x="569.0" y="168.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="578.0" cy="177.0" r="3.5" class="f-navy"/></g><g transform="rotate(-20 608.0 185.0)"><rect x="599.0" y="176.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="608.0" cy="185.0" r="3.5" class="f-navy"/></g><g transform="rotate(15 542.0 207.0)"><rect x="533.0" y="198.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="542.0" cy="207.0" r="3.5" class="f-navy"/></g><g transform="rotate(35 568.0 203.0)"><rect x="559.0" y="194.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="568.0" cy="203.0" r="3.5" class="f-navy"/></g><g transform="rotate(-10 592.0 207.0)"><rect x="583.0" y="198.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="592.0" cy="207.0" r="3.5" class="f-navy"/></g><g transform="rotate(20 618.0 209.0)"><rect x="609.0" y="200.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="618.0" cy="209.0" r="3.5" class="f-navy"/></g><g transform="rotate(45 626.0 179.0)"><rect x="617.0" y="170.0" width="18.0" height="18.0" rx="3" class="f-teal-bg s-teal sw1"/><circle cx="626.0" cy="179.0" r="3.5" class="f-navy"/></g>
+      <text x="582.0" y="239" class="t-s sb mid">Hamartoma</text>
+      <text x="582.0" y="252" class="t-xs mid muted">prawidłowe komórki,</text>
+      <text x="582.0" y="264" class="t-xs mid muted">zły układ w tkance</text>
+    </svg>
+    <figcaption>Zmiany rozróżnia się według liczby, wielkości, wyglądu i układu komórek. W zielonych ramkach: tkanka prawidłowa, przerost (te same komórki, ale większe) i rozrost (więcej komórek tej samej wielkości).</figcaption>
+  </figure>
+  <p>Przykładem przerostu jest <b>przerost mięśnia serca</b>. Przy przedłużającym się obciążeniu serca, zwłaszcza w nadciśnieniu tętniczym lub niewydolności zastawek, ściana serca grubieje. Pod mikroskopem kardiomiocyty są znacznie powiększone, ale ich liczba się nie zwiększa.</p>
+  <p>Hipertrofia i hiperplazja należą do szerszej grupy zaburzeń wzrostu i morfologii komórek, które rozróżnia się według liczby, wielkości, wyglądu i rozmieszczenia komórek w tkance. <b>Hipoplazja</b> (niedorozwój) to zbyt mała liczba komórek o prawidłowej wielkości i morfologii – nie ubyło ich, lecz nie wykształciło się ich dość; <b>atrofia</b> (zanik) to zmniejszenie się liczby takich komórek. <b>Dysplazja</b> to zmiana wielkości i kształtu komórek, <b>metaplazja</b> – pojawienie się prawidłowych komórek nietypowych dla danej lokalizacji, a <b>neoplazja</b> – większej liczby komórek o zaburzonej morfologii (hiperplazja + atypia). W <b>anaplazji</b> (odróżnicowaniu) komórki są duże, mają duże, często mnogie jądra o nietypowym kształcie, a stosunek objętości jądra do cytoplazmy zmienia się z 1:5 do 1:1. <b>Hamartoma</b> to zaburzenie architektoniki tkanki: komórki są prawidłowe, ale nieprawidłowo rozłożone.</p>
+  <div class="box zapamietaj"><p>Hipertrofia (przerost) to powiększenie komórek bez zmiany ich liczby i potencjału proliferacyjnego, np. kardiomiocytów w przeciążonym sercu; nie jest zmianą nowotworową. Hiperplazja (rozrost) to więcej komórek o prawidłowym wyglądzie – początek nowotworzenia.</p></div>
+  <p class="src">Źródło: Jóźwiak s. 110–112</p>
+
+  <!-- ===================== 7. REGENERACJA KOŃCZYNY ===================== -->
+  <h2 id="c07-regeneracja">Regeneracja kończyny u płazów</h2>
+  <p><b>Regeneracja</b> to zdolność odtwarzania brakujących części ciała po zakończeniu rozwoju zarodkowego. Wyróżnia się dwa jej typy:</p>
+  <ul>
+    <li><b>morfalaksja</b> (ang. <i>morphallaxis</i>) – brakujące części odtwarza się przez nowe określenie losu (respecyfikację) pozostałych tkanek, bez wzrostu; np. stułbia (<i>Hydra</i>) z kawałków dorosłego osobnika tworzy nowe, mniejsze osobniki;</li>
+    <li><b>epimorfoza</b> (ang. <i>epimorphosis</i>) – brakujące części odtwarza się stopniowo przez proliferację komórek i wzrost nowej tkanki; przykładem jest regeneracja kończyn płazów i owadów (choć i tu wzrost poprzedza prawdopodobnie respecyfikacja typu morfalaksji).</li>
+  </ul>
+  <p>Pokrewny termin <b>regulacja</b> oznacza zdolność zarodka do wyrównania braków przez zmianę losu pozostałych tkanek – to odpowiednik morfalaksji u zarodków.</p>
+  <p>Większość kręgowców potrafi po okresie zarodkowym odtworzyć niektóre części kończyny, ale często w bardzo ograniczonym zakresie. Wyjątkiem są <b>płazy ogoniaste</b> (salamandry, traszki) – jedyne kręgowce, które jako dorosłe odtwarzają całe kończyny. Po amputacji na wysokości obręczy kończyny nowa kończyna odrasta w 2–3 miesiące.</p>
+
+  <h3>Etapy regeneracji</h3>
+  <aside class="note pojecie" data-term="Blastema"><p>masa niezróżnicowanych komórek mezenchymy powstająca pod czapeczką naskórkową w kikucie kończyny; z niej powstają wszystkie nowe struktury mezodermalne.</p></aside>
+
+  <p>Regeneracja kończyny przebiega w pięciu etapach (<a class="figref" href="#c07-fig-regeneracja"></a>):</p>
+  <ol>
+    <li><b>Zamknięcie rany</b> – komórki ektodermy w miejscu amputacji proliferują i pokrywają ranę.</li>
+    <li><b>Czapeczka naskórkowa</b> – komórki dzielą się dalej i tworzą zgrubiałą <b>czapeczkę ektodermalną szczytową</b> (AEC, ang. <i>apical ectodermal cap</i>), odpowiednik grzebienia ektodermalnego szczytowego (AER) zarodkowego zawiązka kończyny.</li>
+    <li><b>Odróżnicowanie</b> – AEC indukuje leżące pod nią zróżnicowane komórki do odróżnicowania.</li>
+    <li><b>Blastema</b> – odróżnicowane komórki tworzą masę niezróżnicowanego mezenchymu, <b>blastemę regeneracyjną</b> (odpowiednik strefy postępu zawiązka), która proliferuje.</li>
+    <li><b>Wzrost i odtworzenie wzoru</b> – komórki blastemy ponownie różnicują się we wszystkie składniki mezodermalne kończyny położone dystalnie od cięcia. Oś proksymalno-dystalna powstaje stopniowo, bardzo podobnie jak w rozwoju zarodkowym kończyny.</li>
+  </ol>
+  <figure class="fig" id="c07-fig-regeneracja" data-title="Regeneracja kończyny płaza ogoniastego">
+    <svg viewBox="0 0 640 228" role="img" aria-label="Pięć etapów: amputacja, zamknięcie rany, czapeczka naskórkowa i odróżnicowanie, blastema, odtworzona kończyna">
+      <!-- 1 amputacja -->
+      <rect x="49" y="20" width="30" height="60" class="f-tile s-gray sw1"/>
+      <rect x="60" y="20" width="8" height="60" class="f-white s-gray sw1"/>
+      <rect x="51" y="82" width="26" height="58" rx="4" class="f-none s-gray sw1" stroke-dasharray="3 3"/>
+      <ellipse cx="64" cy="154" rx="16" ry="12" class="f-none s-gray sw1" stroke-dasharray="3 3"/>
+      <line x1="38" y1="80" x2="90" y2="80" class="s-red sw15" stroke-dasharray="4 3"/>
+      <!-- 2 zamknięcie rany -->
+      <path d="M177,20 V76 Q177,88 192,88 Q207,88 207,76 V20 Z" class="f-tile s-gray sw1"/>
+      <rect x="188" y="20" width="8" height="58" class="f-white s-gray sw1"/>
+      <path d="M177,74 Q177,88 192,88 Q207,88 207,74" class="f-none s-navy" stroke-width="2.5"/>
+      <!-- 3 czapeczka AEC + odróżnicowanie -->
+      <rect x="305" y="20" width="30" height="58" class="f-tile s-gray sw1"/>
+      <rect x="316" y="20" width="8" height="50" class="f-white s-gray sw1"/>
+      <path d="M305,76 Q305,100 320,100 Q335,100 335,76 Z" class="f-teal s-teal sw1"/>
+      <g class="f-ochre">
+        <circle cx="309" cy="64" r="1.8"/><circle cx="314" cy="72" r="1.8"/><circle cx="320" cy="74" r="1.8"/><circle cx="327" cy="70" r="1.8"/>
+        <circle cx="331" cy="63" r="1.8"/><circle cx="310" cy="74" r="1.8"/><circle cx="330" cy="75" r="1.8"/><circle cx="322" cy="66" r="1.8"/>
+      </g>
+      <!-- 4 blastema -->
+      <rect x="433" y="20" width="30" height="60" class="f-tile s-gray sw1"/>
+      <rect x="444" y="20" width="8" height="54" class="f-white s-gray sw1"/>
+      <path d="M433,78 Q431,118 448,124 Q465,118 463,78 Z" class="f-ochre-bg s-ochre sw1"/>
+      <g class="f-ochre">
+        <circle cx="440" cy="86" r="1.8"/><circle cx="448" cy="84" r="1.8"/><circle cx="456" cy="88" r="1.8"/><circle cx="442" cy="96" r="1.8"/>
+        <circle cx="451" cy="95" r="1.8"/><circle cx="458" cy="101" r="1.8"/><circle cx="445" cy="106" r="1.8"/><circle cx="452" cy="110" r="1.8"/>
+        <circle cx="439" cy="104" r="1.8"/><circle cx="455" cy="92" r="1.8"/>
+      </g>
+      <path d="M435,104 Q438,122 448,125 Q458,122 461,104" class="f-none s-teal" stroke-width="4"/>
+      <!-- 5 odtworzona kończyna -->
+      <rect x="561" y="20" width="30" height="60" class="f-tile s-gray sw1"/>
+      <path d="M561,80 V98 Q561,102 563,102 V140 H589 V102 Q591,102 591,98 V80 Z" class="f-ochre-bg s-ochre sw1"/>
+      <ellipse cx="576" cy="152" rx="16" ry="11" class="f-ochre-bg s-ochre sw1"/>
+      <g class="f-ochre-bg s-ochre sw1">
+        <rect x="563" y="158" width="5" height="18" rx="2"/><rect x="570" y="161" width="5" height="18" rx="2"/>
+        <rect x="577" y="161" width="5" height="18" rx="2"/><rect x="584" y="158" width="5" height="18" rx="2"/>
+      </g>
+      <rect x="572" y="20" width="8" height="76" class="f-white s-gray sw1"/>
+      <rect x="567" y="104" width="4" height="34" class="f-white s-gray sw1"/>
+      <rect x="581" y="104" width="4" height="34" class="f-white s-gray sw1"/>
+      <line x1="550" y1="80" x2="602" y2="80" class="s-red sw1" stroke-dasharray="4 3"/>
+      <!-- tułów -->
+      <g class="f-tile s-gray sw1">
+        <rect x="16" y="6" width="96" height="18" rx="4"/><rect x="144" y="6" width="96" height="18" rx="4"/>
+        <rect x="272" y="6" width="96" height="18" rx="4"/><rect x="400" y="6" width="96" height="18" rx="4"/>
+        <rect x="528" y="6" width="96" height="18" rx="4"/>
+      </g>
+      <!-- strzałki -->
+      <path d="M100,100 H144" class="arrow"/>
+      <path d="M228,100 H272" class="arrow"/>
+      <path d="M356,100 H400" class="arrow"/>
+      <path d="M484,100 H534" class="arrow"/>
+      <!-- etykiety struktur -->
+      <text x="339" y="88" class="t-xs f-teal">AEC</text>
+      <text x="470" y="116" class="t-xs f-ochre">blastema</text>
+      <!-- numery -->
+      <g class="step" transform="translate(24,44)"><circle r="9"/><text y="3.8">1</text></g>
+      <g class="step" transform="translate(152,44)"><circle r="9"/><text y="3.8">2</text></g>
+      <g class="step" transform="translate(280,44)"><circle r="9"/><text y="3.8">3</text></g>
+      <g class="step" transform="translate(408,44)"><circle r="9"/><text y="3.8">4</text></g>
+      <g class="step" transform="translate(536,44)"><circle r="9"/><text y="3.8">5</text></g>
+      <!-- podpisy -->
+      <g class="t-s sb mid">
+        <text x="64" y="198">Amputacja</text><text x="192" y="198">Zamknięcie rany</text>
+        <text x="320" y="198">Czapeczka (AEC)</text><text x="448" y="198">Blastema</text>
+        <text x="576" y="198">Odtworzenie wzoru</text>
+      </g>
+      <g class="t-xs mid muted">
+        <text x="64" y="211">kikut po cięciu;</text><text x="64" y="223">brak części dystalnej</text>
+        <text x="192" y="211">naskórek pokrywa</text><text x="192" y="223">powierzchnię rany</text>
+        <text x="320" y="211">komórki pod czapeczką</text><text x="320" y="223">odróżnicowują się</text>
+        <text x="448" y="211">masa niezróżnicowanych</text><text x="448" y="223">komórek proliferuje</text>
+        <text x="576" y="211">nowe struktury</text><text x="576" y="223">dystalnie od cięcia</text>
+      </g>
+    </svg>
+    <figcaption>Naskórek zamyka ranę i tworzy czapeczkę (AEC), pod którą odróżnicowane komórki tworzą blastemę. Z blastemy (ochra) powstają wszystkie brakujące struktury położone dystalnie od cięcia (czerwona linia).</figcaption>
+  </figure>
+  <p>Śledzenie losu komórek wykazało, że blastema pochodzi ze wszystkich typów komórek mezodermalnych w ranie: chrząstki, mięśni, skóry właściwej i tkanki łącznej. To zaskakujący stopień plastyczności – odróżnicowują się nawet komórki mięśniowe, czyli wysoko wyspecjalizowane, wielojądrowe syncytia, które wyszły z cyklu komórkowego. Komórki mięśni, skóry właściwej i tkanki łącznej mogą dać dowolny składnik mezodermalny kończyny, a odróżnicowana chrząstka – tylko chrząstkę. Komórki blastemy nie tworzą naskórka, a naskórek nie daje pochodnych mezodermy.</p>
+  <p>Regenerat jest znacznie większy od zarodkowego zawiązka, więc mechanizmy kształtowania wzoru nie mogą być identyczne. Przeszczepy wykazały jednak, że regenerat i zawiązek współdziałają, tworząc prawidłowy wzór – kluczowe mechanizmy są zachowane. W zawiązku mięśnie powstają jednak z napływających mioblastów, a nerwy nie są potrzebne: wzrost i wzorzec kończyny powstają przed unerwieniem mięśni.</p>
+
+  <h3>Co jest potrzebne do regeneracji</h3>
+  <p><b>Ektoderma.</b> Usunięcie AEC zatrzymuje proliferację blastemy, a niedopuszczenie, by naskórek pokrył ranę, uniemożliwia powstanie blastemy. Ektoderma indukuje więc i podtrzymuje blastemę.</p>
+  <p><b>Nerwy.</b> Zależność od unerwienia jest przejściowa: jeśli nerwy kończyny przetnie się przed amputacją, regeneracja nie zachodzi; jeśli po jej rozpoczęciu – przebiega normalnie, choć wolniej. Kończyny, które nigdy nie były unerwione (nerw usunięto w czasie rozwoju), regenerują normalnie – zależność od nerwów powstaje więc wskutek samego unerwienia. Prawdopodobnie przecięte aksony uwalniają w ranie czynniki wzrostu niezbędne do regeneracji. Kandydatami są cząsteczki, które podane z zewnątrz przywracają regenerację u odnerwionych zwierząt: <b>FGF</b>, neuregulina i transferyna (FGF działa też przy wzroście zarodkowej kończyny).</p>
+  <p>Kończyny płazów ogoniastych są gęściej unerwione niż kończyny innych kręgowców, co może tłumaczyć ich wyjątkową zdolność regeneracji. Zgodnie z tym dodatkowe nerwy wprowadzone do kończyn płazów bezogonowych, np. <i>Xenopus</i>, wywołują pewną zdolność regeneracji, a stopniowe zmniejszanie liczby nerwów u traszki ujawniło „próg” unerwienia potrzebny do regeneracji.</p>
+
+  <h3>Pamięć pozycyjna: regeneracja zawsze dystalna</h3>
+  <p>Regeneracja zawsze odtwarza dokładnie brakujące elementy dystalne, niezależnie od miejsca cięcia i orientacji kończyny: po amputacji w nadgarstku odrasta tylko dłoń, a po amputacji w barku – cała kończyna. Komórki kończyny zachowują więc <b>wartości pozycyjne</b> wzdłuż osi proksymalno-dystalnej. Komórki w miejscu cięcia traktują własną tożsamość pozycyjną jako punkt odniesienia i tworzą w blastemie zestaw wartości bardziej dystalnych. Wartości te są autonomiczne: blastema przeszczepiona w inne miejsce ciała, które pozwala jej rosnąć, daje te same struktury dystalne.</p>
+
+  <h3>Kwas retinowy i geny HoxA</h3>
+  <p>Położenie komórek blastemy wyznaczają prawdopodobnie <b>kwas retinowy</b> i <b>geny HoxA</b> – podobnie jak w strefie postępu zarodkowego zawiązka. Naskórek rany jest bogatym źródłem kwasu retinowego, który może tworzyć w blastemie gradient wyznaczający wartości pozycyjne przyszłej osi proksymalno-dystalnej. Geny Hox nie ulegają ekspresji w dorosłej kończynie, ale geny HoxA włączają się w blastemie wkrótce po jej powstaniu.</p>
+  <p>Rolę kwasu retinowego potwierdza jego podawanie z zewnątrz. Kończyna amputowana w nadgarstku zwykle odtwarza dłoń, ale po wysokich dawkach kwasu retinowego tożsamość pozycyjna blastemy zostaje przestawiona na najbardziej proksymalną i z kikuta nadgarstka wyrasta cała kończyna. Odpowiedź zależy od dawki – mniejsze stężenia dają słabszą „proksymalizację”. Blastemy proksymalne i dystalne zawierają różne ilości kwasu retinowego, więc ektoderma na poziomie cięcia może ustalać wartość pozycyjną blastemy przez wydzielanie odpowiedniej ilości tej cząsteczki. Gradient ze źródłem w ektodermie tłumaczy też niezależność od orientacji kończyny: najwyższe stężenie jest zawsze na dystalnym końcu względem powierzchni cięcia.</p>
+
+  <h3>Regeneracja interkalarna i model współrzędnych biegunowych</h3>
+  <p>Kończyna odtwarza nie tylko brakujące struktury dystalne, ale też brakujące struktury pośrednie – to <b>regeneracja interkalarna</b> (ang. <i>intercalary regeneration</i>). Jeśli blastemę z kończyny uciętej w nadgarstku przeszczepi się na kikut kończyny uciętej w barku, rozwija się prawidłowa kończyna: elementy proksymalne powstają z kikuta, a dystalne z blastemy. W rozwoju zarodkowym jest inaczej: starsza strefa postępu przeszczepiona na młodszy zawiązek daje kończynę bez struktur proksymalnych.</p>
+  <p>Oba rodzaje regeneracji wyjaśnia <b>model współrzędnych biegunowych</b> (ang. <i>polar coordinate model</i>). Komórki mają informację pozycyjną w postaci współrzędnych biegunowych na trójwymiarowej mapie. W prawidłowej kończynie sąsiednie komórki mają sąsiednie współrzędne i pozostają w spoczynku. Gojenie rany zestawia komórki o niesąsiednich wartościach, co pobudza je do proliferacji i ponownego różnicowania, dopóki nie powstanie pełny zestaw współrzędnych – wtedy układ znów się uspokaja. Podstawą molekularną może być zróżnicowana adhezja komórek, której gradient biegnie wzdłuż kończyny. Reguły interkalacji:</p>
+  <ul>
+    <li><b>Interkalacja po obwodzie</b> – obwód kończyny (osie przednio-tylna i grzbietowo-brzuszna) traktuje się jak tarczę zegara z wartościami 1–12. Po usunięciu wycinka grzbietowego (wartości 11, 12 i 1) gojenie styka komórki o wartościach 10 i 2; komórki dzielą się i wstawiają brakujące wartości.</li>
+    <li><b>Najkrótsza droga</b> – odtwarzają się wartości 11, 12 i 1, a nie powielają się wartości od 2 do 10.</li>
+    <li><b>Wartości skrajne</b> – jeśli kończynę traszki odetnie się i przyszyje odwrotnie (dłonią do góry), wrasta ona, ale na granicach przeszczepu wyrastają dwie dodatkowe kończyny, dłońmi w dół. Stykają się komórki o skrajnych wartościach (6 i 12), więc jedyną możliwością jest wstawienie wszystkich brakujących wartości, czyli dwóch całych kończyn.</li>
+  </ul>
+  <div class="box zapamietaj"><p>Regeneracja kończyny płazów ogoniastych to epimorfoza: pod czapeczką naskórkową odróżnicowane komórki tworzą blastemę, która odtwarza brakujące części. Potrzebne są ektoderma i – przejściowo – nerwy. Regeneracja jest zawsze dystalna; wzór wyznaczają wartości pozycyjne, kwas retinowy i geny HoxA.</p></div>
+  <p class="src">Źródło: Twyman s. 390–396</p>
+
+  <div class="w60">
+    <ul>
+      <li><b>Komórka macierzysta</b> – samoodnowa + różnicowanie; potencjał maleje od toti- (zygota, także łożysko) przez pluri- (ESC, iPSC) i multi- (HSC, MSC) do unipotencjalnych.</li>
+      <li><b>Typy</b> – ESC z węzła zarodkowego blastocysty (OCT4/3, SOX-2, Nanog; potworniak, etyka); HSC – przeszczepy w białaczkach; MSC ze zrębu (CD73, CD105); iPSC – nadekspresja OCT4/3, SOX2, KLF4, c-MYC.</li>
+      <li><b>Plastyczność</b> – przekraczanie granic listka zarodkowego; transdyferencjacja, fuzja, komórki pluripotencjalne u dorosłych, wędrówka – teorie nieudowodnione.</li>
+      <li><b>Podział i starzenie</b> – asymetryczny (jedna komórka zostaje w niszy) i symetryczny; z wiekiem p53 ogranicza podziały, a jego mutacja sprzyja nowotworom.</li>
+      <li><b>Różnicowanie</b> – geny mateczne → segmentacji → homeotyczne; Hedgehog także u dorosłych; zaburzenia: dysplazja, metaplazja, anaplazja. Hipertrofia = większe komórki, hiperplazja = więcej komórek.</li>
+      <li><b>Regeneracja kończyny</b> – rana → AEC → odróżnicowanie → blastema → odtworzenie wzoru; wymaga nerwów; zawsze dystalna; kwas retinowy, HoxA, interkalacja.</li>
+    </ul>
+  </div>
+</section>
