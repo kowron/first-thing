@@ -7,3 +7,6 @@ Paczki w scratchpadzie: `zrodla/z02` … `zrodla/z05` + `zrodla/INDEX.md` (tekst
 - Alster–Korwek (pdftotext, s. 138–146) – OK.
 - Ostrowska r. 6 (PDF 1–12 = s. 53–64) – BRAK s. 56 i 59 (strony odwrócone w skanie, OCR = szum) → do OCR w turze 2.
 - Pozostaje (tura 2): OCR Drewa r. 2, 10, 12, 13, 16, Jorde r. 5, Twyman M3, Ostrowska s. 56/59; paczki z06–z11.
+
+## Tura 2 (OCR + z06–z08) – 2026-11-16
+- tesseract 5.3.4 + pol + eng zainstalowany przez apt (działa; po restarcie kontenera trzeba zainstalować ponownie).
