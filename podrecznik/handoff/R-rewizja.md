@@ -6,7 +6,8 @@ Dla każdego rozdziału czytasz: rozdział (`rozdzialy/zNN-*.html`), wyciąg (`w
 Sprawdzasz, w tej kolejności:
 1. **Zgodność ze źródłem** – każda liczba, nazwa, kolejność etapów, kierunek zależności; treści spoza źródeł (mają zniknąć).
 1a. **Stary Jorde** (Z08, Z10): sprawdź, że z Jordego wzięto tylko to, czego nie ma w Drewie do tych samych zajęć, i że nie przeniesiono danych przestarzałych.
-2. **Cięcia** – lista `T` w wyciągu: czy nie ucięto rzeczy podstawowej (definicja, etap, klasyfikacja, typowe pytanie egzaminacyjne) i czy nie zostawiono balastu. Cel 10–30% cięć, zależnie od wagi tematu.
+2. **Czy nie ucięto za dużo** (zleceniodawca: ma zostać 70–90% treści źródła w zakresie zagadnień, liczone objętością): porównaj objętość rozdziału z objętością przydzielonych fragmentów źródła i listę `T` w wyciągu; wskaż fakty do PRZYWRÓCENIA (szczególnie Z08, Z06, Z02, gdzie ubytek objętości przekroczył 30%), z miejscem w rozdziale i stroną źródła.
+2a. **Cięcia** – lista `T` w wyciągu: czy nie ucięto rzeczy podstawowej (definicja, etap, klasyfikacja, typowe pytanie egzaminacyjne) i czy nie zostawiono balastu. Cel 10–30% cięć, zależnie od wagi tematu.
 3. **Tłumaczenie** – miejsca niezrozumiałe, przeskoki, zbyt gęste akapity.
 4. **Ryciny** – zgodność z tekstem i źródłem; zbędne lub brakujące.
 Nie poprawiasz plików. Wynik: `rewizja/zNN.md` – lista poprawek (miejsce → co jest → co ma być → strona źródła), z priorytetem A (błąd) / B (ważne) / C (kosmetyka). Maks. 40 pozycji na rozdział.

@@ -6,7 +6,7 @@ Zakres, źródła, cięcia i listę rycin ustala szef (Fable) w handoffie rozdzi
 ## Treść
 1. **Tylko źródła z handoffu.** Każdy fakt, liczba, nazwa musi być w paczce źródeł rozdziału. Zero własnej wiedzy, zero „z liceum”, zero treści z innych rozdziałów podręcznika źródłowego.
 2. **Zakres = zagadnienia z rozpiski** (lista w handoffie). Fragmenty źródła, które nie dotyczą żadnego zagadnienia – pomijamy w całości.
-3. **Tniemy 10–30%** treści mieszczącej się w zagadnieniach. W pierwszej kolejności: daty, nazwiska, dygresje historyczne, długie wyliczanki przykładów (zostaw 2–3), szczegóły techniczne aparatury, powtórzenia, rzadkie wyjątki. Nie tniemy: definicji, etapów procesów, mechanizmów, klasyfikacji, liczb, o które łatwo zapytać, porównań.
+3. **Tniemy mało: 10–30%** treści mieszczącej się w zagadnieniach (decyzja zleceniodawcy: „10–30% to mało” – w razie wątpliwości fakt ZOSTAJE; liczymy objętość, nie tylko liczbę faktów). W pierwszej kolejności: daty, nazwiska, dygresje historyczne, długie wyliczanki przykładów (zostaw 2–3), szczegóły techniczne aparatury, powtórzenia, rzadkie wyjątki. Nie tniemy: definicji, etapów procesów, mechanizmów, klasyfikacji, liczb, o które łatwo zapytać, porównań.
 4. **Tłumaczenie jest ważniejsze niż ozdobniki**: prosty język, krótkie zdania, najpierw „po co i co to jest”, potem mechanizm, potem szczegóły. Procesy – listy kroków; porównania – tabele. Objaśnienia logiczne są dozwolone, nowe fakty – nie.
 5. Żadnych pytań, quizów, „sprawdź się”, „na kolokwium”.
 6. Każdy podrozdział kończy linia źródła: `Źródło: Drewa s. X–Y` (albo Jóźwiak / Jorde / Ostrowska / Alster / Twyman / Materiał pomocniczy).
