@@ -440,17 +440,29 @@
      strona skończyła się MIĘDZY elementami (np. ramka lub h2 nie zmieściły się i przeszły na następną stronę).
      Po 1. przebiegu dzielimy wtedy .cols w tym miejscu: druga część to nowy kontener od nowej strony
      (.cols-page) – układ się nie zmienia, a kolumny ostatniej strony wyrównują się poprawnie.
-     dests: id -> [indeks strony, top, left] (pt, z PDF). Element „na górze lewej kolumny” = czyste przejście. */
+     dests: id -> [indeks strony, top, left] (pt, z PDF). Element „na górze lewej kolumny” = czyste przejście.
+     Uwaga na układ współrzędnych: Chromium zapisuje cele względem POLA ZADRUKU, nie strony – lewy górny róg
+     pola to [≈ 841,9; 0], a nie [841,89 − 22 mm; 15,5 mm]. Dawny próg w układzie strony uznawał za „górę
+     strony” całe pierwsze ~65 pt (5 wierszy), a podział wypychał wtedy 1–3 wiersze poprzedniego elementu
+     na prawie pustą stronę. Punkt odniesienia bierzemy więc z PDF: rozdział zaczyna się od nowej strony,
+     zatem jego cel = lewy górny róg pola zadruku (niezależnie od marginesów @page i wersji Chromium).
+     Element zaczyna stronę, gdy leży najwyżej o swój margines górny + 3 pt niżej (w 1. przebiegu Chromium
+     obcina margines na przejściu strony: dy = 0); pod końcówką poprzedniego elementu byłby o wiersz niżej. */
   function splitCols(dests) {
-    const TOP = 841.89 - 22 * 72 / 25.4, LEFT = 15.5 * 72 / 25.4;
+    const PAGE_H = 841.89; // zapas, gdyby brakowało celu rozdziału (układ Chromium: góra pola zadruku = wysokość strony)
     let n = 0;
     for (const cols of $$('.cols')) {
       let cur = cols;
       const kids = [...cols.children];
+      const ch = cols.closest('section.chapter');
+      const o = ch && dests[ch.id];
+      const top0 = o && o[1] !== null ? o[1] : PAGE_H, left0 = (o && o[2]) || 0;
       for (let i = 1; i < kids.length; i++) {
         const a = dests[kids[i - 1].id], b = dests[kids[i].id];
         if (!a || !b || b[0] <= a[0] || b[1] === null) continue;
-        if (b[1] < TOP - 3 || (b[2] !== null && b[2] !== undefined && b[2] > LEFT + 20)) continue;
+        const dy = top0 - b[1], dx = (b[2] || 0) - left0;
+        const mt = (parseFloat(getComputedStyle(kids[i]).marginTop) || 0) * 0.75;
+        if (dy > mt + 3 || dx > 20) continue;
         const nc = document.createElement('div');
         nc.className = 'cols cols-page';
         let node = kids[i];

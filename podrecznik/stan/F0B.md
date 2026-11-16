@@ -43,3 +43,27 @@
   (lib/bank_index.py obsługuje tylko k4/k5/g – dopisać sekcję k6 ręcznie albo rozszerzyć skrypt).
 - Ograniczenia: ryciny z banku zawsze na obie kolumny w skali ≈ 1:1 (g-ryc-01/02/07 ≈ 9/10 strony); zostają w kolorach
   oryginału (granat/turkus); okładka i „Jak korzystać” to zaślepki do fazy 5.
+
+## Krok 6 – naprawa splitCols (prawie puste strony z 1–3 osieroconymi wierszami) – 2026-11-16
+- Zgłoszenie: autorzy Z02, Z03, Z04 (stan/z02.md, z03.md, z04.md). Diagnoza potwierdzona: Chromium zapisuje cele PDF (dests)
+  względem POLA ZADRUKU – lewy górny róg pola = [841,9; 0] (lewa kolumna left = 0, prawa 262,5), a próg w splitCols był w układzie
+  strony (TOP = 841,89 − 22 mm = 779,5). Za „czyste przejście strony” uchodził każdy element startujący ≤ 65 pt (5 wierszy) pod górą
+  lewej kolumny -> .cols-page (break-before: page) -> końcówka poprzedniego akapitu sama na stronie (UWAGA „zapełniona w 3%”).
+  Pomiar (przebieg 1): prawdziwe przejścia mają dy = 0 (Chromium obcina margines na przejściu), fałszywe dy ≥ 1 wiersz.
+- Poprawka: lib/browser.js, splitCols – punkt odniesienia = cel samego rozdziału (section.chapter zaczyna stronę, więc to lewy górny
+  róg pola zadruku; niezależne od marginesów @page i od tego, czy Chromium kiedyś zmieni układ); podział tylko gdy
+  dy ≤ margin-top elementu + 3 pt i dx ≤ 20 pt. lib/pdftool.py – tylko opis formatu dests ([strona, top, left], układ pola zadruku).
+- build.mjs, inkCheck: kontrola już była (strona w środku sekcji zapełniona < 35% -> UWAGA; na wariantach z błędem zgłaszała każdą
+  osieroconą stronę). Dodane tylko trafniejsze wyjaśnienie dla < 20%: „prawie pusta strona w środku rozdziału – zwykle 1–3 wiersze
+  osierocone przez łamanie…” (początek komunikatu „zapełniona tylko w N%” bez zmian – skrypty autorów dalej go znajdą).
+- Wyniki (--only NN --png): Z00 2 s., Z02 12 s., Z03 11 s., Z04 14 s. – bez zmian; PDF/PNG identyczne co do piksela z wersją sprzed
+  poprawki (autorzy obeszli błąd w tekście, wszystkie obecne podziały to prawdziwe przejścia, dy = 0). 0 BŁĄD, 0 UWAGA, numeracja
+  stabilna; --demo 42 s. identyczne (2 UWAGI = odsyłacze do jeszcze nienapisanych c05/c06). Arkusze miniatur obejrzane: brak dziur.
+  Zmian w plikach rozdziałów nie było potrzeby.
+- Test regresji (scratchpad/f0b-fix: stara vs nowa lib w kopii z dowiązaniami; warianty z przeszukiwania Z04 i stara wersja Z02):
+  Z04 v01 15->14 s., v02 15->14, v04 17->15, v12 15->14, v15 15->15, v19 16->15, v59 17->15, v00 16->15; Z02 (szkic) 14->13;
+  wszystkie strony 2–6% zniknęły, 0 UWAG (poza v00: s. 11 30% – rycina, nie splitCols). Strony v01 s. 4–6 i Z02 s. 8–10 obejrzane w 96 dpi.
+- Zostaje (bez związku z poprawką, znane z z02.md): blok .cols przed ryciną, która nie mieści się na stronie, wypełnia kolumny po kolei
+  (prawa kolumna krótsza) – inkCheck tego nie łapie (mierzy najniższy atrament). Cele w zakładkach/linkach PDF też są w układzie pola
+  zadruku (widok skacze ok. 62 pt wyżej) – nieszkodliwe, nie ruszane.
+- Do autorów: obejścia „żaden element nie może startować 1–5 wierszy pod górą strony” nie są już potrzebne.

@@ -390,7 +390,11 @@ function inkCheck(pdf, nPages, hasCover, startPages, bodyText) {
       holes.push(pno);
     } else if (fill < 0.35) {
       if (isEnd) W.push({ level: 'info', msg: `s. ${pno}: zapełniona w ${pct}% (ostatnia strona sekcji – zwykle w porządku)` });
-      else { W.push({ level: 'warn', msg: `s. ${pno}: zapełniona tylko w ${pct}% – duża biała dziura (zwykle rycina/tabela nie zmieściła się i przeszła na następną stronę)` }); holes.push(pno); }
+      else {
+        // < 20% w środku sekcji: zwykle nie rycina, tylko kilka osieroconych wierszy (np. podział kolumn w złym miejscu)
+        const why = fill < 0.2 ? 'prawie pusta strona w środku rozdziału – zwykle 1–3 wiersze osierocone przez łamanie; zgłoś, jeśli nie stoi za tym rycina/tabela' : 'duża biała dziura (zwykle rycina/tabela nie zmieściła się i przeszła na następną stronę)';
+        W.push({ level: 'warn', msg: `s. ${pno}: zapełniona tylko w ${pct}% – ${why}` }); holes.push(pno);
+      }
     } else if (fill < 0.6 && !isEnd) {
       W.push({ level: 'info', msg: `s. ${pno}: zapełniona w ${pct}% (biała przestrzeń na dole strony)` });
     }

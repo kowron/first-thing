@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Pomocnik builda (pypdf):
-  pdftool.py dests IN.pdf                -> JSON {pages, dests: {id: [pageIndex, top]}}
+  pdftool.py dests IN.pdf                -> JSON {pages, dests: {id: [pageIndex, top, left]}}
+                                            top/left (pt) jak w PDF Chromium: względem pola zadruku,
+                                            nie strony – lewy górny róg pola = [wysokość strony, 0]
   pdftool.py finalize IN.pdf OUT.pdf META.json -> metadane, zakładki, kontrola linków (JSON na stdout)
   pdftool.py linediff A.pdf B.pdf        -> JSON {pages, diffs: [{page, a: [fragmenty], b: [fragmenty]}]}
                                             porównanie wierszy (pdftotext -layout) po usunięciu U+00AD,
