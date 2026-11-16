@@ -25,3 +25,13 @@
 - Ryciny z banku (8): g-ryc-02, 06, 07, 09, 11, 16, 17, 21. Nowych 0. Odsyłacze: chapref #c05 (PCR), #c06 (kapilara, mikromacierze).
 - Tabele: rodzaje wariantów, HTT, chromatogram, strategie, macierze, Q, położenie→skutek, SIFT vs PolyPhen, bazy, gwiazdki ClinVar, 5 klas.
 - Następny krok: 4 – build `node build.mjs --only 01 --png`, limit 14 s.
+
+## Krok 4 – autokontrola (w toku)
+- Build 1: 20 s. (limit 14), 0 BŁĄD, 1 UWAGA (s. 13 – 32%, dziura przed ryciną). Kopia: scratchpad/g-work/z01-b1.html (60,9 KB).
+- Decyzja: g-ryc-07 (9/10 s.) pominięta – dubluje g-06 i opis Sangera/kapilary z z06, a bez niej limit jest osiągalny (zgoda zleceniodawcy na pominięcie). Zostaje 7 rycin z banku.
+- Plan: tekst −35% (cel ok. 40 KB): Pojęcia → definicje w tekście, skrócone opisy narzędzi (HiFi/nanopor, IGV, SWISS-MODEL/DALI/Rosetta, NCBI/Ensembl/HPA/GDC), bez powtórzeń tabel w prozie; definicje, mechanizmy, reguły interpretacji zostają.
+- Build 2: tekst skrócony do 40 KB (bez Pojęć – definicje w tekście) → **14 s., 0 BŁĄD, 0 UWAGA**. Kopia: scratchpad/g-work/z01-b2.html.
+- Luki: s. 1 (~20% przed g-02), s. 5 (~33% przed g-09), s. 8 (~27% przed g-16), s. 11 (kolumna 2 pusta – h3 „Położenie i mechanizm” tuż przed tabelą wide psuje wyrównanie). Ostatnia strona ~90%.
+- Build 3 (plan): w lukach przywrócić ucięte fakty (tylko po stronie, która ma lukę; nic przed g-06), dodać zdanie wstępne po h3 „Położenie i mechanizm”.
+- Build 3: przywrócone fakty w lukach (s. 1, 5, 8), zdanie po h3 „Położenie i mechanizm” → wyrównanie s. 11 naprawione; **14 s., 0/0**. Kopia: scratchpad/g-work/z01-b3.html. Ostatnia strona pełna do krawędzi (brak zapasu na dłuższe odsyłacze w pełnym buildzie); luki: s. 5 ~24%, s. 8 ~27%, s. 1 ~14%.
+- Build 4 (plan): zapas na s. 14 – usunięta tabela SIFT vs PolyPhen-2 (treść w akapicie i W60), krótsza uwaga o skali 0–1; w lukach s. 5 i 8 – zdanie o metodach ze slajdu 21 (Maxam–Gilbert, pirosekwencjonowanie, SOLiD), jakość WES, trio, pochodzenie wariantu w guzie.
