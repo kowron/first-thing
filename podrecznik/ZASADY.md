@@ -14,6 +14,13 @@ Zakres, źródła, cięcia i listę rycin ustala szef (Fable) w handoffie rozdzi
 8. OCR bywa zniekształcony: nie zgaduj liczb; wątpliwe pomiń i zapisz w stanie.
 9. **Stare wydanie Jordego.** Skan Jordego w paczkach to wydanie z ok. 2000 r. (rozpiska wskazuje wydanie z 2021 r.). Traktuj je ostrożnie: jeśli ta sama informacja jest też w innym źródle podanym do TYCH SAMYCH zajęć (np. w Drewie) – bierz wersję z tego drugiego źródła. Z Jordego bierz tylko to, czego inne źródło tych zajęć nie zawiera; pomijaj dane, które łatwo się dezaktualizują (liczby genów, częstości, „najnowsze” metody, stan wiedzy). Przy rozbieżności między źródłami: wersja drugiego źródła w tekście, rozbieżność zapisana w `stan/zNN.md` dla rewizji. Nadal nie wolno sięgać po żadne źródła spoza rozpiski.
 
+## Styl języka (decyzja zleceniodawcy z 19.11 – obowiązuje dla wszystkich rozdziałów)
+Wzorem są opracowania „Kwasy nukleinowe – kolokwium 4”, „Analiza DNA i RNA – kolokwium 5” i „Genomika”, a w podręczniku – rozdział 6 w wersji z 19.11 (`rozdzialy/z06-*.html`, podrozdział „Hybrydyzacja i sondy”). Język ma być przyjazny i bardzo jasny, **nie podręcznikowy i nie „drewowy”**:
+- nagłówki h3 często jako pytania („Dlaczego obie strony muszą być jednoniciowe?”); każdy podrozdział zaczyna się od problemu, który metoda rozwiązuje;
+- jedna myśl na akapit, krótkie zdania, zwracanie się do czytelnika („wyobraź sobie”, „pamiętasz”), „po co” przy każdym etapie;
+- ramki „Obraz w głowie” (`box obraz`) z analogią i „Przykład” (`box przyklad`) z przejściem krok po kroku – bez nowych faktów;
+- objętość: limit stron jest luźny – można pisać więcej słów, jeśli lepiej tłumaczą (ale nie więcej informacji niż w źródle); orientacyjnie do ok. 2× objętości źródła.
+
 ## Forma
 - Fragment HTML według `podrecznik/KOMPONENTY.md` (wersja dwukolumnowa – powstaje w fazie 0B). Jeden plik = jeden rozdział: `rozdzialy/zNN-nazwa.html`.
 - Komponenty: akapit, h2, h3, listy, tabela, „Pojęcie” (krótka definicja w kolumnie), ramka „Zapamiętaj” (maks. 1 na podrozdział h2, 2–3 zdania), „W 60 sekund” na końcu rozdziału (4–6 punktów). Bez „Przykładów” z wymyślonymi danymi.

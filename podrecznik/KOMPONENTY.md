@@ -78,7 +78,7 @@ i stron nie piszesz – wstawia je build.
 ```
 
 Ramki i „Pojęcie” nie łamią się między kolumnami – trzymaj je krótkie. Innych typów (liceum, warto, poza,
-przyklad, obraz, quiz) build nie przyjmuje (`UWAGA … bez typu`).
+quiz) build nie przyjmuje (od 19.11 dozwolone są też `box obraz` – „Obraz w głowie”, analogia ułatwiająca zrozumienie, i `box przyklad` – przejście krok po kroku przez konkretną sytuację; oba bez nowych faktów spoza źródła) (`UWAGA … bez typu`).
 
 ## 6. Ryciny
 

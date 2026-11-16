@@ -9,11 +9,12 @@
 
   const LABELS = {
     pojecie: 'Pojęcie', zapamietaj: 'Zapamiętaj', uwaga: 'Uwaga do źródła',
+    obraz: 'Obraz w głowie', przyklad: 'Przykład',
     w60: 'W 60 sekund', numbers: 'Liczby do zapamiętania',
   };
   // podręcznik: tylko komponenty z ZASADY.md (inne typy -> UWAGA „bez typu”)
   const NOTE_KINDS = ['pojecie'];
-  const BOX_KINDS = ['zapamietaj', 'uwaga'];
+  const BOX_KINDS = ['zapamietaj', 'uwaga', 'obraz', 'przyklad'];
   const PH = '00'; // zaślepka numeru strony w 1. przebiegu
 
   const $ = (sel, root = document) => root.querySelector(sel);
@@ -134,7 +135,7 @@
     /* ---------- Ramki ---------- */
     for (const b of $$('.box')) {
       const kind = BOX_KINDS.find((k) => b.classList.contains(k));
-      if (!kind) warn(`${where(b)}: ramka bez typu – w podręczniku tylko box zapamietaj / box uwaga`);
+      if (!kind) warn(`${where(b)}: ramka bez typu – w podręczniku tylko box zapamietaj / uwaga / obraz / przyklad`);
       if (b.closest('section.chapter')) stats.boxes++;
       if ($(':scope > .lbl', b)) continue;
       const lbl = b.dataset.title || LABELS[kind] || '';
