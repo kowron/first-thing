@@ -44,7 +44,7 @@ Budżet w stronach A4 dwukolumnowych (twardy limit rozdziału). „Nowe ryciny�
 | Z05 | PCR, enzymy restrykcyjne, metody przesiewowe, markery, diagnostyka | Ostrowska s. 54–64; Drewa r. 27 (703–705, 725, 732–735) | kolokwium 5 | 18 | 0 |
 | Z06 | Elektroforeza, hybrydyzacja, sekwencjonowanie, STR; elektroforeza białek | Drewa r. 27 (712–718, 730–732), r. 29 (769–774, 780–782); Jorde s. 42–43 (brak) | kolokwium 6 + stary rozdz. o białkach | 16 | 0 |
 | Z07 | Komórki macierzyste, różnicowanie, regeneracja | Jóźwiak r. 9 + ryc. 10.7, 10.8; Drewa r. 26; Twyman M3 | – | 10 | 4 |
-| Z08 | Prawa Mendla, współdziałanie genów, rekombinacje, dziedziczenie AD/AR/mitochondrialne, cechy wieloczynnikowe, grupy krwi, Drosophila | Drewa r. 2, 10, 12, 13, 16; Jorde r. 5 (część mitochondrialna); materiał pomocniczy | – | 22 | 7 |
+| Z08 | Prawa Mendla, współdziałanie genów, rekombinacje, dziedziczenie AD/AR/mitochondrialne, cechy wieloczynnikowe, grupy krwi, Drosophila | Drewa r. 2, 10, 12, 13, 16; Jorde r. 5 (część mitochondrialna); materiał pomocniczy | – | 24 | 8 |
 | Z09 | Cytogenetyka: chromosom, kariotyp, prążkowanie, FISH/CGH, zapis wyników, nowotwory | Drewa r. 18 | – | 14 | 6 |
 | Z10 | Chromosomy płci, chromatyna płciowa, teoria Lyon, determinacja gonady, dziedziczenie sprzężone z płcią | Drewa r. 18 (część), r. 20 (część); Jorde r. 5 | – | 10 | 4 |
 | Z11 | Biotechnologia, GMO, terapia genowa, eugenika (zaliczenie ustne) | Drewa r. 28, 30, 35; Jorde r. 13 (brak) | – | 8 | 2 |
