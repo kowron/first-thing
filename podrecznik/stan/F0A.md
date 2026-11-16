@@ -10,3 +10,6 @@ Paczki w scratchpadzie: `zrodla/z02` … `zrodla/z05` + `zrodla/INDEX.md` (tekst
 
 ## Tura 2 (OCR + z06–z08) – 2026-11-16
 - tesseract 5.3.4 + pol + eng zainstalowany przez apt (działa; po restarcie kontenera trzeba zainstalować ponownie).
+- Drewa skan: PDF = strona książki + 28 (sprawdzone na s. 2, 5, 192, 262, 288, 372, 412). Zakresy: r2 s. 9–25 (PDF 37–53), r10 s. 197–252 (PDF 225–280), r12 s. 269–292 (PDF 297–320), r13 s. 293–310 (PDF 321–338), r16 s. 373–417 (PDF 401–445). OCR stron gotowy: `scratchpad/ocr/drewa/pages/p-NNN.{png,txt,tsv}` (200 dpi, tesseract pol psm 3 – kolejność łamów OK). Spis treści (OCR 300 dpi, sparsowany): `ocr/drewa/toc300/toc.json`. Skrypty: `scripts/ocr_pages.sh` (render+OCR równolegle), `scripts/tsv2txt.py` (składanie strony z TSV: łączenie linii, podpisy/etykiety na koniec strony, tabele ponownie psm 6).
+- UWAGA: tesseract uruchamiać z `OMP_THREAD_LIMIT=1` (równoległe procesy z OpenMP zawieszają się).
+- Jorde PDF „pdf24_przekonwertowany (2).pdf”: zrzuty j-000…j-007 = rozdz. 5 (s. ~100–125), zrzuty j-008…j-023 = INNY rozdział Jordego (r. 13 „Genetyczne badania przesiewowe, diagnostyka genetyczna i terapia genowa”, s. ~316–340) – poza zakresem. Obrazy: `ocr/jorde/raw/j-NNN.jpg`; wykrywanie pasów rozkładówek: `scripts/jorde_seg.py` → `ocr/jorde/seg/`.

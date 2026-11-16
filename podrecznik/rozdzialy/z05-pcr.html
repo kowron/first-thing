@@ -1,0 +1,460 @@
+<section class="chapter" data-num="05" data-title="PCR, enzymy restrykcyjne, metody przesiewowe, markery i diagnostyka molekularna"
+  data-short="PCR, restryktazy i diagnostyka" data-kicker="PCR · restryktazy · przesiew · markery · diagnostyka">
+
+  <p class="lead">Jak skopiować wybrany fragment DNA, jak go pociąć i jak znaleźć w nim zmianę – a potem: jak te metody pomagają wykrywać zakażenia i choroby uwarunkowane genetycznie.</p>
+
+  <!-- ============ 1 ============ -->
+  <h2 id="c05-pcr">PCR: zasada i składniki mieszaniny</h2>
+  <p>Reakcja łańcuchowa polimerazy (PCR, ang. <i>polymerase chain reaction</i>) to namnożenie – <b>amplifikacja</b> – wybranego odcinka DNA w probówce. Naśladuje naturalną replikację: polimeraza DNA kopiuje nić matrycy, a kolejne cykle zwielokrotniają liczbę kopii. PCR jest zwykle następnym krokiem po izolacji DNA; pobieranie materiału, izolację i ocenę preparatu opisuje <a class="chapref" href="#c04"></a>.</p>
+  <aside class="note pojecie" data-term="Amplikon"><p>fragment DNA ograniczony parą starterów – to on jest produktem PCR.</p></aside>
+  <p>PCR nie kopiuje całego DNA z próbki. Powielany jest tylko fragment ograniczony parą <b>starterów</b>, czyli <b>amplikon</b>. Żeby zaprojektować startery, trzeba znać sekwencje, które ten fragment otaczają (oskrzydlają).</p>
+
+  <h3>Składniki mieszaniny reakcyjnej</h3>
+  <p>W mieszaninie reakcyjnej PCR jest siedem składników:</p>
+  <ol>
+    <li><b>matrycowy DNA</b> – badane DNA (albo cDNA przepisane z RNA), z którego kopiuje się wybrany fragment;</li>
+    <li><b>startery oligonukleotydowe</b> – para krótkich, jednoniciowych odcinków DNA, które wyznaczają początek i koniec fragmentu;</li>
+    <li><b>termostabilna polimeraza DNA</b>, np. polimeraza Taq – buduje nowe nici;</li>
+    <li><b>dNTP</b> – cztery deoksyrybonukleotydy trifosforanowe: dATP, dGTP, dTTP i dCTP – materiał do budowy nici;</li>
+    <li><b>jony magnezu</b> Mg<sup>2+</sup> – kofaktor polimerazy;</li>
+    <li><b>bufor</b> dla polimerazy – utrzymuje właściwe pH i skład jonów;</li>
+    <li><b>woda</b> ultraczysta – dopełnia objętość mieszaniny.</li>
+  </ol>
+
+  <h3>Startery</h3>
+  <p>Startery mają zwykle około 20 nukleotydów. Każdy z dwóch starterów przyłącza się do innej nici matrycy, dokładnie na krawędzi kopiowanego fragmentu, a ich końce 3′ są skierowane do środka tego odcinka. Polimeraza wydłuża każdy starter w kierunku 5′→3′. Dobry starter wiąże się swoiście tylko z wybranym miejscem i nie tworzy silnych połączeń z drugim starterem. Startery dodaje się w nadmiarze, żeby w każdym cyklu wystarczyło ich dla wszystkich nici matrycy.</p>
+
+  <h3>Polimeraza, jony magnezu, dNTP i bufor</h3>
+  <p>W każdym cyklu mieszanina nagrzewa się do około 95 °C, a w takiej temperaturze większość enzymów ulega denaturacji. Dlatego PCR wymaga <b>termostabilnej polimerazy DNA</b> – najbardziej znana jest polimeraza Taq z bakterii <i>Thermus aquaticus</i>.</p>
+  <p>Jony Mg<sup>2+</sup> umożliwiają wydajne wiązanie polimerazy z miejscem, w którym starter łączy się z matrycą, i sprawną elongację. Ich stężenie trzeba dobrać: przy zbyt małym wydajność reakcji wyraźnie spada, przy zbyt dużym powstają produkty niespecyficzne, a polimeraza częściej myli się przy wstawianiu nukleotydów. Potrzebne są wszystkie cztery dNTP, bo każda nić zawiera nukleotydy z A, T, G i C.</p>
+  <div class="box uwaga"><p>W skrypcie (Ostrowska s. 54) wśród nukleotydów wymieniono „dATP, dGTP, dTTP, dDTP”. „dDTP” to błąd drukarski – czwartym nukleotydem jest <b>dCTP</b>, z cytozyną.</p></div>
+  <p class="src">Źródło: Ostrowska s. 53–54 · Materiał pomocniczy</p>
+
+  <!-- ============ 2 ============ -->
+  <h2 id="c05-cykl">Cykl PCR i ocena wyniku</h2>
+  <p>PCR przebiega w <b>termocyklerze</b> – urządzeniu, które cyklicznie zmienia temperaturę mieszaniny. Każdy cykl ma trzy etapy (<a class="figref" href="#c05-fig-cykl"></a>):</p>
+  <ol>
+    <li><b>Denaturacja</b> (ok. 95 °C) – dwuniciowy DNA rozdziela się na pojedyncze nici, bo pękają wiązania wodorowe między zasadami.</li>
+    <li><b>Przyłączanie starterów</b>, czyli hybrydyzacja (ang. <i>annealing</i>; 55–65 °C) – startery łączą się swoiście z komplementarnymi miejscami na matrycy.</li>
+    <li><b>Wydłużanie</b>, czyli elongacja (ok. 72 °C) – polimeraza dobudowuje nową nić, zaczynając od końca 3′ startera.</li>
+  </ol>
+
+  <figure class="fig" id="c05-fig-cykl" data-bank="k5-ryc-04" data-title="Cykl PCR">
+    <figcaption>A – profil temperatury jednego cyklu w termocyklerze. B – co dzieje się z DNA w każdym etapie. C – w każdym cyklu liczba kopii fragmentu może się podwoić; po <i>n</i> cyklach teoretycznie 2<sup><i>n</i></sup>.</figcaption>
+  </figure>
+
+  <p>Cykl powtarza się około 36–40 razy. Na początku każdego cyklu nici znów się rozdzielają, więc startery – obecne w nadmiarze – mogą ponownie przyłączyć się do matrycy, także do nici skopiowanych w poprzednich cyklach.</p>
+
+  <h3>Ile kopii powstaje</h3>
+  <p>W każdym cyklu liczba kopii wybranego fragmentu może się podwoić: z jednej cząsteczki powstają dwie, z dwóch cztery, z czterech osiem. Po <i>n</i> cyklach teoretycznie powstaje 2<sup><i>n</i></sup> kopii. W prawdziwej reakcji wydajność jest ograniczona i po wielu cyklach ilość produktu przestaje rosnąć – reakcja osiąga <b>plateau</b>.</p>
+  <div class="box uwaga"><p>W skrypcie (Ostrowska s. 54) napisano, że rezultatem PCR jest „10<sup><i>n</i></sup>-krotne” powielenie fragmentu (<i>n</i> – liczba cykli). Poprawnie: 2<sup><i>n</i></sup>-krotne – w każdym cyklu każda kopia może dać najwyżej jedną nową, więc liczba kopii co najwyżej się podwaja.</p></div>
+
+  <h3>Od czego zależy wynik</h3>
+  <ul>
+    <li>stężenie jonów Mg<sup>2+</sup> i aktywność polimerazy Taq;</li>
+    <li>profil temperatury cyklu, zwłaszcza temperatura przyłączania starterów;</li>
+    <li>startery dobrze dobrane do amplikonu – swoiste i niełączące się ze sobą;</li>
+    <li>jakość matrycy – bez substancji hamujących polimerazę, np. heparyny;</li>
+    <li>pełny zestaw odczynników: bufor, dNTP, MgCl<sub>2</sub>, woda ultraczysta, polimeraza.</li>
+  </ul>
+  <p><b>Temperatura przyłączania starterów</b> decyduje o swoistości. Gdy jest za niska, startery przyłączają się także do miejsc tylko częściowo do nich pasujących i powstają produkty niespecyficzne. Gdy jest za wysoka, startery słabo wiążą się z matrycą i produktu jest mało. Dlatego przydaje się termocykler z gradientem temperatury, w którym można sprawdzić kilka temperatur jednocześnie. Startery częściowo komplementarne do siebie mogą się ze sobą połączyć – powstaje wtedy mały, niepożądany produkt, struktura <b>primer-dimer</b>.</p>
+
+  <h3>Jak sprawdzić, czy PCR zadziałał</h3>
+  <p>W klasycznym PCR produkt wykrywa się po zakończeniu reakcji: rozdziela się go w <b>żelu agarozowym</b> razem ze wzorcem wielkości. Żel pozwala ocenić specyficzność reakcji – sprawdzić, czy prążek ma oczekiwaną wielkość, wyrażoną w parach zasad (pz, ang. <i>bp – base pairs</i>).</p>
+  <ul>
+    <li>prążek o oczekiwanej wielkości – wybrany fragment został powielony;</li>
+    <li>brak prążka – badanej sekwencji nie było w próbce albo reakcja nie zaszła;</li>
+    <li>dodatkowe prążki innej wielkości – powstały produkty niespecyficzne;</li>
+    <li>kontrola bez matrycy (kontrola ujemna) powinna pozostać pusta – prążek w niej oznacza zanieczyszczenie.</li>
+  </ul>
+  <p>Postęp reakcji można też śledzić na bieżąco, w każdym cyklu – w PCR w czasie rzeczywistym (<a class="pageref" href="#c05-realtime"></a>). Czasem celem badania jest tylko wykrycie genu, np. fragmentu genomu czynnika zakaźnego, żeby potwierdzić zakażenie – wtedy wystarcza żel. Kiedy indziej w powielonym fragmencie szuka się mutacji odpowiedzialnej za chorobę: w diagnostyce chorób genetycznych, także prenatalnej, i w onkologii.</p>
+  <p>Zastosowania PCR to więc: wykrywanie drobnoustrojów (bakterii, wirusów, grzybów, pierwotniaków), namnażanie wybranych fragmentów DNA i RNA (RNA po przepisaniu na cDNA), zastępowanie klonowania – PCR powieli nawet rzadką sekwencję z mieszaniny, o ile znamy sekwencje, które ją otaczają – badanie bardzo starego i skąpego materiału, np. zaschniętej plamy krwi (stąd znaczenie PCR w kryminalistyce), oraz diagnostyka chorób genetycznych i nowotworów.</p>
+  <div class="box zapamietaj"><p>Cykl PCR: denaturacja (ok. 95 °C) → przyłączanie starterów (55–65 °C) → wydłużanie (ok. 72 °C), powtarzany 36–40 razy. Każdy cykl może podwoić liczbę kopii: po <i>n</i> cyklach teoretycznie 2<sup><i>n</i></sup>, potem plateau. Wynik ocenia się w żelu agarozowym; kontrola bez matrycy musi być pusta.</p></div>
+  <p class="src">Źródło: Ostrowska s. 53–55, 57 · Materiał pomocniczy</p>
+
+  <!-- ============ 3 ============ -->
+  <h2 id="c05-rt">Odwrotna transkrypcja i RT-PCR</h2>
+  <p><b>Odwrotna transkrypcja</b> (RT, ang. <i>reverse transcription</i>) to przepisanie RNA na komplementarny do niego DNA, czyli <b>cDNA</b>. Wykonuje ją enzym <b>odwrotna transkryptaza</b> – polimeraza DNA zależna od RNA. Otrzymane cDNA jest matrycą do PCR, a połączenie obu etapów to <b>RT-PCR</b>. Izolację i przechowywanie RNA opisuje <a class="chapref" href="#c04"></a>.</p>
+  <p>RT-PCR wykrywa obecność określonych transkryptów genu i pozwala ocenić ich ilość, czyli <b>ekspresję genu</b>. Przepisywana jest sekwencja dojrzałego mRNA – złożona wyłącznie z eksonów.</p>
+
+  <h3>Startery do odwrotnej transkrypcji</h3>
+  <table class="tbl wide">
+    <thead><tr><th style="width:26%">Starter</th><th style="width:28%">Gdzie się wiąże</th><th>Co daje</th></tr></thead>
+    <tbody>
+      <tr><td>specyficzny dla genu (GSP)</td><td>tylko z mRNA badanego genu</td><td>RT i PCR w jednej probówce; cDNA nadaje się tylko do jednego testu</td></tr>
+      <tr><td>oligo(dT)</td><td>z ogonem poli(A) mRNA</td><td>cDNA ze wszystkich mRNA, o długości do 5 kb</td></tr>
+      <tr><td>losowe (heksamery, oktamery, nonamery)</td><td>w wielu miejscach dowolnego RNA</td><td>tylko losowe heksamery pozwalają przepisać na cDNA wszystkie sekwencje RNA</td></tr>
+    </tbody>
+  </table>
+  <p>Reakcja jednoetapowa – RT i PCR w jednej probówce, ze starterami GSP – daje powtarzalniejsze wyniki i mniejsze ryzyko zanieczyszczenia, bo etapów jest mniej. Takie cDNA nadaje się jednak tylko do jednego testu genetycznego, dlatego zależnie od celu używa się też starterów oligo(dT) i krótkich starterów losowych.</p>
+  <p>W bardzo czułych badaniach przeszkadzają nawet niewielkie ilości genomowego DNA; usuwa się je DNazą zaraz po izolacji RNA albo przed odwrotną transkrypcją. cDNA może posłużyć jako matryca w jakościowym PCR – żeby wykryć transkrypt badanego genu – albo w ilościowym PCR w czasie rzeczywistym, który ocenia względną i bezwzględną ilość matrycy oraz poziom ekspresji genu.</p>
+  <p class="src">Źródło: Ostrowska s. 56–57 · Drewa s. 724</p>
+
+  <!-- ============ 4 ============ -->
+  <h2 id="c05-realtime">PCR w czasie rzeczywistym i sonda TaqMan</h2>
+  <p><b>PCR w czasie rzeczywistym</b> (ang. <i>real-time PCR</i>; w wersji ilościowej – <b>RT-Q-PCR</b>) łączy amplifikację z pomiarem ilości produktu w każdym kolejnym cyklu. Umożliwiają to barwniki lub sondy znakowane fluorescencyjnie, dodane do mieszaniny. Sygnał fluorescencji jest proporcjonalny do liczby powstających cząsteczek DNA. Produkty wykrywa się na dwa sposoby (<a class="figref" href="#c05-fig-taqman"></a>):</p>
+  <aside class="note pojecie" data-term="Reporter"><p>fluorochrom (cząsteczka, która pochłania światło jednej długości fali i świeci światłem innej), którego świecenie mierzy aparat.</p></aside>
+  <ul>
+    <li><b>Detekcja niespecyficzna</b> – np. barwnikiem SYBR Green. To najprostsza i najtańsza metoda, ale najbardziej podatna na błędy: barwnik wiąże się też ze strukturą primer-dimer i z innymi niespecyficznymi produktami reakcji.</li>
+    <li><b>Detekcja specyficzna</b> – fluorescencyjnie znakowane są startery lub sonda. Energia pochłonięta przez jeden fluorochrom (reporter) przechodzi na drugi, który świeci światłem o innej długości fali, albo emisję reportera wygasza związek wygaszający. Wyniki są zdecydowanie lepsze – przykładem są sondy TaqMan.</li>
+  </ul>
+
+  <h3>Jak działa sonda TaqMan</h3>
+  <p><b>Sonda TaqMan</b> to odcinek DNA z kilkunastu nukleotydów, komplementarny do fragmentu leżącego między starterami. Do jej końca 5′ jest przyłączony kowalencyjnie barwnik fluorescencyjny – <b>reporter</b> (R), a przy końcu 3′ znajduje się <b>wygaszacz</b> (W). Koniec 3′ jest zablokowany, żeby polimeraza nie wydłużała sondy. W każdym cyklu (<a class="figref" href="#c05-fig-taqman" data-panel="B"></a>):</p>
+  <ol>
+    <li>Startery i sonda przyłączają się do matrycy. Dopóki sonda jest cała, bliskość wygaszacza tłumi fluorescencję reportera.</li>
+    <li>Polimeraza wydłuża starter i dochodzi do sondy.</li>
+    <li>Polimeraza ma aktywność 5′→3′ nukleazy – rozkłada sondę przyłączoną do matrycy. Fragmenty sondy odłączają się, a synteza nowej nici trwa dalej.</li>
+    <li>Reporter oddala się od wygaszacza i zaczyna świecić; detektor rejestruje wzrost fluorescencji.</li>
+  </ol>
+  <p>Natężenie fluorescencji jest proporcjonalne do początkowej ilości matrycy w próbce. Ponieważ startery i sonda są specyficzne, powielana jest wyłącznie pożądana sekwencja – można ją więc swoiście wykryć i oznaczyć ilościowo.</p>
+
+  <h3>Wartość Ct i liczba kopii</h3>
+  <aside class="note pojecie" data-term="Linia odcięcia"><p>próg fluorescencji ustawiony powyżej sygnału tła (linii bazowej).</p></aside>
+  <p>PCR w czasie rzeczywistym pozwala obliczyć, ile kopii badanego fragmentu było w próbce przed reakcją. Służy do tego wartość <b>Ct</b> (ang. <i>threshold cycle</i>) – numer cyklu, w którym fluorescencja wzrasta ponad linię odcięcia. Im wcześniej krzywa przekroczy tę linię (niższe Ct), tym więcej kopii było w próbce na początku. Najczęściej Ct przypada na moment, w którym reakcja wchodzi w fazę logarytmicznego przyrostu produktu.</p>
+  <p>Żeby poznać liczbę kopii, przygotowuje się serię rozcieńczeń roztworu o znanej liczbie kopii DNA i wykreśla z nich <b>krzywą standardową</b> (wzorcową). Z krzywej odczytuje się wyjściową liczbę cząsteczek odpowiadającą wartości Ct próbki.</p>
+
+  <figure class="fig" id="c05-fig-taqman" data-bank="k5-ryc-14" data-title="Detekcja w PCR w czasie rzeczywistym">
+    <figcaption>A – SYBR Green świeci przy każdym produkcie: właściwym, niespecyficznym i przy primer-dimer. B – sonda TaqMan świeci dopiero wtedy, gdy polimeraza ją rozłoży i reporter (R) oddali się od wygaszacza (W).</figcaption>
+  </figure>
+
+  <p class="src">Źródło: Ostrowska s. 57–59</p>
+
+  <!-- ============ 5 ============ -->
+  <h2 id="c05-odmiany">Nested PCR, multipleks PCR i ASA</h2>
+  <p>Podstawową reakcję PCR można modyfikować: użyć dwóch par starterów po kolei, kilku par naraz albo starterów, które rozróżniają allele. Każda odmiana rozwiązuje inny problem diagnostyczny.</p>
+
+  <h3>Nested PCR – PCR wewnętrzny (gniazdowy)</h3>
+  <p><b>Nested PCR</b>, po polsku wewnętrzna lub gniazdowa PCR, wykorzystuje dwie pary starterów: „zewnętrzne” i „wewnętrzne” (<a class="figref" href="#c05-fig-nested" data-panel="A"></a>):</p>
+  <ol>
+    <li>Pierwsza reakcja – PCR ze starterami zewnętrznymi. Powstaje dłuższy produkt, który zawiera badany odcinek.</li>
+    <li>Druga reakcja – produkt pierwszej reakcji jest matrycą. Startery wewnętrzne powielają krótszy fragment, leżący wewnątrz sekwencji powielonej w pierwszej PCR.</li>
+  </ol>
+
+  <p>Dwie pary starterów zmniejszają ryzyko powielenia niewłaściwego fragmentu: jeśli w pierwszej reakcji powstał błędny produkt, startery wewnętrzne zwykle nie znajdą w nim miejsca do przyłączenia. Rośnie więc specyficzność, a jednocześnie czułość reakcji. Nested PCR stosuje się, gdy po izolacji jest bardzo mało matrycowego DNA, i często w diagnostyce zakażeń.</p>
+
+  <h3>Multipleks PCR</h3>
+  <p><b>Multipleks PCR</b> to jednoczesna amplifikacja kilku fragmentów DNA w jednej probówce – w mieszaninie jest kilka par starterów. Można tak powielić naraz kilka regionów jednego genu albo kilku różnych genów, co skraca badanie większych obszarów DNA. Fragmenty powinny różnić się wielkością, żeby po elektroforezie łatwo było je rozróżnić. Jeśli któryś fragment genu się nie powieli, może to świadczyć o jego braku – o <b>delecji</b> (<a class="figref" href="#c05-fig-nested" data-panel="B"></a>).</p>
+  <p>Multipleks PCR po raz pierwszy wykorzystano w diagnostyce dystrofii mięśniowej Duchenne’a i Beckera. Dziś wykonuje się w niej kilka reakcji multipleks, co pozwala wykryć blisko 100% dużych delecji w genie <i>DMD</i>. Produkty można dalej badać, np. pod kątem mutacji punktowych lub polimorfizmów.</p>
+
+  <figure class="fig" id="c05-fig-nested" data-bank="k5-ryc-16" data-title="Nested PCR i multipleks PCR">
+    <figcaption>A – nested PCR: najpierw startery zewnętrzne, potem – na produkcie pierwszej reakcji – startery wewnętrzne. B – multipleks PCR: trzy pary starterów w jednej probówce; brak prążka eksonu e4 u pacjenta wskazuje na delecję.</figcaption>
+  </figure>
+
+
+  <h3>ASA – amplifikacja allelo-specyficzna</h3>
+  <p><b>Amplifikacja allelo-specyficzna</b> (ASA, ang. <i>allele-specific amplification</i>; inne nazwy: PASA, ASP, ARMS) wykrywa polimorfizm alleli i mutacje punktowe. Gdy znamy mutację punktową leżącą poza miejscem restrykcyjnym, projektuje się dwa startery, komplementarne do dwóch alleli różniących się jednym nukleotydem: starter dla allelu prawidłowego i starter dla allelu zmutowanego. Tak wykrywa się także mutacje, które nie zmieniają miejsca trawienia restrykcyjnego, więc nie widać ich w RFLP.</p>
+  <p>Polimeraza wydłuża starter tylko wtedy, gdy jego ostatni nukleotyd – na końcu 3′ – pasuje do matrycy. Dla każdej osoby wykonuje się dwie reakcje: ze starterem dla allelu prawidłowego (N) i ze starterem dla allelu zmutowanego (M). To, w której reakcji powstał produkt, pokazuje genotyp (<a class="figref" href="#c05-fig-asa"></a>). ASA stosuje się np. w diagnostyce mukowiscydozy (CF, ang. <i>cystic fibrosis</i>).</p>
+
+  <figure class="fig" id="c05-fig-asa" data-bank="k5-ryc-17" data-title="Amplifikacja allelo-specyficzna (ASA)">
+    <figcaption>Produkt powstaje tylko wtedy, gdy koniec 3′ startera pasuje do matrycy. Zdrowy (N/N) ma prążek tylko w reakcji N, nosiciel (N/M) – w obu reakcjach, a chory (M/M) – tylko w reakcji M.</figcaption>
+  </figure>
+
+  <table class="tbl wide">
+    <thead><tr><th style="width:22%">Odmiana PCR</th><th style="width:40%">Na czym polega</th><th>Po co</th></tr></thead>
+    <tbody>
+      <tr><td>nested (wewnętrzna, gniazdowa)</td><td>dwie reakcje: startery zewnętrzne, potem wewnętrzne</td><td>większa specyficzność i czułość; mało DNA</td></tr>
+      <tr><td>multipleks</td><td>kilka par starterów w jednej probówce</td><td>kilka fragmentów naraz; brak prążka = delecja</td></tr>
+      <tr><td>ASA (PASA, ASP, ARMS)</td><td>startery pasujące końcem 3′ do jednego allelu</td><td>wykrywanie znanych mutacji punktowych</td></tr>
+      <tr><td>RT-PCR</td><td>odwrotna transkrypcja RNA na cDNA, potem PCR</td><td>wykrywanie transkryptów, ekspresja genów</td></tr>
+      <tr><td>RT-Q-PCR (w czasie rzeczywistym)</td><td>pomiar fluorescencji w każdym cyklu (SYBR Green, TaqMan)</td><td>ilość matrycy, liczba kopii</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Źródło: Ostrowska s. 54, 60 · Drewa s. 724–726</p>
+
+  <!-- ============ 6 ============ -->
+  <h2 id="c05-restr">Enzymy restrykcyjne</h2>
+  <p><b>Enzymy restrykcyjne</b>, czyli restryktazy, należą do <b>endonukleaz</b> – enzymów, które przecinają łańcuch DNA w jego wnętrzu (egzonukleazy odcinają nukleotydy kolejno od końca łańcucha). Każda restryktaza tnie dwuniciowy DNA w miejscu o określonej, specyficznej dla siebie sekwencji. Dzięki temu daje zdefiniowane fragmenty DNA, których długość zależy od odległości między rozpoznawanymi miejscami.</p>
+
+  <h3>Skąd pochodzą</h3>
+  <p>Restryktazy znaleziono tylko w komórkach bakterii i sinic. Chronią one te organizmy przed zakażeniem przez bakteriofagi – wirusy bakteryjne. Razem z metylazami DNA tworzą <b>system restrykcji i modyfikacji</b>: metylaza dołącza grupy metylowe do DNA bakterii w tych samych miejscach, które rozpoznaje restryktaza, więc własne DNA pozostaje nienaruszone. DNA faga, które wniknęło do komórki, nie ma tych znaczników i zostaje pocięte.</p>
+
+  <h3>Jakie sekwencje rozpoznają</h3>
+  <aside class="note pojecie" data-term="Palindrom"><p>sekwencja, która na obu niciach DNA, czytana od 5′ do 3′, jest taka sama, np. GAATTC.</p></aside>
+  <p>Rozpoznawana sekwencja ma zwykle długość 4–8 par zasad i jest symetryczna – to <b>palindrom</b>. Na przykład <i>Eco</i>RI rozpoznaje <span class="seq">GAATTC</span>, a na drugiej nici, czytanej od 5′ do 3′, też jest <span class="seq">GAATTC</span> (<a class="figref" href="#c05-fig-konce" data-panel="A"></a>).</p>
+
+  <figure class="fig" id="c05-fig-konce" data-bank="k5-ryc-08" data-title="Palindrom, cięcie i rodzaje końców">
+    <figcaption>A – <i>Eco</i>RI rozpoznaje palindrom GAATTC i przecina obie nici między G i A; oba fragmenty mają jednoniciowe końce 5′-AATT. B – końce lepkie 5′ (<i>Eco</i>RI), lepkie 3′ (<i>Hha</i>I) i tępe (<i>Eco</i>RV).</figcaption>
+  </figure>
+
+  <p>Ze względu na długość rozpoznawanej sekwencji restryktazy dzieli się na trzy grupy:</p>
+  <ul>
+    <li><b>czwórkowe</b> – tną średnio co 256 pz i dają bardzo małe fragmenty;</li>
+    <li><b>szóstkowe</b> – tną statystycznie co ok. 4096 pz i dają fragmenty średniej wielkości; enzym i warunki dobiera się doświadczalnie;</li>
+    <li><b>ósemkowe</b> – tną rzadko, bo DNA ma niewiele takich miejsc, i dają duże fragmenty.</li>
+  </ul>
+  <p>Skąd te liczby? W każdej pozycji może stać jeden z czterech nukleotydów, więc konkretna sekwencja 4 nukleotydów trafia się średnio raz na 4<sup>4</sup> = 256 pz, a sekwencja 6 nukleotydów – raz na 4<sup>6</sup> = 4096 pz. Zakłada to jednak, że wszystkich nukleotydów jest w DNA tyle samo, a w rzeczywistości ich proporcje różnią się między organizmami – stąd doświadczalny dobór enzymu szóstkowego. Enzymy z różnych szczepów bakterii, które rozpoznają tę samą sekwencję, to <b>izoschizomery</b>.</p>
+
+  <h3>Jak powstają nazwy</h3>
+  <p>Nazwę tworzy się od bakterii, z której wyizolowano enzym: pierwsza litera nazwy rodzajowej i dwie pierwsze litery nazwy gatunkowej (kursywą), litery lub cyfry oznaczające szczep oraz cyfra rzymska – kolejność wyizolowania enzymu z tego gatunku lub szczepu. <i>Hin</i>dIII to trzeci enzym wyizolowany z <i>Haemophilus influenzae</i> serotypu d, a <i>Eco</i>RI pochodzi z <i>Escherichia coli</i>.</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:14%">Enzym</th><th style="width:36%">Bakteria</th><th style="width:24%">Miejsce cięcia (5′→3′)</th><th>Końce</th></tr></thead>
+    <tbody>
+      <tr><td><i>Hae</i>III</td><td><i>Haemophilus aegyptius</i></td><td><span class="seq">GG/CC</span></td><td>tępe</td></tr>
+      <tr><td><i>Hha</i>I</td><td><i>Haemophilus haemolyticus</i></td><td><span class="seq">GCG/C</span></td><td>lepkie 3′</td></tr>
+      <tr><td><i>Eco</i>RI</td><td><i>Escherichia coli</i></td><td><span class="seq">G/AATTC</span></td><td>lepkie 5′</td></tr>
+      <tr><td><i>Eco</i>RV</td><td><i>Escherichia coli</i></td><td><span class="seq">GAT/ATC</span></td><td>tępe</td></tr>
+      <tr><td><i>Taq</i>I</td><td><i>Thermus aquaticus</i></td><td><span class="seq">T/CGA</span></td><td>lepkie 5′</td></tr>
+      <tr><td><i>Not</i>I</td><td><i>Nocardia otitidis-caviarum</i></td><td><span class="seq">GC/GGCCGC</span></td><td>rozpoznaje sekwencję 8 nukleotydów</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Końce tępe i lepkie</h3>
+  <p>Po przecięciu DNA powstają dwa rodzaje końców (<a class="figref" href="#c05-fig-konce" data-panel="B"></a>):</p>
+  <ul>
+    <li><b>końce tępe</b> – obie nici przecięte dokładnie naprzeciwko siebie, bez wolnych, niesparowanych nukleotydów (np. <i>Eco</i>RV, <i>Hae</i>III);</li>
+    <li><b>końce lepkie</b> – cięcia na obu niciach przesunięte o kilka nukleotydów („dachówkowato”), więc na końcach zostają krótkie, jednoniciowe odcinki: lepkie końce 5′ z 2–6 nukleotydów (<i>Eco</i>RI, <i>Taq</i>I) albo lepkie końce 3′ z 2–4 nukleotydów (<i>Hha</i>I).</li>
+  </ul>
+  <p>Jednoniciowe odcinki lepkich końców są komplementarne do końców każdego innego fragmentu przeciętego tym samym enzymem i łatwo się z nimi parują. Wiązania wodorowe przytrzymują oba końce przy sobie, dlatego ligacja lepkich końców jest znacznie wydajniejsza niż tępych.</p>
+
+  <h3>Jednostka restrykcyjna i warunki trawienia</h3>
+  <aside class="note pojecie" data-term="Trawienie"><p>w biologii molekularnej – cięcie DNA enzymem restrykcyjnym.</p></aside>
+  <p>Jedna <b>jednostka</b> enzymu to taka jego ilość, która w ciągu 1 godziny w temperaturze 37 °C całkowicie trawi 1 µg DNA faga λ – cząsteczki o długości ok. 50 kpz. W warunkach odbiegających od optymalnych enzym może stracić swoistość i ciąć sekwencje różniące się od właściwej, np. o jedną zasadę – to <b>aktywność „star”</b>; gwiazdka przy nazwie enzymu oznacza, że może on działać niespecyficznie. <i>Eco</i>RI w zmienionych warunkach przetnie też np. CAATTC, GAATTG czy GTATTC. Żeby enzym zachował swoistość, trzeba przestrzegać warunków trawienia, takich jak pH roztworu i stężenie jonów magnezu.</p>
+
+  <h3>Wzór restrykcyjny i mapa restrykcyjna</h3>
+  <p>Fragmenty po trawieniu rozdziela się elektroforetycznie – układają się od najmniejszych do największych, a w jednym prążku są fragmenty tej samej wielkości, zwykle o tej samej sekwencji. Ich wielkość odczytuje się ze wzorca – mieszaniny fragmentów DNA o znanej długości.</p>
+  <ul>
+    <li><b>Wzór restrykcyjny</b> – wielkości fragmentów otrzymanych po trawieniu DNA danym enzymem lub enzymami. Liczba fragmentów zależy od liczby miejsc restrykcyjnych, a ich długość – od odległości między nimi.</li>
+    <li><b>Mapa restrykcyjna</b> – wzajemne położenie miejsc cięcia w cząsteczce DNA. Ustala się ją, trawiąc DNA enzymami pojedynczo i w kombinacjach, a potem porównując wzory.</li>
+  </ul>
+  <p>Każda cząsteczka DNA ma swoją mapę i swój wzór restrykcyjny. Oprócz restryktaz biologia molekularna korzysta z wielu innych enzymów: ligazy DNA (łączy fragmenty DNA), egzonukleaz (modyfikują końce fragmentów), polimerazy DNA (PCR), odwrotnej transkryptazy (przepisuje RNA na cDNA), metylazy DNA, DNazy (usuwa DNA z preparatu RNA), RNaz (zagrożenie dla RNA podczas izolacji) i termostabilnej ligazy (łańcuchowa reakcja ligazy, LCR).</p>
+  <p class="src">Źródło: Drewa s. 703–705, 724 · Ostrowska s. 55–57</p>
+
+  <!-- ============ 7 ============ -->
+  <h2 id="c05-przesiew">Mutacje i metody przesiewowe: SSCP, DGGE, TGGE</h2>
+  <p><b>Mutacja</b> to jakościowa lub ilościowa zmiana w materiale genetycznym komórki. Może dotyczyć liczby i budowy chromosomów, pojedynczych genów lub ich fragmentów albo tylko jednej zasady w sekwencji DNA.</p>
+  <p><b>Polimorfizm genetyczny</b> to występowanie w populacji dwóch lub więcej form danego genu (alleli) z częstością większą, niż wynikałoby z częstości mutacji. Przyjęto prostą regułę: o polimorfizmie mówimy, gdy najrzadszy allel w danym locus ma częstość <b>większą niż 1%</b>. Polimorfizm, podobnie jak mutacja, wynika ze zmian sekwencji DNA. Może dotyczyć powtórzeń wielokrotnych – STRP (polimorfizm krótkich powtórzeń tandemowych) lub VNTR (zmienna liczba powtórzeń tandemowych) – albo pojedynczych nukleotydów: insercji, delecji lub substytucji, w części kodującej lub niekodującej genu. Skutkiem może być zmiana budowy białka albo zmiana poziomu ekspresji genu.</p>
+
+  <h3>Najpierw przesiew, potem sekwencjonowanie</h3>
+  <p>Najbardziej bezpośrednio mutację wykrywa <b>sekwencjonowanie</b> – odczytanie kolejności nukleotydów w DNA. Jest ono jednak zbyt kosztowne, by wykonywać je rutynowo. Dlatego najpierw stosuje się metodę <b>przesiewową</b>, a sekwencjonuje dopiero fragmenty DNA wybrane w przesiewie jako zmienione. Analiza genu może polegać na:</p>
+  <ul>
+    <li>identyfikacji konkretnej, znanej mutacji – metodą PCR-RFLP, hybrydyzacją z sondą molekularną albo sekwencjonowaniem;</li>
+    <li>przeszukaniu sekwencji genu, gdy nie wiadomo, która mutacja odpowiada za defekt – wtedy metodą z wyboru jest sekwencjonowanie, zwykle poprzedzone badaniem przesiewowym.</li>
+  </ul>
+  <aside class="note pojecie" data-term="Fragment dziki"><p>prawidłowy (wzorcowy) fragment DNA, z którym porównuje się fragment badany.</p></aside>
+  <p>Metody przesiewowe porównują wielkość lub konformację (kształt przestrzenny) badanych fragmentów z prawidłowym, dzikim fragmentem wzorcowym – zmiana składu nukleotydów zmienia bowiem właściwości fizykochemiczne DNA. Jeśli obraz elektroforezy odbiega od wzorca, w sekwencji z dużym prawdopodobieństwem jest zmiana. To metody pośrednie: SSCP, DGGE, TGGE i analiza heterodupleksów. Są łatwiejsze niż sekwencjonowanie, ale nie pozwalają w pełni scharakteryzować mutacji. Gdy z chorobą wiąże się cała grupa mutacji – jak w genie <i>CFTR</i> w mukowiscydozie – zestaw badanych mutacji dobiera się według pochodzenia etnicznego pacjenta.</p>
+
+  <h3>SSCP – polimorfizm konformacji jednoniciowych fragmentów</h3>
+  <p>Badanie polimorfizmu konformacji jednoniciowych fragmentów DNA (<b>SSCP</b>, ang. <i>single strand conformation polymorphism</i>) wykorzystuje różnice w ruchliwości cząsteczek DNA w żelu (<a class="figref" href="#c05-fig-sscp"></a>):</p>
+
+  <figure class="fig" id="c05-fig-sscp" data-bank="k5-ryc-19" data-title="SSCP – kształt pojedynczych nici">
+    <figcaption>Po denaturacji pojedyncze nici fałdują się w kształt zależny od sekwencji. Nić z mutacją ma inny kształt, więc w niedenaturującym żelu poliakrylamidowym wędruje z inną szybkością niż nić prawidłowa.</figcaption>
+  </figure>
+
+  <ol>
+    <li>Materiałem wyjściowym są produkty PCR – stąd nazwa PCR-SSCP.</li>
+    <li>Produkty denaturuje się chemicznie: formamidem, rzadziej mocznikiem lub wodorotlenkiem sodu. Nici się rozdzielają.</li>
+    <li>Produkty rozdziela się w niedenaturującym żelu poliakrylamidowym. Jednoniciowe cząsteczki parują wtedy same ze sobą i przyjmują kształt przestrzenny zależny od sekwencji nukleotydów.</li>
+    <li>Fragmenty o tej samej długości i sekwencji przyjmują taki sam kształt i wędrują tak samo. Fragment z mutacją tworzy inne konformery, które wędrują z inną szybkością – daje więc inny wzór prążków.</li>
+  </ol>
+
+  <p>Teoretycznie zmiana jednego nukleotydu zmienia szybkość wędrówki w żelu, ale w praktyce SSCP nie wykrywa wszystkich zmian sekwencji. Wykrywalność przekracza 95% dla fragmentów o długości 100–300 pz, a dla fragmentów 300–450 pz spada poniżej 80%. Dłuższe produkty PCR można przed SSCP strawić dobranym enzymem restrykcyjnym, żeby uzyskać fragmenty optymalnej wielkości. Oprócz mutacji SSCP wykrywa też różnice między allelami genu.</p>
+
+  <h3>DGGE i TGGE – elektroforeza w gradiencie</h3>
+  <p>Elektroforeza w gradiencie czynnika denaturującego (<b>DGGE</b>) i w gradiencie temperatury (<b>TGGE</b>) służą do wykrywania pojedynczych mutacji. Opierają się na tym, jak łatwo DNA ulega denaturacji pod wpływem substancji denaturujących lub temperatury (<a class="figref" href="#c05-fig-dgge"></a>):</p>
+  <ul>
+    <li>DGGE – elektroforeza w żelu poliakrylamidowym z rosnącym stężeniem mocznika;</li>
+    <li>TGGE – elektroforeza w żelu z gradientem temperatury.</li>
+  </ul>
+  <p>Cząsteczki DNA o różnej sekwencji mają różną temperaturę topnienia, więc w gradiencie pokonują różną drogę. Fragmenty różniące się sekwencją dają w żelu różne układy prążków, a każdy prążek odpowiada konkretnemu namnożonemu fragmentowi DNA.</p>
+
+  <figure class="fig" id="c05-fig-dgge" data-bank="k5-ryc-20" data-title="DGGE i TGGE – elektroforeza w gradiencie">
+    <figcaption>Fragment z mutacją ma inną temperaturę topnienia, więc w żelu z rosnącym stężeniem mocznika (DGGE) lub rosnącą temperaturą (TGGE) daje prążek w innym miejscu niż fragment prawidłowy.</figcaption>
+  </figure>
+
+  <p>Do metod pośrednich należy też <b>analiza heterodupleksów</b>: porównuje się ruchliwość cząsteczek dwuniciowego DNA w żelu poliakrylamidowym. Homodupleks jest w pełni komplementarny, a heterodupleks ma miejsca niesparowane z powodu mutacji punktowej i wędruje inaczej – metoda wskazuje mutację, ale nie mówi, jaka ona jest.</p>
+  <div class="box zapamietaj"><p>Metody przesiewowe (SSCP, DGGE, TGGE) tylko wskazują fragment, który odbiega od prawidłowego; jaka to zmiana, ustala sekwencjonowanie. SSCP bada kształt pojedynczych nici, a DGGE i TGGE – temperaturę topnienia DNA.</p></div>
+  <p class="src">Źródło: Ostrowska s. 55, 63–64</p>
+
+  <!-- ============ 8 ============ -->
+  <h2 id="c05-rflp">PCR-RFLP – polimorfizm długości fragmentów restrykcyjnych</h2>
+  <p>Analiza polimorfizmu długości fragmentów restrykcyjnych (<b>RFLP</b>, ang. <i>restriction fragment length polymorphism</i>) bada różnice w długości fragmentów DNA, które powstały po działaniu enzymu restrykcyjnego na badany fragment genu. Pozwala zarówno badać polimorfizm DNA, jak i wykrywać mutacje. W połączeniu z PCR (<b>PCR-RFLP</b>) przebiega w czterech etapach:</p>
+  <ol>
+    <li><b>PCR</b> – amplifikacja badanego fragmentu DNA;</li>
+    <li><b>trawienie</b> – enzym restrykcyjny przecina DNA w miejscach restrykcyjnych, więc powstają fragmenty o określonej długości;</li>
+    <li><b>elektroforeza</b> produktów trawienia w żelu agarozowym, razem ze wzorcem wielkości;</li>
+    <li><b>analiza wzoru restrykcyjnego</b> – liczby i wielkości fragmentów.</li>
+  </ol>
+
+  <figure class="fig" id="c05-fig-rflp" data-bank="k5-ryc-21" data-title="PCR-RFLP – jak mutacja zmienia wzór restrykcyjny">
+    <figcaption>Produkt PCR o długości 300 pz. 1 – allel prawidłowy (100 i 200 pz). 2 – mutacja niszczy miejsce cięcia (300 pz). 1+2 – heterozygota. 3 – mutacja tworzy nowe miejsce cięcia (trzy fragmenty). 4 – delecja 60 pz skraca jeden fragment.</figcaption>
+  </figure>
+
+  <p>Mutacja może zmienić wzór restrykcyjny na trzy sposoby (<a class="figref" href="#c05-fig-rflp"></a>):</p>
+  <ul>
+    <li>niszczy miejsce restrykcyjne – enzym w tym miejscu nie tnie, więc fragmentów jest <b>mniej</b>;</li>
+    <li>tworzy nowe miejsce restrykcyjne – enzym tnie w dodatkowym miejscu, więc fragmentów jest <b>więcej</b>;</li>
+    <li>większa insercja lub delecja (powyżej 50 pz) poza miejscem restrykcyjnym – liczba fragmentów się nie zmienia, ale fragment, w którym zaszła zmiana, ma <b>inną długość</b>.</li>
+  </ul>
+  <p>U heterozygoty widać jednocześnie prążki allelu prawidłowego i zmutowanego. RFLP stosuje się m.in. w diagnostyce fenyloketonurii, hemofilii i niedokrwistości sierpowatej – do wykrywania mutacji punktowych w miejscach rozpoznawanych przez enzym. Służy też do wykazywania pokrewieństwa przez porównanie wzorów polimorficznych, do rozróżniania osób – z wyjątkiem bliźniąt jednojajowych – np. na podstawie śladów krwi, włosów czy nasienia (stąd zastosowanie w kryminalistyce) i do sprawdzania, czy rośliny hodowlane odziedziczyły daną cechę, np. odporność na suszę.</p>
+  <p class="src">Źródło: Ostrowska s. 55 · Drewa s. 726</p>
+
+  <!-- ============ 9 ============ -->
+  <h2 id="c05-markery">Markery molekularne</h2>
+  <p><b>Marker</b>, czyli wyznacznik, to dowolna genetycznie kontrolowana cecha fenotypowa lub dowolna różnica genetyczna, którą wykorzystuje się do ujawnienia polimorfizmu osobniczego – różnic między osobnikami. Markerem genetycznym może być określony fragment DNA, białko lub fenotyp.</p>
+  <p>Pierwszymi markerami map genetycznych były geny, ale nie są to markery idealne: tylko część genów ma łatwo odróżnialne allele, a mapa oparta wyłącznie na genach byłaby mało dokładna, bo geny przedzielają odcinki niekodującego DNA. Dlatego mapuje się też cechy sekwencji, które nie są genami. <b>Marker molekularny</b> (marker DNA) to każda sekwencja nukleotydów, której polimorfizm – występowanie w postaci co najmniej dwóch łatwo rozróżnialnych alleli – pozwala ustalać różnice genetyczne między osobnikami. Markery molekularne:</p>
+  <ul>
+    <li>są dziedziczone zgodnie z genetyką mendlowską;</li>
+    <li>nie podlegają modyfikującemu wpływowi czynników środowiska;</li>
+    <li>pozwalają badać organizmy niezależnie od ich fazy rozwojowej;</li>
+    <li>umożliwiają dokładną analizę genomu, więc przydają się w badaniach diagnostycznych i przesiewowych.</li>
+  </ul>
+  <p>Z genami związane są polimorfizmy w obrębie intronów i eksonów oraz rodzin genów, np. genów rRNA. Markerów nie należy mylić z wzorcami wielkości DNA używanymi w elektroforezie (bywają nieprawidłowo nazywane „markerami DNA”) ani z chromosomami markerowymi. W skrypcie Ostrowskiej „marker genetyczny” ma też węższe znaczenie: wariant polimorficzny genu, którego produkt białkowy uczestniczy w zaburzeniach ważnych dla choroby (<a class="pageref" href="#c05-choroby"></a>).</p>
+
+  <h3>Do czego służą markery</h3>
+  <ul>
+    <li>wykrywanie zmutowanych genów w określonych chorobach i ocena predyspozycji do zachorowania;</li>
+    <li>rokowanie – niektóre markery wskazują przebieg choroby, a nawet pomagają wybrać leczenie;</li>
+    <li>ustalanie ojcostwa i kryminalistyka – identyfikacja zwłok, poszukiwanie przestępców na podstawie mikrośladów;</li>
+    <li>tworzenie map genetycznych, które pokazują ułożenie genów w chromosomach;</li>
+    <li>selekcja roślin i zwierząt o pożądanym genotypie oraz identyfikacja odmian hodowlanych;</li>
+    <li>potwierdzanie obecności obcych genów w zmodyfikowanych komórkach i tkankach;</li>
+    <li>badania pochodzenia gatunków roślin i zwierząt, także człowieka.</li>
+  </ul>
+
+  <h3>Sekwencje anonimowe i satelitarne</h3>
+  <p>Markery związane z niekodującym DNA dzieli się na dwie kategorie: polimorfizm <b>sekwencji anonimowych</b> – odcinków DNA, którym nie przypisano funkcji – i polimorfizm <b>sekwencji mini- i mikrosatelitarnych</b>, czyli zmienność liczby powtórzeń krótkich motywów (VNTR i STR). Pierwszym badanym typem markerów DNA był RFLP; wielkość fragmentów restrykcyjnych określa się hybrydyzacją metodą Southerna albo za pomocą PCR. Pierwsze mapy genomu człowieka opierały się na cechach fenotypowych, takich jak grupy krwi, i na polimorfizmie białek, ale tych markerów było za mało. Przełomem była mapa ze 180 loci wyznaczonymi metodą RFLP.</p>
+
+  <h3>VNTR i STR – markery oparte na powtórzeniach</h3>
+  <p>Polimorfizm długości prostych sekwencji (SSLP, ang. <i>simple sequence length polymorphism</i>) to szeregi powtórzeń zawierające różną liczbę jednostek powtarzalnych. Każdy SSLP może mieć wiele wariantów długości, czyli wiele alleli – tym różni się od RFLP. Allele mikrosatelitów są <b>kodominujące</b> i dziedziczone zgodnie z prawami Mendla: przy dwóch allelach tej samej długości organizm jest dla danego locus homozygotą, przy allelach różnej długości – heterozygotą (<a class="figref" href="#c05-fig-str" data-panel="A"></a>).</p>
+
+  <table class="tbl wide">
+    <thead><tr><th style="width:20%">Cecha</th><th style="width:36%">VNTR – minisatelity</th><th>STR – mikrosatelity</th></tr></thead>
+    <tbody>
+      <tr><td>pełna nazwa</td><td>zmienna liczba powtórzeń tandemowych</td><td>krótkie powtórzenia tandemowe</td></tr>
+      <tr><td>jednostka powtarzalna</td><td>kilkadziesiąt nukleotydów (10–100 pz)</td><td>2–6 pz, np. CAAG, TGA, CA; bada się głównie (TG)<sub><i>n</i></sub> i (CA)<sub><i>n</i></sub></td></tr>
+      <tr><td>liczba powtórzeń</td><td>nawet do 1000</td><td>zwykle 10–30 (najwyżej 50); długość locus 100–400 pz</td></tr>
+      <tr><td>jak się je bada</td><td>hybrydyzacja DNA</td><td>PCR ze specyficznymi starterami – najszybszy sposób</td></tr>
+      <tr><td>zastosowanie</td><td>testy na ustalenie ojcostwa, DNA fingerprinting</td><td>wyparły VNTR; wysoki polimorfizm</td></tr>
+    </tbody>
+  </table>
+  <p>Liczba powtórzeń minisatelitów często różni się między osobnikami tego samego gatunku – to wynik rekombinacji. Technikę VNTR najczęściej stosuje się w testach na ustalenie ojcostwa (<a class="figref" href="#c05-fig-str" data-panel="B"></a>), a badanie sekwencji powtarzających się do celów kryminalistycznych nazwano <b>DNA fingerprinting</b> (genetycznym odciskiem palca): każda osoba ma niepowtarzalny układ prążków. VNTR zostały jednak wyparte przez analizę STR. W genomie człowieka znaleziono ponad 100 000 sekwencji mikrosatelitarnych, a dzięki wysokiemu polimorfizmowi są one bardzo często stosowanymi markerami (analiza prostych powtórzeń sekwencji, SSR).</p>
+
+  <figure class="fig" id="c05-fig-str" data-bank="k5-ryc-23" data-title="Markery STR i ustalanie ojcostwa">
+    <figcaption>A – allele STR różnią się liczbą powtórzeń motywu CA, więc produkty PCR mają różną długość; heterozygota ma dwa prążki, homozygota – jeden. B – dziecko ma jeden allel od matki i jeden od ojca; mężczyzna 1 nie ma prążka ojcowskiego, więc nie jest ojcem.</figcaption>
+  </figure>
+
+
+  <h3>SNP – polimorfizm pojedynczego nukleotydu</h3>
+  <p>Trzecim typem markerów DNA są polimorfizmy pojedynczego nukleotydu (<b>SNP</b>). Występują bardzo licznie – baza danych NCBI podaje ponad 20,5 mln SNP wykrytych u człowieka. W jednym miejscu SNP może mieć teoretycznie cztery allele (A, C, T lub G). SNP może polegać na substytucji, insercji lub delecji jednego nukleotydu, w części kodującej lub niekodującej genu. Niektóre SNP są jednocześnie markerami RFLP – gdy zmiana dotyczy sekwencji rozpoznawanej przez enzym restrykcyjny; większości SNP żaden enzym nie rozpoznaje. SNP bada się hybrydyzacją z oligonukleotydami: oligonukleotyd hybrydyzuje tylko z sekwencją w pełni komplementarną, więc jedna różnica nukleotydu wystarcza, żeby hybrydyzacja nie zaszła. Najskuteczniej szuka się SNP mikromacierzami (<a class="chapref" href="#c06"></a>).</p>
+
+  <h3>Podział markerów według techniki</h3>
+  <table class="tbl wide">
+    <thead><tr><th style="width:30%">Grupa markerów</th><th style="width:18%">Przykłady</th><th>W skrócie</th></tr></thead>
+    <tbody>
+      <tr><td>oparte na hybrydyzacji DNA</td><td>RFLP, VNTR</td><td>fragmenty wykrywa się sondą</td></tr>
+      <tr><td>z PCR z jednym, dowolnie dobranym starterem</td><td>RAPD</td><td>jeden starter o losowej sekwencji (ok. 9–10 pz) przyłącza się w wielu miejscach genomu; mało DNA, łatwa analiza, ale marker dominujący – AA i Aa dają ten sam prążek</td></tr>
+      <tr><td>z PCR ze specyficznymi starterami</td><td>EST, STR, STS, SNP</td><td>startery pasują do znanej sekwencji</td></tr>
+      <tr><td>z PCR i trawienia restrykcyjnego</td><td>AFLP, SAMPL</td><td>AFLP: cięcie dwoma enzymami, adaptory i dwie rundy PCR; nie trzeba znać sekwencji. SAMPL łączy SSR i AFLP: bardzo polimorficzne prążki, allele kodominujące – wypiera AFLP</td></tr>
+      <tr><td>oparte na polimorfizmie pojedynczej nici DNA</td><td>SSCP, pirosekwencjonowanie</td><td>bada się pojedynczą nić</td></tr>
+    </tbody>
+  </table>
+  <p>Najczęściej do analizy markerów stosuje się metody oparte na PCR i jego modyfikacjach.</p>
+  <div class="box zapamietaj"><p>Marker molekularny to polimorficzna sekwencja DNA, dziedziczona mendlowsko i niezależna od środowiska. STR (mikrosatelity, motyw 2–6 pz) bada się metodą PCR i wyparły one VNTR; SNP to zmiana jednego nukleotydu, badana hybrydyzacją.</p></div>
+  <p class="src">Źródło: Drewa s. 732–735 · Ostrowska s. 63</p>
+
+  <!-- ============ 10 ============ -->
+  <h2 id="c05-patogeny">Wykrywanie patogenów</h2>
+  <h3>Zakażenia wirusowe</h3>
+  <p>Metody molekularne stosuje się w diagnostyce zakażeń m.in. wirusami HBV, HCV, HIV, EBV, CMV, HPV, HSV, enterowirusami i parwowirusem B19. Przez wiele lat rutynowa diagnostyka wirusologiczna opierała się wyłącznie na badaniach serologicznych. Badania molekularne wykrywają materiał genetyczny wirusa – DNA lub RNA – i mają nad nimi wyraźną przewagę (<a class="figref" href="#c05-fig-zakazenia" data-panel="A"></a>).</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:20%">Cecha</th><th style="width:32%">Badania serologiczne</th><th>Badania molekularne</th></tr></thead>
+    <tbody>
+      <tr><td>co się wykrywa</td><td>przeciwciała w surowicy, antygeny wirusa w surowicy lub tkankach</td><td>materiał genetyczny wirusa: DNA lub RNA</td></tr>
+      <tr><td>czułość</td><td>mała</td><td>duża</td></tr>
+      <tr><td>wczesna faza zakażenia</td><td>niewykrywalna – okienko serologiczne</td><td>wirus wykrywalny już kilka dni po zakażeniu, zanim pojawią się przeciwciała</td></tr>
+      <tr><td>materiał</td><td>surowica, tkanki</td><td>płyny ustrojowe i wycinki tkanek – można szukać wirusa w ognisku zakażenia</td></tr>
+      <tr><td>zakażenie przebyte a obecne</td><td>trudno odróżnić</td><td>materiał genetyczny wykrywa się zwykle tylko w czasie toczącej się infekcji</td></tr>
+    </tbody>
+  </table>
+
+  <p>Niektóre wirusy mają okresy <b>latencji</b>. Wtedy wykrycie ich materiału genetycznego nie świadczy o aktywnej infekcji, lecz o obecności komórek, które są rezerwuarem wirusa. Latencję od aktywnej replikacji odróżnia się, badając liczbę kopii wirusa w surowicy oraz wykrywając RNA powstające podczas replikacji wirusa.</p>
+  <aside class="note pojecie" data-term="Wiremia"><p>obecność wirusa we krwi; jej poziom wyraża liczba kopii materiału genetycznego wirusa w surowicy.</p></aside>
+  <p>Ilościowe badania molekularne pozwalają śledzić zmiany wiremii w czasie zakażenia – pomaga to ustalić, czy trzeba leczyć, i monitorować skuteczność leczenia. Ilość produktu amplifikacji jest proporcjonalna do liczby kopii wirusa w próbce; ustala się ją, porównując wynik próbki z równocześnie badanymi standardami. Jedną z najnowocześniejszych metod ilościowych jest PCR w czasie rzeczywistym. Materiał genetyczny wirusa wykrywa się najczęściej metodą PCR, bo jest znacznie czulsza niż hybrydyzacja czy łańcuchowa reakcja ligazy (LCR).</p>
+
+  <figure class="fig" id="c05-fig-zakazenia" data-bank="k5-ryc-26" data-title="Metody molekularne w diagnostyce zakażeń">
+    <figcaption>A – PCR wykrywa materiał genetyczny wirusa kilka dni po zakażeniu, w okienku serologicznym. B – w sepsie PCR genu 16S rRNA wykrywa bakterie szybciej niż hodowla; na dole – przykłady oznaczania lekooporności.</figcaption>
+  </figure>
+
+
+  <h3>Analiza genetyczna w bakteriologii</h3>
+  <p>W bakteriologii klinicznej i epidemiologii zakażeń analizę genetyczną stosuje się do:</p>
+  <ul>
+    <li>wykrywania czynników etiologicznych, czyli przyczyn zakażenia;</li>
+    <li>identyfikacji gatunku i określania lekooporności;</li>
+    <li>różnicowania szczepów w obrębie gatunku (typowania molekularnego, inaczej genotypowania);</li>
+    <li>określania pokrewieństwa między izolatami – gdy bada się cały genomowy DNA.</li>
+  </ul>
+  <p>Wyniki służą leczeniu konkretnego pacjenta, dochodzeniu epidemiologicznemu i badaniom rozprzestrzeniania się drobnoustrojów. Metody oparte na PCR wykrywają sekwencję DNA specyficzną dla drobnoustroju bezpośrednio w materiale od pacjenta. To dobre rozwiązanie, gdy rozpoznanie trzeba postawić szybko, bez długotrwałej hodowli, albo gdy wyhodowanie drobnoustroju jest wręcz niemożliwe: <i>Mycobacterium tuberculosis</i> rośnie <i>in vitro</i> bardzo wolno, <i>Treponema pallidum</i> w ogóle nie rośnie na podłożach sztucznych, a <i>Bordetella pertussis</i> w chwili pojawienia się typowych objawów może już nie występować w jamie nosowo-gardłowej.</p>
+  <p>Metody molekularne wykrywają DNA żywych bakterii, ale też DNA, które zostaje w organizmie mimo utraty żywotności drobnoustroju. Zwykle stosuje się PCR, często w odmianie nested. Można też powielić fragment DNA charakterystyczny dla większej grupy drobnoustrojów, a gatunek ustalić potem – z analizy restrykcyjnej powielonego fragmentu albo przez jego sekwencjonowanie. Szybkie i proste jest <b>pirosekwencjonowanie</b>, które odczytuje najwyżej kilkadziesiąt nukleotydów: służy do identyfikacji bakterii w płynach ustrojowych, badania mutacji odpowiedzialnych za lekooporność i typowania szczepów, a odczytaną sekwencję porównuje się z internetowymi bazami danych.</p>
+
+  <h3>Szybka diagnostyka sepsy</h3>
+  <p><b>Sepsa</b> (posocznica) to zespół ogólnoustrojowej reakcji zapalnej (SIRS) wywołany czynnikiem zakaźnym – nie samodzielna choroba, lecz reakcja organizmu na zakażenie. Może ją wywołać każdy drobnoustrój; stosunkowo rzadko są to pasożyty, wirusy i bakterie atypowe. Mikrobiologiczna identyfikacja bakterii jest czasochłonna i może dawać wyniki fałszywie ujemne nawet w 30% przypadków sepsy. PCR i PCR w czasie rzeczywistym wykrywają natomiast nawet niewielkie ilości bakteryjnego DNA wyizolowanego bezpośrednio z krwi (<a class="figref" href="#c05-fig-zakazenia" data-panel="B"></a>):</p>
+  <aside class="note pojecie" data-term="Sekwencja konserwatywna"><p>odcinek DNA prawie niezmieniony u wielu gatunków – zachowany w ewolucji.</p></aside>
+  <ol>
+    <li>Metodą PCR powiela się gen <b>16S rRNA</b> – bardzo konserwatywny, obecny u wszystkich gatunków bakterii, a nieobecny u człowieka.</li>
+    <li>Startery projektuje się na podstawie wysoce konserwatywnych regionów 16S rRNA, żeby objęły jak najwięcej drobnoustrojów – wykrywa się tak praktycznie wszystkie bakterie Gram-dodatnie i Gram-ujemne wywołujące posocznicę.</li>
+    <li>Próbki z dodatnim wynikiem bada się dalej, żeby ustalić gatunek – najczęściej sondami gatunkowo specyficznymi albo ukierunkowanym sekwencjonowaniem fragmentów bakteryjnego DNA.</li>
+  </ol>
+
+  <h3>Lekooporność, zjadliwość i rozprzestrzenianie się</h3>
+  <p>Metodami biologii molekularnej bada się geny związane z mechanizmami oporności na leki. Testy PCR są szczególnie cenne, gdy szczepy mają trudne do wykrycia fenotypy oporności – mogą wtedy służyć jako metody referencyjne.</p>
+  <ul>
+    <li><b>MRS</b> – gronkowce oporne na metycylinę – są w praktyce oporne na wszystkie stosowane obecnie antybiotyki β-laktamowe. Namnożenie fragmentu genu <i>mecA</i>, odpowiedzialnego za oporność na metycylinę, pozwala z całą pewnością zakwalifikować szczep jako MRS.</li>
+    <li><i>M. tuberculosis</i> – na wynik hodowli z oznaczeniem lekooporności czeka się około miesiąca, a PCR w czasie rzeczywistym wykrywa w DNA z materiału klinicznego mutacje odpowiedzialne za oporność na ryfampicynę w ciągu kilku godzin.</li>
+  </ul>
+  <p>Zjadliwość i zdolność do epidemicznego rozprzestrzeniania się są – podobnie jak oporność na leki – uwarunkowane genetycznie. Gdy znamy odpowiedzialne za nie geny, można je wykrywać prostymi metodami opartymi na PCR. W rutynowej diagnostyce robi się to rzadko, ale ma to znaczenie w analizach epidemiologicznych szczególnie niebezpiecznych szczepów – np. analiza polimorfizmu genów kodujących antygeny szczepionkowe pokazuje, czy skład szczepionki pasuje do aktualnej sytuacji epidemiologicznej. Przy bardzo wielu czynnikach zjadliwości stosuje się mikromacierze: hybrydyzacja DNA bakterii pokazuje, które geny ma jej genom, a hybrydyzacja RNA – obraz ich ekspresji.</p>
+  <div class="box zapamietaj"><p>PCR wykrywa wirusa już kilka dni po zakażeniu, przed pojawieniem się przeciwciał (okienko serologiczne). W sepsie powiela się konserwatywny gen 16S rRNA, obecny u wszystkich bakterii i nieobecny u człowieka; fragment genu <i>mecA</i> wskazuje szczep MRS.</p></div>
+  <p class="src">Źródło: Ostrowska s. 59–62</p>
+
+  <!-- ============ 11 ============ -->
+  <h2 id="c05-choroby">Choroby uwarunkowane genetycznie</h2>
+  <p><b>Choroby uwarunkowane genetycznie</b> to schorzenia przekazywane jako cecha dziedziczna z pokolenia na pokolenie albo powstające <i>de novo</i> – na skutek zmian w materiale genetycznym lub zaburzeń w mechanizmach przekazywania cech dziedzicznych. Zmiany powstałe <i>de novo</i> mogą być potem przekazywane potomstwu. Tradycyjnie dzieli się je na trzy grupy:</p>
+  <ol>
+    <li>choroby spowodowane aberracjami chromosomowymi;</li>
+    <li>choroby jednogenowe – wywołane mutacją pojedynczego genu;</li>
+    <li>choroby wieloczynnikowe – uwarunkowane mutacjami wielu genów i wpływami środowiska.</li>
+  </ol>
+  <p>Choroby genetyczne kojarzą się z rzadkimi aberracjami i ciężkimi chorobami jednogenowymi, ale po uwzględnieniu poważnych wad wrodzonych, uwarunkowanych najczęściej wieloczynnikowo, skala okazuje się znacznie większa:</p>
+  <table class="tbl full">
+    <thead><tr><th style="width:18%">Ile</th><th>Kogo dotyczy</th></tr></thead>
+    <tbody>
+      <tr><td>0,6%</td><td>żywo urodzonych dzieci ma aberrację chromosomową</td></tr>
+      <tr><td>1%</td><td>populacji ogólnej dotyczą ciężkie choroby jednogenowe</td></tr>
+      <tr><td>ok. 3%</td><td>dzieci rodzi się z poważną chorobą o podłożu genetycznym</td></tr>
+      <tr><td>5%</td><td>osób do 20. roku życia ujawnia chorobę, w której decydują czynniki genetyczne</td></tr>
+      <tr><td>ok. 40%</td><td>hospitalizacji i zgonów dzieci wynika z chorób, w których geny odgrywają ważną rolę</td></tr>
+      <tr><td>ok. 65%</td><td>osób zachoruje w ciągu życia na chorobę z istotnym udziałem genów</td></tr>
+    </tbody>
+  </table>
+  <p>Częściowo genetyczne podłoże ma wiele chorób wieku dorosłego – cukrzyca, nadciśnienie tętnicze, choroba wieńcowa, alergie i niektóre choroby psychiczne. Lekarz każdej specjalności styka się więc na co dzień z problemami o podłożu częściowo lub całkowicie genetycznym.</p>
+
+  <h3>Kiedy diagnostyka molekularna ma sens</h3>
+  <p>Diagnostyka na poziomie DNA pozwala określić mutację przyczynową i jednoznacznie potwierdzić rozpoznanie kliniczne choroby jednogenowej. Można ją jednak wykonać tylko przy precyzyjnym rozpoznaniu klinicznym określonej choroby, bo badania molekularne zawsze szukają konkretnej mutacji. Wszystkie choroby, które można rozpoznać po urodzeniu, można badać również prenatalnie, a nawet preimplantacyjnie.</p>
+
+  <h3>Choroby wieloczynnikowe i geny kandydujące</h3>
+  <p>Diagnostyka chorób jednogenowych jest stosunkowo prosta – polega na wykryciu mutacji odpowiedzialnej za defekt. Choroby wieloczynnikowe zależą od współdziałania wielu genów leżących w różnych loci oraz od czynników środowiskowych, co utrudnia jednoznaczne wskazanie genów odpowiedzialnych za chorobę. Dlatego szuka się markerów genetycznych – polimorficznych wariantów genów, których produkty białkowe biorą udział w zaburzeniach ważnych dla rozwoju, przebiegu i powikłań choroby. W badaniach populacyjnych porównuje się częstość markera w grupie chorych i w grupie kontrolnej (lub w populacji ogólnej); jeśli u chorych jest istotnie częstszy, może to wskazywać na związek z chorobą.</p>
+  <aside class="note pojecie" data-term="Geny kandydujące"><p>(geny kandydaci) – geny, których warianty polimorficzne istotnie często stwierdza się u osób z daną chorobą i które mogą być z nią związane.</p></aside>
+  <p>Dobrze widać to na przykładzie <b>choroby niedokrwiennej serca</b>. Genów kandydatów szuka się wśród genów regulujących kilka różnych układów i procesów; najważniejsze z nich regulują metabolizm lipidów:</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:24%">Gen</th><th style="width:18%">Wariant</th><th>Związek z chorobą</th></tr></thead>
+    <tbody>
+      <tr><td><i>ApoB</i> – apolipoproteina B</td><td>C516T</td><td>większe stężenie cholesterolu LDL, a przez to większe ryzyko choroby niedokrwiennej serca</td></tr>
+      <tr><td><i>ApoE</i> – apolipoproteina E</td><td>3 allele, 6 genotypów, 3 izoformy: E2, E3, E4</td><td>warianty istotnie wpływają na stężenie lipidów w surowicy; E4 – duże ryzyko przedwczesnej choroby niedokrwiennej serca i zawału u młodych osób, większe ryzyko udaru; nosiciele E4 słabiej reagują na leczenie statynami</td></tr>
+      <tr><td><i>LPL</i> – lipaza lipoproteinowa</td><td>Ser474Ter</td><td>mniejsze ryzyko: korzystny profil lipidowy – duże, ochronne stężenie HDL i małe stężenie triglicerydów</td></tr>
+      <tr><td><i>PON</i> – paraoksonaza</td><td>Q192 i R192</td><td>niezależny czynnik ryzyka miażdżycy: glutamina w pozycji 192 (allel Q) chroni, arginina (allel R) zwiększa ryzyko choroby niedokrwiennej serca</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Źródło: Ostrowska s. 62–64</p>
+
+  <div class="w60">
+    <ul>
+      <li><b>PCR</b> – matryca, para starterów, termostabilna polimeraza, dNTP, Mg<sup>2+</sup>, bufor, woda; cykl 95 → 55–65 → 72 °C, 36–40 razy, teoretycznie 2<sup><i>n</i></sup> kopii.</li>
+      <li><b>RT-PCR</b> przepisuje RNA na cDNA; w <b>RT-Q-PCR</b> z sondą TaqMan polimeraza rozkłada sondę i reporter świeci; niskie Ct = dużo kopii na starcie.</li>
+      <li><b>Nested</b> – dwie pary starterów po kolei; <b>multipleks</b> – kilka par naraz (brak prążka = delecja); <b>ASA</b> – starter pasujący końcem 3′ do jednego allelu.</li>
+      <li><b>Restryktazy</b> tną palindromy 4–8 pz na końce tępe lub lepkie; wzór restrykcyjny to wielkości fragmentów, mapa – położenie miejsc cięcia.</li>
+      <li><b>SSCP, DGGE, TGGE</b> wskazują zmieniony fragment, sekwencjonowanie ustala zmianę; w <b>PCR-RFLP</b> mutacja zmienia liczbę lub długość fragmentów.</li>
+      <li><b>Markery</b>: VNTR, STR, SNP; PCR wykrywa wirusa w okienku serologicznym, 16S rRNA – bakterie w sepsie; w chorobach wieloczynnikowych szuka się genów kandydujących.</li>
+    </ul>
+  </div>
+</section>
