@@ -14,7 +14,9 @@ Zakres, źródła, cięcia i listę rycin ustala szef (Fable) w handoffie rozdzi
 8. OCR bywa zniekształcony: nie zgaduj liczb; wątpliwe pomiń i zapisz w stanie.
 9. **Stare wydanie Jordego.** Skan Jordego w paczkach to wydanie z ok. 2000 r. (rozpiska wskazuje wydanie z 2021 r.). Traktuj je ostrożnie: jeśli ta sama informacja jest też w innym źródle podanym do TYCH SAMYCH zajęć (np. w Drewie) – bierz wersję z tego drugiego źródła. Z Jordego bierz tylko to, czego inne źródło tych zajęć nie zawiera; pomijaj dane, które łatwo się dezaktualizują (liczby genów, częstości, „najnowsze” metody, stan wiedzy). Przy rozbieżności między źródłami: wersja drugiego źródła w tekście, rozbieżność zapisana w `stan/zNN.md` dla rewizji. Nadal nie wolno sięgać po żadne źródła spoza rozpiski.
 
-## Styl języka (decyzja zleceniodawcy z 19.11 – obowiązuje dla wszystkich rozdziałów)
+## Styl języka – NAJPIERW przeczytaj `STYL.md` (nadrzędny wobec poniższego)
+
+### Skrót (decyzja zleceniodawcy z 19.11 – obowiązuje dla wszystkich rozdziałów)
 Wzorem są opracowania „Kwasy nukleinowe – kolokwium 4”, „Analiza DNA i RNA – kolokwium 5” i „Genomika”, a w podręczniku – rozdział 6 w wersji z 19.11 (`rozdzialy/z06-*.html`, podrozdział „Hybrydyzacja i sondy”). Język ma być przyjazny i bardzo jasny, **nie podręcznikowy i nie „drewowy”**:
 - nagłówki h3 często jako pytania („Dlaczego obie strony muszą być jednoniciowe?”); każdy podrozdział zaczyna się od problemu, który metoda rozwiązuje;
 - jedna myśl na akapit, krótkie zdania, zwracanie się do czytelnika („wyobraź sobie”, „pamiętasz”), „po co” przy każdym etapie;
