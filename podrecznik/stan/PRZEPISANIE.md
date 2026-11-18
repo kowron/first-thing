@@ -9,13 +9,18 @@ Handoff dla agentów: `handoff/P-przepisanie.md`.
 | 1 | Z08 dziedziczenie | GOTOWE 18.11 (22 → 30 s., 2 nowe ryc.) – do rewizji: własne wyliczenia 12:3:1 (dynia) i penetracja 0,6 → 30%, oznaczone |
 | 1 | Z09 cytogenetyka | GOTOWE 18.11 (17 → 24 s., 2 nowe ryc.) – do rewizji: objaśnienie gwiazdek w tab. 18.3 (wniosek autora) |
 | 1 | Z10 płeć | GOTOWE 18.11 (12 → 16 s.), commit 4d62c88 |
-| 2 | Z02 cykl komórkowy | uruchomiony 18.11 |
-| 2 | Z03 apoptoza (rewizja B do naniesienia) | uruchomiony 18.11 |
-| 2 | Z04 kwasy nukleinowe (przywrócić wyjaśnienia z k4/k5) | uruchomiony 18.11 ~17:40 |
-| 2 | Z05 PCR (przywrócić wyjaśnienia z k5) | uruchomiony 18.11 ~17:40 |
-| 3 | Z11 biotechnologia | uruchomiony 18.11 ~17:40 |
-| 3 | G (Genomika) | czeka – po 18:00 (Fable jako advisor wg użytkownika) |
+| 2 | Z02 cykl komórkowy | PAUZA 18.11 – plan 8 h2 gotowy, tekstu 0; `stan/z02-v2.md` § WZNOWIENIE |
+| 2 | Z03 apoptoza | PAUZA 18.11 – lead + h2 1–3 w `robocze/z03-apoptoza.html` (+ nowa ryc. kaspazy); dalej h2 4–8; lista pozostałych pozycji rewizji w `stan/z03-v2.md` § WZNOWIENIE |
+| 2 | Z04 kwasy nukleinowe | PAUZA 18.11 – plan + mapa k4/k5 gotowe, tekstu 0; `stan/z04-v2.md` § WZNOWIENIE |
+| 2 | Z05 PCR | PAUZA 18.11 – plan 11 h2 + mapa k5 gotowe, tekstu 0; `stan/z05-v2.md` § WZNOWIENIE |
+| 3 | Z11 biotechnologia | PAUZA 18.11 – h2 1–2 w `robocze/z11-biotechnologia.html` (+ nowa ryc. roślina); dalej h2 3; pomocnicze SVG w `robocze/z11v2-pomoc/`; `stan/z11-v2.md` § WZNOWIENIE |
+| 3 | G (Genomika) | czeka – nie zaczęty |
 | – | Z06 | gotowy (17.11) |
 
 Po zakończeniu każdego agenta: commit + push na `ccr-aabe67ae-lcr511`. Na koniec pełny build i PDF dla użytkownika.
 Jeśli agent przerwany limitem: wznowić go (SendMessage) albo uruchomić nowego z tym samym zleceniem – handoff każe kontynuować z `stan/zNN-v2.md`.
+
+## Wznowienie po pauzie (18.11, ~18:00; użytkownik: wznowienie za ok. 4 h)
+Agenci Z02, Z03, Z04, Z05, Z11 zatrzymani na czysto: każdy zapisał w `stan/zNN-v2.md` sekcję „## WZNOWIENIE” (następny krok, linie źródeł, co już przeczytane, decyzje). Pliki w `robocze/` są w repo.
+Wznawiać: SendMessage do starego agenta (pełny kontekst) albo nowy agent z poleceniem: „Kontynuuj handoff `handoff/P-przepisanie.md` dla rozdziału ZNN od sekcji WZNOWIENIE w `stan/zNN-v2.md`; nie czytaj ponownie tego, co ta sekcja oznacza jako przeczytane”. Nowy agent musi i tak przeczytać STYL.md (krótki) – wzorca z06 tylko fragmenty wskazane w notatce.
+Kolejność: najpierw Z03 i Z11 (najbliżej końca), potem Z02, Z04, Z05; G na końcu.
