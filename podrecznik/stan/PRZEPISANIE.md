@@ -68,3 +68,17 @@ Użytkownik 18.11 ok. 21:30: „po tych agentach zakończ, kontynuujesz jutro na
 3. Czerwona ramka (`box stare`): Z08, Z10 (Jorde ok. 2000) – pewne; Z07 (Twyman 2001) – czeka na odpowiedź użytkownika.
 4. Ryciny z ChatGPT (użytkownik przyśle 19.11): wstawić jako `ryciny/cNN-fig-….png` w miejsce zaślepek (KOMPONENTY.md pkt 9); zaślepki wstawiają wykonawcy C2.
 5. Pozostałe UWAGI składu po naprawie kolumn: G s. 8, Z05 s. 99 i 106, Z08 s. 155, Z09 s. 195 – wykonawcy C2 poprawią przy przebudowie.
+
+## 18.11, 22:00 – UŻYTKOWNIK: Fable zużywa ~50% kredytów, ma ~25%. Naprawić PRZED kolejnymi agentami (nie uruchamiać nic wg starego C1).
+Diagnoza (plany Z02, Z03): plan 127–155 KB (większy niż sam rozdział, 70–80 KB tekstu) – Fable spisał inwentarz WSZYSTKICH 300–430 jednostek, także tych, które już są w rozdziale, z cytatami i gotowymi brzmieniami; czytał rozdział z SVG, całe pliki źródeł (też poza zakresem) i skany (obrazy); 52–91 wywołań narzędzi; ok. 480–550 tys. tokenów na plan ≈ tyle co cały agent Opus.
+Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
+1. Szef (skrypt, bez LLM) robi pakiet `pakiety/zNN.txt`: zagadnienia z rozpiski + wiersze mapy + lista T z wyciągu + tekst rozdziału bez SVG/HTML (z id h2/h3) + źródło przycięte do zakresu z mapy. Fable czyta 1 plik, maks. ok. 10 wywołań, skany tylko wyjątkowo (maks. 2 strony).
+2. Nowy C1 („plan różnicowy”): Fable zapisuje TYLKO różnice – (a) fakty do dopisania (brak w rozdziale): „s. X: fakt”, pogrupowane wg sekcji części 2; (b) co przesunąć z części 1 do 2: id h2/h3 + temat (bez cytowania, bez gotowych brzmień); (c) szkic sekcji części 2 (tytuł + 1 linijka wskazówki); (d) błędy A, decyzje, ramka, rycina. Limit planu ok. 15–20 KB. Brzmienia i lokalizację w tekście robi Opus.
+3. Gotowe plany Z02 i Z03 – nie przerabiać; wykonawcy dostają skrót wycięty skryptem (tylko pozycje „brak”, operacje O…, sekcje R…, decyzje), nie cały plik.
+4. Liczyć zużycie: po każdym agencie zapisywać tokeny Fable i Opus (tabela niżej); jeśli udział Fable > 30% – zaproponować użytkownikowi Fable „high” zamiast „xhigh”.
+| agent | model | tokeny |
+|---|---|---|
+| plan Z03 | Fable | 482 tys. |
+| plan Z02 | Fable | 553 tys. |
+| spis rycin | Fable | 257 tys. |
+| infrastruktura | Opus | 476 tys. |
