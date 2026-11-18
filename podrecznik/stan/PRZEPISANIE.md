@@ -6,7 +6,7 @@ Handoff dla agentów: `handoff/P-przepisanie.md`.
 | Tura | Rozdział | Stan |
 |---|---|---|
 | 1 | Z07 komórki macierzyste | GOTOWE 18.11 (10 → 17 s.), commit 73775b8 |
-| 1 | Z08 dziedziczenie | uruchomiony 18.11 |
+| 1 | Z08 dziedziczenie | GOTOWE 18.11 (22 → 30 s., 2 nowe ryc.) – do rewizji: własne wyliczenia 12:3:1 (dynia) i penetracja 0,6 → 30%, oznaczone |
 | 1 | Z09 cytogenetyka | uruchomiony 18.11 |
 | 1 | Z10 płeć | GOTOWE 18.11 (12 → 16 s.), commit 4d62c88 |
 | 2 | Z02 cykl komórkowy | uruchomiony 18.11 |
