@@ -14,7 +14,7 @@ Handoff dla agentów: `handoff/P-przepisanie.md`.
 | 2 | Z04 kwasy nukleinowe | WZNOWIONY ~18:45 (plan + mapa k4/k5 w `stan/z04-v2.md`) |
 | 2 | Z05 PCR | WZNOWIONY ~19:00 (użytkownik: 3 agenci naraz; plan + mapa k5 w `stan/z05-v2.md`) |
 | 3 | Z11 biotechnologia | GOTOWE 18.11 (8 → 18 s., 2 nowe ryc.; przywrócone brakujące fakty Z); Drewa milczy o znakowaniu i wykrywaniu GMO |
-| 3 | G (Genomika) | czeka – nie zaczęty |
+| 3 | G (Genomika) | uruchomiony ~19:15 (przywrócić wyjaśnienia z material/genomika.txt; cel 20–26 s.; stan w `stan/g-v2.md`) |
 | – | Z06 | gotowy (17.11) |
 
 Po zakończeniu każdego agenta: commit + push na `ccr-aabe67ae-lcr511`. Na koniec pełny build i PDF dla użytkownika.
