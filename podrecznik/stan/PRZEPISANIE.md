@@ -9,7 +9,7 @@ Handoff dla agentów: `handoff/P-przepisanie.md`.
 | 1 | Z08 dziedziczenie | GOTOWE 18.11 (22 → 30 s., 2 nowe ryc.) – do rewizji: własne wyliczenia 12:3:1 (dynia) i penetracja 0,6 → 30%, oznaczone |
 | 1 | Z09 cytogenetyka | GOTOWE 18.11 (17 → 24 s., 2 nowe ryc.) – do rewizji: objaśnienie gwiazdek w tab. 18.3 (wniosek autora) |
 | 1 | Z10 płeć | GOTOWE 18.11 (12 → 16 s.), commit 4d62c88 |
-| 2 | Z02 cykl komórkowy | WZNOWIONY 18:20 (plan w `stan/z02-v2.md` § WZNOWIENIE) |
+| 2 | Z02 cykl komórkowy | GOTOWE 18.11 (13 → 19 s., 2 nowe ryc.) |
 | 2 | Z03 apoptoza | GOTOWE 18.11 (13 → 19 s., 1 nowa ryc.); rewizja B1–B13, C14–C24 wplecione |
 | 2 | Z04 kwasy nukleinowe | WZNOWIONY ~18:45 (plan + mapa k4/k5 w `stan/z04-v2.md`) |
 | 2 | Z05 PCR | WZNOWIONY ~19:00 (użytkownik: 3 agenci naraz; plan + mapa k5 w `stan/z05-v2.md`) |
