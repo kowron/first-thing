@@ -79,7 +79,7 @@
 @page {
   size: A4;
   margin: 22mm 15.5mm 25mm 15.5mm;
-  /* Tło kartki: biel przechodząca w bardzo jasną zieleń (css/tlo-strony.svg). Chromium rysuje tło @page na całej
+  /* Tło kartki: jednolita bardzo jasna zieleń #e3f1e7 (css/tlo-strony.svg). Chromium rysuje tło @page na całej
      kartce (z marginesami), ale pozycję liczy od lewego górnego rogu POLA ZADRUKU – stąd −15,5 mm −22 mm
      (= marginesy lewy i górny) i rozmiar całej kartki A4. Gradient CSS (linear-gradient) w @page nie działa –
      dlatego plik SVG. Okładka (@page cover) ma tło none. */
