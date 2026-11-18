@@ -188,8 +188,9 @@ h2, h3, h4 { hyphens: none; break-after: avoid; break-inside: avoid; }
 /* UWAGA (Chromium): w tekście rozdziału (wewnątrz .cols) nie używamy position: absolute/fixed – także w ::before.
    Element pozycjonowany absolutnie w ostatnim fragmencie bloku wielokolumnowego, który zaczął się na
    wcześniejszej stronie, wyłącza wyrównanie kolumn: cały tekst trafia do lewej kolumny, prawa zostaje
-   pusta, a rycina/tabela pod spodem przechodzi na następną stronę. Dlatego kreska nad h2 i punktory list
-   są tłem (background), a numery <ol> – elementem pływającym (float) o zerowej szerokości. */
+   pusta, a rycina/tabela pod spodem przechodzi na następną stronę. Dlatego kreska nad h2 jest tłem
+   (background), a punktory i numery list – elementami pływającymi (float) o zerowej szerokości
+   (ujemny margines = szerokość), stojącymi dokładnie tam, gdzie dawniej left/top. */
 section.chapter h2 {
   font-family: var(--display); font-weight: 700; font-size: 13pt; line-height: 15.5pt;
   color: var(--navy); margin: 14pt 0 5pt; padding-top: 8pt;
@@ -210,10 +211,12 @@ h4 {
 section.chapter ul, section.chapter ol, .back ul.std, .front ul.std { margin: 0 0 5pt; padding: 0; list-style: none; }
 section.chapter li { margin: 0 0 2pt; break-inside: avoid; }
 .front ul.std li { position: relative; margin: 0 0 2pt; break-inside: avoid; }
-/* punktor = kółko jako tło li (bez ::before z position: absolute – zob. uwaga przy h2); kolor: --bullet */
-section.chapter ul > li {
-  padding-left: 11pt;
-  background: radial-gradient(circle closest-side, var(--bullet) 94%, transparent) no-repeat 1pt 4.6pt / 4.2pt 4.2pt;
+/* punktor: kółko 4,2 pt, 1 pt od lewej, 4,6 pt od góry wiersza – float o zerowej szerokości (−10 + 4,2 + 5,8),
+   bez position: absolute (zob. uwaga przy h2); kolor: --bullet (ramki ustawiają swój) */
+section.chapter ul > li { padding-left: 11pt; }
+section.chapter ul > li::before {
+  content: ""; float: left; width: 4.2pt; height: 4.2pt; margin: 4.6pt 5.8pt 0 -10pt;
+  border-radius: 50%; background: var(--bullet);
 }
 section.chapter ol { counter-reset: k6ol; }
 section.chapter ol > li { padding-left: 15pt; counter-increment: k6ol; }
@@ -224,10 +227,8 @@ section.chapter ol > li::before {
   font-family: var(--sans); font-weight: 700; font-size: 6.2pt; line-height: 10pt; text-align: center;
 }
 section.chapter li > ul, section.chapter li > ol { margin: 2pt 0 0; }
-/* punktor 2. poziomu: pierścień (dawniej obwódka 1 pt wokół kółka 3,4 pt) */
-section.chapter li > ul > li {
-  background: radial-gradient(circle closest-side, transparent 60%, var(--bullet) 64%, var(--bullet) 94%, transparent) no-repeat 1pt 4.6pt / 5.4pt 5.4pt;
-}
+/* punktor 2. poziomu: pierścień (kółko 3,4 pt z obwódką 1 pt) */
+section.chapter li > ul > li::before { background: none; border: 1pt solid var(--bullet); width: 3.4pt; height: 3.4pt; margin-right: 4.6pt; }
 
 /* ---------- „Pojęcie”: mała ramka w kolumnie ------------------------------- */
 aside.note {
@@ -256,7 +257,7 @@ aside.note .term { display: block; font-weight: 700; font-size: 8.2pt; line-heig
 .box .lbl { font-size: 6.4pt; line-height: 9pt; margin-bottom: 4pt; }
 .box ul, .box ol { margin: 3pt 0 4pt !important; }
 .box li { margin-bottom: 2pt !important; }
-.box ul > li { background-size: 4pt 4pt !important; }
+.box ul > li::before { width: 4pt; height: 4pt; margin-right: 6pt; }
 .box ol > li::before { margin-top: 1.6pt !important; }
 .box.zapamietaj { border-color: var(--teal); background: var(--teal-bg); } .box.zapamietaj .lbl { color: var(--teal); }
 .box.przyklad { border-color: var(--ochre); background: var(--ochre-bg); --bullet: var(--ochre); } .box.przyklad .lbl { color: var(--ochre); }
@@ -276,9 +277,11 @@ aside.note .term { display: block; font-weight: 700; font-size: 8.2pt; line-heig
 .w60 li { break-inside: avoid; text-align: left !important; }
 .w60 li { position: relative; padding-left: 15pt !important; margin: 0 0 4pt !important; }
 .w60 li:last-child { margin-bottom: 0 !important; }
-/* kreska zamiast punktora: tło li (bez position: absolute – zob. uwaga przy h2) */
-.w60 ul > li, .w60 ol > li { background: linear-gradient(var(--teal-l), var(--teal-l)) no-repeat 0 4.2pt / 6pt 2pt !important; }
-.w60 ul > li::before, .w60 ol > li::before { content: none !important; }
+/* kreska zamiast punktora: 6 × 2 pt, 4,2 pt od góry – float o zerowej szerokości (−15 + 6 + 9), bez position: absolute */
+.w60 ul > li::before, .w60 ol > li::before {
+  content: "" !important; float: left; width: 6pt !important; height: 2pt !important; margin: 4.2pt 9pt 0 -15pt !important;
+  border-radius: 1pt !important; background: var(--teal-l) !important; border: 0 !important;
+}
 .w60 strong, .w60 b { color: #fff; }
 .w60 a.figref, .w60 a.pageref, .w60 a.chapref { color: var(--teal-l); }
 
@@ -354,7 +357,7 @@ figure.fig img.raster {
   border: 1.1pt solid var(--rule-2); border-radius: 10pt; background: #fff;
 }
 /* zaślepka ryciny: jasne pole z przerywaną ramką w proporcjach data-ratio (aspect-ratio wstawia build) */
-figure.fig.placeholder .ph {
+figure.fig.placeholder .ph, .legend .ph {
   display: flex; align-items: center; justify-content: center; box-sizing: border-box; width: 100%;
   border: 1.1pt dashed var(--gray-line); border-radius: 10pt; background: rgba(43, 122, 75, 0.05);
   font-family: var(--sans); font-size: 7.6pt; line-height: 10pt; color: var(--muted); text-align: center;
@@ -539,6 +542,7 @@ section.back h3 { font-size: 9pt; margin: 9pt 0 3pt; }
 .toc-sec { break-inside: avoid; margin-left: 26pt; border-bottom: 0.6pt solid #e8edf0; padding: 2.4pt 0 2.2pt; }
 .toc-sec .t { flex: 1; font-size: 7.6pt; line-height: 10.4pt; color: var(--muted); padding-right: 10pt; }
 .toc-sec .p { font-size: 7.6pt; color: var(--muted); font-variant-numeric: tabular-nums; }
+.toc-cz2 .t, .toc-cz2 .p { color: var(--teal); font-weight: 600; }
 .toc-end { break-inside: avoid; break-after: avoid; font-weight: 700; font-size: 6.6pt; letter-spacing: 0.25em; color: var(--faint); margin: 14pt 0 2pt; }
 .toc-back .n { color: var(--teal); }
 
@@ -652,3 +656,6 @@ section.cover {
 .howto .intro { margin-bottom: 12pt; }
 .howto table.tbl td { padding: 4.5pt 9pt 4pt; }
 .howto h2.sub { margin-top: 10pt; }
+.howto .legend .ph { height: 15mm; margin: 0 0 2pt; }
+.howto .legend .legend-note { font-family: var(--sans); font-size: 7.4pt; line-height: 10pt; color: var(--muted); margin: 0 0 7pt; }
+.howto .legend .przejscie { padding: 8pt 12pt 8pt; margin: 0 0 7pt; }

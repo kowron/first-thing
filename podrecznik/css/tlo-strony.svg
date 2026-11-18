@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297" preserveAspectRatio="none">
   <!-- Tło kartki podręcznika (A4): biel w lewym górnym rogu przechodząca w bardzo jasną zieleń w prawym dolnym.
-       Używane w @page (css/style.css). Natężenie = kolor ostatniego punktu gradientu. -->
+       Używane w @page (css/style.css). Natężenie = kolor ostatniego punktu gradientu (wybrany #ecf6ef; warianty próbne: #f4faf5 – ledwo widoczny, #e3f1e7 – zbyt wyraźny). -->
   <defs>
     <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="190" y2="297">
       <stop offset="0" stop-color="#ffffff"/>
       <stop offset="0.25" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#edf6ef"/>
+      <stop offset="1" stop-color="#ecf6ef"/>
     </linearGradient>
   </defs>
   <rect width="210" height="297" fill="url(#g)"/>

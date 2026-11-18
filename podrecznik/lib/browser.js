@@ -390,14 +390,20 @@
     const colInfo = {};
     for (const ch of chapters) {
       let run = null;
+      // każdy element najwyższego poziomu dostaje id: jego położenie na stronie (cel w PDF) pozwala kontroli
+      // pustych kolumn (build.mjs, inkCheck) wskazać, co stoi przy dziurze
+      const note = (el, span) => {
+        if (el.nodeType !== 1) return;
+        if (!el.id) el.id = `k6c-${++colKids}`;
+        colIds.push(el.id);
+        colInfo[el.id] = (span ? '[na obie kolumny] ' : '') + where(el).replace(/^\[[^\]]*\] /, '');
+      };
       for (const el of [...ch.childNodes]) {
-        if (el.nodeType === 1 && el.matches(SPAN)) { run = null; continue; }
+        if (el.nodeType === 1 && el.matches(SPAN)) { run = null; note(el, true); continue; }
         if (el.nodeType !== 1 && !(el.nodeType === 3 && el.textContent.trim())) { if (run) run.appendChild(el); continue; }
         if (!run) { run = document.createElement('div'); run.className = 'cols'; el.before(run); }
         run.appendChild(el);
-        if (!el.id) el.id = `k6c-${++colKids}`;   // położenie na stronie -> opis miejsca w kontroli pustych kolumn
-        colIds.push(el.id);
-        colInfo[el.id] = where(el).replace(/^\[[^\]]*\] /, '');
+        note(el, false);
       }
       // część 2: klasa .cz2 na wszystkim za znacznikiem (pagina „część 2”, lżejsza kreska nad h2)
       const m = part2.get(ch);
@@ -426,7 +432,7 @@
       const num = ch.dataset.num;
       css += `#${ch.id} { page: ch${num}; }\n@page ch${num} { @top-right { content: ${cssStr((ch.dataset.label || num) + ' ' + (ch.dataset.short || ch.dataset.title || ''))}; } }\n`;
       if (part2.has(ch)) {
-        css += `#${ch.id} > .cz2 { page: ch${num}-2; }\n@page ch${num}-2 { @top-left { content: ${cssStr(`${book.header || ''} · CZĘŚĆ 2 – NA PIĄTKĘ`)}; color: #2b7a4b; } @top-right { content: ${cssStr(`${ch.dataset.label || num} ${ch.dataset.short || ch.dataset.title || ''} · część 2`)}; } }\n`;
+        css += `#${ch.id} > .cz2 { page: ch${num}-2; }\n@page ch${num}-2 { @top-left { content: ${cssStr(`${(book.header || '').split(' · ')[0]}${book.header ? ' · ' : ''}CZĘŚĆ 2 – NA PIĄTKĘ`)}; color: #2b7a4b; } @top-right { content: ${cssStr(`${ch.dataset.label || num} ${ch.dataset.short || ch.dataset.title || ''} · część 2`)}; } }\n`;
       }
     }
     for (const b of backOrder) {
@@ -523,7 +529,7 @@
      nowej strony), bo ostatni fragment bloku dwukolumnowego, który zaczął się na wcześniejszej stronie, nie
      wyrównywał się – tekst szedł do lewej kolumny, prawa zostawała pusta. Prawdziwa przyczyna (Chromium 153):
      element z position: absolute w tym fragmencie (::before kreski nad h2 i punktorów list) – zob. uwaga przy h2
-     w css/style.css; po zmianie na tła/float kolumny wyrównują się same. Podział liczony z pozycji 1. przebiegu
+     w css/style.css; po zmianie (kreska h2 – tło, punktory i numery list – float) kolumny wyrównują się same. Podział liczony z pozycji 1. przebiegu
      po każdej zmianie układu (numery stron, dywizy) trafiał w złe miejsce: prawie puste strony kaskadowo. */
 
   /* ------------------------------------------------------------------ */
@@ -539,7 +545,7 @@
 
   /* ---------- Typografia ------------------------------------------------ */
   const NO_TYPO = 'svg, code, pre, script, style, .mono, .seq, .ghost-links, .k6-defs';
-  const NO_HYPH = NO_TYPO + ', h1, h2, h3, h4, .lbl, table, .toc-cols, .figlist, .fig-label, .src, .fig-src, a.figref, a.pageref, a.chapref, .numbers .v, .ptitle, section.cover, .opener-meta, .opener-kicker, dt, .nohyph, .badge';
+  const NO_HYPH = NO_TYPO + ', h1, h2, h3, h4, .lbl, table, .toc-cols, .figlist, .fig-label, .src, .fig-src, a.figref, a.pageref, a.chapref, .numbers .v, .ptitle, section.cover, .opener-meta, .opener-kicker, dt, .nohyph, .badge, .cz2-head, .ph, .przejscie > .lbl';
   const SINGLE = /(^|[\s\u00A0(„"'–—\/])([aiouwzAIOUWZ])[ \t\n\r]+/g;
   const UNITS = /(\d)[ \t\n\r]+(%|‰|°C|°|pz|kpz|Mpz|kb|Mb|bp|kDa|Da|nt|nm|µm|mm|cm|m|ml|µl|μl|l|mg|µg|μg|ng|pg|g|kg|V|mA|W|h|min|s|M|mM|µM|μM|pmol|rpm|×|x|cykli|cykle|cykl|razy|tys\.|mln|kopii|zasad|nukleotydów|aminokwasów|pz\.)(?=[\s\u00A0.,;:)\]–]|$)/g;
   const ABBR = /(^|[\s\u00A0(])(s\.|nr|rozdz\.|ryc\.|tab\.|pkt|ok\.|np\.|tzw\.|tj\.|ang\.|łac\.|wg|zob\.|por\.)[ \t\n\r]+/g;

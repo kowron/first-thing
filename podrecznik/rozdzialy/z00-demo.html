@@ -1,4 +1,4 @@
-<!-- ROZDZIAŁ DEMONSTRACYJNY (2 strony) – wzór każdego komponentu podręcznika.
+<!-- ROZDZIAŁ DEMONSTRACYJNY (4 strony) – wzór każdego komponentu podręcznika (część 1, przejście, część 2).
      Budowany tylko z: node build.mjs --only 00 --png   albo   node build.mjs --demo
      Treść na podstawie opracowania „Analiza DNA i RNA – kolokwium 5” (material/k5.txt, s. 11–14). -->
 <section class="chapter"
@@ -8,6 +8,9 @@
   data-kicker="Rozdział demonstracyjny · składniki · cykl · wynik">
 
   <p class="lead">Łańcuchowa reakcja polimerazy (PCR) to kopiowanie wybranego fragmentu DNA w probówce. Ten rozdział pokazuje, co jest w probówce, jak przebiega jeden cykl i od czego zależy wynik.</p>
+
+  <!-- STARE ŹRÓDŁO: czerwona ramka zaraz po p.lead (tylko w rozdziałach opartych na Jordem ok. 2000/2001 lub Twymanie 2001) -->
+  <div class="box stare"><p>Część tego rozdziału (wzór ramki – w demo bez znaczenia merytorycznego) opiera się na podręczniku wydanym ok. 2001 r. Od tego czasu część danych mogła się zmienić. Tam, gdzie ten sam temat opisuje nowsze źródło z rozpiski, pierwszeństwo miało nowsze źródło.</p></div>
 
   <h2 id="c00-skladniki">Składniki reakcji</h2>
   <p>PCR pozwala w krótkim czasie otrzymać bardzo wiele kopii jednego, wybranego fragmentu DNA. W mieszaninie musi się znaleźć wszystko, czego polimeraza potrzebuje do budowy nowych nici: matryca, para starterów, termostabilna polimeraza DNA, cztery rodzaje nukleotydów, jony magnezu, bufor i woda (<a class="figref" href="#c00-fig-skladniki"></a>).</p>
@@ -32,7 +35,13 @@
     <li><b>Przyłączanie starterów</b>, czyli hybrydyzacja (ang. <i>annealing</i>; 55–65 °C) – startery łączą się swoiście z komplementarnymi miejscami na matrycy.</li>
     <li><b>Wydłużanie</b>, czyli elongacja (ok. 72 °C) – polimeraza dobudowuje nową nić, zaczynając od końca 3′ startera.</li>
   </ol>
-  <p>Ten ciąg zdarzeń powtarza się około 36–40 razy.</p>
+  <p>Ten ciąg zdarzeń powtarza się około 36–40 razy (<a class="figref" href="#c00-fig-proba"></a>).</p>
+
+  <!-- RYCINA RASTROWA: plik PNG w katalogu ryciny/ (nazwa = id ryciny); 2 łamy: 2400 px szerokości, 1 łam (class="fig narrow"): 1200 px -->
+  <figure class="fig" id="c00-fig-proba" data-title="Jeden cykl PCR (próbna rycina PNG)">
+    <img src="ryciny/c00-fig-proba.png" alt="Trzy etapy cyklu PCR: denaturacja, przyłączanie starterów, wydłużanie">
+    <figcaption>Próbna rycina rastrowa (PNG 2400 × 1080 px) – sprawdza ścieżkę, szerokość i ramkę. Czytaj od lewej: denaturacja rozdziela nici, startery przyłączają się do matrycy, polimeraza wydłuża starter.</figcaption>
+  </figure>
 
   <table class="tbl wide" id="c00-tab-etapy">
     <thead><tr><th style="width:18%">Etap</th><th style="width:14%">Temperatura</th><th style="width:34%">Co się dzieje z DNA</th><th>Od czego zależy wynik</th></tr></thead>
@@ -49,7 +58,12 @@
   <p class="src">Źródło: Ostrowska s. 2 · Genomika s. 10</p>
 
   <h2 id="c00-wynik">Od czego zależy wynik reakcji</h2>
-  <p><b>Temperatura przyłączania starterów</b> decyduje o swoistości. Gdy jest za niska, startery przyłączają się także do miejsc tylko częściowo do nich pasujących i powstają produkty niespecyficzne. Gdy jest za wysoka, startery słabo wiążą się z matrycą i produktu jest mało.</p>
+  <p><b>Temperatura przyłączania starterów</b> decyduje o swoistości. Gdy jest za niska, startery przyłączają się także do miejsc tylko częściowo do nich pasujących i powstają produkty niespecyficzne. Gdy jest za wysoka, startery słabo wiążą się z matrycą i produktu jest mało (<a class="figref" href="#c00-fig-temp"></a>).</p>
+
+  <!-- ZAŚLEPKA RYCINY: miejsce na rycinę, której jeszcze nie ma; data-ratio = proporcje szer.:wys.; 1 łam: class="fig placeholder narrow" -->
+  <figure class="fig placeholder" id="c00-fig-temp" data-title="Temperatura przyłączania a swoistość" data-ratio="20:9">
+    <figcaption>Za niska temperatura przyłączania – startery wiążą się także z miejscami pasującymi tylko częściowo (produkty niespecyficzne); za wysoka – słabo wiążą się z matrycą (mało produktu).</figcaption>
+  </figure>
   <table class="tbl full plain-first">
     <thead><tr><th>Do oceny wyniku</th><th>Po co</th></tr></thead>
     <tbody>
@@ -67,4 +81,39 @@
       <li>Po <i>n</i> cyklach teoretycznie 2<sup><i>n</i></sup> kopii, potem <b>plateau</b>.</li>
     </ul>
   </div>
+
+  <!-- PRZEJŚCIE: na końcu części 1, po „W 60 sekund”; akapit (dla kogo jest część 2) + lista jej podrozdziałów -->
+  <div class="przejscie">
+    <p>Część 1 wystarcza, żeby zrozumieć PCR i zdać na dobrym poziomie. Część 2 jest dla tych, którzy chcą znać temat w całości – rozszerza część 1 o szczegóły ze źródeł:</p>
+    <ul>
+      <li>po co polimerazie jony magnezu i ile ich trzeba,</li>
+      <li>co jeszcze decyduje o wyniku reakcji.</li>
+    </ul>
+  </div>
+
+  <!-- CZĘŚĆ 2: znacznik od nowej strony (nagłówek-pas wstawia build); dalej zwykłe h2/akapity/ramki/tabele, id z prefiksem c00-r- -->
+  <div class="czesc2-start" id="c00-czesc2"></div>
+
+  <h2 id="c00-r-magnez">Jony magnezu – szczegóły</h2>
+  <p>W części 1 jony Mg<sup>2+</sup> pojawiły się na liście składników mieszaniny (<a class="pageref" href="#c00-skladniki"></a>). Tu wyjaśniamy, po co są polimerazie. Jony Mg<sup>2+</sup> są <b>kofaktorem</b> polimerazy, czyli niebiałkowym składnikiem, którego enzym potrzebuje do działania. Umożliwiają wydajne wiązanie enzymu z miejscem, w którym starter łączy się z matrycą, i sprawną elongację.</p>
+  <p>Dlatego ich stężenie trzeba dobrać. Obie skrajności szkodzą, ale w inny sposób:</p>
+  <table class="tbl full">
+    <thead><tr><th style="width:30%">Stężenie Mg<sup>2+</sup></th><th>Skutek</th></tr></thead>
+    <tbody>
+      <tr><td>za małe</td><td>wydajność reakcji wyraźnie spada</td></tr>
+      <tr><td>za duże</td><td>powstają produkty niespecyficzne, a polimeraza częściej myli się przy wstawianiu nukleotydów</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Źródło: Ostrowska s. 2 · Materiał pomocniczy</p>
+
+  <h2 id="c00-r-wynik">Co jeszcze decyduje o wyniku</h2>
+  <p>Temperatura przyłączania starterów i stężenie Mg<sup>2+</sup> to nie wszystko (<a class="pageref" href="#c00-wynik"></a>). Na przebieg i wydajność PCR wpływają też:</p>
+  <ul>
+    <li>aktywność polimerazy Taq;</li>
+    <li>startery dobrze dobrane do wybranego amplikonu – swoiste i niełączące się ze sobą;</li>
+    <li>jakość matrycy – bez substancji hamujących polimerazę, np. heparyny;</li>
+    <li>pełny zestaw odczynników: bufor, dNTP, MgCl<sub>2</sub>, woda ultraczysta, polimeraza.</li>
+  </ul>
+  <div class="box zapamietaj"><p>Wynik PCR zależy od temperatury przyłączania, stężenia Mg<sup>2+</sup>, aktywności polimerazy, doboru starterów i czystości matrycy.</p></div>
+  <p class="src">Źródło: Ostrowska s. 1–2, 5</p>
 </section>

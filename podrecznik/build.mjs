@@ -452,12 +452,20 @@ function inkCheck(pdf, nPages, hasCover, startPages, bodyText, ctx = {}) {
     }
     // puste / nierówne kolumny (tylko strony rozdziałów)
     if (lowest >= 0 && (!ctx.isChapterPage || ctx.isChapterPage(pno))) {
+      // góra elementów na obie kolumny na tej stronie (z celów PDF): od niej do pierwszego wiersza z atramentem
+      // w odstępie między kolumnami to już ten element (np. „RYC. 3 Tytuł” nad rysunkiem) – nie pas tekstu
+      const spanTops = ids.filter((id) => ctx.colInfo[id].startsWith('[na obie kolumny]'))
+        .map((id) => ctx.dests && ctx.dests[id]).filter((d) => d && d[0] === idx && d[1] !== null)
+        .map((d) => Y0 + Math.round((AREA_TOP - d[1]) * 25.4 / 72 * mm));
+      let inSpan = false;
       const bands = [];
       let cur = null;
       for (let y = Y0; y < Y1; y++) {
         let g = false, l = false, r = false;
         for (let x = GL; x < GR && !g; x++) if (ink(x, y)) g = true;
-        if (g) { if (cur) bands.push(cur); cur = null; continue; }
+        if (spanTops.includes(y)) inSpan = true;
+        if (g) inSpan = false;
+        if (g || inSpan) { if (cur) bands.push(cur); cur = null; continue; }
         for (let x = X0; x < CL1 && !l; x++) if (ink(x, y)) l = true;
         for (let x = CR0; x < X1 && !r; x++) if (ink(x, y)) r = true;
         if (!cur) cur = { y0: y, y1: y, lt: -1, lb: -1, rt: -1, rb: -1 };
@@ -472,25 +480,33 @@ function inkCheck(pdf, nPages, hasCover, startPages, bodyText, ctx = {}) {
         const top = Math.min(...[b.lt, b.rt].filter((v) => v >= 0));
         const bot = Math.max(b.lb, b.rb);
         if ((bot - top) / mm < 25) continue;
-        const emptyCol = b.lb < 0 ? 'lewa' : b.rb < 0 ? 'prawa' : null;
-        const diff = emptyCol ? (bot - top) / mm : Math.abs(b.lb - b.rb) / mm;
+        // kolumna pusta albo prawie pusta (≤ 8 mm tekstu, np. 1 wiersz), gdy druga ma ≥ 25 mm
+        const ext = (t, bb) => (bb < 0 ? 0 : (bb - top) / mm);
+        const lx = ext(b.lt, b.lb), rx = ext(b.rt, b.rb);
+        const emptyCol = lx <= 8 && rx >= 25 ? 'lewa' : rx <= 8 && lx >= 25 ? 'prawa' : null;
+        const diff = emptyCol ? Math.max(lx, rx) - Math.min(lx, rx) : Math.abs(b.lb - b.rb) / mm;
         if (!emptyCol && diff < 70) continue;
         const side = emptyCol || (b.lb < b.rb ? 'lewa' : 'prawa');
-        // ostatni element kolumn, który zaczyna się na tej stronie nad dolną krawędzią pasa
-        let last = null;
-        for (const id of ids) {
+        // ostatni element rozdziału, który zaczyna się na tej stronie nad dolną krawędzią pasa, i element następny
+        // (zwykle to on się nie zmieścił: ramka, tabela, rycina)
+        let li = -1;
+        ids.forEach((id, k) => {
           const d = ctx.dests && ctx.dests[id];
-          if (!d || d[0] !== idx || d[1] === null) continue;
-          if ((AREA_TOP - d[1]) * 25.4 / 72 <= toMm(bot) + 1) last = id;
-        }
-        const what = last ? ` – ostatni element w kolumnach: ${ctx.colInfo[last]}` : '';
-        W.push({
-          level: 'warn',
-          msg: emptyCol
-            ? `s. ${pno}: pusta ${side} kolumna obok ${Math.round(diff)} mm tekstu (${Math.round(toMm(top))}–${Math.round(toMm(bot))} mm od góry pola)${what} (zwykle ramka, tabela albo punkt listy nie dzieli się między kolumny, a pod spodem stoi rycina/tabela na obie kolumny – przenieś go wcześniej albo skróć)`
-            : `s. ${pno}: ${side} kolumna kończy się ${Math.round(diff)} mm wyżej niż druga${what} (element, który się nie dzieli – ramka, tabela, długi punkt listy – nie zmieścił się w kolumnie; przenieś go albo skróć)`,
+          if (!d || d[0] !== idx || d[1] === null) return;
+          if ((AREA_TOP - d[1]) * 25.4 / 72 <= toMm(bot) + 1) li = k;
         });
-        hole = true;
+        const nx = li >= 0 ? ids[li + 1] : null;
+        const nd = nx && ctx.dests && ctx.dests[nx];
+        const what = li >= 0 ? ` – ostatni element na stronie: ${ctx.colInfo[ids[li]]}${nx ? `; następny${nd && nd[0] > idx ? ` (już na s. ${nd[0] + 1})` : ''}: ${ctx.colInfo[nx]}` : ''}` : '';
+        // mała dziura (pusta kolumna obok < 40 mm tekstu) – tylko informacja
+        const small = emptyCol && diff < 40;
+        W.push({
+          level: small ? 'info' : 'warn',
+          msg: emptyCol
+            ? `s. ${pno}: ${Math.min(lx, rx) > 0 ? 'prawie pusta' : 'pusta'} ${side} kolumna – obok ${Math.round(diff)} mm więcej tekstu (${Math.round(toMm(top))}–${Math.round(toMm(bot))} mm od góry pola)${what} – element, który się nie dzieli (ramka, tabela, punkt listy, rycina), nie zmieścił się albo stoi sam przed elementem na obie kolumny; przenieś go wcześniej albo skróć`
+            : `s. ${pno}: ${side} kolumna kończy się ${Math.round(diff)} mm wyżej niż druga${what} – element, który się nie dzieli (ramka, tabela, długi punkt listy), nie zmieścił się w kolumnie; przenieś go albo skróć`,
+        });
+        if (!small) hole = true;
       }
     }
     if (hole) holes.push(pno);
