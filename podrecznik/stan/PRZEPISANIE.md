@@ -24,3 +24,7 @@ Jeśli agent przerwany limitem: wznowić go (SendMessage) albo uruchomić nowego
 Agenci Z02, Z03, Z04, Z05, Z11 zatrzymani na czysto: każdy zapisał w `stan/zNN-v2.md` sekcję „## WZNOWIENIE” (następny krok, linie źródeł, co już przeczytane, decyzje). Pliki w `robocze/` są w repo.
 Wznawiać: SendMessage do starego agenta (pełny kontekst) albo nowy agent z poleceniem: „Kontynuuj handoff `handoff/P-przepisanie.md` dla rozdziału ZNN od sekcji WZNOWIENIE w `stan/zNN-v2.md`; nie czytaj ponownie tego, co ta sekcja oznacza jako przeczytane”. Nowy agent musi i tak przeczytać STYL.md (krótki) – wzorca z06 tylko fragmenty wskazane w notatce.
 Kolejność: najpierw Z03 i Z11 (najbliżej końca), potem Z02, Z04, Z05; G na końcu.
+
+## 18.11, 18:09 – nowa decyzja użytkownika
+Maks. **2 agenci naraz**; gdy jeden skończy, wchodzi następny (bez przerywania w losowym momencie). Praca ciągła do resetu limitu 5 h o 20:19. Fable = advisor.
+Kolejka: Z03 + Z11 (wznowione 18:09, SendMessage do starych agentów) → Z02 → Z04 → Z05 → G.
