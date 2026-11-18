@@ -33,3 +33,13 @@ Kolejka: Z03 + Z11 (wznowione 18:09, SendMessage do starych agentów) → Z02 �
 - Błąd składu `splitCols` (lib/browser.js): podział bloku dwukolumnowego wg pozycji z pierwszego przebiegu → kaskadowe prawie puste strony przed h3/rycinami (zgłaszali autorzy Z02, Z04). Naprawić w lib PO zakończeniu wszystkich agentów (nie w trakcie – ich układ jest dostrojony do obecnego zachowania).
 - Okładka i „Jak korzystać z podręcznika” – nadal szkice.
 - Ryciny z ChatGPT wg `RYCINY_do_ChatGPT.md` (Fable) – wkleić po otrzymaniu od użytkownika.
+
+## Kontrola wierności po przepisaniu (Fable, medium) – handoff `handoff/R2-wiernosc.md`
+Wynik: `rewizja/zNN-v2.md`; błędy A recenzent poprawia od razu w rozdziale. Maks. 3 agenci naraz łącznie z autorem G.
+| Rozdział | Stan |
+|---|---|
+| Z05 | uruchomiony 18.11 ~19:45 (sprawdzić linie „Drewa s. 724/726” – spoza rozpiski, która ma tylko s. 725) |
+| Z08 | uruchomiony 18.11 ~19:45 (12:3:1, penetracja, zdania „dlaczego”) |
+| Z09 | czeka (gwiazdki w tab. 18.3) |
+| Z03, Z02, Z04, Z07, Z10, Z11 | czekają |
+| G | po zakończeniu przepisania |

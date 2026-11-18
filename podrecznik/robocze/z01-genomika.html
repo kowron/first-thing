@@ -321,5 +321,143 @@
   <div class="box zapamietaj"><p>Dobór badania zaczyna się od przewidywanego mechanizmu, nie od nazwy technologii. Sprawdź listę genów, badane regiony, klasy wykrywanych zmian i jakość pokrycia – sama liczba genów nie mówi, jak kompletne było badanie.</p></div>
   <p class="src">Źródło: prezentacja LMZ 3, slajdy 8–31</p>
 
+  <!-- ============ 6 ============ -->
+  <h2 id="c01-bioinf">Od danych do wariantu: bioinformatyka i kontrola jakości</h2>
+  <h3>Co robi komputer z milionami odczytów?</h3>
+  <p>Aparat NGS nie wydaje listy wariantów, tylko surowy sygnał – obrazy fluorescencji albo przebieg prądu. Zanim z tego sygnału powstanie raport dla lekarza, dane przechodzą przez kolejne etapy, a każdy zmienia rodzaj informacji (<a class="figref" href="#c01-fig-dane"></a>):</p>
+  <ol>
+    <li><b>basecalling</b> – sygnał zamienia się w sekwencję zasad, a każda zasada dostaje miarę jakości;</li>
+    <li><b>demultipleksacja</b> – jeśli w jednej serii badano wiele próbek, odczyty rozdziela się według indeksów, czyli według pacjentów;</li>
+    <li><b>kontrola jakości i przycinanie</b> – ocenia się jakość danych, odcina resztki adapterów i słabe końce odczytów;</li>
+    <li><b>dopasowanie</b> (<i>alignment</i>) – dla każdego odczytu program szuka najbardziej prawdopodobnego miejsca pochodzenia w genomie referencyjnym, uwzględniając różnice i luki;</li>
+    <li><b>wykrywanie wariantów</b> (<i>variant calling</i>) – z odczytów pokrywających każdą pozycję program wnioskuje, czy różni się ona od referencji, i proponuje genotyp;</li>
+    <li><b>anotacja</b> – kandydatów uzupełnia się o geny i transkrypty, przewidywane skutki, częstości w populacji i informacje kliniczne;</li>
+    <li><b>filtrowanie i interpretacja</b> – wybiera się zmiany pasujące do pytania i ocenia ich znaczenie na tle pozostałych danych;</li>
+    <li><b>raport</b> – wybrane wyniki z interpretacją i ograniczeniami badania.</li>
+  </ol>
+  <p>Każdy etap korzysta z wyniku poprzedniego. Błąd popełniony na początku przechodzi więc dalej – późniejszy etap go nie naprawi, tylko na nim zbuduje. Po drodze powstają pliki, których nazwy zobaczysz w opisach badań: <b>FASTQ</b> przechowuje odczytane sekwencje i jakość każdej zasady, <b>SAM/BAM/CRAM</b> – odczyty razem z informacją, gdzie zostały dopasowane, a <b>VCF</b> – warianty i przypisane im informacje, często także genotypy.</p>
+
+  <figure class="fig" id="c01-fig-dane" data-bank="g-ryc-17" data-title="Droga danych: od aparatu do raportu">
+    <figcaption>Czytaj od 1 do 9, zgodnie ze strzałkami. Pod każdym etapem widać, co powstaje i w jakim pliku (FASTQ → BAM/CRAM → VCF → lista wariantów → raport); fioletowe etykiety to przykładowe programy. Błąd z pierwszych etapów dochodzi aż do raportu.</figcaption>
+  </figure>
+
+  <p>Dwa etapy wymagają szczególnej uwagi. Pierwszy to <b>dopasowanie</b>: dopasowanie do niewłaściwego miejsca może wytworzyć <b>pozorny wariant</b>. Pomyśl o pseudogenie – jest bardzo podobny do genu, ale nie identyczny. Odczyt z pseudogenu dopasowany do genu różni się od referencji tam, gdzie pseudogen różni się od genu, więc program „widzi” wariant, którego w genie nie ma. Dlatego jakość odczytanej zasady i pewność jej położenia w genomie to dwie osobne cechy.</p>
+  <p>Drugi to <b>variant calling</b>. Nie polega on na przeczytaniu jednej litery: program bierze pod uwagę wszystkie odczyty pokrywające pozycję – ich liczbę, jakość i układ – oraz model błędów. W pozycji, w której są dwie kopie (locus diploidalny), może zaproponować genotyp <b>0/0, 0/1 albo 1/1</b>: 0 oznacza allel taki jak w referencji, 1 – allel alternatywny. Allel referencyjny to po prostu wersja zapisana we wzorcu, a nie „prawidłowa” – obie wersje mogą być zupełnie prawidłowe.</p>
+  <p>Programy dobiera się do zadania: jedne pokazują dane, inne porównują sekwencje, wykrywają warianty albo liczą statystyki, a do pełnej interpretacji klinicznej potrzeba programu i procedury przeznaczonych do tego celu. W przeglądarce odczytów, np. IGV, ogląda się sekwencję referencyjną, pokrycie i dopasowane odczyty. Sprawdzasz, czy zasada alternatywna występuje w wielu dobrych odczytach, w obu orientacjach i w różnych miejscach fragmentów – to pozwala wyłapać część artefaktów. Widok musi dotyczyć tej samej wersji genomu, której użyto przy dopasowaniu.</p>
+
+  <h3>Jak pewna jest litera? Skala Phreda</h3>
+  <p>Każda zasada w pliku FASTQ ma liczbę opisującą, jak bardzo można jej ufać. Zapisuje się ją zwykle w skali Phreda jako <b>Q</b>: <b>Q = −10 × log<sub>10</sub>(p błędu)</b>, gdzie p to przewidywane prawdopodobieństwo, że litera została przypisana błędnie. Logarytm zamienia małe ułamki na wygodne liczby: p = 0,01 to 10<sup>−2</sup>, więc Q = −10 × (−2) = 20. Każde +10 do Q oznacza dziesięciokrotnie mniejsze prawdopodobieństwo błędu:</p>
+  <table class="tbl full">
+    <thead><tr><th style="width:18%">Q</th><th>Prawdopodobieństwo błędu</th><th style="width:30%">Poprawność</th></tr></thead>
+    <tbody>
+      <tr><td>Q10</td><td>1 na 10 = 10%</td><td class="num">90%</td></tr>
+      <tr><td>Q20</td><td>1 na 100 = 1%</td><td class="num">99%</td></tr>
+      <tr><td>Q30</td><td>1 na 1000 = 0,1%</td><td class="num">99,9%</td></tr>
+      <tr><td>Q40</td><td>1 na 10 000 = 0,01%</td><td class="num">99,99%</td></tr>
+    </tbody>
+  </table>
+  <p>Na slajdach jakość opisano w skali 0–1. Taka skala opisuje prawdopodobieństwo, a nie Q: prawdopodobieństwo poprawnego wywołania 0,95 to błąd 0,05, czyli Q ≈ 13. Nazwę pola i jego skalę zawsze odczytuje się z dokumentacji programu.</p>
+  <p>Q dotyczy jednej litery. W danych NGS są jednak trzy różne niepewności: <b>jakość zasady</b> (<i>base quality</i>) – czy litera została dobrze odczytana; <b>jakość mapowania</b> (<i>mapping quality</i>) – czy odczyt umieszczono we właściwym miejscu genomu; <b>jakość wariantu lub genotypu</b> – podsumowanie wnioskowania z wielu odczytów (jej dokładne znaczenie zależy od programu). Można bardzo dobrze odczytać fragment, a mimo to przypisać go do podobnego genu. Można też prawidłowo dopasować odczyt, ale niepewnie rozpoznać jedną zasadę. Dlatego ocena techniczna obejmuje oba poziomy.</p>
+
+  <h3 id="c01-glebokosc">Głębokość, pokrycie i VAF</h3>
+  <p><b>Głębokość</b> w danej pozycji (często oznaczana DP) to liczba odczytów, które ją pokrywają. <b>Zakres pokrycia</b> mówi, jaka część badanego obszaru została odczytana – zwykle przy określonym progu głębokości. Łatwo dać się zwieść średniej: średnia 100× może współistnieć z fragmentem, którego nie odczytano ani razu, bo miejsca odczytane wielokrotnie „wyrównują” miejsca puste. Jeśli 95% regionu ma głębokość co najmniej 20×, to 5% tego progu nie osiągnęło – i właśnie tam może leżeć szukany wariant. Sam próg 20× nie jest przy tym uniwersalną granicą poprawnego wyniku: zależy od celu, klasy wariantu i walidacji testu.</p>
+  <p><b>VAF</b> (<i>variant allele fraction</i>) to udział odczytów z wariantem wśród odpowiednio policzonych odczytów obejmujących dane miejsce; np. 18 odczytów z wariantem na 40 daje VAF = 18/40 = 45%. Czego się spodziewać? W jednorodnej próbce diploidalnej heterozygota ma wariant w jednej kopii na dwie, więc VAF bliski 50%, a homozygota alternatywna – bliski 100%. Rzeczywiste wartości przesuwają jednak losowe próbkowanie odczytów, preferencyjna amplifikacja jednego allelu, liczba kopii, domieszka innych komórek, mozaikowość i błędy.</p>
+  <div class="box przyklad"><p>Dwa wyniki z NGS (liczby przykładowe).</p>
+    <p><b>Krew, panel genów:</b> 60 dobrych odczytów, 29 z wariantem – VAF = 29/60 ≈ 48%. To pasuje do heterozygoty w prostym modelu diploidalnym.</p>
+    <p><b>Guz:</b> 1000 odczytów, 80 z wariantem – VAF = 8%. To nie pasuje ani do heterozygoty, ani do homozygoty. Może to odpowiadać zmianie somatycznej, ale trzeba wykluczyć artefakt i sprawdzić czułość testu oraz jakość próbki. Z VAF 8% nie wynika też automatycznie, że wariant ma 8% komórek: wpływają na to liczba kopii, zygotyczność, różnorodność komórek guza i domieszka komórek prawidłowych. Metoda Sangera, słabo wykrywająca warianty obecne w małej części cząsteczek, może takiej zmiany nie potwierdzić, choć zmiana jest.</p></div>
+
+  <h3 id="c01-artefakty">Czy ten wariant jest prawdziwy?</h3>
+  <p>Przy podejrzanym wariancie sprawdzasz jakość zasad i mapowania, liczbę niezależnych cząsteczek, położenie wariantu w odczytach i orientację nici. Prawdziwy wariant jest w DNA, więc powinien pojawiać się w odczytach obu orientacji i w różnych miejscach fragmentów. Wariant widoczny wyłącznie na końcach fragmentów albo tylko w odczytach jednej orientacji może być artefaktem.</p>
+  <p>Liczy się też, ile <b>niezależnych</b> cząsteczek pokazało wariant. Kopie tej samej pierwotnej cząsteczki, powstałe w PCR, wnoszą mniej informacji niż odczyty z różnych cząsteczek – błąd powstały przy kopiowaniu jednej cząsteczki powtórzy się we wszystkich jej kopiach. Takie kopie pomagają rozpoznać znaczniki UMI. Z tego samego powodu duża głębokość nie usuwa błędu systematycznego: ten sam problem może zostać powielony tysiące razy.</p>
+  <div class="box zapamietaj"><p>Basecalling przypisuje litery do sygnału, variant calling wnioskuje o wariancie z wielu odczytów. Jakość zasady dotyczy litery, jakość mapowania – miejsca odczytu w genomie; głębokość to liczba odczytów w jednej pozycji, zakres pokrycia – część regionu, która osiągnęła próg.</p></div>
+  <p class="src">Źródło: prezentacja LMZ 3, slajdy 64–67, 80–89</p>
+
+  <!-- ============ 7 ============ -->
+  <h2 id="c01-skutek">Co wariant robi: położenie, mechanizm, predykcja, struktura, doświadczenie</h2>
+  <p>Wariant okazał się prawdziwy. Teraz drugie pytanie: co on robi z genem, RNA i białkiem? Najpierw trzeba umieć go jednoznacznie nazwać.</p>
+  <h3>Jak zapisać wariant, żeby każdy zrozumiał go tak samo?</h3>
+  <p>Opis wariantu wymaga układu odniesienia: sekwencji referencyjnej z wersją, pozycji i rodzaju zmiany. Przy współrzędnych chromosomowych podaje się też wersję genomu, np. GRCh37 albo GRCh38 – ta sama liczba w obu wersjach może wskazywać różne miejsca. Zapis standaryzują zasady <b>HGVS</b>. Przedrostek mówi, względem czego liczysz pozycje: <b>g.</b> – sekwencja genomowa, <b>c.</b> – kodujące DNA względem transkryptu (A w kodonie START ma numer 1), <b>r.</b> – RNA, <b>p.</b> – białko.</p>
+  <p>Przykłady: <b>c.76A&gt;T</b> to zamiana A na T w pozycji 76 numeracji c. Pozycje w intronie liczy się od granicy najbliższego eksonu, więc <b>c.76+1G&gt;A</b> to zmiana pierwszej zasady intronu za pozycją c.76. <b>p.(Gly12Asp)</b> to zamiana glicyny na kwas asparaginowy w pozycji 12 białka; nawias oznacza, że skutek białkowy jest <b>przewidywany</b>, a nie zmierzony. p.(=) to przewidywany brak zmiany sekwencji białka, a Ter – kodon STOP. Ten sam wariant genomowy może mieć różne skutki w różnych transkryptach – dla jednego leży w części kodującej, dla innego w intronie – dlatego anotacja uwzględnia transkrypt istotny klinicznie i biologicznie.</p>
+
+  <h3>Najpierw położenie, potem mechanizm</h3>
+  <p>Położenie wariantu wskazuje, jaki mechanizm warto sprawdzić. Wariant poza częścią kodującą nie jest automatycznie obojętny – bywa ważny, gdy narusza element regulacji albo dojrzewania RNA.</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:36%">Gdzie leży wariant</th><th>Co może się zmienić</th></tr></thead>
+    <tbody>
+      <tr><td>promotor, region regulatorowy</td><td>ilość RNA – więcej lub mniej transkryptu</td></tr>
+      <tr><td>miejsce splicingowe (GT i AG na końcach intronu)</td><td>skład mRNA, np. pominięty ekson</td></tr>
+      <tr><td>CDS</td><td>sekwencja aminokwasów: missense, nonsense, przesunięcie ramki</td></tr>
+      <tr><td>5′UTR albo 3′UTR</td><td>stabilność mRNA lub wydajność translacji</td></tr>
+      <tr><td>głęboko w intronie</td><td>zwykle nic; czasem powstaje nowe miejsce splicingowe</td></tr>
+    </tbody>
+  </table>
+  <p>Przy wariancie missense ocenia się m.in., czy pozycja jest konserwowana, czym różnią się zamieniane aminokwasy, czy zmiana leży w domenie i czy pozycja uczestniczy w oddziaływaniach. Mechanizmy bywają różne: zamiana hydrofobowego aminokwasu na naładowany we wnętrzu białka może destabilizować jego strukturę, a zamiana reszty w centrum aktywnym może przede wszystkim osłabić katalizę, choć ogólny kształt białka pozostaje podobny.</p>
+
+  <h3>Przedwczesny STOP: kiedy komórka niszczy mRNA</h3>
+  <p><b>Utrata funkcji</b> (<i>loss of function</i>) oznacza, że funkcja genu zanika albo słabnie. Przyczyną może być brak białka, jego degradacja, błędny transport albo utrata aktywności. Częsta droga do braku białka zaczyna się od przedwczesnego kodonu STOP (wariant nonsense albo przesunięcie ramki).</p>
+  <aside class="note pojecie" data-term="NMD"><p><i>nonsense-mediated decay</i> – komórkowy mechanizm kontroli jakości, który rozkłada mRNA z przedwczesnym kodonem STOP.</p></aside>
+  <p>Można by się spodziewać, że przedwczesny STOP da po prostu krótsze białko. W części transkryptów białka nie ma jednak wcale, bo komórka rozkłada samo mRNA – to <b>NMD</b>. Skąd komórka wie, że STOP pojawił się za wcześnie? Przy splicingu na każdym złączu eksonów zostaje znacznik (EJC). W czasie pierwszej translacji rybosom zdejmuje znaczniki po drodze i zatrzymuje się na kodonie STOP. Jeśli za tym miejscem zostały jeszcze znaczniki, mRNA trafia do degradacji (<a class="figref" href="#c01-fig-nmd"></a>). Gdy STOP leży w ostatnim eksonie, za nim nie ma już złączy ani znaczników – mRNA zwykle unika degradacji i powstaje skrócone białko. Reguła jest uproszczona (NMD, gdy STOP leży ponad ok. 50–55 nukleotydów przed ostatnim złączem eksonów) i ma wyjątki.</p>
+
+  <figure class="fig" id="c01-fig-nmd" data-bank="g-ryc-20" data-title="Przedwczesny STOP i degradacja mRNA (NMD)">
+    <figcaption>Porównaj panele A i B w kroku 2, po pierwszej translacji. W A za kodonem STOP zostają znaczniki złączy (EJC) – mRNA zostaje rozłożone i białka brak. W B STOP leży w ostatnim eksonie, rybosom zdejmuje wszystkie znaczniki i powstaje skrócone białko. Granica 50–55 nt to uproszczenie.</figcaption>
+  </figure>
+
+  <div class="box przyklad"><p>W tym samym genie (cztery eksony – przykład) znaleziono dwa warianty nonsense. Wariant 1 tworzy STOP w eksonie 2, wariant 2 – w eksonie 4, ostatnim. Przy wariancie 1 za STOP-em zostają znaczniki na złączach 2/3 i 3/4, więc mRNA ulega NMD: białka brak, funkcja z tego allelu znika. Przy wariancie 2 rybosom zdejmuje wszystkie znaczniki przed STOP-em, mRNA zostaje i powstaje białko bez końcowego fragmentu łańcucha. Czy ono działa, zależy od tego, co było w utraconym fragmencie – to trzeba ocenić osobno. Oba warianty to „nonsense”, a ich skutki mogą być różne.</p></div>
+
+  <h3>Cztery mechanizmy działania wariantu</h3>
+  <p>Utrata funkcji nie jest jedyną możliwością (<a class="figref" href="#c01-fig-mechanizmy"></a>):</p>
+  <ul>
+    <li><b>haploinsuficjencja</b> – jedna sprawna kopia genu daje za mało produktu: druga kopia działa prawidłowo, ale ok. 50% produktu to poniżej progu potrzebnego komórce;</li>
+    <li><b>nabycie funkcji</b> (<i>gain of function</i>) – pojawia się nowa albo nadmierna aktywność, np. białko, które powinno działać dopiero po sygnale, jest stale włączone;</li>
+    <li><b>efekt dominująco negatywny</b> – zmieniony produkt zaburza działanie prawidłowego, np. gdy oba tworzą wspólny kompleks.</li>
+  </ul>
+  <p>Efekt dominująco negatywny łatwo policzyć. Weźmy kompleks z czterech podjednostek; komórka wytwarza wersję prawidłową i zmienioną w stosunku 1 : 1. Każda podjednostka jest prawidłowa z prawdopodobieństwem 1/2, więc w pełni prawidłowy kompleks powstaje z prawdopodobieństwem (1/2)<sup>4</sup> = 1/16 ≈ 6%. Jedna zmieniona kopia genu psuje więc nie połowę, lecz większość kompleksów.</p>
+
+  <figure class="fig" id="c01-fig-mechanizmy" data-bank="g-ryc-21" data-title="Cztery mechanizmy działania wariantu">
+    <figcaption>A – allel zmieniony nie daje białka albo daje białko niedziałające. B – porównaj słupki z progiem: ok. 50% produktu z jednej sprawnej kopii to za mało dla komórki. C – zmienione białko jest włączone także bez sygnału. D – przy produkcji 1 : 1 w pełni prawidłowy jest tylko 1 z 16 kompleksów czteropodjednostkowych (ramka).</figcaption>
+  </figure>
+
+  <p>Te mechanizmy wyjaśniają, dlaczego podobna zmiana może mieć różne znaczenie w różnych genach. Dlatego ocena „wariant uszkadza białko” to dopiero część odpowiedzi: choroba musi pasować do mechanizmu działania danego genu. Jeśli określone rozpoznanie wiąże się z bardzo konkretną zmianą aktywującą (nabycie funkcji), dowolna utrata funkcji tego samego genu może dawać inny obraz. Znaczenie mają też układ alleli, tkanka i penetracja.</p>
+
+  <h3>Predyktory missense: SIFT i PolyPhen-2</h3>
+  <aside class="note pojecie" data-term="Homologi"><p>białka (lub geny) pokrewne ewolucyjnie, np. ten sam enzym u człowieka, myszy i ryby.</p></aside>
+  <p>Czy zamiana jednego aminokwasu zaszkodzi białku? Zanim ktoś wykona doświadczenie, można to oszacować obliczeniowo. <b>SIFT</b> wychodzi z porównania <b>homologów</b>. Jeśli w danej pozycji przez miliony lat ewolucji utrzymuje się ten sam aminokwas, to zmiany w tym miejscu najwidoczniej były eliminowane – więc nowa zmiana prawdopodobnie jest gorzej tolerowana. Program zbiera podobne sekwencje, układa je w dopasowanie i ocenia, jakie podstawienia są dopuszczalne w każdej pozycji. Opiera się przede wszystkim na sekwencji i jej konserwacji; stabilność i energię białka oceniają inne narzędzia.</p>
+  <p>Wynik SIFT mieści się w zakresie 0–1, a <b>niższa</b> wartość oznacza silniejsze podejrzenie szkodliwego wpływu. W klasycznym SIFT wartości poniżej 0,05 to „szkodliwe” (<i>deleterious</i>), od 0,05 – „tolerowane” (<i>tolerated</i>); granicę opisuje się też jako ≤ 0,05, więc przy wartości dokładnie granicznej sprawdzasz konkretną implementację. Brak wyniku znaczy „nie wiadomo”, a nie „tolerowane”. Wiarygodność zależy od danych: potrzebne jest dobre dopasowanie właściwych homologów i dostatecznie bogaty zestaw sekwencji, a zbyt mało danych, błędne dopasowanie albo porównywanie białek o różnej funkcji osłabia wynik. SIFT ocenia tylko podstawienia aminokwasów – do ekspansji, CNV i większości wariantów splicingowych służą inne narzędzia.</p>
+  <p><b>PolyPhen-2</b> przewiduje wpływ podstawienia na strukturę i funkcję białka, łącząc cechy sekwencji, konserwację i dostępne informacje o strukturze. Wynik zależy od modelu (m.in. HumDiv i HumVar). Uwaga: skala jest <b>odwrotna</b> niż w SIFT – alarmuje wynik <b>wysoki</b>. W dokumentacji Ensembl przyjęto: do 0,446 – łagodne (<i>benign</i>), 0,446–0,908 – możliwie szkodliwe (<i>possibly damaging</i>), powyżej 0,908 – prawdopodobnie szkodliwe (<i>probably damaging</i>); inne implementacje mogą stosować inne granice. Wynik bliski 1 opisuje podstawienie w modelu, a nie ryzyko choroby u pacjenta.</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:22%">Cecha</th><th style="width:39%">SIFT</th><th>PolyPhen-2</th></tr></thead>
+    <tbody>
+      <tr><td>podstawowa idea</td><td>konserwacja w dopasowaniu homologów</td><td>połączenie informacji o sekwencji i strukturze</td></tr>
+      <tr><td>kierunek skali</td><td>nisko = większe podejrzenie</td><td>wysoko = większe podejrzenie</td></tr>
+      <tr><td>zastosowanie</td><td>podstawienia aminokwasów</td><td>podstawienia aminokwasów</td></tr>
+      <tr><td>rola w klasyfikacji</td><td>jeden z dowodów pomocniczych</td><td>jeden z dowodów pomocniczych</td></tr>
+    </tbody>
+  </table>
+  <p>Gdy oba programy zgodnie alarmują, kusi, by policzyć to jako dwa dowody. To błąd: predyktory korzystają z częściowo wspólnych danych i podobnych cech, więc ich zgodność liczy się jako <b>jeden</b>, obliczeniowy rodzaj dowodu. Zalecenia ClinGen podkreślają kalibrację predyktorów – sprawdzenie, jak dobrze ich wyniki odpowiadają znanym wariantom – i właściwe przypisanie siły dowodu obliczeniowego. Wyniki interpretuje się razem z danymi populacyjnymi, klinicznymi i funkcjonalnymi.</p>
+
+  <h3>Model struktury: gdzie w białku leży zmiana?</h3>
+  <p>Predyktor podaje liczbę, ale nie mówi, <i>dlaczego</i> zamiana może szkodzić. Pomaga w tym przestrzenny model białka. Białka o podobnej sekwencji zwykle mają podobny ogólny sposób zwinięcia łańcucha (fałd), więc znaną strukturę białka wzorcowego można wykorzystać do zaproponowania struktury badanego – to <b>modelowanie homologiczne</b>, którego najważniejsze etapy automatyzuje np. SWISS-MODEL.</p>
+  <p>Na modelu widać, czy zmieniony aminokwas leży w domenie, we wnętrzu białka, na powierzchni, w miejscu wiązania liganda albo w kontakcie między podjednostkami. To pozwala sformułować konkretny mechanizm. Rdzeń hydrofobowy stabilizuje zwinięcie białka, więc reszta silnie naładowana jest tam niekorzystna; na powierzchni ta sama zamiana ma inny, często mniejszy efekt. Inne możliwe mechanizmy to utrata mostka solnego (oddziaływania reszty naładowanej dodatnio z ujemnie naładowaną), kolizja przestrzenna albo zmiana właściwości kieszeni wiążącej. Zobaczenie zmienionej reszty to jednak początek rozumowania – skutek trzeba potwierdzić innymi danymi.</p>
+  <p>Fragmenty dobrze odpowiadające wzorcowi modeluje się pewniej niż odcinki różniące się długością albo układem reszt, np. niektóre pętle. Liczy się więc jakość <b>lokalna</b> w otoczeniu wariantu – dobry model jako całość może mieć słabo przewidziany fragment. Jakość modelu nie mówi też nic o patogenności wariantu. Inne narzędzia odpowiadają na inne pytania: <b>DALI</b> porównuje struktury i rozpoznaje podobieństwo fałdu nawet przy odmiennych sekwencjach (podobny kształt nie oznacza jednak tej samej funkcji), a <b>Rosetta</b> pozwala m.in. ocenić możliwy wpływ podstawienia na strukturę i energię – to jednak obliczenie, a stabilność białka mierzy się doświadczalnie.</p>
+
+  <h3>Doświadczenie: co wariant naprawdę robi?</h3>
+  <p>Przewidywania i modele to hipotezy; sprawdza je doświadczenie. Białko działa dzięki kontaktom z innymi białkami, z DNA, RNA, jonami albo małymi cząsteczkami. Cząsteczka wiązana przez białko to <b>ligand</b> (np. substrat enzymu, hormon dla receptora albo lek). Wiązanie podtrzymują m.in. wiązania wodorowe, kontakty hydrofobowe i oddziaływania elektrostatyczne. Wariant w miejscu kontaktu może usunąć jedno z tych połączeń – osłabić wiązanie, zmienić wybiórczość albo wpłynąć na przejścia białka między stanami; partner może się jednak nadal wiązać dzięki pozostałym oddziaływaniom.</p>
+  <p>Siłę wiązania opisuje stała dysocjacji <b>K<sub>d</sub></b>: przy stężeniu liganda równym K<sub>d</sub> połowa cząsteczek białka jest związana, więc im niższe K<sub>d</sub>, tym silniejsze powinowactwo. Jeśli w porównywalnych warunkach białko referencyjne ma K<sub>d</sub> 10 nM, a wariant 1000 nM, wariant wiąże ligand słabiej. Baza PDBbind łączy znane struktury kompleksów białko–ligand z doświadczalnie zmierzoną siłą wiązania; wpływ nowego wariantu trzeba jednak ocenić osobno.</p>
+  <p>Doświadczenie dobiera się do podejrzewanego mechanizmu, bo każdy test mierzy tylko jeden aspekt funkcji białka: przy podejrzeniu zmiany splicingu analizuje się RNA i połączenia eksonów, przy za małej ilości białka – jego poziom, przy zaburzonej katalizie – aktywność enzymu, a przy błędnej lokalizacji w komórce – obrazowanie komórkowe.</p>
+  <p>Ilość białka mierzą najczęściej dwie metody. <b>Western blot</b>: białka rozdziela się w żelu według wielkości, przenosi na błonę i wykrywa przeciwciałami (<a class="chapref" href="#c06"></a>). Pokazuje obecność białka i przybliżoną wielkość wykrytej formy, np. brak pełnego produktu albo pojawienie się krótszego; intensywność prążka wymaga kontroli ilości nałożonego materiału i zakresu pomiaru. <b>ELISA</b> wykrywa określony antygen albo przeciwciała dzięki reakcjom immunologicznym na podłożu stałym, zwykle w dołkach płytki; sygnał pochodzi z reakcji enzymu przyłączonego do przeciwciała. W wielu odmianach mierzy ilość białka w próbce – bez rozdziału według wielkości.</p>
+  <div class="box uwaga"><p>Na slajdach (48–63) różnicę opisano jako „Western do próbek płynnych, ELISA do stałych”. Właściwe rozróżnienie: Western blot pokazuje obecność i wielkość białka po rozdziale w żelu, a ELISA mierzy ilość antygenu w próbce na płytce. Obie metody badają próbki przygotowane w roztworze.</p></div>
+  <p>Dobry eksperyment porównuje materiał referencyjny i wariant w odpowiednio dobranym układzie, z kontrolami i powtórzeniami, z uwzględnieniem warunków, np. poziomu ekspresji. Nadekspresja (wytwarzanie białka w nadmiarze) może zamaskować niedobór funkcji, a komórki niewłaściwego typu mogą nie odtwarzać mechanizmu działającego w danej tkance. Każda obserwacja zostawia też kolejne pytanie:</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:36%">Obserwacja</th><th>Co jeszcze trzeba wyjaśnić?</th></tr></thead>
+    <tbody>
+      <tr><td>mniej białka</td><td>czy wynika to z ilości RNA, syntezy czy degradacji?</td></tr>
+      <tr><td>prawidłowy prążek w Western blot</td><td>czy białko ma też właściwą aktywność?</td></tr>
+      <tr><td>zmieniona aktywność w hodowli</td><td>czy test odpowiada mechanizmowi choroby?</td></tr>
+      <tr><td>zaburzone wiązanie liganda</td><td>czy skala efektu ma znaczenie w warunkach biologicznych?</td></tr>
+    </tbody>
+  </table>
+  <div class="box zapamietaj"><p>Interpretacja ma trzy osobne elementy: wiarygodność wykrycia, skutek funkcjonalny i związek z chorobą. Położenie, predykcja, model i test funkcjonalny dostarczają dowodów o mechanizmie – ich siłę kliniczną ocenia się razem z pozostałymi danymi.</p></div>
+  <p class="src">Źródło: prezentacja LMZ 3, slajdy 48–63, 80–89</p>
+
 <!-- @@DALEJ@@ -->
 </section>

@@ -43,3 +43,6 @@ Odsyłacze z innych rozdz. do #c01: z06 (ddNTP – „szerzej w rozdz. o genomic
 - h2 3 (NGS) – GOTOWE (Przykład: para 350 vs 460 pz → delecja; ryc. g-09, g-11; Pojęcia: odczyt, fazowanie; pageref do h3 id c01-artefakty i c01-klasy – nadać te id w h2 6 i 8!).
 - h2 4 (mikromacierze) – GOTOWE (Przykład: przewidywanie BAF/LRR dla 3 sytuacji; ryc. g-16; Pojęcie SNP; chapref #c06 x2).
 - h2 5 (strategia) – GOTOWE (kryterium + Przykład: 2 pacjentów – wiele genów vs ekspansja HTT; trio; nowotwór; wynik ujemny; Pojęcie eksom; pageref c01-glebokosc – nadać id w h2 6).
+- Kalibracja (build lustrzany w scratchpad/g2/mirror, nie liczę do 5): po h2 1–5 = 19 s., luki przed dużymi rycinami → g-07 USUNIĘTA ponownie (decyzja: miejsce; drabina opisana w tekście z przykładem 3′-TACGAT-5′). Reszta pisana oszczędniej.
+- h2 6 (bioinf, QC) – GOTOWE (lista etapów z „po co”; Przykład VAF 29/60 vs 80/1000; h3 id c01-glebokosc, c01-artefakty; ryc. g-17).
+- h2 7 (skutek) – GOTOWE (HGVS; tabela położenie; NMD + nowa z banku g-20; Przykład: 2 warianty nonsense; 4 mechanizmy + rachunek 1/16; SIFT/PolyPhen + tabela przywrócona; struktura; doświadczenie + Uwaga do źródła Western/ELISA).
