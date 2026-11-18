@@ -1,0 +1,176 @@
+<section class="chapter" data-num="01" data-label="G" data-title="Genomika: analiza genomu i genotypowanie"
+  data-short="Genomika i genotypowanie" data-kicker="Warianty · sekwencjonowanie · jakość danych · interpretacja">
+
+  <p class="lead">Do lekarza trafia pacjent, którego objawy sugerują chorobę genetyczną. Co trzeba sprawdzić w jego DNA i jakimi narzędziami? A gdy laboratorium znajdzie różnicę w sekwencji – skąd wiadomo, że to ona jest przyczyną choroby? Ten rozdział prowadzi przez całą tę drogę: od wyboru badania, przez odczyt i obróbkę danych, do oceny znaczenia wariantu.</p>
+
+  <!-- ============ 1 ============ -->
+  <h2 id="c01-warianty">Co badamy i jakie są warianty</h2>
+  <h3>Trzy pytania, do których wraca cały rozdział</h3>
+  <p>Wyobraź sobie wynik badania: „w genie X wykryto wariant”. Zanim ktokolwiek uzna go za przyczynę objawów, trzeba odpowiedzieć na trzy pytania. Kolejność jest ważna – każde następne pytanie ma sens dopiero wtedy, gdy znamy odpowiedź na poprzednie.</p>
+  <ol>
+    <li><b>Czy wariant naprawdę jest w DNA pacjenta?</b> Może to błąd odczytu albo artefakt metody. Odpowiedź zależy od metody, zakresu badania, jakości danych i potwierdzenia.</li>
+    <li><b>Co ten wariant robi?</b> Czy zmienia RNA, białko, jego działanie? Odpowiedź zależy od położenia w genie, mechanizmu, przewidywań programów, struktury białka i doświadczenia.</li>
+    <li><b>Co on znaczy dla pacjenta?</b> Czy wyjaśnia chorobę? Odpowiedź zależy od częstości wariantu u innych ludzi, baz danych, dziedziczenia w rodzinie, objawów i klasyfikacji.</li>
+  </ol>
+  <p>Kolejne podrozdziały odpowiadają na te pytania w tej właśnie kolejności. Najpierw jednak trzeba ustalić, czego właściwie szukamy.</p>
+
+  <h3>Genom, gen i genotyp</h3>
+  <p><b>Genom</b> to cały materiał genetyczny organizmu. U człowieka składa się z dwóch części: z DNA w jądrze komórkowym i z małego, kolistego DNA w mitochondriach (<b>mtDNA</b>). Jeden zestaw chromosomów jądrowych liczy około 3 miliardów par zasad. Większość komórek ciała ma dwa takie zestawy – jeden od matki, drugi od ojca.</p>
+  <p>W jądrze leżą geny, a między nimi rozciągają się długie odcinki DNA. Badanie genomu obejmuje cały ten materiał, łącznie z odcinkami, które nie kodują białek.</p>
+  <p><b>Gen</b> to odcinek DNA, na podstawie którego komórka wytwarza działające (funkcjonalne) RNA. W genie kodującym białko tym RNA jest mRNA – etap pośredni w drodze do białka. Inne geny dają RNA, które działa samo, bez translacji: rRNA buduje rybosomy, a tRNA dowozi aminokwasy. Część RNA reguluje pracę innych genów.</p>
+  <aside class="note pojecie" data-term="Locus"><p>określone miejsce w genomie – pozycja jednego nukleotydu albo cały gen; liczba mnoga: loci.</p></aside>
+  <p>W tym samym miejscu genomu – <b>locus</b> – różni ludzie mogą mieć różne wersje sekwencji. Każda taka wersja to <b>allel</b>. <b>Genotyp</b> opisuje, jakie allele ma dana osoba – w jednym miejscu albo w wielu miejscach naraz.</p>
+  <p>Weźmy miejsce, w którym w populacji występują dwie wersje: A i G. Każda osoba ma tu dwa allele, po jednym na każdym chromosomie z pary. Możliwe są więc trzy genotypy: A/A, A/G i G/G. Osoby A/A i G/G mają dwa takie same allele – to <b>homozygoty</b>. Osoba A/G ma dwa różne – to <b>heterozygota</b>.</p>
+  <p>Model dwóch kopii pasuje do chromosomów autosomalnych. mtDNA występuje w komórce w wielu kopiach, a mężczyzna ma tylko jedną kopię większości genów z chromosomów X i Y. Dlatego przy każdym badaniu trzeba wiedzieć, ile kopii danego regionu ma badana osoba – od tego zależy, jakiego wyniku można się spodziewać.</p>
+
+  <h3>Dlaczego „genomika”, a nie po prostu genetyka?</h3>
+  <p>Genetyka często zaczyna od jednego genu albo od dziedziczenia jednej cechy – jak w krzyżówkach Mendla. <b>Genomika</b> patrzy szerzej: bada materiał genetyczny w dużej skali – jego sekwencję, organizację, elementy funkcjonalne i zależności między nimi. W tym rozdziale wracają dwie czynności. <b>Mapowanie</b> ustala, gdzie w genomie leżą geny lub markery. <b>Genotypowanie</b> sprawdza, jakie allele są obecne w badanych miejscach. Gdy analizuje się tysiące genów naraz, danych nie da się już przejrzeć ręcznie – potrzebna jest <b>bioinformatyka</b>, czyli programy do obróbki ogromnych zbiorów danych.</p>
+  <p>Sama sekwencja DNA to jednak dopiero punkt wyjścia. Neuron i komórka mięśniowa mają w zasadzie ten sam zestaw genów, a różnią się tym, z których genów korzystają. Obecność genu w DNA mówi więc, że komórka <i>może</i> z niego skorzystać. Czy rzeczywiście korzysta, pokazują badania RNA (wszystkie RNA obecne w komórkach to <b>transkryptom</b>) i białek (<b>proteom</b>).</p>
+
+  <h3>Wariant – różnica względem wzorca</h3>
+  <aside class="note pojecie" data-term="Sekwencja referencyjna"><p>uzgodniony wzorzec sekwencji (np. genom GRCh38 albo konkretny transkrypt), z którym porównuje się DNA badanej osoby.</p></aside>
+  <p>Żeby powiedzieć, że u pacjenta „coś jest inaczej”, trzeba mieć z czym porównać. Tym wzorcem jest <b>sekwencja referencyjna</b> – uzgodniona sekwencja, np. ludzkiego genomu w wersji GRCh38 albo konkretnego transkryptu. <b>Wariant</b> to każda różnica względem tej sekwencji.</p>
+  <p>Słowo „wariant” opisuje samą różnicę, a nie jej skutek. To, czy wariant ma związek z chorobą, ustala się w osobnej ocenie. Dlatego myśl w dwóch krokach: najpierw <b>opisz zmianę w DNA</b>, potem sprawdź, <b>co ona robi z RNA i białkiem</b>. Tych kroków nie wolno łączyć, bo ta sama zamiana jednego nukleotydu może mieć bardzo różne skutki – zależnie od tego, gdzie wystąpi.</p>
+
+  <h3>Jak rozpoznać rodzaj wariantu?</h3>
+  <p>Rodzaj wariantu rozpoznajesz po jednej cesze: po tym, <b>co się zmieniło w DNA</b>. Dopiero z tej cechy wynika możliwy skutek. Zacznijmy od najmniejszych zmian.</p>
+  <p><b>SNV</b> (wariant pojedynczego nukleotydu) – zmieniła się <b>jedna zasada</b>, np. A na G. Jeśli zmiana leży w części kodującej białko, o skutku decyduje to, co stało się z kodonem, czyli trójką nukleotydów kodującą aminokwas:</p>
+  <ul>
+    <li><b>synonimiczny</b> – kodon się zmienił, ale nadal koduje ten sam aminokwas;</li>
+    <li><b>missense</b> – powstał kodon innego aminokwasu;</li>
+    <li><b>nonsense</b> – powstał przedwczesny kodon STOP, więc łańcuch białka zostaje urwany.</li>
+  </ul>
+  <p>Wariant synonimiczny nie zawsze jest obojętny. Jeśli leży blisko granicy eksonu, może zaburzyć splicing – wycinanie intronów i łączenie eksonów w dojrzałe mRNA. Skutek dla białka to więc tylko jeden z elementów oceny wariantu.</p>
+  <aside class="note pojecie" data-term="Ramka odczytu"><p>sposób podziału sekwencji na trójki (kodony), zaczynający się od kodonu START. Rybosom czyta mRNA trójka po trójce, bez przerw.</p></aside>
+  <p><b>Insercja</b> dodaje nukleotydy, a <b>delecja</b> je usuwa; krótkie insercje i delecje nazywa się razem <b>indelami</b>. Tu cechą rozstrzygającą jest <b>liczba</b> dodanych lub usuniętych nukleotydów. Rybosom czyta mRNA trójkami, bez przerw, od kodonu START – ten podział na trójki to <b>ramka odczytu</b>. Jeśli liczba nukleotydów dzieli się przez 3, ramka zwykle zostaje zachowana: białko traci albo zyskuje jeden lub kilka aminokwasów, a reszta sekwencji się nie zmienia. Jeśli się nie dzieli, dochodzi do <b>przesunięcia ramki</b> (<i>frameshift</i>): wszystkie dalsze kodony są odczytywane inaczej i często szybko pojawia się przedwczesny STOP.</p>
+  <p>Większe zmiany rozpoznaje się po tym, co dzieje się z całym odcinkiem DNA:</p>
+  <ul>
+    <li><b>CNV</b> (wariant liczby kopii) – zmienia się <b>liczba kopii</b> regionu: może go zabraknąć (delecja) albo może pojawić się dodatkowa kopia (duplikacja). Zmiana może obejmować jeden ekson, cały gen albo duży fragment chromosomu;</li>
+    <li><b>inwersja</b> – odcinek zostaje <b>odwrócony</b> w obrębie chromosomu;</li>
+    <li><b>translokacja</b> – fragment zostaje <b>przeniesiony</b> na inny chromosom;</li>
+    <li><b>ekspansja powtórzeń</b> – rośnie <b>liczba powtórzeń</b> krótkiego motywu, np. ciągu CAG.</li>
+  </ul>
+  <p>Inwersja albo translokacja bez utraty materiału to zmiany <b>zrównoważone</b>: łączna ilość DNA się nie zmienia. Mimo to taka zmiana może przerwać gen albo zmienić jego regulację. Ogólna zasada brzmi więc: <b>wielkość zmiany nie wyznacza jej znaczenia</b>. Rozległa zmiana bywa dobrze tolerowana, a zamiana jednego nukleotydu w kluczowym miejscu może mieć poważny skutek.</p>
+
+  <figure class="fig" id="c01-fig-zmiany" data-bank="g-ryc-02" data-title="Zmiany DNA i ich skutki">
+    <figcaption>Zacznij od wiersza „Referencja” w panelu A i porównuj z nim kolejne wiersze: czerwone pola to zmienione nukleotydy, pod nimi – skutek dla białka. Zmiany w tym samym, drugim kodonie dają trzy różne skutki; delecja 3 nt zachowuje ramkę, insercja 1 nt ją przesuwa. B i C – zmiany większych odcinków: liczby powtórzeń, liczby kopii i orientacji (bez progów klinicznych).</figcaption>
+  </figure>
+
+  <div class="box przyklad"><p>Sekwencja referencyjna z ryc. A to ATG GAA TTT CCG TAA, czyli Met–Glu–Phe–Pro–STOP. Przy każdej zmianie zadajesz te same pytania: ile nukleotydów się zmieniło? czy zmienił się aminokwas?</p>
+    <ul>
+      <li>GAA → GAG: jedna zasada, więc SNV. GAG to nadal Glu – wariant <b>synonimiczny</b>.</li>
+      <li>GAA → GTA: jedna zasada, ale GTA koduje Val – <b>missense</b>.</li>
+      <li>GAA → TAA: jedna zasada, a TAA to STOP – <b>nonsense</b>; z białka zostaje sama metionina.</li>
+      <li>Brak TTT: trzy nukleotydy, liczba podzielna przez 3 – ramka zachowana, białko traci jeden aminokwas (Phe).</li>
+      <li>Dodatkowe C za ATG: jeden nukleotyd, liczba niepodzielna przez 3 – od tego miejsca kodony są inne (CGA ATT TCC GTA…), czyli <b>przesunięcie ramki</b>.</li>
+    </ul>
+    <p>Trzy pierwsze zmiany dotyczą tego samego kodonu, a skutki są zupełnie różne. Dlatego najpierw nazywasz zmianę w DNA, a dopiero potem wnioskujesz o skutku.</p></div>
+
+  <table class="tbl wide">
+    <thead><tr><th style="width:27%">Co się zmieniło w DNA</th><th style="width:25%">Rodzaj wariantu</th><th>Możliwy skutek</th></tr></thead>
+    <tbody>
+      <tr><td>jedna zasada</td><td>SNV</td><td>synonimiczny, missense albo nonsense; czasem zaburzony splicing</td></tr>
+      <tr><td>kilka nukleotydów, liczba podzielna przez 3</td><td>mały indel bez przesunięcia ramki</td><td>białko krótsze lub dłuższe o jeden lub kilka aminokwasów</td></tr>
+      <tr><td>kilka nukleotydów, liczba niepodzielna przez 3</td><td>indel z przesunięciem ramki</td><td>dalsze kodony odczytywane inaczej, często szybki przedwczesny STOP</td></tr>
+      <tr><td>liczba kopii regionu</td><td>CNV</td><td>brak lub nadmiar eksonu, genu albo fragmentu chromosomu</td></tr>
+      <tr><td>orientacja albo położenie odcinka</td><td>inwersja, translokacja</td><td>ilość DNA ta sama; możliwe przerwanie genu lub zmiana regulacji</td></tr>
+      <tr><td>liczba powtórzeń krótkiego motywu</td><td>ekspansja powtórzeń</td><td>zmiana budowy białka, toksyczne RNA albo wyciszenie genu</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Ekspansja powtórzeń – wariant, który zmienia się między pokoleniami</h3>
+  <p>W niektórych miejscach genomu krótki motyw DNA powtarza się wiele razy z rzędu. Jeśli liczba powtórzeń rośnie i może się zmieniać przy przekazywaniu allelu dzieciom, mówimy o <b>ekspansji powtórzeń</b>; tradycyjna nazwa tego zjawiska to <b>mutacja dynamiczna</b>. Skutek zależy od choroby i od miejsca powtórzenia: może zmienić się budowa białka, może powstać szkodliwe (toksyczne) RNA albo gen może zostać wyciszony.</p>
+  <p>Klasyczny przykład to powtórzenia CAG w genie <i>HTT</i>. Kodon CAG koduje glutaminę, więc każde dodatkowe CAG to jedna glutamina więcej. Dłuższy ciąg CAG wydłuża w białku huntingtynie odcinek zbudowany z samych glutamin – odcinek poliglutaminowy. Liczbę powtórzeń w <i>HTT</i> interpretuje się w czterech zakresach:</p>
+  <table class="tbl full">
+    <thead><tr><th style="width:42%">Liczba powtórzeń CAG</th><th>Interpretacja</th></tr></thead>
+    <tbody>
+      <tr><td>do 26</td><td>allel prawidłowy</td></tr>
+      <tr><td>27–35</td><td>allel pośredni</td></tr>
+      <tr><td>36–39</td><td>allel o zmniejszonej penetracji</td></tr>
+      <tr><td>40 i więcej</td><td>allel o pełnej penetracji</td></tr>
+    </tbody>
+  </table>
+  <aside class="note pojecie" data-term="Penetracja"><p>odsetek osób z danym genotypem, u których ujawnia się dana cecha (np. choroba).</p></aside>
+  <p>„Zmniejszona penetracja” znaczy, że nie u każdej osoby z takim allelem choroba się ujawni. Te zakresy dotyczą wyłącznie <i>HTT</i> – inne choroby związane z powtórzeniami mają własne progi. Interpretację utrudniają czasem przerwania ciągu, czyli wstawki innego kodonu w środku ciągu powtórzeń.</p>
+  <p>Niestabilne powtórzenia mogą się wydłużać w kolejnych pokoleniach. Wiąże się z tym <b>antycypacja</b>: choroba ujawnia się wcześniej albo przebiega ciężej u dzieci niż u rodziców. To zjawisko częste w chorobach powtórzeń, choć jego przebieg różni się między rodzinami i chorobami.</p>
+
+  <h3>Skąd pochodzi wariant?</h3>
+  <p>Wariant <b>konstytucyjny</b> jest obecny od zapłodnienia, więc zwykle występuje w wielu tkankach. Może być odziedziczony po rodzicu albo powstać <b>de novo</b>, czyli jako nowa zmiana – na przykład w komórce rozrodczej jednego z rodziców.</p>
+  <p>Wariant <b>somatyczny</b> powstaje później, już po zapłodnieniu, i dotyczy tylko jednej linii komórek, np. komórek nowotworu. <b>Mozaikowość</b> oznacza, że w organizmie żyją obok siebie populacje komórek różniące się genetycznie. Znaczenie wyniku zależy więc również od tego, z jakiej tkanki pobrano próbkę: wariant obecny tylko w części komórek może się w danej próbce w ogóle nie znaleźć albo stanowić jej niewielką część.</p>
+
+  <h3>Dlaczego jedna metoda nie wykrywa wszystkiego?</h3>
+  <p>Każdy rodzaj wariantu stawia metodzie inne zadanie. Zamianę jednej litery wystarczy przeczytać. Brak całego eksonu trzeba policzyć – sprawdzić, czy jest jedna kopia zamiast dwóch. Długie powtórzenie trzeba zmierzyć. Żadna pojedyncza metoda nie robi dobrze wszystkich tych rzeczy naraz.</p>
+  <aside class="note pojecie" data-term="Pseudogen"><p>nieczynna kopia genu, bardzo podobna do genu właściwego. Odczyty z pseudogenu łatwo pomylić z odczytami z genu.</p></aside>
+  <p>Sekwencjonowanie krótkimi odczytami (opisane dalej) dobrze wykrywa SNV i małe indele. Szczególnego podejścia wymagają za to bardzo długie powtórzenia, <b>pseudogeny</b> i część rearanżacji. Ekspansje bada się m.in. metodą PCR z pomiarem długości produktu i metodą <b>RP-PCR</b> (<i>repeat-primed PCR</i>), a zależnie od problemu także innymi zwalidowanymi metodami albo długimi odczytami. Zmiany liczby kopii wykrywa mikromacierz, odpowiednio zwalidowana analiza danych NGS albo <b>MLPA</b> – metoda, w której pary sond przyłączają się do wybranych odcinków DNA (np. eksonów), zostają połączone i namnożone w PCR, a ilość produktu odpowiada liczbie kopii odcinka.</p>
+  <div class="box zapamietaj"><p>Najpierw nazwij zmianę w DNA, potem sprawdź ramkę odczytu, położenie w genie i możliwy skutek. Wynik ujemny oznacza tylko, że test nie wykrył zmiany w zakresie swoich możliwości – jego znaczenie zależy od badanego regionu, klasy wariantu i czułości metody.</p></div>
+  <p class="src">Źródło: prezentacja LMZ 3, slajdy 2–25</p>
+
+  <!-- ============ 2 ============ -->
+  <h2 id="c01-sanger">Od regionu do odczytu: PCR i metoda Sangera</h2>
+  <h3>Który fragment zbadać?</h3>
+  <p>Genom liczy miliardy par zasad, a jeden odczyt metodą Sangera – kilkaset zasad. Badanie trzeba więc zawęzić, a wybór fragmentu zaczyna się od celu. Jeśli w rodzinie znana jest konkretna zmiana, wystarczy zbadać jej otoczenie. Jeśli podobny obraz choroby może wynikać ze zmian w wielu genach, badanie jednego fragmentu będzie za wąskie (wtedy sięga się po szersze metody, opisane w kolejnych podrozdziałach). Liczy się też to, jakiego typu zmiany się spodziewasz, jakiej jakości jest materiał i co potrafi laboratorium.</p>
+  <p>Zanim zaprojektujesz reakcję, ustalasz cztery rzeczy: <b>gen</b>, <b>gatunek</b>, <b>wersję genomu referencyjnego</b> i <b>transkrypt</b>. Po co transkrypt? Z jednego genu mogą powstawać różne mRNA, złożone z różnych zestawów eksonów – to różne izoformy. Jeśli jeden transkrypt ma na początku dodatkowy ekson, ten sam odcinek DNA będzie w nim „eksonem 5”, a w innym – „eksonem 4”. Samo „ekson 4” to więc opis niepełny. W opisie zapisuje się identyfikator sekwencji razem z numerem wersji: np. w zbiorze sekwencji referencyjnych RefSeq transkrypty mają identyfikatory zaczynające się od NM_, a po kropce numer wersji (NM_xxxxxx.2).</p>
+  <aside class="note pojecie" data-term="CDS i UTR"><p>CDS (<i>coding sequence</i>) – sekwencja kodująca białko, od kodonu START do STOP. UTR – część mRNA przed i za CDS; jest w mRNA, ale rybosom nie tłumaczy jej na aminokwasy.</p></aside>
+  <p>Jeśli interesuje cię konkretna część białka, np. domena enzymu, jej położenie przekładasz na fragment <b>CDS</b> i na eksony właściwego transkryptu. Pomaga prosta reguła: kodon nr <i>n</i> to pozycje od c.(3<i>n</i>−2) do c.3<i>n</i> sekwencji kodującej (w numeracji „c.” pierwsza zasada kodonu START ma numer 1). Aminokwas 120 to więc pozycje c.358–c.360.</p>
+  <p>Jeśli badasz splicing, obejmujesz granice ekson–intron, a nie tylko środek eksonu – to tam leżą miejsca, które decydują o łączeniu eksonów. Pamiętaj też, że badanie mRNA lub cDNA odpowiada na inne pytanie niż badanie DNA genomowego: w mRNA introny są już wycięte.</p>
+  <aside class="note pojecie" data-term="Hotspot"><p>miejsce w genie, w którym zmiany chorobotwórcze pojawiają się szczególnie często.</p></aside>
+  <p>Jak szeroki ma być region? Taki, który faktycznie odpowiada na pytanie. Czasem to jeden <b>hotspot</b>, czasem cały ekson z otoczeniem, a czasem wiele genów. Jeśli w danej chorobie zmiany chorobotwórcze są rozsiane po całym genie, jeden namnożony fragment obejmie tylko część genu – a szukany wariant może leżeć poza nim.</p>
+
+  <h3>PCR: namnożyć dokładnie ten fragment</h3>
+  <p>Do odczytu potrzeba wielu kopii wybranego fragmentu. Przygotowuje je <b>PCR</b> (szczegóły – <a class="chapref" href="#c05"></a>). Przypomnijmy zasadę: para <b>starterów</b> – krótkich, jednoniciowych odcinków DNA – przyłącza się po obu stronach badanego obszaru, każdy do innej nici, końcami 3′ skierowanymi do środka. Polimeraza DNA dobudowuje nową nić od końca 3′ startera (w kierunku 5′→3′), więc kopiowany jest tylko odcinek między starterami – <b>amplikon</b>. PCR zwiększa jednak tylko <b>ilość</b> materiału. Jaka jest kolejność zasad w produkcie, ustala osobne badanie – sekwencjonowanie.</p>
+  <p>Skoro to startery decydują, co zostanie namnożone, od ich projektu zależy cały wynik. Dobry starter wiąże się tylko z celem, ma odpowiednie właściwości termiczne i nie tworzy silnych struktur z drugim starterem. Przed użyciem sprawdza się jeszcze dwie rzeczy:</p>
+  <ul>
+    <li>czy w genomie nie ma bardzo podobnych sekwencji – pokrewnych genów, pseudogenów albo powtórzeń. Starter pasujący także do nich namnożyłby nie ten fragment, o który chodzi;</li>
+    <li>czy w miejscu wiązania startera nie leżą częste warianty. Tu kryje się pułapka opisana poniżej.</li>
+  </ul>
+  <p>Wyobraź sobie heterozygotę A/G, u której na jednym chromosomie – akurat w miejscu wiązania startera – leży jeszcze inny, częsty wariant. Starter gorzej przyłącza się do tej kopii, więc namnaża się ona słabo albo wcale. Produkt PCR to wtedy prawie wyłącznie druga kopia, a wynik pokazuje tylko jeden allel: heterozygota wygląda jak homozygota. To <b>allele dropout</b>, czyli „wypadnięcie” allelu. Warto o nim pomyśleć szczególnie wtedy, gdy uzyskany genotyp nie pasuje do wyników rodziny albo do jakości pozostałych danych.</p>
+  <div class="box przyklad"><p>Matka ma w badanym miejscu genotyp A/A, a wynik jej dziecka brzmi G/G (dane przykładowe). Dziecko dostało od matki jeden z jej alleli, więc musi mieć co najmniej jedno A. Wynik G/G jest z tym sprzeczny. Albo coś jest nie tak z próbką lub pokrewieństwem, albo jeden allel dziecka się nie namnożył – i trzeba sprawdzić, czy w miejscu wiązania startera nie leży wariant. Prawdziwy genotyp dziecka może brzmieć A/G.</p></div>
+  <p>Długość amplikonu i długość odczytu planuje się osobno. PCR może wytworzyć fragment dłuższy niż jeden czytelny odczyt metody Sangera, który w dobrej reakcji obejmuje kilkaset zasad, często ok. 500–900, zależnie od próbki i warunków. Fragment długości kilku tysięcy par zasad wymaga więc dodatkowych starterów sekwencyjnych albo innej strategii. Reakcję kontroluje się na kilku poziomach:</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:30%">Co sprawdzasz</th><th>Dlaczego to ważne</th></tr></thead>
+    <tbody>
+      <tr><td>kontrolę bez matrycy</td><td>wykrywa zanieczyszczenie reakcji obcym DNA: w probówce bez DNA nie powinien powstać żaden produkt</td></tr>
+      <tr><td>wielkość produktu (np. w elektroforezie)</td><td>właściwy rozmiar wspiera ocenę, że namnożył się właściwy fragment</td></tr>
+      <tr><td>jakość i ilość DNA</td><td>wpływają na skuteczność wszystkich dalszych etapów</td></tr>
+      <tr><td>odczyt w obu kierunkach</td><td>ułatwia ocenę trudnych lub niejednoznacznych pozycji</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Metoda Sangera: synteza, która staje w różnych miejscach</h3>
+  <p>Mamy już dużo kopii fragmentu. Jak odczytać kolejność jego zasad? Pomysł metody Sangera: kazać polimerazie budować nowe nici na badanej matrycy, ale zatrzymywać ją w różnych miejscach – raz po pierwszej zasadzie, raz po drugiej, raz po setnej. Jeśli każda zatrzymana nić „powie”, na jakiej zasadzie stanęła, wystarczy ułożyć nici według długości i odczytać litery po kolei.</p>
+  <p>W reakcji są: matryca DNA, <b>jeden</b> starter, polimeraza, zwykłe nukleotydy (<b>dNTP</b>) i niewielka ilość <b>dideoksynukleotydów</b> (<b>ddNTP</b>) znakowanych fluorescencyjnie – każda z czterech zasad innym barwnikiem. Cała sztuczka tkwi w jednym atomie (<a class="figref" href="#c01-fig-ddntp"></a>). Kolejny nukleotyd zawsze przyłącza się do grupy –OH przy węglu 3′ ostatniego nukleotydu nici. Zwykły dNTP ma tę grupę, więc po jego wbudowaniu nić rośnie dalej. ddNTP ma przy węglu 3′ sam wodór – po jego wbudowaniu następny nukleotyd nie ma się do czego przyłączyć i synteza tej cząsteczki się kończy.</p>
+
+  <figure class="fig" id="c01-fig-ddntp" data-bank="g-ryc-06" data-title="dNTP i ddNTP: o wszystkim decyduje grupa 3′-OH">
+    <figcaption>W panelu A porównaj węgiel 3′ obu nukleotydów: dNTP ma tu grupę –OH, ddNTP – sam wodór („deoksy” = brak OH przy 2′, „dideoksy” = przy 2′ i 3′). Panel B pokazuje skutek: do 3′-OH przyłącza się kolejny nukleotyd i nić rośnie (1); po wbudowaniu ddNTP nie ma go do czego przyłączyć, synteza staje, a barwa znacznika mówi, która to zasada (2).</figcaption>
+  </figure>
+
+  <p>Dlaczego ddNTP daje się niewiele? Gdyby było ich dużo, prawie każda nić urywałaby się tuż za starterem. Przy małej ilości polimeraza zwykle wbudowuje zwykły dNTP i idzie dalej, a tylko od czasu do czasu trafia na ddNTP. W probówce powstaje więc mnóstwo fragmentów, które zaczynają się w tym samym miejscu – przy starterze – a kończą w różnych pozycjach, każdy na barwnym ddNTP. To „drabina długości”: fragmenty różnią się kolejno o jeden nukleotyd, a barwa końca każdego z nich mówi, jaka zasada stoi w tej pozycji (<a class="figref" data-panel="B" href="#c01-fig-sanger"></a>).</p>
+  <p>Fragmenty trzeba jeszcze ułożyć według długości. Robi to <b>elektroforeza kapilarna</b> (zasada elektroforezy – <a class="chapref" href="#c06"></a>). Krótsze fragmenty docierają do detektora wcześniej, dłuższe później, a rozdzielczość cienkiej kapilary pozwala odróżnić fragmenty różniące się o jeden nukleotyd. Detektor rejestruje barwę znacznika na końcu każdego przepływającego fragmentu, a program zamienia sygnał na litery. Kolejność od najkrótszego do najdłuższego daje sekwencję <b>nowo syntetyzowanej nici</b>, w kierunku 5′→3′; badana matryca jest do niej komplementarna.</p>
+  <p>Zwróć uwagę na różnicę zadań. PCR przed sekwencjonowaniem używa <b>dwóch</b> starterów i wytwarza dużo jednakowych kopii regionu. Reakcja Sangera używa <b>jednego</b> startera i wytwarza zestaw znakowanych fragmentów o różnej długości – dlatego czyta sekwencję w jednym kierunku. Jeśli potrzebujesz sekwencji drugiej nici, zapisujesz sekwencję <b>odwrotnie komplementarną</b>: odwracasz kolejność liter i każdą zamieniasz na komplementarną. Przy porównywaniu odczytów z obu kierunków (forward i reverse) oba trzeba najpierw zapisać w tej samej orientacji – inaczej prawie każda pozycja wyglądałaby na różnicę.</p>
+
+  <figure class="fig" id="c01-fig-sanger" data-bank="g-ryc-07" data-title="Jak odczytuje się sekwencję?">
+    <figcaption>Śledź jedną matrycę od A do D. A – PCR dwoma starterami wyznacza amplikon. B – jeden starter i ddNTP dają nici urwane na każdej kolejnej pozycji, każdą z barwną zasadą na końcu. C – w kapilarze krótsze fragmenty docierają do detektora pierwsze. D – kolejne piki to kolejne litery nowej nici (5′-ATGCTA-3′, komplementarnej do matrycy 3′-TACGAT-5′); po prawej dwa nakładające się piki w jednej pozycji – heterozygotyczny SNV.</figcaption>
+  </figure>
+
+  <h3>Jak czytać chromatogram?</h3>
+  <aside class="note pojecie" data-term="Basecalling"><p>przypisanie liter (A, C, G, T) do zmierzonego sygnału, razem z oceną jakości każdej litery.</p></aside>
+  <p><b>Chromatogram</b> to wykres sygnału fluorescencji w czasie (<a class="figref" data-panel="D" href="#c01-fig-sanger"></a>). W dobrym odczycie każda pozycja ma wyraźny pik. Program przypisuje pikom litery i podaje jakość każdej z nich – to <b>basecalling</b>. Trudne miejsca warto jednak obejrzeć na wykresie samodzielnie. Kolory zasad różnią się między systemami, więc zawsze odczytuje się je z legendy chromatogramu.</p>
+  <p>Pamiętaj, że PCR namnaża obie kopie regionu – z obu chromosomów pary. Jeśli dwa allele pacjenta różnią się jedną zasadą, w tej pozycji część fragmentów kończy się na jednej zasadzie, a część na drugiej. Na chromatogramie pojawiają się wtedy <b>dwa piki</b> naraz, np. A i G. Program wpisuje w takim miejscu literę <b>kodu IUPAC</b>, oznaczającą kilka zasad naraz: R = A lub G, Y = C lub T. Gdy oba allele mają tę samą zasadę, widać jeden pik.</p>
+  <p>Heterozygotyczny SNV daje niejednoznaczność w <b>jednej</b> pozycji, a dalsza sekwencja pozostaje czytelna – za miejscem zmiany oba allele znów mają te same litery. Heterozygotyczny indel wygląda inaczej. Jeśli w jednym allelu brakuje np. jednego nukleotydu, od miejsca zmiany ten allel jest przesunięty o jedną pozycję względem drugiego. W każdej kolejnej pozycji nakładają się więc dwa różne sygnały i od miejsca zmiany chromatogram staje się nieczytelny.</p>
+  <p>Podwójny sygnał nie zawsze oznacza dwa allele. Może też wynikać z zanieczyszczenia, z produktu niespecyficznego (namnożonego innego fragmentu) albo ze słabej jakości reakcji. Pomaga taka ściąga:</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:42%">Co widzisz na chromatogramie</th><th>Co rozważasz</th></tr></thead>
+    <tbody>
+      <tr><td>dwa piki w jednej pozycji, dalej czysto</td><td>heterozygotyczny SNV albo lokalny problem z sygnałem</td></tr>
+      <tr><td>nakładające się piki od jednego miejsca dalej</td><td>heterozygotyczny indel albo mieszaninę matryc</td></tr>
+      <tr><td>słabe piki w całym odczycie</td><td>jakość próbki, ilość produktu, przebieg reakcji i oczyszczanie</td></tr>
+      <tr><td>różnica tylko na słabym końcu odczytu</td><td>potrzebę lepszego odczytu tego miejsca</td></tr>
+    </tbody>
+  </table>
+  <p>Przed interpretacją odcina się fragmenty o niskiej jakości – początek i koniec odczytu bywają słabiej czytelne – i dopasowuje odczyt do właściwej sekwencji referencyjnej. Pozycję zmiany podaje się w układzie odniesienia, np. w numeracji transkryptu, a nie jako numer piku na ekranie: numer piku zależy od miejsca startera i nic nie mówi o położeniu w genie.</p>
+  <p>Kiedy metoda Sangera jest dobrym wyborem? Przy niewielkich regionach, przy konkretnych wariantach i w wybranych zastosowaniach potwierdzających. Do przeglądania wielu genów naraz służą metody NGS (następny podrozdział). Sanger ma też ograniczoną zdolność wykrywania wariantów obecnych tylko w małej części cząsteczek w próbce – np. w części przypadków mozaikowości i w próbkach nowotworowych; drugi pik jest wtedy niski i łatwo go przeoczyć. Granicę wykrywania określa walidacja konkretnego testu.</p>
+  <div class="box zapamietaj"><p>Startery wyznaczają, co uda się namnożyć: jeśli projekt pominie ważny region albo jeden allel, dalsza analiza tej informacji już nie odzyska. Heterozygotyczny SNV to dwa piki w jednej pozycji, heterozygotyczny indel – nakładające się sygnały od miejsca zmiany dalej.</p></div>
+  <p class="src">Źródło: prezentacja LMZ 3, slajdy 8–25, 80–89</p>
+
+<!-- @@DALEJ@@ -->
+</section>

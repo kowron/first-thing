@@ -38,3 +38,5 @@ Odsyłacze z innych rozdz. do #c01: z06 (ddNTP – „szerzej w rozdz. o genomic
 - W 60 sekund: z rozdz. 18 i rozróżnień.
 
 ## Postęp
+- h2 1 (warianty) – GOTOWE w robocze/ (3 pytania na wejściu; rozpoznawanie: tabela cecha→rodzaj→skutek; Przykład na sekwencji z ryc. g-02; Pojęcia: locus, sekwencja ref., ramka, penetracja, pseudogen). Dalej: marker <!-- @@DALEJ@@ --> w pliku.
+- h2 2 (region, PCR, Sanger, chromatogram) – GOTOWE (Przykład: allele dropout w rodzinie; ryc. g-06 + powrót g-07 z nowymi podpisami; Pojęcia: CDS i UTR, hotspot, basecalling; chapref #c05, #c06).
