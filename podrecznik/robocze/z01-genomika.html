@@ -144,17 +144,13 @@
     <figcaption>W panelu A porównaj węgiel 3′ obu nukleotydów: dNTP ma tu grupę –OH, ddNTP – sam wodór („deoksy” = brak OH przy 2′, „dideoksy” = przy 2′ i 3′). Panel B pokazuje skutek: do 3′-OH przyłącza się kolejny nukleotyd i nić rośnie (1); po wbudowaniu ddNTP nie ma go do czego przyłączyć, synteza staje, a barwa znacznika mówi, która to zasada (2).</figcaption>
   </figure>
 
-  <p>Dlaczego ddNTP daje się niewiele? Gdyby było ich dużo, prawie każda nić urywałaby się tuż za starterem. Przy małej ilości polimeraza zwykle wbudowuje zwykły dNTP i idzie dalej, a tylko od czasu do czasu trafia na ddNTP. W probówce powstaje więc mnóstwo fragmentów, które zaczynają się w tym samym miejscu – przy starterze – a kończą w różnych pozycjach, każdy na barwnym ddNTP. To „drabina długości”: fragmenty różnią się kolejno o jeden nukleotyd, a barwa końca każdego z nich mówi, jaka zasada stoi w tej pozycji (<a class="figref" data-panel="B" href="#c01-fig-sanger"></a>).</p>
-  <p>Fragmenty trzeba jeszcze ułożyć według długości. Robi to <b>elektroforeza kapilarna</b> (zasada elektroforezy – <a class="chapref" href="#c06"></a>). Krótsze fragmenty docierają do detektora wcześniej, dłuższe później, a rozdzielczość cienkiej kapilary pozwala odróżnić fragmenty różniące się o jeden nukleotyd. Detektor rejestruje barwę znacznika na końcu każdego przepływającego fragmentu, a program zamienia sygnał na litery. Kolejność od najkrótszego do najdłuższego daje sekwencję <b>nowo syntetyzowanej nici</b>, w kierunku 5′→3′; badana matryca jest do niej komplementarna.</p>
+  <p>Dlaczego ddNTP daje się niewiele? Gdyby było ich dużo, prawie każda nić urywałaby się tuż za starterem. Przy małej ilości polimeraza zwykle wbudowuje zwykły dNTP i idzie dalej, a tylko od czasu do czasu trafia na ddNTP. W probówce powstaje więc mnóstwo fragmentów, które zaczynają się w tym samym miejscu – przy starterze – a kończą w różnych pozycjach, każdy na barwnym ddNTP. To „drabina długości”: fragmenty różnią się kolejno o jeden nukleotyd, a barwa końca każdego z nich mówi, jaka zasada stoi w tej pozycji.</p>
+  <p>Fragmenty trzeba jeszcze ułożyć według długości. Robi to <b>elektroforeza kapilarna</b> (zasada elektroforezy – <a class="chapref" href="#c06"></a>). Krótsze fragmenty docierają do detektora wcześniej, dłuższe później, a rozdzielczość cienkiej kapilary pozwala odróżnić fragmenty różniące się o jeden nukleotyd. Detektor rejestruje barwę znacznika na końcu każdego przepływającego fragmentu, a program zamienia sygnał na litery. Kolejność od najkrótszego do najdłuższego daje sekwencję <b>nowo syntetyzowanej nici</b>, w kierunku 5′→3′; badana matryca jest do niej komplementarna. Jeśli np. matryca ma sekwencję 3′-TACGAT-5′, detektor rozpozna kolejno A, T, G, C, T i A – nowa nić to 5′-ATGCTA-3′.</p>
   <p>Zwróć uwagę na różnicę zadań. PCR przed sekwencjonowaniem używa <b>dwóch</b> starterów i wytwarza dużo jednakowych kopii regionu. Reakcja Sangera używa <b>jednego</b> startera i wytwarza zestaw znakowanych fragmentów o różnej długości – dlatego czyta sekwencję w jednym kierunku. Jeśli potrzebujesz sekwencji drugiej nici, zapisujesz sekwencję <b>odwrotnie komplementarną</b>: odwracasz kolejność liter i każdą zamieniasz na komplementarną. Przy porównywaniu odczytów z obu kierunków (forward i reverse) oba trzeba najpierw zapisać w tej samej orientacji – inaczej prawie każda pozycja wyglądałaby na różnicę.</p>
-
-  <figure class="fig" id="c01-fig-sanger" data-bank="g-ryc-07" data-title="Jak odczytuje się sekwencję?">
-    <figcaption>Śledź jedną matrycę od A do D. A – PCR dwoma starterami wyznacza amplikon. B – jeden starter i ddNTP dają nici urwane na każdej kolejnej pozycji, każdą z barwną zasadą na końcu. C – w kapilarze krótsze fragmenty docierają do detektora pierwsze. D – kolejne piki to kolejne litery nowej nici (5′-ATGCTA-3′, komplementarnej do matrycy 3′-TACGAT-5′); po prawej dwa nakładające się piki w jednej pozycji – heterozygotyczny SNV.</figcaption>
-  </figure>
 
   <h3>Jak czytać chromatogram?</h3>
   <aside class="note pojecie" data-term="Basecalling"><p>przypisanie liter (A, C, G, T) do zmierzonego sygnału, razem z oceną jakości każdej litery.</p></aside>
-  <p><b>Chromatogram</b> to wykres sygnału fluorescencji w czasie (<a class="figref" data-panel="D" href="#c01-fig-sanger"></a>). W dobrym odczycie każda pozycja ma wyraźny pik. Program przypisuje pikom litery i podaje jakość każdej z nich – to <b>basecalling</b>. Trudne miejsca warto jednak obejrzeć na wykresie samodzielnie. Kolory zasad różnią się między systemami, więc zawsze odczytuje się je z legendy chromatogramu.</p>
+  <p><b>Chromatogram</b> to wykres sygnału fluorescencji w czasie. Każdy pik to fragmenty jednej długości, a jego barwa – zasada na ich końcu; w dobrym odczycie każda pozycja ma jeden wyraźny pik. Program przypisuje pikom litery i podaje jakość każdej z nich – to <b>basecalling</b>. Trudne miejsca warto jednak obejrzeć na wykresie samodzielnie. Kolory zasad różnią się między systemami, więc zawsze odczytuje się je z legendy chromatogramu.</p>
   <p>Pamiętaj, że PCR namnaża obie kopie regionu – z obu chromosomów pary. Jeśli dwa allele pacjenta różnią się jedną zasadą, w tej pozycji część fragmentów kończy się na jednej zasadzie, a część na drugiej. Na chromatogramie pojawiają się wtedy <b>dwa piki</b> naraz, np. A i G. Program wpisuje w takim miejscu literę <b>kodu IUPAC</b>, oznaczającą kilka zasad naraz: R = A lub G, Y = C lub T. Gdy oba allele mają tę samą zasadę, widać jeden pik.</p>
   <p>Heterozygotyczny SNV daje niejednoznaczność w <b>jednej</b> pozycji, a dalsza sekwencja pozostaje czytelna – za miejscem zmiany oba allele znów mają te same litery. Heterozygotyczny indel wygląda inaczej. Jeśli w jednym allelu brakuje np. jednego nukleotydu, od miejsca zmiany ten allel jest przesunięty o jedną pozycję względem drugiego. W każdej kolejnej pozycji nakładają się więc dwa różne sygnały i od miejsca zmiany chromatogram staje się nieczytelny.</p>
   <p>Podwójny sygnał nie zawsze oznacza dwa allele. Może też wynikać z zanieczyszczenia, z produktu niespecyficznego (namnożonego innego fragmentu) albo ze słabej jakości reakcji. Pomaga taka ściąga:</p>
@@ -171,6 +167,159 @@
   <p>Kiedy metoda Sangera jest dobrym wyborem? Przy niewielkich regionach, przy konkretnych wariantach i w wybranych zastosowaniach potwierdzających. Do przeglądania wielu genów naraz służą metody NGS (następny podrozdział). Sanger ma też ograniczoną zdolność wykrywania wariantów obecnych tylko w małej części cząsteczek w próbce – np. w części przypadków mozaikowości i w próbkach nowotworowych; drugi pik jest wtedy niski i łatwo go przeoczyć. Granicę wykrywania określa walidacja konkretnego testu.</p>
   <div class="box zapamietaj"><p>Startery wyznaczają, co uda się namnożyć: jeśli projekt pominie ważny region albo jeden allel, dalsza analiza tej informacji już nie odzyska. Heterozygotyczny SNV to dwa piki w jednej pozycji, heterozygotyczny indel – nakładające się sygnały od miejsca zmiany dalej.</p></div>
   <p class="src">Źródło: prezentacja LMZ 3, slajdy 8–25, 80–89</p>
+
+  <!-- ============ 3 ============ -->
+  <h2 id="c01-ngs">Sekwencjonowanie następnej generacji (NGS)</h2>
+  <h3>Po co nowa technologia?</h3>
+  <p>Metoda Sangera czyta jeden fragment naraz: jeden amplikon – jeden odczyt długości kilkuset zasad. Gdy objawy pacjenta może wywołać zmiana w którymkolwiek z wielu genów, trzeba by zaprojektować i przeczytać ogromną liczbę takich fragmentów. W sekwencjonowaniu następnej generacji (<b>NGS</b>) aparat analizuje ogromną liczbę cząsteczek <b>jednocześnie</b>.</p>
+  <aside class="note pojecie" data-term="Odczyt (read)"><p>sekwencja odczytana z jednej cząsteczki albo z grupy jej identycznych kopii. Jeden przebieg NGS daje miliony odczytów.</p></aside>
+  <p>Wynik pomiaru jednej cząsteczki (albo grupy jej identycznych kopii) to <b>odczyt</b> (<i>read</i>). Zamiast jednego chromatogramu dostajesz ogromny zbiór krótkich odczytów, pomieszanych razem. Każdy trzeba potem <b>dopasować</b> do genomu referencyjnego – ustalić, z którego miejsca pochodzi – i dopiero wtedy zinterpretować wszystkie razem.</p>
+
+  <h3>Biblioteka: jak przygotować fragmenty</h3>
+  <p>DNA wyizolowane z próbki, np. z krwi, to bardzo długie nici, które nie mają czym przyczepić się do aparatu. Dlatego próbkę przygotowuje się najpierw jako <b>bibliotekę</b>: DNA tnie się na krótkie fragmenty o zbliżonej długości, a do ich końców dołącza <b>adaptery</b> – krótkie, znane sekwencje. Dzięki adapterom fragment wiąże się z aparatem i od nich zaczyna się odczyt. Do fragmentów dołącza się często jeszcze dwa znaczniki o różnych zadaniach:</p>
+  <ul>
+    <li><b>indeks</b> – krótki „kod kreskowy” <b>próbki</b>, taki sam we wszystkich fragmentach jednej próbki. Pozwala zbadać wiele próbek w jednej serii, a potem rozdzielić odczyty według pochodzenia;</li>
+    <li><b>UMI</b> (<i>unique molecular identifier</i>) – losowy znacznik nadany pojedynczej <b>pierwotnej cząsteczce</b> przed namnażaniem. Jej kopie powstałe w PCR mają ten sam UMI, więc da się je rozpoznać jako kopie jednej cząsteczki, a nie niezależne cząsteczki (dlaczego to ważne – <a class="pageref" href="#c01-artefakty"></a>).</li>
+  </ul>
+
+  <h3>Sekwencjonowanie przez syntezę</h3>
+  <p>W typowym podejściu firmy Illumina fragmenty biblioteki przyczepiają się adapterami do powierzchni aparatu. Każdy fragment jest kopiowany, a kopie zostają tuż obok i tworzą lokalne skupisko – <b>klaster</b>, czyli tysiące identycznych kopii jednego fragmentu. Na powierzchni są miliony klastrów, każdy z innego fragmentu (<a class="figref" data-panel="A" href="#c01-fig-sbs"></a>). Potem zaczynają się cykle. W każdym cyklu:</p>
+  <ol>
+    <li>polimeraza wbudowuje do każdej nici <b>dokładnie jeden</b> znakowany nukleotyd. Ma on <b>odwracalną blokadę</b>, która nie pozwala dołączyć następnego – dzięki temu w jednym cyklu przybywa tylko jedna zasada;</li>
+    <li>aparat rejestruje sygnał: każdy klaster świeci barwą zasady dołączonej w tym cyklu;</li>
+    <li>blokada i barwnik zostają usunięte – nić znów ma wolny koniec 3′-OH i jest gotowa na kolejny cykl.</li>
+  </ol>
+  <p>Seria zdjęć z kolejnych cykli daje dla każdego klastra ciąg barw, czyli odczyt. Równoległy odczyt milionów klastrów daje miliony sekwencji.</p>
+
+  <figure class="fig" id="c01-fig-sbs" data-bank="g-ryc-09" data-title="Sekwencjonowanie przez syntezę">
+    <figcaption>Zacznij od panelu A: jeden fragment na powierzchni zostaje skopiowany w klaster. B – jeden cykl: dołączenie jednej zasady z blokadą, zdjęcie, usunięcie blokady i barwnika. C – porównaj barwę tego samego klastra w kolejnych cyklach: ciąg barw to odczyt. Cztery barwy, po jednej na zasadę, to uproszczenie.</figcaption>
+  </figure>
+
+  <p>Z metodą Sangera łączy to wykorzystanie syntezy DNA – i znów decyduje wolna grupa 3′-OH. Pomiar wygląda jednak inaczej. W metodzie Sangera synteza staje na stałe, a zakończone fragmenty rozdziela się według długości. W NGS synteza staje tylko na chwilę, a aparat śledzi kolejne cykle w tym samym miejscu. NGS obejmuje też inne chemie – np. w systemach Ion Torrent wykrywa się zmianę pH, która towarzyszy wbudowaniu nukleotydu (uwalnia się wtedy jon wodorowy). Na slajdach zestawiono też metody o innej zasadzie odczytu: historyczną metodę Maxama–Gilberta (chemiczne cięcie DNA w miejscach określonych zasad), pirosekwencjonowanie (wbudowanie nukleotydu daje błysk światła – <a class="chapref" href="#c06"></a>) i SOLiD (łączenie znakowanych krótkich oligonukleotydów z matrycą).</p>
+
+  <h3>Odczyty sparowane: dwa końce jednego fragmentu</h3>
+  <p>W trybie <b>paired-end</b> sekwencjonuje się oba końce tego samego fragmentu. Odczyt 1 i odczyt 2 tworzą parę o znanym położeniu względem siebie: czytają przeciwne nici, ku środkowi fragmentu, a dzieli je odległość wynikająca z długości fragmentu. Dwa odczyty po 150 zasad pokrywają cały fragment tylko wtedy, gdy jest on dostatecznie krótki; przy dłuższym fragmencie między nimi zostaje nieodczytana luka.</p>
+  <p>Znana odległość w parze działa jak miarka i pomaga na trzy sposoby. Po pierwsze, parę łatwiej dopasować do genomu niż pojedynczy odczyt. Po drugie, odczyt, który sam pasuje do kilku kopii powtórzenia, można umieścić we właściwej kopii, jeśli jego partner leży w unikatowym odcinku – wybiera się kopię w oczekiwanej odległości od partnera. Po trzecie, para, która w genomie referencyjnym ląduje w nieoczekiwanym miejscu, zdradza zmianę: odczyty <b>za daleko od siebie</b> wskazują delecję w DNA próbki, a odczyty na <b>dwóch różnych chromosomach</b> – rearanżację, np. translokację. Tak paired-end pomaga wykrywać część indeli i rearanżacji.</p>
+  <div class="box przyklad"><p>Fragmenty w bibliotece mają ok. 350 pz (liczby przykładowe). Odczyty 2 × 150 zasad obejmują 300 z nich, więc środkowe 50 pz zostaje nieodczytane. Po dopasowaniu większość par leży w genomie referencyjnym ok. 350 pz od siebie. Jedna para ląduje jednak w odległości ok. 460 pz. W DNA próbki oba odczyty dzieliło ok. 350 pz, a w referencji dzieli je ok. 460 pz – w próbce brakuje więc odcinka ok. 110 pz, który jest w referencji. To wskazówka delecji.</p></div>
+
+  <h3>Krótkie czy długie odczyty?</h3>
+  <p>Krótkie odczyty pozwalają wydajnie badać ogromną liczbę pozycji. Kłopot pojawia się w regionach powtarzalnych albo bardzo podobnych do siebie (<a class="figref" data-panel="A" href="#c01-fig-dlugie"></a>). Odczyt z wnętrza powtórzenia pasuje do kilku miejsc naraz i nie wiadomo, gdzie go umieścić. Jeśli całe powtórzenie jest dłuższe niż krótki odczyt, żaden odczyt nie obejmuje go od początku do końca – liczby kopii motywu nie da się wtedy policzyć wprost. <b>Długi odczyt</b> może objąć trudny obszar razem z unikatowym otoczeniem po obu stronach: ma jedno możliwe miejsce w genomie, a kopie motywu można w nim policzyć. Dlatego długie odczyty pomagają w analizie rearanżacji i ekspansji.</p>
+  <aside class="note pojecie" data-term="Fazowanie"><p>ustalanie, które warianty leżą na tej samej kopii chromosomu (tym samym haplotypie), a które na różnych.</p></aside>
+  <p>Długie odczyty pomagają też w <b>fazowaniu</b> (<a class="figref" data-panel="B" href="#c01-fig-dlugie"></a>). Załóżmy, że pacjent ma dwa warianty w jednym genie, oddalone o kilka tysięcy zasad. Krótkie odczyty pokażą każdy z nich osobno, ale żaden nie obejmie obu naraz – nie wiadomo, czy leżą na tej samej kopii chromosomu, czy na różnych. Jeden długi odczyt to jedna cząsteczka DNA: jeśli zawiera oba warianty, leżą one na tej samej kopii (układ <i>cis</i>). Po co to wiedzieć, wyjaśnia <a class="pageref" href="#c01-klasy"></a>.</p>
+
+  <figure class="fig" id="c01-fig-dlugie" data-bank="g-ryc-11" data-title="Krótkie i długie odczyty w trudnym regionie">
+    <figcaption>A – porównaj, gdzie pasują odczyty: krótki z wnętrza powtórzenia pasuje do kilku kopii motywu (znaki zapytania), długi sięga do unikatowych odcinków U1 i U2, więc ma jedno miejsce i da się w nim policzyć kopie motywu (tu 7 zamiast 5 w referencji). B – krótkie odczyty widzą oba warianty osobno; dopiero długi odczyt, czyli jedna cząsteczka, pokazuje, że oba leżą na tej samej kopii (<i>cis</i>).</figcaption>
+  </figure>
+
+  <p>Długie odczyty dają m.in. dwie technologie. W <b>PacBio HiFi</b> cząsteczka zamknięta w kolistą matrycę jest czytana przez polimerazę wiele razy; przypadkowe błędy pojedynczych przejść wypadają w różnych miejscach, więc wspólna sekwencja wszystkich przejść (konsensus) jest dokładna. W <b>sekwencjonowaniu nanoporowym</b> nić DNA lub RNA przechodzi przez maleńki por w błonie i zmienia płynący przez niego prąd jonowy, a program (basecaller) przelicza przebieg prądu na sekwencję.</p>
+
+  <h3>RNA-seq: z których genów komórka korzysta?</h3>
+  <p>DNA pokazuje, co jest zapisane. Żeby zobaczyć, co komórka z tego zapisu robi, bada się RNA. <b>RNA-seq</b> sekwencjonuje transkrypty. W wielu protokołach RNA przepisuje się najpierw na cDNA (DNA zbudowane na matrycy RNA), z niego przygotowuje bibliotekę i sekwencjonuje; niektóre technologie czytają RNA bezpośrednio.</p>
+  <p>Odczyty z RNA mówią trzy rzeczy. Ich <b>liczba</b> na genie odzwierciedla ilość transkryptu. Odczyty rozpięte między dwoma eksonami pokazują <b>złącza splicingowe</b>, czyli które eksony zostały połączone. Odczyt, którego część pochodzi z jednego genu, a część z innego, wskazuje <b>fuzję genów</b>. Wyniki zależą przy tym od tkanki, jakości RNA i sposobu wyboru cząsteczek do biblioteki.</p>
+  <p>Wyniki RNA-seq czyta się ostrożnie w obie strony. Dużo RNA danego genu to wskazówka, ale o aktywności białka informują dopiero badania samego białka. Brak wykrytego transkryptu może znaczyć, że gen nie był aktywny w badanej próbce – albo że pomiar był za mało czuły.</p>
+  <p>Każda technologia daje więc inny rodzaj informacji i do niego się ją dobiera:</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:44%">Pytanie</th><th>Szczególnie przydatna informacja</th></tr></thead>
+    <tbody>
+      <tr><td>Jaka zasada leży w danej pozycji?</td><td>sekwencja i jakość odczytów DNA</td></tr>
+      <tr><td>Jak zbudowana jest długa rearanżacja?</td><td>odczyty obejmujące jej granice i otoczenie</td></tr>
+      <tr><td>Jak połączono eksony?</td><td>odczyty RNA obejmujące złącza</td></tr>
+      <tr><td>Czy dwa warianty leżą na jednym allelu?</td><td>dane umożliwiające fazowanie, np. długie odczyty</td></tr>
+    </tbody>
+  </table>
+  <div class="box zapamietaj"><p>Biblioteka to przygotowany materiał, odczyt – wynik pomiaru fragmentu, a dopasowanie wskazuje, skąd ten fragment pochodzi. Technologię dobiera się do rodzaju potrzebnej informacji, a jej możliwości potwierdza się dla konkretnego zastosowania.</p></div>
+  <p class="src">Źródło: prezentacja LMZ 3, slajdy 8–25</p>
+
+  <!-- ============ 4 ============ -->
+  <h2 id="c01-macierze">Mikromacierze</h2>
+  <h3>Odpowiedź bez czytania sekwencji</h3>
+  <p>Nie zawsze trzeba czytać sekwencję litera po literze. Czasem wystarczy sprawdzić, jaki allel ma pacjent w tysiącach znanych miejsc albo czy w jakimś regionie nie brakuje kopii DNA. Do tego służą <b>mikromacierze</b>. Działają dzięki <b>hybrydyzacji</b> – łączeniu się komplementarnych nici (<a class="chapref" href="#c06"></a>). Mikromacierz zawiera tysiące <b>sond</b> – krótkich odcinków DNA o znanej sekwencji – rozmieszczonych na podłożu albo związanych z odpowiednimi nośnikami. Badane cząsteczki, znakowane barwnikiem, wiążą się z sondami, do których są komplementarne. Siła sygnału w danym miejscu informuje o obecności, rodzaju albo ilości rozpoznanego materiału.</p>
+  <p>Z tej zasady wynika najważniejsze ograniczenie: macierz „widzi” tylko te miejsca, dla których zaprojektowano sondy. Sekwencja między sondami pozostaje nieodczytana.</p>
+
+  <h3>Macierz SNP: dwa wykresy, cztery sytuacje</h3>
+  <aside class="note pojecie" data-term="SNP"><p>polimorfizm pojedynczego nukleotydu – częsty w populacji wariant jednej pozycji. Allele oznacza się umownie jako A i B.</p></aside>
+  <p><b>Macierz SNP</b> bada wybrane pozycje genomu, w których ludzie często się różnią – <b>SNP</b>. Dla każdej pozycji mierzy sygnał dwóch alleli, umownie A i B, i na tej podstawie ustala genotyp. Ten sam pomiar mówi jednak więcej: rozkład sygnałów obu alleli pozwala wykrywać zmiany liczby kopii i obszary homozygotyczności. Wynik ogląda się na dwóch wykresach, na których każda kropka to jedna badana pozycja (<a class="figref" href="#c01-fig-snp"></a>):</p>
+  <ul>
+    <li><b>LRR</b> – łączna siła sygnału, odpowiadająca <b>ilości DNA</b> w danym miejscu. Przy dwóch kopiach leży około zera, przy utracie kopii spada, przy dodatkowej kopii rośnie;</li>
+    <li><b>BAF</b> (<i>B-allele frequency</i>) – <b>udział allelu B</b> w sygnale. Osoba AA ma BAF 0, osoba BB – 1, a heterozygota AB – 0,5, bo połowa jej kopii to B.</li>
+  </ul>
+  <p>Przy trzech kopiach regionu możliwe są jeszcze układy AAB i ABB: udział B wynosi wtedy 1/3 ≈ 0,33 albo 2/3 ≈ 0,67. Wzdłuż chromosomu leżą tysiące badanych SNP, część u danej osoby homozygotyczna, część heterozygotyczna – dlatego kropki układają się w poziome pasma.</p>
+  <div class="box przyklad"><p>Spróbuj przewidzieć obraz, zanim spojrzysz na rycinę.</p>
+    <ul>
+      <li><b>Delecja</b>: w regionie zostaje jedna kopia, więc każda pozycja ma tylko A albo tylko B. Pasmo 0,5 znika, a LRR spada, bo DNA jest mniej.</li>
+      <li><b>Duplikacja</b>: trzy kopie, więc heterozygoty to AAB albo ABB – zamiast pasma 0,5 pojawiają się pasma 0,33 i 0,67, a LRR rośnie.</li>
+      <li><b>Obszar homozygotyczny</b>: dwie kopie, ale identyczne – nie ma heterozygot, więc pasmo 0,5 też znika. LRR zostaje jednak przy zerze, bo ilość DNA jest prawidłowa.</li>
+    </ul>
+    <p>Delecja i homozygotyczność dają więc ten sam obraz BAF. Rozstrzyga je dopiero LRR.</p></div>
+
+  <figure class="fig" id="c01-fig-snp" data-bank="g-ryc-16" data-title="Macierz SNP: dwa wykresy, cztery sytuacje">
+    <figcaption>Każda kropka to jedna pozycja SNP. Najpierw porównaj dolne wykresy (BAF): pasmo 0,5 znika i przy delecji, i przy homozygotyczności, a przy duplikacji rozdziela się na 0,33 i 0,67. Potem spójrz na górny wykres (LRR): to on odróżnia delecję (sygnał niżej) od homozygotyczności (sygnał bez zmian).</figcaption>
+  </figure>
+
+  <h3>Array-CGH i macierz ekspresyjna</h3>
+  <p><b>Array-CGH</b> (porównawcza hybrydyzacja genomowa na mikromacierzy) porównuje ilość materiału z próbki z ilością materiału referencyjnego (takie doświadczenie z dwoma barwnikami opisuje <a class="chapref" href="#c06"></a>). Obniżony sygnał próbki może wskazywać utratę kopii, a podwyższony – jej zysk. Metoda wykrywa więc zmiany <b>niezrównoważone</b>, czyli takie, które zmieniają ilość DNA. Zrównoważona translokacja zachowuje ilość DNA, dlatego w array-CGH pozostaje niewidoczna.</p>
+  <p><b>Macierz ekspresyjna</b> odpowiada na zupełnie inne pytanie. Materiał pochodzi z RNA – zwykle po przepisaniu na cDNA i wyznakowaniu – a sygnał odpowiada ilości rozpoznanego <b>transkryptu</b>, a nie liczbie kopii genu w DNA. Ta sama zasada hybrydyzacji, ale inne mierzone zjawisko.</p>
+  <table class="tbl wide">
+    <thead><tr><th style="width:36%">Rodzaj macierzy</th><th>Główny wynik</th></tr></thead>
+    <tbody>
+      <tr><td>macierz SNP</td><td>genotypy w zaprojektowanych pozycjach; z rozkładu sygnałów – zmiany liczby kopii i obszary homozygotyczności</td></tr>
+      <tr><td>array-CGH</td><td>względne zmiany liczby kopii regionów</td></tr>
+      <tr><td>macierz z sondami SNP i CN</td><td>informacja o allelach i o liczbie kopii</td></tr>
+      <tr><td>macierz ekspresyjna</td><td>względny poziom wybranych transkryptów</td></tr>
+    </tbody>
+  </table>
+  <div class="box zapamietaj"><p>Możliwości macierzy wyznacza zestaw i rozmieszczenie sond – nawet najlepszy sygnał dotyczy tylko miejsc objętych projektem. W macierzy SNP LRR mówi o ilości DNA, BAF – o udziale allelu B; delecję od homozygotyczności odróżnia LRR.</p></div>
+  <p class="src">Źródło: prezentacja LMZ 3, slajdy 23–31</p>
+
+  <!-- ============ 5 ============ -->
+  <h2 id="c01-strategia">Strategia badania: panel, eksom, genom czy mikromacierz?</h2>
+  <h3>Zakres i technologia to dwie osobne decyzje</h3>
+  <p>Znasz już narzędzia: metodę Sangera, NGS i mikromacierze. Wybór badania dla pacjenta to jednak dwie decyzje. Pierwsza: <b>jaki zakres</b> genomu zbadać. Druga: <b>jaką technologią</b>. Nazwy „panel”, „eksom” i „genom” opisują zakres, a każda z tych strategii może korzystać z NGS.</p>
+  <aside class="note pojecie" data-term="Eksom"><p>wszystkie eksony genomu. Sekwencje kodujące białka stanowią około 1–2% genomu człowieka.</p></aside>
+  <ul>
+    <li><b>Panel</b> obejmuje wybrane geny lub ich regiony związane z konkretnym problemem, np. z określoną grupą chorób.</li>
+    <li><b>WES</b> (<i>whole-exome sequencing</i>, sekwencjonowanie eksomu) skupia się przede wszystkim na regionach kodujących białka, które są niewielką częścią genomu. Większość intronów i elementów regulatorowych leży poza jego zakresem. Eksony wyłapuje się z próbki zestawem sond (zestawem wzbogacającym), więc rzeczywisty zakres zależy od projektu tego zestawu i od uzyskanego pokrycia. Nawet w obrębie regionów kodujących nie każda pozycja jest odczytana z jednakową jakością.</li>
+    <li><b>WGS</b> (<i>whole-genome sequencing</i>, sekwencjonowanie całego genomu) obejmuje genom znacznie szerzej, łącznie z licznymi regionami niekodującymi.</li>
+  </ul>
+  <table class="tbl wide">
+    <thead><tr><th style="width:20%">Strategia</th><th style="width:38%">Główna zaleta</th><th>Główne ograniczenie</th></tr></thead>
+    <tbody>
+      <tr><td>badanie jednej zmiany</td><td>bardzo celna odpowiedź na znane pytanie</td><td>inne możliwe przyczyny zostają poza oceną</td></tr>
+      <tr><td>panel genów</td><td>skupienie na genach związanych z objawami</td><td>geny i regiony spoza projektu nie są badane</td></tr>
+      <tr><td>WES</td><td>szeroki przegląd części kodującej</td><td>mały zakres poza eksonami, nierówne pokrycie</td></tr>
+      <tr><td>WGS</td><td>szersza ocena genomu i części zmian strukturalnych</td><td>trudniejsza interpretacja; nadal istnieją luki</td></tr>
+      <tr><td>RNA-seq</td><td>informacja o transkryptach i ich składaniu</td><td>zależność od tkanki i od aktywności genu</td></tr>
+    </tbody>
+  </table>
+  <p>Uważaj na słowo „panel” w raporcie. Panel <b>fizyczny</b> oznacza, że laboratorium wzbogaca próbkę wyłącznie o wybrane geny. Panel <b>wirtualny</b> to lista genów ocenianych w danych z WES lub WGS: dane obejmują więcej, ale analiza i raport dotyczą tylko wybranego zestawu. Rzeczywisty zakres testu poznajesz więc z jego opisu, a nie z samej nazwy panelu.</p>
+
+  <h3>Jak wybrać? Zacznij od przewidywanego mechanizmu</h3>
+  <p>Kryterium wyboru brzmi: <b>jakiej klasy zmiany się spodziewasz i w ilu genach może ona leżeć</b>. Nie liczba genów w nazwie testu i nie nowoczesność technologii, tylko to, czy test potrafi wykryć tę klasę zmiany w tym miejscu.</p>
+  <ul>
+    <li>W rodzinie wykryto już konkretny wariant → badanie <b>celowane</b>, które sprawdza jego obecność.</li>
+    <li>Podobne objawy może wywołać wiele genów → <b>panel</b> albo szersza analiza.</li>
+    <li>Spodziewasz się <b>ekspansji powtórzeń</b> albo <b>zmiany liczby kopii</b> → test zwalidowany właśnie dla tej klasy zmian (dla ekspansji np. PCR z pomiarem długości produktu, dla CNV np. mikromacierz albo MLPA).</li>
+  </ul>
+  <div class="box przyklad"><p>Dwóch pacjentów trafia do tej samej poradni (sytuacje przykładowe).</p>
+    <p><b>Pacjent 1</b> ma objawy, które według lekarza mogą wynikać ze zmian w wielu różnych genach. Spodziewane są głównie SNV i małe indele. Wartość kryterium: wiele genów, małe zmiany. Decyzja: panel NGS albo WES. Badanie jednego genu metodą Sangera mogłoby ominąć przyczynę.</p>
+    <p><b>Pacjent 2</b>: lekarz podejrzewa wydłużenie ciągu CAG w genie <i>HTT</i>. Gen jest jeden i znany, ale klasa zmiany to ekspansja. Krótkie odczyty nie obejmą długiego powtórzenia w całości, więc liczby powtórzeń się z nich nie policzy. Decyzja: metoda przeznaczona do pomiaru ekspansji, która określi liczbę powtórzeń w zakresie potrzebnym do progów <i>HTT</i>. Gdyby zrobić WES i nie znaleźć żadnego SNV, wynik niczego by nie rozstrzygnął – odpowiadałby na inne pytanie.</p>
+    <p>O decyzji przesądziło nie to, jak „szerokie” jest badanie, lecz to, jakiej klasy zmiany szukasz.</p></div>
+  <p>Szerszy zakres i większa dokładność to różne zalety. Duża <b>głębokość</b> odczytu w panelu – każde miejsce odczytane wiele razy (dokładniej: <a class="pageref" href="#c01-glebokosc"></a>) – pomaga wykrywać warianty obecne tylko w części komórek. Dobrze zaprojektowane badanie celowane może objąć trudny region dokładniej niż standardowe WES. Z kolei szeroka analiza jest cenna wtedy, gdy rozpoznanie wyjściowe jest niepewne albo lista możliwych genów – długa.</p>
+
+  <h3>Co wnoszą rodzice i tkanka?</h3>
+  <p>W <b>analizie trio</b> porównuje się dane osoby badanej i obojga rodziców. Genotypy zapisuje się tak jak w danych z sekwencjonowania: 0/0 – obie kopie bez wariantu, 0/1 – jedna kopia z wariantem. Porównanie pomaga ustalić pochodzenie zmian:</p>
+  <ul>
+    <li>rodzice 0/0, dziecko 0/1 → wariant <b>de novo</b>, o ile pokrewieństwo jest potwierdzone (gdyby badany mężczyzna nie był ojcem biologicznym, „nowy” wariant mógłby pochodzić od ojca biologicznego);</li>
+    <li>dziecko ma dwa różne warianty w jednym genie, jeden ma ojciec, drugi matka → warianty leżą na różnych kopiach genu (układ <i>trans</i>), czyli uszkodzone są obie kopie. To ważne w chorobie recesywnej.</li>
+  </ul>
+  <p>Wyniki trio nadal wymagają oceny jakości, sprawdzenia, czy pokrewieństwo jest zgodne z deklarowanym, i oceny biologicznego znaczenia wariantu.</p>
+  <p>W nowotworach liczy się, jaką część próbki stanowią komórki guza, a jaką domieszka komórek prawidłowych. Wariant znaleziony w guzie może być somatyczny albo konstytucyjny, a sama analiza guza nie zawsze pozwala to pewnie ustalić. Pomaga porównanie z materiałem nienowotworowym, np. z krwią: wariant obecny także we krwi przemawia za konstytucyjnym.</p>
+
+  <h3>Wynik ujemny i ponowna analiza</h3>
+  <p>Wynik ujemny znaczy „test nie wykrył zmiany w zakresie swoich możliwości”, a nie „pacjent nie ma zmiany”. Wracasz więc do zakresu badania i sprawdzasz trzy rzeczy: czy ważny gen był w ogóle oceniany, czy region miał dobre pokrycie i czy metoda wykrywa oczekiwany typ zmiany.</p>
+  <p>Przy nierozstrzygniętym wyniku szerokiego badania czasem pomaga ponowna interpretacja danych – po pewnym czasie wiadomo więcej o genach i chorobach. Często nie wymaga to nowego sekwencjonowania, bo dane już są. Brakujące dane, np. z regionu, którego badanie nie objęło, trzeba jednak uzyskać osobno.</p>
+  <div class="box zapamietaj"><p>Dobór badania zaczyna się od przewidywanego mechanizmu, nie od nazwy technologii. Sprawdź listę genów, badane regiony, klasy wykrywanych zmian i jakość pokrycia – sama liczba genów nie mówi, jak kompletne było badanie.</p></div>
+  <p class="src">Źródło: prezentacja LMZ 3, slajdy 8–31</p>
 
 <!-- @@DALEJ@@ -->
 </section>

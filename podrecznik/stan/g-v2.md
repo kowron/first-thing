@@ -40,3 +40,6 @@ Odsyłacze z innych rozdz. do #c01: z06 (ddNTP – „szerzej w rozdz. o genomic
 ## Postęp
 - h2 1 (warianty) – GOTOWE w robocze/ (3 pytania na wejściu; rozpoznawanie: tabela cecha→rodzaj→skutek; Przykład na sekwencji z ryc. g-02; Pojęcia: locus, sekwencja ref., ramka, penetracja, pseudogen). Dalej: marker <!-- @@DALEJ@@ --> w pliku.
 - h2 2 (region, PCR, Sanger, chromatogram) – GOTOWE (Przykład: allele dropout w rodzinie; ryc. g-06 + powrót g-07 z nowymi podpisami; Pojęcia: CDS i UTR, hotspot, basecalling; chapref #c05, #c06).
+- h2 3 (NGS) – GOTOWE (Przykład: para 350 vs 460 pz → delecja; ryc. g-09, g-11; Pojęcia: odczyt, fazowanie; pageref do h3 id c01-artefakty i c01-klasy – nadać te id w h2 6 i 8!).
+- h2 4 (mikromacierze) – GOTOWE (Przykład: przewidywanie BAF/LRR dla 3 sytuacji; ryc. g-16; Pojęcie SNP; chapref #c06 x2).
+- h2 5 (strategia) – GOTOWE (kryterium + Przykład: 2 pacjentów – wiele genów vs ekspansja HTT; trio; nowotwór; wynik ujemny; Pojęcie eksom; pageref c01-glebokosc – nadać id w h2 6).

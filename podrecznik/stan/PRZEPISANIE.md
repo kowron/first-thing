@@ -12,7 +12,7 @@ Handoff dla agentów: `handoff/P-przepisanie.md`.
 | 2 | Z02 cykl komórkowy | GOTOWE 18.11 (13 → 19 s., 2 nowe ryc.) |
 | 2 | Z03 apoptoza | GOTOWE 18.11 (13 → 19 s., 1 nowa ryc.); rewizja B1–B13, C14–C24 wplecione |
 | 2 | Z04 kwasy nukleinowe | GOTOWE 18.11 (14 → 23 s.; wyjaśnienia z k4/k5 przywrócone; +1 ryc. z banku) |
-| 2 | Z05 PCR | WZNOWIONY ~19:00 (użytkownik: 3 agenci naraz; plan + mapa k5 w `stan/z05-v2.md`) |
+| 2 | Z05 PCR | GOTOWE 18.11 (18 → 30 s.; wyjaśnienia z k5; +2 ryc. z banku) |
 | 3 | Z11 biotechnologia | GOTOWE 18.11 (8 → 18 s., 2 nowe ryc.; przywrócone brakujące fakty Z); Drewa milczy o znakowaniu i wykrywaniu GMO |
 | 3 | G (Genomika) | uruchomiony ~19:15 (przywrócić wyjaśnienia z material/genomika.txt; cel 20–26 s.; stan w `stan/g-v2.md`) |
 | – | Z06 | gotowy (17.11) |
