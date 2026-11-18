@@ -63,6 +63,7 @@
   --ochre: #b77a20; --ochre-bg: #fbf3e5; --ochre-l: #ceb16b;
   --red: #c84d42;   --red-bg: #fff0ec;   --red-l: #d29675;
   --gold: #e3b23c;
+  --bullet: var(--teal);  /* kolor punktorów list w rozdziale (ramki zmieniają go na swój) */
   --gray-bg: #f3f5f4; --gray-line: #9aa59f;
 
   --full: 179mm;   /* pole zadruku */
@@ -142,7 +143,6 @@ a.broken { color: #fff; background: var(--red); padding: 0 2pt; }
 section.chapter { break-before: page; }
 /* build owija każdy ciąg elementów między elementami „na obie kolumny” w <div class="cols"> */
 .cols { columns: 2; column-gap: var(--gap); column-fill: balance; }
-.cols-page { break-before: page; }   /* nadaje build (splitCols) */
 /* nic nie może poszerzyć strony (Chromium zmniejszyłby wtedy cały wydruk) */
 section.chapter, section.back, section.front { overflow-x: clip; }
 
@@ -178,13 +178,16 @@ section.chapter, section.back, section.front { overflow-x: clip; }
 
 /* ---------- Nagłówki ------------------------------------------------------ */
 h2, h3, h4 { hyphens: none; break-after: avoid; break-inside: avoid; }
+/* UWAGA (Chromium): w tekście rozdziału (wewnątrz .cols) nie używamy position: absolute/fixed – także w ::before.
+   Element pozycjonowany absolutnie w ostatnim fragmencie bloku wielokolumnowego, który zaczął się na
+   wcześniejszej stronie, wyłącza wyrównanie kolumn: cały tekst trafia do lewej kolumny, prawa zostaje
+   pusta, a rycina/tabela pod spodem przechodzi na następną stronę. Dlatego kreska nad h2 i punktory list
+   są tłem (background), a numery <ol> – elementem pływającym (float) o zerowej szerokości. */
 section.chapter h2 {
   font-family: var(--display); font-weight: 700; font-size: 13pt; line-height: 15.5pt;
-  color: var(--navy); margin: 14pt 0 5pt; padding-top: 8pt; position: relative;
+  color: var(--navy); margin: 14pt 0 5pt; padding-top: 8pt;
   letter-spacing: -0.005em;
-}
-section.chapter h2::before {
-  content: ""; position: absolute; left: 0; top: 0; width: 23pt; height: 2pt; background: var(--teal);
+  background: linear-gradient(var(--h2-bar, var(--teal)), var(--h2-bar, var(--teal))) no-repeat left top / 23pt 2pt;
 }
 .cols > h2:first-child { margin-top: 0; }
 h3 {
@@ -198,21 +201,26 @@ h4 {
 
 /* ---------- Listy ---------------------------------------------------------- */
 section.chapter ul, section.chapter ol, .back ul.std, .front ul.std { margin: 0 0 5pt; padding: 0; list-style: none; }
-section.chapter li, .front ul.std li { position: relative; margin: 0 0 2pt; break-inside: avoid; }
-section.chapter ul > li { padding-left: 11pt; }
-section.chapter ul > li::before {
-  content: ""; position: absolute; left: 1pt; top: 4.6pt; width: 4.2pt; height: 4.2pt;
-  border-radius: 50%; background: var(--teal);
+section.chapter li { margin: 0 0 2pt; break-inside: avoid; }
+.front ul.std li { position: relative; margin: 0 0 2pt; break-inside: avoid; }
+/* punktor = kółko jako tło li (bez ::before z position: absolute – zob. uwaga przy h2); kolor: --bullet */
+section.chapter ul > li {
+  padding-left: 11pt;
+  background: radial-gradient(circle closest-side, var(--bullet) 94%, transparent) no-repeat 1pt 4.6pt / 4.2pt 4.2pt;
 }
 section.chapter ol { counter-reset: k6ol; }
 section.chapter ol > li { padding-left: 15pt; counter-increment: k6ol; }
+/* numer: float o zerowej szerokości (margines −15 pt + 10 pt + 5 pt) w miejscu dawnego left: 0; top: 1,8 pt */
 section.chapter ol > li::before {
-  content: counter(k6ol); position: absolute; left: 0; top: 1.8pt;
+  content: counter(k6ol); float: left; margin: 1.8pt 5pt 0 -15pt;
   width: 10pt; height: 10pt; border-radius: 50%; background: var(--navy); color: #fff;
   font-family: var(--sans); font-weight: 700; font-size: 6.2pt; line-height: 10pt; text-align: center;
 }
 section.chapter li > ul, section.chapter li > ol { margin: 2pt 0 0; }
-section.chapter li > ul > li::before { background: none; border: 1pt solid var(--teal); width: 3.4pt; height: 3.4pt; }
+/* punktor 2. poziomu: pierścień (dawniej obwódka 1 pt wokół kółka 3,4 pt) */
+section.chapter li > ul > li {
+  background: radial-gradient(circle closest-side, transparent 60%, var(--bullet) 64%, var(--bullet) 94%, transparent) no-repeat 1pt 4.6pt / 5.4pt 5.4pt;
+}
 
 /* ---------- „Pojęcie”: mała ramka w kolumnie ------------------------------- */
 aside.note {
@@ -241,15 +249,12 @@ aside.note .term { display: block; font-weight: 700; font-size: 8.2pt; line-heig
 .box .lbl { font-size: 6.4pt; line-height: 9pt; margin-bottom: 4pt; }
 .box ul, .box ol { margin: 3pt 0 4pt !important; }
 .box li { margin-bottom: 2pt !important; }
-.box ul > li::before { top: 4.6pt !important; width: 4pt !important; height: 4pt !important; }
-.box ol > li::before { top: 1.6pt !important; }
+.box ul > li { background-size: 4pt 4pt !important; }
+.box ol > li::before { margin-top: 1.6pt !important; }
 .box.zapamietaj { border-color: var(--teal); background: var(--teal-bg); } .box.zapamietaj .lbl { color: var(--teal); }
-.box.przyklad { border-color: var(--ochre); background: var(--ochre-bg); } .box.przyklad .lbl { color: var(--ochre); }
-.box.przyklad ul > li::before { background: var(--ochre); }
-.box.obraz { border-color: var(--violet); background: var(--violet-bg); } .box.obraz .lbl { color: var(--violet); }
-.box.obraz ul > li::before { background: var(--violet); }
-.box.uwaga { border-color: var(--red); background: var(--red-bg); } .box.uwaga .lbl { color: var(--red); }
-.box.uwaga ul > li::before { background: var(--red); }
+.box.przyklad { border-color: var(--ochre); background: var(--ochre-bg); --bullet: var(--ochre); } .box.przyklad .lbl { color: var(--ochre); }
+.box.obraz { border-color: var(--violet); background: var(--violet-bg); --bullet: var(--violet); } .box.obraz .lbl { color: var(--violet); }
+.box.uwaga { border-color: var(--red); background: var(--red-bg); --bullet: var(--red); } .box.uwaga .lbl { color: var(--red); }
 
 /* W 60 sekund – granatowe podsumowanie */
 .w60 {
@@ -264,10 +269,9 @@ aside.note .term { display: block; font-weight: 700; font-size: 8.2pt; line-heig
 .w60 li { break-inside: avoid; text-align: left !important; }
 .w60 li { position: relative; padding-left: 15pt !important; margin: 0 0 4pt !important; }
 .w60 li:last-child { margin-bottom: 0 !important; }
-.w60 ul > li::before, .w60 ol > li::before {
-  content: "" !important; position: absolute; left: 0 !important; top: 4.2pt !important;
-  width: 6pt !important; height: 2pt !important; border-radius: 1pt !important; background: var(--teal-l) !important; border: 0 !important;
-}
+/* kreska zamiast punktora: tło li (bez position: absolute – zob. uwaga przy h2) */
+.w60 ul > li, .w60 ol > li { background: linear-gradient(var(--teal-l), var(--teal-l)) no-repeat 0 4.2pt / 6pt 2pt !important; }
+.w60 ul > li::before, .w60 ol > li::before { content: none !important; }
 .w60 strong, .w60 b { color: #fff; }
 .w60 a.figref, .w60 a.pageref, .w60 a.chapref { color: var(--teal-l); }
 

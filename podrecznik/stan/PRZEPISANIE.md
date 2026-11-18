@@ -55,7 +55,8 @@ Wynik: `rewizja/zNN-v2.md`; błędy A recenzent poprawia od razu w rozdziale. Ma
 | Krok | Stan |
 |---|---|
 | G – dokończenie przepisania | GOTOWE (14 → 26 s.) |
-| C1 plan Z03 (pilot) | uruchomiony 19:40 |
+| C1 plan Z03 (pilot) | GOTOWE 21:00 (`plany/z03-czesci.md`; 299 jednostek: P1 62%, P1u 9%, P2 29%; decyzje Z1, Z3 = tak) |
+| C1 plan Z02 | uruchomiony 21:05 |
 | I – infrastruktura | uruchomiony ~20:50 |
 | C2 wykonanie Z03 (pilot) | po C1 Z03 i I |
 | C1/C2 pozostałe: Z02, Z04, Z05, Z06, Z07, Z08, Z09, Z10, Z11, G | kolejno, po 2 agentów |

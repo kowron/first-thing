@@ -12,6 +12,7 @@ Ty piszesz **plan i merytorykę** (co gdzie, z jakim brzmieniem faktu i stroną)
 ## Uniwersum informacji = „podane źródła”
 - Zakres = fragmenty źródeł przypisane do zagadnień z rozpiski zajęć: mapa w `handoff/ZNN.md` (kolumny „Źródło”, „Zostaje”, „Tniemy”). **Wszystko, co było w kolumnie „Tniemy” i w wyciągu oznaczone T, teraz wraca – do części 2** (chyba że to oczywisty balast bez wartości informacyjnej: powtórzenie, odesłanie do ryciny, której nie mamy, piśmiennictwo, pytania kontrolne źródła).
 - Sekcje opisane w mapie jako „Poza zakresem” (tematy, których nie ma w rozpisce zajęć) – **dalej poza podręcznikiem**. Jeśli uważasz, że któraś z nich jednak odpowiada zagadnieniu z rozpiski (`zrodla/zNN/ROZPISKA.txt`) – zapisz to jako decyzję do zatwierdzenia, nie włączaj.
+- Informacje widoczne tylko na rycinach/tabelach źródła (schematy, legendy) też należą do kompletu – do części 2 jako opis słowny lub tabela (decyzja szefa z pilotażu Z03). Krótka tabela skrótów na końcu części 2 – dozwolona.
 - Stary Jorde (ok. 2000/2001) – jak dotąd: tylko to, czego nie ma w Drewie do tych samych zajęć (ZASADY pkt 9).
 
 ## Materiały

@@ -9,12 +9,15 @@
 
   const LABELS = {
     pojecie: 'Pojęcie', zapamietaj: 'Zapamiętaj', uwaga: 'Uwaga do źródła',
-    obraz: 'Obraz w głowie', przyklad: 'Przykład',
-    w60: 'W 60 sekund', numbers: 'Liczby do zapamiętania',
+    obraz: 'Obraz w głowie', przyklad: 'Przykład', stare: 'Uwaga: stare wydanie źródła',
+    w60: 'W 60 sekund', numbers: 'Liczby do zapamiętania', przejscie: 'Dalej: część 2 – na piątkę',
   };
   // podręcznik: tylko komponenty z ZASADY.md (inne typy -> UWAGA „bez typu”)
   const NOTE_KINDS = ['pojecie'];
-  const BOX_KINDS = ['zapamietaj', 'uwaga', 'obraz', 'przyklad'];
+  const BOX_KINDS = ['zapamietaj', 'uwaga', 'obraz', 'przyklad', 'stare'];
+  const PART2 = 'Część 2 – rozszerzenie (na piątkę)';   // zakładka PDF i spis treści
+  // elementy „na obie kolumny” (poza blokami .cols) – zob. „Dwie kolumny” niżej i measure()
+  const SPAN = '.opener, figure.fig:not(.narrow), .wide, table.tbl.wide, .box.wide, .box.stare, .w60, .przejscie, .czesc2-start';
   const PH = '00'; // zaślepka numeru strony w 1. przebiegu
 
   const $ = (sel, root = document) => root.querySelector(sel);
@@ -40,7 +43,7 @@
     const chapters = $$('section.chapter');
     const backs = $$('section.back');
     const fronts = $$('section.front');
-    const stats = { chapters: chapters.length, figures: 0, bank: 0, notes: 0, boxes: 0 };
+    const stats = { chapters: chapters.length, figures: 0, bank: 0, notes: 0, boxes: 0, placeholders: 0, raster: 0 };
     const outline = [];
     const sections = [];
         const notePairs = [];
@@ -99,9 +102,32 @@
       if (!title) warn(`${where(f)}: rycina bez tytułu (atrybut data-title)`);
       const cap = $(':scope > figcaption', f);
       if (!cap || !txt(cap)) warn(`Ryc. ${fn} („${title || f.id}”): brak podpisu <figcaption>`);
-      if (!$('svg, img', f)) warn(`Ryc. ${fn}: brak SVG ani obrazka w rycinie`);
+      // szerokość: domyślnie 2 łamy, class="narrow" = 1 łam; data-wide="0" to to samo co narrow
+      if (f.dataset.wide === '0') f.classList.add('narrow');
+      else if (f.dataset.wide === '1' && f.classList.contains('narrow')) warn(`${where(f)}: data-wide="1" i class="narrow" naraz – zostaje 1 łam (usuń jedno z nich)`);
+      const isPh = f.classList.contains('placeholder');
+      if (isPh) {
+        // zaślepka: jasne pole z przerywaną ramką o proporcjach data-ratio (szer.:wys.)
+        if ($('svg, img', f)) warn(`${where(f)}: zaślepka zawiera już obraz – usuń klasę „placeholder”`);
+        const m = /^\s*(\d+(?:[.,]\d+)?)\s*[:\/x×]\s*(\d+(?:[.,]\d+)?)\s*$/.exec(f.dataset.ratio || '');
+        const rw = m ? parseFloat(m[1].replace(',', '.')) : 0, rh = m ? parseFloat(m[2].replace(',', '.')) : 0;
+        if (!(rw > 0 && rh > 0)) warn(`${where(f)}: zaślepka bez poprawnego data-ratio (np. data-ratio="20:9") – przyjęto ${f.classList.contains('narrow') ? '1:1' : '20:9'}`);
+        const [w, h] = rw > 0 && rh > 0 ? [rw, rh] : f.classList.contains('narrow') ? [1, 1] : [20, 9];
+        if (!$(':scope > .ph', f)) {
+          const ph = html(`<div class="ph" style="aspect-ratio: ${w} / ${h}"><span class="ph-t">Miejsce na rycinę</span><span class="ph-s">w przygotowaniu · ${esc(f.dataset.ratio || `${w}:${h}`)} · ${f.classList.contains('narrow') ? '1 łam' : '2 łamy'}</span></div>`);
+          if (cap) cap.before(ph); else f.append(ph);
+        }
+        if (sec && sec.classList.contains('chapter')) stats.placeholders++;
+      } else if (!$('svg, img', f)) warn(`Ryc. ${fn}: brak SVG ani obrazka w rycinie`);
+      // rycina rastrowa (PNG/JPG z katalogu ryciny/): <img src="ryciny/cNN-fig-….png">
+      for (const im of $$(':scope > img:not(.bank)', f)) {
+        im.classList.add('raster');
+        if (sec && sec.classList.contains('chapter')) stats.raster++;
+        if (!im.complete || !im.naturalWidth) error(`${where(f)}: nie wczytano obrazka „${im.getAttribute('src')}” (sprawdź ścieżkę – ryciny/cNN-fig-….png)`);
+        if (!im.hasAttribute('alt')) im.setAttribute('alt', title);
+      }
       if (!$('.fig-label', f)) {
-        f.prepend(html(`<div class="fig-label"><span class="fig-num">Ryc. ${fn}</span>${esc(title)}</div>`));
+        f.prepend(html(`<div class="fig-label"><span class="fig-num">Ryc. ${fn}</span>${esc(title)}${isPh ? '<span class="fig-ph">zaślepka</span>' : ''}</div>`));
       }
       figMap[f.id] = { n: fn, title, ch: sec && sec.dataset.num };
       for (const p of $$('.panel', f)) {
@@ -135,7 +161,13 @@
     /* ---------- Ramki ---------- */
     for (const b of $$('.box')) {
       const kind = BOX_KINDS.find((k) => b.classList.contains(k));
-      if (!kind) warn(`${where(b)}: ramka bez typu – w podręczniku tylko box zapamietaj / uwaga / obraz / przyklad`);
+      if (!kind) warn(`${where(b)}: ramka bez typu – w podręczniku tylko box zapamietaj / uwaga / obraz / przyklad / stare`);
+      if (kind === 'stare' && b.closest('section.chapter')) {
+        const prev = b.previousElementSibling;
+        if (!b.parentElement.matches('section.chapter') || !prev || !prev.matches('p.lead')) {
+          warn(`${where(b)}: ramka „stare wydanie źródła” stoi na początku rozdziału – bezpośrednio po <p class="lead">`);
+        }
+      }
       if (b.closest('section.chapter')) stats.boxes++;
       if ($(':scope > .lbl', b)) continue;
       const lbl = b.dataset.title || LABELS[kind] || '';
@@ -156,21 +188,61 @@
       if (!$(':scope > .lbl', b)) b.prepend(html(`<div class="lbl">${esc(b.dataset.title || LABELS.numbers)}</div>`));
     }
 
+    /* ---------- Część 2 („na piątkę”) i przejście ----------
+       <div class="czesc2-start" id="cNN-czesc2"></div> – bezpośrednio w <section>, po „W 60 sekund” i przejściu;
+       wszystko za znacznikiem to część 2 (te same komponenty, dalej dwie kolumny). Build wstawia w znacznik
+       nagłówek-pas, a elementom za nim nadaje klasę .cz2 (pagina „część 2”, lżejsza kreska nad h2). */
+    const part2 = new Map(); // rozdział -> znacznik
+    for (const ch of chapters) {
+      const num = ch.dataset.num;
+      const marks = $$('.czesc2-start', ch);
+      if (marks.length > 1) error(`Rozdział ${num}: ${marks.length} znaczniki części 2 (.czesc2-start) – dozwolony jeden`);
+      const m = marks[0];
+      if (m) {
+        if (m.parentElement !== ch) error(`${where(m)}: znacznik części 2 musi być bezpośrednio w <section class="chapter"> (nie w ramce ani akapicie)`);
+        if (!m.id) m.id = `c${num}-czesc2`;
+        if (!$$(':scope > h2', ch).some((h) => m.compareDocumentPosition(h) & Node.DOCUMENT_POSITION_FOLLOWING)) warn(`${where(m)}: część 2 bez podrozdziału h2`);
+        if (!$(':scope > .cz2-head', m)) {
+          m.replaceChildren(html(`<div class="cz2-head"><div class="cz2-num"><span>${esc(ch.dataset.label || num)}</span><small>cz. 2</small></div><div class="cz2-body"><p class="cz2-kicker">Część 2 · Rozszerzenie (na piątkę)</p><p class="cz2-title">${esc(ch.dataset.title || '')}</p><p class="cz2-sub">Szczegóły i uzupełnienia do części 1 – dla tych, którzy chcą znać temat w całości.</p></div></div>`));
+        }
+        part2.set(ch, m);
+        sections.push({ id: m.id, kind: 'part', title: 'Część 2', file: ch.dataset.srcFile || '' });
+      }
+      const prz = $$('.przejscie', ch);
+      if (prz.length > 1) warn(`Rozdział ${num}: ${prz.length} ramki „przejście” – wystarczy jedna (na końcu części 1)`);
+      for (const p of prz) {
+        if (p.parentElement !== ch) warn(`${where(p)}: przejście musi być bezpośrednio w <section class="chapter">`);
+        if (!m) warn(`${where(p)}: przejście do części 2, a w rozdziale brak znacznika <div class="czesc2-start" id="c${num}-czesc2"></div>`);
+        else if (p.compareDocumentPosition(m) & Node.DOCUMENT_POSITION_PRECEDING) warn(`${where(p)}: przejście stoi za znacznikiem części 2 – przenieś je na koniec części 1`);
+        if (!$(':scope > .lbl', p)) {
+          p.prepend(html(`<div class="lbl"><span class="prz-arrow" aria-hidden="true">→</span>${esc(p.dataset.title || LABELS.przejscie)}${m ? ` <span class="prz-page">· s.\u00A0<span data-page-of="${m.id}">${PH}</span></span>` : ''}</div>`));
+        }
+      }
+      if (m && !prz.length) info(`Rozdział ${num}: część 2 bez ramki „przejście” na końcu części 1 (<div class="przejscie">…</div>)`);
+    }
+
     /* ---------- Otwarcie rozdziału (po autoid h2 i rycinach) ---------- */
+    const isPart2 = (ch, el) => { const m = part2.get(ch); return !!m && !!(m.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING); };
     for (const ch of chapters) {
       if ($(':scope > .opener', ch)) continue;
       const num = ch.dataset.num;
       const title = ch.dataset.title || '';
       const lead = $(':scope > p.lead', ch);
       if (!lead) warn(`Rozdział ${num}: brak leadu <p class="lead">`);
-      const h2s = $$(':scope > h2', ch);
+      const all = $$(':scope > h2', ch);
+      const h2s = all.filter((h) => !isPart2(ch, h));
+      const h2b = all.filter((h) => isPart2(ch, h));
+      const m = part2.get(ch);
       const nf = $$('figure.fig', ch).length;
       const list = h2s.map((h) => esc(h.dataset.toc || txt(h))).join(' · ');
-      const head = html(`<header class="opener"><div class="opener-num">${esc(ch.dataset.label || num)}</div><div class="opener-body">${ch.dataset.kicker ? `<p class="opener-kicker">${esc(ch.dataset.kicker)}</p>` : ''}<h1 class="ch-title">${esc(title)}</h1><div class="lead-slot"></div><p class="opener-meta"><b>W rozdziale:</b> ${list}${list ? ' · ' : ''}<b>Ryciny:</b> ${nf}</p></div></header>`);
+      const p2 = m ? ` · <b>Część 2</b> – na piątkę (s.\u00A0<span data-page-of="${m.id}">${PH}</span>)` : '';
+      const head = html(`<header class="opener"><div class="opener-num">${esc(ch.dataset.label || num)}</div><div class="opener-body">${ch.dataset.kicker ? `<p class="opener-kicker">${esc(ch.dataset.kicker)}</p>` : ''}<h1 class="ch-title">${esc(title)}</h1><div class="lead-slot"></div><p class="opener-meta"><b>W rozdziale:</b> ${list}${p2}${list || p2 ? ' · ' : ''}<b>Ryciny:</b> ${nf}</p></div></header>`);
       ch.prepend(head);
       if (lead) $('.lead-slot', ch).replaceWith(lead); else $('.lead-slot', ch).remove();
       sections.push({ id: ch.id, kind: 'chapter', title: `${num} ${title}`, file: ch.dataset.srcFile || '' });
-      outline.push({ id: ch.id, title: `${num} ${title}`, children: h2s.map((h) => ({ id: h.id, title: txt(h) })) });
+      const children = h2s.map((h) => ({ id: h.id, title: txt(h) }));
+      if (m) children.push({ id: m.id, title: PART2, children: h2b.map((h) => ({ id: h.id, title: txt(h) })) });
+      outline.push({ id: ch.id, title: `${num} ${title}`, children });
     }
 
     /* ---------- Część końcowa: nagłówki ---------- */
@@ -234,8 +306,11 @@
       for (const ch of chapters) {
         out += `<div class="toc-ch"><a href="#${ch.id}"><span class="n">${esc(ch.dataset.label || ch.dataset.num)}</span><span class="t">${esc(ch.dataset.title || '')}</span><span class="p" data-page-of="${ch.id}">${PH}</span></a></div>`;
         for (const h of $$(':scope > h2', ch)) {
+          if (isPart2(ch, h)) continue;   // podrozdziały części 2 – tylko w zakładkach PDF
           out += `<div class="toc-sec"><a href="#${h.id}"><span class="t">${esc(h.dataset.toc || txt(h))}</span><span class="p" data-page-of="${h.id}">${PH}</span></a></div>`;
         }
+        const m2 = part2.get(ch);
+        if (m2) out += `<div class="toc-sec toc-cz2"><a href="#${m2.id}"><span class="t">${esc(PART2)}</span><span class="p" data-page-of="${m2.id}">${PH}</span></a></div>`;
       }
       if (backOrder.length) {
         out += '<div class="toc-end">NA KONIEC</div>';
@@ -310,9 +385,9 @@
     /* ---------- Dwie kolumny: każdy ciąg elementów między elementami „na obie kolumny” -> <div class="cols">.
        Osobny kontener wielokolumnowy na każdy ciąg, bo Chromium w druku wyrównuje (balance) tylko ostatni
        fragment kontenera – przy jednym kontenerze na rozdział kolumny po przejściu strony się nie wyrównywały. */
-    const SPAN = '.opener, figure.fig:not(.narrow), .wide, table.tbl.wide, .box.wide, .w60';
     let colKids = 0;
     const colIds = [];
+    const colInfo = {};
     for (const ch of chapters) {
       let run = null;
       for (const el of [...ch.childNodes]) {
@@ -320,9 +395,13 @@
         if (el.nodeType !== 1 && !(el.nodeType === 3 && el.textContent.trim())) { if (run) run.appendChild(el); continue; }
         if (!run) { run = document.createElement('div'); run.className = 'cols'; el.before(run); }
         run.appendChild(el);
-        if (!el.id) el.id = `k6c-${++colKids}`;   // położenie na stronie -> splitCols
+        if (!el.id) el.id = `k6c-${++colKids}`;   // położenie na stronie -> opis miejsca w kontroli pustych kolumn
         colIds.push(el.id);
+        colInfo[el.id] = where(el).replace(/^\[[^\]]*\] /, '');
       }
+      // część 2: klasa .cz2 na wszystkim za znacznikiem (pagina „część 2”, lżejsza kreska nad h2)
+      const m = part2.get(ch);
+      for (let el = m; el; el = el.nextElementSibling) el.classList.add('cz2');
     }
 
     /* ---------- Ukryte linki (dla numerów stron) ---------- */
@@ -346,6 +425,9 @@
     for (const ch of chapters) {
       const num = ch.dataset.num;
       css += `#${ch.id} { page: ch${num}; }\n@page ch${num} { @top-right { content: ${cssStr((ch.dataset.label || num) + ' ' + (ch.dataset.short || ch.dataset.title || ''))}; } }\n`;
+      if (part2.has(ch)) {
+        css += `#${ch.id} > .cz2 { page: ch${num}-2; }\n@page ch${num}-2 { @top-left { content: ${cssStr(`${book.header || ''} · CZĘŚĆ 2 – NA PIĄTKĘ`)}; color: #2b7a4b; } @top-right { content: ${cssStr(`${ch.dataset.label || num} ${ch.dataset.short || ch.dataset.title || ''} · część 2`)}; } }\n`;
+      }
     }
     for (const b of backOrder) {
       const pn = 'bk-' + b.id.replace(/[^\w-]/g, '');
@@ -355,7 +437,7 @@
     document.head.appendChild(st);
 
     return {
-      warnings: W, stats, sections, notePairs,
+      warnings: W, stats, sections, notePairs, colInfo,
       outline: { front: frontOutline, chapters: outline, back: backOutline },
       figures: Object.entries(figMap).map(([id, f]) => ({ id, ...f })),
       hasCover: !!$('section.cover'),
@@ -437,44 +519,12 @@
     return changed;
   }
 
-  /* Dwie kolumny po przejściu strony: Chromium źle wyrównuje ostatni fragment kontenera .cols, gdy poprzednia
-     strona skończyła się MIĘDZY elementami (np. ramka lub h2 nie zmieściły się i przeszły na następną stronę).
-     Po 1. przebiegu dzielimy wtedy .cols w tym miejscu: druga część to nowy kontener od nowej strony
-     (.cols-page) – układ się nie zmienia, a kolumny ostatniej strony wyrównują się poprawnie.
-     dests: id -> [indeks strony, top, left] (pt, z PDF). Element „na górze lewej kolumny” = czyste przejście.
-     Uwaga na układ współrzędnych: Chromium zapisuje cele względem POLA ZADRUKU, nie strony – lewy górny róg
-     pola to [≈ 841,9; 0], a nie [841,89 − 22 mm; 15,5 mm]. Dawny próg w układzie strony uznawał za „górę
-     strony” całe pierwsze ~65 pt (5 wierszy), a podział wypychał wtedy 1–3 wiersze poprzedniego elementu
-     na prawie pustą stronę. Punkt odniesienia bierzemy więc z PDF: rozdział zaczyna się od nowej strony,
-     zatem jego cel = lewy górny róg pola zadruku (niezależnie od marginesów @page i wersji Chromium).
-     Element zaczyna stronę, gdy leży najwyżej o swój margines górny + 3 pt niżej (w 1. przebiegu Chromium
-     obcina margines na przejściu strony: dy = 0); pod końcówką poprzedniego elementu byłby o wiersz niżej. */
-  function splitCols(dests) {
-    const PAGE_H = 841.89; // zapas, gdyby brakowało celu rozdziału (układ Chromium: góra pola zadruku = wysokość strony)
-    let n = 0;
-    for (const cols of $$('.cols')) {
-      let cur = cols;
-      const kids = [...cols.children];
-      const ch = cols.closest('section.chapter');
-      const o = ch && dests[ch.id];
-      const top0 = o && o[1] !== null ? o[1] : PAGE_H, left0 = (o && o[2]) || 0;
-      for (let i = 1; i < kids.length; i++) {
-        const a = dests[kids[i - 1].id], b = dests[kids[i].id];
-        if (!a || !b || b[0] <= a[0] || b[1] === null) continue;
-        const dy = top0 - b[1], dx = (b[2] || 0) - left0;
-        const mt = (parseFloat(getComputedStyle(kids[i]).marginTop) || 0) * 0.75;
-        if (dy > mt + 3 || dx > 20) continue;
-        const nc = document.createElement('div');
-        nc.className = 'cols cols-page';
-        let node = kids[i];
-        while (node) { const nx = node.nextSibling; nc.appendChild(node); node = nx; }
-        cur.after(nc);
-        cur = nc;
-        n++;
-      }
-    }
-    return n;
-  }
+  /* Dawniej splitCols(): po 1. przebiegu dzielił blok .cols na „czystym” przejściu strony (nowy kontener od
+     nowej strony), bo ostatni fragment bloku dwukolumnowego, który zaczął się na wcześniejszej stronie, nie
+     wyrównywał się – tekst szedł do lewej kolumny, prawa zostawała pusta. Prawdziwa przyczyna (Chromium 153):
+     element z position: absolute w tym fragmencie (::before kreski nad h2 i punktorów list) – zob. uwaga przy h2
+     w css/style.css; po zmianie na tła/float kolumny wyrównują się same. Podział liczony z pozycji 1. przebiegu
+     po każdej zmianie układu (numery stron, dywizy) trafiał w złe miejsce: prawie puste strony kaskadowo. */
 
   /* ------------------------------------------------------------------ */
   function applyPages(map) {
@@ -599,7 +649,7 @@
   /* ---------- Kontrole układu (w widoku ekranowym o szerokości pola zadruku) ---------- */
   function measure() {
     const M = [];
-    const wide = '.opener, figure.fig:not(.narrow), .wide, table.tbl.wide, .numbers.wide, .box.wide, .w60, .ghost-links, .k6-defs';
+    const wide = SPAN + ', .numbers.wide, .ghost-links, .k6-defs';
     for (const sec of $$('section.chapter, section.back, section.front')) {
       const r0 = sec.getBoundingClientRect();
       const cs = getComputedStyle(sec);
@@ -781,5 +831,5 @@
     return { refrozen, shy, broken };
   }
 
-  window.K6 = { prepare, applyPages, balanceColumns, splitCols, measure, hyphenateWord, hyphenPoints, freezeHyphens, frozenBreaks, refreezeHyphens };
+  window.K6 = { prepare, applyPages, balanceColumns, measure, hyphenateWord, hyphenPoints, freezeHyphens, frozenBreaks, refreezeHyphens };
 })();

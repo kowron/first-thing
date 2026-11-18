@@ -73,9 +73,40 @@ const withBank = (html, rel) => html.replace(/<figure\b[^>]*\bdata-bank="([^"]*)
   if (!fs.existsSync(path.join(ROOT, f))) { W.push({ level: 'error', msg: `${rel}: brak ryciny „${id}” w banku (${f}) – sprawdź id w bank-rycin/INDEX.md` }); return tag; }
   return `${tag}<img class="bank" src="${f}" alt="">`;
 });
+/* rycina rastrowa: <img src="ryciny/cNN-fig-….png"> – plik musi istnieć; szerokość w pikselach wg łamów
+   (2 łamy ≈ 179 mm: 2400 px ≈ 340 dpi; 1 łam ≈ 86 mm: 1200 px); poniżej ok. 200 dpi druk będzie miękki */
+const pngSize = (file) => {
+  try {
+    const b = fs.readFileSync(file);
+    if (b.readUInt32BE(0) === 0x89504e47) return [b.readUInt32BE(16), b.readUInt32BE(20)];
+    for (let i = 2; i < b.length - 9;) { // JPEG: znacznik SOF0–SOF3
+      if (b[i] !== 0xff) { i++; continue; }
+      const mk = b[i + 1];
+      if (mk >= 0xc0 && mk <= 0xc3) return [b.readUInt16BE(i + 7), b.readUInt16BE(i + 5)];
+      i += 2 + b.readUInt16BE(i + 2);
+    }
+  } catch { /* nieczytelny plik */ }
+  return null;
+};
+const checkRaster = (html, rel) => {
+  for (const m of html.matchAll(/<figure\b([^>]*)>([\s\S]*?)<\/figure>/g)) {
+    const narrow = /class="[^"]*\bnarrow\b/.test(m[1]) || /data-wide="0"/.test(m[1]);
+    for (const im of m[2].matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)) {
+      const src = im[1];
+      if (src.startsWith('bank-rycin/')) continue;
+      if (!src.startsWith('ryciny/')) W.push({ level: 'warn', msg: `${rel}: obrazek „${src}” spoza katalogu ryciny/ – ryciny rastrowe trzymaj w ryciny/ (ścieżka względna: src="ryciny/plik.png")` });
+      const file = path.join(ROOT, src);
+      if (!fs.existsSync(file)) { W.push({ level: 'error', msg: `${rel}: brak pliku ryciny „${src}” (${file})` }); continue; }
+      const sz = pngSize(file);
+      const want = narrow ? 1200 : 2400;
+      if (sz && sz[0] < want * 0.6) W.push({ level: 'warn', msg: `${rel}: „${src}” ma tylko ${sz[0]} px szerokości – na ${narrow ? '1 łam' : '2 łamy'} potrzeba ok. ${want} px (min. ${Math.round(want * 0.6)})` });
+    }
+  }
+};
 const chapters = chapterFiles.map((f) => {
   const rel = `${CH}/${f}`;
   let html = withBank(rd(rel), rel);
+  checkRaster(html, rel);
   const n = (html.match(/<section\b[^>]*class="[^"]*\bchapter\b/g) || []).length;
   if (n !== 1) W.push({ level: 'error', msg: `${rel}: plik musi zawierać dokładnie jedną <section class="chapter"> (jest ${n})` });
   const m = /<section\b[^>]*data-num="(\d\d)"/.exec(html);
@@ -180,11 +211,6 @@ try {
     applied = got;
     // ściąga: wyrównanie kolumn na ostatniej stronie (potrzebne strony punktów z 1. przebiegu)
     if (pass === 1) await page.evaluate((m) => window.K6.balanceColumns(m), got);
-    // dwie kolumny: podział .cols na czystych przejściach stron (zob. splitCols w lib/browser.js)
-    if (pass === 1) {
-      const ns = await page.evaluate((d) => window.K6.splitCols(d), info.dests);
-      if (ns) W.push({ level: 'info', msg: `Kolumny: ${ns} × podział bloku dwukolumnowego na przejściu strony (wyrównanie kolumn)` });
-    }
   }
   if (!stable) W.push({ level: 'error', msg: 'Numery stron nie ustabilizowały się po 5 przebiegach – sprawdź odsyłacze w pobliżu końca stron' });
   const pageOf = applied;
@@ -332,7 +358,7 @@ try {
   for (const w of uniq) log(`${sym[w.level]} ${w.msg}`);
   const ne = uniq.filter((w) => w.level === 'error').length, nw = uniq.filter((w) => w.level === 'warn').length;
   log('');
-  log(`Tryb: ${mode}${opt.only ? ' (rozdział ' + opt.only + ')' : ''} · rozdziałów: ${prep.stats.chapters} · rycin: ${prep.stats.figures} (z banku: ${prep.stats.bank}) · „Pojęcie”: ${prep.stats.notes} · ramek: ${prep.stats.boxes}`);
+  log(`Tryb: ${mode}${opt.only ? ' (rozdział ' + opt.only + ')' : ''} · rozdziałów: ${prep.stats.chapters} · rycin: ${prep.stats.figures} (z banku: ${prep.stats.bank}${prep.stats.raster ? `, PNG: ${prep.stats.raster}` : ''}${prep.stats.placeholders ? `, zaślepek: ${prep.stats.placeholders}` : ''}) · „Pojęcie”: ${prep.stats.notes} · ramek: ${prep.stats.boxes}`);
   log(`Stron: ${fin.pages} · przebiegów: ${passes}${stable ? ' (numeracja stabilna)' : ' (NIESTABILNA)'} · kontrola stron sekcji: ${checked - bad}/${checked} OK · linków: ${fin.links} (martwych: ${fin.broken.length}) · zakładek: ${outline.reduce((s, o) => s + 1 + (o.children ? o.children.length : 0), 0)}`);
   if (holes.length) log(`Strony z dużą białą przestrzenią: ${holes.join(', ')}`);
   log(`Czcionki: ${fontNames.join(', ')}`);
