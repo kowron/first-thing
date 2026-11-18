@@ -10,7 +10,7 @@ Handoff dla agentów: `handoff/P-przepisanie.md`.
 | 1 | Z09 cytogenetyka | GOTOWE 18.11 (17 → 24 s., 2 nowe ryc.) – do rewizji: objaśnienie gwiazdek w tab. 18.3 (wniosek autora) |
 | 1 | Z10 płeć | GOTOWE 18.11 (12 → 16 s.), commit 4d62c88 |
 | 2 | Z02 cykl komórkowy | PAUZA 18.11 – plan 8 h2 gotowy, tekstu 0; `stan/z02-v2.md` § WZNOWIENIE |
-| 2 | Z03 apoptoza | PAUZA 18.11 – lead + h2 1–3 w `robocze/z03-apoptoza.html` (+ nowa ryc. kaspazy); dalej h2 4–8; lista pozostałych pozycji rewizji w `stan/z03-v2.md` § WZNOWIENIE |
+| 2 | Z03 apoptoza | GOTOWE 18.11 (13 → 19 s., 1 nowa ryc.); rewizja B1–B13, C14–C24 wplecione |
 | 2 | Z04 kwasy nukleinowe | PAUZA 18.11 – plan + mapa k4/k5 gotowe, tekstu 0; `stan/z04-v2.md` § WZNOWIENIE |
 | 2 | Z05 PCR | PAUZA 18.11 – plan 11 h2 + mapa k5 gotowe, tekstu 0; `stan/z05-v2.md` § WZNOWIENIE |
 | 3 | Z11 biotechnologia | PAUZA 18.11 – h2 1–2 w `robocze/z11-biotechnologia.html` (+ nowa ryc. roślina); dalej h2 3; pomocnicze SVG w `robocze/z11v2-pomoc/`; `stan/z11-v2.md` § WZNOWIENIE |
