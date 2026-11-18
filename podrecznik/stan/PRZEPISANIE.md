@@ -56,7 +56,15 @@ Wynik: `rewizja/zNN-v2.md`; błędy A recenzent poprawia od razu w rozdziale. Ma
 |---|---|
 | G – dokończenie przepisania | GOTOWE (14 → 26 s.) |
 | C1 plan Z03 (pilot) | GOTOWE 21:00 (`plany/z03-czesci.md`; 299 jednostek: P1 62%, P1u 9%, P2 29%; decyzje Z1, Z3 = tak) |
-| C1 plan Z02 | uruchomiony 21:05 |
-| I – infrastruktura | uruchomiony ~20:50 |
+| C1 plan Z02 | GOTOWE 21:50 (`plany/z02-czesci.md`; 75/25; decyzje szefa dopisane) |
+| I – infrastruktura | GOTOWE 21:45 (komponenty w KOMPONENTY.md pkt 9; tło #ffffff→#ecf6ef; naprawa wyrównania kolumn: dziury 33 → 5; pełny build 234 s.) |
 | C2 wykonanie Z03 (pilot) | po C1 Z03 i I |
 | C1/C2 pozostałe: Z02, Z04, Z05, Z06, Z07, Z08, Z09, Z10, Z11, G | kolejno, po 2 agentów |
+
+## Na jutro (19.11) – od czego zacząć
+Użytkownik 18.11 ok. 21:30: „po tych agentach zakończ, kontynuujesz jutro na spokojnie”. Maks. 2 agenci naraz.
+1. **C2 wykonanie Z03 (pilot)** – Opus xhigh, `handoff/C2-wykonanie-czesci.md` + `plany/z03-czesci.md`. Potem pokazać użytkownikowi rozdział 3 (PDF `--only 03`) do oceny układu część 1 / część 2.
+2. Równolegle: **C2 wykonanie Z02** (plan gotowy) albo **C1 plan** kolejnego rozdziału (kolejność: Z04, Z05, Z06, Z07, Z08, Z09, Z10, Z11, G).
+3. Czerwona ramka (`box stare`): Z08, Z10 (Jorde ok. 2000) – pewne; Z07 (Twyman 2001) – czeka na odpowiedź użytkownika.
+4. Ryciny z ChatGPT (użytkownik przyśle 19.11): wstawić jako `ryciny/cNN-fig-….png` w miejsce zaślepek (KOMPONENTY.md pkt 9); zaślepki wstawiają wykonawcy C2.
+5. Pozostałe UWAGI składu po naprawie kolumn: G s. 8, Z05 s. 99 i 106, Z08 s. 155, Z09 s. 195 – wykonawcy C2 poprawią przy przebudowie.
