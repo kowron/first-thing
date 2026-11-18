@@ -1,0 +1,569 @@
+WARSZTAT AUTORA
+
+
+
+
+Jak napisać podręcznik, z
+którego można się uczyć
+Student zna definicję, a mimo to nie umie wyjaśnić tego, co widzi. Właśnie w
+tym miejscu warto zacząć redakcję.
+
+Co zmienia jedno zdanie
+WERSJA ROBOCZA
+„Dojrzały adipocyt biały zawiera dużą kroplę tłuszczu. W rutynowym preparacie
+parafinowym jego środek jest jasny”.
+
+PO REDAKCJI
+„Duża kropla tłuszczu zajmuje prawie cały dojrzały adipocyt biały. Podczas przygotowania
+rutynowego skrawka parafinowego rozpuszczalniki usuwają większość tłuszczu. Jasne pole
+w środku komórki wskazuje więc miejsce, które w żywej tkance zajmowała kropla”. [4]
+
+Pierwsza wersja podaje dwa prawdziwe fakty. Student musi jednak sam wymyślić, co stało
+się z tłuszczem. Dopisane zdanie przenosi go z żywej tkanki do preparatu i pozwala
+odczytać obraz. Taki zysk uzasadnia wydłużenie akapitu.
+
+Jak korzystać z poradnika
+Gdy piszesz samodzielnie, wybierz sposób objaśniania na s. 3–6. Na s. 7–9 znajdziesz
+redakcję akapitu, ryciny i całego rozdziału. Gdy zlecasz pracę AI, dołącz książkę źródłową
+oraz instrukcję ze s. 10–11. Masz ją również jako samodzielny plik tekstowy.
+
+
+   W poradniku „lepiej” ma sprawdzalne znaczenie. Czytelnik ma umieć wyprowadzić konkretny
+   wniosek z informacji dostępnych na stronie. W przykładzie powyżej potrafi wyjaśnić, jak
+   komórka pełna tłuszczu daje obraz jasnego pola.
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                     1 / 12
+DOWODY
+
+
+
+Co podczas lektury robi czytelnik
+Wybór techniki zależy od tego, czy student ma połączyć dwa fakty, odczytać
+obraz, czy przenieść zasadę na nowy przypadek.
+
+Kiedy dopisać brakujące ogniwo
+McNamara i współautorzy zmieniali spójność tekstu naukowego i badali m.in. pamięć
+treści oraz odpowiedzi wymagające wnioskowania. Czytelnikom z mniejszą wiedzą
+pomagała większa spójność. U lepiej przygotowanych osób część zadań ujawniała korzyść z
+samodzielnego uzupełniania powiązań. Wniosek dla autora. Dopowiedz proces usuwania
+tłuszczu studentowi, który pierwszy raz ogląda skrawek. Studentowi po kursie technik
+histologicznych może wystarczyć określenie sposobu przygotowania preparatu. [7]
+
+Kiedy zestawić dwa przypadki
+Gentner, Loewenstein i Thompson badali uczenie się zasad negocjacji. Bezpośrednie
+porównanie przypadków sprzyjało zauważeniu wspólnej zasady i zastosowaniu jej w nowej
+sytuacji. Wniosek dla autora. Opisz oba przypadki w tej samej kolejności i wskaż cechę
+wartą porównania. Przeniesienie tej metody do histologii jest propozycją redakcyjną. [8]
+
+Kiedy uprościć rycinę
+W dwóch doświadczeniach Butcher uczestnicy uczyli się o sercu i krążeniu z tekstu w
+różnych wersjach. Uproszczone rysunki pomagały budować model zależności i formułować
+wnioski. Wniosek dla autora. Gdy celem jest prześledzenie drogi, oznacz jej początek,
+kierunek i koniec. Gdy celem jest rozpoznanie tkanki, do schematu dodaj rzeczywisty
+obraz, na którym student ma odnaleźć cechę. To dwa różne cele ilustracji. [9]
+
+Co wnosi model ICAP
+Chi i Wylie rozróżniają bierny odbiór, manipulowanie materiałem, wytworzenie własnego
+wniosku i wspólne rozwijanie rozumowania w dialogu. Podkreślenie nazwy i wyjaśnienie
+pochodzenia jasnego pola wymagają innej pracy. Autor może stworzyć okazję do
+wnioskowania, np. ujawnić warunek przed wynikiem. Sam układ strony nie pozwala
+stwierdzić, co rzeczywiście zrobił czytelnik. [10]
+
+Kiedy dać czytelnikowi chwilę na odtworzenie wyjaśnienia
+Roediger i Karpicke porównali ponowną lekturę krótkich tekstów z odtwarzaniem ich treści
+z pamięci. Przy odroczonym sprawdzianie odtwarzanie sprzyjało zapamiętaniu. W
+podręczniku można wrócić do wcześniejszej ryciny przy okazji nowego problemu i dopiero
+po chwili przypomnieć wyjaśnienie. Badanie dotyczyło pamięci tekstu. Trafność
+rozpoznania preparatu wymaga osobnego sprawdzenia. [12]
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                               2 / 12
+PODRĘCZNIKI W PRAKTYCE
+
+
+
+Campbell i Alberts. Dwa sposoby
+wejścia w temat
+Campbell zaczyna od rzeczy, którą można zobaczyć
+Na otwarciu australijsko-nowozelandzkiego wydania Campbell Biology czytelnik ogląda
+banksję po pożarze. Podpis ustala warunki życia rośliny, wskazuje tkanki, które przetrwały
+pod korą, a następnie prowadzi od odrastania korony do zacienienia konkurentów. Pytanie
+przy rycinie wraca do tego samego drzewa. Dzięki temu pojęcia organizacji i ewolucji
+dostają wspólny punkt odniesienia. Wniosek redakcyjny. Wybierz okaz, do którego będzie
+można wrócić po zmianie skali lub po wprowadzeniu pojęcia. [1]
+
+Biolog i nauczyciel akademicki Neil Campbell chciał powierzyć ilustracjom część wykładu.
+Współautorka Lisa Urry opisuje ten zamiar i podaje, że z książki korzystało 12 mln
+studentów. To świadectwo zespołu wydawniczego o zasięgu serii. Rozwiązanie z banksją
+pochodzi z konkretnego wydania regionalnego. [1–2]
+
+Alberts zaczyna od wymagania, które komórka musi spełnić
+W rozdziale otwierającym czwarte wydanie Molecular Biology of the Cell fragment o błonie
+zmienia pytanie czytelnika w trzech posunięciach. Poniżej analiza trzech kolejnych zdań
+własnymi słowami. [3]
+
+  Ruch autora                              Co może teraz wywnioskować student
+
+
+  1. Wskazuje ograniczenie pełnej          Samo odgrodzenie wnętrza nie wystarcza do opisania żywej
+  szczelności błony.                       komórki.
+
+
+  2. Wprowadza wzrost, pobieranie          Istnieje konkretny powód, dla którego wybrane substancje muszą
+  surowców i usuwanie odpadów.             przekraczać tę granicę.
+
+
+  3. Umieszcza w błonie białka             Funkcja białek odpowiada na problem postawiony dwa zdania
+  przenoszące określone cząsteczki.        wcześniej.
+
+
+Bruce Alberts i zespół rozwijają tę książkę od 1983 r. Seria doczekała się co najmniej
+siedmiu wydań. W analizowanym fragmencie konstrukcja argumentu pomaga zrozumieć
+sens selektywnego transportu. Potrzeba wymiany sama w sobie nie dowodzi, że uczestniczy
+w niej konkretne białko. Tę informację autor wnosi jako fakt biologiczny. [3]
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                               3 / 12
+PODRĘCZNIKI W PRAKTYCE
+
+
+
+Junqueira i Samuelson. Jak wydobyć
+regułę z przykładu
+Junqueira uczy patrzeć na preparat
+W Junqueira’s Basic Histology opis dojrzałego adipocytu łączy rozmiar pojedynczej kropli z
+położeniem cytoplazmy i jądra. W podpisie do ryciny 6–1 piętnastego wydania kolejne
+mikrofotografie pozwalają zestawić skrawek po usunięciu tłuszczu z preparatem, w którym
+lipid został zachowany i uwidoczniony. Inne panele pokazują, że płaszczyzna przekroju
+może ominąć jądro. Czytelnik dostaje dwa wyjaśnienia dwóch różnych zjawisk widocznych
+na tym samym obrazie. [4]
+
+Luiz Carlos Junqueira zapoczątkował podręcznik, a Anthony Mescher rozwijał jego
+późniejsze wydania. W przedmowie do wydania szesnastego Mescher odnotowuje
+pięćdziesięciolecie książki. Zastosowanie. W podpisie ustal, która cecha pochodzi z
+budowy tkanki, a która z techniki jej obrazowania. [4]
+
+Samuelson i Nordhaus zatrzymują czytelnika przy jednym wyborze
+W Economics zasoby gospodarki rozdziela się między dwa dobra. Kolejne wiersze tabeli
+pokazują dostępne kombinacje produkcji masła i uzbrojenia. Te same kombinacje autorzy
+nanoszą na osie. Dopiero teraz czytelnik ma fizycznie wskazywalny obiekt odpowiadający
+pojęciu granicy możliwości produkcyjnych. Przejście między sąsiednimi punktami pozwala
+mu ustalić, z ilu jednostek jednego dobra gospodarka rezygnuje, zwiększając wytwarzanie
+drugiego. [5]
+
+Ekonomista MIT Paul Samuelson przygotował pierwsze wydanie z myślą o kursie
+wprowadzającym. Późniejsze edycje współtworzył William Nordhaus. Według MIT przez 60
+lat sprzedano blisko 4 mln egzemplarzy. Zastosowanie. Przy przejściu od opisu do
+wykresu zachowaj te same wielkości, jednostki i przypadki. Czytelnik może wtedy skupić
+uwagę na nowym sposobie przedstawienia zależności. [5–6]
+
+
+   Dobór obejmuje książki o udokumentowanym zasięgu lub długiej historii wydań i z dostępnym
+   materiałem do analizy. Sprzedaż, liczba użytkowników i liczba wydań mierzą różne rzeczy.
+   Uzasadniają wybór przykładów. Wpływ konkretnych technik na uczenie oceniają odrębne
+   badania ze s. 2.
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                      4 / 12
+DOBÓR STYLU
+
+
+
+Jak ułożyć pierwszy akapit
+Zacznij od informacji potrzebnej do następnego kroku. Cztery rodzaje
+trudności prowadzą do czterech różnych początków.
+
+  Co ma umieć czytelnik            Co napisać najpierw                Jak poprowadzić dalszy tekst
+
+
+  Rozpoznać obiekt                 Podaj orientację, skalę i jedną    Wskaż najbliższą podobną strukturę
+                                   cechę widoczną na okazie.          oraz cechę, którą da się sprawdzić w
+                                                                      obu obrazach.
+
+
+  Wyjaśnić mechanizm               Ustal stan wyjściowy i wielkość,   Przeprowadź czytelnika przez zmianę.
+                                   która się zmieni.                  Każdemu sprawcy przypisz konkretną
+                                                                      czynność i skutek.
+
+
+  Wybrać metodę                    Postaw problem, w którym           Ustal kryterium. Zestaw dwa
+                                   wybór ma następstwa.               przypadki, w których inna wartość
+                                                                      tego kryterium uzasadnia inną
+                                                                      decyzję.
+
+
+  Zrozumieć model                  Określ założenia oraz znaczenie    Przelicz lub prześledź jeden
+                                   obserwowanych wielkości.           przypadek. Zmień warunek i pokaż,
+                                                                      kiedy wniosek przestaje obowiązywać.
+
+
+
+Ten sam temat, inny cel
+Student przy mikroskopie. „Odszukaj grupę dużych, ciasno ułożonych komórek z jasnym
+środkiem. Wzdłuż ich obwodu biegnie cienki rąbek cytoplazmy. W części przekrojów przy
+tym rąbku zobaczysz spłaszczone jądro”. Kolejność zdań podąża za ruchem oka od grupy
+komórek do drobnej cechy. [4]
+
+Student wyjaśniający obraz. „Pojedyncza kropla lipidowa zajmuje prawie całe wnętrze
+dojrzałego adipocytu białego. Cytoplazma tworzy przy obwodzie cienką warstwę, w której
+leży spłaszczone jądro. Po usunięciu tłuszczu podczas przygotowania preparatu ten układ
+pozwala rozpoznać zarys komórki”. Ta wersja zaczyna się od budowy, ponieważ czytelnik
+ma wyprowadzić z niej wygląd skrawka. [4]
+
+
+   Obie wersje używają podobnego słownictwa. O ich przydatności decyduje pierwsza czynność
+   studenta po lekturze. Jeśli ma jednocześnie rozpoznać i wyjaśnić strukturę, połącz wskazówkę
+   obserwacyjną z jednym zdaniem o mechanizmie.
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                                  5 / 12
+KONSTRUKCJA AKAPITU
+
+
+
+Jak wyjaśnić koszt alternatywny
+Autorski przykład przenosi zasadę z ekonomii do pracowni diagnostycznej.
+Liczby są dydaktyczne. Czas pozostaje ten sam w całym przykładzie. [5]
+
+PIERWSZY SZKIC
+„Pracownia dysponuje ograniczonymi zasobami. Wybór między badaniami wiąże się z
+kosztem alternatywnym. Przy ustalaniu harmonogramu kierownik uwzględnia efektywność
+wykorzystania czasu”.
+
+TEKST PO REDAKCJI
+„Pracownia ma godzinę wolnego czasu na jednym aparacie. W tej godzinie może wykonać
+jeden pomiar rozszerzony albo trzy pomiary standardowe. Jeśli wybierze pomiar
+rozszerzony, utraci możliwość wykonania trzech standardowych. Te trzy pomiary są
+kosztem alternatywnym jej decyzji, o ile stanowiły najlepsze dostępne inne wykorzystanie
+tej godziny. Gdyby aparat i tak miał stać bezczynnie, bo nie było zgłoszeń na pomiary
+standardowe, te trzy pomiary wypadłyby z rachunku”.
+
+  Zdanie                                   Dlaczego jest w tym miejscu
+
+
+  1. Jedna godzina i jeden aparat          Ustala ograniczenie. Przy kilku wolnych aparatach oba warianty
+                                           mogłyby być dostępne równocześnie.
+
+
+  2. Jeden pomiar albo trzy                Daje czytelnikowi porównywalne, wykonalne możliwości i
+                                           podstawę do wyciągnięcia wniosku.
+
+
+  3. Co pracownia traci                    Pokazuje skutek jednej decyzji. Czytelnik może wskazać koszt,
+                                           zanim pozna jego nazwę.
+
+
+  4. Nazwa i warunek                       Wiąże termin z konkretną stratą i zabezpiecza uogólnienie na
+                                           sytuacje z wieloma możliwościami.
+
+
+  5. Brak zgłoszeń                         Zmienia tylko dostępność alternatywy. Pozwala odróżnić
+                                           techniczną przepustowość od rzeczywiście utraconej możliwości.
+
+
+Próba przeniesienia. W innej pracowni drugi aparat wykona wszystkie pomiary
+standardowe w tej samej godzinie. Czy rozszerzony nadal kosztuje trzy standardowe? Te
+pomiary pozostają wykonalne, więc taki rachunek wymagałby innego ograniczenia. Jeśli
+czytelnik umie to uzasadnić, zrozumiał warunek ukryty w pierwszym zdaniu.
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                                  6 / 12
+REDAKCJA ZDANIA
+
+
+
+Co dopisać, co skrócić, co przestawić
+Odszukaj skok między dwoma poprawnymi zdaniami
+„Jądro adipocytu leży obwodowo. W wielu przekrojach jądra nie widać”. Słowo „dlatego”
+nie wystarczy, by połączyć te zdania. Student musi jeszcze uwzględnić grubość skrawka i
+położenie płaszczyzny cięcia. Potrzebne ogniwo brzmi „Cienki skrawek może przejść przez
+środek komórki i ominąć jądro leżące przy jej brzegu”. Dopiero teraz wiadomo, jak z
+budowy przestrzennej powstaje dwuwymiarowy obraz. [4, 7]
+
+Przywróć sprawcę i znaczenie czasownika
+„Dochodzi do zmiany lokalizacji jądra” zostawia czytelnika ze zmianą, której nie potrafi
+narysować. „Rosnąca kropla lipidowa spycha jądro ku obwodowi komórki” wskazuje
+sprawcę, ruch i kierunek. Gdy źródło dokumentuje tylko współwystępowanie, zachowaj
+opis obserwacji. Zastąpienie „towarzyszy” przez „powoduje” zmieniłoby siłę twierdzenia.
+[4]
+
+Zachowaj przedmiot zdania przy zmianie skali
+„Pracownia dysponuje godziną. Koszt alternatywny jest kategorią ekonomiczną”. Drugie
+zdanie porzuca sytuację, zanim czytelnik zdąży ją zinterpretować. Lepszy łącznik brzmi
+„Przeznaczenie tej godziny na pomiar rozszerzony wyklucza trzy pomiary standardowe”.
+Powracające słowo „godzina” ma tę samą treść, a zakończenie wprowadza to, co za chwilę
+otrzyma nazwę. Rozkład informacji znanej i nowej to wskazówka redakcyjna Gopena i
+Swana. [11]
+
+Skróć tekst tam, gdzie wniosek już padł
+Po zdaniu o utracie trzech pomiarów skreśl „Jak widać, podejmowanie decyzji ma
+określone konsekwencje”. Nie wnosi nowego warunku, liczby ani wyjaśnienia.
+Zaoszczędzone miejsce wykorzystaj na istotne zastrzeżenie, np. dostępność drugiego
+aparatu. Zwięzłość polega tu na usunięciu komentarza, który niczego nie zmienia w
+rozumowaniu.
+
+
+   Przeczytaj akapit jako ciąg odpowiedzi. Co student wie na początku? Co zmienia każde kolejne
+   zdanie? Przy którym słowie potrzebuje wiedzy, której tekst jeszcze nie podał? To ostatnie
+   miejsce wyznacza pierwszą poprawkę.
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                       7 / 12
+TEKST I RYCINA
+
+
+
+Jak napisać podpis, który uczy
+patrzeć
+Cel tej ryciny jest wąski. Czytelnik ma wyjaśnić, dlaczego w dwóch
+skrawkach komórki o tej samej budowie może zobaczyć różne obrazy jądra.
+
+
+          Komórka widziana z boku                    Obraz skrawka po obróbce
+
+
+
+
+         A
+
+
+         B
+
+
+
+                                                  Przekrój A          Przekrój B
+             Fioletowy owal oznacza jądro
+
+
+
+PODPIS DO RYCINY
+Po lewej obie linie oznaczają możliwe płaszczyzny równoległych cięć, widziane z boku.
+Linia A przecina jądro przy brzegu komórki, linia B przebiega poniżej niego. Po prawej
+pokazano odpowiadające im przekroje. W obu widać miejsce po usuniętym tłuszczu. Tylko
+przekrój A zawiera profil jądra. Schemat własny, proporcje umowne. [4]
+
+Dlaczego podpis ma właśnie taką kolejność
+Najpierw orientacja. Bez słów „widziane z boku” dwie linie mogłyby wyglądać jak
+struktury wewnątrz komórki. Następnie wskazanie różnicy. Litery A i B łączą każde
+cięcie z jego wynikiem i zachowują sens w wydruku czarno-białym. Na końcu wniosek.
+Czytelnik może sam prześledzić oba cięcia, zanim przeczyta interpretację.
+
+Kiedy zmienić ilustrację. Ten rysunek uczy zależności geometrycznej. Jeśli zadanie
+końcowe polega na rozpoznaniu tkanki, umieść obok rzeczywistą mikrofotografię z
+wiarygodnego źródła, podaj technikę i zaznacz jedną zgodną cechę. Sprawdź, czy strzałka
+dotyka struktury w podanej płaszczyźnie. [4, 9]
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                 8 / 12
+OD ŹRÓDŁA DO ROZDZIAŁU
+
+
+
+Jak przebudować książkę i zachować
+jej treść
+Zacznij od zakresu, który będzie można sprawdzić
+Przykładowe zlecenie brzmi „Naucz rozpoznawać dojrzały adipocyt biały w rutynowym
+preparacie i wyjaśnić jego wygląd”. Przejrzyj tekst, podpisy i tabele źródła. Wypisz osobno
+obserwacje, mechanizmy i warunki. Poniżej przykładowy zapis dla fragmentu o białej
+tkance tłuszczowej. [4]
+
+  Element źródła                   Gdzie trafi w nowym tekście      Jak sprawdzić zachowanie zakresu
+
+
+  Duża kropla i obwodowe           Akapit o budowie żywej komórki   Czy student umie odtworzyć
+  jądro                                                             wzajemne położenie struktur?
+
+
+  Usunięcie lipidów podczas        Zdanie między opisem tkanki i    Czy tekst wymienia warunek, pod
+  obróbki                          odczytaniem mikrofotografii      którym środek jest jasny?
+
+
+  Przekrój może ominąć             Osobna rycina i jej podpis       Czy student umie wyjaśnić obraz bez
+  jądro                                                             widocznego jądra?
+
+
+
+Zbuduj rozdział wokół narastającej trudności
+W tym rozdziale wystarczą trzy śródtytuły — „Co wypełnia dojrzały adipocyt?”, „Skąd
+bierze się jasne pole w preparacie?” i „Dlaczego w części przekrojów widać jądro?”.
+Przejścia między nimi zmieniają wyłącznie to, co student ma teraz uwzględnić. Pierwsze
+dwa akapity łączy obróbka tkanki. Drugie przejście wprowadza geometrię cięcia. Nie
+trzeba po raz trzeci definiować adipocytu.
+
+Sprawdź efekt przed oddaniem tekstu
+Wierność. Przypisz twierdzeniom odpowiednie miejsce w źródle. Odróżnij numer strony
+drukowanej od numeru karty PDF. Oznacz informacje dodane z zewnątrz. Samodzielność.
+Zakryj nagłówek i odpowiedź. Czy na podstawie akapitu można wyjaśnić obraz, którego
+jeszcze nie pokazano? Redakcja. Jeśli w odpowiedzi trzeba przywołać fakt ukryty dopiero
+w następnym podrozdziale, przenieś go przed pierwsze użycie.
+
+
+   Jeżeli chcesz porównać dwie wersje, daj je oddzielnym czytelnikom o podobnym
+   przygotowaniu. Postaw to samo nowe zadanie, przy tym samym czasie lektury. Zapisz
+   konkretny krok, przy którym tracą wątek. Samo wrażenie płynnej lektury nie rozstrzyga, czy
+   potrafią zastosować wyjaśnienie.
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                              9 / 12
+ZLECENIE DLA AI
+
+
+
+Instrukcja do przekazania z
+podręcznikiem
+Zlecenie
+Przeczytaj wskazany materiał i napisz samodzielny podręcznik po polsku. Zachowaj fakty,
+zakres, terminologię i ważne zastrzeżenia. Zaprojektuj od nowa kolejność wyjaśnień,
+przykłady i ilustracje. Tekst ma służyć samodzielnej nauce. Czytelnik powinien móc
+wyjaśnić nowy przypadek, rozpoznać obiekt lub uzasadnić wybór, zależnie od tematu.
+
+Parametry, które mogę uzupełnić: źródło i zakres [załącznik, rozdziały], czytelnik i jego
+przygotowanie [kto, co już umie], oczekiwany wynik [co ma potrafić], wymagania [format,
+objętość, egzamin, zasady nazewnictwa]. Gdy poziom nie został podany, przyjmij studenta
+pierwszego kursu akademickiego z danej dziedziny. Jeśli zakresu nie zawężono, obejmij
+cały wskazany materiał. Gdy część źródła jest nieczytelna, wskaż konkretny brak. Nie
+uzupełniaj go z domysłu.
+
+Od źródła do planu
+1. Obejrzyj tekst, ryciny z podpisami i tabele. Sporządź roboczą mapę faktów, definicji,
+relacji, wyjątków i odsyłaczy do miejsc w źródle. Zachowaj informacje wymagane
+programem nawet wtedy, gdy trzeba poświęcić im osobny krótki akapit. Dodatkowe źródła
+podaj przy konkretnych uzupełnieniach. Oznacz rozbieżności oraz niepewność.
+
+2. Dla każdego działu ustal, co ma się udać po lekturze. Ułóż treść według zależności
+pojęciowych. Przed pierwszym użyciem trudnej przesłanki wprowadź dokładnie tyle
+wiedzy, ile potrzeba, by student mógł wykonać następny krok. Pomiń powtórny wykład
+rzeczy, które czytelnik już umie. Przy całej książce przygotuj spis treści i utrzymuj jedno
+nazewnictwo między rozdziałami.
+
+Pisanie
+3. Dobierz początek do celu. Przy rozpoznawaniu zacznij od cechy, którą widać. Przy
+mechanizmie zacznij od stanu wyjściowego i śledź konkretną zmianę. Przy wyborze metody
+pokaż dwa wiarygodne przypadki i kryterium decyzji. Przy modelu wskaż, co pozostaje
+stałe, i przeprowadź jeden przykład aż do wniosku. Zmieniaj konstrukcję, gdy zmienia się
+trudność.
+
+4. Pisz spokojną, ciągłą polszczyzną akademicką. Zastąp ogólniki konkretnymi podmiotami
+i czasownikami. Dla każdego trudnego przejścia sprawdź, z czego wynika następne zdanie.
+Dopowiedz brakującą przesłankę. Przedstaw obserwację, interpretację i przyczynę zgodnie
+z siłą dowodu. Zachowuj ustalony termin, jeśli synonim mógłby sugerować inną strukturę.
+Skreśl zdania, po których wiedza czytelnika jest taka sama jak wcześniej.
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                10 / 12
+ZLECENIE DLA AI
+
+
+
+Przykłady, ilustracje i kontrola
+treści
+5. Postaw nazwę w miejscu, w którym spełnia funkcję. Przy pojęciu obcym czytelnikowi
+najpierw pokaż konkretną różnicę lub potrzebę. Gdy student szuka już znanego terminu,
+podaj definicję od razu. Wyjaśniaj znaczenie przykładu i warunek, od którego zależy
+wniosek. Liczby ilustracyjne wyraźnie oznacz. Stosuj analogie tylko wtedy, gdy da się
+nazwać wspólną zależność i granicę podobieństwa.
+
+6. Zaprojektuj rycinę wtedy, gdy obraz pozwala samodzielnie odczytać relację, układ
+przestrzenny lub przebieg zmiany. Uzgodnij oznaczenia z tekstem. Podpis powinien
+powiedzieć, od czego zacząć oglądanie, co porównać i jaki wniosek uzasadnia ta
+obserwacja. W atlasie połącz schemat z wiarygodnym rzeczywistym obrazem, gdy celem
+jest rozpoznawanie. Oznacz schemat, technikę i skalę tam, gdzie są istotne. Dołącz
+wyłącznie zweryfikowane ilustracje i odsyłacze. Jeśli nie masz ilustracji, na którą ma
+wskazywać polecenie, podaj jawnie jej brak.
+
+7. Zostaw miejsce na jedno samodzielne rozumowanie tam, gdzie wnosi wartość. Może to
+być przewidywanie skutku po zmianie warunku, odczytanie ryciny lub zastosowanie zasady
+w nowym przypadku. Dostarcz wszystkie przesłanki i podaj uzasadnienie po próbie. Liczbę
+ćwiczeń dopasuj do zlecenia. Zadbaj, by sam tekst główny niósł pełne wyjaśnienie.
+
+Przed oddaniem
+8. Porównaj gotowy tekst z roboczą mapą źródła. Zweryfikuj liczby, jednostki, wyjątki,
+nazwy i odsyłacze. Nie twórz fikcyjnych stron ani cytowań. Przy błędzie w źródle oddziel
+jego treść od udokumentowanej korekty. Sprawdź ryciny z podpisami i tekstem.
+
+9. Wybierz najtrudniejszy akapit. Spróbuj rozwiązać nowy przypadek, opierając się tylko na
+tym, co student już przeczytał. Jeśli potrzebujesz wiedzy wprowadzonej później, napraw
+kolejność. Jeśli samo powtórzenie definicji wystarcza do każdej odpowiedzi, popraw
+przykład lub pytanie.
+
+10. Oddaj gotowy podręcznik w uzgodnionym formacie, ze źródłami umożliwiającymi
+sprawdzenie treści. Zachowaj notatki robocze poza wykładem. Podaj krótko jedynie istotne
+założenia i konkretne luki, które pozostały. Gdy materiał wymaga publikacji etapami,
+utrzymuj jedną mapę całej książki i jasno określ zakres faktycznie ukończonej części.
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                 11 / 12
+BIBLIOGRAFIA
+
+
+
+Źródła i miejsca do sprawdzenia
+1. Urry i współautorzy, Campbell Biology, wydanie australijsko-nowozelandzkie
+Rozdział 1, otwarcie i ryc. 1.1. Przykład banksji oraz tematy łączące dziedziny biologii. Fragment wydawcy
+
+2. Lisa Urry, The Secret to Campbell Biology’s Success
+Relacja współautorki o pracy Neila Campbella i o liczbie użytkowników książki. Transkrypcja Pearson
+
+3. Bruce Alberts i współautorzy, Molecular Biology of the Cell, wyd. 4, 2002
+Rozdział 1, The Universal Features of Cells on Earth, fragment przy ryc. 1–13. Historia serii według autora.
+Rozdział · Autor i kolejne wydania · Pierwsze wydanie
+
+4. Anthony L. Mescher, Junqueira’s Basic Histology. Text and Atlas
+Rozdział 6, wyd. 17, budowa adipocytu. Ryc. 6–1 z podpisem w wyd. 15, obrazy po obróbce. Przedmowa wyd.
+16, historia książki. Rozdział 6 · Wyd. 15 · Przedmowa
+
+5. Paul A. Samuelson, William D. Nordhaus, Economics, wyd. 19
+Rozdział 1, tabela 1–1 i rycina 1–2. Przejście od dwóch dóbr do granicy możliwości produkcyjnych. Tekst
+wydania
+
+6. MIT News, Nobel-winning economist Paul A. Samuelson dies at age 94, 2009
+Historia kursu i oszacowanie sprzedaży podręcznika. MIT
+
+7. McNamara, Kintsch, Songer i Kintsch, 1996. Are Good Texts Always Better?
+Cognition and Instruction 14. Spójność tekstu, wiedza wcześniejsza i sposób mierzenia rozumienia. Artykuł
+
+8. Gentner, Loewenstein i Thompson, 2003. Learning and Transfer
+Journal of Educational Psychology 95. Porównywanie przypadków w nauce negocjacji. Artykuł autorów
+
+9. Kirsten R. Butcher, 2006. Learning from Text with Diagrams
+Journal of Educational Psychology 98. Różne typy diagramu w nauce o układzie krążenia. Publikacja
+
+10. Michelene Chi i Ruth Wylie, 2014. The ICAP Framework
+Educational Psychologist 49. Ramy teoretyczne zaangażowania poznawczego i obserwowalne czynności
+ucznia. Artykuł
+
+11. George Gopen i Judith Swan, 1990. The Science of Scientific Writing
+American Scientist 78. Analiza retoryczna dotycząca rozmieszczenia informacji znanej i nowej. Tekst autorów
+
+12. Henry L. Roediger III i Jeffrey D. Karpicke, 2006. Test-Enhanced Learning
+Psychological Science 17. Porównanie odtwarzania tekstu z pamięci z ponownym czytaniem przy różnych
+odstępach do pomiaru. Artykuł
+
+
+
+
+Jak napisać podręcznik / Warsztat autora                                                                 12 / 12
+
