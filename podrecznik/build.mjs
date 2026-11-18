@@ -319,7 +319,10 @@ try {
   /* ---------- kontrola wydruku: białe dziury, wystające elementy ---------- */
   const startPages = new Set(prep.sections.map((s) => pageOf[s.id]).filter(Boolean));
   const bodyText = bodyTexts(finalPdf);
-  const holes = inkCheck(finalPdf, fin.pages, prep.hasCover, startPages, bodyText);
+  // strony rozdziałów (kontrola pustych kolumn tylko tam): od strony rozdziału do strony następnej sekcji innego rodzaju
+  const secStarts = prep.sections.filter((s) => pageOf[s.id]).map((s) => [pageOf[s.id], s.kind]).sort((a, b) => a[0] - b[0]);
+  const isChapterPage = (p) => { let k = null; for (const [sp, kind] of secStarts) if (sp <= p) k = kind; return k === 'chapter' || k === 'part'; };
+  const holes = inkCheck(finalPdf, fin.pages, prep.hasCover, startPages, bodyText, { dests: info.dests, colInfo: prep.colInfo || {}, isChapterPage });
 
   /* ---------- czcionki ---------- */
   const fonts = execFileSync('pdffonts', [finalPdf], { encoding: 'utf8' });
@@ -359,7 +362,7 @@ try {
   const ne = uniq.filter((w) => w.level === 'error').length, nw = uniq.filter((w) => w.level === 'warn').length;
   log('');
   log(`Tryb: ${mode}${opt.only ? ' (rozdział ' + opt.only + ')' : ''} · rozdziałów: ${prep.stats.chapters} · rycin: ${prep.stats.figures} (z banku: ${prep.stats.bank}${prep.stats.raster ? `, PNG: ${prep.stats.raster}` : ''}${prep.stats.placeholders ? `, zaślepek: ${prep.stats.placeholders}` : ''}) · „Pojęcie”: ${prep.stats.notes} · ramek: ${prep.stats.boxes}`);
-  log(`Stron: ${fin.pages} · przebiegów: ${passes}${stable ? ' (numeracja stabilna)' : ' (NIESTABILNA)'} · kontrola stron sekcji: ${checked - bad}/${checked} OK · linków: ${fin.links} (martwych: ${fin.broken.length}) · zakładek: ${outline.reduce((s, o) => s + 1 + (o.children ? o.children.length : 0), 0)}`);
+  log(`Stron: ${fin.pages} · przebiegów: ${passes}${stable ? ' (numeracja stabilna)' : ' (NIESTABILNA)'} · kontrola stron sekcji: ${checked - bad}/${checked} OK · linków: ${fin.links} (martwych: ${fin.broken.length}) · zakładek: ${(function cnt(a) { return a.reduce((s, o) => s + 1 + cnt(o.children || []), 0); })(outline)}`);
   if (holes.length) log(`Strony z dużą białą przestrzenią: ${holes.join(', ')}`);
   log(`Czcionki: ${fontNames.join(', ')}`);
   log(`PDF: ${finalPdf} (${(fs.statSync(finalPdf).size / 1024).toFixed(0)} KB)`);
@@ -388,8 +391,15 @@ function emptyPages(pdf, hasCover) {
   return out;
 }
 
-/* Kontrola „atramentu” na stronach: render 36 dpi w skali szarości (PGM). */
-function inkCheck(pdf, nPages, hasCover, startPages, bodyText) {
+/* Kontrola „atramentu” na stronach: render 36 dpi w skali szarości (PGM).
+   Tło stron jest lekko zielone (gradient, zob. @page w style.css), więc „atrament” liczymy względem tła
+   w danym wierszu (szacowanego z lewego i prawego marginesu kartki), a nie względem bieli.
+   1. zapełnienie: najniższy atrament w polu zadruku (strona < 35 % = dziura),
+   2. puste / nierówne kolumny: pasy tekstu dwukolumnowego (między elementami na obie kolumny – te mają
+      atrament w odstępie między kolumnami); w pasie jedna kolumna bez tekstu albo kończąca się dużo wyżej
+      niż druga (np. ramka lub punkt listy nie zmieściły się i przeszły dalej, a pod pasem stoi rycina),
+   3. elementy wystające poza pole zadruku. */
+function inkCheck(pdf, nPages, hasCover, startPages, bodyText, ctx = {}) {
   fs.rmSync(checkDir, { recursive: true, force: true });
   fs.mkdirSync(checkDir, { recursive: true });
   const DPI = 36;
@@ -398,39 +408,99 @@ function inkCheck(pdf, nPages, hasCover, startPages, bodyText) {
   const mm = DPI / 25.4;
   const X0 = Math.round(15.5 * mm), X1 = Math.round(194.5 * mm), Y0 = Math.round(22 * mm), Y1 = Math.round(272 * mm);
   const FOOT = Math.round(279 * mm);
+  // kolumny: 86,25 mm + odstęp 6,5 mm + 86,25 mm; „odstęp” do wykrywania elementów na obie kolumny – bez 0,8 mm z każdej strony
+  const CL1 = Math.round((15.5 + 86.25) * mm) - 1, CR0 = Math.round((15.5 + 86.25 + 6.5) * mm) + 1;
+  const GL = Math.round((15.5 + 86.25 + 0.8) * mm), GR = Math.round((15.5 + 86.25 + 6.5 - 0.8) * mm);
   const holes = [];
+  const ids = Object.keys(ctx.colInfo || {});
+  const AREA_TOP = 841.89; // cel w PDF Chromium: góra pola zadruku (zob. lib/pdftool.py)
   files.forEach((f, idx) => {
     const pno = idx + 1;
     if (hasCover && pno === 1) return;
     const { w, h, data } = readPgm(path.join(checkDir, f));
     const px = (x, y) => data[y * w + x];
+    // tło wiersza: najjaśniejszy piksel marginesu z lewej i z prawej, między nimi liniowo
+    const bgL = new Float32Array(h), bgR = new Float32Array(h);
+    for (let y = 0; y < h; y++) {
+      let a = 0, b = 0;
+      for (let x = 1; x < X0 - 6; x++) a = Math.max(a, px(x, y));
+      for (let x = X1 + 6; x < w - 1; x++) b = Math.max(b, px(x, y));
+      bgL[y] = a; bgR[y] = b;
+    }
+    const bg = (x, y) => bgL[y] + (bgR[y] - bgL[y]) * (x / w);
+    const ink = (x, y, d = 9) => px(x, y) < bg(x, y) - d;
     let lowest = -1;
-    for (let y = Y1; y >= Y0 && lowest < 0; y--) for (let x = X0; x < X1; x++) if (px(x, y) < 246) { lowest = y; break; }
+    for (let y = Y1; y >= Y0 && lowest < 0; y--) for (let x = X0; x < X1; x++) if (ink(x, y)) { lowest = y; break; }
     const fill = lowest < 0 ? 0 : (lowest - Y0) / (Y1 - Y0);
     const isEnd = startPages.has(pno + 1) || pno === nPages;
     const pct = Math.round(fill * 100);
     const noText = bodyText && !(bodyText[idx] || '').trim();
+    let hole = false;
     if (lowest < 0 || (noText && fill < 0.35)) {
       // pusta strona (np. wymuszony podział strony przed pustym blokiem albo wyścig z ładowaniem czcionek)
       W.push({ level: 'warn', msg: `s. ${pno}: pusta strona – ${lowest < 0 ? 'nic poza paginą' : 'brak tekstu poza paginą'} (sprawdź break-before/after w okolicy; uruchom build ponownie, jeśli znika – zgłoś)` });
-      holes.push(pno);
+      hole = true;
     } else if (fill < 0.35) {
       if (isEnd) W.push({ level: 'info', msg: `s. ${pno}: zapełniona w ${pct}% (ostatnia strona sekcji – zwykle w porządku)` });
       else {
         // < 20% w środku sekcji: zwykle nie rycina, tylko kilka osieroconych wierszy (np. podział kolumn w złym miejscu)
         const why = fill < 0.2 ? 'prawie pusta strona w środku rozdziału – zwykle 1–3 wiersze osierocone przez łamanie; zgłoś, jeśli nie stoi za tym rycina/tabela' : 'duża biała dziura (zwykle rycina/tabela nie zmieściła się i przeszła na następną stronę)';
-        W.push({ level: 'warn', msg: `s. ${pno}: zapełniona tylko w ${pct}% – ${why}` }); holes.push(pno);
+        W.push({ level: 'warn', msg: `s. ${pno}: zapełniona tylko w ${pct}% – ${why}` }); hole = true;
       }
     } else if (fill < 0.6 && !isEnd) {
       W.push({ level: 'info', msg: `s. ${pno}: zapełniona w ${pct}% (biała przestrzeń na dole strony)` });
     }
+    // puste / nierówne kolumny (tylko strony rozdziałów)
+    if (lowest >= 0 && (!ctx.isChapterPage || ctx.isChapterPage(pno))) {
+      const bands = [];
+      let cur = null;
+      for (let y = Y0; y < Y1; y++) {
+        let g = false, l = false, r = false;
+        for (let x = GL; x < GR && !g; x++) if (ink(x, y)) g = true;
+        if (g) { if (cur) bands.push(cur); cur = null; continue; }
+        for (let x = X0; x < CL1 && !l; x++) if (ink(x, y)) l = true;
+        for (let x = CR0; x < X1 && !r; x++) if (ink(x, y)) r = true;
+        if (!cur) cur = { y0: y, y1: y, lt: -1, lb: -1, rt: -1, rb: -1 };
+        cur.y1 = y;
+        if (l) { if (cur.lt < 0) cur.lt = y; cur.lb = y; }
+        if (r) { if (cur.rt < 0) cur.rt = y; cur.rb = y; }
+      }
+      if (cur) bands.push(cur);
+      const toMm = (y) => (y - Y0) / mm;
+      for (const b of bands) {
+        if (b.lb < 0 && b.rb < 0) continue;
+        const top = Math.min(...[b.lt, b.rt].filter((v) => v >= 0));
+        const bot = Math.max(b.lb, b.rb);
+        if ((bot - top) / mm < 25) continue;
+        const emptyCol = b.lb < 0 ? 'lewa' : b.rb < 0 ? 'prawa' : null;
+        const diff = emptyCol ? (bot - top) / mm : Math.abs(b.lb - b.rb) / mm;
+        if (!emptyCol && diff < 70) continue;
+        const side = emptyCol || (b.lb < b.rb ? 'lewa' : 'prawa');
+        // ostatni element kolumn, który zaczyna się na tej stronie nad dolną krawędzią pasa
+        let last = null;
+        for (const id of ids) {
+          const d = ctx.dests && ctx.dests[id];
+          if (!d || d[0] !== idx || d[1] === null) continue;
+          if ((AREA_TOP - d[1]) * 25.4 / 72 <= toMm(bot) + 1) last = id;
+        }
+        const what = last ? ` – ostatni element w kolumnach: ${ctx.colInfo[last]}` : '';
+        W.push({
+          level: 'warn',
+          msg: emptyCol
+            ? `s. ${pno}: pusta ${side} kolumna obok ${Math.round(diff)} mm tekstu (${Math.round(toMm(top))}–${Math.round(toMm(bot))} mm od góry pola)${what} (zwykle ramka, tabela albo punkt listy nie dzieli się między kolumny, a pod spodem stoi rycina/tabela na obie kolumny – przenieś go wcześniej albo skróć)`
+            : `s. ${pno}: ${side} kolumna kończy się ${Math.round(diff)} mm wyżej niż druga${what} (element, który się nie dzieli – ramka, tabela, długi punkt listy – nie zmieścił się w kolumnie; przenieś go albo skróć)`,
+        });
+        hole = true;
+      }
+    }
+    if (hole) holes.push(pno);
     // wystające poza pole zadruku
     let side = 0, below = 0;
     for (let y = Y0; y < Y1; y++) {
-      for (let x = 0; x < X0 - 3; x++) if (px(x, y) < 236) side++;
-      for (let x = X1 + 3; x < w; x++) if (px(x, y) < 236) side++;
+      for (let x = 0; x < X0 - 3; x++) if (ink(x, y, 19)) side++;
+      for (let x = X1 + 3; x < w; x++) if (ink(x, y, 19)) side++;
     }
-    for (let y = Y1 + 3; y < FOOT && y < h; y++) for (let x = X0; x < X1; x++) if (px(x, y) < 236) below++;
+    for (let y = Y1 + 3; y < FOOT && y < h; y++) for (let x = X0; x < X1; x++) if (ink(x, y, 19)) below++;
     if (side > 3) W.push({ level: 'warn', msg: `s. ${pno}: coś wystaje poza boczny margines (pole zadruku 179 mm)` });
     if (below > 3) W.push({ level: 'warn', msg: `s. ${pno}: coś wystaje poza dolny margines (element wyższy niż strona?)` });
   });

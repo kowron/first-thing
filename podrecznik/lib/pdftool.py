@@ -78,11 +78,15 @@ def cmd_finalize(src, dst, meta_path):
         top = page_h if top is None else min(page_h, top + 18)
         return writer.add_outline_item(item['title'], idx, parent=parent, fit=Fit.xyz(left=0, top=top, zoom=None))
 
-    for it in meta.get('outline', []):
-        node = add(it)
+    def add_tree(item, parent=None):
+        # rozdział -> podrozdziały -> (część 2 ->) podrozdziały części 2
+        node = add(item, parent)
         if node is not None:
-            for ch in it.get('children', []) or []:
-                add(ch, node)
+            for ch in item.get('children', []) or []:
+                add_tree(ch, node)
+
+    for it in meta.get('outline', []):
+        add_tree(it)
     if meta.get('outline'):
         writer.page_mode = '/UseOutlines'
 

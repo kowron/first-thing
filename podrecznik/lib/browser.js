@@ -114,7 +114,7 @@
         if (!(rw > 0 && rh > 0)) warn(`${where(f)}: zaślepka bez poprawnego data-ratio (np. data-ratio="20:9") – przyjęto ${f.classList.contains('narrow') ? '1:1' : '20:9'}`);
         const [w, h] = rw > 0 && rh > 0 ? [rw, rh] : f.classList.contains('narrow') ? [1, 1] : [20, 9];
         if (!$(':scope > .ph', f)) {
-          const ph = html(`<div class="ph" style="aspect-ratio: ${w} / ${h}"><span class="ph-t">Miejsce na rycinę</span><span class="ph-s">w przygotowaniu · ${esc(f.dataset.ratio || `${w}:${h}`)} · ${f.classList.contains('narrow') ? '1 łam' : '2 łamy'}</span></div>`);
+          const ph = html(`<div class="ph" style="aspect-ratio: ${w} / ${h}"><span>Miejsce na rycinę (w przygotowaniu)</span></div>`);
           if (cap) cap.before(ph); else f.append(ph);
         }
         if (sec && sec.classList.contains('chapter')) stats.placeholders++;
@@ -127,7 +127,7 @@
         if (!im.hasAttribute('alt')) im.setAttribute('alt', title);
       }
       if (!$('.fig-label', f)) {
-        f.prepend(html(`<div class="fig-label"><span class="fig-num">Ryc. ${fn}</span>${esc(title)}${isPh ? '<span class="fig-ph">zaślepka</span>' : ''}</div>`));
+        f.prepend(html(`<div class="fig-label"><span class="fig-num">Ryc. ${fn}</span>${esc(title)}</div>`));
       }
       figMap[f.id] = { n: fn, title, ch: sec && sec.dataset.num };
       for (const p of $$('.panel', f)) {
