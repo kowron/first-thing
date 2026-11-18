@@ -11,7 +11,7 @@ Handoff dla agentów: `handoff/P-przepisanie.md`.
 | 1 | Z10 płeć | GOTOWE 18.11 (12 → 16 s.), commit 4d62c88 |
 | 2 | Z02 cykl komórkowy | GOTOWE 18.11 (13 → 19 s., 2 nowe ryc.) |
 | 2 | Z03 apoptoza | GOTOWE 18.11 (13 → 19 s., 1 nowa ryc.); rewizja B1–B13, C14–C24 wplecione |
-| 2 | Z04 kwasy nukleinowe | WZNOWIONY ~18:45 (plan + mapa k4/k5 w `stan/z04-v2.md`) |
+| 2 | Z04 kwasy nukleinowe | GOTOWE 18.11 (14 → 23 s.; wyjaśnienia z k4/k5 przywrócone; +1 ryc. z banku) |
 | 2 | Z05 PCR | WZNOWIONY ~19:00 (użytkownik: 3 agenci naraz; plan + mapa k5 w `stan/z05-v2.md`) |
 | 3 | Z11 biotechnologia | GOTOWE 18.11 (8 → 18 s., 2 nowe ryc.; przywrócone brakujące fakty Z); Drewa milczy o znakowaniu i wykrywaniu GMO |
 | 3 | G (Genomika) | uruchomiony ~19:15 (przywrócić wyjaśnienia z material/genomika.txt; cel 20–26 s.; stan w `stan/g-v2.md`) |
@@ -28,3 +28,8 @@ Kolejność: najpierw Z03 i Z11 (najbliżej końca), potem Z02, Z04, Z05; G na k
 ## 18.11, 18:09 – nowa decyzja użytkownika
 Maks. **2 agenci naraz**; gdy jeden skończy, wchodzi następny (bez przerywania w losowym momencie). Praca ciągła do resetu limitu 5 h o 20:19. Fable = advisor.
 Kolejka: Z03 + Z11 (wznowione 18:09, SendMessage do starych agentów) → Z02 → Z04 → Z05 → G.
+
+## Do zrobienia po zakończeniu przepisywania
+- Błąd składu `splitCols` (lib/browser.js): podział bloku dwukolumnowego wg pozycji z pierwszego przebiegu → kaskadowe prawie puste strony przed h3/rycinami (zgłaszali autorzy Z02, Z04). Naprawić w lib PO zakończeniu wszystkich agentów (nie w trakcie – ich układ jest dostrojony do obecnego zachowania).
+- Okładka i „Jak korzystać z podręcznika” – nadal szkice.
+- Ryciny z ChatGPT wg `RYCINY_do_ChatGPT.md` (Fable) – wkleić po otrzymaniu od użytkownika.
