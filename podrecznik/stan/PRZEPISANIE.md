@@ -14,7 +14,7 @@ Handoff dla agentów: `handoff/P-przepisanie.md`.
 | 2 | Z04 kwasy nukleinowe | GOTOWE 18.11 (14 → 23 s.; wyjaśnienia z k4/k5 przywrócone; +1 ryc. z banku) |
 | 2 | Z05 PCR | GOTOWE 18.11 (18 → 30 s.; wyjaśnienia z k5; +2 ryc. z banku) |
 | 3 | Z11 biotechnologia | GOTOWE 18.11 (8 → 18 s., 2 nowe ryc.; przywrócone brakujące fakty Z); Drewa milczy o znakowaniu i wykrywaniu GMO |
-| 3 | G (Genomika) | uruchomiony ~19:15 (przywrócić wyjaśnienia z material/genomika.txt; cel 20–26 s.; stan w `stan/g-v2.md`) |
+| 3 | G (Genomika) | GOTOWE 18.11 (14 → 26 s.; +1 ryc. z banku g-20) |
 | – | Z06 | gotowy (17.11) |
 
 Po zakończeniu każdego agenta: commit + push na `ccr-aabe67ae-lcr511`. Na koniec pełny build i PDF dla użytkownika.
@@ -54,8 +54,8 @@ Wynik: `rewizja/zNN-v2.md`; błędy A recenzent poprawia od razu w rozdziale. Ma
 
 | Krok | Stan |
 |---|---|
-| G – dokończenie przepisania | wznowiony 19:35 |
+| G – dokończenie przepisania | GOTOWE (14 → 26 s.) |
 | C1 plan Z03 (pilot) | uruchomiony 19:40 |
-| I – infrastruktura | po G |
+| I – infrastruktura | uruchomiony ~20:50 |
 | C2 wykonanie Z03 (pilot) | po C1 Z03 i I |
 | C1/C2 pozostałe: Z02, Z04, Z05, Z06, Z07, Z08, Z09, Z10, Z11, G | kolejno, po 2 agentów |
