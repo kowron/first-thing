@@ -38,8 +38,24 @@ Kolejka: Z03 + Z11 (wznowione 18:09, SendMessage do starych agentów) → Z02 �
 Wynik: `rewizja/zNN-v2.md`; błędy A recenzent poprawia od razu w rozdziale. Maks. 3 agenci naraz łącznie z autorem G.
 | Rozdział | Stan |
 |---|---|
-| Z05 | uruchomiony 18.11 ~19:45 (sprawdzić linie „Drewa s. 724/726” – spoza rozpiski, która ma tylko s. 725) |
-| Z08 | uruchomiony 18.11 ~19:45 (12:3:1, penetracja, zdania „dlaczego”) |
+| Z05 | PRZERWANY limitem 18.11 – nie wznawiać; kontrolę wierności przejmuje plan C1 (pkt 7) |
+| Z08 | PRZERWANY limitem 18.11 – nie wznawiać; przejmuje plan C1 (pkt 7) |
 | Z09 | czeka (gwiazdki w tab. 18.3) |
 | Z03, Z02, Z04, Z07, Z10, Z11 | czekają |
 | G | po zakończeniu przepisania |
+
+## 18.11, 20:30 – NOWA DECYZJA UŻYTKOWNIKA: dwie części w każdym rozdziale
+- Podręcznik ma zawierać WSZYSTKIE informacje z podanych źródeł (zakres zagadnień z rozpiski). Rozdział = część 1 (~70%, najważniejsze w pełni, reszta do zrozumienia) + przejście + część 2 „na piątkę” (~30%, rozszerzenie, mało rycin, dobre tłumaczenie). Ryciny bez zmian.
+- Czerwona ramka przed rozdziałami opartymi na starym podręczniku (Jorde ok. 2000/2001 → Z08, Z10; Twyman 2001 → Z07 – do potwierdzenia przez użytkownika).
+- Tło stron: leciutko zielone, przejście biały → zielony.
+- Ryciny z ChatGPT jutro – teraz zaślepki w miejscach z `RYCINY_do_ChatGPT.md`.
+- Role: Fable xhigh = plan i merytoryka (`handoff/C1-plan-czesci.md` → `plany/zNN-czesci.md`); Opus xhigh = wykonanie (`handoff/C2-wykonanie-czesci.md`); infrastruktura – Opus (`handoff/I-infrastruktura.md`).
+- Maks. 2 agenci naraz („pracuj spokojnie”). Kontrole wierności R2 (Z05, Z08) przerwane limitem – nie wznawiane; ich zadania przejmuje pkt 7 planu C1.
+
+| Krok | Stan |
+|---|---|
+| G – dokończenie przepisania | wznowiony 19:35 |
+| C1 plan Z03 (pilot) | uruchomiony 19:40 |
+| I – infrastruktura | po G |
+| C2 wykonanie Z03 (pilot) | po C1 Z03 i I |
+| C1/C2 pozostałe: Z02, Z04, Z05, Z06, Z07, Z08, Z09, Z10, Z11, G | kolejno, po 2 agentów |

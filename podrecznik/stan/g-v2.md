@@ -46,3 +46,4 @@ Odsyłacze z innych rozdz. do #c01: z06 (ddNTP – „szerzej w rozdz. o genomic
 - Kalibracja (build lustrzany w scratchpad/g2/mirror, nie liczę do 5): po h2 1–5 = 19 s., luki przed dużymi rycinami → g-07 USUNIĘTA ponownie (decyzja: miejsce; drabina opisana w tekście z przykładem 3′-TACGAT-5′). Reszta pisana oszczędniej.
 - h2 6 (bioinf, QC) – GOTOWE (lista etapów z „po co”; Przykład VAF 29/60 vs 80/1000; h3 id c01-glebokosc, c01-artefakty; ryc. g-17).
 - h2 7 (skutek) – GOTOWE (HGVS; tabela położenie; NMD + nowa z banku g-20; Przykład: 2 warianty nonsense; 4 mechanizmy + rachunek 1/16; SIFT/PolyPhen + tabela przywrócona; struktura; doświadczenie + Uwaga do źródła Western/ELISA).
+- h2 8 (znaczenie) + W60 – GOTOWE w wersji 1 (populacja AF, VAF/AF; bazy; ClinVar; walidacja; 5 klas, cis/trans, segregacja; Przykład 3 ramki od odczytu do klasy + zmiana warunku). Cały tekst gotowy – teraz kalibracja objętości i układu.
