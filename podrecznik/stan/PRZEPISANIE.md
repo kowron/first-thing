@@ -111,3 +111,5 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 - 19.11: C2 Z04 GOTOWE – 23 → 33 s. (cz. 1: 21 s., cz. 2: 12 s.); 9 błędów A poprawionych, skany sprawdzone. Uruchomiony C2 Z06.
 - 19.11: C2 Z05 GOTOWE – 30 → 35 s. (cz. 1: 27 s., cz. 2: 8 s.); fakty spoza rozpiski usunięte; 8 miejsc na skanie zgodnych. Karta ryciny 5: „mRNA (tylko eksony)” → „mRNA”. Uruchomiony C2 Z07.
 - 19.11: C2 Z06 GOTOWE – 20 → 24 s. (cz. 1: 17 s., cz. 2: 7 s.); tab. 29.2 ze skanu; skany: przesunięcie +25 w tej części Drewy. Uruchomiony C2 Z08.
+- 19.11: C2 Z07 GOTOWE – 17 → 22 s. (cz. 1: 14 s., cz. 2: 8 s.); ramka Twyman; skany 6/7 zgodne. Aksolotl – pół zdania wg rozpiski (jak Bar/Chironomus w Z08).
+- 19.11: UŻYTKOWNIK: po zakończeniu bieżących prac (Z07, Z08) – STOP. Następna sesja: C2 Z09, Z10, Z11, G (plany gotowe), potem pełny build, ryciny z ChatGPT.
