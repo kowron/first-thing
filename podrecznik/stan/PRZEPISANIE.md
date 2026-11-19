@@ -83,6 +83,7 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 | spis rycin | Fable | 257 tys. |
 | infrastruktura | Opus | 476 tys. |
 | plan Z04 (C1 v2, oszczędny) | Fable | 293 tys. (13 wywołań, plan 19 KB) |
+| wykonanie Z03 (C2, pilot) | Opus | 405 tys. (92 wywołania) |
 
 ## 19.11 rano – wdrożona naprawa kosztów planowania
 - `narzedzia/pakiet.py` → `pakiety/zNN.txt` (04–11, 01): 40–85 tys. tokenów na pakiet (rozpiska, mapa, T z wyciągu, tekst rozdziału bez SVG, źródła przycięte do zakresu).
@@ -94,3 +95,4 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 - 19.11: C1 v2 Z04 gotowy (293 tys. tokenów vs 480–550 tys. wcześniej). Uruchomiony C1 v2 Z05 (Fable).
 
 - 19.11: UŻYTKOWNIK ZGODA – Fable (plany C1) na wysiłku **high** zamiast xhigh, od kolejnego planu (Z05 już uruchomiony na xhigh – dokończy).
+- 19.11: C2 Z03 (pilot) GOTOWE – 19 → 27 s. (cz. 1: 17 s., cz. 2: 10 s.); PDF dla użytkownika `Rozdzial_03_pilotaz_dwie_czesci.pdf`. CZEKAMY na ocenę pilotażu przed kolejnymi C2. Plany C1 idą dalej (Z05 xhigh, Z06 high).
