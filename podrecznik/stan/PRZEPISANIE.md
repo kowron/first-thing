@@ -110,3 +110,4 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 - 19.11: C2 Z02 GOTOWE – 19 → 29 s. (cz. 1: 19 s., cz. 2: 10 s.). Uruchomiony C2 Z05.
 - 19.11: C2 Z04 GOTOWE – 23 → 33 s. (cz. 1: 21 s., cz. 2: 12 s.); 9 błędów A poprawionych, skany sprawdzone. Uruchomiony C2 Z06.
 - 19.11: C2 Z05 GOTOWE – 30 → 35 s. (cz. 1: 27 s., cz. 2: 8 s.); fakty spoza rozpiski usunięte; 8 miejsc na skanie zgodnych. Karta ryciny 5: „mRNA (tylko eksony)” → „mRNA”. Uruchomiony C2 Z07.
+- 19.11: C2 Z06 GOTOWE – 20 → 24 s. (cz. 1: 17 s., cz. 2: 7 s.); tab. 29.2 ze skanu; skany: przesunięcie +25 w tej części Drewy. Uruchomiony C2 Z08.
