@@ -86,6 +86,7 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 | wykonanie Z03 (C2, pilot) | Opus | 405 tys. (92 wywołania) |
 | plan Z05 (C1 v2, xhigh) | Fable | 244 tys. (10 wywołań, plan 20 KB) |
 | plan Z06 (C1 v2, high) | Fable | 201 tys. (12 wywołań, plan 19 KB) |
+| plan Z07 (C1 v2, high) | Fable | 177 tys. (9 wywołań, plan 19 KB) |
 
 ## 19.11 rano – wdrożona naprawa kosztów planowania
 - `narzedzia/pakiet.py` → `pakiety/zNN.txt` (04–11, 01): 40–85 tys. tokenów na pakiet (rozpiska, mapa, T z wyciągu, tekst rozdziału bez SVG, źródła przycięte do zakresu).
@@ -98,3 +99,4 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 
 - 19.11: UŻYTKOWNIK ZGODA – Fable (plany C1) na wysiłku **high** zamiast xhigh, od kolejnego planu (Z05 już uruchomiony na xhigh – dokończy).
 - 19.11: C2 Z03 (pilot) GOTOWE – 19 → 27 s. (cz. 1: 17 s., cz. 2: 10 s.); PDF dla użytkownika `Rozdzial_03_pilotaz_dwie_czesci.pdf`. CZEKAMY na ocenę pilotażu przed kolejnymi C2. Plany C1 idą dalej (Z05 xhigh, Z06 high).
+- 19.11: czerwona ramka „stare źródło” – decyzja szefa: Z07 (Twyman 2001), Z08, Z10 (Jorde ok. 2000).
