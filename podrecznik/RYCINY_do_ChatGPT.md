@@ -61,7 +61,7 @@ Potwierdź krótko, że zasady są jasne, i czekaj na opis ryciny 1.
 
 | nr | rozdział | gdzie wstawić (id podrozdziału → miejsce) | tytuł ryciny (`data-title`) | szerokość | proporcje (px) |
 |---|---|---|---|---|---|
-| 1 | G – Genomika | `#c01-ngs`, h3 „Panel, eksom, genom” → po akapicie zaczynającym się od „Zakres i technologia to osobne decyzje.” | Panel, eksom, genom – co zostaje odczytane | 2 łamy | 20:9 (2400 × 1080) |
+| 1 | G – Genomika | `#c01-strategia` → przed tabelą strategii (zaślepka już stoi) | Panel, eksom, genom – co zostaje odczytane | 2 łamy | 20:9 (2400 × 1080) |
 | 2 | 2 – Cykl komórkowy | `#c02-sg2`, h3 „Jak komórka kończy podział? Kompleks promujący anafazę” → po liście czterech zadań APC/C, przed akapitem „Ostatni punkt łączy się z jednym z pytań…” | Cztery zadania kompleksu APC/C | 2 łamy | 20:9 (2400 × 1080) |
 | 3 | 3 – Apoptoza | `#c03-szlaki`, h3 „Szlak wewnętrzny: sygnał powstaje w komórce” → po akapicie zaczynającym się od „Porównaj oba szlaki.” | DISC i apoptosom – która domena łączy się z którą | 2 łamy | 20:9 (2400 × 1080) |
 | 4 | 4 – Kwasy nukleinowe | `#c04-replikacja`, h3 „Jak replikacja unika błędów? Korekta” → po akapicie zaczynającym się od „Polimeraza na bieżąco sprawdza…” | Korekta: polimeraza cofa się i wycina błąd | 1 łam | 1:1 (1200 × 1200) |
@@ -82,7 +82,7 @@ Proporcje 20:9 (ok. 179 × 81 mm) i 1:1 (ok. 86 × 86 mm) mieszczą się w limic
 
 ### Rycina 1 · Rozdział G (Genomika)
 
-- **Miejsce:** `#c01-ngs` (h2 „Technologie sekwencjonowania i strategia badania”), h3 „Panel, eksom, genom” – po akapicie zaczynającym się od „Zakres i technologia to osobne decyzje.”, przed tabelą strategii.
+- **Miejsce:** `#c01-strategia` – przed tabelą strategii (zaślepka `c01-fig-zakres` już stoi w rozdziale).
 - **id:** `c01-fig-zakres` · **Tytuł:** Panel, eksom, genom – co zostaje odczytane · **2 łamy, 20:9**
 - **Po co:** student ma zobaczyć na jednym odcinku DNA, że trzy strategie różnią się *zakresem*: panel czyta wybrane geny, WES – eksony wszystkich genów (ok. 1–2% genomu), WGS – także regiony niekodujące. Wniosek: wynik ujemny znaczy tyle, ile obejmował zakres.
 

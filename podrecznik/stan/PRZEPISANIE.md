@@ -123,3 +123,4 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 - 19.11 wieczór: C2 Z11 GOTOWE – 18 → 27 s. (cz. 1: 18 s., cz. 2: 9 s.). Z09, Z10 w toku; po nich STOP (G czeka na znak użytkownika).
 - 19.11 wieczór: C2 Z10 GOTOWE – 16 → 24 s. (cz. 1: 16 s., cz. 2: 8 s.); Jorde wg wyd. 2000 + ramka; skan s. 459: liczby Y sprzeczne w druku – ramka „uwaga” zostaje łagodna.
 - 19.11 wieczór: C2 Z09 GOTOWE – 24 → 31 s. (cz. 1: 21 s., cz. 2: 10 s.). STOP – został tylko G (C2 wg `plany/z01-czesci.md`, karta ryciny 1), potem pełny build i ryciny z ChatGPT. Czekamy na znak użytkownika.
+- 19.11 wieczór: C2 G GOTOWE – 26 → 37 s. (cz. 1: 25 s., cz. 2: 12 s.). PEŁNY BUILD: 335 s., 0 błędów, 0 uwag, 94 ryciny (12 zaślepek). PDF wysłany użytkownikowi. ZOSTAJE: (1) ryciny z ChatGPT → `ryciny/cNN-fig-….png` w miejsce 12 zaślepek; (2) rewizja/sprawdzenie błędów nowego tekstu (części 2) i redakcja całości – DOPIERO na znak użytkownika.
