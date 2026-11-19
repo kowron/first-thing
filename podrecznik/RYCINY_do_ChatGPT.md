@@ -261,7 +261,7 @@ RYCINA 5. Format: 2 łamy, 2400 × 800 px (3:1). Jeden poziomy ciąg czterech et
 
 KONWENCJA KOLORÓW: RNA – ochra #b77a20 (linia falista); DNA – niebieski #4387b7 (linia prosta); genomowe DNA – szary #9aa59f.
 
-ETAP 1 (zielone kółko z „1”) – w kaflu (#f0f4f1): jedna falista linia w kolorze ochry z etykietą „mRNA (tylko eksony)” oraz obok krótki szary odcinek podwójnej linii z etykietą „genomowe DNA”. Tytuł pod kaflem: „RNA po izolacji”.
+ETAP 1 (zielone kółko z „1”) – w kaflu (#f0f4f1): jedna falista linia w kolorze ochry z etykietą „mRNA” oraz obok krótki szary odcinek podwójnej linii z etykietą „genomowe DNA”. Tytuł pod kaflem: „RNA po izolacji”.
 
 Strzałka 1→2; nad strzałką małe czerwone nożyczki lub czerwony znak „✕” na szarym odcinku i napis „DNaza”.
 
@@ -280,7 +280,7 @@ ETAP 4 (kółko „4”) – w kaflu: wiele (ok. 8) krótkich jednakowych niebie
 KLAMRY NAD CIĄGIEM: krótsza klamra nad etapami 2–3 z napisem „RT”; dłuższa klamra nad etapami 2–4 z napisem „RT-PCR”.
 
 PEŁNA LISTA ETYKIET (dokładnie tak):
-1 · 2 · 3 · 4 · mRNA (tylko eksony) · genomowe DNA · RNA po izolacji · DNaza · starter · odwrotna transkryptaza · odwrotna transkrypcja (RT) · cDNA · DNA komplementarne do RNA · PCR · jakościowy PCR – wykrycie transkryptu · PCR w czasie rzeczywistym – poziom ekspresji genu · RT · RT-PCR
+1 · 2 · 3 · 4 · mRNA · genomowe DNA · RNA po izolacji · DNaza · starter · odwrotna transkryptaza · odwrotna transkrypcja (RT) · cDNA · DNA komplementarne do RNA · PCR · jakościowy PCR – wykrycie transkryptu · PCR w czasie rzeczywistym – poziom ekspresji genu · RT · RT-PCR
 
 NIE RYSUJ: probówek, termocyklera, wykresów, trzech rodzajów starterów (oligo(dT), heksamery, GSP), ogona poli(A), czapeczki, wirusów, temperatur ani liczby cykli.
 ```

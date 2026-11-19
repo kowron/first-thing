@@ -109,3 +109,4 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 - 19.11: WSZYSTKIE PLANY GOTOWE (Z02–Z11, G). Czekamy na ocenę pilotażu Z03 przez użytkownika; potem C2 (Opus xhigh) po 2 naraz: Z02, Z04, Z05, Z06, Z07, Z08, Z09, Z10, Z11, G.
 - 19.11: C2 Z02 GOTOWE – 19 → 29 s. (cz. 1: 19 s., cz. 2: 10 s.). Uruchomiony C2 Z05.
 - 19.11: C2 Z04 GOTOWE – 23 → 33 s. (cz. 1: 21 s., cz. 2: 12 s.); 9 błędów A poprawionych, skany sprawdzone. Uruchomiony C2 Z06.
+- 19.11: C2 Z05 GOTOWE – 30 → 35 s. (cz. 1: 27 s., cz. 2: 8 s.); fakty spoza rozpiski usunięte; 8 miejsc na skanie zgodnych. Karta ryciny 5: „mRNA (tylko eksony)” → „mRNA”. Uruchomiony C2 Z07.

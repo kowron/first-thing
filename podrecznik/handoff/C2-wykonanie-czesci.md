@@ -7,6 +7,8 @@ Zleceniodawca postanowił, że podręcznik ma zawierać **wszystkie informacje z
 - **część 2 – „na piątkę”** (ok. 30%) – rozszerzenie: szczegóły i informacje, których w części 1 nie ma. Mało rycin (żadnych nowych), dobre tłumaczenie, funkcja użytkowa.
 Plan merytoryczny przygotował Fable: `plany/zNN-czesci.md` – **co gdzie idzie, z pełną treścią faktów do dopisania i stronami źródła**. Ty przebudowujesz plik i piszesz tekst. Źródeł nie czytasz (wyjątek: gdy plan jest niejasny albo fakt wygląda podejrzanie – wtedy sprawdź jedno miejsce i zanotuj).
 
+**Skany Drewy:** przesunięcie stron w skanie nie jest stałe (+25 … +28 – sprawdź numer wydrukowany na wyrenderowanej stronie, zanim wyciągniesz wniosek).
+
 ## Przeczytaj
 1. `STYL.md` – całe (tak samo piszesz część 2: definicja przed użyciem, po co → co → jak, każdy krok wynika z poprzedniego, nic nie wzmacniasz).
 2. `KOMPONENTY.md` – zwłaszcza sekcję o części 2, przejściu, ramce „stare źródło” i zaślepce ryciny.

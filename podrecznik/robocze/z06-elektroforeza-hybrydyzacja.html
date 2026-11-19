@@ -1,0 +1,965 @@
+<section class="chapter" data-num="06" data-title="Elektroforeza, hybrydyzacja, sekwencjonowanie i identyfikacja genetyczna"
+  data-short="Elektroforeza, hybrydyzacja, sekwencjonowanie" data-kicker="Żele · sondy · bloty · mikromacierze · sekwencjonowanie · STR · ojcostwo">
+
+  <p class="lead">Masz w probówce DNA. Jak sprawdzić, jakiej wielkości są jego fragmenty? Jak znaleźć wśród miliona fragmentów ten jeden, który cię interesuje? Jak przeczytać jego sekwencję, litera po literze? I jak, mając plamkę krwi, powiedzieć, do kogo należy? Ten rozdział odpowiada na te pytania po kolei – każda metoda buduje na poprzedniej.</p>
+
+  <!-- ============ 1 ============ -->
+  <h2 id="c06-elektroforeza">Elektroforeza kwasów nukleinowych</h2>
+  <h3>Po co rozdzielać DNA w żelu?</h3>
+  <p>DNA w probówce to bezbarwny roztwór. Nie widać, czy jest go dużo, czy mało, czy cząsteczki są całe, czy porwane na kawałki, ani jak długie są fragmenty, które właśnie namnożyliśmy albo pocięliśmy. Elektroforeza pozwala to wszystko <b>zobaczyć</b>: rozkłada cząsteczki według wielkości, tak że układają się w widoczne prążki. To najczęściej używane „oko” laboratorium biologii molekularnej.</p>
+  <p>(Zanim zaczniemy, zwykle mierzy się też ilość i czystość DNA spektrofotometrem – o tym w <a class="chapref" href="#c04"></a>.)</p>
+
+  <h3>Dlaczego DNA wędruje w żelu?</h3>
+  <p>W buforze o pH zbliżonym do obojętnego kwasy nukleinowe mają <b>ładunek ujemny</b> (niosą go reszty fosforanowe szkieletu). Ujemną cząsteczkę ciągnie biegun dodatni. Gdy więc umieścimy DNA w żelu i włączymy prąd, DNA i RNA wędrują <b>zawsze od katody (–) do anody (+)</b>.</p>
+  <p>Ale skoro wszystkie fragmenty ciągnie ta sama siła, to czemu się rozdzielają? Bo żel to gęsta sieć porów, która stawia opór. Krótki fragment przeciska się przez pory łatwo i szybko zachodzi daleko. Długi co chwilę się zaczepia i zostaje w tyle. Po pewnym czasie fragmenty o tej samej długości zbierają się w jednym miejscu i tworzą <b>prążek</b>. Największe prążki są blisko startu, najmniejsze – najdalej.</p>
+  <div class="box obraz"><p>Żel to gęste zarośla, a fragmenty DNA to biegacze, których wszystkich ciągnie ta sama meta. Drobny biegacz prześlizguje się między gałęziami, wielki co chwilę się zaczepia. Po kilkudziesięciu minutach biegacze stoją w kolejności od najmniejszego (najdalej) do największego (przy starcie).</p></div>
+  <p>Ile wolno dać napięcia? W praktyce <b>5–8 V na każdy 1 cm</b> długości żelu. Więcej nie znaczy lepiej: zbyt wysokie napięcie podgrzewa żel – może się roztopić, a DNA ulec denaturacji (rozpleść się).</p>
+
+  <h3>Dwa cele: coś wyjąć albo czegoś się dowiedzieć</h3>
+  <ul>
+    <li><b>Elektroforeza preparatywna</b> – chcemy coś z żelu <b>wyjąć</b>. Rozdzielamy mieszaninę, wycinamy z żelu prążek z potrzebnym fragmentem i wymywamy go z żelu (to wymywanie to <b>elucja</b>). Czysty fragment idzie do dalszej pracy.</li>
+    <li><b>Elektroforeza analityczna</b> – chcemy się czegoś <b>dowiedzieć</b> o preparacie. Patrzymy na żel i wyciągamy wnioski.</li>
+  </ul>
+
+  <h3>Co da się odczytać z żelu analitycznego?</h3>
+  <p>Cztery rzeczy (<a class="figref" href="#c06-fig-zel"></a>):</p>
+  <ol>
+    <li><b>Wielkość fragmentów.</b> Sam prążek nie mówi, ile ma par zasad. Dlatego obok próbek puszcza się <b>wzorzec mas cząsteczkowych</b> – mieszaninę fragmentów DNA o znanych wielkościach. Wzorzec tworzy w żelu „drabinkę” prążków, która działa jak linijka: jeśli nasz prążek leży na wysokości prążka wzorca 500 pz, to nasz fragment też ma ok. 500 pz.</li>
+    <li><b>Ilość DNA.</b> Barwnik świeci tym mocniej, im więcej DNA jest w prążku. Porównując jasność naszego prążka z prążkiem wzorcowym o znanej ilości, szacujemy, ile mamy DNA.</li>
+    <li><b>Degradację.</b> Całe DNA daje ostry prążek. DNA, które się rozpadło, to mieszanina kawałków o przypadkowej długości – każdy zatrzymuje się gdzie indziej, więc zamiast prążka widać rozmytą <b>smugę</b>.</li>
+    <li><b>Zanieczyszczenia.</b> Białka tworzą z DNA duże kompleksy, które w ogóle nie mieszczą się w porach i <b>zostają w kieszonkach</b> (studzienkach, do których nakłada się próbkę). RNA zanieczyszczające preparat DNA daje smugę biegnącą <b>przed błękitem bromofenolowym</b> – czyli bardzo daleko, bo to małe cząsteczki.</li>
+  </ol>
+
+  <figure class="fig" id="c06-fig-zel" data-title="Jak czytać żel analityczny">
+
+    <div class="panel">
+      <svg viewBox="0 0 640 214" role="img" aria-label="Żel z wzorcem i pięcioma ścieżkami ilustrującymi różne wyniki">
+        <defs>
+          <linearGradient id="c06-smuga-dol" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#007e83" stop-opacity=".55"/><stop offset="1" stop-color="#007e83" stop-opacity=".12"/></linearGradient>
+          <linearGradient id="c06-smuga-rna" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7867a8" stop-opacity=".15"/><stop offset=".5" stop-color="#7867a8" stop-opacity=".6"/><stop offset="1" stop-color="#7867a8" stop-opacity=".15"/></linearGradient>
+        </defs>
+        <text x="84" y="14" class="lane-label">M</text><text x="140" y="14" class="lane-label">1</text><text x="196" y="14" class="lane-label">2</text>
+        <text x="252" y="14" class="lane-label">3</text><text x="308" y="14" class="lane-label">4</text><text x="364" y="14" class="lane-label">5</text>
+        <text x="40" y="34" class="pole minus">–</text>
+        <rect x="56" y="22" width="336" height="186" rx="7" class="gel"/>
+        <g class="well"><rect x="70" y="32" width="28" height="7" rx="1.5"/><rect x="126" y="32" width="28" height="7" rx="1.5"/><rect x="182" y="32" width="28" height="7" rx="1.5"/><rect x="238" y="32" width="28" height="7" rx="1.5"/><rect x="294" y="32" width="28" height="7" rx="1.5"/><rect x="350" y="32" width="28" height="7" rx="1.5"/></g>
+        <g class="band ladder"><rect x="71" y="52" width="26" height="4" rx="2"/><rect x="71" y="66" width="26" height="4" rx="2"/><rect x="71" y="82" width="26" height="4" rx="2"/><rect x="71" y="100" width="26" height="4" rx="2"/><rect x="71" y="120" width="26" height="4" rx="2"/><rect x="71" y="142" width="26" height="4" rx="2"/><rect x="71" y="164" width="26" height="4" rx="2"/></g>
+        <text x="50" y="58" class="size-label">duże</text><text x="50" y="169" class="size-label">małe</text>
+        <rect x="127" y="56" width="26" height="6" rx="2" class="band"/>
+        <rect x="183" y="56" width="26" height="6" rx="2" class="band faint"/>
+        <rect x="239" y="54" width="26" height="5" rx="2" class="band faint"/>
+        <rect x="240" y="60" width="24" height="122" rx="6" fill="url(#c06-smuga-dol)"/>
+        <rect x="294" y="32" width="28" height="9" rx="2" class="band ochre"/>
+        <rect x="295" y="56" width="26" height="6" rx="2" class="band"/>
+        <rect x="351" y="56" width="26" height="6" rx="2" class="band"/>
+        <rect x="351" y="178" width="26" height="24" rx="6" fill="url(#c06-smuga-rna)"/>
+        <line x1="64" y1="174" x2="384" y2="174" stroke="#4387b7" stroke-width="1.6" stroke-dasharray="5 3"/>
+        <text x="108" y="190" class="t-xs f-blue sb">błękit bromofenolowy</text>
+        <text x="40" y="206" class="pole plus">+</text>
+        <path d="M410,44 V200" class="arrow"/>
+        <text x="420" y="122" class="t-xs muted mid" transform="rotate(90 420 122)">kierunek wędrówki</text>
+        <g transform="translate(446,36)">
+          <g class="step"><circle r="9"/><text y="3.8">1</text></g>
+          <text x="16" y="4" class="t-s sb">ostry prążek wysoko</text><text x="16" y="17" class="t-xs muted">preparat nienaruszony</text>
+          <g class="step" transform="translate(0,35)"><circle r="9"/><text y="3.8">2</text></g>
+          <text x="16" y="39" class="t-s sb">ten sam prążek, słabszy</text><text x="16" y="52" class="t-xs muted">mniej DNA (porównanie ze wzorcem)</text>
+          <g class="step" transform="translate(0,70)"><circle r="9"/><text y="3.8">3</text></g>
+          <text x="16" y="74" class="t-s sb">smuga wzdłuż ścieżki</text><text x="16" y="87" class="t-xs muted">degradacja (różne długości)</text>
+          <g class="step" transform="translate(0,105)"><circle r="9"/><text y="3.8">4</text></g>
+          <text x="16" y="109" class="t-s sb">świecenie w kieszonce</text><text x="16" y="122" class="t-xs muted">kompleksy DNA–białko</text>
+          <g class="step" transform="translate(0,140)"><circle r="9"/><text y="3.8">5</text></g>
+          <text x="16" y="144" class="t-s sb">smuga przed błękitem</text><text x="16" y="157" class="t-xs muted">RNA w preparacie DNA</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>M – wzorzec mas cząsteczkowych (im niżej prążek, tym mniejszy fragment); 1–5 – typowe wyniki opisane po prawej.</figcaption>
+  </figure>
+
+  <h3>A jak wygląda w żelu RNA?</h3>
+  <p>Gdy rozdzielimy całe RNA komórki (tzw. całkowite RNA), najlepiej widać <b>rybosomalne RNA</b> – bo w komórce jest go najwięcej. Jego wielkości są znane, więc prążki rRNA same służą za linijkę: u człowieka <b>18S ma 1,9 kpz</b>, a <b>28S – 5,0 kpz</b>.</p>
+  <p>Te dwa prążki mówią też o jakości. Gdy RNA się rozkłada, prążki rRNA bledną i znikają – to sygnał <b>degradacji RNA</b>. A mRNA? Na takim żelu go nie zobaczysz. Jest go mało, a każdy gen daje mRNA innej długości – cząsteczki rozkładają się więc po całym żelu i nie składają się w żaden prążek.</p>
+
+  <h3>Jaki żel wybrać?</h3>
+  <aside class="note pojecie" data-term="Rozdzielczość"><p>zdolność żelu do rozdzielenia cząsteczek, które niewiele różnią się wielkością.</p></aside>
+  <p>Są dwa rodzaje żeli i każdy nadaje się do czegoś innego:</p>
+  <ul>
+    <li><b>żel agarozowy</b> ma duże pory – mieszczą się w nim <b>duże</b> cząsteczki, ale podobne wielkości rozróżnia słabo;</li>
+    <li><b>żel poliakrylamidowy</b> (PAA) ma pory drobne – nadaje się tylko do <b>małych</b> fragmentów, ale rozdziela je bardzo dokładnie, nawet z dokładnością do <b>jednego nukleotydu</b>.</li>
+  </ul>
+  <p>Każdy żel można dodatkowo przygotować w różnym stężeniu – tak, żeby najlepiej rozdzielał fragmenty, które nas w danym badaniu interesują.</p>
+  <table class="tbl full">
+    <thead><tr><th style="width:30%">Żel / metoda</th><th style="width:30%">Jakie fragmenty</th><th>Cechy</th></tr></thead>
+    <tbody>
+      <tr><td>agarozowy</td><td>0,1–20 kpz</td><td>niższa rozdzielczość niż PAA, ale znacznie większe cząsteczki</td></tr>
+      <tr><td>poliakrylamidowy</td><td>5–1000 pz</td><td>rozdział z dokładnością do jednego nukleotydu</td></tr>
+      <tr><td>pole pulsacyjne</td><td>20 kpz – 10 Mpz</td><td>nawet całe chromosomy, np. drożdżowe</td></tr>
+    </tbody>
+  </table>
+  <p>Cząsteczki większe niż ok. 20 kpz nie rozdzielą się już w zwykłym żelu agarozowym. Do nich służy <b>elektroforeza w polu pulsacyjnym</b>, w której pole elektryczne co chwilę zmienia kierunek. Rozdziela nawet ogromne cząsteczki – aż po całe chromosomy drożdży (jak to działa – <a class="pageref" href="#c06-r-elektroforeza"></a>).</p>
+
+  <h3>Jak zobaczyć DNA w żelu?</h3>
+  <aside class="note pojecie" data-term="Interkalacja"><p>wsunięcie się cząsteczki (np. bromku etydyny) między pary zasad dwuniciowego DNA.</p></aside>
+  <p>Prążki DNA są przezroczyste – trzeba je wybarwić. Sposoby:</p>
+  <ul>
+    <li><b>Bromek etydyny</b> – standard w żelach agarozowych. Wsuwa się między pary zasad (<b>interkaluje</b>) i w <b>świetle UV</b> silnie świeci. Ponieważ potrzebuje par zasad, dobrze barwi DNA dwuniciowe, a jednoniciowe, np. RNA – dużo słabiej. Wada: to <b>silny mutagen</b>.</li>
+    <li><b>Azotan srebra</b> (AgNO<sub>3</sub>) – barwnik czulszy, do żeli poliakrylamidowych.</li>
+    <li><b>SYBR</b> – barwnik fluorescencyjny dla dwuniciowego DNA. Nie jest toksyczny, więc może zastąpić bromek etydyny (czułość barwników i zastosowania SYBR – <a class="pageref" href="#c06-r-elektroforeza"></a>).</li>
+    <li><b>Autoradiografia</b> – DNA lub RNA znakuje się izotopem promieniotwórczym, który zostawia ślad na kliszy.</li>
+  </ul>
+
+  <h3>Elektroforeza kapilarna</h3>
+  <p>Zamiast płaskiego żelu można użyć cienkiej, długiej rurki – <b>kapilary kwarcowej</b>. To <b>elektroforeza kapilarna</b> (CE), zwana też elektroforezą w wolnym buforze. Rozdziela niewielkie cząsteczki kwasów nukleinowych sprawnie, wydajnie i powtarzalnie. To właśnie w kapilarach pracują automatyczne sekwenatory, o których będzie dalej.</p>
+  <p class="src">Źródło: Drewa s. 712–714</p>
+
+  <!-- ============ 2 ============ -->
+  <h2 id="c06-transfer">Transfer na nośnik</h2>
+  <h3>Po co przenosić DNA z żelu?</h3>
+  <p>Elektroforeza rozdzieliła fragmenty według wielkości, ale żel to delikatna galaretka. Trudno w niej przeprowadzić dalsze etapy – wielokrotne płukania, inkubacje z odczynnikami. Dlatego fragmenty przenosi się na <b>nośnik</b>: bibułę albo membranę, która trwale je wiąże i którą można bez obaw moczyć i płukać.</p>
+  <p>Przenosi się je tak, żeby zachować ich układ: co w żelu było wyżej, na membranie też jest wyżej. Membrana staje się wierną <b>odbitką żelu</b>.</p>
+
+  <h3>Trzy sposoby przeniesienia</h3>
+  <p>We wszystkich membranę kładzie się na żelu i trzeba „przepchnąć” cząsteczki z żelu do membrany. Różni je to, co je pcha (<a class="figref" href="#c06-fig-transfer"></a>):</p>
+  <ul>
+    <li><b>Elektrotransfer – pcha prąd.</b> W zwykłej elektroforezie prąd płynie <b>wzdłuż</b> żelu i rozciąga fragmenty w prążki. Tutaj płynie <b>w poprzek, przez grubość żelu</b>, więc wypycha fragmenty prosto na przyłożoną membranę.</li>
+    <li><b>Transfer kapilarny – pcha wsiąkający bufor.</b> Po jednej stronie membrany jest żel, po drugiej <b>warstwa higroskopijna</b> (chłonna, np. stos bibuły). Wciąga ona bufor przez żel i membranę – jak papierowy ręcznik wciąga wodę. Płynący bufor zabiera cząsteczki z żelu, a membrana je zatrzymuje.</li>
+    <li><b>Transfer „próżniowy” – pcha podciśnienie.</b> Ten sam przepływ buforu, tylko wymuszony zasysaniem.</li>
+  </ul>
+
+  <figure class="fig" id="c06-fig-transfer" data-title="Trzy sposoby transferu z żelu na membranę">
+
+    <div class="panel">
+      <svg viewBox="0 0 640 154" role="img" aria-label="Przekroje układów do elektrotransferu, transferu kapilarnego i próżniowego">
+        <g class="step" transform="translate(22,14)"><circle r="9"/><text y="3.8">1</text></g><text x="36" y="18" class="step-title">Elektrotransfer</text>
+        <g class="step" transform="translate(236,14)"><circle r="9"/><text y="3.8">2</text></g><text x="250" y="18" class="step-title">Transfer kapilarny</text>
+        <g class="step" transform="translate(450,14)"><circle r="9"/><text y="3.8">3</text></g><text x="464" y="18" class="step-title">Transfer próżniowy</text>
+        <line x1="212" y1="8" x2="212" y2="150" class="divider"/><line x1="426" y1="8" x2="426" y2="150" class="divider"/>
+        <rect x="24" y="44" width="140" height="10" rx="2" fill="#23323e"/><text x="172" y="53" class="t-l b">–</text>
+        <rect x="24" y="64" width="140" height="30" rx="3" class="gel"/><text x="94" y="88" class="t-xs mid muted">żel</text>
+        <rect x="24" y="94" width="140" height="12" class="membrane"/><text x="94" y="104" class="t-xs mid muted">membrana</text>
+        <rect x="24" y="116" width="140" height="10" rx="2" class="f-red"/><text x="172" y="125" class="t-l b f-red">+</text>
+        <g class="f-teal"><circle cx="54" cy="71" r="3"/><circle cx="94" cy="71" r="3"/><circle cx="134" cy="71" r="3"/></g>
+        <path d="M184,62 V108" class="arrow teal"/>
+        <rect x="238" y="44" width="140" height="40" rx="2" fill="#ffffff" stroke="#c9d3d9"/>
+        <path d="M238,54 H378 M238,64 H378 M238,74 H378" stroke="#e3e8ec" stroke-width="1"/>
+        <text x="308" y="68" class="t-xs mid sb">warstwa higroskopijna</text>
+        <rect x="238" y="84" width="140" height="12" class="membrane"/><text x="308" y="94" class="t-xs mid muted">membrana</text>
+        <rect x="238" y="96" width="140" height="30" rx="3" class="gel"/><text x="308" y="115" class="t-xs mid muted">żel</text>
+        <rect x="230" y="126" width="156" height="22" rx="3" class="f-blue-bg" stroke="#4387b7" stroke-width="1"/>
+        <text x="308" y="141" class="t-xs mid f-blue sb">bufor</text>
+        <path d="M398,142 V52" class="arrow teal"/>
+        <rect x="452" y="54" width="140" height="30" rx="3" class="gel"/><text x="522" y="73" class="t-xs mid muted">żel</text>
+        <rect x="452" y="84" width="140" height="12" class="membrane"/><text x="522" y="94" class="t-xs mid muted">membrana</text>
+        <rect x="444" y="96" width="156" height="52" rx="4" class="tile" stroke="#8a98a3" stroke-width="1"/>
+        <text x="522" y="118" class="t-xs mid sb">komora podciśnienia</text>
+        <path d="M522,124 V146" class="arrow navy"/>
+        <path d="M612,56 V140" class="arrow teal"/>
+      </svg>
+    </div>
+    <figcaption>1 – prąd płynie przez grubość żelu; 2 – warstwa higroskopijna przeciąga bufor przez żel i membranę; 3 – przepływ wymusza podciśnienie.</figcaption>
+  </figure>
+
+  <p>Mamy więc membranę z rozdzielonym DNA. Ale wszystkie fragmenty wyglądają na niej tak samo. Jak znaleźć ten jeden, którego szukamy? Odpowiedź to <b>hybrydyzacja z sondą</b> (<a class="pageref" href="#c06-hybrydyzacja"></a>).</p>
+  <p class="src">Źródło: Drewa s. 714</p>
+
+  <!-- ============ 3 ============ -->
+  <h2 id="c06-bialka">Elektroforeza białek</h2>
+  <div class="box uwaga"><p>Rozpiska przypisuje to zagadnienie podręcznikowi Jordego (s. 42–43), którego stron nie mieliśmy. Drewa wspomina o białkach tylko pobocznie, więc podstawy (ładunek białka, SDS-PAGE, HbA i HbS) podano skrótowo – trzeba je uzupełnić z Jordego.</p></div>
+  <h3>Dlaczego białka są trudniejsze niż DNA?</h3>
+  <p>DNA jest zawsze ujemne i zawsze biegnie do anody. Białko <b>nie ma stałego ładunku</b>. Zbudowane jest z aminokwasów, z których kwaśne niosą ładunek ujemny, a zasadowe – dodatni. Ładunek całego białka to ich suma, więc <b>zależy od tego, z jakich aminokwasów jest zbudowane, i od pH</b> buforu. W jednym żelu różne białka mogą więc biec nawet w przeciwne strony – i nie rozdzielą się porządnie według wielkości.</p>
+
+  <h3>SDS-PAGE – jak zmusić białka, by biegły według masy</h3>
+  <p>Rozwiązaniem jest <b>SDS-PAGE</b>: rozdział w żelu poliakrylamidowym (PAGE) z dodatkiem <b>SDS</b> (dodecylosiarczanu sodu). SDS to detergent o ładunku ujemnym, który robi dwie rzeczy naraz:</p>
+  <ol>
+    <li>rozwija (denaturuje) białka – wszystkie stają się podobnymi „nitkami”, bez znaczenia, jaki miały kształt;</li>
+    <li>oblepia je ładunkiem ujemnym – mniej więcej proporcjonalnie do długości łańcucha, więc własny ładunek białka przestaje mieć znaczenie.</li>
+  </ol>
+  <p>Po takim zabiegu białka zachowują się jak DNA: wszystkie biegną do anody, a o tym, jak daleko zajdą, decyduje już tylko <b>masa</b> – mniejsze dalej. Masę odczytuje się, porównując z wzorcem białek o znanych masach (w kDa).</p>
+
+  <h3>Przykład: hemoglobina A i S</h3>
+  <p>W elektroforezie bez SDS ruchliwość białka zależy od jego ładunku. Wystarczy więc zmiana jednego aminokwasu, żeby białko biegło inaczej. Tak jest z <b>hemoglobiną S</b>: w 6. pozycji łańcucha β kwas glutaminowy (ładunek ujemny) zastąpiła w niej walina (bez ładunku). HbS ma więc mniej ładunku ujemnego niż prawidłowa HbA i w buforze zasadowym biegnie do anody wolniej. Wynik w żelu:</p>
+  <ul>
+    <li>homozygota AA – jeden prążek HbA;</li>
+    <li>homozygota SS – jeden prążek HbS, bliżej startu;</li>
+    <li>heterozygota AS – oba prążki.</li>
+  </ul>
+
+  <h3>Białka u Drewy</h3>
+  <ul>
+    <li><b>Western blot</b> to przeniesienie na membranę białek rozdzielonych w żelu, a <b>eastern blot</b> – białek rozdzielonych w <b>elektroforezie dwukierunkowej</b> (skąd te nazwy – <a class="pageref" href="#c06-southern"></a>).</li>
+    <li>Zanim pojawiły się techniki molekularne, <b>wykrywany elektroforetycznie polimorfizm białek</b> (enzymów) służył jako marker genetyczny (<a class="pageref" href="#c06-r-markery"></a>).</li>
+    <li>Białka i ich metabolity można też nanosić na mikromacierze – wtedy wiążą się nie przez parowanie zasad, ale ze <b>swoistymi przeciwciałami</b> (<a class="pageref" href="#c06-mikromacierze"></a>).</li>
+  </ul>
+  <p class="src">Źródło: Drewa s. 715, 717, 732 · Jorde s. 42–43 (brak dostępu)</p>
+
+  <!-- ============ 4 ============ -->
+  <h2 id="c06-hybrydyzacja">Hybrydyzacja i sondy</h2>
+  <h3>Problem: igła w stogu siana</h3>
+  <p>Wróćmy do membrany. Załóżmy, że jest na niej DNA człowieka pocięte na setki tysięcy fragmentów, a nas interesuje jeden – kawałek konkretnego genu. Wszystkie fragmenty to po prostu DNA, chemicznie takie same. Potrzebujemy czegoś, co <b>samo odnajdzie właściwy fragment</b> i pokaże nam, gdzie leży. Tym czymś jest <b>sonda molekularna</b>, a zjawisko, dzięki któremu sonda znajduje cel, to <b>hybrydyzacja</b>.</p>
+
+  <h3>Na czym polega hybrydyzacja?</h3>
+  <p>Na tym, co znasz z budowy DNA: <b>zasady łączą się w pary komplementarnie</b> – A z T, G z C. Dwie nici, których sekwencje do siebie pasują, same się odnajdują i skręcają w podwójną helisę.</p>
+  <p><b>Hybrydyzacja</b> to właśnie utworzenie podwójnej helisy z dwóch komplementarnych nici DNA lub RNA, które pochodzą z <b>różnych źródeł</b> – jedna z badanego materiału, druga to sonda. Powstaje cząsteczka „mieszana”, czyli hybryda.</p>
+
+  <h3>Czym jest sonda?</h3>
+  <p><b>Sonda molekularna</b> to fragment kwasu nukleinowego o sekwencji <b>komplementarnej do tego, czego szukamy</b>, oznaczony tak, żeby było go widać. Jeśli w badanym DNA jest szukana sekwencja, sonda się do niej przyczepi. Jeśli jej nie ma – sonda nie ma się do czego przyczepić i zostaje wypłukana.</p>
+  <div class="box obraz"><p>Sonda to klucz, a fragmenty DNA na membranie – tysiące zamków. Klucz pasuje tylko do jednego. Wlewamy roztwór z ogromną liczbą takich samych kluczy; każdy krąży, aż trafi na swój zamek i w nim zostanie. Resztę kluczy spłukujemy. Tam, gdzie zostały klucze, leży szukany fragment.</p></div>
+
+  <h3>Dlaczego obie strony muszą być jednoniciowe?</h3>
+  <p>DNA jest zwykle dwuniciowe – każda nić ma już swoją parę i nie ma wolnego miejsca dla sondy. Zanim sonda cokolwiek znajdzie, obie strony trzeba <b>zdenaturować</b>, czyli rozpleść na pojedyncze nici:</p>
+  <ul>
+    <li><b>badane DNA</b> – rozplecione na pojedyncze nici i <b>unieruchomione</b> na membranie (nitrocelulozowej lub nylonowej), żeby się nie przemieszczało;</li>
+    <li><b>sonda</b> – też rozpleciona; pływa w <b>roztworze hybrydyzacyjnym</b>, którym zalewa się membranę.</li>
+  </ul>
+  <p>Teraz każda nić sondy może połączyć się z nicią badanego DNA – ale <b>tylko tam, gdzie ich sekwencje do siebie pasują</b> (w miejscu ich wzajemnej homologii). Do innych fragmentów nie przylgnie, bo zasady nie utworzą par.</p>
+
+  <h3>Skąd wziąć sondę?</h3>
+  <p>Żeby zrobić sondę, trzeba mieć kawałek kwasu nukleinowego o odpowiedniej sekwencji – i to w dużej liczbie kopii, bo do membrany wlewamy ogromną ich liczbę. Drewa podaje trzy sposoby. Który wybierzemy, zależy od tego, <b>co już wiemy o szukanym genie i co mamy w ręku</b>.</p>
+  <p><b>1. Sonda ze sklonowanego genu – gdy gen już mamy.</b> Jeśli szukany gen został wcześniej sklonowany (wstawiony do wektora i namnożony w bakteriach), mamy go w dowolnej ilości. Wystarczy wziąć jednoniciowy fragment tego DNA (albo cDNA, czyli DNA przepisane z mRNA tego genu) lub RNA – i mamy gotową sondę, która pasuje do celu idealnie.</p>
+  <p><b>2. Syntetyczny oligonukleotyd – gdy znamy tylko białko.</b> Czasem genu nie mamy, ale znamy kolejność aminokwasów w białku, które on koduje. Wtedy można „cofnąć się” od białka do DNA: dla kolejnych aminokwasów odczytujemy z kodu genetycznego, jakie kodony je kodują, i chemicznie syntetyzujemy krótki odcinek DNA – <b>oligonukleotyd</b> – pasujący do fragmentu genu.</p>
+  <p>Jest jednak problem: kod genetyczny jest <b>zdegenerowany</b> – jeden aminokwas może być kodowany przez kilka różnych kodonów. Patrząc na białko, nie wiemy, którego kodonu użyto w genie. Dlatego syntetyzuje się <b>całą rodzinę</b> oligonukleotydów – wszystkie możliwe warianty sekwencji. Tylko część z nich pasuje do genu idealnie, ale to wystarczy: właściwy wariant w mieszaninie znajdzie swój cel.</p>
+  <div class="box przyklad"><p>Fragment białka ma dwa aminokwasy: pierwszy może być kodowany przez 2 różne kodony, drugi przez 4. Odcinek DNA, który je koduje, może więc mieć 2 × 4 = 8 różnych sekwencji. Syntetyzujemy wszystkie 8 – jedna z nich jest tą, która naprawdę jest w genie.</p></div>
+  <p><b>3. Sonda z PCR – gdy fragment jest bardzo rzadki.</b> Sonda musi powstać w ogromnej liczbie kopii. A jeśli szukany fragment występuje w materiale tylko w kilku kopiach i nie mamy go sklonowanego? Wtedy można go <b>namnożyć metodą PCR</b> (<a class="chapref" href="#c05"></a>): PCR z kilku kopii robi miliony identycznych kopii jednego wybranego odcinka. Te kopie, po oznaczeniu, służą jako sonda.</p>
+
+  <h3>Jak zobaczyć, gdzie usiadła sonda?</h3>
+  <p>Sonda to też DNA, więc jest tak samo niewidoczna jak wszystko inne na membranie. Dlatego zanim się jej użyje, trzeba ją <b>oznaczyć</b> – doczepić do niej coś, co da się wykryć. Po hybrydyzacji nadmiar sondy się spłukuje, a znacznik pokazuje miejsca, gdzie sonda została. Rodzaj znacznika decyduje o tym, jak zobaczymy sygnał. Drewa opisuje cztery sposoby (<a class="figref" href="#c06-fig-znakowanie"></a>):</p>
+  <p><b>1. Znakowanie radioaktywne.</b> Do sondy wbudowuje się nukleotyd zawierający izotop promieniotwórczy. Tam, gdzie leży sonda, przyłożona klisza ciemnieje – to <b>autoradiografia</b>.</p>
+  <p><b>2. Znakowanie fluorescencyjne.</b> Do sondy przyłącza się <b>fluorochrom</b> – barwnik, który oświetlony świeci światłem o określonej długości fali. Sygnał ogląda się w <b>mikroskopie fluorescencyjnym</b>.</p>
+  <aside class="note pojecie" data-term="Hapten"><p>mała cząsteczka (np. biotyna, digoksygenina) przyczepiona do sondy; sama nie jest tym, co widzimy – wykrywa ją dopiero swoiste przeciwciało.</p></aside>
+  <p><b>3. Znakowanie immunochemiczne (cytochemiczne) – w dwóch krokach.</b> Do sondy przyczepia się nie barwnik, tylko małą cząsteczkę – <b>hapten</b>, np. <b>biotynę</b> albo <b>digoksygeninę</b>. Po hybrydyzacji dodaje się <b>przeciwciała</b> rozpoznające ten hapten, a dopiero one niosą coś widocznego, np. enzym albo barwnik fluorescencyjny; powstaje „kanapka”: badane DNA – sonda – hapten – przeciwciało – coś, co widać.</p>
+  <div class="box obraz"><p>Hapten to mała chorągiewka wbita w sondę – z daleka jej nie widać. Przeciwciało to ktoś z latarką, kto rozpoznaje tylko ten jeden wzór chorągiewki: podchodzi, staje przy niej i świeci. Dopiero dzięki latarce widzimy, gdzie jest sonda.</p></div>
+  <p><b>4. Znakowanie enzymatyczne.</b> Enzym przyczepia się <b>bezpośrednio do sondy</b>, bez haptenu i przeciwciała. Po dodaniu substratu zamienia go w barwny produkt, więc <b>reakcja barwna</b> pojawia się dokładnie tam, gdzie leży sonda. (Nazwy barwników, haptenów i enzymów zebrano w tabeli w części 2, <a class="pageref" href="#c06-r-bloty"></a>.)</p>
+  <figure class="fig placeholder" id="c06-fig-znakowanie" data-title="Cztery sposoby znakowania sondy" data-ratio="20:9">
+    <figcaption>W każdej kolumnie czytaj od dołu: badane DNA na membranie, sparowana z nim sonda, znacznik i – u góry – to, co widać. Porównaj kolumny C i D: w obu sygnał może dawać enzym, ale w C niesie go przeciwciało rozpoznające hapten, a w D enzym siedzi wprost na sondzie. Wniosek: znakowanie immunochemiczne jest dwustopniowe – sam hapten nie jest tym, co widzimy.</figcaption>
+  </figure>
+
+  <h3>Hybrydyzacja in situ – bez membrany</h3>
+  <p>Czasem nie chcemy wiedzieć, jak długi jest fragment, tylko <b>w której komórce</b> (albo w którym miejscu tkanki) znajduje się szukana sekwencja. Wtedy hybrydyzację prowadzi się <b>in situ</b>, czyli „w miejscu” – wprost w rozmazie komórek albo w skrawku tkanki, bez elektroforezy i transferu. Trzeba tylko najpierw odpowiednio przygotować (strawić) preparat: kwasy nukleinowe są ukryte w komórkach i upakowane, więc trzeba je odsłonić i rozpleść na pojedyncze nici. Dopiero wtedy sonda może się do nich dostać i przyczepić.</p>
+  <div class="box zapamietaj"><p>Sonda = znakowany, jednoniciowy fragment kwasu nukleinowego, który przyczepia się tylko do komplementarnej sekwencji. Skąd: sklonowany gen, rodzina syntetycznych oligonukleotydów (gdy znamy białko), produkt PCR (gdy fragment jest rzadki). Znakowanie: radioaktywne, fluorescencyjne, immunochemiczne (hapten + przeciwciało), enzymatyczne.</p></div>
+  <p class="src">Źródło: Drewa s. 714–715</p>
+
+  <!-- ============ 5 ============ -->
+  <h2 id="c06-southern">Southern i jego odmiany, northern</h2>
+  <p>Teraz łączymy wszystko, co już znasz – elektroforezę, transfer i sondę – w jedną metodę.</p>
+
+  <h3>Skąd te nazwy?</h3>
+  <p>Metodę wymyślił <b>E.M. Southern</b>, stąd <b>Southern blot</b>. Słowo <i>blot</i> nawiązuje do sposobu przeniesienia DNA z żelu na bibułę (skąd dokładnie – <a class="pageref" href="#c06-r-bloty"></a>).</p>
+  <p>„Southern” brzmi jak angielskie „południowy”, więc kolejne metody nazwano żartem jak pozostałe strony świata:</p>
+  <ul>
+    <li><b>northern blot</b> („północny”) – przenosimy <b>RNA</b>;</li>
+    <li><b>western blot</b> („zachodni”) – przenosimy <b>białka</b>;</li>
+    <li><b>eastern blot</b> („wschodni”) – przenosimy białka po elektroforezie dwukierunkowej.</li>
+  </ul>
+  <p>Najważniejsza różnica: w <b>hybrydyzacji Southerna</b> sonda DNA szuka <b>DNA</b> (DNA–DNA) – sprawdzamy, czy w genomie jest dana sekwencja i jak wygląda fragment, który ją zawiera. W <b>hybrydyzacji northern</b> sonda szuka <b>RNA</b> (RNA–DNA) – sprawdzamy <b>ekspresję genu</b>, czyli czy i jak mocno jest on przepisywany na RNA.</p>
+
+  <h3>Southern krok po kroku – i dlaczego tak</h3>
+  <p>Cel: znaleźć w całym genomowym DNA fragment z interesującą nas sekwencją i zobaczyć, jak jest długi. Kolejne kroki wynikają z kolejnych przeszkód (<a class="figref" href="#c06-fig-southern"></a>):</p>
+  <p><b>Krok 1. Trawienie enzymem restrykcyjnym.</b> <i>Przeszkoda:</i> genomowe DNA to ogromnie długie cząsteczki – w żelu nic się nie rozdzieli. <i>Rozwiązanie:</i> tnie się je <b>enzymem restrykcyjnym</b>. Taki enzym przecina DNA zawsze w miejscu o określonej, krótkiej sekwencji (<b>miejscu restrykcyjnym</b>; więcej w <a class="chapref" href="#c05"></a>). Dzięki temu u każdego człowieka ten sam odcinek genu trafia zawsze do fragmentu o tej samej długości – i właśnie tę długość będziemy oglądać.</p>
+  <p><b>Krok 2. Elektroforeza w żelu agarozowym.</b> Fragmenty układają się według wielkości. Ponieważ genom daje setki tysięcy fragmentów o różnych długościach, w żelu widać nie oddzielne prążki, tylko ciągłą smugę. Nasz fragment gdzieś w niej jest – ale nie wiemy gdzie.</p>
+  <p><b>Krok 3. Trzy kąpiele żelu.</b> Zanim przeniesiemy DNA na membranę, trzeba je przygotować. Drewa wymienia te kąpiele jako „denaturacja, depurynacja, neutralizacja” i podaje, że neutralizacja następuje po denaturacji; miejsca depurynacji w tej kolejności nie określa (na rycinie stoi ona na początku). Każda kąpiel usuwa inną przeszkodę:</p>
+  <ul>
+    <li><b>depurynacja (HCl).</b> <i>Przeszkoda:</i> długie fragmenty słabo wychodzą z żelu. <i>Rozwiązanie:</i> kwas tnie je na krótsze kawałki, które łatwiej przejdą na membranę.</li>
+    <li><b>denaturacja (NaOH).</b> <i>Przeszkoda:</i> DNA jest dwuniciowe, a sonda potrzebuje pojedynczej nici. <i>Rozwiązanie:</i> w środowisku zasadowym nici się rozplatają.</li>
+    <li><b>neutralizacja (Tris).</b> <i>Przeszkoda:</i> po NaOH żel jest silnie zasadowy, a w takim środowisku DNA źle wiąże się z membraną. <i>Rozwiązanie:</i> przywracamy obojętne pH.</li>
+  </ul>
+  <p><b>Krok 4. Przeniesienie na membranę</b> (nitrocelulozową lub nylonową) – transferem kapilarnym, próżniowym albo elektrotransferem. Membrana jest odbitką żelu: fragment, który w żelu był na danej wysokości, na membranie też tam jest.</p>
+  <p><b>Krok 5. Utrwalenie.</b> <i>Przeszkoda:</i> zaraz będziemy membranę moczyć i płukać – DNA nie może się z niej zmyć. <i>Rozwiązanie:</i> DNA wiąże się z membraną trwale, <b>wiązaniami kowalencyjnymi</b>, pod wpływem <b>światła UV</b> albo po ogrzaniu membrany (stężenia kąpieli i temperatura – <a class="pageref" href="#c06-r-bloty"></a>).</p>
+  <p><b>Krok 6. Hybrydyzacja ze znakowaną sondą.</b> Sonda przyczepia się tylko do fragmentu z szukaną sekwencją. Nadmiar się spłukuje, a znacznik pokazuje jeden <b>prążek</b> w miejscu, gdzie leży nasz fragment. Wysokość prążka mówi, jak długi jest fragment.</p>
+
+  <figure class="fig" id="c06-fig-southern" data-title="Hybrydyzacja typu Southern – od trawienia do utrwalenia">
+
+    <div class="panel">
+      <svg viewBox="0 0 640 352" role="img" aria-label="Pięć etapów hybrydyzacji typu Southern: trawienie, elektroforeza, obróbka żelu, transfer kapilarny, utrwalenie">
+        <!-- ===== RZĄD 1 ===== -->
+        <g class="step" transform="translate(14,14)"><circle r="9"/><text y="3.8">1</text></g>
+        <text x="28" y="18" class="step-title">Trawienie</text>
+        <g class="step" transform="translate(206,14)"><circle r="9"/><text y="3.8">2</text></g>
+        <text x="220" y="18" class="step-title">Elektroforeza</text>
+        <g class="step" transform="translate(406,14)"><circle r="9"/><text y="3.8">3</text></g>
+        <text x="420" y="18" class="step-title">Obróbka żelu</text>
+
+        <!-- 1: DNA i cięcia -->
+        <path d="M12,50 H168" class="dna thin"/>
+        <path d="M12,58 H168" class="dna thin blue"/>
+        <path d="M18,51 V57 M26,51 V57 M34,51 V57 M42,51 V57 M60,51 V57 M68,51 V57 M76,51 V57 M84,51 V57 M92,51 V57 M110,51 V57 M118,51 V57 M126,51 V57 M146,51 V57 M154,51 V57 M162,51 V57" stroke="#9aa7b0" stroke-width="1"/>
+        <path d="M51,40 V68 M101,40 V68 M137,40 V68" stroke="#c84d42" stroke-width="1.5" stroke-dasharray="3 2"/>
+        <polygon points="47,33 55,33 51,40" class="f-red"/>
+        <polygon points="97,33 105,33 101,40" class="f-red"/>
+        <polygon points="133,33 141,33 137,40" class="f-red"/>
+        <path d="M90,72 V86" class="arrow"/>
+        <path d="M12,96 H46 M56,96 H96 M106,96 H132 M142,96 H168" class="dna thin"/>
+        <path d="M12,102 H46 M56,102 H96 M106,102 H132 M142,102 H168" class="dna thin blue"/>
+        <text x="90" y="126" class="t-xs mid sb">fragmenty restrykcyjne</text>
+        <text x="90" y="139" class="t-xs mid muted">mieszanina różnych długości</text>
+        <path d="M176,72 H196" class="arrow"/>
+
+        <!-- 2: żel -->
+        <g transform="translate(0,6)">
+        <text x="239" y="29" class="lane-label">M</text>
+        <text x="289" y="29" class="lane-label">1</text>
+        <text x="339" y="29" class="lane-label">2</text>
+        <rect x="214" y="33" width="150" height="84" rx="5" class="gel"/>
+        <g class="well">
+          <rect x="225" y="39" width="28" height="5" rx="1.5"/>
+          <rect x="275" y="39" width="28" height="5" rx="1.5"/>
+          <rect x="325" y="39" width="28" height="5" rx="1.5"/>
+        </g>
+        <g class="band ladder">
+          <rect x="226" y="52" width="26" height="3" rx="1.5"/>
+          <rect x="226" y="62" width="26" height="3" rx="1.5"/>
+          <rect x="226" y="74" width="26" height="3" rx="1.5"/>
+          <rect x="226" y="89" width="26" height="3" rx="1.5"/>
+          <rect x="226" y="105" width="26" height="3" rx="1.5"/>
+        </g>
+        <rect x="276" y="48" width="26" height="62" rx="5" class="band blue smear"/>
+        <rect x="326" y="48" width="26" height="62" rx="5" class="band blue smear"/>
+        <text x="374" y="44" class="pole minus">–</text>
+        <text x="374" y="118" class="pole plus">+</text>
+        <text x="289" y="134" class="t-xs mid sb">rozdział według wielkości</text>
+        <text x="289" y="147" class="t-xs mid muted">żel agarozowy – smuga fragmentów</text>
+        </g>
+        <path d="M384,72 H400" class="arrow"/>
+
+        <!-- 3: trzy kąpiele -->
+        <text x="446" y="42" class="t-s mid sb f-red">HCl</text>
+        <text x="524" y="42" class="t-s mid sb f-violet">NaOH</text>
+        <text x="602" y="42" class="t-s mid sb f-teal">Tris</text>
+        <rect x="415" y="50" width="62" height="40" rx="4" class="card"/>
+        <rect x="417" y="58" width="58" height="30" rx="3" class="f-red-bg"/>
+        <rect x="425" y="66" width="42" height="12" rx="2" class="gel"/>
+        <rect x="493" y="50" width="62" height="40" rx="4" class="card"/>
+        <rect x="495" y="58" width="58" height="30" rx="3" class="f-violet-bg"/>
+        <rect x="503" y="66" width="42" height="12" rx="2" class="gel"/>
+        <rect x="571" y="50" width="62" height="40" rx="4" class="card"/>
+        <rect x="573" y="58" width="58" height="30" rx="3" class="f-teal-bg"/>
+        <rect x="581" y="66" width="42" height="12" rx="2" class="gel"/>
+        <path d="M479,70 H491" class="arrow"/>
+        <path d="M557,70 H569" class="arrow"/>
+        <text x="446" y="104" class="t-xs mid muted">0,25 M</text>
+        <text x="524" y="104" class="t-xs mid muted">0,5 M</text>
+        <text x="602" y="104" class="t-xs mid muted">0,5 M, pH 8,5</text>
+        <text x="446" y="118" class="t-xs mid sb">depurynacja</text>
+        <text x="524" y="118" class="t-xs mid sb">denaturacja</text>
+        <text x="602" y="118" class="t-xs mid sb">neutralizacja</text>
+        <text x="524" y="140" class="t-xs mid muted">tnie długie odcinki · rozdziela nici · przywraca pH</text>
+
+        <line x1="8" y1="160" x2="632" y2="160" class="divider"/>
+
+        <!-- ===== RZĄD 2 ===== -->
+        <g class="step" transform="translate(14,180)"><circle r="9"/><text y="3.8">4</text></g>
+        <text x="28" y="184" class="step-title">Transfer kapilarny na membranę</text>
+        <g class="step" transform="translate(466,180)"><circle r="9"/><text y="3.8">5</text></g>
+        <text x="480" y="184" class="step-title">Utrwalenie</text>
+
+        <!-- kuweta z buforem -->
+        <rect x="40" y="298" width="230" height="30" rx="4" class="card"/>
+        <rect x="42" y="306" width="226" height="20" rx="3" class="f-blue-bg"/>
+        <!-- podstawka i bibuła-knot -->
+        <rect x="70" y="280" width="170" height="8" rx="1" fill="#c9d3d9"/>
+        <path d="M58,320 V276 H252 V320" fill="none" stroke="#a8a08c" stroke-width="3" stroke-linejoin="round"/>
+        <!-- żel, membrana, bibuła, warstwa higroskopijna, obciążnik -->
+        <rect x="86" y="260" width="138" height="14" rx="2" class="gel"/>
+        <rect x="86" y="254" width="138" height="6" class="membrane"/>
+        <rect x="86" y="249" width="138" height="5" fill="#ffffff" stroke="#c9d3d9" stroke-width="1"/>
+        <rect x="86" y="215" width="138" height="34" fill="#ffffff" stroke="#c9d3d9" stroke-width="1"/>
+        <path d="M86,222 H224 M86,229 H224 M86,236 H224 M86,243 H224" stroke="#e3e8ec" stroke-width="1"/>
+        <rect x="120" y="198" width="70" height="17" rx="2" fill="#5d6d78"/>
+        <!-- przepływ buforu -->
+        <path d="M26,318 V222" class="arrow teal dashed"/>
+        <text x="16" y="270" class="t-xs mid f-teal" transform="rotate(-90 16 270)">przepływ buforu i DNA</text>
+        <!-- odnośniki -->
+        <g stroke="#8a98a3" stroke-width="0.8">
+          <line x1="190" y1="206" x2="294" y2="200"/>
+          <line x1="224" y1="232" x2="294" y2="218"/>
+          <line x1="224" y1="257" x2="294" y2="246"/>
+          <line x1="224" y1="268" x2="294" y2="274"/>
+          <line x1="268" y1="316" x2="294" y2="296"/>
+        </g>
+        <text x="298" y="204" class="t-xs sb">obciążnik</text>
+        <text x="298" y="222" class="t-xs sb">warstwa higroskopijna</text>
+        <text x="298" y="233" class="t-xs muted">ciągnie bufor w górę</text>
+        <text x="298" y="250" class="t-xs sb f-ochre">membrana</text>
+        <text x="298" y="261" class="t-xs muted">nitroceluloza lub nylon</text>
+        <text x="298" y="278" class="t-xs sb">żel po obróbce</text>
+        <text x="298" y="300" class="t-xs sb">bufor</text>
+        <text x="298" y="311" class="t-xs muted">podsiąka przez bibułę</text>
+        <text x="155" y="344" class="t-xs mid muted">inne sposoby: transfer próżniowy, elektrotransfer</text>
+
+        <!-- 5: utrwalenie -->
+        <rect x="488" y="198" width="120" height="16" rx="3" fill="#153144"/>
+        <text x="548" y="210" class="t-xs mid sb f-white">lampa UV</text>
+        <path d="M498,218 V240 M518,218 V240 M538,218 V240 M558,218 V240 M578,218 V240 M598,218 V240" stroke="#7867a8" stroke-width="1.4" stroke-dasharray="3 3"/>
+        <rect x="488" y="244" width="120" height="46" rx="2" class="membrane"/>
+        <g fill="#d9cfb5">
+          <rect x="498" y="254" width="22" height="3" rx="1.5"/><rect x="530" y="262" width="22" height="3" rx="1.5"/>
+          <rect x="562" y="256" width="22" height="3" rx="1.5"/><rect x="498" y="272" width="22" height="3" rx="1.5"/>
+          <rect x="530" y="278" width="22" height="3" rx="1.5"/><rect x="562" y="274" width="22" height="3" rx="1.5"/>
+        </g>
+        <text x="548" y="308" class="t-xs mid sb">UV lub +80 °C</text>
+        <text x="548" y="321" class="t-xs mid muted">wiązania kowalencyjne</text>
+        <text x="548" y="334" class="t-xs mid muted">DNA–membrana</text>
+      </svg>
+    </div>
+    <figcaption>1 – cięcie w miejscach restrykcyjnych; 2 – rozdział w żelu agarozowym (M – wzorzec), DNA genomowe daje smugę; 3 – kąpiele żelu; 4 – transfer kapilarny z zachowaniem układu; 5 – utrwalenie, potem hybrydyzacja z sondą.</figcaption>
+  </figure>
+
+  <h3>Co wykrywa Southern? Delecje i mutacje punktowe</h3>
+  <p>Cała interpretacja opiera się na jednej zasadzie z elektroforezy: <b>im krótszy fragment, tym dalej od startu</b> leży jego prążek. Southern pokazuje nam długość fragmentu z genem – więc wykryje każdą zmianę, która tę długość zmienia.</p>
+  <p><b>Niewielka delecja.</b> Jeśli w genie brakuje niewielkiego kawałka, fragment rozpoznawany przez sondę jest krótszy. Szybciej wędruje, więc jego prążek leży niżej (dalej od startu) niż u osoby zdrowej. Z tego, jak bardzo „uciekł”, można <b>oszacować, jak duży odcinek genu utracono</b>.</p>
+  <p><b>Mutacja punktowa.</b> Zamiana jednej zasady nie zmienia długości DNA, więc sama w sobie nie przesuwa prążka. Southern może jednak wykryć także mutację punktową – np. gdy mutacja <b>niszczy miejsce restrykcyjne</b>. Enzym rozpoznaje dokładną sekwencję – po zmianie jednej litery już jej nie rozpozna i nie przetnie. Dwa sąsiednie fragmenty zostają wtedy połączone w jeden, <b>dłuższy</b> (<a class="figref" href="#c06-fig-rflp"></a>). Każdy z nas ma dwa allele (dwie kopie) genu, więc:</p>
+  <ul>
+    <li><b>osoba zdrowa</b> – oba allele cięte normalnie: jeden prążek o zwykłej długości;</li>
+    <li><b>nosiciel</b> – jeden allel prawidłowy, jeden zmutowany: <b>dwa prążki</b>, prawidłowy i dłuższy;</li>
+    <li><b>homozygota</b> – oba allele zmutowane: <b>tylko jeden prążek, wyżej</b> (dłuższy).</li>
+  </ul>
+
+  <figure class="fig" id="c06-fig-rflp" data-title="Utrata miejsca restrykcyjnego – zdrowy, nosiciel, homozygota">
+
+    <div class="panel">
+      <svg viewBox="0 0 640 214" role="img" aria-label="Mapa fragmentu z trzema miejscami cięcia, mutacja niszczy środkowe miejsce; autoradiogram trzech osób">
+        <!-- allel prawidłowy -->
+        <text x="20" y="16" class="t-xs sb">allel prawidłowy</text>
+        <path d="M20,36 H340" class="dna thin"/>
+        <path d="M30,26 V46 M230,26 V46 M330,26 V46" stroke="#c84d42" stroke-width="2"/>
+        <path d="M80,52 H176" class="probe"/>
+        <circle cx="180" cy="52" r="3" class="f-gold"/>
+        <text x="190" y="56" class="t-xs f-red">sonda</text>
+        <path d="M30,68 H230 M30,64 V72 M230,64 V72" stroke="#5d6d78" stroke-width="1"/>
+        <path d="M234,68 H330 M234,64 V72 M330,64 V72" stroke="#b9c6ce" stroke-width="1"/>
+        <text x="130" y="82" class="t-xs mid sb">np. 4 kpz – wiąże sondę</text>
+        <text x="282" y="82" class="t-xs mid muted">bez sondy</text>
+        <!-- allel zmutowany -->
+        <text x="20" y="110" class="t-xs sb">allel z mutacją punktową</text>
+        <path d="M20,130 H340" class="dna thin"/>
+        <path d="M30,120 V140 M330,120 V140" stroke="#c84d42" stroke-width="2"/>
+        <path d="M224,124 L236,136 M236,124 L224,136" stroke="#c84d42" stroke-width="2.2"/>
+        <text x="230" y="116" class="t-xs mid f-red">utracone miejsce cięcia</text>
+        <path d="M80,146 H176" class="probe"/>
+        <circle cx="180" cy="146" r="3" class="f-gold"/>
+        <path d="M30,162 H330 M30,158 V166 M330,158 V166" stroke="#5d6d78" stroke-width="1"/>
+        <text x="180" y="176" class="t-xs mid sb">np. 6 kpz – dłuższy fragment</text>
+        <!-- legenda -->
+        <path d="M24,194 V206" stroke="#c84d42" stroke-width="2"/>
+        <text x="30" y="204" class="t-xs muted">miejsce restrykcyjne</text>
+        <path d="M140,200 H160" class="probe"/>
+        <text x="166" y="204" class="t-xs muted">sonda (znakowana)</text>
+
+        <!-- autoradiogram -->
+        <text x="457" y="20" class="lane-label">zdrowy</text>
+        <text x="527" y="20" class="lane-label">nosiciel</text>
+        <text x="597" y="20" class="lane-label">homozygota</text>
+        <rect x="420" y="26" width="212" height="150" rx="4" fill="#eef1f3" stroke="#8a98a3" stroke-width="1"/>
+        <text x="412" y="22" class="size-label">kpz</text>
+        <g stroke="#8a98a3" stroke-width="1">
+          <line x1="414" y1="40" x2="420" y2="40"/><line x1="414" y1="69" x2="420" y2="69"/>
+          <line x1="414" y1="107" x2="420" y2="107"/><line x1="414" y1="160" x2="420" y2="160"/>
+        </g>
+        <text x="410" y="44" class="size-label">10</text>
+        <text x="410" y="73" class="size-label">8</text>
+        <text x="410" y="111" class="size-label">6</text>
+        <text x="410" y="164" class="size-label">4</text>
+        <rect x="439" y="157" width="36" height="5" rx="2" class="band navy"/>
+        <rect x="509" y="157" width="36" height="5" rx="2" class="band navy"/>
+        <rect x="509" y="104" width="36" height="5" rx="2" class="band navy"/>
+        <rect x="579" y="104" width="36" height="5" rx="2" class="band navy"/>
+        <text x="457" y="194" class="t-xs mid">1 prążek</text>
+        <text x="527" y="194" class="t-xs mid">2 prążki</text>
+        <text x="597" y="194" class="t-xs mid">1 prążek, wyżej</text>
+        <text x="457" y="207" class="t-xs mid muted">4 kpz</text>
+        <text x="527" y="207" class="t-xs mid muted">4 + 6 kpz</text>
+        <text x="597" y="207" class="t-xs mid muted">6 kpz</text>
+      </svg>
+    </div>
+    <figcaption>Mutacja niszczy środkowe miejsce restrykcyjne, więc fragment wiążący sondę staje się dłuższy. Wartości w kpz są przykładowe.</figcaption>
+  </figure>
+
+  <aside class="note pojecie" data-term="RFLP"><p>(<i>restriction fragment length polymorphism</i>) – polimorfizm długości fragmentów restrykcyjnych: różnice między ludźmi w długości fragmentów, na które enzym tnie DNA.</p></aside>
+  <p>Ta zasada ma swoją nazwę: <b>RFLP</b> (<i>restriction fragment length polymorphism</i>) – <b>polimorfizm długości fragmentów restrykcyjnych</b>. Chodzi o to, że u różnych osób ten sam odcinek DNA po cięciu enzymem daje fragmenty różnej długości – bo coś zmieniło miejsca cięcia albo długość DNA między nimi. Analiza RFLP polega na pocięciu DNA, rozdzieleniu fragmentów i porównaniu ich długości. Poznano <b>ponad 100 enzymów restrykcyjnych</b> rozpoznających różne sekwencje, więc dla wielu typowych mutacji punktowych da się dobrać enzym, którego miejsce cięcia ta mutacja niszczy. Dlatego RFLP jest szeroko używana w diagnostyce. Zapamiętaj tę metodę – wróci przy identyfikacji osób.</p>
+  <div class="box zapamietaj"><p>Southern pokazuje długość fragmentu z genem. Niewielka delecja – prążek niżej (krótszy). Mutacja niszcząca miejsce restrykcyjne – fragment dłuższy: nosiciel ma dwa prążki (prawidłowy i dłuższy), homozygota jeden, dłuższy. To jest analiza RFLP.</p></div>
+
+  <h3>Odmiany: dot blot, hybrydyzacja kolonijna i łysinkowa</h3>
+  <p>Czasem nie interesuje nas długość fragmentu, tylko odpowiedź <b>„czy ta sekwencja jest w próbce?”</b> – i to dla wielu próbek naraz. Wtedy elektroforeza jest niepotrzebna: w <b>hybrydyzacji punktowej (dot blot)</b> wiele próbek DNA nakrapia się w postaci kropli obok siebie na jeden filtr i wszystkie hybrydyzuje z tą samą sondą, a kropla, która daje sygnał, zawiera szukaną sekwencję.</p>
+  <p>Gdy klonuje się DNA, powstaje <b>biblioteka</b> – tysiące kolonii bakterii, z których każda niesie inny fragment DNA (w bibliotece genomowej – fragmenty genomu, w bibliotece cDNA – kopie mRNA), a my szukamy tej jednej, która ma nasz gen. W <b>hybrydyzacji kolonijnej</b> (i podobnej <b>łysinkowej</b>) kolonie odbija się na filtr z zachowaniem ich układu i hybrydyzuje z sondą – sygnał na filtrze wskazuje miejsce na szalce, w którym rośnie szukana kolonia. Techniki punktowe i kolonijne służą głównie do <b>przeglądania bibliotek genomowych i cDNA</b> (krok po kroku – <a class="pageref" href="#c06-r-bloty"></a>).</p>
+
+  <h3>Hybrydyzacja typu northern</h3>
+  <p>Southern mówi, <b>jaki gen mamy</b> w DNA. Northern mówi, <b>czy ten gen pracuje</b>. Gen, który jest aktywny, jest przepisywany na RNA – więc szukając sondą RNA danego genu, sprawdzamy:</p>
+  <ul>
+    <li><b>które geny ulegają transkrypcji</b> w danej tkance albo na danym etapie rozwoju;</li>
+    <li>jaką <b>długość</b> ma ich RNA;</li>
+    <li>jak <b>intensywnie</b> zachodzi transkrypcja – im silniejszy prążek, tym więcej RNA.</li>
+  </ul>
+  <p>Etapy są podobne jak w Southernie, z dwiema różnicami wynikającymi z natury RNA:</p>
+  <ol>
+    <li><b>Denaturacja RNA i rozdział w denaturującym żelu agarozowym.</b> RNA jest jednoniciowe i chętnie zwija się samo na sobie w różne kształty, które zmieniają szybkość wędrówki. Czynnik denaturujący w żelu utrzymuje RNA rozwinięte, więc biegnie ono zgodnie ze swoją długością.</li>
+    <li><b>Przeniesienie na membranę i utrwalenie.</b> RNA przechodzi z żelu na membranę wydajnie, więc w przeciwieństwie do długich fragmentów DNA <b>nie trzeba go wcześniej ciąć</b> – nie ma tu kąpieli w HCl.</li>
+    <li><b>Hybrydyzacja ze znakowaną sondą.</b></li>
+  </ol>
+  <p class="src">Źródło: Drewa s. 715–716</p>
+
+  <!-- ============ 6 ============ -->
+  <h2 id="c06-mikromacierze">Mikromacierze</h2>
+  <h3>Po co mikromacierze?</h3>
+  <p>Southern ma jedno ograniczenie: <b>jedna sonda – jedna odpowiedź</b>. Żeby sprawdzić tysiąc genów, trzeba by zrobić tysiąc osobnych doświadczeń. A często chcemy zadać tysiące pytań naraz, np.:</p>
+  <ul>
+    <li><b>które ze wszystkich genów</b> są aktywne w danej tkance (ekspresja genów);</li>
+    <li>czy w genomie pacjenta <b>nie brakuje jakiegoś kawałka</b> (delecja) albo <b>czegoś nie ma za dużo</b> (duplikacja) – gdziekolwiek w genomie;</li>
+    <li>jakie warianty pojedynczych nukleotydów (SNP) ma dana osoba w tysiącach miejsc.</li>
+  </ul>
+  <p>Do tego służą <b>mikromacierze</b> (mikroczipy, mikromatryce; <i>microarray chip technology</i>).</p>
+
+  <h3>Czym jest mikromacierz?</h3>
+  <aside class="note pojecie" data-term="Sekwencja wzorcowa"><p>znana sekwencja przyczepiona w określonym miejscu mikromacierzy; to z nią hybrydyzuje badany materiał.</p></aside>
+  <p>To małe podłoże, na które w ściśle zaplanowanym porządku naniesiono bardzo wiele <b>znanych sekwencji – sekwencji wzorcowych</b>. Każda leży w swoim punkcie i wiemy dokładnie, co gdzie leży. Działa to jak tysiące sond przyczepionych obok siebie.</p>
+  <p>Zwróć uwagę na odwrócenie ról. W Southernie na membranie leżał <b>badany</b> materiał, a znakowana była <b>sonda</b>. Na mikromacierzy na podłożu leżą <b>znane sekwencje</b>, a znakujemy <b>badany materiał</b> i wylewamy go na płytkę. Badane DNA (lub RNA) przyczepia się do tych punktów, w których leży komplementarna sekwencja. Świecący punkt mówi: „to, co tu leży, jest w badanym materiale”. A ponieważ wiemy, co leży w każdym punkcie, jednym doświadczeniem sprawdzamy tysiące sekwencji.</p>
+  <div class="box obraz"><p>Mikromacierz to tablica z tysiącami podpisanych haczyków, a badany materiał – wiadro świecących rybek różnych gatunków. Każdy haczyk łapie tylko jeden gatunek. Po wylaniu wiadra patrzymy, przy których haczykach świeci: od razu wiemy, jakie gatunki były w wiadrze, a z jasności – ile ich było.</p></div>
+
+  <h3>Co można nanieść i do czego to służy?</h3>
+  <ul>
+    <li><b>oligonukleotydy</b> – krótkie fragmenty genów albo dowolnych innych odcinków genomu (do badania DNA);</li>
+    <li>fragmenty <b>cDNA</b> – kopie mRNA poszczególnych genów (do badania ekspresji genów);</li>
+    <li>fragmenty <b>RNA</b>;</li>
+    <li>nawet <b>białka</b> i ich metabolity – wtedy łączą się nie przez parowanie zasad, ale przez swoiste przeciwciała.</li>
+  </ul>
+  <p>Dlatego mikromacierze służą badaniu genomu (genomika), transkryptów, czyli RNA (transkryptomika), i białek (proteomika). (Na czym i jak się je wytwarza – <a class="pageref" href="#c06-r-mikromacierze"></a>.)</p>
+
+  <h3>Szukanie delecji i duplikacji: doświadczenie dwukolorowe</h3>
+  <aside class="note pojecie" data-term="DNA referencyjne"><p>DNA kontrolne (prawidłowe), z którym porównuje się DNA badane.</p></aside>
+  <p>Pytanie: czy w genomie pacjenta czegoś nie brakuje albo czegoś nie jest za dużo? Samo świecenie punktu tego nie powie – trzeba mieć porównanie z prawidłowym DNA. Dlatego robi się to tak:</p>
+  <ol>
+    <li>Bierzemy <b>DNA badane</b> (pacjenta) i <b>DNA referencyjne</b> (kontrolne, prawidłowe) i oznaczamy je <b>dwoma różnymi fluorochromami</b> – świecą innym kolorem, więc da się je odróżnić.</li>
+    <li>Mieszamy je w proporcji <b>1:1</b> i nanosimy na mikromacierz.</li>
+    <li>Oba DNA <b>konkurują</b> o te same sekwencje wzorcowe – zasada jest podobna jak w klasycznej CGH (<i>comparative genome hybridization</i>).</li>
+    <li>Skaner mierzy w każdym punkcie, ile światła daje każdy kolor, a filtry i komputer zamieniają to na <b>barwę sygnału</b> (<a class="figref" href="#c06-fig-dwukolor"></a>).</li>
+  </ol>
+
+  <figure class="fig" id="c06-fig-dwukolor" data-title="Doświadczenie z DNA badanym i referencyjnym">
+
+    <div class="panel">
+<svg viewBox="0 0 640 200" role="img" aria-label="Przebieg doswiadczenia dwukolorowego na mikromacierzy">
+<g class="step" transform="translate(21,14)"><circle r="9"/><text y="3.8">1</text></g><text x="35" y="18" class="step-title">Znakowanie</text>
+<g class="step" transform="translate(181,14)"><circle r="9"/><text y="3.8">2</text></g><text x="195" y="18" class="step-title">Mieszanie 1:1</text>
+<g class="step" transform="translate(341,14)"><circle r="9"/><text y="3.8">3</text></g><text x="355" y="18" class="step-title">Hybrydyzacja</text>
+<g class="step" transform="translate(501,14)"><circle r="9"/><text y="3.8">4</text></g><text x="515" y="18" class="step-title">Odczyt</text>
+<rect x="8" y="34" width="132" height="58" rx="6" class="card"/>
+<text x="74" y="50" class="t-xs mid sb f-teal">DNA badane</text>
+<path d="M24,72 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="49" cy="72" r="3" fill="#007e83"/>
+<path d="M60,72 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="85" cy="72" r="3" fill="#007e83"/>
+<path d="M96,72 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="121" cy="72" r="3" fill="#007e83"/>
+<rect x="8" y="100" width="132" height="58" rx="6" class="card"/>
+<text x="74" y="116" class="t-xs mid sb f-ochre">DNA referencyjne</text>
+<path d="M24,138 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="49" cy="138" r="3" fill="#b77a20"/>
+<path d="M60,138 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="85" cy="138" r="3" fill="#b77a20"/>
+<path d="M96,138 c5.5,-5 11.0,5 16.5,0 s5.5,-5 5.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="121" cy="138" r="3" fill="#b77a20"/>
+<text x="74" y="180" class="t-xs mid sb">dwa różne fluorochromy</text>
+<text x="74" y="193" class="t-xs mid muted">inna długość fali emisji</text>
+<path d="M144,96 H164" class="arrow"/>
+<path d="M206,40 V136 a26,26 0 0 0 52,0 V40" fill="#f7fafb" stroke="#8a98a3" stroke-width="1.6"/>
+<line x1="200" y1="40" x2="264" y2="40" stroke="#8a98a3" stroke-width="2"/>
+<path d="M207,70 H257 V136 a25,25 0 0 1 -50,0 Z" fill="#eaf3f4"/>
+<path d="M214,86 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="231" cy="86" r="3" fill="#007e83"/>
+<path d="M234,98 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="251" cy="98" r="3" fill="#b77a20"/>
+<path d="M216,112 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="233" cy="112" r="3" fill="#b77a20"/>
+<path d="M236,124 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="253" cy="124" r="3" fill="#007e83"/>
+<path d="M214,140 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#007e83" stroke-width="2.4" stroke-linecap="round"/><circle cx="231" cy="140" r="3" fill="#007e83"/>
+<path d="M232,150 c3.5,-5 7.0,5 10.5,0 s3.5,-5 3.5,0" fill="none" stroke="#b77a20" stroke-width="2.4" stroke-linecap="round"/><circle cx="249" cy="150" r="3" fill="#b77a20"/>
+<text x="232" y="180" class="t-xs mid sb">równe ilości obu DNA</text>
+<text x="232" y="193" class="t-xs mid muted">w jednej mieszaninie</text>
+<path d="M276,96 H316" class="arrow"/>
+<rect x="332" y="40" width="132" height="112" rx="5" fill="#f2f5f7" stroke="#8a98a3" stroke-width="1.2"/>
+<circle cx="350.0" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="369.2" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="388.4" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="407.6" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="426.8" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="446.0" cy="58" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="350.0" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="369.2" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="388.4" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="407.6" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="426.8" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="446.0" cy="77" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="350.0" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="369.2" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="388.4" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="407.6" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="426.8" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="446.0" cy="96" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="350.0" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="369.2" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="388.4" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="407.6" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="426.8" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="446.0" cy="115" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="350.0" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="369.2" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="388.4" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="407.6" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="426.8" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<circle cx="446.0" cy="134" r="6" fill="#ffffff" stroke="#b9c6ce" stroke-width="1.2"/>
+<text x="398" y="180" class="t-xs mid sb">sekwencje wzorcowe na płytce</text>
+<text x="398" y="193" class="t-xs mid muted">oba DNA „konkurują” o miejsca</text>
+<path d="M470,96 H490" class="arrow"/>
+<rect x="500" y="30" width="132" height="24" rx="4" fill="#153144"/>
+<text x="566" y="46" class="t-xs mid f-white sb">skaner laserowy</text>
+<path d="M548,54 L548,70" stroke="#c84d42" stroke-width="1.6" marker-end="url(#k6-arrow-red)"/>
+<path d="M584,70 L584,56" class="arrow teal"/>
+<rect x="500" y="74" width="132" height="84" rx="5" fill="#1d3444"/>
+<circle cx="517.0" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="536.6" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="556.2" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="575.8" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="595.4" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="615.0" cy="90.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="517.0" cy="108.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="536.6" cy="108.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="556.2" cy="108.5" r="6.4" fill="#b77a20" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="575.8" cy="108.5" r="6.4" fill="#b77a20" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="595.4" cy="108.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="615.0" cy="108.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="517.0" cy="127.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="536.6" cy="127.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="556.2" cy="127.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="575.8" cy="127.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="595.4" cy="127.0" r="6.4" fill="#007e83" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="615.0" cy="127.0" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="517.0" cy="145.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="536.6" cy="145.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="556.2" cy="145.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="575.8" cy="145.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="595.4" cy="145.5" r="6.4" fill="#007e83" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<circle cx="615.0" cy="145.5" r="6.4" fill="#5c7c52" stroke="#ffffff" stroke-opacity=".35" stroke-width="1"/>
+<text x="566" y="180" class="t-xs mid sb">filtry + oprogramowanie</text>
+<text x="566" y="193" class="t-xs mid muted">sygnał → barwa plamki</text>
+</svg>
+    </div>
+    <figcaption>Barwy umowne (Drewa ich nie podaje): turkus – przewaga DNA badanego, ochra – przewaga DNA referencyjnego, oliwkowa – równowaga sygnałów.</figcaption>
+  </figure>
+
+  <p>Jak czytać wynik? Jeśli dany odcinek występuje w obu DNA w tej samej ilości, oba DNA zajmują po połowie miejsc w punkcie – sygnały są w <b>równowadze</b>. Odchylenia:</p>
+  <ul>
+    <li><b>przeważa sygnał DNA kontrolnego</b> – DNA badanego „nie miało czym konkurować”, bo tego odcinka u pacjenta brakuje: <b>delecja</b>;</li>
+    <li><b>przeważa sygnał DNA badanego</b> – pacjent ma tego odcinka więcej niż prawidłowo: <b>duplikacja</b>.</li>
+  </ul>
+  <p>Jak drobne zmiany wykryje mikromacierz (jaką ma <b>rozdzielczość</b>)? Zależy od tego, jak duże są naniesione sekwencje, jak gęsto są upakowane i jak dokładny jest czytnik. Mikromacierz może obejmować kilka wybranych genów, grupy genów albo cały genom.</p>
+  <div class="box zapamietaj"><p>Mikromacierz = tysiące znanych sekwencji w znanych miejscach; badany materiał jest znakowany i hybrydyzuje z nimi naraz. Doświadczenie dwukolorowe: DNA badane i kontrolne 1:1 w różnych kolorach; przewaga sygnału kontrolnego – delecja, przewaga badanego – duplikacja.</p></div>
+
+  <h3>Rodzaje mikromacierzy</h3>
+  <p>Mikromacierze różnią się tym, co naniesiono na płytkę, a od tego zależy, na jakie pytanie odpowiadają. Drewa wymienia mikromacierze do badania RNA (np. ekspresji genów), do badania DNA, do analizy polimorfizmów pojedynczych nukleotydów (SNP) i do szukania miejsc, w których białka wiążą się z DNA (ChIP-chip) – przegląd w części 2 (<a class="pageref" href="#c06-r-mikromacierze"></a>).</p>
+  <p class="src">Źródło: Drewa s. 717–718</p>
+
+  <!-- ============ 7 ============ -->
+  <h2 id="c06-sekwencjonowanie">Sekwencjonowanie</h2>
+  <h3>Po co czytać sekwencję?</h3>
+  <p>Wszystkie dotychczasowe metody mówiły nam coś pośrednio: że fragment jest dłuższy, że sekwencja jest albo jej nie ma. <b>Sekwencjonowanie</b> to odczytanie samej kolejności nukleotydów, litera po literze. To najczulszy sposób wykrywania zmian w DNA, a przy tym pozwala je w pełni scharakteryzować – powiedzieć, <b>jaka dokładnie</b> to zmiana. Dzięki postępowi technicznemu i komputerowej (bioinformatycznej) obróbce danych udało się w ten sposób odczytać cały genom człowieka.</p>
+  <p>Pierwsze metody to <b>metoda terminacji łańcucha (Sangera)</b> i <b>metoda chemicznej degradacji (Maxama–Gilberta)</b>.</p>
+  <p>Często przed sekwencjonowaniem robi się <b>metody przesiewowe</b>: nie czytają sekwencji, ale szybko wskazują fragmenty, w których prawdopodobnie jest mutacja – i dopiero te się sekwencjonuje (<a class="chapref" href="#c05"></a>; metody przesiewowe opisane u Drewy obok sekwencjonowania – <a class="pageref" href="#c06-r-sekwencjonowanie"></a>).</p>
+
+  <h3>Jak działa odczyt metodą terminacji łańcucha?</h3>
+  <p>Żeby zrozumieć automatyczny odczyt, trzeba wiedzieć, czym jest <b>dideoksynukleotyd (ddNTP)</b> – przypominamy to z rozdziału o genomice, bo Drewa na tych stronach mechanizmu nie opisuje. Polimeraza DNA buduje nową nić, doczepiając kolejne nukleotydy (dNTP); każdy następny przyczepia się do grupy –OH na końcu 3′ poprzedniego. <b>ddNTP</b> tej grupy nie ma – gdy polimeraza go wbuduje, do nici nie da się już nic doczepić i <b>synteza się zatrzymuje</b> (stąd „terminacja łańcucha”; szerzej – <a class="chapref" href="#c01"></a>).</p>
+  <p>Do reakcji daje się zwykłe dNTP i trochę ddNTP. Raz polimeraza wbuduje zwykły nukleotyd i idzie dalej, raz – ddNTP i staje. Powstają więc kopie urwane na <b>każdej kolejnej pozycji</b>, a każda kończy się ddNTP. Gdy ddNTP są <b>znakowane fluorescencyjnie</b> (każda z czterech zasad innym kolorem), kolor końca każdej kopii mówi, jaka litera stoi w tym miejscu. Wystarczy rozdzielić kopie według długości – od najkrótszej – i odczytać kolejne kolory.</p>
+
+  <h3>Automatyczny odczyt</h3>
+  <p>Na tej zasadzie działają automatyczne sekwenatory. Kopie rozdziela się w kapilarze (albo linii żelu); z jednej kapilary odczytuje się <b>300–1000 pz</b>. Barwniki wzbudza <b>laser</b>, a detektory fluorescencji zapisują kolejne kolory na bieżąco, w czasie rzeczywistym. Odczytaną sekwencję porównuje się z prawidłową z baz danych <b>GenBank</b> i <b>EMBL</b> – różnice to kandydaci na mutacje. Nowoczesne aparaty czytają tak miliony par zasad na godzinę.</p>
+
+  <h3>Cycle sequencing – dlaczego czytamy obie nici?</h3>
+  <p>Najwygodniejszą techniką jest <b>cycle sequencing</b>. Jej istota: odczytuje się <b>obie nici</b> DNA. Po co? Bo odczyt czasem się myli – powstaje <b>artefakt</b>, przypadkowy błąd, którego w DNA nie ma. Prawdziwa zmiana sekwencji jest w <b>obu niciach</b> (w jednej jako zmieniona litera, w drugiej jako jej komplementarna para). Artefakt pojawia się zwykle w jednej. Zmiana widoczna w obu niciach = prawdziwa mutacja.</p>
+  <p>Etapy, każdy przygotowuje następny:</p>
+  <ol>
+    <li><b>Preparatywny PCR</b> – namnażamy badany fragment genu parą specyficznych starterów, żeby mieć dużo materiału do odczytu.</li>
+    <li><b>Asymetryczny PCR</b> – dla każdej próbki <b>osobno z każdym ze starterów</b>: jeden starter kopiuje jedną nić, drugi – drugą, więc dostajemy osobno odczyt każdej nici. W tej reakcji są ddNTP znakowane barwnikami, więc powstają kopie urwane na każdej pozycji.</li>
+    <li><b>Elektroforeza</b> w denaturującym żelu poliakrylamidowym (rozdziela z dokładnością do 1 nukleotydu); w trakcie przepływu detektor rejestruje kolor każdej kopii.</li>
+    <li><b>Analiza komputerowa</b> – program składa kolory w sekwencję i porównuje obie nici.</li>
+  </ol>
+
+  <h3>Pirosekwencjonowanie – sekwencja zapisana w błyskach światła</h3>
+  <p>Inny pomysł: zamiast urywać kopie, budujemy nową nić <b>krok po kroku</b> i po każdym kroku sprawdzamy, czy nukleotyd się przyłączył. To <b>pirosekwencjonowanie</b> („sekwencjonowanie przez syntezę”, w czasie rzeczywistym). Matrycowe DNA unieruchamia się na podłożu stałym. Są przy nim cztery enzymy – <b>polimeraza DNA</b>, <b>sulfurylaza ATP</b>, <b>lucyferaza</b> i <b>apyraza</b> – a dodaje się <b>tylko jeden</b> rodzaj dNTP naraz (<a class="figref" href="#c06-fig-piro"></a>):</p>
+  <ol>
+    <li>Jeśli dodany dNTP pasuje do matrycy, polimeraza wbudowuje go do nici. Przy każdym wbudowaniu odpada <b>pirofosforan</b>.</li>
+    <li>Sulfurylaza łączy ten pirofosforan z 5′-fosfosiarczanem adenozyny – powstaje <b>ATP</b>.</li>
+    <li>Lucyferaza zużywa ATP i daje <b>błysk światła</b>, który rejestruje aparat. Błysk = „ta litera pasowała”.</li>
+    <li>Jeśli dNTP nie pasował, nie został wbudowany – nie ma pirofosforanu, ATP ani światła. <b>Apyraza</b> rozkłada niewykorzystany dNTP, żeby nie przeszkadzał, gdy dodamy następny.</li>
+  </ol>
+
+  <figure class="fig" id="c06-fig-piro" data-title="Kaskada pirosekwencjonowania – cztery enzymy">
+
+    <div class="panel">
+<svg viewBox="0 0 640 216" role="img" aria-label="Kaskada reakcji pirosekwencjonowania z udziałem czterech enzymów">
+<circle cx="34" cy="86" r="20" fill="#c9d3d9"/>
+<text x="34" y="122" class="t-xs mid muted">podłoże</text><text x="34" y="134" class="t-xs mid muted">stałe</text>
+<path d="M54,92 H178" class="dna thin"/><path d="M54,82 H114" class="dna thin teal"/>
+<ellipse cx="128" cy="84" rx="15" ry="13" class="f-violet-bg s-violet sw15"/>
+<text x="128" y="116" class="t-xs mid sb f-violet">polimeraza DNA</text>
+<text x="148" y="103" class="t-xs muted">matryca</text>
+<circle cx="128" cy="26" r="9" fill="#007e83"/>
+<text x="142" y="30" class="t-xs sb f-teal">pasujący dNTP</text>
+<path d="M128,37 V67" class="arrow teal"/>
+<g class="step teal" transform="translate(102,60)"><circle r="9"/><text y="3.8">1</text></g>
+<path d="M148,84 H202" class="arrow"/>
+<circle cx="222" cy="84" r="17" class="f-ochre-bg s-ochre sw15"/>
+<text x="222" y="88" class="t-s mid b">PP<tspan dy="3" font-size="10">i</tspan></text>
+<text x="222" y="116" class="t-xs mid muted">pirofosforan</text>
+<path d="M240,84 H266" class="arrow"/>
+<rect x="270" y="64" width="96" height="40" rx="6" fill="#fff" class="s-teal sw15"/>
+<text x="318" y="81" class="t-s mid sb f-teal">sulfurylaza</text><text x="318" y="96" class="t-s mid sb f-teal">ATP</text>
+<g class="step teal" transform="translate(270,52)"><circle r="9"/><text y="3.8">2</text></g>
+<path d="M318,130 V108" class="arrow"/>
+<text x="318" y="143" class="t-xs mid">5′-fosfosiarczan</text><text x="318" y="155" class="t-xs mid">adenozyny</text>
+<path d="M366,84 H390" class="arrow"/>
+<circle cx="410" cy="84" r="17" fill="#fbf2dc" class="s-ochre sw15"/>
+<text x="410" y="88" class="t-s mid b">ATP</text>
+<path d="M428,84 H444" class="arrow"/>
+<rect x="448" y="64" width="88" height="40" rx="6" fill="#fff" class="s-ochre sw15"/>
+<text x="492" y="81" class="t-s mid sb f-ochre">lucyferaza</text><text x="492" y="96" class="t-xs mid muted">rozkład ATP</text>
+<g class="step teal" transform="translate(448,52)"><circle r="9"/><text y="3.8">3</text></g>
+<path d="M536,84 H554" class="arrow"/>
+<polygon points="582.0,67.0 584.7,77.5 594.0,72.0 588.5,81.3 599.0,84.0 588.5,86.7 594.0,96.0 584.7,90.5 582.0,101.0 579.3,90.5 570.0,96.0 575.5,86.7 565.0,84.0 575.5,81.3 570.0,72.0 579.3,77.5" class="f-gold"/>
+<text x="582" y="116" class="t-xs mid sb">światło</text><text x="582" y="128" class="t-xs mid muted">rejestrowane</text><text x="582" y="140" class="t-xs mid muted">przez aparaturę</text>
+<line x1="10" y1="166" x2="630" y2="166" class="divider"/>
+<circle cx="34" cy="192" r="9" fill="#b77a20"/>
+<text x="50" y="196" class="t-xs sb f-red">niewłaściwy dNTP</text>
+<path d="M146,192 H264" class="arrow red dashed"/>
+<path d="M198,184 L210,200 M210,184 L198,200" stroke="#c84d42" stroke-width="2"/>
+<text x="204" y="180" class="t-xs mid muted">brak inkorporacji</text>
+<rect x="270" y="176" width="96" height="32" rx="6" fill="#fff" class="s-red sw15"/>
+<text x="318" y="196" class="t-s mid sb f-red">apyraza</text>
+<path d="M366,192 H444" class="arrow"/>
+<text x="405" y="184" class="t-xs mid muted">rozkład dNTP</text>
+<text x="492" y="196" class="t-s mid sb muted">brak światła</text>
+<polygon points="582.0,178.0 584.3,186.5 591.9,182.1 587.5,189.7 596.0,192.0 587.5,194.3 591.9,201.9 584.3,197.5 582.0,206.0 579.7,197.5 572.1,201.9 576.5,194.3 568.0,192.0 576.5,189.7 572.1,182.1 579.7,186.5" fill="none" stroke="#8a98a3" stroke-width="1.2" stroke-dasharray="2 2"/>
+</svg>
+    </div>
+    <figcaption>Góra: pasujący dNTP → pirofosforan → ATP (sulfurylaza) → światło (lucyferaza). Dół: niewłaściwy dNTP nie jest wbudowany, rozkłada go apyraza.</figcaption>
+  </figure>
+
+  <div class="box obraz"><p>Zgadujesz słowo litera po literze, a lampka zapala się tylko przy dobrej odpowiedzi. „A?” – ciemno. „C?” – ciemno. „G?” – błysk! Zapisujesz G i zgadujesz następną literę.</p></div>
+  <p>Tak powstaje nić komplementarna i jednocześnie odczytujemy jej sekwencję – szybciej i taniej niż wcześniejszymi metodami.</p>
+  <p><b>Metoda 454</b> – jedna z pierwszych technik <b>sekwencjonowania nowej generacji</b> – to pirosekwencjonowanie prowadzone <b>jednocześnie na wielu fragmentach DNA</b>. Dzięki temu jest dużo szybsze (zastosowania – <a class="pageref" href="#c06-r-sekwencjonowanie"></a>).</p>
+
+  <h3>Masowe sekwencjonowanie na płytce i SMRT</h3>
+  <aside class="note pojecie" data-term="Odwracalny terminator"><p>nukleotyd, który po wbudowaniu zatrzymuje syntezę, ale blokadę (i barwnik) można usunąć, żeby wydłużać nić dalej.</p></aside>
+  <p><b>Płytka szklana.</b> Bardzo wiele różnych fragmentów DNA przyczepia się (zakotwicza) do <b>szklanej płytki</b>. Każdy fragment namnaża się, aż ma co najmniej 1000 kopii (źródło nie mówi po co; wiele jednakowych cząsteczek w jednym miejscu daje razem mocniejszy sygnał niż jedna). Potem sekwencjonuje się je przez syntezę z użyciem <b>odwracalnych terminatorów</b> z usuwalnymi barwnikami fluorescencyjnymi. Kolejnych kroków Drewa nie opisuje – podpowiada je sama nazwa: wbudowany nukleotyd na chwilę zatrzymuje syntezę, jego barwnik zostaje odczytany, a po usunięciu blokady i barwnika można dobudować następny.</p>
+  <p>Płytka jest bardzo gęsto pokryta fragmentami, więc odczytuje się ogromną liczbę fragmentów naraz – stąd szybkość.</p>
+  <p><b>SMRT</b> (<i>single molecule real-time sequencing</i>) podgląda pracę <b>jednej cząsteczki polimerazy DNA</b>: każdy z czterech dNTP ma inny barwnik, a aparat rejestruje kolor, gdy polimeraza wbudowuje nukleotyd – sekwencję odczytuje się więc w trakcie syntezy, z szybkością <b>10 pz na sekundę</b>. Źródło (2011) opisuje SMRT jako jedną z metod rozwijanych (jak działa i co może przyjść po niej – <a class="pageref" href="#c06-r-sekwencjonowanie"></a>).</p>
+  <p class="src">Źródło: Drewa s. 730–732</p>
+
+  <!-- ============ 8 ============ -->
+  <h2 id="c06-str">Identyfikacja genetyczna: układy STR</h2>
+  <h3>Co to znaczy „zidentyfikować osobę”?</h3>
+  <p>Na miejscu przestępstwa zostaje ślad – plamka krwi, ślina na niedopałku, kilka komórek na przedmiocie. Chcemy wiedzieć, <b>od kogo pochodzi</b>. Albo: dziecko i mężczyzna – czy to <b>ojciec</b>? To jest <b>identyfikacja osobnicza</b>: ustalenie, od jakiej osoby pochodzi materiał biologiczny albo czy osoby są spokrewnione.</p>
+  <p>Do tego potrzebujemy cechy, która jest <b>inna u każdego człowieka</b>, a u jednej osoby taka sama w każdej komórce. Taką cechą jest DNA – ale nie całe, tylko miejsca, w których ludzie się różnią.</p>
+
+  <h3>Dlaczego DNA różni ludzi? Polimorfizm</h3>
+  <p>Każdy chromosom mamy w dwóch kopiach (jedna od matki, druga od ojca). Te kopie są „homologiczne”, ale nie identyczne – prawie w każdej parze są drobne różnice sekwencji. Różnice między ludźmi w tym samym miejscu DNA to <b>polimorfizm genetyczny</b>. To on jest podstawą identyfikacji. Największe różnice gromadzą się poza genami: ponad 95% DNA jądrowego nie koduje białek, a zmiany w tych odcinkach zwykle nie szkodzą, więc mogą się utrwalać i być różne u różnych ludzi.</p>
+  <p>Wersje danego miejsca DNA nazywamy <b>allelami</b>, a samo miejsce – <b>układem</b> (locus). Im więcej jest różnych alleli w układzie, tym mniejsza szansa, że dwie przypadkowe osoby mają takie same.</p>
+
+  <h3>Sekwencje powtarzalne: minisatelity i mikrosatelity</h3>
+  <p>Szczególnie przydatne okazały się miejsca, w których ten sam krótki odcinek DNA jest <b>powtórzony wiele razy, jeden za drugim</b> (powtórzenia tandemowe). U różnych ludzi takie miejsca różnią się <b>liczbą powtórzeń</b> – a więc długością. Mutacje w nich najczęściej dodają albo usuwają powtórzenia, więc w populacji powstaje bardzo wiele wariantów długości (alleli).</p>
+  <ul>
+    <li><b>Minisatelity</b> – powtarzany odcinek ma kilkanaście–kilkadziesiąt pz, powtórzeń jest setki, nawet tysiące. Allele mają tysiące pz, a w jednym układzie bywa ponad 100 wariantów długości.</li>
+    <li><b>Mikrosatelity, czyli STR</b> (<i>short tandem repeats</i>, krótkie powtórzenia tandemowe) – powtarzany odcinek ma tylko 2–6 pz, powtórzeń jest zwykle 5–50. Allele mają zwykle 100–300 pz.</li>
+  </ul>
+  <div class="box przyklad"><p>Jednostka powtarzalna STR to np. AATG. Jedna osoba może mieć w danym miejscu AATG powtórzone 9 razy (AATG AATG … AATG), druga – 10 razy. Fragment drugiej osoby jest o 4 pz dłuższy. Mierząc długość fragmentu, liczymy więc powtórzenia – i odróżniamy ludzi.</p></div>
+
+  <h3>Pierwsza metoda: RFLP minisatelitów – „genetyczny odcisk palca”</h3>
+  <p>Pierwsza metoda identyfikacji wykorzystywała minisatelity i znaną już <b>analizę RFLP</b> z hybrydyzacją Southerna: DNA tnie się enzymem restrykcyjnym po obu stronach minisatelity, więc długość fragmentu zależy od liczby powtórzeń, a sonda pokazuje te fragmenty jako prążki – obraz niepowtarzalny dla danej osoby, stąd nazwa „genetyczny odcisk palca”. Metoda wymagała jednak dużo DNA dobrej jakości. W sprawach o ojcostwo to zwykle nie problem (materiał od żywej osoby jest świeży), ale ślady z miejsca przestępstwa mają mało DNA, często zniszczonego – tam metoda zawodziła (jej odmiany i liczby – <a class="pageref" href="#c06-r-str"></a>).</p>
+
+  <h3>Przełom: PCR i przejście na STR</h3>
+  <p>Problemem identyfikacji była <b>mała ilość materiału</b>. Rozwiązał go <b>PCR</b>: z jednej kopii wybranego odcinka DNA powstaje nawet kilkaset milionów identycznych kopii. Nawet ślina na niedopałku czy plamka krwi wielkości główki szpilki może wystarczyć.</p>
+  <p>Ale PCR słabo radzi sobie z <b>długimi</b> odcinkami. Allele minisatelitów mają tysiące pz – namnożenie ich wymaga DNA wysokiej jakości i nawet wtedy jest technicznie trudne. Trzeba więc było znaleźć sekwencje równie zmienne między ludźmi, ale <b>krótkie</b>. Takie są <b>STR</b>.</p>
+  <table class="tbl full">
+    <thead><tr><th style="width:30%">Cecha</th><th style="width:30%">STR (mikrosatelity)</th><th>Minisatelity</th></tr></thead>
+    <tbody>
+      <tr><td>jednostka powtarzalna</td><td>2–6 pz</td><td>kilkanaście–kilkadziesiąt pz</td></tr>
+      <tr><td>liczba powtórzeń</td><td>zwykle 5–50</td><td>setki, nawet tysiące</td></tr>
+      <tr><td>długość allelu</td><td>zwykle 100–300 pz</td><td>tysiące pz</td></tr>
+      <tr><td>liczba alleli</td><td>kilka–kilkanaście, czasem ok. 20</td><td>dziesiątki, nawet setki</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Dlaczego STR są lepsze, choć mają mniej alleli?</h3>
+  <p>STR mają mniej wariantów niż minisatelity – ale wystarczająco dużo (ile – <a class="pageref" href="#c06-r-str"></a>). A do tego mają dwie przewagi:</p>
+  <ul>
+    <li><b>Działają ze zniszczonym DNA.</b> Degradacja DNA to jego pocięcie na coraz krótsze kawałki. Długi allel minisatelity rzadko przetrwa w całości. Krótki allel STR (100–300 pz) ma dużą szansę przetrwać – i da się go namnożyć nawet z <b>silnie zdegradowanego DNA</b>, np. ze śladu długo leżącego w złych warunkach.</li>
+    <li><b>Można badać wiele naraz.</b> Wiele układów STR namnaża się w jednej probówce – to <b>amplifikacja multipleksowa</b>. Zużywa się mniej DNA (którego w śladzie i tak jest mało), mniej odczynników i mniej czasu do uzyskania pełnego profilu.</li>
+  </ul>
+
+  <h3>Multipleks: jak odróżnić produkty w jednej probówce?</h3>
+  <p>Skoro w jednej probówce namnażamy wiele układów, potem musimy wiedzieć, który produkt należy do którego układu. Są na to dwa sposoby, łączone razem:</p>
+  <ol>
+    <li><b>Długość.</b> Startery projektuje się tak, żeby różne układy dawały produkty w różnych zakresach długości. Wtedy po samej długości (szybkości wędrówki w żelu poliakrylamidowym) wiadomo, z którego układu jest produkt.</li>
+    <li><b>Kolor.</b> Zakresów długości nie wystarczy dla wielu układów. Dlatego startery dzieli się na grupy, a każda grupa dostaje inny <b>barwnik fluorescencyjny</b>, który po wzbudzeniu laserem świeci innym kolorem. W obrębie jednego koloru długości się nie nakładają, a między kolorami – mogą.</li>
+  </ol>
+  <p>Przykład z Drewy: <b>trzy barwniki</b> × po <b>trzy układy</b> o różnej długości w każdym kolorze = <b>dziewięć układów STR</b> w jednej reakcji. Każdy produkt rozpoznajemy po parze cech: kolor + długość (<a class="figref" href="#c06-fig-multipleks"></a>).</p>
+
+  <figure class="fig" id="c06-fig-multipleks" data-title="Multipleks: 3 barwniki × 3 układy = 9 układów STR">
+
+    <div class="panel">
+<svg viewBox="0 0 640 214" role="img" aria-label="Ten sam elektroforegram po rozdzieleniu na kolory: trzy barwniki po trzy układy STR i czerwony marker wielkości">
+<rect x="88" y="5" width="99" height="13" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="137.5" y="15" class="t-xs mid sb muted">układ 1</text>
+<rect x="241" y="5" width="108" height="13" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="295" y="15" class="t-xs mid sb muted">układ 2</text>
+<rect x="403" y="5" width="117" height="13" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="461.5" y="15" class="t-xs mid sb muted">układ 3</text>
+<line x1="70" y1="50" x2="616" y2="50" class="axis"/>
+<path d="M71,50 L111,50 L112,49.9 L113,49.8 L114,49.3 L115,47.9 L116,45.2 L117,40.5 L118,34.2 L119,28.1 L120,24.4 L121,24.8 L122,29.2 L123,35.5 L124,41.6 L125,45.9 L126,48.3 L127,49.3 L128,49.4 L129,48.7 L130,46.7 L131,43.1 L132,37.8 L133,31.9 L134,27.3 L135,26.1 L136,28.8 L137,34.2 L138,40.1 L139,44.8 L140,47.7 L141,49.1 L142,49.7 L143,49.9 L144,50 L266,50 L267,49.9 L268,49.7 L269,48.9 L270,47.1 L271,43.5 L272,37.7 L273,30.3 L274,23.5 L275,20.1 L276,21.6 L277,27.4 L278,34.8 L279,41.4 L280,45.9 L281,48.4 L282,49.5 L283,49.8 L284,50 L421,50 L422,49.9 L423,49.7 L424,49 L425,47.5 L426,44.5 L427,39.9 L428,34.5 L429,29.8 L430,28 L431,29.8 L432,34.5 L433,39.9 L434,44.5 L435,47.5 L436,49 L437,49.7 L438,49.9 L439,50 L450,50 L451,49.9 L452,49.6 L453,48.9 L454,47.2 L455,44 L456,39.4 L457,34.1 L458,30.1 L459,29.1 L460,31.5 L461,36.2 L462,41.4 L463,45.5 L464,48 L465,49.3 L466,49.8 L467,49.9 L468,50 L614,50" class="trace blue"/>
+<text x="8" y="36" class="t-xs sb">niebieski</text>
+<text x="8" y="48" class="t-xs muted">3 układy</text>
+<rect x="106" y="57" width="99" height="13" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="155.5" y="67" class="t-xs mid sb muted">układ 4</text>
+<rect x="250" y="57" width="111.6" height="13" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="305.8" y="67" class="t-xs mid sb muted">układ 5</text>
+<rect x="415.6" y="57" width="117" height="13" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="474.1" y="67" class="t-xs mid sb muted">układ 6</text>
+<line x1="70" y1="102" x2="616" y2="102" class="axis"/>
+<path d="M71,102 L133,102 L134,101.9 L135,101.7 L136,101 L137,99.5 L138,96.5 L139,91.9 L140,86.5 L141,81.8 L142,80 L143,81.8 L144,86.5 L145,91.9 L146,96.5 L147,99.5 L148,101 L149,101.5 L150,101.3 L151,100.2 L152,97.7 L153,93.6 L154,88 L155,82.6 L156,79.3 L157,79.7 L158,83.6 L159,89.2 L160,94.5 L161,98.3 L162,100.5 L163,101.5 L164,101.8 L165,102 L281,102 L282,101.8 L283,101.4 L284,100.4 L285,98 L286,93.9 L287,88.1 L288,82 L289,77.8 L290,77.3 L291,80.9 L292,86.8 L293,92.8 L294,97.3 L295,100 L296,101.3 L297,101.8 L298,101.9 L299,102 L302,102 L303,101.9 L304,101.7 L305,101.1 L306,99.7 L307,96.8 L308,92.1 L309,86.2 L310,80.8 L311,78.1 L312,79.3 L313,83.9 L314,89.8 L315,95.1 L316,98.8 L317,100.7 L318,101.6 L319,101.9 L320,102 L475,102 L476,101.9 L477,101.6 L478,100.7 L479,98.6 L480,94.5 L481,88.3 L482,80.8 L483,74.5 L484,72 L485,74.5 L486,80.8 L487,88.3 L488,94.5 L489,98.6 L490,100.7 L491,101.6 L492,101.9 L493,102 L614,102" class="trace teal"/>
+<text x="8" y="88" class="t-xs sb">zielony</text>
+<text x="8" y="100" class="t-xs muted">3 układy</text>
+<rect x="77.2" y="109" width="100.8" height="13" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="127.6" y="119" class="t-xs mid sb muted">układ 7</text>
+<rect x="214" y="109" width="108" height="13" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="268" y="119" class="t-xs mid sb muted">układ 8</text>
+<rect x="376" y="109" width="115.2" height="13" rx="3" class="f-tile" stroke="#c9d3d9" stroke-width="0.8"/>
+<text x="433.6" y="119" class="t-xs mid sb muted">układ 9</text>
+<line x1="70" y1="154" x2="616" y2="154" class="axis"/>
+<path d="M71,154 L97,154 L98,153.9 L99,153.6 L100,152.7 L101,150.6 L102,146.5 L103,140.3 L104,132.8 L105,126.5 L106,124 L107,126.5 L108,132.8 L109,140.3 L110,146.5 L111,150.6 L112,152.7 L113,153.6 L114,153.9 L115,154 L234,154 L235,153.9 L236,153.6 L237,152.7 L238,150.8 L239,147.1 L240,141.8 L241,135.9 L242,131.3 L243,130.1 L244,132.8 L245,138.2 L246,144.1 L247,148.8 L248,151.7 L249,153.1 L250,153.7 L251,153.9 L252,154 L256,154 L257,153.8 L258,153.4 L259,152.2 L260,149.9 L261,145.9 L262,140.7 L263,135.4 L264,132.3 L265,132.7 L266,136.4 L267,141.8 L268,146.9 L269,150.5 L270,152.6 L271,153.5 L272,153.9 L273,154 L407,154 L408,153.8 L409,153.5 L410,152.4 L411,150.2 L412,146.2 L413,140.7 L414,134.8 L415,130.7 L416,130.3 L417,133.8 L418,139.4 L419,145.2 L420,149.5 L421,152.1 L422,153.3 L423,153.8 L424,153.9 L425,154 L450,154 L451,153.9 L452,153.5 L453,152.7 L454,150.6 L455,146.9 L456,141.3 L457,135.1 L458,130.4 L459,129.1 L460,131.9 L461,137.6 L462,143.7 L463,148.6 L464,151.6 L465,153.1 L466,153.7 L467,153.9 L468,154 L614,154" class="trace" stroke="#e8b200"/>
+<text x="8" y="140" class="t-xs sb">żółty</text>
+<text x="8" y="152" class="t-xs muted">3 układy</text>
+<g transform="translate(0,-26)">
+<line x1="70" y1="206" x2="616" y2="206" class="axis"/>
+<path d="M71,193.2 L72,196.1 L73,199.6 L74,202.5 L75,204.4 L76,205.4 L77,205.8 L78,205.9 L79,206 L151,206 L152,205.9 L153,205.8 L154,205.4 L155,204.4 L156,202.5 L157,199.6 L158,196.1 L159,193.2 L160,192 L161,193.2 L162,196.1 L163,199.6 L164,202.5 L165,204.4 L166,205.4 L167,205.8 L168,205.9 L169,206 L241,206 L242,205.9 L243,205.8 L244,205.4 L245,204.4 L246,202.5 L247,199.6 L248,196.1 L249,193.2 L250,192 L251,193.2 L252,196.1 L253,199.6 L254,202.5 L255,204.4 L256,205.4 L257,205.8 L258,205.9 L259,206 L331,206 L332,205.9 L333,205.8 L334,205.4 L335,204.4 L336,202.5 L337,199.6 L338,196.1 L339,193.2 L340,192 L341,193.2 L342,196.1 L343,199.6 L344,202.5 L345,204.4 L346,205.4 L347,205.8 L348,205.9 L349,206 L421,206 L422,205.9 L423,205.8 L424,205.4 L425,204.4 L426,202.5 L427,199.6 L428,196.1 L429,193.2 L430,192 L431,193.2 L432,196.1 L433,199.6 L434,202.5 L435,204.4 L436,205.4 L437,205.8 L438,205.9 L439,206 L511,206 L512,205.9 L513,205.8 L514,205.4 L515,204.4 L516,202.5 L517,199.6 L518,196.1 L519,193.2 L520,192 L521,193.2 L522,196.1 L523,199.6 L524,202.5 L525,204.4 L526,205.4 L527,205.8 L528,205.9 L529,206 L601,206 L602,205.9 L603,205.8 L604,205.4 L605,204.4 L606,202.5 L607,199.6 L608,196.1 L609,193.2 L610,192 L611,193.2 L612,196.1 L613,199.6 L614,202.5" class="trace red" stroke-width="1.6"/>
+<text x="8" y="192" class="t-xs sb">czerwony</text>
+<text x="8" y="204" class="t-xs muted">marker</text>
+<line x1="70" y1="206" x2="70" y2="210" class="axis"/>
+<text x="70" y="222" class="t-xs mid muted">100</text>
+<line x1="160" y1="206" x2="160" y2="210" class="axis"/>
+<text x="160" y="222" class="t-xs mid muted">150</text>
+<line x1="250" y1="206" x2="250" y2="210" class="axis"/>
+<text x="250" y="222" class="t-xs mid muted">200</text>
+<line x1="340" y1="206" x2="340" y2="210" class="axis"/>
+<text x="340" y="222" class="t-xs mid muted">250</text>
+<line x1="430" y1="206" x2="430" y2="210" class="axis"/>
+<text x="430" y="222" class="t-xs mid muted">300</text>
+<line x1="520" y1="206" x2="520" y2="210" class="axis"/>
+<text x="520" y="222" class="t-xs mid muted">350</text>
+<line x1="610" y1="206" x2="610" y2="210" class="axis"/>
+<text x="610" y="222" class="t-xs mid muted">400</text>
+<text x="343" y="236" class="t-xs mid muted">długość fragmentu [pz]</text>
+</g>
+</svg>
+    </div>
+    <figcaption>Produkty dziewięciu układów i marker wielkości wędrują razem; program rozdziela obraz na kolory. W jednym kolorze układy leżą w różnych zakresach długości (szare pola). Piki przykładowe.</figcaption>
+  </figure>
+
+  <h3>Jak się mierzy długość produktów? Sekwenator kapilarny</h3>
+  <p>Produkty multipleksu trzeba rozdzielić z dokładnością do pojedynczych par zasad – przecież allele różnią się o kilka pz. Robi to <b>automatyczny sekwenator</b>. Rozdziela produkty elektroforetycznie (w denaturującym żelu poliakrylamidowym lub podobnym materiale) z dokładnością do <b>1 pz</b>, a laser i układ optyczny rozpoznają barwniki. Dziś są to głównie <b>sekwenatory kapilarne</b>, w których rozdział biegnie w cienkich rurkach – kapilarach (ile trwa i jakie ma granice – <a class="pageref" href="#c06-r-str"></a>).</p>
+  <p>Detektor patrzy na jedno miejsce kapilary i rejestruje, kiedy przepływa obok niego coś świecącego i w jakim kolorze. Program rysuje z tego <b>elektroforegram</b> – wykres z kolorowymi pikami. Każdy pik to fragment DNA; kolor mówi, który barwnik (grupa starterów), a położenie na osi X („czas retencji”) – jak długo fragment biegł, czyli jaką ma długość.</p>
+  <aside class="note pojecie" data-term="Elektroforegram"><p>wykres z różnokolorowymi pikami; pik to fragment DNA, jego położenie na osi X odpowiada długości, a kolor – barwnikowi startera.</p></aside>
+
+  <h3>Marker wielkości – linijka w każdej próbce</h3>
+  <p>Czas retencji to jeszcze nie liczba par zasad. Trzeba go przeliczyć – i do tego służy <b>marker wielkości</b>: zestaw sztucznych odcinków DNA o znanej długości, który biegnie razem z próbkami jak linijka.</p>
+  <p>Najdokładniejszy jest <b>wewnętrzny marker wielkości</b>. Oznacza się go barwnikiem o innym kolorze niż startery i dodaje <b>wprost do każdej próbki</b>, więc biegnie <b>w tej samej kapilarze</b> co badane fragmenty, w dokładnie tych samych warunkach. Program odróżnia jego piki po kolorze i według nich przelicza długości pozostałych fragmentów. Pozwala to mierzyć długość z dokładnością do <b>0,5–1 pz</b> (z czego składa się taki marker i jak mierzono bez niego – <a class="pageref" href="#c06-r-str"></a>).</p>
+
+  <h3>Drabina alleliczna – jak nadać allelowi nazwę</h3>
+  <p>Znamy już długość fragmentu. Ale wynik ma brzmieć „allel 9”, a nie podawać liczbę par zasad. Nadanie fragmentom standardowych nazw to <b>genotypowanie</b>. Nazwa allelu STR to po prostu <b>liczba powtórzeń</b>.</p>
+  <p>Do przeliczenia długości na nazwę służy <b>drabina alleliczna</b> – zestaw znanych alleli danego układu, których budowę wcześniej sprawdzono sekwencjonowaniem (wiemy, ile mają powtórzeń). Drabinę puszcza się w tych samych warunkach co próbki. Fragment z próbki, który biegnie razem ze „szczeblem” drabiny, to ten sam allel – wystarczy znać jego kolor i długość.</p>
+  <p>Dlaczego nie wystarczy samo przeliczenie długości? Bo długość zmierzona w sekwenatorze może się różnić od rzeczywistej nawet o kilka nukleotydów. Drabina, biegnąc w tych samych warunkach, „myli się” tak samo – więc porównanie z nią jest pewne.</p>
+  <p><b>Przykład z Drewy – układ TH01.</b> Jego jednostka powtarzalna to <span class="seq">AATG</span>, a allel z 9 powtórzeniami to <b>allel 9</b> (gdzie leży ten układ i jaki produkt daje allel 9 – <a class="pageref" href="#c06-r-str"></a>).</p>
+  <p>Nazewnictwo radzi sobie też z mutacjami. W allelu 10 kiedyś w jednym powtórzeniu wypadł jeden nukleotyd. Powstał allel z 9 pełnymi powtórzeniami i jednym niepełnym, 3-nukleotydowym – i nazywa się go <b>allel 9.3</b> („9 pełnych i 3 nukleotydy”). Przy jednym z zestawów starterów jego produkt ma 179 pz, a produkt allelu 10 – 180 pz: różnią się o 1 pz. Właśnie dlatego potrzebna jest dokładność pomiaru 0,5–1 pz.</p>
+
+  <h3>Profil genetyczny i baza częstości</h3>
+  <aside class="note pojecie" data-term="Profil genetyczny"><p>lista alleli wszystkich badanych układów STR danej próbki.</p></aside>
+  <p>Lista alleli ze wszystkich badanych układów to <b>profil genetyczny</b>. Gdy profil śladu zgadza się z profilem podejrzanego – czy to już dowód? Jeszcze nie. Trzeba wiedzieć, <b>jak często</b> taki profil występuje w populacji: jeśli bardzo rzadko, zgodność jest mocnym dowodem; jeśli często – słabym. Bez obliczeń statystycznych profilu nie można uznać za unikalny.</p>
+  <p>Do obliczeń potrzebna jest <b>baza częstości alleli</b>. Tworzy się ją tak: od kilkuset losowo wybranych osób pobiera się anonimowo krew lub wymaz z ust, oznacza ich profile STR i zapisuje, jakie allele wykryto w każdym układzie. Częstość allelu = <b>N/Σ</b>: liczba chromosomów z danym allelem (N) podzielona przez liczbę wszystkich przebadanych chromosomów (Σ; każda osoba ma dwa). Przykładową bazę z przeliczeniem znajdziesz w części 2 (<a class="pageref" href="#c06-r-str"></a>).</p>
+  <p class="src">Źródło: Drewa s. 769–774 (wprowadzenie: s. 765–768)</p>
+
+  <!-- ============ 9 ============ -->
+  <h2 id="c06-ojcostwo">Sporne ojcostwo</h2>
+  <h3>Wskaźnik ojcostwa PI – o co w nim chodzi?</h3>
+  <p>Dziecko ma w każdym układzie dwa allele: jeden od matki, jeden od ojca. Rodzic i dziecko powinni więc mieć w każdym badanym układzie co najmniej jeden wspólny allel. Jeśli takich wspólnych alleli nie ma, pokrewieństwo w pierwszej linii trzeba wykluczyć. Ale jeśli allel się zgadza – czy to dowód? Może to przypadek: ten sam allel może mieć wielu mężczyzn.</p>
+  <p>Dlatego zestawia się dwie hipotezy: <b>„ten mężczyzna jest ojcem”</b> (Drewa nazywa ją hipotezą matki) i <b>„ojcem jest przypadkowy mężczyzna”</b> (hipoteza domniemanego ojca). <b>Wskaźnik ojcostwa (PI)</b> mówi, ile razy bardziej prawdopodobny jest uzyskany wynik przy pierwszej hipotezie niż przy drugiej. Liczy się go osobno dla każdego układu STR. Im rzadszy w populacji jest wspólny allel, tym trudniej o przypadek – i tym wyższy PI.</p>
+  <p>Drewa pokazuje to na locus <b>D21S11</b>, gdzie częstość allelu 26 wynosi <b>p<sub>26</sub> = 0,004</b> (<a class="figref" href="#c06-fig-pi"></a>):</p>
+  <ul>
+    <li><b>Badamy tylko ojca i dziecko.</b> Ojciec 26/30, dziecko 26/29. Wspólny allel to 26, ale nie wiemy, który allel dziecko dostało od matki – może 26, może 29. <span class="nowrap">PI = 1 / (4 × p<sub>26</sub>)</span> = <b>62,5</b>.</li>
+    <li><b>Badamy też matkę.</b> Matka 28/29. Allel 29 dziecka mógł pochodzić tylko od niej, więc allel 26 musiał dać ojciec biologiczny. Badany mężczyzna (26/30) przekazuje allel 26 z prawdopodobieństwem 0,5 (ma go na jednym z dwóch chromosomów), a przypadkowy mężczyzna – z prawdopodobieństwem równym częstości allelu. Stąd <span class="nowrap">PI = 0,5 / p<sub>26</sub></span> = <b>125</b>.</li>
+  </ul>
+
+  <figure class="fig" id="c06-fig-pi" data-title="Locus D21S11 – dwa obliczenia PI">
+
+    <div class="panels cols-2">
+      <div class="panel" data-badge="A" data-title="Ojciec + dziecko">
+        <svg viewBox="0 0 296 172" role="img" aria-label="Obliczenie PI bez matki: 62,5">
+          <text x="148" y="18" class="t-s mid">ojciec <tspan class="b">26</tspan>/30 · dziecko <tspan class="b">26</tspan>/29</text>
+          <text x="148" y="36" class="t-xs mid muted">wspólny allel: 26</text>
+          <text x="148" y="50" class="t-xs mid muted">bez matki nie wiadomo, który allel dziecka</text>
+          <text x="148" y="63" class="t-xs mid muted">jest matczyny</text>
+          <rect x="28" y="76" width="240" height="56" rx="6" class="f-ochre-bg"/>
+          <text x="148" y="98" class="t-m mid sb">PI = 1 / (4 × p₂₆)</text>
+          <text x="148" y="120" class="t-m mid sb">= 1 / 0,016 = <tspan class="b f-ochre">62,5</tspan></text>
+          <text x="148" y="152" class="t-xs mid">wynik 62,5 raza bardziej prawdopodobny</text>
+          <text x="148" y="165" class="t-xs mid">przy hipotezie matki niż przy hipotezie ojca</text>
+        </svg>
+      </div>
+      <div class="panel" data-badge="B" data-title="Matka + dziecko + ojciec">
+        <svg viewBox="0 0 296 172" role="img" aria-label="Obliczenie PI z matką: 125">
+          <text x="148" y="18" class="t-s mid">matka 28/<tspan class="b">29</tspan> · dziecko 26/29 · ojciec 26/30</text>
+          <text x="148" y="36" class="t-xs mid muted">29 – może pochodzić tylko od matki → wyłączony</text>
+          <text x="148" y="50" class="t-xs mid muted">26 – musiał pochodzić od ojca biologicznego</text>
+          <text x="148" y="63" class="t-xs mid muted">(domniemany ojciec go ma)</text>
+          <rect x="28" y="76" width="240" height="56" rx="6" class="f-teal-bg"/>
+          <text x="148" y="98" class="t-m mid sb">PI = 0,5 / p₂₆</text>
+          <text x="148" y="120" class="t-m mid sb">= 0,5 / 0,004 = <tspan class="b f-teal">125</tspan></text>
+          <text x="148" y="152" class="t-xs mid">wynik 125 razy bardziej prawdopodobny</text>
+          <text x="148" y="165" class="t-xs mid">przy hipotezie matki niż przy hipotezie ojca</text>
+        </svg>
+      </div>
+    </div>
+    <figcaption>A – bez profilu matki nie wiadomo, który allel dziecka jest matczyny: PI = 62,5. B – allel 29 wyłączony jako matczyny, zostaje allel 26 od ojca: PI = 125.</figcaption>
+  </figure>
+
+  <p>Wniosek: <b>profil matki podnosi PI</b>. Często pozwala wskazać allele dziecka, które mogą pochodzić wyłącznie od matki, i wyłączyć je z analizy. Zostaje mniej niepewności co do tego, który allel jest ojcowski – mianownik ilorazu zwykle maleje, a PI rośnie.</p>
+  <p>Jeden układ to za mało, więc wyniki się łączy: <b>sumaryczny PI</b> to iloczyn PI wszystkich układów (wolno mnożyć, gdy układy nie są ze sobą sprzężone genetycznie, czyli dziedziczą się niezależnie). Jak Drewa formułuje wynik i z jakim wskaźnikiem porównuje PI – <a class="pageref" href="#c06-r-ojcostwo"></a>.</p>
+  <div class="box zapamietaj"><p>Bez matki PI = 1/(4 × p) = 62,5, z matką 0,5/p = 125 – profil matki podnosi PI. Sumaryczny PI to iloczyn PI układów niesprzężonych.</p></div>
+
+  <h3>Procedura badania spornego ojcostwa – 5 etapów</h3>
+  <p>Obliczenia to tylko jeden etap całej procedury – od decyzji o badaniu do opinii dla sądu. Każdy etap ma zabezpieczyć wynik przed błędem:</p>
+  <ol>
+    <li><b>Pobranie materiału</b> – zwykle wymazy z ust od matki, dziecka i domniemanego ojca. Od każdego <b>co najmniej dwa wymazy</b>, najczęściej w obecności wszystkich zainteresowanych, którzy podpisują protokół (żeby nikt potem nie kwestionował, czyja jest próbka).</li>
+    <li><b>Izolacja DNA</b> – materiał jest świeży, więc zwykle łatwo uzyskać dość DNA dobrej jakości. Z dwóch wymazów każdej osoby robi się dwa osobne preparaty i bada je oddzielnie. Wyniki muszą się zgadzać – to wyłapuje pomyłki, np. zamianę próbek.</li>
+    <li><b>Amplifikacja i elektroforeza</b> – zestawy multipleksowe kilkunastu układów STR, sekwenatory kapilarne z detekcją 4- lub 5-kolorową, drabiny alleliczne i wewnętrzny standard wielkości.</li>
+    <li><b>Analiza wyników i obliczenia statystyczne</b> w specjalnych programach komputerowych.</li>
+    <li><b>Opinia</b> – tu jest ważna asymetria. <b>Wykluczenie</b> ojcostwa jest kategoryczne: „nie jest ojcem”. <b>Potwierdzenie</b> brzmi: „jest ojcem z prawdopodobieństwem graniczącym z pewnością”, bo statystyka oparta na dziedziczeniu autosomalnym nie daje 100% pewności – zawsze istnieje minimalna szansa przypadku.</li>
+  </ol>
+  <p>W większości spraw <b>15 układów STR</b> wystarcza, by uzyskać PI ≥ <b>1 000 000</b>; prawdopodobieństwo ojcostwa wynosi wtedy zwykle 99,9999% lub więcej. Czasem do wysokiego PI potrzeba dodatkowych analiz, więc laboratorium powinno móc zbadać więcej układów niż standardowe. Cała procedura trwa zwykle <b>1–2 tygodnie</b>.</p>
+  <p class="src">Źródło: Drewa s. 780–781 (definicja PI: s. 779)</p>
+
+  <!-- ============ 10 ============ -->
+  <h2 id="c06-slady">Ślady biologiczne</h2>
+  <p>Badanie śladu jest trudniejsze niż ojcostwa: DNA jest zwykle bardzo mało, bywa zdegradowane albo zanieczyszczone, a do tego nie wiadomo, czy ślad nie pochodzi od kilku osób. Dlatego procedura ma <b>siedem</b> etapów:</p>
+  <ol>
+    <li><b>Zabezpieczenie śladów</b> – zwykle przez techników kryminalistyki na miejscu przestępstwa. Przedmioty z wieloma śladami albo ze śladami trudnymi do zabezpieczenia trafiają do laboratorium, które szuka wszystkiego, co może zawierać DNA (używa źródeł światła o różnej długości fali i mikroskopów). To etap kluczowy: pominięty lub źle zabezpieczony ślad może zmienić końcowe wnioski.</li>
+    <li><b>Wstępna ocena</b> – zanim zacznie się drogie badanie DNA, sprawdza się, co to za ślad: testy biochemiczne na obecność krwi i nasienia, testy swoiste dla krwi i nasienia ludzkiego, oględziny włosów i włókien pod mikroskopem. Na tej podstawie wybiera się ślady do badań genetycznych.</li>
+    <li><b>Izolacja DNA</b> – metodę dobiera się do rodzaju śladu, w dużej mierze z doświadczenia. Czasem trzeba spróbować 2–3 metod, z których tylko jedna da wynik.</li>
+    <li><b>Ocena ilości i jakości DNA, amplifikacja, elektroforeza.</b> DNA ze śladu bywa zdegradowane, jest go mało albo zawiera substancje hamujące PCR – trzeba to wiedzieć przed amplifikacją. Najczęściej sprawdza się to metodą „RT-PCR” (tu: PCR w czasie rzeczywistym, a nie odwrotna transkrypcja): namnaża się krótki fragment i mierzy, jak wydajnie się namnaża. Przy silnie zdegradowanym DNA lub bardzo małej ilości stosuje się multipleksy krótszych układów (miniSTR) albo bada mtDNA. Sama amplifikacja i analiza – jak przy ojcostwie.</li>
+    <li><b>Analiza materiału porównawczego</b> – żeby powiedzieć, czy ślad pochodzi od konkretnej osoby, trzeba oznaczyć jej profil i porównać z profilami śladów.</li>
+    <li><b>Analiza wyników i obliczenia</b> – pełny profil od jednej osoby ocenia się łatwo. Często jednak profil jest szczątkowy (nie wszystkie układy dały wynik), co może mocno obniżyć jego wartość dowodową; czasem profilu nie da się w ogóle oznaczyć; a mieszaniny DNA kilku osób wymagają osobnych metod.</li>
+    <li><b>Opinia</b> – opisuje ślady, sposób ich zabezpieczenia, metody i wyniki; sentencja podsumowuje obserwacje i obliczenia, z uwagami o zanieczyszczeniach lub degradacji. Przy wielu śladach – nawet setki stron.</li>
+  </ol>
+  <p>Wniosek Drewy: analiza śladów jest <b>znacznie bardziej złożona</b> niż badanie pokrewieństwa, wymaga większej wiedzy i doświadczenia i może trwać znacznie dłużej.</p>
+  <div class="box zapamietaj"><p>Ojcostwo – 5 etapów: pobranie → izolacja → amplifikacja i elektroforeza → analiza i statystyka → opinia. Ślady – 7 etapów: zabezpieczenie → wstępna ocena → izolacja → ocena DNA, amplifikacja, elektroforeza → materiał porównawczy → analiza i statystyka → opinia.</p></div>
+
+  <h3>Kiedy STR nie wystarczą?</h3>
+  <p><b>Mieszaniny DNA.</b> Jeśli w śladzie jest DNA kilku osób, każdy układ pokazuje allele ich wszystkich. Skład mieszaniny da się ustalić tylko wtedy, gdy proporcja składników nie jest niższa niż <b>1:10–20</b> (jednego DNA jest najwyżej 10–20 razy mniej niż drugiego) – w praktyce więc tylko przy zbliżonych proporcjach. Gdy DNA jednej osoby jest <b>100–1000 razy więcej</b>, drugi składnik „ginie” i wynik wygląda jak profil jednej osoby.</p>
+  <p><b>Dalsze pokrewieństwo.</b> Ojca czy matkę ustala się dobrze, ale pokrewieństwo dalsze niż w pierwszej linii bywa bardzo trudne albo niemożliwe do ustalenia. Wspólne DNA „rozmywa się” z każdym pokoleniem: rodzice przekazują dzieciom po <b>50%</b> DNA, a dziadkowie wnukom – już tylko po <b>25%</b>.</p>
+  <p class="src">Źródło: Drewa s. 781–782</p>
+
+  <div class="w60">
+    <ul>
+      <li><b>Elektroforeza</b>: DNA (ujemne) biegnie do anody, krótkie dalej; agaroza 0,1–20 kpz, PAA 5–1000 pz, pole pulsacyjne do 10 Mpz; żel pokazuje wielkość, ilość, degradację, zanieczyszczenia.</li>
+      <li><b>Sonda</b>: znakowany, jednoniciowy fragment, przyczepia się tylko do komplementarnej sekwencji; źródła – sklonowany gen, rodzina oligonukleotydów, PCR; znakowanie – radioaktywne, fluorescencyjne, hapten + przeciwciało, enzym.</li>
+      <li><b>Southern</b> (DNA–DNA): trawienie → żel → HCl, NaOH, Tris → transfer → UV / 80 °C → sonda; delecja – prążek niżej; utrata miejsca restrykcyjnego (RFLP) – nosiciel 2 prążki, homozygota 1 dłuższy; <b>northern</b> – RNA, ekspresja.</li>
+      <li><b>Mikromacierz</b>: tysiące znanych sekwencji naraz; DNA badane i kontrolne 1:1 w dwóch kolorach – przewaga kontroli = delecja, badanego = duplikacja.</li>
+      <li><b>Sekwencjonowanie</b>: ddNTP zatrzymują syntezę; cycle sequencing (obie nici), pirosekwencjonowanie (pirofosforan → ATP → światło), 454, płytka, SMRT (10 pz/s).</li>
+      <li><b>STR</b>: 2–6 pz × 5–50, allele 100–300 pz, działają ze zniszczonym DNA, multipleks (kolor + długość), wewnętrzny marker, drabina alleliczna; PI bez matki 62,5, z matką 125; ojcostwo – 5 etapów, ślady – 7.</li>
+    </ul>
+  </div>
+</section>
