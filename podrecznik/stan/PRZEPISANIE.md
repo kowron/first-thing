@@ -89,6 +89,7 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 | plan Z07 (C1 v2, high) | Fable | 177 tys. (9 wywołań, plan 19 KB) |
 | plan Z08 (C1 v2, high) | Fable | 278 tys. (13 wywołań, plan 20 KB; pakiet 79 tys. tok.) |
 | plan Z09 (C1 v2, high) | Fable | 190 tys. (9 wywołań, plan 17 KB) |
+| plan Z11 (C1 v2, high) | Fable | 184 tys. (8 wywołań, plan 13 KB) |
 
 ## 19.11 rano – wdrożona naprawa kosztów planowania
 - `narzedzia/pakiet.py` → `pakiety/zNN.txt` (04–11, 01): 40–85 tys. tokenów na pakiet (rozpiska, mapa, T z wyciągu, tekst rozdziału bez SVG, źródła przycięte do zakresu).
