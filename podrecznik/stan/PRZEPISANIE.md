@@ -107,3 +107,4 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 - 19.11: czerwona ramka „stare źródło” – decyzja szefa: Z07 (Twyman 2001), Z08, Z10 (Jorde ok. 2000).
 - 19.11: ZLECENIODAWCA – pilotaż Z03 zaakceptowany („wszystko dobrze, robisz tak wszystkie rozdziały”). Zagadnienia Jordego piszemy wg Jordego 2000 (nie Drewy) + ramka (ZASADY pkt 9 nowa wersja). Fable – medium i minimalnie (plany gotowe). Użytkownik da sygnał końca (chce zużyć ok. 60% limitu) – wtedy dokończyć bieżących agentów i stop.
 - 19.11: WSZYSTKIE PLANY GOTOWE (Z02–Z11, G). Czekamy na ocenę pilotażu Z03 przez użytkownika; potem C2 (Opus xhigh) po 2 naraz: Z02, Z04, Z05, Z06, Z07, Z08, Z09, Z10, Z11, G.
+- 19.11: C2 Z02 GOTOWE – 19 → 29 s. (cz. 1: 19 s., cz. 2: 10 s.). Uruchomiony C2 Z05.
