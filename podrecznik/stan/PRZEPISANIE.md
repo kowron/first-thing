@@ -113,3 +113,10 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 - 19.11: C2 Z06 GOTOWE – 20 → 24 s. (cz. 1: 17 s., cz. 2: 7 s.); tab. 29.2 ze skanu; skany: przesunięcie +25 w tej części Drewy. Uruchomiony C2 Z08.
 - 19.11: C2 Z07 GOTOWE – 17 → 22 s. (cz. 1: 14 s., cz. 2: 8 s.); ramka Twyman; skany 6/7 zgodne. Aksolotl – pół zdania wg rozpiski (jak Bar/Chironomus w Z08).
 - 19.11: UŻYTKOWNIK: po zakończeniu bieżących prac (Z07, Z08) – STOP. Następna sesja: C2 Z09, Z10, Z11, G (plany gotowe), potem pełny build, ryciny z ChatGPT.
+- 19.11: C2 Z08 GOTOWE – 29 → 41 s. (cz. 1: 27 s., cz. 2: 14 s.); mitochondria wg Jordego; ramka; skany sprawdzone (przesunięcie +28 w r. 2, 13, 16). STOP na polecenie użytkownika.
+
+## Następna sesja – od czego zacząć
+1. C2 (Opus xhigh, po 2 naraz): Z09 (`plany/z09-czesci.md`), Z10 (`plany/z10-czesci.md` – Jorde wg wyd. 2000, ramka), Z11 (`plany/z11-czesci.md`), G (`plany/z01-czesci.md`). Prompt jak dla Z04–Z08 (karta ryciny: Z09 → 9, Z10 → 10 i 11, Z11 → 12, G → 1).
+2. Pełny build `node build.mjs`, PDF dla użytkownika.
+3. Ryciny z ChatGPT → `ryciny/cNN-fig-….png` w miejsce zaślepek (KOMPONENTY pkt 9).
+4. Do decyzji użytkownika: nazwiska z błędami w Drewie (Singer/Signer, Tijo/Tjio – pominięte w Z04), aksolotl w Z07 (z rozpiski).
