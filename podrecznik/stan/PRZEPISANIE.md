@@ -120,3 +120,4 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 2. Pełny build `node build.mjs`, PDF dla użytkownika.
 3. Ryciny z ChatGPT → `ryciny/cNN-fig-….png` w miejsce zaślepek (KOMPONENTY pkt 9).
 4. Do decyzji użytkownika: nazwiska z błędami w Drewie (Singer/Signer, Tijo/Tjio – pominięte w Z04), aksolotl w Z07 (z rozpiski).
+- 19.11 wieczór: C2 Z11 GOTOWE – 18 → 27 s. (cz. 1: 18 s., cz. 2: 9 s.). Z09, Z10 w toku; po nich STOP (G czeka na znak użytkownika).
