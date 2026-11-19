@@ -82,3 +82,10 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 | plan Z02 | Fable | 553 tys. |
 | spis rycin | Fable | 257 tys. |
 | infrastruktura | Opus | 476 tys. |
+
+## 19.11 rano – wdrożona naprawa kosztów planowania
+- `narzedzia/pakiet.py` → `pakiety/zNN.txt` (04–11, 01): 40–85 tys. tokenów na pakiet (rozpiska, mapa, T z wyciągu, tekst rozdziału bez SVG, źródła przycięte do zakresu).
+- `handoff/C1-plan-czesci.md` v2: plan różnicowy, ≤18 KB, ≤12 wywołań, tylko pakiet + STYL.md.
+- Skróty planów Z02/Z03: `plany/z02-czesci-skrot.md` (81 KB), `plany/z03-czesci-skrot.md` (67 KB) – bez inwentarza.
+- Uruchomione (2 agentów): C2 wykonanie Z03 (Opus, pilot) + C1 v2 plan Z04 (Fable).
+- Kolejka: C2 Z02 → C1 Z05, Z06, Z07, Z08, Z09, Z10, Z11, G (po każdym planie – C2 tego rozdziału).
