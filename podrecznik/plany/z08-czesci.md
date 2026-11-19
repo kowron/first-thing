@@ -158,3 +158,11 @@ Część 1 wystarcza, żeby zrozumieć każde zagadnienie z rozpiski i rozwiąza
 3. Wstęp 10.2 (s. 212) i definicja mutacji dynamicznej (s. 199) – formalnie poza „tylko 10.1.1/10.2.1”, ale ogólne i w pakiecie → wchodzą.
 4. Termin „Mulaci” (źródło) – raz w cudzysłowie jako termin źródła, dalej „osoby AaBb” (podpis ryciny bez zmian).
 5. „Bar – mutacja śródchromosomowa” i chromosomy olbrzymie Chironomus są tylko w rozpisce (część praktyczna) – pół zdania w c08-drosophila z dopiskiem „według rozpiski” czy pominąć.
+
+## Decyzje szefa (19.11) – obowiązują wykonawcę
+- **Dane Jordego o chorobach częstych** (cukrzyca 1–2%, Alzheimer 5%, starzenie) – **TAK**, z dopiskiem „wg wyd. ok. 2000” (rozdział ma czerwoną ramkę).
+- **Tab. 13.5 – całość** (ok. 35 alleli) w części 2 jako zwarta tabela użytkowa; w części 1 bez zmian.
+- **Wstęp 10.2 (s. 212) i definicja mutacji dynamicznej (s. 199) – TAK** (potrzebne do zrozumienia).
+- **„Mulaci”** – raz w cudzysłowie jako termin źródła, dalej „osoby AaBb” – TAK.
+- **Bar (mutacja śródchromosomowa), chromosomy olbrzymie Chironomus** – pół zdania „w części praktycznej zajęć (wg rozpiski)” – TAK.
+- Wątpliwości autora (12:3:1, penetracja 0,6) – zostają jako oznaczone „Przykłady” zgodnie z planem. Błędy A z pkt 7 – poprawić. Miejsca „sprawdzić na skanie” – wykonawca próbuje render (strona PDF = strona książki + 28); przy ok. 25 pozycjach sprawdź najpierw te, od których zależy treść (s. 374, s. 22, s. 296, tab. 13.5, tab. 13.8), resztę tylko gdy starczy budżetu – notatka w stanie.
