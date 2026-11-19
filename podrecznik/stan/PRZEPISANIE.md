@@ -85,6 +85,7 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 | plan Z04 (C1 v2, oszczędny) | Fable | 293 tys. (13 wywołań, plan 19 KB) |
 | wykonanie Z03 (C2, pilot) | Opus | 405 tys. (92 wywołania) |
 | plan Z05 (C1 v2, xhigh) | Fable | 244 tys. (10 wywołań, plan 20 KB) |
+| plan Z06 (C1 v2, high) | Fable | 201 tys. (12 wywołań, plan 19 KB) |
 
 ## 19.11 rano – wdrożona naprawa kosztów planowania
 - `narzedzia/pakiet.py` → `pakiety/zNN.txt` (04–11, 01): 40–85 tys. tokenów na pakiet (rozpiska, mapa, T z wyciągu, tekst rozdziału bez SVG, źródła przycięte do zakresu).
