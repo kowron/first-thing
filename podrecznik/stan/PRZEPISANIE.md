@@ -92,3 +92,5 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 - Kolejka: C2 Z02 → C1 Z05, Z06, Z07, Z08, Z09, Z10, Z11, G (po każdym planie – C2 tego rozdziału).
 
 - 19.11: C1 v2 Z04 gotowy (293 tys. tokenów vs 480–550 tys. wcześniej). Uruchomiony C1 v2 Z05 (Fable).
+
+- 19.11: UŻYTKOWNIK ZGODA – Fable (plany C1) na wysiłku **high** zamiast xhigh, od kolejnego planu (Z05 już uruchomiony na xhigh – dokończy).
