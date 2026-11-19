@@ -1,0 +1,1174 @@
+# PAKIET PLANISTY – rozdział 07
+Jedyny plik do przeczytania (poza handoffem C1, STYL.md i ZASADY.md). Sekcje: A rozpiska, B mapa zakresu, C fakty uciętych wcześniej (T z wyciągu), D tekst rozdziału (bez rycin SVG), E źródła przycięte do zakresu.
+
+
+======== A. ROZPISKA ZAJĘĆ ========
+
+                                                                                                       Lekarski
+                                               Zajęcia nr 7                                Biologia molekularna
+
+Temat seminarium:       Wprowadzenie do wybranych zagadnień z medycyny regeneracyjnej
+
+Temat ćwiczenia:        Molekularne podłoże mechanizmów regeneracji
+
+Zagadnienia do przygotowania przez studenta:
+1. Charakterystyka i typy komórek macierzystych. Embrionalne, tkankowe, mezenchymalne oraz
+   indukowane komórki macierzyste [1].
+2. Plastyczność komórek macierzystych [2].
+3. Cykl życiowy, podział i starzenie się komórek macierzystych [2].
+4. Różnicowanie się komórek. Zaburzenia różnicowania [1].
+5. Hipertrofia i hiperplazja [1].
+6. Regeneracja kończyny u płazów [3].
+
+Zaliczenie pisemne
+Zaliczenie ustne (prezentacje – zgodnie z ustaleniami na zajęciach, dyskusja)
+Karta pracy studenta
+
+
+Część praktyczna:
+Preparaty:
+1. Proces regeneracji przedniej kończyny aksolotla (Ambystoma mexicanum). Przekrój podłużny przez
+   regenerującą kończynę po 10 dniach od amputacji – regenerat młodszy, pow. 10x10, 10x40. Preparaty barwione
+   H/E.
+2. Proces regeneracji przedniej kończyny aksolotla (Ambystoma mexicanum). Przekrój podłużny przez
+   regenerującą kończynę po 2 miesiącach od amputacji – regenerat starszy, pow. 10x10 i 10x40. Barwienie H/E.
+
+
+
+
+Piśmiennictwo:
+1. Jóźwiak J.: Biologia komórki dla studentów uczelni medycznych. Wydawnictwo Edra Urban &
+   Partner, Wrocław 2020. Rozdział 9 oraz ryciny 10.7 i rycina 10.8 z Rozdziału 10.
+2. Drewa G., Ferenc T.: Genetyka medyczna podręcznik dla studentów. Wydawnictwo Edra Urban &
+   Partner, Wrocław, 2011. Rozdział nr 26.
+3. Twyman RM: Biologia rozwoju. Krótkie wykłady. Wydawnictwo Naukowe PWN, Warszawa, 2003.
+   Sekcja M3.
+
+
+
+======== B. MAPA ZAKRESU (handoff) ========
+
+# Handoff Z07 – Komórki macierzyste, różnicowanie i regeneracja (Opus xhigh, 1 agent)
+Plan szczegółowy przygotował szef (Fable): **zakres, źródła, cięcia i lista rycin są ustalone poniżej – nie zmieniasz ich**. Twoja praca to dobry tekst i ryciny. Jeśli coś w planie nie zgadza się ze źródłem, zapisz to w `stan/z07.md` i idź dalej według źródła.
+Przeczytaj: `/home/user/first-thing/podrecznik/ZASADY.md`, `KOMPONENTY.md` (wzorce: gotowe rozdziały `rozdzialy/z02-*.html`, `z03-*.html`), potem tylko wskazane fragmenty paczki.
+
+- **Plik wynikowy:** `/home/user/first-thing/podrecznik/rozdzialy/z07-komorki-macierzyste.html` · **limit: 10 stron** (A4, dwie kolumny)
+- **Paczka źródeł:** `/tmp/claude-0/-home-user-first-thing/600b873f-e07d-5766-b2f4-6a90b68ae091/scratchpad/zrodla/z07/` (zacznij od `SPIS.md` – podaje numery linii podrozdziałów) · **wyciąg:** `wyciagi/z07.md` · **stan:** `stan/z07.md` (jeśli istnieje – kontynuuj, nie czytaj źródeł od nowa)
+
+## Mapa: zagadnienie → źródło → co zostaje / co tniemy
+| # | Zagadnienie | Źródło (czytaj tylko to) | Zostaje | Tniemy |
+|---|---|---|---|---|
+| 1 | Charakterystyka i typy komórek macierzystych: embrionalne, tkankowe, mezenchymalne, indukowane | Jóźwiak r. 9: od początku rozdziału do nagłówka „Różnicowanie się komórek” (ryc. 9.1–9.4) | dwie cechy definiujące komórkę macierzystą; podział według potencjału (toti-, pluri-, multi-, unipotencjalne – z przykładami); embrionalne (skąd, blastocysta, zalety i ograniczenia, w tym odrzucanie i kwestie etyczne w 1–2 zdaniach); tkankowe (hematopoetyczne – zastosowanie); mezenchymalne (skąd, w co się różnicują); indukowane iPSC (jak się je otrzymuje, po co) | szczegóły protokołów hodowli, nazwiska, zdjęcia (ryc. 9.2, 9.3 – tylko treść podpisu, jeśli wnosi fakt) |
+| 2 | Plastyczność komórek macierzystych | Drewa r. 26: **26.2** (s. 694–696) | definicja plastyczności, przykłady przekraczania granic listków zarodkowych podane w tekście, proponowane mechanizmy (transdyferencjacja, fuzja itd. – tak jak w źródle), zastrzeżenia/kontrowersje w 1–2 zdaniach | wyliczanki doświadczeń i autorów; opisy zdjęć (ryc. 26.2–26.4) |
+| 3 | Cykl życiowy, podział i starzenie się komórek macierzystych | Drewa r. 26: **26.3** (s. 696–698) | stan spoczynku a proliferacja, podział symetryczny i asymetryczny, nisza, czynniki regulujące samoodnowę podane w źródle, starzenie (telomery/telomeraza i inne mechanizmy z tekstu) | listy genów i szlaków – zostaw 2–3 najważniejsze |
+| 4 | Różnicowanie się komórek; zaburzenia różnicowania | Jóźwiak r. 9: „Różnicowanie się komórek”, „Różnicowanie w embriogenezie”, „Kontrola nad różnicowaniem w organizmie” i dalej do „Podsumowania” (ryc. 9.5–9.7 i tabela narządów/szlaków) | czym jest różnicowanie i determinacja; różnicowanie w embriogenezie (geny/szlaki sygnałowe na przykładzie z tekstu, np. Hedgehog – rola w 2–3 zdaniach); kontrola różnicowania w dojrzałym organizmie; zaburzenia: odróżnicowanie w onkogenezie (ryc. 9.6), metaplazja (przykład z ryc. 9.7) | tabela narząd → proces (zostaw 3–4 wiersze jako przykłady), szczegóły segmentacji zarodka Drosophila |
+| 5 | Hipertrofia i hiperplazja | Jóźwiak r. 10: tylko akapity i podpisy dotyczące ryc. 10.7 i 10.8 (w paczce jako osobny plik) | definicje hipertrofii (przerostu) i hiperplazji (rozrostu), przykład przerostu mięśnia serca (przyczyny z podpisu), pozostałe zaburzenia wzrostu z ryc. 10.8 – po jednym zdaniu, jeśli są w podpisie | reszta rozdz. 10 (nowotwory) – poza zakresem |
+| 6 | Regeneracja kończyny u płazów | Twyman, sekcja M3 (tekst angielski – pisz po polsku; terminy angielskie w nawiasie tylko przy pierwszym użyciu) | „Key notes” i rozwinięcie: regeneracja morfolaktyczna i epimorficzna; etapy regeneracji kończyny (zamknięcie rany, czapeczka naskórkowa, odróżnicowanie, blastema, wzrost i odtworzenie wzoru); rola nerwów; pamięć pozycyjna i reguły interkalacji / model współrzędnych biegunowych; wpływ kwasu retinowego | opisy pojedynczych doświadczeń – po jednym przykładzie na regułę |
+
+**Poza zakresem:** Drewa 26.1 „Rodzaje i pochodzenie komórek macierzystych” (rozpiska przypisuje typy komórek Jóźwiakowi) – sięgnij do 26.1 tylko wtedy, gdy Jóźwiak pomija któryś z czterech typów z zagadnienia 1, i zapisz to w stanie; 26.4–26.5; Jóźwiak r. 10 poza ryc. 10.7–10.8.
+**Układ:** 1) Czym są komórki macierzyste i jak się je dzieli → 2) Cztery typy → 3) Plastyczność → 4) Cykl życiowy, podział, starzenie → 5) Różnicowanie i jego zaburzenia → 6) Hipertrofia i hiperplazja → 7) Regeneracja kończyny u płazów.
+
+## Ryciny (4 nowe; bank nie ma rycin do tego rozdziału)
+1. **Potencjał komórek macierzystych** – drabina toti- → pluri- → multi- → unipotencjalne z przykładem komórki na każdym szczeblu i tym, co może z niej powstać (wg ryc. 9.1 Jóźwiaka).
+2. **Podział symetryczny i asymetryczny w niszy** – dwa panele: samoodnowa + komórka potomna różnicująca się; dwie komórki macierzyste / dwie różnicujące się (wg Drewy 26.3).
+3. **Hipertrofia a hiperplazja** – ta sama tkanka: prawidłowa → większe komórki (hipertrofia) → więcej komórek (hiperplazja); jeśli ryc. 10.8 podaje inne zaburzenia, dodaj je jako kolejne kafelki z podpisem.
+4. **Regeneracja kończyny płaza** – pasek 5 etapów od amputacji do odtworzonej kończyny, z podpisem pod każdym (wg Twymana M3).
+iPSC – opis w tekście (lista kroków), bez ryciny.
+
+Podgląd: `cd /home/user/first-thing/podrecznik && node build.mjs --only 07 --png`.
+
+
+
+======== C. FAKTY UCIĘTE WCZEŚNIEJ (T z wyciągu) ========
+
+# Wyciąg Z07 – Komórki macierzyste, różnicowanie i regeneracja
+## Zag. 1 – Charakterystyka i typy (J s. 97–101)
+### Definicja i potencjał (J97–98)
+### Embrionalne – ESC (J98–99)
+### Tkankowe (J99–100)
+### Mezenchymalne – MSC (J100)
+### Indukowane – iPSC (J100–101)
+### Odrzucanie – podział przeszczepów (J101; „odrzucanie” z mapy)
+## Zag. 2 – Plastyczność (D s. 694–696)
+## Zag. 3 – Cykl życiowy, podział, starzenie (D s. 696–698; J s. 98)
+## Zag. 4 – Różnicowanie i zaburzenia (J s. 102–105)
+## Zag. 5 – Hipertrofia i hiperplazja (J10 s. 110–112)
+## Zag. 6 – Regeneracja kończyny u płazów (T s. 390–396)
+## Układ (= handoff) i ryciny
+
+
+======== D. TEKST ROZDZIAŁU ========
+
+(plik rozdzialy/z07-komorki-macierzyste.html; data-title: Komórki macierzyste, różnicowanie i regeneracja)
+[LEAD] Nabłonek jelita co kilka dni wymienia się w całości, a z jednej zygoty powstają komórki tak różne jak neuron i erytrocyt. Skąd biorą się nowe komórki, jak stają się wyspecjalizowane i dlaczego traszka odtwarza całą utraconą kończynę, a człowiek nie? Rozdział prowadzi od komórek macierzystych przez ich plastyczność, podziały i starzenie do różnicowania komórek i jego zaburzeń, a kończy na regeneracji kończyny u płazów.
+
+## Czym są komórki macierzyste i jak się je dzieli  [c07-definicja]
+
+### Skąd organizm bierze nowe komórki?  []
+Nabłonek wyściełający jelito pracuje bardzo intensywnie: przenosi wiele substancji ze światła przewodu pokarmowego do krwi. Tak silna eksploatacja sprawia, że co kilka dni cały ten nabłonek jest wymieniany na nowy. Skąd biorą się komórki, które zastępują zużyte?
+Dostarcza ich szczególny rodzaj komórek – komórki macierzyste . Są to komórki niezróżnicowane , czyli jeszcze bez specjalistycznych cech, jakie ma np. komórka nabłonka czy krwinka. Potrafią natomiast wytwarzać dojrzałe, zróżnicowane komórki potomne – takie, które mają już cechy potrzebne do pełnienia swojej roli (o tym, jak komórka je zdobywa, mówi podrozdział o różnicowaniu, ). Nabłonek jelita odnawiają komórki macierzyste krypt jelitowych, a krwinki powstają w szpiku kostnym z krwiotwórczych (hematopoetycznych) komórek macierzystych. Komórki macierzyste bytują w określonym mikrośrodowisku, które nazywa się niszą .
+
+### Jakie dwie cechy definiują komórkę macierzystą?  []
+[POJĘCIE Komórka macierzysta] komórka zdolna do nieskończonej liczby podziałów (samoodnowa) i do wytwarzania co najmniej jednego rodzaju dojrzałych, zróżnicowanych komórek (różnicowanie).
+Zgodnie z definicją komórka macierzysta ma jednocześnie dwie zdolności:
+- samoodnowę – może dzielić się nieskończenie wiele razy i przy tym odtwarzać własną populację;
+- różnicowanie – może wytwarzać przynajmniej jeden rodzaj dojrzałych, zróżnicowanych komórek.
+Obie zdolności są możliwe dzięki dwóm rodzajom podziałów – symetrycznym i niesymetrycznym. Opisujemy je w podrozdziale o cyklu życiowym komórek macierzystych ( ).
+[RAMKA przyklad] Dlaczego potrzebne są obie cechy naraz? Wyobraź sobie komórkę w szpiku, która umie się tylko różnicować. Każdy jej podział zamienia ją w komórki krwi, więc zapas komórek macierzystych maleje – aż się wyczerpie i krwinki przestaną powstawać. Teraz komórka, która umie się tylko odnawiać: robi wciąż kopie samej siebie, zapas rośnie, ale nie powstaje ani jedna krwinka. Dopiero obie cechy razem pozwalają odnawiać tkankę i nie zużyć przy tym zapasu.
+
+### Co może powstać z danej komórki? Potencjał  []
+Poza tymi dwiema wspólnymi cechami komórki macierzyste różnią się wieloma właściwościami. Podstawowa różnica dotyczy tego, jakie komórki mogą powstać z danej komórki macierzystej – czyli jej potencjału . Do jego opisu potrzebne są dwa pojęcia z rozwoju zarodkowego:
+- listki zarodkowe – trzy listki zarodka: endoderma , mezoderma i ektoderma . Z komórek trzech listków powstają wszystkie komórki dorosłego organizmu;
+- tkanki pozazarodkowe – przede wszystkim łożysko ; nie należą do ciała, które rozwinie się z zarodka.
+Według potencjału wyróżnia się cztery rodzaje komórek macierzystych. Idąc od góry listy, każdy kolejny rodzaj traci część możliwości ( ):
+- totipotencjalne (omnipotencjalne) – dają komórki wszystkich trzech listków zarodkowych, czyli wszystkie komórki dorosłego organizmu, a także komórki tkanek pozazarodkowych (łożyska). Takie są zygota i komórki wczesnego zarodka – do stadium 8 komórek, zanim zarodek przejdzie etap zwany kompakcją;
+- pluripotencjalne – dają komórki wszystkich trzech listków zarodkowych, ale już nie tkanek pozazarodkowych. Takie są komórki węzła zarodkowego blastocysty (embrionalne komórki macierzyste, ESC) i indukowane pluripotencjalne komórki macierzyste (iPSC);
+- multipotencjalne – dają różne typy komórek, ale nie wszystkich trzech listków i nie tkanki pozazarodkowe. Odtwarzają tkanki charakterystyczne dla jednego listka zarodkowego – endodermy, mezodermy albo ektodermy. Należą tu prawie wszystkie komórki macierzyste dorosłego organizmu, np. krwiotwórcze komórki szpiku (HSC), komórki macierzyste krypt jelitowych, warstwy podstawnej naskórka, rąbka rogówki i tkanki nerwowej. Tkankowe komórki macierzyste odtwarzają komórki danej tkanki – np. nabłonka jelit, szpiku albo neuronalne;
+- unipotencjalne – różnicują się tylko w jeden określony typ komórek (tak komórki progenitorowe definiuje Drewa).
+[RYCINA c07-fig-potencjal „Potencjał komórek macierzystych”: Czytaj od lewej do prawej: potencjał maleje, co pokazują coraz niższe stopnie. Porównaj dolny rząd – zygota daje także łożysko, komórki węzła zarodkowego – trzy listki zarodkowe bez łożyska, HSC – tylko komórki krwi, komórka progenitorowa – jeden typ komórek. Wniosek: im dalej w prawo, tym węższy zestaw komórek potomnych.]
+Jóźwiak wyróżnia ponadto wczesne formy rozwojowe komórek, które nie są już komórkami macierzystymi. Komórka progenitorowa jest wstępnie zróżnicowana i powstaje bezpośrednio z komórki macierzystej. Komórka prekursorowa bezpośrednio poprzedza powstanie w pełni zróżnicowanej komórki. Ten podział jest jednak bardzo nieostry – często trudno określić, która komórka jest prekursorem, a która progenitorem.
+[RAMKA zapamietaj] Komórkę macierzystą definiują samoodnowa i różnicowanie. Potencjał maleje od totipotencjalnych (trzy listki + łożysko; zygota) przez pluripotencjalne (trzy listki; ESC, iPSC) i multipotencjalne (tkanki jednego listka; większość komórek macierzystych dorosłego) do unipotencjalnych (jeden typ komórek).
+[ŹRÓDŁO] Źródło: Jóźwiak s. 97–98, 100 · Drewa s. 692
+
+## Cztery typy komórek macierzystych  [c07-typy]
+Komórki macierzyste można pobrać z kilkudniowego zarodka, z tkanek dorosłego człowieka albo wytworzyć w laboratorium z komórek pacjenta. Od źródła zależy, jaki mają potencjał, do czego się nadają i jakie problemy stwarzają.
+
+### Embrionalne komórki macierzyste (ESC) – z kilkudniowego zarodka  []
+Około 5. dnia po zapłodnieniu ludzkiej komórki jajowej zarodek ma postać blastocysty . Widać w niej trzy części: węzeł zarodkowy , jamę blastocysty i trofoblast . Kilka dni później blastocysta zagnieżdża się (ulega implantacji) w endometrium, czyli błonie śluzowej macicy. Na etapie blastocysty w zapłodnieniu in vitro wprowadza się zarodek do macicy. Komórki blastocysty w trakcie implantacji i po niej wydzielają ludzką gonadotropinę kosmówkową (hCG) – jej poziom mierzą testy ciążowe.
+Embrionalne komórki macierzyste (ESC, ang. embryonic stem cells ) pobiera się z węzła zarodkowego blastocysty. Są pluripotencjalne: mogą dać wszystkie komórki organizmu, ale nie łożysko. Ludzkie ESC uzyskuje się przede wszystkim z nadmiarowych, niewykorzystanych zarodków z procedury zapłodnienia in vitro.
+Pluripotencję utrzymują w ESC trzy czynniki transkrypcyjne , czyli białka sterujące tym, które geny są przepisywane ( ): OCT4/3, SOX-2 i Nanog . Żeby linię komórek uznać za ESC, musi spełniać trzy kryteria:
+- pluripotencja – odtwarza komórki wszystkich trzech listków zarodkowych;
+- nieśmiertelność w hodowli – dzieli się bez końca i przez cały czas hodowli pozostaje niezróżnicowana;
+- prawidłowy kariotyp – prawidłowa liczba i budowa chromosomów ( ).
+W hodowli ESC utrzymuje się na warstwie komórek odżywczych (ang. feeder cells ), np. ludzkich fibroblastów.
+
+### Dlaczego badania nad ESC postępują powoli?  []
+- Trudno utrzymać je w stanie niezróżnicowanym – a to przecież jedno z kryteriów ESC.
+- Wątpliwości etyczne – uzyskanie linii ESC wymaga zniszczenia blastocysty.
+- Potworniak. ESC wszczepione myszy tworzą potworniaka ( teratoma ) – guz zawierający komórki wszystkich trzech listków zarodkowych. Szeroki potencjał, który jest zaletą w hodowli, w organizmie staje się więc zagrożeniem. Dlatego pacjentom można podawać wyłącznie komórki zróżnicowane uzyskane z ESC, a nie same ESC.
+
+### Tkankowe komórki macierzyste – zapas w dorosłym organizmie  []
+Tkankowe komórki macierzyste (somatyczne komórki macierzyste, komórki macierzyste dorosłych) występują w dorosłym organizmie i są bardziej zróżnicowane niż embrionalne. Wytwarzają różne typy komórek potrzebne swojemu narządowi, ale nie innym narządom – dlatego zalicza się je do multipotencjalnych. Dwa przykłady:
+- hematopoetyczne komórki macierzyste (HSC, ang. hematopoietic stem cells ) szpiku kostnego wytwarzają leukocyty, erytrocyty i płytki krwi, ale nie komórki innych tkanek, np. nerwowej;
+- komórki macierzyste krypt jelitowych odnawiają nabłonek jelita, który – jak już wiesz – co kilka dni jest wymieniany w całości.
+HSC od dawna wykorzystuje się w medycynie. Ich siłę pokazało doświadczenie na myszach: szpik wszczepiony silnie napromieniowanej myszy zapewniał jej przeżycie, bo odtwarzał wszystkie komórki krwi. Dziś stosuje się przeszczep hematopoetycznych komórek macierzystych w trzech wariantach, różniących się źródłem komórek: przeszczep szpiku kostnego (BMT), obwodowych komórek macierzystych krwi (PBSCT) i pępowinowych komórek macierzystych (UCSCT).
+Głównym wskazaniem są białaczki – ok. 70% przypadków: ostra i przewlekła białaczka szpikowa oraz ostra białaczka limfoblastyczna. Przeszczepia się je także w chłoniakach Hodgkina, neuroblastomie, szpiczaku mnogim, talasemii, niedokrwistości aplastycznej (w źródle: „anemii anaplastycznej”) i chorobach autoimmunizacyjnych.
+
+### Mezenchymalne komórki macierzyste (MSC) – z tkanki podporowej  []
+Mezenchymalne komórki macierzyste (MSC, ang. mesenchymal stem cells ) występują w zrębie narządów, czyli w tkance łącznej, która stanowi ich podporę – stąd druga nazwa: zrębowe komórki macierzyste . Po raz pierwszy wyizolowano je ze szpiku kostnego; potrafiły odtwarzać komórki chrząstki, kości i tkanki tłuszczowej. Później izolowano je z większości tkanek, m.in. z błon i płynu owodniowego, endometrium, krwi obwodowej i menstruacyjnej, skóry i płynu stawowego. Obecnie uzyskuje się je głównie ze szpiku kostnego, tkanki tłuszczowej, pępowiny, krwi pępowinowej, łożyska i płynu owodniowego.
+Skoro MSC izoluje się z tak wielu miejsc, potrzebne są wspólne kryteria, żeby wiedzieć, że w każdym przypadku chodzi o te same komórki. Opracowano więc minimalne kryteria MSC:
+- przywieranie do butelki hodowlanej;
+- określony zestaw markerów powierzchniowych – cząsteczek na powierzchni komórki, po których obecności lub braku rozpoznaje się jej typ: MSC mają CD73 i CD105, a nie mają CD14, CD34, CD45 i HLA-DR;
+- różnicowanie in vitro w adipocyty (komórki tłuszczowe), chondrocyty (komórki chrząstki) i osteoblasty (komórki kościotwórcze).
+Badania nad MSC są jednak trudne, a wiedza o nich mało uporządkowana. Z pewnością istnieją różne typy MSC, które różnią się pochodzeniem, właściwościami i tym, jakie komórki potrafią odtwarzać. MSC z tkanek zarodkowych rosną silniej i łatwiej dają komórki zróżnicowane niż MSC dorosłych; nazywa się je dziewiczymi (ang. naive stem cells ) lub wczesnymi komórkami macierzystymi. Układ odpornościowy biorcy rzadziej je rozpoznaje i odrzuca – szczególnie MSC z pępowiny.
+Szpik kostny jest dogodnym źródłem zarówno HSC, jak i MSC. Oba typy występują razem także w krwi pępowinowej i łożysku – w tych tkankach są więc dwie odrębne populacje komórek: jedna spełnia kryteria HSC, druga – MSC. Obie są multipotencjalne, ale ich zastosowanie jest różne. HSC od kilkudziesięciu lat służą w praktyce klinicznej do leczenia wielu zaburzeń hematologicznych i kostnych, w tym chorób rozrostowych krwi, chorób autoimmunizacyjnych i genetycznych. MSC stosuje się na razie w terapiach doświadczalnych; być może znajdą zastosowanie w leczeniu cukrzycy, udaru czy nowotworów.
+[TABELA]
+ | HSC | MSC
+Gdzie | szpik kostny | zrąb narządów
+Potencjał | multipotencjalne | multipotencjalne
+Wytwarzają | leukocyty, erytrocyty, płytki | adipocyty, chondrocyty, osteoblasty
+Zastosowanie | leczenie kliniczne | terapie doświadczalne
+[/TABELA]
+
+### Indukowane pluripotencjalne komórki macierzyste (iPSC) – cofnięcie różnicowania  []
+ESC mają szeroki potencjał, ale ich uzyskanie wymaga zniszczenia blastocysty, a komórki pochodzą z cudzego zarodka. Czy można otrzymać komórki pluripotencjalne bez zarodka? Można: iPSC (ang. induced pluripotent stem cells ) wytwarza się sztucznie, w laboratorium, przez odróżnicowanie komórek pobranych z narządu człowieka do stadium komórek embrionalnych. Odróżnicowanie to proces odwrotny do różnicowania. iPSC mają wiele cech wspólnych z ESC – przede wszystkim są pluripotencjalne.
+Klasycznie do wywołania pluripotencji trzeba zwiększyć ekspresję czterech czynników transkrypcyjnych: OCT4/3, SOX2, KLF4 i c-MYC . Zwróć uwagę, że dwa z nich – OCT4/3 i SOX2 – to czynniki, które utrzymują pluripotencję w ESC. Kolejne kroki:
+- Pobranie tkanki od pacjenta.
+- Namnożenie komórek w butelce hodowlanej – żeby było ich dość do dalszych etapów.
+- Transfekcja wirusem, który wprowadza nadekspresję czterech czynników transkrypcyjnych – komórka zaczyna je wytwarzać w ilości większej niż zwykle.
+- Odróżnicowanie – komórki odzyskują pluripotencję podobną do pluripotencji ESC; to są iPSC.
+- Różnicowanie w wybranym kierunku – odpowiednie czynniki wzrostu kierują je w konkretny typ tkanki, np. w neurony, komórki krwi albo nabłonki.
+Zalety iPSC wynikają z ich pochodzenia. Są specyficzne dla danego pacjenta i mogą odtwarzać komórki jego uszkodzonego narządu. Można je też zmodyfikować genetycznie – np. wyleczyć chorobę, wprowadzając do nich prawidłową kopię genu. Pozwalają przy tym uzyskać komórki pluripotencjalne bez użycia ESC, które budzą wątpliwości etyczne.
+
+### Od kogo pochodzą komórki – i dlaczego to ważne?  []
+Przeszczepione komórki mogą pobudzić układ odpornościowy biorcy. To, jak bardzo są dla niego immunogenne , zależy od podobieństwa dawcy do biorcy. Z punktu widzenia transplantologii wyróżnia się cztery rodzaje komórek i tkanek:
+- autogeniczne – od tego samego pacjenta, np. z innego miejsca ciała. Przykład: naczynia do pomostowania aortalno-wieńcowego (tzw. bypassów, omijających zamknięte naczynie wieńcowe): żyła odpiszczelowa z podudzia albo tętnica piersiowa wewnętrzna;
+- syngeniczne – od osoby identycznej genetycznie, np. bliźniaka jednojajowego. Przykład: przeszczep HSC od bliźniaka w niektórych chorobach rozrostowych krwi, np. w szpiczaku mnogim. Pobranie nie obciąża bliźniaka, a biorca dostaje komórki dla siebie nieimmunogenne;
+- allogeniczne – od innego przedstawiciela tego samego gatunku, np. przeszczepy serca, płuc i nerek, najczęściej od zmarłych dawców. Obce genetycznie komórki aktywują układ odpornościowy i przeszczep jest powoli odrzucany. Dlatego biorca do końca życia przyjmuje leczenie hamujące odrzucanie (immunosupresyjne);
+- ksenogeniczne – od innego gatunku. Ich zalety to szeroka dostępność tkanek zwierzęcych i dość częsta odporność na ludzkie patogeny (np. HIV). Przykład: wołowe lub świńskie zastawki wszczepiane osobom z niewydolnością lub zwężeniem zastawki aortalnej. Takie zastawki biologiczne są bardziej zbliżone do naturalnych niż sztuczne, a po pozbawieniu ich komórek nie są immunogenne.
+Wynika z tego, że ESC – pobrane z cudzego zarodka – są dla biorcy komórkami allogenicznymi, a iPSC wytworzone z komórek samego pacjenta – autogenicznymi.
+[RAMKA przyklad] Pacjent potrzebuje nowych neuronów. Droga 1: ESC z nadmiarowego zarodka z in vitro, zróżnicowane w neurony. Podaje się neurony, nie same ESC – te utworzyłyby potworniaka. Neurony są jednak allogeniczne: można się spodziewać aktywacji układu odpornościowego, jak przy przeszczepie serca od dawcy. Do tego uzyskanie linii ESC wymagało zniszczenia blastocysty. Droga 2: tkanka pobrana od pacjenta → iPSC → neurony. Komórki są autogeniczne, a przed różnicowaniem można jeszcze wprowadzić do nich prawidłową kopię wadliwego genu.
+[RAMKA zapamietaj] ESC (z węzła zarodkowego blastocysty; OCT4/3, SOX-2, Nanog) i iPSC (z odróżnicowanych komórek pacjenta; OCT4/3, SOX2, KLF4, c-MYC) są pluripotencjalne, a tkankowe komórki macierzyste (np. HSC) i MSC – multipotencjalne. Komórki allogeniczne aktywują układ odpornościowy biorcy; iPSC pacjenta są autogeniczne.
+[ŹRÓDŁO] Źródło: Jóźwiak s. 98–102
+
+## Plastyczność komórek macierzystych  [c07-plastycznosc]
+
+### Komórka tkankowa robi więcej, niż „powinna”  []
+Z poprzedniego podrozdziału wynika prosty obraz: tkankowa komórka macierzysta jest multipotencjalna i odnawia komórki swojego narządu – HSC dają komórki krwi, ale nie nerwowej. Wcześniejsze obserwacje pokazały jednak, że ten obraz jest niepełny. Komórki macierzyste dorosłych – choć przyporządkowane poszczególnym narządom – potrafią różnicować się szerzej, niż wymaga odnowa danego narządu czy tkanki.
+[POJĘCIE Plastyczność] zdolność komórki macierzystej do przybierania form różnych typów komórek, także pochodzących z innego listka zarodkowego.
+Z tych obserwacji zrodziło się pojęcie plastyczności komórek macierzystych. To możliwość przybierania form różnych typów komórek – nawet takich, które pochodzą z innego listka zarodkowego. Drewa nazywa plastyczność najważniejszą, a zarazem najbardziej kontrowersyjną właściwością komórek macierzystych.
+
+### Dlaczego tak trudno ją udowodnić?  []
+Żeby stwierdzić, że komórka zmieniła się w inną, trzeba dokładnie wiedzieć, czym była na początku. Służą do tego markery – cechy charakterystyczne dla danego typu lub stopnia zróżnicowania komórki macierzystej. Dokładnie określonych markerów wciąż brakuje. Może się więc zdarzyć, że badacze porównują nie komórki tego samego typu czy tej samej linii, lecz zupełnie inne komórki albo odrębne linie komórkowe – a wtedy pozorna „przemiana” jest tylko porównaniem dwóch różnych komórek.
+Plastyczność próbuje się tłumaczyć czterema zjawiskami. Dla żadnego z nich nie ma jak dotąd dowodów, że to ono ją wyjaśnia.
+
+### 1. Transdyferencjacja (przeróżnicowanie)  []
+Według tej teorii zróżnicowana komórka zmienia swój fenotyp w inny. Pierwszym krokiem byłoby odróżnicowanie – utrata cech wyspecjalizowanych. Przykładem odróżnicowania w żywym organizmie jest regeneracja tkanek u salamandry: zaczyna się od odróżnicowania ostatecznie zróżnicowanych komórek w miejscu uszkodzenia, które potem znów się różnicują i odbudowują utracone tkanki (więcej przy regeneracji kończyny, ).
+Odróżnicowanie przypomina też unieśmiertelnianie komórek in vitro, czyli nadawanie im w hodowli zdolności do nieograniczonych podziałów – dlatego unieśmiertelnianie przypomina pierwszy etap transdyferencjacji. Unieśmiertelnione mysie fibroblasty linii 3T3 mają fenotyp podobny do komórek macierzystych. Można je przeprogramować w komórki fenotypowo podobne do komórek macierzystych – wystarcza do tego sam ekstrakt medium z hodowli ESC, który w doświadczeniach na myszach wywoływał w komórkach 3T3 ekspresję białka Oct-4 (por. czynnik OCT4/3 w ESC). Takie fibroblasty użyto do regeneracji niedokrwionego mięśnia sercowego. Podobne doświadczenia prowadzono z prawidłowymi ludzkimi fibroblastami.
+Teoria ma słabe punkty. Wyniki tych wstępnych badań nie mają szerszego potwierdzenia. Nie opisano procesów biochemicznych, które prowadzą do przeróżnicowania; nie wiadomo, czy potrzebne są do niego komórki już odróżnicowane ani jak intensywnie dzielą się komórki przeróżnicowane. U dorosłych kręgowców transdyferencjacja jest zjawiskiem bez precedensu.
+
+### 2. Fuzja komórek  []
+Fuzja , czyli zlanie się komórek, jest zjawiskiem naturalnym; można ją też wywołać in vitro. Jeśli komórka macierzysta ulegnie fuzji, zmienia się jej fenotyp – a to wygląda właśnie jak plastyczność. Tej teorii nie da się jednak w pełni zaakceptować. In vivo fuzja zachodzi niezbyt często i nie jednakowo we wszystkich tkankach. Komórki powstałe z fuzji są mniej stabilne, żyją potencjalnie krócej albo prowadzą do nowotworzenia. Wyniki badań nad fuzją komórek macierzystych i zróżnicowanych są sprzeczne.
+
+### 3. Zasiedlenie wszystkich nisz przez komórki macierzyste (teoria obecności komórek pluripotencjalnych w dojrzałym organizmie)  []
+Pod pierwszą nazwą Drewa wymienia tę teorię, a rozwija ją jako teorię obecności komórek pluripotencjalnych w dojrzałych organizmach. Jej punkt wyjścia jest następujący. Rozwój – zarodkowy i późniejszy – wiąże się ze stopniową utratą potencjału regeneracyjnego przez komórki, wskutek podziałów i starzenia się. Wynikałoby z tego, że komórki macierzyste dorosłych mają coraz mniejsze możliwości różnicowania. Przeczą temu jednak komórki o dużym potencjale proliferacyjnym, które wyizolowano z zarodków, rozwiniętych płodów i dorosłych:
+- komórki pluripotencjalne uzyskiwano nawet z dwutygodniowych zarodków myszy;
+- w ludzkiej krwi pępowinowej stwierdzano je nawet w 42. tygodniu ciąży – są więc obecne przez całe życie wewnątrzmaciczne;
+- komórki o dużej zdolności do różnicowania i proliferacji izolowano z tkanek człowieka na każdym etapie życia, nawet od osób po 70. roku życia;
+- komórki mezenchymalne szpiku kostnego i krwi obwodowej dorosłych, a także podobne komórki ze skóry miały cechy nie tylko multi-, ale i pluripotencjalnych.
+Stąd koncepcja, że w dorosłym organizmie istnieją pluripotencjalne komórki macierzyste. Gdyby tak było, plastyczność nie wymagałaby przemiany jednej komórki w drugą – wystarczy, że w tkance są komórki o szerokim potencjale.
+
+### 4. Wędrówka komórek pluripotencjalnych  []
+Nie dowiedziono, że każda tkanka ma niszę komórek macierzystych ani że w każdej są komórki pluripotencjalne. Stąd teza, że pluripotencjalne komórki macierzyste wędrują po organizmie do miejsc uszkodzenia i urazu – np. do niedokrwionego mięśnia sercowego lub uszkodzonej wątroby. Doświadczenia na zwierzętach z wywołanym uszkodzeniem tkanek lub chorobą dają pośrednie dowody, że plastyczność może się wiązać z pluripotencjalnością.
+Pomysł wędrówki wziął się z obserwacji ciąży: komórki multipotencjalne wędrują między matką a płodem i przekraczają barierę łożyskową, a w efekcie powstają mikrochimeryzmy – w organizmie zostają komórki drugiego osobnika. Nie wiadomo natomiast, czy wędrówka trwa przez całe dorosłe życie i kiedy wyczerpują się zapasy pluripotencjalnych komórek macierzystych – prawdopodobnie przed śmiercią osobnika, a według niektórych autorów już w okresie dojrzałości płciowej.
+[RAMKA przyklad] W doświadczeniach nad regeneracją wątroby stosowano hematopoetyczne komórki macierzyste – i pojawiały się hepatocyty. Ponieważ HSC w zwykłych warunkach dają tylko komórki krwi, to przykład plastyczności. Jak go wyjaśnić? Teorie dają różne odpowiedzi: HSC przeróżnicowały się w hepatocyty (1), zlały się z komórkami wątroby (2) albo wśród podanych komórek były komórki pluripotencjalne (3, 4). Sama obserwacja tego nie rozstrzyga. W części takich doświadczeń stwierdzono, że wątrobę regenerowały komórki powstałe z fuzji, a w kierunku hepatocytów skierowały je warunki środowiska, które zasiedliły.
+
+### Nisze czy wędrówka?  []
+Podział komórek macierzystych według zajmowanych nisz i stanu zróżnicowania przypisuje każdej komórce stałe miejsce. Drewa nazywa go sztywnym: z biologicznego punktu widzenia należałoby go zastąpić koncepcją wędrówki komórek macierzystych. Według niej komórki o niskim stopniu zróżnicowania krążą w dojrzałym organizmie i nie mają stałego miejsca, a w niszach tkankowych zakotwiczają się komórki wyżej zróżnicowane, np. unipotencjalne. Idealnym środowiskiem krążenia są szpik kostny i krew: pełnią funkcję transportową i zarazem są niszami dla mało zróżnicowanych komórek macierzystych. Wędrówka komórek macierzystych zachodzi zarówno w warunkach fizjologicznych, jak i patologicznych.
+[RAMKA zapamietaj] Plastyczność to zdolność komórki macierzystej do przybierania form innych typów komórek, nawet z innego listka zarodkowego. Tłumaczą ją cztery teorie: transdyferencjacja, fuzja komórek, zasiedlenie nisz przez komórki pluripotencjalne i ich wędrówka – żadnej nie udowodniono, m.in. z braku dokładnych markerów.
+[ŹRÓDŁO] Źródło: Drewa s. 694–696
+
+## Cykl życiowy, podział i starzenie się komórek macierzystych  [c07-cykl]
+
+### Jak może podzielić się komórka macierzysta?  []
+Komórka macierzysta ma dwa zadania naraz: dostarczać tkance komórek zróżnicowanych i nie wyczerpać przy tym własnej populacji. Oba realizuje przez podział, którego wynik może być dwojaki ( ):
+- podział asymetryczny (niesymetryczny) – jedna komórka potomna nie zmienia właściwości i pozostaje w niszy jako komórka macierzysta, a druga się różnicuje. To najpowszechniej przyjęta teoria podziału komórek macierzystych. U ssaków taki podział występuje w tkankach nabłonkowych i w tkance nerwowej; w innych tkankach go nie zaobserwowano;
+- podział symetryczny – obie komórki potomne są identyczne pod względem budowy i funkcji: albo dwie komórki macierzyste, albo dwie komórki różnicujące się.
+[RYCINA c07-fig-podzial „Podział asymetryczny i symetryczny komórki macierzystej”: Zielone – komórki macierzyste, niebieskie – komórki różnicujące się, ochra – nisza. W panelu A po podziale jedna komórka zostaje w niszy, a druga wychodzi z niej i się różnicuje. W panelu B obie komórki potomne są tego samego koloru. Wniosek: tylko podział asymetryczny w jednym kroku łączy samoodnowę z różnicowaniem.]
+[RAMKA przyklad] Policzmy (liczby przykładowe). Jedna komórka macierzysta przechodzi trzy rundy podziałów; za każdym razem dzielą się tylko komórki macierzyste. Asymetrycznie: po każdym podziale zostaje 1 komórka macierzysta i przybywa 1 różnicująca się. Po trzech rundach: 1 macierzysta + 3 różnicujące się – pula się nie zmienia. Symetrycznie, dwie macierzyste: 1 → 2 → 4 → 8 komórek macierzystych i żadnej różnicującej się – pula rośnie, ale tkanka nie dostaje nowych komórek. Symetrycznie, dwie różnicujące się: już po pierwszym podziale nie ma komórki macierzystej – pula znika. Arytmetyka przemawia za podziałem asymetrycznym, ale Drewa zaznacza: nie wiadomo, czy podział asymetryczny rzeczywiście zapewnia stałą i niewyczerpaną pulę komórek progenitorowych.
+Komórki macierzyste nie muszą się dzielić tylko jednym sposobem. Model selekcji klonalnej zakłada stałą pulę komórek macierzystych, z których tylko wybrane dzielą się symetrycznie i różnicują. Inne modele podziału spełniają te same funkcje co podział asymetryczny, ale opisano je tylko teoretycznie – ich występowanie jest jedynie prawdopodobne.
+
+### Ile lat ma komórka? Wiek komórki i starość replikacyjna  []
+Komórki zróżnicowane dzielą się symetrycznie, a ich komórki potomne mają mniejszy potencjał proliferacyjny , czyli zdolność do dalszych podziałów. Podziały trwają więc tylko do pewnego momentu – do osiągnięcia starości replikacyjnej , którą odkryli w hodowli in vitro L. Hayflick i P.S. Moorhead (1965). Maksymalną liczbę podziałów komórki nazywa się limitem Hayflicka ( ).
+Wiek komórki zdefiniowano jako okres między podziałami, w którym komórka ma określony potencjał wytworzenia danej liczby komórek potomnych. W tej definicji liczy się więc nie upływ czasu, lecz potencjał podziałowy.
+Mechanizmy starzenia komórek macierzystych są podobne do tych w komórkach zróżnicowanych. Komórki macierzyste uczestniczą więc w dwóch przeciwstawnych procesach: w jednym kontrolują podziały tak, by jak najdłużej zachować młodość replikacyjną, w drugim – te podziały ograniczają. Napięcie między tymi procesami dobrze widać na przykładzie białka p53 (niżej).
+
+### Wiek mitotyczny a wiek chronologiczny  []
+Wiek mitotyczny (replikacyjny) określa się na podstawie liczby podziałów, które komórka już przeszła. Pozwala to wnioskować o jej dalszym potencjale proliferacyjnym, ale metoda jest obarczona dość dużym błędem, a wynik jest różny dla poszczególnych tkanek. Komórki macierzyste różnych tkanek dzielą się bowiem w różnym rytmie:
+- w nabłonku jelita – ciągle;
+- w mieszku włosowym – okresowo, wraz ze wzrostem włosa; z każdym cyklem wzrostowym komórki macierzyste bezpowrotnie giną;
+- w tkankach o niskim współczynniku mitotycznym, np. w tkance nerwowej ośrodkowego układu nerwowego, wiek liczy się inaczej.
+U komórek macierzystych sprawę dodatkowo komplikuje to, że – jak widać było wyżej – dzielą się na różne sposoby, a część z nich opisano tylko teoretycznie.
+Wiek chronologiczny komórek, liczony w czasie, nie zawsze odpowiada ich wiekowi mitotycznemu, a wiek mitotyczny komórek różnych tkanek tego samego organizmu może się znacznie różnić. Wiek chronologiczny też ma jednak znaczenie: liczba wad rozwojowych płodu rośnie z wiekiem chronologicznym komórek rozrodczych.
+[RAMKA obraz] Wiek chronologiczny to rocznik samochodu, a wiek mitotyczny – przebieg na liczniku. Dwa auta z tego samego rocznika mogą mieć zupełnie inny przebieg, zależnie od tego, jak często jeżdżą – tak jak komórki macierzyste jelita (dzielą się ciągle) i ośrodkowego układu nerwowego (niski współczynnik mitotyczny). Granica analogii: przebieg auta odczytasz z licznika, a liczbę podziałów komórki można tylko oszacować, i to z dużym błędem.
+
+### Jak starzeje się komórka macierzysta?  []
+Starzeją się zarówno komórki macierzyste, jak i zróżnicowane. Na starzenie komórek macierzystych wpływają czynniki epigenetyczne, ale także zjawiska związane z samą informacją zawartą w DNA. Starzejące się komórki macierzyste zmieniają się na trzech poziomach:
+- ekspresja genów – maleje ekspresja genów związanych z metabolizmem komórki, a rośnie ekspresja genów białek odpowiedzialnych za przyleganie komórek;
+- stabilność genomu – chroni komórki macierzyste przed starzeniem i zależy od aparatu naprawy DNA. Postępujące zaburzenia funkcji genów, kolejne podziały i utrata zdolności naprawy DNA nieuchronnie prowadzą do śmierci komórki;
+- morfologia – starzejące się MSC są zwykle powiększone, a pobrane od starszych pacjentów nie mają typowego wrzecionowatego kształtu. Maleje ich zdolność do różnicowania, tworzenia kolonii i samoodnowy.
+Wszystkie te zmiany ograniczają zdolności regeneracyjne komórek, a jednocześnie zwiększają skłonność do transformacji nowotworowej , czyli przemiany w komórkę nowotworową.
+
+### Białko p53: hamulec, który chroni i ogranicza  []
+Jak te same zmiany mogą jednocześnie osłabiać regenerację i sprzyjać nowotworom? Drewa pokazuje to na przykładzie białka p53 . Przypomnienie ( ): p53 chroni stabilność genomu i reguluje cykl komórkowy – potrafi ograniczyć podziały komórki. Cykl jest kontrolowany w określonych momentach, w punktach kontrolnych , w których może zostać zatrzymany. Jego rolę w komórkach macierzystych da się prześledzić w trzech etapach:
+- Młody organizm. p53 w komórkach macierzystych jest nieaktywne. Komórki mają duże możliwości replikacyjne i szybko przechodzą przez punkty kontrolne cyklu komórkowego. Mutacji jest mało, więc nieczynne p53 nie grozi nowotworem.
+- Starzenie się organizmu. DNA trzeba często naprawiać, a p53 staje się ważnym czynnikiem ograniczającym podziały. Komórki dzielą się wolniej, więc regeneracja tkanek słabnie. Za to ich genom, choć z licznymi mutacjami, pozostaje stabilny.
+- Mutacja p53. W wyniku procesów starzenia mutacji ulega samo p53: staje się nieaktywne i przestaje kontrolować podziały. Komórki znów dzielą się intensywnie i przekazują mutacje komórkom potomnym. Liczne mutacje i inne niekorzystne zmiany w genomie prowadzą do transformacji nowotworowej.
+Długowieczność organizmu wiąże się więc z zachowaniem równowagi między zdolnością komórek macierzystych do regeneracji a procesami zapobiegającymi nowotworzeniu.
+[RAMKA zapamietaj] W podziale asymetrycznym jedna komórka potomna zostaje w niszy jako macierzysta, a druga się różnicuje; w symetrycznym powstają dwie komórki macierzyste albo dwie różnicujące się. Wiek mitotyczny (liczba podziałów) nie musi odpowiadać chronologicznemu. Z wiekiem p53 ogranicza podziały (słabnie regeneracja), a jego mutacja uwalnia podziały (transformacja nowotworowa).
+[ŹRÓDŁO] Źródło: Drewa s. 696–698 · Jóźwiak s. 97–98
+
+## Różnicowanie komórek i jego zaburzenia  [c07-roznicowanie]
+
+### Jedna zygota, wiele różnych komórek  []
+Zacznijmy od stanu wyjściowego. Każdy człowiek zaczyna się od jednej komórki – zygoty. Wszystkie jego komórki powstają z niej przez kolejne podziały, a w każdym podziale mitotycznym skopiowane chromosomy trafiają do obu komórek potomnych ( ). Komórki ciała dostają więc ten sam materiał genetyczny. A jednak w okresie zarodkowym z niewielkiej grupy komórek o podobnych właściwościach powstają komórki tak różne jak neuron i erytrocyt – komórka pozbawiona jądra.
+[POJĘCIE Różnicowanie] wykształcanie się specjalistycznych cech, których komórka potrzebuje, by pełnić swoją rolę w określonym miejscu organizmu.
+Ten proces to różnicowanie : wykształcanie się specjalistycznych cech, które komórka musi mieć, żeby pełnić swoją rolę w określonym miejscu organizmu. Różnicowanie jest szczególnie charakterystyczne dla okresu zarodkowego, ale trwa też w dorosłym organizmie, choć na mniejszą skalę – przy odnowie komórek i tkanek. Najlepszym przykładem jest powstawanie dojrzałych komórek nabłonka jelita, krwi czy naskórka z odpowiednich komórek macierzystych.
+
+### Skoro materiał genetyczny jest ten sam – co się zmienia?  []
+Zmienia się to, które geny są aktywne. W różnicującej się komórce włączają się geny specyficzne tkankowo – potrzebne tylko danemu typowi komórek. Inną grupą są geny metabolizmu podstawowego (ang. housekeeping genes ): ich ekspresja jest konieczna do funkcjonowania wszystkich typów komórek, więc działają w każdej komórce.
+[RAMKA obraz] Każda komórka ma tę samą książkę kucharską – DNA. Neuron i komórka nabłonka jelita gotują jednak z różnych rozdziałów (geny specyficzne tkankowo), choć obie korzystają z tych samych przepisów podstawowych (geny metabolizmu podstawowego). Granica analogii: kucharz sam wybiera przepis, a o tym, które geny się włączą, decydują sygnały i geny sterujące rozwojem – o nich dalej.
+
+### Kto decyduje, które geny się włączą? Lekcja z muszki owocówki  []
+Różnicowanie ma ogromne znaczenie zarówno dla rozwoju zarodka (embriogenezy), jak i dla powstawania nowotworów (onkogenezy). Dlatego bardzo intensywnie badano je na muszce owocówce ( Drosophila melanogaster ) – organizmie łatwym w hodowli, o dobrze poznanym genomie i szybko się namnażającym. Muszka jest daleka od człowieka, ale rozwój zarodkowy wszystkich zwierząt ma wspólne podstawy, więc wyniki udało się przenieść na organizm ludzki.
+Zarodek muszki dzieli się na 14 segmentów; każdy z nich daje określone struktury dorosłej muszki. Geny sterujące różnicowaniem w segmentach odkrywano, wprowadzając do genomu muszek losowe mutacje i obserwując, jaki skutek wywołuje dana mutacja. Dlatego nazwy genów opisują wygląd mutanta, np. hedgehog – jeż (szczecina na całej powierzchni larwy), smoothened – gładki (gładka powierzchnia larwy), hunchback – garbaty (wybrzuszenie na grzbiecie larwy), dachshund – jamnik (krótkie nóżki dorosłej muszki).
+Geny sterujące rozwojem zarodkowym i różnicowaniem podzielono na trzy rodziny. Działają po kolei – od ogólnego planu ciała do struktur pojedynczego segmentu:
+- geny mateczne (ok. 30) – działają jako pierwsze, już w czasie oogenezy (powstawania komórki jajowej). Wyznaczają główne osie jaja – przód–tył i góra–dół – czyli wstępny wzór rozwoju (np. bicoid , nanos , toll );
+- geny segmentacji – odpowiadają za utworzenie segmentów ciała zarodka, ich liczbę i ułożenie względem innych części ciała (np. hedgehog , wingless );
+- geny homeotyczne – biorą udział w końcowym różnicowaniu: sterują wytworzeniem struktur i przydatków charakterystycznych dla danego segmentu (np. antennapedia ).
+
+### Czy te same geny działają u dorosłego?  []
+Tak. Wiele genów odkrytych w badaniach nad rozwojem zarodkowym – zwłaszcza tych odpowiedzialnych za różnicowanie końcowe – jest aktywnych, a nawet pełni podstawową rolę przy różnicowaniu komórek macierzystych w dorosłym organizmie. Przykładem jest gen hedgehog ( Hh ) – u Drosophila gen segmentacji. Jego ludzkie homologi (odpowiedniki) to Shh ( sonic hedgehog ), Ihh ( Indian hedgehog ) i Dhh ( desert hedgehog ).
+Produkty tych genów działają jak sygnały między komórkami. Są to ligandy – cząsteczki wydzielane przez komórkę, które łączą się ze swoistymi receptorami na komórkach okolicznych lub oddalonych tkanek. Związanie ligandu z receptorem przekazuje komórce docelowej informację, która wpływa na jej różnicowanie (tabela). Shh jest np. podstawowym morfogenem – sygnałem kierującym różnicowaniem – dla neuronów ruchowych, komórek mieszka włosowego, pneumocytów, limfocytów T i odontoblastów. Zaburzenia szlaku Hh bardzo często stanowią podłoże nowotworzenia.
+[TABELA]
+Gen | Narząd | Rola
+Shh | mięśnie | proliferacja prekursorów komórek mięśniowych, regulacja różnicowania
+Shh | neurony obwodowe | proliferacja prekursorów komórek nerwowych, regulacja obumierania
+Shh | chrząstka | proliferacja prekursorów chondrocytów
+Shh | móżdżek | proliferacja prekursorów warstwy ziarnistej
+Shh | płuco | proliferacja i różnicowanie pneumocytów
+Shh | jelito | rozdzielenie tchawicy i przełyku
+Ihh | naczynia krwionośne | proliferacja komórek śródbłonka
+Ihh | chrząstka | proliferacja i różnicowanie chrząstki
+Ihh | jelito | koordynacja rozwoju jelita
+Dhh | jądro | dojrzewanie jądra, rozwój męskich komórek rozrodczych, maskulinizacja
+[/TABELA]
+
+### Co się dzieje, gdy różnicowanie zawodzi?  []
+Różnicowanie zwykle prowadzi do wyspecjalizowania się komórki i lepszego dopasowania jej fenotypu do pełnionej funkcji. Jego zaburzenia są szczególnie charakterystyczne dla onkogenezy: komórki nowotworowe starają się zablokować różnicowanie. Dlaczego? Komórka zróżnicowana potrzebuje więcej substancji odżywczych i substratów, żeby wytwarzać swoje charakterystyczne produkty. Z punktu widzenia rozwijającego się nowotworu mogłoby to zahamować namnażanie się komórek potomnych.
+Z nowotworami wiąże się też odróżnicowanie – proces odwrotny do różnicowania. Komórki nowotworów są zwykle słabiej zróżnicowane niż tkanka, z której się wywodzą, a nasilenie odróżnicowania najczęściej koreluje ze stopniem złośliwości nowotworu.
+Wyróżnia się trzy typy różnicowania patologicznego. Odróżnia je to, jakie komórki pojawiają się w tkance:
+[TABELA]
+Typ | Jakie komórki pojawiają się w tkance | Przykład i znaczenie
+Dysplazja | komórki o nietypowym dla danej tkanki wyglądzie | dysplazja nabłonkowa szyjki macicy (dziś częściej: neoplazja nabłonkowa), wywołana przez wirusa HPV – zmiana przedrakowa, z której w przyszłości może rozwinąć się nowotwór; istnieją też dysplazje całkowicie łagodne, które zanikają samoistnie
+Metaplazja | prawidłowe komórki, ale o fenotypie nietypowym dla danego miejsca – prawidłowa komórka różnicuje się w prawidłową komórkę innego rodzaju | metaplazja jelitowa w przełyku (przełyk Barretta) i w żołądku – zmiany przedrakowe (ramka niżej)
+Anaplazja | w miejscu komórek zróżnicowanych – komórki niezróżnicowane, tak odmienne, że często trudno ocenić, z jakiej tkanki się wywodzą | szczególnie zaawansowane nowotwory; anaplastyczność bardzo często oznacza wysoki stopień złośliwości i złe rokowanie
+[/TABELA]
+Metaplazja pojawia się często tam, gdzie działa stały czynnik stresowy – np. toksyny lub niekorzystne warunki środowiska – który powoduje intensywne obumieranie i odnawianie się komórek.
+[RAMKA przyklad] Przełyk Barretta krok po kroku. (1) Nabłonek przełyku jest wielowarstwowy płaski. (2) Kwas żołądkowy stale go drażni – to stały stresor. (3) Komórki intensywnie obumierają i są zastępowane nowymi. (4) Nowo powstałe komórki różnicują się jednak w nabłonek gruczołowy – jednowarstwowy walcowaty, charakterystyczny dla jelit. (5) Komórki są prawidłowe, tylko nie na swoim miejscu – to metaplazja. Uznaje się ją za zmianę przedrakową, bo zwiększa ryzyko raka przełyku. Podobnie w żołądku: zakażenie Helicobacter pylori może prowadzić do przekształcenia nabłonka gruczołów żołądkowych w nabłonek jelitowy, w którym pojawiają się komórki kubkowe produkujące śluz. Nieleczona zmiana może prowadzić do raka żołądka.
+[RAMKA zapamietaj] Komórki organizmu mają ten sam materiał genetyczny, a różnią się tym, które geny są aktywne: przy różnicowaniu włączają się geny specyficzne tkankowo. W zarodku różnicowaniem sterują kolejno geny mateczne, segmentacji i homeotyczne; u dorosłych działają te same szlaki, np. Hedgehog (Shh, Ihh, Dhh). Różnicowanie patologiczne to dysplazja, metaplazja i anaplazja.
+[ŹRÓDŁO] Źródło: Jóźwiak s. 102–105
+
+## Hipertrofia i hiperplazja  [c07-wzrost]
+
+### Narząd się powiększył – w jaki sposób?  []
+Tkanka albo narząd może się powiększyć na dwa sposoby: albo jego komórki stają się większe, albo jest ich więcej ( ). Te dwie sytuacje mają różne nazwy i bardzo różne znaczenie.
+- Przerost ( hipertrofia ) to zwiększenie objętości komórki bez zmiany jej potencjału proliferacyjnego – komórka rośnie, ale nie zyskuje zdolności do częstszych podziałów. Komórki hipertroficzne wytwarzają więcej białek, które wypełniają ich cytoplazmę, i powstaje guz – podobnie jak przy rozroście. Przerost nie ma jednak charakteru zmiany nowotworowej.
+- Rozrost ( hiperplazja ) to pojawienie się nadmiernej liczby komórek o prawidłowej morfologii. Termin ten łączy się nierozerwalnie z nowotworzeniem: rozrost to początkowy etap rozwoju zmiany nowotworowej. Po nagromadzeniu zmian genetycznych, które uwalniają komórki spod mechanizmów kontroli podziałów, zaczynają się one dzielić w sposób niekontrolowany. Rośnie objętość tkanki lub narządu i powstaje miejscowy nadmiar komórek. Co ważne, na tym etapie komórki wyglądają prawidłowo i nie da się ich jeszcze odróżnić od zdrowych.
+[RAMKA przyklad] Ściana serca jest grubsza niż zwykle – przerost czy rozrost? Przyczyną jest przedłużające się obciążenie mięśnia serca, szczególnie w nadciśnieniu tętniczym lub niewydolności zastawkowej. Grubsza ściana mogłaby wynikać z większej liczby kardiomiocytów albo z ich większych rozmiarów. Rozstrzyga obraz mikroskopowy: kardiomiocyty są znacznie powiększone, a ich liczba się nie zwiększyła. To przerost mięśnia serca .
+
+### Jak rozpoznać pozostałe zaburzenia wzrostu i morfologii?  []
+Hipertrofia i hiperplazja należą do szerszej grupy zmian, które rozróżnia się według liczby i morfologii komórek w tkance. W praktyce porównuje się z tkanką prawidłową cztery cechy: liczbę komórek, ich wielkość, wygląd i rozmieszczenie.
+[RYCINA c07-fig-wzrost „Zaburzenia wzrostu i morfologii komórek”: Zacznij od lewego górnego kafelka – tkanki prawidłowej – i porównuj z nim kolejne: liczbę komórek, ich wielkość, wygląd i układ. W zielonych ramkach: przerost (te same komórki, ale większe) i rozrost (więcej komórek tej samej wielkości). Kafelki czerwone to komórki o zaburzonej morfologii (neoplazja, anaplazja).]
+Najłatwiej zapamiętać te zmiany parami – w każdej parze obie zmiany wyglądają podobnie, a różni je jedna cecha:
+- hipertrofia (przerost) a hiperplazja (rozrost) – w obu komórki mają prawidłową morfologię; w hipertrofii są większe, w hiperplazji jest ich więcej;
+- hipoplazja (niedorozwój) a atrofia (zanik) – w obu komórek jest za mało, a ich wielkość i morfologia są zachowane. W hipoplazji nie wykształciła się wystarczająca liczba komórek; w atrofii ich liczba się zmniejszyła;
+- hiperplazja a neoplazja – w obu przybywa komórek; w neoplazji mają one zaburzoną morfologię (hiperplazja + atypia);
+- dysplazja a metaplazja – w dysplazji zmieniają się wielkość i kształt komórek; w metaplazji komórki są prawidłowe, ale nie występują typowo w danej lokalizacji (por. );
+- anaplazja – odróżnicowanie komórek: są duże, mają duże, często mnogie jądra o nietypowych kształtach, a stosunek objętości jądra do cytoplazmy zmienia się z 1:5 do 1:1;
+- hamartoma – komórki są prawidłowe, ale nieprawidłowo rozłożone w tkance: zaburzona jest architektonika tkanki.
+[RAMKA zapamietaj] Hipertrofia (przerost) to powiększenie komórek bez zmiany ich liczby i potencjału proliferacyjnego, np. kardiomiocytów w przeciążonym sercu; nie jest zmianą nowotworową. Hiperplazja (rozrost) to więcej komórek o prawidłowym wyglądzie – początkowy etap nowotworzenia.
+[ŹRÓDŁO] Źródło: Jóźwiak s. 110–112
+
+## Regeneracja kończyny u płazów  [c07-regeneracja]
+
+### Traszka i człowiek po amputacji  []
+Jeśli traszce albo salamandrze amputuje się kończynę na wysokości obręczy, w ciągu 2–3 miesięcy odrasta cała nowa kończyna. Te zwierzęta to płazy ogoniaste i są pod tym względem jedyne wśród kręgowców: tylko one jako dorosłe odtwarzają całe kończyny. Większość kręgowców po zakończeniu rozwoju zarodkowego potrafi odtworzyć niektóre części kończyny, ale ta zdolność jest często bardzo ograniczona. Ssak – np. człowiek – też jest kręgowcem, więc utraconej kończyny nie odtworzy.
+Co ma traszka, czego nie mają inne kręgowce? Żeby na to odpowiedzieć, trzeba najpierw zobaczyć, jak regeneracja przebiega i czego wymaga.
+
+### Dwa sposoby odtwarzania brakujących części  []
+Regeneracja to zdolność odtworzenia brakujących części ciała po zakończeniu embriogenezy. Wyróżnia się dwa jej typy:
+- morfalaksja (ang. morphallaxis ) – brakujące części odtwarza się przez nowe określenie losu (respecyfikację) pozostałych tkanek, bez wzrostu. Tak stułbia ( Hydra ) z kawałków dorosłego osobnika tworzy nowe, mniejsze osobniki;
+- epimorfoza (ang. epimorphosis ) – brakujące części odtwarza się stopniowo, przez proliferację komórek i wzrost nowej tkanki. Przykładem jest regeneracja kończyn płazów i owadów (choć i tu wzrost poprzedza prawdopodobnie respecyfikacja typu morfalaksji).
+Regeneracja kończyny to więc epimorfoza. Pokrewny termin regulacja oznacza zdolność zarodka do wyrównania braków przez zmianę losu pozostałych tkanek. To odpowiednik morfalaksji: o regulacji mówi się u zarodków, o morfalaksji – przy regeneracji części ciała u dorosłych.
+
+### Jak odrasta kończyna? Etapy regeneracji  []
+[POJĘCIE Blastema] masa niezróżnicowanych komórek mezenchymy powstająca pod czapeczką naskórkową w kikucie kończyny; z niej powstają wszystkie nowe struktury mezodermalne.
+Kończynę opisuje się wzdłuż osi proksymalno-dystalnej : proksymalnie, czyli bliżej tułowia, leży bark, dystalnie, czyli dalej od tułowia – dłoń. Po amputacji regeneracja przebiega w pięciu etapach ( ):
+- Zamknięcie rany – komórki ektodermy (naskórka) w miejscu amputacji proliferują i pokrywają ranę.
+- Czapeczka naskórkowa – komórki dzielą się dalej i tworzą zgrubiałą czapeczkę ektodermalną szczytową (AEC, ang. apical ectodermal cap ). W budowie i funkcji odpowiada ona grzebieniowi ektodermalnemu szczytowemu (AER) w zarodkowym zawiązku kończyny.
+- Odróżnicowanie – AEC indukuje leżące pod nią komórki: zróżnicowane komórki kikuta odróżnicowują się, czyli tracą cechy wyspecjalizowane.
+- Blastema – odróżnicowane komórki tworzą masę niezróżnicowanego mezenchymu, blastemę regeneracyjną , która proliferuje. W budowie i funkcji odpowiada ona strefie postępu zarodkowego zawiązka.
+- Wzrost i odtworzenie wzoru – komórki blastemy ponownie różnicują się we wszystkie składniki mezodermalne kończyny położone dystalnie od cięcia. Oś proksymalno-dystalna odtwarza się stopniowo, bardzo podobnie jak w rozwoju zarodkowym kończyny.
+[RYCINA c07-fig-regeneracja „Regeneracja kończyny płaza ogoniastego”: Czytaj od lewej; czerwona przerywana linia to poziom cięcia, a numery 1–5 odpowiadają etapom z listy. Najpierw działa naskórek (granatowa linia, potem zielona czapeczka AEC), pod nim komórki kikuta odróżnicowują się (kropki) i tworzą blastemę (ochra), z której powstaje wszystko poniżej linii cięcia. Wniosek: naskórek kieruje regeneracją, ale nowe struktury mezodermalne pochodzą z blastemy.]
+
+### Z czego powstaje blastema?  []
+Powstanie blastemy oznacza, że zróżnicowane komórki kończyny potrafią się odróżnicować, proliferować, a potem ponownie zróżnicować w różne składniki mezodermalne. Śledzenie losu komórek wykazało, że blastema pochodzi ze wszystkich typów komórek mezodermalnych w ranie: chrząstki, mięśni, skóry właściwej i tkanki łącznej. To zaskakujący stopień plastyczności. Odróżnicowują się nawet komórki mięśniowe – wysoko wyspecjalizowane, wielojądrowe syncytia, które wyszły już z cyklu komórkowego.
+Komórki mięśni, skóry właściwej i tkanki łącznej mogą po odróżnicowaniu dać dowolny składnik mezodermalny kończyny, a odróżnicowana chrząstka – tylko nową chrząstkę. W regenerującej kończynie ich potencjał jest więc większy niż potencjał chrząstki. Komórki blastemy nie tworzą naskórka, a naskórek nie daje pochodnych mezodermy.
+
+### Co jest potrzebne do regeneracji?  []
+Ektoderma. Usunięcie AEC zatrzymuje proliferację blastemy, a gdy nie pozwoli się naskórkowi pokryć rany, blastema w ogóle nie powstaje. Ektoderma indukuje więc blastemę i podtrzymuje jej istnienie.
+Nerwy. Zależność od unerwienia jest przejściowa. Jeśli nerwy kończyny przetnie się przed amputacją, regeneracja nie zachodzi; jeśli po jej rozpoczęciu – przebiega normalnie, choć wolniej. W rozwoju zarodkowym jest inaczej: kończyna rośnie i zyskuje swój wzór na długo przed tym, zanim nadchodzące aksony unerwią zawiązki mięśni. Co ciekawe, kończyny, które nigdy nie były unerwione (bo nerw usunięto w czasie rozwoju), regenerują normalnie – zależność od nerwów powstaje więc dopiero w wyniku samego unerwienia.
+Czynniki wzrostu. Uważa się, że przecięte aksony uwalniają w ranie czynniki wzrostu niezbędne do regeneracji. Kandydatów wskazały cząsteczki, które podane z zewnątrz przywracają regenerację u odnerwionych zwierząt: FGF , neuregulina i transferyna. FGF odgrywa też ważną rolę we wzroście kończyny w rozwoju zarodkowym.
+
+### Dlaczego traszka, a nie inne kręgowce?  []
+Zależność od nerwów podsuwa możliwe wyjaśnienie. Kończyny płazów ogoniastych wydają się gęściej unerwione niż kończyny innych kręgowców, więc o zdolności do regeneracji może decydować ilość unerwienia. Zgodnie z tym modelem dodatkowe nerwy wprowadzone do kończyn płazów bezogonowych, np. Xenopus , wywołują pewną zdolność regeneracji. Stopniowe zmniejszanie liczby nerwów u traszki ujawniło z kolei „próg” unerwienia potrzebny do regeneracji. Gęste unerwienie tłumaczy jednak wyjątkowość płazów ogoniastych tylko częściowo.
+
+### Skąd blastema wie, co ma odtworzyć? Pamięć pozycyjna  []
+Po amputacji regeneracja zawsze przebiega w kierunku dystalnym i odtwarza dokładnie brakujące elementy – niezależnie od miejsca cięcia i od orientacji kończyny. Pokazują to dwa doświadczenia:
+- Poziom cięcia. Po amputacji w nadgarstku odrasta tylko nowa dłoń, a po amputacji w barku – cała kończyna.
+- Orientacja kończyny. Kończynę ucina się w nadgarstku, a powierzchnię cięcia kikuta wszczepia w bok ciała. Kikut zostaje ukrwiony i powstaje „zamknięta kończyna”. Jeśli przetnie się ją następnie w połowie kości ramiennej, obie powierzchnie cięcia tworzą blastemę i odtwarzają struktury dystalne – choć w jednej z nich oś proksymalno-dystalna jest odwrócona.
+Wniosek: komórki kończyny zachowują zestaw wartości pozycyjnych wzdłuż osi proksymalno-dystalnej. Komórki w miejscu cięcia traktują własną tożsamość pozycyjną jako punkt odniesienia i tworzą w blastemie nowy zestaw wartości – odpowiadających elementom bardziej dystalnym. Wartości te są autonomiczne: blastema przeszczepiona w inne miejsce ciała, które pozwala jej rosnąć, daje ten sam zestaw struktur dystalnych.
+[RAMKA obraz] Wartości pozycyjne można sobie wyobrazić jak numery domów wzdłuż ulicy biegnącej od tułowia do palców: bark ma numer 1, łokieć – 5, nadgarstek – 8, czubki palców – 10 (liczby przykładowe). Komórki w miejscu cięcia „znają” swój numer i dobudowują wszystkie wyższe: cięcie przy numerze 8 daje tylko dłoń, przy numerze 1 – całą kończynę. Granica analogii: komórka nie odczytuje tabliczki – jej „adres” to stan cząsteczkowy, w którym udział mają prawdopodobnie kwas retinowy i geny HoxA (niżej).
+
+### Kwas retinowy i geny HoxA – cząsteczkowe „adresy”  []
+Za ustalanie wartości pozycyjnych w blastemie mogą odpowiadać kwas retinowy i geny HoxA . Strefa postępu w zarodku i regenerująca blastema mają różną wielkość, ale – jak wskazują te cząsteczki – używają podobnych mechanizmów cząsteczkowych do kształtowania osi proksymalno-dystalnej.
+Naskórek rany jest bogatym źródłem kwasu retinowego. Kwas ten może tworzyć w blastemie gradient stężenia – od końca dystalnego do proksymalnego – i w ten sposób wyznaczać wartości pozycyjne wzdłuż przyszłej osi proksymalno-dystalnej. Geny Hox nie ulegają ekspresji w dorosłej kończynie, ale geny HoxA włączają się w blastemie wkrótce po jej powstaniu. To one mogą nadawać komórkom blastemy wartości pozycyjne.
+Rolę kwasu retinowego potwierdza jego podawanie z zewnątrz. Kończyna amputowana w nadgarstku zwykle odtwarza dłoń. Jeśli jednak regenerującą kończynę potraktuje się wysokimi dawkami kwasu retinowego, tożsamość pozycyjna blastemy zostaje przestawiona na najbardziej proksymalną i z kikuta nadgarstka wyrasta cała kończyna. Odpowiedź zależy od dawki: mniejsze stężenia dają słabszą „proksymalizację”.
+Blastemy proksymalne i dystalne zawierają różne ilości kwasu retinowego. Możliwe więc, że ektoderma na poziomie cięcia ustala wartość pozycyjną blastemy, wydzielając odpowiednią ilość kwasu retinowego, a gradient w blastemie wyznacza potem kolejne, bardziej dystalne wartości. Gradient ze źródłem w ektodermie tłumaczy też, dlaczego orientacja kończyny nie ma znaczenia: najwyższe stężenie jest zawsze na dystalnym końcu względem powierzchni cięcia, więc wartości pozycyjne zawsze biegną w tym samym kierunku.
+
+### Regeneracja interkalarna: uzupełnianie środka  []
+Kończyna potrafi odtworzyć nie tylko brakujące struktury dystalne, ale też brakujące struktury pośrednie. To regeneracja interkalarna (ang. intercalary regeneration ).
+[RAMKA przyklad] Kończynę amputuje się w nadgarstku, a powstałą blastemę przeszczepia na kikut innego zwierzęcia, któremu kończynę ucięto w barku. Co wyrośnie? Blastema niesie wartości „nadgarstka i dłoni”, kikut – „barku”; brakuje wszystkiego pomiędzy. Rozwija się prawidłowa kończyna: większość elementów proksymalnych powstaje z tkanki kikuta (regeneracja interkalarna), a elementy dystalne – z blastemy. W zarodku jest inaczej: strefa postępu ze starszego zawiązka przeszczepiona na młodszy zawiązek daje kończynę bez struktur proksymalnych.
+
+### Model współrzędnych biegunowych  []
+Regenerację dystalną i interkalarną tłumaczy model współrzędnych biegunowych (ang. polar coordinate model ). Opiera się na czterech założeniach:
+- każda komórka kończyny ma informację pozycyjną w postaci współrzędnych biegunowych na trójwymiarowej mapie;
+- w prawidłowej kończynie sąsiednie komórki mają sąsiednie współrzędne i pozostają w spoczynku;
+- gojenie rany po amputacji zestawia ze sobą komórki o różnych wartościach pozycyjnych – to pobudza je do proliferacji i ponownego różnicowania;
+- podziały trwają, dopóki nie powstanie nowy, pełny zestaw współrzędnych – wtedy układ znów się uspokaja.
+Podstawą molekularną może być zróżnicowana adhezja (przyleganie) komórek. Jeśli adhezja stopniowo rośnie wzdłuż kończyny, to zetknięcie komórek o odległych tożsamościach pozycyjnych daje wyraźną różnicę adhezji.
+Interkalacja zachodzi nie tylko wzdłuż osi proksymalno-dystalnej, ale też po obwodzie kończyny, czyli w osiach przednio-tylnej i grzbietowo-brzusznej. Model traktuje obwód kończyny jak tarczę zegara: każda liczba od 1 do 12 to inna wartość pozycyjna ( ).
+[RYCINA c07-fig-zegar „Model współrzędnych biegunowych: obwód kończyny jako tarcza zegara”: Obwód kończyny widziany w przekroju, strona grzbietowa u góry; liczby to wartości pozycyjne. Porównaj A i B: po usunięciu wycinka (czerwony) gojenie styka komórki 10 i 2 (X), które w prawidłowej kończynie nie sąsiadują. C: podziały wstawiają brakujące wartości najkrótszą drogą – 11, 12, 1 (zielony łuk) – a nie ponownie od 2 do 10. Wniosek: proliferację wywołuje zetknięcie niesąsiednich wartości i trwa ona, aż zestaw wartości znów będzie pełny.]
+Z modelu wynikają reguły, które pozwalają przewidzieć wynik doświadczenia:
+- Uzupełnianie luki. Po usunięciu wycinka tkanki z grzbietowej strony kończyny (wartości 11, 12 i 1) gojenie styka komórki o wartościach 10 i 2. To pobudza je do podziałów i wstawienia brakujących wartości – lukę wypełnia nowa tkanka grzbietowa.
+- Najkrótsza droga. Wstawiane są wartości 11, 12 i 1 (trzy), a nie powielane wartości od 2 do 10 (dziewięć).
+- Wartości skrajne. Prawą nogę traszki odcina się i przyszywa z powrotem odwrotnie, spodem do góry. Kończyna wrasta, ale na granicach przeszczepu wyrastają dwie dodatkowe kończyny, skierowane spodem w dół. Stykają się tu komórki o skrajnych wartościach – 6 i 12. Od 6 do 12 jest równie daleko w obie strony tarczy, więc najkrótszej drogi nie ma: jedynym logicznym wyjściem jest wstawienie wszystkich brakujących wartości, czyli wyrośnięcie dwóch całych dodatkowych kończyn.
+
+### Regeneracja a rozwój zarodkowy – zestawienie  []
+Regenerat jest znacznie większy od zarodkowego zawiązka kończyny, więc mechanizmy kształtowania wzoru nie mogą być w obu przypadkach identyczne. Doświadczenia z przeszczepami pokazały jednak, że regenerujące się i rozwijające się kończyny mogą współdziałać i tworzyć prawidłowy wzór – kluczowe mechanizmy są więc prawdopodobnie zachowane. Najważniejsze różnice:
+[TABELA]
+Cecha | Kończyna regenerująca | Kończyna rozwijająca się (zarodek)
+Mezoderma | blastema proliferuje i daje wszystkie struktury mezodermalne, także mięśnie | strefa postępu proliferuje i daje pochodne szkieletowe; mięśnie powstają z napływających mioblastów
+Ektoderma | AEC indukuje odróżnicowanie i podtrzymuje proliferację blastemy | AER podtrzymuje proliferację strefy postępu
+Układ nerwowy | potrzebny do zapoczątkowania regeneracji | bez roli – wzrost i wzór powstają przed unerwieniem mięśni
+Przeszczep heterochroniczny mezenchymy | dystalna blastema na proksymalnym kikucie → regeneracja interkalarna | starsza strefa postępu na młodszym zawiązku → brak wzrostu interkalarnego, brakuje elementów proksymalnych
+Oś proksymalno-dystalna | wartości pozycyjne wyznacza (prawdopodobnie) ekspozycja na kwas retinowy → aktywacja genów HoxA | wartości pozycyjne wyznacza czas przebywania komórek w strefie postępu → aktywacja genów HoxA
+[/TABELA]
+[RAMKA zapamietaj] Regeneracja kończyny płazów ogoniastych to epimorfoza: naskórek zamyka ranę i tworzy czapeczkę (AEC), pod którą odróżnicowane komórki tworzą blastemę, a z niej powstają brakujące struktury. Potrzebne są ektoderma i – przejściowo – nerwy. Regeneracja jest zawsze dystalna (wartości pozycyjne, kwas retinowy, HoxA); brakujące wartości pośrednie uzupełnia regeneracja interkalarna.
+[ŹRÓDŁO] Źródło: Twyman s. 390–396
+[RAMKA w60] Komórka macierzysta – samoodnowa + różnicowanie; potencjał maleje od toti- (zygota; także łożysko) przez pluri- (ESC, iPSC) i multi- (HSC, MSC) do unipotencjalnych. Typy – ESC z węzła zarodkowego blastocysty (potworniak, etyka); HSC – przeszczepy, głównie w białaczkach; MSC ze zrębu (CD73, CD105); iPSC z komórek pacjenta (OCT4/3, SOX2, KLF4, c-MYC) – autogeniczne. Plastyczność – przekraczanie granic listka zarodkowego; transdyferencjacja, fuzja, zasiedlenie nisz przez komórki pluripotencjalne, wędrówka – teorie nieudowodnione. Podział i starzenie – asymetryczny (jedna komórka zostaje w niszy) i symetryczny; wiek mitotyczny ≠ chronologiczny; p53 z wiekiem ogranicza podziały, a jego mutacja sprzyja nowotworom. Różnicowanie – ten sam DNA, inne aktywne geny; geny mateczne → segmentacji → homeotyczne; Hedgehog u dorosłych; dysplazja, metaplazja, anaplazja. Hipertrofia = większe komórki, hiperplazja = więcej komórek. Regeneracja kończyny – rana → AEC → odróżnicowanie → blastema → odtworzenie wzoru; wymaga nerwów; zawsze dystalna; kwas retinowy, HoxA; interkalacja (model zegara).
+
+
+======== E. ŹRÓDŁA (przycięte do zakresu z mapy) ========
+
+
+---------- jozwiak_r09.txt (cały plik) ----------
+# ŹRÓDŁO: Jóźwiak J., Biologia komórki dla studentów uczelni medycznych, Edra Urban & Partner 2020 – Rozdział 9. Komórki macierzyste i różnicowanie
+# Zakres: s. 97–106 (cały rozdział; PDF s. 108–117).
+# Tekst z warstwy OCR PDF (pdftotext -bbox), złożony łamami: lewy łam, potem prawy (pasy między podpisami pełnej szerokości).
+# [Strona N] = numeracja książki (PDF − 11; potwierdzona numerami na s. 97 i 105).
+# ### = nagłówek podrozdziału. [PODPIS/TABELA] = podpis ryciny lub tabela – wyjęte z biegu tekstu, na końcu strony.
+# [ETYKIETY RYCIN] = napisy wewnątrz rycin (szum OCR, nie czytać jako tekstu). Znaki ">", "+", "=", "„", "%" na początku akapitu = punktory.
+
+[Strona 97]
+I różnicowanie
+
+Embrionalne komórki macierzyste....................... Tkankowe komórki macierzyste .........................
+
+Mezenchymalne komórki macierzyste ................... Indukowane pluripotencjalne komórki macierzyste.......
+
+Różnicowanie się komórek..............:...1.-.-.11.--.. Kontrola nad różnicowaniem w organizmie dorosłym ........
+
+Komórki macierzyste to specjalny rodzaj niezróżnicowanych komórek, które bytują w określonym mikrośrodowisku (zwanym niszą) i mają zdolność wytwarzania dojrzałych (zróżnicowanych) komórek potomnych. Choć próby izolacji komórek macierzystych trwają już od kilkudziesięciu lat, do chwili obecnej udało się określić kilka typów komórek macierzystych, opracować protokoły ich uzyskiwania oraz, choć w zdecydowanie niewystarczającym stopniu, znaleźć dla nich pewne zastosowania.
+
+Zgodnie z definicją, komórka macierzysta to komórka posiadająca zdolność do nieskończonej liczby podziałów oraz do wytwarzania przynajmniej jednego rodzaju dojrzałych, zróżnicowanych komórek. Innymi słowy, komórki macierzyste mają zdolność samoodnowy i różnicowania. Poza powyższymi dwoma cechami wspólnymi, różne typy komórek macierzystych dzieli jednak wiele różnic (> tab. 9.1). Jedną z podstawowych różnic jest to, jakie typy komórek mogą powstawać z danej komórki macierzystej. W tym kontekście wyróżnia się (> ryc. 9.1):
+
+komórek zróżnicowanych komórek (w tym tkanki
+
+[PODPIS/TABELA] Tabela 91 Typy komórek macierzystych. Powyższa tabelka przedstawia właściwości poszczególnych typów komórek macierzystych
+
+[ETYKIETY RYCIN – szum OCR] Komorki | macierzyste | zaburzenia różnicowania ua soo ee ere eee | Komórki trzech listków | Więcej niż jeden typ komórek | Zdolność generowania Wszystkie typy | zarodkowych (ale nie tkanki | pozazarodkowe) | pozazarodkowe) | Blastocysta | Miejsce występowania Wczesny zarodek | Wiele tkanek dorosłego | człowieka | Ekspresja genów komórek Wysoka | Niska | Średnia | macierzystych | Ekspresja genów Niska | Wysoka | Średnia | różnicowania | ESC, iPSC | HSC, komorki macierzyste | Przykłady Zygota, do stadium | 8-komórkowego zarodka | tkanki nerwowej itp. | przed kompakcją | 97
+
+[Strona 98]
+gee ANA <KGRKGWE (ilfipotenc jalne) komórki macierzyste
+
+> komórki totipotencjalne (omnipotencjalne)
+
+— z których powstać mogą komórki pochodzące z wszystkich trzech listków zarodkowych (wszystkie komórki dorosłego organizmu) oraz komórki tkanek pozazarodkowych (łożyska);
+
+### Samoodnowa i różnicowanie
+
+Komórki macierzyste mają możliwość tworzenia zróżnicowanych komórek charakterystycznych dla danej tkanki, ale także odtwarzania swojej własnej populacji. Oba te zjawiska są możliwe dzięki symetrycznym i niesymetrycznym podziałom komórkowym. Podział symetryczny oznacza, że obie komórki powstałe po podzieleniu się danej komórki są identyczne pod względem budowy i funkcji, czyli w tym przypadku obie są komórkami macierzystymi. Podział niesymetryczny oznacza natomiast, że po podziale powstaje jedna komórka, która nie zmienia swoich właściwości, i druga, która dalej różnicuje.
+
+> komórki pluripotencjalne — z których powstać mogą komórki pochodzące ze wszystkich trzech listków zarodkowych (ale nie tkanek pozazarodkowych);
+
+> komórki multipotencjalne — z których powstać mogą zróżnicowane różne typy komórek, ale nie wszystkich trzech listków zarodkowych. Nie mogą one również wytwarzać tkanek pozazarodkowych. Do tego rodzaju komórek macierzystych należą prawie wszystkie komórki macierzyste znajdowane w dorosłym organizmie, np. komórki macierzyste krypt jelitowych, warstwy podstawnej naskórka, rąbka rogówki.
+
+Poza komórkami macierzystymi wyróżnia się jeszcze kilka typów komórek będących wczesnymi formami rozwojowymi. Komórka progenitorowa to komórka, która jest wstępnie zróżnicowana i powstała bezpośrednio z komórki macierzystej, natomiast komórka prekursorowa, to komórka bezpośrednio poprzedzająca powstanie w pełni zróżnicowanej komórki. Należy jednak zaznaczyć, że powyższy podział jest bardzo nieostry i często trudno jest określić, która komórka jest prekursorem, a która progenitorem.
+
+### Embrionalne komórki macierzyste
+
+Komórki te uzyskiwane są z węzła zarodkowego blastocysty (> ryc. 9.2), która tworzy się kilka dni po zapłodnieniu komórki jajowej. Komórki te są pluripotencjalne i mają zdolność do wytwarzania wszystkich komórek obecnych w naszym organizmie. Ludzkie embrionalne komórki macierzyste (ESC, embryonic stem cells) są przede wszystkim uzyskiwane z blastocyst powstałych
+
+[PODPIS/TABELA] Ryc. 9.1 Typy komórek macierzystych. Komórki totipotencjalne mają zdolność wytwarzania komórek wszystkich trzech listków zarodkowych oraz tkanek łożyska. Komórki pluripotencjalne odtwarzają komórki wszystkich trzech listków zarodkowych. Komórki multipotencjalne odtwarzają tkanki charakterystyczne dla jednego listka zarodkowego: endodermy, mezodermy lub ektodermy. Tkankowe komórki macierzyste odtwarzają komórki danej tkanki, np. komórki macierzyste nabłonka jelit, komórki macierzyste szpiku, komórki macierzyste neuronalne.
+
+[ETYKIETY RYCIN – szum OCR] hd | 5 R | jelita
+
+[Strona 99]
+w procedurze zapłodnienia in vitro, z niewykorzystanych, nadmiarowych zarodków. Pluripotencja jest w tych komórkach kontrolowana przez trzy czynniki transkrypcyjne: OCT4/3 (octamer-binding transcription factor 4/3), SOX-2 (sex determining region Y-box 2) oraz Nanog. Komórki takie muszą spełniać kryteria definiujące ESC. Są to:
+
++ pluripotencja, czyli odtwarzanie komórek pochodzących ze wszystkich trzech listków zarodkowych,
+
+= nieśmiertelność w hodowli, w tym utrzymywanie braku zróżnicowania przez cały okres hodowli,
+
+> utrzymywanie prawidłowego kariotypu.
+
+Pierwszą linię ludzkich ESC uzyskano w 1998 roku, jednak w związku z trudnościami technicznymi z utrzymaniem komórek w stadium niezróżnicowanym oraz kwestiami etycznymi (uzyskanie linii ESC wymaga zniszczenia blastocysty), badania postępują powoli. Hodowlane ESC utrzymuje się na warstwie komórek odżywczych (feeder cells), np. ludzkich fibroblastach. Po wszczepieniu ESC do myszy, komórki takie wytwarzają potworniaka (teratoma), zawierającego komórki, które pochodzą ze wszystkich trzech listków zarodkowych. W związku z tym, u pacjentów stosować można wyłącznie komórki zróżnicowane uzyskane z EŚC, a nie same EŚC.
+
+### Tkankowe komórki macierzyste
+
+Tkankowe komórki macierzyste, nazywane również somatycznymi komórkami macierzystymi lub komórkami macierzystymi dorosłych, są bardziej zróżnicowane niż komórki embrionalne. Jak sugeruje nazwa, są to komórki spotykane w dorosłych organizmach, np. u dorosłego człowieka. Ponieważ są w stanie wytworzyć różne typy komórek na potrzeby danego narządu, ale nie innych narządów, są klasyfikowane jako komórki multipotencjalne. Przykładem tego typu komórek są hematopoetyczne komórki macierzyste (HSC, hematopoietic stem cells) spotykane w szpiku kostnym (+ ryc. 9.3). Mają one zdolność wytwarzania elementów morfotycznych krwi, tzn.
+
+[PODPIS/TABELA] Ryc. 9.2 Blastocysta. Około 5. dnia po zapłodnieniu ludzkiej komórki jajowej tworzy się blastocysta — struktura, w której widoczne są węzeł zarodkowy, jama blastocysty i trofoblast. Kilka dni później, blastocysta ulega implantacji do endometrium. W procesie zapłodnienia in vitro na tym etapie dokonuje się wprowadzenia zarodka do macicy. Komórki blastocysty w trakcie i po implantacji wydzielają ludzką gonadotropinę kosmówkową, której poziom mierzony jest w testach ciążowych. Komórki pobrane z węzła zarodkowego na etapie blastocysty komórki są pluripotencjalne - mogą wytwarzać wszystkie komórki organizmu (poza łożyskiem). (Dzięki uprzejmości dr hab. |. Niderli-Blelińskiej).
+
+[PODPIS/TABELA] Ryc. 9.3 Rozmaz szpiku. Hematopoetyczne komórki macierzyste (HSC) od dawna są wykorzystywane w medycynie, przede wszystkim w postaci przeszczepu hematopoetycznych komórek macierzystych, który występuje w trzech wariantach: przeszczepu szpiku kostnego (bone marrow transplantation, BMT), przeszczepu obwodowych komórek macierzystych krwi (peripheral blood stem cel transplantation, PBSCT) oraz przeszczepu pępowinowych komórek macierzystych (umbilical cord stem cel transplantation, UCSCT). Pierwsze próby wykorzystania HSC podjeli Nowell i Ford, którzy zauważyli, że szpik wszczepiony silnie napromieniowanej myszy zapewnia jej przeżycie, odtwarzając wszystkie komórki krwi. Aktualnie głównym wskazaniem do przeszczepienia są białaczki, stanowiące ok. 70% przypadków, w tym ostra i przewlekła białaczka szpikowa oraz ostra białaczka limfoblastyczna. Poza tym przeszczepienia dokonuje się także w chłoniakach Hodgkina, neuroblastomie, szpiczaku mnogim, talassemii, anemii anaplastycznej i chorobach autoimmunizacyjnych. Na zdjęciu widoczny szpik kostny z różnymi typami komórek macierzystych hematopoezy. (Dzięki uprzejmości dr hab. J. Niderli-Blelińskiej).
+
+[ETYKIETY RYCIN – szum OCR] .
+
+[Strona 100]
+leukocytów, erytrocytów i płytek. Nie są jednak w stanie wytworzyć komórek innych tkanek, np. tkanki nerwowej. Do innych przykładów takich komórek należą komórki macierzyste krypt jelitowych, które odnawiają bardzo intensywnie pracujący nabłonek jelitowy. Tak silna eksploatacja tego nabłonka, który bardzo aktywnie pośredniczy w transporcie wielu substancji ze światła przewodu pokarmowego do krwi, powoduje konieczność jego pełnej wymiany co kilka dni.
+
+### Mezenchymalne komórki macierzyste
+
+Mezenchymalne komórki macierzyste (MSC, znesenchymał stem cells) znajdowane są w zrębie (tkance łącznej stanowiącej podporę) narządów, w związku z czym często nazywane są zrębowymi komórkami macierzystymi. Po raz pierwszy zostały wyizolowane ze szpiku kostnego (były w stanie odtwarzać komórki chrząstki, kości i tkanki tłuszczowej). Od tamtej pory komórki te były izolowane z większości typów tkanek, np. błon owodniowych, płynu owodniowego, tkanki tłuszczowej, endometrium, krwi menstruacyjnej, krwi obwodowej, łożyska, skóry, płynu stawowego i wielu innych. W związku z intensywnymi badaniami nad MSC, wynikającymi z ich dużej dostępności i potencjału zastosowania, opracowano minimalne kryteria definiujące MSC. Sa to:
+
+> przywieranie do butelki hodowlanej,
+
+> produkcja określonego zestawu markerów powierzchniowych, np. CD73, CD105 oraz brak ekspresji CD14, CD34, CD45, HLA-DR,
+
+> możliwość różnicowania in viźro do adipocytów, chondrocytów i osteoblastów.
+
+Badania nad MSC są jednak bardzo trudne, a wiedza ich dotycząca bardzo nieusystematyzowana. Tym bardziej, że z pewnością istnieją różne typy MSC, różniące się między sobą pochodzeniem, właściwościami, zdolnością do odtwarzania różnych typów komórek. W chwili obecnej MSC uzyskuje się głównie ze szpiku kostnego, tkanki tłuszczowej, pępowiny, krwi pępowinowej, łożyska i płynu owodniowego. W porównaniu z MSC z tkanek osób dorosłych, MSC uzyskiwane z tkanek zarodkowych charakteryzują się silniejszym wzrostem i większym potencjałem generowania zróżnicowanych komórek, dlatego też nazywa się je czasami dziewiczymi (naive stem cells) lub wczesnymi komórkami macierzystymi. Mają one tę zaletę, że są rzadziej rozpoznawane i odrzucane przez układ odpornościowy biorcy, szczególnie MSC uzyskiwane z pępowiny.
+
+Podobieństwa i różnice między HSC i MSC
+
+Szpik kostny jest dogodnym źródłem uzyskiwania HSC i MSC, choć nie jest to jedyna tkanka zawierająca te dwa typy komórek, bowiem można je również jednocześnie spotkać np. w krwi pępowinowej czy łożysku. Oznacza to, że we wspomnianych tkankach znajdują się dwie populacje komórek, jedna spełniająca kryteria definicji HSC i druga — MSC. Zarówno HSC, jak i MSC są komórkami multipotencjalnymi. HSC wykorzystywane są od kilkudziesięciu lat w praktyce klinicznej do leczenia wielu zaburzeń hematologicznych i kostnych, w tym chorób rozrostowych krwi, chorób autoimmunizacyjnych i genetycznych. MSC są aktualnie wykorzystywane w terapiach doświadczalnych, ale uważa się, że być może znajdą zastosowanie w leczeniu cukrzycy, udaru czy nowotworów.
+
+### Indukowane pluripotencjalne
+
+Indukowane pluripotencjalne komérki macierzyste (iPSC, induced pluripotent stem cells) sa wytwarzane sztucznie, w laboratorium, poprzez odróżnicowanie komórek pobranych z danego narządu człowieka, do stadium komórek embrionalnych (+ ryc. 9.4). Posiadają one wiele cech wspólnych z ESC, np. są w stanie wytwarzać wszystkie komórki znajdowane w dorosłym organizmie (czyli są pluripotencjalne). Klasycznie, do wyindukowania pluripotencji w iPSC konieczne jest zwiększenie ekspresji czterech czynników transkrypcyjnych: OCT4/3, SOX2, KLF4 (Kruppel-like factor 4) i e- MYC (nazwa pochodzi od ptasiej choroby Myełocytomatosis, wywoływanej przez wirusa wprowadzającego do genomu gen podobny do genu Myc). Aby uzyskać iPSC, należy komórki pobrane od pacjenta umieścić w hodowli, a następnie stransfekować wirusem wprowadzającym nadekspresję wymienionych powyżej czterech czynników transkrypcyjnych. Powoduje to odróżnicowanie komórek i przywrócenie ich pluripotencji, podobnej do komórek ESC (których użycie budzi wątpliwości ze względów etycznych). Co więcej, uzyskane w ten sposób iPSC są specyficzne tkankowo dla danego pacjenta. Tak więc zaletami iPSC są:
+
+> możliwość uzyskania specyficznych tkankowo komórek danego pacjenta, które odtwarzać będą komórki uszkodzonego narządu
+
+[ETYKIETY RYCIN – szum OCR] komorki macierzyste
+
+[Strona 101]
+> możliwość przeprowadzenia modyfikacji genetycznej komórek uzyskanych od pacjenta, np. wyleczenia choroby poprzez wprowadzenie prawidłowej kopii genu.
+
+Z punktu widzenia transplantologii i tego, jakie jest podobieństwo wszczepianych komórek do organizmu gospodarza, a co za tym idzie, jaki jest potencjał immunogenny wszczepianych komórek, wyróżnia się: 3 Komórki/tkanki autogeniczne — pochodzące od tego samego pacjenta, ale np. z innego fragmentu ciała, Przykładem takiej tkanki są naczynia wykorzystywane do wytworzenia pomostowania aortalno-wieńcowego, czyli bypassów omijających zamknięte naczynie wieńcowe powodujące niedokrwienie mięśnia sercowego. Naczynia te pobiera się najczęściej z podudzia (żyła odpiszczelowa) lub jamy brzusznej (tętnica piersiowa wewnętrzna) chorego i wszczepia do tętnic wieńcowych.
+
+> Komórki/tkanki syngeniczne — od osób identycznych genetycznie, np. bliźniąt jednojajowych. Przykładem takiego zabiegu jest przeszczepienie syngenicznych hematopoetycznych komórek macierzystych w niektórych chorobach rozrostowych krwi, np. w szpiczaku mnogim. Pobranie krwi i wyizolowanie z niej HSC nie wiąże się z większymi powikłaniami ani dolegliwościami dla bliźniaka, natomiast stanowi doskonałe źródło nieimmunogennych komórek dla biorcy.
+
+> Komórki/tkanki allogeniczne — od innego przedstawiciela tego samego gatunku. Tego typu materiał wykorzystuje się np. w przeszczepach serca, płuc, nerek — są to najczęściej narządy uzyskane od zmarłych dawców. Niestety wadą tego rozwiązania jest fakt, że obecność genetycznie obcych komórek w organizmie wiąże się z aktywacją układu odpornościowego, a co za tym idzie — powolnym odrzucaniem przeszczepu. Dlatego pacjenci będący biorcami przeszczepów allogenicznych do końca życia przyjmują leczenie hamujące odrzucanie przeszczepu (leczenie immunosupresyjne).
+
+- Komórki/tkanki ksenogeniczne — pochodzące z organizmów należących do innych gatunków. Tego typu przeszczepy mają ogromne zalety, którymi są szeroka dostępność tkanek pochodzących od zwierząt oraz spotykana dość często odporność na ludzkie patogeny (np. na wirusa HIV). Jednym z przykładów zastosowania takich tkanek jest np.
+
+[PODPIS/TABELA] Ryc. 9.4 Indukowane pluripotencjalne komérki macierzyste (iPSC). Łatwa dostępność komórek iPSC warunkuje duże zainteresowanie ich zastosowaniem. Pierwszym krokiem do uzyskania IPSC jest pobranie tkanki od pacjenta. Następnie, po namnożeniu komórek w butelce hodowlanej, poddaje się je transfekcji mającej na celu zwiększenie ekspresji genów pluripotencji. Na tym etapie wystarczy zastosować odpowiednie czynniki wzrostu, aby wylndukować różnicowanie komórek w kierunku konkretnego typu tkanki.
+
+[ETYKIETY RYCIN – szum OCR] Namnożenie | Pobranie | Z | ZJ | DddDa Transfekcja | Różnicowanie | Neurony | KR | a | Komórki krwi . 5 | a | Nabtonki See,
+
+[Strona 102]
+wszczepianie wołowych lub u osób z niewydolnością aortalnej. Zastawki biologiczne do sztucznych) są bardziej i — po pozbawieniu ich
+
+### Różnicowanie się komórek
+
+Proces wykształcania się które musi ona posiadać, nym miejscu organizmu,
+
+najczęściej skorelowane Są z nezy, kiedy z niewielkiej komórką pozbawioną jądra lepszym tego przykładem jest narządów w czasie rozwoju komórek i tkanek w organizmie W procesie tym aktywowane kowo, w przeciwieństwie których ekspresja jest wszystkich typów komórek. są z kolei szczególnie
+
+zablokować różnicowanie. trzebuje bowiem większej substancji odżywczych i subs charakterystycznych dla siebie pro widzenia rozwijającego się namnażanie się komórek
+
+czy naskórka z odpowiednich
+
+[PODPIS/TABELA] Ryc. 9.5 Różnicowanie. Różn
+
+[ETYKIETY RYCIN – szum OCR] świńskic h zastawek | embrio nalnego oraz odnowy | czy zwężen iem zastawki | dorosłym (+ ryc. 9.5). | (w przeciwieństwie | są geny specyficzne tkan- | zbliżone do naturalnych | do tzw. housekeeping | komórek — nie są | genes, | immunogenne. | konieczna do funkcjonowania | Zab urzenia tego procesu | charakteryst yczne dla onkogene- | zy (+ ryc. 9.6), kiedy | komórki now otworowe starają | się | Komórk a zróżnicowana po- | i bardziej zróżnicowanej | specjalistyc znych cech komórki, | ści ilo- | tratów do wytwarzania | aby móc pełnić rolę w | określo- | duktów, co z punktu | naz ywany różnicowaniem, | szczególnie jest | charakterystyczny dla okresu | now otworu mogłoby | mować zaha- | tworzenia się | potomnych. | Różnicowanie w | embriogenezie | zz" | O pe | icowanie jest procesem wyks | ztałcania Się komórek o okre | ślonych, specjalnych właściwo | miejscem ich funkcjonowan ia | ściach, które | organizmie. Proces różn icowania | grup y komórek o podobnych | jest charakterystyczn y dla | się tak embrioge- | właś ciwościach uzyskuje | różne komórki jak neuron i | komórkowego). Jednak w orga nizmie | erytrocyt (będący | dorosłym różnicowanie nadal | trwa, choć na mniejszą skalę | powstawanie dojrzałych komó rek | jelita, krwi — naj- | rzystych, nabłonka | komó rek macie-
+
+[Strona 103]
+### Odróżnicowane komórki nowotworowe
+
+W związku ze znaczeniem procesu różnicowania dla embriogenezy i onkogenezy, był on bardzo intensywnie badany na modelowym organizmie muszki owocówki (Drosophila melanogaster), ktéry jest łatwy w hodowli, posiada dobrze poznany genom i szybko się namnaża. Mimo iż — jak się wydaje — organizm muszki owocówki jest daleki od organizmu ludzkiego, dzięki podstawowym podobieństwom dotyczącym rozwoju embrionalnego wszystkich zwierząt, wyniki badań na muszce udało się przenieść na organizm ludzki. Na podstawie powyższych badań geny sterujące rozwojem embrionalnym organizmów i różnicowaniem podzielono na 3 rodziny:
+
+> geny mateczne,
+
+> geny segmentacji,
+
+> geny homeotyczne.
+
+Zarodek muszki Drosophila podzielony jest na 14 segmentów — każdy z nich odpowiedzialny jest za wytworzenie określonych struktur dorosłego organizmu muszki. W roku 1980 Nisslein-Volhard i Wieschaus opublikowali w czasopiśmie „Nature” analizę dotyczącą genów, które kontrolują różnicowanie się komórek zarodka w poszczególnych segmentach. Wyniki te autorzy uzyskali, wprowadzając niespecyficzne (losowe) mutacje w genomie muszek i obserwując, jaki efekt w dorosłym organizmie muszki dana mutacja powoduje. Stąd też nazwy większości odkrytych wtedy genów są przymiotnikami lub rzeczownikami określającymi pojawiające się fizyczne cechy muszek, np. hedgehog — jeż (pojawienie się szczeciny na całej powierzchni larwy), smoothened - gładki (gładka powierzchnia larwy), hunchback — garbaty (wybrzuszenie na powierzchni grzbietowej larwy), dachshund
+
+— jamnik (krótkie nóżki u dorosłych muszek). W ten sposób autorzy zidentyfikowali wiele genów biorących udział w różnicowaniu komórek, za co w roku 1995 roku otrzymali Nagrodę Nobla w dziedzinie medycyny.
+
+Geny mateczne, których jest ok. 30, działają jako pierwsze w czasie oogenezy, określając główne osie jaja. Odpowiadają one za wykształcenie się osi przód-tył i góra-dół zarodka, czyli wytworzenie wstępnych wzorów rozwoju. Należą do nich m.in. geny Bźcoid, nanos i toll. Geny segmentacji biorą udział w utworzeniu się poszczególnych segmentów ciała zarodka, zdefiniowaniu liczby segmentów oraz topograficznym ułożeniu segmentów względem innych części ciała zarodka. Należą do nich m.in. geny Żedgebog i wingless. Trzecia grupa genów, geny homeotyczne, bierze udział w końcowym różnicowaniu i odpowiedzialna jest za wytworzenie struktur i przydatków charakterystycznych dla konkretnego segmentu ciała. Przykładem takiego genu jest gen antennapedia.
+
+### Kontrola nad różnicowaniem w organizmie dorosłym
+
+Wiele spośród genów odkrytych podczas badań nad rozwojem embrionalnym, szczególnie te odpowiedzialne za tzw. różnicowanie końcowe, jest aktywnych lub wręcz pełni podstawową rolę przy różnicowaniu komórek macierzystych w organizmie dorosłym. Przykładem takiego genu jest kedgehog (Fb), którego ludzkim homologiem sq Shh (sonic hedgehog), Inh (Indian hedgehog) i Dhh (desert hedgehog). Produkty tych genów, będące li-
+
+[PODPIS/TABELA] Ryc. 9.6 Odróżnicowanie w onkogenezie. Proces odwrotny do różnicowania, odróżnicowanie, jest dość charakterystyczny dla procesów nowotworowych. Komórki nowotworów wykazują zazwyczaj niższy poziom zróżnicowania niż tkanka, z której się wywodzą. Co więcej, nasilenie odróżnicowania najczęściej koreluje ze stopniem złośliwości procesu.
+
+[ETYKIETY RYCIN – szum OCR] Prekursor | Różnicowanie | Komórka | —. | Onkogeneza
+
+[Strona 104]
+Proliferacja prekursorów komórek mięśniowych, regulacja różnicowania
+
+Dojrzewanie jądra, rozwój męskich komórek rozrodczych, maskulinizacja gandami wydzielanymi przez komórkę i łączącymi się ze swoistymi receptorami na okolicznych lub oddalonych tkankach, odgrywają podstawową rolę w różnicowaniu (3 tab. 9.2). Sbb jest np. podstawowym morfogenem dla różnicowania się neuronów ruchowych, komórek mieszka włosowego, pneumocytów, limfocytów T czy odontoblastów. Zaburzenia szlaku 7/5 bardzo często stanowią też podłoże procesu nowotworzenia.
+
+### Zaburzenia różnicowania
+
+Różnicowanie prowadzi najczęściej do wyspecjalizowania się komórek i lepszego dostosowania ich fenotypu do pełnionej funkcji. Istnieją jednak trzy typy różnicowania patologicznego: dysplazja, metaplazja i anaplazja. Dysplazja to pojawienie się w danym miejscu komórek o nietypowym (dla danego rodzaju tkanki) wyglądzie. Przykładem tego zaburzenia jest dysplazja nabłonkowa szyjki macicy (obecnie częściej nazywana neoplazją nabłonkową), w ramach której dochodzi do pojawienia się komórek o nieprawidłowym wyglądzie, co w tym przypadku spowodowane jest przez wirusa HPV. Ten rodzaj dysplazji zalicza się do zmian przedrakowych, czyli takich, z których w przyszłości może rozwinąć się nowotwór. Istnieją jednak również dysplazje całkowicie łagodne i nie prowadzące do rozwoju nowotworów, które zanikają spontanicznie. Jeśli prawidłowa komórka różnicuje w prawidłową komórkę o innym fenotypie, który nie jest typowy dla danego miejsca organizmu, to zmianę taką nazywa się metaplazją (> ryc. 9.7). Proces ten jest często spotykany w takich miejscach, gdzie występuje stały stresor prowadzący do intensywnego obumierania i odnawiania się populacji komórek, np. pod wypływem działania toksyn, niekorzystnych warunków środowiska. Przykładem tego procesu jest metaplazja jelitowa, do której dochodzi na
+
+[PODPIS/TABELA] Tabela 9.2 Rola genów Shh, Ihh i Dhh w niektórych procesach rozwojowych organizmu
+
+[PODPIS/TABELA] Ryc. 9.7 Metaplazja jelitowa w żołądku. infekcja Helicobacter pyłori w żołądku może prowadzić do przekształcenia się prawidłowego nabłonka gruczołów żołądkowych (widoczne w lewym górnym rogu zdjęcia) w nabłonek jelitowy. W takim przypadku w nabłonku gruczołowym pojawiają się charakterystyczne dla nabłonka jelita cienkiego i grubego komórki kubkowe (produkujące śluz) (zaznaczone strzałkami). Metaplazję jelitową uznaje się za zmianę przedrakową, ponieważ nieleczona może prowadzić do rozwoju raka żołądka. Podobne zmiany mogą zachodzić w przełyku — w tym przypadku nabłonek wielowarstwowy płaski jest zastępowany przez nabłonek walcowaty. Stan taki nazywa się przełykiem Barretta. (Dzięki uprzejmości dr. hab. Ł. Koperskiego).
+
+[ETYKIETY RYCIN – szum OCR] Shh Mięśnie | Neurony obwodowe | Proliferacja prekursorów komórek nerwowych, regulacja obumierania | Chrząstka | Proliferacja prekursorów chondrocytów | Móżdżek | Proliferacja prekursorów warstwy ziarnistej | Proliferacja i różnicowanie pneumocytów | Płuco | Jelito | Rozdzielenie tchawicy i przełyku | Ihh Naczynia krwionośne | Proliferacja komórek śródbłonka | Chrząstka | Proliferacja i różnicowanie chrząstki | Jelito | Koordynacja rozwoju jelita | Dhh Jądro
+
+[Strona 105]
+skutek stałego drażnienia nabłonka przełyku (nabłonek wielowarstwowy płaski) przez kwas żołądkowy. Prowadzi to do zróżnicowania nowo powstałych komórek nabłonkowych w nabłonek gruczołowy (nabłonek jednowarstwowy walcowaty), charakterystyczny dla jelit. Zmiana ta uznawana jest za zmianę przedrakową, ponieważ zwiększa ryzyko wystąpienia raka przełyku. Trzecim typem zaburzeń różnicowania jest anaplazja. Z tym rodzajem zaburzenia mamy do czynienia,
+
+### Podsumowanie
+
+gdy w miejscu komórek zróżnicowanych pojawiają się komórki niezróżnicowane. Tego typu zmiana morfologii komórek jest szczególnie charakterystyczna dla zaawansowanych typów nowotworów, w których cecha anaplastyczności bardzo często warunkuje wysoki stopień złośliwości i złe rokowanie. Komórki anaplastyczne mają do tego stopnia odmienny fenotyp od komórek, z których powstały, że często trudno ocenić, z jakiej tkanki się wywodzą.
+
+« Komórki macierzyste mają zdolność nieskończonej liczby podziałów oraz wytwarzania przynajmniej jednego rodzaju dojrzałych komórek. Mikrośrodowisko, w którym bytują komórki macierzyste, nazywa się
+
+« Istnieje kilka typów komórek macierzystych: komórki totipotencjalne (wytwarzające komórki pochodzące z wszystkich trzech listków zarodkowych i tkanek pozazarodkowych), komórki pluripotencjalne (wytwarzające komórki pochodzące z trzech listków zarodkowych) oraz komórki multipotencjalne. „. Embrionalne komórki macierzyste (ESC), uzyskiwane z węzła zarodkowego blastocysty, są pluripotencjalne. Pluripotencja kontrolowana jest przez czynniki transkrypcyjne OCT4/3, SOX-2 i Nanog. Do kryteriów definiujących ESC należą pluripotencja, nieśmiertelność i utrzymywanie prawidłowego kariotypu. « Tkankowe komórki macierzyste (somatyczne komórki macierzyste) są multipotencjalne. Przykładem tkankowych komórek macierzystych są hematopoetyczne komórki szpiku oraz komórki macierzyste krypt
+
+« Mezenchymalne komórki macierzyste (MSC) izolowane są ze zrębu narządów. Do kryteriów definiujących MSC należą: przywieranie do butelki hodowlanej, produkcja określonych markerów powierzchniowych i możliwość różnicowania do adipocytów, chondrocytów i osteoblastów.
+
+» Indukowane pluripotencjalne komórki macierzyste wytwarzane są sztucznie, poprzez odróżnicowanie komórek pobranych od człowieka i stransfekowanie. Komórki te pozwalają na modyfikowanie genetyczne
+
+Przeszczepiane komórki dzieli się na autogeniczne (pochodzące od danego pacjenta), syngeniczne (od osób identycznych genetycznie), allogeniczne (od innego przedstawiciela tego samego gatunku) i ksenogeniczne
+
+* Geny kontrolujące różnicowanie komórek na etapie embriogenezy podzielono na 3 rodziny: geny mateczne, geny segmentacji i geny homeotyczne. Geny te są również aktywne w dojrzałym organizmie, gdzie uczestniczą w procesach różnicowania.
+
+### Literatura
+
+1. The Hedgehog pathway: role in cell differentiation, polarity and proliferation. Jia Y, Wang Y, Xie J. Arch Toxicol. 2015;
+
+2. From Drosophila segmentation to human cancer therapy. Ingham PW. Development. 2018; 145(21): dev168898.
+
+3. Biology of stem cells: an overview. Chagastelles PC, Nardi NB. Kidney Int Suppl (2011). 2011; 1(3):63-67.
+
+4. Human mesenchymal stem cells - current trends and future prospective. Ullah I, Subbarao RB, Rho GJ. Biosci Rep. 2015;
+
+5. Advances and challenges in stem cell culture. McKee C, Chaudhry GR. Colloids Surf B Biointerfaces. 2017; 159:62-77.
+
+6. A Review of the Methods for Human iPSC Derivation. Malik N., Rao M.S. W: Pluripotent Stem Cells. Methods in Molecular Biology (Methods and Protocols), vol 997. Lakshmipathy U., Vemuri M. 2013. Humana Press.
+
+[ETYKIETY RYCIN – szum OCR] niszą. | jelitowych. | komórek uzyskanych od pacjenta. | „ | (od innych gatunków). | 89(2):179-191. | 35(2):e00191.
+
+[Strona 106]
+[strona bez tekstu]
+
+---------- jozwiak_r10_ryc10.7_10.8.txt (cały plik) ----------
+# ŹRÓDŁO: Jóźwiak J., Biologia komórki dla studentów uczelni medycznych, Edra Urban & Partner 2020 – Rozdział 10. Onkogeneza – WYBÓR: ryciny 10.7 i 10.8 oraz omawiające je akapity
+# Zakres: s. 110–112 (PDF s. 121–123): podrozdział „Patomorfologia nowotworów” (rozrost = hiperplazja, dysplazja, nowotwór miejscowy, nowotwór złośliwy; odwołania do ryc. 10.5, 10.6 – podpisy dołączone), akapit „Przerost (hipertrofia)” z odwołaniami do ryc. 10.7 i 10.8 oraz podpisy ryc. 10.7 i 10.8 (ryc. 10.8 – zestawienie: dysplazja, metaplazja, neoplazja, anaplazja, hipoplazja, hiperplazja, hipertrofia, hamartoma, atrofia).
+# Tekst z warstwy OCR PDF (pdftotext -bbox), złożony łamami: lewy łam, potem prawy (pasy między podpisami pełnej szerokości).
+# [Strona N] = numeracja książki (PDF − 11; potwierdzona numerami na s. 97 i 105).
+# ### = nagłówek podrozdziału. [PODPIS/TABELA] = podpis ryciny lub tabela – wyjęte z biegu tekstu, na końcu strony.
+# [ETYKIETY RYCIN] = napisy wewnątrz rycin (szum OCR, nie czytać jako tekstu). Znaki ">", "+", "=", "„", "%" na początku akapitu = punktory.
+
+[Strona 110] (od nagłówka „Patomorfologia nowotworów” do końca strony; wcześniejsza część strony – poza zakresem)
+### Patomorfologia nowotworów
+
+Kiedy w tkankach, narządach lub na skórze pojawia się zmiana guzowata, której wygląd może sugerować charakter nowotworowy, jest ona często pobierana w całości lub fragmencie i oceniana histopatologicznie. W zalezności od stadium rozwoju takiej zmiany, wyróżnia się wtedy następujące obrazy histopatologiczne:
+
++ Rozrost (hiperplazja) — w początkowym etapie rozwoju zmiany, ale już po nagromadzeniu zmian genetycznych pozwalających na wyzwolenie się z mechanizmów kontrolnych podziałów, komórki zaczynają dzielić się w sposób niekontrolowany, co prowadzi do zwiększenia się objętości tkanki/ narządu i powstania miejscowego nadmiaru komórek (3 ryc. 10.5). Co bardzo istotne, na tym etapie komórki mają prawidłową morfologię i nie można ich jeszcze odróżnić od komórek prawidłowych.
+
+> Dysplazja — nagromadzenie kolejnych zmian genetycznych powoduje, że komórki przestają wyglądem przypominać komórki prawidłowe występujące w danej niszy (+ ryc. 10.6). Nazywa się je wtedy komórkami dysplastycznymi. Na tym etapie pojawia się także dezorganizacja komórek w tkance, tzn. zaburzenie typowego układu komórek charakterystycznego dla danego narządu lub tkanki.
+
+= Nowotwór miejscowy (rak in situ, carcinoma in situ) — w zmienionych już komórkach pojawiają się kolejne zmiany genetyczne. W związku z tym ich wygląd jeszcze bardziej zaczyna odbiegać od wyglądu prawidłowego, co najczęściej oznacza słabsze zróżnicowanie. Komórki te nazywa się już komórkami nowotworowymi, ale — co bardzo ważne
+
+— zmiana nadal jest ograniczona do danego miejsca, tzn. np. w przypadku komórek nabłonkowych nie przekracza granicy błony podstawnej (nie nacieka jeszcze okolicznych tkanek).
+
+[Strona 111] (do nagłówka „Cechy charakterystyczne nowotworów”, bez niego; dalsza część strony – poza zakresem) + podpisy ryc. 10.5 i 10.6
+% Nowotwór złośliwy (nowotwór przerzutujący)
+
+— dalsze modyfikacje DNA sprawiają, że coraz szybsze podziały komórkowe przyczyniają się do wychodzenia komórek poza niszę danej tkanki/ narządu. Komórki nowotworowe pojawiają się w okolicznych tkankach i z krwią przedostają się do dalszych części organizmu.
+
+[PODPIS/TABELA] Ryc. 10.5 Rozrost gruczołu krokowego. Z wiekiem u wielu mężczyzn (ok. 80% powyżej 65 r.ż.) dochodzi do rozrostu gruczołu krokowego. Komórki gruczołowe zaczynają się dzielić i zamiast tworzyć pojedynczą warstwę nabłonka gruczołowego, układają się w kilka-kilkanaście warstw (zaznaczone strzałkami). Rozrost jest zjawiskiem powszechnym, ale w zdecydowanej większości przypadków nie zagraża życiu pacjenta ze względu na bardzo powolny wzrost. (Dzięki uprzejmości dr. hab. Ł. Koperskiego).
+
+[PODPIS/TABELA] Ryc. 10.6 Dysplazja nabłonka szyjki macicy. Prawidłowy nabłonek szyjki macicy ma budowę wielowarstwową płaską. Po zakażeniu wirusem brodawczaka ludzkiego (HPV, hyman papilloma virus), którego niektóre typy, szczególnie 16, 18, 33, mają właściwości silnie onkogenne, komórki zmieniają swoją morfologię - powiększa się jądro komórkowe i cała komórka, stają się bardziej sześcienne lub okrągłe. Na preparacie widoczne są również figury mitotyczne na wszystkich wysokościach nabłonka (zaznaczone strzałkami). Zmiana rozwija się zazwyczaj u kobiet przed 30. r.ż. nie dając zadnych objawów, mając jednak charakter przedrakowy, tzn. może z czasem stransformować w raka szyjki macicy. W niektórych przypadkach dysplazja niewielkiego stopnia może zatrzymać się w swojej ewolucji, natomiast dysplazje dużego stopnia (jak ta widoczna na zdjęciu), jeśli nie zostaną odpowiednio szybko wykryte za pomocą cytologii, transformują w zmiany nowotworowe. (Dzięki uprzejmości dr. hab. Ł. Koperskiego).
+
+[Strona 112] (cała treść strony: akapit o przeroście + ryc. 10.7 i 10.8)
+#8 Przerost (hipertrofia) to zwiekszenie sie objetości komórki, bez zmiany jej potencjału proliferacyjnego (= ryc. 10.7). Komórki hipertroficzne produkują zwiększoną ilość białek wypełniających ich cytoplazmę, co prowadzi do powstania guza, podobnego jak w przypadku rozrostu. O ile jednak termin „rozrost” połączony jest nierozerwalnie z nowotworzeniem, przerost nie ma charakteru zmiany nowotworowej (> ryc. 10.8).
+
+[PODPIS/TABELA] Ryc. 10.7 Przerost mięśnia serca. W przypadku przedłużającego się obciążenia mięśnia serca, szczególnie w efekcie nadciśnienia tętniczego lub niewydolności zastawkowej, dochodzi do pogrubienia ściany serca. Przy obserwacji preparatu mięśnia serca pod mikroskopem widoczne jest znaczne powiększenie wielkości kardiomiocytów, bez zwiększenia ich liczby. Na zdjęciu zaznaczono zarysy kilku przykładowych komórek. (Dzięki uprzejmości dr. hab. Ł. Koperskiego).
+
+[PODPIS/TABELA] Ryc. 10.8 Zaburzenia wzrostu i morfologii komórek. W zależności od liczby i morfologii komórek w tkance, wyróżnia się różne typy zmian. 1. Dysplazja — zmiana wielkości i kształtu komórek. 2. Metaplazja — zmiana morfologii komórek na prawidłowe komórki, ale niewystępujące typowo w danej lokalizacji. 3. Neoplazja — pojawienie się większej liczby komórek o zaburzonej morfologii (hiperplazja + atypia). 4. Anaplazja — odróżnicowanie komórek; komórki stają się duże, posiadają duże, często mnogie jądra o nietypowych kształtach, proporcja objętości jądro:cytoplazma zmienia się z 1:5 do 1:1. 5. Hipoplazja (niedorozwój) — zbyt mała liczba komórek występujących w danej lokalizacji (z zachowaniem ich wielkości i morfologii). W przeciwieństwie do atrofii, nie jest to zmniejszenie się liczby komórek, a niewykształcenie się wystarczającej liczby. 6. Hiperplazja (rozrost) — pojawienie się nadmiarowej liczby komórek o prawidłowej morfologii. 7. Hipertrofia (przerost) — zwiększenie się wielkości komórek, przy zachowanej morfologii. 8. Hamartoma — zaburzenie architektoniki tkanki (prawidłowe komórki, ale nieprawidłowo rozłożone w tkance). 9. Atrofia (zanik) — zmniejszenie się liczby komórek występujących w danej lokalizacji (z zachowaniem ich wielkości i morfologii).
+
+---------- drewa_r26.txt (s. 694–698) ----------
+[Strona 694]
+
+694
+
+26 KOMÓRKI MACIERZYSTE
+
+26.2
+
+Plastyczność komórek
+macierzystych
+
+Poza opisanymi właściwościami komórek
+macierzystych najważniejszą, a zarazem najbardziej kontrowersyjną ich właściwością jest
+plastyczność, czyli możliwość przybierania
+form różnych typów komórek pochodzących
+nawet z innego listka zarodkowego. Pojęcie
+plastyczności komórek macierzystych zrodziło się dzięki wcześniejszym obserwacjom,
+na podstawie których stwierdzono, iż komórki macierzyste w organizmach dorosłych
+są nie tylko ściśle przyporządkowane narządom, ale wykazują także większe możliwości
+różnicowania niż tylko w kierunku odnowy
+danego narządu czy tkanki. Plastyczność komórek macierzystych próbuje się tłumaczyć
+takimi zjawiskami, jak transdyferencjacja
+(przeróżnicowanie), fuzja komórek lub zasiedlenie wszystkich nisz przez komórki
+macierzyste lub też wędrówka komórek
+pluripotencjalnych w obrębie całego organizmu. Nie ma jak dotąd dowodów, że któraś
+z tych teorii wyjaśnia zjawisko plastyczności
+komórek macierzystych. Przy obecnym stanie wiedzy można przyjąć również założenie
+odwrotne, że to szeroko rozumiana plastyczność komórek jest przyczyną występowania
+populacji komórek o właściwościach pluripotencjalnych. Trudności w definiowaniu plastyczności komórek macierzystych wynikają
+z braku dokładnie określonych markerów
+charakterystycznych dla danego typu lub
+stopnia zróżnicowania komórki macierzystej i dlatego może wystąpić sytuacja, w której nie porównuje się komórek tego samego
+typu czy linii komórkowych, ale zupełnie
+inne komórki lub odrębne linie komórkowe.
+Z tego powodu próbuje się tworzyć teoretyczne modele tłumaczące plastyczność komórek
+macierzystych. Definicje te określają komórki macierzyste danej tkanki jako populację
+heterogenną w ich środowisku naturalnym
+in vivo, czyli tam, gdzie można wykazać ich
+potencjalne właściwości.
+
+Teoria transdyferencjacji, czyli przeróżnicowania komórek tłumaczy plastyczność
+komórek macierzystych. Nie opisano do tej
+pory procesów biochemicznych prowadzących do przeróżnicowania komórek. Nie
+wiadomo też, czy do ich przeróżnicowania
+konieczna jest obecność już odróżnicowanych komórek i jaka jest aktywność proliferacyjna komórek przeróżnicowanych. Regeneracja tkanek u salamandry rozpoczyna
+się od procesu odróżnicowania ostatecznie
+zróżnicowanych już komórek znajdujących
+się w miejscu uszkodzenia. Odróżnicowane
+komórki następnie różnicują się i odbudowują utracone tkanki. Transdyferencjacja
+u dorosłych kręgowców jest zjawiskiem bez
+precedensu. Wydaje się, że zmiana fenotypu
+całkowicie zróżnicowanych komórek w inny
+fenotyp może być przyczyną różnicowania
+embrionalnych komórek macierzystych.
+
+Proces unieśmiertelniania komórek in
+vitro przypomina proces odróżnicowywania
+komórek, dlatego przypomina pierwszy etap
+transdyferencjacji. Unieśmiertelnione mysie
+fibroblasty 3T3 mają podobny fenotyp jak
+komórki macierzyste (ryc. 26.3). Fibroblasty
+3T3 mogą być przeprogramowane w komórki, które fenotypowo są podobne do komórek macierzystych. Do przeprogramowania
+wystarcza jedynie ekstrakt medium z hodowli embrionalnych komórek macierzystych. Fibroblasty takie użyto do regeneracji
+niedokrwionej tkanki mięśnia sercowego.
+Doświadczenia przeprowadzone na modelu
+zwierzęcym (myszy) wykazały, że ekstrakt
+pochodzący z hodowli embrionalnych komórek macierzystych powoduje ekspresję białka
+Oct-4 w komórkach 3T3. Podobne eksperymenty prowadzono również z zastosowaniem
+prawidłowych ludzkich fibroblastów. Wyniki tych wstępnych badań nie mają szerszego
+potwierdzenia w piśmiennictwie naukowym.
+Nie wiadomo, czy płynność stanu zróżnicowania dotyczy każdej komórki organizmu
+i jaki jest wpływ autokrynny i parakrynny na
+płynność stanu zróżnicowania komórek.
+
+Fuzja komórek jest zjawiskiem naturalnym. Może być ona także indukowana w warunkach in vitro. Obecność fuzji komórek
+
+[Strona 695]
+
+Ryc. 26.3 Linia
+komórkowa unieśmiertelnionych
+mysich fibroblastów 3T3 (mikroskop z odwróconą
+optyką, pow. ok.
+100 x).
+
+oznacza zmianę fenotypu komórki macierzystej, czyli plastyczność komórek macierzystych. Są ograniczenia, które nie pozwalają w pełni zaakceptować tej teorii. Częstość
+występowania fuzji między komórkami in
+vivo nie jest aż tak duża i nie jest jednakowa
+we wszystkich tkankach, a poza tym komórki powstałe w wyniku fuzji są mniej stabilne, żyją potencjalnie krócej albo prowadzą
+do nowotworzenia. Wyniki badań nad fuzją
+komórek macierzystych i zróżnicowanych są
+sprzeczne. W niektórych doświadczeniach
+dotyczących regeneracji wątroby przy zastosowaniu macierzystych komórek hematopoetycznych stwierdzono, iż to właśnie komórki
+powstałe w wyniku fuzji regenerowały wątrobę. Udowodniono, iż to warunki środowiska
+zasiedlonego przez hematopoetyczne komórki macierzyste wpłynęły na ich różnicowanie
+w kierunku hepatocytów.
+
+Kolejną teorią próbującą tłumaczyć zjawisko plastyczności komórek macierzystych
+jest teoria obecności pluripotencjalnych
+komórek w dojrzałych organizmach. Rozwój embrionalny, jak i postembrionalny
+związane są ze stopniową utratą potencjału
+
+26 KOMÓRKI MACIERZYSTE 695
+
+regeneracyjnego przez komórki w wyniku
+podziałów i starzenia się. Implikacją wynikająca ztej teorii jest fakt, iż komórki macierzyste w tkankach organizmów dorosłych
+mają coraz to mniejsze możliwości różnicowania. Przesłankom tym przeczą jednak
+wyniki badań nad wyizolowanymi komórkami o dużym potencjale proliferacyjnym
+zarówno z zarodków, rozwiniętych płodów,
+jak i z organizmów dorosłych. Komórki pluripotencjalne uzyskiwano nawet z dwutygodniowych zarodków myszy. W ludzkiej krwi
+pępowinowej znajdują się również komórki
+pluripotencjalne. Obecność tych komórek
+stwierdzano nawet w 42 tyg. ciąży. Spostrzeżenia te dowodzą, iż komórki pluripotencjalne obecne są w okresie całego życia wewnątrzmacicznego. Komórki o znacznej tendencji
+do różnicowania i proliferacji wyizolowano
+z tkanek człowieka na każdym etapie jego
+życia, nawet od osób po 70 r.ż. Z organizmu
+dorosłego człowieka wyizolowano komórki
+mezenchymalne szpiku kostnego i krwi obwodowej. Komórki o podobnym potencjale
+odkryto również w skórze. Wykazywały one
+nie tylko cechy komórek multipotencjalnych,
+
+[Strona 696]
+
+696
+
+26 KOMÓRKI MACIERZYSTE
+
+ale również pluripotencjalnych. Doświadczenia te otworzyły drogę do stworzenia
+koncepcji o istnieniu pluripotencjalnych komórek macierzystych w dorosłych i dojrzałych organizmach. Występowanie komórek
+pluripotencjalnych w tkankach organizmów
+dorosłych uzasadnia zjawisko plastyczności
+komórek macierzystych.
+
+Do tej pory nie dowiedziono, iż każda
+tkanka zawiera niszę komórek macierzystych, a także iż w każdej tkance znajdują
+się komórki macierzyste o właściwościach
+pluripotencjalnych. Dlatego też postawiono
+tezę o wędrówce pluripotencjalnych komórek macierzystych do miejsc docelowych,
+powstałych w wyniku uszkodzenia i urazów
+tkanki. Ustalenie szlaków migracji komórek macierzystych w organizmie jest trudne
+ze względu na niedoskonałe wciąż metody
+przyżyciowej detekcji znakowanych i przeszczepionych komórek macierzystych. Na
+podstawie obserwowanej wędrówki komórek
+macierzystych w organizmach doświadczalnych zwierząt można wnioskować o wędrówce komórek macierzystych w organizmie
+człowieka. Według tej koncepcji komórki
+macierzyste wędrują do miejsca uszkodzenia, np. do niedokrwionego mięśnia sercowego lub uszkodzonej wątroby. Doświadczenia oceniające różnicowanie i wędrówki
+przeszczepionych komórek macierzystych
+u zwierząt z indukowanym uszkodzeniem
+tkanek lub obarczonych chorobą przynoszą
+pośrednie dowody potwierdzające teorię, iż
+plastyczność komórek macierzystych może
+być związana z ich pluripotencjalnością. Nie
+wyjaśniono jednak, czy zjawisko migracji
+wpływa na plastyczność komórek, a także czy migracja komórek macierzystych do
+tkanek docelowych jest charakterystyczna
+dla procesów patologicznych, czy też jest powszechnym zjawiskiem fizjologicznym.
+
+Podział komórek macierzystych według
+zajmowanych nisz i stanu zróżnicowania,
+przypisujący komórkom macierzystym stałe
+miejsca, jest podziałem sztywnym. Z biologicznego punktu widzenia należałoby go zastąpić koncepcją o wędrówce komórek macierzystych w organizmie. Koncepcję wędrówki
+
+komórek macierzystych w dorosłych organizmach utworzono na podstawie obserwacji
+wędrówek komórek multipotencjalnych między matką a płodem oraz powstaniem mikrochimeryzmów w wyniku przekraczania
+bariery łożyskowej. Wędrówka komórek macierzystych w stanach fizjologicznych i chorobowych, a także w urazach i uszkodzeniach
+narządów jest potwierdzeniem, iż komórki
+macierzyste o niskim stopniu zróżnicowania krążą w dojrzałych organizmach inie
+można przypisać im konkretnego miejsca
+bytowania. Przykładem komórek o wyższym
+stopniu zróżnicowania zakotwiczających się
+w poszczególnych niszach tkankowych są
+komórki unipotencjalne. Idealnym medium,
+w którym mogłyby krążyć komórki macierzyste, byłby oczywiście szpik kostny i krew,
+pełniące funkcję transportową oraz nisze dla
+prymitywnych i niskozróżnicowanych komórek macierzystych. Nie udowodniono, czy
+proces wędrówki komórek macierzystych
+trwa przez całe dorosłe życie i w którym momencie wyczerpią się zapasy pluripotencjalnych komórek macierzystych. Następuje to
+prawdopodobnie przed śmiercią biologiczną
+osobnika, a zdaniem niektórych autorów już
+w okresie dojrzałości płciowej. Analizując
+prace badawcze dotyczące wędrówki komórek macierzystych w płodach i organizmach
+dorosłych ssaków, wydaje się, że przemieszczanie się komórek macierzystych w organizmie występuje zarówno w warunkach fizjologicznych, jak i patologicznych.
+
+26.3
+
+Cykl życiowy, podział
+
+i starzenie się komórek
+macierzystych
+
+Proces starzenia dotyczy zarówno komórek
+macierzystych, jak i zróżnicowanych. Poza
+wpływem epigenetycznym również zjawiska
+związane z informacją zawartą w DNA mają
+istotny wpływ na starzenie się komórek macierzystych. W miarę starzenia się komórek
+
+[Strona 697]
+
+macierzystych zmienia się ekspresja wielu
+genów; zmniejsza się ekspresja genów związanych z metabolizmem komórki i zwiększa
+się ekspresja genów kodujących białka odpowiedzialne za przyleganie komórek. Stabilność genomu jest ściśle związana z funkcjonowaniem aparatu naprawy DNA i chroni
+komórki macierzyste przed starzeniem. Starzenie się komórek, w tym komórek macierzystych, wiąże się z postępującymi zaburzeniami funkcji genów, które wraz z kolejnymi
+podziałami komórki i utratą zdolności naprawy DNA nieuchronnie prowadzą do jej
+śmierci. Inną oznaką starzenia się komórek
+macierzystych jest zmiana ich morfologii.
+Morfologicznie starzejące się mezenchymalne komórki macierzyste (MSC) w większości przypadków są powiększone (ryc. 26.4).
+Pobrane od starszych pacjentów nie wykazują typowego wrzecionowatego fenotypu.
+Zmniejsza się także ich potencjał do różnicowania, tworzenia kolonii i samoodnowy.
+Wszystkie te zmiany ograniczają zdolności regeneracyjne komórek i jednocześnie zwiększają tendencje do transformacji
+nowotworowej. Przykładem jest białko p53
+nieaktywne w komórkach macierzystych
+
+26 KOMÓRKI MACIERZYSTE 697
+
+młodego organizmu, które wykazują duże
+możliwości replikacyjne i szybko przechodzą
+przez punkty kontrolne cyklu komórkowego. W komórkach młodego organizmu liczba mutacji jest niewielka, w związku z czym
+nieczynne białko p53 nie stanowi zagrożenia
+procesem nowotworzenia. W miarę starzenia się organizmu i częstej naprawy DNA
+białko p53 staje się ważnym czynnikiem
+ograniczającym podziały komórkowe. Zmiana w jego funkcjonowaniu znacznie ogranicza zdolność podziału komórek, a co za tym
+idzie możliwość regeneracji tkanek. Komórki
+proliferują wolniej, ale za to ich genom z licznymi mutacjami jest stabilny. W wyniku
+procesów starzenia się komórek następuje też
+mutacja białka p53, które staje się nieaktywne i nie kontroluje podziałów komórkowych.
+W konsekwencji tych zmian komórki mogą
+znowu dzielić się intensywnie, przekazując
+mutacje komórkom potomnym. Liczne mutacje i inne niekorzystne zmiany w genomie
+są przyczyną transformacji nowotworowej.
+Długowieczność organizmów wiąże się z zachowaniem równowagi między zdolnością
+komórek macierzystych do regeneracji a procesami zapobiegającymi nowotworzeniu.
+
+Ryc. 26.4 Mezenchymalne komórki macierzyste (A) — po pierwszym pasażu, (B) — po dziesiątym pasażu
+
+(mikroskop z odwróconą optyką, pow. ok. 100 x).
+
+[Strona 698]
+
+698
+
+26 KOMÓRKI MACIERZYSTE
+
+Starzenie się komórek macierzystych, podobnie jak innych komórek zależy od prawidłowego przebiegu podziału komórkowego.
+Zróżnicowane komórki dzielą się symetrycznie, w efekcie powstają dwa rodzaje zróżnicowanych komórek potomnych o mniejszym
+potencjale proliferacyjnym. Komórki dzielą
+się aż do momentu osiągnięcia starości replikacyjnej odkrytej in vitro przez L. Hayflicka
+i P.S. Moorheada w 1965 r. Wiek komórki
+zdefiniowano jako okres między podziałami,
+charakteryzujący się określonym potencjałem do wytworzenia danej liczby komórek
+potomnych. Jest coraz więcej dowodów, że
+mechanizmy starzenia się komórek macierzystych są podobne do występujących w komórkach zróżnicowanych, a więc komórki
+macierzyste uczestniczą w dwóch zgoła przeciwnych procesach - w jednym, w którym
+kontrolują podziały komórkowe, aby komórki mogły jak najdłużej zachować młodość
+replikacyjną, oraz w drugim, w którym je
+ograniczają. Wiek mitotyczny (replikacyjny) komórki określa się także na podstawie
+liczby podziałów, które dana komórka przeszła. Daje to możliwość wnioskowania o jej
+dalszym potencjale proliferacyjnym. Metoda
+ta obarczona jest jednak dość dużym błędem.
+Wiek komórek wyliczony na podstawie liczby
+podziałów będzie różny dla poszczególnych
+tkanek. Komórki macierzyste w nabłonku jelita dzielą się ciągle, a w mieszku włosowym
+okresowo wraz ze wzrostem włosa. Komórki
+macierzyste giną bezpowrotnie z każdym cyklem wzrostowym. Inaczej liczy się wiek komórek macierzystych w tkankach o niskim
+współczynniku mitotycznym, np. w tkance
+nerwowej ośrodkowego układu nerwowego.
+Wiek chronologiczny komórek nie zawsze
+odpowiada ich wiekowi mitotycznemu (replikacyjnemu), a wiek mitotyczny komórek
+w poszczególnych tkankach tego samego
+organizmu może się znacznie różnić. Wiek
+chronologiczny komórek jest również ważnym czynnikiem dla prawidłowego rozwoju
+płodu, ponieważ liczba wad rozwojowych
+płodu wzrasta z wiekiem chronologicznym
+komórek rozrodczych. Określenie wieku
+podziałowego komórek komplikuje fakt, iż
+
+w przypadku komórek macierzystych są różne rodzaje podziałów komórkowych, które
+opisano w niektórych przypadkach tylko
+teoretycznie. Najpowszechniej przyjętą teorią
+podziału komórek macierzystych jest teoria asymetrycznego podziału. Według niej
+jedna komórka potomna pozostaje w niszy
+komórek macierzystych, druga zaś komórka
+różnicuje się. Taki sposób podziału komórek
+macierzystych u ssaków występuje w tkankach nabłonkowych i nerwowej. W innych
+tkankach nie zaobserwowano asymetrycznego podziału komórek macierzystych. Nie
+wiadomo, czy podział asymetryczny zapewnia stałą i niewyczerpaną pulę komórek progenitorowych. Inne modele podziału komórek macierzystych spełniają te same funkcje
+co podział asymetryczny, ale ich występowanie jest również tylko prawdopodobne. Komórka macierzysta może się także dzielić symetrycznie, dając dwie identyczne komórki
+potomne. Komórkami potomnymi komórki macierzystej po podziale symetrycznym
+mogą być albo dwie identyczne komórki macierzyste, albo dwie identyczne komórki różnicujące się. Podział komórek macierzystych
+nazwany klonalną selekcją zaproponował
+Kay. Zakłada ona występowanie stałej puli
+komórek macierzystych, z których wybrane
+podlegają podziałowi symetrycznemu i różnicowaniu.
+
+26.4
+Pytania
+
+1. Jaka jest definicja komórek macierzystych?
+
+2. Jaki jest podział komórek macierzystych
+według ich pochodzenia? Podaj przykłady.
+
+3. Na czym polega zjawisko transdyferencjacji?
+
+4. Jakie są różnice między komórkami
+macierzystymi i innymi komórkami ciała
+w cyklu komórkowym i starzenia się
+komórek?
+
+5. Czym charakteryzują się komórki progenitorowe?
+
+
+---------- twyman_M3.txt (cały plik) ----------
+# ŹRÓDŁO: Twyman R.M., Instant Notes in Developmental Biology (BIOS Scientific Publishers; wyd. ANGIELSKIE – rozpiska podaje polskie tłumaczenie: Twyman R.M., Biologia rozwoju. Krótkie wykłady, PWN 2003, sekcja M3; numery stron = wydanie angielskie) – Section M: Vertebrate limb development, M3 Limb regeneration
+# Zakres: s. 390–396 (7 zrzutów ekranu tabletu, Scribd; po jednej stronie na zrzut). Język: angielski. OCR tesseract eng po powiększeniu 2,5x.
+# [Strona N] = numeracja książki (żywa pagina odczytana na zrzutach: 391, 393, 394, 395, 396; 390 i 392 z kolejności). ### = nagłówek boczny (marginesowy) lub tytuł.
+# Akapity uporządkowane od góry strony (nagłówki boczne przed akapitem). [PODPIS] = podpis ryciny/tabeli (na końcu strony). Tabela 1 (s. 392) – wiersze mogą być przemieszane.
+# Uwaga: czy sekcja M3 kończy się na s. 396 – nie do potwierdzenia (ostatni zrzut kończy się ryc. 6).
+
+[Strona 390]
+
+### M3 Limb regeneration (tytuł sekcji – dopisany; w OCR usunięty razem z żywą paginą)
+
+### Key Notes
+
+Regeneration is the ability to replace missing body parts after embryogenesis. There are two types of regeneration: morphallaxis, which involves the respecification of remaining tissues without further growth; and epimorphosis which involves the replacement of missing parts by the growth of new tissue. Limb regeneration occurs by epimorphosis.
+
+### Limb regeneration in amphibians
+
+Urodele amphibians are unique among vertebrates in their ability to regenerate entire limbs as adults. This involves the proliferation of ectoderm to cover the wound and form an apical ectodermal cap, which induces the formation of a dedifferentiated tissue mass or blastema. The blastema proliferates and generates all the mesodermal components of the limb, progressively laying down the proximodistal axis in a manner very similar to embryonic limb development.
+
+### Requirements for 
+
+As well as the ectoderm cap, the regenerating limb transiently requires growth factors secreted by the severed axons at the wound site. If limbs are denervated prior to amputation, no regeneration occurs. The dense innervation of the urodele limb may explain, in part, its unique regenerative capacity.
+
+Regeneration always precisely replaces the missing distal elements of the amputated limb, regardless of the position of the cut or the orientation of the limb’s proximodistal axis. This shows that the cells of the limb retain their positional values and can generate a range of distal positional values in the blastema.
+
+### Molecular basis of regional specification
+
+Regional specification in the blastema may be controlled by a gradient of retinoic acid, since this molecule is secreted by the wound ectoderm and establishes a distal to proximal gradient across the blastema. This is followed by the induction of HoxA gene expression, which could confer positional values on the blastema cells. Application of endogenous retinoic acid causes the positional identity of the blastema to be reset to a more proximal value. Different levels of retinoic acid produced at different amputation sites could therefore provide a mechanism for specifying the proximodistal location of the blastema cells.
+
+As well as generating structures distal to a site of amputation, urodele limbs can also regenerate intermediate structures if, for example, an amputated hand is grafted onto shoulder stump. The ability of the regenerating limb to establish missing positional values between two extremes may reflect interactions between cells with nonadjacent positional identities, resulting in proliferation and redifferentiation until a complete set of positional values is re-established. Such interactions could result from a gradient of increasing cell adhesion along the limb, resulting in a significant adhesive differential when cells with distinct positional identities are brought into contact.
+
+[ETYKIETY RYCIN / FRAGMENTY – szum OCR, kolejność przybliżona]: 1|v ___ intercalary : ‘Tegeneration ~ polar
+
+[Strona 391]
+
+### Related topics
+
+Mechanisms of developmental Initiation and maintenance of limb commitment (A3) growth (M1)
+
+Maintenance of differentiation (A5) Patterning and morphogenesis in
+
+Pattern formation (A6) limb development (M2)
+
+Homeotic selector genes and regional specification (H5)
+
+### Regeneration
+
+Regeneration can be defined as the ability to replace missing parts of the body. Two types of regeneration are often distinguished, termed morphallaxis and epimorphosis. Morphallaxis involves the reconstitution of missing body parts by the respecification of remaining tissues in the absence of growth. This is demonstrated by the coelenterate Hydra, which can generate new (smaller) individuals from pieces cut from an adult. Epimorphosis, by contrast, involves the progressive replacement of missing parts by cell proliferation and the growth of new tissue. Limb regeneration in amphibians and insects provide excellent examples of epimorphosis, although it is likely that in each case, growth is preceded by morphallaxis-ty pe respecification. A related term, regulation, refers to the ability of an embryo to compensate for missing parts by respecifying the fates of remaining tissues. Regulation is therefore analogous to morphallaxis, the former term applied to embryos and the latter to the regeneration of body parts in adults.
+
+### Limb regeneration in amphibians
+
+Most vertebrates have the ability to regenerate some parts of the limb postembryonically, although this ability is often highly restricted. However, urodele amphibians such as salamanders and newts have the remarkable ability to regenerate entire limbs as adults. In such species, if a limb is amputated at the level of the zonoskeleton, an entire new limb can regenerate in 2-3 months.
+
+Limb regeneration begins with the proliferation of ectodermal cells at the site of amputation. These cover the wound and then continue to proliferate to form a thickened apical ectodermal cap (AEC), which is structurally and functionally analogous to the apical ectodermal ridge (AER) that forms in embryonic limb development. The AEC induces the underlying cells to form a mass of undifferentiated mesenchyme called the regeneration blastema. This is structurally and functionally analogous to the progress zone of the developing limb, and all new mesodermal structures formed during regeneration are derived from this cell population (Fig. 1).
+
+The formation of the blastema indicates that the differentiated cells in the limb can dedifferentiate, proliferate and then redifferentiate into the various mesodermal components of the limb distal to the amputation site. Cell tracing studies have shown that the blastema is derived from all mesodermal cell types at the wound site — cartilage, muscle, dermis and connective tissue — indicating a
+
+Foe 292d
+
+site of Wound Blastema Regeneration amputation
+
+[PODPIS] Fig. 1. Summary of limb regeneration in urodele amphibians. AEC = apical ectodermal! cap.
+
+[Strona 392]
+
+surprising, degree of developmental plasticity. This is particularly remarkable in the case of differentiated muscle cells, which are highly specialized multinucleate syncytia that have withdrawn from the cell cycle. Nevertheless, it has been shown that muscle, dermis and connective tissue cells can all dedifferentiate and then redifferentiate to give rise to any of the mesodermal components of the limb. Exceptionally, it has been shown that dedifferentiated cartilage gives rise only to new cartilage. The potency of muscle, dermis and connective tissue is therefore greater than that of cartilage in the context of the regenerating limb. None of the blastema cells give rise to epidermis, and the epidermis does not give rise to mesodermal derivatives.
+
+Limb regeneration and limb development appear to share several structural and functional similarities. It is important to realize that the difference in size between the developing and regenerating limbs precludes the use of exactly the same molecular mechanisms for patterning. However, grafting experiments have shown that regenerating and developing limbs can interact to generate a normal pattern, indicating that key mechanisms may be conserved. Some of the major differences between limb development and regeneration are shown in Table 1,
+
+Some key differences between limb development and limb regeneration
+
+Regenerating limb Developing limb
+
+[Tabela 1 – wiersz] Role of mesoderm
+
+Biastema proliferates and produces ail mesodermal structures including muscles.
+
+Progress zone proliferates and produces skeletal derivatives. Muscles form from immigrating myoblasts.
+
+[Tabela 1 – wiersz] Role of ectoderm
+
+AER maintains proliferation of progress zone,
+
+AEC induces dedifferentiation and maintains proliferation of blastema.
+
+[Tabela 1 – wiersz] Role of nervous system
+
+Required to initiate regeneration.
+
+None.
+
+[Tabela 1 – wiersz] Heterochronic mesenchyme grafts
+
+No intercallary growth occurs when older progress zone grafted to younger limb bud. Proximal elements missing from limb.
+
+Intercallary regeneration occurs when distal blastema grafted to proximal stump.
+
+[Tabela 1 – wiersz] Proximodistal axis specification
+
+Exposure of cells to retinoic acid specifies positional values? Downstream activation of HoxA genes.
+
+Length of time cells remain in the progress zone specifies positional values. Downstream activation of HoxA
+
+genes.
+
+### Requirements for regeneration
+
+As discussed above, the AEC of the regenerating limb plays a similar role to the AER in limb development. It has been shown that removal of the AEC prevents blastema proliferation, and stopping the epidermis from spreading over the wound prevents the blastema forming. The ectoderm therefore plays an essential role in limb regeneration by inducing and maintaining the blastema.
+
+There is also a transient requirement for innervation. If nerves to the limb are cut before the limb is amputated, regeneration does not occur, but if they are cut after regeneration has begun, regeneration occurs normally, although at a slower rate.' This contrasts to the situation in embryonic limb development, where limb
+
+‘Although innervation is required for the regeneration of normal limbs, this dependence appears to have been acquired during development by the process of innervation itself. Limbs that have never been innervated (e.g. because the nerve was removed during development) are able to regenerate normally.
+
+[PODPIS] Table 7. Context
+
+[Strona 393]
+
+outgrowth and patterning occur well before the incipient muscle masses are innervated by incoming axons. It is thought that growth factors essential for limb regeneration are released by severed axons at the wound site. The identity of candidate growth factors has been suggested by the ability of certain exogenously applied molecules, such as FGF, neuregulin and transferrin, to rescue limb regeneration in denervated animals. Interestingly, FGF also plays an important role in the outgrowth of limbs during embryonic development.
+
+The requirement for innervation provides a possible explanation as to why urodeles, but not other vertebrates, can regenerate their limbs. It appears that urodele limbs are more densely innervated than those of other vertebrates, suggesting that the amount of innervation may be an important factor in regeneration competence. In agreement with this model, the introduction of extra nerves into the limbs of anuran amphibians such as Xenopus can induce some regenerative potential. Furthermore, stepwise reduction of the number of nerves in the newt has revealed a ‘threshold’ of innervation required for regeneration.
+
+### Distal regeneration
+
+Following limb amputation, regeneration always occurs in the distal direction, regardless of the position of the cut or the orientation of the limb. This is shown by the following experiments:
+
+@ If the limb is amputated at the wrist, only a new hand is regenerated, but if it is amputated at the shoulder, an entire new limb will form (Fig. 2).
+
+@ If the limb is amputated at the wrist, and then the cut surface of the stump is inserted into the flank of the body, a blood supply is established and the animal has a ‘closed limb’. If this limb is then cut in the middle of the humerus, both cut surfaces produce a blastema and regenerate distal structures, even though the proximodistal axis of one of the limbs is inverted (Fig. 3).
+
+These experiments indicate that the cells in the urodele limb retain a set of positional values along the proximodistal axis. Following limb amputation, the cells at the site of amputation use their own positional identity as a reference to generate a new set of positional values in the blastema, representing the more distal limb elements. Furthermore, the positional values established in the regeneration blastema are autonomous. If the blastema is removed from a regenerating limb and grafted to another region of the body that supports its growth, it will give rise to the same set of distal structures.
+
+[PODPIS] Fig. 2. Regeneration is always in the distal direction regardless of the level of amputation.
+
+[ETYKIETY RYCIN / FRAGMENTY – szum OCR, kolejność przybliżona]: oes |v
+
+[Strona 394]
+
+section Pi - Yerteprate limb development
+
+and insert ~~F
+
+into flank Y —
+
+### Molecular basis of regional specification
+
+Regional specification in the blastema may involve retinoic acid and the expression of HoxA genes, indicating that despite their different sizes, the developing progress zone and the regenerating blastema use similar molecular mechanisms for proximodistal patterning. The wound epidermis is a rich source of retinoic acid, and this may establish a gradient in the blastema to generate a set of positional values along the future proximodistal axis. Hox genes are not expressed in the adult limb, but HoxA genes are activated in the regeneration blastema soon after it forms. The role of retinoic acid in regional specification is further suggested by the effects of exposing regenerating limbs to exogenous doses of this chemical. If the limb is amputated at the level of the wrist, it usually regenerates a hand. However, if the regenerating limb is treated with high doses of retinoic acid, the positional identity of the blastema is reset to its most proximal value, and an entire limb emerges from the wrist stump. The blastema shows a dose-dependent response to retinoic acid, so lower concentrations cause less extreme proximalization of the regenerating limb.
+
+Following limb amputation at different levels, proximal and distal blastemas have been shown to contain different amounts of retinoic acid. It is therefore possible that the ectoderm at the level of amputation plays a significant role in setting the positional value of the blastema by secreting a regulated amount of retinoic acid, and that the gradient generated in the blastema then establishes the more distal values necessary to complete the proximodistal axis. The formation of a retinoic acid gradient with its source in the ectoderm would also explain the orientation-independent nature of distal regeneration. Regardless of the orientation of the amputated limb, the retinoic acid gradient would always form with its highest concentration at the distal extremity, in the same orientation with respect to the cut surface. The positional values established would therefore always run in the same direction.
+
+### Intercalary regeneration —polar coordinate model
+
+The capacity of the urodele limb for distal regeneration shows that is has an inherent ability to fill in missing elements of its pattern. Remarkably, the limb can replace not only missing distal structures, but also missing intermediate structures by a process called intercalary regeneration. If the limb is amputated at the wrist, and the resulting blastema is grafted onto the stump of a host animal in which the limb has been amputated at the shoulder, a normal limb develops in which most of the proximal elements arise from the stump tissue and the distal elements from the blastema. This contrasts with embryonic development, where grafting the progress zone from an older limb bud onto a younger limb bud results in the omission of proximal structures (Fig. 4; cf. Fig. 1, Topic M2).
+
+Both intercallary and distal regeneration can be explained in terms of a polar coordinate model, where cells are endowed with positional information in the
+
+[PODPIS] Fig. 3. Regeneration is always in the aistal direction, regardless of the orientation of the limb.
+
+[ETYKIETY RYCIN / FRAGMENTY – szum OCR, kolejność przybliżona]: — = Vj ae’ Cut 1 Cut 2 —
+
+[Strona 395]
+
+Remove proximal! Intercalary Distal
+
+blastema and replace regeneration regeneration with distal blastema
+
+form of polar coordinates on a three-dimensional map. In the normal limb, adjacent cells have adjacent coordinates and they remain quiescent. However, following amputation, cells with different positional values are brought together by the process of wound healing. This is thought to stimulate their proliferation and redifferentiation until a new complete set of polar coordinates is generated and the system once again comes to rest. There is evidence that differential cell adhesion may represent the molecular basis of this process.
+
+Polar coordinates
+
+Wounding. Proliferation of wound tissue brings cells with positional values ‘10° and ‘2’ into contact
+
+Regeneration of tissue to fill in missing positional values, using the shortest possible route
+
+[PODPIS] Fig. 4. Transfer of a distal blastema to a proximal wound site results in distal regeneration from the biastema tissue (black) and intercalary regeneration by tissue from the proximal wound site (gray).
+[PODPIS] Fig. 5. The polar coordinate model of circumferential limb regeneration.
+
+[Strona 396]
+
+Intercallary regeneration occurs not only in the context of the proximodistal limb axis, but also with respect to the circumference of the limb, representing the anteroposterior and dorsoventral axes. Therefore, if a sector of tissue is removed from the dorsal aspect of the limb, regeneration occurs to fill the gap with replacement dorsal tissues. The polar coordinate model treats the circumference of the limb as a clock face, with each number from 1 to 12 representing a different positional value. If dorsal tissue is removed (e.g. representing positional values 11, 12 and 1), wound healing brings cells with positional values 10 and 2 into juxtaposition. This stimulates the cells to divide and intercalate the missing positional values. Intercalation occurs by the shortest possible route (i.e. the regeneration of 11, 12 and 1 rather than the duplication of values 2 through to 10) (Fig. 5).
+
+The polar coordinate model provides an explanation for some puzzling results of graft experiments. For example, if the right leg of a newt is amputated and then grafted back onto the same animal but upside down (so the palm faces upwards), the inverted limb becomes integrated at the new position but two additional limbs develop at the boundaries of the graft, with palms facing down. In terms of the polar coordinate model this can be explained by a confrontation between cells with extreme positional values (representing 6 and 12 on the clock face). The only logical choice for the regenerating limb is to intercalate all the missing values, resulting in the growth of two entire supernumerary limbs (Fig. 6).
+
+Polar coordinates
+
+Reverse limb graft brings cells with 9 3 extreme positional values into contact (shown by X)
+
+Response is to regenerate the entire 9 3 range of pasitional values, resulting in two new limbs
+
+[PODPIS] Fig. 6. Polar coordinate model of supernumerary limb regeneration.
+
+[ETYKIETY RYCIN / FRAGMENTY – szum OCR, kolejność przybliżona]: -RIBD] mg: - r™ L. . fo Y —» B Fue = charakteru a - 6 y 396 DX Aad Navarnlinad tn rasan an_fracn

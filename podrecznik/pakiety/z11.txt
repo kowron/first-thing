@@ -1,0 +1,2926 @@
+# PAKIET PLANISTY – rozdział 11
+Jedyny plik do przeczytania (poza handoffem C1, STYL.md i ZASADY.md). Sekcje: A rozpiska, B mapa zakresu, C fakty uciętych wcześniej (T z wyciągu), D tekst rozdziału (bez rycin SVG), E źródła przycięte do zakresu.
+
+
+======== A. ROZPISKA ZAJĘĆ ========
+
+                                                                                              Lekarski
+                                          Zajęcia nr 11                           Biologia molekularna
+
+Temat seminarium:    Wprowadzenie do wybranych zagadnień z biotechnologii
+
+Temat ćwiczenia:     Wpływ organizmów genetycznie modyfikowanych (GMO) na środowisko
+                     naturalne człowieka
+
+Zagadnienia do przygotowania przez studenta:
+1. Biotechnologia tradycyjna i nowoczesna – kolory biotechnologii.
+2. Zwierzęta jako organizmy genetycznie modyfikowane.
+3. Charakterystyka i przykłady żywności genetycznie modyfikowanej. Argumenty zwolenników i
+   przeciwników spożywania GMO.
+4. Uwarunkowania dotyczące GMO w Polsce i na świecie. Badanie żywności w kierunku obecności
+   GMO. Jak rozpoznać żywność modyfikowaną genetycznie.
+5. Rodzaje i kierunki terapii genowej stosowanej w medycynie.
+6. Eugenika pozytywna i negatywna. Prawa człowieka jako jednostki w kontekście badań genetycznych
+   (świadoma zgoda, ochrona danych osobowych).
+
+
+Zaliczenie ustne (prezentacje zgodnie z ustaleniami na zajęciach, aktywny udział w dyskusji)
+
+
+
+
+Piśmiennictwo:
+1. Drewa G., Ferenc T.: Genetyka medyczna podręcznik dla studentów. Wydawnictwo Edra Urban &
+   Partner, Wrocław, 2011. Rozdział 28, 30, 35.
+2. Jorde L.B., Carey J.C.: Bamshad M.J. Genetyka medyczna. Wydawnictwo Edra Urban & Partner,
+   Wrocław, 2021. Rozdział 13.
+
+
+
+======== B. MAPA ZAKRESU (handoff) ========
+
+# Handoff Z11 – Biotechnologia, GMO, terapia genowa i eugenika (Opus xhigh, 1 agent)
+Plan szczegółowy przygotował szef (Fable): **zakres i źródła (dokładne podrozdziały) oraz lista rycin są ustalone poniżej – nie zmieniasz ich**. Mapa powstała z nagłówków podrozdziałów: kolumna „Zostaje” opisuje, czego się spodziewam – jeśli źródło czegoś nie zawiera, NIE dopisuj tego, tylko zanotuj w `stan/z11.md`.
+Przeczytaj: `/home/user/first-thing/podrecznik/ZASADY.md`, `KOMPONENTY.md` (wzorce: gotowe rozdziały `rozdzialy/z02-*.html`, `z08-*.html`).
+
+**Ważne – decyzja zleceniodawcy: tniemy mało.** W obrębie przydzielonych podrozdziałów zostaje 70–90% treści; w razie wątpliwości fakt ZOSTAJE. Tnij tylko to, co wskazano w kolumnie „Tniemy”, oraz oczywisty balast (nazwiska, daty, powtórzenia, dygresje).
+
+- **Plik wynikowy:** `/home/user/first-thing/podrecznik/rozdzialy/z11-biotechnologia.html` · **limit: 13 stron** (A4, dwie kolumny)
+- **Źródło Drewy:** `/root/.claude/uploads/600b873f-e07d-5766-b2f4-6a90b68ae091/b95214fd-Drewa_Genetyka_medyczna_OCR.txt` (strony `[Strona N]`; czytaj zakresami linii podanymi w mapie – `sed -n 'A,Bp'`)
+- **Wyciąg:** `wyciagi/z11.md` · **stan:** `stan/z11.md` (jeśli istnieje – kontynuuj, nie czytaj źródeł od nowa)
+
+Zajęcia mają zaliczenie ustne (prezentacje i dyskusja), więc tu wolno ciąć do 30% – ale nadal wszystko wyłącznie z Drewy. Jorde r. 13 (stare wydanie) pomijamy: terapia genowa szybko się dezaktualizuje, a te same tematy są w Drewie r. 30.
+
+## Mapa: zagadnienie → źródło → co zostaje / co tniemy
+| # | Zagadnienie | Podrozdział, strony, linie w OCR | Zostaje | Tniemy |
+|---|---|---|---|---|
+| 1 | Biotechnologia tradycyjna i nowoczesna – kolory biotechnologii | **28.1** (s. 737–738, l. 32354–32393), **28.2** (s. 738–739, l. 32394–32442, ryc. 28.1) | definicja, tradycyjna a nowoczesna, wszystkie kolory z zakresem każdego (tabela) | – |
+| 2 | Zwierzęta jako GMO | **28.3** (l. 32443–32469), **28.3.2** z podpunktami (s. 746–747, l. 32825–32936), **28.3.3** z podpunktami (s. 747–755, l. 32937–33496) | definicja organizmu transgenicznego; zastosowania: bioreaktory (co produkują), modele w nauce, ksenotransplantacje (po co, jakie przeszkody); metody: mikroiniekcja do przedjądrzy (kroki, wydajność), modyfikacja pierwotnych komórek zarodkowych (kroki, knock-out jeśli opisany), klonowanie (transfer jądra – kroki, przykład) | szczegóły techniczne poszczególnych wariantów metod, listy przykładów – po 2–3 |
+| 3 | Żywność genetycznie modyfikowana: charakterystyka, przykłady, argumenty za i przeciw | **28.3.1** Rośliny transgeniczne (s. 739–746, l. 32470–32824) | po co modyfikuje się rośliny (grupy cech: odporność na herbicydy, szkodniki, choroby, cechy jakościowe, „biofarmacja”), metody transformacji roślin w zarysie, przykłady roślin/produktów podane w źródle, argumenty zwolenników i przeciwników – tylko jeśli są w źródle | opisy pojedynczych konstruktów genowych |
+| 4 | Uwarunkowania dotyczące GMO w Polsce i na świecie; badanie żywności; rozpoznawanie GMO | szukaj w **28.3.1** i **28.3** (grep: „ustaw”, „dyrektyw”, „znakowan”, „etykiet”, „upraw”) | to, co źródło mówi o regulacjach, znakowaniu i wykrywaniu GMO | – (jeśli źródło milczy – pomiń zagadnienie i wypisz to w raporcie; nie dopisuj z własnej wiedzy) |
+| 5 | Rodzaje i kierunki terapii genowej | **30.1–30.4** z podpunktami (s. 796–798, l. 36650–36855) w całości; **30.5** z podpunktami (s. 798–805, l. 36856–37306) i **30.6** z podpunktami (s. 805–808, l. 37307–37505) skrótowo | strategie; rodzaje (somatyczna / komórek rozrodczych; ex vivo / in vivo); metody wprowadzania genów; wektory: wirusowe RNA i DNA, plazmidowe, chemiczne – zalety i wady (tabela); kierunki: każda choroba z 30.5 w 2–3 zdaniach (jaki gen/strategia), terapia nowotworów – cztery podejścia z 30.6 po 2–3 zdania | wyniki pojedynczych prób klinicznych, daty, liczby pacjentów |
+| 6 | Eugenika pozytywna i negatywna; prawa człowieka w kontekście badań genetycznych (świadoma zgoda, ochrona danych) | **35.7** (s. 904, l. 44366–44417), **35.4** z **35.4.1** i **35.4.2** (s. 890–896, l. 43373–43833) | definicja eugeniki, pozytywna i negatywna z przykładami ze źródła; świadoma zgoda: warunki ważności, kto i kiedy jej udziela, wyjątki; ochrona danych genetycznych: zasady i ograniczenia dostępu (pracodawca, ubezpieczyciel – jeśli w źródle) | numery artykułów i pełne nazwy dokumentów – zostaw nazwy 3–4 najważniejszych aktów |
+
+**Poza zakresem:** 28.4–28.5; 30.7–30.8; r. 35 poza 35.4 i 35.7 (wstęp, dokumenty, godność, klonowanie, problemy prawne, diagnostyka przedurodzeniowa, badania postnatalne).
+**Układ:** 1) Biotechnologia i jej kolory → 2) Rośliny transgeniczne i żywność GM → 3) Zwierzęta transgeniczne: zastosowania i metody → 4) (jeśli źródło zawiera) regulacje i wykrywanie GMO → 5) Terapia genowa: strategie, rodzaje, wektory → 6) Kierunki terapii genowej → 7) Eugenika i prawa człowieka.
+
+## Ryciny (3 nowe)
+1. **Kolory biotechnologii** – koło lub rząd kafelków: kolor → dziedzina (wg ryc. 28.1).
+2. **Jak powstaje zwierzę transgeniczne** – dwa panele: A) mikroiniekcja DNA do przedjądrza zygoty → transfer do matki zastępczej → potomstwo transgeniczne; B) klonowanie przez transfer jądra komórki somatycznej.
+3. **Terapia genowa ex vivo i in vivo** – dwie ścieżki: pobranie komórek → wprowadzenie genu wektorem → podanie pacjentowi; oraz bezpośrednie podanie wektora.
+Wektory – tabela.
+
+Podgląd: `cd /home/user/first-thing/podrecznik && node build.mjs --only 11 --png`.
+
+
+
+======== C. FAKTY UCIĘTE WCZEŚNIEJ (T z wyciągu) ========
+
+# Wyciąg Z11 – Biotechnologia, GMO, terapia genowa i eugenika (tylko Drewa)
+## Zag. 1 – Biotechnologia tradycyjna/nowoczesna i kolory
+- T Pasteur 1857 – udział drożdży w fermentacji (data/nazwisko). s. 737
+- T Watson i Crick 1953 – podwójna helisa (data/nazwiska). s. 738
+## Zag. 2 (def) + 3 (rośliny) – Organizm transgeniczny i rośliny GM
+- T A. rhizogenes / plazmid Ri – rzadziej używany (wariant). s. 740
+- T ilość DNA 0,01-0,1 pg na mikronośnik (szczegół techniczny). s. 740
+- T Pierwszy eksperyment USA 1998, bulwy ziemniaka z podjednostką endotoksyny E. coli; polska sałata HBs (PAN Poznań) – przykłady/daty, zostawić zbiorczo 1. s. 744
+- T USA mniej restrykcyjne; największy producent; areał 2008, kraje, soja/kukurydza/bawełna/rzepak, tab. 28.1 (liczby/daty). s. 745
+## Zag. 2 – Zwierzęta transgeniczne: zastosowania i metody
+- T geny hormonu wzrostu (świnie o 85% mniej tłuszczu, krótszy wzrost; owce – niepowodzenie; humanizacja mleka) – szczegóły/przykłady, zostawić skrótowo. s. 746
+- T szczegóły rekombinacji nieuprawnionej (4b), umaszczenie myszy, Southern blotting, F1/F2 – szczegóły techniczne wariantów. s. 749-752
+- T komórki-biorcy (oocyty M II, warianty profazowe itd.); etoposid; czynniki fuzji – szczegóły techniczne. s. 752-755
+- T Dolly żyła 6 lat, 6 jagniąt, inne jagnięta z defektami – szczegóły. s. 755
+## Zag. 5 – Terapia genowa: strategie, rodzaje, metody, wektory
+## Zag. 5 – Kierunki terapii genowej (30.5 skrótowo)
+- T Do 2010 – 1644 próby kliniczne; 64,5% nowotwory; fazy badań; Ashanti de Silva 1990, W.F. Anderson; Jesse Gelsinger 1999; białaczka SCID/X1 – daty/nazwiska/liczby. s. 798-800
+- T liczby pacjentów, fazy, lata prób każdej choroby – szczegóły. s. 800-805
+## Zag. 5 – Terapia genowa nowotworów (30.6, 4 podejścia skrótowo)
+- T tab. 30.2, 30.3, próby glejaki/rak prostaty – szczegóły prób. s. 806-808
+## Zag. 6 – Eugenika i prawa człowieka
+### Eugenika (35.7, s. 904)
+- T 63 000 wykastrowanych do 1975, kastracja jednego jądra, procesy w latach 90. – drastyczne szczegóły, zostawić skrótowo. s. 904
+### Świadoma zgoda (35.4.1, s. 890-893)
+- T numery artykułów i skróty dokumentów (EKB, DBiPC, Pd-EKB-4, UZL, KC, KEL...) – cięte zgodnie z handoffem. cały 35.4
+### Ochrona danych genetycznych (35.4.2, s. 893-896)
+## Układ podrozdziałów (7, wg handoffu)
+## Ryciny (3 nowe, bank: 0 do tematu)
+## Milczy w źródle (do raportu)
+
+
+======== D. TEKST ROZDZIAŁU ========
+
+(plik rozdzialy/z11-biotechnologia.html; data-title: Biotechnologia, GMO, terapia genowa i eugenika)
+[LEAD] Chcesz, żeby kukurydza sama broniła się przed szkodnikiem. Chcesz ludzkiego białka leczniczego – nie w mikrogramach, a w litrach. Chcesz dać choremu sprawną kopię genu, którego mu brakuje. Te trzy zadania rozwiązuje się tym samym chwytem: wprowadzeniem obcego genu do żywej komórki. Ten rozdział pokazuje, jak się to robi w roślinie, w zwierzęciu i w komórce chorego – a na końcu, gdzie prawo i etyka stawiają granicę.
+
+## Biotechnologia i jej kolory  [c11-biotechnologia]
+
+### Co człowiek robił, zanim cokolwiek wiedział o genach?  []
+Wino, piwo, ocet, kwaśne mleko. Wszystkie te produkty powstają dzięki pracy drożdży i bakterii, a człowiek wytwarzał je tysiące lat przed tym, zanim dowiedział się, że takie organizmy istnieją – udoskonalał przepisy na podstawie własnych obserwacji. To jest biotechnologia tradycyjna : wykorzystanie naturalnych, niemodyfikowanych genetycznie enzymów, mikroorganizmów i kultur komórkowych. Z czasem objęła znacznie więcej niż kuchnię i piwnicę: produkcję antybiotyków, enzymów dla mleczarstwa i do środków piorących, naturalnych barwników i konserwantów żywności.
+
+### Dlaczego to przestało wystarczać?  []
+Biotechnologia tradycyjna wykorzystuje tylko to, co dany organizm już umie . Jeśli żaden mikroorganizm nie wytwarza ludzkiej insuliny, nie ma czego hodować – choćby pacjentów z cukrzycą były miliony. Jedyne wyjście to zmienić sam organizm: dołożyć mu ludzki gen.
+Żeby to zrobić, trzeba było trzech rzeczy: poznać budowę DNA, złamać kod genetyczny i mieć narzędzia pozwalające składać dowolne konstrukty genowe ( ). Te trzy rzeczy razem to inżynieria genetyczna – i dopiero ona umożliwiła biotechnologię nowoczesną , opartą na białkach, enzymach i organizmach poddanych modyfikacji genetycznej . Jej pierwszym produktem na rynku była właśnie ludzka insulina, uzyskana ze zmodyfikowanych szczepów bakterii Escherichia coli .
+[POJĘCIE Biotechnologia] dziedzina integrująca nauki przyrodnicze i inżynieryjne; wykorzystuje komórki lub ich części oraz ich molekularne analogi do pozyskania produktów i usług.
+Biotechnologia integruje nauki przyrodnicze i inżynieryjne, aby zastosować komórki lub ich części oraz ich molekularne analogi do pozyskania produktów i usług. Konwencja o różnorodności biologicznej ujmuje to szerzej: jest to dziedzina wykorzystująca elementy biologiczne, organizmy żywe lub ich składniki do wytwarzania albo modyfikowania produktów i procesów. Podział na tradycyjną i nowoczesną przebiega w jednym miejscu: czy organizm, który dla nas pracuje, został genetycznie zmieniony.
+
+### Po co biotechnologii kolory?  []
+Te same narzędzia – gen, wektor, hodowla komórek – służą do uprawy pola, leczenia chorego i oczyszczania skażonej ziemi. Dlatego Organizacja Współpracy Gospodarczej i Rozwoju (OECD) wprowadziła barwną klasyfikację, w której kolor jest skrótową nazwą obszaru zastosowania , nie rodzaju techniki ( ). Mówiąc „biotechnologia czerwona”, nie mówisz nic o metodzie – mówisz, że produkt trafia do medycyny. Wyróżnia się pięć kolorów:
+- zielona – rolnictwo, wykorzystywana do celów spożywczych i nie tylko: rośliny uprawne, zwierzęta hodowlane, przetwórstwo spożywcze, wytwarzanie pasz;
+- czerwona – służba zdrowia: diagnostyka molekularna i biofarmaceutyki, m.in. rekombinowane hormony, przeciwciała monoklonalne, szczepionki i enzymy;
+- biała – przemysł: produkcja bardziej przyjazna środowisku niż tradycyjna, ochrona środowiska (bioremediacja skażonych terenów), wytwarzanie biomateriałów, np. biodegradowalnego plastiku, oraz biopaliw z surowców odnawialnych;
+- fioletowa – zagadnienia prawne i społeczne: akceptacja społeczna, prawa własności intelektualnej, etyka;
+- niebieska – problematyka biotechnologii zbiorników wodnych.
+[RYCINA c11-fig-kolory „Kolory biotechnologii według OECD”: Czytaj każdy kafelek z góry w dół: najpierw kolor, pod nim obszar, w którym pracuje produkt. Porównaj kafelek czerwony i biały – te same narzędzia inżynierii genetycznej, inny adresat: chory albo zakład przemysłowy. Wniosek: kolor nie mówi nic o metodzie, tylko o tym, gdzie trafia wynik pracy.]
+Przy przypisywaniu koloru wystarczy więc jedno pytanie: gdzie ten produkt pracuje? Biodegradowalny plastik – w przemyśle, czyli biotechnologia biała. Przeciwciało monoklonalne – u chorego, czyli czerwona. Pasza – w rolnictwie, czyli zielona. Debata o patentowaniu genów nie wytwarza produktu, dotyczy prawa i akceptacji społecznej – fioletowa.
+[RAMKA zapamietaj] Granica między biotechnologią tradycyjną a nowoczesną to jedno pytanie: czy organizm pracujący dla nas jest genetycznie zmodyfikowany. Kolory OECD nazywają obszar zastosowania: zielona – rolnictwo i żywność, czerwona – zdrowie, biała – przemysł i środowisko, fioletowa – prawo i etyka, niebieska – zbiorniki wodne.
+[ŹRÓDŁO] Źródło: Drewa s. 737–739
+
+## Rośliny transgeniczne i żywność modyfikowana genetycznie  [c11-rosliny]
+
+### Jaki problem ma rozwiązać modyfikowana roślina?  []
+Wyobraź sobie pole kukurydzy. Zjadają ją larwy owada, duszą chwasty, a w lipcu przychodzi susza. Każdemu z tych kłopotów odpowiada cecha, której roślinie brakuje: trucizna na owada, obojętność na herbicyd, odporność na brak wody. Gen takiej cechy bywa jednak u całkiem innego organizmu – trucizna owadobójcza jest u bakterii glebowej, nie u kukurydzy. Trzeba go więc przenieść .
+[POJĘCIE Organizm transgeniczny (GMO)] organizm trwale wzbogacony technikami inżynierii genetycznej o obce DNA, pochodzące najczęściej od osobnika innego gatunku.
+Organizm, który dzięki technikom inżynierii genetycznej został trwale wzbogacony o obce DNA – najczęściej od osobnika innego gatunku – to organizm transgeniczny , inaczej organizm modyfikowany genetycznie (GMO) . Przeniesiony gen nosi nazwę transgenu . Słowo „trwale” jest tu najważniejsze: transgen integruje się z genomem biorcy i jest przekazywany komórkom potomnym, więc raz zmodyfikowana komórka daje całą zmodyfikowaną linię. Jeśli nie wszystkie komórki zostaną zmienione, powstaje chimera – organizm z co najmniej dwoma typami genomów. To rozróżnienie wróci przy zwierzętach.
+Jedno zastrzeżenie, zanim przejdziemy do techniki. Poziom akceptacji społecznej GMO jest niski – źródło wiąże to przede wszystkim z niewystarczającą wiedzą na ten temat. Korzyści medyczne i ekonomiczne ścierają się ze strachem przed niekontrolowanym rozprzestrzenianiem takich organizmów, powstawaniem „superchwastów” i „superpatogenów” oraz wpływem na organizmy niedocelowe , czyli gatunki, których modyfikacja wcale nie miała dotyczyć.
+
+### Jakie cechy wprowadza się roślinom?  []
+Głównym celem jest odporność: na patogeny, na szkodniki i na czynniki abiotyczne – zarówno naturalne, jak i wywołane działalnością człowieka (globalne ocieplenie, zanieczyszczenie środowiska). Modyfikacje skupiają się na pięciu grupach cech:
+- odporność na szkodniki – roślina sama wytwarza substancję zabójczą dla owada, więc nie trzeba go zwalczać opryskiem;
+- odporność na choroby bakteryjne, wirusowe i grzybicze;
+- poprawa cech jakościowych – np. wzbogacenie o określone składniki odżywcze albo wyeliminowanie białek alergennych;
+- odporność na herbicydy , czyli na środki ochrony roślin – herbicyd niszczy wtedy chwasty, a uprawa zostaje nietknięta;
+- odporność na stres abiotyczny – susza, wysokie zasolenie gleby, stres tlenowy, wysokie i niskie temperatury, metale ciężkie.
+
+### Jak wprowadzić gen do komórki rośliny?  []
+Do roślin stosuje się dwa podejścia: wektorowe – ktoś wnosi gen za nas – i bezwektorowe , w którym wnosimy go siłą ( ).
+[RYCINA c11-fig-roslina „Dwie drogi transgenezy roślin”: Zacznij od góry obu paneli: w A transgen jedzie do komórki w bakteryjnym plazmidzie, w B – na metalowym mikronośniku. Porównaj, kto wbudowuje DNA do genomu rośliny: w A robi to samo Agrobacterium (odcinek T-DNA), w B trzeba liczyć na wbudowanie po wstrzeleniu. Wniosek: metoda wektorowa jest celniejsza, biolistyczna – uniwersalna, bo nie wymaga gospodarza zdolnego do zakażenia komórki. Schemat własny, proporcje umowne.]
+Metoda wektorowa, czyli agroinfekcja. W przyrodzie istnieje bakteria, która potrafi dokładnie to, czego potrzebujemy: Gram-ujemna bakteria glebowa Agrobacterium tumefaciens . Ma ona niewielki plazmid Ti , czyli osobną kolistą cząsteczkę DNA. Gdy bakteria zakazi uszkodzoną tkankę rośliny, z plazmidu zostaje wycięty fragment T-DNA i trwale integruje się z genomem komórki roślinnej. T-DNA koduje m.in. auksyny (hormony roślinne) i opiny (substancje odżywcze dla bakterii) – dlatego w miejscu zakażenia powstają rakowate narośle. Bakteria robi więc za nas trzy rzeczy: wchodzi do komórki, wnosi odcinek DNA i wbudowuje go do genomu.
+Wystarczy zmienić zawartość przesyłki: w bakteryjnym T-DNA geny warunkujące wirulencję zastępuje się pożądanym genem , który ma wzbogacić roślinę. Tak zmodyfikowanym szczepem zakaża się roślinę doświadczalną. Po zintegrowaniu transgenu z genomem zmodyfikowane komórki lub fragmenty tkanek izoluje się i w odpowiednich warunkach hodowli regeneruje do płodnych roślin transgenicznych – płodnych, bo tylko wtedy cecha przejdzie na nasiona.
+[RAMKA obraz] Agrobacterium jest jak kurier, który nie tylko dowozi paczkę, ale sam wkłada jej zawartość do szuflady adresata. Wspólna zależność: dostarczenie i trwałe umieszczenie DNA w genomie gospodarza. Granica podobieństwa: kurier musi móc wejść do środka. Tam, gdzie nie wchodzi – a tak jest w przypadku organelli, które, jak podaje źródło, nie podlegają infekcji wirusowej – trzeba strzelać.
+Metoda bezwektorowa, czyli biolistyczna (nazwa z połączenia słów biologia i balistyka ). Tutaj nikt nie wnosi DNA do komórki – wstrzeliwuje się je mechanicznie. Cząsteczkami DNA opłaszcza się mikronośniki („mikropociski”) z metali szlachetnych, głównie ze złota lub wolframu, a potem wstrzeliwuje je strzelbą genową do komórek. Zaletą jest uniwersalność: tą metodą modyfikuje się rośliny, bakterie, grzyby i zwierzęta, korzysta się z niej w terapii genowej, a także wprowadza obce DNA wprost do organelli – plastydów i mitochondriów.
+
+### Co już uzyskano?  []
+Najczęstsza modyfikacja to odporność na herbicydy stosowane w walce z chwastami. Druga co do częstości to wprowadzenie do komórek rośliny toksyny bakterii Bacillus thuringiensis , zabójczej dla niektórych owadów i ich larw: gen Cry każe roślinie wytwarzać swoistą endotoksynę, która łączy się z receptorami w jelicie owada i prowadzi do jego paraliżu i śmierci. Zwróć uwagę na konsekwencję – trucizna działa dopiero po zjedzeniu rośliny i tylko w jelicie konkretnej grupy owadów.
+Uzyskano też warzywa, owoce i kwiaty o opóźnionym starzeniu (dłużej wytrzymują transport i leżenie na półce), kawę o zmniejszonej zawartości kofeiny i tytoń ze zredukowaną ilością nikotyny .
+
+### Szczepionka, którą się je  []
+Tradycyjna szczepionka wymaga kontaktu z atenuowanym (osłabionym) drobnoustrojem albo jego materiałem genetycznym oraz igły. Szczepionki jadalne omijają jedno i drugie: immunizacja następuje po zjedzeniu rośliny, która sama wytwarza antygen – fragment białka patogenu, rozpoznawany przez układ odpornościowy. Jest jeden twardy warunek: antygen musi być tak zaprojektowany, aby przejść w stanie nienaruszonym przez przewód pokarmowy i przetrwać ewentualną obróbkę kulinarną – gdyby rozpadł się po drodze, układ odpornościowy nie miałby czego rozpoznać. Są dwa sposoby otrzymywania takich szczepionek:
+- roślina transgeniczna – transgen jest we wszystkich jej komórkach, więc roślina syntetyzuje białko antygenowe w całym ciele; zjedzenie jakiejkolwiek jej części prowadzi do immunizacji;
+- zmodyfikowany wirus roślinny – transgen antygenu wprowadza się do genomu wirusa, w takie miejsce, żeby jego produkt białkowy został wyeksponowany na powierzchni kapsydu (osłonki białkowej wirusa). Tym wirusem zaraża się roślinę, a immunizacja następuje po zjedzeniu rośliny o wysokim mianie wirusa z antygenem na kapsydzie.
+Zalety: stosunkowo niewielki koszt produkcji, bezpieczeństwo (brak kontaktu z patogenem) i bezbolesny sposób podania.
+
+### Złoty ryż – modyfikacja odpowiadająca na niedobór w diecie  []
+W krajach azjatyckich ryż jest głównym składnikiem diety, a dieta ta bywa uboga w witaminę A; skutkiem są zaburzenia wzroku określane jako „kurza ślepota”. Modyfikacja polegała na wprowadzeniu do genomu ryżu genu β-karotenu – prekursora witaminy A. Skutkiem „ubocznym” jest złocista barwa ziaren, od której odmiana wzięła nazwę złoty ryż . W pierwszych zmodyfikowanych roślinach zawartość β-karotenu była jednak zbyt niska, aby pokryć dzienne zapotrzebowanie na witaminę A, dlatego prowadzone są prace nad odmianami o większej jego zawartości.
+
+### Argumenty zwolenników i przeciwników  []
+Żywność modyfikowana genetycznie od początku budzi kontrowersje, a opinia publiczna jest podzielona. Optymiści widzą w roślinach modyfikowanych genetycznie możliwość zlikwidowania głodu na świecie – odmiany plonujące na glebach zasolonych, w suszy i bez strat na szkodniki dają więcej żywności z tego samego areału.
+Sceptycy widzą zagrożenie dla naturalnego porządku świata. Ich obawy dotyczą m.in.:
+- „ucieczki” transgenów do dzikich gatunków. Jeśli gen odporności przejdzie dalej, zadziała selekcja: pojawią się owady odporne na toksyny wytwarzane przez rośliny, bakterie odporne na antybiotyki albo „superchwasty” niewrażliwe na powszechnie stosowane herbicydy – a wtedy dotychczasowe środki przestaną działać;
+- właściwości alergizujących – wraz z transgenem w żywności pojawiają się nowe, niewystępujące w niej dotychczas rodzaje białek, a każde nowe białko może uczulać;
+- przedostania się zmodyfikowanego DNA ze światła przewodu pokarmowego do komórek organizmu i jego inkorporacji do kwasów nukleinowych w jądrze komórkowym.
+Jak dotąd nie ma dowodów naukowych na szkodliwy wpływ żywności modyfikowanej genetycznie na organizm człowieka. Brakuje też niezachwianej pewności co do jej bezpieczeństwa. Ten stan – brak dowodu szkody i brak dowodu pełnego bezpieczeństwa – uzasadnia regulacje prawne.
+
+### Co reguluje prawo?  []
+Akty prawne dotyczące wprowadzania roślin transgenicznych do uprawy oraz ich wykorzystania jako żywności i paszy mają dwa cele: zapewnić bezpieczeństwo i pozostawić konsumentowi wybór między żywnością zmodyfikowaną genetycznie a pochodzącą z rolnictwa konwencjonalnego lub ekologicznego.
+- Unia Europejska – rozporządzenie 1829/2003/WE w sprawie zmodyfikowanej genetycznie żywności i paszy oraz rozporządzenie 1830/2003/WE dotyczące m.in. możliwości śledzenia żywności i produktów paszowych wyprodukowanych z GMO;
+- Polska – Ustawa o organizmach genetycznie zmodyfikowanych z 2001 r., regulująca zamknięte użycie GMO, uwalnianie ich do środowiska w celach innych niż wprowadzenie do obrotu, wprowadzanie do obrotu produktów GMO, wywóz za granicę i tranzyt oraz kompetencje organów administracji rządowej.
+[RAMKA zapamietaj] Roślinę transgeniczną uzyskuje się metodą wektorową ( Agrobacterium tumefaciens wnosi T-DNA z plazmidu Ti i wbudowuje je do genomu) albo biolistyczną (DNA wstrzeliwane na mikronośnikach – uniwersalne, także do organelli). Dwie najczęstsze modyfikacje to odporność na herbicydy i odporność na szkodniki (gen Cry, endotoksyna Bacillus thuringiensis ).
+[ŹRÓDŁO] Źródło: Drewa s. 739–746
+
+## Zwierzęta transgeniczne: po co je tworzymy  [c11-zwierzeta]
+
+### Dlaczego zwierzę jest trudniejsze niż roślina?  []
+Roślinę transgeniczną regeneruje się z pojedynczych zmodyfikowanych komórek w hodowli. Ze zwierzęciem tak nie jest, a metody muszą być inne już dlatego, że komórka roślinna, zwierzęca i bakteryjna są inaczej zbudowane. Transgeneza zwierząt jest przez to trudniejsza:
+- trudności techniczne, mała wydajność i wysokie koszty – na jedno udane zwierzę trzeba wielu prób;
+- długi okres między kolejnymi miotami i niewielka liczba potomstwa – każda próba trwa tygodnie lub miesiące, a materiału do niej jest mało;
+- uzyskane zwierzęta niekiedy chorują lub są bezpłodne , więc nawet udana modyfikacja nie zawsze daje linię hodowlaną.
+Mimo tych przeszkód transgenezę zwierząt prowadzi się na szeroką skalę, bo odpowiada na cztery różne potrzeby.
+
+### 1. Poprawa cech użytkowych  []
+Pierwsze zwierzęta transgeniczne konstruowano z myślą o hodowli. Chodziło o wzrost wydajności i jakości mleka, szybszy przyrost i lepszą jakość tuszy, więcej i lepszej wełny, odporność na choroby bakteryjne i wirusowe, a także o lepszy metabolizm i trawienie – lepsze wykorzystanie paszy oznacza mniejsze zanieczyszczenie środowiska, m.in. niższy poziom fosforanów w odchodach zwierząt gospodarskich.
+Wyniki pokazują jednak, jak trudno przewidzieć skutki jednego transgenu. Świnie z wprowadzonym genem hormonu wzrostu osiągały rozmiary zwierząt kontrolnych w czasie o około 15% krótszym i miały o 85% mniej tłuszczu, ale częściej chorowały; u owiec podobne próby się nie powiodły, a częstym powikłaniem nadekspresji tego genu była bezpłodność. Prowadzi się też próby „humanizacji” mleka krowiego – zmiany składu jego białek tak, by upodobnić je do mleka ludzkiego i uniknąć u części konsumentów alergii.
+
+### 2. Zwierzę jako bioreaktor – dlaczego nie wystarczy bakteria?  []
+Białka lecznicze (rekombinowane) produkuje się głównie w hodowlach komórek bakteryjnych. Problem w tym, że część białek staje się aktywna dopiero po modyfikacjach potranslacyjnych , czyli zmianach wprowadzanych w cząsteczce już po jej zsyntetyzowaniu. Bakteria tych zmian nie wykonuje, więc wytworzy białko o właściwej sekwencji, ale nieczynne.
+Zwierzę wykonuje je prawidłowo – i to jest cały powód, by używać go jako bioreaktora . Jest jeszcze druga korzyść: białko może być wydzielane do płynów ustrojowych , co bardzo ułatwia pozyskanie i oczyszczenie produktu. Źródłem bywają mleko, krew, białko jaj, mocz, nasienie, a także kokony jedwabników. Uzyskano w ten sposób m.in. białko C, albuminę surowicy krwi, erytropoetynę, insulinę i kolagen.
+[RAMKA przyklad] Dlaczego białko lecznicze z mleka, a nie z probówki z bakteriami? Przejdź przez trzy pytania. Czy białko działa bez modyfikacji potranslacyjnych? Jeśli nie – bakteria wypada. Czy organizm może je wydzielać na zewnątrz? Jeśli tak, mleko jest wygodniejsze niż tkanka, bo nie trzeba zwierzęcia uśmiercać ani niczego z niego wycinać. Czy da się je pobierać wielokrotnie? Mleko – tak, codziennie. Stąd wybór.
+
+### 3. Modele chorób i leków  []
+Myszy transgeniczne pełnią podstawową rolę w badaniach nad funkcjonowaniem genów. Jest to możliwe dzięki wysokiemu stopniowi homologii budowy i kolejności położenia genów mysich oraz odpowiadających im genów ludzkich – mysi gen jest na tyle podobny do ludzkiego, że jego uszkodzenie daje podobne skutki. Dlatego myszy transgeniczne wykorzystuje się jako modele etiologii chorób człowieka o podłożu genetycznym, a także do poszukiwania i badania nowych środków terapeutycznych, w tym do testowania terapii genowych, zanim ktokolwiek zastosuje je u ludzi.
+
+### 4. Ksenotransplantacje – co blokuje przeszczep od świni?  []
+Techniki chirurgiczne w transplantologii są dziś bardzo dobrze rozwinięte, a problemem pozostaje brak narządów . Stąd nadzieje wiązane z przeszczepami ksenogenicznymi (heterogenicznymi), w których dawca i biorca należą do różnych gatunków . Dla człowieka najlepszym dawcą obcogatunkowym jest świnia – pod względem podobieństwa anatomicznego i fizjologicznego narządów. Celem modyfikacji genetycznych jest tu zniesienie bariery międzygatunkowej , czyli odrzucania przeszczepu przez układ odpornościowy biorcy.
+Wiadomo nawet, od czego zacząć. Na powierzchni komórek świni znajduje się epitop Gal – fragment cząsteczki rozpoznawany przez przeciwciała – powstający dzięki aktywności enzymu α-1,3-galaktozylotransferazy . Badania wykazały, że około 60% przeciwciał ksenoreaktywnych jest skierowanych właśnie przeciw antygenowi Gal. Jest on głównym, choć nie jedynym czynnikiem powodującym odrzucenie. Dlatego przypuszcza się, że inaktywacja kodującego go genu – a więc usunięcie tego antygenu z powierzchni komórek świni – umożliwi tolerancję narządu, jeśli jednocześnie będzie się podawać leki hamujące pozostałe, mniej nasilone reakcje immunologiczne.
+[RAMKA zapamietaj] Zwierzę modyfikuje się po to, by poprawić cechy użytkowe, uzyskać białka wymagające modyfikacji potranslacyjnych (bioreaktory), zbudować model choroby człowieka lub przygotować narząd do przeszczepu. Główna przeszkoda ksenotransplantacji to epitop Gal, przeciw któremu skierowane jest około 60% przeciwciał ksenoreaktywnych.
+[ŹRÓDŁO] Źródło: Drewa s. 746–747
+
+## Jak powstaje zwierzę transgeniczne  [c11-metody]
+Wszystkie trzy metody rozwiązują ten sam problem: transgen musi trafić do komórki, z której powstanie całe zwierzę . Gdyby wprowadzić gen do komórki skóry dorosłego osobnika, zmieniłaby się ta komórka i jej potomstwo – nic więcej. Dlatego celem jest zygota albo komórka, która potrafi zasiedlić cały zarodek.
+
+### Mikroiniekcja do przedjądrzy – dlaczego właśnie tam?  []
+Najpierw to, co dzieje się po zapłodnieniu. Plemnik wnika do cytoplazmy komórki jajowej (zaplemnienie), a oocyt II rzędu podejmuje wtedy podział mejotyczny, zatrzymany wcześniej w metafazie. Z jądra oocytu powstaje przedjądrze żeńskie , z jądra plemnika – przedjądrze męskie ; każde ma haploidalny (pojedynczy) zestaw chromosomów. Ich połączenie, zwane kariogamią , kończy powstawanie zygoty.
+Krótkie okno przed kariogamią jest najlepszym momentem na wstrzyknięcie transgenu: jeśli DNA zintegruje się teraz, znajdzie się w genomie pierwszej komórki organizmu, a więc we wszystkich, które z niej powstaną – także w komórkach płciowych, przez które cecha przejdzie na potomstwo. Stąd nazwa metody: mikroiniekcja do przedjądrzy , najczęściej stosowany sposób uzyskiwania zwierząt transgenicznych ( ).
+- Hiperowulacja i zapłodnienie samicy-dawczyni. Stymulacją hormonalną wywołuje się u niej uwolnienie wielu komórek jajowych naraz, bo wydajność całej procedury jest niska i potrzeba wielu zygot. Po około 24 godzinach z jajowodów pobiera się zapłodnione komórki jajowe.
+- Mikroiniekcja transgenu. Mikropipetą wprowadza się do jednego z przedjądrzy transgen w ilości do 1000 kopii. Wybiera się zwykle przedjądrze męskie , bo jest większe i leży bliżej błony komórkowej – łatwiej w nie trafić, mniej uszkadzając komórkę.
+- Hodowla i przeniesienie zarodka. Zygotę umieszcza się w płynie hodowlanym, by podjęła podziały, a zarodek w stadium 2 lub 4 blastomerów (pierwszych komórek potomnych) przenosi się do macicy samicy-biorczyni . Biorczyni musi mieć odpowiednio zsynchronizowany cykl owulacyjny, bo tylko wtedy błona śluzowa macicy jest gotowa na zagnieżdżenie zarodka.
+[RYCINA c11-fig-transgen „Dwie drogi do zwierzęcia o wybranym genomie”: Zacznij od stanu wyjściowego: w A jest zapłodniona komórka jajowa z dwoma przedjądrzami, w B – komórka somatyczna i oocyt pozbawiony jądra. Porównaj, skąd pochodzi materiał genetyczny nowego osobnika: w A od obojga rodziców plus wstrzyknięty transgen, w B wyłącznie z jądra dawcy. Wniosek: mikroiniekcja dodaje zwierzęciu nowy gen, klonowanie powtarza cały genom jednego dawcy.]
+Dlaczego ta metoda jest tak mało wydajna? Decydują o tym dwie rzeczy, których nie kontrolujemy.
+- Kiedy transgen się zintegruje. Jeśli integracja nie nastąpi przed pierwszym podziałem komórki, część komórek zarodka nie będzie go miała i urodzi się zwierzę będące chimerą/mozaiką – u myszy zdarza się to w 75% przypadków . Ogólna wydajność transgenezy wynosi od 0,5% u bydła do około 20% u myszy . Osobniki homozygotyczne pod względem transgenu uzyskuje się rzadko – transgen zajmuje najczęściej tylko jedno locus.
+- Gdzie i w ilu kopiach. Miejsce integracji transgenu jest przypadkowe , a liczba wbudowanych kopii nie jest kontrolowana. Transgen może więc wypaść w środku ważnego genu gospodarza albo powstać w wielu kopiach – i oba te zdarzenia prowadzą niekiedy do ciężkich powikłań, a nawet śmierci transgenicznego zwierzęcia.
+
+### Komórki ES i myszy znokautowane – po co psuć gen?  []
+Zmień pytanie: nie „jak dodać cechę”, ale „jak sprawdzić, do czego gen służy”. Odpowiedź: zepsuć go i zobaczyć, czego zwierzęciu zabraknie. To logika myszy znokautowanych (knockout) – zwierząt bez ani jednego czynnego genu z określonej pary alleli. U myszy pozbawionych genu deaminazy adenozyny, czyli z mutacją obu alleli, wystąpiły objawy ciężkiego złożonego niedoboru odporności (SCID) – tej samej choroby, którą ten defekt wywołuje u człowieka. Zgodę na takie badania muszą wydać komisje bioetyczne.
+Potrzebna jest do tego komórka, którą można zmodyfikować w hodowli, a potem wprowadzić do zarodka. Takie są pierwotne komórki zarodkowe (ES) , wyizolowane z zarodków mysich ( ): dzielą się w warunkach hodowli i są zdolne do kolonizacji zarodka we wczesnych stadiach rozwoju, a ich komórki potomne zasiedlają wszystkie tkanki nowego organizmu na równi z komórkami pochodzącymi z zarodka. Myszy są jedynym gatunkiem modyfikowanym tą metodą.
+Zostaje najtrudniejsze: jak wymusić uszkodzenie konkretnego genu i jak rozpoznać nieliczne komórki, w których się to udało ( ).
+- Budowa wektora. Konstruuje się plazmid z fragmentem obcego DNA, który ma zrekombinować z homologicznym genem myszy i go zinaktywować. W środek tego fragmentu wstawia się gen markerowy oporności na neomycynę : marker rozdziela transgen na dwie części, więc przerwany transgen traci aktywność – to gen null . Plazmid nosi dodatkowo gen kinazy tymidynowej (Tk) ; po co – wyjaśni punkt 4.
+- Wprowadzenie do komórek ES. Komórki ES pobrane z blastocyst transformuje się tym plazmidem, najczęściej metodą elektroporacji – krótkie impulsy prądu otwierają w błonie przejściowe pory, którymi wnika DNA.
+- Trzy możliwe losy plazmidu. Może zajść rekombinacja homologiczna – gen dziki gospodarza zostaje wymieniony na gen null (zwykle w jednym z pary alleli); rekombinacja nieuprawniona – fragment obcego DNA przyłącza się do genomu w losowym miejscu, nie zastępując niczego; albo rekombinacja nie zachodzi wcale i komórka pozostaje niezmieniona.
+- Podwójna selekcja. Pod mikroskopem te trzy przypadki wyglądają tak samo, więc odróżnia się je warunkami hodowli. Neomycyna zabija komórki bez genu oporności – odpadają wszystkie, w których nic się nie wbudowało. Gancyklowir zabija komórki z genem Tk, a Tk zostaje w genomie tylko po rekombinacji nieuprawnionej, bo przy homologicznej wymieniany jest sam odcinek transgenu. Przeżywa więc dokładnie ta grupa, o którą chodzi: klony z genem null w miejscu genu dzikiego .
+- Od komórki do zwierzęcia. Wyselekcjonowane komórki ES wstrzykuje się mikroiniekcją do blastocysty, a tak zmodyfikowany zarodek przenosi do macicy samicy-biorczyni. Jeśli komórki ES skolonizują zarodek, rodzą się myszy chimery . Dalej potrzebne są krzyżówki: kojarzenie chimer pokazuje, czy chimeryzm objął także linię komórek płciowych, w następnym pokoleniu otrzymuje się heterozygoty z genem null w jednym allelu, a z ich skrzyżowania – homozygoty z dwoma allelami zinaktywowanymi, czyli właściwe myszy znokautowane.
+[RYCINA c11-fig-knockout „Podwójna selekcja klonów komórek ES”: Czytaj kolumnami: każda to inny los wprowadzonego plazmidu, a dwa dolne wiersze to dwie kolejne selekcje. Porównaj kolumnę pierwszą i drugą – różni je tylko obecność genu Tk, i właśnie ta różnica rozstrzyga o przeżyciu w gancyklowirze. Wniosek: neomycyna usuwa komórki, w których nic się nie wbudowało, a gancyklowir te, w których wbudowało się w złym miejscu; zostaje klon z genem null w miejscu genu dzikiego. Schemat własny, proporcje umowne.]
+Co wynika z braku jednego genu? Trzy możliwości: homozygotyczność genu null może być letalna ; homozygoty mogą przeżywać, ale funkcjonować nieprawidłowo ; mogą też rozwijać się prawidłowo – wtedy prawdopodobnie brakujący produkt genu albo jego funkcję zastępują inne białka lub odmienny szlak metaboliczny. Ta trzecia możliwość jest ważna: brak objawów nie dowodzi, że gen jest nieważny, tylko że organizm ma zastępstwo.
+
+### Klonowanie: jak z komórki ciała powstaje całe zwierzę?  []
+[POJĘCIE Klon] grupa co najmniej dwóch organizmów lub komórek identycznych genetycznie, powstałych z jednego osobnika drogą rozmnażania bezpłciowego.
+Klonem nazywamy grupę złożoną z co najmniej dwóch identycznych genetycznie organizmów lub komórek, powstałych z jednego osobnika drogą rozmnażania bezpłciowego. Klonami są więc rośliny powstałe z fragmentacji organizmu macierzystego (rozmnażanie wegetatywne), a także bliźnięta monozygotyczne – z tym że te ostatnie są identyczne genetycznie względem siebie , a nie względem organizmu rodzicielskiego.
+Klonowanie metodą transplantacji jąder komórkowych polega na usunięciu materiału genetycznego oocytu i zastąpieniu go jądrem komórkowym pochodzącym z pierwotnych komórek zarodkowych ( klonowanie zarodkowe ) albo z komórek somatycznych, czyli komórek ciała ( klonowanie somatyczne ). Obejmuje cztery etapy ( ):
+- usunięcie jądra z komórki-biorcy – nosi nazwę wyjądrzenia albo enukleacji ; bez tego w komórce zostałyby dwa zestawy materiału genetycznego. Najczęściej komórką-biorcą jest oocyt zatrzymany w stadium II metafazy;
+- pozyskanie komórek będących dawcami jąder – w klonowaniu somatycznym są to komórki płodowe albo komórki ciała (skóra, język, mięśnie) osobników nowo narodzonych i dorosłych;
+- wprowadzenie jądra do komórki-biorcy – mikropipetą albo przez fuzję obu komórek w obecności czynników stymulujących: glikolu polietylenowego, impulsów elektrycznych lub inaktywowanego wirusa Sendai;
+- aktywacja zmodyfikowanej komórki-biorcy – przy naturalnym zapłodnieniu bodźcem aktywującym jest wniknięcie plemnika, a tutaj plemnika nie ma, więc używa się czynników fizykochemicznych: impulsów prądu stałego, 7% etanolu, jonów strontu.
+O powodzeniu decydują dwa warunki. Pierwszy: jądro dawcy powinno być w fazie G0 lub G1 cyklu komórkowego ( ), bo w fazie S najtrudniej zachować prawidłowy profil replikacji DNA. Drugi: jądro komórki somatycznej musi – dzięki cytoplazmie oocytu – ponownie uzyskać totipotencjalność , czyli zdolność dania wszystkich typów komórek organizmu i trofoblastu ( ). Wymaga to odwrócenia zmian epigenetycznych , które zaszły w DNA w miarę różnicowania się komórki-dawcy; bez pełnego „zatarcia” tych zmian rozwój zrekonstruowanego oocytu zostaje zahamowany. Moment aktywacji musi być zsynchronizowany z wprowadzeniem jądra, inaczej może dojść do zaburzenia kariotypu i ploidii zarodka. Ostatni etap to transfer zarodka w stadium moruli lub blastuli do macicy samicy-biorczyni.
+Pierwszym ssakiem uzyskanym przez klonowanie somatyczne była owca Dolly (1996). Do wyjądrzonego oocytu jednej owcy wprowadzono jądro pobrane z komórki gruczołu mlecznego dorosłej owcy , a fuzję przeprowadzono impulsami elektrycznymi. Wynik tego doświadczenia jest ważniejszy niż narodziny jednego zwierzęcia: dojrzałe, zróżnicowane komórki somatyczne ssaków zachowują potencjał rozwojowy .
+[RAMKA zapamietaj] Mikroiniekcja do przedjądrza działa, bo transgen trafia do zygoty – ale miejsce i liczba kopii są losowe, a wydajność wynosi 0,5–20%. Komórki ES pozwalają uszkodzić wybrany gen (gen null, rekombinacja homologiczna, selekcja neomycyną i gancyklowirem) i dają myszy znokautowane. Klonowanie przez transfer jądra wymaga enukleacji oocytu, jądra w fazie G0/G1 i odwrócenia zmian epigenetycznych – owca Dolly pokazała, że komórka somatyczna zachowuje potencjał rozwojowy.
+[ŹRÓDŁO] Źródło: Drewa s. 747–755
+
+## Terapia genowa: po co i jak  [c11-terapia]
+
+### Jaki problem rozwiązujemy?  []
+Chory ma gen, który nie działa – brakuje go albo występuje w zmutowanej formie. Skutek jest podobny: komórka nie wytwarza potrzebnego białka albo wytwarza białko niesprawne. Leczenie konwencjonalne może uzupełniać brakujący produkt, ale nie usuwa przyczyny. Myśl terapii genowej jest inna: dostarczyć komórce sprawną instrukcję , żeby białko robiła sama.
+[POJĘCIE Terapia genowa] wprowadzenie prawidłowego genu do komórki, w której brakuje określonego genu lub występuje on w zmutowanej formie.
+Terapia genowa (genoterapia) polega więc na wprowadzeniu prawidłowego genu do komórki, w której brakuje określonego genu lub występuje on w zmutowanej formie. Z tego jednego zdania wynikają trzy pytania, które trzeba rozstrzygnąć przy każdej chorobie: co dostarczyć, dokąd i czym . Samo wprowadzenie DNA nie wystarczy – wskaźnikiem skutecznego transferu genu jest jego ekspresja w komórkach docelowych , czyli to, czy gen rzeczywiście w nich pracuje.
+Droga do pacjenta jest długa i wynika to z logiki, nie z biurokracji. Terapię genową musi poprzedzić doświadczenie in vitro, na komórkach w hodowli, oraz badania in vivo na zwierzętach laboratoryjnych. Protokół terapii musi zawierać dokładną procedurę przygotowania i podawania genetycznie zmienionych komórek, a pacjentów monitoruje się stale, by ocenić efekty leczenia i wychwycić skutki uboczne.
+
+### Komórki somatyczne czy linia płciowa?  []
+Kryterium jest jedno: czy wprowadzona zmiana przejdzie na dzieci . Gen wprowadzony do komórek ciała kończy się na jednym pacjencie; gen wprowadzony do komórek linii płciowej przechodziłby na wszystkie następne pokolenia – nikt z nich nie mógłby się na to zgodzić.
+Dlatego jedyną akceptowaną formą modyfikacji genetycznej komórek człowieka jest somatyczna terapia genowa , czyli wprowadzanie wektorów z genami terapeutycznymi tylko do komórek somatycznych . Modyfikacja genetyczna komórek linii płciowej u człowieka jest z przyczyn etycznych i prawnych zabroniona , a prace doświadczalne i kliniczne nad transferem genów do komórek somatycznych są obwarowane licznymi przepisami.
+Transfer genu nie musi zresztą oznaczać naprawy – może też nadawać komórkom nowe właściwości , np. odporność na infekcje wirusowe lub bakteryjne.
+
+### Ex vivo czy in vivo – gdzie wprowadzić gen?  []
+Gen można wprowadzić do komórek wyjętych z organizmu albo wprost w organizmie. Kryterium wyboru jest praktyczne: czy komórki docelowe da się pobrać, a potem oddać z powrotem ( ).
+- Transfer ex vivo – pobiera się od chorego komórki docelowe, wprowadza się do nich gen terapeutyczny in vitro, a następnie wprowadza zmodyfikowane komórki z powrotem do organizmu. Zaleta: wszystko dzieje się w kontrolowanych warunkach, poza pacjentem – można sprawdzić, czy gen działa, zanim komórki wrócą.
+- Transfer in vivo – gen terapeutyczny podaje się odpowiednim wektorem bezpośrednio do komórek lub tkanek chorego, bez pobierania komórek. Tak trzeba postąpić, gdy komórek nie da się wyjąć i wszczepić na nowo.
+[RYCINA c11-fig-terapia „Terapia genowa ex vivo i in vivo”: Prześledź w obu panelach drogę genu od wektora do komórki chorego. Porównaj, w którym miejscu znajduje się pacjent w chwili wprowadzania genu: w A poza nim (gen trafia do komórek w naczyniu), w B – w nim. Wniosek: ex vivo wybieramy, gdy komórki docelowe można pobrać i oddać, in vivo – gdy pozostają na miejscu.]
+Dwa przykłady z dalszej części rozdziału: hepatocyty w hipercholesterolemii rodzinnej można pobrać z fragmentem wątroby, namnożyć i wszczepić z powrotem (ex vivo), a nabłonka oskrzeli w mukowiscydozie nikt nie wyjmie i nie wklei na miejsce, więc wektor podaje się wziewnie (in vivo).
+
+### Trzy rodzaje: dodać, wymienić, dołożyć coś nowego  []
+Samo „wprowadzenie genu” można rozumieć na trzy sposoby – a różnią się one losem genu uszkodzonego:
+- dodawanie genów – gen uszkodzony pozostaje w swoim locus , a gen terapeutyczny wprowadza się w inne miejsce chromosomu. Jest to technika komplementacji defektu genetycznego: defekt zostaje, ale brakujące białko jest już wytwarzane;
+- zamiana genów – wymiana genu zmutowanego na prawidłowy w procesie somatycznej rekombinacji homologicznej ( ), czyli przez wymianę odcinków między podobnymi sekwencjami. Tu defekt rzeczywiście znika;
+- „doskonalenie” genomu – dodanie genu, który nie zastępuje żadnego genu gospodarza , ale każe komórce wytwarzać substancje, których fizjologicznie nie produkuje: np. rybozymy (cząsteczki RNA o właściwościach katalitycznych), białka wirusowe (jak kinaza tymidynowa wirusa Herpes simplex ) albo interleukinę 2. Do tej grupy należy też stosowanie oligonukleotydów antysensownych – krótkich odcinków kwasu nukleinowego komplementarnych do mRNA, które wyciszają ekspresję genów gospodarza. Nazwa „doskonalenie” jest myląca i źródło zaznacza wyraźnie, że nie ma ona nic wspólnego z eugeniką: chodzi o jedną nową funkcję komórki somatycznej u konkretnego chorego, nie o cechy dziedziczone przez jego potomstwo.
+
+### Czym wprowadzić gen do komórki?  []
+Największym problemem terapii genowej jest znalezienie skutecznych i bezpiecznych sposobów wprowadzania genu do komórek docelowych. Wydajność zależy nie tylko od tego, czy nośnik wniknie do komórki, ale też jak długo się w niej utrzyma i jaki jest poziom ekspresji wprowadzonego genu. Najdłuższą ekspresję zapewniają wektory wirusowe, zwłaszcza te, które integrują się z genomem komórki. Metody dzielą się na dwie grupy:
+- biologiczne – wektory oparte na wirusach RNA, wirusach DNA i plazmidach. W wektorach wirusowych usuwa się odpowiednie sekwencje genomu wirusa, czyli geny odpowiedzialne za wirulencję , żeby wirus nie mógł się autoreplikować w komórkach gospodarza i nie wywołał choroby zamiast ją leczyć;
+- fizykochemiczne – fuzja DNA z liposomami, transfekcja precypitatu DNA z fosforanem wapnia, elektroporacja, mikroiniekcja dojądrowa.
+[RAMKA zapamietaj] U człowieka wolno prowadzić wyłącznie somatyczną terapię genową; modyfikacja linii płciowej jest zabroniona. Gen wprowadza się ex vivo (pobrane komórki, modyfikacja in vitro, zwrot) albo in vivo (wektor wprost do tkanki). Rodzaje: dodawanie (komplementacja), zamiana (rekombinacja homologiczna), „doskonalenie” genomu (nowa funkcja).
+[ŹRÓDŁO] Źródło: Drewa s. 795–797
+
+## Wektory: czym dostarczyć gen  [c11-wektory]
+Nie ma wektora dobrego do wszystkiego – każdy jest kompromisem. Przed wyborem zadaj cztery pytania:
+- Czy komórka docelowa się dzieli? Część wektorów wnika tylko do komórek dzielących się – neuron czy kardiomiocyt wypada wtedy z listy odbiorców.
+- Jak długo gen ma działać? Wektor integrujący się z genomem zostaje w nim na stałe i jest przekazywany komórkom potomnym; nieintegrujący daje efekt krótkotrwały.
+- Jak duży jest gen? Każdy wektor ma ograniczoną pojemność, podawaną w kilozasadach (kb).
+- Co zrobi układ odpornościowy? Silna odpowiedź immunologiczna szkodzi pacjentowi i niszczy wektor, więc skraca efekt.
+
+### Wirusy RNA: retrowirusy i lentiwirusy  []
+Spośród wirusów RNA najczęściej używa się retrowirusów . Ich materiał genetyczny zostaje – dzięki odwrotnej transkryptazie – przepisany na DNA, które ulega integracji z DNA komórki gospodarza . Takie wprowadzenie genu wektorem wirusowym nazywa się transdukcją . Aby zrobić z wirusa wektor, usuwa się z jego genomu sekwencje genów strukturalnych gag – pol – env , zostawiając sekwencje promotorowe LTR , bo odpowiadają one za integrację z DNA gospodarza i regulację transkrypcji. Wirus traci więc zdolność namnażania, a zachowuje to, co nam służy.
+Ponieważ integracja wymaga podziału komórki, transfer dotyczy tylko komórek dzielących się ; stąd też bierze się główna wada retrowirusa – mutacja insercyjna , gdy wektor wbuduje się w niewłaściwe miejsce genomu. Lentiwirusy , zwłaszcza oparte na wirusie HIV-1, mają nad nim jedną przewagę: potrafią aktywnie przechodzić przez pory otoczki jądrowej, więc transdukują także komórki, które się nie dzielą . Są na etapie badań przedklinicznych.
+
+### Wirusy DNA: adenowirusy, AAV i HSV  []
+Spośród wirusów DNA używa się głównie adenowirusów , zawierających dwuniciowe DNA; autoreplikację wirusa uniemożliwia usunięcie z jego genomu regionu E1 . Transfer dotyczy komórek dzielących się, a także komórek w fazie G0 , czyli takich, które przestały się dzielić – tą drogą można więc wprowadzać geny do kardiomiocytów i neuronów. Adenowirus nie integruje się z genomem: jego DNA funkcjonuje pozachromosomowo jako nietrwały episom , a stąd bierze się jednocześnie bezpieczeństwo i słabość tego wektora – efekt terapeutyczny jest krótkotrwały . Dochodzi do tego wysoka immunogenność i ryzyko reakcji zapalnej.
+Wirusy AAV (towarzyszące adenowirusom, z rodziny Parvoviridae ) zawierają jednoniciowe DNA i mają pojemność tylko około 4,5 kb . W zamian transdukują komórki niedzielące się i integrują się z genomem – w komórkach człowieka preferencyjnie w określonym miejscu chromosomu 19 – co zapewnia długotrwałą ekspresję transgenu.
+Wirus opryszczki zwykłej ( Herpes simplex virus , HSV) ma dwuniciowe DNA, pojemność 30–50 kb – największą z omawianych – i preferencyjnie transdukuje komórki układu nerwowego . Jego gen kinazy tymidynowej ( HSV-tk ), wprowadzany do komórek razem z odpowiednim prolekiem, służy w molekularnej chemioterapii nowotworów.
+
+### Wektory plazmidowe i chemiczne  []
+Plazmidy to koliste cząsteczki DNA z komórek bakteryjnych i niektórych eukariotycznych. Gen terapeutyczny wstawia się do nich jak przy klonowaniu: plazmidowe i egzogenne DNA przecina się enzymami restrykcyjnymi, a cząsteczki łączą się lepkimi końcami w zrekombinowany kolisty plazmid ( ). Wektory plazmidowe mają dużą pojemność i transfekują (wprowadzają DNA do) wiele typów komórek. W terapii ex vivo wprowadza się je do komórek z udziałem kationowych liposomów, a in vivo – w postaci „nagiego DNA” , czyli zawiesiny odpowiednio zmodyfikowanych cząsteczek DNA w roztworze soli fizjologicznej, podawanej np. w iniekcjach domięśniowych.
+Wśród wektorów chemicznych praktyczne zastosowanie mają głównie kationowe liposomy – pęcherzyki z lipidów o ładunku dodatnim, zawierające egzogenne DNA wprowadzone za pomocą plazmidu. Mogą wprowadzić fragmenty DNA o wielkości nawet 150 kb , mają niską immunogenność i są nietoksyczne. Do komórki wnikają na drodze endocytozy , głównie do makrofagów – i to jest ich słaba strona, bo makrofag nie zawsze jest komórką docelową. Innymi nośnikami chemicznymi są kationowe polipeptydy, polimery i kopolimery oraz dendrymery kationowe. Wszystkie łączy jedna cecha: dodatni ładunek elektryczny . Dzięki niemu nośnik upakowuje ujemnie naładowany konstrukt genowy i przenosi go przez równie ujemnie naładowaną dwuwarstwę błony komórkowej.
+[TABELA]
+Wektor | Komórki i pojemność | Zalety | Wady
+Retrowirusy (RNA) | tylko dzielące się; ok. 8 kb | stabilna transdukcja prawie 100% komórek, niewielka immunogenność | mutacja insercyjna (wbudowanie w niewłaściwe miejsce)
+Lentiwirusy (RNA) | dzielące się i niedzielące się | transdukują komórki, które się nie dzielą | na etapie badań przedklinicznych
+Adenowirusy (DNA) | dzielące się i w fazie G0; 7–36 kb | duża pojemność, brak integracji z genomem | wysoka immunogenność, reakcja zapalna, krótkotrwały efekt
+AAV (DNA) | dzielące się i niedzielące się; ok. 4,5 kb | integracja (chromosom 19), długotrwała ekspresja | mała pojemność
+Wirus HSV (DNA) | komórki nerwowe; 30–50 kb | bardzo duża pojemność, powinowactwo do układu nerwowego | cytotoksyczność
+Plazmidowe | wiele typów komórek | duża pojemność, prosta budowa, „nagie DNA” in vivo | niska wydajność transfekcji
+Chemiczne (liposomy kationowe) | wiele typów; do 150 kb | duża pojemność, niska immunogenność, nietoksyczność | krótkotrwały efekt, wnikanie głównie do makrofagów
+[/TABELA]
+[RAMKA przyklad] Dwa zadania, to samo pytanie o wektor. Zadanie 1: trzeba trwale zmienić limfocyty namnażane poza organizmem. Komórki się dzielą, efekt ma być trwały, gen niewielki – retrowirus spełnia wszystkie trzy warunki, a jego wadę (mutacja insercyjna) można sprawdzać w hodowli, zanim komórki wrócą do chorego. Zadanie 2: trzeba zmienić neurony w mózgu. Neuron się nie dzieli, więc retrowirus odpada; zostają adenowirus (działa w komórkach w G0, ale krótko i immunogennie), AAV (długa ekspresja, lecz tylko ok. 4,5 kb) lub HSV (duża pojemność i powinowactwo do układu nerwowego). Zmiana jednej cechy komórki docelowej zmienia całą listę kandydatów.
+[RAMKA zapamietaj] Wektor wybiera się po czterech cechach: czy komórka się dzieli, jak długo ma trwać ekspresja, jak duży jest gen i jaka będzie odpowiedź immunologiczna. Trwałą ekspresję dają wektory integrujące się z genomem (retrowirusy, AAV), największą pojemność – HSV, plazmidy i liposomy kationowe, a najkrótszy efekt – wektory nieintegrujące (adenowirusy, nośniki chemiczne).
+[ŹRÓDŁO] Źródło: Drewa s. 797–798
+
+## Kierunki terapii genowej  [c11-kierunki]
+Próby terapii genowej prowadzi się w bardzo różnych chorobach, a najwięcej z nich dotyczy nowotworów. Przy każdej chorobie zadawaj te same cztery pytania: co jest zepsute , co dostarczyć , czym i dokąd . Zobaczysz wtedy, że dostarczany gen wcale nie zawsze jest kopią genu uszkodzonego.
+
+### Mukowiscydoza – dlaczego terapię trzeba powtarzać?  []
+Mukowiscydoza (torbielowate zwłóknienie trzustki) jest chorobą dziedziczoną autosomalnie recesywnie ( ), a jej przyczyną jest mutacja genu CFTR , kodującego białko błonowego kanału chlorkowego . Objawy dotyczą wielu narządów, ale najczęstszą przyczyną śmierci są zaburzenia układu oddechowego – dlatego próby terapii koncentrują się na skorygowaniu defektu w komórkach nabłonkowych oskrzeli .
+Co dostarczyć: prawidłowy gen CFTR. Czym: wektorami o naturalnym powinowactwie do komórek dróg oddechowych – adenowirusami i wirusami AAV, ostatnio także lentiwirusowymi i niewirusowymi. Dokąd: drogą wziewną, w aerozolu , bo nabłonka oskrzeli nie da się pobrać i wszczepić z powrotem.
+Stąd dwie konsekwencje. Pierwsza: terapię trzeba regularnie powtarzać , bo nabłonek dróg oddechowych stale się wymienia, więc zmodyfikowane komórki zostają z czasem zastąpione nowymi, już bez transgenu. Druga: głównym problemem jest samo dostarczenie wektora – drogi oddechowe bronią się klirensem śluzowym i śluzowo-rzęskowym, glikokaliksem oraz odpowiedzią odpornościową. Jest jednak przesłanka optymizmu: do prawidłowego funkcjonowania wystarcza ekspresja genu CFTR na poziomie 10% wartości prawidłowej .
+
+### Choroby układu krążenia – dostarczamy czynnik, nie brakujący gen  []
+Tu nic nie jest „zepsute” w sensie jednego genu. Problemem jest niedokrwienie – mięśnia sercowego albo kończyn – więc zadaniem genu terapeutycznego jest wymusić odbudowę naczyń . Przenosi się geny czynników stymulujących angiogenezę: naczyniowego czynnika wzrostu śródbłonka ( VEGF ) i czynnika wzrostu fibroblastów 4 ( FGF-4 ), a transgen w wektorze adenowirusowym lub plazmidowym dostarcza się bezpośrednio w obszar niedokrwienia . Czynniki te nie są wymienne: FGF-4 znacznie silniej stymuluje arteriogenezę, a VEGF wpływa przede wszystkim na powstawanie mniejszych naczyń.
+Drugi cel to zahamowanie restenozy , czyli ponownego zwężenia tętnicy po angioplastyce. Oligonukleotydy antysensowne i rybozymy obniżają ekspresję białek cyklu komórkowego (np. PCNA), a bez nich komórki mięśni gładkich naczynia przestają się dzielić – to właśnie ich podziały zwężają światło naczynia. Na tej samej zasadzie modyfikuje się ex vivo żyłę przeznaczoną do przeszczepu: przed wszczepieniem przepłukuje się ją roztworem oligonukleotydów blokujących czynnik transkrypcyjny E2F , co zatrzymuje cykl w fazie G1 ( ) i poprawia drożność przeszczepu.
+
+### Hipercholesterolemia rodzinna – wzorcowy przykład ex vivo  []
+Choroba dziedziczona autosomalnie dominująco , należąca do genetycznych defektów metabolicznych; objawia się przedwczesnym rozwojem zmian miażdżycowych. Najczęstszy defekt molekularny to mutacja genu kodującego białko receptorowe dla lipoprotein o małej gęstości (LDL) – bez sprawnego receptora komórki nie wychwytują LDL z krwi.
+Dlaczego ex vivo? Receptor musi działać w hepatocytach, a fragment wątroby można pobrać. Pobiera się więc tkankę wątroby, namnaża hepatocyty in vitro, wprowadza do nich rekombinowanym retrowirusem gen receptora LDL i podaje zmodyfikowane komórki z powrotem przez żyłę krezkową , która prowadzi krew wprost do wątroby. Skuteczność tej metody nie jest wysoka.
+
+### Mózg: Parkinson, Huntington, Alzheimer  []
+W chorobach neurodegeneracyjnych komórki już obumarły albo obumierają, więc gen terapeutyczny ma najczęściej wspomóc neurony, które zostały . Neurony się nie dzielą, co od razu zawęża wybór wektora.
+- Choroba Parkinsona. Przyczyną jest obumieranie neuronów istoty czarnej jąder podstawnych, wytwarzających dopaminę – neuroprzekaźnik ważny m.in. w koordynacji ruchowej i napięciu mięśniowym. We wszystkich próbach klinicznych używa się wektorów AAV , a kierunki są trzy: gen dekarboksylazy kwasu glutaminowego ( GAD ) wprowadzany do jądra podwzgórza – jego produkt uczestniczy w syntezie GABA , głównego neuroprzekaźnika hamującego, co wycisza aktywność tego jądra i normalizuje pracę zwojów podstawy mózgu; gen neuturyny , która pobudza morfologiczne różnicowanie neuronów dopaminergicznych; gen dekarboksylazy L-aminokwasów aromatycznych ( AADC ) wprowadzany do ciała prążkowanego, bo jej produkt przekształca lewodopę w dopaminę – czyli pozwala lepiej wykorzystać podawany lek.
+- Choroba Huntingtona. Przyczyną jest mutacja dynamiczna – niestabilna liczba powtórzeń sekwencji CAG na końcu 5′ genu kodującego huntingtynę – prowadząca do zaniku komórek nerwowych w jądrach podkorowych i korze mózgowej, a w efekcie do mimowolnych ruchów pląsawiczych. Próba kliniczna polega na nadekspresji rzęskowego czynnika neurotroficznego ( CNTF ), który w modelach zwierzęcych redukował obumieranie neuronów ciała prążkowanego. Komórki linii BHK zmodyfikowane genem CNTF zamyka się w polimerowej kapsule z półprzepuszczalnej błony i wstrzykuje do komory mózgu – kapsuła przepuszcza wytwarzane białko, ale chroni obce komórki przed układem odpornościowym.
+- Choroba Alzheimera. Najczęściej diagnozowana choroba neurodegeneracyjna; mikroskopowo widać blaszki amyloidowe z β-amyloidu i wewnątrzkomórkowe sploty neurofibrylarne z agregatów zmienionego białka Tau , a klinicznie – utratę pamięci i zdolności uczenia się. Dostarcza się gen czynnika wzrostu nerwów (NGF) , bo w modelach zwierzęcych stymulował on funkcjonowanie neuronów cholinergicznych, hamował śmierć komórek nerwowych i poprawiał pamięć. Komórki modyfikuje się wektorem retrowirusowym i implantuje do mózgu albo podaje gen NGF wprost do mózgu w wektorze AAV.
+
+### AIDS – uodpornić komórki, a nie naprawić gen  []
+W zakażeniu HIV żaden gen chorego nie jest uszkodzony, więc cel jest inny: uczynić komórki niewrażliwymi na wirusa . Terapia genowa anty-HIV rozwija się w trzech kierunkach:
+- transgen do hematopoetycznych komórek macierzystych ( ), tak aby zróżnicowane komórki potomne były niewrażliwe na infekcję – jedna modyfikacja chroni wtedy całe ich potomstwo. Komórki prekursorowe modyfikuje się ex vivo wektorami retrowirusowymi, ostatnio lentiwirusowymi;
+- modyfikacja komórek już zróżnicowanych i podatnych na zakażenie – limfocytów T CD4 i CD8. Zmienia się geny białek kluczowych w cyklu replikacyjnym HIV: receptorowych CD4, CXCR4, CCR5 , przez które wirus wiąże się z komórką, kofaktorowych umożliwiających jego integrację z genomem gospodarza, czynników transkrypcyjnych i ich inhibitorów oraz naturalnych czynników przeciwwirusowych, np. interferonu;
+- wzmocnienie odporności przez immunizację organizmu antygenami wirusa HIV.
+
+### Nowotwory – cztery różne pomysły  []
+Nowotwór nie jest chorobą brakującego białka, więc terapia genowa wygląda tu inaczej. Rozwijane są cztery podejścia, a każde atakuje inną słabość guza.
+- Immunoterapia – uczynić guz widocznym. W większości nowotworów antygeny guza są wytwarzane, ale tak słabe, że organizm jest wobec nich tolerancyjny; niektóre guzy mają też aktywne mechanizmy unikania odpowiedzi immunologicznej. Dlatego komórki nowotworowe modyfikuje się genami cytokin stymulujących układ odpornościowy (np. TNFα, interferon α) albo cząsteczek kostymulujących (np. ligand CD40). Rośnie wtedy poziom prezentacji antygenów nowotworowych, a w konsekwencji dochodzi do rekrutacji swoistych dla nowotworu limfocytów T i B. Drugą drogą jest namnożenie ex vivo limfocytów T pobranych od pacjenta i zwrócenie ich choremu; swoistość nowotworową uzyskuje się przez transfer genów białek receptorowych, a chemotaksję do guza – przez geny receptorów dla chemokin wydzielanych przez nowotwór. Aby limfocyty przetrwały w mikrośrodowisku guza, wprowadza się im geny zapobiegające apoptozie ( ) i starzeniu.
+- Wirusy onkolityczne – niszczyć tylko komórki guza. Takie wektory wybiórczo niszczą komórki, które uległy transformacji nowotworowej, i są nieszkodliwe dla prawidłowych tkanek: namnożone wiriony uwalniają się, zabijając zakażoną komórkę, i atakują kolejne. Użyto m.in. adenowirusów pozbawionych genu E1B ( ONYX-015 ), które mnożą się tylko w komórkach bez funkcjonalnego białka p53 ( ) – a brak sprawnego p53 jest cechą większości znanych nowotworów – oraz zmutowanego wirusa Herpes simplex (HF10), w raku piersi i raku trzustki. Wirusy onkolityczne stosuje się także łącznie z chemio- i radioterapią.
+- Kompensacja mutacji – wyłączyć onkogen, przywrócić supresor. Te dwa cele osiąga się czterema sposobami: zatrzymaniem transkrypcji onkogenu antysensownymi oligonukleotydami tworzącymi podwójną helisę (DNA tripleksowy); zatrzymaniem translacji przez oligonukleotyd hybrydyzujący z kodującymi sekwencjami mRNA onkogenu (np. mRNA K-ras); zablokowaniem gotowych onkoprotein „wewnątrzkomórkowymi przeciwciałami”; zastąpieniem zmutowanych genów supresorowych (np. P53, RB1) formą dziką.
+- Geny samobójcze – molekularna chemioterapia. Do komórek guza wprowadza się gen kodujący białko, które przekształca podany do krwiobiegu nietoksyczny prolek w toksyczne metabolity indukujące apoptozę. Chemioterapia działa więc tylko tam, gdzie jest transgen. Trzy układy stosowane u ludzi to: gen kinazy tymidynowej Herpes simplex ( HSV-tk ) – wywołuje podatność na acyklowir, gancyklowir i walacyklowir; bakteryjny gen deaminazy cytozynowej – wrażliwość na 5-fluorocytozynę; gen ssaczego cytochromu CYP2B – wzmocnienie chemowrażliwości na cyklofosfamid. Ważna obserwacja: toksyczne produkty powstające w zmodyfikowanych komórkach przenikają poza nie i niszczą sąsiednie, niezmodyfikowane komórki. To efekt sąsiedztwa ( bystander effect ) – dzięki niemu nie trzeba trafić transgenem do każdej komórki guza.
+[RAMKA zapamietaj] Dostarczany gen nie zawsze jest kopią genu uszkodzonego: w mukowiscydozie i hipercholesterolemii to brakujący gen (CFTR, receptor LDL), w niedokrwieniu i chorobach mózgu – czynnik wzrostu (VEGF, FGF-4, CNTF, NGF), w AIDS – gen uodporniający komórkę, a w nowotworach gen, który czyni guz widocznym dla odporności albo zamienia prolek w truciznę (geny samobójcze, efekt sąsiedztwa).
+[ŹRÓDŁO] Źródło: Drewa s. 800–808
+
+## Eugenika i prawa człowieka w badaniach genetycznych  [c11-eugenika]
+
+### Czym jest eugenika i dlaczego to słowo brzmi dziś źle?  []
+[POJĘCIE Eugenika] (gr. eugenos – dobrze urodzony) metoda ulepszania gatunków z pokolenia na pokolenie, zwłaszcza w zakresie cech dziedziczonych.
+Eugenika (gr. eugenos – dobrze urodzony) to metoda ulepszania gatunków z pokolenia na pokolenie, zwłaszcza w zakresie cech dziedziczonych. Dziś termin ma znaczenie pejoratywne – z powodu praktyki, nie definicji: kojarzy się z nazistowskimi teoriami czystości i doskonalenia ras, a w dyskusjach przywoływany bywa też sposób postępowania z osobami słabymi i chorymi w starożytnej Sparcie. Procedury eugeniczne stosowano jednak również wiele lat po II wojnie światowej , w USA i w niektórych państwach europejskich, a w innych częściach świata stanowią problem do dziś.
+
+### Negatywna i pozytywna – gdzie przebiega granica?  []
+Kryterium podziału jest cel działania: usunąć cechę uznaną za niekorzystną albo wytworzyć cechę uznaną za pożądaną.
+- Eugenika negatywna eliminuje nosicieli cech uznanych za niekorzystne. Do najbardziej drastycznych przykładów źródło zalicza segregację rasową oraz przymusową sterylizację lub eksterminację, ale też przymusowe badania przedślubne, propozycję „kolczykowania” nosicieli potencjalnie „niebezpiecznych” genów i zakaz zawierania przez nich związków małżeńskich.
+- Eugenika pozytywna dąży do posiadania potomstwa o lepszych jakościowo cechach, np. o wysokiej inteligencji. Najbardziej znanym przykładem był „bank spermy geniuszy”, w tym noblistów. Tu jednak pojawia się argument merytoryczny: w świetle współczesnej biologii molekularnej osiągnięcie i utrwalenie pożądanych cech u człowieka nie jest możliwe – stoją temu na przeszkodzie niezależna segregacja cech genetycznych i wpływ środowiska. Potomstwo nie dziedziczy „zestawu zalet”, tylko losową kombinację alleli, która i tak ujawnia się w konkretnych warunkach życia.
+Prawo stawia tu wyraźną granicę. Karta praw podstawowych Unii Europejskiej zakazuje „praktyk eugenicznych, w szczególności takich, których celem jest selekcja osób”, a pozostałe konwencje i deklaracje nie zezwalają na nie przez zakaz dyskryminacji oraz zakaz zmian genomu komórek rozrodczych, a więc uzyskiwania dziedzicznych cech genetycznych. Trwa przy tym spór: przeciwnicy diagnostyki preimplantacyjnej i prenatalnej uważają eliminację zarodków lub przerywanie ciąży z powodu poważnych wad za praktyki „kryptoeugeniczne”, a poradnictwo genetyczne – za narzędzie eugeniki. Źródło ocenia, że poglądy takie rozmijają się z zasadami prawa międzynarodowego.
+
+### Świadoma zgoda – czego właściwie chroni?  []
+Badanie genetyczne różni się od pomiaru ciśnienia: jego wynik dotyczy całego dalszego życia, a często także krewnych. Dlatego wyrazem praw człowieka i jego autonomii jest konieczność uzyskania niezależnej (swobodnej), świadomej i odpowiednio udokumentowanej zgody na badania, leczenie lub diagnozowanie dotyczące genomu oraz na jakąkolwiek interwencję medyczną. Zgoda jest ważna, gdy:
+- dotyczy tylko konkretnej interwencji – nie jest zgodą „na wszystko”;
+- może być w każdej chwili wycofana , z dowolnej przyczyny, bez stawiania osoby w niekorzystnej sytuacji i bez niedogodności po jej stronie;
+- poprzedza ją informacja o celu i naturze interwencji, jej konsekwencjach i ryzyku – przekazana w poradnictwie nienakłaniającym (adyrektywnym) , które nie popycha pacjenta do żadnej decyzji;
+- nie wiąże się z zachętą finansową – zapłata czyniłaby zgodę nieswobodną;
+- jest nieważna, jeśli oświadczenie woli złożyła osoba znajdująca się w stanie wyłączającym świadome albo swobodne powzięcie decyzji (choroba psychiczna, niedorozwój umysłowy albo inne, choćby przemijające, zaburzenie czynności psychicznych).
+Zrozumienie informacji jest częścią ważności zgody , więc sposób przekazu trzeba dostosować do możliwości percepcji konkretnej osoby – także osoby w pełni sprawnej intelektualnie, lecz z zaburzeniami narządów zmysłów: głuchoniemym zaleca się informacje pisemne, a niewidomym słowne lub dźwiękowe, bo nie mogą korzystać z materiałów drukowanych.
+Kto decyduje za osoby niezdolne do wyrażenia zgody? Za małoletniego oraz za osobę dorosłą niezdolną do jej wyrażenia z powodu zaburzeń psychicznych, choroby lub podobnych powodów zgody udziela przedstawiciel ustawowy – przy uwzględnieniu stanowiska małoletniego zależnie od wieku i dojrzałości. Takie osoby powinny jednak, jeśli to możliwe, uczestniczyć w podejmowaniu decyzji i zachowują prawo sprzeciwu wobec badań. Trzeba też uszanować wolę wyrażoną przed utratą zdolności do podpisania zgody.
+Wyjątki. W nagłej interwencji niezbędnej dla korzyści zdrowotnych pacjenta można działać bez zgody , biorąc pod uwagę życzenia wyrażone przez niego wcześniej. Osobnym zagadnieniem jest zgoda „dorozumiana” (domniemana): przy badaniach prostych i powszechnych nie podpisujemy jej za każdym razem (nikt nie podpisuje zgody na morfologię krwi), a pacjent, który godzi się na hospitalizację, godzi się też na diagnostykę wchodzącą w skład procedury szpitalnej. Granica domniemania: zgoda na interwencję nie oznacza zgody na przetwarzanie danych będących jej efektem – na to potrzebne jest odrębne oświadczenie.
+Badania naukowe i eksperymenty podlegają tym samym zasadom, a dodatkowo: wolno je prowadzić tylko wtedy, gdy nie ma metody alternatywnej o porównywalnej skuteczności, a ryzyko osoby badanej jest niewielkie i proporcjonalne do potencjalnych korzyści. Zgoda na udział w eksperymencie badawczym może być ustna, ale wtedy wymaga dwóch świadków i odnotowania w dokumentacji – żeby dało się później wykazać, że jej udzielono – i w każdej chwili można ją wycofać, co przerywa eksperyment. Wszystkie badania ocenia i zatwierdza, merytorycznie i etycznie, właściwa instytucja; w Polsce są to komisje bioetyczne .
+
+### Dane genetyczne – przed czym chroni ich poufność?  []
+Dane genetyczne to dane odnoszące się do cech dziedzicznych osoby lub do takich cech stanowiących dziedzictwo grupy osób spokrewnionych. Zalicza się je do danych wrażliwych (sensytywnych) , a przetwarzanie danych o „kodzie genetycznym” jest zabronione , jeśli nie są spełnione specjalne warunki zachowania ich poufności; ujawnienie wbrew tym postanowieniom grozi sankcjami karnymi .
+Wolno je gromadzić i przetwarzać w celach prewencyjnych, diagnostycznych, terapeutycznych i naukowych (w tym w badaniach epidemiologicznych i statystycznych), a w innych – tylko gdy decyduje o tym interes publiczny, konieczność zapobieżenia niebezpieczeństwu lub ściganie przestępstwa.
+Prawo do prywatności i poufności jest podstawowym prawem człowieka. Dotyczy nie tylko dostępu do danych osobistych, w tym informacji o stanie zdrowia, ale obejmuje też ochronę próbek biologicznych – krwi, tkanek, komórek, kwasów nukleinowych – oraz sposobu i celu przetwarzania informacji umożliwiających identyfikację osoby, od której pochodzą.
+Po co ta ochrona? Przestrzeganie tych zasad zabezpiecza przed dyskryminacją z powodu dziedzictwa genetycznego – jednostki, ich rodziny i grupy, np. etniczne – w kontekstach klinicznych, w sferze zatrudnienia , ubezpieczeń , dostępu do integracji społecznej i możliwości dobrego życia.
+Z praw jednostki wynikają konkretne uprawnienia:
+- każdy ma prawo zapoznać się z dotyczącymi go informacjami i dowiedzieć się, jak pobrane próbki są wykorzystywane, przechowywane i utylizowane;
+- dopóki nie zostanie nieodwracalnie zatarta możliwość powiązania danych lub próbek z konkretną osobą, konieczna jest jej zgoda na ich przetwarzanie, również w celach naukowych; po takim zatarciu ( anonimizacji ) dane i próbki mogą być wymieniane między instytucjami lub państwami, przy zachowaniu rygorystycznych reguł;
+- zgoda na czynności dotyczące danych musi być swobodna, wyraźna i świadoma i może być cofnięta bez konsekwencji – wtedy danych i próbek nie wolno wykorzystywać, dopóki ich związek z danymi personalnymi nie zostanie nieodwracalnie zatarty;
+- zasada autonomii pozwala też wyrazić wolę „niewiedzy” – pacjent ma prawo nie znać stanu własnego zdrowia, wyników testów genetycznych ani wypływających z nich wniosków.
+Dylemat, którego prawo nie rozstrzyga. Wynik testu genetycznego pacjenta bywa ważny dla jego krewnych – także dla ich planów prokreacyjnych i profilaktyki. Jeśli pacjent nie chce im tej wiedzy przekazać, lekarz staje przed konfliktem między tajemnicą lekarską i autonomią chorego a interesem osób trzecich: dotarcie z informacją do rodziny bez wiedzy pacjenta może być uznane za naruszenie tajemnicy lekarskiej, a krewni nie powinni być informowani o wynikach badań, w których sami nie uczestniczyli . Źródło stwierdza wprost, że dylemat ten nie został rozwikłany w piśmiennictwie.
+Na koniec stanowisko, które porządkuje całą tę dyskusję: uznawanie informacji genetycznych za „wyjątkowe” na tle innych danych medycznych jest niewłaściwe – wysokiej jakości i poufności wymagają wszystkie dane medyczne. Dane genetyczne mogą mieć szczególny charakter w odczuciach społecznych, zwłaszcza dla pacjenta i jego rodziny, i właśnie dlatego potrzebne są powszechna edukacja, warunki do społecznej debaty oraz przedstawianie testów genetycznych bez uprzedzeń na każdym szczeblu nauczania.
+[RAMKA zapamietaj] Eugenika negatywna eliminuje cechy uznane za niekorzystne, pozytywna dąży do „lepszego” potomstwa – i jest nieskuteczna wobec niezależnej segregacji cech i wpływu środowiska; obie są zakazane. Świadoma zgoda jest ważna tylko wtedy, gdy jest swobodna, poprzedzona zrozumiałą informacją, dotyczy konkretnej interwencji i da się ją wycofać. Poufność danych genetycznych chroni przed dyskryminacją – zwłaszcza w zatrudnieniu i ubezpieczeniach.
+[ŹRÓDŁO] Źródło: Drewa s. 890–896, 904
+[RAMKA w60] Biotechnologia – tradycyjna korzysta z organizmów niemodyfikowanych, nowoczesna z modyfikowanych genetycznie; kolory OECD nazywają obszar zastosowania: zielona (rolnictwo), czerwona (zdrowie), biała (przemysł i środowisko), fioletowa (prawo i etyka), niebieska (wody). Rośliny GM – transgen wnosi Agrobacterium (T-DNA z plazmidu Ti) albo strzelba genowa (metoda biolistyczna, też do organelli); najczęściej odporność na herbicydy i na szkodniki (gen Cry); szczepionki jadalne, złoty ryż; obrót reguluje prawo UE i Ustawa o GMO. Zwierzęta GM – cechy użytkowe, bioreaktory (białka wymagające modyfikacji potranslacyjnych), modele chorób, ksenotransplantacje (epitop Gal); metody: mikroiniekcja do przedjądrza (0,5–20%), komórki ES i myszy knockout, klonowanie przez transfer jądra (Dolly). Terapia genowa – tylko somatyczna; ex vivo, gdy komórki da się pobrać i oddać, in vivo – gdy zostają na miejscu; rodzaje: dodawanie, zamiana, „doskonalenie” genomu. Wektory – wybór po czterech cechach (podziały komórki, czas ekspresji, pojemność, immunogenność): retro- i lentiwirusy, adenowirusy, AAV, HSV, plazmidy, liposomy kationowe. Prawa i granice – eugenika (pozytywna i negatywna) jest zakazana; badanie genetyczne wymaga świadomej, odwołalnej zgody po zrozumiałej informacji, a dane genetyczne – poufności chroniącej przed dyskryminacją.
+
+
+======== E. ŹRÓDŁA (przycięte do zakresu z mapy) ========
+
+
+---------- b95214fd-Drewa_Genetyka_medyczna_OCR.txt (linie 32354–32393, 32394–32442, 32443–32469, 32470–32824, 32825–32936, 32937–33496, 36650–36855, 36856–37306, 37307–37505, 43373–43833, 44366–44417) ----------
+[linie 32354–32393]
+
+W biotechnologii zostały zintegrowane nauki przyrodnicze i inżynieryjne w celu zastosowania komórek lub ich części oraz ich
+molekularnych analogów do pozyskania produktów i usług. Stosując najprostsze kryteria,
+biotechnologię można podzielić na tradycyjną i nowoczesną. Biotechnologia tradycyjna
+przebiega z wykorzystaniem naturalnych,
+niemodyfikowanych genetycznie enzymów,
+mikroorganizmów i kultur komórkowych.
+Jej korzenie sięgają zamierzchłych czasów,
+kiedy człowiek przed tysiącami lat poznał
+tajniki produkcji wina, piwa, octu czy fermentowanych napojów mlecznych i w sposób spontaniczny, opierając się na własnych
+obserwacjach, je udoskonalał. Przełomową
+
+datą był rok 1857, kiedy Ludwik Pasteur wyjaśnił udział drożdży w procesie fermentacji
+wina, czyli w fermentacji cukru gronowego
+do alkoholu etylowego. Za tym wydarzeniem
+nastąpiły kolejne odkrycia, które ostatecznie
+doprowadziły do powstania i rozwoju nowych biosyntez przemysłowych, takich jak
+produkcja antybiotyków, enzymów wykorzystywanych w mleczarstwie i do produkcji
+środków piorących, naturalnych barwników
+i konserwantów żywności.
+
+Biotechnologia nowoczesna, inaczej niż
+biotechnologia tradycyjna, opiera się na zastosowaniu białek, enzymów i organizmów,
+które zostały poddane genetycznej modyfikacji. Rozwój tej dziedziny nauki stał się możliwy dopiero wówczas, gdy poznano tajemnicę budowy DNA, złamano kod genetyczny
+i stworzono narzędzia do tworzenia dowolnych konstruktów genowych, czyli od kiedy
+
+[Strona 738]
+
+738
+
+powstała inżynieria genetyczna. Wszystko to
+zostało zapoczątkowane w 1953 r. przez Jamesa Watsona i Francisa Cricka, odkrywców
+budowy podwójnej helisy DNA i od tamtej
+chwili przebiega w coraz szybszym tempie.
+Pierwszym produktem biotechnologii nowoczesnej, który pojawił się na rynku, była
+ludzka insulina uzyskana ze modyfikowanych szczepów bakterii Escherichia coli.
+
+28.2
+
+Kolory biotechnologii
+[linie 32394–32442]
+
+Obok klasycznego podziału biotechnologii
+na tradycyjną i nowoczesną istnieje jeszcze
+inna, barwna klasyfikacja, zgodna z wytycznymi międzynarodowej Organizacji Współpracy Gospodarczej i Rozwoju (Organization
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+for Economic Co-operation and Development
+— OECD) (ryc. 28.1). Wyróżnia się w niej biotechnologię:
+
+e zieloną, dotyczącą rolnictwa, wykorzystywaną do celów spożywczych,
+i nie tylko, czyli obejmującą rośliny
+uprawne, zwierzęta hodowlane, przetwórstwo spożywcze i wytwarzanie
+pasz;
+
+e czerwoną, obejmującą zagadnienia
+dotyczące służby zdrowia, w tym diagnostykę molekularną, biofarmaceutyki (m.in. rekombinowane hormony,
+przeciwciała monoklonalne, szczepionki, enzymy);
+
+e białą, czyli biotechnologię przemysłową, do której należy nie tylko produkcja przemysłowa bardziej przyjazna
+środowisku niż produkcja tradycyjna,
+
+AGROBIOTECHNOLOGIA
+
+BIOTECHNOLOGIA
+
+BIOTECHNOLOGIA
+PRZEMYSŁOWA
+
+Ryc. 28.1 Kolory biotechnologii.
+
+[Strona 739]
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+ale także ochrona środowiska, czyli
+bioremediacja skażonych terenów. Ponadto do biotechnologii przemysłowej
+zalicza się również wytwarzanie biomateriałów, np. biodegradowalnego
+plastiku i biopaliw z surowców odnawialnych;
+
+e fioletową, dotyczącą zagadnień prawnych i społecznych, w tym akceptacji
+społecznej, praw własności intelektualnej, etyki;
+
+e niebieską, koncentrującą się na problematyce biotechnologii zbiorników
+wodnych.
+
+28.3
+
+Organizmy transgeniczne
+[linie 32443–32469]
+
+Organizm transgeniczny to taki organizm,
+który dzięki zastosowaniu technik inżynierii
+genetycznej został trwale wzbogacony o obce
+DNA, pochodzące najczęściej od osobnika
+innego gatunku. Organizm transgeniczny jest
+także często określany mianem organizmu
+modyfikowanego genetycznie (GMO). Gen
+przeniesiony z jednego organizmu do drugiego nosi nazwę transgenu. Wprowadzony
+transgen zostaje trwale zintegrowany z genomem biorcy i jest przekazywany komórkom
+potomnym. Jeśli nie wszystkie komórki zostaną zmodyfikowane w wyniku wprowadzenia transgenu, powstanie organizm będący chimerą, czyli zawierający komórki z co
+najmniej dwoma typami genomów.
+Tematyka dotycząca organizmów modyfikowanych genetycznie, a zwłaszcza roślin uprawnych i zwierząt hodowlanych, jest
+coraz częściej obecna w mediach i wzbudza
+żywe dyskusje opinii publicznej. Jak do tej
+pory niski poziom akceptacji społecznej jest
+najprawdopodobniej spowodowany niewystarczającym poziomem wiedzy społeczeństwa na ten temat. Niezaprzeczalne korzyści
+medyczne i ekonomiczne ścierają się z potencjalnym strachem związanym z niekontrolowanym rozprzestrzenianiem takich organizmów, powstawaniem „superchwastów”,
+
+„Superpatogenów” lub wpływem na organizmy niedocelowe.
+
+Do tej pory uzyskano liczne transgeniczne rośliny i zwierzęta. Wiele z tych roślin jest
+uprawianych, a zwierząt hodowanych na szeroką skalę, mają one bowiem niezwykle korzystne cechy z punku widzenia ekonomicznego i medycznego.
+
+28.3.1
+
+Rośliny transgeniczne
+[linie 32470–32824]
+
+Głównym celem tworzenia roślin transgenicznych jest uzyskiwanie odmian, które charakteryzowałyby się zwiększoną odpornością na chorobotwórcze patogeny, szkodniki
+i czynniki abiotyczne zarówno naturalne, jak
+i wywołane działalnością człowieka (globalne ocieplenie, zanieczyszczenie środowiska).
+Modyfikacje genetyczne roślin koncentrują
+się na kilku zagadnieniach, takich jak:
+
+e odporność na szkodniki;
+
+e odporność na choroby bakteryjne, wirusowe i grzybicze;
+
+e poprawa cech jakościowych, np. wzbogacenie o określone składniki odżywcze, wyeliminowanie białek alergennych;
+
+e odporność na środki ochrony roślin
+(herbicydy);
+
+e odporność na stres abiotyczny, czyli
+stworzenie roślin lepiej znoszących
+niekorzystne warunki środowiska, takie jak susza, wysokie zasolenie gleby,
+stres tlenowy, wysokie i niskie temperatury, obecność metali ciężkich.
+
+Metody uzyskiwania roślin modyfiko-
+
+wanych genetycznie różnią się nieco od technik stosowanych przy uzyskiwaniu zwierząt
+transgenicznych, co wynika z różnic w budowie komórki roślinnej i zwierzęcej czy
+bakteryjnej. Wprowadzenie odpowiednich
+transgenów do komórek roślinnych wykonuje się metodą wektorową i bezwektorową.
+W metodzie wektorowej zwanej agroinfekcją
+wykorzystany został naturalny proces infekowania roślin przez Gram-ujemną bakterię
+glebową Agrobacterium tumefaciens. Bakte-
+
+739
+
+[Strona 740]
+
+740
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+ria ta oprócz nukleoidu ma także niewielki
+plazmid Ti, który w miejscu uszkodzonej
+tkanki roślinnej indukuje powstawanie rakowatych narośli. Po zainfekowaniu rośliny
+z bakteryjnego plazmidu Ti zostaje wycięty
+jego fragment, tzw. T-DNA — kodujący m.in.
+auksyny (hormony roślinne) i opiny (substancje odżywcze dla A. tumefaciens) — który
+ulega trwałej integracji z gnomem komórki
+gospodarza.
+
+Aby uzyskać roślinę transgeniczną,
+w bakteryjnym T-DNA geny warunkujące
+wirulencję zastępuje się pożądanym genem
+mającym wzbogacić roślinę. Tak zmodyfikowanym szczepem A. tumefaciens zakaża
+się roślinę doświadczalną. Po zintegrowaniu
+transgenu z genomem komórkowym zmodyfikowane komórki bądź fragmenty tkanek
+izoluje się i dzięki odpowiednim warunkom
+hodowli regeneruje do płodnych (rozmnażanie generatywne) roślin transgenicznych
+(ryc. 28.2).
+
+Do transformacji roślin jako wektora
+używa się także innego gatunku bakterii
+z rodzaju Agrobacterium, a mianowicie Agrobacterium rhizogenes. Ten gatunek bakterii
+zakażając roślinę stymuluje ją do wytwarzania dużej liczby włośników dzięki genom
+znajdującym się na plazmidzie Ri. Plazmid
+Ri jest jednak rzadziej wykorzystywany do
+transgenezy roślin.
+
+Metodą bezwektorową wykorzystywaną
+w transgenezie roślin jest metoda biolistyczna
+(nazwa pochodzi z połączenia słów biologia
+i balistyka). Polega ona na opłaszczeniu cząsteczkami DNA mikronośników („mikropocisków”) wykonanych z metali szlachetnych,
+głównie ze złota lub wolframu, a następnie
+wstrzelenia ich za pomocą strzelby genowej
+do komórek roślinnych (ryc. 28.3). Zazwyczaj jeden mikronośnik, w zależności od
+jego powierzchni, jest pokryty 0,01-0,1 pg
+DNA. Dzięki swojej uniwersalności metoda
+biolistyczna jest stosowana do modyfikacji
+genetycznych nie tylko roślin, ale również
+bakterii, grzybów, zwierząt, a także w terapii
+genowej. Oprócz tego metoda ta jest wykorzystywana do wprowadzania obcego DNA
+bezpośrednio do organelli komórkowych, ta-
+
+kich jak plastydy czy mitochondria, które nie
+podlegają infekcji wirusowej.
+
+Najpopularniejszą genetyczną modyfikacją roślin jest zapewnienie im zwiększonej
+odporności na herbicydy stosowane w walce
+z chwastami. Drugą co do częstości jest modyfikacja polegająca na wprowadzeniu do komórek rośliny toksyny bakteryjnej z bakterii
+Bacillus thuringiensis, która działa zabójczo
+na niektóre owady i ich larwy będące szkodnikami roślin. Wprowadzanie do komórek
+genu Cry skutkuje produkcją specyficznej
+5-endotoksyny, która łączy się z receptorami
+znajdującymi się w jelicie owada i w efekcie
+prowadzi do ich paraliżu i śmierci.
+
+Obok takich cech, jak zwiększenie tolerancji na herbicydy czy nadanie odporności
+na zakażenia wirusowe, bakteryjne i grzybicze, biotechnologia zajmuje się także innymi
+modyfikacjami roślin. Dzięki nim uzyskano
+warzywa, owoce i kwiaty o opóźnionym starzeniu się, kawę o zmniejszonej zawartości
+kofeiny, tytoń ze zredukowaną ilością nikotyny. Jeszcze innym kierunkiem modyfikacji
+było opracowanie roślinnych szczepionek doustnych, tzw. szczepionek jadalnych. Dzięki
+nim uzyskano możliwość immunizacji człowieka przeciwko chorobotwórczym patogenom bez konieczności kontaktu z atenuowanym drobnoustrojem czy jego materiałem
+genetycznym, jak w przypadku tradycyjnych
+szczepionek oraz szczepionek rekombinowanych. Antygeny wytwarzane przez roślinę
+muszą być zaprojektowane w taki sposób, aby
+mogły przejść w stanie nienaruszonym przez
+przewód pokarmowy i przetrwać ewentualną wcześniejszą obróbkę kulinarną.
+
+Istnieją dwa sposoby otrzymywania
+szczepionek jadalnych. W pierwszym wykorzystuje się rośliny transgeniczne, które
+we wszystkich komórkach zawierają transgen i syntetyzują białko antygenowe. Dzięki
+temu zjedzenie jakiejkolwiek części rośliny
+prowadzi do immunizacji organizmu. Druga
+technika opiera się na modyfikacji genetycznej (wprowadzenie transgenu kodującego
+antygen) wirusa roślinnego, którym następnie zaraża się określony gatunek rośliny.
+Transgen kodujący antygen wprowadza się
+
+[Strona 741]
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII 741
+
+T-DNA
+
+"4
+| ul
+( ) "EŃ
+
+plazmid Ti
+oo O IE—D> O 3)
+wprowadzenie transgenu transformacja
+NN do wektora 5
+A. tumefaciens
+transgen
+
+$
+
+krążek wycięty z liścia
+
+yor w pożywce z bakterii
+
+40,
+wbudowanie T-DNA z transgenem
+
+do DNA rośliny regeneracja rośliny transgenicznej
+
+ss
+
+roslina transgeniczna
+
+Ryc. 28.2 Transformacja komórek roślinnych za pośrednictwem szczepu bakterii Agrobacterium
+tumefaciens zawierających plazmid Ti z transgenem.
+
+w takie miejsce genomu wirusa, aby nastą- | munizacja człowieka następuje po zjedzeniu
+piła ekspozycja jego produktu białkowego rośliny zawierającej wysokie miano wirusa
+na powierzchni kapsydu wirusowego. Im- _ roślinnego produkującego białko antygeno-
+
+[Strona 742]
+
+742 28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+mikronośniki opłaszczone
+NN E M = a obcym DNA
+
+wybrany gen ©
+pry OO
+czastka metalu ©
+
+S
+© © ( aparat do mikrowstrzeliwania
+
+wstrzeliwanie mikronośników
+
+do komórki
+wbudowanie
+obcego DNA
+podział komórki
+ko.Eo<et]
+ECHECJECJ
+SCJECJECJ żą
+regeneracja
+roślin z komórek
+If =
+
+roslina
+
+podtoze hodowlane i
+transgeniczna
+
+Ryc. 28.3 Otrzymywanie roślin transgenicznych metodą wstrzeliwania do komórek roślinnych
+mikronośników opłaszczonych transgenem (metoda biolistyczna).
+
+[Strona 743]
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+we przyłączone do jego białek kapsydowych _ bezpieczeństwo (brak kontaktu z patogenem)
+(ryc. 28.4). Zaletami szczepionek jadalnych — oraz bezbolesny sposób podania.
+jest stosunkowo niewielki koszt produkcji,
+
+Uv
+
+gen kodujacy epitop wirus roślinny
+antygenu bakteryjnego/wirusowego
+
+INFEKCJA ROŚLINY
+ZMODYFIKOWANYM
+WIRUSEM
+
+zrekombinowany wirus
+
+roślina zainfekowana
+zrekombinowanym wirusem
+
+IMMUNIZACJA
+CZŁOWIEKA
+
+Ryc. 28.4 Schemat postępowania podczas uzyskiwania szczepionek jadalnych z wykorzystaniem
+zrekombinowanych wirusów.
+
+743
+
+[Strona 744]
+
+744
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+W prowadzonych w ostatnim dziesięcioleciu badaniach udowodniono możliwość
+wytworzenia odporności przeciwko chorobotwórczym patogenom dzięki zastosowaniu
+szczepionek jadalnych. Pierwszy tego typu
+eksperyment na ludziach przeprowadzono
+w USA w 1998 r. Ochotnikom podano surowe bulwy ziemniaka, w których znajdowała
+się niepatogeniczna podjednostka endotoksyny Escherichia coli (szczep wywołujący
+biegunkę). Efektem immunizacji była produkcja swoistych przeciwciał skierowanych
+przeciwko endotoksynie E. coli, które były
+wykrywane w ślinie i we krwi immunizowanych osób. Polskim akcentem w uzyskiwaniu
+szczepionek jadalnych jest sałata wykazująca
+ekspresję białka powierzchniowego HBs wirusa zapalenia wątroby typu B (HBV) otrzymana w placówce Polskiej Akademii Nauk
+w Poznaniu.
+
+Innym przykładem rośliny transgenicznej jest złoty ryż. Ta roślina modyfikowana genetycznie powstała w odpowiedzi na
+problem niedoboru witaminy A w diecie
+mieszkańców krajów azjatyckich i związanymi z tym zaburzeniami wzroku (tzw. kurza
+ślepota). Modyfikacja genetyczna polegała na wprowadzeniu do genomu ryżu genu
+B-karotenu, który jest prekursorem witaminy A. Efektem „ubocznym” tej modyfikacji
+jest złocista barwa ziaren ryżu, której odmiana zawdzięcza swoją nazwę „złoty ryż”.
+W pierwszych zmodyfikowanych roślinach
+zawartość B-karotenu była zbyt niska, aby
+pokryć dzienne zapotrzebowanie na witaminę A, mimo że ryż stanowi główny składnik
+diety w krajach azjatyckich. Obecnie prowadzone są prace nad odmianami ryżu o zwiększonej zawartości B-karotenu.
+
+Żywność modyfikowana genetycznie od
+momentu pojawienia się na rynku wzbudza
+ogromne kontrowersje. Opinia publiczna
+jest podzielona między wielkich optymistów,
+którzy w roślinach modyfikowanych genetycznie widzą możliwość zlikwidowania głodu na świecie, a sceptyków, którzy w organizmach modyfikowanych genetycznie widzą
+jedynie zagrożenie dla naturalnego porządku świata. Ich obawy dotyczą m.in.:
+
+e „ucieczki” transgenów i ich przedostania się do dzikich gatunków, a w efekcie wyselekcjonowania owadów odpornych na toksyny produkowane
+przez rośliny, bakterii odpornych na
+antybiotyki lub „superchwastów” niewrażliwych na powszechnie stosowane herbicydy;
+
+e nadania żywności właściwości alergizujących wskutek wprowadzenia
+nowych, niewystępujących w niej dotychczas rodzajów białek;
+
+e przedostania się zmodyfikowanego
+DNA ze światła przewodu pokarmowego do komórek organizmu i jego inkorporacja do kwasów nukleinowych
+w jądrze komórkowym.
+
+Jak dotąd nie ma dowodów naukowych
+dotyczących szkodliwego wpływu na organizm człowieka żywności poddanej modyfikacjom genetycznym. Brakuje też niezachwianej pewności co do jej bezpieczeństwa.
+Dlatego też powstały akty prawne związane
+z wprowadzaniem roślin transgenicznych do
+uprawy, z jej wykorzystaniem jako żywności i pasz dla zwierząt hodowlanych. Oprócz
+zapewnienia bezpieczeństwa akty te mają na
+celu pozostawienie konsumentom możliwości wyboru między żywnością zmodyfikowaną genetycznie a żywnością uzyskiwaną
+w rolnictwie konwencjonalnym lub ekologicznym. Parlament Europejski reguluje
+związane z tym kwestie na mocy rozporządzenia 1829/2003/WE w sprawie zmodyfikowanej genetycznie żywności i paszy oraz
+rozporządzenia 1830/2003/WE  dotyczącego m.in. możliwości śledzenia żywności
+i produktów paszowych wyprodukowanych
+z organizmów modyfikowanych genetycznie. W Polsce obowiązuje Ustawa o organizmach genetycznie zmodyfikowanych z dnia
+22 czerwca 2001 r. (Dz.U. 2001.76.811 z dnia
+25 lipca 2001 r.), która weszła w życie 26 października 2001 r. Porusza się w niej kwestie
+dotyczące:
+
+e zamkniętego użycia organizmów genetycznie zmodyfikowanych;
+
+e uwalniania GMO do środowiska w celach
+innych niż wprowadzanie do obrotu;
+
+[Strona 745]
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+e wprowadzania do obrotu produktów
+GMO;
+e wywozu za granicę i tranzytu produktów
+GMO;
+e kompetencji organów administracji rządowej do spraw GMO.
+Obecnie prowadzone są prace nad projektem nowej ustawy.
+Prawo dotyczące GMO obowiązujące
+w Stanach Zjednoczonych nie jest tak restrykcyjne jak prawo europejskie. Dlatego też
+Stany Zjednoczone są największym produ-
+
+centem żywności modyfikowanej genetycznie (w 2008 r. areał upraw wyniósł w USA
+62,5 mln hektarów przy całkowitej światowej
+powierzchni 125 mln hektarów). Obecnie rośliny modyfikowane genetycznie uprawiane
+są w 25 krajach świata, w tym w 7 państwach
+Wspólnoty Europejskiej (tab. 28.1). Najpowszechniej uprawianą rośliną modyfikowaną
+genetycznie jest soja (65,8 mln hektarów),
+kolejne miejsca zajmują kukurydza (37,3
+mln hektarów), bawełna (15,5 mln hektarów)
+i rzepak (5,9 mln hektarów).
+
+Tabela 28.1 Producenci roślin modyfikowanych genetycznie na świecie w 2008 r.
+Dj
+GM (mln ha)
+62,5 soja, kukurydza, bawełna, rzepak, kabaczek, papaja, lucerna, burak cukrowy
+2 Argentyna 21,0 soja, kukurydza, bawełna
+3 Brazylia 15,8 soja, kukurydza, k bawełna
+4 Indie 7,6 bawełna
+5 Kanada 7,6 rzepak, kukurydza, soja, burak cukrowy
+6 Chiny 3,8 bawełna, pomidor, topola, petunia, papa- |
+ja, słodka papryka
+
+7 Paragwaj 2,7 soja
+8 Republika Południowej Afryki | 1,8 kukurydza, soja, bawełna
+9 Urugwaj 0,7 soja, kukurydza
+10 Boliwia 0,6 soja
+11 Filipiny 0,4 kukurydza
+12 Australia 0,2 bawełna, rzepak, goździk
+13 Meksyk 0,1 bawełna, soja
+14 Hiszpania 0,1 kukurydza
+15 Chile <0,1 kukurydza, soja, rzepak
+16 Kolumbia <0,1 bawełna, goździk
+17 Honduras <0,1 kukurydza
+18 Burkina Faso <0,1 bawełna
+19 Czechy <0,1 kukurydza
+20 Rumunia <0,1 kukurydza
+21 Portugalia <0,1 kukurydza
+22 Niemcy <0,1 kukurydza
+23 Polska <0,1 kukurydza
+24 Słowacja <0,1 kukurydza
+25 | Egipt <0,1 bawełna, soja
+
+745
+
+[Strona 746]
+
+746
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+28.3.2
+
+Zwierzęta transgeniczne
+[linie 32825–32936]
+
+Transgeneza zwierząt jest nieco bardziej
+skomplikowana niż modyfikacja genetyczna
+roślin. Wynika to m.in. z trudności technicznych przeprowadzania takiej modyfikacji
+zwierząt, małej wydajności i wysokich kosztów. Innym utrudnieniem jest długi okres
+między kolejnymi miotami i niewielka liczba
+potomstwa. Niekiedy zwierzęta transgeniczne chorują lub są bezpłodne.
+
+Kierunki transgenezy zwierząt są bardzo
+rozległe i dotyczą:
+
+e poprawy cech jakościowych, w tym
+wzrostu wydajności produkcji mleka i jego jakości, szybszego przyrostu
+i poprawy jakości tuszy, zwiększenia
+tempa przyrostu wełny i polepszenia
+jej jakości; nadania zwierzętom odporności na choroby bakteryjne i wirusowe; polepszenia metabolizmu i trawienia, co zapewnia lepsze wykorzystanie
+paszy i zmniejszenie zanieczyszczenia
+środowiska (obniżenie poziomu fosforanów w odchodach zwierząt gospodarskich);
+
+e wykorzystania zwierząt jako bioreaktorów;
+
+e modeli chorób człowieka;
+
+e modeli badawczych do testowania nowych leków;
+
+e ksenotransplantacji.
+
+Transgeniczne zwierzęta gospodarcze
+konstruowano początkowo z myślą o zmianie ich właściwości użytkowych. Wprowadzono np. gen hormonu wzrostu bydłu, świniom i rybom. Świnie transgeniczne osiągały
+rozmiary świń kontrolnych w czasie około
+15% krótszym, miały o 85% mniej tłuszczu
+niż kontrolne, jednakże częściej zapadały
+na choroby m.in. tkanki łącznej i nerwowej. Nie powiodły się próby poprawy masy
+tkanki mięśniowej u transgenicznych owiec
+z zastosowaniem hormonu wzrostu, a jako
+częste powikłania nadekspresji genu hormonu wzrostu obserwowano bezpłodność.
+Podejmowane są również próby tzw. huma-
+
+nizacji mleka krowiego polegające na zmianie w składzie jego białek, aby upodobnić je
+do mleka ludzkiego i uniknąć w ten sposób
+u części konsumentów alergii na mleko krowie.
+
+28.3.2.1
+
+Zwierzece bioreaktory
+
+Głównym źródłem białek rekombinowanych
+wykorzystywanych w medycynie i farmacji
+jest hodowla komórek bakteryjnych. Niektóre białka do swojej aktywności wymagają
+jednak modyfikacji potranslacyjnych, które
+nie zachodzą w komórkach bakterii. Alternatywą dla tej technologii, oprócz drożdży,
+roślin i kultur komórek ssaków in vitro, jest
+wykorzystanie zwierząt. Białka produkowane w organizmie zwierzęcym są odpowiednio modyfikowane potranslacyjnie i mogą
+być wydzielane do płynów ustrojowych, co
+znacznie ułatwi ich pozyskanie i oczyszczenie. Źródłem białek rekombinowanych mogą
+być mleko, krew, białko jaj, mocz, nasienie,
+a także kokony jedwabników. W ten sposób
+uzyskano już m.in. białko C, albuminę surowicy krwi, erytropoetynę, insulinę, kolagen
+i wiele innych białek.
+
+28.3.2.2
+
+Zwierzęta transgeniczne w nauce
+
+Myszy transgeniczne pełnią podstawową rolę
+w badaniach dotyczących funkcjonowania
+genów. Jest to możliwe ze względu na wysoki
+stopień homologii budowy i kolejności lokalizacji genów mysich i odpowiadających im
+homologicznych genów ludzkich. Dlatego też
+myszy transgeniczne są często wykorzystywane jako modele w badaniu etiologii chorób
+człowieka o podłożu genetycznym. Oprócz
+tego zwierzęta o odpowiednio zmienionym
+genotypie są wykorzystywane do poszukiwania i badania nowych środków terapeutycznych, w tym także testowania innowacyjnych
+terapii genowych.
+
+[Strona 747]
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+28.3.2.3
+
+Ksenotransplantacje
+
+Obecnie chirurgiczne techniki transplantologiczne są bardzo dobrze rozwinięte. Dzięki temu lekarze mogą ratować życie coraz
+większej liczbie pacjentów. Problemem jednak nadal pozostaje znalezienie narządów
+do transplantacji. Dlatego też duże nadzieje
+wiązane są z przeszczepami ksenogenicznymi (heterogenicznymi), gdzie dawca i biorca
+należą do różnych gatunków. Modyfikacje
+genetyczne w zakresie ksenotransplantacji
+mają na celu zniesienie bariery międzygatunkowej, co umożliwi dokonanie przeszczepu narządów pomiędzy osobnikami dwóch
+różnych gatunków. Dla człowieka najlepszym obcogatunkowym dawcą narządów
+pod względem podobieństwa anatomicznego
+i fizjologicznego jest świnia.
+
+Dominującym celem działań biotechnologicznych mających umożliwić dokonanie
+transplantacji między świnią i człowiekiem
+jest usunięcie z powierzchni komórek świni
+epitopu Gal powstającego dzięki aktywności
+a-1,3-galaktozylotransferazy. Antygen Gal
+jest głównym, choć nie jedynym czynnikiem
+powodującym odrzucenie przeszczepu. Badania wykazały, że około 60% przeciwciał
+ksenoreaktywnych skierowanych jest przeciw antygenowi Gal. Dlatego przypuszcza się,
+że wyeliminowanie tego antygenu w wyniku
+inaktywacji kodującego go genu umożliwi
+tolerancję organu pochodzącego od świni
+przy jednoczesnym podawaniu leków, które
+hamowałyby inne, mniej nasilone reakcje
+immunologiczne.
+
+28.3.3
+
+Metody uzyskiwania zwierząt
+[linie 32937–33496]
+transgenicznych
+
+Techniki uzyskiwania zwierząt transgenicznych są różne. Często ich zastosowanie zalezy od gatunku zwierzęcia, które ma być poddane transgenezie. Najczęściej stosowanymi
+metodami są:
+
+e mikroiniekcja do przedjądrzy;
+
+e modyfikacja pierwotnych komórek zarodkowych;
+
+e transplantacja jąder komórkowych (klonowanie).
+
+28.3.3.1
+Mikroiniekcja do przedjadrzy
+
+U ssaków proces zapłodnienia rozpoczyna się wniknięciem plemnika do cytoplazmy komórki jajowej, czyli zaplemnieniem.
+Oocyt II rzędu podejmuje wtedy zatrzymany
+w metafazie podział mejotyczny. Dochodzi
+następnie do wytworzenia przedjądrza żeńskiego i przedjądrza męskiego odpowiednio
+z jądra oocytu i plemnika. Przedjądrze męskie jest zwykle większe od żeńskiego. Każde
+z przedjądrzy wyposażone jest w haploidalny
+zestaw chromosomów. Ich połączenie (kariogamia) kończy proces powstawania zygoty.
+Technika mikroiniekcji egzogennego
+DNA do jednego z przedjądrzy jest najczęściej stosowaną metodą do uzyskiwania
+zwierząt transgenicznych. Jeden z pierwszych
+udanych eksperymentów tego typu został
+przeprowadzony w 1982 r. i polegał na wprowadzeniu do mysiej zygoty genu hormonu
+wzrostu szczura. Od tego czasu metodę tę
+zastosowano do transgenezy wielu gatunków
+zwierząt, w tym zwierząt gospodarskich.
+Procedura transgenezy rozpoczyna się
+wywołaniem hiperowulacji (stymulacją hormonalną) u samicy-dawczyni i jej zapłodnieniem. Po około 24 godz. z jajowodów samicy pobiera się zapłodnione komórki jajowe.
+Następnie za pomocą mikropipety do jednego z przedjądrzy, najczęściej męskiego (jest
+większe i znajduje się bliżej błony komórkowej), wprowadza się transgen w ilości do 1000
+kopii. Po tym mikrozabiegu umieszcza się
+zygotę w płynie hodowlanym celem dalszych
+podziałów. Kolejnym etapem jest przeniesienie zarodka w stadium 2 lub 4 blastomerów
+do macicy samicy-biorczyni, która ma odpowiednio zsynchronizowany cykl owulacyjny
+w celu zagnieżdżenia jaja płodowego (ryc.
+28.5). Jeśli nie nastąpi integracja transgenu
+przed pierwszym podziałem komórki (jesz-
+
+747
+
+[Strona 748]
+
+748
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+przedjądrze
+
+ki
+HAGEJAIE mikroiniekcja
+
+przedjądrze
+żeńskie
+
+?
+
+zaplemniona komórka jajowa
+
+SA
+<=)
+
+samica biorczyni
+
+2)
+—J
+
+mysz transgeniczna
+
+Ryc. 28.5 Otrzymywanie transgenicznych
+myszy za pomocą mikroiniekcji transgenu do
+przedjądrza zapłodnionej komórki jajowej.
+
+cze w warunkach in vitro), wówczas urodzone zwierzę będzie chimerą/mozaiką, co
+u myszy zdarza się w 75% przypadków. Wydajność transgenezy prowadzonej techniką
+mikroiniekcji do przedjądrza jest niewielka
+i wynosi od 0,5% dla bydła do około 20% dla
+myszy. Rzadko uzyskuje się osobniki homozygotyczne. Najczęściej transgen zajmuje tylko jedno locus w genomie. Zwierzęta homozygotyczne pod względem transgenu można
+uzyskać, stosując krzyżowanie wsobne zwierząt z pokolenia F;. Należy jednak zaznaczyć,
+że miejsce integracji transgenu jest przypadkowe. Liczba kopii wprowadzonego genu ule-
+
+gająca integracji w obrębie przedjądrza także
+nie jest kontrolowana. Obie te zmienne, tj.
+miejsce integracji i liczba kopii transgenu,
+często prowadzą do ciężkich powikłań lub
+nawet śmierci transgenicznego zwierzęcia.
+
+28.3.3.2
+
+Modyfikacja pierwotnych komórek
+zarodkowych
+
+Jedynym gatunkiem zwierząt transgenicznych, który jest modyfikowany tą metodą,
+są myszy. Z zarodków mysich udało się wyizolować tzw. pierwotne komórki zarodkowe
+(ES), które dzielą się w warunkach hodowli
+i sązdolne do kolonizacji zarodków we wczesnych stadiach rozwojowych. Oznacza to, że
+komórki ES namnażają się podobnie jak komórki zarodka i mogą uczestniczyć w jego
+rozwoju. Zatem potomne komórki ES zasiedlają wszystkie tkanki nowego organizmu na
+równi z komórkami wywodzącymi się z zarodka.
+
+Myszy to podstawowy gatunek zwierząt
+laboratoryjnych wykorzystywany w badaniach funkcji genów. Uszkadzając wybrany
+mysi gen — homologiczny funkcjonalnie do
+genu człowieka, którego mutacja leży u podstaw określonej choroby — otrzymuje się myszy wykazujące objawy podobne, a czasem
+nawet identyczne do tych, które występują
+u chorego człowieka. Dzięki temu w badaniach na myszach transgenicznych można
+wypróbować nowe sposoby leczenia i dokonywać różnych doświadczeń z zakresu medycyny eksperymentalnej, których na ludziach
+wykonywać nie wolno. Wykorzystując odpowiednie techniki rekombinacji DNA można
+uzyskać myszy, które nie będą mieć w swoim genomie ani jednego aktywnego genu
+określonej pary alleli. Powstałe w ten sposób
+osobniki nazywane są myszami znokautowanymi (knockout). U myszy znokautowanych,
+np. pozbawionych genu deaminazy adenozyny, w wyniku mutacji obu alleli genu wystąpiły objawy ciężkiego złożonego niedoboru
+odporności (SCID). W tym miejscu należy
+podkreślić, iż zgodę na badania eksperymen-
+
+[Strona 749]
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+talne na myszach muszą wydać odpowiednie
+komisje bioetyczne.
+
+Proces otrzymywania myszy znokautowanych jest dość złożony i wymaga zastosowania technik rekombinacji DNA, hodowli
+komórek in vitro, manipulacji genetycznych
+na zarodkach mysich, a także wykonania
+krzyżówek i selekcji myszy pokolenia F1 i F2.
+Etapy postępowania mające na celu uzyskanie myszy znokautowanych przedstawiono
+na ryc. 28.6 i 28.7.
+
+Pierwszy etap wytwarzania organizmu
+transgenicznego myszy (ryc. 28.6) rozpoczyna się od konstrukcji wektora plazmidowego
+zawierającego fragment obcego DNA (transgen), który ma być zrekombinowany i zinaktywować funkcję homologicznego genu
+myszy — gospodarza (kolor zielony) oraz gen
+kinazy tymidynowej Tk (kolor niebieski).
+Wprowadzony do plazmidu fragment obcego DNA zawiera również selekcyjny gen
+(markerowy) oporności na neomycynę (kolor czerwony) (1). Przyłączony gen oporno-
+Ści na neomycynę rozdziela fragment obcego
+DNA (transgen) na dwie części i przerwany
+w ten sposób transgen traci swoją aktywność
+(gen null). Przyłączenie genu markerowego
+do transgenu w plazmidzie musi nastąpić
+w określonym miejscu, tj. takim, w którym
+ekspresja markera nastąpiłaby jedynie po
+wymianie transgenu z genem gospodarza
+(myszy) na drodze rekombinacji homologicznej. Gen markerowy umożliwia selekcję
+komórek podczas hodowli kolonii.
+
+Z blastocyst uzyskanych od samicy myszy brązowo umaszczonej pobiera się komórki ES (2). Komórki ES transformuje się za pomocą wcześniej skonstruowanego plazmidu
+zawierającego obcy DNA. W procesie tym
+wykorzystuje się najczęściej metodę elektroporacji (3).
+
+W hodowli kolonii komórek ES transformowanych za pomocą plazmidu mogą
+wystąpić: rekombinacja homologiczna (4a)
+i rekombinacja nieuprawniona (4b) lub
+brak procesu rekombinacji (4c). W wyniku
+uprawnionej rekombinacji homologicznej
+(4a) dochodzi do wymiany genu dzikiego gospodarza z obcym fragmentem DNA wpro-
+
+wadzonym za pomocą plazmidu. Wskutek
+tego procesu powstały w hodowli klon komórkowy jest pozbawiony genu dzikiego
+(5a, 6a). Zwykle rekombinacja dotyczy tylko jednego z pary alleli zlokalizowanych na
+chromosomach homologicznych komórki
+gospodarza. Zrekombinowany nieaktywny
+gen nosi nazwę allelu zinaktywowanego lub
+genu znokautowanego. W wyniku rekombinacji nieuprawnionej (4b) fragment obcego
+DNA przyłącza się do genomu gospodarza
+losowo. Proces ten prowadzi do powstania
+klonu stransformowanych komórek ES z losowo wbudowanymi sekwencjami DNA zawartymi w plazmidzie (5b, 6b). W przypadku braku rekombinacji komórki ES nie będą
+ulegać transformacji (5c, 6c).
+
+Komórki powstałe po rekombinacji homologicznej zaznaczono na zielono, powstałe po rekombinacji nieuprawnionej na żółto,
+zaś komórki, w których nie wystąpiła rekombinacja, zaznaczono na biało (7).
+
+Selekcji klonów komórek uzyskanych
+w warunkach hodowli dokonuje się zwykle
+dzięki odpowiedniej zmianie pożywki, co
+powoduje śmierć większości komórek. Przeżywają tylko te kolonie komórkowe, które
+wywodzą się z komórek mających odpowiednie cechy. W procesie transgenezy myszy
+metodą wprowadzania DNA do komórek
+zarodkowych należy dążyć do selekcji klonu
+komórkowego, który składa się z komórek
+stransformowanych na drodze uprawnionej
+rekombinacji homologicznej - na tym schemacie klon komórkowy zaznaczono na zielono (8). Obecność gancyklowiru w pożywce
+hodowlanej powoduje śmierć komórek z wbudowanym genem Tk (kolor żółty); obecność
+neomycyny powoduje śmierć komórek, które
+nie mają wbudowanego genu oporności na
+neomycynę (kolor biały); komórki z wbudowanym genem oporności na neomycynę (kolor zielony) nie będą obumierać.
+
+W drugim etapie uzyskiwania myszy
+znokautowanych wykorzystuje się wielokomórkowe zarodki w stadium przedimplantacyjnym (moruli, blastocysty) (ryc. 28.7). Wyselekcjonowane wcześniej komórki ES (kolor
+zielony) zawierające obcy DNA (gen null)
+
+749
+
+[Strona 750]
+
+750 28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+gen do inaktywacji
+pierwotne komórki wyizolowane
+
+“VN \ 3 Z zarodków myszy brązowej
+1
+> ><
+— C® <—
+
+gen opornosci
+na neomycyne
+
+Tk
+4a rekombinacja rekombinacja z 4b brak
+homologiczna niespecyficzna rekombinacji
+=
+o
+o) Da
+qa U
+o ro
+© pO [oj N
+5% S-5
+ką o
+s 5 E | | ko) 52 | |
+sce Eas
+F 835 RE
+SRO coć
+
+losowe włączenie
+nieaktywnego genu
+
+zastąpienie genu
+prawidłowego
+
+niewłączenie
+nieaktywnego genu
+
+).l , )
+
+5b 5c
+
+u a*
+
+| zl sc |
+
+komórka komórka niezmieniona
+z nieaktywnym @) zlosowo włączonym ©) komórka
+| genem | nieaktywnym genem |
+Y 7 uśmiercanie
+
+“a. przezneomycynę
+
+hodowla komórek
+
+uśmiercanie
+przez gancyklowir
+
+| 8 selekcja za pomoca
+
+neomycyny i gancyklowiru
+49 ©)
+©)
+
+komórki z nieaktywnym genem
+
+Ryc. 28.6 Etapy otrzymywania myszy znokautowanych.
+
+[Strona 751]
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+samica myszy czarnej
+(dawczyni blastocysty)
+
+MC smrouaanene zmodyfikowanego
+
+genetycznie zarodka
+do samicy-biorczyni
+
+wstrzyknięcie
+
+komórek zawierających
+jeden znokautowany gen
+do zarodka
+
+blastocysta
+
+P
+x °
+EMIEMEYCEĘ, samiec myszy chimery
+
+| | |
+e 2-2
+
+homozygota
+
+gen null gen null
+heterozygota heterozygota
+
+łączenie potomstwa bliźniaczego
+4 myszy brązowych
+
+2 ao ©
+
+mysz znokautowana
+5
+obydwa geny typu null
+(mysz znokautowana)
+homozygota
+
+Ryc. 28.7 Drugie stadium otrzymywania myszy znokautowanych.
+
+[Strona 752]
+
+752
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+różnią się genotypowo od komórek zarodka,
+m.in. genami warunkującymi umaszczenie.
+
+Komórki ES zawierające gen null w jednym z pary alleli wstrzykuje się na drodze
+mikroiniekcji do blastocysty pochodzącej od
+samicy myszy czarnej (1). Tak zmodyfikowany genetycznie zarodek zostaje przeniesiony
+do macicy myszy - biorczyni (2). Jeśli wprowadzone komórki ES skolonizują zarodek,
+rodzą się myszy chimery. Takie osobniki mają
+najczęściej dwubarwne łaty. Myszy chimery przedstawione na schemacie mają czarną
+sierść z żółtymi plamami (3). Jeśli skrzyżuje
+się samicę myszy czarnej z samcem myszy
+chimery (P) i w pokoleniu Fl oprócz myszy
+czarnych urodzą się myszy żółte, to należy
+zakładać, że chimeryzm rozciąga się również na linię komórek płciowych. Wówczas
+część potomstwa z pokolenia Fl odziedziczy
+jeden zestaw haploidalnych chromosomów
+pochodzących z transgenicznych komórek
+ES, a drugi zestaw chromosomów od osobnika o normalnym genotypie. Żółta barwa
+umaszczenia jest cechą dominującą. Myszy
+żółte w pokoleniu Fl są heterozogotami,
+mają zatem gen null w jednym z pary alleli.
+Krzyżując między sobą żółte myszy siostrzane z pokolenia F1 (4), można w potomstwie
+w pokoleniu F2 uzyskać oprócz heterozygot
+również osobniki z inaktywowanymi dwoma allelami badanego genu — homozygoty
+(5). Odróżnienie żółto umaszczonych myszy
+heterozygotycznych od homozygotycznych
+możliwe jest dzięki badaniu DNA tych osobników metodą Southern blotting.
+
+Myszy transgeniczne, u których w ogóle
+nie obserwuje się ekspresji wybranego genu,
+umożliwiają poznanie pierwotnej funkcji
+i efektów działania tego genu w organizmie.
+W niektórych przypadkach homozygotyczność genu null może być letalna, w innych
+zaś homozygoty genu null mogą przeżywać,
+ale ich organizm funkcjonuje nieprawidłowo. Niekiedy homozygoty genu null rozwijają się prawidłowo, wówczas prawdopodobnie
+brakujący produkt genu albo jego funkcja
+zostają zastąpione działaniem innych białek
+lub odmiennym szlakiem metabolicznym.
+
+28.3.3.3
+
+Klonowanie
+
+Termin „klon” wywodzi się z języka greckiego, gdzie klon oznacza gałązkę, odkład. Klonem określa się grupę złożoną przynajmniej
+z dwóch identycznych pod względem genetycznym organizmów lub komórek powstałych z jednego osobnika drogą rozmnażania
+bezpłciowego. Klonami będą zatem m.in.
+rośliny powstałe wskutek fragmentacji organizmu macierzystego (rozmnażanie wegetatywne), chełbie powstające w wyniku
+strobilizacji czy bliźnięta monozygotyczne,
+choć w tym ostatnim przypadku nie są one
+identyczne genetycznie z organizmem rodzicielskim, lecz jedynie względem siebie.
+
+Klonowanie metodą transplantacji jąder
+komórkowych polega na usunięciu materiału
+genetycznego oocytu i zastąpieniu go materiałem genetycznym (jądrem komórkowym)
+pochodzącym z pierwotnych komórek zarodkowych (klonowanie zarodkowe) lub komórek somatycznych (klonowanie somatyczne).
+Proces ten obejmuje kilka etapów.
+
+e usunięcie jądra z komórki-biorcy,
+
+e pozyskanie komórek będących dawca-
+
+mi jąder,
+
+e wprowadzenie jądra komórkowego do
+
+komórki-biorcy,
+
+e zaktywowanie zmodyfikowanych ko-
+
+mórek-biorców.
+
+Usunięcie jądra komórkowego nosi nazwę wyjądrzenia lub enukleacji. Najczęściej
+stosowanymi komórkami-biorcami w procesie klonowania metodą transplantacji jąder
+są oocyty zatrzymane w stadium II metafazy (M ID). Są one uzyskiwane przyzyciowo
+po wywołaniu hormonalnej hiperowulacji
+u samic lub poubojowo z jajników zwierząt
+rzeźnych. Oprócz oocytów M II prowadzi się
+także próby z oocytami profazowymi, metafazowymi (I metafaza), zygotami i zarodkami 2-komórkowymi. Proces enukleacji można przeprowadzić metodami mikrochirurgicznymi, inwazyjnymi lub nieinwazyjnymi,
+a także metodami chemicznymi, stosując
+
+[Strona 753]
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+np. etoposid, który jest inhibitorem topoizomerazy II.
+
+W przypadku klonowania zarodkowego
+komórkami-dawcami jądra są komórki zarodkowe, w tym blastomery, komórki węzła
+zarodkowego lub trofoektodermy. Z kolei do
+
+G1
+
+wzrost komórek
+
+M s
+replikacja DNA
+
+mitoza
+
+Nz
+
+przygotowanie
+do mitozy
+
+usunięcie (enukleacja)
+jądra komórkowego
+
+Z
+Oe
+
+klonowania somatycznego jadra komérkowe
+pozyskuje się z komórek płodowych oraz komorek ciała (skóra, język, jądra, ucho, mięśnie) osobników nowo narodzonych i dorosłych. Aby klonowanie miało większe szanse
+powodzenia, jądra tych komórek powinny
+
+EW hodowla dojrzałych
+brak podziału komórek somatycznych
+komórek
+
+selekcyjna izolacja
+
+komórek-dawców jąder
+
+komórkowych w fazie
+G1 lub GO
+jądro komórki
+<* somatycznej
+
+wprowadzenie zarodka
+do macicy owcy-biorczyni
+
+w fazie GO
+ch bezjądrowej komórki
+
+jajowej z jądrem komórki
+somatycznej w fazie GO
+
+sklonowana owca
+
+Ryc. 28.8 Schemat klonowania owcy metodą transplantacji jąder komórek somatycznych.
+
+[Strona 754]
+
+754 28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+owca rasy owca rasy
+Finn dorset Scottish blackface
+
+AD
+
+pobranie
+
+komórki jajowej
+komórki gruczołu ciałko w metafazie II
+sutkowego oo kierunkowe
+
+w fazie GO sus ostonka
+<-— przejrzysta
+chromosomy
+omórki jajowej błona
+plazmatyczna
+enukleacja
+komórki jajowej
+
+, pobudzenie
+prądem elektrycznym
+— ~ay komórki jajowej
+
+fuzja komórek za pomocą
+gf 8 impulsów elektrycznych
+
+hodowla in vitro
+
+h
+2
+
+jądro komórki
+somatycznej
+
+(morula
+
+——
+
+blastocysta) owca Dolly
+
+zarodek
+
+wprowadzenie zarodka
+do macicy samicy-biorczyni
+Scottish blackface
+
+Ryc. 28.9 Schemat klonowania owcy Dolly.
+
+[Strona 755]
+
+28 WYBRANE ZAGADNIENIA Z BIOTECHNOLOGII
+
+znajdować się w fazie GO lub G1 cyklu komórkowego (w fazie S najtrudniej zachować
+prawidłowy profil replikacji DNA). Transfer
+jądra do komórki-biorcy przeprowadza się
+metodami mikrochirurgicznymi za pomocą
+mikropipety lub niechirurgicznymi, powodując fuzję komórki-biorcy z komórką-dawcy w obecności odpowiednich czynników
+stymulujących (glikol polietylenowy, impulsy elektryczne, inaktywowany wirus Sendai)
+(ryc. 28.8).
+
+Kolejnym etapem klonowania jest aktywacja zrekonstruowanych oocytów. Podczas
+naturalnego zapłodnienia oocytu bodźcem
+aktywującym, który umożliwia zakończenie II metafazy, jest wniknięcie plemnika.
+W przypadku klonowania stosuje się różnego rodzaju stymulujące czynniki fizykochemiczne, które umożliwiają rozwój zmodyfikowanego oocytu do kolejnych stadiów.
+Czynnikami takimi są impulsy prądu stałego,
+7% etanol, jony strontu, jonomycyna, trójfosforan inozytolu. Jądro komórki somatycznej
+wykorzystane w procesie klonowania powinno, dzięki środowisku cytoplazmy oocytu,
+ponownie uzyskać stan totipotencjalności,
+czyli możliwość rozwoju we wszystkie typy
+komórek (organizmu i trofoblastu). W tym
+celu musi dojść do odwrócenia zmian epigenetycznych, jakie zaszły w obrębie DNA
+w miarę różnicowania się komórki-dawcy.
+Jeśli nie nastąpi pełne „zatarcie” zmian, zostanie zdezorganizowany i zahamowany rozwój
+zrekonstruowanego oocytu. Moment aktywacji rekonstruowanego oocytu musi być odpowiednio zsynchronizowany z momentem
+wprowadzenia jądra komórkowego, w przeciwnym razie może dojść do zaburzenia prawidłowego kariotypu i ploidii zarodka.
+
+Ostatnim etapem jest transfer zarodka
+będącego w stadium moruli lub blastuli do
+macicy samicy-biorczyni (ryc. 28.8).
+
+Pierwszym ssakiem uzyskanym w wyniku klonowania somatycznego była owca
+Dolly, która urodziła się w 1996 r. Po usunięciu jądra komórkowego z dojrzałego oocytu
+owcy rasy Scottish blackface wprowadzono
+do niego jądro komórkowe pobrane z komórki gruczołu mlecznego dorosłej owcy rasy
+
+Finn dorset, która miała wówczas 6 lat. Fuzję
+jądra z komórką-biorcą przeprowadzono stosując impulsy elektryczne. Zrekonstruowane oocyty hodowano na odpowiednio dobranych pożywkach, a następnie w stadium
+moruli lub blastuli wprowadzono do macicy
+owcy biorczymi (ryc. 28.9). Większość wprowadzonych do macicy zarodków obumierała
+w pierwszych stadiach rozwoju embrionalnego. Oprócz Dolly urodziły się także inne
+jagnięta, które były jednak obciążone defektami genetycznymi bądź były zdeformowane. Owca Dolly żyła 6 lat (o połowę krócej
+niż owce tej rasy) i wydała na świat 6 jagniąt.
+Rezultaty uzyskane w procesie klonowania
+zwierząt metodą transplantacji jąder komórek somatycznych wykazały, że dojrzałe
+i zróżnicowane komórki somatyczne ssaków
+zachowują potencjał rozwojowy.
+
+28.4
+Pytania
+[linie 36650–36855]
+
+Wprowadzenie genu terapeutycznego do
+komórek może odbywać się w warunkach
+in vivo lub in vitro. Dokonywanie transferu
+genu do pobranych od chorego komórek lub
+tkanek jest określane mianem terapii genowej ex vivo.
+
+e Transfer genu ex vivo obejmuje pobranie od chorego komórek docelowych
+i wprowadzenie in vitro terapeutycznego genu. Kolejnym etapem jest
+wprowadzenie tak zmodyfikowanych
+komórek z powrotem do organizmu
+chorego.
+
+e Transfer genu in vivo polega na wprowadzeniu terapeutycznego genu za pomocą odpowiedniego wektora bezpośrednio do komórek (tkanek) chorego,
+bez pobierania komórek docelowych.
+
+30.2
+Rodzaje terapii genowej
+
+Wyróżnia się następujące rodzaje terapii genowej:
+e dodawanie genów (gene addition
+therapy) — gen uszkodzony pozostaje
+w swoim locus geni, a gen terapeutyczny jest wprowadzony w inne miejsce
+chromosomu; jest to technika komplementacji defektu genetycznego;
+e zamianagenów (gene replacement therapy) — polega na wymianie genu zmu-
+
+towanego na gen prawidłowy w procesie tzw. somatycznej rekombinacji
+homologicznej;
+
+e „doskonalenie” genomu (gene augmentation therapy) — dodanie genu,
+który nie zastępuje żadnego genu gospodarza, ale koduje substancje, które fizjologicznie nie są produkowane
+przez modyfikowaną komórkę. Mogą
+to być geny kodujące np. rybozymy
+(cząsteczki RNA o właściwościach
+katalitycznych), białka wirusowe (np.
+kinaza tymidynowa wirusa Herpes
+simplex) i interleukinę 2. Tego rodzaju
+terapia obejmuje także stosowanie oligonukleotydów antysensownych, które wyciszają ekspresję genów gospodarza. Termin „doskonalenie” genomu
+nie ma i nie może mieć nic wspólnego
+z eugeniką.
+
+30.3
+
+Metody wprowadzania
+genów do komórek
+
+Największym problemem terapii genowej jest
+znalezienie skutecznych i bezpiecznych sposobów wprowadzania genu terapeutycznego
+do komórek docelowych. Wydajność transferu genu zależy nie tylko od skutecznego
+wniknięcia wektora do komórki, ale i od tego,
+jak długo wektor utrzymuje się w komórce
+ijaki jest poziom ekspresji wprowadzonego
+genu. Najdłuższą ekspresję zapewniają wektory wirusowe, zwłaszcza te, które integrują
+się z genomem komórki. Opracowywanie coraz to bardziej precyzyjnych metod transferu genu do komórek staje się możliwe dzięki
+postępom inżynierii genetycznej. Wprowadzenia genu terapeutycznego do komórek
+można dokonać metodami biologicznymi
+i fizykochemicznymi:
+
+Metody biologiczne:
+e wektory z wykorzystaniem wirusów RNA,
+
+[Strona 797]
+
+e wektory z wykorzystaniem wirusów DNA,
+
+e wektory z wykorzystaniem plazmidów.
+
+W przypadku użycia wektorów wirusowych
+usuwa się odpowiednie sekwencje genomu
+wirusa (geny odpowiedzialne za ich wirulencję) w celu niedopuszczenia do ich autoreplikacji w komórkach gospodarza.
+
+Metody fizykochemiczne:
+e fuzja DNA zliposomami,
+e transfekcja precypitatu DNA z fosforanem wapnia,
+e elektroporacja,
+e mikroiniekcja dojądrowa.
+
+30.4
+
+Wektory wirusowe
+
+30.4.1
+Wirusy RNA
+
+Spośród wirusów RNA do transferu genów
+używa się najczęściej retrowirusów. Ich materiał genetyczny w wyniku aktywności odwrotnej transkryptazy zostaje przepisany na
+DNA, które następnie ulega integracji z DNA
+komórki gospodarza. W celu utworzenia wektora usuwa się z genomu retrowirusa sekwencje genów strukturalnych: gag — pol — env,
+z wyjątkiem sekwencji promotorowych LTR
+(long terminal repeats), odpowiedzialnych za
+integrację wirusa z DNA komórki gospodarza i regulację transkrypcji.
+
+Transfer genu za pomocą wektora retrowirusowego dotyczy tylko komórek dzielących się. Pojemność tego wektora wynosi
+około 8 kb. Zalety retrowirusa jako wektora
+to zdolność do stabilnej transdukcji prawie
+100% komórek docelowych i niewielka immunogenność. Wadą retrowirusa jest możliwość spowodowania mutacji insercyjnej
+
+30 TERAPIA GENOWA 797
+
+w DNA komórki gospodarza na skutek wbudowania się w niewłaściwe miejsce w genomie.
+
+Ostatnio na etapie badań przedklinicznych podejmuje się próby terapii genowej
+z wykorzystaniem wektorów  lentiwirusowych, zwłaszcza opartych na wirusie HIV-1.
+Ich przewaga nad wektorami retrowirusowymi polega na zdolności aktywnego transportu przez pory otoczki jądrowej, dzięki czemu
+wektory te są zdolne do transdukowania komorek, które się nie dzielą.
+
+30.4.2
+Wirusy DNA
+
+Spośród wirusów DNA do transferu genów
+używa się głównie adenowirusów, które zawierają dwuniciowe DNA. Uniemożliwienie
+autoreplikacji wirusa osiąga się dzięki usunięciu z jego genomu regionu El. Transfer genu
+za pomocą wektora adenowirusowego dotyczy komórek w fazie GO cyklu komórkowego,
+a także komórek dzielących się. Można zatem
+używać tych wektorów do wprowadzania genów do wnętrza komórek, które przestały się
+dzielić, np. kardiomiocytów, neuronów, bądź
+też komórek dzielących się, np. komórek nabłonka i śródbłonka. Adenowirusy jako wektory mają następujące zalety:
+
+e brak integracji z genomem gospodarza,
+
+e wirusowe DNA funkcjonuje pozachromosomowo w postaci nietrwałego episomu,
+
+e znaczna pojemność wektora (7-36 kb).
+
+Ich wadami są:
+
+e wysoka immunogenność i ryzyko wystąpienia reakcji zapalnej,
+
+e krótkotrwały efekt terapeutyczny.
+
+Z grupy DNA wirusów jako wektory
+do wprowadzania genów terapeutycznych
+w próbach klinicznych wykorzystuje się wirusy z rodziny Parvoviridae zwane wirusami
+towarzyszącymi adenowirusom (adeno-associated virus - AAV). Wirusy AAV zawierają
+jednoniciowe DNA i mają pojemność około
+4,5 kb. W komórkach człowieka preferen-
+
+[Strona 798]
+
+798
+
+30 TERAPIA GENOWA
+
+cyjnie integrują się w określonym miejscu
+chromosomów pary 19. Cechę tę warunkują
+dwie odwrotnie powtórzone sekwencje końcowe (inverted terminal repeats — ITR) wraz
+z białkami Rep68 i Rep78 kodowanymi przez
+region rep. Zaletą tych wektorów jest zdolność do transdukcji komórek niedzielących
+się oraz inkorporacja z genomem komórki
+gospodarza, co zapewnia długotrwałą ekspresję transgenu.
+
+Do terapii genowej wykorzystuje się również genom wirusa opryszczki zwykłej (herpes simplex virus - HSV) występujący w postaci dwuniciowego DNA. Wektory z użyciem tego wirusa charakteryzują się znaczną
+pojemnością (30-50 kb) i preferencyjnie
+transdukują komórki układu nerwowego.
+Poza tym gen kodujący wirusową kinazę tymidynową (HSV-tk) wprowadzany do komórek w połączeniu z odpowiednim prolekiem
+jest wykorzystywany w tzw. molekularnej
+chemioterapii nowotworów.
+
+30.4.3
+
+Wektory plazmidowe
+
+Plazmidy są kolistymi cząsteczkami DNA
+występującymi w komórkach bakteryjnych
+i w niektórych komórkach eukariotycznych,
+np. u drożdży. Plazmidy są najczęściej stosowanym typem wektora do klonowania. Po
+uprzednim cięciu za pomocą enzymów restrykcyjnych plazmidowego DNA i egzogennego (terapeutycznego) DNA ich cząsteczki łączą się poprzez lepkie końce i powstają
+zrekombinowane koliste plazmidy. Wektory
+plazmidowe charakteryzują się dużą pojemnością i transfekują wiele typów komórek.
+W genoterapii ex vivo gen terapeutyczny
+z użyciem wektora plazmidowego może być
+wprowadzany do komórek za pomocą kationowych liposomów, a w genoterapii in vivo
+jest wprowadzany w postaci tzw. nagiego
+DNA, tj. zawiesiny w roztworze soli fizjologicznej odpowiednio zmodyfikowanych
+cząsteczek DNA, które są wprowadzane do
+komórek w wyniku iniekcji, np. domięśniowych.
+
+30.4.4
+
+Wektory chemiczne
+
+Spośród wektorów chemicznych praktyczne
+zastosowanie w terapii genowej mają głównie
+kationowe liposomy. Liposomy są cząsteczkami lipidów o charakterze kationowym, zawierającymi egzogenny DNA wprowadzony
+za pomocą plazmidu. Kationowe liposomy
+mogą wprowadzić do komórek fragmenty
+DNA o wielkości 150 kb. Wektory te charakteryzuje duża pojemność, niska immunogenność i nietoksyczność. Kationowe liposomy
+wnikają do komórki na drodze endocytozy,
+głównie do makrofagów. Modyfikacja liposomów, np. konstrukcja liposomu w kompleksie z gangliozydem GMI1 powoduje, że
+kationowe liposomy stają się „niewidzialne”
+dla makrofagów i w ten sposób zachowują
+swoją stabilność.
+
+Innymi wektorami chemicznymi wykorzystywanymi w próbach terapii genowej
+są m.in. polipeptydy kationowe, polimery
+i kopolimery kationowe oraz dendrymery
+kationowe. Cechą wspólną wszystkich stosowanych nośników chemicznych jest ich dodatni ładunek elektryczny. Dodatni ładunek
+nośnika umożliwia efektywne upakowanie
+przestrzenne ujemnie naładowanego konstruktu genowego zawierającego transgen
+i jego transport do wnętrza komórki przez
+dwuwarstwę białkowo-lipidową, która również obdarzona jest ładunkiem ujemnym.
+
+Przykłady najczęściej używanych wektorów w terapii genowej człowieka przedstawiono na ryc. 30.1.
+
+30.5
+Próby terapii genowej
+[linie 36856–37306]
+u ludzi
+
+Do roku 2010 na całym świecie zaaprobowano 1644 próby kliniczne terapii genowej
+u ludzi, z czego ponad 900 przeprowadzono
+po roku 2000. Najwięcej, bo aż 1060 (64,5%)
+prób terapii genowej dotyczyło chorób no-
+
+[Strona 799]
+
+30 TERAPIA GENOWA 799
+
+Ryc.30.1 Rodzaje
+wektorów stosowanych w próbach terapii genowych prowadzonych do 2010 r.
+(http://www.wiley.
+co.uk/genetherapy/clinical).
+
+I lipofekcja 6,5% (n = 109)
+EM wirusy AAV 4,5% (n= 75)
+B lentiwirusy 1,7% (n = 29)
+E nieznane 3,3% (n = 55)
+
+E adenowirusy 23,8% (n = 400)
+M nagie DNA i plazmidowe DNA 17,7% (n = 304)
+
+@ retrowirusy 20,5% (n = 344)
+
+E wirus krowianki 7,9% (n = 133)
+
+E poxwirusy 5,5% (n = 93)
+
+E wirus Herpes simplex 3,3% (n = 56)
+@ inne 4,9% (n = 82)
+
+wotworowych. Kolejnymi celami terapeutycznymi, najczęściej wybieranymi przez
+naukowców i klinicystów, są choroby sercowo-naczyniowe — 143 próby (8,7%), choroby
+monogenowe - 134 próby (8,2%), choroby
+infekcyjne — 131 prób (8%) i inne (ryc. 30.2).
+Niewielka część prowadzonych badań, bo
+tylko 57 przypadków, znajduje się w najbardziej zaawansowanej III fazie badań klinicznych, która daje największe szanse na wprowadzenie terapii do kanonu powszechnie
+dostępnych środków terapeutycznych. Ponad
+
+990 (60,5%) prowadzonych badań z zakresu
+terapii genowej nadal nie wyszła z fazy I (ryc.
+30.3).
+
+Pierwszą pacjentką poddaną udanej próbie terapii genowej była czteroletnia dziewczynka, Ashanti de Silva, która chorowała na
+ciężki złożony niedobór odporności (severe
+combined immunodeficiency — SCID). Zespół ten charakteryzuje się brakiem enzymu
+deaminazy adenozyny (ADA). Deficyt enzymatyczny prowadzi do powstawania toksycznych metabolitów adenozyny, co skutkuje
+
+Ryc. 30.2 Cele terapeutyczne prób
+terapii genowych
+prowadzonych do
+2010 r. (http://www.
+wiley.co.uk/genetherapy/clinical).
+
+E inne 2,4% (n = 40)
+
+E choroby nowotworowe 64,5% (n = 1060)
+E choroby monogenowe 8,2% (n = 134)
+M choroby neurologiczne 1,8% (n = 30)
+
+L M zdrowi wolontariusze 2,3% (n = 38)
+
+@ choroby sercowo-naczyniowe 8,7% (n = 143)
+E choroby infekcyjne 8% (n = 131)
+m choroby oczu 1,1% (n= 18)
+
+E oznaczanie genów 3% (n = 50)
+
+[Strona 800]
+
+800
+
+30 TERAPIA GENOWA
+
+DD faza I 60,5% (n = 995)
+E faza II/III 0,8% (n = 13)
+
+M faza I/II 18,7% (n = 308)
+@ faza III 3,5% (n = 57)
+
+El pojedyncze badania
+0,1% (n=2)
+
+Ryc.30.3 Fazy badań klinicznych prób
+terapii genowej prowadzonych do 2010 r.
+(http://www.wiley.
+co.uk/genetherapy/clinical)
+
+m faza II 16,2% (n = 267)
+D faza IV 0,1% (n = 2)
+
+znacznym upośledzeniem odporności humoralnej i komórkowej organizmu oraz ciężkimi zakażeniami oportunistycznymi, często
+kończącymi się Śmiercią pacjenta. Terapia
+została przeprowadzona 14 września 1990 r.
+w Stanach Zjednoczonych przez zespół W.F.
+Andersona. Polegała ona na zmodyfikowaniu, za pomocą wektora retrowirusowego,
+wyizolowanych z organizmu dziewczynki
+limfocytów T genem deaminazy adenozyny
+iponownym wprowadzeniu tych komórek
+do ustroju. Transfer genu terapeutycznego
+musiał być okresowo powtarzany.
+
+Oprócz sukcesów terapia genowa w swojej historii odnotowała także niepowodzenia.
+We wrześniu 1999 r. podczas prowadzenia
+I fazy badań klinicznych terapii niedoboru transkarbamylazy ornitynowej (OTC)
+zmarł 18-letni pacjent, Jesse Gelsinger. Jest
+on uważany za pierwszą ofiarę terapii genowej. W ciągu kilku dni po wprowadzeniu do
+krwiobiegu genu OTC w wektorze adenowirusowym doszło do niewydolności wielonarządowej. Do kolejnego niepowodzenia doszło podczas terapii ciężkiego złożonego niedoboru odporności związanego z chromosomem X (SCID/X1). U dwóch z 10 pacjentów
+poddanych terapii genowej z zastosowaniem
+wektorów retrowirusowych doszło do rozwoju białaczki na skutek wbudowania się
+wektora w pobliżu onkogenu komórkowego
+LMO2 (11p13).
+
+30.5.1
+
+Terapia genowa
+w mukowiscydozie
+
+Mukowiscydoza (torbielowate zwłóknienie
+trzustki) jest chorobą dziedziczoną autosomalnie recesywnie. Jej przyczyną jest mutacja genu CFTR (cystis fibrosis transmembrane
+regulator) zlokalizowanego na długim ramieniu chromosomu 7 (7q31.2), kodującego
+białko pełniące rolę błonowego kanału chlorkowego. Najczęściej spotykaną mutacją tego
+genu jest delecja trzech nukleotydów w eksonie 10 kodujących fenyloalaninę (AF508).
+Objawy kliniczne choroby dotyczą wielu
+organów, m.in. oskrzeli i płuc, trzustki, wątroby, jelita oraz gruczołów ślinowych. Ponieważ zaburzenia ze strony układu oddechowego są najczęstszą przyczyną śmierci związaną
+z mukowiscydozą, prowadzone próby terapii
+genowej koncentrują się na skorygowaniu
+defektu genetycznego w komórkach nabłonkowych oskrzeli. Skuteczność terapii jest tym
+większa, im wcześniej się ją zastosuje. Wynika to z faktu, że mimo defektu genetycznego
+płuca noworodków nie wykazują zmian patologicznych. Najczęściej wykorzystywanymi wektorami są wirusy z naturalnym powinowactwem do komórek dróg oddechowych,
+jak adenowirusy i wirusy AAV, a ostatnio
+także wektory lentiwirusowe oraz wektory
+
+[Strona 801]
+
+niewirusowe. Transgen (gen CFTR) w odpowiednim wektorze wprowadza się drogą
+wziewną z zastosowaniem aerozolu. Jednym
+z głównych problemów genoterapii mukowiscydozy jest dostarczenie wektora do komórek docelowych. Wynika to z istnienia naturalnych systemów obronnych organizmu,
+takich jak klirens śluzowy i śluzowo-rzęskowy, glikokaliks, wrodzona i nabyta odpowiedź układu odpornościowego. W związku
+z wymianą nabłonka wyściełającego drogi
+oddechowe konieczne jest regularne powtarzanie terapii somatycznej. Niemniej istnieją
+przesłanki wskazujące na szanse odniesienia
+sukcesu w leczeniu tej choroby, ponieważ do
+prawidłowego funkcjonowania organizmu
+wystarczy osiągnięcie ekspresji genu CFTR
+na poziomie 10% wartości prawidłowej.
+
+30.5.2
+
+Terapia genowa w chorobach
+układu krążenia
+
+Próby terapii genowej w zaburzeniach układu
+krążenia koncentrują się przede wszystkim
+naleczeniu choroby niedokrwiennej zarówno
+mięśnia sercowego, jak i kończyn. W terapii
+choroby wieńcowej z dużym powodzeniem
+prowadzi się próby kliniczne z transferem
+genów kodujących czynniki stymulujące angiogenezę, jak naczyniowe czynniki wzrostu
+śródbłonka (vascular endotelial growth factor
+— VEGF) czy czynnik wzrostu fibroblastów 4
+(fibroblast growth factor 4 — FGF-4). Transgen w wektorze adenowirusowym bądź plazmidowym dostarczany jest bezpośrednio
+w obszar niedokrwienia. Czynnik FGF-4 ma
+tę przewagę nad VEGF, że znacznie silniej
+stymuluje arteriogenezę, ten ostatni zaś
+wpływa przede wszystkim na powstawanie
+mniejszych naczyń krwionośnych.
+Prowadzone są także badania mające na
+celu zahamowanie procesu restenozy (ponownego zwężania tętnic) po przeprowadzonej angioplastyce. Stosuje się tu m.in. antysensowne oligonukleotydy oraz rybozymy
+(cząsteczki RNA o właściwościach katalitycznych), które obniżają ekspresję białek zaan-
+
+30 TERAPIA GENOWA 801
+
+gażowanych w cykl komórkowy, np. PCNA.
+Prowadzi to do zahamowania podziałów
+komórek mięśni gładkich naczyń krwionośnych, a tym samym do zatrzymania procesu
+restenozy po zabiegu chirurgicznym.
+
+Mniej optymistyczne są wyniki badań
+dotyczące genoterapii zmian miażdżycowych
+w naczyniach obwodowych. Mimo bardzo
+zachęcających rezultatów badań klinicznych
+I fazy, dotyczących transferu genów kodujących czynniki pobudzające proces angiogenezy w niedokrwionych kończynach, wyniki uzyskane w kolejnych etapach badań nie
+wskazują na jednoznaczny sukces terapeutyczny. Wynika to z trudności z uzyskaniem
+właściwego poziomu ekspresji czynnika pro-
+-angiogennego i odpowiednio długiego jego
+utrzymania, tak aby doszło do zainicjowania
+procesu angiogenezy. Zdaniem niektórych
+badaczy brak jednoznacznych sukcesów terapeutycznych może wynikać także z nieodpowiednio dobranych metod oceniających
+powodzenie zastosowanego leczenia.
+
+Innym podejściem genoterapii chorób
+naczyń obwodowych jest wszczepienie naczyń żylnych, które zostały poddane modyfikacji genetycznej ex vivo. Pacjentom chorującym na chorobę zarostowo-zakrzepową
+naczyń obwodowych przeszczepiano żyłę
+odpiszczelową, która przed wszczepieniem
+została przepłukana pod ciśnieniem roztworem oligonukleotydów blokujących czynnik
+transkrypcyjny E2F. Czynnik E2F jest jednym z podstawowych elementów cyklu komórkowego. Jego inaktywacja prowadzi do
+zatrzymania cyklu w fazie Gl, a tym samym
+do zahamowania dalszych faz cyklu i podziału komórki. Próby przedkliniczne z wykorzystaniem zwierząt laboratoryjnych wykazały,
+że zablokowanie czynnika transkrypcyjnego
+E2F poprawia drożność przeszczepionych
+naczyń krwionośnych. W badaniach klinicznych II fazy wykazano, że u pacjentów poddanych powyższej terapii doszło do zwiększenia drożności naczyń krwionośnych, a także
+redukcji stenozy do 40%. Wyniki uzyskane
+na tym etapie wymagają dalszego potwierdzenia w III fazie badań klinicznych, która
+obejmie znacznieliczniejszą grupę pacjentów.
+
+[Strona 802]
+
+802
+
+30 TERAPIA GENOWA
+
+W tab. 30.1 przedstawiono wektory stosowane w próbach przedklinicznych i klinicznych
+
+zmu. Stosując tę technikę uzyskano obiecujące wyniki u zwierząt laboratoryjnych.
+
+genoterapii chorób sercowo-naczyniowych.
+
+Oprócz klasycznej terapii genowej w chorobie niedokrwiennej serca prowadzone są
+także próby z zastosowaniem modyfikowanych genetycznie komórek prekursorowych
+nabłonka. Komórki takie izoluje się z krwi
+obwodowej, namnaża in vitro w odpowiednich warunkach, modyfikuje w celu uzyskania nadekspresji naczyniowych czynników
+wzrostu i wprowadza ponownie do organi-
+
+30.5.3
+
+Terapia genowa
+w hipercholesterolemii
+rodzinnej
+
+Hipercholesterolemia rodzinna jest choro-
+
+ba dziedziczoną autosomalnie dominująco,
+
+Tabela 30.1 Wektory stosowane w próbach przedklinicznych i klinicznych genoterapii chorób
+sercowo-naczyniowych (za Melo LG. i wsp. 2005)
+
+Wydajność | Utrzymywanie | Poziom | Komórki Potencjalne | Odpowiedź
+transferu się efektu ekspresji | docelowe ryzyko immunolo-
+
+giczna
+gospodarza
+
+nego _ |
+
+Niewirusowy
+
+Liposomy + krótkotrwałe + dzielące się cytotoksycz- | +
+kationowe i niedzielące się | ność
+Liposomy-HVJ | +++ krótkotrwałe ++ dzielące się cytotoksycz- | +
+i niedzielące się | ność
+Nagie pla- + krótkotrwałe + dzielące się cytotoksycz- | +
+zmidy i niedzielące się | ność
+Wirusowy
+Retrowirusy ++ przez całe życie | ++ dzielące się cytotoksycz- | +
+ność, onkogeneza
+Lentiwirusy +++ przez całe życie | +++ dzielące się cytotoksycz- | +
+i niedzielące się | ność, mutacja wirusowa
+Adenowirusy +++++ umiarkowane +++++ dzielące się cytotoksycz- | ++++
+i niedzielące się ność, reakcja
+zapalna
+Wirusy AAV +++ przez całeżycie | +++ dzielące się onkogeneza, | +
+i niedzielące się | mutacja
+wirusowa
+Wirus Herpes +++ długotrwałe +++ dzielące się cytotoksycz- | +++
+simplex i niedzielące się | ność, mutacja wirusowa
+o-wirus ++ krótkotrwałe +++ dzielące się cytotoksycz- | +++
+i niedzielące się | ność, mutacja wirusowa
+
+Przedrukowano z Trends in Molecular Medicine, vol. 11, 2005, Luis G. Melo, Alok S. Pachori, Massimiliano Gnecchi, Victor I.
+Dzau, Genetic therapies for cardiovascular diseases, s. 240—250, copyright 2005 za zgodą Elsevier. Reprinted from Trends
+in Molecular Medicine, vol. 11, 2005, Luis G. Melo, Alok S. Pachowi, Massimiliano Gnecchi, Victor I. Dzau, Genetic therapies
+for cardiovascular diseases, p. 240-250, copyright 2005, with permission of Elsevier.
+
+[Strona 803]
+
+należącą do grupy genetycznych defektów
+metabolicznych. Objawia się przedwczesnym
+rozwojem zmian miażdżycowych w naczyniach krwionośnych. Najczęstszym defektem
+molekularnym w tej chorobie jest mutacja
+genu kodującego białko receptorowe dla lipoprotein o niskiej gęstości (low density lipoproteins — LDL).
+
+W hipercholesterolemii rodzinnej terapia
+genowa ex vivo polega na pobraniu od pacjenta fragmentu tkanki wątroby (A), namnożeniu hepatocytów in vitro (B), wprowadzeniu
+do nich (za pomocą rekombinowanych retrowirusów) genu kodującego receptor dla LDL
+(C), a następnie podaniu zmodyfikowanych
+komórek do organizmu pacjenta poprzez
+żyłę krezkową; zabieg powtarza się trzykrotnie (D) (ryc. 30.4). Skuteczność tej metody
+nie jest jednak wysoka. W przeprowadzonej
+próbie klinicznej u 3 z 5 pacjentów zaobserwowano redukcję poziomu frakcji LDL od
+6 do 25%. W 4 miesiące po zastosowaniu tej
+terapii wykryto obecność transgenu w hepatocytach pobranych drogą biopsji u wszystkich pięciu pacjentów. Prowadzone są nadal
+intensywne badania z wykorzystaniem zwierzęcych modeli hipercholesterolemii. Być
+może pozwoli to w niedalekiej przyszłości
+
+30 TERAPIA GENOWA 803
+
+opracować bardziej wydajną metodę terapii
+genowej tej choroby.
+
+30.5.4
+
+Terapia genowa
+w chorobie Parkinsona
+
+Choroba Parkinsona należy do chorób degeneracyjnych ośrodkowego układu nerwowego. Jej przyczyną jest obumieranie neuronów znajdujących się w istocie czarnej jąder
+podstawnych, które są odpowiedzialne za
+wytwarzanie dopaminy, neuroprzekaźnika
+odgrywającego kluczową rolę, m.in. w koordynacji ruchowej i napięciu mięśniowym.
+Terapia genowa tej choroby rozwija się
+w trzech różnych kierunkach. We wszystkich próbach klinicznych wykorzystuje się
+wektory AAV. Pierwsze badania polegały na
+wprowadzeniu do jądra podwzgórza genu
+dekarboksylazy kwasu glutaminowego (glutamic acid decarboxylase — GAD), którego
+produkt białkowy uczestniczy w syntezie
+kwasu y-aminomastowego (GABA), głównego neuroprzekaźnika hamującego w całym
+układzie nerwowym. Prowadzi to do wyciszenia aktywności jądra podwzgórza i nor-
+
+Ryc. 30.4 Terapia genowa ex vivo w hipercholesterolemii rodzinnej.
+
+[Strona 804]
+
+804
+
+30 TERAPIA GENOWA
+
+malizacji funkcjonowania komórek zwojów
+podstawy mózgu. Dodatkowo do komórek
+istoty czarnej (grupa komórek w śródmózgowiu produkująca dopaminę) uwalniany jest
+glutaminian, który działa ochronnie na neurony wytwarzające dopaminę.
+
+Inną metodą w genoterapii tej choroby jest wprowadzenie genu dla neuturyny,
+która pobudza morfologiczne różnicowanie
+neuronów dopaminergicznych. Trzecim kierunkiem badań jest modyfikacja komórek
+ciała prążkowanego (corpus striatum) genem
+dekarboksylazy L-aminokwasów aromatycznych (aromatic L-amino acid decarboxylase
+- AADC), która konwertuje lewodope w dopamine. Dwie pierwsze opisane metody znajduja sie obecnie w II fazie badan klinicznych,
+ktéra ma na celu potwierdzenie ich bezpieczeństwa i skuteczności.
+
+30.5.5
+
+Terapia genowa w AIDS
+
+Obecnie terapia genowa anty-HIV rozwija się
+w kilku kierunkach. Opracowuje się strategie
+wprowadzania transgenu do hematopoetycznych komórek macierzystych, tak aby zróżnicowane komórki potomne były niewrażliwe
+na infekcję wirusową. Komórki prekursorowe modyfikuje się ex vivo, wykorzystując
+wektory retrowirusowe, a ostatnio także
+lentiwirusowe. Inną metodą jest dostarczanie transgenu bezpośrednio do podatnych
+na zakażenie wirusem HIV zróżnicowanych
+komórek, takich jak limfocyty T CD4 i CD8,
+aby je uodpornić na infekcję bądź uniemożliwić wirusowi HIV namnażanie się w ich
+wnętrzu. W tym celu modyfikuje się geny
+kodujące białka, które odgrywają kluczową
+rolę w cyklu replikacyjnym wirusa HIV. Są
+to m.in. białka receptorowe CD4, CXCR4,
+CCRS5 na powierzchni komórek gospodarza,
+które pozwalają wirusowi na związanie się
+z powierzchnią komórki; białka kofaktorowe
+umożliwiające integrację wirusa z komórką
+gospodarza; czynniki transkrypcyjne, np.
+NF-xB oraz ich inhibitory; naturalne czynniki przeciwwirusowe, np. interferon. Kolej-
+
+nym podejściem w terapii genowej anty-HIV
+jest wzmocnienie systemu odpornościowego
+organizmu poprzez jego immunizację antygenami wirusa HIV.
+
+30.5.6
+
+Terapia genowa w chorobie
+Huntingtona
+
+Przyczyną choroby Huntingtona jest obecność niestabilnej liczby powtórzeń sekwencji
+(CAG), na końcu 5' genu kodującego białko
+huntingtynę. Mutacja dynamiczna prowadzi
+do zaniku komórek nerwowych w jądrach
+podkorowych i korze mózgowej, co skutkuje
+mimowolnymi ruchami pląsawiczymi dotyczącymi przede wszystkim mięśni szyi, twarzy, kończyn górnych i tułowia.
+
+Jedyna prowadzona obecnie próba kliniczna terapii genowej w chorobie Huntingtona polega na uzyskaniu nadekspresji rzęskowego czynnika neurotroficznego (ciliary
+neuro trophic factor - CNTF). Wykazano, że
+białko to redukowało obumieranie neuronów ciała prążkowanego (corpus striatum)
+w różnych zwierzęcych modelach doświadczalnych choroby Huntingtona. W terapii
+uludzi wykorzystano zmodyfikowane genem CNTF komórki BHK (linia komórkowa wyprowadzona z nerki chomika), które
+zostały zamknięte w polimerowej kapsule
+utworzonej z półprzepuszczalnej błony. Tak
+przygotowane komórki wstrzyknięto podczas operacji do prawej bocznej komory mózgu 6 pacjentów. W próbie klinicznej, która
+trwała 2 lata, kapsułę wymieniano co 6 miesięcy. Metoda ta okazała się bezpieczna, ale
+poziom uwalniania rzęskowego czynnika
+neurotroficznego (CNTF) po 6 miesiącach
+nie we wszystkich leczonych przypadkach
+był zadowalający. W podobnych badaniach
+przeprowadzonych u naczelnych (Primates),
+w których do organizmu zwierzęcia każdorazowo wprowadzano 4 kapsuły, osiągnięto
+całkowitą korekcję fenotypu. W badaniach
+klinicznych u ludzi nie uzyskano tak dobrych wyników jak u zwierząt doświadczalnych, gdyż miały one na celu zbadanie przede
+
+[Strona 805]
+
+wszystkim bezpieczeństwa tej metody i dlatego każdorazowo implantowano tylko jedną
+kapsułę z komórkami BHK. Dopiero II faza
+badań klinicznych umożliwi ocenę potencjału terapeutycznego terapii genowej wykorzystującej gen CNTF.
+
+30.5.7
+
+Terapia genowa
+w chorobie Alzheimera
+
+Choroba Alzheimera jest najczęściej diagnozowaną chorobą neurodegeneracyjną u ludzi.
+Na poziomie mikroskopowym stwierdza się
+występowanie blaszek amyloidowych zbudowanych z B-amyloidu (tzw. blaszki starcze) oraz wewnątrzkomórkowych splotów
+neurofibrylarnych utworzonych z agregatów
+zmienionego białka Tau. W wyniku zaniku
+tkanki nerwowej, głównie w okolicach skroniowo-potylicznych oraz czołowych, u pacjentów obserwuje się utratę pamięci, zdolności uczenia się, oceny sytuacji i myślenia
+abstrakcyjnego.
+
+Pierwsza próba kliniczna genoterapii choroby Alzheimera odbyła się w 2001 r. Polegała ona na wprowadzeniu do przodomózgowia zmodyfikowanych genetycznie komórek,
+które dzięki wprowadzonemu transgenowi
+wykazywały ekspresję czynnika wzrostu
+nerwów (NGF). Na modelach zwierzęcych
+wykazano, że NGF stymuluje funkcjonowanie neuronów cholinergicznych. Czynnik
+wzrostu nerwów hamował również śmierć
+komórek nerwowych myszy z nadekspresją
+amyloidu oraz poprawiał pamięć i zdolności
+uczenia się u szczurów laboratoryjnych dotkniętych chorobą neurodegeneracyjną.
+
+W pierwszej fazie badań klinicznych
+leczeniu poddano 8 pacjentów z chorobą
+Alzheimera. Drogą biopsji pobrano od nich
+fibroblasty skóry, do których za pomocą
+wektora retrowirusowego wprowadzono gen
+kodujący NGF. Następnym etapem była przeprowadzona podczas zabiegu chirurgicznego
+implantacja zmodyfikowanych komórek do
+jądra podstawnego Meynerta, obszaru, który
+u pacjentów z chorobą Alzheimera zawiera
+
+30 TERAPIA GENOWA 805
+
+zdegenerowane ciała neuronów cholinergicznych. W ciągu 5 lat po zastosowanej terapii
+u pacjentów stwierdzono znaczny wzrost aktywności metabolicznej w obrębie kory mózgowej. Niedawno rozpoczęto kolejne próby
+kliniczne genoterapii choroby Alzheimera.
+Polegają one na bezpośredniej iniekcji do mózgu genu kodującego NGF w wektorze AAV.
+Ponieważ wyniki I fazy badań klinicznych są
+obiecujące, planuje się już przeprowadzenie
+wieloośrodkowych badań II fazy.
+
+30.6
+
+Terapia genowa
+[linie 37307–37505]
+nowotworów
+
+30.6.1
+
+Immunoterapia
+
+W przypadku większości nowotworów dochodzi do ekspresji antygenów guza, antygeny te są jednak na tyle słabe, że organizm jest
+wobec nich tolerancyjny. Niektóre nowotwory mają także aktywne mechanizmy unikania odpowiedzi immunologicznej organizmu
+człowieka. W obu przypadkach, poprzez
+transfer odpowiednich genów, próbuje się
+ominąć te przeszkody.
+
+Jedną z możliwości jest taka manipulacja
+genetyczna, która ma uczynić guz bardziej
+„widocznym” dla układu odpornościowego.
+Taki efekt można uzyskać dzięki zmodyfikowaniu komórek nowotworowych genami kodującymi cytokiny stymulujące aktywność
+układu immunologicznego (np. czynnik nekrozy nowotworów a — TNFa, interferon a
+— INF-a) lub cząsteczki kostymulujace (np.
+ligand CD40). Prowadzi to do zwiekszenia
+poziomu prezentacji antygenów nowotworowych i w efekcie do rekrutacji specyficznych
+dla nowotworu limfocytów T i B. Podobny
+efekt można uzyskać modyfikując za pomocą
+lizatów guza, peptydów nowotworowych czy
+kwasów nukleinowych (RNA, DNA) komórki prezentujące antygen (antigene presenting
+cells - APC).
+
+[Strona 806]
+
+806
+
+30 TERAPIA GENOWA
+
+Sposobem na pokonanie zdolności nowotworów do hamowania rekrutacji efektorowych limfocytów T jest namnożenie ex vivo
+odpowiedniej subpopulacji tych komórek pobranych od pacjenta i ponowne wprowadzenie ich do organizmu. Dodatkową specyficzność nowotworową można uzyskać poprzez
+transfer i ekspresję odpowiednich białek receptorowych. Aby uzyskać chemotaksję efektorowych limfocytów T do miejsca lokalizacji
+guza, modyfikuje się je genami kodującymi
+receptory dla chemokin wydzielanych przez
+nowotwór. Z kolei w celu utrzymywania się
+komórek T w niekorzystnym mikrośrodowisku guza wprowadza się geny zapobiegające
+apoptozie, starzeniu się komórek lub zapewniające autokrynny wzrost limfocytów T.
+
+30.6.2
+
+Wirusy onkolityczne
+
+Innym rozwijającym się obszarem genoterapii nowotworów jest zastosowanie onkolitycznych wektorów wirusowych. Wektory takie wybiórczo niszczą komórki, które
+uległy transformacji nowotworowej, ale są
+
+nieszkodliwe dla prawidłowych tkanek organizmu. Są one „zaprojektowane” w taki sposób, aby selektywnie transfekować komórki
+nowotworowe. Namnożone wiriony, uwalniając się, niszczą zainfekowaną komórkę
+nowotworową i atakują kolejne.
+
+W pierwszej próbie klinicznej użyto adenowirusów pozbawionych genu E1B (ONYX-
+-015), które miały się selektywnie mnożyć
+tylko w komórkach pozbawionych funkcjonalnego białka p53, co jest cechą większości
+znanych nowotworów. Dotychczas przeprowadzono przynajmniej 15 prób klinicznych
+z wykorzystaniem wektora ONYX-015. Innym wykorzystywanym wirusem jest zmutowany wirus Herpes simplex. Wektor skonstruowany na bazie wirusa H. simplex (HF10)
+zastosowano m.in. w próbie klinicznej terapii
+zaawansowanego raka piersi i raka trzustki.
+Efektem tej terapii była apoptoza zainicjowana w 30-100% komórek nowotworowych.
+Inne cele terapeutyczne prowadzonych prób
+klinicznych genoterapii nowotworów przedstawiono w tab. 30.2. Skuteczność zastosowania wirusów onkolitycznych sprawdzała
+się także w terapii łączonej z chemio- i radioterapią.
+
+terapeutyczne
+
+Tabela 30.2 Wirusy onkolityczne wykorzystywane w próbach klinicznych i ich cele
+
+Modyfikowany wiru Cel terapeutyczny Sposób podania | Fazabadań
+klinicznych
+I
+
+HF10 Herpes simplex rak piersi, rak trzustki bezpośredni*
+| ONYX-015 | adenowirus | rak trzustki | bezpośredni* I/II
+| ONYX-015 | adenowirus | rak okrężnicy | dożylny Il
+| ONYX-015 | adenowirus | rak wątroby dożylny [I
+| ONYX-015 | adenowirus | rak głowy i szyi bezpośredni* Il
+| ONYX-015 | adenowirus | rakjajnika 7 | dożylny |
+| OncoVexGM-CSF | Herpes simplex rak piersi, czerniak bezpośredni* I
+a 716 | Herpes simplex |g uzy mózgu | bezpośred ni* Il
+| Pv701 | Wirus choroby Newcastle | guzy lite | dożylny I
+
+* do tkanek guza
+
+— foreword. Curr Cancer Drug Targets 2005, 11, 240-250.
+
+Przedrukowano za zgodą Bentham Science Publishers Kasuya H., Takeda S., Shimoyama S. et al. Oncolytic virus therapy
+
+[Strona 807]
+
+30.6.3
+
+Kompensacja mutacji
+
+Inhibicja funkcji onkogenu i przywrócenie
+funkcji genu supresorowego to zasadnicze
+cele kompensacji mutacji. Cele te mogą być
+osiągnięte dzięki:
+
+e zatrzymaniu procesu transkrypcji
+określonego onkogenu w wyniku zastosowania antysensownych  oligonukleotydów tworzących strukturę
+podwójnej helisy (tzw. DNA tripleksowy),
+
+e zatrzymaniu procesu translacji na matrycy mRNA określonego onkogenu
+w wyniku zastosowania antysensownego oligonukleotydu, który hybrydyzuje z kodującymi sekwencjami
+mRNA onkogenu (np. oligonukleotyd
+komplementarny do K-ras mRNA),
+
+e zablokowaniu funkcji onkoprotein
+w komórkach docelowych poprzez
+wykorzystanie _ ,,wewnatrzkomorkowych przeciwciał”, które blokują działanie onkoprotein,
+
+e zastąpieniu form zmutowanych genów
+supresorowych, np. P53, RBI (retinoblastoma), forma niezmutowaną (dziką) tych genów.
+
+Przykłady strategii kompensacji mutacji
+
+przedstawiono w tab. 30.3.
+
+30 TERAPIA GENOWA 807
+
+30.6.4
+
+Terapia genowa stosująca
+geny samobójcze
+
+Terapia genowa z zastosowaniem genów samobójczych jest przykładem molekularnej
+chemioterapii nowotworów. Na tym polu
+zanotowano już wiele sukcesów w eksperymentach prowadzonych na modelach zwierzęcych. Próby kliniczne z zastosowaniem tej
+terapii u ludzi obejmują:
+
+e transfer genu kinazy tymidynowej
+Herpes simplex (HSV-tk) w celu wywołania podatności na acyklowir, gancyklowir i walacyklowir,
+
+e transfer bakteryjnego genu deaminazy
+cytozynowej w celu wywołania wrażliwości na 5-fluorocytozynę,
+
+e transfer genu cytochromu P450 2B
+(CYP2B) ssaka w celu wzmocnienia
+chemowrażliwości na cyklofosfamid.
+
+Geny samobójcze (suicidal genes) kodują
+
+białka przekształcające podany do krwiobiegu nietoksyczny substrat (prolek) do toksycznych metabolitów indukujących proces
+apoptozy. Toksyczne produkty powstające w
+zmodyfikowanych genetycznie komórkach
+mogą przenikać poza ich obręb i niszczyć sąsiednie niezmodyfikowane komórki. Jest to
+tzw. efekt sąsiedztwa (bystander effect) (ryc.
+30.5).
+
+Curiel D.T., RENE 1999)
+
+Tabela 30.3 Strategie kompensacji mutacji w wybranych nowotworach (za Gómez-Navarro J.,
+
+| zastąpienie genu | adenowirus rak niedrobnokomórkowy płuca, rak sutka, rak prostaty
+RB zastąpienie genu adenowirus | rak pęcherza moczowego
+BRCA1 | zastąpienie genu retrowirus rak jajnika
+K-Ras | antysens 7 retrowirus rak niedrobnokomórkowy płuca
+c-myc antysens retrowirus rak piersi, rak prostaty 7
+c-fos antysens retrowirus rak piersi, rak prostaty
+
+Przedrukowano z European Journal of Cancer, vol. 35, 1999, J. Gómez-Navarro, D.T. Curiel, J.T. Douglas, Gene therapy for
+Cancer, s. 867-885, copyright 1999 za zgodą Elsevier. Reprinted from European Journal of Cancer, vol. 35, 1999, J. Gómez-
+-Navarro, DT. Curiel, J.T. Douglas, Gene therapy for Cancer, p. 867-885, copyright 1999, with permission of Elsevier.
+
+[Strona 808]
+
+30 TERAPIA GENOWA
+
+APOPTOZA<__ e
+
+—
+
+lek (toksyna)
+
+<>)
+Ds
+
+APOPTOZA
+
+lek (toksyna)
+CK
+
+APOPTOZA
+
+Ryc.30.5 Efekt sąsiedztwa obserwowany w „samobójczej” terapii genowej nowotworów.
+
+Jedną z prób klinicznych, po której spodziewano się przełomowych wyników w terapii glejaków mózgu, były badania III fazy
+wykorzystujące układ: kinaza tymidynowa/
+gancyklowir. Transgen w wektorze retrowirusowym wprowadzany był podczas zabiegu
+chirurgicznego. Porównując uzyskane wyniki z grupą kontrolną (zabieg chirurgiczny i radioterapia) nie zanotowano istotnych
+korzyści terapeutycznych. Według autorów
+może to wynikać z niskiego poziomu transdukcji komórek nowotworowych. Innym
+przykładem badań z zastosowaniem genów
+samobójczych jest terapia raka prostaty wykorzystująca gen kinazy tymidynowej lub
+łączona terapia kinaza tymidynowa/deaminaza cytozynowa.
+
+30.7
+Pytania
+[linie 43373–43833]
+jednostki w kontekście
+badań genetycznych
+
+35.4.1
+
+Swiadoma zgoda osoby
+na wykonanie badan
+genetycznych
+
+Wyrazem praw człowieka i uznania jego autonomii jest konieczność uzyskania niezależnej (swobodnej), świadomej i odpowiednio
+udokumentowanej zgody na „badania, leczenie lub diagnozowanie dotyczące genomu
+jednostki ludzkiej” czy też „jakąkolwiek interwencję profilaktyczną, diagnostyczną i terapeutyczną” lub ogólnie „interwencję me-
+
+[Strona 891]
+
+35 PRAWNE ASPEKTY PORADNICTWA GENETYCZNEGO 891
+
+dyczną (DGLiPC, art. 5; EKB, art. 5; KPPUE,
+art. 3, ust. 2; DBiPC, art. 6). Zgoda ta dotyczy tylko konkretnej interwencji i może być
+w każdej chwili wycofana (EKB, art. 5) w „dowolnym czasie oraz z dowolnej przyczyny,
+bez stawiania takiej osoby w niekorzystnej
+sytuacji bądź powodowania jakichkolwiek
+niedogodności po jej stronie” (DBiPC, art. 6,
+ust. 1). Szczególnie wiele miejsca poświęca się
+konieczności itrybowi uzyskiwania zgody
+od przedstawiciela ustawowego, odpowiedniej władzy lub innej osoby czy też instytucji
+mającej takie uprawnienia, reprezentującej
+małoletniego (z uwzględnieniem jego stanowiska zależnie od wieku i stopnia dojrzałości;
+EKB, art. 6, ust. 2; Pd-EKB-4, art. 12, ust. 1)
+lub osobę dorosłą, jeśli nie jest ona zdolna do
+wyrażania zgody, „z powodu zaburzeń psychicznych, choroby lub innych podobnych
+powodów” (EKB, art. 6, ust. 3; Pd-EKB-4,
+art. 12, ust. 2). Tak czy inaczej osoby nie mogące samodzielnie wyrazić zgody powinny,
+jeśli to możliwe, uczestniczyć w procesie podejmowania decyzji (EKB, art. 6, ust. 3; Pd-
+-EKB-4, art. 12, ust. 2, zd. 3). Wydaje się, że
+mimo to osobom niezdolnym do wyrażenia
+zgody pozostawia się prawo zgłoszenia sprzeciwu wobec badań diagnostycznych. Nie jest
+to zawarte w art. 6 EKB, lecz w art. 17, ust. 1,
+p. (W) rozdz. V „Badania naukowe”, co wydaje się niedopatrzeniem, gdyż prawo do sprzeciwu powinno dotyczyć bardziej istotnych
+dla takich osób interwencji medycznych niż
+udział w badaniach naukowych. Przedstawiciel prawny osoby niezdolnej do wyrażenia
+zgody może tę zgodę wycofać z uwzględnieniem zasad opisanych powyżej. Konieczne
+jest uszanowanie woli każdej osoby, wyrażonej przed ewentualną utratą przez nią zdolności do podpisania świadomej zgody na badania (Pd-EKB-4, art. 12, ust. 2, zd. 2).
+Proces wyrażania woli przez osobę badaną lub poddawaną eksperymentowi medycznemu musi także spełniać kryteria dotyczące
+sposobu pobierania, obróbki, wykorzystania
+i przechowywania próbek biologicznych oraz
+przetwarzania wyników badań na potrzeby
+indywidualne osoby badanej, eksperymentu
+naukowego, badań epidemiologicznych, po-
+
+pulacyjnych itp. Zasady te określone są najbardziej szczegółowo w Międzynarodowej
+deklaracji UNESCO o danych genetycznych
+człowieka (DDGO).
+
+Pd-EKB-4 w art. 13 przewiduje możliwość przeprowadzenia badań ważnych
+z punktu widzenia interesu innych członków
+rodziny u osób nie mogących samodzielnie
+wyrazić na to zgody, z zachowaniem następujących warunków: wynik badania musi
+mieć [jednak] istotne znaczenie dla zdrowia lub planów prokreacyjnych tych osób
+(ust. a); nie można takiej wiedzy uzyskać bez
+wykonania tego badania (ust. b); badanie nie
+pociąga za sobą ryzyka i nie stanowi obciążenia dla osoby badanej (ust. c); wynik nie
+wywoła znaczących implikacji dla dalszego
+życia i prywatności osoby badanej (ust. d);
+badanie zostanie wykonane za zgodą prawnego przedstawiciela tej osoby, mogącego tę
+zgodę również wycofać (ust. e), a osobie badanej pozostawione jest prawo do sprzeciwu
+wobec badań (ust. f). Postanowienia art. 13
+są istotne zwłaszcza wówczas, gdy krewnym,
+działając w ich interesie, trzeba byłoby zaproponować badania bardziej obciążające lub
+długotrwałe, co należy uwzględnić i udokumentować w procesie starania się o zgodę na
+badania osoby niezdolnej do samodzielnego
+wyrażenia woli.
+
+Uzyskanie zgody na wykonanie badań
+diagnostycznych lub testów genetycznych
+powinno być poprzedzone przekazaniem
+osobom, których dotyczy interwencja, „odpowiednich informacji o celu i naturze interwencji, a także jej konsekwencjach i ryzyku”
+(EKB, art. 5) [„dostatecznych informacji”
+— DBiPC, art. 6, ust. 1] w ramach poradnictwa genetycznego o charakterze nienakłaniającym (poradnictwo adyrektywne)
+(EKB, art. 12; Pd-EKB-4; art. 8). Informacje
+takie powinien otrzymać również przedstawiciel prawny osoby niezdolnej do wyrażenia zgody (EKB, art. 6, ust. 4 Pd-EKB-4; art.
+11). Udzielenie zgody przez chorego lub jego
+przedstawiciela prawnego na badanie lub test
+[jakiegokolwiek typu] nie może się wiązać
+ze stosowaniem w tym celu zachęty finansowej (DGGC, art. 8, ust. a).
+
+[Strona 892]
+
+892
+
+35 PRAWNE ASPEKTY PORADNICTWA GENETYCZNEGO
+
+KEL w art. 51h poświęconemu ludzkiemu genomowi, ust. 2, poza uzyskaniem od
+pacjenta zgody obliguje się lekarza dodatkowo do „umożliwienia mu [pacjentowi] konsultacji genetycznej”. Jest to bardzo ważne
+sformułowanie, choć nie zawsze przestrzegane przez lekarzy w Polsce. W komentarzach
+do tych zapisów szeroko podnosi się jednak
+możliwości percepcji osoby informowanej
+z koniecznością dostosowania się do niej, aby
+zgoda była wyrażana przez tę osobę rzeczywiście świadomie z punktu widzenia zrozumienia tych informacji. Zasady te należą
+również do kanonów poradnictwa genetycznego. Problem odpowiedniej percepcji może
+się odnosić do osób sprawnych intelektualnie,
+lecz z określonymi zaburzeniami w obrębie
+narządów zmysłów. W piśmiennictwie z tego
+zakresu podnosi się problem sposobu przekazywania i tłumaczenia informacji osobom
+głuchoniemym (zaleca się dla nich informacje w formie pisemnej) lub niewidomym
+(informacje słowne lub dźwiękowe z powodu
+niemożności korzystania z materiałów drukowanych), co może dotyczyć wielu chorób
+uwarunkowanych genetycznie. „Nieważne
+jest oświadczenie woli złożone przez osobę,
+która z jakichkolwiek powodów znajdowała
+się w stanie wyłączającym świadome albo
+swobodne powzięcie decyzji i wyrażenie
+woli. Dotyczy to w szczególności choroby
+psychicznej, niedorozwoju umysłowego albo
+innego, chociażby nawet przemijającego, zaburzenia czynności psychicznych” (KC, art.
+82). Jakiekolwiek niedociągnięcia mogą więc
+pociągać za sobą określone następstwa prawne zarówno dla lekarzy, jak i zakładów opieki
+zdrowotnej.
+
+Choroby uwarunkowane genetycznie
+w skrajnych przypadkach mogą się wiązać
+z koniecznością przeprowadzenia nagłej interwencji medycznej niezbędnej z punktu
+widzenia korzyści zdrowotnych bez uzyskania zgody osoby zainteresowanej (EKB, art.
+8), ale też „należy brać pod uwagę życzenia
+pacjenta wyrażone w okresie poprzedzającym interwencję medyczną bez możliwości
+wyrażenia na nią zgody” (EKB, art. 9) [lub
+zgłoszenia sprzeciwu]. W różnych opraco-
+
+waniach prawnych omawiany jest problem
+zgody ,,dorozumianej” (konkludentnej, domniemanej). Zależy to niekiedy od prostoty
+i powszechności badania. Przykładowo, nie
+podpisujemy każdorazowo zgody na badanie
+morfologii krwi. W bardziej złożonych sytuacjach, np. podczas hospitalizacji, pacjent
+może być poddawany licznym interwencjom
+medycznym składającym się na określoną
+procedurę szpitalną. Można domniemywać,
+że pacjent rozumiejąc powody hospitalizacji
+i godząc się na nią, godzi się także na przeprowadzenie np. diagnostyki wchodzącej
+w skład procedury bez udzielania każdorazowo zgody na kolejne badania. Należy podkreślić, że zgoda na interwencję medyczną nie
+oznacza automatycznej zgody (domniemanej
+lub dorozumianej) na przetwarzanie danych
+będących efektem interwencji lub badań, na
+co osoba, której te dane dotyczą, musi złożyć
+odrębną zgodę (oświadczenie) (ODO, art. 7,
+ust. 5).
+
+Wszystkie postanowienia dotyczące
+sposobu uzyskiwania i wycofywania zgody
+dotyczą także eksperymentów i badań naukowych. Zastrzega się jednak dodatkowo,
+ze badania takie mogą być prowadzone na
+ludziach, jeśli nie ma metody alternatywnej o porównywalnej skuteczności. Ryzyko
+podejmowane przez osobę badaną musi być
+niewielkie i nie może pozostawać w dysproporcji do potencjalnych korzyści z badań
+(m.in. także UZL, rozdz. 4: „Eksperyment
+medyczny”, art. 21, ust. 3). Uzyskana zgoda
+dotyczy tylko konkretnego badania, a osoba
+badana jest informowana o swoich prawach
+iprawnie gwarantowanej ochronie (EKB,
+art. 16). Osoby niezdolne do wyrażenia zgody mogą być poddane takim badaniom tylko
+wówczas, gdy dodatkowo „oczekiwane wyniki badań są w stanie zapewnić rzeczywistą i bezpośrednią korzyść dla ich zdrowia”,
+a „badania o porównywalnej skuteczności
+nie mogą być przeprowadzone na osobach
+posiadających zdolność wyrażania zgody”
+[EKB, art. 17, ust. ii oraz iii; DBiPC, art. 7,
+ust. (b)]. Eksperyment może mieć charakter
+leczniczy lub badawczy (UZL, art. 21, ust.1);
+może dotyczyć ludzi chorych lub zdrowych
+
+[Strona 893]
+
+35 PRAWNE ASPEKTY PORADNICTWA GENETYCZNEGO 893
+
+(art. 21, ust. 3). Zgoda na udział w eksperymencie badawczym może mieć charakter
+ustny, lecz musi być wówczas wyrażona
+w obecności dwóch świadków, co zostaje
+odnotowane w dokumentacji lekarskiej osoby poddanej eksperymentowi (art. 25, ust. 1).
+Zgoda może być w każdej chwili wycofana
+przez osobę uczestniczącą w eksperymencie,
+co skutkuje jego przerwaniem. Podobnie jest
+w przypadkach zagrożenia dla zdrowia chorego [pogorszenia się stanu zdrowia w wyniku eksperymentu] oraz zagrożeń dla życia
+lub zdrowia osoby biorącej udział w eksperymencie (art. 27, ust. 1-3). W zapisach tych
+rozróżnia się „chorego” i „osobę”, lecz tylko
+w odniesieniu do chorego nie mówi się o zagrożeniach życia, co jest chyba niedopatrzeniem legislacyjnym.
+
+W porównaniu z treścią dokumentów
+międzynarodowych, zwłaszcza w kontekście
+badań genetycznych oraz z punktu widzenia
+interesów osób niezdolnych do wyrażania
+zgody, UZL nie zawiera wszystkich zaleceń,
+między innymi prawa do zgłoszenia sprzeciwu przez te osoby na włączenie do badania
+(eksperymentu), choć uwzględnia konieczność uzyskania zgody od osoby całkowicie
+ubezwłasnowolnionej, jeśli ta może świadomie wypowiedzieć opinię na temat swojego
+udziału w eksperymencie. Jest zatem w tych
+zapisach pewna niekonsekwencja.
+
+Istnieje możliwość przeprowadzenia
+badania, jeśli może się ono przyczynić do
+znacznego postępu wiedzy o chorobie i stanie klinicznym osoby badanej, przynieść
+korzyść jej lub innym osobom tej samej kategorii wiekowej albo dotkniętych tą samą
+chorobą, zaburzeniami lub też o podobnym
+stanie zdrowia, przy minimalnym ryzyku
+i obciążeniach dla osoby poddanej badaniom
+(EKB, p. 2, ust. i oraz ii). Zapis ten zakłada
+więc występowanie pewnej „solidarności
+grupowej”, w tej kwestii. Wszystkie badania powinny być wszechstronnie oceniane
+oraz zatwierdzane od strony merytorycznej
+i etycznej przez właściwą instytucję (EKB,
+art. 16, p. iii). Należy uznać, że w naszych
+warunkach rolę tę spełniają odpowiednie komisje bioetyczne powoływane na mocy UZL
+
+(art. 29). Postęp naukowy, rozwój praktyk
+medycznych i nowych technologii powinien
+maksymalizować korzyści dla uczestników
+badań [pacjentów] i minimalizować wszystkie potencjalne ponoszone przez nich szkody
+(DBiPC, art. 4).
+
+35.4.2
+
+Ochrona danych
+osobowych ze szczególnym
+uwzględnieniem charakteru
+informacji genetycznych
+
+Podstawowe definicje dotyczące identyfikacji osoby fizycznej, jej danych osobowych, gromadzenia ich zbiorów, sposobów
+przetwarzania, zabezpieczania, usuwania
+i administrowania zawarte są w art. 6 oraz
+7 ODO oraz w p. 1 REK-(97)5-RE, w której
+wyrażenie „dane dotyczące zdrowia” odnosi
+się „również do danych mających oczywisty
+i ścisły związek ze zdrowiem oraz z danymi
+genetycznymi. Wszelkiego rodzaju „dane
+genetyczne” odnoszą się do cech dziedzicznych osoby lub mających związek z takimi
+cechami stanowiącymi dziedzictwo grupy
+spokrewnionych osób. Odnosi się to również
+do wszelkich danych dotyczących wymiany
+informacji genetycznej (genów) danej osoby
+lub jej następców genetycznych, w związku zwszelkimi aspektami stanu zdrowia
+lub choroby, niezależnie od tego, czy ma
+ona [choroba] charakter dający sie zidentyfikować. Następstwo genetyczne składa się
+z podobieństw genetycznych wynikających
+z prokreacji i należących do dwóch lub więcej
+osób (jednostek) (REK-(97)5-RE, p. 1). Przetwarzanie danych o „kodzie genetycznym”,
+wymienionych wśród innych typów danych
+wrażliwych (sensytywnych), jest zabronione,
+jeśli nie są spełnione ku temu specjalne warunki co do zachowania poufności tych danych (ODO, art. 27), a ich ujawnienie wbrew
+tym postanowieniom grozi sankcjami karnymi (art. 49, ust. 2). Dane genetyczne mogą
+być gromadzone i przetwarzane w celach
+
+[Strona 894]
+
+894
+
+35 PRAWNE ASPEKTY PORADNICTWA GENETYCZNEGO
+
+prewencyjnych, diagnostycznych, terapeutycznych oraz naukowych (REK-(97)5-RE),
+w tym także badań epidemiologicznych
+i opracowań statystycznych. Dopuszcza się
+gromadzenie i przetwarzanie danych również w innych celach, gdy decyduje o tym
+interes publiczny, konieczność zapobieżenia
+niebezpieczeństwu lub ścigania przestępstwa
+(REK-(97)5-RE, p. 4.3).
+
+Prawo do prywatności i poufności będące podstawowym prawem człowieka (DBiPC,
+art. 9; REK-10) dotyczy nie tylko dostępu do
+jego danych osobistych, w tym także informacji dotyczących stanu zdrowia lub innych
+danych medycznych i diagnostycznych (EKB
+art. 10, ust. 1 oraz 2), lecz obejmuje również
+ochronę próbek biologicznych oraz nośników, sposobu i celu przetwarzania informacji
+umożliwiających identyfikację osoby, od której pochodzą (KPPUE, art. 8, ust. 2; DGLiPC,
+art. 7). Za „próbki biologiczne” uznano różny materiał biologiczny niezależnie od jego
+pochodzenia, zawierający m.in. informacje
+genetyczne (genetic data) lub proteomiczne
+(proteomic data), stanowiący o charakterystycznym wizerunku (make-up) jednostki
+(próbki krwi, tkanek, komórek, kwasów
+nukleinowych , osocza itd.) (DDGC, art. 1,
+ust. c, p. iv).
+
+Przestrzeganie wszystkich wymienionych
+zasad zabezpiecza jednostki przed dyskryminacją nie tylko z powodu ich dziedzictwa
+genetycznego, ale chroni także te jednostki,
+ich rodziny lub grupy [np. etniczne] przed
+stwarzaniem niekorzystnej dla nich sytuacji
+lub dyskryminacją w kontekstach klinicznych, wsferze zatrudnienia, ubezpieczeń,
+dostępu do integracji społecznej i możliwości ogólnego dobrego życia (REK-11; DDGC,
+art. 14, ust. a-b). Osoby realizujące badania
+i tworzące politykę zdrowotną powinny być
+szczególnie wrażliwe na ryzyko tworzenia
+stereotypów i stygmatyzacji na tle etnicznym (REK-12).
+
+Każdy ma prawo do zapoznania się
+z wszelkimi dotyczącymi go informacjami
+oraz uzyskania wiedzy na temat sposobu
+wykorzystania, przechowywania i utylizacji pobranych próbek biologicznych, a także
+
+zabezpieczenia wyników i zakresu przetwarzania wszelkiego typu informacji niepozwalających na identyfikację jednostki. Dotyczy
+to także zapewnienia osobie zainteresowanej
+możliwości zapoznania się ze wszelkimi regulacjami prawnymi tych zagadnień. Dopóki
+nie zostaną nieodwracalnie zatarte wszelkie
+możliwości powiązania danych genetycznych
+lub próbek biologicznych z konkretną osobą,
+konieczna jest jej zgoda na przetwarzanie
+tych danych, również w celach naukowych.
+W przypadku zatarcia takiego związku (ODO
+oraz REK-(97)5-RE wprowadzają pojęcie
+anonimizacji danych), bez zbędnej zwłoki,
+dane oraz próbki po ich wykorzystaniu mogą
+być, przy zachowaniu nadal rygorystycznych
+reguł, przedmiotem wymiany między zainteresowanymi instytucjami lub państwami.
+Jeśli związek taki, uzasadniony celami badań
+naukowych, musi być zachowany, próbki
+należy przechowywać z zachowaniem zasad
+poufności (REK-(97)5-RE; DDGC, art. 14,
+ust. cze). Zgoda każdej osoby na wszelkie
+czynności dotyczące jej danych osobowych
+musi być wyrażona swobodnie, wyraźnie
+i świadomie (REK-(97)5-RE, p. 6.1).
+Przetwarzanie danych powinno być rzetelne i zgodne z obowiązującymi przepisami
+(REK-(97)5-RE, p. 4.1). Przestrzeganie tych
+zasad podlega kontroli niezależnego organu
+(KPPUE, art. 8). Zwraca się uwagę na szczególne znaczenie poufności tych informacji
+genetycznych, które umożliwiają identyfikację osoby badanej w procesie przetwarzania i przechowywania danych lub próbek biologicznych oraz wyrażania przez nią
+zgody na takie czynności (DGLiPC, art. 7;
+REK-(97)5-RE; DDGC, art. 6, ust. d). Ograniczenia poufności i zasady wyrażania zgody na ujawnienie informacji genetycznych
+mogą być nakazane wyłącznie przez prawo
+[i] zpowodów najwyższej wagi [»społecznych, w związku z bezpieczeństwem publicznym itp.«) (DGLiPC, art. 9). Jeśli prawo nie
+stanowi w określonych sytuacjach inaczej,
+zgoda na przetwarzanie danych może być
+przez jednostkę cofnięta bez żadnych dla niej
+konsekwencji. Dane i próbki biologiczne nie
+mogą być wówczas wykorzystywane dopóty,
+
+[Strona 895]
+
+35 PRAWNE ASPEKTY PORADNICTWA GENETYCZNEGO 895
+
+dopóki nie nastąpi nieodwracalne zatarcie
+możliwości ich powiązania z danymi personalnymi (DDGC, art. 9, ust. a—c; art. 13).
+
+Z cytowanych dokumentów nie wynika jednoznacznie (co nie dla każdego musi
+być oczywiste), że jako poufne powinny
+być traktowane informacje o samym fakcie
+poddania się badaniom przez osobę zainteresowaną, jak i o zakresie tych badań, niezależnie od ich wyników.
+
+Prawo do prywatności informacji dotyczących stanu zdrowia pacjenta może być
+jednak w pewnym stopniu i w szczególnych
+sytuacjach ograniczone na mocy wewnętrznych przepisów sygnatariuszy EKB, zwłaszcza gdy wymaga tego interes pacjenta (art. 10,
+ust. 3).
+
+Zasada autonomii pacjenta (osoby badanej) pozwala mu także wyrazić wolę „niewiedzy” o stanie własnego zdrowia, informacji
+z tym związanych, także o wynikach badań
+lub testów genetycznych i wypływających
+znich wnioskach (konsekwencjach) (EKB,
+art. 10, ust. 1 oraz 2; REK-10; DGLiPC, art. 5,
+ust. c).
+
+W analizowanych dokumentach wymienionych w podrozdz. 35.2 pewnego rodzaju
+niedomówieniem jest pominięcie ryzyka
+wymiany próbek biologicznych, których
+identyfikacja nie jest możliwa, lecz posiadających indywidualny, niepowtarzalny profil
+genetyczny (np. próbki DNA). Istnieje zatem
+potencjalne ryzyko krzyżowego łączenia informacji z baz, w których dane personalne
+pacjenta są dostępne wraz z jego profilem genetycznym pochodzącym z próbki biologicznej wykorzystanej do innych celów, z profilem próbki uznanej za „anonimową”, lecz
+umożliwiającej nadal wsteczne odtworzenie
+danych personalnych pacjenta. W dobie informatyzacji działania takie niekoniecznie
+wymagałyby „nieproporcjonalnego nakładu
+czasu i działań”, co ma być jednym z kryteriów anonimowości danych (REK-(97)5-RE,
+p. 1. zd. 1).
+
+Szczególną uwagę poświęca się próbkom
+biologicznym pobranym zarówno in vivo, jak
+i post-mortem pomocnym w postępowaniu
+kryminalistycznym, cywilnym (np. w spra-
+
+wach o wykluczenie ojcostwa) lub w medycynie sądowej. Pobranie próbek może się odbyć
+wyłącznie za zgodą osoby zainteresowanej
+lub jej przedstawiciela ustawowego i/lub na
+wniosek upoważnionych do tego organów.
+Próbki te powinny być utylizowane natychmiast po ich wykorzystaniu w konkretnym
+postępowaniu, bez uprawnień do ich dalszego przechowywania lub wykorzystania
+w innych celach. Dotyczy to także informacji uzyskanych z analizy tego typu próbek
+biologicznych i przetwarzania tych danych,
+jeśli nie stanowi o tym inaczej lokalne ustawodawstwo, jednakże w zgodzie z międzynarodowymi prawami człowieka (DDGC,
+art. 1, ust. c; art. 12; art. 21, ust. b-c). Można
+ograniczyć dostęp do danych osobie badanej,
+której informacje te dotyczą, jeśli służy to zapobieżeniu konkretnemu niebezpieczeństwu
+lub ściganiu przestępstwa (REK-(97)5-RE,
+p. 5.6.a., zd. i).
+
+W poradnictwie genetycznym i diagnostyce genetycznej istotnym problemem jest
+w różnych przypadkach kolizja zasady autonomii pacjenta i jego prawa do prywatności
+oraz poufności informacji medycznych z interesami osób trzecich, przede wszystkim
+członków jego najbliższej rodziny (znaczenie
+danych dla innych członków rodziny — REK-
+-10). Stan zdrowia pacjenta, rozpoznana choroba lub wyniki przeprowadzonych testów
+genetycznych mogą mieć istotne znaczenie
+prognostyczne, a w wielu sytuacjach mogą
+ipowinny implikować działania profilaktyczne, diagnostyczne lub terapeutyczne także w stosunku do jego krewnych. W REK-10
+dotyczącej ochrony danych w ust. (a) zapisano, że „dane genetyczne o znaczeniu klinicznym i/lub kontekście rodzinnym powinny
+otrzymać taką samą ochronę, jak inne dane
+o porównywalnym stopniu wrażliwości”.
+Zdanie to interpretuje się przede wszystkim
+jako chęć zapewnienia krewnym ochrony
+przed udostępnieniem danych dziedzicznych,
+wspólnych z osobą badaną, zarówno z punktu widzenia możliwości identyfikacji tych
+osób, jak i dalszego przetwarzania danych,
+na co nie wyrażali oni zgody. Nie stanowi
+to jednak odpowiedzi, czy dane genetyczne
+
+[Strona 896]
+
+896
+
+35 PRAWNE ASPEKTY PORADNICTWA GENETYCZNEGO
+
+pacjenta powinny być z punktu widzenia
+tajemnicy lekarskiej chronione czy też nie
+przed krewnymi, dla których mają one znaczenie praktyczne. Lekarz, w tym także genetyk kliniczny, staje więc często wobec poważnego dylematu, jak przy zachowaniu zasady
+tajemnicy lekarskiej postępować z posiadanymi informacjami, jeśli pacjent nie wyraża
+woli ich przekazania członkom rodziny, dla
+których wiedza taka może mieć istotne znaczenie w kształtowaniu ich własnych losów
+życiowych, w tym planów prokreacyjnych
+itp. Próba dotarcia z takimi informacjami do
+członków rodziny pacjenta bez jego wiedzy
+może być traktowana jako naruszenie tajemnicy lekarskiej i autonomii chorego. Krewni
+nie powinni być informowani o wynikach
+badań, w których oni de facto nie uczestniczyli. Dylemat ten nie został rozwikłany
+w dostępnym piśmiennictwie. Bywa, że zatajenie pewnych informacji przez pacjenta lub
+pacjentki przed ich partnerami może mieć
+znaczenie w rozpatrywaniu roszczeń o charakterze matrymonialnym. Niejasno brzmi
+w tym kontekście zapis w art. 5 DBiPC, że
+„należy szanować autonomię osób w podejmowaniu decyzji, przy jednoczesnym braniu
+na siebie odpowiedzialności za te decyzje
+i szanowaniu autonomii innych”, gdyż nie do
+końca wiadomo, o czyją odpowiedzialność
+i autonomię chodzi. Czy chodzi tu o odpowiedzialność pacjenta czy lekarza? Nie wyjaśniono też, czy w przypadku braku na takie badania zgody osoby dorosłej, sprawnej
+intelektualnie, mogącej samodzielnie podejmować decyzje, lecz rygorystycznie broniącej
+swojej autonomii wbrew oczywistemu interesowi innych, możliwe są w stosunku do niej
+jakiekolwiek sankcje. Wymaga to dalszego
+poszukiwania rozwiązań tej kwestii.
+
+Grupa Ekspertów podkreśla w REK-3, że
+uznawanie informacji genetycznych za „wyjątkowe” na tle innych danych medycznych
+jest niewłaściwe. Wszystkie dane medyczne
+(badania) muszą się cechować wysoką jakością i poufnością. Dane genetyczne mogą mieć
+szczególny, „odmienny” charakter w odczuciach społecznych, zwłaszcza gdy dla pacjenta i członków jego rodziny mają charakter
+
+wrażliwy (sensytywny). Komisja Europejska
+i instytucje krajowe powinny zatem dołożyć
+starań mających na celu powszechną edukację w tym zakresie, zapewnienie warunków
+do społecznej debaty (dialogu — także REK-5)
+i przeprowadzanie w całej Europie badań ankietowych (np. EUROBAROMETR). Testy
+genetyczne powinny być przedstawiane na
+każdym szczeblu edukacji przez odpowiednio wykształcony i przygotowany do tego
+personel z różnych środowisk naukowych
+i zawodowych w sposób pozbawiony uprzedzeń, z interpratacją wartości merytorycznej
+i skutków omawianych badań zgodnie z ich
+praktycznym znaczeniem (REK-4).
+
+35.5
+
+Problemy prawne
+[linie 44366–44417]
+
+Pojęcie eugeniki (gr. eugenos- dobrze urodzony) przywołano już dwukrotnie przy okazji
+omawiania zagadnień związanych z technikami wspomaganego rozrodu oraz z diagnostyką przedurodzeniową (DP). Wspomniany
+wyżej art. 3, ust. 2 KPPUE zakazuje „praktyk eugenicznych, w szczególności takich,
+których celem jest selekcja osób”. Eugenika
+rozumiana jako metoda ulepszania gatunków z pokolenia na pokolenie, zwłaszcza jeśli
+chodzi o cechy dziedziczone, ma obecnie znaczenie pejoratywne. Z historycznego punktu
+widzenia kojarzy się z nazistowskimi teoriami czystości i doskonalenia ras. Przywołuje
+się też w dyskusjach sposób postępowania
+z osobami słabymi i chorymi w starożytnej
+Sparcie. Należy jednak pamiętać, że różnego
+typu procedury eugeniczne były wykorzystywane nawet wiele lat po II wojnie światowej
+w USA i niektórych państwach europejskich.
+W innych zakątkach świata stanowią problem do dziś. Wyróżnia się eugenikę negatywną i pozytywną. Wśród najbardziej drastycznych przykładów eugeniki negatywnej
+wymienia się segregację rasową, przymusową sterylizację lub eksterminację, ale także
+przymusowe badania przedślubne, propozycję kolczykowania nosicieli potencjalnie
+„niebezpiecznych” genów, zakaz związków
+małżeńskich między nimi czy postulat sformułowania nowej prawnej definicji narodzin. W jednym z państw europejskich do
+roku 1975 wykastrowano 63 000 osób, głównie dzieci, z powodów rasowo-biologicznych.
+Proponowano także kastrację jednego jądra,
+aby „zmniejszyć przyszły popęd seksualny”.
+Procesy o odszkodowania toczyły się tam
+jeszcze w latach 90. XX w.
+
+Celem eugeniki pozytywnej jest dążenie
+do posiadania potomstwa o lepszych jakościowo cechach, np. wysokiej inteligencji.
+Najbardziej spektakularnym przykładem
+eugeniki pozytywnej był „bank spermy geniuszy”, w tym także noblistów, prowadzony w latach 1980-1999 przez Roberta Clarka
+Grahama (z tej „puli” urodziło się 230 dzieci). W świetle osiągnięć współczesnej biologii
+molekularnej wiadomo, że wobec niezależnej
+segregacji cech genetycznych oraz wpływów
+środowiska zewnętrznego nie jest możliwe
+osiągnięcie i utrwalenie pożądanych cech
+u człowieka.
+
+Zapisy pozostałych cytowanych wyżej
+konwencji i deklaracji nie zezwalają na praktyki eugeniczne (zakaz dyskryminacji, zakaz
+zmian genomu komórek rozrodczych, a więc
+uzyskiwania dziedzicznych cech genetycznych). Przeciwnicy diagnostyki preimplantacyjnej (PGD) lub prenatalnej (DP) nadal jednak utrzymują, że eliminacja zarodków lub
+przerywanie ciąży z powodów poważnych
+wad lub nieprawidłowości rozwojowych uwarunkowanych genetycznie należy zaliczyć do
+praktyk eugenicznych, nazywając je niekiedy
+również „kryptoeugenicznymi”, uznając jednocześnie poradnictwo genetyczne (lub wręcz
+„doradztwo” genetyczne) za jedno z narzędzi
+eugeniki. Jak to już omówiono w podrozdziale dotyczącym DP poglądy takie rozmijają się
+z zasadami przyjętymi w prawie międzynarodowym i nie służą debacie publicznej mającej na celu wypracowanie rozwiązań kompromisowych, ewolucyjnie prowadzących do
+wprowadzania i przestrzegania najwyższych
+norm etycznych zgodnych z postępem w biologii i medycynie.
+
+35.8
+
+Badania postnatalne

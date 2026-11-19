@@ -1,0 +1,2890 @@
+# PAKIET PLANISTY – rozdział 04
+Jedyny plik do przeczytania (poza handoffem C1, STYL.md i ZASADY.md). Sekcje: A rozpiska, B mapa zakresu, C fakty uciętych wcześniej (T z wyciągu), D tekst rozdziału (bez rycin SVG), E źródła przycięte do zakresu.
+
+
+======== A. ROZPISKA ZAJĘĆ ========
+
+                                                                                              Lekarski
+                                          Zajęcia nr 4                            Biologia molekularna
+
+Temat seminarium:    Molekularna organizacja informacji genetycznej
+
+Temat ćwiczenia:     Metody analizy kwasów nukleinowych
+
+Zagadnienia do przygotowania przez studenta:
+1. Budowa kwasów nukleinowych. Struktura podwójnej helisy [1].
+2. Struktura chromosomu [1].
+3. Rodzaje RNA [1].
+4. Różnice między kwasami nukleinowymi [1].
+5. Replikacja genomu. Replikacja u Eukaryota. Etapy replikacji genomu. Enzymy biorące udział w
+   replikacji genomu [1].
+6. Metody badania kwasów nukleinowych. Analiza DNA. Zasady pobierania, zabezpieczania i
+   przesyłania materiału do badań [2].
+7. Izolacja i oczyszczanie DNA [1].
+8. Analiza RNA [2].
+9. Oznaczanie ilości i jakości otrzymanych preparatów kwasów nukleinowych [1].
+
+Zaliczenie pisemne
+
+Część praktyczna:
+1. Izolacja genomowego DNA z komórek nabłonka jamy ustnej przy użyciu zestawu GeneMATRIX
+   Swab-Extract Purification Kit (EURx, Polska).
+
+
+
+Piśmiennictwo:
+1. Drewa G., Ferenc T.: Genetyka medyczna podręcznik dla studentów. Wydawnictwo Edra Urban &
+   Partner, Wrocław, 2011. Rozdział nr 3 (str. 28-34, 37-45, 48-55), Rozdział nr 18 (str. 431-432),
+   Rozdział nr 27 (str. 710-712).
+2. Ostrowska Z., Mazur B.: Diagnostyka laboratoryjna dla studentów medycyny. Skrypt dla studentów
+   III roku kierunku lekarskiego. Wydawnictwo Śląskiego Uniwersytetu Medycznego, Katowice, 2011.
+   Rozdział nr 6 (str. 53–54, 56).
+
+
+
+======== B. MAPA ZAKRESU (handoff) ========
+
+# Handoff Z04 – Kwasy nukleinowe, replikacja, izolacja DNA i RNA (Opus xhigh, 1 agent)
+Plan szczegółowy przygotował szef (Fable): **zakres, źródła, cięcia i lista rycin są ustalone poniżej – nie zmieniasz ich**. Twoja praca to dobry tekst i ryciny. Jeśli coś w planie nie zgadza się ze źródłem, zapisz to w `stan/z04.md` i idź dalej według źródła.
+Przeczytaj: `/home/user/first-thing/podrecznik/ZASADY.md`, `KOMPONENTY.md`, potem tylko wskazane fragmenty paczki.
+
+- **Plik wynikowy:** `/home/user/first-thing/podrecznik/rozdzialy/z04-kwasy-nukleinowe.html` · **limit: 14 stron** (A4, dwie kolumny)
+- **Paczka źródeł:** `/tmp/claude-0/-home-user-first-thing/600b873f-e07d-5766-b2f4-6a90b68ae091/scratchpad/zrodla/z04/` · **wyciąg:** `wyciagi/z04.md` · **stan:** `stan/z04.md` (jeśli istnieje – kontynuuj, nie czytaj źródeł od nowa)
+- **Bank rycin:** `bank-rycin/INDEX.md`
+
+**Ten rozdział powstaje przez skrócenie gotowych, sprawdzonych opracowań – nie piszesz od zera i nie rysujesz rycin.**
+Materiał: `material/k4.txt` („Kwasy nukleinowe – kolokwium 4”) oraz wskazane strony `material/k5.txt` („Analiza DNA i RNA – kolokwium 5”). Paczka źródeł z04 służy tylko do rozstrzygania wątpliwości.
+
+## Mapa: zagadnienie → gdzie w gotowym materiale → cięcia
+| # | Zagadnienie | Materiał | Zostaje w całości (były pytania na kolokwiach) | Tniemy mocniej (bez pytań, oznaczone ★ w k4) |
+|---|---|---|---|---|
+| 1 | Budowa kwasów nukleinowych; podwójna helisa | k4 rozdz. 01 (s. 5–10) | nukleotyd / nukleozyd; struktura pierwszorzędowa; formy A, B, Z i ich skrętność; najczęstsza forma | puryny/pirymidyny – 2 zdania; wymiary helisy B – tabelka; superskręcenie – 2–3 zdania |
+| 2 | Struktura chromosomu | k4 rozdz. 02 (s. 11–13) | nukleosom, solenoid | chromatyna i histony, wyższe poziomy upakowania – skrót do listy poziomów |
+| 3 | Rodzaje RNA | k4 rozdz. 04 (s. 17–23) i 05 (s. 24–26) | lista rodzajów; tRNA; snRNA; snoRNA; RNA telomerazy; miRNA; siRNA; splicing; interferencja RNA | budowa mRNA, rRNA/rybosom, dojrzewanie końców mRNA – po 2–3 zdania |
+| 4 | Różnice między kwasami nukleinowymi | k4 rozdz. 03 (s. 14–16) | tabela DNA–RNA (min. 4 różnice), cechy RNA | – |
+| 5 | Replikacja: u Eukaryota, etapy, enzymy | k4 rozdz. 06 (s. 27–32) i 07 (s. 33–37) | etapy replikacji; białka i enzymy z funkcjami (tabela); topoizomeraza | semikonserwatywność i Meselson–Stahl – 2 zdania; korekta błędów, telomery i problem końców – krótko; replikacja u eukariontów – tylko różnice |
+| 6 | Metody badania kwasów nukleinowych; pobieranie, zabezpieczanie, przesyłanie materiału [Ostrowska] | k5 rozdz. 01 (s. 4–6: „Czym zajmuje się diagnostyka molekularna”, „Skąd pochodzi DNA”, „Pobieranie, transport i przechowywanie”) | źródła DNA, EDTA a heparyna, transport i temperatury przechowywania | wstęp historyczny |
+| 7 | Izolacja i oczyszczanie DNA | k5 rozdz. 01 (s. 6–7) + k4 rozdz. 08 (s. 38–40) – wybierz pełniejszy opis, nie dubluj | dobór metody, etapy izolacji, sposoby odbiałczania, metoda kolumnowa | – |
+| 8 | Analiza RNA [Ostrowska] | k5 rozdz. 05, tylko „Dlaczego RNA trudniej izolować” i „Materiał, izolacja i przechowywanie RNA” (s. 28–30) | RNazy i ochrona przed nimi, materiał, przechowywanie | odwrotna transkrypcja i PCR – należą do rozdz. Z05 |
+| 9 | Oznaczanie ilości i jakości preparatów | k5 rozdz. 01 (s. 8–9) | długości fali, stosunek 260/280 > 1,8, RNA i RiboGreen, integralność 1–10 | elektroforeza – 2 zdania i odesłanie do rozdz. Z06 |
+
+**Usuń z materiału:** „Mapa kolokwium”, znaczniki „PYTANIE n/5” i „★”, ramki „Na kolokwium”, „Z liceum”/„To było w liceum”, „Obraz w głowie”, „Przykład”, całą część „Pytania z kolokwiów – opracowanie”. Ramki „Uwaga do podręcznika” zostaw tylko, jeśli dotyczą realnego błędu w źródle (maks. 2). Numery stron źródeł: w k4 podano strony PDF, nie książki – w liniach źródła podawaj strony książki z rozpiski (Drewa r. 3: s. 28–34, 37–45, 48–55; r. 18: s. 431–432; r. 27: s. 710–712; Ostrowska s. 53–54, 56), przypisując je podrozdziałom według paczki.
+
+## Ryciny – tylko z banku, 8 sztuk (nic nie rysujesz)
+Wybierz z `k4-*` po jednej rycinie do: (1) budowa nukleotydu / łańcucha; (2) formy A, B, Z; (3) poziomy upakowania: nukleosom → solenoid → chromosom; (4) tRNA albo zestawienie rodzajów RNA; (5) splicing; (6) widełki replikacyjne z enzymami; (7) etapy replikacji lub telomery (ta, która lepiej uczy). Z `k5-*`: (8) „Izolacja DNA i ocena preparatu” (k5 ryc. 2).
+
+
+
+======== C. FAKTY UCIĘTE WCZEŚNIEJ (T z wyciągu) ========
+
+# Wyciąg Z04 – Kwasy nukleinowe, replikacja, izolacja DNA i RNA
+## 1. Budowa kwasów nukleinowych (k4 s. 5–7; Drewa s. 30–32)
+- T: numeracja z primem (ramka Pojęcie) – oczywista z ryciny
+- T: płaski kształt zasad – układanie w stos (dygresja)
+- T: porównanie do kolejności liter w zdaniu (ozdobnik)
+## 1b. Podwójna helisa (k4 s. 7–10; Drewa s. 32–34, 37)
+- T: ramka „Z liceum” – Watson i Crick 1953
+- T: bruzdy większa i mniejsza – szczegół bez pytań (1 półzdanie zostaje)
+- T: „przez wiele lat uważano…, zaskoczenie” (historia); Z: wykryta w komórkach przeciwciałami wiążącymi helisę lewoskrętną (1 zdanie)
+## 2. Struktura chromosomu (k4 s. 11–13; Drewa s. 431–432)
+- T: ramka „Obraz w głowie” (szpulka)
+- T: interfaza – luźniejsza chromatyna, dostęp enzymów (dygresja, 0,5 zdania zostaje w liście)
+## 4. Różnice między kwasami nukleinowymi (k4 s. 14–16; Drewa s. 37, 40–41)
+- T: ramki „Na kolokwium”, „Z liceum” (deoksy = bez tlenu)
+## 3. Rodzaje RNA (k4 s. 17–23; Drewa s. 37–40)
+- T: szczegółowe funkcje czapeczki i ogona (pojedyncze zdania) – przeniesione skrótem do „Dojrzewanie”
+- T: „pokrętło głośności” (ozdobnik)
+## 3b. Splicing i interferencja RNA (k4 s. 24–26; Drewa s. 39–40)
+- T: ramka „Z liceum” (eksony/introny – 1 zdanie definicji zostaje w tekście)
+- T: „Obraz w głowie” (montaż filmu)
+## 5. Replikacja (k4 s. 27–37; Drewa s. 41–45, 48–55)
+- T: trzy modele, Meselson i Stahl 1958, ¹⁵N/¹⁴N, CsCl, wynik po 1 i 2 podziałach → skrót do 1 zdania (bez daty i szczegółów)
+- T: ramka „Na kolokwium”
+- T: przykład G naprzeciw T
+- T: ramka „Na kolokwium”
+- T: wiązanie z tyrozyną (szczegół, Drewa s. 36 – poza rozpiską)
+## 6. Metody badania kwasów nukleinowych; pobieranie, zabezpieczanie, przesyłanie (k5 s. 4–6; Ostrowska s. 53–54)
+- T: lata 80., 1985 – PCR, „najszybciej rozwijający się dział” (wstęp historyczny)
+- T: ramka „Warto wiedzieć” (anemia sierpowata, historia)
+- T: ramki „To było w liceum” (erytrocyty, blastomery, Ca²⁺)
+## 7. Izolacja i oczyszczanie DNA (k5 s. 6–7, pełniejszy niż k4 s. 38; Drewa s. 710)
+## 8. Analiza RNA (k5 s. 28–30; Ostrowska s. 56, Drewa s. 710–711)
+- T: proporcja RNAlater, zestawy stabilizujące, liza erytrocytów/gradient, ustalanie z laboratorium (szczegóły praktyczne)
+- T: odwrotna transkrypcja, RT-PCR, real-time – rozdz. Z05 (handoff)
+## 9. Oznaczanie ilości i jakości preparatów (k5 s. 8–9; Drewa s. 711–712)
+- T: ramka „Przykład” z obliczeniem
+- T: napięcie 5–8 V/cm, preparatywna/analityczna, żele poliakrylamidowe (rozdz. Z06)
+## Uwagi (sprawdzone w paczce)
+## Układ rozdziału (h2)
+## Zmiany Z → T w czasie składu (limit 14 s.)
+
+
+======== D. TEKST ROZDZIAŁU ========
+
+(plik rozdzialy/z04-kwasy-nukleinowe.html; data-title: Kwasy nukleinowe, replikacja, izolacja DNA i RNA)
+[LEAD] Jak zbudowane jest DNA, jak mieści się w chromosomie i jak się kopiuje, czym różni się od niego RNA – a w części praktycznej: jak pobrać materiał, wyizolować DNA i RNA i ocenić, czy preparat jest dobry.
+
+## Budowa kwasów nukleinowych  [c04-budowa]
+
+### Jak wygląda jedna nić DNA?  []
+DNA to bardzo długi łańcuch. Zanim rozłożymy go na części, przyjrzyj się krótkiemu fragmentowi jednej nici ( ). Widać w nim dwie rzeczy. Po pierwsze – szkielet : ten sam układ „cukier – fosforan – cukier – fosforan” powtarza się na całej długości nici. Po drugie – zasady azotowe , które odchodzą od szkieletu na bok, po jednej przy każdym cukrze.
+Szkielet jest wszędzie taki sam; od miejsca do miejsca zmieniają się tylko zasady. Z tej jednej obserwacji wynika większość tego podrozdziału: z czego zbudowane jest pojedyncze ogniwo, dlaczego nić ma kierunek i gdzie zapisana jest informacja, a w następnym podrozdziale – jak łączą się dwie nici.
+[RYCINA c04-fig-nic „Nić DNA i para nici”: A – idź wzdłuż jednej nici od góry (koniec 5′ z wolnym fosforanem) do dołu (koniec 3′ z wolną grupą –OH): szkielet się powtarza, zmieniają się tylko zasady. B – porównaj dwie nici: naprzeciw A stoi zawsze T, naprzeciw G – C, a naprzeciw końca 5′ jednej nici leży koniec 3′ drugiej. Nici są więc komplementarne i biegną w przeciwnych kierunkach.]
+
+### Z czego zbudowane jest jedno ogniwo? Nukleotyd  []
+Powtarzająca się jednostka łańcucha to nukleotyd ( ). Ma trzy części:
+- cukier – pięciowęglową pentozę: w DNA deoksyrybozę, w RNA rybozę;
+- zasadę azotową – w DNA adeninę (A), guaninę (G), cytozynę (C) lub tyminę (T);
+- od jednej do trzech reszt fosforanowych .
+[RYCINA c04-fig-nukleotyd „Nukleotyd i nukleozyd”: A – zacznij od cukru w środku: zasada wisi na węglu 1′, fosforany na węglu 5′, a wolna grupa 3′-OH czeka na kolejny nukleotyd. Z prawej porównaj nukleozyd (bez fosforanu) z nukleotydem (1–3 fosforany). B – policz pierścienie: puryny (A, G) mają dwa, pirymidyny (C, T, U) – jeden.]
+Części łączą się zawsze w tych samych miejscach cukru. Węgle cukru oznacza się liczbami z primem – od 1′ do 5′ („jeden prim” itd.) – żeby odróżnić je od atomów w pierścieniu zasady. Zasada przyłącza się do węgla 1′ wiązaniem N-glikozydowym , a fosforan – do węgla 5′. Na węglu 3′ zostaje wolna grupa –OH. Zapamiętaj ją: to do niej dołączy się następny nukleotyd.
+Nazwa nukleotydu mówi, ile ma fosforanów: monofosforan (np. dAMP), difosforan (dADP) albo trifosforan (dATP). Litera „d” oznacza deoksy, czyli nukleotyd DNA.
+
+### Nukleozyd czy nukleotyd?  []
+Te dwie nazwy łatwo pomylić, więc warto je zestawić:
+- nukleozyd = zasada + cukier, bez fosforanu;
+- nukleotyd = nukleozyd + 1–3 reszty fosforanowe.
+Nukleozydy mają własne nazwy: adenozyna, guanozyna, cytydyna, tymidyna i urydyna. W DNA dochodzi przedrostek „deoksy-”, np. deoksyadenozyna. Stąd pełne nazwy nukleotydów: dAMP to monofosforan deoksyadenozyny.
+
+### Puryny i pirymidyny  []
+Zasady dzielą się na dwie grupy według budowy pierścienia ( ). Puryny – adenina i guanina – mają dwa połączone pierścienie. Pirymidyny – cytozyna, tymina i uracyl – mają jeden. Tymina występuje tylko w DNA, a uracyl tylko w RNA. Zasady pochłaniają światło UV o długości 260 nm; z tej cechy skorzystamy przy mierzeniu ilości DNA ( ).
+
+### Jak nukleotydy łączą się w nić?  []
+Sąsiednie nukleotydy łączy wiązanie 3′→5′-fosfodiestrowe : fosforan przy węglu 5′ jednego nukleotydu wiąże się z grupą –OH przy węglu 3′ poprzedniego. Każdy cukier łączy się więc z sąsiadami przez fosforany – tak powstaje szkielet cukrowo-fosforanowy , który widać na rycinie. Zasady w tych połączeniach nie biorą udziału, dlatego zostają wolne i odchodzą od szkieletu na bok.
+
+### Dlaczego nić ma kierunek?  []
+Spójrz na oba końce nici. Pierwszy nukleotyd ma przy węglu 5′ fosforan, którego nic dalej nie łączy – to koniec 5′ . Ostatni nukleotyd ma przy węglu 3′ grupę –OH, do której nic się jeszcze nie przyłączyło – to koniec 3′ . Końce są różne, więc nić ma kierunek, tak jak strzałka. Ta cecha to polarność nici.
+Kierunek ma praktyczne skutki. Sekwencję zapisuje się zawsze od końca 5′ do 3′, np. 5′-ATGC-3′ . W tym samym kierunku nić rośnie. Nowy nukleotyd przychodzi jako trifosforan (dNTP) i przyłącza się swoją stroną 5′ do wolnej grupy 3′-OH na końcu nici. Polimeraza – enzym, który buduje DNA – odcina przy tym dwa fosforany, a energia z tego wiązania napędza syntezę. W łańcuchu każdy nukleotyd zostaje więc z jedną resztą fosforanową – tą, która łączy go z sąsiadem.
+Najważniejszy wniosek: nowy nukleotyd zawsze dołącza się do końca 3′, czyli nić rośnie w kierunku 5′→3′. Ta reguła wróci przy replikacji – wyjaśnia, dlaczego jedna z nowych nici powstaje kawałkami ( ).
+
+### Gdzie zapisana jest informacja? Struktura pierwszorzędowa  []
+Skoro szkielet jest na całej długości taki sam, informacja nie może być zapisana w nim. Zapisana jest w kolejności zasad. Kolejność nukleotydów w nici to sekwencja , czyli struktura pierwszorzędowa DNA – to w niej zapisana jest informacja genetyczna.
+[RAMKA zapamietaj] Nukleotyd = cukier + zasada (przy węglu 1′) + 1–3 fosforany (przy węglu 5′); nukleozyd nie ma fosforanu. Nić to szkielet cukrowo-fosforanowy połączony wiązaniami 3′→5′-fosfodiestrowymi, z zasadami z boku; ma koniec 5′ i 3′ i rośnie tylko na końcu 3′.
+[ŹRÓDŁO] Źródło: Drewa s. 28–32
+
+## Podwójna helisa i jej formy  [c04-helisa]
+
+### Jak łączą się dwie nici?  []
+Cząsteczka DNA w komórce składa się z dwóch nici. Ustawiają się one naprzeciw siebie tak, że szkielety są na zewnątrz, a zasady zwrócone do środka ( ). Naprzeciw siebie stają zawsze te same pary: A z T i G z C . Łączą je wiązania wodorowe – w parze A–T dwa, w parze G–C trzy. W każdej parze jest jedna puryna (dwa pierścienie) i jedna pirymidyna (jeden pierścień).
+Takie dopasowanie to komplementarność – nici „uzupełniają się”. Jej najważniejszy skutek: jeśli znasz sekwencję jednej nici, znasz też drugą, bo każda zasada jednej nici wyznacza zasadę naprzeciwko. Na tym opiera się kopiowanie DNA ( ).
+Nici mają też określone ułożenie względem siebie: są przeciwrównoległe . Każda ma kierunek 5′→3′, ale w helisie te kierunki są przeciwne – naprzeciw końca 5′ jednej nici leży koniec 3′ drugiej.
+[RAMKA przyklad] Jedna nić ma sekwencję 5′-ATGC-3′ . Jak wygląda druga? Krok 1 – pary. Naprzeciw A stoi T, naprzeciw T – A, naprzeciw G – C, naprzeciw C – G. W tych samych miejscach druga nić ma więc kolejno T, A, C, G. Krok 2 – kierunek. Nici są przeciwrównoległe: tam, gdzie pierwsza ma koniec 5′, druga ma koniec 3′. Druga nić to zatem 3′-TACG-5′ . Krok 3 – zapis. Sekwencję zapisuje się zawsze od 5′ do 3′, więc drugą nić czytamy od drugiego końca: 5′-GCAT-3′ . Gdyby pominąć krok 2, wyszłoby 5′-TACG-3′ – zupełnie inna sekwencja.
+
+### Co utrzymuje helisę w całości?  []
+Pojedyncze wiązanie wodorowe jest słabe. W genomie są ich jednak miliardy, więc razem utrzymują helisę bardzo trwale. Dodatkowo stabilizują ją oddziaływania między sąsiednimi zasadami ułożonymi jedna nad drugą wewnątrz helisy (oddziaływania warstwowe, π–π). Zasady mogą tak leżeć, bo są płaskie.
+Obie nici owijają się wokół wspólnej osi i tworzą podwójną helisę . Klasyczna helisa – forma B – ma takie wymiary:
+[TABELA]
+Klasyczna helisa B | Wartość
+pary zasad na jeden skręt | ok. 10
+skok helisy (długość skrętu) | 3,4 nm
+odległość między parami zasad | 0,34 nm
+szerokość helisy | ok. 2 nm
+[/TABELA]
+Między szkieletami obu nici na powierzchni helisy biegną dwa rowki – bruzda większa i bruzda mniejsza . Przydadzą się za chwilę: różne formy helisy różnią się m.in. kształtem bruzd.
+
+### Czy helisa zawsze wygląda tak samo? Formy DNA  []
+Nie. Kształt helisy zależy od warunków otoczenia – głównie od wilgotności i od jonów w roztworze. W różnych warunkach DNA przyjmuje różne formy . Różnią się one liczbą par zasad na jeden skręt, szerokością, kształtem bruzd i kierunkiem skrętu. Znanych jest sześć form: A, B, C, D, E i Z ( ).
+[RYCINA c04-fig-formy „Formy podwójnej helisy”: A – porównaj trzy formy narysowane w tej samej skali: szeroką i krótką A, typową B (ok. 10 par na skręt 3,4 nm) i wydłużoną, zygzakowatą Z (12 par na 4,5 nm). B – wszystkie sześć form z warunkami, w których powstają: A, B, C, D i E skręcają się w prawo, tylko Z – w lewo.]
+[POJĘCIE Prawoskrętna helisa] skręca się tak jak gwint zwykłej śruby. Lewoskrętna – w przeciwną stronę, jak lustrzane odbicie.
+Kierunek skrętu dzieli formy na dwie grupy, a reguła jest prosta: formy A, B, C, D i E są prawoskrętne , a Z-DNA jest jedyną formą lewoskrętną .
+[TABELA]
+Forma | Skręt | Najważniejsze cechy
+B-DNA | prawoskrętna | najczęstsza w komórkach; ok. 10 par na skręt; wysoka wilgotność (92%)
+A-DNA | prawoskrętna | krótsza i szersza (ok. 11 par na skręt); wilgotność 75%, jony Na + , K +
+C-DNA | prawoskrętna | wilgotność 60%, jony litu (Li + )
+D-DNA | prawoskrętna | 8 par na skręt; rzadka, w DNA bez guaniny
+E-DNA | prawoskrętna | 7,5 pary na skręt; rzadka, w DNA bez guaniny
+Z-DNA | lewoskrętna | 12 par na skręt; szkielet ułożony zygzakiem; forma przejściowa
+[/TABELA]
+
+### Z-DNA – jedyna lewoskrętna  []
+Z-DNA wykryto w żywych komórkach dzięki przeciwciałom, które wiążą tylko helisę lewoskrętną. Jej cechy łatwo powiązać z nazwą i z liczbami:
+- szkielet cukrowo-fosforanowy układa się w zygzak – stąd litera Z;
+- powtarzającą się jednostką jest para nukleotydów ( dinukleotyd ), a nie pojedynczy nukleotyd;
+- jeden skręt to 12 par zasad i 4,5 nm – w B-DNA ok. 10 par i 3,4 nm. Helisa Z jest dłuższa i węższa niż B.
+Z-DNA pojawia się przejściowo, np. przy rozluźnianiu DNA w czasie transkrypcji, czyli przepisywania genu na RNA.
+
+### Która forma jest najczęstsza?  []
+Skoro forma zależy od warunków, w komórce przeważa ta, która odpowiada warunkom komórkowym: wysokiej wilgotności i niskiemu stężeniu soli. To prawoskrętna B-DNA – helisa opisana przez Watsona i Cricka. Jest najczęstszą formą DNA w przyrodzie.
+[RAMKA zapamietaj] Sześć form DNA: A, B, C, D i E są prawoskrętne, a Z – jedyna lewoskrętna (zygzak, 12 par zasad na skręt). Najczęstsza jest prawoskrętna B-DNA.
+
+### Superskręcenie – helisa skręcona jeszcze raz  []
+Podwójna helisa może się dodatkowo skręcać jako całość: jej oś owija się wtedy sama wokół siebie, jak przekręcony kabel od słuchawki telefonu. Takie DNA jest superskręcone (superhelikalne). DNA bez dodatkowych skrętów to DNA zrelaksowane .
+Superskręty mogą być ujemne – DNA jest wtedy lekko „niedokręcone” – albo dodatnie , gdy DNA jest „przekręcone”. W komórkach DNA jest zwykle lekko ujemnie superskręcone. Ma to sens: niedokręcone nici łatwiej rozdzielić, a rozdzielać je trzeba przy replikacji i transkrypcji. Dodatnie superskręty powstają natomiast przed przesuwającymi się widełkami replikacyjnymi. Liczbę superskrętów zmieniają enzymy – topoizomerazy ( ).
+[ŹRÓDŁO] Źródło: Drewa s. 32–34, 37
+
+## Struktura chromosomu  [c04-chromosom]
+
+### Jak zmieścić metr DNA w jądrze?  []
+Rozciągnięte DNA jednego zestawu chromosomów ma ok. 1 m długości, a musi zmieścić się w jądrze komórkowym. Komórka rozwiązuje ten problem, zwijając DNA stopniowo: najpierw nawija je na białka, potem zwija powstałe włókno, a potem zwija je jeszcze raz. Każdy kolejny poziom to ciaśniejsze zwinięcie poprzedniego ( ). W chromosomie metafazowym DNA jest ok. 10 000 razy krótsze niż po rozciągnięciu.
+
+### Dlaczego DNA trzyma się białek? Chromatyna i histony  []
+W jądrze DNA nie leży „gołe”. Tworzy z białkami kompleks – chromatynę . Jako osobne, wyraźne chromosomy widać ją dopiero w czasie podziału komórki, kiedy jest najmocniej zwinięta.
+Najważniejsze białka chromatyny to histony ; jest ich pięć rodzajów: H1, H2A, H2B, H3 i H4. Histony zawierają dużo aminokwasów o ładunku dodatnim – lizyny i argininy. DNA ma ładunek ujemny, bo każdy nukleotyd w szkielecie ma resztę fosforanową ( ). Ładunki przeciwne się przyciągają – i to trzyma DNA przy histonach. Pozostałe, niehistonowe białka chromatyny stabilizują ją i regulują jej pracę.
+
+### Nukleosom – pierwszy poziom zwinięcia  []
+Nukleosom to podstawowa jednostka chromatyny. Ma dwie części:
+- rdzeń – oktamer histonowy, czyli osiem białek: po dwie kopie histonów H2A, H2B, H3 i H4; ma kształt walca o średnicy ok. 11 nm;
+- DNA owinięte wokół rdzenia – odcinek ok. 146 par zasad, owinięty prawie dwa razy.
+Sąsiednie nukleosomy łączy odcinek DNA łącznikowego . Na zewnątrz rdzenia, w miejscu, gdzie DNA wchodzi na nukleosom i z niego schodzi, leży histon H1 – histon łącznikowy. Spina on DNA na nukleosomie i pomaga zwijać chromatynę dalej.
+Pod mikroskopem elektronowym rozluźniona chromatyna wygląda jak koraliki nawleczone na nitkę : koraliki to nukleosomy, a nitka – DNA łącznikowe. To włókno ma grubość ok. 11 nm.
+[RAMKA obraz] Nukleosom przypomina szpulkę z nawiniętą nicią. Szpulka to osiem histonów, nić – DNA owinięte prawie dwa razy, a klips, który przytrzymuje nić na wejściu i wyjściu, to histon H1. Wspólna zależność: nić nawinięta na szpulkę zajmuje dużo mniej miejsca niż rozciągnięta – tak samo DNA nawinięte na rdzeń. Granica analogii: nić trzyma się szpulki tylko dzięki nawinięciu i klipsowi, a DNA trzyma się histonów także dlatego, że przyciągają się ich przeciwne ładunki.
+
+### Solenoid – kolejny poziom  []
+Solenoid powstaje, gdy włókno „koralików na nitce” zwija się w spiralę. Na jeden skręt spirali przypada ok. 6 nukleosomów, a histony H1 skupiają się w jej wnętrzu i utrzymują ją w całości. Tak powstaje włókno chromatynowe o grubości ok. 30 nm – ciasno ściśnięty szereg nukleosomów. To trzeci poziom upakowania, po podwójnej helisie (2 nm) i nukleosomach (11 nm).
+[RYCINA c04-fig-upakowanie „Poziomy upakowania DNA”: Czytaj od lewej: każdy kolejny poziom powstaje przez zwinięcie poprzedniego, a liczba pod spodem to grubość struktury – od podwójnej helisy (2 nm) przez nukleosomy (11 nm) i solenoid (30 nm) do chromosomu metafazowego (1400 nm).]
+
+### Wyższe poziomy i chromosom metafazowy  []
+Solenoid tworzy dalej pętle przyczepione do białkowego rusztowania (ok. 300 nm). Pętle zwijają się w coraz grubsze struktury – skondensowany fragment chromosomu ma ok. 700 nm – aż powstaje chromosom metafazowy o szerokości ok. 1400 nm. Składa się on z dwóch chromatyd połączonych w centromerze (więcej o nim w ).
+Tak mocno zwinięte DNA jest tylko w czasie podziału. W interfazie chromatyna jest luźniejsza – ma postać nukleosomów i włókien – dzięki czemu enzymy mają dostęp do genów.
+[ŹRÓDŁO] Źródło: Drewa s. 431–432
+
+## Replikacja: zasada i etapy  [c04-replikacja]
+
+### Co trzeba zrobić, żeby skopiować DNA?  []
+Przed każdym podziałem komórka musi skopiować cały swój genom – szybko i prawie bez błędów – tak, żeby każda komórka potomna dostała pełny komplet DNA. To replikacja . Zacznijmy od stanu wyjściowego: mamy podwójną helisę, w której obie nici są połączone parami zasad, skręcone wokół siebie i zwinięte w chromatynę. Na końcu mają być dwie identyczne cząsteczki DNA.
+Sposób kopiowania wynika z komplementarności ( ): każda nić wyznacza sekwencję drugiej. Wystarczy więc rozdzielić nici i do każdej dobudować nową, komplementarną nić. Stara nić służy wtedy za matrycę – wzór, według którego dobiera się kolejne nukleotydy. Z tego sposobu kopiowania wynika ważna cecha: każda z dwóch nowych cząsteczek DNA zawiera jedną nić starą i jedną nową. To replikacja semikonserwatywna (półzachowawcza) – połowa każdej cząsteczki jest „zachowana”. Rozważano też inne możliwości, ale doświadczenie Meselsona i Stahla potwierdziło właśnie ten model.
+Replikacja przebiega w trzech etapach: inicjacji (start), elongacji (wydłużanie nowych nici) i terminacji (zakończenie) ( ).
+[RYCINA c04-fig-etapy „Trzy etapy replikacji”: A – inicjacja: zacznij od ori (miejsca bogatego w pary A–T); białka inicjatorowe i helikazy rozplatają DNA w obie strony i powstaje bańka z dwojgiem widełek. B – elongacja: w każdych widełkach porównaj obie nowe nici – jedna rośnie w sposób ciągły, druga z fragmentów Okazaki. C – terminacja: u bakterii widełki spotykają się naprzeciw ori (ter i białko Tus), u eukariontów – tam, gdzie zetkną się widełki sąsiednich replikonów.]
+
+### 1. Inicjacja – gdzie i jak zaczyna się kopiowanie?  []
+Replikacja nie zaczyna się w przypadkowym miejscu, tylko w określonych sekwencjach – ori (od ang. origin of replication , miejsce początku replikacji). Miejsca ori są często bogate w pary A–T. To ma sens: parę A–T łączą tylko dwa wiązania wodorowe, a G–C – trzy, więc tam, gdzie przeważa A–T, nici łatwiej rozdzielić. Bakterie mają jedno ori na kolistym chromosomie, a eukarionty – tysiące na każdym chromosomie. Odcinek DNA kopiowany z jednego ori to replikon .
+Start przebiega w trzech krokach:
+- białka inicjatorowe (u E. coli – DnaA) przyłączają się do sekwencji ori i zmieniają kształt DNA tak, że nici zaczynają się rozchodzić;
+- przyłącza się helikaza i rozplata DNA dalej – rozrywa wiązania wodorowe między zasadami, zużywając przy tym ATP;
+- powstaje „oczko” rozplecionego DNA – bańka replikacyjna . Na jej dwóch końcach są widełki replikacyjne , czyli miejsca, w których helisa rozchodzi się na dwie pojedyncze nici. Widełki przesuwają się w przeciwne strony, więc replikacja jest zwykle dwukierunkowa .
+
+### 2. Elongacja – dlaczego dwie nowe nici powstają inaczej?  []
+Nowe nici buduje polimeraza DNA . Ma ona dwa ograniczenia, które wyjaśniają cały przebieg elongacji:
+- dobudowuje nukleotydy tylko do końca 3′ – nowa nić rośnie więc wyłącznie w kierunku 5′→3′ (pamiętasz: nowy nukleotyd przyłącza się do wolnej grupy 3′-OH, );
+- nie umie zacząć nici od zera – na samej pojedynczej nici matrycy nie ruszy. Potrzebuje krótkiego odcinka, który jest już sparowany z matrycą i ma wolny koniec 3′. Taki odcinek to starter . Robi go enzym prymaza – i to nie z DNA, tylko z RNA, drugiego kwasu nukleinowego, zbudowanego z podobnych nukleotydów ( ). Dopiero do startera polimeraza dołącza nukleotydy DNA.
+Teraz połącz te ograniczenia z budową helisy. Nici matrycy są przeciwrównoległe, a widełki przesuwają się w jedną stronę. Polimeraza buduje nową nić tylko w kierunku 5′→3′. Na jednej matrycy ten kierunek jest zgodny z ruchem widełek, na drugiej – przeciwny. Stąd dwie różne nowe nici:
+- nić wiodąca rośnie w tę samą stronę, w którą idą widełki. Polimeraza może po prostu podążać za helikazą i dobudowywać nić w sposób ciągły – wystarcza jej jeden starter;
+- nić opóźniona musi rosnąć w stronę przeciwną do ruchu widełek. Polimeraza zbuduje tylko tyle, ile helikaza zdążyła już odsłonić. Gdy widełki przesuną się dalej, odsłania się nowy odcinek matrycy i trzeba zacząć od nowa – od nowego startera. Ta nić powstaje więc kawałkami – fragmentami Okazaki (100–200 nukleotydów u eukariontów, 1000–2000 u bakterii). Każdy fragment zaczyna się od własnego startera.
+[RAMKA przyklad] Sprawdźmy, że to kierunek pracy polimerazy decyduje o fragmentach. Zmieńmy jeden warunek: załóżmy, że polimeraza umiałaby dobudowywać nukleotydy także do końca 5′. Wtedy na obu matrycach mogłaby iść za widełkami – obie nowe nici rosłyby w sposób ciągły, a fragmenty Okazaki nie byłyby potrzebne. Prawdziwa polimeraza dołącza jednak nukleotydy tylko do grupy 3′-OH. Ponieważ nici matrycy biegną w przeciwne strony, na jednej z nich nowa nić musi rosnąć „pod prąd” ruchu widełek – kawałek po kawałku. Fragmenty Okazaki wynikają więc z dwóch faktów naraz: przeciwrównoległości nici i jednego kierunku syntezy.
+
+### Jak z fragmentów powstaje ciągła nić?  []
+Fragmenty Okazaki mają dwie wady: każdy zaczyna się od kawałka RNA (startera), a między fragmentami są przerwy. Pięć kolejnych czynności zamienia je w ciągłą nić DNA ( ):
+- prymaza robi krótki starter RNA – bez niego polimeraza nie mogłaby zacząć nowego fragmentu;
+- polimeraza DNA wydłuża starter, aż dojdzie do poprzedniego fragmentu – powstaje kolejny fragment Okazaki;
+- RNaza H usuwa starter poprzedniego fragmentu – starter był z RNA, a gotowa nić ma być z DNA; w miejscu startera zostaje luka;
+- polimeraza DNA wypełnia lukę nukleotydami DNA;
+- ligaza DNA łączy fragmenty – tworzy brakujące wiązanie fosfodiestrowe między nimi – i nić staje się ciągła.
+
+### 3. Terminacja – gdzie kończy się kopiowanie?  []
+U bakterii chromosom jest kolisty i ma jedno ori. Dwoje widełek obchodzi koło z dwóch stron i spotyka się naprzeciwko ori, w rejonie sekwencji ter . Tam wiąże się białko Tus , które zatrzymuje helikazę – a bez rozplatania widełki nie mogą iść dalej. U eukariontów replikacja danego odcinka kończy się, gdy zetkną się widełki z sąsiednich replikonów, idące naprzeciw siebie. Liniowy chromosom eukariontów ma jednak końce, a na nich kopiowanie napotyka osobny problem; rozwiązują go telomery ( ).
+
+### Czym różni się replikacja u eukariontów?  []
+Mechanizm jest ten sam, ale skala inna. U eukariontów replikacja zachodzi w fazie S cyklu komórkowego ( ) – raz przed każdym podziałem. W tym samym czasie komórka podwaja ilość histonów, żeby nowe DNA od razu mogło się upakować w nukleosomy.
+Genom eukariontów jest ogromny. Gdyby kopiowanie ruszało z jednego miejsca, trwałoby bardzo długo – dlatego replikacja startuje jednocześnie w wielu ori. Mimo to skopiowanie całego genomu trwa średnio 5–10 godzin, a bakteria E. coli robi to w ok. 30 minut. Główne polimerazy eukariotyczne to ε, δ i α (ta ostatnia razem z prymazą); pomaga im białko PCNA ( ).
+
+### Jak replikacja unika błędów? Korekta  []
+Polimeraza na bieżąco sprawdza, czy właśnie dołączony nukleotyd tworzy prawidłową parę z matrycą. Jeśli wstawiła zły nukleotyd, cofa się i go wycina – to aktywność egzonukleazy 3′→5′ , czyli korekta (ang. proofreading ). Kierunek się zgadza: nić rośnie 5′→3′, więc ostatni, błędny nukleotyd leży na końcu 3′ i polimeraza usuwa go, cofając się w stronę 5′. Dzięki korekcie błąd zdarza się średnio raz na 10 7 –10 10 nukleotydów.
+Jeśli DNA jest poważnie uszkodzone, komórka wstrzymuje replikację. Gdy naprawa się nie uda, białko p53 kieruje komórkę na drogę apoptozy , czyli zaprogramowanej śmierci ( ).
+[RAMKA zapamietaj] Polimeraza DNA buduje tylko w kierunku 5′→3′ i tylko od startera. Ponieważ nici matrycy są przeciwrównoległe, nić wiodąca powstaje w sposób ciągły, a opóźniona – z fragmentów Okazaki, które potem RNaza H oczyszcza ze starterów, polimeraza uzupełnia, a ligaza łączy.
+[ŹRÓDŁO] Źródło: Drewa s. 41–45, 48–51
+
+## Enzymy i białka replikacji  [c04-enzymy]
+
+### Kto co robi przy widełkach?  []
+Replikację wykonuje zespół białek, z których każde ma jedno zadanie. Najłatwiej je zapamiętać, przechodząc przez widełki od przodu do tyłu: od skręconego DNA przed widełkami, przez rozplecione nici, do gotowej nowej nici ( ). Przy każdym białku warto zadać pytanie: co by się stało, gdyby go zabrakło?
+[RYCINA c04-fig-widelki „Widełki replikacyjne”: Zacznij z prawej, przed widełkami: topoizomeraza usuwa skręcenia, helikaza rozplata nici, białka SSB trzymają je osobno. Potem porównaj obie nowe nici: górna (wiodąca) rośnie w sposób ciągły za widełkami; dolną (opóźnioną) prymaza zaczyna, polimeraza wydłuża, RNaza H oczyszcza ze starterów, a ligaza łączy. Podpis u dołu ryciny streszcza przyczynę: polimeraza buduje tylko 5′→3′ i tylko od startera.]
+[TABELA]
+Białko / enzym | Co robi | Po co – co by się stało bez niego
+Białka inicjatorowe | rozpoznają ori i zaczynają rozplatać DNA (u E. coli : DnaA) | replikacja nie miałaby gdzie ruszyć
+Topoizomeraza | usuwa napięcie (skręcenie) DNA przed widełkami; u bakterii – gyraza | DNA przed widełkami skręcałoby się coraz mocniej i replikacja by stanęła
+Helikaza | rozrywa wiązania wodorowe między zasadami i rozplata helisę; zużywa ATP (u E. coli : DnaB) | nici by się nie rozdzieliły – nie byłoby matrycy
+Białka SSB | przyłączają się do pojedynczych nici | nici połączyłyby się z powrotem albo zwinęły same ze sobą
+Prymaza | robi krótkie startery RNA (10–20 nukleotydów): jeden dla nici wiodącej, wiele dla opóźnionej | polimeraza nie miałaby od czego zacząć
+Polimeraza DNA | dobudowuje nukleotydy do końca 3′ startera, w kierunku 5′→3′, zgodnie z matrycą; wiele ma też funkcję korekty | nie powstałaby nowa nić
+PCNA („klamra”) | obejmuje DNA jak pierścień i trzyma polimerazę na nici | polimeraza odpadałaby od DNA
+RNaza H | usuwa startery RNA (u bakterii robi to polimeraza DNA I) | w nowej nici DNA zostałyby kawałki RNA
+Ligaza DNA | łączy fragmenty Okazaki w ciągłą nić – tworzy brakujące wiązanie fosfodiestrowe | nić opóźniona zostałaby poprzerywana
+Telomeraza | wydłuża końce chromosomów (telomery), korzystając z własnego RNA jako matrycy | końce chromosomów skracałyby się z każdą replikacją
+[/TABELA]
+
+### Polimerazy DNA – która do czego?  []
+„Polimeraza DNA” to nie jeden enzym. Bakterie mają trzy główne polimerazy DNA, eukarionty – co najmniej dziewięć. Wystarczy znać te najważniejsze:
+[TABELA]
+Polimeraza | Zadanie
+bakteryjna III | główny enzym replikacji – buduje obie nowe nici
+bakteryjna I | usuwa startery RNA i wypełnia luki; naprawa DNA
+eukariotyczna α | razem z prymazą zaczyna syntezę (startery)
+eukariotyczna ε | buduje nić wiodącą
+eukariotyczna δ | buduje nić opóźnioną (fragmenty Okazaki)
+eukariotyczna γ | kopiuje DNA mitochondrialne
+[/TABELA]
+[RAMKA uwaga] W źródle przypisanie polimeraz jest niekonsekwentne: na s. 49 i na początku s. 55 nić wiodącą buduje polimeraza δ, a dalej na s. 55 – „polimeraza DNA ε syntetyzuje nić wiodącą, a polimeraza DNA δ – opóźnioną”. W rozdziale przyjęto ten drugi podział (Drewa s. 55).
+
+### Topoizomerazy – jak pozbyć się skręcenia?  [c04-topo]
+Helikaza rozplata helisę tak, jak rozkręca się skręcony sznurek. Przed widełkami DNA skręca się przez to coraz mocniej – powstają dodatnie superskręty ( ) i rośnie napięcie. Bez pomocy replikacja szybko by stanęła.
+[RAMKA obraz] Weź sznurek skręcony z dwóch żyłek, przytrzymaj jeden koniec i zacznij rozsuwać żyłki od drugiego. Odcinek przed palcami skręca się coraz ciaśniej, aż zaczyna zwijać się w pętle. Wspólna zależność: rozsuwanie nie usuwa skrętów, tylko przepycha je dalej, przed miejsce rozplatania, i tam się gromadzą. Tak samo jest przed widełkami. Granica analogii: sznurek wystarczy puścić, żeby się odkręcił; w komórce napięcie usuwa enzym, który na chwilę przecina nić.
+Topoizomerazy to enzymy, które zmieniają superskręcenie DNA. Działają w trzech krokach: przecinają jedną nić albo obie, pozwalają DNA obrócić się lub przejść przez przerwę, a potem z powrotem łączą przecięte końce. Sekwencja DNA się nie zmienia – zmienia się tylko jego skręcenie.
+- Topoizomeraza I przecina jedną nić. Przecięta nić obraca się wokół drugiej, napięcie maleje, a potem przerwa zostaje zamknięta. Nie potrzebuje ATP.
+- Topoizomeraza II przecina obie nici, przeprowadza przez przerwę inny odcinek helisy, a potem łączy nici. Zużywa ATP. U bakterii jej odmianą jest gyraza , która wprowadza ujemne superskręty.
+Skoro bez topoizomeraz replikacja staje, enzymy te są dobrym celem leków. Lek, który zablokuje topoizomerazę, zaburza kopiowanie DNA w komórce bakterii albo w komórce nowotworowej. Tak działają niektóre antybiotyki (blokują gyrazę bakterii) i leki przeciwnowotworowe (zatrzymują podziały komórek raka).
+
+### Telomery i telomeraza – problem końców chromosomu  [c04-telomery]
+Wróćmy do nici opóźnionej, tym razem na samym końcu liniowego chromosomu. Każdy fragment Okazaki zaczyna się od startera RNA, a ostatni starter leży na samym końcu matrycy. Gdy zostanie usunięty, zostaje luka. W środku chromosomu lukę po starterze wypełnia polimeraza, wydłużając sąsiedni fragment od jego końca 3′. Tu sąsiedniego fragmentu nie ma – przed luką nie ma żadnego końca 3′, do którego polimeraza mogłaby dobudowywać. Luka zostaje, a nowa nić jest krótsza od matrycy. Każda replikacja skraca więc koniec chromosomu. Bakterie tego problemu nie mają: ich chromosom jest kolisty, więc nie ma końców.
+Końce chromosomów chronią telomery – wiele powtórzeń krótkiej sekwencji (u człowieka TTAGGG). Telomery są zapasem, który może się przy kolejnych replikacjach skracać bez utraty genów. Chronią też chromosomy przed sklejaniem się ze sobą i przed nukleazami (enzymami rozkładającymi kwasy nukleinowe).
+Telomery dobudowuje telomeraza – enzym zbudowany z białka i RNA. Jej RNA paruje z końcem 3′ chromosomu i służy za matrycę: telomeraza dobudowuje według niego kolejne powtórzenie, przesuwa się i powtarza to wiele razy. Drugą nić uzupełnia potem zwykła replikacja (starter i polimeraza). Telomeraza jest aktywna w komórkach rozrodczych, macierzystych i nowotworowych. W większości komórek ciała jest nieaktywna, więc ich telomery z wiekiem się skracają, co wiąże się ze starzeniem komórek ( ). Samo RNA telomerazy opisujemy przy rodzajach RNA ( ).
+[ŹRÓDŁO] Źródło: Drewa s. 34, 37, 51–55
+
+## DNA a RNA  [c04-dna-rna]
+
+### Te same cegiełki – inne szczegóły  []
+Do tej pory mówiliśmy o DNA. RNA (kwas rybonukleinowy) to drugi rodzaj kwasu nukleinowego. Zbudowane jest z tych samych rodzajów cegiełek: też jest łańcuchem nukleotydów połączonych wiązaniami fosfodiestrowymi, ze szkieletem cukrowo-fosforanowym i zasadami z boku. Kilka drobnych różnic w budowie sprawia jednak, że RNA pełni zupełnie inne zadania. Porównajmy je po kolei (zestawienie – ):
+- Cukier. W RNA jest ryboza , która ma grupę –OH przy węglu 2′. W deoksyrybozie DNA przy tym węglu jest tylko wodór – stąd „deoksy”, czyli „bez tlenu”.
+- Zasady. Zamiast tyminy RNA ma uracyl (U). Zasady RNA to A, G, C i U, a uracyl paruje z adeniną – tak jak tymina w DNA.
+- Liczba nici. RNA jest zwykle jednoniciowe – nie ma stałej drugiej, komplementarnej nici.
+- Kształt. Skoro nie ma partnera, nić RNA zagina się i paruje sama ze sobą tam, gdzie jej fragmenty do siebie pasują. Powstają struktury przestrzenne : spinki do włosów, pętle i wybrzuszenia.
+- Trwałość. RNA jest mniej trwałe niż DNA – wiązania w jego łańcuchu łatwiej się rozpadają.
+- Długość. RNA jest krótsze – zwykle nie dłuższe niż kilka tysięcy nukleotydów; DNA ma ich miliony.
+- Zmodyfikowane zasady. RNA często je zawiera – szczególnie dużo jest ich w tRNA, np. pseudourydyny.
+
+### Dlaczego RNA ma tyle różnych funkcji?  []
+DNA ma jedno główne zadanie: przechowuje i przekazuje informację genetyczną. RNA pełni wiele funkcji – przenosi informację, buduje rybosomy, dowozi aminokwasy, reguluje geny. Ta różnica wynika z cech opisanych wyżej. Dwuniciowe DNA ma zawsze kształt podwójnej helisy. Jedna nić RNA, która może się dowolnie fałdować, przyjmuje wiele kształtów – a różne kształty pozwalają RNA wykonywać różne zadania. Dlatego rodzajów RNA jest dużo więcej niż rodzajów DNA (następny podrozdział). Mniejsza trwałość też ma dwie strony. W komórce RNA, które nie jest już potrzebne, szybko znika – zobaczysz to przy mRNA. W laboratorium ta sama cecha jest kłopotem: RNA łatwo rozkłada się w czasie izolacji ( ).
+[TABELA]
+Cecha | DNA | RNA
+Cukier | deoksyryboza (przy 2′ tylko H) | ryboza (przy 2′ grupa –OH)
+Zasady i pary zasad | A, G, C, T; pary A–T, G–C | A, G, C, U; pary A–U, G–C
+Liczba nici i kształt | dwie – podwójna helisa | zwykle jedna, miejscami sparowana sama ze sobą: spinki do włosów, pętle, wybrzuszenia
+Gdzie występuje | jądro, mitochondria | jądro, cytoplazma, mitochondria
+Trwałość | bardzo trwały | nietrwały, szybko rozkładany
+Długość | bardzo długi (miliony nukleotydów) | krótki (do kilku tysięcy nukleotydów)
+Funkcja | przechowuje i przekazuje informację genetyczną | synteza białek, regulacja ekspresji genów
+Enzym, który go buduje | polimeraza DNA | polimeraza RNA
+[/TABELA]
+[RAMKA zapamietaj] Cztery najważniejsze różnice: cukier (deoksyryboza – ryboza), zasada (tymina – uracyl), liczba nici (dwie – zwykle jedna) i funkcja (przechowywanie informacji – synteza białek i regulacja ekspresji genów).
+[ŹRÓDŁO] Źródło: Drewa s. 37–38, 40–41
+
+## Rodzaje RNA  [c04-rna]
+
+### Przepis i narzędzia – dwie grupy RNA  []
+Informacja o budowie białka jest zapisana w DNA, ale białko powstaje według jej kopii w RNA. Odczytanie tej kopii i zbudowanie według niej białka to translacja – „tłumaczenie” kolejności nukleotydów na kolejność aminokwasów. Ze względu na translację RNA dzieli się na dwie grupy:
+- RNA kodujące – to mRNA (informacyjne), kopia genu z przepisem na białko. Ulega translacji. Stanowi tylko ok. 4% RNA w komórce.
+- RNA niekodujące (funkcjonalne) – ok. 96% RNA. Nie ulega translacji; samo wykonuje pracę jako „narzędzie”. Należą tu: rRNA (rybosomalne), tRNA (transportujące), snRNA (małe jądrowe), snoRNA (małe jąderkowe), miRNA (mikroRNA) i siRNA (małe interferujące).
+W komórce występuje też RNA prekursorowe (np. pre-mRNA) – niedojrzała postać, która musi dojrzeć, zanim zacznie działać ( ).
+Czytając dalej, zwróć uwagę na jedną wspólną rzecz: prawie każde RNA-narzędzie odnajduje swój cel dzięki komplementarności – paruje z nim zasadami. Zestawia to tabela na końcu podrozdziału.
+
+### mRNA – przepis na białko  []
+mRNA to kopia genu kodującego białko. Kolejność aminokwasów jest w nim zapisana trójkami nukleotydów – kodonami . Dojrzałe mRNA eukariontów ma na końcu 5′ czapeczkę (nietypowy nukleotyd guanylowy), dalej nieulegający translacji odcinek 5′UTR, sekwencję kodującą od kodonu START do kodonu STOP – to ona wyznacza kolejność aminokwasów w białku – odcinek 3′UTR i na końcu 3′ ogon poli(A) z 200–250 adenin.
+mRNA żyje krótko: po translacji zostaje rozłożone. Dzięki temu komórka może szybko zmieniać, jakie białka produkuje – gdy przestaje powstawać nowe mRNA danego genu, stare szybko znika.
+[RAMKA uwaga] W źródle (Drewa s. 38) czapeczkę i ogon poli(A) przypisano budowie mRNA „u Prokaryota”. To elementy mRNA eukariontów, dołączane podczas dojrzewania (tak też Drewa s. 40: modyfikacja końców „eukariotycznego mRNA”).
+
+### rRNA – szkielet rybosomu  []
+Białka powstają na rybosomach . rRNA (rybosomalne RNA) jest ich głównym składnikiem i zarazem najliczniejszym rodzajem RNA w komórce. Stanowi 50–70% masy rybosomu i decyduje o jego kształcie oraz o rozmieszczeniu białek rybosomalnych. Rybosom składa się z małej i dużej podjednostki: u eukariontów (rybosom 80S) to 40S i 60S, u bakterii (70S) – 30S i 50S. rRNA zawiera wiele zmodyfikowanych nukleotydów, np. pseudourydynę; wprowadza się je w jąderku z pomocą snoRNA (niżej).
+
+### tRNA – kto dowozi aminokwasy?  []
+Kodon w mRNA to tylko trzy zasady – sam nie jest aminokwasem. Potrzebna jest cząsteczka, która z jednej strony rozpozna kodon, a z drugiej przyniesie pasujący do niego aminokwas. Tę rolę pełni tRNA (transportujące RNA) – mała cząsteczka z 74–93 nukleotydów, która dowozi aminokwasy do rybosomu.
+Jedna nić tRNA zagina się w kilku miejscach i paruje sama ze sobą, tworząc kształt koniczyny – cztery ramiona ze sparowanych odcinków i trzy pętle ( ). Dwa miejsca odpowiadają za dwa zadania:
+- antykodon – trzy nukleotydy w pętli na dole „koniczyny”; są komplementarne do kodonu w mRNA, więc rozpoznają go, parując z nim;
+- koniec 3′ , zakończony sekwencją CCA – tu przyłączony jest aminokwas.
+tRNA z przyłączonym aminokwasem to aminoacylo-tRNA . Każdy rodzaj tRNA przenosi jeden określony aminokwas, a w komórce jest do 50 rodzajów tRNA. tRNA zawiera też dużo zmodyfikowanych zasad.
+[RYCINA c04-fig-trna „tRNA”: A – zacznij od końca 3′ (…CCA) u góry, gdzie przyłączony jest aminokwas, i zejdź ramieniem akceptorowym do pętli antykodonowej na dole; po bokach leżą pętle D i T. B – porównaj antykodon 3′-UAC-5′ z kodonem 5′-AUG-3′: pary U–A, A–U i C–G pasują, więc to tRNA przynosi metioninę.]
+
+### snRNA – wycina introny  []
+snRNA (małe jądrowe RNA) działa w jądrze komórkowym. Nazywa się je też U-RNA, bo mają dużo urydyny; najważniejsze to U1, U2, U4/U6 i U5. snRNA łączą się z białkami w kompleksy snRNP , a te razem tworzą spliceosom – „maszynę”, która wycina z pre-mRNA wstawki zwane intronami i łączy pozostałe odcinki, eksony. Granice intronu snRNA rozpoznaje na zasadzie komplementarności – paruje z nimi. Cały proces, splicing, opisuje następny podrozdział.
+
+### snoRNA – wskazuje, co zmienić w rRNA  []
+snoRNA (małe jąderkowe RNA) działa w jąderku, czyli tam, gdzie powstają rybosomy. Kieruje chemicznymi modyfikacjami rRNA, np. zamianą urydyny na pseudourydynę albo dołączeniem grupy metylowej. Działa jak wskaźnik: paruje z komplementarnym fragmentem rRNA i w ten sposób pokazuje enzymowi, który dokładnie nukleotyd zmienić. Razem z białkami tworzy kompleksy snoRNP. Bierze też udział w imprintingu genów i wchodzi w skład telomerazy u ssaków.
+
+### RNA telomerazy – matryca dla końców chromosomu  []
+Telomerazę poznałeś przy replikacji ( ): to enzym z białka i RNA, który wydłuża telomery – końce chromosomów, skracające się przy każdej replikacji. Kluczowe jest jej RNA. Zawiera krótką sekwencję komplementarną do powtórzeń telomeru (u człowieka TTAGGG). Dzięki temu paruje z końcem chromosomu i staje się matrycą : telomeraza „przepisuje” własne RNA na DNA i dobudowuje kolejne powtórzenia.
+U ssaków RNA telomerazy należy do rodziny snoRNA. Stąd jego inna funkcja: ta sama grupa RNA w jąderku kieruje modyfikacjami rRNA.
+
+### miRNA i siRNA – jak krótkie RNA wyciszają gen?  []
+Gen może zostać przepisany na mRNA, a mimo to białko z niego nie powstanie albo powstanie go mniej. Mówimy wtedy, że jego ekspresja została wyciszona . Robią to dwa rodzaje krótkiego RNA.
+miRNA (mikroRNA) to małe regulatorowe RNA o długości 20–26 nukleotydów. Wycisza ekspresję genów, hamując translację. Jest szczególnie ważne w rozwoju zarodkowym, gdy geny trzeba precyzyjnie włączać i wyłączać. Gen miRNA daje w jądrze cząsteczkę w kształcie spinki – pre-miRNA (ok. 75 nukleotydów). Po przejściu do cytoplazmy enzym Dicer tnie ją na krótkie, dojrzałe miRNA. miRNA przyłącza się do mRNA, do którego pasuje tylko częściowo, i wstrzymuje translację – powstaje mniej białka. miRNA reguluje w ten sposób własne geny komórki.
+siRNA (małe interferujące RNA) to krótkie, dwuniciowe odcinki RNA o długości 21–25 nukleotydów. Powstają z dłuższego dwuniciowego RNA (dsRNA), które trafiło do cytoplazmy – np. z wirusa albo wprowadzone do komórki z zewnątrz. Dicer tnie dsRNA na siRNA, a jedna nić siRNA przyłącza się do mRNA, do którego pasuje w całości. Takie mRNA zostaje przecięte i rozłożone, więc translacja nie zachodzi.
+[TABELA]
+Cecha | miRNA | siRNA
+Długość | 20–26 nt | 21–25 nt
+Pochodzenie | własne geny komórki (pre-miRNA) | dwuniciowe RNA, np. wirusa
+Dopasowanie do mRNA | częściowe | pełne
+Skutek | hamowanie translacji | pocięcie i rozkład mRNA
+[/TABELA]
+
+### Wspólny klucz: komplementarność  []
+Zestawmy wszystkie rodzaje RNA. Prawie każde z nich odnajduje swój cel w ten sam sposób – parując z nim zasadami:
+[TABELA]
+RNA | Gdzie działa | Co robi | Z czym paruje
+mRNA | cytoplazma (rybosom) | niesie przepis na białko | jego kodony – z antykodonami tRNA
+rRNA | rybosom | buduje rybosom | z nim paruje snoRNA
+tRNA | cytoplazma (rybosom) | dowozi aminokwas | antykodon – z kodonem mRNA
+snRNA | jądro | wycina introny (spliceosom) | z granicami intronu w pre-mRNA
+snoRNA | jąderko | wskazuje nukleotydy rRNA do modyfikacji | z fragmentem rRNA
+RNA telomerazy | koniec chromosomu | matryca dla powtórzeń telomeru | z końcem 3′ chromosomu
+miRNA | cytoplazma | hamuje translację | z mRNA – częściowo
+siRNA | cytoplazma | prowadzi do rozkładu mRNA | z mRNA – w całości
+[/TABELA]
+[ŹRÓDŁO] Źródło: Drewa s. 37–40
+
+## Dojrzewanie RNA: splicing i interferencja RNA  [c04-splicing]
+
+### Dlaczego świeżo przepisane RNA nie jest jeszcze gotowe?  []
+Przepisanie genu na RNA to transkrypcja . U eukariontów daje ona najpierw pre-mRNA – niedojrzałą kopię genu. Taka cząsteczka nie nadaje się jeszcze do translacji. Zanim opuści jądro, przechodzi trzy zmiany:
+- na końcu 5′ dostaje czapeczkę ;
+- na końcu 3′ dostaje ogon poli(A) ;
+- ze środka zostają wycięte introny – to splicing .
+Dwie pierwsze zmiany chronią cząsteczkę przed rozkładem i przygotowują ją do translacji. Trzecia usuwa wstawki, które przerywają gen. Prekursory rRNA i tRNA też dojrzewają: są cięte na mniejsze kawałki i modyfikowane chemicznie.
+
+### Eksony i introny  []
+Gen eukariotyczny jest „poprzerywany”. Eksony to odcinki, które zostają w dojrzałym mRNA, a introny – wstawki między nimi. W czasie transkrypcji przepisywane są jedne i drugie, dlatego pre-mRNA zawiera introny. Splicing (składanie RNA) to wycinanie intronów z pre-mRNA i łączenie eksonów w jedną ciągłą cząsteczkę. Zachodzi w jądrze, zanim mRNA trafi do cytoplazmy.
+
+### Splicing krok po kroku  []
+Splicing wykonuje spliceosom – duży kompleks zbudowany z snRNA (U1, U2, U4/U6, U5) i białek ( ). Najpierw musi „wiedzieć”, gdzie kończy się ekson, a zaczyna intron. Pomaga w tym komplementarność: snRNA paruje z sekwencjami na granicach intronu. Dalej:
+- snRNA rozpoznają granice intronu – intron zwykle zaczyna się od GU, a kończy na AG;
+- spliceosom przecina RNA na początku intronu; intron zwija się w pętlę w kształcie lassa ;
+- spliceosom przecina koniec intronu i łączy sąsiednie eksony;
+- wycięty intron zostaje rozłożony, a dojrzałe mRNA jest gotowe do wyjścia z jądra.
+[RYCINA c04-fig-splicing „Dojrzewanie mRNA i splicing”: A – czytaj z góry na dół: pre-mRNA tuż po transkrypcji, dołączenie czapeczki i ogona poli(A), wycięcie intronów (w kształcie lassa) i dojrzałe mRNA z połączonymi eksonami. B – porównaj dwa mRNA powstałe z tego samego pre-mRNA: z eksonami 1-2-3 i 1-3; każde daje inne białko.]
+
+### Alternatywny splicing – jeden gen, kilka białek  []
+Eksony z jednego pre-mRNA można połączyć na różne sposoby – to alternatywny splicing . Raz powstaje np. mRNA z eksonami 1-2-3, a raz 1-3 ( ). Te dwa mRNA mają różne sekwencje kodujące, więc dają różne białka. Dzięki temu jeden gen może dać kilka różnych białek.
+[RAMKA obraz] Splicing przypomina montaż filmu: z nakręconego materiału wycinasz niepotrzebne ujęcia (introny) i sklejasz te, które zostają (eksony). Wspólna zależność: to, co zobaczy widz – czyli jakie białko powstanie – zależy od tego, które fragmenty zostaną sklejone. Inny montaż tego samego materiału daje inny film, tak jak alternatywny splicing daje inne mRNA. Granica analogii: montażysta może dowolnie przestawiać ujęcia, a w przykładzie z ryciny eksony zostają w tej samej kolejności – zmienia się tylko to, które z nich trafią do mRNA.
+
+### Interferencja RNA – jak wyłączyć gen, który już został przepisany?  []
+Wyciszanie ekspresji genu przez krótkie cząsteczki RNA to interferencja RNA (RNAi). Biorą w niej udział poznane już miRNA i siRNA ( ). Choć pochodzą z różnych źródeł, mechanizm ma wspólny schemat:
+- dłuższe RNA w kształcie spinki (pre-miRNA) albo dwuniciowe RNA (dsRNA) trafia do cytoplazmy;
+- enzym Dicer tnie je na krótkie odcinki (ok. 20–25 nukleotydów);
+- krótkie RNA łączy się z białkami i odnajduje mRNA, do którego jest komplementarne;
+- gen zostaje wyciszony.
+Różnica pojawia się dopiero w kroku 4 i zależy od dopasowania. miRNA, które pasuje do mRNA tylko częściowo, hamuje translację – białka powstaje mniej. siRNA, które pasuje w całości, prowadzi do przecięcia i rozkładu mRNA – białka nie ma.
+Interferencja RNA reguluje rozwój organizmu (miRNA) i pomaga bronić się przed obcym RNA, np. wirusowym (siRNA).
+[RAMKA przyklad] Jak wykorzystać RNAi w laboratorium? Chcemy sprawdzić, do czego komórce potrzebny jest gen X. (1) Wprowadzamy do komórek dwuniciowe RNA, którego jedna nić jest komplementarna do fragmentu mRNA genu X. (2) Dicer tnie je na siRNA. (3) Jedna nić siRNA pasuje do mRNA genu X w całości, więc się do niego przyłącza. (4) mRNA genu X zostaje przecięte i rozłożone – białko X przestaje powstawać, choć sam gen pozostaje nietknięty. (5) Obserwujemy, co zmieniło się w komórce. Tak wykorzystuje się siRNA: żeby wyłączyć wybrany gen i sprawdzić, co się stanie.
+[ŹRÓDŁO] Źródło: Drewa s. 38–40
+
+## Materiał do badań: pobieranie, zabezpieczanie, przesyłanie  [c04-material]
+
+### Po co badać kwasy nukleinowe?  []
+Dotąd zajmowaliśmy się tym, jak zbudowane są DNA i RNA i jak działają w komórce. Teraz przechodzimy do laboratorium. Diagnostyka molekularna bada kwasy nukleinowe – DNA i RNA – żeby rozpoznawać choroby, rozumieć, jak powstają, a także im zapobiegać i je leczyć. Badania molekularne są czulsze od klasycznych i szybciej dają wynik, dlatego coraz częściej stosuje się je w diagnostyce chorób dziedzicznych, nowotworowych i zakaźnych.
+Każde takie badanie zaczyna się od próbki. Od tego, jak zostanie pobrana i czy DNA przetrwa drogę do laboratorium, zależą wszystkie dalsze kroki. Dlatego pierwsze pytania brzmią: z czego wziąć DNA, do czego je pobrać i jak je przewieźć.
+
+### Skąd wziąć DNA do badań?  []
+Żeby zbadać DNA, trzeba je najpierw wyizolować z komórek. Źródłem DNA do badań molekularnych mogą być:
+- limfocyty krwi obwodowej;
+- hodowle fibroblastów skóry;
+- komórki nabłonkowe, np. z wymazu z jamy ustnej;
+- cebulki włosowe;
+- komórki szpiku kostnego;
+- fragmenty tkanek – guzy nowotworowe, bioptaty, wycinki;
+- inny materiał biologiczny – surowica, mocz, kał, płyny z jam ciała.
+Czasem trzeba zbadać DNA płodu albo zarodka. W badaniach prenatalnych (przed urodzeniem) bierze się komórki, które mają materiał genetyczny płodu: komórki płynu owodniowego i komórki trofoblastu. W badaniach preimplantacyjnych – czyli zarodka, zanim zagnieździ się w macicy – wystarcza DNA z 1 lub 2 blastomerów pobranych z 8-komórkowego zarodka.
+
+### Jak pobrać i przewieźć materiał?  []
+Krew pobiera się jałowo do probówki z EDTA (kwasem etylenodiaminotetraoctowym). EDTA działa jako antykoagulant – nie pozwala krwi krzepnąć w probówce. Krew trzeba jak najszybciej dostarczyć do laboratorium.
+Probówki z heparyną się nie nadają. Powód leży w dalszym etapie badania: badany fragment DNA zwykle namnaża się w reakcji PCR, którą wykonuje polimeraza DNA ( ). Heparyna hamuje aktywność polimerazy DNA – a od tego enzymu zależy reakcja PCR.
+Wycinki tkanek i materiał z biopsji umieszcza się w sterylnych probówkach wolnych od DNaz , czyli enzymów rozkładających DNA ( DNase-free ) – probówka nie może sama wnieść do próbki enzymów niszczących DNA. Materiał trzeba od razu dostarczyć do laboratorium na suchym lodzie albo zamrozić zaraz po pobraniu.
+
+### Jak przechowywać wyizolowane DNA?  []
+W laboratoriach DNA izoluje się zwykle gotowymi zestawami odczynników – trwa to kilka godzin ( ). Otrzymane DNA ocenia się ilościowo i jakościowo – spektrofotometrem i w elektroforezie ( ) – a potem wykorzystuje do dalszych badań. Wyizolowane DNA – wysuszone albo rozpuszczone w wodzie lub w buforze TE (Tris-EDTA) – przechowuje się w 4 °C na czas bieżących analiz. Część, której na razie się nie używa, zamraża się w możliwie niskiej temperaturze: w –80 °C DNA zachowuje dobrą jakość przez kilka lat.
+[RAMKA zapamietaj] Krew do badań DNA – probówka z EDTA, nigdy z heparyną (hamuje polimerazę). Tkanka – sterylna probówka DNase-free, potem suchy lód albo zamrożenie. Wyizolowane DNA – 4 °C na czas analiz, –80 °C na lata.
+[ŹRÓDŁO] Źródło: Ostrowska s. 53–54
+
+## Izolacja i oczyszczanie DNA  [c04-izolacja]
+
+### Co chcemy otrzymać – i co stoi na przeszkodzie?  []
+Wyobraź sobie próbkę: komórki nabłonka z wymazu albo limfocyty z krwi. DNA jest w nich zamknięte w jądrze, nawinięte na histony ( ) i otoczone wieloma innymi cząsteczkami – przede wszystkim białkami. Wśród tych białek są nukleazy – enzymy, które tną kwasy nukleinowe. Chcemy z tego otrzymać dobry preparat DNA : biologicznie aktywny, chemicznie stabilny i wolny od białek.
+Większość metod izolacji DNA ma te same, stałe etapy ( ). Każdy z nich usuwa jedną przeszkodę:
+Krok 1. Liza komórek. Przeszkoda: DNA jest zamknięte w komórkach. Rozwiązanie: komórki się rozbija – to liza . DNA wydostaje się do roztworu, ale razem z całą zawartością komórki.
+Krok 2. Denaturacja i rozkład białek. Przeszkoda: w roztworze po lizie (lizacie) są białka komórki, w tym nukleazy, które mogłyby pociąć uwolnione DNA. Rozwiązanie: białka się denaturuje i rozkłada. Nukleazy tracą aktywność, a DNA przestaje być związane z białkami.
+Krok 3. Usunięcie białek (odbiałczanie). Przeszkoda: rozłożone białka wciąż są w tym samym roztworze co DNA, a preparat ma być od nich wolny. Rozwiązanie: trzeba oddzielić jedno od drugiego. Tym krokiem metody różnią się najbardziej – opisujemy je niżej.
+Krok 4. Zagęszczenie DNA. Przeszkoda: po poprzednich krokach DNA jest rozproszone w dużej objętości płynu. Rozwiązanie: zbiera się je w małej objętości.
+
+### Jak oddzielić DNA od białek? Trzy sposoby  []
+Do wyboru są dwie strategie: usunąć białka z roztworu, w którym zostaje DNA – albo odwrotnie, wyłapać DNA, a całą resztę wypłukać. Białka można więc usunąć:
+- fenolem i chloroformem – ta technika daje DNA o najwyższej czystości;
+- przez wysolenie białek z lizatu komórek;
+- przez związanie DNA z nośnikiem : DNA przyczepia się do złoża, zanieczyszczenia się odmywa, a potem uwalnia się czyste DNA. Służą do tego kolumny chromatograficzne z filtrami jonowymiennymi lub krzemionkowymi.
+
+### Metoda kolumnowa krok po kroku  []
+Prosta w wykonaniu jest metoda kolumnowa – to trzeci sposób z listy. Na ćwiczeniach izoluje się nią DNA z komórek nabłonka z wymazu z jamy ustnej, zestawem GeneMATRIX Swab-Extract:
+- pobranie – wymaz z jamy ustnej dostarcza komórek nabłonka;
+- liza – rozbicie komórek i trawienie białek;
+- wiązanie – próbkę nakłada się na kolumnę, gdzie DNA wiąże się ze złożem;
+- płukanie – usuwa zanieczyszczenia, a DNA zostaje na złożu;
+- elucja – na końcu czyste DNA się wymywa i spływa do probówki.
+[RYCINA c04-fig-izolacja „Izolacja DNA i ocena preparatu”: A – idź od lewej: pobranie (wymaz), liza, wiązanie DNA ze złożem, płukanie i elucja; śledź, co zostaje w kolumnie (DNA), a co z niej wypływa (zanieczyszczenia). B – ocena preparatu: spektrofotometr porównuje pochłanianie UV przy 260 nm (kwasy nukleinowe) i 280 nm (białka), a elektroforeza w żelu rozdziela DNA według długości.]
+
+### Jak dobrać zestaw?  []
+Nie ma jednego zestawu do wszystkiego. Wysoką jakość i powtarzalność preparatu zapewniają zestawy do izolacji dobrane do czterech rzeczy:
+- rodzaju kwasu nukleinowego , który chcemy uzyskać – DNA genomowy, mitochondrialny, plazmidowy;
+- pochodzenia DNA – roślinny, zwierzęcy, bakteryjny, wirusowy;
+- rodzaju materiału , z którego izolujemy – tkanki narządów, hodowla komórkowa;
+- przeznaczenia DNA – do PCR, do klonowania.
+Na przykład DNA genomowe do PCR i DNA plazmidowe do klonowania różnią się już dwoma kryteriami – rodzajem kwasu i przeznaczeniem – więc izoluje się je innymi zestawami.
+[ŹRÓDŁO] Źródło: Drewa s. 710 · Ostrowska s. 54
+
+## Oznaczanie ilości i jakości preparatów  [c04-ocena]
+
+### Ile mamy DNA i czy jest czyste?  []
+Po izolacji mamy w probówce roztwór. Gołym okiem nie da się ocenić, ile jest w nim DNA ani czy zostały w nim białka. A to ma znaczenie: jakość DNA i RNA ma bezpośredni wpływ na wynik badania. Dlatego każdy preparat się sprawdza. Służą do tego trzy metody:
+- elektroforeza analityczna w żelu;
+- spektrofotometria – pomiar absorbancji;
+- mikromacierz połączona z elektroforezą mikrokapilarną.
+
+### Spektrofotometria – jak światło pokazuje, ile jest DNA?  []
+Spektrofotometria wykorzystuje to, że badane substancje pochłaniają promieniowanie – i to najmocniej przy określonej długości fali. Na tej podstawie można je wykryć, zidentyfikować i oznaczyć ilościowo. Kwasy nukleinowe pochłaniają światło UV najmocniej przy 260 nm – to zasługa zasad azotowych ( ). Białka pochłaniają najmocniej przy 280 nm. Mierząc pochłanianie przy obu długościach fali, można więc ocenić osobno kwasy nukleinowe i białka ( ). Pomiar wykonuje się przy czterech długościach fali:
+[TABELA]
+Długość fali | Co mierzy
+240 nm | tło i zanieczyszczenia
+260 nm | kwasy nukleinowe (DNA, RNA)
+280 nm | białka
+320 nm | tło i możliwe zanieczyszczenia
+[/TABELA]
+Z gęstości optycznej przy 260 nm (OD 260 ) oblicza się ilość DNA lub RNA. O jakości preparatu mówi stosunek OD 260/280 . Im więcej białek zostało w preparacie, tym silniejsze pochłanianie przy 280 nm i tym niższy ten stosunek. Wynik powyżej 1,8 oznacza preparat dobrej jakości. Stosunki 260/240 i 260/320 – czyli do długości fali, przy których mierzy się tło i zanieczyszczenia – informują o czystości próbki.
+[RAMKA przyklad] Liczby przykładowe. Pomiar daje OD 260 = 0,90 i OD 280 = 0,45. Stosunek 260/280 = 0,90 : 0,45 = 2,0 – więcej niż 1,8, więc preparat jest dobrej jakości. Zmieńmy jeden warunek: w innym preparacie OD 260 jest takie samo, ale OD 280 wynosi 0,75. Stosunek spada do 0,90 : 0,75 = 1,2 – poniżej 1,8. Ilość kwasu nukleinowego się nie zmieniła; wzrosło pochłanianie przy 280 nm, czyli w preparacie zostało dużo białek.
+
+### Dlaczego dla RNA ten stosunek nie wystarcza?  []
+Dla RNA wiarygodność stosunku 260/280 jest dyskusyjna: odpowiada on tylko 40% zawartości RNA i może obejmować zanieczyszczenia białkowe. Bardziej swoisty jest pomiar ze specjalnym barwnikiem znakującym, np. RiboGreen . Wykrywa on już 1 ng RNA w mililitrze i pomija zanieczyszczenia białkami i DNA – mierzy więc tylko to, co nas interesuje.
+
+### Czy kwas nukleinowy jest cały? Integralność  []
+Czystość to nie wszystko – kwas nukleinowy mógł się też rozpaść na kawałki. Nowsze urządzenia oceniają integralność kwasu nukleinowego, czyli to, na ile jest on rozłożony (zdegradowany). Wynik podają w skali od 1 (najbardziej zdegradowany) do 10 (najlepsza jakość). Wystarcza do tego bardzo mało materiału – już od 200 pg. To trzecia metoda z listy: urządzenie łączy elektroforezę mikrokapilarną, mikromacierz i detekcję fluorescencyjną, a wynik pokazuje w postaci wykresu.
+
+### Elektroforeza – rozdział według długości  []
+W buforach o pH zbliżonym do obojętnego kwasy nukleinowe mają ładunek ujemny – pochodzi on od reszt fosforanowych w szkielecie ( ). Dlatego w polu elektrycznym wędrują w żelu zawsze od katody (–) do anody (+). Fragmenty układają się według wielkości: najmniejsze zawędrują najdalej. Wielkość odczytuje się, porównując prążki ze wzorcem – mieszaniną fragmentów DNA o znanej wielkości, rozdzielaną w tym samym żelu. Prążki uwidacznia się barwnikiem, np. bromkiem etydyny. Szczegóły – .
+[ŹRÓDŁO] Źródło: Drewa s. 711–712
+
+## Analiza RNA: izolacja i przechowywanie  [c04-rna-izolacja]
+
+### Po co izolować RNA?  []
+DNA mówi, jakie geny ma komórka. RNA pokazuje, które z nich są aktywne – przepisywane na RNA – i jak bardzo. Dlatego izolacja RNA jest pierwszym etapem badań ekspresji genów. Metoda powinna dawać RNA niezdegradowane i o wysokiej czystości.
+
+### Dlaczego RNA trudniej izolować niż DNA?  []
+Izolacja RNA przebiega w podobnych etapach jak izolacja DNA ( ). Trzeba jednak pokonać trzy dodatkowe przeszkody – każda ma swoje rozwiązanie.
+Przeszkoda 1: RNazy. RNA samo w sobie jest mniej trwałe niż DNA ( ). Do tego w materiale biologicznym i w otoczeniu jest bardzo dużo rybonukleaz (RNaz) – enzymów rozkładających RNA, bardzo aktywnych i bardzo trwałych. Jeśli RNazy działają w próbce, RNA szybko się rozpada. Dlatego zwalcza się je w trzech miejscach:
+- w próbce – stosuje się bardzo silne związki rozkładające białka: chlorowodorek guanidyny lub izotiocyjanian guanidyny. Niszczą one RNazy, a przy okazji struktury komórkowe – jeden odczynnik unieczynnia więc enzymy i pomaga rozbić komórki;
+- na sprzęcie – RNazy usuwa się inhibitorami RNaz, np. DEPC (dietylopirowęglanem);
+- w pracowni – stosuje się odczynniki wysokiej jakości, osobny zestaw pipet tylko do RNA, sterylny sprzęt jednorazowego użytku, końcówki do pipet z filtrem i zwiększony reżim czystości w pomieszczeniach do izolacji RNA. Każdy z tych środków zamyka jedną z dróg, którymi RNazy z otoczenia mogłyby dostać się do próbki.
+Często stosowanym inhibitorem RNaz jest też RNazin – białko, które unieczynnia RNazy.
+Przeszkoda 2: DNA w preparacie. Razem z RNA izoluje się DNA, które trzeba usunąć. Nadmiar DNA usuwa ekstrakcja kwaśnym fenolem (o niskim pH). Dokładne usunięcie zapewnia trawienie DNazą wolną od RNaz – „wolną od RNaz”, bo enzym dodany do próbki nie może przy okazji wnieść do niej RNaz.
+Przeszkoda 3: mało mRNA. Cząsteczki rRNA, tRNA i małe RNA stanowią razem ok. 80–98% RNA komórki. Jeśli interesuje nas tylko mRNA, trzeba je od nich oddzielić. Wykorzystuje się do tego ogon poli(A), który mRNA ma na końcu 3′ ( ). Ogon wiąże się z cząsteczkami poli(T) przyczepionymi do stałego podłoża – w kolumnach albo na kulkach magnetycznych – bo A paruje z T. Niezwiązane RNA się odmywa, a oczyszczone mRNA wymywa (eluuje).
+
+### Co daje analiza RNA, a co ją utrudnia?  []
+Analiza RNA ma zalety: mutację można wykryć, wykonując mniej reakcji, bo RNA jest krótsze niż odpowiadający mu odcinek DNA. Ma też wady: trudniej o powtarzalne wyniki, RNA z niektórymi mutacjami jest mniej stabilne, a różne formy splicingu ( ) utrudniają interpretację.
+
+### Z czego i ile materiału?  []
+Do izolacji RNA nadają się: krew obwodowa i szpik, tkanki (wycinki, bioptaty, fragmenty guzów nowotworowych), komórki jednojądrzaste krwi obwodowej lub szpiku oraz komórki z hodowli do badań cytogenetycznych, utrwalone mieszaniną kwasu octowego i metanolu.
+Do badań molekularnych potrzeba 3–6 µg RNA. Żeby je uzyskać, trzeba co najmniej 1–2 × 10 7 komórek, czyli 10–20 ml krwi obwodowej lub 2–5 ml szpiku kostnego.
+Krew i szpik pobiera się do probówek z EDTA lub z cytrynianem sodu. Żeby RNA było dobrej jakości, materiał trzeba dostarczyć do laboratorium w ciągu 24 godzin, a do tego czasu przechowywać w 4 °C. Tkanki zaraz po pobraniu umieszcza się w jałowym pojemniku i dostarcza na suchym lodzie albo zabezpiecza odczynnikiem RNAlater , który stabilizuje RNA i pozwala długo przechowywać tkankę w niskiej temperaturze.
+
+### Jak izoluje się RNA?  []
+Podstawową metodą jest metoda opisana przez Chomczyńskiego i Sacchi, dziś zwykle w odmianie z trizolem. Drugą jest metoda kolumnowa, która wykorzystuje właściwości soli chaotropowych i złóż krzemionkowych – jest prosta w wykonaniu i skutecznie chroni RNA przed rozkładem.
+Po izolacji mierzy się stężenie i czystość RNA – absorbancję w świetle UV ( ). Ten pomiar jest niezbędny, bo RNA bada się zwykle po przepisaniu go na DNA. Robi się to w odwrotnej transkrypcji , która daje DNA komplementarne do RNA, czyli cDNA ( ) – a do tej reakcji trzeba używać zawsze takiej samej ilości RNA.
+
+### Jak przechowywać RNA?  []
+Wyizolowane RNA rozpuszcza się w odpowiednim buforze i przechowuje w –80 °C, unikając rozmrażania i ponownego zamrażania. Zamiast RNA można też przechowywać otrzymane z niego cDNA. Jest mniej podatne na rozkład – to już DNA, a DNA jest dużo trwalsze od RNA. Podobnie jak DNA, cDNA można przechowywać po wysuszeniu, w buforze do elucji z kolumienek lub w buforze TE; na dłużej zamraża się je w –80 °C.
+[TABELA]
+ | DNA | RNA
+Krew | probówka z EDTA (nie z heparyną); jak najszybciej do laboratorium | probówka z EDTA lub cytrynianem sodu; do laboratorium w ciągu 24 h, do tego czasu 4 °C
+Tkanka | sterylna probówka DNase-free; suchy lód albo od razu zamrozić | jałowy pojemnik; suchy lód albo RNAlater
+Główne zagrożenie | nukleazy z komórki – rozkładane w czasie izolacji | RNazy – w próbce, na sprzęcie i w otoczeniu
+Przechowywanie | 4 °C – na czas analiz; –80 °C – kilka lat | –80 °C w buforze, bez rozmrażania; albo jako cDNA
+[/TABELA]
+[ŹRÓDŁO] Źródło: Ostrowska s. 56 · Drewa s. 710–711
+[RAMKA w60] Nukleotyd = cukier + zasada + 1–3 fosforany; nić to szkielet cukrowo-fosforanowy z zasadami z boku, rośnie tylko na końcu 3′ (kierunek 5′→3′). Nici są komplementarne (A–T, G–C) i przeciwrównoległe. Formy A, B, C, D i E – prawoskrętne, Z – jedyna lewoskrętna; najczęstsza jest B-DNA . Nukleosom (oktamer histonów + ok. 146 pz DNA, 11 nm) → solenoid (30 nm) → … → chromosom metafazowy (1400 nm). Replikacja jest semikonserwatywna . Polimeraza buduje tylko 5′→3′ i od startera, więc nić wiodąca rośnie w sposób ciągły, a opóźniona – z fragmentów Okazaki. RNA: ryboza, uracyl, zwykle jedna nić. Kodujące – mRNA; niekodujące – rRNA, tRNA, snRNA, snoRNA, miRNA, siRNA; większość działa przez komplementarność. Krew do DNA – z EDTA , nie z heparyną; izolacja: liza → rozkład białek → odbiałczanie → zagęszczenie; dobry preparat: OD 260/280 > 1,8 ; RNA chronimy przed RNazami.
+
+
+======== E. ŹRÓDŁA (przycięte do zakresu z mapy) ========
+
+
+---------- drewa_r03.txt (cały plik) ----------
+# ŹRÓDŁO: Drewa G., Ferenc T. (red.), Genetyka medyczna, Edra Urban & Partner 2011 – ROZDZIAŁ 3. Kwasy nukleinowe
+# Zakres: s. 28–34, 37–45, 48–55 (wg rozpiski). Tekst z OCR; [Strona N] = numeracja książki.
+
+[Strona 28]
+
+28
+
+3 KWASY NUKLEINOWE
+
+3.1
+
+Budowa kwasów
+nukleinowych
+
+DNA - kwas deoksyrybonukleinowy, jest liniowym, nierozgałęzionym polimerem zbudowanym z podjednostek zwanych nukleotydami. Dzięki informacji zapisanej w formie
+kodu genetycznego DNA tworzy najważniejszy w przyrodzie zapis określający kompletną
+strukturę i wszystkie funkcje nie tylko pojedynczych komórek, ale i całych organizmów.
+Podstawowe funkcje DNA to kodowanie informacji związanej z sekwencją nukleotydów
+w RNA iaminokwasów w białkach, regulacją
+ich syntezy, co jest przekazywaniem informacji genetycznej następnym pokoleniom.
+DNA został odkryty w roku 1869 przez
+szwedzkiego biochemika Johanna Friedricha
+Mieschera, który z ludzkich białych krwinek
+wyizolował substancję o kwasowych właściwościach, niepoddającą się enzymatycznemu
+trawieniu proteazami. Już wówczas powstała
+nazwa „kwas nukleinowy”; jednak od tego
+wydarzenia do dokładnego poznania struktury DNA musiało jeszcze upłynąć wiele lat.
+Badania eksperymentalne wymagały preparatów DNA o wysokiej jakości. Jak wspomniano, pierwsze ekstrakty DNA pochodziły
+z ludzkich białych krwinek; kolejne ekstrakty
+DNA uzyskano z nasienia łososia. Stosowane
+w tamtym czasie metody izolacji DNA powodowały jednak degradację polimeru i uniemożliwiały prowadzenie dalszych badań.
+Krokiem milowym do poznania budowy
+kwasu deoksyrybonukleinowego było opracowanie w roku 1938 przez szwajcarskiego
+naukowca, Rudolfa Singera, metody izolacji
+wysokocząsteczkowego DNA. Singer przekazał 15 gramów oczyszczonego DNA do
+laboratorium Maurice Wilkinsa w Wielkiej
+Brytanii, w którym trwały pionierskie badania nad poznaniem struktury nici DNA na
+podstawie analizy fotografii rentgenowskich.
+W laboratorium tym zatrudniona była Rosalind Franklin, która jako pierwsza przeprowadziła systematyczne badania nad dyfrak-
+
+cją promieni rentgenowskich przez polimer
+kwasu deoksyrybonukleinowego tworzący
+rozciągnięte włókno, w czego konsekwencji
+powstała teoria budowy DNA. W tym czasie uświadomiono sobie potencjał tkwiący
+w kwasie deoksyrybonukleinowym (do tej
+pory sądzono, że jednostką dziedziczenia
+jest białko), co zapoczątkowało gorączkową
+rywalizację między naukowcami o pierwszeństwo w opisaniu jego struktury. Jednak
+to nie Rosalind Franklin przypadło opublikowanie teorii budowy DNA jako pierwszej,
+lecz zainspirowanemu przez jej prace Jamesowi Watsonowi.
+
+Budowa DNA została po raz pierwszy
+opublikowana w przełomowym artykule
+w czasopiśmie Nature, datowanym na 25
+kwietnia 1953 r. Zanim jednak do tego doszło, zaproponowane zostały dwa alternatywne modele budowy DNA, które okazały się
+błędne. Pierwszy z nich, opracowany przez
+Paulinga i Coreya, zakładał istnienie trzech
+przeplecionych wzajemnie łańcuchów z resztami fosforanowymi w pobliżu osi i zasadami azotowymi na zewnątrz. Kolejna teoria,
+również dotycząca struktury składającej się
+z trzech łańcuchów, została zaproponowana
+przez Frasera. W tym modelu reszty fosforanowe znajdowały się na zewnątrz potrójnego
+łańcucha DNA, a zasady azotowe — połączone wiązaniami wodorowymi — w środku.
+Ostateczny model budowy DNA, funkcjonujący do dzisiaj, został opracowany przez
+dwóch naukowców, których nazwiska od tej
+pory nierozerwalnie łączą się z najważniejszymi osiągnięciami genetyki molekularnej
+— Jamesa Watsona i Francisa Cricka. Ich model zakłada istnienie dwóch nici polinukleotydowych, zwiniętych helikalnie wokół jednej osi. U podłoża takiego toku rozumowania
+leżało założenie, iż deoksyrybonukleotydy
+połączone są ze sobą wiązaniami fosfodiestrowymi, które występują między atomem
+węgla 5' jednej reszty cukrowej a atomem
+węgla 3' sąsiadującej reszty cukrowej. DNA
+jest liniowym polimerem, w którym monomeryczną podjednostką są cztery chemicznie
+odrębne nukleotydy (ryc. 3.1). Mogą one być
+połączone razem w łańcuchy o długości se-
+
+[Strona 29]
+
+WEŃ
+OSFORANOW.
+
+Ryc.3.1 Schemat budowy nukleotydu.
+
+tek, a nawet milionów jednostek. Każdy nukleotyd w kwasie deoksyrybonukleinowym
+składa się z trzech omówionych niżej komponentów:
+
+Ryc. 3.2 Wzór strukturalny rybozy i deoksy-
+
+2'-deoksyryboza jest cukrem pentozą,
+zbudowanym z pięciu atomów węgla.
+Atomy węgla są ponumerowane znakiem
+prim (), aby odróżnić je od numeracji
+atomów węgla w zasadach. W 2-deoksyrybozie grupa hydroksylowa (-OH)
+przyłączona do 2' węgla rybozy została
+zastąpiona przez wodór (-H) dzięki biochemicznej aktywności enzymu reduktazy rybonukleotydowej. 2-deoksyryboza
+jest najbardziej elastycznym elementem
+struktury nukleotydu, układającym się
+w strukturę przestrzenną przypominającą kształtem kopertę (ryc. 3.2).
+
+Zasada azotowa. W strukturze DNA
+występują cztery zasady azotowe nale-
+
+HO__CH,
+5
+
+rybozy.
+
+3 KWASY NUKLEINOWE
+
+żące do dwóch typów związków heterocyklicznych; są to: cytozyna (C) i tymina
+(T), pochodne pirymidyny (zbudowane
+z pojedynczego pierścienia aromatycznego — pirymidynowego), oraz adenina (A)
+i guanina (G), pochodne puryny (zawierające dwa pierścienie aromatyczne — pirymidynowy i imidazolowy) (ryc. 3.3).
+Obecność pierścienia aromatycznego ma
+podstawowe znaczenie w tworzeniu się
+struktury przestrzennej polimeru DNA,
+gdyż warunkuje płaski kształt molekuł,
+a tym samym ich precyzyjne ułożenie
+w helisie. Wszystkie zasady azotowe są
+syntetyzowane w komórkach de novo,
+a nukleotydy mogą być syntetyzowane
+na dwa różne sposoby:
+— szlak de novo, w którym synteza opiera się na prostych związkach wyjściowych,
+
+2-DEOKSYRYBOZA
+
+29
+
+[Strona 30]
+
+30
+
+3 KWASY NUKLEINOWE
+
+N NH,
+N
+\ a N
+ory
+LL
+N NH N~ NH
+PURYNA ADENINA
+
+N
+
+PIRYMIDYNA CYTOZYNA
+
+- powtórne wykorzystanie zasad purynowych uwolnionych w wyniku hydrolizy kwasów nukleinowych iposzczególnych nukleotydów. Jest to tzw.
+szlak rezerwowy (ważny w zespole
+Lescha-Nyana).
+
+Różnice w ich budowie opierają się na
+
+obecności określonych grup funkcyjnych
+
+przyłączonych do konkretnych atomów w
+
+pierścieniu aromatycznym. W przypad-
+
+ku pirymidyn cytozyna zawiera grupę
+aminową (—NH>) w pozycji 4 (gdzie 4 odnosi się do położenia atomu w strukturze
+pierścienia aromatycznego), a tymina —
+grupę metylową (-CH3) w pozycji 5 oraz
+dwie grupy karbonylowe (=C=O) w pozycji 4 i 2. Różnica w budowie puryn polega na położeniu grupy aminowej, która
+
+w przypadku adeniny przyłączona jest do
+
+atomu węgla w pozycji 6, a w przypadku
+
+guaniny — do atomu węgla w pozycji 2.
+
+Dodatkowo guanina ma grupę karbony-
+
+lową w pozycji 6. Obecność i położenie
+
+tych grup funkcyjnych jest nieprzypadkowe, gdyż jest ono niezbędne do tworzenia komplementarnych (czyli wzajemnie
+się uzupełniających) połączeń między zasadami azotowymi należącymi do dwóch
+nici DNA podwójnej helisy. Połączenia
+
+Ag! ZN
+
+TYMINA
+
+O
+
+HN” ON
+
+GUANINA
+
+O
+CH; |
+HN |
+a Ryc.3.3 Zasady
+[0) NH azotowe wchodzące w skład
+kwasów nukle-
+
+inowych.
+
+URACYL
+
+te tworzą się na zasadzie wiązań wodorowych, gdzie grupa aminowa jest donorem wodoru, a tlen z grupy karbonylowej
+bądź azot z pierścienia aromatycznego —
+akceptorem wodoru (ryc. 3.4). Doświadczalnie udowodniono, że w kwasie DNA
+stosunek ilości zasad azotowych A do T
+i C do G jest zawsze bliski 1, co bezpośrednio wynika z komplementarności nici DNA opisanej w dalszych częściach tego rozdziału. Należy pamiętać,
+że specyficzna budowa zasad azotowych,
+pozwalająca na tworzenie trwałych połączeń między ściśle określonymi parami, umożliwia nie tylko zachowanie
+struktury przestrzennej podwójnej helisy DNA, ale również jej powielania
+(replikacji) oraz funkcji biologicznej
+jako nośnika informacji genetycznej
+(transkrypcja, translacja). Aby z zasad
+azotowych utworzył się nukleotyd stanowiący podstawową jednostkę w budowie DNA, puryna lub pirymidyna musi
+zostać dołączona do węgla 1' fosforylowanej deoksyrybozy poprzez wiązanie N-glikozydowe. Ponadto wszystkie
+heterocykliczne zasady azotowe wykazują absorpcję światła nadfioletowego
+o długości 260 nm. Właściwość ta zosta-
+
+[Strona 31]
+
+Ryc. 3.4 Wiązania wodorowe w podwójnej
+helisie DNA (schemat).
+P - reszta fosforanowa,
+D - 2'-deoksyryboza,
+
+3 KWASY NUKLEINOWE 31
+
+A - adenina, T — tymina,
+G - guanina, C - cytozyna.
+
+ła wykorzystana w badaniach kwasów
+nukleinowych.
+
+e Grupa fosforanowa składa się z jednej,
+dwóch lub trzech połączonych reszt fosforanowych dołączonych do węgla 5' deoksyrybozy. Reszty fosforanowe oznacza
+się jako: a, B, y, gdzie reszta fosforanowa
+a jest zawsze dołączona do pentozy danego nukleotydu. Główną funkcją reszt
+fosforanowych jest łączenie nukleotydów w łańcuchu DNA za pomocą wiązań
+3—5'-fosfodiestrowych, w których reszta fosforanowa a przyłączona do atomu
+węgla w pozycji 5' deoksyrybozy jednego
+nukleotydu wiąże się z atomem węgla
+w pozycji 3' deoksyrybozy sąsiadującego
+nukleotydu. Dlatego w nomenklaturze
+dotyczącej DNA łańcuch DNA jest zwyczajowo zapisywany w orientacji 53’.
+Wiązanie 3—5'-fosfodiestrowe powstaje podczas biochemicznej syntezy DNA
+z udziałem polimerazy DNA. Warto pamiętać, że identyczne wiązanie występuje
+w RNA, z tym że enzym biorący udział
+w jego tworzeniu to polimeraza RNA.
+Podczas wydłużania nici DNA (kierunek reakcji biosyntezy 53'), kolejny
+nukleotyd przyłącza się do wolnej reszty hydroksylowej położonej w pozycji 3'
+na końcu łańcucha polinukleotydowego, tworząc wiązanie 3-5'-fosfodiestrowe. Podczas tworzenia wiązania reszty
+fosforanowe B i y przyłączanego nukle-
+
+otydu zostają uwolnione od nukleotydu
+w postaci pirofosforanu (PPi) w wyniku
+hydrolizy, dzięki czemu reakcja syntezy
+DNA jest dla komórki termodynamicznie korzystna.
+
+W terminologii budowy kwasów nukle-
+
+inowych funkcjonują dwa pojęcia — nukleozyd i nukleotyd.
+
+Deoksynukleozyd - inaczej N-glikozyd,
+to molekuła zbudowana z pentozy (2-
+-deoksyryboza) i jednej zasady azotowej
+(adenina, cytozyna, guanina lub tymina),
+połączonych z cukrem wiązaniem B-N-
+-glikozydowym. Nazewnictwo nukleozydów opiera się na rodzaju zasady azotowej wchodzącej w ich skład; wyróżnia się
+odpowiednio deoksyadenozynę, deoksyguanozynę, deoksycytydynę i deoksytymidynę.
+
+Deoksynukleotyd — ester fosforanowy
+nukleozydu, jest zbudowany z pentozy
+(2-deoksyryboza), zasady azotowej oraz
+od jednej do trzech reszt fosforanowych.
+Nukleotyd jest podstawową jednostką
+budulcową DNA (oraz RNA, co opisano
+w dalszej części tego rozdziału). W nomenklaturze nukleotydów uwzględnia się
+rodzaj nukleozydu oraz liczbę reszt fosforanowych. Nukleotyd zawierający jedną
+resztę fosforanową nazywany jest monofosforanem deoksynukleozydu (dNMP),
+a dwie lub trzy reszty fosforanowe — odpowiednio difosforanem (dNDP) lub tri-
+
+[Strona 32]
+
+32
+
+3 KWASY NUKLEINOWE
+
+fosforanem (dNTP) deoksynukleozydu.
+Podane w nawiasach skróty to popularny zapis nazw nukleotydów, pochodzący
+z języka angielskiego, gdzie „d” oznacza
+„deoksy” (dla odróżnienia deoksyrybonukleotydu występującego w DNA od
+rybonukleotydu występującego w RNA),
+»N” to rodzaj nukleotydu wynikający
+zrodzaju zasady azotowej (A - adenozyna, G - guanozyna, C — cytydyna lub
+T - tymidyna), a kolejne symbole „MP”
+(monophosphate), „DP” (diphosphate)
+i „IP” (triphosphate) oznaczają liczbę
+reszt fosforanowych; odpowiednio jedną,
+dwie lub trzy. Przykładowo, difosforan
+deoksyadenozyny zapisuje sie jako dADP
+(deoxyadenosine diphosphate), a trifosforan deoksytymidyny - jako dTTP (deoxythymidyne triphosphate).
+Pierwszorzędowa struktura DNA nazywana sekwencją nukleotydową określa liniowy układ poszczególnych nukleotydów
+w nici DNA. W podwójnym łańcuchu DNA
+dwie komplementarne względem siebie nici
+ułożone są przeciwrównolegle. Orientację
+nici wyznacza obecność asymetrycznych
+końców DNA, które są oznaczane jako 5'i 3.
+Na końcu 5' znajduje się wolna grupa fosforanowa (5'PO4), a na końcu 3' - wolna grupa hydroksylowa (3'OH). Dzięki temu nić
+DNA zachowuje polarność. Proces replikacji
+i transkrypcji DNA przebiega zawsze w wyniku przyłączenia grupy 5' trójfosforanowej
+wolnego nukleotydu do grupy 3'OH nici polinukleotydowej, natomiast proces trawienia
+DNA z udziałem nukleaz może zachodzić
+wskutek przecinania wiązania 3 —5'-fosfodiestrowego zarówno po stronie 3' nukleotydu
+(tworząc końce 3'OH i 5'PO4 danego nukleotydu) lub po stronie 5' nukleotydu (tworząc
+końce 5'OH i 3'PO4 danego nukleotydu).
+Drugorzędowa struktura DNA przyjmuje najczęściej kształt podwójnej helisy
+o budowie prawoskrętnej. Warto jednak pamiętać, że helikalna budowa DNA nie jest
+tak prosta, jak początkowo sądzono. Rozwój
+technik analitycznych, takich jak dwu- i trójwymiarowa spektroskopia magnetycznego
+rezonansu jądrowego (NMR — Nuclear Mag-
+
+netic Resonance), ujawnił istnienie alternatywnych form przestrzennych łańcucha
+DNA. W tym miejscu przytoczone zostaną
+podstawowe fakty dotyczące najważniejszej
+drugorzędowej struktury DNA, jaką jest
+podwójna helisa B, najczęściej występująca
+w komórkach. Pozostałe formy helisy DNA
+(A, C, D, Ei Z) zostały omówione w dalszej
+części tego rozdziału. Jak już wspomniano,
+w modelu zaproponowanym przez Watsona i Cricka w 1953 r., DNA przyjmuje formę
+dwóch łańcuchów biegnących przeciwrównolegle i helikalnie skręconych w prawą stronę. Na jeden skręt podwójnej helisy przypada
+około 10 nukleotydów, a odległość między
+sąsiednimi zasadami w nukleotydach wynosi 0,34 nm, co przekłada się na długość jednego skrętu helisy wynoszącą 3,4 nm (34 A).
+Szerokość podwójnej helisy wynosi 2,37 nm
+(23,7 A), a zasady DNA tworzące trzon helisy są ułożone prostopadle do jej osi. Między dwiema cząsteczkami 2-deoksyrybozy
+znajdują się charakterystyczne rowki, które
+w przypadku B-helisy DNA są nierównej
+wielkości. Większy rowek (major groove)
+jest szeroki i głęboki (szerokość 22 A), natomiast mniejszy rowek (minor groove) — wąski
+i płytki (szerokość 12 A). Ich asymetria wynika z tego, że pierścienie pentozowe cukrów
+leżą bliżej jednego z dwóch dłuższych brzegów każdej z komplementarnych par zasad.
+Kierunek skrętu helisy DNA wynika bezpośrednio z jej molekularnej budowy i dopasowania poszczególnych atomów węgla, azotu,
+wodoru, tlenu i fosforu względem siebie. Na
+podstawie analizy modeli przestrzennych
+obrazujących prawoskrętną helisę DNA udowodniono, że odwrócenie skrętu helisy z prawej na lewą stronę spowodowałoby rozbicie
+wiązań między atomami. Istniejące w przyrodzie lewoskrętne helisy DNA oparte są na
+dużo bardziej skomplikowanych modelach.
+
+Stabilność podwójnej helisy zapewniają
+dwa typy interakcji chemicznych. Pierwszym
+z nich są wspomniane już wiązania wodorowe, odpowiedzialne za specyficzne łączenie
+się zasad azotowych między dwoma łańcuchami DNA. Dwa wiązania wodorowe łączą
+adeninę z tyminą, natomiast trzy wiązania
+
+[Strona 33]
+
+wodorowe występują między guaniną a cytozyną. Ten typ wiązań (A-T i T-A oraz G-C
+i C-G) znany jest pod nazwą połączeń Watsona i Cricka. Wiązania wodorowe to słabe
+elektrostatyczne przyciąganie (3-7 kcal/mol)
+między ujemnie naładowanym atomem (tlen,
+azot) a atomem wodoru, który jest przyłączony do drugiego ujemnie naładowanego
+atomu. Mimo że wiązania wodorowe nie należą do silnych, ogromna ich liczba, w jakiej
+występują w genomie (u ssaków przeciętnie
+>10°) sprawia, że dwuniciowa cząsteczka
+DNA jest niezwykle stabilna. W podwójnej helisie DNA odległość między atomami
+tlenu lub azotu wchodzącymi w skład wiązania wodorowego waha się w granicach
+2,82—2,93 A, w zależności od typu wiązania.
+Warto pamiętać, że od klasycznego typu wiązań Watsona-Cricka możliwe są odchylenia,
+takie jak wiązania typu Hoogsteen (A-TxA),
+charakterystyczne dla trójniciowych struktur DNA lub wiązania niedopasowane, takie jak G-T lub G-A, występujące niekiedy
+w strukturach RNA. Drugi typ oddziaływań
+pozwalających na utrzymanie stabilnej helisy DNA to tzw. interakcje n-n. Polegają one
+na hydrofobowych oddziaływaniach między
+sąsiadującymi zasadami. Ściśle upakowana
+struktura DNA jest stabilna w obojętnych
+roztworach wodnych. Jest to możliwe dzięki
+specyficznej strukturze DNA, w której wewnątrz helisy znajdują się zasady azotowe
+(elementy nierozpuszczalne w wodzie), natomiast na zewnątrz — cząsteczki cukru i reszty
+fosforanowe (elementy rozpuszczalne w wodzie).
+
+3.2
+
+Struktura podwójnej
+helisy
+
+Struktura dwuniciowej helisy DNA, opisanej przez Watsona i Cricka, jest strukturą
+prawoskrętną i znaną pod nazwą B-DNA.
+Podwójna helisa DNA może również istnieć
+w alternatywnych formach różniących się
+między sobą takimi cechami, jak ilość nukle-
+
+3 KWASY NUKLEINOWE
+
+otydów na jeden obrót helisy, topografia rowka wzdłuż osi podwójnej nici czy kierunek
+skrętu helisy. Do najczęściej występujących
+alternatywnych form podwójnej helisy DNA
+należą A-DNA, C-DNA i Z-DNA. Rzadziej
+helisa DNA występuje w formie D-DNA
+i E-DNA ze względu na to, że dwa ostatnie
+warianty różnią się w dużym stopniu pod
+względem liczby par zasad przypadającej
+na jeden skręt. W przypadku D-DNA jest
+to 8 par zasad, a w przypadku E-DNA - 7,5.
+Formy te występują bardzo rzadko, obecne są
+tylko w niektórych cząsteczkach DNA niezawierających guaniny. W klasycznej formie
+B-DNA liczba par zasad przypadających na
+jeden obrót wynosi 10,4. Przybieranie przez
+podwójną nić DNA jednej z trzech najpopularniejszych form zależy od warunków
+zewnętrznych, takich jak wilgotność i siła
+jonowa. Forma B-DNA występuje w warunkach wysokiej wilgotności (92%) i niskiej siły
+jonowej. Z kolei helisa A-DNA formuje się
+przy wilgotności względnej wynoszącej 75%
+i w obecności jonów K*, Na*, Cs*, a forma
+C-DNA wymaga 60% wilgotności względnej i obecności jonów Lit. Formy A-DNA,
+B-DNA i C-DNA występują we wszystkich
+żywych komórkach, a najważniejszym parametrem, który je charakteryzuje, jest prawoskrętność. Przez wiele lat uważano, że DNA
+w naturze występuje tylko jako helisa prawoskrętna. Dlatego dużym zaskoczeniem było
+odkrycie lewoskrętnej formy podwójnej helisy DNA, nazwanej później Z-DNA. Została
+ona wykryta w żywych komórkach z zastosowaniem specjalnych przeciwciał łączących
+się specyficznie z lewoskrętną helisą DNA.
+
+W wielu aspektach forma Z przypomina formę B, jednak między obiema helisami
+DNA występuje wiele różnic. Najważniejszą
+cechą wspólną helisy B-DNA i Z-DNA jest
+to, że obie te formy tworzą podwójną helisę,
+a więc zawierają dwie nici DNA, które biegną
+równolegle, ale w przeciwnych kierunkach.
+W obu tych formach DNA parowane są zasady typu Watson-Crick (A-TiG-C), ale podstawową różnicą jest w tym przypadku kierunek
+skrętu podwójnej helisy, która w przypadku
+formy B jest prawo-, natomiast w przypadku
+
+33
+
+[Strona 34]
+
+34
+
+3 KWASY NUKLEINOWE
+
+formy Z — lewoskrętna. Z powodu odmiennego układu cząsteczek w helisie Z-DNA obwodowy rdzeń fosfocukrowy tworzy kształt
+zygzaka. W formie Z-DNA reszta cukrowa
+w łańcuchu polinukleotydowym ma zmienną orientację, w konsekwencji czego jednostką powtarzalną jest dinukleotyd, natomiast
+w formie B-DNA, gdzie orientacja cukru nie
+jest zmienną powtarzalną, a helisa ma regularną budowę — jednostką powtarzalną jest
+mononukleotyd. Na jeden pełny obrót helisy w formie Z-DNA przypada 12 par zasad
+(albo 6 powtarzających się dinukleotydów),
+natomiast w formie B-DNA jeden pełny skręt
+helisy składa się z ok. 10 par zasad. Kąt skrętu
+na jedno powtórzenie w formie Z-DNA wynosi 60°, natomiast w formie B-DNA — 36°.
+Długość pełnego obrotu helisy DNA w przypadku formy Z-DNA obejmuje odcinek 45 A,
+natomiast skręt formy B-DNA jest krótszy
+i wynosi 34 A, Kolejnym elementem odróżniającym formę B od formy Z jest topografia
+rowków przebiegających wzdłuż powierzchni podwójnej helisy. Głównym zadaniem
+rowków jest udostępnienie miejsc rozpoznania i wiązania białek regulatorowych w helisie DNA. Jak już wspomniano w podrozdz.
+3.1, większy rowek w przypadku helisy B jest
+szeroki i głęboki, natomiast mniejszy rowek
+— wąski i płytki. W przypadku helisy Z topografia rowków jest odmienna; większy rowek
+jest płaski, natomiast mniejszy — wąski i głęboki. Istnienie lewoskrętnej helisy Z nie znalazło do tej pory biologicznego uzasadnienia.
+Wiadomo tylko, że Z-DNA jest przejściową
+formą powstającą na skutek biologicznej
+aktywności komórki. Uważa się, że Z-DNA
+może brać udział w rozluźnianiu DNA podczas transkrypcji. Z tego względu kilka lat
+temu zasugerowano, że forma Z-DNA może
+odgrywać rolę w regulacji aktywności genów
+i rekombinacji.
+
+Podwójna helisa DNA reprezentuje cząsteczkę o budowie liniowej, jednak in vivo
+struktura ta bardzo często jest zamknięta
+i nie ma wolnych końców. W przypadku genomu bakteryjnego i wirusowego DNA często przyjmuje formę kolistą. Również w genomie eukariotycznym występują większe
+
+pętle, układając się w ten sposób, że każda
+pętla reprezentuje część koła, a ich podstawy
+są unieruchomione w macierzy jądrowej. Ta
+organizacja nakłada kolejne ograniczenia na
+strukturę podwójnej helisy DNA. DNA staje
+się wówczas superzwinięte (supercoiled). Za
+każdym razem, kiedy pojawia się superzwinięcie, podwójna nić obraca się wokół własnej
+osi. DNA poddane superzwinięciu znajduje
+się w stanie skrętu, z którego może być uwolniony jedynie poprzez przerwanie jednej lub
+obydwu nici. DNA, które nie jest poddane
+superzwinięciu, nazywane jest zrelaksowanym (relaxed). Zwinięte cząsteczki DNA są
+nazwane superhelikalnymi, mają one cechę
+topologiczną, a więc taką, która nie zmienia
+się pod wpływem odkształceń ciągłych. Innymi słowy, nie narusza ona integralności
+szkieletu cząsteczki, powstając pod wpływem
+ciepła lub wiązania z białkiem. Druga grupa
+odkształceń to odkształcenia nieciągłe, polegające na przecięciu jednej lub dwóch nici
+DNA.
+
+3.3
+
+Dodatnie i ujemne skręty
+superhelikalnej cząsteczki
+DNA
+
+DNA w najniższym stanie energetycznym
+funkcjonuje w formie helisy B-DNA. Podwójna helisa, złożona z przeciwstawnie równoległych łańcuchów znacząco wpływa na biologiczną aktywność DNA. Modulacja zwijania
+podwójnej helisy stanowi mechanizm regulacji dostępności do materiału genetycznego. Na mechanizm ten składa się rozwijanie,
+umożliwiające rozdzielenie się dwóch nici,
+oraz skręcanie, które z kolei zapobiega separacji dwóch nici DNA. W konsekwencji koliste cząsteczki DNA wskutek wprowadzenia
+dodatkowych skrętów tworzą przestrzenne
+formy zwane formami superhelikalnymi (supercoiled). W związku z tym do parametrów
+opisujących strukturę cząsteczki DNA należy
+dołączyć topologię DNA, a więc przestrzen-
+
+[… pominięto s. 35–36: poza zakresem rozpiski …]
+
+[Strona 37]
+
+cem DNA w miejscu przecięcia. Wyjątkiem
+jest eukariotyczna topoizomeraza I, która
+tworzy wiązanie z końcem 3' utworzonym
+w miejscu przecięcia nici DNA. Działanie
+obu typów topoizomeraz powoduje odmienne skutki dla superskrętu helisy DNA. Mianowicie, topoizomeraza I powoduje relaksację napięcia torsyjnego w cząsteczce DNA
+wskutek usunięcia superskrętu, natomiast
+topoizomeraza II — zwiększanie napięcia torsyjnego w cząsteczce DNA w wyniku dodania superskrętu. Obecnie topoizomerazy są
+głównym celem działania środków farmakologicznych skierowanych przeciw chorobom
+bakteryjnym i nowotworowym. Przewiduje
+się, że działanie środka farmakologicznego
+na topoizomerazę będzie przyczyną zaburzenia mechanizmów replikacji i transkrypcji
+w komórce bakteryjnej czy nowotworowej,
+co prowadzi do śmierci komórki, a tym samym usunięcia czynnika chorobotwórczego.
+
+3.4
+Rodzaje RNA
+
+RNA - kwas rybonukleinowy. Drugim typem kwasu nukleinowego jest RNA. Na całkowite RNA obecne w komórce składa się 4%
+RNA kodującego i 96% RNA funkcjonalnego. Komórka bakteryjna zawiera około 0,05-
+-0,10 pg RNA. W komórce ssaków znajduje
+się 20-30 pg RNA.
+
+Budowa RNA jest podobna do budowy
+DNA, ale można wyróżnić dwie zasadnicze
+różnice. Po pierwsze, cukier występujący
+w RNA to ryboza. Po drugie, zasady azotowe
+składające się na rybonukleotydy, wchodzące
+w skład RNA, to adenina (A), guanina (G),
+cytozyna (C) i uracyl (U). Ponadto w strukturze RNA występują zmodyfikowane zasady azotowe, najczęściej spotykane w tRNA
+(ryc. 3.5). Między parami rybonukleotydów
+tworzą się też wiązania wodorowe, np. między guaniną a cytozyną tworzą się trzy wiązania wodorowe, natomiast między adeniną
+a uracylem - dwa. Wyjątkiem jest tRNA
+stanowiące bogate źródło niedopasowanych
+
+3 KWASY NUKLEINOWE
+
+wiązań, a także wiązań występujących jednocześnie między trzema zasadami azotowymi. W łańcuchu RNA występują wiązania
+fosfodiestrowe łączące ze sobą kolejne rybonukleotydy, ale są one zdecydowanie mniej
+stabilne niż w przypadku DNA. RNA jest
+syntetyzowane jako pojedyncza nić o długości nieprzekraczającej kilku tysięcy rybonukleotydów i, w przeciwieństwie do DNA, nie
+ma komplementarnej drugiej nici. Warto też
+podkreślić, że RNA, w porównaniu z DNA,
+charakteryzuje większe zróżnicowanie zarówno strukturalne, jak i funkcjonalne,
+a kluczowym elementem osiągnięcia różnorodności funkcjonalnej jest tworzenie struktur drugorzędowych. Formy przestrzenne
+tworzone przez RNA są stabilizowane przez
+występujące miejscami dwuniciowe fragmenty RNA. Dwuniciowe RNA występuje
+najczęściej w postaci pętli (loops), szpilek do
+włosów (hairpin), wybrzuszeń (bulge) lub wewnętrznych pętli (internal loops). Struktury
+szpilek do włosów powszechnie występują
+w tRNA, natomiast w rRNA tworzą się charakterystyczne, mniejsze pętle zbudowane
+z 4 niesparowanych rybonukleotydów (tetra-
+-loops). Z kolei wybrzuszenia powstają, gdy
+po jednej stronie dupleksu RNA występuje
+więcej nukleotydów. Nawet jeśli wybrzuszeniu podlega tylko jeden nukleotyd, zjawisko to ma ogromne znaczenie dla struktury
+przestrzennej RNA, powodując zaburzenie
+w układzie przestrzennym nukleotydów,
+zagięcie cząsteczki RNA, a w konsekwencji
+zmniejszenie jej stabilności. Pętle wewnętrzne powstają, gdy w łańcuchu RNA występują
+pary nukleotydów tworzące wiązania niedopasowane typu puryna-puryna lub pirymidyna-pirymidyna. Ponadto wśród charakterystycznych dla RNA struktur przestrzennych
+należy wymienić helisę A-RNA lub A-RNA,
+które tworzą się między oligorybonukleotydami o sekwencji poli(rA)-poli(rU). W końcu
+RNA może występować w formie potrójnych
+łańcuchów, w których dwie nici oligorybonukleotydów o sekwencji poli(rA) łączą się
+z jedną nicią o sekwencji poli(rU).
+
+W zależności od pełnionych funkcji RNA
+można podzielić na kategorie. Podstawowy
+
+37
+
+[Strona 38]
+
+38
+
+3 KWASY NUKLEINOWE
+
+Hs NH
+on
+Z NH
+
+1-METYLOADENINA
+
+(e) Hoe
+HN Ń
+ISP
+NzR NH
+
+7-METYLOGUANINA
+
+NH, O
+CH3 JL
+pl | HN NH
+O NH o
+5-METYLOCYTOZYNA PSEUDOURACYL Ryc. 3.5 Zmodyfiko-
+
+podział to RNA kodujące (mRNA - messenger RNA) i RNA niekodujące lub funkcjonalne.
+
+RNA kodujące (mRNA) stanowi transkrypt genów kodujących białka i krótko po
+zakończeniu procesu translacji ulega degradacji. Ogólna budowa mRNA u Prokaryota
+obejmuje czapeczkę na końcu 5, specyficzną sekwencję nukleotydową oraz ogon poli(A) zlokalizowany na końcu 3. Czapeczka
+może być ważna w procesie eksportu mRNA
+i snRNA z jądra. Najlepiej poznaną rolą czapeczki jest jej udział w translacji mRNA na
+etapie tworzenia kompleksu inicjacji. Czapeczka spełnia funkcje ochronne względem
+mRNA, ograniczając działanie 5'-egzonukleaz. Z kolei sekwencja kodująca jest specyficzna dla danego mRNA i zależy bezpośrednio
+od sekwencji transkrybowanego genu. Jest to
+region ulegający translacji, a więc decydujący
+o składzie wytwarzanych podczas translacji
+białek. Początkowo sekwencja kodująca pre-
+-mRNA zawiera zarówno eksony, jak i introny, które w procesie dojrzewania pre-mRNA
+zostają wycięte (splicing). Rola „ogona” poli
+(A) nie jest do końca wyjaśniona. Mało praw-
+
+wane zasady azotowe.
+
+dopodobny wydaje się wpływ na stabilność
+mRNA, gdyż niektóre stabilne transkrypty
+mają bardzo krótkie łańcuchy poli (A), a niektóre nie mają ich wcale, np. mRNA kodujące
+białka histonowe. Być może poli (A) odgrywa
+pewną rolę w inicjacji translacji. Ogon poli
+(A) składa się z 200-250 powtórzeń nukleotydu adeninowego dodanych w obecności
+sekwencji adenylacji przy udziale polimerazy poli (A) niezależnej od matrycy. Dzięki
+temu może w cząsteczce mRNA spełniać
+funkcje ochronne przed degradującym działaniem 3'-egzonukleaz, a także brać udział
+
+w procesie translacji.
+
+Najważniejsze rodzaje RNA funkcjonalnego:
+
+e Rybosomalne RNA (rRNA) jest obecne
+u wszystkich organizmów i zwykle stanowi najbardziej rozpowszechniony kwas
+rybonukleinowy. rRNA jest integralną
+częścią struktury rybosomów (50-70%
+składu rybosomów to rRNA), organelli
+komórkowych będących miejscem syntezy białek. rRNA nie tylko decyduje
+o kształcie i wielkości rybosomów, ale też
+o rozmieszczeniu białek rybosomalnych.
+
+[Strona 39]
+
+Można więc stwierdzić, że „rybosom to
+RNA”. Teoria ta znajduje potwierdzenie
+w badaniach ewolucyjnych, w których
+dowiedziono, że rybosom początkowo
+był zbudowany wyłącznie z RNA, dopiero w toku ewolucji do cząsteczek rRNA
+dołączyły się białka spełniające funkcje
+pomocnicze. Rybosom składa się z małej i dużej podjednostki. Wielkość każdej podjednostki jest wyznaczona na
+podstawie współczynnika sedymentacji.
+Podjednostki rybosomu  eukariotycznego posiadają wielkość 80S; podjednostka mała 40S (18S rRNA~1800 nt,
+33 białka), a podjednostka duża 60S (18S
+rRNA~4700 nt, 5,8S rRNA~160 nt, 5S
+rRNA~120 nt i 50 białek). Podjednostki
+rybosomu prokariotycznego (70S) osiagają wielkość 30S (mała podjednostka zbudowana z 16S rRNA~1500 nt i 21 biatek)
+i50S (wieksza podjednostka zbudowana
+z 5S rRNA~120 nt, 23S rRNA~2900 nt
+i 34 białek). rRNA, poza zestawem czterech podstawowych rybonukleotydów,
+zawiera dużą ilość zmodyfikowanych rybonukleotydów, takich jak pseudourydyna, oraz rybonukleotydów metylowanych
+(grupa CH3 w miejscu 2-OH rybozy lub
+w pierścieniu zasad azotowych).
+
+Transportujące RNA (tRNA) jest ściśle związane z syntezą białek. Funkcja
+cząsteczek tRNA polega na rozpoznaniu
+kodu genetycznego mRNA, a następnie transporcie odpowiednich aminokwasów do rybosomu podczas procesu
+translacji. tRNA jest niewielką molekułą (74—93 nt) o drugorzędowej budowie
+spinki do włosów układającej się we wzór
+czterolistnej koniczyny. W miejscu zagięcia tRNA znajduje się sekwencja trzech
+nukleotydów, zwana antykodonem, a na
+szczycie struktury tRNA przyłączony jest
+aminokwas. Antykodon jest komplementarny do kodonu w mRNA i pośredniczy
+między DNA a mRNA w odczytywaniu kodu genetycznego (szyfruje rodzaj
+przyłączonego aminokwasu). W każdej
+komórce znajduje się do 50 różnych rodzajów cząsteczek tRNA. Kompleks czą-
+
+3 KWASY NUKLEINOWE
+
+steczki tRNA i aminokwasu nosi nazwę
+aminoacylo-tRNA.
+
+Małe jądrowe RNA (snRNA) zwane
+również U-RNA (bogate w urydynę) odgrywa kluczową rolę w regulacji ekspresji
+genów poprzez udział w składaniu (splicing) cząsteczki pre-mRNA. snRNA znajdują się w jądrze i są zazwyczaj ściśle powiązane z białkami w kompleksy zwane
+snRNPs (małe jądrowe rybonukleoproteiny). Najbardziej powszechne z tych
+cząsteczek to U1, U2, U5 i U4/U6, które
+biorą udział w składaniu pre-mRNA.
+Małejąderkowe RNA (snoRNA) są zlokalizowane w obszarach jąderkowych w jądrze eukariontów. Ich główna rola polega
+na chemicznych modyfikacjach molekuł
+rRNA (takich jak pseudourydylacja lub
+2-O-metylacja) poprzez „zarządzanie”
+enzymami (zazwyczaj występującymi
+w kompleksach snoRNP), które dokonują
+tych modyfikacji, i kierowaniu ich do nukleotydów, gdzie te zmiany są konieczne.
+Mechanizm działania snoRNP opiera się
+na hybrydyzacji snoRNA do komplementarnych regionów rRNA podlegających
+modyfikacji. Ponadto snoRNA stanowi
+część telomerazy u ssaków, będącej enzymem rybonukleoproteinowym, którego funkcja polega na dobudowywaniu
+brakujacego 3—>5' terminalnego odcinka
+nici opóźnionej DNA podczas procesu
+replikacji DNA. snoRNA bierze również
+udział w procesie imprintingu genów zlokalizowanych na chromosomach płciowych.
+
+MikroRNA (miRNA) jest małym regulatorowym RNA o długości 20-26 nukleotydéw. miRNA odgrywa role w regulacji
+ekspresji genów, zwłaszcza podczas rozwoju embrionalnego organizmu. Jego
+funkcja to wyciszanie ekspresji genów
+poprzez tłumienie translacji w procesie
+zwanym interferencją RNA (RNAi- RNA
+interference). miRNA jest początkowo
+transkrybowane jako pre-miRNA, 75-
+-nukleotydowa cząsteczka, która dopiero
+po przetransportowaniu z jądra komórkowego do cytoplazmy zostaje przecięta
+
+39
+
+[Strona 40]
+
+40
+
+3 KWASY NUKLEINOWE
+
+do rozmiarów funkcjonalnego miRNA
+przy udziale endonukleazy Dicer. Większość miRNA wiąże się z mRNA poprzez
+niedoskonałe parowanie zasad (miRNA
+jest tylko częściowo komplementarne do
+wyciszanego mRNA), czego skutkiem
+jest wstrzymanie translacji.
+
+e Małe interferujące RNA (siRNA) to kolejna klasa funkcjonalnego RNA, występująca w formie dwuniciowej (dsRNA),
+o długości cząsteczki w granicach 21-
+-25 nt. siRNA, podobnie jak miRNA,
+bierze udział w interferencji RNA polegającej na wyciszaniu ekspresji wybranych
+genów. Mechanizm interferencji RNA
+z udziałem siRNA opiera się na komplementarności sekwencji siRNA do fragmentu wyciszanego genu. Dwuniciowy
+kompleks dsRNA, po przeniknięciu z jądra komórkowego poprzez pory jądrowe
+(lub ze środowiska pozakomórkowego)
+do cytoplazmy, zostaje przecięty przez
+endonukleazę o nazwie Dicer na dwa jednoniciowe odcinki siRNA, które hybrydyzują do transkryptu odpowiedniego
+genu (mRNA), blokując jego translację.
+
+W komórkach eukariontów poza dojrzałym
+
+RNA występuje również prekursorowe RNA
+
+(preRNA), które musi zostać poddane mody-
+
+fikacjom (proces dojrzewania), zanim będzie
+
+mogło pełnić przypisaną mu funkcję. Modyfikacje, jakim poddane zostaje prekursorowe
+
+RNA, są omówione niżej.
+
+- Modyfikacja końców to proces rozpoczynający się podczas syntezy eukariotycznego mRNA. Na końcu 5' dołączany
+jest pojedynczy nietypowy nukleotyd
+guanylowy zwany czapeczką, a koniec 3'
+zostaje wzbogacony o sekwencje poli(A).
+
+- Składanie (splicing), | dojrzewanie
+mRNA, to usuwanie intronów, tj. elementów nie zawierających informacji
+biologicznej. Introny są przepisywane razem z eksonami (elementami kodującymi
+białka) podczas transkrypcji genu. Introny są usuwane z prekursorowego mRNA
+poprzez cięcie i łączenie eksonów.
+
+- Cięcie to proces istotny zwłaszcza dla
+dojrzewania rRNA i tRNA. Pre-rRNA
+
+ipre-tRNA są zazwyczaj syntetyzowane
+w postaci jednej jednostki transkrypcyjnej, która następnie wymaga enzymatycznego cięcia na mniejsze fragmenty
+w celu uzyskania dojrzałego RNA.
+
+- Modyfikacje chemiczne dotyczą prekursorów rRNA, tRNA oraz mRNA. Polegają
+one na przyłączaniu grup funkcyjnych do
+rybonukleotydów. U wielu eukariontów
+występują modyfikacje chemiczne zwane
+redagowaniem RNA.
+
+3.5
+Różnice między kwasami
+nukleinowymi
+
+Zarówno DNA, jak i RNA zbudowane są
+z powtarzalnych jednostek zwanych nukleotydami (deoksyrybonukleotydy w DNA
+
+Tabela 3.1 Różnice między kwasem
+nukleinowym DNA aRNA
+Budowa polimer, de- polimer, rybooksyryboza, za, zasady azozasady azo- towe i reszty
+towe i reszty fosforanowe
+fosforanowe
+Lokalizacja jądro, mito- jądro, cytochondria plazma, mitochondria
+Cukier deoksyryboza | ryboza
+Zasady adenina (A) adenina (A)
+azotowe tymina (T) uracyl (U)
+cytozyna (C) cytozyna (C)
+guanina (G) guanina (G)
+Parowanie się | A-T,G-C A-U, G-C
+zasad
+Struktura podwójna pojedyncze
+helisa nici, podwójne
+nici, struktura
+spinki do włosów, struktura
+pętli
+Funkcja przechowy- regulacja ekswanie i prze- presji genów,
+kazywanie synteza białek,
+informacji inhibicja eksgenetycznej presji genów
+
+[Strona 41]
+
+Ryc.3.6 Budowa
+podwójnej nici DNA
+
+i pojedynczej nici RNA.
+P — reszta fosforanowa,
+D - 2'-deoksyryboza,
+
+R — ryboza, A — adenina,
+T - tymina, G — guanina, 3'
+C-cytozyna, U — uracyl.
+
+i rybonukleotydy w RNA), które w obu kwasach nukleinowych zachowują tę samą strukturę (ryc. 3.6). Każdy z nukleotydów składa
+się z cukru (pentozy), reszt fosforanowych
+i zasady azotowej, niemniej o różnicach
+w budowie między DNA i RNA decyduje rodzaj występującego w nich cukru oraz zasad
+azotowych. Główną cechą różniącą strukturę DNA i RNA jest rodzaj pentozy w nukleotydzie (2-deoksyryboza w DNA i ryboza
+w RNA). Druga zasadnicza różnica między
+obydwoma kwasami nukleinowymi dotyczy
+zasad azotowych. Zasady obecne w DNA to
+adenina, tymina, cytozyna i guanina, natomiast w RNA tymina jest zastąpiona przez
+uracyl (tab. 3.1).
+
+3.6
+Replikacja genomu
+
+Replikacja DNA polegająca na powielaniu
+genomu jest podstawowym procesem leżącym u podstaw dziedziczenia. Mechanizm
+wiernego kopiowania informacji genetycznej
+jest obecny we wszystkich komórkach podlegających podziałom. W przypadku organizmów eukariotycznych replikacja zachodzi
+przed każdym mitotycznym podziałem ko-
+
+helisa DNA
+
+3 KWASY NUKLEINOWE 41
+
+nić RNA
+
+mórki oraz przed pierwszym podziałem mejotycznym. Możliwość kopiowania informacji zawartej w materiale genetycznym została
+po raz pierwszy zasugerowana przez twórców
+teorii budowy podwójnej helisy DNA, Watsona i Cricka, i jest konsekwencją komplementarności obu nici kwasu nukleinowego.
+Jak już wspomniano, w artykule opublikowanym w czasopiśmie „Nature” w 1953 r. autorzy (Watson i Crick) stwierdzili, że „każdy
+łańcuch DNA służy jako matryca do budowy
+nowego identycznego łańcucha”. Zgodnie
+z tą teorią proces kopiowania DNA, zwany
+replikacją, opiera się na rozpleceniu dwuniciowej helisy DNA do dwóch pojedynczych
+łańcuchów, a następnie — na podstawie ich
+sekwencji — polimeryzacji potomnych łańcuchów nukleotydowych stanowiących komplementarne kopie łańcuchów rodzicielskich.
+Biorąc jednak pod uwagę zróżnicowanie genomów (wystarczy wspomnieć jak różne są
+genomy u Eukaryota, Prokaryota czy u wirusów), dokładny mechanizm replikacji jest
+dużo bardziej skomplikowany. Replikacja na
+poziomie enzymatycznym obejmuje nie tylko
+mechanizm tworzenia potomnych nici DNA
+zaprogramowany w genomie rodzicielskim,
+ale również warunkuje wysoką efektywność
+i wierność procesu powielania genomu w peł-
+
+[Strona 42]
+
+42
+
+3 KWASY NUKLEINOWE
+
+nej synchronizacji z cyklem komórkowym.
+Ponadto teoria Watsona i Cricka tłumaczy
+jedynie zasadę wydłużania nici potomnych,
+opierającą się na komplementarnym kopiowaniu, nie tłumaczy natomiast tego, w jaki
+sposób proces replikacji jest inicjowany.
+Zgodnie z teorią budowy DNA wydłużanie
+łańcucha polinukleotydowego może następować tylko w jednym kierunku (5 3'), co jest
+konsekwencją przyłączania się nowych nukleotydów do końca 3' nici DNA. W związku
+z tym, w jaki sposób można wyjaśnić fakt, że
+powielanie genomu wymaga replikacji obydwu nici DNA, które biegną w odwrotnych
+kierunkach. Dalsze rozważania mają zatem
+na celu przybliżenie ogólnych mechanizmów
+replikacji, ze wskazaniem na różne formy
+tego procesu w komórkach prokariotycznych
+i eukariotycznych.
+
+Cechą procesu replikacji jest jej semikonserwatywny charakter, co oznacza, że
+każda nić DNA stanowi matrycę do wytworzenia nowej, potomnej nici. W wyniku
+procesu replikacji uzyskuje się na podstawie
+jednoniciowej matrycy DNA dwie nici potomne. Każda nić dwuniciowej helisy pełni
+rolę matrycy, w syntezie łańcuchów jednej
+helisy DNA powstają dwie potomne, które
+mają identyczną sekwencję nukleotydową.
+Komórkowy system enzymatycznej kontroli replikacji i sprawdzania błędów podczas
+replikacji zapewnia nieomal perfekcyjnie
+wierne odtworzenie nici macierzystej. Błędy
+powodujące powstawanie mutacji występują
+niezmiernie rzadko podczas replikacji, np.
+u E. coli średnio raz na 109-10! prawidłowo
+włączonych nukleotydów.
+
+Zanim ostatecznie udowodniony został
+semikonserwatywny model replikacji, równolegle funkcjonowały trzy hipotetyczne
+modele:
+dyspersyjny, zgodnie z którym w procesie
+
+replikacji powstają dwie podwójne nici
+
+DNA; każda z nich składa się w części
+
+z nici macierzystej, w części zaś z nici po-
+
+tomnej;
+konserwatywny, zgodnie z którym w pro-
+
+cesie replikacji powstają dwie podwójne
+helisy DNA; jedna z nich zawiera dwie
+
+nici rodzicielskie, a druga — dwie nici po-
+
+tomne;
+semikonserwatywny, w którym w wyniku
+
+replikacji uzyskuje się dwie podwójne helisy DNA; w każdej z nich jedna nić jest
+nicią macierzystą, a druga nicią potomną.
+
+Dowodu na prawdziwość semikonserwatywnego modelu procesu replikacji dostarczyły wyniki eksperymentu wykonanego
+w roku 1958 przez dwóch badaczy — M. Meselsona iF. Stahla. Zaproponowali oni doświadczenie, w którym kolonie bakterii
+Escherichia coli hodowane były w medium
+zawierającym 'NH,Cl. Następnie komórki
+bakteryjne przeniesione zostały do kolejnego
+medium zawierającego "NH4CI. Izotop azotu odpowiednio 5N lub !4N wbudowywat się
+w struktury zasad azotowych. Próby pobierano po 20 i40 minutach, co przekłada się na
+jeden lub dwa podziały komórki bakteryjnej.
+Z każdej z prób wyizolowano DNA, które
+następnie było separowane metodą wirowania w gradiencie chlorku cezu (CsCl). Różnica gęstości umożliwiła wyizolowanie zasad
+azotowych zawierających w swojej strukturze
+izotop azotu '5N lub !4N. Gęstość DNA zawierającego izotop '5N wynosi 1,722 g/cm},
+a gęstość DNA z izotopem !4N — 1,708 g/cm?.
+Próbki pobrane po 20 minutach (po jednym
+podziale komórkowym) zawierały podobne
+ilości 15N i 14N, na który składały się równe
+ilości DNA rodzicielskiego oraz DNA nowo
+zsyntetyzowanego, co przełożyło się na uzyskany obraz pojedynczego prążka DNA po
+wirowaniu w gradiencie CsCl. Z kolei próbki
+pobrane po 40 minutach (po dwóch podziałach komórki bakteryjnej) prezentowały dwa
+prążki — jeden z hybrydem '5N-IHN-DNA
+i drugi zawierający jedynie 14N-DNA. Wzór
+prążkowy DNA, jaki uzyskano z prób pobranych po 20 minutach hodowli wirowanych
+w gradiencie CsCl, wykluczył obecność konserwatywnego modelu replikacji. Do rozważenia pozostały dwa modele replikacji: dyspersyjny i semikonserwatywny. Wynik, jaki
+uzyskano z próbek pobranych po 40 minutach hodowli, czyli po dwóch podziałach komórki bakteryjnej, jednoznacznie wykluczył
+
+[Strona 43]
+
+możliwość występowania modelu dyspersyjnego. W związku z tym doświadczenie nazywane później jako odkrycie Meselsona-Stahla jednoznacznie potwierdziło prawdziwość
+semikonserwatywnego modelu replikacji
+(ryc. 3.7). W latach późniejszych powtórzono
+ten eksperyment z wykorzystaniem komórek
+eukariotycznych, ale wyniki obserwowano
+w mikroskopie świetlnym. Dzięki temu udowodniono, że DNA eukariotycznych chromosomów również podlega replikacji o charakterze semikonserwatywnym.
+
+Od semikonserwatywnego modelu replikacji nie zaobserwowano wyjątków, niemniej istnieje kilka jego wariantów. Podstawowy schemat replikacji opisany w początkowej części tego rozdziału obserwuje się
+w przypadku Eukaryota wskutek powielania
+chromosomów, a u Prokaryota — w wyniku
+powielenia całego kolistego genomu. W niektórych mniejszych, kolistych cząsteczkach
+DNA, takich jak DNA mitochondrialne,
+a także u wirusów bakteryjnych i eukariotycznych replikacja przebiega wg modelu
+przemieszczającej się pętli (rolling-circle
+replication). W tych cząsteczkach miejsce,
+w którym rozpoczyna się replikacja, zaznaczone jest jako pętla D (D-loop). Jest to region
+o długości około 500 pz, gdzie podwójna helisa jest przecięta. Spowodowane jest to obecnością fragmentu RNA, który hybrydyzuje
+do jednej z nici DNA. RNA działa jako miej-
+
+nici potomne DNA
+
+Ryc.3.7 Wynik doświadczenia przeprowadzonego przez
+Meselsona i Stahla.
+
+konserwatywny
+
+semikonserwatywny
+
+3 KWASY NUKLEINOWE 43
+
+sce startowe dla syntezy DNA. Według tego
+modelu replikacja DNA przebiega w sposób
+asymetryczny. Najpierw synteza przebiega na
+jednej nici, a po jej zakończeniu matrycę syntezy stanowi druga, komplementarna nić.
+
+Proces replikacji genomu został podzielony na trzy etapy: inicjację, elongację i terminację.
+
+Inicjacja replikacji rozpoczyna się
+w ściśle określonych miejscach zwanych ori
+(origin of replication). Miejsca te zawierają
+specyficzne sekwencje nukleotydowe służące przede wszystkim do wiązania białek
+inicjatorowych lub innych białek wspomagających proces replikacji, a także sekwencje,
+w obrębie których nici DNA się rozdzielają.
+Podstawowe procesy replikacji przebiegają tak samo w komórkach eukariotycznych
+i prokariotycznych. U szybko rosnących kolonii bakteryjnych inicjacja replikacji w tym
+samym miejscu ori może nastąpić, zanim
+pierwsza runda replikacji zostanie zakończona. U eukariontów replikacja rozpoczyna
+się w wielu miejscach jednocześnie, wzdłuż
+DNA chromosomowego (ryc. 3.8). Przykładowo, Saccharomyces cerevisiae ma 332
+miejsca ori przypadające co 36 kpz DNA,
+u człowieka natomiast istnieje 20 000 regionów ori występujących w genomie z częstością co 150 kpz. Ze względu na dużą liczbę
+miejsc inicjacji replikacji szybkość replikacji
+u eukariontów jest większa niż u bakterii. Na
+
+rodzicielska podwójna helisa DNA
+
+dyspersyjny
+
+[Strona 44]
+
+44
+
+3 KWASY NUKLEINOWE
+
+—
+
+ori
+
+ori
+
+<<.
+
+QD
+
+————
+
+ori
+
+Ryc. 3.8 Replikony. Ori
+
+—=
+
+skopiowanie jednego chromosomu komórka
+eukariotyczna potrzebuje przeciętnie od 15
+do 30 minut. Ponieważ jednak nie wszystkie regiony chromosomu podlegają replikacji wtym samym czasie, proces powielania
+eukariotycznego genomu trwa średnio od 5
+do 10 godzin. Dla porównania, E. coli na skopiowanie swojego genomu potrzebuje tylko
+30 minut, co jest oczywiście związane z niewielkimi rozmiarami DNA bakteryjnego.
+W komórkach prokariotycznych, replikacja,
+począwszy od miejsca ori, może postępować
+w jednym lub dwóch kierunkach. W zależności od tego, czy w miejscu ori utworzy się
+jedna czy dwie pary widełek replikacyjnych,
+na zdjęciach spod mikroskopu elektronowego widoczne są jedna lub dwie pętle przedstawiające postęp replikacji, określane jako
+struktury 9 lub bańki replikacyjne (replication bubbles). W przypadku komórek zawierających koliste struktury DNA najczęściej
+występuje dwukierunkowy postęp procesu
+replikacji, rozpoczynający się w tym samym
+miejscu ori. Szybkość replikacji przebiegającej w dwóch kierunkach jednocześnie nie
+zawsze jest jednakowa.
+
+Jednostka replikacji jest nazywana replikonem. W jego skład wchodzi odcinek
+
+a
+
+— miejsca początku replikacji u eukariontów.
+
+DNA zawierający miejsce inicjacji replikacji,
+a także wszystkie sekwencje, które do niego
+przylegają i replikują się razem z nim. Innymi słowy, replikon stanowi autonomiczny
+segment DNA zdolny do niezależnej replikacji. U bakterii czy wirusów mających pojedyncze miejsce ori replikon obejmuje cały
+genom. Z kolei u eukariontów, u których jest
+wiele miejsc ori, każdy chromosom ma kilkaset replikonów. Wielkość replikonów u eukariontów może się zmieniać wraz z rozwojem
+organizmu, w zależności od tego, czy są to
+dojrzałe komórki somatyczne, czy komórki embrionalne. U tych ostatnich replikony
+nie mają wbudowanego sygnału końca replikacji.
+
+Replikacja jest procesem nieciągłym.
+Oznacza to, że tylko jedna z nici DNA, zwana nicią wiodącą (leading strand), może być
+wydłużana w sposób ciągły. Dotyczy to nici
+matrycowej biegnącej od 3' do 5'. Zważywszy
+na to, że widełki replikacyjne (ryc. 3.9) mogą
+się przemieszczać tylko w jednym kierunku,
+synteza drugiej nici zorientowanej 5—>3' jest
+bardziej złożona. Nić ta, zwana nicią opóźnioną (lagging strand), jest syntetyzowana
+w przeciwnym kierunku do ruchu widełek
+replikacyjnych. Syntetyzowane fragmenty
+
+[Strona 45]
+
+polimeraza DNA
+
+3 KWASY NUKLEINOWE 45
+
+3' starter
+
+5'
+
+nić wiodąca
+
+5'
+
+fragmenty Okazaki
+
+3
+
+3!
+
+Ryc. 3.9 Budowa widetek replikacyjnych.
+
+mają postać krótkich fragmentów, nazwanych na cześć ich odkrywcy fragmentami
+Okazaki. Fragmenty Okazaki wielkości
+1000-2000 nt w genomie prokariotycznym
+i 100-200 nt w genomie eukariotycznym są
+następnie łączone w jedną całość. Jeśli replikacja przebiega w dwóch kierunkach jednocześnie, każda z nici rodzicielskiego DNA
+jest w jednym kierunku matrycą dla nici
+wiodącej i w przeciwnym kierunku matrycą dla nici opóźnionej. Warto dodać, że nici
+potomne wzięły swoje nazwy z obserwacji, że
+nić wiodąca jest zawsze położona bliżej widełek replikacyjnych niż nić opóźniona.
+
+Rodzaj mechanizmu replikacji zależy
+przede wszystkim od struktury i konformacji genomu. Do najważniejszych parametrów
+określających typ replikacji należy kształt
+cząsteczki DNA (liniowy lub kolisty), a także
+liczba łańcuchów, z których składa się genomowe DNA (jedna lub dwie nici kwasu deoksyrybonukleinowego). Dodatkowe właściwości genomu mające wpływ ma mechanizm
+replikacji obejmują konformację, strukturę
+dwuniciową oraz zwinięcie superhelikalne
+DNA w chromosomach, a także łatwość rozdzielenia podwójnej nici w miejscach inicjacji replikacji.
+
+A
+
+= ne opóźniona
+
+3'
+5)
+
+startery
+
+3.6.1
+Replikacja DNA u Prokaryota
+
+Organizmy prokariotyczne nie przechodzą
+podziałów komórkowych (mitozy i mejozy)
+w formie, jaką znamy u Eukaryota. Ponadto
+typowy genom Prokaryota to kolista cząsteczka DNA zlokalizowana w nukleoidzie. Jak
+już wspomniano wcześniej, replikacja rozpoczyna się w pojedynczym miejscu ori, które
+może składać się z kilkuset nukleotydów.
+Spośród wszystkich organizmów prokariotycznych proces replikacji najdokładniej był
+analizowany u bakterii E. coli. Wykorzystanie różnorodnych technik biochemicznych
+i genetycznych umożliwiło określenie grup
+genów i ich białkowych produktów, które
+biorą udział w procesie replikacji. Wśród
+wszystkich systemów kopiowania DNA najwięcej zmienności obserwuje się w inicjacji replikacji, natomiast mniej w procesach
+elongacji i terminacji. Dlatego najważniejsze
+odkrycia związane z replikacją u Prokaryota
+dotyczą:
+e miejsca replikacji E. coli (oriC), zbudowanego z 245-nukleotydowego odcinka
+DNA (liczba ta waha się u pozostałych
+
+[… pominięto s. 46–47: poza zakresem rozpiski …]
+
+[Strona 48]
+
+48
+
+3 KWASY NUKLEINOWE
+
+3.6.2
+Replikacja DNA u Eukaryota
+
+Regulacja replikacji w genomie eukariontów
+
+przebiega na dwóch poziomach:
+
+e jest skoordynowana z cyklem komórkowym w taki sposób, że tylko w momencie
+podziału komórki są dostępne dwie kopie
+genomu;
+
+e proces replikacji może zostać zatrzymany, jeśli DNA zostało uszkodzone i wymaga naprawy.
+
+Dzieląca się komórka przechodzi przez
+cztery powtarzające się fazy, które są nazwane cyklem komórkowym. W skład cyklu komórkowego wchodzą:
+
+e faza M, czyli mitoza (podział jądra komórkowego) i cytokineza (podział cytoplazmy);
+
+e faza GI, czyli czas przerwy, w którym
+zachodzą procesy metaboliczne służące
+budowie podstawowych składników komórki, jak i transkrypcja i translacja;
+
+e faza S, czyli synteza DNA, w której genom komórki ulega replikacji;
+
+e faza G2, czyli druga przerwa przed mitozą.
+
+Replikacja DNA u Eukaryota jest ograniczona do fazy S cyklu komórkowego, podczas której następuje duplikacja genomowego DNA, a także podwojenie ilości białek
+histonowych. Faza S i faza M muszą być
+skoordynowane w taki sposób, że DNA ulega replikacji tylko jeden raz, zawsze zanim
+nastąpi mitoza. Synteza DNA (faza S) oraz
+mitotyczny podział komórkowy (faza M) są
+rozdzielone dwiema przerwami - GI i G2
+(G - gap). Przejście komórki z jednej fazy
+cyklu do następnej jest regulowane przez
+wzajemne oddziaływania między kinazami,
+fosfatazami oraz proteazami (rozdz. 7). Czas
+trwania fazy S u Eukaryota waha się od kilku
+minut u drożdży, Saccharomyces cerevisiae,
+do kilku godzin u tkankowców. Etapem rozpoczynajacym fazę S, a więc fazę replikacji
+DNA, jest inicjacja replikacji. Zachodzi ona
+w wielu miejscach; ich liczba może sięgać
+
+103-105 w każdym cyklu komórkowym. Rozpoczęcie syntezy DNA odbywa się w skoordynowany sposób — w każdym regionie ori
+replikacja DNA jest inicjowana w ściśle określonym czasie. W tym samym momencie
+może być inicjowany zestaw kilku (zwykle od
+2 do 5) miejsc początku replikacji ori, zgrupowanych w genomie w postaci klastrów replikacyjnych. Takie klastry są zorganizowane
+w punkty ogniskowe replikacji (replication
+focal site), zawierające od 6 do 12 replikonów.
+Regiony te są określane jako „fabryki DNA”,
+gdyż zawierają kompletny zestaw białek niezbędnych do uformowania i funkcjonowania
+widełek replikacyjnych. Termin rozpoczęcia
+replikacji w obrębie wspomnianych wyżej
+punktów ogniskowych replikacji zależy ściśle od fizycznej organizacji genomu. Przyjmuje się, że aktywnie transkrybowane geny
+zawarte w euchromatynie oraz centromer
+ulegają replikacji wcześniej, natomiast telomery i miejsca niepodlegające transkrypcji
+(heterochromatyna) replikują się w drugiej
+kolejności. Kolejność uruchamiania replikacji w określonych regionach chromatyny
+może się zmieniać na skutek przeprogramowania transkrypcyjnego genomu, które
+zachodzi we wczesnej fazie G1. Powód, dla
+którego u Eukaryota rozwinął się tak skomplikowany system zsynchronizowanej inicjacji replikacji w kompleksach obejmujących
+wiele replikonów, może być związany z nadaniem odcinkom DNA replikowanych jednocześnie takiego samego statusu chromatyny
+(tj. euchromatyna lub heterochromatyna).
+Innymi słowy, regiony te mogą uzyskać takie
+same modyfikacje epigenetyczne, dotyczące
+na przykład regulacji transkrypcji.
+
+Miejsce inicjacji replikacji ori w genomach eukariotycznych o prostej budowie (np.
+genom drożdży) składa się z dwóch komponentów: rdzenia i elementów pomocniczych.
+Rdzeń ori zbudowany jest z elementu rozpoznającego miejsce inicjacji (ORE — origin
+recognition element), elementu rozplatającego DNA (DUE — DNA unwinding element)
+oraz elementu bogatego w pary zasad A-T, tj.
+jedna z nici jest bogata w adeninę (A), druga
+
+[Strona 49]
+
+w tyminę (T). Na elementy pomocnicze składają się Aux-1 i Aug-2, spełniające funkcję
+podobną do funkcji wzmacniaczy w procesie
+transkrypcji. Sekwencje elementu rdzenia
+działają jako sekwencje cis i wykorzystują
+białka inicjatorowe. Sekwencje elementu pomocniczego działają natomiast jako sekwencje trans i stanowią miejsca wiązania czynników transkrypcyjnych.
+
+Mechanizm inicjacji replikacji bardziej
+złożonych genomów eukariotycznych (np.
+ssaków) nie jest do końca wyjaśniony. Podstawowe założenia, jakie można przyjąć, to:
+1. inicjacja replikacji zachodzi w regionach
+początku replikacji ori; 2. regiony początku replikacji ori ewoluują podczas rozwoju
+osobniczego; są szersze podczas wczesnego
+rozwoju osobniczego i bardziej ograniczone w późniejszych stadiach rozwojowych;
+3. regiony ori mają sekwencje DNA nazwane
+LCR (locus controlling region), które są odpowiedzialne za pozycjonowanie początku replikacji, jak również za ekspresję genów aktywnych. Przebieg samego procesu replikacji
+prezentuje się następująco:
+
+e za syntezę nici wiodącej odpowiedzialny
+jest kompleks białko PCNA (proliferating
+cell nuclear antigen) / polimeraza DNA 6
+lub białko PCNA / polimeraza DNA e
+i jeden z elementów pomocniczych w postaci białka RP-A (replication protein A);
+
+e do syntezy nici opóźnionej niezbędna
+jest obecność dodatkowych białek. Należą do nich m.in. polimeraza DNA u Eukaryota lub a primaza u Prokaryota,
+generująca startery RNA/DNA, które
+są następnie wydłużane przez taki sam
+kompleks enzymatyczny jak w syntezie
+nici prowadzącej. Usunięcie starterów
+wymaga obecności RNazy H. W miejscu
+usuniętego RNA naprawcza polimeraza
+DNA wprowadza deoksyrybonukleotydy, a enzym ligaza DNA łączy fragmenty
+nowo zsyntetyzowanego DNA w ciągły
+łańcuch.
+
+Niezwykle istotną częścią procesu replikacji jest mechanizm korekty (proofreading), dzięki któremu proces replikacji
+
+3 KWASY NUKLEINOWE 49
+
+należy do bardzo dokładnych, a błędy polegające na wprowadzeniu nieprawidłowych
+nukleotydów zdarzają się raz na 107-100
+prawidłowo skopiowanych jednostek. W mechanizm ten zaangażowane są podjednostki
+polimerazy DNA 6, a zwłaszcza ich aktywność egzonukleazy 35. Większość napraw
+podczas syntezy DNA zachodzi według tego
+samego schematu u organizmów eukariotycznych i prokariotycznych. U Eukaryota
+fragmenty Okazaki syntetyzuje polimeraza
+DNA a, replikację polimeraza DNA 6, zaś
+u Prokaryota syntezę fragmentów Okazaki
+katalizuje primaza A, syntezę nici DNA polimeraza DNA III. Żadna z polimeraz (polimeraza DNA 6 i polimeraza DNA III) syntetyzujących nici DNA nie ma aktywności
+egzonukleazy 35. Z tego względu błędy
+pojawiające się podczas replikacji nici opóźnionej są najprawdopodobniej usuwane podczas jej dojrzewania. W procesie tym uczestniczy np. prokariotyczna polimeraza DNA
+I mająca zdolność korekty, a sama korekta
+jest przeprowadzana w kierunku od startera
+RNA w dół łańcucha DNA. Podczas replikacji DNA wierność odtworzenia sekwencji
+nukleotydowej jest kontrolowana przez egzonukleazę sprawdzającą, która określa, czy
+ostatni wbudowany nukleotyd tworzy komplementarne pary A-T i G-C. W przypadku
+wbudowania nukleotydu tworzącego nieprawidłową parę, np. G-T lub C-A, polimeraza
+DNA o aktywności egzonukleazy sprawdzającej przecina nowo utworzone wiązanie fosfodiestrowe, uwalniając w ten sposób błędnie wprowadzony nukleotyd. Proces syntezy DNA oraz mechanizm korekty katalizują
+różne podjednostki. Ponadto u Eukaryota
+w fazie S cyklu komórkowego istnieją punkty, w których odbywa się kontrola jakości
+nowo zsyntetyzowanego DNA. W przypadku wykrycia uszkodzenia proces replikacji
+może zostać zatrzymany przez wstrzymanie
+inicjacji replikacji albo przez spowolnienie
+działania już istniejących widełek replikacyjnych. Jeśli uszkodzenie nie jest zbyt wielkie,
+może zostać skorygowane przez system naprawczy. Jeśli jednak uszkodzenie DNA nie
+
+[Strona 50]
+
+50
+
+3 KWASY NUKLEINOWE
+
+może być naprawione, komórka zostaje skierowana na drogę zaprogramowanej śmierci
+zwanej apoptozą. W większości przypadków
+komórki z uszkodzonym DNA zostają poddane apoptozie, gdyż dalsze replikowanie
+zmutowanych fragmentów DNA może prowadzić do rozwoju nowotworu. U ssaków
+białkiem odpowiedzialnym za zatrzymanie
+cyklu komórkowego i wprowadzenie komórki na drogę programowanej śmierci komórki
+jest białko p53.
+
+Wśród ogólnych modeli replikacji należy
+wspomnieć: model widełek replikacyjnych,
+model obracającego się koła i model pętli D.
+Według tego ostatniego modelu replikacji
+ulega mitochondrialne DNA. Model widełek replikacyjnych jest jednym z najczęściej
+występujących modeli. Widełki replikacyjne
+mogą się przesuwać w jednym kierunku lub
+w obu kierunkach naraz. Ta metoda replikacji może przebiegać zarówno w liniowym, jak
+i w kolistym DNA. Replikacja obracającego
+się koła dotyczy DNA kolistego, występującego w genomach wielu wirusów. W tym
+modelu z powodu nacięć na jednej z dwóch
+nici staje się ona polinukleotydem z dwoma
+końcami: końcem 3' i końcem 5. Synteza
+DNA rozpoczyna się przez dodanie zasad do
+końca 3-OH, powiązana jest z przemieszczaniem się końca 5‘, który obraca się jako wolny
+koniec, a następnie zaczyna być kopiowany w kierunku 5—3' w postaci niewielkich
+segmentów. Oba końce stają się dwuniciowe
+i dają początek kolistemu DNA. Replikacja
+DNA mitochondrialnego następuje na drodze pętli D. Skręt w podwójnej helisie DNA
+zostaje krótkotrwale rozluźniony w ten sposób, że nowa nić może zostać zainicjowana
+w określonym punkcie, wykorzystując jedną
+z dostępnych dwóch nici jako matrycę. Przeciwna nić, która nie jest kopiowana, układa
+się w kształcie litery D. W następnej kolejno-
+Ści replikacja zachodzi na przeniesionej nici
+tworzącej pętle w kształcie litery D. Na całkowitą replikację DNA mitochondrialnego
+potrzeba około 100 minut.
+
+3.6.3
+
+Etapy replikacji genomu
+
+Proces replikacji DNA składa się z trzech
+podstawowych etapów:
+
+e inicjacji,
+
+e elongacji,
+
+e terminacji.
+
+Inicjacja zaczyna się zawsze w tym samym miejscu DNA, zwanym początkiem
+replikacji (ori — origin of replication). Jest to
+fragment o długości 200-300 par zasad. Po
+zainicjowaniu replikacji tworzą się tzw. widełki replikacyjne, które mogą się rozgałęziać
+w dwóch przeciwnych kierunkach. W większości genomów replikacja jest procesem
+dwukierunkowym. Inicjacja rozpoczyna się
+przez przyłączenie białek inicjatorowych do
+specyficznych sekwencji DNA zlokalizowanych w obrębie miejsca ori. Białka te powodują zmiany w strukturze DNA ułatwiające
+powstanie widełek replikacyjnych, a także
+regulują dołączanie do miejsca ori białek
+replikacyjnych niezbędnych do rozpoczęcia
+syntezy DNA.
+
+Elongacja. W momencie przejścia od inicjacji replikacji DNA do następnego etapu,
+jakim jest elongacja, helikaza DnaB inicjuje
+powstanie widełek replikacyjnych poprzez
+rozplecenie podwójnej nici DNA. Na poziomie chemicznym synteza DNA, będąca procesem zależnym od matrycy, przebiega bardzo podobnie do transkrypcji, będącej syntezą RNA zależną od matrycy. Mechanizm
+tych dwóch procesów jest jednak odmienny.
+Replikacja jest procesem zdecydowanie bardziej skomplikowanym. Jedna z trudności
+polega na tym, że podczas replikacji obie nici
+muszą zostać skopiowane, natomiast enzym
+polimeraza DNA może syntetyzować DNA
+tylko w kierunku 53. Oznacza to, że nić
+wiodąca jest przepisywana w sposób ciągły,
+natomiast nić opóźniona — w sposób nieciągły, w postaci krótkich fragmentów Okazaki.
+Ponadto polimeraza DNA nie jest w stanie
+zainicjować syntezy DNA, opierając się na
+jednoniciowej matrycy. Dlatego do inicjacji
+replikacji niezbędna jest obecność krótkiego
+
+[Strona 51]
+
+odcinka dwuniciowego z wolnym końcem 3’,
+do którego enzym może dodawać nowe nukleotydy. Krótkie fragmenty tworzące lokalnie dwuniciowe struktury nazwane są starterami. Jeden z nich występuje na nici prowadzącej, natomiast na nici opóźnionej jeden
+starter przypada na każdy fragment Okazaki
+(ryc. 3.9).
+
+Po usunięciu sekwencji starterowych następuje synteza brakującego odcinka DNA,
+po czym sąsiadujące fragmenty Okazaki łączą się przy udziale ligazy, tworząc ciągłą nić
+komplementarną do nici wiodącej.
+
+Terminacja replikacji wymaga zatrzymania mechanizmu enzymatycznego kopiującego DNA. U organizmów prokariotycznych miejsce terminacji replikacji znajduje
+się naprzeciwko miejsca inicjacji replikacji,
+czyli oriC, i obejmuje obszar 800 par zasad.
+W tym obszarze występują cztery sekwencje
+nukleotydowe stanowiące miejsce zakończenia terminacji, nazywane sekwencjami ter.
+Charakterystyczne jest ułożenie sekwencji
+ter w genomie prokariotycznym, gdyż naprzeciw miejsca inicjacji (ori) znajduje się
+para sekwencji ułożona do siebie przeciwstawnie. Cztery sekwencje ter w genomie
+bakteryjnym to terA i terD z „jednej strony”
+oraz terB i terC z „drugiej strony” genomu.
+W regionie sekwencji ter następuje wiązanie
+białka terminacyjnego o m. cz. 36000 Da.
+Białko terminacyjne jest kodowane przez gen
+tus i spełnia w komórce funkcję supresora
+replikacji. Mechanizm jego działania opiera
+się na inhibicji helikazy DnaB, przesuwającej
+się wzdłuż dwuniciowego DNA w kierunku
+5—3, tuż przed widełkami replikacyjnymi,
+i przerywającej wiązania wodorowe między
+komplementarnymi łańcuchami DNA. Widełki replikacyjne kopiujące matrycę bakteryjnego DNA zatrzymują się, w zależności od
+kierunku replikacji, po osiągnięciu sekwencji
+terA/terD lub terB/terC.
+
+U organizmów eukariotycznych, gdzie
+istnieje wiele miejsc inicjacji replikacji ori,
+a co za tym idzie — wiele replikonów, terminacja replikacji poszczególnych replikonów
+kończy się w momencie fizycznego zetknięcia się widełek podążających w przeciwnych
+
+3 KWASY NUKLEINOWE
+
+kierunkach. Warto jednak w tym momencie
+wspomnieć o problemie, jaki napotyka eukariotyczny mechanizm replikacyjny, zbliżający
+się do końca liniowej cząsteczki DNA. Otóż
+do syntezy nici opóźnionej konieczne jest dołączenie tuż przed widełkami replikacyjnymi
+fragmentu RNA, stanowiącego starter dla
+nowego fragmentu Okazaki. Przy końcach
+chromosomu na matrycy DNA brakuje jednak miejsca do syntezy startera dla ostatniego
+fragmentu Okazaki, co wiąże się z realnym
+ryzykiem utraty części DNA zlokalizowanego przy końcach chromosomów podczas
+każdego cyklu replikacyjnego. Ze względu
+na kolistą budowę chromosomu w przypadku genomów prokariotycznych problem ten
+nie istnieje. W genomach eukariotycznych
+natomiast mechanizm zapobiegający utracie
+części DNA z końców chromosomów został
+oparty na ich specyficznej sekwencji nukleotydowej, znanej jako telomery.
+
+Telomery są krótkimi, powtarzalnymi sekwencjami DNA. Ich średnia długość
+w obrębie gatunku pozostaje niezmienna,
+mimo że różnice mogą występować w różnych chromosomach u tego samego gatunku.
+Obecność telomerów na końcach chromosomów jest niezbędna do funkcjonowania organizmu. Ich funkcja wyraża się dwojako. Po
+pierwsze, telomery są uczestnikami ostatniego etapu replikacji DNA, jakim jest terminacja. Ich obecność zapewnia niezmienną
+długość genomów. Po drugie, chronią one
+chromosomy przed łączeniem się z innymi
+chromosomami oraz przed działaniem nukleaz. Za syntezę telomerów odpowiedzialny
+jest enzym o nazwie „telomeraza”. Poczatkiem replikacji telomerów, która przebiega
+odmiennie od replikacji pozostałej części
+DNA, jest zawsze końcowa sekwencja telomeru pozostałego z poprzedniego cyklu replikacyjnego. Telomeraza wydłuża telomerowy DNA, który u ludzi zawiera powtarzalną
+sekwencję 5-TTAGGG-3. Matrycą do kolejnych etapów wydłużania DNA jest telomerazowy RNA, który tworzy pary zasad z końcowym fragmentem cząsteczki DNA i przedłuża ją o krótki odcinek. Następnie telomerazowy RNA ulega translokacji do następnego
+
+51
+
+[Strona 52]
+
+52
+
+3 KWASY NUKLEINOWE
+
+miejsca parowania zasad wzdłuż polinukleotydowego łańcucha DNA i znowu wydłuża
+go o kolejny krótki odcinek. Proces ten może
+być powtarzany aż do uzyskania końca chromosomu o odpowiedniej długości. Uzyskuje
+się w ten sposób nić bogatą w zasady Ci A, do
+której w sposób semikonserwatywny dobudowywana jest druga nić bogata w zasady G
+i T. Nić bogata w zasady C i A jest zawsze
+krótsza od nici bogatej w zasady Gi T. Wolny
+koniec ulega zawinięciu, tworząc strukturę
+tzw. szpilki do włosów. Następnie wytwarzane są wiązania wodorowe pomiędzy zasadami
+guaninowymi. Struktury G - G mogą przyjmować formę czteroniciową. Stanowią one
+zabezpieczenie końców chromosomów, gdyż
+są niedostępne dla nukleaz. Ponadto końce
+chromosomów są zabezpieczone białkową
+czapeczką, która chroni je przed naprawczym
+działaniem enzymów. Obecność białkowej
+czapeczki stanowi informację dla systemu
+naprawczego, że koniec chromosomu jest realny, a nie wynika z pęknięcia chromosomu.
+Paradoksalnie system naprawczy, opierający
+się na mechanizmie łączenia pęknięć w nici
+DNA, powoduje najbardziej zgubne dla komórki zmiany w strukturze chromosomów,
+gdyż może prowadzić do łączenia chromosomów w sytuacji, gdy ich końce są pozbawione
+białkowej czapeczki.
+
+Telomeraza, powodująca wydłużanie telomerów na nici opóźnionej DNA, nie jest
+aktywna we wszystkich komórkach ssaków.
+Podczas całego rozwoju osobniczego enzym
+ten funkcjonuje tylko w komórkach rozrodczych oraz komórkach macierzystych. Chromosomy komórek, które nie mają aktywnej
+telomerazy, podlegają skróceniu przy każdym podziale mitotycznym. Po wielu podziałach komórkowych chromosom może
+zostać na tyle skrócony, że geny znajdujące
+się przy jego końcach, ulegają degradacji. Nie
+jest to jednak główna przyczyna defektów, jakie powstają w komórkach nieposiadających
+aktywnej telomerazy. Zjawisko skracania się
+telomerów jest ściśle powiązane z tzw. procesem starzenia się komórek. Proces ten można łatwo zaobserwować w liniach komórkowych, hodowanych in vitro. Po upływie od-
+
+powiedniego czasu komórki linii komórkowej in vitro pozostają żywe, ale przestają się
+dzielić, co może się łączyć ze skracaniem się
+telomerów. Zjawisko starzenia się komórek,
+którego cechą rozpoznawczą jest zaprzestanie podziałów mitotycznych, nie występuje
+natomiast w komórkach nowotworowych.
+Zarówno w eksperymentach przeprowadzonych na liniach komórek rakowych in vitro,
+jaki podczas wzrostu guzów nowotworowych
+in vivo wykazano, że komórki rakowe mogą
+się dzielić nieprzerwanie. Ma to związek ze
+stałą aktywnością telomerazy, w wyniku czego w komórkach nowotworowych nie tylko
+nie występuje zjawisko skracania długości telomerów podczas podziałów komórkowych,
+ale także — w niektórych przypadkach — ich
+długość zdecydowanie wzrasta.
+
+3.7
+
+Enzymy biorące udział
+w replikacji genomu
+
+Enzym DnaB jest główną helikazą odpowiedzialną za replikację DNA u bakterii E. coli.
+Enzym ten należy do ATPaz, a jego główną
+funkcją w procesie replikacji jest katalizowanie przerwania wiązań wodorowych łączących dwie komplementarne zasady w dwuniciowym łańcuchu DNA. Wskutek tego
+helikaza denaturuje podwójną helisę DNA
+do dwóch pojedynczych łańcuchów. Strukturalnie enzym DnaB jest heksamerem zdolnym do rozwinięcia matrycy DNA w kierunku 5%3' podczas replikacji. Jak wykazano
+w badaniach nad replikacją u Prokaryota,
+helikaza rozpoczyna swoją działalność w regionie oriC i rozwija dwuniciową helisę DNA
+z szybkością 500-1000 nt na sekundę. Przesuwająca się helikaza DnaB znajduje się na
+nici opóźnionej, tuż przed polimerazą DNA
+znajdującą się na nici wiodącej. Dzięki temu,
+że helikaza DnaB nie tylko rozwija dwuniciową matrycę DNA, ale również przemieszcza się na nici DNA, nazywana jest białkiem
+napędowym (motor protein). Kolejną funkcją
+helikazy DnaB jest udział w syntezie rybonu-
+
+[Strona 53]
+
+kleotydowych starterów replikacji DNA poprzez aktywację prymazy DnaG.
+
+Podążając za helikazą, napotykamy białko stabilizujące jednoniciową strukturę,
+zwane białkiem SSB (single-strand binding
+protein). Jego rola polega na utrzymaniu
+dwóch nici podwójnej helisy DNA w stanie
+rozplecionym. W tym celu białko SSB przyłącza się do dwóch pojedynczych nici, zapobiegając wytworzeniu się drugorzędowej
+struktury spinki do włosów. SSB występuje
+w postaci tetrameru, w którym m. cz. każdej
+jednostki wynosi 19 000 Da. SSB przyłącza
+się niespecyficznie do pojedynczej nici DNA,
+bez względu na sekwencję nukleotydów, pokrywając 36-nukleotydowy odcinek. SSB nigdy nie przyłącza się do podwójnej nici DNA.
+
+DNA gyraza — topoizomeraza. Enzym
+ten przyłącza się do nici DNA tuż przed widełkami replikacyjnymi i działa jako połączenie obrotowe w taki sposób, że tylko krótki fragment nici zostaje poddany obróceniu.
+Gyraza katalizuje konwersję dodatnio skręconej nici DNA do rozluźnionej nici DNA,
+a następnie obrót nici zrelaksowanej do postaci nici ujemnie skręconej. Pierwsza część
+konwersji DNA jest procesem wymagającym
+dostarczenia energii w postaci ATP, natomiast obrót DNA do postaci lewoskrętnej jest
+procesem niezależnym od ATP.
+
+DnaG, prymaza, syntetyzuje unikalny
+starter RNA na pojedynczej nici DNA w celu
+zainicjowania replikacji DNA. Synteza startera wymaga w pierwszej kolejności aktywacji helikazy DnaB. Po rozpoznaniu sekwencji
+około 100 nukleotydów prymaza syntetyzuje
+startery RNA komplementarne do nici DNA
+w celu zapoczątkowania syntezy nici DNA.
+Na nici wiodącej syntetyzowany jest pojedynczy starter RNA, wydłużany następnie
+przez polimerazę DNA w kierunku 5—3'. Na
+nici opóźnionej natomiast prymaza syntetyzuje wiele starterów RNA zapoczątkowujących syntezę fragmentów Okazaki.
+
+RNaza H usuwa startery RNA wytworzone przez prymazę. Działalność RNazy H jest
+szczególnie istotna w przypadku nici opóźnionej, składającej się na tym etapie z wielu
+fragmentów Okazaki. W celu wytworzenia
+
+3 KWASY NUKLEINOWE
+
+ciągłej nici DNA startery RNA muszą zostać
+usunięte, a przerwy między kolejnymi fragmentami Okazaki — wypełnione deoksynukleotydami i poddane ligacji. U prokariontów w procesie tym uczestniczy polimeraza I
+DNA, która usuwa startery RNA w kierunku
+5—3, dzięki swojej aktywności egzonukleazy 5—>3'. U eukariontów funkcję tę spełnia
+RNaza H.
+
+Ligaza DNA. Ligazy w czasie replikacji
+łączą fragmenty Okazaki w jedną nić. Katalizują one syntezę wiązań fosfodiestrowych
+między sąsiadującymi resztami nukleotydów. W komórkach ssaków zostały zidentyfikowane trzy ligazy: ligaza DNA I, ligaza DNA II i ligaza DNA III. Ligaza DNA I
+jest głównym enzymem odpowiedzialnym
+za ligację fragmentów DNA in vivo. Ligaza DNAII jest prawdopodobnie odpowiedzialna za naprawę łańcucha DNA. Ligaza
+DNA ITI bierze udział w procesach naprawy
+DNA i rekombinacji. Ligazy wszystkich gatunków wymagają źródła energii; u bakterii
+energia do procesu ligacji pochodzi z NAD,
+natomiast u eukariontów i bakteriofagów T4
+iT7-z ATP.
+
+Polimerazy DNA są enzymami katalizującymi wydłużanie pojedynczej nici DNA
+podczas replikacji w wyniku przyłączania
+nukleotydów do końca 3. Pierwsze polimerazy DNA opisano w połowie lat 50. XX w.,
+gdy poznana została struktura podwójnej
+helisy DNA oraz opracowano model replikacji DNA. Głównym zadaniem polimeraz
+DNA jest katalizowanie reakcji syntezy DNA
+w kierunku 53. Logicznym uzasadnieniem tej reguły jest energetyczny bilans reakcji syntezy DNA. Gdy zachodzi ona w kierunku 53, reszta pirofosforanowa ostatniego
+nukleotydu jest odłączana, dzięki czemu
+uwolniona zostaje energia metaboliczna na
+potrzeby syntezy DNA, zakumulowana do
+tego czasu w postaci wiązań fosforanowych.
+Rozważając hipotetycznie alternatywny kierunek syntezy DNA (3—5'), należy pamietać, że na końcu 5' grupa trójfosforanowa jest
+wciąż obecna w ostatnim nukleotydzie. Jeśli
+konieczna jest naprawa DNA na końcu 5, to
+odłączone są jedynie dwie reszty fosforanowe,
+
+53
+
+[Strona 54]
+
+54
+
+3 KWASY NUKLEINOWE
+
+a pozostaje monofosforan, co nie dostarcza
+wystarczającej ilości energii, żeby przyłączyć
+nowy nukleotyd. Dlatego w naturze reakcja
+syntezy DNA przebiega zawsze w kierunku
+5—3;, zgodnie z korzystnym wynikiem energetycznym. Niektóre z polimeraz DNA, poza
+syntetyzowaniem kwasu nukleinowego, mają
+również zdolność egzonukleazy, co umożliwia im odłączanie nieprawidłowo wbudowanych nukleotydów. Odłączanie nukleotydów
+3—5' jest określane jako zdolność dokonywania korekty (proofreading).
+
+Obecnie znane są trzy bakteryjne polimerazy (polimeraza DNA I, polimeraza DNAII oraz polimeraza DNA III) i co
+najmniej dziewięć polimeraz u Eukaryota.
+Najważniejszymi eukariotycznymi polimerazami DNA są polimeraza DNA a, polimeraza DNA 4, polimeraza DNA 5, polimeraza DNA e i polimeraza DNA «x. Badania
+nad właściwościami tych enzymów oraz ich
+udziałem w procesie replikacji dostarczyły
+jak dotąd wielu szczegółowych informacji.
+Wiadomo, że różne typy polimeraz spełniają inne funkcje w komórce. Większość
+prokariotycznych i eukariotycznych polimeraz DNA opisanych w tym rozdziale jest
+zaangażowanych w regularny mechanizm
+syntezy DNA w połączeniu z mechanizmem
+korekty umożliwiającym efektywne i wierne
+kopiowanie prawidłowo zbudowanej matrycy DNA. Warto jednak pamiętać, że wciąż
+prowadzone są badania mające na celu między innymi poznanie nietypowych mechanizmów replikacji DNA, takich jak replikacja odcinków DNA zniszczonych na skutek
+działania czynników mutagennych, np. promieniowanie UV czy dym papierosowy lub
+replikacja DNA komórek nowotworowych.
+W przypadku zniszczenia całych odcinków
+DNA kompleks polimerazy DNA zostaje zablokowany, co ma na celu przeciwdziałanie
+rozprzestrzenianiu się mutacji. Proces ten
+może być uruchomiony ponownie, z udziałem awaryjnego mechanizmu syntezy DNA,
+zwanego TLS (translesions DNA synthesis).
+W przypadku replikacji DNA komórek nowotworowych stale odkrywane są natomiast
+zaburzenia związane z kopiowaniem DNA,
+
+takie jak wzrost ploidalności DNA komórki
+w przypadku raka piersi, czy też wprowadzanie mutacji do nici DNA na podstawie
+sekwencji aminokwasowej białka, co zdarza
+się przy obecności niektórych czynników
+rakotwórczych. Wyjaśnienie nietypowych
+mechanizmów replikacji DNA przy udziale różnych typów polimeraz DNA może się
+przyczynić do lepszego zrozumienia mechanizmów rozwoju chorób nowotworowych.
+Niżej zaprezentowano typowy zestaw prokariotycznych i eukariotycznych polimeraz
+DNA.
+
+Prokariotyczne polimerazy DNA I i II
+są pojedynczymi polipeptydami o m. cz. 103
+kDa (polimeraza DNA I) i 90 kDa (polimeraza DNA II). Geny, które je kodują, określane
+są odpowiednio symbolami polA i polB. Polimeraza DNA I była pierwszą odkrytą polimerazą DNA. Występuje ona w komórkach
+bakteryjnych w największej ilości (przeciętnie 400 cząsteczek w każdej komórce); ma
+właściwości egzonukleazy zdolnej do wycinania nukleotydów zarówno po stronie 3, jak
+i 5' łańcucha nukleotydowego. Z tego wzgledu jej funkcja biologiczna obejmuje naprawę
+DNA, a także wycinanie starterów RNA po
+zakończeniu replikacji. Polimeraza DNA I
+przyłącza nukleotydy z prędkością 16-20 nt/
+/s. Z kolei polimeraza DNA II jest enzymem
+zaangażowanym głównie w naprawę uszkodzonego DNA; ma aktywność egzonukleazy 3, a więc jest zdolna do przeprowadzania
+korekty błędnie wbudowanych nukleotydów
+na końcu 3' łańcucha DNA. Mimo że w komórce występuje mniej kopii polimerazy
+DNA II niż polimerazy DNA I (przeciętnie
+100 cząsteczek na komórkę), a jej szybkość
+inkorporacji nukleotydów jest dużo niższa
+(maksymalnie 2-5 nt/s), to przyłącza ona
+więcej nukleotydów podczas jednorazowego kontaktu z nicią DNA (przeciętnie 10 000
+nukleotydów).
+
+Polimeraza DNA III holoenzym (HE)
+jest największym kompleksem białkowym
+odpowiedzialnym za elongację replikacji ubakterii. Gen kodujący polimerazę
+DNA III określany jest jako polC. Kompleks
+ten ma co najmniej 10 podjednostek, o łącz-
+
+[Strona 55]
+
+nej m. cz. ok. 900 kDa, z których każda pełni
+określoną funkcję. Trzy główne podjednostki tworzące rdzeń polimerazy noszą nazwy
+a, €, ©. Za aktywność polimerazy odpowiada
+podjednostka a. Z kolei podjednostka e jest
+odpowiedzialna za aktywność egzonukleazy
+3—5'. Elongacja łańcucha DNA podczas replikacji jest głównym zadaniem polimerazy DNA III. Mimo że przeciętna komórka
+bakteryjna zawiera tylko około 10 kopii tego
+enzymu, mechanizm jego działania jest bardzo wydajny, gdyż podczas jednorazowego
+kontaktu z matrycową nicią DNA polimeraza DNA III wbudowuje przeciętnie 500 000
+nukleotydów na nici potomnej z maksymalną prędkością 250—1000 nt/s. W każdej cząsteczce polimerazy DNA III występują dwa
+rdzenie katalityczne, z których jeden jest
+odpowiedzialny za replikację nici wiodącej,
+drugi zaś - za replikację nici opóźnionej.
+Polimeraza DNA III nie może jednak zostać
+na nici DNA wystarczająco długo, aby efektywnie replikować nić potomną. Dlatego jest
+przytrzymywana na obu niciach przez tzw.
+białkową klamrę (sliding clamp), która otacza kompleks matryca DNA - polimeraza
+DNA i przesuwa się razem z nim wzdłuż nici
+DNA podczas replikacji.
+
+U Eukariontów głównym enzymem
+replikacyjnym jest polimeraza DNA 6, katalizująca elongację replikacji nici prowadzącej. Drugim typem polimerazy DNA
+u eukariontów jest polimeraza DNA s. Oba
+enzymy charakteryzuje wysoki stopień podobieństwa, a różnica jest głównie funkcjonalna — polimeraza DNA e syntetyzuje nić
+wiodącą, a polimeraza DNA 6 — opóźnioną.
+Enzymy te działają we współpracy z białkiem PCNA (proliferating cell nuclear antygen). Do najważniejszej funkcji białka PCNA
+należy utrzymanie polimerazy DNA e na
+matrycy DNA. Enzymem uczestniczącym
+w inicjacji replikacji u Eukaryota jest polimeraza DNAQ, au Prokaryota prymaza.
+Do jej głównych zadań należy synteza starterów RNA oraz zapoczątkowanie elongacji
+— po wbudowaniu około 20 nukleotydów jej
+funkcję przejmuje polimeraza DNA 6. Z kolei
+w replikacji mitochondrialnego DNA bierze
+
+3 KWASY NUKLEINOWE
+
+udział polimeraza DNA y. Ostatnia z wymienionych wcześniej polimeraz DNA, czyli
+polimeraza DNA k, jest niezbędna do przyłączenia spajających białek, które utrzymują
+siostrzane chromatydy razem aż do momentu
+anafazy podczas podziału jądra komórkowego. Polimerazy DNA s, 6 i y mają aktywność
+egzonukleazy 35, natomiast żadna z nich
+nie ma aktywności egzonukleazy 53.
+
+Telomeraza jest enzymem o m. cz.
+200 000-500 000 Da, należącym do nukleoproteidów, gdyż w swojej budowie zawiera zarówno białko, jak i RNA. W środkowej części
+łańcucha telomerazy znajduje się sekwencja
+odwrotnie komplementarna odpowiadająca
+powtarzalnej sekwencji telomerowego DNA.
+U człowieka jest to sekwencja 5-T TAGGG-3,
+która umożliwia telomerazie wydłużanie
+końca DNA telomerowego. Telomeraza katalizuje replikację DNA na końcach łańcucha,
+gdzie niemożliwe jest przyłączenie startera
+RNA i przeprowadzenie syntezy DNA przy
+udziale polimerazy DNA. Telomeraza kopiuje brakującą część chromosomu, korzystając
+jedynie z trzynukleotydowej sekwencji starterowej.
+
+Enzymy biorące udział w replikacji schematycznie przedstawiono na ryc. 3.10.
+
+helikaza
+
+polimeraza
+DNA
+
+ligaza
+
+A primaza
+
+Ryc. 3.10 Enzymy biorące udział w replikacji.
+
+55
+
+---------- drewa_r18.txt (cały plik) ----------
+# ŹRÓDŁO: Drewa G., Ferenc T. (red.), Genetyka medyczna, Edra Urban & Partner 2011 – ROZDZIAŁ 18. Cytogenetyka
+# Zakres: s. 431–432 (wg rozpiski). Tekst z OCR; [Strona N] = numeracja książki.
+
+[Strona 431]
+
+chromosomy płciowe
+cytogenetyka nowotworów
+pytania
+
+piśmiennictwo
+
+CYTOGENETYKA
+
+Tomasz Ferenc, Anna Mordalska, Wanda Bratkowska
+
+struktura i budowa chromosomu metafazowego
+zasady zapisywania wyników badań cytogenetycznych
+
+Cytogenetyka jest działem genetyki zajmującym się badaniem chromosomów człowieka, zwierząt i roślin. Badania cytogenetyczne dotyczą liczby, budowy morfologicznej oraz
+aberracji w strukturze chromosomów. Termin „chromosomy” został wprowadzony przez
+W. Waldeyera w roku 1888. Skład genetyczny organizmów ukształtował się w długim procesie ewolucyjnym, w wyniku którego każdy gatunek ma stałą i charakterystyczną dla siebie
+liczbę chromosomów. W 1956 r. J. Tijo i A. Levan, wykorzystując metody hodowli komórek
+z użyciem płynów hodowlanych, kolchicyny, płynów hipotonicznych i utrwalacza, wykazali, że prawidłowa liczba chromosomów człowieka w komórce wynosi 46.
+
+18.1
+
+Struktura chromosomu
+
+Chromosomy jako indywidualne struktury
+widoczne są tylko podczas podziałów komórkowych (mitotycznych lub mejotycznych).
+Kompleks kwasy nukleinowe-białka nazywany jest chromatyną, która zlokalizowana
+jest w jądrze komórkowym. Chromosom jest
+zbudowany z DNA oraz białek histonowych
+i niehistonowych. Szczególne znaczenie mają
+białka histonowe, które tworzą strukturę
+chromosomu. Związane z chromosomami
+(chromatyną) białka niehistonowe odgrywają głównie rolę stabilizacyjną i regulacyjną.
+Białka histonowe, niezależnie od stopnia rozwoju ewolucyjnego organizmu eukariotycznego, mają zbliżony skład aminokwasowy,
+dzieli się je na 5 klas: H1 — białka histonowe
+
+bardzo bogate w lizynę; H2A i H2B — białka
+histonowe bogate w lizynę; H3 i H4 — białka histonowe bogate w argininę. Dość znaczną zmienność ewolucyjną wykazuje białko
+histonowe Hl. Duża liczba aminokwasów
+dodatnio naładowanych (lizyna, arginina)
+wchodząca w skład histonów ułatwia wiązanie się tych białek z ujemnie naładowaną podwójną helisą DNA. Histony są importowane
+do jądra komórkowego w czasie fazy S cyklu
+komórkowego. Proporcje ilościowe między
+histonami a DNA wynoszą 1:1. Całkowita długość DNA w haploidalnym zestawie
+chromosomów komórek ssaków niebędących
+w trakcie podziału wynosi ok. 1 m. Porównując całkowitą długość podwójnej helisy DNA
+w haploidalnym zestawie chromosomów
+człowieka z długością haploidalnego zestawu
+chromosomów metafazowych, stwierdzono,
+że nić DNA w chromosomach metafazowych
+
+[Strona 432]
+
+432
+
+18 CYTOGENETYKA
+
+jest około 10 000 razy skrócona dzięki procesowi zwijania i kondensacji. Chromatyna
+międzypodziałowa (interfazowa), która jest
+rozprostowana i rozluźniona, ma strukturę
+nukleosomów. Nukleosom jest podstawową
+podjednostką chromatyny. Wnętrze, czyli
+rdzeń nukleosomu, stanowi oktamer składający się z dwóch kopii każdego z histonów:
+H2A, H2B, H3 oraz H4. Oktamer histonowy
+tworzy formę w kształcie cylindra o średnicy 11 nm i wysokości 6 nm. Podwójna helisa
+DNA o wielkości 146 par zasad owinięta jest
+wokół histonowego oktameru prawie dwukrotnie (1,8 zwoju). Sąsiednie nukleosomy
+połączone są łącznikowym DNA zawierającym ok. 60 par zasad. Histon H1 jest ulokowany na zewnątrz nukleosomu, gdzie wiąże
+
+się z łącznikowym DNA i oddziałuje poprzez
+domenę globularną z podjednostką H2A
+rdzenia nukleosomu, a także za pomocą innej domeny może się łączyć z sąsiednim histonem H1. DNA chromosomowe jest mocno zwinięte i skondensowane. Począwszy
+od podwójnej helisy DNA, której szerokość
+wynosi 2 nm, można wyróżnić następujące
+poziomy upakowania chromatyny jądrowej:
+nukleosom o szerokości upakowania 11 nm,
+włókno chromatynowe (solenoid) o szerokości 30 nm składające się z mocno ściśniętych
+nukleosomów, struktury utworzone z pętli
+solenoidu o szerokości 300 nm oraz skondensowany segment chromosomu metafazowego
+o szerokości 700 nm (ryc. 18.1).
+
+| 2nm
+
+11nm
+
+30nm
+
+300 nm
+Ryc. 18.1 Poziomy
+organizacji chroma-
+
+700 nm tyny: A — podwójna
+helisa DNA, B — nukleosom, C — włókno chromatynowe (solenoid),
+D - struktury utworzone z pętli solenoidu,
+E - skondensowany
+
+1400 nm fragment chromoso-
+
+mu metafazowego,
+F - chromosom metafazowy.
+
+---------- drewa_r27.txt (cały plik) ----------
+# ŹRÓDŁO: Drewa G., Ferenc T. (red.), Genetyka medyczna, Edra Urban & Partner 2011 – ROZDZIAŁ 27. Metody molekularne badania genomu
+# Zakres: s. 710–712 (wg rozpiski). Tekst z OCR; [Strona N] = numeracja książki.
+
+[Strona 710]
+
+710
+
+27 METODY MOLEKULARNE BADANIA GENOMU
+
+a tym samym nie jest znany mechanizm molekularny choroby. Niezbędnym warunkiem
+odkrycia genu odpowiedzialnego za taką
+chorobę jest znalezienie rodzin, w których
+zaburzenie genetyczne wystąpiło u kilku
+jej członków. W dystrofii mięśniowej, która
+była jedną z pierwszych chorób genetycznych zdiagnozowanych molekularnie z wykorzystaniem strategii genetyki odwrotnej,
+posłużono się materiałem genetycznym od
+chorych z delecją.
+
+Popularność klonowania DNA z zastosowaniem wektorów w celach namnożenia danego materiału genetycznego znacznie zmalała. Klonowanie jest techniką coraz rzadziej
+stosowaną od czasu opracowania technik
+amplifikacji odcinków DNA dłuższych niż
+10 000 pz, za pomocą łańcuchowej reakcji
+polimerazy - PCR. Reakcja PCR odzwierciedla naturalny proces replikacji i umożliwia powielenie wybranych odcinków kwasów nukleinowych.
+
+27.3
+
+Metody molekularne
+stosowane w diagnostyce
+wad rozwojowych
+
+i chorób uwarunkowanych
+genetycznie
+
+Zarówno w celach rekombinacji DNA, jak
+iw diagnostyce wad rozwojowych i chorób
+uwarunkowanych genetycznie wykorzystuje
+się metody mające na celu izolację, oczyszczenie i ocenę jakości kwasów nukleinowych,
+rozdział elektroforetyczny, a także metody
+amplifikacji oraz techniki detekcji analizowanych sekwencji nukleotydowych.
+
+27.3.1
+
+Izolacja i oczyszczanie DNA
+
+Większość metod izolacji DNA obejmuje kilka podstawowych i niezmiennych etapów:
+e lizę komórek,
+
+e denaturację i hydrolizę białek (w tym
+nukleaz komórkowych),
+
+e usunięcie białek,
+
+e zagęszczenie DNA.
+
+Stosowane w laboratoriach procedury
+izolacji DNA różnią się sposobem usuwania
+białek (odbiałczania) preparatu:
+
+e z zastosowaniem fenolu i chlorofor-
+
+mu,
+
+e wskutek wysolenia białek z lizatów komórek,
+
+e po związaniu DNA z nośnikiem, odmyciu zanieczyszczeń i następnie uwolnieniu DNA. Używane są w tym celu
+kolumny chromatograficzne z filtrami
+jonowymiennymi lub krzemionkowymi.
+
+Uważa się, że usuwanie białek za pomocą fenolu i chloroformu jest techniką dostarczającą preparatów DNA o najwyższej czystości.
+
+Powtarzalność procedury i wysoką jakość preparatu (DNA biologicznie aktywny,
+chemicznie stabilny oraz wolny od białek)
+zapewnia stosowanie zestawów do izolacji
+DNA odpowiednio dobranych w zależności od:
+
+e rodzaju badanego kwasu nukleinowego, jaki chcemy uzyskać (DNA genomowy, mitochondrialny, plazmidowy
+itd.),
+
+e pochodzenia (DNA roślinny, zwierzęcy, bakteryjny, wirusowy itd.),
+
+e rodzaju materiału, z jakiego przeprowadza się izolację (z tkanek organów,
+hodowli komórkowej itd.),
+
+e przeznaczenia (PCR,
+itd.).
+
+DNA o wysokiej jakości można uzyskać
+
+dzięki przeznaczonym do tego celu odpowiednim zestawom dostępnym komercyjnie.
+
+27.3.2
+Metody izolacji RNA
+
+klonowanie
+
+Izolacja RNA jest pierwszym etapem prac
+mających na celu poznanie ekspresji badanych genów. Metody izolacji RNA zależą od
+
+[Strona 711]
+
+27 METODY MOLEKULARNE BADANIA GENOMU 711
+
+typu RNA, jaki chcemy otrzymać w danym
+preparacie. Można przeprowadzić:
+
+e izolację specyficznego RNA w wyniku
+frakcjonowania całkowitego RNA komórki,
+
+e bezpośrednią izolację specyficznego
+RNA ograniczoną do komórek syntetyzujących określony RNA w zwiększonej ilości,
+
+e izolację poli(A)RNA,
+
+e izolację RNA z polirybosomów,
+
+e izolację całkowitego RNA komórki,
+a następnie uzyskać określone RNA
+w formie cDNA w procesie odwrotnej
+transkrypcji.
+
+Stosowane metody izolacji RNA powinny
+umożliwiać uzyskanie RNA niezdegradowanego, o wysokim stopniu czystości. Izolacja
+RNA przebiega zasadniczo w podobnych etapach jak izolacja DNA. Główne różnice wynikają z podanych niżej faktów.
+
+e RNA jest znacznie bardziej narażony
+na degradację niż DNA, gdyż w materiale biologicznym oraz w środowisku zewnętrznym obecna jest duża
+ilość bardzo aktywnych i stabilnych
+rybonukleaz. Podczas izolacji RNA
+do inaktywacji RNaz należy stosować bardzo silne związki degradujące
+białka, takie jak chlorowodorek guanidyny lub izotiocjanian guanidyny.
+Związki te, oprócz degradacji rybonukleaz, umożliwiają również zniszczenie struktur komórkowych. RNazy
+powinny zostać również usunięte ze
+sprzętu używanego do izolacji. Do
+tego celu stosuje się inhibitory RNaz,
+np. DEPC (dietylopirowęglan). Często
+stosowanym inhibitorem RNaz jest
+tzw. RNazin — białko, które inaktywuje RNazy.
+
+e Podczas izolacji RNA należy usunąć
+towarzyszący mu DNA. W tym celu
+stosuje się m.in. ekstrakcję fenolem
+o niskim pH (kwaśny fenol powoduje
+usunięcie nadmiaru DNA z roztworu).
+Dokładne usunięcie DNA z preparatu
+można uzyskać, wykonując trawieniem DNA-zą wolną od RNaz. DNA
+
+można także usunąć, wytrącając RNA
+w chlorku litu (LiCl) lub też stosując
+wirowanie w dwustopniowym gradiencie tiocjanianu guanidyny i chlorku cezu (CsCl).
+
+e W komórkach eukariotycznych cząsteczki rRNA, tRNA oraz RNA niskoczasteczkowy stanowią łącznie ok.
+80-98% RNA komórkowego. Dlatego,
+jeśli chodzi tylko o pulę mRNA, należy zastosować dodatkowy etap izolacji, podczas którego trzeba usunąć
+z preparatu pozostałe kwasy rybonukleinowe. W stosowanych w tym
+celu technikach wykorzystano to, że
+cząsteczki mRNA na 3 końcach zawierają sekwencje poli(A). Sekwencje
+te mogą zostać związane z cząsteczkami poli(T) przyłączonymi do stałego
+podłoża np. w kolumnach chromatograficznych lub na kuleczkach magnetycznych. Cząsteczki RNA niezwiązane z podłożem są następnie odmywane, a oczyszczone cząsteczki mRNA
+poddawane elucji.
+
+Do izolacji RNA dostępne są również
+odpowiednie zestawy produkowane komercyjnie.
+
+Zalety analizy RNA wynikają przede
+wszystkim z możliwości wykrycia mutacji
+przy wykonaniu mniejszej liczby reakcji (co
+wynika z mniejszej długości RNA określonej
+liczbą zasad w porównaniu do DNA). Główne
+wady tych technik dotyczą trudności w uzyskiwaniu powtarzalnych wyników, mniejszej
+stabilności RNA z niektórymi mutacjami
+oraz problemów z interpretacją wyników
+związanych z występowaniem różnych form
+składania RNA.
+
+27.3.3
+
+Oznaczanie ilości i jakości
+otrzymanych preparatów
+kwasów nukleinowych
+
+Bardzo ważnym etapem w badaniach molekularnych jest oznaczanie ilości i jakości
+
+[Strona 712]
+
+712
+
+27 METODY MOLEKULARNE BADANIA GENOMU
+
+otrzymanych preparatów kwasów nukleinowych, ponieważ jakość DNA i RNA ma
+bezpośredni wpływ na wynik eksperymentu.
+Jakość kwasów nukleinowych ocenia się:
+
+e welektroforezie analitycznej w żelu,
+
+e metodą spektrofotometryczną pomia-
+
+rów absorbancji,
+
+e metodą mikromacierzy w połączeniu
+
+z elektroforezą mikrokapilarną.
+
+Oznaczanie kwasów nukleinowych
+w rozdziale elektroforetycznym w żelu agarozowym z bromkiem etydyny zostanie
+omówione niżej.
+
+Pomiar spektrofotometryczny wyizolowanego materiału przeprowadza się przy
+różnych długościach fali: 240 nm (tło i kontaminacje), 260 nm (specyficzna dla kwasów
+nukleinowych), 280 nm (specyficzna dla
+białek), 320 nm (tło i możliwe kontaminacje). Na podstawie gęstości optycznej (OD)
+przy 260 nm oblicza się ilość DNA/RNA,
+natomiast stosunek OD przy długościach fali
+260/280 mówi o jakości preparatu, a stosunek
+wyników przy długościach fal 260/240 nm
+lub 260/320 nm informuje o czystości wyizolowanej próbki. Jeśli stosunek pomiarów przy
+długości fal 260/280nm jest większy niż 1,8,
+to otrzymany preparat jest dobrej jakości.
+
+W przypadku oznaczania RNA trafność
+pomiaru stosunku OD 260/280 jest kwestionowana, ponieważ odpowiada on tylko 40%
+zawartości RNA i może zawierać zanieczyszczenia białkowe. Bardziej specyficznym spektroforetycznym pomiarem jest zastosowanie
+odpowiednich sond znakujących np. RNA
+RiboGreen dye. Użycie sond pozwala wykryć
+już 1ng RNA/ml i w przeciwieństwie do poprzedniej metody ta jest bardziej specyficzna
+i nie oznacza ewentualnych zanieczyszczeń
+białkami i DNA.
+
+Jedną z nowszych metod jest określanie integralności kwasów nukleinowych
+jako liczby od 1-10 w zależności od jakości
+badanej próbki. Pomiaru dokonuje się automatycznie z wykorzystaniem niewielkiej
+ilości badanego materiału (już od 200 pg)
+w urządzeniu, którego podstawą działania
+jest połączenie elektroforezy mikrokapilarnej, mikromacierzy i detekcji fluorescen-
+
+cyjnej. Oprogramowanie urządzenia pozwala na określenie całościowego DNA/RNA
+w systemie numerowym 1-10, gdzie 1 oznacza kwas nukleinowy najbardziej zdegradowany, a 10 najlepszej jakości. Wynik otrzymuje się w postaci wykresu.
+
+27.3.4
+
+Rozdział elektroforetyczny
+kwasów nukleinowych
+
+Cząsteczki kwasów nukleinowych w buforach o pH zbliżonym do neutralnego mają
+ładunek ujemny i dlatego podczas elektroforezy przemieszczają się w żelu zawsze w kierunku od katody (elektrody -) do anody
+(elektrody +). Uzyskanie poprawnego rozdziału elektroforetycznego wymaga zastosowania odpowiedniego napięcia w stosunku
+do drogi elektroforezy. W praktyce stosuje się
+napięcie 5-8 V/cm długości żelu. Zbyt wysokie napięcie może spowodować podniesienie
+temperatury żelu, czego efektem będzie jego
+roztopienie oraz denaturacja DNA.
+
+27.3.4.1
+
+Elektroforeza w żelu agarozowym
+i poliakrylamidowym
+
+Techniki elektroforetyczne w biologii molekularnej są stosowane zarówno w celach
+preparatywnych, jak i analitycznych. Elektroforeza preparatywna umożliwia izolację
+z żelu tej części preparatu, która jest niezbędna do dalszych prac. Do tego celu stosuje się
+też różne techniki elucji. Elektroforeza analityczna służy do charakterystyki badanego
+preparatu na danym etapie doświadczenia.
+W przypadku kwasów nukleinowych umożliwia ona:
+
+e ustalenie wielkości fragmentów DNA
+lub cząsteczek RNA na podstawie porównania tempa migracji badanych
+prążków w stosunku do wzorca mas
+cząsteczkowych; punktem odniesienia
+jest wzorcowy preparat zawierający
+fragmenty DNA o znanych wielkościach,
+
+---------- ostrowska_r06.txt (cały plik) ----------
+# ŹRÓDŁO: Ostrowska Z., Mazur B. (red.), Diagnostyka laboratoryjna dla studentów medycyny, SUM Katowice 2011 – Rozdz. 6. Zastosowanie metod biologii molekularnej w diagnostyce klinicznej (M. Zalewska-Ziob, A. Hiczkowski)
+# Zakres: s. 53–54, 56 (wg rozpiski); s. 56 – OCR tesseract z tury 2 (w PDF strona odwrócona). Warstwa OCR z PDF (pdftotext); [Strona N] = numeracja skryptu (PDF s. 1–12 = s. 53–64).
+
+[Strona 53]
+6. ZASTOSOWANIE METOD EIOLOGII MOLEKULARNEJ
+W DIAGNOSTYCE KLINICZNEJ
+Marzena Zalewska-Ziob, Andrzej Hiczkowski
+
+ó.1. Metody badania kwasów nukleinowych
+Diagnostyka molekularna należy do najbardziej dynamicznie rozwijających się działów biologii
+
+i medycyny. Jest ona częścią medycyny molekularnej, która wykorzystuje analizę kwasów nukleinowych do rozpoznawania chorób, zrozumienia mechanizmu ich powstawania, a także prób zapobiegania im 1 ich leczenia Badania DNA dołączyły do rutynowo wykorzystywanych techmk diagnostyczmych w latach 80. XX wieku. Stało się to możliwe po odkryciu w 1985 roku reakcji łańcuchowej po-
+
+limerazy (PCR.
+— pofymerase chain reaction), umożliwiającej szybka amplifikacje w probówce fragmentów materiału genetycznego, a także dzięki wy.korzystaniu sond molekulamych, enzymów restrykcyjmych1 takich technik, jak: klonowanie DNA, zekwenej onowanie, znakowaniei detekcja DNA
+
+oraz zynteza oligonukleotydów.
+Różnice między diagnostyką klasyczną a molekularną polegają przede wszystkim na zwiększeniu czułości badań oraz skróceniu czasu oczekiwania na wynik, dlatego metody biologii molekularnej
+
+są coraz częściej stozowane w diagnostyce chorób dziedzicznych, nowotworowych oraz zakaźnych.
+
+6.2. Analiza DNA
+6.2.1. Zasady pobierania, zabezpieczania i przesyłania materiału do badań
+Warunkiem przeprowadzenia analizy DNA jest jego izolacja Do badań molekulamych jego
+źródłem mogą być:
+
+—
+lmfocyty krwi obwodowej,
+— — hodowle fibroblastów skóry,
+— - komórki nabłonkowe,
+—
+
+cebulki włosowe,
+
+— — komórki szpiku kostnego,
+— fragmenty dowolnej tkanki (guzy nowotworowe, bioptaty, wycinki),
+— - dowolny materiał biologiczny (zurowica, mocz, kał, płymy z jam ciała).
+
+W badaniach prenatalnych jako źródło DNA wykorzystuje zię komórki zawierające materiał
+genetyczny płodu (komórki płynu owodniowego oraz komórki trofoblastu). W badaniach preimplan-
+
+tacyjmych potrzebna do analizy ilość DNA uzyskuje się z 1 lub2 blastomerów pobranych
+z 8-komórkowego zarodka.
+Krew przeznaczona do badań molekulamych musi być pobrana w sposób jałowy do probówła
+zawierającej kwas etylenodiaminotetraoctowy (EDTA) jako antykoagulant 1 w możliwie jak najkrót-
+
+szym czasie dostarczona do laboratorium. Nie należy używać probówek z heparyna, gdyż hamuje ona
+
+[Strona 54]
+34
+
+Diagnostyka laboratoryjna dla studentów medycyny
+
+aktywność polimerazy DNA. Wycmki tkanek, jak również materiał pobrany drogą biopsji, należy
+
+umieścić w sterylnych probówkach wolnych od enzymów degradujących DNA. (DNaze-free) 1 niezwłocznie dostarczyć do laboratorium na suchym lodzie lub zamrozić bezpośrednio po pobraniu.
+W laboratoriach diagnostycznych do izolacji DNA używa się zwykle gotowych zestawów odczynników dostępnych w ofercie firm biotechnologicznych. Zestawy takie pozwalają na uzyskanie
+DNA z materiału biologicznego w ciągu kilku godzin. Otrzymane DNA poddaje się ocenie ilościowej
+1 jakościowej (analiza spektrofotometryczna i rozdział elektroforetyczny), a następnie wykorzystuje do
+dalszych badań. Wyizolowanei oczyszczone DNA po wysuszeniu lub rozpuszczeniu w wodzie lub
+odpowiednim buforze (up. Tris-EDTA, TE) można na czas przeprowadzania bieżących analiz przechowywać w temp. 4*C. Niewykorzystaną część zamraża się w możliwie niskiej temperaturze
+(w temp. -807C DNA zachowuje dobrą, jakość przez kilka lat).
+Po izolacji DNA kolejnym krokiem jest jego namnożenie (amplifikacja) z wykorzystaniem
+techniki opartej na reakcji łańcuchowej polimerazy.
+
+W skład mieszaniny reakcyjnej PCR. wchodza:
+—
+oligonukleotydowe startery,
+— - termostabilna polimeraza DNA,
+— — bufor dla polimerazy,
+— mieszanina deokzyrybonukleotydotrifosforanów (dATP, dGTP, dTTP, dDTP),
+
+— jony Mg*,
+—
+—
+
+matrycowy DNA,
+woda
+W technice PCE w wyniku cyklicznych zmian temperatury następują kolejno: denaturacja dwu-
+
+niciowego DNA, specyficzne łączenie starterówz matryca (hybrydyzacja) 1 ich wydłużanie (elongacja). Taki ciag zdarzeń powtarza się ok. 36-40 razy, a jego rezultatem jest 107-krotne powielenie
+ograniczonego starterami fragmentu badanego genu (n — liczba cykli).
+Kolejny etap to detekcja produktów amplifikacji DNA. Rozdział uzyskanego produktu w żelu
+agarozowym pozwala ocenić jego zpecyficzność poprzez sprawdzenie, czy widoczny na żelu po elektroforezie prażek ma oczekiwaną przez nas wielkość wyrażoną liczba par zasad (pz lub bp — base
+pairs).
+Istnieje wiele odmian techniki PCR, wzród których na szczególną uwagę zasługują:
+Wewnętrzna lub gniazdowa PCR (nested PCR) to technika, w której wykorzystuje się dwie
+pary starterów — tzw. „zewnętrzne 1 „wewnętrzne. Pierwszy krok analizy stanowi PCR z użyciem
+starterów „zewnętrznych, a powstający produkt staje się matrycą w drugiej reakcji „polimerazowej,
+która wy korzystuje startery , „wewnętrzne 1 amplifikuje krótszy fragment DNA zawierający SIĘ WEwnątrz sekwencji powielonej w pierwszej PCR. Użycie dwóch par starterów zmniejsza prawdopoda-
+
+bieństwo powielenia niewłaściwego fragmentui tym samym zwiększa specyficzność procedury, powodując równocześnie wzrost czułości reakcji. Technikę wykorzystującą nested PCR stosuje się, gdy
+ilość uzyskanego w wyniku izolacji matrycowego DNA jest bardzo mała.
+Multipleks PCR polega na jednoczesnej amplifikacji kilku framentów DNA. różniących się
+wielkością poprzez użycie w jednej mieszaninie reakcyjnej kilku par starterów. Dzięki temu możliwa
+Jest jednoczezna amplifikacja kilku regionów jednego lub kilku genów. Amplifikowane fragmenty
+powinny różnić zię wielkością, aby łatwo można było je rozróżnić po rozdziale elektroforetycznym.
+Metoda multipleks PCR. została po raz pierwszy wykorzystana do diagnostyki molekulamej dy strofii
+mięśniowej Duchenne'a Beckera. Obecnie w rutynowej diagnostyce malekularnej tych jednostek chorobowych wykonuje się kilka reakcji typu muliipleks, co umożliwia wykrycie blisko 100% dużych
+delecji w genie Z. Produkty reakcji multipleks moga być poddawane dalszej analizie, np. w kie-
+
+runku wykrywania mutacji punktowych lub polimorfizmów.
+W miektórych przypadkach celem diagnostyki molekularnej jest sama tylko detekcja badanego
+genu (np. znalezienie fragmentu genomu czynnika zakaźnego w celu potwierdzenia zakażenia), wystarczająca jest wówczas analiza produktu amplifikacji uwidocznionego po rozdziale w żelu W m-
+
+[… pominięto s. 55: poza zakresem rozpiski …]
+
+[Strona 56]
+[OCR tesseract (pol) – tura 2: strona w PDF odwrócona, warstwa OCR PDF była szumem; render 300 dpi strony w poprawnej orientacji. Typowe błędy: „1” zamiast „i”, utracone indeksy górne.]
+36 Diagnostyka laboratoryjna dla studentów medycyny
+6.3. Analiza RNA
+
+RNA jest bardzo nietrwałym kwasem nukleimowym, dlatego podczas jego izolacji i wykonywa-
+nia testów z użyciem tego kwasu należy chronić go przed działaniem rybonukleaz, m.in. poprzez sto-
+sowanie wysokiej jakości odczynników, osobnego zestawu pipet, sterylnego sprzętu jednorazowego
+użytku, końcówek do pipet z filtrem oraz zwiększonego reżimu czystości w pomieszczeniach przezna-
+czonych do izolacji RNA.
+
+Do izolacji RNA można wykorzystać następujący materiał:
+
+— _ krew obwodową,
+
+- szpik,
+
+— tkanki (wycimki, bioptaty, fragmenty guzów nowotworowych),
+
+— komórki jednojądrzaste krwi obwodowej szpiku,
+
+— komórki z hodowli założonej do badań cytogenetycznych utrwalone mieszaniną kwasu octowego
+1 metanolu.
+
+Do uzyskania 3-6 LE RNA Qilość niezbędna do przeprowadzenia badań molekularnych) potrze-
+ba co najmniej 1-2 x 10 komórek, 10-20 ml krwi obwodowej lub 2-5 ml szpiku kostnego, pobra-
+nych do probówek z EDTA lub cytrynianem sodu. W celu uzyskania wysokiej jakości RNA
+krew/szpik należy dostarczyć do laboratorium w ciągu 24 godzin od pobrania, a do tego czasu materiał
+powinien być przechowywany w temp. 4*C. Tkanki przeznaczone do izolacji RNA należy natychmiast
+po pobraniu umieścić w jałowym pojemniku i dostarczyć do laboratorium na suchym lodzie lub za-
+bezpieczyć je w odczynniku RNAlater (zachowując odpowiednią proporcję objętości odczynnika do
+tkanki), który stabilizuje RNA i pozwala na długie przechowywanie tkanek w odpowiednio niskiej
+temperaturze. Na rynku dostępne są również zestawy do pobierania krwi obwodowej szpiku, które
+zawierają związki stabilizujące RNA w komórkach 1 pozwalają na przechowywanie próbek przed
+izolacją RNA. Zaleca się jednak, by izolację RNA z krwi obwodowej bądź szpiku poprzedzać lizą
+erytrocytów lub separacją komórek jednojądrzastych metodą wirowania w gradiencie gęstości. Sposób
+dostarczenia i przechowywania materiału należy wcześniej ustalić z laboratorium ze względu na różne
+procedury izolacji RNA.
+
+Podstawową metodą izolacji RNA jest metoda opisana przez Chomczyńskiego 1 Sacchi w 1987
+roku (z modyfikacją w postaci użycia trizolu) oraz metoda kolumienkowa wykorzystująca właściwo-
+ści soli chaotropowych 1 złóż krzemionkowych, prosta w wykonaniu i skutecznie ochraniająca RNA
+przed degradacją. Po izolacji należy ocenić stężenie i czystość RNA na podstawie pomiaru absorbancji
+roztworu RNA w świetle UV. Pomiar taki jest niezbędny w celu ujednolicenia ilości RNA używanego
+do reakcji odwrotnej transkrypcji.
+
+Po izolacji RNA należy przechowywać rozpuszczony w odpowiednim buforze w temp. -80*C,
+unikając jego rozmrażania i zamrażania Zamiast RNA można przechowywać cDNA, uzyskany
+w procesie odwrotnej transkrypcji, który jest mniej podatny na degradację. Podobnie jak DNA, «DNA
+może być przechowywany po wysuszeniu w buforach do elucji z kolumienek lub w buforze TE.
+W celu dłuższego przechowywania zaleca się zamrożenie cDNA w temp. -80*C.
+
+Odwrotna transkrypcja (RT — reverse transcription). Proces ten polega na uzyskaniu nici
+DNA komplementarnej do RNA (cDNA — complementary DNA) z użyciem odwrotnej transkryptazy.
+Otrzymany cDNA służy następnie jako matryca do reakcji PCR. Oba etapy, RT i PCR, można wyko-
+nać w jednej probówce, pod warunkiem, że do reakcji RT zostaną użyte startery specyficzne dla dane-
+go genu (GSP — gene specific primers). Zastosowanie jednostopniowej reakcji RT i PCR pozwala na
+większą powtarzalność wyników oraz mniejsze ryzyko kontaminacji, dzięki mniejszej liczbie etapów
+niż przy oddzielnym wykonywaniu RT 1 PCR. Uzyskany w tej metodzie cDNA może być jednak wy-
+korzystany tylko do jednego testu genetycznego, gdyż startery GSP pozwalają na selektywne przepi-
+sanie mRNA badanego genu na cDNA, dlatego też do syntezy cDNA wykorzystuje się również inne
+typy starterów: oligo(dT) oraz krótkie i niespecyficzne startery losowe (heksamery, oktamery, nona-
+mery) w zależności od przeznaczenia uzyskanego cDNA. Tylko losowe heksamery umożliwiają prze-
+pisanie na cDNA wszystkich sekwencji RNA, co jest niezbędne w niektórych aplikacjach, np. w ana-
