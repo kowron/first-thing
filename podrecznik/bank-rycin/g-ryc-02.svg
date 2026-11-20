@@ -711,7 +711,7 @@
 <use xlink:href="#glyph-2-0" x="376.58" y="60.88"/>
 <use xlink:href="#glyph-2-0" x="383.01" y="60.88"/>
 </g>
-<g fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
+<g transform="translate(0,-4)" fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
 <use xlink:href="#glyph-3-0" x="153.59" y="85.85"/>
 <use xlink:href="#glyph-3-1" x="160.57" y="85.85"/>
 <use xlink:href="#glyph-3-2" x="165.55" y="85.85"/>
@@ -785,7 +785,7 @@
 <use xlink:href="#glyph-2-0" x="376.58" y="108.82"/>
 <use xlink:href="#glyph-2-0" x="383.01" y="108.82"/>
 </g>
-<g fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
+<g transform="translate(0,-4)" fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
 <use xlink:href="#glyph-3-0" x="153.59" y="133.79"/>
 <use xlink:href="#glyph-3-1" x="160.57" y="133.79"/>
 <use xlink:href="#glyph-3-2" x="165.55" y="133.79"/>
@@ -855,7 +855,7 @@
 <use xlink:href="#glyph-2-0" x="376.58" y="153.76"/>
 <use xlink:href="#glyph-2-0" x="383.01" y="153.76"/>
 </g>
-<g fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
+<g transform="translate(0,-4)" fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
 <use xlink:href="#glyph-3-0" x="153.59" y="178.73"/>
 <use xlink:href="#glyph-3-1" x="160.57" y="178.73"/>
 <use xlink:href="#glyph-3-2" x="165.55" y="178.73"/>
@@ -925,7 +925,7 @@
 <use xlink:href="#glyph-2-0" x="376.58" y="198.70"/>
 <use xlink:href="#glyph-2-0" x="383.01" y="198.70"/>
 </g>
-<g fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
+<g transform="translate(0,-4)" fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
 <use xlink:href="#glyph-3-0" x="153.59" y="223.67"/>
 <use xlink:href="#glyph-3-1" x="160.57" y="223.67"/>
 <use xlink:href="#glyph-3-2" x="165.55" y="223.67"/>
@@ -981,7 +981,7 @@
 <use xlink:href="#glyph-2-0" x="376.58" y="243.64"/>
 <use xlink:href="#glyph-2-0" x="383.01" y="243.64"/>
 </g>
-<g fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
+<g transform="translate(0,-4)" fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
 <use xlink:href="#glyph-3-0" x="153.59" y="268.61"/>
 <use xlink:href="#glyph-3-1" x="160.57" y="268.61"/>
 <use xlink:href="#glyph-3-2" x="165.55" y="268.61"/>
@@ -1074,7 +1074,7 @@
 <use xlink:href="#glyph-2-5" x="430.73" y="288.58"/>
 <use xlink:href="#glyph-2-5" x="437.16" y="288.58"/>
 </g>
-<g fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
+<g transform="translate(0,-4)" fill="rgb(35.29%, 42.74%, 47.05%)" fill-opacity="1">
 <use xlink:href="#glyph-3-0" x="153.59" y="313.55"/>
 <use xlink:href="#glyph-3-1" x="160.57" y="313.55"/>
 <use xlink:href="#glyph-3-2" x="165.55" y="313.55"/>

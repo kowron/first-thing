@@ -63,7 +63,7 @@ def cmd_finalize(src, dst, meta_path):
         '/Author': meta.get('author', ''),
         '/Subject': meta.get('subject', ''),
         '/Keywords': meta.get('keywords', ''),
-        '/Creator': 'kolokwium6/build.mjs (Chromium)',
+        '/Creator': 'podrecznik/build.mjs (Chromium)',
     })
     writer._root_object[NameObject('/Lang')] = TextStringObject('pl-PL')
 

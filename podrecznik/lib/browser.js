@@ -173,6 +173,35 @@
       const lbl = b.dataset.title || LABELS[kind] || '';
       b.prepend(html(`<div class="lbl">${esc(lbl)}</div>`));
     }
+    /* ---------- Nagłówki tabel: kapitaliki tylko tam, gdzie wielkość liter nic nie znaczy ----------
+       Gdy któryś nagłówek ma symbol zależny od wielkości liter (mRNA, kDa, Dd/dd, 2n, 3ⁿ, F₂, E. coli),
+       cały wiersz nagłówka idzie zwykłym pismem (thead.nocaps); ręcznie: <th class="nocaps"> / <table class="tbl nocaps">. */
+    const caseSensitive = (th) => {
+      if (th.classList.contains('nocaps')) return true;
+      if ($('sub, sup, i', th)) return true;
+      const t = txt(th);
+      return /[a-ząćęłńóśźż][A-ZĄĆĘŁŃÓŚŹŻ]/.test(t) || /\b\d+[a-z]\b/.test(t) || /\b[Dd]d\b/.test(t);
+    };
+    /* Tabele: bez samotnych wierszy po złamaniu kolumny/strony. Pasy zebry jako klasa (grupy tbody niżej psują
+       nth-child); krótka tabela (≤ 4 wiersze) w całości, dłuższa – dwa pierwsze i dwa ostatnie wiersze razem. */
+    for (const tb of $$('section.chapter table.tbl')) {
+      const rows = $$(':scope > tbody > tr', tb);
+      rows.forEach((r, i) => { if (i % 2) r.classList.add('zebra'); });
+      if (!rows.length || tb.classList.contains('split-ok')) continue;
+      if (rows.length <= 4) { tb.classList.add('keep-all'); continue; }
+      const groups = [rows.slice(0, 2), ...rows.slice(2, -2).map((r) => [r]), rows.slice(-2)];
+      const old = $$(':scope > tbody', tb);
+      for (const g of groups) { const b = document.createElement('tbody'); b.append(...g); tb.append(b); }
+      old.forEach((b) => b.remove());
+    }
+    for (const p of $$('section.chapter > p')) {
+      const nx = p.nextElementSibling;
+      if (/:\s*$/.test(txt(p)) && nx && nx.matches('ul, ol, table')) p.classList.add('keep-next');
+    }
+    for (const tb of $$('table.tbl')) {
+      const ths = $$('thead th', tb);
+      if (tb.classList.contains('nocaps') || ths.some(caseSensitive)) { const th = $('thead', tb); if (th) th.classList.add('nocaps'); }
+    }
     for (const b of $$('.w60')) {
       if ($(':scope > .lbl', b)) continue;
       const items = $$(':scope > ul > li, :scope > ol > li', b).length;
@@ -304,13 +333,20 @@
     if (toc) {
       let out = '<div class="toc-cols">';
       for (const ch of chapters) {
-        out += `<div class="toc-ch"><a href="#${ch.id}"><span class="n">${esc(ch.dataset.label || ch.dataset.num)}</span><span class="t">${esc(ch.dataset.title || '')}</span><span class="p" data-page-of="${ch.id}">${PH}</span></a></div>`;
+        out += `<div class="toc-block"><div class="toc-ch"><a href="#${ch.id}"><span class="n">${esc(ch.dataset.label || ch.dataset.num)}</span><span class="t">${esc(ch.dataset.title || '')}</span><span class="p" data-page-of="${ch.id}">${PH}</span></a></div>`;
         for (const h of $$(':scope > h2', ch)) {
-          if (isPart2(ch, h)) continue;   // podrozdziały części 2 – tylko w zakładkach PDF
+          if (isPart2(ch, h)) continue;   // podrozdziały części 2 – niżej, pod pozycją „Część 2”
           out += `<div class="toc-sec"><a href="#${h.id}"><span class="t">${esc(h.dataset.toc || txt(h))}</span><span class="p" data-page-of="${h.id}">${PH}</span></a></div>`;
         }
         const m2 = part2.get(ch);
-        if (m2) out += `<div class="toc-sec toc-cz2"><a href="#${m2.id}"><span class="t">${esc(PART2)}</span><span class="p" data-page-of="${m2.id}">${PH}</span></a></div>`;
+        if (m2) {
+          out += `</div><div class="toc-block toc-block2"><div class="toc-sec toc-cz2"><a href="#${m2.id}"><span class="t">${esc(PART2)}</span><span class="p" data-page-of="${m2.id}">${PH}</span></a></div>`;
+          for (const h of $$(':scope > h2', ch)) {
+            if (!isPart2(ch, h)) continue;   // podrozdziały części 2 – wcięte pod pozycją „Część 2”
+            out += `<div class="toc-sec toc-sec2"><a href="#${h.id}"><span class="t">${esc(h.dataset.toc || txt(h))}</span><span class="p" data-page-of="${h.id}">${PH}</span></a></div>`;
+          }
+        }
+        out += '</div>';
       }
       if (backOrder.length) {
         out += '<div class="toc-end">NA KONIEC</div>';
@@ -404,6 +440,12 @@
         if (!run) { run = document.createElement('div'); run.className = 'cols'; el.before(run); }
         run.appendChild(el);
         note(el, false);
+      }
+      // ciąg złożony tylko z ramki (i linii źródła) między elementami na obie kolumny: jedna kolumna na całą
+      // szerokość – inaczej ramka stoi sama w lewym łamie, a prawy zostaje pusty
+      for (const run of $$(':scope > .cols', ch)) {
+        const kids = [...run.children];
+        if (kids.length <= 2 && kids.some((k) => k.matches('.box')) && kids.every((k) => k.matches('.box, p.src'))) run.classList.add('cols-1');
       }
       // część 2: klasa .cz2 na wszystkim za znacznikiem (pagina „część 2”, lżejsza kreska nad h2)
       const m = part2.get(ch);
@@ -676,7 +718,7 @@
           M.push({ level: 'warn', msg: `Element wystaje poza pole zadruku o ${((r.right - fullRight) * 0.75).toFixed(1)} pt: ${where(el)}` });
           reported.add(top); continue;
         }
-        if (sec.classList.contains('chapter') && !el.matches('.cols') && el.closest('.cols') && !el.closest(wide) && fw > colW + 1.5) {
+        if (sec.classList.contains('chapter') && !el.matches('.cols') && el.closest('.cols') && !el.closest('.cols-1') && !el.closest(wide) && fw > colW + 1.5) {
           M.push({ level: 'warn', msg: `Element szerszy niż kolumna o ${((fw - colW) * 0.75).toFixed(1)} pt (dodaj klasę wide albo zmniejsz): ${where(el)}` });
           reported.add(top);
         }

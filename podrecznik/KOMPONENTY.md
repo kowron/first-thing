@@ -215,7 +215,7 @@ opisuje Drewa, pierwszeństwo miało nowsze źródło.</p></div>
 * Build: zaczyna część 2 od nowej strony, wstawia nagłówek-pas „Część 2 · Rozszerzenie (na piątkę)” z numerem
   i tytułem rozdziału, zmienia paginę („… · CZĘŚĆ 2 – NA PIĄTKĘ”, „NN Tytuł · część 2”), daje jaśniejszą kreskę nad
   `h2`, w spisie treści i otwarciu rozdziału dodaje pozycję „Część 2 – rozszerzenie (na piątkę)” z numerem strony,
-  a w zakładkach PDF – tę pozycję z podrozdziałami części 2 pod spodem (w spisie treści podrozdziałów części 2 nie ma).
+  a w zakładkach PDF – tę pozycję z podrozdziałami części 2 pod spodem; w spisie treści podrozdziały części 2 stoją wcięte pod tą pozycją.
 
 ### Zaślepka ryciny (rycina w przygotowaniu)
 
