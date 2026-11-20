@@ -55,7 +55,7 @@
     <tbody>
       <tr><td>jedna zasada</td><td>SNV</td><td>synonimiczny, missense albo nonsense; czasem zaburzony splicing</td></tr>
       <tr><td>kilka nukleotydów, liczba podzielna przez 3</td><td>mały indel bez przesunięcia ramki</td><td>białko krótsze lub dłuższe o jeden lub kilka aminokwasów</td></tr>
-      <tr><td>kilka nukleotydów, liczba niepodzielna przez 3</td><td>indel z przesunięciem ramki</td><td>dalsze kodony odczytywane inaczej, często szybki przedwczesny STOP</td></tr>
+      <tr><td>jeden lub kilka nukleotydów, liczba niepodzielna przez 3</td><td>indel z przesunięciem ramki</td><td>dalsze kodony odczytywane inaczej, często szybki przedwczesny STOP</td></tr>
       <tr><td>liczba kopii regionu</td><td>CNV</td><td>brak lub nadmiar eksonu, genu albo fragmentu chromosomu</td></tr>
       <tr><td>orientacja albo położenie odcinka</td><td>inwersja, translokacja</td><td>ilość DNA ta sama; możliwe przerwanie genu lub zmiana regulacji</td></tr>
       <tr><td>liczba powtórzeń krótkiego motywu</td><td>ekspansja powtórzeń</td><td>zmiana budowy białka, toksyczne RNA albo wyciszenie genu</td></tr>
@@ -95,7 +95,7 @@
   <h3 id="c01-jedna-metoda">Dlaczego jedna metoda nie wykrywa wszystkiego?</h3>
   <p>Każdy rodzaj wariantu stawia metodzie inne zadanie. Zamianę jednej litery wystarczy przeczytać. Brak całego eksonu trzeba policzyć – sprawdzić, czy jest jedna kopia zamiast dwóch. Długie powtórzenie trzeba zmierzyć. Żadna pojedyncza metoda nie robi dobrze wszystkich tych rzeczy naraz.</p>
   <aside class="note pojecie" data-term="Pseudogen"><p>nieczynna kopia genu, bardzo podobna do genu właściwego. Odczyty z pseudogenu łatwo pomylić z odczytami z genu.</p></aside>
-  <p>Sekwencjonowanie krótkimi odczytami (NGS, opisane dalej) dobrze wykrywa SNV i małe indele. Szczególnego podejścia wymagają za to bardzo długie powtórzenia, <b>pseudogeny</b> i część rearanżacji. Ekspansje bada się m.in. metodą PCR z pomiarem długości produktu i metodą <b>RP-PCR</b> (<i>repeat-primed PCR</i>), a zależnie od problemu także innymi zwalidowanymi metodami albo długimi odczytami. Zmiany liczby kopii wykrywa mikromacierz, odpowiednio zwalidowana analiza danych NGS albo <b>MLPA</b> – metoda, w której pary sond przyłączają się do wybranych odcinków DNA (np. eksonów), zostają połączone i namnożone w PCR, a ilość produktu odpowiada liczbie kopii odcinka.</p>
+  <p>Sekwencjonowanie krótkimi odczytami (NGS, opisane dalej) dobrze wykrywa SNV i małe indele. Szczególnego podejścia wymagają za to bardzo długie powtórzenia, <b>pseudogeny</b> i część rearanżacji (zmian położenia lub orientacji odcinków DNA, np. translokacji i inwersji). Ekspansje bada się m.in. metodą PCR z pomiarem długości produktu i metodą <b>RP-PCR</b> (<i>repeat-primed PCR</i>; zasada – <a class="pageref" href="#c01-r-komorka"></a>), a zależnie od problemu także innymi zwalidowanymi metodami albo długimi odczytami. Zmiany liczby kopii wykrywa mikromacierz, odpowiednio zwalidowana analiza danych NGS albo <b>MLPA</b> – metoda, w której pary sond przyłączają się do wybranych odcinków DNA (np. eksonów), zostają połączone i namnożone w PCR, a ilość produktu odpowiada liczbie kopii odcinka.</p>
   <div class="box zapamietaj"><p>Najpierw nazwij zmianę w DNA, potem sprawdź ramkę odczytu, położenie w genie i możliwy skutek. Wynik ujemny oznacza tylko, że test nie wykrył zmiany w zakresie swoich możliwości – jego znaczenie zależy od badanego regionu, klasy wariantu i czułości metody.</p></div>
   <p class="src">Źródło: prezentacja LMZ 3, slajdy 2–25</p>
 
@@ -148,7 +148,7 @@
   <aside class="note pojecie" data-term="Basecalling"><p>przypisanie liter (A, C, G, T) do zmierzonego sygnału, razem z oceną jakości każdej litery.</p></aside>
   <p><b>Chromatogram</b> to wykres sygnału fluorescencji w czasie. Każdy pik to fragmenty jednej długości, a jego barwa – zasada na ich końcu; w dobrym odczycie każda pozycja ma jeden wyraźny pik. Program przypisuje pikom litery i podaje jakość każdej z nich – to <b>basecalling</b>. Trudne miejsca warto jednak obejrzeć na wykresie samodzielnie. Kolory zasad różnią się między systemami, więc zawsze odczytuje się je z legendy chromatogramu.</p>
   <p>Pamiętaj, że PCR namnaża obie kopie regionu – z obu chromosomów pary. Jeśli dwa allele pacjenta różnią się jedną zasadą, w tej pozycji część fragmentów kończy się na jednej zasadzie, a część na drugiej. Na chromatogramie pojawiają się wtedy <b>dwa piki</b> naraz, np. A i G. Program wpisuje w takim miejscu literę <b>kodu IUPAC</b>, oznaczającą kilka zasad naraz: R = A lub G, Y = C lub T. Gdy oba allele mają tę samą zasadę, widać jeden pik.</p>
-  <p>Heterozygotyczny SNV daje niejednoznaczność w <b>jednej</b> pozycji, a dalsza sekwencja pozostaje czytelna – za miejscem zmiany oba allele znów mają te same litery. Heterozygotyczny indel wygląda inaczej. Jeśli w jednym allelu brakuje np. jednego nukleotydu, od miejsca zmiany ten allel jest przesunięty o jedną pozycję względem drugiego. W każdej kolejnej pozycji nakładają się więc dwa różne sygnały i od miejsca zmiany chromatogram staje się nieczytelny.</p>
+  <p>Heterozygotyczny SNV daje niejednoznaczność w <b>jednej</b> pozycji, a dalsza sekwencja pozostaje czytelna – za miejscem zmiany oba allele znów mają te same litery. Heterozygotyczny indel wygląda inaczej. Jeśli w jednym allelu brakuje np. jednego nukleotydu, od miejsca zmiany ten allel jest przesunięty o jedną pozycję względem drugiego. W każdej kolejnej pozycji nakładają się więc dwa różne sygnały.</p>
   <p>Podwójny sygnał nie zawsze oznacza dwa allele. Może też wynikać z zanieczyszczenia, z produktu niespecyficznego (namnożonego innego fragmentu) albo ze słabej jakości reakcji. Pomaga taka ściąga:</p>
   <table class="tbl wide">
     <thead><tr><th style="width:42%">Co widzisz na chromatogramie</th><th>Co rozważasz</th></tr></thead>
@@ -275,7 +275,7 @@
   <aside class="note pojecie" data-term="Eksom"><p>wszystkie eksony genomu. Sekwencje kodujące białka stanowią około 1–2% genomu człowieka.</p></aside>
   <ul>
     <li><b>Panel</b> obejmuje wybrane geny lub ich regiony związane z konkretnym problemem, np. z określoną grupą chorób.</li>
-    <li><b>WES</b> (<i>whole-exome sequencing</i>, sekwencjonowanie eksomu) skupia się przede wszystkim na regionach kodujących białka, które są niewielką częścią genomu. Większość intronów i elementów regulatorowych leży poza jego zakresem. Eksony wyłapuje się z próbki zestawem sond (zestawem wzbogacającym), więc rzeczywisty zakres zależy od projektu tego zestawu i od uzyskanego pokrycia. Nawet w obrębie regionów kodujących nie każda pozycja jest odczytana z jednakową jakością.</li>
+    <li><b>WES</b> (<i>whole-exome sequencing</i>, sekwencjonowanie eksomu) skupia się przede wszystkim na regionach kodujących białka, które są niewielką częścią genomu. Większość intronów i elementów regulatorowych leży poza jego zakresem. Eksony wyłapuje się z próbki zestawem sond (zestawem wzbogacającym), więc rzeczywisty zakres zależy od projektu tego zestawu i od uzyskanego pokrycia, czyli od tego, jaka część regionu została odczytana wystarczająco wiele razy (<a class="pageref" href="#c01-glebokosc"></a>). Nawet w obrębie regionów kodujących nie każda pozycja jest odczytana z jednakową jakością.</li>
     <li><b>WGS</b> (<i>whole-genome sequencing</i>, sekwencjonowanie całego genomu) obejmuje genom znacznie szerzej, łącznie z licznymi regionami niekodującymi.</li>
   </ul>
   <p>Różnicę zakresów najłatwiej zobaczyć na jednym odcinku DNA, „oglądanym” kolejno przez każdą strategię (<a class="figref" href="#c01-fig-zakres"></a>). Każda kolejna obejmuje więcej, ale i WGS zostawia luki. Wady i zalety strategii zestawia tabela.</p>
@@ -311,7 +311,7 @@
   <h3>Co wnoszą rodzice i tkanka?</h3>
   <p>W <b>analizie trio</b> porównuje się dane osoby badanej i obojga rodziców. Genotypy zapisuje się tak jak w danych z sekwencjonowania: 0/0 – obie kopie bez wariantu, 0/1 – jedna kopia z wariantem. Porównanie pomaga ustalić pochodzenie zmian:</p>
   <ul>
-    <li>rodzice 0/0, dziecko 0/1 → wariant <b>de novo</b>, o ile pokrewieństwo jest potwierdzone (gdyby badany mężczyzna nie był ojcem biologicznym, „nowy” wariant mógłby pochodzić od ojca biologicznego);</li>
+    <li>rodzice 0/0, dziecko 0/1 → wariant <b>de novo</b>, o ile pokrewieństwo jest potwierdzone (gdyby mężczyzna zbadany jako ojciec nie był ojcem biologicznym dziecka, „nowy” wariant mógłby pochodzić od ojca biologicznego);</li>
     <li>dziecko ma dwa różne warianty w jednym genie, jeden ma ojciec, drugi matka → warianty leżą na różnych kopiach genu (układ <i>trans</i>), czyli uszkodzone są obie kopie. To ważne w chorobie recesywnej.</li>
   </ul>
   <p>Wyniki trio nadal wymagają oceny jakości, sprawdzenia, czy pokrewieństwo jest zgodne z deklarowanym, i oceny biologicznego znaczenia wariantu.</p>
@@ -328,6 +328,7 @@
   <h3 id="c01-droga">Co robi komputer z milionami odczytów?</h3>
   <p>Aparat NGS nie wydaje listy wariantów, tylko surowy sygnał – obrazy fluorescencji albo przebieg prądu. Zanim z tego sygnału powstanie raport dla lekarza, dane przechodzą przez kolejne etapy, a każdy zmienia rodzaj informacji (<a class="figref" href="#c01-fig-dane"></a>):</p>
   <ol>
+    <li><b>sygnał z aparatu</b> – obrazy fluorescencji albo przebieg prądu, jeszcze bez liter;</li>
     <li><b>basecalling</b> – sygnał zamienia się w sekwencję zasad, a każda zasada dostaje miarę jakości;</li>
     <li><b>demultipleksacja</b> – jeśli w jednej serii badano wiele próbek, odczyty rozdziela się według indeksów, czyli według pacjentów;</li>
     <li><b>kontrola jakości i przycinanie</b> – ocenia się jakość danych, odcina resztki adapterów i słabe końce odczytów;</li>
@@ -389,7 +390,7 @@
       <tr><td>głęboko w intronie</td><td>zwykle nic; czasem powstaje nowe miejsce splicingowe</td></tr>
     </tbody>
   </table>
-  <p>Przy wariancie missense ocenia się m.in., czy pozycja jest konserwowana, czym różnią się zamieniane aminokwasy, czy zmiana leży w domenie i czy pozycja uczestniczy w oddziaływaniach. Mechanizmy bywają różne: zamiana hydrofobowego aminokwasu na naładowany we wnętrzu białka może destabilizować jego strukturę, a zamiana reszty w centrum aktywnym może przede wszystkim osłabić katalizę, choć ogólny kształt białka pozostaje podobny.</p>
+  <p>Przy wariancie missense ocenia się m.in., czy pozycja jest konserwowana (czyli ma ten sam aminokwas w podobnych sekwencjach – tak ocenia ją SIFT, opisany niżej), czym różnią się zamieniane aminokwasy, czy zmiana leży w domenie i czy pozycja uczestniczy w oddziaływaniach. Mechanizmy bywają różne: zamiana hydrofobowego aminokwasu na naładowany we wnętrzu białka może destabilizować jego strukturę, a zamiana reszty w centrum aktywnym może przede wszystkim osłabić katalizę, choć ogólny kształt białka pozostaje podobny.</p>
 
   <figure class="fig" id="c01-fig-nmd" data-bank="g-ryc-20" data-title="Przedwczesny STOP i degradacja mRNA (NMD)">
     <figcaption>Porównaj panele A i B w kroku 2, po pierwszej translacji. W A za kodonem STOP zostają znaczniki złączy (EJC) – mRNA zostaje rozłożone i białka brak. W B STOP leży w ostatnim eksonie, rybosom zdejmuje wszystkie znaczniki i powstaje skrócone białko. Granica 50–55 nt to uproszczenie.</figcaption>
@@ -400,11 +401,11 @@
   <aside class="note pojecie" data-term="NMD"><p><i>nonsense-mediated decay</i> – komórkowy mechanizm kontroli jakości, który rozkłada mRNA z przedwczesnym kodonem STOP.</p></aside>
   <p>Można by się spodziewać, że przedwczesny STOP da po prostu krótsze białko. W części transkryptów białka nie ma jednak wcale, bo komórka rozkłada samo mRNA – to <b>NMD</b>. Skąd komórka wie, że STOP pojawił się za wcześnie? Przy splicingu na każdym złączu eksonów zostaje znacznik (EJC). W czasie pierwszej translacji rybosom zdejmuje znaczniki po drodze i zatrzymuje się na kodonie STOP. Jeśli za tym miejscem zostały jeszcze znaczniki, mRNA trafia do degradacji (<a class="figref" href="#c01-fig-nmd"></a>). Gdy STOP leży w ostatnim eksonie, za nim nie ma już złączy ani znaczników – mRNA zwykle unika degradacji i powstaje skrócone białko. Reguła jest uproszczona (NMD, gdy STOP leży ponad ok. 50–55 nukleotydów przed ostatnim złączem eksonów) i ma wyjątki.</p>
 
-  <div class="box przyklad"><p>W tym samym genie (cztery eksony – przykład) znaleziono dwa warianty nonsense. Wariant 1 tworzy STOP w eksonie 2, wariant 2 – w eksonie 4, ostatnim. Przy wariancie 1 za STOP-em zostają znaczniki na złączach 2/3 i 3/4, więc mRNA ulega NMD: białka brak, funkcja z tego allelu znika. Przy wariancie 2 rybosom zdejmuje wszystkie znaczniki przed STOP-em, mRNA zostaje i powstaje białko bez końcowego fragmentu łańcucha. Czy ono działa, zależy od tego, co było w utraconym fragmencie – to trzeba ocenić osobno. Oba warianty to „nonsense”, a ich skutki mogą być różne.</p></div>
+  <div class="box przyklad"><p>W tym samym genie (cztery eksony – przykład) znaleziono dwa warianty nonsense. Wariant 1 tworzy STOP w eksonie 2, daleko (znacznie ponad 55 nukleotydów) przed ostatnim złączem eksonów, wariant 2 – w eksonie 4, ostatnim. Przy wariancie 1 za STOP-em zostają znaczniki na złączach 2/3 i 3/4, więc mRNA ulega NMD: białka brak, funkcja z tego allelu znika. Przy wariancie 2 rybosom zdejmuje wszystkie znaczniki przed STOP-em, mRNA zostaje i powstaje białko bez końcowego fragmentu łańcucha. Czy ono działa, zależy od tego, co było w utraconym fragmencie – to trzeba ocenić osobno. Oba warianty to „nonsense”, a ich skutki mogą być różne.</p></div>
 
 
   <figure class="fig" id="c01-fig-mechanizmy" data-bank="g-ryc-21" data-title="Cztery mechanizmy działania wariantu">
-    <figcaption>A – allel zmieniony nie daje białka albo daje białko niedziałające. B – porównaj słupki z progiem: ok. 50% produktu z jednej sprawnej kopii to za mało dla komórki. C – zmienione białko jest włączone także bez sygnału. D – przy produkcji 1 : 1 w pełni prawidłowy jest tylko 1 z 16 kompleksów czteropodjednostkowych (ramka).</figcaption>
+    <figcaption>A – allel zmieniony nie daje białka albo daje białko niedziałające. B – porównaj słupki z progiem: ok. 50% produktu z jednej sprawnej kopii to za mało dla komórki. C – zmienione białko jest włączone także bez sygnału. D – przy produkcji 1 : 1 w pełni prawidłowy jest tylko 1 z 16 kompleksów czteropodjednostkowych (kompleks obwiedziony ramką).</figcaption>
   </figure>
 
   <h3>Cztery mechanizmy działania wariantu</h3>
@@ -506,7 +507,7 @@
       <li><b>Wariant</b> – najpierw zmiana w DNA, potem skutek: SNV opisuje DNA, missense – aminokwas; CNV zmienia liczbę kopii, ekspansja – liczbę powtórzeń.</li>
       <li><b>PCR</b> namnaża odcinek, <b>sekwencjonowanie</b> czyta zasady (Sanger – ddNTP bez 3′-OH; NGS – miliony odczytów). Panel, WES, WGS to zakres, NGS – technologia; badanie dobiera się do oczekiwanej klasy zmiany.</li>
       <li><b>Basecalling</b> przypisuje litery, <b>variant calling</b> wnioskuje z wielu odczytów; jakość zasady dotyczy litery, mapowania – miejsca odczytu; głębokość to odczyty w pozycji, pokrycie – część regionu powyżej progu.</li>
-      <li><b>Trzy obliczenia</b>: AF = AC/AN (populacja), VAF = odczyty z wariantem / wszystkie (próbka), Q = −10 × log<sub>10</sub>(p błędu) (litera; Q30 – 1 błąd na 1000).</li>
+      <li><b>Trzy obliczenia</b>: AF = AC/AN (populacja), VAF = odczyty z wariantem / wszystkie (próbka), Q = −10 × log<sub>10</sub>(p błędu) – jakość pojedynczej litery; Q30 to 1 błąd na 1000.</li>
       <li><b>SIFT</b> alarmuje wynikiem niskim, <b>PolyPhen-2</b> – wysokim (razem to jeden dowód). Potwierdzenie mówi, czy wariant jest, klasyfikacja (5 klas) – co znaczy.</li>
     </ul>
   </div>
@@ -815,8 +816,8 @@
       <li>referencja: θ = 100 / (10 + 100) ≈ 0,91, czyli ok. 91%;</li>
       <li>wariant: θ = 100 / (1000 + 100) ≈ 0,09, czyli ok. 9%.</li>
     </ul>
-    <p>K<sub>d</sub> wariantu jest sto razy wyższe, więc żeby związać połowę cząsteczek, potrzeba stukrotnie wyższego stężenia liganda – na wykresie krzywa wariantu jest przesunięta w prawo. Przy 100 nM różnica jest ogromna: 91% wobec 9%. To jednak informacja o wiązaniu. Wpływ na komórkę zależy jeszcze m.in. od rzeczywistych stężeń, funkcji białka i mechanizmu choroby.</p></div>
-  <p>K<sub>d</sub> odczytuje się też wprost z krzywej wiązania: znajdujesz 50% na osi pionowej, idziesz poziomo do krzywej i schodzisz na oś stężeń – stężenie w tym miejscu to K<sub>d</sub>. Oś stężeń rysuje się wtedy w skali logarytmicznej (kolejne podziałki: 1 nM, 10 nM, 100 nM, 1 µM) – dzięki temu obie krzywe z przykładu mieszczą się na jednym wykresie. Porównuje się tylko wartości zmierzone w tych samych warunkach.</p>
+    <p>K<sub>d</sub> wariantu jest sto razy wyższe, więc żeby związać połowę cząsteczek, potrzeba stukrotnie wyższego stężenia liganda – na wykresie wiązania (stężenie liganda na osi poziomej, część związanego białka na pionowej) krzywa wariantu byłaby przesunięta w prawo. Przy 100 nM różnica jest ogromna: 91% wobec 9%. To jednak informacja o wiązaniu. Wpływ na komórkę zależy jeszcze m.in. od rzeczywistych stężeń, funkcji białka i mechanizmu choroby.</p></div>
+  <p>K<sub>d</sub> odczytuje się też wprost z krzywej wiązania: znajdujesz 50% na osi pionowej, idziesz poziomo do krzywej i schodzisz na oś stężeń – stężenie w tym miejscu to K<sub>d</sub>. Oś stężeń rysuje się wtedy w skali logarytmicznej (kolejne podziałki: 1 nM, 10 nM, 100 nM, 1 µM) – dzięki temu krzywe o tak różnych K<sub>d</sub> jak w przykładzie zmieściłyby się na jednym wykresie. Porównuje się tylko wartości zmierzone w tych samych warunkach.</p>
 
   <h3>PDBbind i trzy stałe</h3>
   <p>Skąd brać zmierzone wartości? <b>PDBbind</b> to baza danych, która łączy znane struktury kompleksów białko–ligand z doświadczalnymi danymi o sile ich wiązania. Służy do poznawania zależności między budową kompleksu a siłą oddziaływania oraz do trenowania i sprawdzania modeli obliczeniowych. Pojedynczy wpis opisuje zmierzony kompleks; wpływ nowego wariantu trzeba ocenić osobno. Korzystając z danych, sprawdzasz rodzaj pomiaru i warunki doświadczenia, bo siłę wiązania opisują różne wielkości:</p>
@@ -850,7 +851,7 @@
   <table class="tbl wide">
     <thead><tr><th style="width:25%">Katalog</th><th style="width:17%">Publikacja / wersja</th><th style="width:13%">Liczba osób</th><th>Co wniósł</th></tr></thead>
     <tbody>
-      <tr><td>1000 Genomes Project</td><td>faza 3 (2015)</td><td class="num">2504</td><td>projekt referencyjny o różnicach między ludźmi, następca Human Genome Project; osoby z 26 populacji – nazwa projektu to zaokrąglenie</td></tr>
+      <tr><td>1000 Genomes Project</td><td>faza 3 (2015)</td><td class="num">2504</td><td>projekt referencyjny o różnicach między ludźmi, następca Human Genome Project; osoby z 26 populacji – „1000” w nazwie projektu to zaokrąglenie (zbadano 2504 osoby)</td></tr>
       <tr><td>ExAC (<i>Exome Aggregation Consortium</i>)</td><td>publikacja z 2016 r.</td><td class="num">60 706</td><td>połączył dane eksomowe z wielu badań; jego istotą była agregacja i wspólna analiza istniejących danych</td></tr>
       <tr><td>gnomAD (<i>Genome Aggregation Database</i>)</td><td>v4.0 (2023)</td><td class="num">807 162</td><td>łączy dane eksomowe i genomowe</td></tr>
     </tbody>
@@ -894,7 +895,7 @@
   <p><b>GDC</b> (<i>NCI Genomic Data Commons</i>) udostępnia dane z projektów nowotworowych i narzędzia do ich przeszukiwania oraz analizy. Można zestawiać grupy przypadków i korzystać z danych molekularnych (m.in. o wariantach, ekspresji i liczbie kopii), klinicznych oraz informacji o materiale. Zakres zależy od projektu i rodzaju pliku, a przypadki różnią się kompletem badań i danych o leczeniu. Część danych jest otwarta, a część wymaga uprawnionego dostępu. Porównując grupy, uwzględniasz typ materiału, sposób pomiaru i ujednolicenie danych (harmonizację).</p>
   <p>Poziomy warto łączyć. Jeśli w nowotworze widzisz amplifikację genu, możesz sprawdzić, czy towarzyszy jej wyższy poziom RNA i białka. Zgodność poziomów wspiera określony mechanizm, choć nie zawsze występuje: regulacja ekspresji, degradacja produktu i skład próbki mogą zmieniać relacje między poziomami. Korelacja ekspresji z przeżyciem jest wskazówką do dalszych badań; przyczynowość wymaga osobnych dowodów.</p>
   <div class="box przyklad"><p>Wariant genu pojawia się w guzie, ale według danych o ekspresji gen nie jest aktywny w tej tkance. To ważny kontekst do dalszej oceny. Brak wykrytej ekspresji nie wystarcza jednak, by odrzucić znaczenie zmiany – brak transkryptu może wynikać także ze zbyt mało czułego pomiaru (<a class="pageref" href="#c01-rnaseq"></a>).</p></div>
-  <p>Na koniec przykład do walidacji z części 1 (<a class="pageref" href="#c01-walidacja"></a>). Test niezawodnie wykrywa SNV przy VAF 50%. Skuteczność tego samego testu przy VAF 2% albo dla delecji całego eksonu trzeba wykazać osobno – walidacja obejmuje tylko te typy wariantów i ten zakres, które w niej sprawdzono.</p>
+  <p>Ostatni przykład nie dotyczy już baz danych, tylko walidacji metody z części 1 (<a class="pageref" href="#c01-walidacja"></a>). Test niezawodnie wykrywa SNV przy VAF 50%. Skuteczność tego samego testu przy VAF 2% albo dla delecji całego eksonu trzeba wykazać osobno – walidacja obejmuje tylko te typy wariantów i ten zakres, które w niej sprawdzono.</p>
   <p class="src">Źródło: prezentacja LMZ 3, slajdy 32–63, 69–79</p>
 
   <!-- R9 -->
@@ -930,7 +931,7 @@
   <p><b>Wariant i wniosek (pytania 3 i 6).</b> Brak wariantu punktowego w tym regionie nie wyklucza delecji. Brakującego eksonu nie da się „przeczytać” jako zmienionej litery – trzeba policzyć kopie (<a class="pageref" href="#c01-jedna-metoda"></a>).</p>
 
   <h3>Siedem par pojęć do powtórki</h3>
-  <p>Na koniec pary pojęć, które łatwo pomylić, a których nie zestawia „W 60 sekund”. Jeśli umiesz jednym zdaniem powiedzieć, czym różnią się pojęcia w każdej parze, masz opanowany szkielet całego rozdziału.</p>
+  <p>Na koniec pary pojęć, które łatwo pomylić. Jeśli umiesz jednym zdaniem powiedzieć, czym różnią się pojęcia w każdej parze, masz opanowany szkielet całego rozdziału.</p>
   <table class="tbl full">
     <thead><tr><th style="width:34%">Pojęcia</th><th>Jak je odróżnić?</th></tr></thead>
     <tbody>

@@ -27,7 +27,7 @@
       <tr><td>1. matrycowy DNA – badane DNA (albo cDNA przepisane z RNA)</td><td>wzór: z niego kopiowany jest wybrany fragment</td><td>nie ma czego kopiować – produkt nie powstaje (tak ma wyglądać kontrola bez matrycy, <a class="pageref" href="#c05-zel"></a>)</td></tr>
       <tr><td>2. startery oligonukleotydowe – para krótkich, jednoniciowych odcinków DNA</td><td>dają polimerazie koniec 3′ do wydłużania; wyznaczają początek i koniec fragmentu</td><td>polimeraza nie ma od czego zacząć – nie powstaje żadna nowa nić</td></tr>
       <tr><td>3. termostabilna polimeraza DNA, np. polimeraza Taq</td><td>buduje nowe nici</td><td>nic nie jest kopiowane; zwykła polimeraza zostałaby zniszczona w pierwszym ogrzaniu do ok. 95 °C</td></tr>
-      <tr><td>4. dNTP – dATP, dGTP, dTTP i dCTP</td><td>materiał do budowy nowych nici</td><td>bez któregokolwiek z czterech nukleotydów polimeraza nie dokończy nici</td></tr>
+      <tr><td>4. dNTP (trifosforany deoksyrybonukleotydów) – dATP, dGTP, dTTP i dCTP</td><td>materiał do budowy nowych nici</td><td>bez któregokolwiek z czterech nukleotydów polimeraza nie dokończy nici</td></tr>
       <tr><td>5. jony magnezu Mg<sup>2+</sup></td><td>kofaktor polimerazy</td><td>za mało – wydajność wyraźnie spada; za dużo – produkty niespecyficzne i błędy</td></tr>
       <tr><td>6. bufor dla polimerazy</td><td>utrzymuje właściwe pH i skład jonów</td><td>polimeraza nie ma warunków, w których pracuje najlepiej</td></tr>
       <tr><td>7. woda ultraczysta</td><td>dopełnia objętość mieszaniny</td><td>–</td></tr>
@@ -102,7 +102,14 @@
 
   <h3>Co dalej z produktem?</h3>
   <p>Czasem celem badania jest tylko wykrycie genu – np. fragmentu genomu czynnika zakaźnego, żeby potwierdzić zakażenie. Wtedy wystarcza odczyt z żelu: prążek jest albo go nie ma. Kiedy indziej w powielonym fragmencie szuka się mutacji odpowiedzialnej za chorobę – w diagnostyce chorób genetycznych, także prenatalnej, i w onkologii. Wtedy produkt PCR jest dopiero materiałem dla dalszych metod: cięcia enzymami, metod przesiewowych, sekwencjonowania (<a class="pageref" href="#c05-przesiew"></a>).</p>
-  <p>Stąd szerokie zastosowania PCR: wykrywanie drobnoustrojów (powielony fragment genomu bakterii, wirusa, grzyba czy pierwotniaka potwierdza zakażenie lub inwazję), namnażanie wybranych fragmentów DNA i RNA (RNA najpierw przepisuje się na cDNA), alternatywa dla klonowania – PCR powieli nawet bardzo rzadką sekwencję z mieszaniny, o ile znamy sekwencje, które ją otaczają – badanie bardzo starego i skąpego materiału, np. plamy zaschniętej krwi (dlatego PCR jest ważną metodą kryminalistyki), oraz diagnostyka chorób genetycznych i nowotworów.</p>
+  <p>Stąd szerokie zastosowania PCR:</p>
+  <ul>
+    <li>wykrywanie drobnoustrojów – powielony fragment genomu bakterii, wirusa, grzyba czy pierwotniaka potwierdza zakażenie lub inwazję;</li>
+    <li>namnażanie wybranych fragmentów DNA i RNA (RNA najpierw przepisuje się na cDNA);</li>
+    <li>alternatywa dla klonowania – PCR powieli nawet bardzo rzadką sekwencję z mieszaniny, o ile znamy sekwencje, które ją otaczają;</li>
+    <li>badanie bardzo starego i skąpego materiału, np. plamy zaschniętej krwi (dlatego PCR jest ważną metodą kryminalistyki);</li>
+    <li>diagnostyka chorób genetycznych i nowotworów.</li>
+  </ul>
   <div class="box zapamietaj"><p>Cykl PCR: denaturacja (ok. 95 °C) → przyłączanie starterów (55–65 °C) → wydłużanie (ok. 72 °C), powtarzany 36–40 razy. Każda nowa nić staje się matrycą, więc każdy cykl może podwoić liczbę kopii: po <i>n</i> cyklach teoretycznie 2<sup><i>n</i></sup>, potem plateau. Wynik ocenia się w żelu agarozowym; kontrola bez matrycy musi być pusta.</p></div>
   <p class="src">Źródło: Ostrowska s. 54–55, 57 · Materiał pomocniczy</p>
 
@@ -176,7 +183,7 @@
   <div class="box obraz"><p>Sonda TaqMan to latarka z przyklejoną zasłonką. Dopóki są razem, światła nie widać. Polimeraza, przesuwając się po nici, odrywa zasłonkę – i latarka zaczyna świecić. Im więcej powstało kopii, tym więcej odsłoniętych latarek. Wspólna zależność: światło pojawia się dopiero wtedy, gdy dwa elementy jednej cząsteczki zostaną od siebie oddzielone, a oddziela je tylko kopiowanie właściwego fragmentu. Granica obrazu: wygaszacz nie zasłania reportera jak tkanina – tłumi jego świecenie, dopóki leży blisko.</p></div>
 
   <h3>Wartość Ct – kiedy krzywa przekracza próg</h3>
-  <p>PCR w czasie rzeczywistym pozwala obliczyć, ile kopii badanego fragmentu było w mieszaninie przed reakcją. Aparat rysuje dla każdej próbki <b>krzywą amplifikacji</b> – fluorescencję w kolejnych cyklach (<a class="figref" href="#c05-fig-ct" data-panel="A"></a>). Na początku sygnał nie odróżnia się od tła (linii bazowej), potem szybko rośnie, a na końcu krzywa się spłaszcza – to plateau. Nad tłem ustawia się <b>linię odcięcia</b>. Numer cyklu, w którym fluorescencja wzrasta ponad tę linię, to <b>Ct</b> (ang. <i>threshold cycle</i>). Najczęściej Ct przypada na moment, w którym reakcja wchodzi w fazę logarytmicznego przyrostu ilości produktu.</p>
+  <p>PCR w czasie rzeczywistym pozwala obliczyć, ile kopii badanego fragmentu było w mieszaninie przed reakcją. Aparat rysuje dla każdej próbki <b>krzywą amplifikacji</b> – fluorescencję w kolejnych cyklach (<a class="figref" href="#c05-fig-ct" data-panel="A"></a>). Na początku sygnał nie odróżnia się od tła (linii bazowej), potem szybko rośnie, a na końcu krzywa się spłaszcza – to plateau. Nad tłem ustawia się <b>linię odcięcia</b>. Numer cyklu, w którym fluorescencja wzrasta ponad tę linię, to <b>Ct</b> (ang. <i>threshold cycle</i>). Najczęściej Ct przypada na moment, w którym reakcja wchodzi w fazę logarytmicznego przyrostu ilości produktu – czyli gdy krzywa zaczyna szybko rosnąć.</p>
   <aside class="note pojecie" data-term="Linia odcięcia"><p>próg fluorescencji ustawiony powyżej sygnału tła (linii bazowej). Ct to cykl, w którym krzywa go przekracza.</p></aside>
   <p>Zależność jest odwrotna: <b>im więcej kopii badanej sekwencji było w próbce na początku, tym wcześniej fluorescencja przekroczy linię odcięcia – tym niższe Ct</b>. Wynika to z podwajania: próbka, która zaczyna z większą liczbą kopii, potrzebuje mniej cykli, żeby dojść do tej samej ilości produktu.</p>
   <div class="box przyklad"><p>Dwie próbki (liczby przykładowe). W próbce A jest na starcie 8 razy więcej kopii niż w próbce B. Ile cykli później krzywa B przekroczy linię odcięcia? Przy idealnym podwajaniu próbka B po 1 cyklu ma 2 razy więcej kopii niż na starcie, po 2 cyklach – 4 razy, po 3 cyklach – 8 razy, czyli tyle, ile próbka A miała na starcie. Od tej chwili B „powtarza” krzywą A, spóźniona o 3 cykle. Jeśli A ma Ct = 20, to B ma Ct = 23.</p>
@@ -368,7 +375,7 @@
 
   <h3>Do czego służy RFLP – i czego nie widzi?</h3>
   <p>W diagnostyce PCR-RFLP jest jednym ze sposobów identyfikacji pojedynczej, znanej mutacji – obok hybrydyzacji z sondą i sekwencjonowania (<a class="pageref" href="#c05-przesiew"></a>). Do badania polimorfizmu RFLP służyło od początku: był to pierwszy badany typ markera DNA (<a class="pageref" href="#c05-markery"></a>).</p>
-  <p>PCR-RFLP widzi jednak tylko zmiany, które dotyczą miejsca cięcia albo zmieniają długość fragmentu. Mutacja punktowa poza miejscem restrykcyjnym nie zmienia ani liczby, ani długości fragmentów – wzór wygląda prawidłowo. Taką mutację wykrywa amplifikacja allelo-specyficzna (<a class="pageref" href="#c05-odmiany"></a>).</p>
+  <p>PCR-RFLP widzi jednak tylko zmiany, które dotyczą miejsca cięcia albo zmieniają długość fragmentu. Mutacja punktowa poza miejscem restrykcyjnym nie zmienia ani liczby, ani długości fragmentów – wzór wygląda prawidłowo. Taką mutację wykrywa amplifikacja allelospecyficzna (<a class="pageref" href="#c05-odmiany"></a>).</p>
   <div class="box zapamietaj"><p>PCR-RFLP: PCR → trawienie → elektroforeza ze wzorcem → analiza wzoru. Mniej fragmentów – mutacja zniszczyła miejsce cięcia; więcej – utworzyła nowe; ta sama liczba, inna długość – insercja lub delecja powyżej 50 pz. Heterozygota ma prążki obu alleli.</p></div>
   <p class="src">Źródło: Ostrowska s. 55, 63 · Drewa s. 733</p>
 
@@ -400,14 +407,14 @@
 
   <h3>ASA – który allel ma pacjent?</h3>
   <p>Mutacja punktowa poza miejscem restrykcyjnym nie zmienia wzoru RFLP (<a class="pageref" href="#c05-rflp"></a>). Jak ją wykryć bez sekwencjonowania? Pomaga zasada, którą znasz z początku rozdziału: polimeraza dobudowuje nukleotydy do końca 3′ startera związanego z matrycą. Polimeraza wydłuża jednak starter tylko wtedy, gdy jego ostatni nukleotyd – na końcu 3′ – pasuje do matrycy.</p>
-  <p>Wykorzystuje to <b>amplifikacja allelo-specyficzna</b> (ASA, ang. <i>allele-specific amplification</i>; inne nazwy – część 2, <a class="pageref" href="#c05-r-mutacje"></a>). Wykrywa polimorfizm alleli i mutacje punktowe. Gdy znamy mutację punktową, która leży poza miejscem restrykcyjnym, projektuje się dwie wersje startera, komplementarne do dwóch alleli różniących się tylko jednym nukleotydem – i właśnie ten nukleotyd stoi na końcu 3′ startera:</p>
+  <p>Wykorzystuje to <b>amplifikacja allelospecyficzna</b> (ASA, ang. <i>allele-specific amplification</i>; inne nazwy – część 2, <a class="pageref" href="#c05-r-mutacje"></a>). Wykrywa polimorfizm alleli i mutacje punktowe. Gdy znamy mutację punktową, która leży poza miejscem restrykcyjnym, projektuje się dwie wersje startera, komplementarne do dwóch alleli różniących się tylko jednym nukleotydem – i właśnie ten nukleotyd stoi na końcu 3′ startera:</p>
   <ul>
     <li>starter N kończy się nukleotydem pasującym do allelu prawidłowego;</li>
     <li>starter M kończy się nukleotydem pasującym do allelu zmutowanego.</li>
   </ul>
   <p>Dla każdej osoby wykonuje się dwie reakcje: ze starterem N i ze starterem M. Produkt powstaje tylko w tej reakcji, w której starter pasuje do któregoś z alleli badanej osoby – to, w której reakcji powstał produkt, pokazuje genotyp (<a class="figref" href="#c05-fig-asa"></a>). W ten sposób wykrywa się także mutacje, które nie zmieniają miejsca trawienia restrykcyjnego, więc nie widać ich w RFLP. ASA stosuje się np. w diagnostyce molekularnej mukowiscydozy (CF, ang. <i>cystic fibrosis</i>).</p>
 
-  <figure class="fig" id="c05-fig-asa" data-bank="k5-ryc-17" data-title="Amplifikacja allelo-specyficzna (ASA)">
+  <figure class="fig" id="c05-fig-asa" data-bank="k5-ryc-17" data-title="Amplifikacja allelospecyficzna (ASA)">
     <figcaption>Zacznij od par starter–matryca: produkt powstaje tylko tam, gdzie koniec 3′ startera tworzy parę z matrycą (A z T, G z C). Potem przejdź do żelu: zdrowy (N/N) ma prążek tylko w reakcji N, nosiciel (N/M) – w obu reakcjach, chory (M/M) – tylko w reakcji M.</figcaption>
   </figure>
 
@@ -503,7 +510,7 @@
     <p>Dlaczego „może”, a nie „jest”? Ten sam allel może mieć wielu mężczyzn. Brak allelu ojcowskiego wyklucza mężczyznę, ale zgodność w jednym locus to za mało. Jak liczbowo ocenia się zgodność w wielu układach (wskaźnik ojcostwa), opisuje <a class="chapref" href="#c06"></a>.</p></div>
 
   <h3>SNP – różnica jednej litery</h3>
-  <p>Trzecim typem sekwencji spełniających kryteria markera DNA są polimorfizmy pojedynczego nukleotydu (<b>SNP</b>) – miejsca, w których osobniki różnią się jedną zasadą. Występują w genomie bardzo licznie (ile ich znaleziono u człowieka – część 2, <a class="pageref" href="#c05-r-snp"></a>).</p>
+  <p>Kolejnym typem sekwencji spełniających kryteria markera DNA są polimorfizmy pojedynczego nukleotydu (<b>SNP</b>) – miejsca, w których osobniki różnią się jedną zasadą. Występują w genomie bardzo licznie (ile ich znaleziono u człowieka – część 2, <a class="pageref" href="#c05-r-snp"></a>).</p>
   <ul>
     <li>SNP może polegać na substytucji, insercji lub delecji jednego nukleotydu, w części kodującej lub niekodującej genu.</li>
     <li>Niektóre SNP są jednocześnie markerami RFLP – gdy zmiana dotyczy sekwencji rozpoznawanej przez enzym restrykcyjny. Większości SNP żaden enzym restrykcyjny jednak nie rozpoznaje, więc RFLP do nich nie wystarczy.</li>
@@ -511,7 +518,7 @@
   <p>Jak więc wykryć SNP? Analiza SNP opiera się na <b>hybrydyzacji z oligonukleotydami</b> (hybrydyzację i sondy opisuje <a class="chapref" href="#c06"></a>). Oligonukleotyd hybrydyzuje wyłącznie z sekwencją do siebie komplementarną: jeśli sekwencje różnią się jednym nukleotydem, w tej pozycji nie tworzy się para i hybrydyzacja nie zachodzi. To wystarcza, żeby odróżnić allele. Najskuteczniej szuka się SNP za pomocą mikromacierzy pokrytej wieloma gęsto ułożonymi oligonukleotydami – po hybrydyzacji z badanym DNA ocenia się zmiany w DNA.</p>
 
   <h3>Podział markerów według techniki</h3>
-  <p>Zależnie od techniki, którą ujawnia się zmienność sekwencji DNA, markery dzieli się na pięć grup. Grupy różnią się tym, czym wychwytuje się zmienność: sondą, samym PCR – z dowolnie dobranym (arbitralnym) starterem albo ze starterami pasującymi do znanej sekwencji – PCR połączonym z trawieniem restrykcyjnym albo badaniem pojedynczej nici DNA (jak w SSCP, <a class="pageref" href="#c05-przesiew"></a>):</p>
+  <p>Zależnie od techniki, którą ujawnia się zmienność sekwencji DNA, markery dzieli się na pięć grup. Grupy różnią się tym, czym wychwytuje się zmienność. Może to być sonda. Może to być sam PCR – ze starterem dobranym dowolnie (arbitralnym) albo ze starterami pasującymi do znanej sekwencji. Może to być PCR połączony z trawieniem restrykcyjnym. Wreszcie – badanie pojedynczej nici DNA (jak w SSCP, <a class="pageref" href="#c05-przesiew"></a>):</p>
   <table class="tbl full">
     <thead><tr><th style="width:64%">Grupa markerów</th><th>Przykłady</th></tr></thead>
     <tbody>
@@ -594,7 +601,7 @@
   <h3>Lekooporność</h3>
   <p>Oporność na leki jest uwarunkowana genetycznie, więc metodami biologii molekularnej bada się geny związane z mechanizmami oporności. Testy PCR są szczególnie cenne, gdy szczepy mają trudne do wykrycia fenotypy oporności – mogą wtedy służyć jako metody referencyjne. Dwa przykłady:</p>
   <ul>
-    <li><b>MRS</b> – gronkowce oporne na metycylinę. Metycylina sama jest antybiotykiem β-laktamowym, a MRS są w praktyce oporne na wszystkie stosowane obecnie antybiotyki β-laktamowe. Namnożenie fragmentu genu <i>mecA</i>, odpowiedzialnego za oporność na metycylinę, pozwala z całą pewnością zakwalifikować szczep jako MRS.</li>
+    <li><b>MRS</b> – gronkowce oporne na metycylinę. MRS są w praktyce oporne na wszystkie stosowane obecnie antybiotyki β-laktamowe. Namnożenie fragmentu genu <i>mecA</i>, odpowiedzialnego za oporność na metycylinę, pozwala z całą pewnością zakwalifikować szczep jako MRS.</li>
     <li><i>Mycobacterium tuberculosis</i> wymaga niezwykle długiej hodowli – na wynik hodowli z oznaczeniem lekooporności czeka się około miesiąca. Metoda oparta na PCR w czasie rzeczywistym wykrywa w DNA z materiału klinicznego mutacje odpowiedzialne za oporność na ryfampicynę w ciągu kilku godzin.</li>
   </ul>
 
@@ -639,7 +646,7 @@
 
   <h3>Przykład: choroba niedokrwienna serca</h3>
   <p>Udział polimorfizmów w powstawaniu zmian chorobowych dobrze widać na przykładzie <b>choroby niedokrwiennej serca</b>. Wynika ona najczęściej z miażdżycy tętnic wieńcowych, które doprowadzają krew do mięśnia sercowego. Genów kandydatów szuka się wśród genów regulujących kilka różnych układów i procesów; wśród nich są geny metabolizmu lipidów. Tabela podaje cztery z nich (wszystkie sześć genów opisanych w źródle – część 2, <a class="pageref" href="#c05-r-choroby"></a>).</p>
-  <p>Żeby odczytać tabelę, przypomnij sobie dwie frakcje cholesterolu. LDL przenosi cholesterol z wątroby do tkanek, a jego nadmiar sprzyja odkładaniu się blaszek miażdżycowych w tętnicach („zły cholesterol”). HDL zabiera nadmiar cholesterolu z tkanek do wątroby („dobry cholesterol”). Wariant związany z większym stężeniem LDL wiąże się więc z większym ryzykiem, a wariant związany z dużym stężeniem HDL – z mniejszym.</p>
+  <p>Żeby odczytać tabelę, wystarczy wiedzieć, że LDL i HDL to dwie frakcje cholesterolu we krwi; źródło łączy większe stężenie cholesterolu LDL z większym ryzykiem choroby niedokrwiennej serca.</p>
   <table class="tbl wide">
     <thead><tr><th style="width:24%">Gen</th><th style="width:18%">Wariant</th><th>Związek z chorobą</th></tr></thead>
     <tbody>
@@ -759,7 +766,7 @@
   </table>
 
   <h3>ASA i ASO – nazwy i mukowiscydoza</h3>
-  <p>Amplifikacja allelo-specyficzna ma w literaturze kilka nazw, które warto rozpoznawać: <b>PASA</b> (ang. <i>PCR amplification of specific allele</i>), <b>ASP</b> (ang. <i>allele specific PCR</i>) i <b>ARMS</b> (ang. <i>amplification refractory mutation system</i>). Wszystkie oznaczają tę samą metodę z części 1.</p>
+  <p>Amplifikacja allelospecyficzna ma w literaturze kilka nazw, które warto rozpoznawać: <b>PASA</b> (ang. <i>PCR amplification of specific allele</i>), <b>ASP</b> (ang. <i>allele specific PCR</i>) i <b>ARMS</b> (ang. <i>amplification refractory mutation system</i>). Wszystkie oznaczają tę samą metodę z części 1.</p>
   <p>W badaniach mutacji w mukowiscydozie (CF) stosuje się oprócz ASA także połączenie PCR z hybrydyzacją – tzw. <b>hybrydyzację ASO</b> (ang. <i>allele-specific oligonucleotide</i>). Różnica dotyczy tego, co rozstrzyga o allelu. W ASA rozstrzyga starter: od niego zależy, czy produkt w ogóle powstanie. W hybrydyzacji ASO allel rozpoznaje dopiero sonda specyficzna dla produktu PCR – pasująca do allelu prawidłowego albo zmutowanego (hybrydyzację i sondy opisuje <a class="chapref" href="#c06"></a>).</p>
 
   <h3>OLA – ligaza sprawdza dopasowanie</h3>
@@ -784,7 +791,7 @@
     <li><b>jedna para</b>, komplementarna do jednej nici – liczba produktów ligacji rośnie <b>arytmetycznie</b>, czyli w każdym cyklu o tyle samo. Połączony produkt ma sekwencję drugiej nici, więc starterów tej pary nie przyłączy – w każdym cyklu matrycą są tylko nici wyjściowe;</li>
     <li><b>dwie pary</b>, komplementarne odpowiednio do jednej i do drugiej nici – powielanie staje się <b>wykładnicze</b>. Produkt jednej pary jest matrycą dla drugiej, więc – jak w PCR (<a class="pageref" href="#c05-cykl"></a>) – każda nowa cząsteczka staje się w następnym cyklu matrycą.</li>
   </ul>
-  <p>Czy ligacja zwiększa więc czułość, czy ją zmniejsza? Źródła mówią o różnych zadaniach i sobie nie przeczą. Drewa porównuje metody wykrywania zmian sekwencji: łączące PCR z ligacją, jak OLA, są znacznie czulsze niż ASA i hybrydyzacja ASO. Ostrowska porównuje metody wykrywania materiału genetycznego wirusa: tu PCR jest znacznie czulsza niż hybrydyzacja i LCR, dlatego te dwie metody stosuje się znacznie rzadziej (<a class="pageref" href="#c05-patogeny"></a>).</p>
+  <p>Czy ligacja zwiększa więc czułość, czy ją zmniejsza? Źródła mówią o różnych zadaniach i sobie nie przeczą. Drewa porównuje metody wykrywania zmian sekwencji: łączące PCR z ligacją, jak OLA, mają znacznie większą czułość (z kontekstu: w porównaniu z opisanymi tuż przedtem ASA i hybrydyzacją ASO). Ostrowska porównuje metody wykrywania materiału genetycznego wirusa: tu PCR jest znacznie czulsza niż hybrydyzacja i LCR, dlatego te dwie metody stosuje się znacznie rzadziej (<a class="pageref" href="#c05-patogeny"></a>).</p>
 
   <h3>Mikromacierze i zestawy mutacji</h3>
   <p>Kolejnym krokiem w diagnostyce molekularnej chorób uwarunkowanych genetycznie było wprowadzenie <b>mikromacierzy oligonukleotydowych</b> (<a class="chapref" href="#c06"></a>). Pozwalają przeszukać gen pod kątem dowolnie dużej liczby znanych mutacji; zastosowano je m.in. do identyfikacji 200 mutacji w genie <i>CFTR</i>.</p>
@@ -889,7 +896,7 @@
   <p>Analiza molekularna pozwala szukać dowolnego drobnoustroju z większej grupy. Powiela się wtedy fragment DNA charakterystyczny dla większej jednostki taksonomicznej, a gatunek ustala się potem na podstawie szczegółowej analizy budowy powielonego fragmentu. Tę samą logikę ma diagnostyka sepsy: najpierw gen 16S rRNA, wspólny dla bakterii, potem identyfikacja gatunku (<a class="figref" href="#c05-fig-zakazenia" data-panel="B"></a>). Ostatecznie rozstrzyga amplifikacja fragmentu DNA specyficznego dla gatunku, jego analiza restrykcyjna albo sekwencjonowanie.</p>
 
   <h3>Sanger czy pirosekwencjonowanie?</h3>
-  <p>Do niedawna DNA sekwencjonowano prawie wyłącznie metodą Sangera, która wykorzystuje terminację (zatrzymanie) enzymatycznego powielania badanego DNA (<a class="chapref" href="#c06"></a>). Od kilku lat istnieje alternatywa – <b>pirosekwencjonowanie</b>. Jego zalety to szybkość i prostota wykonania, a ograniczenie – odczytuje sekwencje liczące najwyżej kilkadziesiąt nukleotydów. W mikrobiologii wykorzystuje się je do szybkiego wykrywania i identyfikacji bakterii w płynach ustrojowych, do badania mutacji odpowiedzialnych za lekooporność drobnoustrojów i do typowania szczepów bakteryjnych.</p>
+  <p>Źródło (2011) podaje, że do niedawna DNA sekwencjonowano prawie wyłącznie metodą Sangera, która wykorzystuje terminację (zatrzymanie) enzymatycznego powielania badanego DNA (<a class="chapref" href="#c06"></a>). Jako nowszą alternatywę wymienia <b>pirosekwencjonowanie</b>. Jego zalety to szybkość i prostota wykonania, a ograniczenie – odczytuje sekwencje liczące najwyżej kilkadziesiąt nukleotydów. W mikrobiologii wykorzystuje się je do szybkiego wykrywania i identyfikacji bakterii w płynach ustrojowych, do badania mutacji odpowiedzialnych za lekooporność drobnoustrojów i do typowania szczepów bakteryjnych.</p>
   <p>Jak z sekwencji powstaje nazwa gatunku? Uzyskaną sekwencję porównuje się z sekwencjami właściwymi dla poszczególnych gatunków – w ogólnodostępnych internetowych bazach danych, za pomocą narzędzi do ich przeszukiwania. Są też zestawy komercyjne ze starterami i wszystkimi potrzebnymi odczynnikami: wymagają tylko DNA wyizolowanego z badanego drobnoustroju i wykonania PCR oraz sekwencjonowania według procedury producenta. Zestawy komercyjne służą także do identyfikacji gatunków bakterii w sepsie.</p>
 
   <h3>Sepsa, lekooporność i zjadliwość – uzupełnienia</h3>
@@ -930,6 +937,6 @@
     <li>znakowanie i wykrywanie DNA w FISH (<a class="chapref" href="#c09"></a>);</li>
     <li>synteza oligonukleotydów i PCR.</li>
   </ul>
-  <p>Najnowszym osiągnięciem jest wprowadzenie mikromacierzy. Głównym przedmiotem zainteresowania są dziś testy wysokowydajne, a zaawansowana automatyzacja i postęp w mikro- i nanotechnologii pozwalają ulepszać wprowadzane techniki.</p>
+  <p>Za najnowsze osiągnięcie źródło (2011) uznaje wprowadzenie mikromacierzy. Głównym przedmiotem zainteresowania były wtedy testy wysokowydajne, a zaawansowana automatyzacja i postęp w mikro- i nanotechnologii pozwalały ulepszać wprowadzane techniki.</p>
   <p class="src">Źródło: Ostrowska s. 62–64 · Drewa s. 735</p>
 </section>
