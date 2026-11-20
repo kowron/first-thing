@@ -6,3 +6,4 @@
 - D-5 nazwiska Flemming, Horvitz: zostają w poprawnej pisowni.
 - D-6 wzór PI = 1/(4 × p) w rozdz. 6: dopisać w CZĘŚCI 2 (sekcja o ojcostwie) wyprowadzenie, skąd czwórka – raz, a dokładnie, krok po kroku na przesłankach, które są już w tekście rozdziału; oznaczyć jako objaśnienie (źródło wyprowadzenia nie podaje). Bez późniejszej rewizji – musi być poprawne za pierwszym razem (sprawdź rachunek dwiema drogami). → Opus.
 - Wykonują Opus i Sonnet, nie szef.
+- D-7…D-10 (decyzja szefa z upoważnienia zleceniodawcy, 20.11): wszystkie BEZ ZMIAN w tekście (rok z druku zostaje; ramka „Wniosek własny” zostaje; rozbieżności źródeł nie komentujemy).
