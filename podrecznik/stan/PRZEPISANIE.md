@@ -132,3 +132,10 @@ Podział Sonnetów: G+Z11 · Z02+Z03 · Z04+Z06 · Z05+Z07 · Z08+Z10 · Z09+str
 | agent | model | tokeny |
 |---|---|---|
 | wstawienie 12 rycin | Opus | 138 tys. |
+| rewizja G+Z11 | Sonnet | 603 tys. |
+| rewizja Z02+Z03 | Sonnet | 520 tys. |
+| rewizja Z04+Z06 | Sonnet | 551 tys. |
+| rewizja Z05+Z07 | Sonnet | 522 tys. |
+| rewizja Z08+Z10 | Sonnet | 661 tys. |
+| rewizja Z09+front | Sonnet | 527 tys. |
+- 20.11: 6 raportów Sonneta gotowych (`rewizja3/`, ok. 580 pozycji). Uruchomiony Fable medium – weryfikacja (`handoff/R3-weryfikacja-fable.md` → `rewizja3/POTWIERDZONE.md`). Potem: 1 Sonnet (sekcje A – wklejanie) i 1 Opus (sekcje B – skład/ryciny), pełny build, raport tokenów.
