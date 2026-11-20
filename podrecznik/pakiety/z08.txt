@@ -145,6 +145,7 @@ Podgląd: `cd /home/user/first-thing/podrecznik && node build.mjs --only 08 --pn
 
 (plik rozdzialy/z08-dziedziczenie.html; data-title: Zmienność i dziedziczenie: prawa Mendla, współdziałanie genów, rekombinacje, cechy wieloczynnikowe, grupy krwi)
 [LEAD] Dlaczego dwoje rodziców o brązowych oczach może mieć dziecko o oczach niebieskich? Dlaczego dziecko zdrowych rodziców zapada na chorobę, której nie miał nikt w rodzinie? Dlaczego wzrost nie dzieli ludzi na „wysokich” i „niskich”, tylko zmienia się płynnie? I dlaczego matka Rh− może zaszkodzić drugiemu dziecku, choć pierwszemu zwykle nie? Rozdział zaczyna od najprostszego modelu – krzyżówek Mendla – i krok po kroku pokazuje, kiedy ten model działa, kiedy trzeba go poprawić i jak stosuje się go u człowieka.
+[RAMKA stare] Podrozdział o dziedziczeniu mitochondrialnym ( ) i jego rozszerzenie w części 2 ( ) oparto na wydaniu podręcznika Jordego z ok. 2000 r., bo wydanie z 2021 r. wskazane w rozpisce nie było dostępne, a Drewa dziedziczenia mitochondrialnego nie omawia. Zasady (dziedziczenie po matce, heteroplazmia, próg energetyczny) pozostają podstawą, ale liczby, odsetki i twierdzenia o braku naprawy mtDNA mogą być nieaktualne – przed zaliczeniem porównaj je z rozdz. 5 wydania z 2021 r.
 
 ## Prawa Mendla  [c08-mendel]
 
@@ -154,12 +155,8 @@ Mechanizm przekazywania cech rodziców potomstwu wyjaśnił dopiero w XIX w. cze
 
 ### Dlaczego właśnie groch – i dlaczego się udało?  []
 Mendel wybrał groch zwyczajny ( Pisum sativum ). Groch jest łatwy w uprawie i ma wiele odmian. Ma kwiaty obupłciowe, a słupki i pręciki są osłonięte płatkami korony, więc roślina zapyla się sama (jest samopylna). To ważne z dwóch powodów. Po pierwsze, pozostawiona sama sobie odmiana przekazuje potomstwu tylko własne cechy. Po drugie, groch można też zapylić sztucznie – przenieść pyłek z wybranej rośliny na inną – i w ten sposób skrzyżować dowolne dwie odmiany.
-Mendel wyłonił 14 linii różniących się siedmioma parami cech , m.in.:
-- powierzchnią nasion (gładkie – pomarszczone) i barwą nasion (żółte – zielone),
-- barwą kwiatów (czerwone – białe) i barwą niedojrzałych strąków (zielone – żółte),
-- ułożeniem kwiatów (w kątach liści – na szczycie pędów) i wysokością pędów (wysokie – niskie).
-Przebadał ok. 21 tys. roślin : najpierw śledził dziedziczenie jednej pary cech, potem dwóch i więcej.
-Sukces zawdzięczał dwóm rzeczom. Po pierwsze, wybrał gatunek, w którym każda badana cecha zależy od jednej pary genów – dzięki temu wyniki układały się w proste proporcje. Po drugie, pracował na bardzo dużym materiale i opracował wyniki statystycznie . Dlatego mógł je interpretować matematycznie, choć nic nie wiedział o chromosomach. Jego prace pozostawały zapomniane ponad 34 lata. W 1900 r. trzej badacze – H. de Vries, C. Correns i E. von Tschermak – niezależnie od siebie odkryli te prawidłowości ponownie. Prawa Mendla są do dziś podstawą genetyki.
+Mendel wyłonił odmiany różniące się wyraźnymi parami cech , np. barwą nasion (żółte – zielone), ich powierzchnią (gładkie – pomarszczone) i wysokością pędów (wysokie – niskie); pełną listę podaje część 2 ( ). Przebadał ok. 21 tys. roślin : najpierw śledził dziedziczenie jednej pary cech, potem dwóch i więcej.
+Sukces zawdzięczał dwóm rzeczom. Po pierwsze, wybrał gatunek, w którym każda badana cecha zależy od jednej pary genów – dzięki temu wyniki układały się w proste proporcje. Po drugie, pracował na bardzo dużym materiale i opracował wyniki statystycznie . Dlatego mógł je interpretować matematycznie, choć nic nie wiedział o chromosomach. Jego prace pozostawały zapomniane ponad 34 lata, aż w 1900 r. trzej badacze niezależnie od siebie odkryli te prawidłowości ponownie. Prawa Mendla są do dziś podstawą genetyki.
 
 ### Kilka słów, bez których nie da się czytać krzyżówek  []
 Zanim przejdziemy do doświadczeń, ustalmy język. W komórkach ciała geny występują w parach: jedna kopia pochodzi od matki, druga od ojca. Leżą one w tym samym miejscu ( locus ) pary chromosomów homologicznych. Wersje tego samego genu to allele ; dwa allele w komórce tworzą parę alleli .
@@ -195,7 +192,7 @@ Przy kodominacji allele w ogóle nie są związane stosunkiem dominacji i recesy
 
 ### Które cechy człowieka dziedziczą się według pierwszego prawa?  []
 Według pierwszego prawa Mendla dziedziczą się u człowieka cechy prawidłowe, np. wolny (dominujący) lub przyrośnięty (recesywny) płatek ucha, zdolność zwijania języka, wygięcie kciuka od osi dłoni i wrażliwość smakowa na fenylotiomocznik. Tak samo dziedziczą się choroby jednogenowe: choroba Huntingtona, alkaptonuria, zespół Marfana, choroba Taya-Sachsa, fenyloketonuria i mukowiscydoza. Inaczej jest z chorobą Alzheimera i otyłością – dziedziczą się wieloczynnikowo , czyli zależą od wielu genów i od środowiska ( ).
-Ta sama cecha może też dziedziczyć się na kilka sposobów – to heterogenia . Przykładem jest hypertrichosis universalis : może się dziedziczyć dominująco lub recesywnie w sprzężeniu z chromosomem X; opisywano też dziedziczenie autosomalne dominujące w połączeniu z inwersją pericentryczną.
+Ta sama cecha może też dziedziczyć się na kilka sposobów – to heterogenia . Przykładem jest hypertrichosis universalis ( ).
 
 ### Dwie cechy naraz: drugie prawo Mendla  []
 Teraz Mendel śledził dwie pary cech jednocześnie. Skrzyżował groch o nasionach żółtych i gładkich z grochem o nasionach zielonych i pomarszczonych . Barwę żółtą warunkuje allel dominujący A, zieloną – recesywny a; powierzchnię gładką – dominujący B, pomarszczoną – recesywny b. Przeliczmy to tak samo jak poprzednio ( ).
@@ -220,17 +217,17 @@ Dorosła muszka ma ok. 3 mm długości, a jej cechy fenotypowe łatwo obserwowa�
 - łatwość hodowli (optymalna temperatura 18–20 °C);
 - krótki cykl życiowy – 11 dni , więc kolejne pokolenia (P, F 1 , F 2 ) uzyskuje się w ciągu kilku tygodni;
 - liczne potomstwo – a duże liczby są potrzebne, żeby wiarygodnie odczytać proporcje (tak jak u Mendla);
-- chromosomy politeniczne w gruczołach ślinowych larw – powstają podczas endomitozy, czyli powielania chromosomów bez podziału chromatyd.
+- chromosomy politeniczne w gruczołach ślinowych larw – powstają podczas endomitozy, czyli powielania chromosomów bez podziału chromatyd. W części praktycznej zajęć (wg rozpiski) ogląda się takie chromosomy olbrzymie w gruczołach ślinowych larw muchówek ( Chironomus ) lub muszki owocowej.
 Układ XX/XY będzie ważny w następnym podrozdziale. Samiec ma tylko jeden chromosom X, więc każdy gen tego chromosomu ma u niego jedną kopię – jest hemizygotą . Allel recesywny leżący na jego chromosomie X nie ma czym zostać zamaskowany i zawsze ujawnia się w fenotypie.
 Druga osobliwość muszki: crossing-over zachodzi u niej tylko u samic , bo chromosomy samców nie tworzą typowych chiazm (chiazmy to miejsca, w których podczas mejozy krzyżują się chromatydy chromosomów homologicznych; ). Zobaczysz, że właśnie to pozwoliło Morganowi rozdzielić dwa zjawiska: sprzężenie i rekombinację.
 
 ### Mutacje – cechy, które można śledzić w krzyżówkach  []
-Do krzyżówek potrzebne są dwie wersje cechy: typ dziki i odmiana. U muszki dostarczają ich mutacje , które dotyczą m.in. barwy oczu i ciała oraz skrzydełek. Większość z nich jest recesywna ; wyjątkiem są mutacje Curled (Curly, Cu) i Bar (B). Zwróć uwagę na zapis w tabeli: te dwie mutacje dominujące mają symbole pisane wielką literą, recesywne – małą.
+Do krzyżówek potrzebne są dwie wersje cechy: typ dziki i odmiana. U muszki dostarczają ich mutacje , które dotyczą m.in. barwy oczu i ciała oraz skrzydełek. Większość z nich jest recesywna ; wyjątkiem są mutacje Curled (Curly, Cu) i Bar (B). Zwróć uwagę na zapis w tabeli: te dwie mutacje dominujące mają symbole pisane wielką literą, recesywne – małą. Mutację Bar rozpiska zajęć (część praktyczna) zalicza do mutacji śródchromosomowych.
 [TABELA]
 Cecha | Mutacja (symbol) – fenotyp
 Barwa ciała | yellow (y) – żółta; ebony (e) – czarna
 Barwa oczu | white (w) – oko białe; ruby (rb) – rubinowe; brown (bw) – jasnobrązowe; sepia (se) – brunatnoczerwone
-Kształt oka | Bar (B) – oko pasmowe; eyeless (ey) – oko szczątkowe lub jego brak
+Kształt oka | Bar (B) – oko pasmowe
 Skrzydła | vestigal (vg) – bardzo małe skrzydła; Curled (Cu) – skrzydła normalnej długości, podgięte do góry na całej długości
 Czułki | antennapedia (antp) – na głowie wyrastają odnóża zamiast czułków
 [/TABELA]
@@ -240,7 +237,7 @@ Czułki | antennapedia (antp) – na głowie wyrastają odnóża zamiast czułk�
 ## Chromosomowa teoria dziedziczenia  [c08-teoria]
 
 ### Gdzie są czynniki Mendla?  []
-Mendel opisał, jak zachowują się geny, ale nie wiedział, gdzie są. Na początku XX w. kilku badaczy, przede wszystkim W.S. Sutton, próbowało wyjaśnić segregację i niezależne dziedziczenie cech rozchodzeniem się chromosomów w podziałach komórkowych. Doświadczalnie wykazał to dopiero T.H. Morgan ze współpracownikami; za odkrycie roli chromosomów w przekazywaniu cech otrzymał Nagrodę Nobla.
+Mendel opisał, jak zachowują się geny, ale nie wiedział, gdzie są. Na początku XX w. kilku badaczy próbowało wyjaśnić segregację i niezależne dziedziczenie cech rozchodzeniem się chromosomów w podziałach komórkowych ( ). Doświadczalnie wykazał to dopiero T.H. Morgan ze współpracownikami; za odkrycie roli chromosomów w przekazywaniu cech otrzymał Nagrodę Nobla.
 Morgan zauważył podobieństwo między zachowaniem chromosomów i genów. Geny występują w komórkach w parach – tak jak chromosomy homologiczne. Podczas tworzenia gamet allele jednej pary rozdzielają się – tak jak chromosomy homologiczne rozchodzą się w mejozie ( ). To dokładnie pierwsze prawo Mendla. Jeśli więc geny leżą na chromosomach, to drugie prawo musi mieć warunek: obowiązuje tylko wtedy, gdy geny dwóch cech leżą na odrębnych parach chromosomów homologicznych. Chromosomy różnych par rozchodzą się do gamet losowo, niezależnie od siebie – a geny jednej pary chromosomów podróżują razem.
 
 ### Pierwszy dowód: gen barwy oczu leży na chromosomie X  []
@@ -291,7 +288,7 @@ U ludzi przykładem epistazy recesywnej jest fenotyp bombajski : osoby mające g
 
 ### Epistaza dominująca: dynia i albinizm  []
 Przy epistazie dominującej do zahamowania wystarcza jeden allel genu epistatycznego. Przykładem jest barwa owoców dyni . Allel D warunkuje barwę żółtą, a d – zieloną. Obecność allelu A innego genu, z innej pary chromosomów, hamuje syntezę obu barwników, więc owoce są białe – bez względu na to, jakie allele genu D ma roślina.
-Źródło nie podaje dla dyni proporcji rozszczepień, ale można ją wyprowadzić tą samą metodą co dla myszy (nasze wyliczenie, przy skrzyżowaniu dwóch heterozygot AaDd). Białe są wszystkie rośliny z co najmniej jednym allelem A: A_D_ (9) i A_dd (3), razem 12. Żółte są aaD_ (3), zielone – aadd (1). Wychodzi 12 : 3 : 1 – dwie klasy zlewają się, bo allel A „przykrywa” oba warianty barwy.
+[RAMKA przyklad] Jaki stosunek da dynia w F 2 ? Masz wszystkie przesłanki: D – żółta, d – zielona, allel A z innej pary chromosomów hamuje oba barwniki. Policz tak samo jak dla myszy. Białe są wszystkie rośliny z co najmniej jednym allelem A: A_D_ (9) i A_dd (3), razem 12. Żółte są aaD_ (3), zielone – aadd (1). Wychodzi 12 : 3 : 1 – dwie klasy zlewają się, bo allel A „przykrywa” oba warianty barwy. To wynik rachunku przy AaDd × AaDd – źródło tej krzyżówki i stosunku nie podaje.
 U człowieka tak działa gen inhibitorowy tyrozynazy : w stanie dominującym (I) hamuje gen odpowiedzialny za syntezę tyrozynazy (A) zarówno u homozygot AA, jak i u heterozygot Aa – skutkiem jest albinizm.
 
 ### Komplementacja: dwa geny potrzebne do jednej cechy  []
@@ -309,7 +306,7 @@ Co niepełna penetracja robi z proporcjami? Część osobników ma genotyp warun
 Ekspresja to stopień ujawnienia się produktu genu odpowiedzialnego za cechę; określa się ją na poziomie mRNA lub białka. Penetracja odpowiada na pytanie „czy cecha się ujawni?”, a ekspresja – „jak silnie?”. Niektóre geny dominujące mają zmienną ekspresję , czyli zmienne natężenie cechy. Przykładem jest polidaktylia (wielopalczastość): nosiciele mogą mieć jeden lub więcej dodatkowych palców na jednej lub kilku kończynach, najczęściej dodatkowy palec I lub V u ręki, a zmienność łatwo prześledzić w jednej rodzinie. Zmienną ekspresję genu stwierdza się także w zespole Marfana, a małą zmienność ekspresji – w achondroplazji. Penetracja i ekspresja zależą zarówno od genotypu, jak i od środowiska.
 
 ### Poligeny: wiele genów, jedna cecha, efekty się sumują  []
-Poligeny (geny kumulatywne, polimeryczne, wielokrotne) należą do różnych par alleli i zajmują różne loci, ale wpływają na tę samą cechę, a efekty ich działania się sumują . Wykrył je H. Nilsson-Ehle (1909), krzyżując pszenicę o ziarnach czerwonych i białych: w F 1 otrzymał formy pośrednie, a w F 2 ziarna czerwone o różnej intensywności barwy. Barwę ziaren pszenicy warunkują trzy pary alleli z różnych loci, a u człowieka poligenami są determinowane np. wzrost, IQ i barwa skóry.
+Poligeny (geny kumulatywne, polimeryczne, wielokrotne) należą do różnych par alleli i zajmują różne loci, ale wpływają na tę samą cechę, a efekty ich działania się sumują . Wykrył je H. Nilsson-Ehle (1909) w doświadczeniach z barwą ziaren pszenicy ( ). U człowieka poligenami są determinowane np. wzrost, IQ i barwa skóry.
 Czym to się różni od epistazy i komplementacji? Tam liczyło się, czy dany allel jest obecny. Przy poligenach liczy się, ile jest alleli „dodających” cechę. W F 1 fenotyp jest więc pośredni między fenotypami rodziców, a w F 2 występują fenotypy pośrednie i identyczne z rodzicielskimi. Zamiast czterech klas 9 : 3 : 3 : 1 powstaje szereg klas o rosnącym natężeniu cechy – przy dwóch parach genów 1 : 4 : 6 : 4 : 1. W ekspresji takich cech dużą rolę odgrywa środowisko; szczegółowo omawia je podrozdział o cechach wieloczynnikowych ( ).
 
 ### Plejotropia: jeden gen, wiele cech  []
@@ -335,9 +332,11 @@ Zmienność to występowanie dziedzicznych lub niedziedzicznych różnic: międz
 Znaczną jej część stanowią SNP (ang. single nucleotide polymorphism ). To różnice w sekwencji DNA polegające na tym, że w danym miejscu u niespokrewnionych osób stoi inny pojedynczy nukleotyd. Dwie niespokrewnione osoby różnią się średnio jednym nukleotydem na 1000; nowsze dane wskazują nawet na 1 SNP na 400 nukleotydów. Czy to dużo dla zdrowia? Zwykle nie: SNP leżą głównie w regionach niekodujących, gdzie ich wpływ na fenotyp jest znikomy lub żaden. W regionach regulatorowych mogą jednak wpływać na indywidualne cechy.
 
 ### Podział zmienności  []
-Zmienność dziedziczną dzieli się według tego, skąd bierze się różnica w DNA. Druga oś podziału to jak różnica wygląda w fenotypie.
-- Zmienność dziedziczna rekombinacyjna – nowe układy istniejących alleli: rekombinacja homologiczna, niehomologiczna, zlokalizowana i transpozycyjna (omówione niżej); mutacyjna – zmiany samego DNA: mutacje genowe : tranzycje (punktowe), transwersje (punktowe), delecje, insercje (addycje), inwersje; mutacje chromosomowe (aberracje) : strukturalne (inwersje, translokacje, duplikacje, delecje, czyli deficjencje, izochromosomy, chromosomy koliste, dicentryki, figury wymian) i liczbowe – aneuploidie (nullisomie, monosomie, trisomie) oraz euploidie, czyli poliploidie: autopoliploidie (triploidie, tetraploidie, pentaploidie itd.) i allopoliploidie. Aberracje chromosomowe omawia .
-- Ze względu na obraz fenotypowy fluktuacyjna (ciągła) – cechę da się zmierzyć w jednostkach: wzrost, masa ciała, iloraz inteligencji (IQ), liczba erytrocytów i leukocytów, pigmentacja włosów i skóry; jej rozkład w populacji opisuje krzywa Queteleta ( ); alternatywna (skokowa, nieciągła) – cecha jest albo jej nie ma, np. układ grupowy Rh (Rh+ albo Rh−).
+Źródło przedstawia podział zmienności jako drzewko: od słowa „zmienność” odchodzą naraz cztery gałęzie. Dwie z nich mówią, skąd bierze się różnica w DNA – to zmienność dziedziczna, którą dzieli się na rekombinacyjną i mutacyjną. Dwie pozostałe opisują zmienność fenotypową, czyli to, jak różnica wygląda: czy cechę da się zmierzyć w jednostkach, czy po prostu jest albo jej nie ma.
+- Rekombinacyjna – nowe układy istniejących alleli: rekombinacja homologiczna, niehomologiczna, zlokalizowana i transpozycyjna (omówione niżej).
+- Mutacyjna – zmiany samego DNA, w trzech grupach: mutacje genowe (tranzycje i transwersje – punktowe, delecje, insercje, czyli addycje, inwersje); mutacje chromosomowe (aberracje) – strukturalne (inwersje, translokacje, duplikacje, delecje, czyli deficjencje, izochromosomy, chromosomy koliste, dicentryki, figury wymian) i liczbowe, czyli aneuploidie (nullisomie, monosomie, trisomie); euploidie (poliploidie) – autopoliploidie (triploidie, tetraploidie, pentaploidie itd.) i allopoliploidie. Aberracje chromosomowe omawia .
+- Fluktuacyjna (ciągła) – cechę da się zmierzyć w jednostkach: wzrost, masa ciała, iloraz inteligencji (IQ), liczba erytrocytów i leukocytów, pigmentacja włosów i skóry; jej rozkład w populacji opisuje krzywa Queteleta ( ).
+- Alternatywna (skokowa, nieciągła) – cecha jest albo jej nie ma, np. układ grupowy Rh (Rh+ albo Rh−).
 Ten sam zespół genów w różnych warunkach może dać różne efekty fenotypowe, bo rozwój organizmu zależy zarówno od genotypu, jak i od czynników środowiskowych. Środowisko silnie wpływa zwłaszcza na cechy poligeniczne.
 
 ### Rekombinacja: tasowanie tego, co już jest  []
@@ -360,27 +359,22 @@ Transpozycyjna | przeniesienie fragmentu DNA (transpozonu) w inne miejsce genomu
 [/TABELA]
 
 ### Rekombinacja homologiczna – gdzie zachodzi i do czego służy?  []
-Rekombinacja homologiczna zachodzi we wszystkich organizmach. U eukariotów odpowiada za crossing-over , który zachodzi w pachytenie i/lub diplotenie mejozy – wymieniają się wtedy odcinki niesiostrzanych chromatyd chromosomów homologicznych. Rekombinujące fragmenty DNA muszą wykazywać znaczną homologię sekwencji; mogą leżeć na chromosomach homologicznych albo w dwóch częściach jednego chromosomu. Crossing-over między cząsteczkami niehomologicznymi nazywa się rekombinacją „nieuprawnioną”.
-U eukariotów rekombinacja homologiczna służy do:
-- usuwania dwuniciowych pęknięć DNA,
-- utrzymania stabilności widełek replikacyjnych,
-- mejotycznej segregacji chromosomów,
-- zachowania telomerów.
-U prokariotów odgrywa dużą rolę w naprawie DNA. Jej mechanizm nie jest w pełni poznany; najwcześniej opisano go u bakterii E. coli .
+Rekombinacja homologiczna zachodzi we wszystkich organizmach. U eukariotów odpowiada za crossing-over w mejozie – wymieniają się wtedy odcinki niesiostrzanych chromatyd chromosomów homologicznych. Rekombinujące fragmenty DNA muszą wykazywać znaczną homologię sekwencji; mogą leżeć na chromosomach homologicznych albo w dwóch częściach jednego chromosomu.
+Crossing-over to nie jedyne jej zadanie. U eukariotów rekombinacja homologiczna służy m.in. do usuwania dwuniciowych pęknięć DNA i do utrzymania stabilności widełek replikacyjnych, a u prokariotów odgrywa dużą rolę w naprawie DNA. Jej mechanizm nie jest w pełni poznany; najwcześniej opisano go u bakterii E. coli .
 
 ### Białko po białku: rekombinacja u E. coli  []
 Stan wyjściowy: dwie dwuniciowe cząsteczki DNA o bardzo podobnej sekwencji. Każda nić jest sparowana ze swoją komplementarną nicią, więc żadna nie może „przejść” do drugiej cząsteczki. Żeby doszło do wymiany, trzeba kolejno: uwolnić pojedynczą nić, uchronić ją, znaleźć dla niej pasujące miejsce w drugiej cząsteczce, wprowadzić ją tam, a na koniec rozdzielić połączone cząsteczki. Każdy z tych kroków wykonuje inne białko, kodowane przez geny rec ( ):
-- RecBCD – kompleks o aktywności helikazy i nukleazy – rozplata dwuniciowy DNA. Dzięki hydrolizie ATP rozplata go szybciej, niż zasady zdążą się z powrotem sparować. Po napotkaniu miejsca chi (χ; sekwencja 5′-GCTGGTGG-3′ ) nacina nić w jego pobliżu i powstaje odcinek jednoniciowy ( ssDNA ).
-- Białko SSB stabilizuje jednoniciowy DNA – zapobiega tworzeniu struktur typu „spinki do włosów” (pojedyncza nić mogłaby sparować się sama ze sobą) do czasu związania RecA.
-- RecA wiąże się z ssDNA i tworzy spiralny filament. Kompleks ssDNA–RecA paruje się z dwuniciowym DNA i przeszukuje go w poszukiwaniu sekwencji homologicznej.
-- Inwazja nici : po znalezieniu sekwencji komplementarnej nić ssDNA wypiera „starą” nić dupleksu i paruje się w jej miejsce. Wyparta nić tworzy pętlę – to pętla D . Energii dostarcza hydroliza ATP. Napięcia torsyjne powstające przy owijaniu się nici znosi topoizomeraza I .
-- RuvA i RuvB przesuwają miejsce skrzyżowania nici, także kosztem ATP – im dalej, tym dłuższy wymieniony odcinek.
+- RecBCD – kompleks o aktywności helikazy i nukleazy – rozplata dwuniciowy DNA i po napotkaniu miejsca chi (χ) nacina nić w jego pobliżu; powstaje odcinek jednoniciowy ( ssDNA ), który może wejść do drugiej cząsteczki.
+- Białko SSB stabilizuje ssDNA do czasu związania RecA – wolna nić nie sparuje się wtedy sama ze sobą.
+- RecA wiąże się z ssDNA i z nim przeszukuje dwuniciowy DNA drugiej cząsteczki w poszukiwaniu sekwencji homologicznej.
+- Inwazja nici : po znalezieniu sekwencji komplementarnej ssDNA wypiera „starą” nić dupleksu i paruje się w jej miejsce; wyparta nić tworzy pętlę – pętlę D .
+- RuvA i RuvB przesuwają miejsce skrzyżowania nici – im dalej, tym dłuższy wymieniony odcinek.
 - Nukleaza RuvC rozcina powstałe struktury Hollidaya (miejsca, w których nici dwóch cząsteczek się krzyżują), a ligaza DNA łączy wolne końce.
 [RYCINA c08-fig-ecoli „Rekombinacja homologiczna u E. coli – kto co robi”: Czytaj od lewej, śledząc niebieską nić: RecBCD uwalnia ją z dupleksu i nacina przy miejscu χ, SSB chroni wolny odcinek, RecA wprowadza go do ochrowej cząsteczki (pętla D), RuvA/RuvB przesuwają skrzyżowanie, RuvC tnie, a ligaza zszywa. Porównaj pierwszy i ostatni panel: te same dwie cząsteczki, ale z wymienionym odcinkiem nici. Schemat własny według opisu Drewy.]
 
 ### Struktura Hollidaya i heterodupleks  []
-Istotą klasycznych modeli rekombinacji homologicznej (Hollidaya oraz Meselsona–Raddinga) jest powstawanie heterodupleksu – odcinka dwuniciowego DNA, w którym jedna nić pochodzi z jednej cząsteczki, a druga – z drugiej, homologicznej. Na niebiesko-ochrowych rycinach to odcinek, w którym obie barwy leżą naprzeciw siebie.
-W modelu opisanym u E. coli nacinana jest po jednej nici każdego z dwóch homologicznych dupleksów. Przecięte nici migrują i łączą się z nićmi homologicznymi drugiej cząsteczki, a miejsce skrzyżowania może się przemieszczać. Powstała struktura Hollidaya może zostać przecięta na dwa sposoby – i każdy z nich daje inny nowy układ genów.
+Istotą klasycznych modeli rekombinacji homologicznej jest powstawanie heterodupleksu – odcinka dwuniciowego DNA, w którym jedna nić pochodzi z jednej cząsteczki, a druga – z drugiej, homologicznej. Na niebiesko-ochrowych rycinach to odcinek, w którym obie barwy leżą naprzeciw siebie.
+W modelu opisanym u E. coli nacinana jest po jednej nici każdego z dwóch homologicznych dupleksów. Przecięte nici migrują i łączą się z nićmi homologicznymi drugiej cząsteczki, a miejsce skrzyżowania może się przemieszczać. Powstała struktura Hollidaya może zostać przecięta na dwa sposoby – i każdy z nich daje inny nowy układ genów (ten model krok po kroku – ).
 
 ### Model Szostaka: gdy pękną obie nici  []
 Wyróżnia się modele rekombinacji wywołanej pęknięciem jednej nici DNA oraz pęknięciem obu nici. Pęknięcie dwuniciowe rozcina cząsteczkę na dwie części, a luka przy pęknięciu zostaje jeszcze poszerzona. Brakujące fragmenty trzeba odtworzyć – i do tego posłuży cząsteczka homologiczna jako wzorzec. Według modelu Szostaka , inicjowanego pęknięciem dwuniciowym, rekombinacja zachodzi prawdopodobnie w większości komórek eukariotycznych ( ):
@@ -391,49 +385,33 @@ Wyróżnia się modele rekombinacji wywołanej pęknięciem jednej nici DNA oraz
 - Rozdzielenie – struktury Hollidaya są rozcinane z crossing-over albo bez niego (ang. non-crossing-over , NCO).
 Od sposobu rozcięcia zależy, czy w krzyżówce zobaczymy rekombinanta. Bez crossing-over cząsteczki rozchodzą się z dawnym układem skrajnych odcinków. Przy crossing-over wymieniają się także skrajne fragmenty DNA – i geny leżące po obu stronach miejsca wymiany trafiają w nowe układy, jak G i l u muszki.
 [RYCINA c08-fig-hr „Rekombinacja homologiczna – model pęknięcia dwuniciowego”: Zacznij od panelu 1: niebieska cząsteczka ma pęknięcie obu nici, ochrowa jest nienaruszona. Śledź niebieski koniec 3′: wnika w ochrowy dupleks (2), jest wydłużany na jego matrycy – linia przerywana (3), aż powstają dwie struktury Hollidaya (4). W panelu 5 porównaj dwa sposoby rozcięcia: bez crossing-over skrajne odcinki zostają na swoich cząsteczkach, przy crossing-over zamieniają się miejscami. Odcinki z nićmi obu barw to heterodupleks.]
-U eukariotów szlaki rekombinacji homologicznej najlepiej poznano u drożdży ( Saccharomyces cerevisiae ); białka ssaków są do drożdżowych w dużym stopniu homologiczne. Uczestniczą w niej: białka grupy RAD52 (RAD50, RAD51, RAD52, RAD54, RAD57, RAD59), nukleazy (np. Mre11, Exo1), helikazy, topoizomeraza III, polimerazy i ligazy. Zwróć uwagę, że to te same rodzaje zadań co u E. coli : obróbka końców, rozplatanie, synteza i łączenie nici. Mediatorami rekombinacji są białka BRCA1 i BRCA2 . Obok modelu Szostaka istnieje drugi model, wyjaśniający niektóre zjawiska rekombinacji homologicznej – SDSA .
+Kto wykonuje te etapy u eukariotów? Szlaki rekombinacji homologicznej najlepiej poznano u drożdży ( Saccharomyces cerevisiae ); białka ssaków są do drożdżowych w dużym stopniu homologiczne. Uczestniczą w niej białka grupy RAD52 , nukleazy, helikazy, topoizomerazy, polimerazy i ligazy – to te same rodzaje zadań co u E. coli : obróbka końców, rozplatanie, synteza i łączenie nici (pełna lista białek – ). Mediatorami rekombinacji są białka BRCA1 i BRCA2 .
 
 ### Rekombinacja niehomologiczna: sklejanie końców bez wzorca  []
 Rekombinacja niehomologiczna ( NHEJ , ang. non-homologous end joining ) też naprawia pęknięcie dwuniciowe, ale nie szuka cząsteczki homologicznej. Zachodzi przy niewielkiej homologii oddziałujących cząsteczek albo przy jej braku – po prostu skleja wolne końce pęknięcia. Mimo nazwy łączenie ułatwia krótki region zachowanej homologii blisko pęknięcia ( mikrohomologia , 1–6 pz). Stan wyjściowy to dwa wolne końce jednej przerwanej cząsteczki. U ssaków:
 - Heterodimer Ku (białka Ku70 i Ku80) rozpoznaje oba końce pęknięcia i otacza je jak pierścień – chroni je przed nukleazami i przyciąga kolejne białka.
-- Ku70/Ku80 wraz z podjednostką katalityczną DNA-PKcs tworzy zależną od DNA serynowo-treoninową kinazę białek ( DNA-PK ).
-- Następny kompleks tworzą RAD50 (rekombinaza o aktywności ATPazy), MRE11 (egzonukleaza 3′→5′) i NBS1 (białko łączące DNA) – prawdopodobnie ułatwia on wiązanie obu końców nici DNA.
-- Po zestawieniu obu końców DNA-PKcs ulega autofosforylacji, co udostępnia końce do ligacji przez kompleks ligazy IV (z kofaktorami XRCC4 i XLF).
+- Do Ku70/Ku80 przyłącza się podjednostka katalityczna DNA-PKcs ; gdy oba końce zostaną zestawione, udostępnia je do połączenia.
+- Kompleks ligazy IV łączy końce.
+Pozostałe białka NHEJ i to, co dokładnie robi DNA-PKcs, opisuje część 2 ( ).
 
 ### Rekombinacja zlokalizowana: wymiana w ściśle określonym miejscu  []
-Rekombinacja zlokalizowana (miejscowa) to wymiana fragmentów niehomologicznych, ale specyficznych. Nie potrzebuje podobieństwa całych cząsteczek, bo miejsce wymiany wskazują białka rozpoznające swoiste sekwencje zasad. Dwa przykłady:
-- Przeciwciała i receptory limfocytów T. Zmienne rejony łańcucha lekkiego immunoglobulin powstają przez połączenie genów V i J, a łańcucha ciężkiego – genów V, D i J. Geny te mają sekwencje oskrzydlające: niezmienny heptamer palindromowy, sekwencję rozdzielającą i nonamer bogaty w pary A–T. Łączyć się mogą tylko geny różniące się sekwencją rozdzielającą, więc geny tego samego typu nie rekombinują ze sobą i zawsze powstaje układ VDJ.
-- Plazmidy bakteryjne – koliste, dwuniciowe cząsteczki DNA, które mogą nieść geny oporności na antybiotyki i produkcji toksyn i replikują się niezależnie od DNA gospodarza (są replikonami). Wbudowują się do genomu bakterii tylko w określonych miejscach, zawierających sekwencje umożliwiające połączenie, z udziałem białek kodowanych przez plazmid i przez DNA bakterii.
+Rekombinacja zlokalizowana (miejscowa) to wymiana fragmentów niehomologicznych, ale specyficznych. Nie potrzebuje podobieństwa całych cząsteczek, bo miejsce wymiany wskazują białka rozpoznające swoiste sekwencje zasad. Przykład: przeciwciała i receptory limfocytów T . Zmienne rejony łańcucha lekkiego immunoglobulin powstają przez połączenie genów V i J, a łańcucha ciężkiego – genów V, D i J; reguła rekombinacji sprawia, że zawsze powstaje układ VDJ. U bakterii w ten sposób wbudowują się do genomu plazmidy – koliste, dwuniciowe cząsteczki DNA, które mogą nieść geny oporności na antybiotyki i produkcji toksyn. Obie reguły rozwija część 2 ( ).
 
 ### Transpozycja: odcinki DNA, które zmieniają miejsce  []
 Transpozycja nie jest właściwie rodzajem rekombinacji, lecz procesem, który z wykorzystaniem zasad rekombinacji przenosi fragment DNA – transpozon – z jednego miejsca genomu w inne. Transpozony dzieli się według tego, co dzieje się z „oryginałem”:
 - transpozony DNA przenoszące się replikatywnie – pierwotny transpozon zostaje na miejscu, a jego nowa kopia pojawia się w innym miejscu genomu („kopiuj–wklej”);
 - transpozony DNA przenoszące się konserwatywnie (niereplikacyjnie) – transpozon jest wycinany i wklejany w nowe miejsce („wytnij–wklej”);
-- transpozony RNA (retroelementy) – przenoszą się za pośrednictwem kopii RNA; występują tylko u eukariotów, z długimi powtórzeniami końcowymi (LTR) albo bez nich.
-Najprostsze transpozony DNA to sekwencje insercyjne (IS) bakterii, np. E. coli : zawierają geny transpozazy – enzymu katalizującego transpozycję – i odwrócone powtórzenia długości 9–41 pz na obu końcach. Transpozon złożony to para elementów IS otaczająca odcinek DNA z genami, często oporności na antybiotyk (np. tetracyklinę). W genomie człowieka transpozycji podlegają krótkie i długie rozproszone elementy ( SINE , LINE ), retroelementy LTR i transpozony DNA.
+- transpozony RNA (retroelementy) – przenoszą się za pośrednictwem kopii RNA; są cechą eukariotów – dotychczas nie odkryto ich u prokariotów.
+Najprostsze transpozony DNA to sekwencje insercyjne (IS) bakterii, np. E. coli : zawierają geny transpozazy – enzymu, który katalizuje ich przeniesienie. W genomie człowieka transpozycji podlegają m.in. krótkie i długie rozproszone elementy ( SINE , LINE ). Budowę elementów IS i pełną listę klas u człowieka podaje część 2 ( ).
 [RAMKA zapamietaj] Zmienność dziedziczna jest rekombinacyjna albo mutacyjna; rekombinacje nie tworzą nowych alleli, tylko je przetasowują. U E. coli : RecBCD tworzy ssDNA, SSB je chroni, RecA prowadzi inwazję nici (pętla D), RuvA/RuvB przesuwają skrzyżowanie, RuvC rozcina strukturę Hollidaya. Niehomologiczna (Ku70/Ku80, DNA-PKcs, ligaza IV) skleja końce pęknięcia bez homologii.
 [ŹRÓDŁO] Źródło: Drewa s. 373–382
 
 ## Dziedziczenie autosomalne dominujące i recesywne  [c08-autosomalne]
 
 ### U człowieka nie ma krzyżówek – jest rodowód  []
-Mendel i Morgan sami wybierali, kogo z kim skrzyżować. U człowieka to niemożliwe. Mamy za to rodowód – rysunek rodziny, na którym zaznacza się, kto choruje. Typ dziedziczenia rozpoznaje się po charakterystycznym obrazie rodowodu ( ). Najpierw symbole: kwadrat to mężczyzna, koło – kobieta; symbol wypełniony oznacza osobę chorą, pusty – zdrową, z kropką – nosiciela (heterozygotę). Pokolenia numeruje się cyframi rzymskimi.
+Mendel i Morgan sami wybierali, kogo z kim skrzyżować. U człowieka to niemożliwe. Mamy za to rodowód – rysunek rodziny, na którym zaznacza się, kto choruje. Typ dziedziczenia rozpoznaje się po charakterystycznym obrazie rodowodu ( ); jak czytać symbole na rycinie, wyjaśnia jej podpis.
 Choroby jednogenowe mogą być dziedziczone autosomalnie – dominująco albo recesywnie – lub w sprzężeniu z chromosomem X ( ). „Autosomalnie” znaczy, że gen leży na autosomie, czyli na chromosomie innym niż chromosom płci. Każdy człowiek – kobieta i mężczyzna – ma dwie kopie takiego genu, więc płeć nie zmienia szans zachorowania. Zasady są te same co w pierwszym prawie Mendla – zmienia się tylko to, że zamiast grochu mamy rodzinę.
-Według tych zasad dziedziczą się także cechy prawidłowe. Dlatego dwoje rodziców o brązowych tęczówkach, jeśli oboje są heterozygotami, może mieć dziecko o tęczówkach niebieskich (aa) – tak jak dwie wysokie rośliny Aa dały w F 2 roślinę niską.
-[TABELA]
-Cecha | Dominująca | Recesywna
-Barwa tęczówki | brązowa | niebieska
-Barwa włosów | brunatne | rude, blond
-Kształt włosów | falujące | proste
-Rzęsy | długie | krótkie
-Płatek uszny | wolny | przyrośnięty
-Policzki | z dołkami | bez dołków
-Zwijanie języka w kształt litery U | zdolność | brak zdolności
-Smak fenylotiomocznika | wrażliwi | niewrażliwi
-Barwa skóry | ciemna | jasna
-Kształt nosa (profil) | wypukły | prosty
-Piegi | brak | obecne
-[/TABELA]
+Według tych zasad dziedziczą się także cechy prawidłowe. Dlatego dwoje rodziców o brązowych tęczówkach, jeśli oboje są heterozygotami, może mieć dziecko o tęczówkach niebieskich (aa) – tak jak dwie wysokie rośliny Aa dały w F 2 roślinę niską. Tabelę takich par cech podaje część 2 ( ).
 
 ### Rodowód dominujący: choroba w każdym pokoleniu  []
 Spójrz na . Chorzy są w każdym pokoleniu, jeden pod drugim. Każdy chory ma chorego rodzica. Chorują i mężczyźni, i kobiety. Dlaczego tak?
@@ -445,11 +423,11 @@ Spójrz na . Chorzy są w każdym pokoleniu, jeden pod drugim. Każdy chory ma c
 Ten prosty obraz mogą zaburzać trzy zjawiska:
 - Obecność i nasilenie objawów zależą od stopnia penetracji genu (pełna – 100%, czyli 1,0; niepełna – np. 60%, czyli 0,6), od wieku probanda (penetracja zależna od wieku) i od zmiennej ekspresji genu. Nosiciel bez objawów wygląda w rodowodzie jak osoba zdrowa, choć może przekazać gen dalej.
 - Choroba w rodzinie może wynikać z mutacji de novo („od nowa”), powstałej w gametach któregoś z rodziców. Wtedy chore dziecko ma zdrowych rodziców, a ryzyko ponownego wystąpienia choroby u jego rodzeństwa jest bardzo małe – sami rodzice nie są nosicielami tego allelu.
-- Nasilenie objawów może zależeć od płci rodzica przekazującego zmutowany gen – dotyczy to głównie mutacji dynamicznych.
-[RAMKA przyklad] Ile dzieci zachoruje przy niepełnej penetracji? (wyliczenie na liczbach przykładowych ze źródła). Rodzic chory (Aa) i zdrowy (aa): 50% dzieci dziedziczy allel A. Jeśli penetracja wynosi 0,6, objawy ujawnią się u 6 na 10 z nich: 0,5 × 0,6 = 0,3, czyli u 30% wszystkich dzieci. Pozostałe 20% dzieci to nosiciele bez objawów – w rodowodzie wyglądają na zdrowych, a mimo to ich dzieci mogą zachorować.
+- Nasilenie objawów może zależeć od płci rodzica przekazującego zmutowany gen – dotyczy to głównie mutacji dynamicznych , czyli zwielokrotnienia liczby powtórzeń trójnukleotydowych w genie leżącym na autosomie lub na chromosomie X.
+[RAMKA przyklad] Ile dzieci zachoruje przy niepełnej penetracji? (liczby przykładowe). Rodzic chory (Aa) i zdrowy (aa): 50% dzieci dziedziczy allel A. Jeśli penetracja wynosi 0,6, objawy ujawnią się u 6 na 10 z nich: 0,5 × 0,6 = 0,3, czyli u 30% wszystkich dzieci. Z definicji penetracji wynika, że pozostałe 20% dzieci to nosiciele bez objawów – w rodowodzie wyglądają na zdrowych, a mimo to ich dzieci mogą zachorować.
 
 ### Rodowód recesywny: chore rodzeństwo zdrowych rodziców  []
-Teraz . Obraz jest zupełnie inny: rodzice są zdrowi, a chorują ich dzieci – często kilkoro rodzeństwa. W pokoleniach wcześniejszych chorych nie ma. Rodzice bywają spokrewnieni (podwójna linia). Dlaczego?
+Teraz . Obraz jest zupełnie inny: rodzice są zdrowi, a chorują ich dzieci – często kilkoro rodzeństwa. W pokoleniach wcześniejszych chorych nie ma. Rodzice bywają spokrewnieni (na rycinie – podwójna linia). Dlaczego?
 - Choroba ujawnia się tylko u homozygot recesywnych (aa). Rodzice są zwykle heterozygotami (Aa) – nie chorują, bo ich allel A wystarcza, ale są nosicielami .
 - Dwoje nosicieli (Aa × Aa): 25% dzieci zdrowych (AA), 50% nosicieli (Aa) i 25% chorych (aa).
 - Chory × nosiciel: 50% dzieci chorych; nosiciel × zdrowy: dzieci nie chorują, ale 50% z nich jest nosicielami. Tak jest np. w fenyloketonurii – chorują homozygoty ff, a heterozygoty Ff są nosicielami.
@@ -478,7 +456,7 @@ Spójrz na . Chora matka ma wszystkie dzieci chore – i synów, i córki. Chory
 Większość chorób genetycznych wynika z uszkodzeń genomu jądrowego, ale kilka istotnych schorzeń powodują mutacje DNA mitochondrialnego (mtDNA). Ze względu na szczególne właściwości mitochondriów choroby te mają charakterystyczny sposób dziedziczenia i dużą zmienność fenotypową.
 
 ### Mitochondria i ich własne DNA  []
-Każda komórka człowieka ma w cytoplazmie kilkaset lub więcej mitochondriów. W procesie fosforylacji oksydacyjnej wytwarzają one ATP – są więc kluczowe dla przeżycia komórki. Mitochondria mają własne DNA: dwuniciową, kolistą cząsteczkę, występującą w kilku kopiach w jednym organellum. mtDNA koduje rybosomalne i transportujące RNA oraz część polipeptydów fosforylacji oksydacyjnej; pozostałe białka tego procesu kodują geny jądrowe. mtDNA jest transkrybowane w mitochondrium, niezależnie od jądra, i – inaczej niż DNA jądrowe – nie zawiera intronów.
+Każda komórka człowieka ma w cytoplazmie kilkaset lub więcej mitochondriów. W złożonym procesie fosforylacji oksydacyjnej wytwarzają one ATP – źródło energii niezbędne dla metabolizmu komórki – są więc kluczowe dla jej przeżycia. Mitochondria mają własne DNA (mtDNA): dwuniciową, kolistą cząsteczkę, występującą w kilku kopiach w jednym organellum. mtDNA koduje rybosomalne i transportujące RNA oraz część polipeptydów fosforylacji oksydacyjnej. Pozostałe polipeptydy tego procesu kodują geny jądrowe, a gotowe białka są transportowane do mitochondriów. Liczby i mapę mtDNA podaje część 2 ( ).
 
 ### Dlaczego tylko po matce?  []
 mtDNA znajduje się w cytoplazmie. Plemniki zawierają bardzo mało mtDNA, które nawet nie dostaje się do komórki jajowej – całe mtDNA zygoty pochodzi więc od matki. Dlatego mtDNA dziedziczy się wyłącznie po matce : matka przekazuje je wszystkim dzieciom, a mężczyźni dziedziczą mtDNA od matki, ale nie przekazują go potomstwu. To dokładnie obraz z rodowodu C.
@@ -490,15 +468,18 @@ Ten odsetek nie jest stały. Zmienia się przez segregację replikacyjną podcza
 [RAMKA obraz] Wyobraź sobie worek z kulkami dwóch kolorów – prawidłowymi i zmutowanymi cząsteczkami mtDNA. Przy podziale komórki każda komórka potomna dostaje losową garść kulek. Jedna może trafić na więcej zmutowanych, druga – na mniej, choć w worku proporcja była ta sama. Wspólna zależność: o składzie komórki potomnej decyduje losowy przydział z mieszaniny. Granica porównania: kulki się nie mnożą, a cząsteczki mtDNA tak – i te, które replikują się szybciej (np. krótsze, z delecją), mogą zyskać przewagę niezależnie od losowania.
 
 ### Dlaczego najciężej choruje układ nerwowy? Próg energetyczny  []
-Każda tkanka potrzebuje określonej ilości ATP. Gdy wytwarzanie ATP spadnie poniżej progu , komórki degenerują i obumierają. Najciężej chorują więc narządy o dużym zapotrzebowaniu na ATP i wysokim progu, np. ośrodkowy układ nerwowy . Ta sama mutacja może zatem dać objawy w jednym narządzie, a w innym – nie.
-Do tego mtDNA mutuje znacznie częściej niż DNA jądrowe: mitochondria nie mają mechanizmów naprawy DNA, a mtDNA uszkadzają prawdopodobnie wolne rodniki tlenowe z fosforylacji oksydacyjnej.
+Każda tkanka potrzebuje do prawidłowego działania określonej ilości ATP wytworzonego w mitochondriach. Niewielkie zmiany poziomu ATP komórka toleruje, ale zwykle istnieje poziom progowy : gdy wytwarzanie ATP spadnie poniżej niego, komórki degenerują i obumierają. Najciężej chorują więc narządy o dużym zapotrzebowaniu na ATP i wysokim progu. Przykładem jest ośrodkowy układ nerwowy – zużywa ok. 20% całego ATP wytwarzanego w organizmie i jest częstym miejscem ujawniania się mutacji mtDNA. Ta sama mutacja może zatem dać objawy w jednym narządzie, a w innym – nie ( ).
+[RYCINA c08-fig-heteroplazmia „Heteroplazmia i próg energetyczny”: A – zacznij od komórki u góry: ma tyle samo prawidłowych (zielone) i zmutowanych (czerwone) cząsteczek mtDNA. Porównaj komórki potomne – po losowym rozdziale jedna ma mało, druga dużo zmutowanych. B – oba słupki to ta sama komórka; różni się tylko wysokość progu tkanki. Wniosek: ta sama mutacja może dać objawy w ośrodkowym układzie nerwowym, a w innej tkance – nie.]
+Do tego mtDNA mutuje ok. dziesięciokrotnie częściej niż DNA jądrowe. Przyczyną jest brak mechanizmów naprawy DNA w mitochondriach i prawdopodobnie uszkodzenia wywołane przez wolne rodniki tlenowe, uwalniane podczas fosforylacji oksydacyjnej.
 
 ### Choroby mitochondrialne – podział według typu mutacji  []
-- Mutacje zmiany sensu w genach mtDNA kodujących białka – LHON (dziedziczna neuropatia nerwów wzrokowych Lebera): gwałtowna utrata wzroku w centralnym polu widzenia wskutek obumarcia nerwu wzrokowego; zaczyna się zwykle w trzeciej dekadzie życia i jest nieodwracalna. Heteroplazmia jest w niej rzadka, więc ekspresja jest dość jednolita, a rodowody wyraźnie pokazują dziedziczenie mitochondrialne – to dobry przykład zależności opisanej wyżej.
-- Mutacje pojedynczej zasady w genach tRNA – MERRF (padaczka miokloniczna i choroba włókien poprzecznie prążkowanych): napady padaczki, demencja, ataksja i miopatia; choroba heteroplazmatyczna, dlatego bardzo zmienna w ekspresji. Także MELAS (encefalopatia mitochondrialna, kwasica mleczanowa i epizody udaropodobne) jest heteroplazmatyczna i bardzo zmienna w ekspresji.
-- Duplikacje i delecje mtDNA – zespół Kearnsa-Sayre’a (słabość mięśni, uszkodzenie móżdżku, niewydolność serca), zespół Pearsona (niewydolność trzustki u noworodków, niedokrwistość, kwasica mleczanowa) i przewlekłe postępujące porażenie zewnętrznych mięśni oka (CPEO).
+Choroby mtDNA klasyfikuje się według typu mutacji, która je wywołuje:
+- Mutacje zmiany sensu w genach mtDNA kodujących białka – np. LHON (dziedziczna neuropatia nerwów wzrokowych Lebera): gwałtowna utrata wzroku w centralnym polu widzenia wskutek obumarcia nerwu wzrokowego.
+- Mutacje pojedynczej zasady w genach tRNA – np. MERRF (padaczka miokloniczna i choroba włókien poprzecznie prążkowanych), w której głównym objawem są napady padaczki; tak samo powstaje MELAS .
+- Duplikacje i delecje mtDNA – np. zespół Kearnsa-Sayre’a i zespół Pearsona.
+Przebieg tych chorób, związek z heteroplazmią i udział mtDNA w chorobach częstych opisuje część 2 ( ).
 [RAMKA zapamietaj] mtDNA dziedziczy się wyłącznie po matce – matka przekazuje je wszystkim dzieciom, ojciec żadnemu. Nasilenie choroby zależy od heteroplazmii (odsetka zmutowanych cząsteczek mtDNA) i od zapotrzebowania tkanki na ATP; najbardziej cierpią narządy energochłonne, np. ośrodkowy układ nerwowy.
-[ŹRÓDŁO] Źródło: Jorde s. 118–123
+[ŹRÓDŁO] Źródło: Jorde (wyd. ok. 2000) s. 118–123
 
 ## Cechy wieloczynnikowe  [c08-wieloczynnikowe]
 
@@ -514,19 +495,15 @@ Ich częstość w populacji podlega prawu rozkładu normalnego . Jeśli na osi p
 
 ### Model dwóch par genów: barwa skóry  []
 W rzeczywistości barwę skóry warunkuje kilkanaście (ok. 15) par alleli, ale dla przejrzystości przedstawia się ją jako działanie dwóch par genów nieallelicznych: A – genu syntezy tyrozynazy i B – genu liczby melanosomów (wielkie litery oznaczają allele typowe dla Afrykanów, małe – dla Europejczyków). Każdy allel oznaczony wielką literą dokłada trochę barwnika – liczy się więc tylko to, ile takich alleli ma dana osoba.
-[RAMKA przyklad] P i F 1 . Skrzyżowanie AABB × aabb daje w F 1 heterozygoty AaBb (Mulaci). Każdy ma dwa allele dominujące z czterech – stąd pośrednia barwa skóry i mała różnorodność F 1 . Gamety F 1 . AaBb wytwarza gamety AB, Ab, aB i ab – po 1/4. Policz w nich wielkie litery: AB ma 2, Ab i aB – po 1, ab – 0. F 2 (AaBb × AaBb). W szachownicy 4 × 4 sumujemy wielkie litery z obu gamet. Cztery allele dominujące daje tylko AB + AB (1 kratka), trzy – 4 kratki, dwa – 6, jeden – 4, zero – tylko ab + ab (1 kratka). Wynik: 5 fenotypów w proporcji 1 : 4 : 6 : 4 : 1 .
-W F 2 – inaczej niż w F 1 – fenotypy są bardzo zróżnicowane: u potomstwa Mulatów barwa skóry zmienia się od białej do czarnej ( ):
+[RAMKA przyklad] P i F 1 . Skrzyżowanie AABB × aabb daje w F 1 heterozygoty AaBb (w źródle: „Mulaci”). Każdy ma dwa allele dominujące z czterech – stąd pośrednia barwa skóry i mała różnorodność F 1 . Gamety F 1 . AaBb wytwarza gamety AB, Ab, aB i ab – po 1/4. Policz w nich wielkie litery: AB ma 2, Ab i aB – po 1, ab – 0. F 2 (AaBb × AaBb). W szachownicy 4 × 4 sumujemy wielkie litery z obu gamet. Cztery allele dominujące daje tylko AB + AB (1 kratka), trzy – 4 kratki, dwa – 6, jeden – 4, zero – tylko ab + ab (1 kratka). Wynik: 5 fenotypów w proporcji 1 : 4 : 6 : 4 : 1 .
+W F 2 – inaczej niż w F 1 – fenotypy są bardzo zróżnicowane: u potomstwa osób AaBb barwa skóry zmienia się od białej do czarnej ( ):
 - 1/16 – 4 allele dominujące (AABB): skóra czarna;
 - 4/16 – 3 allele dominujące (AABb, AaBB): 75% pigmentacji czarnoskórego przodka;
 - 6/16 – 2 allele dominujące (AAbb, aaBB, AaBb): 50% – jak u rodziców;
 - 4/16 – 1 allel dominujący (Aabb, aaBb): 25%;
 - 1/16 – brak alleli dominujących (aabb): pigmentacja białego przodka.
 [RYCINA c08-fig-skora „Barwa skóry – fenotypy potomstwa Mulatów”: Czytaj oś poziomą: liczba alleli dominujących w genotypie (0–4), od skóry najjaśniejszej do najciemniejszej. Porównaj wysokość słupków: najczęstszy jest fenotyp rodziców (2 allele, 6/16), najrzadsze – skrajne (po 1/16). Skrajne klasy aabb i AABB wykraczają poza fenotyp rodziców – to transgresja ujemna i dodatnia.]
-Proporcje 1 : 4 : 6 : 4 : 1 to współczynniki kolejnych wyrazów rozwiniętego dwumianu Newtona (a + b) n ; najłatwiej odczytać je z trójkąta Pascala. Fenotypy skrajne są najmniej prawdopodobne (po 1/16), bo wymagają, żeby obie gamety niosły same allele dominujące albo same recesywne. Fenotyp jak u rodziców jest najbardziej prawdopodobny (6/16), bo dwa allele dominujące można zebrać na najwięcej sposobów. Ogólnie:
-- liczba genotypów wynosi 3 n (n – liczba par alleli): przy 2 parach 9, przy 3 parach 27, przy 5 parach 243, przy 15 parach 14 348 907;
-- fenotypów jest mniej niż genotypów, bo liczy się tylko suma alleli dominujących: liczba fenotypów równa się liczbie pojedynczych genów + 1, np. przy 5 parach genów nieallelicznych – 11 fenotypów;
-- każdy fenotyp skrajny występuje z częstością (1/2) k (k – liczba pojedynczych genów): przy 2 parach (4 genach) 1/16, przy 3 parach (6 genach) 1/64;
-- im więcej par genów warunkuje cechę, tym bardziej rozkład fenotypów zbliża się do rozkładu normalnego – klas przybywa, a skrajne stają się coraz rzadsze.
+Dlaczego fenotypy skrajne są najmniej prawdopodobne (po 1/16)? Bo wymagają, żeby obie gamety niosły same allele dominujące albo same recesywne – takie połączenie jest tylko jedno. Fenotyp jak u rodziców jest najbardziej prawdopodobny (6/16), bo dwa allele dominujące można zebrać na najwięcej sposobów. Im więcej par genów warunkuje cechę, tym więcej jest klas fenotypów, skrajne stają się coraz rzadsze, a rozkład fenotypów coraz bardziej zbliża się do rozkładu normalnego. Ogólne wzory na liczbę genotypów, fenotypów i częstość fenotypów skrajnych podaje część 2 ( ).
 
 ### Model trzech par genów: liczymy jednostki  []
 Ten sam rachunek można wyrazić w liczbach. Układ poligenów tworzą geny aktywne (dominujące) i neutralne (recesywne); każdy gen aktywny powiększa cechę o określoną liczbę jednostek. W modelu trzech par genów każdemu genowi neutralnemu przypisuje się umownie 3 jednostki (np. 1 cm wzrostu, 1 kg masy ciała, 10 mM enzymu), a gen aktywny dodaje 2 jednostki (gen A to 5 jednostek). Osoba aabbcc ma więc 18 jednostek (6 × 3), a heterozygota F 1 AaBbCc – 24 (18 + 3 × 2). W F 2 występuje 7 klas fenotypów, od 18 do 30 jednostek:
@@ -535,11 +512,11 @@ Liczba genów aktywnych | 0 | 1 | 2 | 3 | 4 | 5 | 6
 Natężenie cechy (jedn.) | 18 | 20 | 22 | 24 | 26 | 28 | 30
 Proporcje osób | 1 | 6 | 15 | 20 | 15 | 6 | 1
 [/TABELA]
-Proporcje 1 : 6 : 15 : 20 : 15 : 6 : 1 to kolejny wiersz trójkąta Pascala – tym razem dla sześciu genów. Liczba klas fenotypów wynosi 2n + 1 (n – liczba par alleli): przy 1 parze 3, przy 2 – 5, przy 3 – 7, przy 4 – 9. Przy więcej niż trzech parach trudno wyodrębnić w populacji fenotypy skrajne i na ich podstawie określić liczbę poligenów, a krzywa rozkładu przyjmuje kształt krzywej Queteleta.
+Proporcje 1 : 6 : 15 : 20 : 15 : 6 : 1 wynikają z tego samego liczenia alleli co przy dwóch parach, tylko teraz genów jest sześć: najwięcej osób ma trzy geny aktywne (jak heterozygota F 1 ), najmniej – zero albo sześć.
 
 ### Transgresja: dziecko spoza zakresu rodziców  []
 [POJĘCIE Transgresja] przekroczenie w potomstwie zakresu cechy występującego w pokoleniu rodzicielskim – dodatnia (cecha silniejsza niż u rodziców) lub ujemna (słabsza).
-Wróćmy do potomstwa Mulatów (AaBb × AaBb). Geny A i B warunkują mniej więcej takie same ilości barwnika, więc osoby AaBb, AAbb i aaBB mają tę samą pośrednią pigmentację co rodzice. Dziecko AABB (1/16) ma jednak skórę ciemniejszą niż rodzice, jak czarnoskóry dziadek lub babka – to transgresja dodatnia . Dziecko aabb (1/16) ma skórę jaśniejszą – transgresja ujemna . Rodzice nie mają takich fenotypów, ale mają allele, które – zebrane w jednym genotypie – je dają.
+Wróćmy do potomstwa osób AaBb (AaBb × AaBb). Geny A i B warunkują mniej więcej takie same ilości barwnika, więc osoby AaBb, AAbb i aaBB mają tę samą pośrednią pigmentację co rodzice. Dziecko AABB (1/16) ma jednak skórę ciemniejszą niż rodzice, jak czarnoskóry dziadek lub babka – to transgresja dodatnia . Dziecko aabb (1/16) ma skórę jaśniejszą – transgresja ujemna . Rodzice nie mają takich fenotypów, ale mają allele, które – zebrane w jednym genotypie – je dają.
 Inne przykłady transgresji u ludzi: potomstwo wyższe lub niższe od rodziców, bardziej lub mniej inteligentne, bardziej lub mniej odporne na choroby zakaźne, a także pojawienie się u dziecka choroby wieloczynnikowej nieobecnej u rodziców, np. astmy oskrzelowej.
 
 ### Cechy jakościowe: model progowy  []
@@ -547,31 +524,14 @@ Cechy jakościowe zmieniają się skokowo – cecha jest albo jej nie ma. Dzieck
 - o podatności danej osoby decydują czynniki genetyczne i środowiskowe – i ta podatność zmienia się w populacji płynnie, jak cecha ilościowa;
 - cecha ujawnia się tylko u tych osób, u których zostanie przekroczony próg wrażliwości (chwiejności) genetycznej .
 [RYCINA c08-fig-prog „Model progowy cechy jakościowej”: Zacznij od krzywej: podatność na wadę ma w populacji rozkład ciągły – większość osób ma podatność średnią. Przesuń wzrok w prawo, do linii progu: wada ujawnia się tylko u osób, u których czynniki genetyczne i środowiskowe razem przekroczyły próg (pole czerwone). Podatność zmienia się płynnie, a cecha – skokowo. Schemat według Drewy, proporcje umowne.]
-Dziedziczenie wieloczynnikowe jakościowe to najczęstsza przyczyna wad wrodzonych i niektórych chorób przewlekłych . Ponieważ próg przekracza tylko niewielka część populacji, częstości są zwykle małe:
-[TABELA]
-Wada lub choroba | Częstość w populacji (%)
-Wady wrodzone
-Rozszczep wargi i/lub podniebienia | 0,1
-Zwężenie odźwiernika | 0,3
-Wrodzone wady serca | 0,8
-Stopa końsko-szpotawa | 0,1
-Wady cewy nerwowej | 0,1
-Wrodzone zwichnięcie stawu biodrowego | 0,1
-Choroby przewlekłe
-Schizofrenia | 1
-Cukrzyca typu 1 | 0,2–0,4
-Cukrzyca typu 2 (w opisie choroby: ok. 7% u rasy kaukaskiej) | ok. 4
-Padaczka | 1
-Atopia | ok. 3
-Reumatoidalne zapalenie stawów | 1
-[/TABELA]
+Dziedziczenie wieloczynnikowe jakościowe to najczęstsza przyczyna wad wrodzonych i niektórych chorób przewlekłych . Ponieważ próg przekracza tylko niewielka część populacji, częstości są zwykle małe – np. rozszczep wargi i/lub podniebienia 0,1%, wrodzone wady serca 0,8%, schizofrenia 1% (pełna tabela – ).
 
 ### Co wynika z modelu dla rodziny?  []
 Dziedziczenie wieloczynnikowe ilościowe cechuje:
 - natężenie cechy rośnie z liczbą aktywnych (dominujących) genów kumulatywnych; według źródła stopień natężenia zależy też od łącznej liczby poligenów;
 - znaczny modyfikujący wpływ środowiska na ekspresję cechy;
 - brak pewności z samego rodowodu – nie ma tu prostych 50% czy 25%, więc ryzyko ocenia się na podstawie prawdopodobieństwa empirycznego , obliczonego z dużego materiału statystycznego;
-- ryzyko powtórzenia cechy w rodzinie wyższe niż w populacji ogólnej, ale znacznie niższe niż przy cechach jednogenowych i szybko malejące u dalszych krewnych; proband jest często jedyną osobą z tą cechą w rodzinie.
+- ryzyko powtórzenia cechy w rodzinie wyższe niż w populacji ogólnej, ale znacznie niższe niż przy cechach jednogenowych i szybko malejące u dalszych krewnych; proband jest jedyną osobą z tą cechą w rodzinie.
 [RAMKA zapamietaj] Cechy ilościowe (wzrost, barwa skóry) zmieniają się w sposób ciągły i mają rozkład normalny; jakościowe (wady wrodzone) ujawniają się skokowo, po przekroczeniu progu wrażliwości. W modelu barwy skóry z dwiema parami genów F 2 ma 5 fenotypów w proporcji 1 : 4 : 6 : 4 : 1, a skrajne AABB i aabb to transgresja.
 [ŹRÓDŁO] Źródło: Drewa s. 269–275
 
@@ -596,9 +556,8 @@ Schizofrenia | 10 | 4 | 2 | 1
 Czytaj tabelę wierszami. Przy rozszczepie wargi ryzyko u krewnych I stopnia (4%) jest 40 razy większe niż w populacji (0,1%), ale już u krewnych II stopnia spada do 0,6%. Zawsze jest jednak wielokrotnie mniejsze niż 25% czy 50% przy chorobach jednogenowych.
 
 ### Rozszczep wargi i/lub podniebienia  []
-To przykład cechy jakościowej uwarunkowanej wieloczynnikowo; występuje z różnym nasileniem. Powstaje ok. 35 dnia od zapłodnienia lub w 8–9 tygodniu życia płodowego, gdy zaburzone jest łączenie się blaszek podniebiennych. Oprócz dziedziczenia wieloczynnikowego może być dziedziczony monogenowo, wynikać z aberracji chromosomowych (heterogenia) albo być objawem dysmorficznym.
+To przykład cechy jakościowej uwarunkowanej wieloczynnikowo. Powstaje wskutek zaburzeń łączenia się blaszek podniebiennych i występuje z różnym nasileniem. W opisie wady źródło podaje częstość 1 : 100 urodzeń, a w tabelach – 0,1% populacji (skąd ta różnica – ).
 W języku modelu progowego: u zdrowych przeważają geny aktywne, odpowiedzialne za prawidłowe wykształcenie wargi i podniebienia, a u dziecka z wadą – geny nieaktywne. Wada występuje częściej u rodziców i krewnych I stopnia chorego. Ryzyko ponownego wystąpienia rośnie z liczbą chorych dzieci w rodzinie: u rodzeństwa wynosi 1 : 50 przy izolowanym rozszczepie i 1 : 20 przy obustronnym rozszczepie wargi i/lub podniebienia. Jest tym większe, im więcej genów nieaktywnych ma dana osoba i im więcej szkodliwych czynników zewnętrznych działa w rozwoju osobniczym – czyli im bliżej progu się znajduje.
-[RAMKA uwaga] Źródło podaje dla trzech wad rozbieżne częstości: rozszczep wargi i/lub podniebienia – 0,1% populacji (Drewa s. 270, tab. 12.1 i 12.7), ale 1 : 100 urodzeń w opisie wady (s. 282); stopa końsko-szpotawa – 0,1% (tab. 12.1 i 12.7), ale 5 : 1000 urodzeń w opisie wady (s. 283); zwichnięcie stawu biodrowego – 0,1% (tab. 12.1), 0,2% (tab. 12.7) i 1 : 1000 (s. 282).
 
 ### Wady częstsze u jednej płci  []
 Niektóre cechy wieloczynnikowe występują częściej u jednej płci:
@@ -608,12 +567,13 @@ Niektóre cechy wieloczynnikowe występują częściej u jednej płci:
 Zwróć uwagę na stopę końsko-szpotawą: częściej chorują chłopcy, ale gdy chora jest dziewczynka – płeć rzadziej dotknięta – ryzyko dla rodzeństwa jest wyższe.
 
 ### Wrodzone wady ośrodkowego układu nerwowego  []
-Należą do nich m.in. wady cewy nerwowej , które mogą powstać na każdym etapie jej rozwoju – od 20 dnia po zapłodnieniu (pojawienie się bruzdy nerwowej) do zamknięcia otworu przedniego (24 dzień) i tylnego (28 dzień). Rozszczep kręgosłupa występuje najczęściej w odcinku lędźwiowo-krzyżowym. W 15–20% przypadków przepuklina oponowo-rdzeniowa jest pokryta skórą (zamknięta), a w 80–85% – otwarta. Rozszczep kręgosłupa powoduje porażenie kończyn dolnych i zwieraczy.
+Należą do nich m.in. wady cewy nerwowej , które mogą powstać na każdym etapie jej rozwoju – od pojawienia się bruzdy nerwowej do zamknięcia obu otworów cewy. Rozszczep kręgosłupa występuje najczęściej w odcinku lędźwiowo-krzyżowym. Przepuklina oponowo-rdzeniowa bywa pokryta skórą (zamknięta), ale znacznie częściej jest otwarta. Rozszczep kręgosłupa powoduje porażenie kończyn dolnych i zwieraczy.
 
 ### Wady palców, dłoni i stóp  []
-- Polidaktylia (wielopalczastość) – dodatkowe palce, najczęściej I lub V; jedna z najczęstszych wad kończyn. Częstość różni się między grupami etnicznymi: u osób rasy kaukaskiej 1 : 2000 urodzeń, u Afrykanów 10 razy częściej. Bywa składową zespołów, np. trisomii 13, niekiedy występuje łącznie z syndaktylią; jej etiologia nie jest znana.
-- Syndaktylia – zrost palców, kostny lub tylko tkanek miękkich; zrost kości 1 : 1000 urodzeń. Etiologia jest różnorodna; gdy rodzice mają prawidłowe palce, ryzyko powtórzenia izolowanej syndaktylii w rodzinie jest małe.
-- Ektrodaktylia (ręka widlasta, rozszczep dłoni lub stóp) – wrodzony brak lub skrócenie niektórych palców, przez co ręka przypomina szczypce homara; ok. 1 : 100 000 urodzeń, najczęściej dziedziczona autosomalnie dominująco ze zmienną ekspresją. Może być też wywołana czynnikami teratogennymi i towarzyszyć innym zespołom uwarunkowanym genetycznie.
+- Polidaktylia (wielopalczastość) – dodatkowe palce, najczęściej I lub V; jedna z najczęstszych wad kończyn.
+- Syndaktylia – zrost palców, kostny lub tylko tkanek miękkich.
+- Ektrodaktylia (ręka widlasta, rozszczep dłoni lub stóp) – wrodzony brak lub skrócenie niektórych palców, przez co ręka przypomina szczypce homara.
+Częstości tych wad i ich bardzo różne przyczyny – od dziedziczenia jednogenowego po aberracje chromosomowe – zestawia część 2 ( ).
 [RAMKA zapamietaj] Wady wieloczynnikowe ujawniają się po przekroczeniu progu wrażliwości; ryzyko u krewnych I stopnia wynosi kilka procent i szybko maleje u dalszych krewnych. Część wad zależy od płci: zwężenie odźwiernika i stopa końsko-szpotawa są częstsze u chłopców, wrodzone zwichnięcie stawu biodrowego – u dziewczynek.
 [ŹRÓDŁO] Źródło: Drewa s. 270, 281–284
 
@@ -622,75 +582,58 @@ W chorobach przewlekłych geny i środowisko dzielą się wpływem na różne sp
 
 ### Choroba Alzheimera  []
 Choroba Alzheimera to jedna z najczęstszych przyczyn otępienia starczego (ok. 50%). Po 65 r.ż. choruje ok. 10%, a po 85 r.ż. – ok. 40% osób. Częściej niż w populacji występuje u osób z zespołem Downa. Duże znaczenie ma czynnik genetyczny. Wyróżnia się dwie postacie:
-- o wczesnym początku (10–15% przypadków, przed 65 r.ż.) – dziedziczona autosomalnie dominująco z pełną penetracją, szczególnie widoczna w zachorowaniach rodzinnych. Wiąże się z genami: β-APP – prekursora β-amyloidu (21q21.3, locus AD1), preseniliny 1 (PSEN1; 14q24.3, locus AD3 – w tekście źródła na s. 286 omyłkowo 17q24.3) i preseniliny 2 (PSEN2; 1q31–q42, locus AD4);
-- o późnym początku (ok. 85%) – związana z genem apolipoproteiny E (APOE; 19q13.2, locus AD2).
-Skąd się bierze β-amyloid? Punktem wyjścia jest białko błonowe β-APP (695 aminokwasów), które przechodzi przez błonę komórkową. W jego wnętrzu leży sekwencja β-amyloidu (39–44 aminokwasy): 12 aminokwasów położonych śródbłonowo i 28 – zewnątrzbłonowo. Los tej sekwencji zależy od tego, gdzie przetną białko proteazy:
-- u zdrowych proteazy przecinają fragment zewnątrzkomórkowy w obrębie sekwencji β-amyloidu – rozcinają ją na dwie części, więc β-amyloid nie powstaje;
-- u chorych fragment zewnątrzkomórkowy jest wycinany razem z całym β-amyloidem, a po dalszej hydrolizie uwolniony β-amyloid odkłada się pozakomórkowo w postaci nierozpuszczalnych złogów.
-U osób z trisomią 21 typowe dla choroby Alzheimera uszkodzenia mózgu pojawiają się zawsze wcześniej: u osób z zespołem Downa choroba Alzheimera występuje u 88% przed 30 r.ż. i u 100% po 50 r.ż.
-W postaci późnej kluczowy jest gen APOE . Ma trzy allele – ε2, ε3 i ε4 (allele wielokrotne) – tworzące 6 genotypów. Allel ε4 występuje częściej u pacjentów z rodzin dotkniętych chorobą; w układzie homozygotycznym zwiększa ryzyko ośmiokrotnie, a choroba może wystąpić w młodszym wieku. Zauważ różnicę wobec postaci wczesnej: ε4 nie przesądza o chorobie, tylko zwiększa jej ryzyko. ApoE występuje w osoczu, gdzie uczestniczy w transporcie cholesterolu i w patogenezie miażdżycy; wytwarzają ją też astrocyty w mózgu. Wiąże się z amyloidowym białkiem β odkładanym w mózgu; przypuszcza się, że białko kodowane przez ε4 utrudnia jego usuwanie lub zwiększa jego odkładanie.
-W mózgu chorych odkładają się blaszki amyloidowe i płytki starcze, a neurony wykazują zwyrodnienie nerwowo-włókienkowe. Objawy to postępujące otępienie, zaburzenia pamięci i orientacji, zaburzenia zachowania, depresja i konfabulacje. Wcześniejszemu ujawnieniu choroby sprzyjają czynniki środowiskowe: brak ruchu i aktywności umysłowej oraz urazy czaszki.
+- o wczesnym początku (10–15% przypadków, przed 65 r.ż.) – dziedziczona autosomalnie dominująco z pełną penetracją, szczególnie widoczna w zachorowaniach rodzinnych. Wiąże się z genami β-APP (prekursora β-amyloidu), preseniliny 1 (PSEN1) i preseniliny 2 (PSEN2);
+- o późnym początku (ok. 85%) – związana z genem apolipoproteiny E (APOE).
+Skąd się bierze β-amyloid? Białko błonowe β-APP zawiera w sobie sekwencję β-amyloidu . U zdrowych proteazy przecinają tę sekwencję na dwie części, więc β-amyloid nie powstaje; u chorych jest ona wycinana w całości, a uwolniony β-amyloid odkłada się pozakomórkowo w postaci nierozpuszczalnych złogów.
+W postaci późnej kluczowy jest gen APOE. Ma trzy allele – ε2, ε3 i ε4. Allel ε4 występuje częściej u pacjentów z rodzin dotkniętych chorobą; w układzie homozygotycznym zwiększa ryzyko ośmiokrotnie , a choroba może wystąpić w młodszym wieku. Zauważ różnicę wobec postaci wczesnej: ε4 nie przesądza o chorobie, tylko zwiększa jej ryzyko. Przypuszcza się, że białko kodowane przez ε4 utrudnia usuwanie amyloidowego białka β albo zwiększa jego odkładanie.
+Głównym objawem jest postępujące otępienie. Wcześniejszemu ujawnieniu choroby sprzyjają czynniki środowiskowe: brak ruchu i aktywności umysłowej oraz urazy czaszki.
 
 ### Fawizm – niedobór dehydrogenazy glukozo-6-fosforanowej  []
-Brak dehydrogenazy glukozo-6-fosforanowej ( G6PD ) powoduje niedokrwistość hemolityczną wywoływaną przez leki i niektóre rośliny. Gen G6PD leży na chromosomie X (Xq28); całkowity brak enzymu jest letalny. Częstość choroby jest różna w różnych regionach świata (w Europie Środkowej 1 : 100 urodzeń).
+Brak dehydrogenazy glukozo-6-fosforanowej ( G6PD ) powoduje niedokrwistość hemolityczną wywoływaną przez leki i niektóre rośliny. Gen G6PD leży na chromosomie X ; całkowity brak enzymu jest letalny. Częstość choroby jest różna w różnych regionach świata (w Europie Środkowej 1 : 100 urodzeń).
 Dlaczego brak jednego enzymu niszczy krwinki? Niedobór ujawnia się głównie w erytrocytach. Prześledź łańcuch skutków:
 - brak G6PD hamuje cykl pentozowy , a więc syntezę NADPH ;
 - utleniony glutation jest redukowany kosztem utleniania NADPH – bez NADPH maleje więc ilość zredukowanego glutationu ;
-- zredukowany glutation działa jako bufor sulfhydrylowy: utrzymuje reszty cysteinowe białek w formie zredukowanej i jest niezbędny do zachowania prawidłowej struktury erytrocytów;
-- jego niedobór powoduje odkształcenia powierzchni erytrocytów i skraca ich życie – krwinki łatwo ulegają hemolizie.
-Inne objawy to dreszcze, bóle brzucha i żółtaczka. Gwałtowną hemolizę wywołują leki (aspiryna, sulfonamidy, leki przeciwmalaryczne, chloramfenikol), naftalina oraz zjedzenie bobu ( Vicia faba – stąd nazwa „fawizm”) i innych roślin strączkowych.
+- zredukowany glutation jest niezbędny do zachowania prawidłowej struktury erytrocytów – bez niego krwinki odkształcają się, żyją krócej i łatwo ulegają hemolizie.
+Gwałtowną hemolizę wywołują leki (aspiryna, sulfonamidy, leki przeciwmalaryczne, chloramfenikol), naftalina oraz zjedzenie bobu ( Vicia faba – stąd nazwa „fawizm”) i innych roślin strączkowych.
 Choroba jest uwarunkowana genem recesywnym sprzężonym z płcią, ale objawy pojawiają się zwykle dopiero po zadziałaniu czynnika środowiskowego – dlatego jest klasycznym przykładem choroby wieloczynnikowej . Hemizygotyczni mężczyźni (jeden chromosom X, więc jedna kopia genu) zwykle nie mają objawów, dopóki nie zetkną się z czynnikiem wywołującym hemolizę; heterozygotyczne kobiety zwykle nie mają objawów. Niedobór G6PD chroni przed malarią, bo zarodziec potrzebuje do rozwoju cyklu pentozowego i zredukowanego glutationu – dlatego jest częstszy w rejonach malarycznych.
-Gen G6PD ma 18 kb i 13 eksonów; najcięższą postać powodują mutacje zmieniające skład aminokwasów przy końcu karboksylowym białka; wyróżnia się 5 klas aktywności G6PD. Rozpoznanie prenatalne jest możliwe przez oznaczenie aktywności G6PD w amniocytach.
 
 ### Choroby układu sercowo-naczyniowego  []
-Choroby układu krążenia mogą być dziedziczone monogenowo albo poligenowo. Monogenowo dziedziczy się np. kardiomiopatia przerostowa (1 : 500 młodych osób) – najczęściej autosomalnie dominująco, rzadziej autosomalnie recesywnie lub recesywnie w sprzężeniu z chromosomem X (heterogenia); zdarza się też dziedziczenie przez mutacje mtDNA. Do wieloczynnikowych należą pierwotne nadciśnienie tętnicze, choroba niedokrwienna serca, miażdżyca tętnic wieńcowych i zawał serca .
-Czynniki genetyczne. Markerami genetycznymi choroby wieńcowej są warianty polimorficzne genów, których produkty zaburzają trombogenezę i fibrynolizę. Rozwojowi miażdżycy i choroby niedokrwiennej serca sprzyjają geny pięciu grup:
+Choroby układu krążenia mogą być dziedziczone monogenowo albo poligenowo. Monogenowo dziedziczy się np. kardiomiopatia przerostowa – najczęściej autosomalnie dominująco. Do wieloczynnikowych należą pierwotne nadciśnienie tętnicze, choroba niedokrwienna serca, miażdżyca tętnic wieńcowych i zawał serca .
+Czynniki genetyczne. Rozwojowi miażdżycy i choroby niedokrwiennej serca sprzyjają geny pięciu grup:
 - metabolizmu lipidów (apolipoprotein),
 - czynników zapalnych (cytokin, TNF-α),
 - układu renina–angiotensyna–aldosteron (konwertazy angiotensyny – ACE, syntazy aldosteronu),
 - czynników wazoaktywnych (ANP, BNP, CNP),
 - krzepnięcia i fibrynolizy (inhibitora aktywatora plazminogenu 1 – PAI-1, fibrynogenu).
-Z pierwotnym nadciśnieniem wiąże się wiele genów polimorficznych, m.in. genów angiotensynogenu (AGT), ACE, receptora angiotensyny typu 1 (AT1R) i przedsionkowego peptydu natriuretycznego (ANP). Przykłady: AT1R (3q21–q25) – zamiana adeniny na cytozynę w poz. 1166; AGT (1q42–q43) – substytucje T/C w poz. 704 i C/T w poz. 521; polimorfizm insercyjno-delecyjny genu ACE (17q23) odpowiada w 45% za zmienność stężenia ACE w osoczu i tkankach.
+Z pierwotnym nadciśnieniem wiąże się wiele genów polimorficznych, m.in. genów angiotensynogenu (AGT), ACE, receptora angiotensyny typu 1 (AT1R) i przedsionkowego peptydu natriuretycznego (ANP); na czym polegają ich polimorfizmy – .
 Czynniki środowiskowe – w dużym stopniu modyfikowalne przez chorego – to niewłaściwa dieta, brak aktywności fizycznej, otyłość, palenie tytoniu, nadużywanie alkoholu, stres oraz stężenia frakcji cholesterolu i trójglicerydów we krwi.
 
 ### Cukrzyca typu 1 (insulinozależna)  []
-Cukrzyca typu 1 rozwija się po zniszczeniu komórek β wysp trzustkowych, najczęściej w przewlekłym procesie autoimmunologicznym, który wynika z predyspozycji genetycznej i działania czynników środowiskowych. Wyróżnia się:
-- postać autoimmunologiczną ( typ 1A ) – najczęściej uwarunkowaną poligenowo; stanowi 80–90% przypadków. Rzadko zdarzają się postacie jednogenowe: związana z zespołem autoimmunologicznej poliendokrynopatii typu 1 oraz sprzężony z chromosomem X zespół IPEX;
-- postać idiopatyczną ( typ 1B ), bez komponenty immunologicznej, występującą endemicznie m.in. w Chinach, Japonii i Korei;
-- postać wtórną do uszkodzenia trzustki (np. polekowego lub alkoholowego).
-Ryzyko zachorowania wynosi w populacji 0,2–0,4%, u dziecka chorej matki 2–3%, a u dziecka chorego ojca 5–9%. Analiza sprzężeń w rodzinach wskazała kilkanaście regionów genomu (loci IDDM1, IDDM2, IDDM3 itd.):
-- IDDM1 (6p21.3) – geny antygenów HLA klasy I i II; znaczenie mają polimorfizmy HLA-DR i DQ (klasa II). W populacji kaukaskiej ok. 95% chorych ma antygen HLA-DR3 lub HLA-DR4 , a 55–60% – układ heterozygotyczny DR3/DR4, który daje wyższe ryzyko niż homozygoty DR3 lub DR4; do czynników genetycznych należą też allele DQA1*0301, DQA1*0501, DQB1*0201 i DQB1*0302;
-- IDDM2 (11p15.5) – gen insuliny; większa liczba powtórzeń tandemowych (VNTR) w jego regionie 5′ zmniejsza ryzyko. IDDM1 i IDDM2 odpowiadają za ok. 50% przyczyn rodzinnego występowania cukrzycy typu 1A;
-- IDDM12 (2q33) – gen białka CTLA-4; PTPN22 (1p13.2) – gen limfocytarnej fosfatazy tyrozynowej, którego mutacja upośledza eliminację autoreaktywnych limfocytów T; zamiana C→T w poz. 1858 genu daje zamianę argininy na tryptofan w poz. 620 białka.
-Ryzyko zwiększają też czynniki środowiskowe: niewłaściwe odżywianie, infekcje wirusowe (np. Coxsackie), niska masa urodzeniowa, stres, nadużywanie alkoholu i leki – przeciwdepresyjne (np. imipramina) i steroidy (glikokortykosteroidy).
+Cukrzyca typu 1 rozwija się po zniszczeniu komórek β wysp trzustkowych, najczęściej w przewlekłym procesie autoimmunologicznym, który wynika z predyspozycji genetycznej i działania czynników środowiskowych. Najczęstsza jest postać autoimmunologiczna ( typ 1A , 80–90% przypadków), zwykle uwarunkowana poligenowo; pozostałe postacie opisuje część 2.
+Ryzyko zachorowania wynosi w populacji 0,2–0,4%, u dziecka chorej matki 2–3%, a u dziecka chorego ojca 5–9%. Analiza sprzężeń w rodzinach wskazała kilkanaście regionów genomu związanych z chorobą (loci IDDM1, IDDM2, IDDM3 itd.). Dwa z nich odpowiadają za ok. 50% przyczyn rodzinnego występowania cukrzycy typu 1A:
+- IDDM1 – geny antygenów HLA klasy I i II. W populacji kaukaskiej ok. 95% chorych ma antygen HLA-DR3 lub HLA-DR4 , a 55–60% – układ heterozygotyczny DR3/DR4, który daje wyższe ryzyko niż homozygoty DR3 lub DR4;
+- IDDM2 – gen insuliny.
+Ryzyko zwiększają też czynniki środowiskowe: niewłaściwe odżywianie, infekcje wirusowe (np. Coxsackie), niska masa urodzeniowa, stres, nadużywanie alkoholu i niektóre leki.
 
 ### Cukrzyca typu 2 (insulinoniezależna)  []
-W cukrzycy typu 2 dużą rolę odgrywają czynniki genetyczne i środowiskowe, a także epigenetyczne (metylacja DNA, modyfikacje histonów, mikroRNA). Podłoże może być mono- lub poligenowe; mutacje wpływają m.in. na sekrecję insuliny, wrażliwość na insulinę, homeostazę glukozy oraz metabolizm węglowodanów i lipidów. Gdy choruje jeden z rodziców, ryzyko dla potomstwa wynosi 40% , gdy oboje – 70% ; ryzyko populacyjne u rasy kaukaskiej to ok. 7%. Porównaj z cukrzycą typu 1: tam ryzyko dla dziecka chorego rodzica wynosi kilka procent.
-Przykładowe geny:
-- SLC30A8 (8q24.11) – jego polimorfizm (zamiana Arg325Trp w produkcie) zaburza sekrecję insuliny; z zaburzeniami sekrecji insuliny wiążą się też polimorfizmy genów CDKAL1 (6p22.3) i KCNJ11 (11p15.1);
-- CAPN10 (2q37.3) – koduje kalpainę 10, proteazę zmniejszającą uwalnianie insuliny pobudzane glukozą (niskie stężenie jej mRNA w mięśniach powoduje insulinooporność); z cukrzycą typu 2 wiążą się trzy SNP tego genu (19, 43 i 63);
-- PPARγ (3p25) – koduje receptor aktywowany przez proliferatory peroksysomów γ; wariant Pro12Ala tego białka zwiększa u homozygot zachorowalność o 25%;
-- do czynników genetycznych należą ponadto geny TCF7L2 (10q25) i HHEX (10q22.3).
-Ryzyko zwiększają siedzący tryb życia, otyłość (zwłaszcza trzewna), alkoholizm i palenie tytoniu.
+W cukrzycy typu 2 dużą rolę odgrywają czynniki genetyczne i środowiskowe. Podłoże może być mono- lub poligenowe; mutacje wpływają m.in. na sekrecję insuliny, wrażliwość na insulinę, homeostazę glukozy oraz metabolizm węglowodanów i lipidów. Gdy choruje jeden z rodziców, ryzyko dla potomstwa wynosi 40% , gdy oboje – 70% ; ryzyko populacyjne u rasy kaukaskiej to ok. 7%. Porównaj z cukrzycą typu 1: tam ryzyko dla dziecka chorego rodzica wynosi kilka procent.
+Z chorobą wiąże się wiele genów, m.in. SLC30A8 (sekrecja insuliny), CAPN10 (homeostaza glukozy) i PPARγ ; co zmieniają ich warianty – . Ryzyko zwiększają siedzący tryb życia, otyłość (zwłaszcza trzewna), alkoholizm i palenie tytoniu.
 
 ### Cukrzyca MODY – jednogenowa i dominująca  []
-Cukrzyca MODY (ang. maturity-onset diabetes of the young ) wynika z genetycznie uwarunkowanej dysfunkcji komórek β; jest heterogenna genetycznie, metabolicznie i klinicznie. Ujawnia się zwykle w 2.–3. dekadzie życia i dotyczy nie więcej niż 5% pacjentów z cukrzycą typu 2. Jej kryteria rozpoznania łatwo zrozumieć, jeśli pamiętasz cechy rodowodu dominującego ( ):
+Cukrzyca MODY (ang. maturity-onset diabetes of the young ) wynika z genetycznie uwarunkowanej dysfunkcji komórek β; jest heterogenna genetycznie, metabolicznie i klinicznie. Ujawnia się zwykle w 2.–3. dekadzie życia i dotyczy nie więcej niż 5% pacjentów z cukrzycą typu 2. Dwa najważniejsze kryteria rozpoznania łatwo zrozumieć, jeśli pamiętasz cechy rodowodu dominującego ( ):
 - hiperglikemia u jednego lub dwóch członków rodziny rozpoznana przed 25 r.ż.;
-- autosomalny dominujący tor dziedziczenia w co najmniej trzech pokoleniach;
-- brak konieczności leczenia insuliną 5 lat po rozpoznaniu lub brak podwyższonego stężenia peptydu C, nawet u pacjentów leczonych insuliną;
-- prawidłowe stężenie insuliny, ale niewystarczające w stosunku do hiperglikemii;
-- rzadko nadwaga lub otyłość.
+- autosomalny dominujący tor dziedziczenia w co najmniej trzech pokoleniach.
 Wyróżniono 6 podtypów związanych z genami na różnych chromosomach. Ich produktami są czynniki transkrypcyjne – wyjątkiem jest MODY2, w którym gen GCK koduje glukokinazę pełniącą rolę heksokinazy.
 [TABELA]
-Podtyp | Gen | Chromosom
-MODY1 | HNF4A | 20q
-MODY2 | GCK | 7p
-MODY3 | HNF1A | 12q
-MODY4 | IPF1 | 13q
-MODY5 | TCF2 | 17q
-MODY6 | NEUROD1 | 2q
+Podtyp | Gen
+MODY1 | HNF4A
+MODY2 | GCK
+MODY3 | HNF1A
+MODY4 | IPF1
+MODY5 | TCF2
+MODY6 | NEUROD1
 [/TABELA]
-[RAMKA zapamietaj] Alzheimer: postać wczesna dziedziczona autosomalnie dominująco (β-APP, PSEN1, PSEN2), późna związana z allelem APOE ε4. Fawizm: niedobór G6PD (Xq28) daje hemolizę dopiero po leku, naftalinie lub bobie. Cukrzyca typu 1 wiąże się z HLA-DR3/DR4 (IDDM1) i genem insuliny (IDDM2), a MODY dziedziczy się autosomalnie dominująco.
+[RAMKA zapamietaj] Alzheimer: postać wczesna dziedziczona autosomalnie dominująco (β-APP, PSEN1, PSEN2), późna związana z allelem APOE ε4. Fawizm: niedobór G6PD (gen na chromosomie X) daje hemolizę dopiero po leku, naftalinie lub bobie. Cukrzyca typu 1 wiąże się z HLA-DR3/DR4 (IDDM1) i genem insuliny (IDDM2), a MODY dziedziczy się autosomalnie dominująco.
 [ŹRÓDŁO] Źródło: Drewa s. 284–291
 
 ## Grupy krwi i konflikt serologiczny  [c08-grupy]
@@ -700,7 +643,7 @@ Matka ma krew Rh−, a ojciec Rh+. Dziecko Rh+ może zachorować na chorobę hem
 
 ### Antygeny i przeciwciała układu AB0  []
 Grupa krwi to zestaw antygenów – cząsteczek na powierzchni krwinek czerwonych, które odróżniają krew jednej osoby od krwi innej. Do układu AB0 należą antygeny A, B i H ; na ich podstawie wyróżnia się cztery podstawowe grupy krwi: A, B, AB i 0. Układ AB0 odkrył K. Landsteiner (1900), a nazewnictwo grup zaproponował Ludwik Hirszfeld.
-Antygeny AB0 występują na powierzchni erytrocytów, gdzie są związane z glikoproteinami i glikolipidami błony, a także na innych komórkach krwi i komórkach wielu narządów. W postaci rozpuszczalnej są obecne w płynach ustrojowych i wydzielinach – u tzw. wydzielaczy . Jedyną tkanką bez antygenów AB0 jest tkanka nerwowa, dlatego nie ma ich w płynie mózgowo-rdzeniowym. Antygeny pojawiają się w 5–6 tygodniu życia płodowego, a pełną ekspresję osiągają 6–18 miesięcy po urodzeniu.
+Antygeny AB0 występują na powierzchni erytrocytów, ale także na innych komórkach i – w postaci rozpuszczalnej – w płynach ustrojowych i wydzielinach (w których tkankach i od kiedy – ).
 Układ AB0 wyróżnia się tym, że przeciwciała przeciw jego antygenom są stałym składnikiem osocza . To naturalne alloprzeciwciała , głównie klasy IgM , wytwarzane bez wcześniejszego kontaktu z antygenem: zaczynają powstawać tuż po urodzeniu, a maksymalne stężenie osiągają w młodym wieku. Występują też w płynach ustrojowych i wydzielinach. Aglutynują (zlepiają) krwinki z antygenami, których organizm nie ma. Wynika z tego prosta reguła: w osoczu są przeciwciała przeciw tym antygenom, których brakuje na własnych krwinkach.
 [TABELA]
 Grupa | Genotypy | Antygeny na krwinkach | Przeciwciała w osoczu
@@ -711,26 +654,24 @@ AB | AB | A i B | brak
 [/TABELA]
 
 ### Skąd się biorą antygeny A i B? Od prekursora do antygenu  []
-Antygen AB0 to łańcuch cukrowy, a o jego swoistości decyduje ostatni cukier łańcucha oligocukrowego: w antygenie A jest to N-acetylogalaktozamina , w B – D-galaktoza , a w H – L-fukoza . Antygen H wchodzi w skład antygenów A i B i jest ich prekursorem. Biosyntezę kontrolują trzy niezależne loci: AB0 (9q34.2; allele A, B, 0), H (19q13.3; allele H, h) i Se (19q13.3; allele Se, se). Ich produktami są glikozylotransferazy – enzymy przenoszące odpowiednią resztę cukrową na cząsteczkę prekursorową. Każdemu allelowi odpowiada więc konkretny enzym i konkretny krok ( ):
-- Antygen H powstaje przez przyłączenie L-fukozy do końcowej galaktozy prekursora. Robią to dwie α-2-L-fukozylotransferazy: FUT1 , kodowana przez gen H – na erytrocytach, i FUT2 , kodowana przez gen Se – w pozostałych tkankach.
+Antygen AB0 to łańcuch cukrowy, a o jego swoistości decyduje ostatni cukier łańcucha oligocukrowego: w antygenie A jest to N-acetylogalaktozamina , w B – D-galaktoza , a w H – L-fukoza . Antygen H wchodzi w skład antygenów A i B i jest ich prekursorem. Biosyntezę kontrolują trzy niezależne loci: AB0 (allele A, B, 0), H (allele H, h) i Se (allele Se, se). Ich produktami są glikozylotransferazy – enzymy przenoszące odpowiednią resztę cukrową na cząsteczkę prekursorową. Każdemu allelowi odpowiada więc konkretny enzym i konkretny krok ( ):
+- Antygen H powstaje przez przyłączenie L-fukozy do końcowej galaktozy prekursora. Na erytrocytach robi to α-2-L-fukozylotransferaza FUT1 , kodowana przez gen H (w innych tkankach – druga, kodowana przez gen Se).
 - Allel A koduje transferazę A (N-acetylogalaktozaminotransferazę), która przyłącza do antygenu H N-acetylogalaktozaminę – powstaje antygen A.
 - Allel B koduje transferazę B (galaktozylotransferazę), która przyłącza D-galaktozę – powstaje antygen B.
 - Osoby z grupą AB mają obie transferazy, więc część cząsteczek H kończy się N-acetylogalaktozaminą, a część D-galaktozą.
 - Allel 0 koduje białko nieaktywne enzymatycznie , dlatego u osób 00 antygen H pozostaje niezmodyfikowany.
-Istnieją dwa typy prekursora (I i II), różniące się wiązaniem między końcową galaktozą a N-acetyloglukozaminą; na erytrocytach występuje wyłącznie typ II, na pozostałych komórkach i w wydzielinach – oba.
 [RYCINA c08-fig-ab0 „Układ AB0 – od antygenu H do antygenów A i B”: Czytaj od lewej: prekursor dostaje od FUT1 (gen H) L-fukozę i staje się antygenem H. Dalej szlak się rozgałęzia – porównaj trzy gałęzie: transferaza A dokłada N-acetylogalaktozaminę (antygen A), transferaza B – D-galaktozę (antygen B), a białko allelu 0 nic nie dokłada (zostaje antygen H, grupa 0). Wniosek: bez antygenu H nie powstanie ani A, ani B.]
 
 ### Czym różnią się allele A, B i 0?  []
-Locus AB0 leży na długim ramieniu chromosomu 9 (9q34.1–q34.2) i ma trzy allele: A, B i 0 ; każdy człowiek ma dwa z nich. Allele A i B dominują nad recesywnym allelem 0 i są względem siebie kodominujące. W krzyżówkach allel 0 zapisuje się też jako i (a allele A i B jako I A i I B ), jak w podrozdziale o kodominacji.
-Allele A i B różnią się tylko siedmioma nukleotydami, a ich produkty – czterema aminokwasami (spośród 353; o swoistości decydują pozycje 266 i 268). To wystarcza, by enzym przenosił galaktozę zamiast N-acetylogalaktozaminy.
-Allel 0 jest amorficzny – nie daje działającego produktu. Najczęstszemu allelowi 0 brakuje jednego nukleotydu w eksonie 6. Delecja przesuwa ramkę odczytu i wprowadza przedwczesny kodon stop w pozycji 117, więc powstaje krótki polipeptyd bez centrum aktywnego. Rzadszy allel 0 2 (3% alleli 0 u rasy kaukaskiej) ma substytucję Gly268Arg, która uniemożliwia wiązanie substratu. Dlatego allel 0 jest recesywny: w heterozygocie A0 działający enzym A i tak wytwarza antygen A.
-Antygeny AB0 nie są jednorodne – wyróżnia się wiele podgrup różniących się głównie liczbą antygenów na krwinkach: w grupie A – A 1 , A 2 , A 3 , A x , A el , o coraz słabszej ekspresji antygenu A, w grupie B m.in. B 3 , B x , B el . W allelu A 2 delecja jednej z trzech cytozyn przed kodonem stop wydłuża białko o 21 aminokwasów; allel ten koduje transferazę A o 50% niższej aktywności, dlatego krwinki A 2 mają słabszą odmianę antygenu A, a w osoczu osób A 2 i A 2 B mogą występować przeciwciała anty-A 1 . Wyjątkowo rzadka podgrupa cis AB powstaje, gdy jeden allel koduje enzym o aktywności zarówno transferazy A, jak i B (w typowej grupie AB, tzw. trans AB, są to dwa enzymy kodowane przez dwa allele).
+Locus AB0 leży na długim ramieniu chromosomu 9 i ma trzy allele: A, B i 0 ; każdy człowiek ma dwa z nich. Allele A i B dominują nad recesywnym allelem 0 i są względem siebie kodominujące – każdy koduje własną transferazę, więc u osoby AB działają obie. W krzyżówkach allel 0 zapisuje się też jako i (a allele A i B jako I A i I B ), jak w podrozdziale o kodominacji.
+Allel 0 jest amorficzny – koduje białko nieaktywne enzymatycznie. Dlatego jest recesywny: w heterozygocie A0 działający enzym A i tak wytwarza antygen A.
+Antygeny AB0 nie są jednorodne – wyróżnia się podgrupy różniące się głównie liczbą antygenów na krwinkach. Najważniejsza para to A 1 i A 2 : allel A 2 koduje transferazę A o niższej aktywności, więc krwinki A 2 mają słabszą odmianę antygenu A. Czym na poziomie DNA różnią się allele i podgrupy – .
 
 ### Fenotyp Bombay – grupa 0 mimo allelu A lub B  [c08-bombay]
 Schemat biosyntezy pozwala przewidzieć nietypowy przypadek. Co się stanie, jeśli zabraknie pierwszego kroku – przyłączenia fukozy? Transferazy A i B nie będą miały substratu, więc antygeny A i B nie powstaną, choć allele A lub B są obecne.
-Allele h i se nie kodują aktywnych fukozylotransferaz (są amorficzne); H dominuje nad h, a Se nad se. Geny H i Se leżą blisko siebie na 19q13.3 (są sprzężone) i wykazują 70% homologii sekwencji; allel se powstał przez mutację nonsens (kodon tryptofanu 143 → kodon stop).
+Allele h i se nie kodują aktywnych fukozylotransferaz (są amorficzne); H dominuje nad h, a Se nad se.
 Fenotyp Bombay – niezwykle rzadki, odkryty w rodzinie hinduskiej w Bombaju – mają osoby o genotypie hh i jednocześnie sese . Nie wytwarzają one antygenu H, więc mimo obecności genów A lub B (locus H nie jest sprzężony z locus AB0) nie powstają u nich antygeny A i B i pozornie mają grupę 0 (oznaczaną O h ). W ich surowicy są przeciwciała anty-A, anty-B i anty-H, dlatego można im przetaczać wyłącznie krew O h – każda inna krew ma przynajmniej antygen H. Allele A i B przekazują jednak potomstwu, u którego grupa krwi wyraża się prawidłowo. To przykład epistazy recesywnej ( ).
-Osoby hh, które mają allel Se (fenotyp para-Bombay ), mają antygeny A, B i H w ślinie i płynach ustrojowych, ale nie na erytrocytach – bo FUT2 działa w innych tkankach, a FUT1 na erytrocytach jest nieaktywna. Antygeny te mogą jednak dawać słabą ekspresję na krwinkach dzięki adsorpcji z osocza. W surowicy osób para-Bombay zamiast anty-H występują pokrewne przeciwciała anty-HI, zwykle niereagujące w 37 °C. O obecności antygenów w wydzielinach decyduje co najmniej jeden dominujący allel Se (gen wydzielania): wydzielacze stanowią ok. 80% populacji rasy białej, a osoby sese (niewydzielacze) nie mają aktywnej FUT2.
+Po co w definicji warunek sese? Bo gen Se koduje drugą fukozylotransferazę, działającą w tkankach innych niż krew. Osoby hh, które mają allel Se, nie mają antygenów na krwinkach, ale mają je w wydzielinach – to fenotyp para-Bombay ( ).
 
 ### Dziedziczenie grup krwi AB0 – przeliczmy  []
 Grupy krwi AB0 dziedziczą się zgodnie z prawami Mendla, z kodominacją alleli A i B i recesywnym allelem 0. Wystarczy więc szachownica.
@@ -749,14 +690,12 @@ AB | A, B | A, B, AB | A, B, AB | A, B, AB
 [/TABELA]
 
 ### Układ Rh  []
-Nazwa układu pochodzi od małpy Macacus rhesus : początkowo sądzono, że krwinki tej małpy i człowieka mają ten sam antygen. Okazało się to nieprawdą, ale nazwy „antygen Rh” i „przeciwciała anty-Rh” pozostały; antygen Rh nazywa się też antygenem D lub LW. Układ Rh jest wysoce polimorficzny (ponad 49 antygenów), ale klinicznie istotnych jest pięć: D, C, c, E i e . Antygeny Rh powstają od 6 tygodnia życia płodowego.
-Geny. Geny RH leżą na krótkim ramieniu chromosomu 1 (1p34.3–p36.1). Są to dwa geny powstałe w wyniku duplikacji: RHD koduje antygen D, a RHCE – antygeny C, c, E i e, leżące na osobnym polipeptydzie. Geny RHD i RHCE są w 96% homologiczne, mają po 10 eksonów i kodują polipeptydy po 416 aminokwasów; leżą w przeciwnej orientacji, a między nimi znajduje się gen SMP1. Gen RHD otaczają powtarzalne sekwencje flankujące (ang. rhesus boxes ) o długości ok. 9000 pz. Antygeny C i c różnią się czterema aminokwasami (decyduje pozycja 103: seryna w C, prolina w c – ekson 2), a E i e – pozycją 226 (prolina w E, alanina w e – ekson 5).
-Białka. Polipeptydy Rh to białka błonowe występujące wyłącznie na erytrocytach; w odróżnieniu od antygenów innych układów nie zawierają reszt cukrowych. Mają 12 domen przezbłonowych i zawierają reszty kwasu palmitynowego. Trafiają do błony tylko w obecności glikoproteiny RhAG (gen RHAG, 6p21), z którą – wraz z innymi białkami błony – tworzą kompleks; jego brak lub niedobór daje bardzo rzadkie fenotypy Rh null i Rh mod . Kompleksowi przypisuje się transport amoniaku i prawdopodobnie CO 2 ; pewne jest, że utrzymuje strukturę erytrocytu – brak polipeptydów Rh zmienia kształt krwinek, skraca ich przeżycie i powoduje niedokrwistość hemolityczną.
-Haplotypy. Geny Rh dziedziczy się jako dwa haplotypy (po jednym od każdego rodzica), złożone z trzech alleli. Trzy allele haplotypu tworzą 8 kombinacji: D-dodatnie CDe, cDE, cDe, CDE i D-ujemne cde, Cde, cdE, CdE; u rasy kaukaskiej najczęstsze są CDe (40–42%) i cDE (14–16%), pozostałe mają częstość poniżej 4%. Pięcioma przeciwciałami można wyróżnić 18 fenotypów Rh.
+Drugi układ ważny klinicznie to układ Rh . Ma pięć klinicznie istotnych antygenów: D, C, c, E i e ; najważniejszy jest antygen D (nazywany też antygenem Rh).
+Geny. Geny RH leżą na krótkim ramieniu chromosomu 1 . Są dwa, powstałe w wyniku duplikacji: RHD koduje antygen D, a RHCE – antygeny C, c, E i e, leżące na osobnym polipeptydzie. Gen RHD otaczają z obu stron powtarzalne sekwencje flankujące (ang. rhesus boxes ) – za chwilę zobaczysz, dlaczego to ważne. Budowę genów i białek Rh oraz haplotypy opisuje część 2 ( ).
 
 ### Rh+ i Rh− – skąd brak antygenu D?  []
-Ok. 85% osób rasy kaukaskiej ma antygen D ( Rh+ ), a ok. 15% go nie ma ( Rh− ). Brak antygenu D wynika najczęściej z delecji genu RHD , spowodowanej nierównomiernym crossing-over w obrębie sekwencji rhesus boxes. To ten sam proces wymiany odcinków, który znasz z mejozy – tylko zachodzi między niedokładnie dopasowanymi powtórzeniami, a ponieważ powtórzenia otaczają gen RHD, może on zostać utracony w całości. Rzadziej przyczyną są mutacje punktowe tworzące przedwczesny kodon stop lub inne rearanżacje; u osób rasy czarnej – obecność pseudogenu RHDψ. Znane są też warianty: słaby antygen D i częściowy antygen D.
-Osoby DD i Dd są Rh+, a dd – Rh−. Litera „d” nie oznacza osobnego allelu, lecz brak genu RHD . Jedna kopia RHD wystarcza do wytworzenia antygenu D, więc rodzice Rh+ będący heterozygotami (Dd × Dd) mogą mieć dziecko Rh− (dd, z prawdopodobieństwem 1/4), a dwoje rodziców Rh− ma wyłącznie dzieci Rh−. Osoby Rh− stanowią 15–17% rasy białej, 5–7% rasy czarnej i mniej niż 1% Azjatów. Rh to też przykład zmienności alternatywnej: antygen D jest albo go nie ma.
+Ok. 85% osób rasy kaukaskiej ma antygen D ( Rh+ ), a ok. 15% go nie ma ( Rh− ). Brak antygenu D wynika najczęściej z delecji genu RHD , spowodowanej nierównomiernym crossing-over w obrębie sekwencji rhesus boxes. To ten sam proces wymiany odcinków, który znasz z mejozy – tylko zachodzi między niedokładnie dopasowanymi powtórzeniami, a ponieważ powtórzenia otaczają gen RHD, może on zostać utracony w całości. Rzadsze przyczyny i warianty antygenu D – .
+Osoby DD i Dd są Rh+, a dd – Rh−. Litera „d” nie oznacza osobnego allelu, lecz brak genu RHD . Jedna kopia RHD wystarcza do wytworzenia antygenu D, więc rodzice Rh+ będący heterozygotami (Dd × Dd) mogą mieć dziecko Rh− (dd, z prawdopodobieństwem 1/4), a dwoje rodziców Rh− ma wyłącznie dzieci Rh−. Rh to też przykład zmienności alternatywnej: antygen D jest albo go nie ma.
 
 ### Przeciwciała anty-D – inne niż przeciwciała AB0  []
 Antygen D ma najsilniejsze właściwości immunogenne ze wszystkich antygenów krwinek czerwonych – najsilniej pobudza wytwarzanie przeciwciał. Obok antygenów A i B jest najważniejszy w transfuzjologii, dlatego oznacza się go u wszystkich biorców i dawców. Odpowiada też za konflikt matczyno-płodowy i przeważającą większość przypadków choroby hemolitycznej płodów i noworodków.
@@ -767,15 +706,15 @@ Przeciwciała układu Rh (anty-D, anty-C, anty-c, anty-E, anty-e) różnią się
 ### Konflikt serologiczny w układzie Rh: dlaczego zwykle cierpi dopiero kolejne dziecko  []
 Konflikty serologiczne dzieli się na cztery grupy: w układzie Rh, w układzie AB0, mieszany AB0/Rh (zdarza się sporadycznie) i w pozostałych układach grupowych. Konflikt matczyno-płodowy w układzie Rh zachodzi, gdy płód ma antygen D (Rh+), a matka go nie ma (Rh−). Teraz możemy prześledzić, co się dzieje krok po kroku ( ):
 [RYCINA c08-fig-konflikt „Konflikt serologiczny w układzie Rh”: Porównaj trzy panele, patrząc na łożysko. 1 – matka Rh− nie ma przeciwciał, krwinki płodu (kropki – antygen D) zostają po jego stronie. 2 – przy porodzie krwinki płodu przenikają do krwi matki; powstają najpierw IgM, potem IgG anty-D – za późno dla pierwszego dziecka. 3 – w kolejnej ciąży gotowe IgG przechodzą przez łożysko i niszczą krwinki płodu Rh+.]
-- Pierwsza ciąża – zwykle bez konfliktu. W warunkach fizjologicznych matka Rh− nie ma przeciwciał anty-Rh – nie ma ich czym zaatakować płodu. Żeby je wytworzyła, krwinki płodu musiałyby przeniknąć do jej krążenia: potrzebny jest przeciek co najmniej 0,1 ml krwinek. W pierwszej ciąży immunizacja zaczyna się tylko u niespełna 2% kobiet.
-- Immunizacja – zwykle przy porodzie. Dopiero podczas porodu do krwiobiegu matki przenika dużo krwinek dziecka; immunizację może też wywołać krwawienie w ciąży, poronienie lub inwazyjna diagnostyka prenatalna. Odpowiedź na antygen D rozwija się powoli: najpierw powstają przeciwciała IgM, które nie przechodzą przez łożysko, a po ok. 6–40 tygodniach – IgG (IgG1 i IgG3), które przez nie przechodzą. Anty-D wykrywa się zwykle dopiero kilka miesięcy po porodzie. Pierwsze dziecko jest już wtedy urodzone.
-- Kolejna ciąża z płodem Rh+. Matka jest już immunizowana, a antygen D płodu pobudza wytwarzanie anty-D. Matczyne IgG przechodzą przez łożysko i opłaszczają erytrocyty płodu, które są niszczone w śledzionie (fagocytoza z udziałem makrofagów, cytotoksyczność komórkowa zależna od przeciwciał) – przed porodem i po nim.
+- Pierwsza ciąża – zwykle bez konfliktu. W warunkach fizjologicznych matka Rh− nie ma przeciwciał anty-Rh – nie ma ich czym zaatakować płodu. Żeby je wytworzyła, krwinki płodu musiałyby w odpowiedniej ilości przeniknąć do jej krążenia, a w pierwszej ciąży immunizacja zaczyna się tylko u nielicznych kobiet.
+- Immunizacja – zwykle przy porodzie. Dopiero podczas porodu do krwiobiegu matki przenika dużo krwinek dziecka; immunizację może też wywołać krwawienie w ciąży, poronienie lub inwazyjna diagnostyka prenatalna. Odpowiedź na antygen D rozwija się powoli: najpierw powstają przeciwciała IgM, które nie przechodzą przez łożysko, a po ok. 6–40 tygodniach – IgG, które przez nie przechodzą. Anty-D wykrywa się zwykle dopiero kilka miesięcy po porodzie. Pierwsze dziecko jest już wtedy urodzone.
+- Kolejna ciąża z płodem Rh+. Matka jest już immunizowana, a antygen D płodu pobudza wytwarzanie anty-D. Matczyne IgG przechodzą przez łożysko, opłaszczają erytrocyty płodu i prowadzą do ich niszczenia – przed porodem i po nim.
 Odpowiedź na pytanie z początku jest więc taka: w pierwszej ciąży przeciwciał jeszcze nie ma, a te, które powstają po porodzie, są najpierw klasy IgM i nie przechodzą przez łożysko. Szkodliwe IgG są gotowe dopiero na kolejną ciążę.
-Skutkiem jest choroba hemolityczna płodu i noworodka . Prześledź łańcuch: rozpad krwinek daje niedokrwistość hemolityczną z hiperbilirubinemią; dalej dochodzi do pozaszpikowego krwiotworzenia, uszkodzeń wielonarządowych, niedotlenienia i hipoalbuminemii, która prowadzi do uogólnionego obrzęku płodu ( hydrops fetalis ) z powiększeniem wątroby i śledziony. Żółtaczka hemolityczna rozwija się w pełni po urodzeniu; wysokie stężenie bilirubiny niesprzężonej (ok. 20 mg/dl) prowadzi do żółtaczki jąder podstawy mózgu ( kernicterus ). Nasilenie objawów jest bardzo różne, a ciężka postać zagraża życiu płodu lub noworodka.
+Skutkiem jest choroba hemolityczna płodu i noworodka . Rozpad krwinek daje niedokrwistość hemolityczną z hiperbilirubinemią. W ciężkich przypadkach dochodzi do uogólnionego obrzęku płodu ( hydrops fetalis ). Po urodzeniu w pełni rozwija się żółtaczka hemolityczna, a wysokie stężenie bilirubiny niesprzężonej prowadzi do żółtaczki jąder podstawy mózgu ( kernicterus ). Nasilenie objawów jest bardzo różne, a ciężka postać zagraża życiu płodu lub noworodka. Pełny łańcuch zmian – .
 Profilaktyka. Matkom Rh−, u których nie wykryto przeciwciał anty-Rh, podaje się w okresie okołoporodowym (do 72 godzin po porodzie) immunoglobulinę IgG anty-D . Zwróć uwagę na oba warunki: chodzi o moment, w którym zwykle zaczyna się immunizacja (poród), i o matki, u których jeszcze się nie zaczęła (brak przeciwciał).
 
 ### Konflikt serologiczny w układzie AB0 – czym się różni?  []
-Konflikt w układzie AB0 dotyczy głównie dzieci z grupą A lub B, których matki mają grupę 0: ciężarna z grupą 0 oprócz naturalnych IgM anty-A i anty-B zaczyna pod wpływem antygenów płodu wytwarzać przeciwciała IgG – anty-A lub rzadziej anty-B. Konflikt matki z grupą A i dziecka z grupą B (lub odwrotnie) zdarza się wyjątkowo rzadko, bo matki z grupą A i B rzadko wytwarzają takie IgG. Niezagrożone są tylko kobiety z grupą AB (nie mają przeciwciał anty-A ani anty-B) lub te, których partnerzy mają grupę 0.
+Konflikt w układzie AB0 dotyczy głównie dzieci z grupą A lub B, których matki mają grupę 0: ciężarna z grupą 0 oprócz naturalnych IgM anty-A i anty-B zaczyna pod wpływem antygenów płodu wytwarzać przeciwciała IgG – anty-A lub rzadziej anty-B. Niezagrożone są tylko kobiety z grupą AB (nie mają przeciwciał anty-A ani anty-B) lub te, których partnerzy mają grupę 0.
 Ciekawa zależność: niezgodność AB0 między matką a dzieckiem (matka z grupą 0, płód z grupą A lub B) zmniejsza ryzyko konfliktu Rh w kolejnych ciążach. Matczyne anty-A i anty-B szybko niszczą krwinki płodu, które przeniknęły do jej krwi, co prawdopodobnie zapobiega odpowiedzi anty-D.
 [TABELA]
 Cecha | Konflikt w układzie Rh | Konflikt w układzie AB0
@@ -783,12 +722,486 @@ Kiedy | matka Rh−, płód Rh+ | głównie matka z grupą 0, płód z grupą A 
 Przeciwciała | odpornościowe IgG anty-D, powstają po immunizacji | IgG anty-A lub anty-B, wytwarzane obok naturalnych IgM
 Pierwsza ciąża | zwykle bez konfliktu | konflikt możliwy już w pierwszej ciąży
 Życie płodowe | hemoliza przed porodem i po nim, możliwy obrzęk płodu | brak objawów – przeciwciała tylko opłaszczają krwinki; uszkodzenie zaczyna się po urodzeniu
-Nasilenie | bardzo różne; ciężka postać zagraża życiu | objawy rzadkie: postać łagodna ok. 6 : 1000 noworodków, ciężka (transfuzja wymienna) 1 : 1000–5000 porodów; częściej i ciężej u osób rasy czarnej, Arabów i w krajach Ameryki Południowej niż u rasy kaukaskiej
+Nasilenie | bardzo różne; ciężka postać zagraża życiu | objawy kliniczne rzadkie, zwykle postać łagodna (liczby – część 2)
 Profilaktyka | immunoglobulina IgG anty-D do 72 h po porodzie | brak skutecznej profilaktyki
 [/TABELA]
 [RAMKA zapamietaj] W układzie AB0 antygeny A i B powstają z antygenu H dzięki transferazom kodowanym przez allele A i B (allel 0 – białko nieaktywne), a naturalne przeciwciała IgM są skierowane przeciw brakującym antygenom. Rh− to zwykle delecja genu RHD; odpornościowe anty-D (IgG) powstają po immunizacji, najczęściej przy pierwszym porodzie, więc chory bywa dopiero kolejny płód Rh+.
 [ŹRÓDŁO] Źródło: Drewa s. 295–306
 [RAMKA w60] Prawa Mendla – I prawo: do gamety trafia jeden allel z pary (F 2 : 3 : 1 i 1 : 2 : 1); II prawo: geny z różnych par chromosomów dziedziczą się niezależnie (F 2 : 9 : 3 : 3 : 1). Sprzężenie i crossing-over – geny jednego chromosomu dziedziczą się łącznie; crossing-over tworzy rekombinanty tym częściej, im dalej od siebie leżą geny. Współdziałanie genów – zmienia proporcje F 2 : epistaza (myszy 9 : 3 : 4), komplementacja (groszek 9 : 7), poligeny (1 : 4 : 6 : 4 : 1); penetracja i ekspresja, plejotropia. Rekombinacje – homologiczna (RecBCD, SSB, RecA, RuvA/RuvB, RuvC; struktura Hollidaya), niehomologiczna (Ku70/Ku80, ligaza IV), zlokalizowana (VDJ, plazmidy), transpozycyjna (transpozony). Typy dziedziczenia – AD: tor pionowy, ryzyko 50%; AR: tor poziomy, ryzyko 25%; mitochondrialne: tylko po matce, z heteroplazmią; wieloczynnikowe: geny + środowisko, rozkład normalny lub próg. Grupy krwi – AB0: kodominacja A i B, antygen H jako prekursor, naturalne IgM; Rh: delecja RHD, odpornościowe IgG anty-D, konflikt w kolejnej ciąży i profilaktyka anty-D.
+[RAMKA przejscie] Część 1 wystarcza, żeby zrozumieć każde zagadnienie z rozpiski i rozwiązać typowe zadanie. Część 2 jest dla osób celujących w piątkę: nie wprowadza nowych zagadnień, tylko dokłada do znanych mechanizmów nazwy białek i genów, loci, liczby, daty i wyjątki ze źródeł. Czytaj ją sekcjami – każda zaczyna się od wskazania podrozdziału części 1, który rozszerza. Mendel, Morgan, współdziałanie genów – daty i doświadczenia ( ), rekombinacja homologiczna z bliska ( ), NHEJ, rekombinacja zlokalizowana, transpozony ( ), dziedziczenie autosomalne – uzupełnienia ( ), mitochondria – liczby i choroby ( ), cechy ilościowe – wzory ( ), wady – szczegóły i rozbieżności źródła ( ), choroby przewlekłe – geny, loci, polimorfizmy ( ), układ AB0 – genetyka molekularna ( ), układ Rh i konflikt – geny, białka, liczby ( ).
+
+## Mendel, Morgan i współdziałanie genów – daty, nazwiska, doświadczenia  [c08-r-mendel]
+W części 1 prawa Mendla ( ), teoria chromosomowa ( ) i współdziałanie genów ( ) pojawiły się jako reguły, które da się przeliczyć. Tu dopowiadamy, kto i kiedy je ustalił oraz na jakim materiale – daty porządkują drogę od grochu do chromosomów.
+
+### Od wykładu w Brnie do Nagrody Nobla  []
+Kolejne daty pokazują, jak wiedza o dziedziczeniu przesuwała się od grochu do chromosomów:
+[TABELA]
+Rok | Co się stało
+1865 | G. Mendel przedstawia zasady dziedziczności na wykładzie w Towarzystwie Historii Naturalnej w Brnie.
+1886 | Publikacja wyników w piśmie „Transaktionen”: „Badania nad mieszańcami roślin” („Versuche über Pflanzenhybriden”).
+1900 | Holender H. de Vries, Niemiec C. Correns i Austriak E. von Tschermak równocześnie i niezależnie od siebie odkrywają prawidłowości Mendla ponownie.
+1903 | T. Boveri, H. de Vries, C.E. Correns, a przede wszystkim W.S. Sutton próbują wyjaśnić segregację cech rozchodzeniem się chromosomów.
+1909 | W.L. Johansen wprowadza termin „gen”; H. Nilsson-Ehle wykrywa poligeny.
+1933 | T. Morgan otrzymuje Nagrodę Nobla za odkrycie roli chromosomów w przekazywaniu cech dziedzicznych.
+[/TABELA]
+Dlaczego prace z 1903 r. nie wystarczyły? Badacze zauważyli zależność między genami a chromosomami, ale ich prace nie zapoczątkowały badań nad chromosomową teorią dziedziczenia. Dopiero T. Morgan i współpracownicy wykazali doświadczalnie , że geny leżą na chromosomach – i za to przyznano Nagrodę Nobla.
+
+### Siedem par cech grochu  []
+Po latach doświadczeń Mendel wyłonił 14 linii genetycznych grochu, które różniły się siedmioma parami cech . Każda para to dwie kontrastujące wersje jednej cechy – jak barwa kwiatów czy wysokość pędów w części 1.
+[TABELA]
+Cecha | Warianty
+Powierzchnia nasion | gładkie – pomarszczone
+Barwa nasion | żółte – zielone
+Barwa kwiatów | czerwone – białe
+Barwa niedojrzałych strąków | zielone – żółte
+Kształt dojrzałych strąków | owalny – zwarty
+Ułożenie kwiatów na pędzie | w kątach liści – na szczycie pędów
+Wysokość pędów | wysokie – niskie
+[/TABELA]
+Symbole pokoleń mają łacińskie źródło: P od parentes (rodzice), F od filius i filia (syn i córka). F 1 to więc dosłownie „pierwsze pokolenie dzieci”.
+
+### Heterogenia na przykładzie  []
+W części 1 heterogenię zdefiniowaliśmy jako dziedziczenie tej samej cechy na kilka sposobów. Przykładem jest hypertrichosis universalis : może się dziedziczyć dominująco lub recesywnie w sprzężeniu z chromosomem X; opisywano też dziedziczenie autosomalne dominujące w połączeniu z inwersją pericentryczną. Rodowód w źródle pokazuje postać recesywną sprzężoną z chromosomem X.
+
+### Heterochromosomy  []
+Chromosomy płci (u muszki – X i Y) nazywa się też heterochromosomami . Garnitur muszki owocowej (2n = 8) to więc 6 autosomów i 2 heterochromosomy ( ).
+
+### Jak Nilsson-Ehle wykrył poligeny?  []
+W 1909 r. H. Nilsson-Ehle krzyżował odmiany pszenicy o ziarnach czerwonych i białych. Wynik był zaskakujący – prześledźmy go krok po kroku:
+- F 1 – zamiast dominacji jednej barwy pojawiły się formy pośrednie .
+- F 2 – ziarna czerwone o różnej intensywności barwy, a nie dwie klasy 3 : 1.
+- Żeby wytłumaczyć ten wynik, wysiał wszystkie 78 nasion F 2 , każde na osobnym poletku – tak, by potomstwo każdego nasiona dało się obejrzeć oddzielnie.
+- F 3 – rośliny białe i o różnym stopniu nasilenia barwy czerwonej.
+Wniosek: o barwie ziaren pszenicy decydują trzy pary alleli z różnych loci , a efekty ich działania się sumują. To ten sam mechanizm, który w części 1 przeliczyliśmy dla barwy skóry ( ).
+
+### Kto badał groszek pachnący?  []
+Doświadczenie z komplementacją u groszku pachnącego ( ) wykonali W. Bateson i R.C. Punnett: dwie białe odmiany dały czerwone F 1 , a w F 2 kwiaty czerwone i białe w stosunku 9 : 7.
+[ŹRÓDŁO] Źródło: Drewa s. 10–11, 13, 16–17, 23
+
+## Rekombinacja homologiczna z bliska  [c08-r-hr]
+W części 1 ( ) każdemu białku rekombinacji przypisaliśmy jedną czynność. Tu dokładamy szczegóły: przy każdym – jaki problem rozwiązuje. Zaczniemy jednak od jednego uzupełnienia do podziału zmienności.
+
+### SNP a mutacje punktowe – czym się różnią?  []
+SNP z części 1 to różnice pojedynczych nukleotydów między niespokrewnionymi osobami, leżące głównie w regionach niekodujących. Źródło wyraźnie oddziela od nich mutacje punktowe w regionach kodujących . Takie mutacje, jeśli nie zostaną naprawione, mogą prowadzić do zmian fenotypowych, np. do wystąpienia objawów chorobowych.
+
+### Gdzie i po co zachodzi rekombinacja homologiczna?  []
+Crossing-over zachodzi w pachytenie i/lub diplotenie mejozy. Zwykle wymieniają się odcinki o znacznej homologii, ale w wielu przypadkach crossing-over może nastąpić między niehomologicznymi cząsteczkami DNA – mówi się wtedy o rekombinacji „nieuprawnionej” .
+Biologiczne znaczenie rekombinacji homologicznej u eukariotów sprowadza się do czterech zadań: (a) usuwania dwuniciowych pęknięć DNA, (b) utrzymania stabilności widełek replikacyjnych, (c) mejotycznej segregacji chromosomów i (d) zachowania telomerów. W części 1 omówiliśmy dwa pierwsze.
+
+### Szczegóły kroków u E. coli – jaki problem rozwiązuje każdy z nich?  []
+Wróć do sześciu kroków z części 1 i do . Białka kodowane przez geny rec rozwiązują po kolei następujące problemy:
+- Rozplecione nici chcą się z powrotem sparować. RecBCD rozplata dwuniciowy DNA (dsDNA) dzięki hydrolizie ATP szybciej, niż zasady zdążą się ponownie połączyć.
+- Gdzie naciąć? Nacięcie następuje w pobliżu miejsca χ (chi) o sekwencji 5′-GCTGGTGG-3′ .
+- Wolna nić paruje sama ze sobą. SSB chroni ssDNA przed tworzeniem struktur typu „spinki do włosów” do czasu związania RecA.
+- Jak znaleźć pasujące miejsce? RecA tworzy z ssDNA filament – spiralnie zwinięty jednoniciowy DNA. Kompleks ssDNA–RecA może parować się z dsDNA i dzięki temu przeszukiwać go w poszukiwaniu miejsc homologicznych.
+- Skąd energia i co z napięciem? Wypieranie starej nici przy tworzeniu pętli D zużywa energię z hydrolizy ATP. Owijanie się jednej nici wokół drugiej wytwarza napięcia torsyjne – znosi je topoizomeraza I . Przemieszczanie nici przez RuvA i RuvB też wykorzystuje energię z ATP.
+U prokariotów cały ten proces odgrywa dużą rolę w naprawie DNA.
+
+### Model rekombinacji u E. coli krok po kroku  []
+Źródło przedstawia model na dwóch homologicznych dupleksach, w których zaznaczono allele trzech dowolnych genów: K, L, M na jednym i k, l, m na drugim. Obserwuj, co dzieje się ze skrajnymi allelami:
+- dwa homologiczne dupleksy DNA przed rekombinacją: K–L–M i k–l–m;
+- nacięcie jednej nici w każdym dupleksie – przecięte nici migrują do drugiej cząsteczki;
+- nici migrujące łączą się z nićmi homologicznymi – powstaje skrzyżowanie;
+- przemieszczenie „ramion” cząsteczek;
+- obrót o 180° wokół miejsca skrzyżowania;
+- nacięcie wzdłuż jednej z dwóch osi: wzdłuż osi x powstają cząsteczki K…m i k…M – skrajne allele zamieniły się partnerami; wzdłuż osi y – cząsteczki K…M i k…m, a nowy układ dotyczy tylko odcinka środkowego.
+To ten sam wybór, który w modelu Szostaka nazwaliśmy rozdzieleniem z crossing-over albo bez niego ( ).
+
+### Skąd nazwy modeli?  []
+Badania prowadzone w latach 60. i 70. XX w. przez R. Hollidaya, M. Meselsona i współpracowników doprowadziły do modelu Hollidaya i modelu Meselsona–Raddinga ; w obu zasadniczym elementem jest heterodupleks. W 1983 r. Szostak i współpracownicy zaproponowali model z pęknięciem obu nici. Źródło dzieli modele na dwie grupy: rekombinację wywołaną pęknięciem jednej nici ( ssbDNA , ang. single-strand break ) i zainicjowaną pęknięciem obu nici ( dsbDNA , ang. double-strand break ). Drugi model, wyjaśniający niektóre zjawiska rekombinacji homologicznej, to SDSA .
+
+### Kto wykonuje te same zadania u eukariotów?  []
+Białka ssaków są w dużym stopniu homologiczne do drożdżowych, dlatego niektórzy autorzy dla przejrzystości zapisują ich nazwy różnie: Rad50 – białko drożdży, RAD50 albo MRE11 – białko człowieka. W rekombinacji homologicznej u eukariotów biorą udział:
+- grupa białek RAD52 : RAD50, RAD51, RAD52, RAD54, RAD57, RAD59, RDH54 i XRS2 – należy do rodziny białek SMC;
+- nukleazy : Mre11, Exo1, Sae2, Rad1–Rad10;
+- helikazy : Sgs1, Srs2;
+- topoizomeraza III , polimeraza Pol32 i ligazy ;
+- mediatory rekombinacji: BRCA1 i BRCA2 .
+Jak te białka współpracują w komórkach ssaków, pokazuje schemat naprawy pęknięcia dwuniciowego w źródle. Kolejność kroków: wycięcie 5′→3′ końców pęknięcia z udziałem kompleksu Mre11/Rad50/Nbs1 → przyłączenie RAD52 do wolnych końców → reakcje z udziałem Rad51 → inwazja nici (Rad51, BRCA1, BRCA2) → cięcie w kierunku 3′ (MUS81 z MMS4) → przemieszczanie się rozgałęzienia → ligacja i rozłączenie struktury Hollidaya. Schemat pokazuje też drugą drogę, odchodzącą od etapu RAD52: łączenie się pojedynczych nici.
+Porównanie z E. coli porządkuje te nazwy. Tabela zestawia białka według rodzaju i czynności opisanej w źródle:
+[TABELA]
+Czynność (rodzaj białka) | E. coli | Eukarionty (drożdże, ssaki)
+wytworzenie wolnej nici (helikaza, nukleaza) | RecBCD | nukleazy Mre11, Exo1, Sae2, Rad1–Rad10; helikazy Sgs1, Srs2; u ssaków wycięcie 5′→3′ – Mre11/Rad50/Nbs1
+wiązanie wolnej nici lub końców | SSB | RAD52
+inwazja nici | RecA | Rad51 (u ssaków z BRCA1 i BRCA2)
+przesuwanie skrzyżowania | RuvA, RuvB | przemieszczanie się rozgałęzienia (białek schemat nie podaje)
+znoszenie napięć (topoizomeraza) | topoizomeraza I | topoizomeraza III
+synteza DNA (polimeraza) | (źródło nie wymienia) | polimerazy, np. Pol32
+cięcie struktury Hollidaya | RuvC | MUS81 z MMS4
+łączenie końców | ligaza DNA | ligazy
+[/TABELA]
+[ŹRÓDŁO] Źródło: Drewa s. 374–380
+
+## NHEJ, rekombinacja zlokalizowana i transpozony – szczegóły  [c08-r-nhej]
+W części 1 ( ) NHEJ miała trzy kroki, rekombinacja zlokalizowana – dwa przykłady, a transpozony – trzy typy. Tu uzupełniamy, co dokładnie robią poszczególne białka i na jakich regułach opiera się każda z tych wymian.
+
+### NHEJ: kto skleja końce?  []
+Pęknięcie dwuniciowe DNA oznacza się skrótem DSB (ang. double-strand break ). Białka NHEJ u ssaków działają w następującej kolejności:
+- Ku70/Ku80 otacza końce pęknięcia. Ten heterodimer wchodzi w skład zależnej od DNA serynowo-treoninowej kinazy białek – DNA-PK (ang. DNA-dependent protein kinase ). Jej trzeci składnik, przyłączający się później, to podjednostka katalityczna DNA-PKcs (ang. DNA-protein kinase catalytic subunit ).
+- Kompleks trzech białek obrabia wolne końce: RAD50 (nazywane rekombinazą, o aktywności ATPazy), MRE11 (egzonukleaza działająca w kierunku 3′→5′) i NBS1 (białko łączące DNA). Kompleks ten prawdopodobnie ułatwia wiązanie obu końców nici.
+- Po zestawieniu obu końców DNA-PKcs ulega autofosforylacji – i to właśnie udostępnia końce do połączenia.
+- Końce łączy kompleks ligazy IV , który jako kofaktory zawiera XRCC4 i XLF ; wiąże się on z DNA po obu stronach pęknięcia.
+
+### Dlaczego zawsze powstaje układ VDJ?  []
+Geny V, D i J łańcuchów immunoglobulin mają sekwencje oskrzydlające – specyficzny układ zasad złożony z trzech elementów: niezmiennego heptameru palindromowego , sekwencji rozdzielającej i nonameru bogatego w pary A–T. Podstawowa reguła rekombinacji brzmi: łączyć się mogą tylko te typy genów, które różnią się sekwencją rozdzielającą .
+Wyprowadźmy z niej wynik. Dwa geny tego samego typu – np. dwa geny V – mają taką samą sekwencję rozdzielającą, więc nie mogą się ze sobą połączyć. Każdy typ wchodzi więc do złożonego genu tylko raz, a połączenia zachodzą wyłącznie między różnymi typami. Stąd w łańcuchu ciężkim zawsze powstaje układ VDJ, a nie np. VVJ.
+
+### Plazmidy – co jest potrzebne do wbudowania?  []
+Plazmidy są replikonami : mogą się replikować niezależnie od replikacji DNA gospodarza. Do DNA bakterii wbudowują się na drodze rekombinacji zlokalizowanej, ale tylko w określonych miejscach genomu – zawierających sekwencje umożliwiające połączenie DNA plazmidowego z bakteryjnym. Potrzebne są do tego białka kodowane zarówno przez plazmid, jak i przez DNA bakterii.
+
+### Transpozony – budowa i klasy  []
+Podział transpozonów na trzy kategorie według mechanizmu przeniesienia źródło podaje za T.A. Brownem (2009). Kilka szczegółów:
+- Retroelementy dzielą się na mające długie powtórzenia końcowe ( LTR , ang. long terminal repeats ) i niemające ich.
+- Sekwencje IS zajmują zwykle jeden lub dwa geny transpozazy. Na każdym końcu elementu IS leży para odwróconych powtórzeń długości 9–41 pz , zależnie od rodzaju IS.
+- Transpozon złożony to para elementów IS otaczających odcinek DNA, zwykle z jednym lub kilkoma genami – często oporności na antybiotyk, np. tetracyklinę.
+- W genomie człowieka transpozycji podlegają cztery klasy elementów ruchomych: krótkie rozproszone elementy ( SINE , ang. short interspersed elements ), długie rozproszone elementy ( LINE , ang. long interspersed elements ), retroelementy LTR i transpozony DNA .
+[ŹRÓDŁO] Źródło: Drewa s. 380–382
+
+## Dziedziczenie autosomalne – uzupełnienia  [c08-r-autosomalne]
+Część 1 ( ) uczyła rozpoznawać typ dziedziczenia z rodowodu. Tu trzy uzupełnienia: jakich genów dotyczą choroby recesywne, jak wykrywa się ich nosicieli i które prawidłowe cechy człowieka dziedziczą się według tych samych reguł.
+
+### Dlaczego choroby recesywne to zwykle choroby enzymów?  []
+Choroby dziedziczone autosomalnie recesywnie są najczęściej wynikiem mutacji genów strukturalnych kontrolujących syntezę białek enzymatycznych . Brak enzymu prowadzi do zaburzeń metabolicznych ustroju, a przez nie – do zaburzeń procesów życiowych. Zależność działa też w drugą stronę: zaburzenia metaboliczne dziedziczą się najczęściej autosomalnie recesywnie. Pasuje to do obrazu z części 1 – nosiciel (Aa) nie choruje, bo jeden prawidłowy allel wystarcza.
+
+### Jak wykryć nosiciela, który nie choruje?  []
+W rodowodzie nosiciel wygląda jak osoba zdrowa. W niektórych chorobach recesywnych heterozygoty można jednak wykryć pośrednio – np. metodą obciążania fenyloalaniną w fenyloketonurii.
+
+### Cechy prawidłowe dominujące i recesywne  []
+Te same reguły dotyczą cech prawidłowych. Źródło zestawia je w tabeli; czytaj ją tak jak przykład z tęczówkami w części 1: rodzice z cechą dominującą mogą mieć dziecko z cechą recesywną, jeśli oboje są heterozygotami.
+[TABELA]
+Cecha | Dominująca | Recesywna
+Barwa skóry | ciemna | jasna
+Barwa włosów | brunatne | rude, blond
+Kształt włosów | falujące | proste
+Barwa tęczówki | brązowa | niebieska
+Piegi | brak | obecne
+Rzęsy | długie | krótkie
+Płatek uszny | wolny | przyrośnięty
+Kształt nosa (profil) | wypukły | prosty
+Policzki | z dołkami | bez dołków
+Zwijanie języka w kształt litery U | zdolność | brak zdolności
+Smak fenylotiomocznika | wrażliwi | niewrażliwi
+[/TABELA]
+Zwróć uwagę na barwę skóry: tabela podaje ją jako jedną parę cech, a w modelu z części 1 ( ) zależy ona od kilku par genów, których efekty się sumują – wielkie litery oznaczają tam allele „ciemne”, małe – „jasne”.
+[ŹRÓDŁO] Źródło: Drewa s. 198, 212
+
+## Mitochondria – liczby i choroby  [c08-r-mito]
+Ta sekcja rozszerza podrozdział o dziedziczeniu mitochondrialnym ( ) i – tak jak on – opiera się na wydaniu Jordego z ok. 2000 r. (zob. ramkę na początku rozdziału); liczby z tego wydania mogą być nieaktualne. Tu: z czego składa się mtDNA, skąd biorą się losowe zmiany heteroplazmii i jak przebiegają choroby z części 1.
+
+### Co dokładnie koduje mtDNA?  []
+mtDNA to dwuniciowa, kolista cząsteczka złożona z 16 569 par zasad . Koduje 2 rybosomalne RNA , 22 transportujące RNA i 13 polipeptydów zaangażowanych w fosforylację oksydacyjną. Kolejne polipeptydy tego procesu koduje ok. 90 genów jądrowych – ich produkty są transportowane do mitochondriów. Transkrypcja mtDNA zachodzi w mitochondrium, niezależnie od jądra, a inaczej niż jądrowe DNA – mtDNA nie zawiera intronów .
+Mapa mtDNA w źródle pokazuje kolisty genom, a na nim:
+- geny białek kompleksów fosforylacji oksydacyjnej: kompleksu I (dehydrogenaza NADH), kompleksu III (oksydoreduktaza ubikwinol–cytochrom c), kompleksu IV (oksydaza cytochromu c) i kompleksu V (syntetaza ATP);
+- 2 geny rybosomalnego RNA i 22 geny transportującego RNA (na mapie oznaczone pojedynczymi literami);
+- miejsca początku replikacji łańcucha ciężkiego (O H ) i lekkiego (O L );
+- niekodującą pętlę D , nazywaną też rejonem kontrolnym.
+
+### Losowe zmiany heteroplazmii – porównanie z dryfem  []
+W części 1 odsetek zmutowanych cząsteczek zmieniał się przez segregację replikacyjną – losowo albo przez selekcję. Jorde nazywa losową zmienność koncepcją identyczną z dryfem genetycznym : w obu przypadkach o tym, które warianty przejdą dalej, decyduje przypadek. Przykładem selekcji są delecje – krótsza cząsteczka mtDNA może się replikować szybciej niż cząsteczka pełnej długości.
+
+### Choroby według typu mutacji – z przebiegiem  []
+Dwa pojęcia z opisów objawów: ataksja to bezładny ruch mięśni, a miopatia – pierwotna choroba tkanki mięśniowej. Ostatnia kolumna tabeli łączy chorobę z heteroplazmią: im rzadsza heteroplazmia, tym bardziej jednolity obraz choroby w rodzinie.
+[TABELA]
+Typ mutacji | Choroba | Objawy | Heteroplazmia i ekspresja
+zmiany sensu w genach kodujących białka | LHON – dziedziczna neuropatia nerwów wzrokowych Lebera | gwałtowna utrata wzroku w centralnym polu widzenia (obumarcie nerwu wzrokowego); zwykle od 3. dekady życia, nieodwracalna | heteroplazmia rzadka – ekspresja stosunkowo jednolita, w rodzinach przejrzysty schemat dziedziczenia mitochondrialnego
+pojedyncza zasada w genie tRNA | MERRF – padaczka miokloniczna i choroba włókien poprzecznie prążkowanych | napady padaczki, demencja, ataksja, miopatia | choroba heteroplazmatyczna – wysoce zmienna ekspresja
+pojedyncza zasada w genie tRNA | MELAS – encefalopatia mitochondrialna, kwasica mleczanowa i epizody udaropodobne | jak w nazwie | heteroplazmatyczna – wysoce zmienna ekspresja
+duplikacje i delecje | zespół Kearnsa-Sayre’a | słabość mięśni, uszkodzenie móżdżku, niewydolność serca | –
+duplikacje i delecje | zespół Pearsona | niewydolność trzustki noworodków, niedokrwistość aplastyczna, kwasica mleczanowa | –
+duplikacje i delecje | CPEO – przewlekłe postępujące porażenie zewnętrznych mięśni oka | jak w nazwie | –
+[/TABELA]
+
+### mtDNA w chorobach częstych (wg wyd. ok. 2000)  []
+Mutacje mitochondrialne są zaangażowane także w niektóre powszechne choroby człowieka. Te dane pochodzą z wydania z ok. 2000 r. – traktuj je jako stan wiedzy z tamtego czasu:
+- delecja mitochondrialna powoduje pewien rodzaj utraty słuchu ;
+- mutację MELAS obserwuje się u 1–2% osób z cukrzycą insulinoniezależną (typu 2);
+- mutację mtDNA spotyka się u 5% chorych na chorobę Alzheimera, ale nie wiadomo, czy odgrywa ona w tej chorobie kluczową rolę;
+- sugerowano, że mutacje mtDNA, gromadzące się przez całe życie w wyniku tworzenia się wolnych rodników, mogą przyczyniać się do starzenia .
+Drewa uzupełnia ten obraz jednym przykładem: przez mutacje mtDNA może się dziedziczyć także kardiomiopatia przerostowa ( ).
+[ŹRÓDŁO] Źródło: Jorde (wyd. ok. 2000) s. 119–124 · Drewa s. 288
+
+## Cechy ilościowe – wzory, tabela częstości, odziedziczalność  [c08-r-wzory]
+W części 1 ( ) przeliczyliśmy barwę skóry dla dwóch par genów i cechę o trzech parach w jednostkach umownych. Tu te same rachunki ujmujemy w ogólne wzory – przydają się, gdy w zadaniu pojawi się inna liczba par alleli.
+
+### Skąd się biorą proporcje 1 : 4 : 6 : 4 : 1? Dwumian Newtona  []
+Częstości fenotypów o tej samej liczbie alleli dominujących są współczynnikami kolejnych wyrazów rozwiniętego dwumianu Newtona (a + b) n , gdzie a i b to częstości genów w populacji, a n – liczba genów. Współczynniki te najłatwiej odczytać z trójkąta Pascala : każda liczba jest sumą dwóch liczb stojących nad nią.
+[TABELA]
+Liczba genów (n) | Współczynniki (a + b) n
+1 | 1 1
+2 | 1 2 1
+3 | 1 3 3 1
+4 (2 pary) | 1 4 6 4 1 – barwa skóry
+5 | 1 5 10 10 5 1
+6 (3 pary) | 1 6 15 20 15 6 1 – model trzech par
+[/TABELA]
+Zauważ, że n oznacza tu liczbę pojedynczych genów , nie par: dwie pary alleli to cztery geny, więc barwie skóry odpowiada wiersz n = 4.
+
+### Trzy wzory na jedną cechę  []
+Każdy z trzech wzorów odpowiada na inne pytanie o tę samą krzyżówkę heterozygot.
+- Ile jest genotypów? 3 n , gdzie n to liczba par alleli: każda para daje trzy genotypy (np. AA, Aa, aa), a pary łączą się niezależnie. Źródło podaje: 2 pary – 9, 3 pary – 27, 5 par – 243, 15 par – 14 348 907 genotypów.
+- Ile jest fenotypów? Mniej niż genotypów, bo liczy się tylko suma alleli dominujących. Liczba fenotypów równa się liczbie pojedynczych genów + 1, np. przy pięciu parach genów nieallelicznych (10 genach) – 11 fenotypów. Ten sam wynik daje zapis przez pary: 2n + 1 , gdzie n to liczba par.
+- Jak częsty jest fenotyp skrajny? (1/2) n , gdzie n to liczba pojedynczych genów: przy 2 parach (4 genach) 1/16 osób ma cztery geny dominujące i 1/16 – cztery recesywne; przy 3 parach (6 genach) – po 1/64.
+Zestawienie dla kilku par alleli (gwiazdka – wartość wyliczona ze wzoru, źródło jej nie podaje):
+[TABELA]
+Pary alleli | Genotypy (3 n ) | Fenotypy (2n + 1) | Każdy fenotyp skrajny
+1 (Aa) | 3* | 3 | 1/4*
+2 (AaBb) | 9 | 5 | 1/16
+3 (AaBbCc) | 27 | 7 | 1/64
+4 (AaBbCcDd) | 81* | 9 | 1/256*
+5 | 243 | 11 | 1/1024*
+[/TABELA]
+[RAMKA przyklad] Przeliczmy trzy pary: AaBbCc × AaBbCc. Genotypów jest 3 3 = 27. Genów jest sześć, więc fenotypów 6 + 1 = 7 – to siedem klas od 18 do 30 jednostek z części 1. Fenotyp skrajny aabbcc wymaga, żeby każdy z sześciu genów był recesywny: (1/2) 6 = 1/64; tyle samo AABBCC. Sprawdzenie. Wiersz n = 6 trójkąta Pascala to 1, 6, 15, 20, 15, 6, 1 – dokładnie proporcje z tabeli w części 1. Suma wynosi 64, więc skrajne klasy to po 1 z 64, zgodnie ze wzorem.
+Wzory działają przy każdej liczbie par, ale w populacji coraz trudniej je sprawdzić. Przy więcej niż trzech parach alleli trudno wyodrębnić fenotypy skrajne i na ich podstawie określić liczbę poligenów, a krzywa rozkładu przyjmuje kształt krzywej Queteleta.
+
+### Dwa szczegóły z modelu barwy skóry  []
+Odsetek światła odbitego od skóry osób AaBb (w źródle: „Mulatów”) jest różny przy różnych długościach fali, bo zależy od liczby i rozmieszczenia melanocytów.
+W wyliczeniu źródła (s. 272) w klasie z dwoma allelami dominującymi wydrukowano „Aabb”. Z rachunku wynika AAbb – genotyp Aabb ma jeden allel dominujący i należy do klasy 4/16; w części 1 podajemy wersję poprawną.
+
+### Transgresja na schemacie z czterema genami  []
+Źródło pokazuje też teoretyczny schemat powstawania transgresji z czterema genami (A, B, C, D). Każdy z rodziców ma dwa allele dominujące, ale w różnych genach:
+- pierwszy rodzic ma na jednym chromosomie A, b, C, d, a na drugim a, b, c, d;
+- drugi rodzic – a, b, c, d oraz a, B, c, D.
+Dziecko, które dostanie od pierwszego rodzica chromosom A–b–C–d, a od drugiego a–B–c–D, ma cztery allele dominujące – więcej niż którekolwiek z rodziców (transgresja dodatnia). Dziecko z dwoma chromosomami a–b–c–d nie ma żadnego (transgresja ujemna). Pozostałe połączenia dają po dwa allele – jak u rodziców.
+
+### Odziedziczalność i badania rodzin  []
+Wśród cech dziedziczenia wieloczynnikowego ilościowego część 1 wymieniła znaczny modyfikujący wpływ czynników środowiskowych na ekspresję cechy; źródło opatruje go terminem odziedziczalność . Badania korelacji rodzinnej, zgodności występowania cech u bliźniąt oraz u dzieci adoptowanych wykazały, że wiele ciężkich wad wrodzonych i częstych chorób wieku dojrzałego dziedziczy się wieloczynnikowo. Celem tych badań jest ilościowa ocena wariancji genetycznej i środowiskowej w powstawaniu cechy.
+
+### Częstości wad i chorób – pełna tabela  []
+W części 1 podaliśmy z tej tabeli trzy przykłady. Pełna wersja (tab. 12.1 źródła):
+[TABELA]
+Wada lub choroba | Częstość w populacji (%)
+Wady wrodzone
+Rozszczep wargi i/lub podniebienia | 0,1
+Zwężenie odźwiernika | 0,3
+Wrodzone wady serca | 0,8
+Stopa końsko-szpotawa | 0,1
+Wady cewy nerwowej | 0,1
+Wrodzone zwichnięcie stawu biodrowego | 0,1
+Choroby przewlekłe
+Schizofrenia | 1
+Cukrzyca typu 1 | 0,2–0,4
+Cukrzyca typu 2 (w opisie choroby: ok. 7% u rasy kaukaskiej) | ok. 4
+Padaczka | 1
+Atopia | ok. 3
+Reumatoidalne zapalenie stawów | 1
+Psychoza afektywna dwubiegunowa (tabela krewnych podaje 1) | 5–10
+[/TABELA]
+[ŹRÓDŁO] Źródło: Drewa s. 270–275
+
+## Wady wieloczynnikowe – szczegóły i rozbieżności źródła  [c08-r-wady]
+W części 1 ( ) przy każdej wadzie podaliśmy istotę, częstość z opisu wady, różnicę między płciami i ryzyko powtórzenia. Tu dochodzą trzy rzeczy: liczby, które w różnych miejscach źródła się nie zgadzają, kalendarz powstawania wad i przyczyny wad palców.
+
+### Ta sama wada, różne częstości – jak to czytać?  []
+Źródło podaje częstości wad w trzech miejscach: w tabeli przykładów (tab. 12.1), w tabeli krewnych w kolumnie „populacja” (tab. 12.7) i w opisie samej wady. Dla kilku wad liczby się różnią. Najłatwiej je porównać po przeliczeniu na procenty (1 : 100 = 1%, 5 : 1000 = 0,5%, 1 : 1000 = 0,1%):
+[TABELA]
+Wada | Tab. 12.1 | Tab. 12.7 (populacja) | Opis wady
+Rozszczep wargi i/lub podniebienia | 0,1% | 0,1% (rozszczep wargi) | 1 : 100 urodzeń = 1% (s. 282) – 10 razy więcej
+Stopa końsko-szpotawa | 0,1% | 0,1% | 5 : 1000 żywych urodzeń = 0,5% (s. 283) – 5 razy więcej
+Wrodzone zwichnięcie stawu biodrowego | 0,1% | 0,2% | 1 : 1000 = 0,1% (s. 282)
+Zwężenie odźwiernika | 0,3% | 0,3% | chłopcy ok. 5 : 1000, dziewczęta ok. 1 : 1000 (s. 282)
+Psychoza afektywna dwubiegunowa | 5–10% | 1% | –
+[/TABELA]
+Źródło tych różnic nie wyjaśnia. W części 1 przy opisie każdej wady podajemy liczbę z opisu wady, a w zestawieniu częstości – z tabel; zawsze warto wiedzieć, skąd pochodzi liczba.
+
+### Kiedy powstają wady? Kalendarz rozwoju  []
+Model progowy mówi, czy wada się ujawni, ale nie – kiedy powstaje. Źródło podaje terminy dla dwóch wad:
+[TABELA]
+Czas od zapłodnienia | Co się dzieje
+20. dzień | pojawia się bruzda nerwowa – od tej chwili mogą powstawać wady cewy nerwowej
+24. dzień | całkowite zamknięcie przedniego otworu cewy nerwowej
+28. dzień | całkowite zamknięcie tylnego otworu cewy nerwowej
+ok. 35. dzień albo 8.–9. tydzień życia płodowego | powstaje rozszczep wargi i/lub podniebienia – w wyniku zaburzeń połączenia się blaszek podniebiennych
+[/TABELA]
+Przy rozszczepie kręgosłupa przepuklina oponowo-rdzeniowa jest pokryta skórą (zamknięta) w ok. 15–20% przypadków, a w pozostałych 80–85% – otwarta.
+
+### Rozszczep wargi nie zawsze jest wieloczynnikowy  []
+Oprócz dziedziczenia wieloczynnikowego rozszczep wargi i/lub podniebienia może być dziedziczony monogenowo, wynikać z aberracji chromosomowych (heterogenia) albo występować jako objaw dysmorficzny. Dlatego ryzyko powtórzenia z części 1 (1 : 50 i 1 : 20) dotyczy postaci wieloczynnikowej.
+
+### Wady palców – częstości i przyczyny  []
+Trzy wady palców z części 1 łączy to, że ten sam obraz może mieć bardzo różne przyczyny:
+- Polidaktylia – jedna z najczęstszych wad kończyn górnych i dolnych, niekiedy łącznie z syndaktylią. U osób rasy kaukaskiej 1 : 2000 urodzonych ma jeden lub więcej dodatkowych palców; u Afrykanów wada występuje 10 razy częściej niż u Europejczyków. Jej etiologia nie jest znana. Dodatkowe palce mogą być składową zespołów chorobowych uwarunkowanych jednogenowo i wieloczynnikowo, chromosomopatii (np. trisomii 13), zaburzeń autosomalnych dominujących lub o nieznanej etiologii.
+- Syndaktylia – zrost kości występuje z częstością 1 : 1000 urodzeń. Etiologia jest różnorodna; jeśli rodzice mają prawidłowo wykształcone palce, ryzyko powtórzenia izolowanej syndaktylii w rodzinie jest małe.
+- Ektrodaktylia – ok. 1 : 100 000 urodzeń. Etiologia różnorodna: najczęściej dziedziczona autosomalnie dominująco ze zmienną ekspresją, ale może być też wywołana czynnikami teratogennymi i towarzyszyć innym zespołom uwarunkowanym genetycznie.
+[ŹRÓDŁO] Źródło: Drewa s. 270, 281–284
+
+## Choroby przewlekłe – geny, loci, polimorfizmy  [c08-r-choroby]
+W części 1 ( ) przy każdej chorobie odpowiadaliśmy na pytanie, co robią geny, a co środowisko – podając nazwy genów bez położenia. Tu dokładamy położenie genów (loci), budowę genów i polimorfizmy wraz z tym, co zmieniają. Zacznijmy od zestawienia, które źródło podaje w jednej tabeli (tab. 12.8).
+[TABELA]
+Choroba | Czynniki genetyczne (gen, locus) | Czynniki środowiskowe
+Cukrzyca typu 1 | HLA-DR (6p21.3): HLA-DR3, HLA-DR4; DQA1*0301, DQA1*0501, DQB1*0201, DQB1*0302; locus IDDM2 (11p15.5); locus IDDM12 (2q33); PTPN22 (1p13.2) | stres; leki przeciwdepresyjne, steroidy; niska masa urodzeniowa; infekcje wirusowe, np. Coxsackie
+Cukrzyca typu 2 | CAPN10 (2q37.3), SLC30A8 (8q24.11), KCNJ11 (11p15.1), PPARγ (3p25), TCF7L2 (10q25), HHEX (10q22.3), CDKAL1 (6p22.3) | niewłaściwe nawyki żywieniowe (otyłość trzewna), brak aktywności ruchowej, palenie tytoniu, alkoholizm
+Cukrzyca MODY | MODY1 HNF4A (20q), MODY2 GCK (7p), MODY3 HNF1A (12q), MODY4 IPF1 (13q), MODY5 TCF2 (17q), MODY6 NEUROD1 (2q) | –
+Choroby serca (miażdżyca tętnic wieńcowych, choroba niedokrwienna, zawał) | geny metabolizmu lipidów (apolipoproteiny, enzymów lipolitycznych); geny syntezy fibrynogenu, inhibitora aktywatora plazminogenu, konwertazy angiotensyny (ACE) | niewłaściwa dieta, brak aktywności ruchowej, palenie tytoniu, nadużywanie alkoholu, stres
+Choroba Alzheimera | prekursor β-amyloidu (21q21.3), presenilina 1 (14q24.3), presenilina 2 (1q31–q42), apolipoproteina E (19q13.2) | brak aktywności fizycznej i umysłowej, urazy czaszki
+[/TABELA]
+
+### Choroba Alzheimera – daty, loci, liczby  []
+Chorobę opisał niemiecki psychiatra A. Alzheimer w 1907 r. Gen prekursora β-amyloidu ( βAPP , ang. β-amyloid precursor protein ) zidentyfikowano i sklonowano w 1987 r.; leży na chromosomie 21 (21q21.3, tzw. locus AD1 ).
+Teraz liczby do opisu β-amyloidu z części 1. Prekursor β-APP to białko błonowe złożone z 695 aminokwasów . β-amyloid ma 39–44 aminokwasy : 12 z nich leży śródbłonowo, a 28 – zewnątrzbłonowo. Schemat źródła pokazuje, że u chorych obróbka prekursora jest dwustopniowa (na schemacie: proteaza I i proteaza II): najpierw enzymy proteolityczne wycinają fragment zewnątrzkomórkowy razem z β-amyloidem, a kolejna hydroliza uwalnia β-amyloid, który się odkłada.
+U osób z zespołem Downa (trisomia 21) typowe dla choroby Alzheimera uszkodzenia mózgu pojawiają się zawsze wcześniej: chorobę stwierdza się u 88% z nich przed 30 r.ż. i u 100% po 50 r.ż.
+Pozostałe loci postaci wczesnej: presenilina 1 – locus AD3 , presenilina 2 – 1q31–q42, locus AD4 . Położenie genu preseniliny 1 źródło podaje dwojako: w tabeli 14q24.3, w tekście (s. 286) – 17q24.3; w tabeli wyżej podajemy wersję z tabeli źródła.
+Gen APOE ( locus AD2 ) leży na ramieniu długim chromosomu 19 (19q13.2). Jego trzy allele (ε2, ε3, ε4) to allele wielokrotne; tworzą sześć genotypów, które różnią się częstością występowania. ApoE jest obecna w osoczu, gdzie pełni ważną rolę w transporcie cholesterolu i w patogenezie miażdżycy. Wytwarzają ją też astrocyty w mózgu, gdzie jej rola fizjologiczna nie jest dokładnie poznana.
+Zmiany w mózgu: odkładają się blaszki amyloidowe i płytki starcze, a neurony wykazują cechy zwyrodnienia nerwowo-włókienkowego. Objawy to postępujące otępienie, zaburzenia pamięci i orientacji, zaburzenia zachowania, depresja i konfabulacje – wypełnianie luk pamięciowych różnymi treściami. Z rolą ruchu wiąże się doświadczenie na myszach transgenicznych z genami predysponującymi do choroby: poddawane treningowi fizycznemu żyły dłużej niż niećwiczące.
+
+### Fawizm – budowa genu i diagnostyka  []
+Gen G6PD leży w regionie Xq28 , ma długość 18 kb i składa się z 13 eksonów. Najcięższą postać niedoboru powodują mutacje zmieniające skład aminokwasów przy końcu karboksylowym białka; wyróżnia się pięć klas aktywności G6PD.
+Ogniwo z części 1 – rola glutationu – w pełniejszej postaci: zredukowany glutation zawiera grupy sulfhydrylowe (–SH) i służy jako bufor sulfhydrylowy , który utrzymuje reszty cysteinowe białek w formie zredukowanej. Inne objawy choroby to dreszcze, bóle brzucha i żółtaczka. Rozpoznanie prenatalne jest możliwe na podstawie aktywności G6PD w komórkach owodni ( amniocytach ).
+
+### Choroby serca – jak bada się udział genów?  []
+Kardiomiopatia przerostowa występuje z częstością 1 : 500 młodych osób. Dziedziczy się najczęściej autosomalnie dominująco, rzadziej autosomalnie recesywnie lub recesywnie w sprzężeniu z chromosomem X (heterogenia); zdarza się też dziedziczenie przez mutacje mtDNA.
+Udział podłoża genetycznego w chorobach wieloczynnikowych ocenia się m.in. na podstawie badań porównawczych grupy chorych oraz analizy sprzężeń co najmniej dwóch loci w obrębie genów kandydatów. Żeby wynik badania związku polimorfizmu z chorobą był wiarygodny, potrzebne są:
+- polimorfizm o znaczeniu funkcjonalnym – w części kodującej lub regulującej gen;
+- powtarzalność związku w różnych populacjach;
+- wysoka jakość analiz molekularnych;
+- dokładna charakterystyka fenotypowa osób badanych i grupy porównawczej.
+Markerami genetycznymi choroby wieńcowej są warianty polimorficzne genów, których produkty zaburzają trombogenezę i fibrynolizę. Polimorfizmy związane z nadciśnieniem – przy każdym podano, czego dotyczy:
+- ACE (17q23) – polimorfizm insercyjno-delecyjny odpowiada w 45% za zmienność stężenia konwertazy angiotensyny w osoczu i tkankach;
+- AT1R (3q21–q25) – gen receptora typu 1 dla angiotensyny II; zamiana adeniny na cytozynę w poz. 1166, na końcu 3′ genu;
+- AGT (1q42–q43) – gen angiotensynogenu; substytucje T/C w poz. 704 i C/T w poz. 521.
+Osobnicze różnice ciśnienia tętniczego wynikające z podłoża genetycznego wynoszą wśród bliźniąt od 25% do 65%. W ocenie roli genów w chorobach układu krążenia uwzględnia się wywiad rodzinny i testy genetyczne. Obecne testy pozwalają potwierdzić lub ustalić rozpoznanie choroby jednogenowej; dla chorób wieloczynnikowych mają służyć diagnostyce, profilaktyce i terapii w przyszłości.
+
+### Cukrzyca typu 1 – postacie i geny  []
+Oprócz najczęstszej postaci 1A, uwarunkowanej poligenowo, źródło wymienia:
+- rzadkie postacie jednogenowe postaci autoimmunologicznej: związaną z zespołem autoimmunologicznej poliendokrynopatii typu 1 oraz sprzężony z chromosomem X zespół IPEX (ang. immune dysfunction, polyendocrinopathy, enteropathy, X-linked );
+- postać idiopatyczną (typ 1B) – bez komponenty immunologicznej, występującą endemicznie m.in. w Chinach, Japonii i Korei;
+- postać wtórną do uszkodzenia trzustki, np. polekowego lub w wyniku nadużywania alkoholu.
+Geny – co zmieniają ich warianty:
+- IDDM1 (6p21.3) – geny antygenów HLA klasy I i II; w patogenezie znaczenie mają polimorfizmy cząsteczek HLA-DR i DQ (klasa II), w tym allele DQA1*0301, DQA1*0501, DQB1*0201 i DQB1*0302;
+- IDDM2 (11p15.5) – gen insuliny; w jego regionie 5′ występuje zmienna liczba powtórzeń tandemowych ( VNTR ), a większa liczba powtórzeń zmniejsza ryzyko cukrzycy typu 1;
+- IDDM12 (2q33) – gen białka CTLA-4 , które może działać cytotoksycznie wobec limfocytów T;
+- PTPN22 (1p13.2) – gen limfocytarnej fosfatazy tyrozynowej; zamiana cytozyny na tyminę w poz. 1858 genu zastępuje argininę tryptofanem w poz. 620 enzymu. Skutek: niedostateczna eliminacja autoreaktywnych limfocytów T i rozwój chorób autoimmunologicznych. (W tym zdaniu źródło omyłkowo pisze „PTPN28”.)
+Leki zwiększające ryzyko to leki przeciwdepresyjne (np. imipramina) i steroidy (np. glikokortykosteroidy).
+
+### Cukrzyca typu 2 – geny i epigenetyka  []
+Podkreśla się znaczenie czynników epigenetycznych : metylacji DNA, modyfikacji histonów i mikroRNA. Geny pogrupowane według tego, na co wpływają:
+- sekrecja insuliny : SLC30A8 (8q24.11) – polimorfizm daje zamianę Arg325Trp w produkcie genu, co zaburza sekrecję; z zaburzeniami sekrecji wiążą się też polimorfizmy CDKAL1 (6p22.3) i KCNJ11 (11p15.1);
+- homeostaza glukozy : CAPN10 (2q37.3) koduje proteazę wewnątrzkomórkową – kalpainę 10, która zmniejsza uwalnianie insuliny pobudzane glukozą; niskie stężenie mRNA kalpainy 10 w mięśniach powoduje insulinooporność; z cukrzycą typu 2 wiążą się trzy SNP tego genu: 19, 43 i 63 (G>A);
+- PPARγ (3p25) – receptor aktywowany przez proliferatory peroksysomów γ; wariant Pro12Ala u homozygot zwiększa zachorowalność o 25%;
+- ponadto TCF7L2 (10q25) i HHEX (10q22.3).
+
+### Cukrzyca MODY – pozostałe kryteria  []
+Do dwóch kryteriów z części 1 (hiperglikemia przed 25 r.ż., tor dominujący w trzech pokoleniach) źródło dodaje trzy, dotyczące leczenia i wydzielania insuliny:
+- brak konieczności leczenia insuliną 5 lat po rozpoznaniu lub brak podwyższonego stężenia peptydu C, nawet u pacjentów leczonych insuliną;
+- prawidłowe stężenie insuliny, ale niewystarczające w stosunku do stopnia hiperglikemii;
+- rzadko nadwaga lub otyłość.
+Poszczególne podtypy MODY mają charakterystyczne cechy kliniczne; wraz z badaniami laboratoryjnymi i genetycznymi są one podstawą ostatecznego rozpoznania. Położenie genów podtypów – w tabeli zbiorczej wyżej.
+[ŹRÓDŁO] Źródło: Drewa s. 284–291
+
+## Układ AB0 – genetyka molekularna i fenotypy rzadkie  [c08-r-ab0]
+W części 1 ( ) prześledziliśmy łańcuch allel → enzym → antygen i wyprowadziliśmy z niego fenotyp Bombay ( ). Tu ten łańcuch rozkładamy na szczegóły: gdzie i z czego zbudowane są antygeny, czym różnią się allele w DNA i jak geny H i Se wyznaczają fenotypy rzadkie.
+
+### Gdzie są antygeny AB0 i od kiedy?  []
+Na erytrocytach antygeny są związane z glikoproteinami i glikolipidami błony. Występują też na innych komórkach krwi i na komórkach wielu narządów, a w postaci rozpuszczalnej – w płynach ustrojowych i wydzielinach. Osoby wydzielające antygeny nazywa się wydzielaczami , a niewydzielające – niewydzielaczami . Jedyną tkanką bez antygenów AB0 jest tkanka nerwowa, dlatego nie ma ich w płynie mózgowo-rdzeniowym. Antygeny pojawiają się w 5–6 tygodniu życia płodowego, a pełną ekspresję osiągają 6–18 miesięcy po urodzeniu.
+
+### Z czego zbudowany jest antygen?  []
+Antygeny A, B i H są na krwinkach czerwonych glikolipidami i glikoproteinami, w osoczu – glikosfingolipidami, a w wydzielinach – glikoproteinami. Ich łańcuch oligocukrowy zbudowany jest z D-galaktozy, N-acetyloglukozaminy, L-fukozy i N-acetylogalaktozaminy; o swoistości decyduje cukier na ostatniej pozycji.
+Prekursor występuje w dwóch typach, różniących się wiązaniem między końcową galaktozą a poprzedzającą ją N-acetyloglukozaminą: w typie I jest to wiązanie α(1-3)-glikozydowe, w typie II – α(1-4)-glikozydowe. Na erytrocytach występuje wyłącznie typ II, na pozostałych komórkach i w wydzielinach – oba typy.
+Antygen H tworzą dwie różne α-2-L-fukozylotransferazy o zróżnicowanej swoistości tkankowej: FUT1 , kodowana przez gen H, działa na erytrocytach, a FUT2 , kodowana przez gen Se, – w pozostałych tkankach. Ostatni etap – powstanie antygenu A lub B – przebiega tak samo na krwinkach i w innych tkankach. Pełne nazwy transferaz mówią, co przenoszą i dokąd:
+- transferaza A – UDP-N-acetylogalaktozamino:β-galaktozylo-α-1,3-N-acetylogalaktozaminotransferaza; dawcą cukru jest UDP-GalNAc;
+- transferaza B – UDP-galaktozo:β-galaktozylo-α-1,3-N-acetylogalaktozylotransferaza; dawcą cukru jest UDP-Gal.
+Położenie loci: AB0 – 9q34.2 (w tekście źródła 9q34.1–q34.2), H i Se – 19q13.3.
+
+### Czym różnią się allele w DNA?  []
+Geny A, B i 0 mają długość 18–20 kb i składają się z 7 eksonów . Największe eksony 6 i 7 kodują 77% białka i obejmują domenę katalityczną; w nich leżą różnice między allelami pokazane na schemacie źródła. Allele A i B różnią się siedmioma nukleotydami, a ich produkty – czterema z 353 aminokwasów. O swoistości decydują aminokwasy w pozycjach 266 i 268; ich zmiana nadaje enzymowi swoistość wobec galaktozy zamiast N-acetylogalaktozaminy, a zarazem obniża jego aktywność.
+Schemat źródła zestawia aminokwasy w czterech pozycjach białka:
+[TABELA]
+Allel | 176 | 235 | 266 | 268
+A 1 , A 2 | Arg | Gly | Leu | Gly
+B | Gly | Ser | Met | Ala
+0 2 | Gly | Gly | Leu | Arg
+[/TABELA]
+Allelu 0 1 nie ma w tabeli, bo jego białko kończy się wcześniej. Najczęstszy allel 0 (0 1 ) nie ma jednego nukleotydu w eksonie 6. Delecja przesuwa ramkę odczytu i wprowadza przedwczesny kodon stop w pozycji 117 – powstaje krótki polipeptyd bez centrum aktywnego. Allel 0 2 (3% alleli 0 u rasy kaukaskiej) ma substytucję Gly268Arg – czyli zmianę w jednej z dwóch kluczowych pozycji – i koduje białko bez aktywności transferazy A i B, bo nie może ono wiązać substratu. Znane są też allele 0 bez delecji, kodujące białko o znikomej aktywności transferazy A.
+
+### Podgrupy A 1 , A 2 i pozostałe  []
+W allelu A 2 brakuje jednej z trzech cytozyn przed kodonem stop. Kodon stop zostaje ominięty, białko wydłuża się o 21 aminokwasów , a aktywność transferazy A spada o 50% . Skutek: osoby A 2 i A 2 B mają tzw. słabą odmianę antygenu A – mniejszą liczbę antygenów na powierzchni komórek niż osoby A 1 i A 1 B. Krwinki A 1 aglutynują z przeciwciałami anty-A silniej niż krwinki A 2 , a osocze osób A 2 i A 2 B może zawierać naturalne przeciwciała anty-A 1 .
+Podgrupy powstają przez mutacje w genach transferaz, które zmieniają aktywność katalityczną enzymu, a przez to ilość antygenu. W grupie A wyróżnia się A 1 , A 2 , A 3 , A x i A el , o coraz słabszej ekspresji antygenu A; w grupie B m.in. B 1 , B x i B el , z malejącą ilością antygenu B.
+
+### Allele podgrup w tabeli  []
+Tabela 13.5 źródła zestawia allele podgrup i ich różnice w stosunku do sekwencji referencyjnej A101. Zapis czytaj tak: C467T – w pozycji 467 genu cytozyna zamieniona na tyminę; w nawiasie skutek w białku, np. Pro156Leu – prolina w pozycji 156 zamieniona na leucynę; Δ – delecja nukleotydu; ins – insercja. Przy kilku wierszach źródło porównuje allel nie z A101, tylko z B101.
+[TABELA]
+Podgrupa | Allele i zmiany
+A 1 | A101 – sekwencja referencyjna; A102 – C467T (Pro156Leu); A103 – C467T, C564T; A104 – A297G; A112 – C467T, A297G; A113 – C526G (Arg176Gly)
+A 2 | A201 – C467T (Leu156Pro), Δ1060C; A202 – C1054T (Arg352Trp); A203 – C1054G (Arg352Gly); A204 – A297G, C526G (Arg176Gly), C657T, G703A (Gly235Ser), C771T, G829A (Val277Met); A206 – Δ1060C; A206 – A1009G (Arg337Gly)
+A 3 | A301 – G871A (Asp291Asn); A302 – G829A (Val277Met), Δ1060C
+A x | Ax01 – T646A (Ile216Phe); Ax02 – A297G, T646A, G681A, C771T, G829A; Ax03 – T646A, G681A, C771T, G829A; Ax04 – T646A, G681A
+A el | Ae101 – 798–804insG; Ae102 – C476T, T646A (Ile216Phe), G681A
+B 1 | B101 – A297G, C526G (Arg176Gly), C657T, G703A (Gly235Ser), C796A (Leu266Met), G803C (Gly268Ala), G930A; B102, B103, B107, B108 – jak B101, ale bez jednej mutacji (odpowiednio G930A, C657T, C526G, A297G)
+B x | G871A (Asp291Asn)
+B el | Bel01 – T641G (Met214Arg); Bel01 – G669T (Glu223Asp)
+B(A) | względem B101: B(A)01 – T657C, A703G (Ser235Gly); B(A)02 – C700G (Pro234Ala)
+cis AB | cisAB01 – C467T (Pro156Leu), G803C (Gly268Ala); względem B101: cisAB02 – A796C; cisAB03 – C700T (Pro234Ser)
+0 | 0 1 – Δ261G; 0 2 – C526G, G802A (Gly268Arg)
+[/TABELA]
+Jak z tej tabeli korzystać? Szukaj zmian w pozycjach 266 i 268, o których wiesz, że decydują o swoistości. Allel B101 ma obie: Leu266Met i Gly268Ala – stąd transferaza B. Allel 0 2 ma Gly268Arg – enzym nie wiąże substratu. Allel cisAB01 ma tylko jedną z nich (Gly268Ala) – i taki enzym przenosi oba cukry. W źródle dwa różne allele noszą symbol A206 i dwa – Bel01; przepisujemy je bez zmian.
+
+### Cis AB – jeden allel, dwa antygeny  []
+Wyjątkowo rzadka podgrupa cis AB wygląda fenotypowo jak grupa AB – na krwinkach są oba antygeny. W typowej grupie AB (tzw. trans AB ) dwa kodominujące allele kodują dwa enzymy: jeden o aktywności transferazy A, drugi – transferazy B. W cis AB jeden allel koduje enzym o aktywności obu transferaz. Odpowiadają za to pojedyncze mutacje w genie A 1 lub B 1 , zmieniające centrum aktywne enzymu – zob. wiersz cis AB w tabeli.
+
+### Geny H i Se oraz fenotypy Bombay i para-Bombay  []
+Geny H i Se kodują fukozylotransferazy FUT1 i FUT2 (α-1,2-L-fukozylotransferazy); są sprzężone i leżą blisko siebie na 19q13.3. Gen H ma 3,5 kpz, składa się z 8 eksonów i koduje białko z 365 aminokwasów; gen Se ma 2 eksony i koduje białko z 343 aminokwasów. Oba geny wykazują 70% homologii sekwencji. Allel se powstał przez mutację nonsens: triplet kodujący tryptofan w pozycji 143 zmienił się w kodon stop. Rzadki allel h , podobnie jak se, nie koduje białka o właściwościach transferazy – oba są amorficzne. Aktywność enzymów przenoszących fukozę wykrywa się więc u osób HH i Hh oraz SeSe i Sese.
+Z dwóch par alleli wynikają cztery sytuacje:
+[TABELA]
+Genotyp | Antygeny na krwinkach | Antygeny w wydzielinach | Przeciwciała | Nazwa
+H_ Se_ | H (oraz A i/lub B – według alleli AB0) | obecne | według grupy AB0 | wydzielacz (ok. 80% rasy białej)
+H_ sese | H (oraz A i/lub B – według alleli AB0) | brak (brak aktywnej FUT2) | według grupy AB0 | niewydzielacz
+hh sese | brak H, A i B | brak | anty-A, anty-B i anty-H | Bombay (O h , ABH null )
+hh Se_ | brak; możliwa słaba ekspresja przez adsorpcję z osocza | A, B i H obecne (ślina, płyny ustrojowe) | zamiast anty-H – anty-HI, zwykle niereagujące w 37 °C | para-Bombay
+[/TABELA]
+Osoby z fenotypem Bombay mogą otrzymać tylko krew O h , bo ich przeciwciała anty-H aglutynują krwinki zwykłej grupy 0.
+[ŹRÓDŁO] Źródło: Drewa s. 295–301
+
+## Układ Rh i konflikt serologiczny – geny, białka, liczby  [c08-r-rh]
+W części 1 ( ) wystarczyły nam dwa geny – RHD i RHCE – oraz delecja RHD jako przyczyna Rh−. Tu dokładamy budowę locus RH, białka Rh, haplotypy i liczby dotyczące konfliktu.
+
+### Skąd nazwa „Rh”?  []
+Układ Rh opisali w 1940 r. K. Landsteiner i A. Wiener. Przeciwciała otrzymano, immunizując króliki i świnki morskie krwinkami czerwonymi małp Macacus rhesus . Sądzono, że rozpoznają one ten sam antygen na krwinkach małp i ludzi; okazało się, że antygeny nie są identyczne. Nazwy „antygen Rh” i „przeciwciała anty-Rh” jednak pozostały, a „Rh” odnosi się do całego układu; dla antygenu Rh stosuje się też nazwy „antygen LW” i „antygen D”. Układ jest wysoce polimorficzny – obejmuje ponad 49 serologicznie zdefiniowanych antygenów, z których pięć jest istotnych klinicznie. Biosynteza antygenów Rh zaczyna się w 6 tygodniu życia płodowego.
+
+### Locus RH – jak wygląda i co się w nim psuje?  []
+Locus RH leży na 1p34.3–p36.1. Geny RHD i RHCE powstały w wyniku duplikacji i są w 96% homologiczne; oba mają 10 eksonów i kodują polipeptydy po 416 aminokwasów , identyczne w 92%. Geny są zorientowane przeciwstawnie: (3′ RHD 5′)–(5′ RHCE 3′), a między nimi leży gen SMP1 , którego funkcji nie poznano. Gen RHD otaczają z obu stron rhesus boxes o długości 9000 pz i 98,6% homologii.
+Schemat locus w źródle przeczytany od centromeru: rhesus box 5′ – RHD – rhesus box 3′ – SMP1 – RHCE (zapisany w odwrotnym kierunku); odcinki mają kolejno ok. 75 kb, 30 kb i 75 kb. Tak wygląda haplotyp Rh+ – dwa geny w locus RH. Nierównomierny crossing-over między rhesus boxes 5′ i 3′ wycina wszystko, co leży między nimi, czyli cały gen RHD. Zostaje jedna hybrydowa sekwencja rhesus box (5′/3′), a za nią SMP1 i RHCE – haplotyp Rh− ma w locus jeden gen .
+Delecja to przyczyna najczęstsza, ale nie jedyna. W pozostałych przypadkach brak antygenu D wynika z mutacji punktowych tworzących przedwczesny kodon stop lub z innych rearanżacji w obrębie genu RHD. U osób rasy czarnej przyczyną jest pseudogen RHDψ , który powstał w wyniku różnych mutacji prowadzących do kodonu stop; najczęstsza z nich to zmieniająca ramkę odczytu duplikacja 19 nukleotydów w intronie 3 i eksonie 4.
+Odmiany genu RHCE są wynikiem pojedynczych substytucji nukleotydowych. Antygeny C i c różnią się czterema aminokwasami – Cys16Trp, Ile60Leu, Ser68Asn i Ser103Pro – z powodu mutacji w eksonie 2; decyduje pozycja 103 (seryna w C, prolina w c). Antygeny E i e różnią się aminokwasem w pozycji 226 (prolina w E, alanina w e) wskutek mutacji w eksonie 5.
+
+### Jak zbudowane są białka Rh?  []
+Polipeptydy RhD i RhCE występują wyłącznie na krwinkach czerwonych, zakotwiczone w błonie. Mają 12 α-helikalnych domen przezbłonowych , które tworzą 6 pętli zewnątrzkomórkowych i 6 cytoplazmatycznych; antygeny Rh leżą w części zewnątrzbłonowej. W odróżnieniu od antygenów innych układów nie zawierają reszt cukrowych, natomiast mają reszty kwasu palmitynowego. Pętle cytoplazmatyczne wiążą się z białkami cytoszkieletu krwinki – ankiryną i białkiem pasma 4.2 .
+Do błony trafiają tylko w obecności glikoproteiny RhAG (ang. Rh associated glycoprotein ), niezbędnej do ich transportu. RhAG ma budowę podobną do RhD i RhCE, ale nie ma właściwości antygenu Rh; jej gen, RHAG, też ma 10 eksonów i leży na chromosomie 6 (6p21). RhD, RhCE i RhAG tworzą większy kompleks z glikoproteiną LW (ICAM-4), białkiem IAP (ang. integrin-associated protein , CD47), glikoforyną B (GPB), glikoproteiną Fy (antygen Duffy) i białkiem pasma 3 (AE1).
+Brak lub zmniejszona ilość białek tego kompleksu daje bardzo rzadkie fenotypy Rh null i Rh mod . Funkcja kompleksu jest nieznana; przypisuje mu się transport amoniaku (NH 3 ) i prawdopodobnie CO 2 . Pewne jest, że utrzymuje strukturę krwinki: brak polipeptydów Rh związanych z cytoszkieletem zmienia kształt erytrocytów i skraca ich przeżycie, co objawia się różnie nasiloną niedokrwistością hemolityczną.
+
+### Haplotypy, fenotypy i warianty  []
+Geny Rh dziedziczy się jako dwa haplotypy – po jednym od każdego rodzica – złożone z trzech alleli (C lub c, D lub d, E lub e). Daje to 8 kombinacji:
+[TABELA]
+Haplotyp D-dodatni | Haplotyp D-ujemny
+CDe | cde
+cDE | Cde
+cDe | cdE
+CDE | CdE
+[/TABELA]
+U rasy kaukaskiej najczęstsze są haplotypy CDe (40–42%) i cDE (14–16%); pozostałe mają częstość poniżej 4%. Przeciwciałami o pięciu swoistościach można wyodrębnić 18 fenotypów Rh: dziesięciu odpowiada jeden genotyp, a pozostałym ośmiu – 2–6 genotypów. Źródło zawiera też tabelę częstości fenotypów Rh w Polsce, oznaczanych przeciwciałami anty-D, anty-C, anty-C w , anty-c, anty-E i anty-e, ale w dostępnej wersji elektronicznej źródła tabela jest pusta.
+Mnogość alleli RHD i RHCE wynika z mutacji punktowych w obrębie tych genów lub rearanżacji między nimi. Na tej podstawie wyróżnia się m.in. słaby antygen D (D słabe ), częściowy antygen D oraz antygeny D el , C w , C x i E w .
+
+### Dziedziczenie antygenu D – pełna tabela  []
+Reguły z części 1 (DD i Dd – Rh+, dd – Rh−) dają dla wszystkich par rodziców następujące możliwości:
+[TABELA]
+Rodzic | DD (Rh+) | Dd (Rh+) | dd (Rh−)
+DD (Rh+) | DD (Rh+) | DD lub Dd (Rh+) | Dd (Rh+)
+Dd (Rh+) | DD lub Dd (Rh+) | DD lub Dd (Rh+) lub dd (Rh−) | Dd (Rh+) lub dd (Rh−)
+dd (Rh−) | Dd (Rh+) | Dd (Rh+) lub dd (Rh−) | dd (Rh−)
+[/TABELA]
+Częstość osób Rh− zależy od populacji: 15–17% rasy białej, 5–7% rasy czarnej i mniej niż 1% Azjatów.
+
+### Konflikt Rh – liczby i pełny łańcuch zmian  []
+Trzy kroki konfliktu z części 1 ( ) z liczbami:
+- do zapoczątkowania odpowiedzi immunologicznej potrzebny jest przeciek co najmniej 0,1 ml krwinek płodu do krążenia matki;
+- w pierwszej ciąży immunizacja zaczyna się u niespełna 2% kobiet;
+- IgM zamieniają się w IgG po ok. 6–40 tygodniach – są to podklasy IgG1 i IgG3 ;
+- opłaszczone erytrocyty płodu są niszczone w śledzionie – przez fagocytozę z udziałem makrofagów albo w mechanizmie cytotoksyczności komórkowej zależnej od przeciwciał .
+Choroba hemolityczna płodu i noworodka rozwija się łańcuchowo. Rozpad erytrocytów daje niedokrwistość hemolityczną z hiperbilirubinemią. Dalej dochodzi do pozaszpikowego krwiotworzenia i uszkodzeń wielonarządowych, niedotlenienia i hipoalbuminemii – a ta wywołuje uogólniony obrzęk płodu ( hydrops fetalis ) z powiększeniem wątroby i śledziony. Żółtaczka hemolityczna noworodka rozwija się w pełni po urodzeniu; bilirubina niesprzężona w stężeniu ok. 20 mg/dl prowadzi do żółtaczki jąder podstawy mózgu ( kernicterus ). Ciężka postać może się skończyć wewnątrzmaciczną śmiercią płodu. Szczegóły profilaktyki źródło odsyła do publikacji specjalistycznych.
+
+### Konflikt AB0 – liczby i różnice między populacjami  []
+Naturalne przeciwciała anty-A i anty-B nazywa się też izohemaglutyninami . To one – szybko niszcząc krwinki płodu w krążeniu matki – prawdopodobnie zapobiegają odpowiedzi anty-D, o czym była mowa w części 1.
+Konflikt matki z grupą A i dziecka z grupą B (lub odwrotnie) zdarza się wyjątkowo rzadko, bo matki z grupą A i B rzadko wytwarzają przeciwciała IgG przeciw drugiemu antygenowi. W konflikcie AB0 objawy kliniczne występują rzadko: postać łagodna, z niewielką lizą krwinek, średnio u 6 : 1000 noworodków; postać ciężka, wymagająca wymiennego przetoczenia krwi, z częstością 1 : 1000–5000 porodów, zależnie od populacji. U osób rasy czarnej, u Arabów i w krajach Ameryki Południowej choroba hemolityczna w konflikcie AB0 występuje częściej i ma cięższy przebieg niż u osób rasy kaukaskiej.
+Jedna cicha poprawka: opisując wpływ niezgodności AB0 na konflikt Rh, źródło (s. 306) pisze o płodzie z grupą „A, B lub AB” u matki z grupą 0. Matka z grupą 0 nie może mieć dziecka z grupą AB (zawsze przekazuje allel 0), dlatego w części 1 piszemy „A lub B”.
+[ŹRÓDŁO] Źródło: Drewa s. 301–306
 
 
 ======== E. ŹRÓDŁA (przycięte do zakresu z mapy) ========

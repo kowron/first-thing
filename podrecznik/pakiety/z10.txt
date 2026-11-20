@@ -121,6 +121,7 @@ Podgląd: `cd /home/user/first-thing/podrecznik && node build.mjs --only 10 --pn
 
 (plik rozdzialy/z10-plec.html; data-title: Chromosomy płci, chromatyna płciowa i dziedziczenie sprzężone z płcią)
 [LEAD] Kobieta ma dwa chromosomy X, mężczyzna – chromosomy X i Y. Z tej jednej różnicy wynika cały rozdział: jak zbudowane są X i Y, jak komórka kobiety radzi sobie z „nadmiarowym” X i dlaczego widać to pod mikroskopem, co sprawia, że z tego samego zawiązka powstaje jądro albo jajnik, i jak z rodowodu poznać, że gen choroby leży na chromosomie X lub Y.
+[RAMKA stare] Podrozdziały o dziedziczeniu sprzężonym z płcią i o cechach ograniczonych przez płeć oraz – w części 2 – sekcje o hemofilii A, dystrofiach mięśniowych i zespole kruchego chromosomu X, a także dopowiedzenia do teorii Lyon, opierają się na starym wydaniu podręcznika Jordego (ok. 2000 r.). Zasady dziedziczenia są aktualne, ale częstości, liczby genów, dane o leczeniu i rokowaniu oraz „pytania otwarte” opisują stan wiedzy sprzed ponad 20 lat.
 
 ## Chromosomy płci  [c10-chromosomy]
 
@@ -149,7 +150,7 @@ Cytogenetycznie Y dzieli się na dwa regiony. Przypomnij sobie różnicę ( ): e
 - Region euchromatynowy – całe ramię krótkie, okolica przycentromerowa i proksymalna (bliższa centromeru) część ramienia długiego (Ypter→q11). Leżą tu wszystkie zidentyfikowane geny chromosomu Y, a także sekwencje powtarzające się, charakterystyczne tylko dla Y.
 W regionie centromerowym leży jeszcze blok sekwencji alfoidalnych DYZ3 (1% DNA chromosomu Y). Najprawdopodobniej uczestniczy on w tworzeniu połączenia chromosomu z wrzecionem podziałowym.
 Wniosek: co najmniej połowę Y stanowi DNA powtarzalne o nieznanej funkcji, a wszystkie geny mieszczą się w euchromatynie – na ramieniu krótkim i w części ramienia długiego przy centromerze.
-[RAMKA uwaga] Źródło (Drewa s. 459) podaje wielkość chromosomu Y jako 6 × 10 6 par zasad, a jego regionu euchromatynowego jako 20–30 × 10 6 par zasad. Liczby te wykluczają się wzajemnie (część nie może być większa od całości), dlatego nie podajemy ich w tekście; pewna jest informacja, że Y stanowi ok. 1% DNA genomu.
+[RAMKA uwaga] Drewa (s. 459) podaje wielkość całego chromosomu Y jako 6 × 10 6 par zasad, a jego regionu euchromatynowego – jako 20–30 × 10 6 par zasad. W źródle liczby te nie są ze sobą spójne (euchromatyna jest tylko częścią Y), dlatego nie opieramy się na nich; pewne jest, że Y stanowi ok. 1% DNA genomu.
 
 ### Geny chromosomu Y – od końca ramienia krótkiego  []
 Przejdźmy wzdłuż euchromatyny Y, zaczynając od końca ramienia krótkiego ( ):
@@ -176,7 +177,7 @@ Ciałko Barra nie jest więc osobnym tworem – to chromosom X, tylko ciasno zwi
 ### Gdzie szuka się ciałek Barra?  []
 Struktury jądra interfazowego, które po odpowiednim wybarwieniu odpowiadają skondensowanym chromosomom X i Y, nazywa się ogólnie chromatyną płciową . Chromatyna X – ciałka Barra – występuje w komórkach niemal wszystkich tkanek. U człowieka bada się ją najczęściej w dwóch rodzajach komórek:
 - w rozmazach nabłonka jamy ustnej i w komórkach płynu owodniowego – ciałko Barra to grudka przy błonie jądrowej;
-- w granulocytach obojętnochłonnych – po odpowiednim wybarwieniu chromatyna X ma tu postać grudki wyrzuconej poza obręb jądra, ale nadal z nim połączonej. Nazywa się ją pałeczką dobosza X .
+- w granulocytach obojętnochłonnych – po odpowiednim wybarwieniu chromatyna X ma tu postać grudki wyrzuconej poza obręb jądra, ale nadal z nim połączonej. Nazywa się ją pałeczką dobosza X . W części praktycznej zajęć (wg rozpiski) ogląda się ją w rozmazie krwi barwionym metodą Giemsy.
 
 ### Ile ciałek Barra? Reguła „liczba X minus jeden”  []
 W komórce może być aktywny transkrypcyjnie tylko jeden chromosom X . Każdy następny zostaje unieczynniony i tworzy własne ciałko Barra. Stąd prosta reguła: liczba ciałek Barra w jądrze jest zawsze o jeden mniejsza od liczby chromosomów X w kariotypie. Chromosom Y w tym rachunku się nie liczy.
@@ -199,7 +200,7 @@ Badanie chromatyny X to najprostsza, pośrednia metoda wykrywania aberracji licz
 Dziś ma ono ograniczoną wartość diagnostyczną. Zastąpiły je dokładniejsze metody określania płci: analiza kariotypu i fluorescencyjna hybrydyzacja in situ (FISH) ( ). Nadal wykorzystuje się je jednak w medycynie sądowej . Często dostępne są tam tylko fragmenty tkanek lub plamy krwi, których nie można poddać pełnej analizie chromosomowej – a chromatynę X można w nich zbadać.
 
 ### Chromatyna Y – ciałko Y  []
-W jądrach interfazowych komórek męskich wybarwionych barwnikami fluorescencyjnymi widać silnie fluoryzującą grudkę – chromatynę Y, czyli ciałko Y . Tworzy ją dystalna, skondensowana, heterochromatynowa część ramion długich chromosomu Y ( Yq12 ) – ta sama heterochromatyna konstytutywna, która w chromosomie metafazowym świeci w prążkach Q ( ).
+W jądrach interfazowych komórek męskich wybarwionych barwnikami fluorescencyjnymi widać silnie fluoryzującą grudkę – chromatynę Y, czyli ciałko Y . Tworzy ją dystalna, skondensowana, heterochromatynowa część ramion długich chromosomu Y ( Yq12 ) – ta sama heterochromatyna konstytutywna, która w chromosomie metafazowym świeci w prążkach Q ( ). W części praktycznej zajęć (wg rozpiski) ciałko Y ogląda się na fotografii jąder komórek nabłonka jamy ustnej mężczyzn, wybarwionych iperytem akrychinowym.
 Reguła liczenia jest tu inna niż dla X: liczba ciałek Y w jądrze odpowiada liczbie chromosomów Y . Nie odejmujemy jedynki, bo ciałko Y nie jest wyłączonym chromosomem, tylko trwale skondensowanym odcinkiem, który ma każdy Y – także jedyny Y prawidłowej komórki męskiej. Ciałko Y stwierdza się w 30–50% badanych komórek męskich.
 Badanie ma pułapkę. Jeśli zdrowy mężczyzna ma mały chromosom Y (Y<G, mniejszy od chromosomów grupy G) albo doszło u niego do delecji heterochromatyny dystalnej części ramienia długiego Y, ciałka Y nie da się wykryć – nie ma odcinka, który mógłby świecić. Mężczyzna z chromosomem Y wygląda wtedy w badaniu, jakby go nie miał, co może być źródłem pomyłek diagnostycznych.
 Podobnie jak chromatyna X w granulocytach obojętnochłonnych kobiet, chromatyna Y może u mężczyzn tworzyć pałeczkę dobosza Y . Pałeczki X i Y można odróżnić tylko po barwieniu fluorescencyjnym, bo fluoryzuje wyłącznie pałeczka Y.
@@ -238,10 +239,7 @@ Teoria Lyon pozwala przewidzieć, jak pracuje gen chromosomu X u kobiety, która
 [RAMKA przyklad] Weźmy gen, który podlega inaktywacji. Kobieta ma na X mat jego allel prawidłowy A , a na X pat – zmieniony allel a (liczby poniżej są przykładowe). W komórkach, w których wyłączony został X pat , pracuje tylko allel A; w komórkach z wyłączonym X mat – tylko allel a. Żadna komórka nie korzysta z obu alleli naraz. Jeśli wyłączenia rozłożyły się mniej więcej po połowie, ok. 50% komórek wytwarza prawidłowy produkt. Zmień warunek: przypadek sprawił, że w 9 na 10 komórek wyłączony został X mat . Allel A pracuje teraz tylko w co dziesiątej komórce – i ta kobieta, choć jest heterozygotą, może mieć objawy choroby. Ten ostatni przypadek naprawdę się zdarza – to heterozygoty manifestujące ( ).
 
 ### Kiedy wybór nie jest losowy? Inaktywacja selektywna  []
-W pewnych przypadkach preferencyjnie inaktywowany jest X matczyny albo ojcowski – to inaktywacja selektywna . Przyczyny mogą być różne: mutacje genu XIST (o nim za chwilę) lub innych genów chromosomu X albo aberracje chromosomowe typu mikrodelecji lub mikroduplikacji. Źródło zestawia trzy sytuacje:
-- Przypadkowa inaktywacja – X matczyny i ojcowski są inaktywowane losowo, niezależnie od siebie, we wczesnej embriogenezie. W dojrzałych tkankach mozaicyzm przejawia się równymi ilościami aktywnych X matczynych i ojcowskich. To sytuacja opisana w czterech założeniach.
-- Inaktywacja przy mutacji na jednym X – początek jest taki sam, losowy, ale na jednym z chromosomów X jest mutacja, która obniża przeżywalność komórek w dojrzałych tkankach. Komórki ubywają wybiórczo (selektywne uszkodzenia), więc w dojrzałej tkance proporcja przestaje być równa.
-- Defekt samego procesu inaktywacji – mutacja w genie XIST powoduje inaktywację X w sposób nieprzypadkowy.
+W pewnych przypadkach preferencyjnie inaktywowany jest X matczyny albo ojcowski – to inaktywacja selektywna . Przyczyny mogą być różne: mutacje genu XIST (o nim za chwilę) lub innych genów chromosomu X albo aberracje chromosomowe typu mikrodelecji lub mikroduplikacji. Skutek łatwo przewidzieć z Przykładu powyżej: proporcja komórek z aktywnym X matczynym i ojcowskim przestaje być mniej więcej równa.
 
 ### Jak komórka wyłącza cały chromosom? Mechanizm molekularny  []
 Molekularny mechanizm inaktywacji X nie jest dokładnie poznany. Wiadomo jednak, gdzie proces się zaczyna, co go uruchamia i co go potem podtrzymuje.
@@ -250,6 +248,7 @@ Gdzie się zaczyna – centrum inaktywacji. Inaktywację badano u kobiet z aberr
 Co ją uruchamia – gen XIST. Za zapoczątkowanie inaktywacji, które zachodzi w komórkach zarodka tuż przed gastrulacją, odpowiada gen XIST leżący w obrębie XIC. W odróżnieniu od większości genów XIST nie koduje białka. Jego produktem jest RNA , który rozprzestrzenia się wzdłuż chromosomu i powoduje jego inaktywację.
 Zwróć uwagę na pozorny paradoks: XIST ulega transkrypcji w chromosomie nieaktywnym , a w aktywnym – nie. To ma sens, bo XIST działa jak sygnał „wyłącz”: jego aktywność wyłącza większość genów tego chromosomu, na którym ulega ekspresji. Gdy XIST zostanie utracony – wskutek delecji lub rearanżacji X – ten chromosom nie jest inaktywowany.
 Co ją utrzymuje – metylacja DNA. Jednym ze skutków inaktywacji jest zmiana wzoru metylacji cytozyn (przyłączania do nich grup metylowych) w genach, które regulują transkrypcję. DNA nieaktywnego X jest w znacznym stopniu zmetylowane, a skutkiem tego jest zahamowanie transkrypcji – gen po genie (locus po locus). Proces zależy częściowo od metylacji tzw. wysp CpG – bogatych w pary C–G regionów przylegających do genów. To metylacja odpowiada za utrzymanie chromosomu X w stanie nieaktywnym.
+[RYCINA c10-fig-xist „Inaktywacja X: XIC, XIST, metylacja”: Zacznij od prawej części i idź po numerach: w centrum inaktywacji XIC (Xq13) rusza transkrypcja genu XIST (1), jego RNA rozprzestrzenia się wzdłuż chromosomu i wyłącza geny (2), a metylacja cytozyn utrwala ten stan (3). Porównaj z aktywnym X po lewej: tam XIST milczy, a pozostałe geny pracują. Wniosek: XIST działa jak sygnał „wyłącz” dla tego chromosomu, na którym sam ulega transkrypcji.]
 
 ### Wyłączenie na stałe – stabilność nieaktywnego X  []
 Nieaktywny X jest bardzo stabilny . Mimo użycia wielu związków o działaniu mutagennym derepresję (ponowne włączenie) jego genów obserwowano tylko w nielicznych przypadkach. Wywołuje ją np. 5-azacytydyna , która powoduje demetylację DNA – i reaktywuje wiele genów inaktywowanego X. Pasuje to do roli metylacji: gdy usunąć grupy metylowe, geny wracają do pracy.
@@ -289,50 +288,46 @@ SRY koduje białko o charakterze czynnika transkrypcyjnego – białka, które p
 Wniosek: SRY nie buduje jądra sam. Jego zadania w różnicowaniu jąder są prawdopodobnie pośrednie – polegają na włączaniu i wyłączaniu innych genów. Żeby zrozumieć, jak powstaje jądro, trzeba więc poznać te geny.
 
 ### Sieć genów różnicowania jądra  []
-Wszystko rozgrywa się w komórkach prekursorowych komórek Sertoliego – to wspólne miejsce ekspresji SRY, SOX9 i DAX1. Najważniejszą rolę w różnicowaniu jądra przypisuje się genowi SOX9 , ale to SRY ma decydujące znaczenie dla jego ekspresji. Wokół tej pary działają geny, które SOX9 wzmacniają albo hamują ( ).
-[RYCINA c10-fig-gonada „Determinacja gonady”: Zacznij od góry: gonada pierwotna i rozwidlenie – jest SRY albo go nie ma. Na lewym polu prześledź strzałki od SRY: zielone to wzmocnienie, czerwone zakończenia – hamowanie. SRY i SOX9 wzmacniają się wzajemnie; ponadto SRY działa pośrednio – hamując DAX1 (który hamuje SF1) i SOX3; blokuje też WNT4. Wszystkie te drogi prowadzą do przewagi SOX9, komórek Sertoliego i jądra. Prawe pole: bez SRY gonada idzie drogą alternatywną – w jajnik.]
+Wszystko rozgrywa się w komórkach prekursorowych komórek Sertoliego – to wspólne miejsce ekspresji SRY, SOX9 i DAX1. Najważniejszą rolę w różnicowaniu jądra przypisuje się genowi SOX9 , ale to SRY ma decydujące znaczenie dla jego ekspresji. Wokół tej pary działają inne geny: jedne mogą wpływać na SOX9, inne SRY po prostu blokuje ( ).
+[RYCINA c10-fig-gonada „Determinacja gonady”: Zacznij od góry: gonada pierwotna i rozwidlenie – jest SRY albo go nie ma. Na lewym polu prześledź strzałki od SRY: zielone to wzmocnienie, czerwone zakończenia – hamowanie. Zakłada się, że SRY i SOX9 wzmacniają się wzajemnie, a SRY dodatkowo chroni SOX9 przed hamowaniem: blokuje SOX3 i DAX1 (który hamowałby SF1). Osobno SRY blokuje WNT4. Na końcu tej drogi są komórki Sertoliego i jądro. Prawe pole: bez SRY gonada idzie drogą alternatywną – w jajnik.]
 SOX9 (chromosom 17) – gen kluczowy dla jądra. SRY i SOX9 ulegają ekspresji w komórkach prekursorowych komórek Sertoliego mniej więcej równocześnie. Zakłada się, że wzmacniają się wzajemnie: SOX9 bierze udział w aktywacji SRY, a SRY zwrotnie wzmacnia ekspresję SOX9. Podobny, wzmacniający wpływ na SOX9 może mieć gen SF1 . Później odpowiedni poziom SOX9 w komórkach Sertoliego ma istotne znaczenie dla aktywacji genu hormonu anty-Müllerowskiego (AMH), wydzielanego przez te komórki.
 Mutacje SOX9 powodują zaburzenia różnicowania jądra, niezależnie od objawów dysplazji kampomelicznej. SOX9 działa bowiem nie tylko w gonadzie: w tkankach wyspecjalizowanych w chondrogenezie (tworzeniu chrząstki) ulega koekspresji z innymi genami biorącymi w niej udział.
 SOX3 (Xq26.3) – hamulec SOX9. Gen SOX3, leżący na ramionach długich X, może blokować aktywność SOX9. W warunkach prawidłowych zapobiega temu SRY, który hamuje ekspresję SOX3. SRY działa tu więc jak „hamulec hamulca”.
-DAX1 (Xp) – przeciwnik SF1. DAX1 leży na ramieniu krótkim X. Ulega ekspresji – podobnie jak WT1 – w grzebieniu moczowo-płciowym, silniej w jego części bliższej nadnerczy, a – podobnie jak SF1 – także w podwzgórzu i przysadce. SRY i DAX1 ulegają ekspresji nie tylko w tym samym miejscu, ale i mniej więcej w tym samym czasie. Zakłada się następujący łańcuch: SRY blokuje DAX1 → DAX1 nie może wtedy hamować SF1 → SF1 aktywuje SOX9 . Doświadczenie na myszach pasuje do tego modelu: konstrukt złożony z sekwencji kodującej SRY i promotora DAX1 (odcinka, który decyduje, gdzie i kiedy gen jest przepisywany) indukuje różnicowanie gonady pierwotnej w jądro.
+DAX1 (Xp) – przeciwnik SF1. DAX1 leży na ramieniu krótkim X. Jego rolę opisuje założenie – łańcuch trzech ogniw: SRY blokuje DAX1 → DAX1 nie może wtedy hamować SF1 → SF1 aktywuje SOX9 . Czytaj go od końca: SOX9 jest aktywowany przez SF1, SF1 może działać, gdy DAX1 jest „uciszony”, a ucisza go SRY.
 WNT4 (chromosom 1, region p31–p35). W warunkach prawidłowych WNT4 również jest blokowany przez SRY. U płodów XX WNT4 i inny gen tej rodziny – WNT7 – mają znaczenie dla prawidłowego rozwoju wewnętrznych narządów płciowych żeńskich, tworzących się z przewodów Müllera.
 Podsumowując: SRY ma decydujące znaczenie w regulacji ekspresji SOX9 – bezpośrednio lub pośrednio. Może ją wzmacniać albo „osłaniać” SOX9 przed hamującym wpływem innych genów. Produkty genów SRY, SOX9 i DAX1 muszą więc wchodzić we wzajemne interakcje.
 [TABELA]
 Gen (położenie) | Co robi w różnicowaniu gonady | Skutek zmiany genu
-SRY (Yp11.3) | wzmacnia SOX9 (i jest przez niego wzmacniany); hamuje SOX3, DAX1 i WNT4 | bez Y i SRY nie może nastąpić różnicowanie jądra
+SRY (Yp11.3) | zakłada się, że wzmacnia SOX9 (i jest przez niego wzmacniany) oraz blokuje DAX1; hamuje SOX3, blokuje WNT4 | bez Y i SRY nie może nastąpić różnicowanie jądra
 SOX9 (chromosom 17) | najważniejszy gen różnicowania jądra; później – aktywacja genu AMH w komórkach Sertoliego | mutacje – zaburzenia różnicowania jądra; duplikacje – jądro przy składzie XX
-SF1 | wzmacnia (aktywuje) SOX9 | –
+SF1 | może wzmacniać SOX9; w zakładanym łańcuchu aktywuje SOX9, gdy DAX1 jest zablokowany | –
 SOX3 (Xq26.3) | może blokować SOX9; hamowany przez SRY | –
-DAX1 (Xp) | hamuje SF1; blokowany przez SRY | duplikacje (region DSS) – brak jąder u płodu XY
+DAX1 (Xp) | zakłada się, że hamuje SF1, a sam jest blokowany przez SRY | duplikacje (region DSS) – brak jąder u płodu XY
 WNT4 (1p31–p35) | blokowany przez SRY; u XX (z WNT7) – rozwój narządów z przewodów Müllera | duplikacje regionu – brak jąder u płodu XY
 [/TABELA]
 
 ### Ile genu – tyle skutku: efekt dawki  []
 Sieć reaguje nie tylko na to, czy gen jest, ale też na to, ile jest jego produktu. Najlepiej to widać, gdy jeden gen ma dodatkową kopię (duplikację).
-[RAMKA przyklad] Płód XY z duplikacją DAX1 w obrębie regionu DSS. SRY jest i normalnie zablokowałby DAX1. Dwie kopie DAX1 prowadzą jednak do jego nadekspresji (efekt dawki genu). Przypuszcza się, że produkt DAX1 skutecznie konkuruje wtedy o miejsca wiązania koaktywatorów genów ulegających ekspresji w jądrze, przede wszystkim SF1. W modelu opisanym wyżej oznacza to, że SF1 nie aktywuje SOX9 – i jądra się nie rozwijają , mimo płci chromosomowej XY. Podobny skutek mają duplikacje regionu p31–p35 chromosomu 1, w którym leży WNT4. Płód XX z duplikacją SOX9. SRY nie ma, ale dodatkowa kopia SOX9 (efekt dawki) może wystarczyć, by gonada zróżnicowała się w jądro mimo składu chromosomów XX. Wniosek: dodatkowa kopia jednego genu może przeważyć sygnał z SRY (DAX1, WNT4) albo go zastąpić (SOX9). Taki misterny układ regulacyjny łatwo zakłócić.
+[RAMKA przyklad] Płód XY z duplikacją DAX1 w obrębie regionu DSS. SRY jest i normalnie zablokowałby DAX1. Dwie kopie DAX1 prowadzą jednak do jego nadekspresji (efekt dawki genu). Przypuszcza się, że produkt DAX1 skutecznie konkuruje wtedy o miejsca wiązania koaktywatorów genów ulegających ekspresji w jądrze, przede wszystkim SF1. W modelu opisanym wyżej oznacza to, że SF1 nie aktywuje SOX9 – i jądra się nie rozwijają , mimo płci chromosomowej XY. Podobny skutek mają duplikacje regionu p31–p35 chromosomu 1, w którym leży WNT4. Płód XX z duplikacją SOX9. SRY nie ma, ale dodatkowa kopia SOX9 (efekt dawki) może wystarczyć, by gonada zróżnicowała się w jądro mimo składu chromosomów XX. Wniosek: dodatkowa kopia jednego genu może zahamować rozwój jąder mimo obecności SRY (DAX1, region WNT4) albo doprowadzić do różnicowania jądra mimo braku SRY (SOX9). Taki misterny układ regulacyjny łatwo zakłócić.
 
 ### Od komórek Sertoliego do gotowego jądra  []
 Gdy sieć genów skieruje gonadę na drogę jądra, zaczyna się jego budowa:
 - Ok. 7. tydzień ciąży. Wzmożona ekspresja SRY to prawdopodobnie zasadniczy sygnał do różnicowania się komórek Sertoliego z komórek nabłonkowych grzebienia płciowego. Pierwotne sznury płciowe wnikające do gonady przekształcają się w cewki nasienne . To początek różnicowania jądra.
-- Drogi wyprowadzające. Cewki nasienne, wysłane komórkami Sertoliego, przekształcają się w kanaliki nasienne kręte. Te przechodzą w kanaliki proste, tworzące sieć jądra ( rete testis ). Z niej wychodzą przewody wyprowadzające do najądrza, dalej do nasieniowodu ( vas deferens ) i przewodu wytryskowego ( ductus ejaculatorius ), który łączy się z cewką moczową.
 - 8. tydzień. Komórki mezenchymalne tworzącego się jądra pod wpływem gonadotropiny łożyskowej ( hCG ) różnicują się w komórki śródmiąższowe Leydiga . Ich aktywność hormonalna zaczyna się pod koniec 9. tygodnia.
 - Później – LH. hCG ma wspólny receptor z hormonem LH (receptor LHR ). Z czasem funkcję hCG przejmuje LH; od niego zależą prawidłowy rozwój prącia i zstąpienie jąder.
-Ponieważ hCG i LH działają przez ten sam receptor, jego defekt nie pozwala zadziałać żadnemu z nich. Defekt LHR może powodować niedorozwój cech męskich o różnym nasileniu; mogą się też nie różnicować struktury pochodzące z przewodów Wolffa. Mutacje LHR stwierdza się u fenotypowych kobiet z kariotypem 46,XY i cechami dysgenezji gonad (hipoplazja komórek Leydiga, ang. Leydig cell hypoplasia ).
 
 ### Jajnik – droga alternatywna  []
 O genetycznych uwarunkowaniach różnicowania jajników wiadomo znacznie mniej. Przyjmuje się – jest to pewnego rodzaju dogmat – że jajnik to alternatywna droga rozwoju gonady pierwotnej: różnicuje się wtedy, gdy brak czynników stymulujących różnicowanie jądra. Pasuje do tego kalendarz: struktury gonady żeńskiej pojawiają się w 12. tygodniu ciąży, a więc później niż męskiej – gdy już wiadomo, że jądro nie powstanie.
 Do powstania jajnika nie potrzeba Y, ale w jego prawidłowej czynności muszą uczestniczyć geny chromosomu X . U płodów z monosomią 45,X jajnik, który początkowo się różnicuje, jest stopniowo degradowany do gonady dysgenetycznej (nieprawidłowo rozwiniętej).
-Możesz to wyjaśnić, korzystając z teorii Lyon ( ). Niektóre geny X w prawidłowych warunkach unikają inaktywacji, więc u kobiety 46,XX pracują w dwóch kopiach. Przy jednym X zostaje jedna kopia – połowa dawki. Taka połowicza niewydolność (haploinsuficjencja – jedna sprawna kopia daje za mało produktu, ) tych genów to zapewne przyczyna degradacji jajnika. Potwierdzają to przypadki dysgenezji jajników u osób z aberracjami strukturalnymi chromosomu X. Na tej podstawie w regionie Xp11.2 zidentyfikowano gen GDF9B. Czynność jajników zaburzają też mutacje innych genów – leżących na X i na autosomach:
+Możesz to wyjaśnić, korzystając z teorii Lyon ( ). Niektóre geny X w prawidłowych warunkach unikają inaktywacji, więc u kobiety 46,XX pracują w dwóch kopiach. Przy jednym X zostaje jedna kopia – połowa dawki. Taka połowicza niewydolność (haploinsuficjencja – jedna sprawna kopia daje za mało produktu, ) tych genów to zapewne przyczyna degradacji jajnika. Potwierdzają to przypadki dysgenezji jajników u osób z aberracjami strukturalnymi chromosomu X. Na tej podstawie w regionie Xp11.2 zidentyfikowano gen GDF9B. Czynność jajników zaburzają też mutacje drugiego genu chromosomu X:
 [TABELA]
 Gen (locus) | Skutek mutacji
 GDF9B, inaczej BMP15 (Xp11.2) | dysgenezja gonad typu 2 z cechami hipogonadyzmu hipergonadotropowego lub część przypadków przedwczesnego wygasania czynności jajników (POF)
 FMR1 (Xq27.3) | POF; zaburzenia czynności jajnika z wysokim poziomem gonadotropin u znacznej części nosicielek premutacji tego genu
-FOXL2 (3q23) | nieprawidłowa folikulogeneza (gen autosomalny)
-CGA (6q12–q21), FSHB (11p13), FSHR (2p21–p16) | dysgenezja jajników typu 1; geny podjednostki α gonadotropiny kosmówkowej, podjednostki β hormonu folikulotropowego (FSH) i receptora FSH
 [/TABELA]
-W kaskadzie genów wpływających na różnicowanie gonad geny te mogą podlegać kontroli genów odpowiedzialnych za utworzenie osi podwzgórze–przysadka–gonada, a same – jako czynniki transkrypcyjne – regulować ekspresję innych genów w komórkach docelowych.
+Podobne skutki mogą mieć mutacje kilku genów autosomalnych – m.in. genów hormonu folikulotropowego (FSH) i jego receptora ( ).
 Z punktu widzenia składu chromosomów płci wniosek jest prosty: bez chromosomu Y i genu SRY nie może nastąpić różnicowanie jądra , a bez dwóch chromosomów X nie jest możliwe zachowanie sprawności czynnościowej jajnika .
-[RAMKA zapamietaj] Gonada pierwotna różnicuje się w jądro, gdy jest Y z genem SRY. SRY – czynnik transkrypcyjny – i SOX9 wzmacniają się wzajemnie, a SRY hamuje SOX3, DAX1 i WNT4, które działają przeciw SOX9; od ok. 7. tygodnia powstają komórki Sertoliego. Bez SRY gonada staje się jajnikiem (12. tydzień), ale do jego sprawności potrzebne są dwa chromosomy X.
+[RAMKA zapamietaj] Gonada pierwotna różnicuje się w jądro, gdy jest Y z genem SRY. SRY – czynnik transkrypcyjny – i SOX9 prawdopodobnie wzmacniają się wzajemnie; SRY hamuje też SOX3 i (jak się zakłada) DAX1, które mogą działać przeciw SOX9, oraz blokuje WNT4. Od ok. 7. tygodnia powstają komórki Sertoliego. Bez SRY gonada staje się jajnikiem (12. tydzień), ale do jego sprawności potrzebne są dwa chromosomy X.
 [ŹRÓDŁO] Źródło: Drewa s. 518–521
 
 ## Dziedziczenie sprzężone z płcią  [c10-sprzezone]
@@ -355,11 +350,11 @@ U mężczyzny jest zupełnie inaczej. Jest on hemizygotą – ma tylko jedną ko
 Kilka dobrze poznanych chorób wywołują recesywne allele genów chromosomu X:
 - hemofilia A (hemofilia „klasyczna”) – wywołana mutacją genu czynnika VIII;
 - dystrofia mięśniowa Duchenne’a (DMD) – postępujące osłabienie i utrata mięśni, z objawami zwykle przed 5. rokiem życia; przyczyną jest brak białka dystrofiny . Łagodniejsza dystrofia mięśniowa Beckera wynika z innych mutacji w tym samym locus – to przykład heterogenności allelicznej (różne mutacje jednego genu dają różne choroby). U chorych na DMD dystrofiny prawie nie ma, a w dystrofii Beckera występuje ona zwykle w zmniejszonej ilości, jako skrócone białko;
-- ślepota na barwy czerwoną i zieloną – najczęstszy defekt widzenia barw; dziedziczy się recesywnie w sprzężeniu z chromosomem X, dlatego występuje znacznie częściej u mężczyzn niż u kobiet.
+- daltonizm – nierozróżnianie barwy czerwonej i zielonej; dziedziczy się recesywnie w sprzężeniu z chromosomem X, dlatego – jak zobaczysz za chwilę – występuje znacznie częściej u mężczyzn niż u kobiet.
 
 ### Dlaczego chorują głównie mężczyźni?  []
 Jeśli częstość zmutowanego allelu w populacji wynosi q , choroba występuje u mężczyzn z częstością q – chorują wszyscy, którzy mają mutację (przesłanka 3). Kobieta zachoruje tylko wtedy, gdy dostanie dwie kopie zmutowanego allelu, więc u kobiet częstość choroby wynosi tylko q 2 – jak w chorobach autosomalnych recesywnych.
-[RAMKA przyklad] Liczby przykładowe. Niech q = 1/100. Choruje 1 na 100 mężczyzn, ale tylko (1/100) 2 = 1 na 10 000 kobiet – sto razy mniej. Dla rzadszego allelu, q = 1/1000, choruje 1 na 1000 mężczyzn i 1 na 1 000 000 kobiet – już tysiąc razy mniej. Stosunek q : q 2 wynosi 1/ q , więc im rzadsza choroba, tym wyraźniejsza przewaga chorych mężczyzn .
+[RAMKA przyklad] Jorde liczy to na przykładzie hemofilii A. Choruje na nią ok. 1 na 10 000 mężczyzn, więc q = 0,0001. Chorych homozygotycznych kobiet powinno być q 2 = 0,00000001, czyli 1 na 100 000 000 – dziesięć tysięcy razy mniej niż mężczyzn. Zmień warunek (liczby przykładowe): allel częstszy, q = 1/100. Choruje 1 na 100 mężczyzn i 1 na 10 000 kobiet – „tylko” sto razy mniej. Stosunek q : q 2 wynosi 1/ q , więc im rzadsza choroba, tym wyraźniejsza przewaga chorych mężczyzn .
 
 ### Jak rozpoznać rodowód recesywny sprzężony z X?  []
 Cztery cechy – każda wynika z przesłanek ( ):
@@ -382,7 +377,7 @@ W trzecim, rzadkim układzie choroba może sprawiać wrażenie przekazania z ojc
 
 ### Heterozygota manifestująca – kiedy nosicielka choruje?  [c10-manifestujace]
 Czasem chorują kobiety, które odziedziczyły tylko jedną kopię allelu choroby recesywnej sprzężonej z X. Wyobraź sobie zarodek żeński, który dostał prawidłowy gen czynnika VIII od jednego z rodziców, a zmutowany – od drugiego. Zwykle inaktywacja X daje mniej więcej równą liczbę komórek z aktywnym X ojcowskim i matczynym. Nosicielka wytwarza wtedy ok. 50% prawidłowej ilości czynnika VIII i jest fenotypowo zdrowa.
-Inaktywacja jest jednak losowa ( ). Wyjątkowo może się więc zdarzyć, że u heterozygoty aktywne pozostają prawie wyłącznie chromosomy X z mutacją. Taka kobieta ma objawy choroby – jest heterozygotą manifestującą . Zwykle zachowuje przynajmniej część aktywnych prawidłowych X, więc choroba ma u niej stosunkowo łagodną postać.
+Inaktywacja jest jednak losowa ( ). Wyjątkowo może się więc zdarzyć, że u heterozygoty aktywne pozostają prawie wyłącznie chromosomy X z mutacją. Taka kobieta ma objawy choroby – jest heterozygotą manifestującą . Zwykle zachowuje przynajmniej część aktywnych prawidłowych X, więc choroba ma u niej stosunkowo łagodną postać. Przykład z liczbą: ok. 5% nosicielek hemofilii A ma czynnik VIII na poziomie tak niskim, że kwalifikuje się je jako chore na łagodną postać hemofilii.
 Rzadko chorują też kobiety mające tylko jeden chromosom X (zespół Turnera), np. na hemofilię A – z jednym X są w takiej samej sytuacji jak mężczyzna (przesłanka 3). Kobiety mogą też zachorować wskutek translokacji lub delecji fragmentu chromosomu X, ale zdarza się to rzadko.
 
 ### Dziedziczenie dominujące sprzężone z X  []
@@ -406,7 +401,7 @@ Inne | brak przekazania z ojca na syna; u heterozygotycznych kobiet przebieg ła
 [/TABELA]
 
 ### Zespół kruchego chromosomu X – gdy proste reguły nie wystarczają  []
-Według źródła (Jorde) zespół kruchego chromosomu X dziedziczy się dominująco w sprzężeniu z X, ale z niepełną penetracją – nie każdy, kto ma zmutowany gen, choruje ( ). Penetracja jest wyraźnie niższa u kobiet niż u mężczyzn. Niższą penetrację i zmienną ekspresję u kobiet wiąże się z inaktywacją X.
+Według Jordego zespół kruchego chromosomu X dziedziczy się dominująco w sprzężeniu z X, ale z niepełną penetracją – nie każdy, kto ma zmutowany gen, choruje ( ). Penetracja jest wyraźnie niższa u kobiet niż u mężczyzn (30% wobec 80%). Niższą penetrację i zmienną ekspresję u kobiet wiąże się z inaktywacją X.
 Rodowody tej choroby wyglądają zagadkowo. Są w nich mężczyźni, którzy są nosicielami genu, ale nie chorują – „zdrowi mężczyźni przekazujący chorobę”. Ich córki nigdy nie mają objawów, ale synowie tych córek mogą zachorować, a ryzyko rośnie w kolejnych pokoleniach. Ten schemat nazwano paradoksem Shermana . Jest on niezgodny z zasadami dziedziczenia sprzężonego z X, które zakładają równą penetrację u wszystkich mężczyzn z allelem choroby.
 Paradoks wyjaśniła budowa genu FMR1 . W jego nieulegającym translacji rejonie leży powtórzenie trójnukleotydu CGG :
 - zdrowi męscy nosiciele i ich córki mają premutację – pośrednią liczbę powtórzeń;
@@ -414,12 +409,13 @@ Paradoks wyjaśniła budowa genu FMR1 . W jego nieulegającym translacji rejonie
 - premutacje mają też tendencję do powiększania się w kolejnych pokoleniach;
 - w pełnej mutacji powtórzenie CGG jest silnie zmetylowane, a w komórkach nie ma mRNA FMR1 – transkrypcja genu jest zahamowana.
 Teraz paradoks znika. Dziadek ma premutację i jest zdrowy. Córce przekazuje ją bez powiększenia, więc córka też nie choruje. Dopiero gdy ona przekazuje gen swoim dzieciom, premutacja może się powiększyć do pełnej mutacji – i wnuk choruje. Premutacja FMR1 pojawiła się już w tabeli genów jajnika: u znacznej części nosicielek towarzyszą jej zaburzenia czynności jajnika ( ).
+[RYCINA c10-fig-fmr1 „Paradoks Shermana: od premutacji do pełnej mutacji”: Czytaj z góry na dół, pokolenie po pokoleniu, i porównuj długość bloku CGG po prawej. Między dziadkiem a córką blok się nie zmienia (premutacja, oboje bez objawów); wydłuża się dopiero, gdy gen przekazuje matka – u wnuka jest to pełna mutacja, zmetylowana i bez mRNA FMR1. Wniosek: o chorobie decyduje nie samo odziedziczenie genu, lecz to, przez którego rodzica przeszedł.]
 
 ### Dziedziczenie sprzężone z chromosomem Y  []
-Na chromosomie Y leży stosunkowo mało genów. Należą do nich geny zapoczątkowujące różnicowanie zarodka w kierunku płci męskiej (SRY), kilka genów czynników spermatogenezy swoistych dla jąder, mniej istotny antygen zgodności tkankowej H-Y oraz kilka genów metabolizmu podstawowego (ang. housekeeping ), mających na chromosomie X homologi nieulegające inaktywacji ( ).
+Chromosom Y zawiera ok. 79 Mb DNA (milionów par zasad), ale leży na nim stosunkowo mało genów – Jorde podaje ok. dwóch tuzinów zidentyfikowanych genów (Drewa: 57 cech, ). Należą do nich geny zapoczątkowujące różnicowanie zarodka w kierunku płci męskiej (SRY), kilka genów czynników spermatogenezy swoistych dla jąder, mniej istotny antygen zgodności tkankowej H-Y oraz kilka genów metabolizmu podstawowego (ang. housekeeping ), mających na chromosomie X homologi nieulegające inaktywacji.
 Cechy sprzężone z Y przekazywane są wyłącznie z ojca na syna ( ). Wynika to wprost z przesłanki 1: każdy syn dostaje od ojca chromosom Y, a żadna córka go nie dostaje. Chory ojciec ma więc chorych synów, a jego córki są zdrowe i nie przekażą cechy dalej.
 [RAMKA zapamietaj] Ojciec daje X córkom, a Y synom; mężczyzna jest hemizygotą. Stąd: recesywne sprzężone z X – chorują głównie mężczyźni, brak przekazania ojciec → syn, nosicielka przekazuje chorobę połowie synów, chory ojciec – nosicielstwo wszystkim córkom. Dominujące sprzężone z X – kobiety chorują dwa razy częściej, chory ojciec ma wszystkie córki chore i wszystkich synów zdrowych. Sprzężone z Y – wyłącznie z ojca na syna.
-[ŹRÓDŁO] Źródło: Jorde s. 109–118, 120
+[ŹRÓDŁO] Źródło: Jorde (wyd. ok. 2000) s. 109–118 · Drewa s. 460
 
 ## Cechy ograniczone przez płeć i związane z płcią  [c10-ograniczone]
 
@@ -429,13 +425,7 @@ Nie zawsze. Bywa niepewność, które cechy są sprzężone z płcią, a które 
 - w cechach ograniczonych przez płeć i związanych z płcią gen może leżeć na autosomie – o tym, czy cecha się ujawni, decyduje płeć osoby .
 Cecha ograniczona przez płeć pojawia się tylko u jednej płci – np. ze względu na różnice anatomiczne. Przykładem są dziedziczne defekty macicy lub jąder: defekt macicy nie może się ujawnić u mężczyzny, bo mężczyzna nie ma macicy.
 Cecha związana z płcią (w źródle: „stymulowana przez płeć”) występuje u obu płci, ale u jednej znacznie częściej. Dobrym przykładem jest męski typ łysienia .
-
-### Męski typ łysienia  []
-Wbrew często wyrażanemu przekonaniu męski typ łysienia nie jest sprzężony z chromosomem X . Uważa się, że u mężczyzn dziedziczy się autosomalnie dominująco, a u kobiet – autosomalnie recesywnie. Ten sam gen zachowuje się więc inaczej u każdej płci:
-- mężczyźnie wystarcza jedna kopia allelu, by cecha się ujawniła;
-- kobieta ujawnia cechę tylko wtedy, gdy odziedziczy dwie kopie – i nawet wtedy częściej ma lekkie przerzedzenie włosów niż całkowitą łysinę;
-- heterozygotyczne kobiety mogą przekazać cechę potomstwu, same nie mając jej objawów.
-[RAMKA przyklad] Jak w rodowodzie odróżnić łysienie od cechy recesywnej sprzężonej z X? Obie częściej dotyczą mężczyzn i obie mogą przechodzić przez zdrowe kobiety. Szukaj ojca, który ma tę cechę, i jego synów. Gen sprzężony z X nie może przejść z ojca na syna, bo syn dostaje od ojca Y ( ). Gen autosomalny – może. Przekazanie cechy z ojca na syna przemawia więc przeciw sprzężeniu z X. Pamiętaj tylko o pułapce z rzadkiego układu rodziców opisanego wyżej: chory syn mógł dostać allel od matki nosicielki.
+Tabela zestawia cztery rodzaje cech według tego kryterium:
 [TABELA]
 Rodzaj cechy | Co decyduje | U kogo się ujawnia | Przykład
 Sprzężona z X | gen na chromosomie X | recesywna – głównie u mężczyzn; dominująca – dwa razy częściej u kobiet | hemofilia A; krzywica hipofosfatemiczna
@@ -443,8 +433,231 @@ Sprzężona z Y | gen na chromosomie Y | tylko u mężczyzn (z ojca na syna) | g
 Ograniczona przez płeć | płeć (np. anatomia) | tylko u jednej płci | dziedziczne defekty macicy lub jąder
 Związana z płcią | płeć | u obu płci, znacznie częściej u jednej | męski typ łysienia
 [/TABELA]
-[ŹRÓDŁO] Źródło: Jorde s. 118
-[RAMKA w60] Chromosomy płci – X: duży (jak grupa C), bogaty w geny, w większości niezwiązane z płcią; Y: mały akrocentryk, w dużej części heterochromatyna bez genów, geny tylko w euchromatynie (SRY, AZF); regiony PAR na końcach ramion krótkich umożliwiają koniugację i crossing-over X z Y. Chromatyna X – kompensacja dawki: jeden X kobiety jest unieczynniony i widoczny jako ciałko Barra (nabłonek jamy ustnej) lub pałeczka dobosza (granulocyty); liczba ciałek = liczba X − 1. Chromatyna Y – fluoryzująca heterochromatyna Yq12; ciałek Y tyle, ile chromosomów Y. Teoria Lyon – ok. 16. dnia losowa i trwała inaktywacja jednego X → kobieta jest mozaiką; inicjuje ją RNA genu XIST (XIC, Xq13), utrzymuje metylacja DNA; unikają jej geny mające odpowiedniki na Y. Determinacja gonady – Y z genem SRY → wzajemne wzmacnianie SRY i SOX9, hamowanie SOX3, DAX1, WNT4 → komórki Sertoliego (ok. 7. tydzień) → jądro; bez SRY – jajnik (12. tydzień), którego sprawność wymaga dwóch X. Dziedziczenie sprzężone z X – recesywne: chorują głównie mężczyźni, nosicielki, brak przekazania ojciec → syn; dominujące: dwa razy więcej chorych kobiet, chory ojciec – wszystkie córki chore. Heterozygoty manifestujące wynikają z losowej inaktywacji X. Sprzężone z Y – tylko z ojca na syna. Cechy ograniczone przez płeć (jedna płeć) i związane z płcią (obie, częściej jedna) zależą od płci osoby, nie od położenia genu.
+
+### Męski typ łysienia  []
+Wbrew często wyrażanemu przekonaniu męski typ łysienia nie jest sprzężony z chromosomem X . Uważa się, że u mężczyzn dziedziczy się autosomalnie dominująco, a u kobiet – autosomalnie recesywnie. Ten sam gen zachowuje się więc inaczej u każdej płci:
+- mężczyźnie wystarcza jedna kopia allelu, by cecha się ujawniła;
+- kobieta ujawnia cechę tylko wtedy, gdy odziedziczy dwie kopie – i nawet wtedy częściej ma lekkie przerzedzenie włosów niż całkowitą łysinę;
+- heterozygotyczne kobiety mogą przekazać cechę potomstwu, same nie mając jej objawów.
+[RAMKA przyklad] Jak w rodowodzie odróżnić łysienie od cechy recesywnej sprzężonej z X? Obie częściej dotyczą mężczyzn i obie mogą przechodzić przez zdrowe kobiety. Szukaj ojca, który ma tę cechę, i jego synów. Gen sprzężony z X nie może przejść z ojca na syna, bo syn dostaje od ojca Y ( ). Gen autosomalny – może. Przekazanie cechy z ojca na syna przemawia więc przeciw sprzężeniu z X. Pamiętaj tylko o pułapce z rzadkiego układu rodziców opisanego wyżej: chory syn mógł dostać allel od matki nosicielki.
+[ŹRÓDŁO] Źródło: Jorde (wyd. ok. 2000) s. 118
+[RAMKA w60] Chromosomy płci – X: duży (jak grupa C), bogaty w geny, w większości niezwiązane z płcią; Y: mały akrocentryk, w dużej części heterochromatyna bez genów, geny tylko w euchromatynie (SRY, AZF); regiony PAR na końcach ramion krótkich umożliwiają koniugację i crossing-over X z Y. Chromatyna X – kompensacja dawki: jeden X kobiety jest unieczynniony i widoczny jako ciałko Barra (nabłonek jamy ustnej) lub pałeczka dobosza (granulocyty); liczba ciałek = liczba X − 1. Chromatyna Y – fluoryzująca heterochromatyna Yq12; ciałek Y tyle, ile chromosomów Y. Teoria Lyon – ok. 16. dnia losowa i trwała inaktywacja jednego X → kobieta jest mozaiką; inicjuje ją RNA genu XIST (XIC, Xq13), utrzymuje metylacja DNA; unikają jej geny mające odpowiedniki na Y. Determinacja gonady – Y z genem SRY → (zakładane) wzajemne wzmacnianie SRY i SOX9, hamowanie SOX3, DAX1, WNT4 → komórki Sertoliego (ok. 7. tydzień) → jądro; bez SRY – jajnik (12. tydzień), którego sprawność wymaga dwóch X. Dziedziczenie sprzężone z X – recesywne: chorują głównie mężczyźni, nosicielki, brak przekazania ojciec → syn; dominujące: dwa razy więcej chorych kobiet, chory ojciec – wszystkie córki chore. Heterozygoty manifestujące wynikają z losowej inaktywacji X. Sprzężone z Y – tylko z ojca na syna. Cechy ograniczone przez płeć (jedna płeć) i związane z płcią (obie, częściej jedna) zależą od płci osoby, nie od położenia genu.
+[RAMKA przejscie] Część 1 wystarcza, żeby rozumieć wszystkie zagadnienia z rozpiski. Część 2 jest dla tych, którzy chcą umieć więcej: dokłada szczegóły mapy chromosomów X i Y, dowody i wyjątki teorii Lyon, pozostałe geny determinacji gonady oraz trzy choroby sprzężone z X – hemofilię A, dystrofię Duchenne’a i zespół kruchego chromosomu X – z liczbami i mechanizmem. Każda sekcja wskazuje miejsce w części 1, które rozszerza. mapa chromosomów X i Y w szczegółach ( ), teoria Lyon – dowody, mechanizm, wyjątki ( ), determinacja gonady – pozostałe ogniwa ( ), hemofilia A – od objawów do genu ( ), dystrofie Duchenne’a i Beckera ( ), zespół kruchego chromosomu X ( ).
+
+## Mapa chromosomów X i Y w szczegółach  [c10-r-mapa]
+W części 1 ( ) poznałeś X i Y w zarysie: X jest duży i bogaty w geny, Y – mały, z genami tylko w euchromatynie, a na końcach ramion krótkich obu chromosomów leżą regiony PAR. Tu dokładamy trzy rzeczy: liczby z drugiego źródła, pełną mapę genów Y i granicę regionu PAR – bo tuż przy niej leży SRY.
+
+### Ile DNA i ile genów? Dwa źródła, dwa zestawy liczb  []
+Drewa podaje dla X 1,8 × 10 8 par zasad i 1094 cechy sprzężone z X, a dla Y – ok. 1% DNA genomu i 57 cech (jej liczb dla całego Y i jego euchromatyny w parach zasad nie używamy, bo w źródle nie są spójne). Jorde (wyd. ok. 2000) liczy nie cechy, tylko geny, i podaje:
+- X – ok. 5% jądrowego DNA, ok. 160 Mb (milionów par zasad), ponad 500 genów kodujących;
+- Y – ok. 70 Mb (w części o dziedziczeniu sprzężonym z Y: ok. 79 Mb) i ok. dwóch tuzinów genów.
+Liczby z obu źródeł się różnią, ale prowadzą do tego samego wniosku co w części 1: X jest większy od Y i ma wielokrotnie więcej genów.
+
+### Mapa genowa Y – od końca ramienia krótkiego  []
+W części 1 lista genów Y obejmowała PAR, SRY, trzy pary genów X/Y i AZF. Mapa genowa Y w źródle (ryc. 18.14) pokazuje znacznie więcej nazw, ale nie podaje ich funkcji – mówi tylko, który gen leży w którym odcinku. Najwięcej dopowiada o regionie AZF: na mapie to cztery odcinki ramienia długiego – AZFa, AZFb, AZFd i AZFc – a przy nich kilkanaście nazw genów. Tabela idzie od końca ramienia krótkiego do końca ramienia długiego:
+[TABELA]
+Odcinek Y | Geny na mapie
+PAR1 – koniec ramienia krótkiego | na mapie bez nazw; w tekście: MIC2 i gen receptora GM-CSF
+Yp11.3, tuż pod PAR1 | SRY (TDF), RPS4Y, ZFY
+Yp11.2 | RBM, PRKY, TTY1, TSPY, PRY, AMELY, TTY2
+Yq11 – odcinki AZFa i AZFb | DFFRY, DBY, UTY, TB4Y, BPY1, CDY, XKRY, RBM, SMCY (HYA), EIF1AY
+Yq11 – odcinki AZFd i AZFc | RBM, PRY, TTY2, RBM, DAZ, BPY2, PRY, CDY
+dystalna część ramienia długiego (heterochromatyna) | bez genów; na samym końcu – PAR2
+[/TABELA]
+Zwróć uwagę na trzy szczegóły. SRY figuruje na mapie jako SRY (TDF) – to ślad dawnej nazwy hipotetycznego czynnika determinującego jądro ( ). Niektóre nazwy – RBM, PRY, CDY, TTY2 – pojawiają się na mapie w kilku miejscach. Wreszcie mapa ma dwa regiony pseudoautosomalne: PAR1 na końcu ramienia krótkiego – ten z części 1 – i PAR2 na końcu ramienia długiego, którego tekst źródła nie opisuje.
+
+### Granica regionu PAR i ryzyko dla SRY  []
+W części 1 region pseudoautosomalny był miejscem, w którym X i Y koniugują i mogą wymieniać odcinki (crossing-over). Drugi schemat Y w źródle (ryc. 20.2 – z lewej obraz cytogenetyczny, z prawej mapa molekularna z regionami AZF) nadaje temu odcinkowi i jego granicy osobne nazwy:
+- PARY – region pseudoautosomalny Y, który wchodzi w crossing-over z ramieniem krótkim X (Xp);
+- PABY – granica między PARY a częścią swoistą dla Y ( NRY ).
+Tuż przy PABY leży gen SRY. Crossing-over w obrębie PARY jest prawidłową wymianą odcinków między Xp a Yp. Jeśli jednak wymiana sięgnie choćby nieco poza granicę PABY, razem z odcinkiem Y może przejść na X także SRY. Dlatego źródło mówi o ryzyku „nieuprawnionego” przeniesienia SRY na Xp – nieuprawnionego, bo poza regionem, w którym wymiana normalnie zachodzi.
+[ŹRÓDŁO] Źródło: Drewa s. 458–460, 519 · Jorde (wyd. ok. 2000) s. 103, 118
+
+## Teoria Lyon – dowody, mechanizm, wyjątki  [c10-r-lyon]
+W części 1 ( ) teoria Lyon była gotowym modelem: losowa i trwała inaktywacja jednego X, mozaika komórek, XIST i metylacja. Tu – za Jordem (wyd. ok. 2000) i schematami Drewy – odpowiadamy na cztery pytania: skąd wiadomo, że model jest prawdziwy; co dokładnie robi RNA genu XIST; kiedy wybór X nie jest losowy; i których genów inaktywacja nie obejmuje – a co z tego wynika dla osób z nieprawidłową liczbą X.
+
+### Skąd wiadomo? Dowody hipotezy Lyon  []
+Punkt wyjścia był prosty. Kobieta ma dwie kopie każdego genu X, a mężczyzna jedną – a jednak u obu płci produkty tych genów (np. enzymy) występują w takich samych ilościach. Na początku lat 60. Mary Lyon wyjaśniła to hipotezą, że w każdej komórce somatycznej kobiety jeden X jest nieaktywny. Oparła ją głównie na badaniach zwierząt.
+Jeśli hipoteza jest prawdziwa, heterozygotyczna samica powinna być mozaiką: w części komórek działa jeden allel, w części – drugi. Każdy z kolejnych dowodów pokazuje właśnie taką mozaikę, a u samców – jej brak:
+- myszy – samice heterozygotyczne pod względem genów ubarwienia leżących na X mają nakrapianą sierść; samce – nie;
+- „koty pstrokate” – samice mają naprzemienne czarne i pomarańczowe pasma sierści: jedne komórki mają aktywny allel „pomarańczowy”, inne – „czarny”; samce tej rasy nie mają naprzemiennych barw;
+- albinizm oczny sprzężony z X – choroba recesywna, w której siatkówka nie wytwarza melaniny, a wzrok zaburzają oczopląs (gwałtowne, niekontrolowane ruchy oka) i obniżona ostrość widzenia. U chorych mężczyzn melaniny w siatkówce brak jednolicie, a u heterozygotycznych kobiet pola z pigmentem przeplatają się z polami bez pigmentu;
+- dehydrogenaza glukozo-6-fosforanowa (G6PD) – enzym kodowany na X, którego u obu płci jest tyle samo (kompensacja dawki). U kobiet heterozygotycznych pod względem dwóch częstych alleli, A i B, jedne komórki skóry wytwarzają tylko wariant A, a inne – tylko B.
+Dowód cytogenetyczny przyszedł z drugiej strony. W latach 40. w jądrach interfazowych samic kotów opisano mocno barwiącą się grudkę chromatyny, której nie stwierdza się u samców – ciałko Barra, nazwane od Murraya Barra. Barr i jego współpracownik Ewart Bertram przypuszczali, że to silnie zagęszczony X; dziś wiadomo, że mieli rację. Zagęszczenie odzwierciedla późną replikację nieaktywnego X w fazie S. Ciałka Barra występują tylko w komórkach z co najmniej dwoma X – tak jak wymaga reguła X − 1. Przy określaniu płci badanie ciałka Barra wyparły dziś techniki analizy DNA.
+
+### Kiedy i jak? Kilkaset komórek i RNA otaczające X  []
+Dalsze badania potwierdziły hipotezę w szczegółach. W każdej komórce somatycznej zdrowej kobiety mRNA powstaje tylko na jednym X. Inaktywacja zachodzi w ciągu ok. 2 tygodni po zapłodnieniu, gdy zarodek liczy kilkaset komórek – to mniej więcej ten sam czas co ok. 16. dzień z części 1. Schemat hipotezy Lyon u Drewy (ryc. 18.16) rozpisuje oś czasu: zygota → wczesne bruzdkowanie → implantacja → 16. dzień życia zarodkowego. Do 16. dnia komórki mają na schemacie oba X i nie mają ciałka Barra; później każda ma jeden aktywny X – ojcowski albo matczyny – i ciałko Barra, a jej komórki potomne powtarzają ten wybór.
+Proces startuje w jednym miejscu ramienia długiego X – w centrum inaktywacji – i stamtąd rozprzestrzenia się wzdłuż chromosomu. Co się rozprzestrzenia? Jorde opisuje produkt genu XIST: transkrypt o wielkości 15–17 kb, wykrywany u zdrowych kobiet, a nie u zdrowych mężczyzn. Pasuje to do części 1: XIST pracuje tylko na nieaktywnym X, a mężczyzna nie ma nieaktywnego X. Ten RNA nie ulega translacji na białko – zostaje w jądrze i otacza nieaktywny X. Takie otoczenie może być sygnałem, który prowadzi np. do późnej replikacji i zagęszczenia chromosomu.
+Metylacja ma w tym procesie inne zadanie niż RNA XIST. Na nieaktywnym X silnie zmetylowanych jest wiele dwunukleotydów CG w rejonach 5′ genów, a środki demetylujące, takie jak 5-azacytydyna, mogą częściowo reaktywować nieaktywny X in vitro (w hodowli komórek). Metylacja nie przenosi jednak sygnału inaktywacji od centrum na resztę chromosomu. Bardziej prawdopodobne jest, że utrzymuje dany X w stanie nieaktywnym w komórce i we wszystkich jej komórkach potomnych. To ten sam podział ról co w części 1: XIST uruchamia, metylacja utrzymuje.
+
+### Kiedy wybór nie jest losowy?  []
+W części 1 inaktywacja selektywna miała dwie grupy przyczyn: mutacje (genu XIST albo innych genów X) oraz mikrodelecje i mikroduplikacje. Ryc. 18.17 w źródle zestawia trzy sytuacje. Porównując je, zwróć uwagę, w którym momencie proporcja komórek z aktywnym X matczynym i ojcowskim przestaje być równa:
+- Przypadkowa inaktywacja – X matczyny i ojcowski są inaktywowane losowo, niezależnie od siebie, we wczesnej embriogenezie. W dojrzałych tkankach mozaicyzm przejawia się równymi ilościami aktywnych X matczynych i ojcowskich. To sytuacja z czterech założeń części 1.
+- Mutacja na jednym X – początek jest taki sam, losowy, ale mutacja na jednym z X obniża przeżywalność komórek w dojrzałych tkankach. Komórki ubywają wybiórczo (selektywne uszkodzenia), więc proporcja zmienia się dopiero później – w dojrzałej tkance.
+- Defekt samego procesu inaktywacji – mutacja w genie XIST powoduje, że X jest inaktywowany w sposób nieprzypadkowy; tu wybór od początku nie jest losowy.
+Są też sytuacje, w których wybór nie jest losowy z natury. Według Jordego w komórkach, z których powstaną tkanki zewnątrzzarodkowe (np. łożysko), unieczynniany jest tylko X ojcowski – losowo wybierają wyłącznie komórki samego zarodka. A w linii komórek rozrodczych nieaktywny X zostaje ponownie uaktywniony, tak aby każda komórka jajowa otrzymała jedną aktywną kopię X. Trwałość inaktywacji z części 1 dotyczy więc komórek somatycznych.
+
+### Inaktywacja niekompletna – i co z niej wynika przy nieprawidłowej liczbie X  []
+Reguła X − 1 rodzi pytanie, które stawia Jorde: skoro każdy dodatkowy X i tak zostaje unieczynniony, dlaczego osoby z dodatkowym (lub brakującym) X nie mają prawidłowego fenotypu? Odpowiedź brzmi: inaktywacja jest niekompletna . Kilka rejonów X pozostaje aktywnych we wszystkich kopiach:
+- zwłaszcza końce ramion krótkich i długich X; koniec ramienia krótkiego jest wysoce homologiczny do dystalnej części ramienia krótkiego Y (to region PAR z części 1);
+- obszary z genami sulfatazy steroidowej i grupy krwi Xg (w części 1 – geny w sąsiedztwie PAR) oraz z genem zespołu Kallmanna – zaburzenia, które powoduje hipogonadyzm i brak węchu.
+Wiele genów X unikających inaktywacji ma homologi na Y – dzięki temu ich dawka jest u obu płci równa. Ile jest takich genów? Drewa pisze o „bardzo niewielkiej liczbie”, a Jorde przytacza badanie, według którego inaktywacji nie podlega ok. 20% genów X.
+Teraz odpowiedź na pytanie z początku. Osoba z dodatkowym X ma dodatkową kopię także tych stale aktywnych odcinków, a osoba z jednym X – o jedną kopię mniej. Nadmiarowe lub brakujące aktywne kopie muszą przyczyniać się do nieprawidłowego fenotypu. Tym samym rachunkiem w części 1 wyjaśniliśmy degradację jajnika przy 45,X ( ). Jorde streszcza to trzema słowami: inaktywacja X jest losowa, trwała i niekompletna .
+[ŹRÓDŁO] Źródło: Jorde (wyd. ok. 2000) s. 103–105, 109 · Drewa s. 463–464
+
+## Determinacja gonady – pozostałe ogniwa  [c10-r-gonada]
+W części 1 ( ) prześledziłeś sieć SRY–SOX9, drogę od komórek Sertoliego do jądra, a przy jajniku – dwa geny chromosomu X. Tu uzupełniamy ogniwa, które tam pominęliśmy: gdzie jeszcze działa DAX1, jak z cewek nasiennych powstają drogi wyprowadzające, co psuje defekt receptora LHR i które geny autosomalne zaburzają czynność jajnika. Po co ta szczegółowość? Drewa podkreśla, że złożoność tych mechanizmów pozwala zrozumieć, dlaczego zaburzenia rozwoju płciowego są klinicznie tak różnorodne – każde ogniwo może zawieść osobno.
+
+### DAX1 – gdzie działa i co pokazało doświadczenie na myszach  []
+DAX1 ulega ekspresji – podobnie jak WT1 – w grzebieniu moczowo-płciowym, silniej w jego części bliższej nadnerczy, a – podobnie jak SF1 – także w podwzgórzu i przysadce. Dla łańcucha z części 1 najważniejsze jest co innego: SRY i DAX1 ulegają ekspresji nie tylko w tym samym miejscu (w komórkach prekursorowych komórek Sertoliego), ale i mniej więcej w tym samym czasie. Ta zbieżność miejsca i czasu pasuje do założenia, że SRY blokuje DAX1.
+Doświadczenie na myszach to potwierdza. Konstrukt złożony z sekwencji kodującej SRY i promotora DAX1 (odcinka, który decyduje, gdzie i kiedy gen jest przepisywany) indukuje różnicowanie gonady pierwotnej w jądro. SRY ulega w nim ekspresji tam i wtedy, gdzie normalnie pracuje DAX1 – i gonada staje się jądrem.
+
+### Od cewek nasiennych do cewki moczowej  []
+W części 1 budowa jądra zaczynała się ok. 7. tygodnia od przekształcenia pierwotnych sznurów płciowych w cewki nasienne. Dalej powstają drogi wyprowadzające – każdy odcinek przechodzi w następny:
+- cewki nasienne, wysłane komórkami Sertoliego, przekształcają się w kanaliki nasienne kręte ;
+- kanaliki kręte przechodzą w kanaliki proste , które tworzą sieć jądra ( rete testis );
+- z sieci jądra wychodzą przewody wyprowadzające , prowadzące do najądrza ;
+- dalej biegnie nasieniowód ( vas deferens ), a po nim przewód wytryskowy ( ductus ejaculatorius ), który łączy się z ostatnim odcinkiem układu – cewką moczową .
+
+### Dlaczego jeden defekt wyłącza i hCG, i LH?  []
+Z części 1 wiesz, że komórki Leydiga różnicują się w 8. tygodniu pod wpływem hCG, a później jego funkcję przejmuje LH. Oba hormony działają przez ten sam receptor – LHR. Defekt receptora wyłącza więc obie drogi naraz: hormon jest, ale komórka go nie „odbiera”. Skutki według źródła:
+- niedorozwój cech męskich, o różnym stopniu ekspresji w poszczególnych przypadkach;
+- struktury ciał i przewodów Wolffa mogą nie podlegać dalszemu różnicowaniu i rozwojowi;
+- mutacje LHR mogą wystąpić u fenotypowych kobiet z kariotypem 46,XY i cechami dysgenezji gonad – ten stan nazywa się hipoplazją komórek Leydiga (ang. Leydig cell hypoplasia ).
+
+### Geny czynności jajnika – pełna tabela  []
+W części 1 tabela genów jajnika miała dwa geny X. Źródło wymienia więcej genów – także autosomalnych – i przy każdym podaje numer MIM . To numer pozycji w internetowej bazie OMIM ( Online Mendelian Inheritance in Man ), którą Drewa podaje w piśmiennictwie rozdziału; po numerze gen lub chorobę odnajduje się w bazie jednoznacznie. Wszystkie geny w tabeli łączy skutek: ich mutacje zaburzają czynność jajnika albo jego rozwój.
+[TABELA]
+Gen (pełna nazwa w źródle) | Locus | MIM | Skutek mutacji (MIM choroby)
+GDF9B (BMP15) | Xp11.2 | 300247 | dysgenezja gonad typu 2 (300510) z cechami typowego hipogonadyzmu hipergonadotropowego albo niektóre przypadki przedwczesnego wygasania czynności jajników – POF (311360)
+FMR1 (w źródle: „FMRP (FMR1)”) | Xq27.3 | 309550 | POF; zaburzenia czynności jajnika z wysokim poziomem gonadotropin w znacznej części nosicielek premutacji ( )
+FOXL2 (gen autosomalny) | 3q23 | 605597 | nieprawidłowo przebiegająca folikulogeneza
+CGA – Chorionic Gonadotropin, Alpha chain (FSHA); podjednostka α gonadotropiny kosmówkowej | 6q12–q21 | 118850 | mogą odpowiadać za dysgenezję jajników typu 1 (233300)
+FSHB – Follicle-Stimulating Hormone, Beta polypeptide ; podjednostka β hormonu folikulotropowego | 11p13 | 136530 | jak wyżej – dysgenezja jajników typu 1
+FSHR – Follicle-Stimulating Hormone Receptor ; receptor FSH | 2p21–p16 | 136435 | jak wyżej – dysgenezja jajników typu 1
+[/TABELA]
+Gdzie te geny leżą w sieci regulacji? Według źródła w kaskadzie genów wpływających na różnicowanie gonad mogą się one znajdować pod kontrolą genów odpowiadających za utworzenie osi podwzgórze–przysadka–gonada, a same – jako czynniki transkrypcyjne – regulować ekspresję innych genów w komórkach docelowych.
+[ŹRÓDŁO] Źródło: Drewa s. 519–521, 547
+
+## Hemofilia A – od objawów do genu  [c10-r-hemofilia]
+W części 1 hemofilia A była przykładem choroby recesywnej sprzężonej z X: posłużyła do rachunku q i q 2 ( ) i do opisu heterozygot manifestujących ( ). Tu – za komentarzem klinicznym Jordego (wyd. ok. 2000) – idziemy od objawów przez ciężkość choroby do typu mutacji. Oś jest jedna: ile czynnika VIII zostaje we krwi.
+
+### Jak często i od kiedy wiadomo?  []
+Na hemofilię A choruje ok. 1 na 5–10 tysięcy mężczyzn na świecie. To najczęstsze poważne zaburzenie krzepnięcia krwi, a jego dziedziczność znano od dawna. Talmud zwalniał z obrzezania chłopców, których bracia lub krewni wykrwawili się podczas tego zabiegu – Jorde nazywa to jednym z pierwszych notowanych przypadków poradnictwa genetycznego.
+Najsłynniejszy rodowód hemofilii zaczyna się od królowej Wiktorii. Była nosicielką: chorobę przekazała jednemu synowi, a dwie jej córki – także nosicielki – przekazały gen dalej, do rodzin królewskich Niemiec, Hiszpanii i Rosji. W całym rodowodzie chorzy to wyłącznie mężczyźni.
+[RAMKA przyklad] Sprawdź ten rodowód przesłankami z części 1. Nosicielka przekazuje allel średnio połowie synów (chorują) i połowie córek (są nosicielkami) – w rodzinie Wiktorii widać chorego syna i dwie córki nosicielki. Córki-nosicielki są zdrowe, ale przekazują allel własnym synom – stąd chorzy wnukowie i „ominięte” pokolenia zdrowych kobiet. Chora kobieta musiałaby dostać allel od obojga rodziców, a przy q = 0,0001 zdarza się to raz na 100 000 000 – dlatego w rodowodzie chorują tylko mężczyźni.
+Jednym z chorych był rosyjski carewicz Aleksy, syn cara Mikołaja II i Aleksandry. Grigorij Rasputin miał niezwykłą zdolność uspokajania go w czasie krwawień (prawdopodobnie hipnozą) i dzięki temu zdobył znaczne wpływy na dworze. Genetyka wróciła do tej rodziny jeszcze raz: szczątki ekshumowane niedaleko Jekaterynburga zidentyfikowano jako szczątki rodziny carskiej, badając metodą PCR mikrosatelity autosomalnego DNA i sekwencje DNA mitochondrialnego i porównując je z materiałem żyjących krewnych po kądzieli.
+
+### Co się dzieje bez czynnika VIII?  []
+Czynnik VIII to kluczowy składnik procesu krzepnięcia. Gdy go brak albo jest uszkodzony, zaburzone jest tworzenie fibryny: krwawienie z ran trwa długo i często jest poważne, dochodzi do krwotoków do mięśni i stawów, a chorzy mają zwykle siniaki. Dwa miejsca krwawień są szczególnie ważne:
+- stawy – zwłaszcza skokowe, kolanowe, biodrowe i łokciowe; wylewy są często bolesne, a powtarzające się epizody mogą niszczyć błonę maziową i ograniczać funkcję stawu;
+- wnętrze czaszki – krwawienie wewnątrzczaszkowe jest dość częste i zanim pojawiło się skuteczne leczenie, było główną przyczyną śmierci chorych.
+Płytki krwi działają u chorych prawidłowo, dlatego drobne skaleczenia i otarcia zwykle nie wywołują poważnego krwawienia.
+
+### Ile czynnika VIII – tak ciężka choroba  []
+Hemofilia A ma bardzo różne nasilenie, a różnice wynikają bezpośrednio z poziomu czynnika VIII. Jorde wyróżnia trzy postaci:
+[TABELA]
+Postać | Czynnik VIII (% normy) | Epizody krwawienia
+ciężka (ok. połowa chorych) | poniżej 1% | stosunkowo częste, nawet kilka razy w miesiącu
+umiarkowana | 1–5% | zwykle tylko po lekkich urazach, nie częściej niż kilka razy w roku
+lekka | 5–25% | zwykle tylko po operacjach i stosunkowo poważnych urazach
+[/TABELA]
+W ostatnim wierszu mieszczą się też heterozygoty manifestujące z części 1 – ok. 5% nosicielek ma czynnik VIII na poziomie łagodnej postaci.
+
+### Leczenie – od osocza dawców do czynnika rekombinowanego  []
+Ok. 35 lat przed wydaniem podręcznika Jordego hemofilia A często powodowała śmierć przed 20. rokiem życia. Potem nauczono się uzyskiwać czynnik VIII z osocza dawców. Podaje się go zwykle już przy pierwszym epizodzie krwawienia i jest to bardzo skuteczne; podawany profilaktycznie chorym z ciężką postacią chroni stawy przed uszkodzeniem. W latach 70. średni wiek zgonu chorych wydłużył się do 68 lat.
+Czynnik z osocza miał jednak wadę wynikającą z pochodzenia: uzyskuje się go od setek do tysięcy różnych dawców. Chorzy często zakażali się więc wirusami zapalenia wątroby typu B i C, a także HIV – szacuje się, że zakażonych zostało ok. połowy amerykańskich chorych leczonych czynnikiem VIII w latach 1978–1985. AIDS stał się wówczas najczęstszą przyczyną zgonów chorych na hemofilię, a średni wiek przeżycia spadł w latach 80. do 49 lat. Krew dawców bada się na obecność HIV od 1985 r., a ogrzewanie preparatów niszczy HIV i wirusa zapalenia wątroby typu B – ryzyko zakażenia niemal zniknęło.
+Drugi kłopot to przeciwciała „hamujące” skierowane przeciw czynnikowi VIII – wytwarza je 10–15% chorych, co dodatkowo utrudnia leczenie. Sklonowanie genu pozwoliło wytwarzać ludzki czynnik VIII technikami rekombinacji DNA. Czynnik rekombinowany działa tak samo skutecznie jak czynnik od dawców i od 1994 r. jest w sprzedaży. Nie niesie ryzyka zakażenia wirusami, ale także u części chorych wywołuje przeciwciała hamujące.
+
+### Gen czynnika VIII i typy mutacji  []
+Gen czynnika VIII leży w dystalnej części ramienia długiego X. Ma 186 kb DNA i 26 eksonów; jego mRNA (ok. 9 kb) koduje dojrzałe białko z 2332 aminokwasów. Sklonowanie i zsekwencjonowanie genu pozwoliło powiązać typ mutacji z ciężkością choroby. Przypomnij sobie dwa rodzaje zamian nukleotydu ( ): mutacja nonsensowna tworzy przedwczesny kodon STOP, a mutacja zmiany sensu – kodon innego aminokwasu.
+- mutacje nonsensowne – powstaje uszkodzone białko, a choroba ma zwykle postać ciężką;
+- mutacje zmiany sensu – powstaje białko różniące się od prawidłowego jednym aminokwasem, bez dominującego efektu negatywnego, więc postać jest zwykle łagodniejsza;
+- wiele mutacji punktowych powstaje w sekwencjach CG , które są podatne na mutacje;
+- ok. 45% ciężkich przypadków wywołuje inwersja chromosomowa, która przerywa gen czynnika VIII;
+- kolejne ok. 5% chorych ma delecje , zwykle ze stosunkowo ciężką postacią choroby.
+
+### Dwa inne zaburzenia krzepnięcia – dla porównania  []
+Jorde zestawia hemofilię A z dwoma innymi poważnymi zaburzeniami krzepnięcia. Porównanie przypomina, że nie każde zaburzenie krzepnięcia jest sprzężone z X:
+- hemofilia B („choroba Christmasa” – od nazwiska pierwszego zidentyfikowanego pacjenta) – też recesywna sprzężona z X, wywołana niedoborem czynnika IX; łagodniejsza niż hemofilia A i pięć razy rzadsza. Gen czynnika IX ma 34 kb i 8 eksonów; chorych leczy się czynnikiem IX od dawców;
+- choroba von Willebranda – autosomalna dominująca, o bardzo zmiennej ekspresji; może dotyczyć nawet 1% osób rasy białej, ale postać ciężka występuje u mniej niż 1 na 10 000 osób. Czynnik von Willebranda, kodowany przez gen na chromosomie 12, przenosi czynnik VIII, a ponadto wiąże płytki krwi i uszkodzony nabłonek naczyń – dzięki temu płytki przylegają do uszkodzonych ścian naczyń.
+[ŹRÓDŁO] Źródło: Jorde (wyd. ok. 2000) s. 106–109, 114
+
+## Dystrofie mięśniowe Duchenne’a i Beckera  [c10-r-dmd]
+W części 1 ( ) DMD i BMD pojawiły się jako para chorób jednego genu: w DMD dystrofiny prawie nie ma, w BMD jest jej mniej i jest skrócona. Tu – za komentarzem klinicznym Jordego (wyd. ok. 2000) – przechodzimy całą oś: jak przebiega choroba, czym jest dystrofina i dlaczego od tego, czy mutacja przesuwa ramkę odczytu, zależy, którą z dwóch chorób wywoła.
+
+### Przebieg DMD  []
+Dystrofia mięśniowa to postępujące osłabienie i utrata mięśni; ma co najmniej 12 różnych postaci. Najcięższa i najczęstsza z nich jest DMD, nazwana od francuskiego neurologa, który opisał ją w 1868 r. Dotyka ok. 1 na 3500 mężczyzn, z podobną częstością we wszystkich zbadanych grupach etnicznych. Choroba postępuje etapami:
+- przed 5. rokiem życia rodzice zauważają zwykle niezdarność i słabość mięśni dziecka;
+- we wczesnych stadiach widać przerost rzekomy łydek – łydki wydają się większe, bo mięśnie naciekają tkanka tłuszczowa i łączna;
+- mięśnie ulegają degeneracji – większość chorych przed 11. rokiem życia musi korzystać z wózka inwalidzkiego;
+- uszkodzeniu ulegają mięsień sercowy i mięśnie oddechowe; zgon następuje zwykle wskutek niewydolności serca lub układu oddechowego, a przeżycie ponad 25 lat zdarza się bardzo rzadko.
+Mimo znacznych wysiłków skutecznego leczenia nie opracowano (stan z ok. 2000 r.).
+
+### Jak rozpoznaje się DMD – u chorych i u nosicielek?  []
+Obumierające mięśnie uwalniają do krwi enzym kinazę kreatynową . U chorych na DMD jej poziom jest co najmniej 20 razy wyższy od górnej granicy normy – i jest podwyższony, zanim pojawią się objawy kliniczne. Inne narzędzia diagnostyczne to elektromiografia , która wykazuje obniżony potencjał czynnościowy, oraz biopsja mięśnia – w preparacie prawidłowe włókna mięśniowe są zastąpione tkanką tłuszczową i łączną.
+Heterozygotyczne nosicielki genu DMD zwykle nie chorują, choć 8–10% z nich ma pewien stopień osłabienia mięśni. U ok. 2/3 nosicielek poziom kinazy kreatynowej w osoczu przekracza 95. percentyl.
+
+### Gen DMD i dystrofina  []
+Gen DMD wyizolowano i sklonowano w 1986 r.; wcześniej o mechanizmie uszkodzenia mięśni wiedziano niewiele. Liczby pokazują, jak niezwykły to gen:
+- ok. 2,3 mln par zasad – zdecydowanie największy gen człowieka;
+- co najmniej 79 eksonów ; mRNA ma ok. 14 kb, a jego transkrypcja – z powodu ogromnego rozmiaru genu – może trwać nawet 24 godziny;
+- białko z 3685 aminokwasów – dystrofina, nieznana przed sklonowaniem genu.
+Dystrofina stanowi zaledwie ok. 0,002% białek komórek mięśni prążkowanych i leży po cytoplazmatycznej stronie błony komórkowej. Działa jak łącznik. Jej koniec aminowy wiąże F-aktynę – kluczowe białko struktur podporowych komórki. Koniec karboksylowy wiąże kompleks dystroglikanowo-sarkoglikanowy – kompleks glikoprotein w błonie komórkowej, który z kolei wiąże się z białkami zewnątrzkomórkowymi (np. z lamininą). Łącząc te dwa składniki, dystrofina utrzymuje strukturalną integralność komórki mięśniowej. Komórki mięśniowe bez dystrofiny stopniowo obumierają pod obciążeniem wywołanym skurczami.
+Rozmiar genu wyjaśnia też wysoki współczynnik mutacji – ok. 10 −4 . Duży gen jest, podobnie jak gen nerwiakowłókniakowatości typu 1, dobrym „celem” dla mutacji.
+Jeden gen może dawać kilka produktów. W komórkach mózgu transkrypcja zaczyna się dalej w kierunku końca 5′ genu, od innego promotora, więc mRNA i białko różnią się nieco od mięśniowych. Brak tej mózgowej formy pomaga wyjaśnić, dlaczego ok. 25% chorych na DMD ma iloraz inteligencji poniżej 75. Trzeci promotor działa w komórkach Purkinjego móżdżku. To przykład, jak pojedynczy gen wytwarza różne produkty dzięki zmodyfikowanej transkrypcji.
+
+### DMD czy BMD? Rozstrzyga ramka odczytu  []
+Dystrofia Beckera to też choroba recesywna sprzężona z X, ale łagodniejsza i wolniej postępująca: pierwsze objawy pojawiają się średnio w 11. roku życia, a niektórzy chorzy nigdy nie tracą zdolności chodzenia. Występuje znacznie rzadziej – u ok. 1 na 18 000 mężczyzn. Już wcześniej wiedziano, że gen BMD leży blisko genu DMD, ale nie wiedziano, czy to odrębne loci; dopiero sklonowanie pokazało, że to ten sam locus, a różne są mutacje – stąd heterogenność alleliczna z części 1.
+Obie choroby wywołują zwykle delecje albo duplikacje. Różni je to, co mutacja robi z ramką odczytu – podziałem sekwencji na trójki (kodony), w których rybosom czyta mRNA ( ). Większość delecji i duplikacji w DMD przesuwa ramkę, a większość mutacji w BMD to zmiany wewnątrz ramki – usunięta lub podwojona zostaje wielokrotność trzech zasad. Przesunięcie ramki może znacznie zmienić białko, więc należy się spodziewać cięższej choroby niż przy zmianie wewnątrz ramki. Tabela zestawia obie choroby:
+[TABELA]
+Cecha | Dystrofia Duchenne’a (DMD) | Dystrofia Beckera (BMD)
+Częstość | ok. 1/3500 mężczyzn | ok. 1/18 000 mężczyzn
+Początek objawów | przed 5. rokiem życia | średnio w 11. roku życia
+Wózek inwalidzki (wg jednego badania) | 95% chorych przed 11. rokiem życia | 95% chorych po 11. roku życia; niektórzy nigdy
+Delecje / duplikacje | 65% / 6–7% przypadków | 85% / 6–7% przypadków
+Ramka odczytu | zwykle przesunięta | zwykle zachowana (zmiana o wielokrotność 3 zasad)
+Dystrofina | prawie u żadnego chorego nie występuje | zwykle w zmniejszonej ilości, jako skrócone białko
+[/TABELA]
+Dlatego oznaczenie dystrofiny pomaga odróżnić DMD od BMD, a obie – od innych dystrofii mięśniowych. Kilka z nich (np. zanikowe dystrofie mięśniowe Leydena i Möbiusa) to skutek mutacji w genach białek kompleksu dystroglikanowo-sarkoglikanowego; na poziom dystrofiny wpływają tylko DMD i BMD.
+
+### Modele zwierzęce i terapia genowa  []
+Poznanie genu DMD pozwoliło badać zwierzęce modele choroby – mysi i psi – które wiele wniosły do rozumienia choroby człowieka. Trwają prace nad terapią genową DMD, ale trudności są ogromne: choroba atakuje wszystkie mięśnie ciała, łącznie z sercem (stan z ok. 2000 r.).
+[ŹRÓDŁO] Źródło: Jorde (wyd. ok. 2000) s. 112–114
+
+## Zespół kruchego chromosomu X – liczby i mechanizm  [c10-r-frax]
+W części 1 ( ) zespół kruchego X posłużył do wyjaśnienia paradoksu Shermana: premutacja genu FMR1 powiększa się do pełnej mutacji, gdy gen przekazuje kobieta ( ). Tu dokładamy liczby: jak częsta jest choroba, jak wygląda paradoks wyrażony w odsetkach i ile powtórzeń CGG dzieli normę od choroby.
+
+### Najczęstsza dziedziczna przyczyna upośledzenia umysłowego  []
+Od XIX w. zwracano uwagę, że wśród pacjentów zakładów dla upośledzonych umysłowo mężczyzn jest o ok. 25% więcej niż kobiet. Część tej przewagi wyjaśnia kilka chorób sprzężonych z X, które powodują upośledzenie umysłowe. Najczęstszą z nich jest zespół kruchego X – odpowiada za ok. 40% przypadków upośledzenia umysłowego sprzężonego z X. Występuje u ok. 1 na 4000 mężczyzn i 1 na 8000 kobiet i jest najczęstszą dziedziczną przyczyną upośledzenia umysłowego.
+Poza upośledzeniem umysłowym chorych wyróżnia typowy wygląd – duże uszy i wydłużona twarz – a także zwiększona ruchomość stawów i, u mężczyzn po okresie pokwitania, makroorchidyzm (zwiększona objętość jąder). U kobiet upośledzenie jest zwykle mniejsze i bardziej zmienne niż u mężczyzn. To ogólna reguła chorób dominujących sprzężonych z X: heterozygotyczne kobiety, które mają jeden prawidłowy X, chorują zwykle lżej – podobnie jak w większości chorób autosomalnych dominujących heterozygoty mają łagodniejsze objawy niż homozygoty.
+Skąd nazwa? Chromosom X chorych, hodowany w pożywce ubogiej w kwas foliowy, wykazuje czasem złamania i szpary w pobliżu końca ramienia długiego – wygląda, jakby był „kruchy”.
+
+### Paradoks Shermana w liczbach  []
+Penetracja wynosi 80% u mężczyzn i tylko 30% u kobiet. W połowie lat 80. badania rodzin z zespołem kruchego X ujawniły zaskakujący rozkład zachorowań wśród krewnych zdrowego mężczyzny przekazującego chorobę (w źródle oznaczonego NTM; jego premutacja w rodowodzie źródła liczy 70–90 powtórzeń):
+[TABELA]
+Krewni zdrowego mężczyzny z premutacją | siostry | bracia | córki | wnuczki | wnukowie | prawnukowie
+Chorzy | 5% | 9% | 0% (nigdy) | 16% | 40% | 50%
+[/TABELA]
+Taki rozkład nie zgadza się z zasadami dziedziczenia sprzężonego z X, które zakładają równą penetrację u wszystkich mężczyzn z allelem choroby. Proponowano różne wyjaśnienia – m.in. autosomalne lub mitochondrialne loci modyfikujące działanie genu – ale rozwiązanie przyniosło dopiero sklonowanie FMR1. Czytaj tabelę razem z mechanizmem z części 1: liczba powtórzeń rośnie przy każdym przekazaniu przez kobietę, więc im więcej takich przekazań dzieli osobę od zdrowego dziadka z premutacją, tym większa szansa, że premutacja stała się pełną mutacją. Stąd rosnący odsetek chorych wnuków i prawnuków.
+
+### Gen FMR1 i progi powtórzeń CGG  []
+Gen FMR1 ma 38 kb i 17 eksonów, a jego mRNA – 4,8 kb. Produkt genu, białko FMRP , wiąże się z RNA i przemieszcza w obie strony między jądrem a cytoplazmą. Najwyższy poziom mRNA FMR1 jest w mózgu.
+W nieulegającym translacji rejonie 5′ genu leży powtórzenie CGG. O tym, czy ktoś jest zdrowy, jest nosicielem, czy choruje, decyduje liczba jego kopii:
+[TABELA]
+Powtórzenia CGG | Allel | Kto go ma | mRNA FMR1
+6–50 | prawidłowy | zdrowe osoby | prawidłowy poziom
+50–230 | premutacja | zdrowi męscy nosiciele i ich córki | tyle samo co przy allelu prawidłowym
+ponad 230 (do 1000 i więcej) | pełna mutacja | osoby z zespołem kruchego X | brak – transkrypcja jest zahamowana
+[/TABELA]
+Allel przechodzi z wiersza do wiersza według dwóch reguł. Premutacja często powiększa się do pełnej mutacji, gdy przekazuje ją kobieta, a nie powiększa się przy przekazaniu z ojca na córkę. Im większa premutacja, tym większe prawdopodobieństwo, że w następnym pokoleniu stanie się pełną mutacją.
+W pełnej mutacji silnie zmetylowane są zarówno powtórzenia CGG, jak i sekwencje CG w rejonie 5′ genu, a stopień metylacji koreluje z nasileniem choroby. Wskazuje to, że metylacja może wpływać na transkrypcję FMR1 – redaktor naukowy polskiego wydania dopisuje w przypisie, że metylacja DNA jest z reguły związana z represją genu (por. metylację nieaktywnego X, ).
+
+### FRAXE, diagnostyka i pytania otwarte  []
+Dalsze badania tego rejonu ujawniły drugie miejsce kruche, położone dystalnie od miejsca kruchego X – FRAXE . Ono też wiąże się z upośledzeniem umysłowym i, jak w zespole kruchego X, ze zwiększeniem liczby powtórzeń CGG oraz wzrostem metylacji. Jest jednak różnica: powtórzenie w FRAXE może się powiększać przy przekazaniu przez obie płcie – i przez mężczyzn, i przez kobiety.
+Sklonowanie FMR1 poprawiło diagnostykę. Analiza cytogenetyczna chromosomów często nie wystarczała do wykrycia heterozygot; diagnostyka molekularna DNA – pomiar liczby powtórzeń CGG i stopnia metylacji FMR1 – jest bardzo dokładna.
+W czasie wydania podręcznika Jordego otwarte pozostawały trzy pytania: jaką rolę w ekspresji genu odgrywa metylacja; jak produkt genu wpływa na rozwój umysłowy i fizyczny; i kiedy powiększa się liczba powtórzeń – podczas mejozy czy we wczesnych mitozach zarodka.
+[ŹRÓDŁO] Źródło: Jorde (wyd. ok. 2000) s. 115–118
 
 
 ======== E. ŹRÓDŁA (przycięte do zakresu z mapy) ========

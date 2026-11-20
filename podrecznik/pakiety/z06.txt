@@ -131,19 +131,18 @@ agarozowy | 0,1–20 kpz | niższa rozdzielczość niż PAA, ale znacznie więks
 poliakrylamidowy | 5–1000 pz | rozdział z dokładnością do jednego nukleotydu
 pole pulsacyjne | 20 kpz – 10 Mpz | nawet całe chromosomy, np. drożdżowe
 [/TABELA]
-Cząsteczki większe niż ok. 20 kpz nie rozdzielą się już w zwykłym żelu agarozowym. Do nich służy elektroforeza w polu pulsacyjnym : pole elektryczne włącza się i wyłącza w krótkich odstępach, a jego kierunek za każdym razem zmienia się o 90° lub 180° . Te powtarzane zmiany kierunku stopniowo rozdzielają nawet ogromne cząsteczki – aż po całe chromosomy drożdży.
+Cząsteczki większe niż ok. 20 kpz nie rozdzielą się już w zwykłym żelu agarozowym. Do nich służy elektroforeza w polu pulsacyjnym , w której pole elektryczne co chwilę zmienia kierunek. Rozdziela nawet ogromne cząsteczki – aż po całe chromosomy drożdży (jak to działa – ).
 
 ### Jak zobaczyć DNA w żelu?  []
 [POJĘCIE Interkalacja] wsunięcie się cząsteczki (np. bromku etydyny) między pary zasad dwuniciowego DNA.
 Prążki DNA są przezroczyste – trzeba je wybarwić. Sposoby:
-- Bromek etydyny – standard w żelach agarozowych. Wsuwa się między pary zasad ( interkaluje ) i w świetle UV silnie świeci. Wykrywa ok. 10 ng DNA w prążku. Ponieważ potrzebuje par zasad, dobrze barwi DNA dwuniciowe, a jednoniciowe, np. RNA – dużo słabiej. Wada: to silny mutagen .
+- Bromek etydyny – standard w żelach agarozowych. Wsuwa się między pary zasad ( interkaluje ) i w świetle UV silnie świeci. Ponieważ potrzebuje par zasad, dobrze barwi DNA dwuniciowe, a jednoniciowe, np. RNA – dużo słabiej. Wada: to silny mutagen .
 - Azotan srebra (AgNO 3 ) – barwnik czulszy, do żeli poliakrylamidowych.
-- SYBR – barwnik fluorescencyjny dla dwuniciowego DNA (pochłania światło 498 nm – niebieskie, świeci przy 522 nm – na zielono). Nie jest toksyczny, więc może zastąpić bromek etydyny. Wiąże się z DNA mocno i specyficznie, a jego świecenie rośnie wprost proporcjonalnie do ilości DNA – dlatego używa się go tam, gdzie DNA trzeba policzyć, np. w qRT-PCR.
+- SYBR – barwnik fluorescencyjny dla dwuniciowego DNA. Nie jest toksyczny, więc może zastąpić bromek etydyny (czułość barwników i zastosowania SYBR – ).
 - Autoradiografia – DNA lub RNA znakuje się izotopem promieniotwórczym, który zostawia ślad na kliszy.
 
 ### Elektroforeza kapilarna  []
-Zamiast płaskiego żelu można użyć cienkiej, długiej rurki – kapilary kwarcowej . To elektroforeza kapilarna (CE), zwana też elektroforezą w wolnym buforze. Rozdziela niewielkie cząsteczki kwasów nukleinowych sprawnie, wydajnie i powtarzalnie. Używa się jej w analizie DNA na każdym poziomie – od odczytu sekwencji pojedynczego łańcucha, przez oligonukleotydy, po DNA całego chromosomu. To właśnie w kapilarach pracują automatyczne sekwenatory, o których będzie dalej.
-Wszystkie techniki z rozdziałem w kapilarach to wysokosprawna elektroforeza kapilarna (HPCE) ; razem z mikromacierzami pojawiła się jej miniaturowa wersja – elektroforeza mikrokapilarna (µCE).
+Zamiast płaskiego żelu można użyć cienkiej, długiej rurki – kapilary kwarcowej . To elektroforeza kapilarna (CE), zwana też elektroforezą w wolnym buforze. Rozdziela niewielkie cząsteczki kwasów nukleinowych sprawnie, wydajnie i powtarzalnie. To właśnie w kapilarach pracują automatyczne sekwenatory, o których będzie dalej.
 [ŹRÓDŁO] Źródło: Drewa s. 712–714
 
 ## Transfer na nośnik  [c06-transfer]
@@ -181,7 +180,7 @@ W elektroforezie bez SDS ruchliwość białka zależy od jego ładunku. Wystarcz
 
 ### Białka u Drewy  []
 - Western blot to przeniesienie na membranę białek rozdzielonych w żelu, a eastern blot – białek rozdzielonych w elektroforezie dwukierunkowej (skąd te nazwy – ).
-- Zanim pojawiły się techniki molekularne, do śledzenia dziedziczenia używano wykrywanego elektroforetycznie polimorfizmu białek (enzymów) jako markerów genetycznych – ale takich markerów było za mało i nie były dość równo rozmieszczone w genomie.
+- Zanim pojawiły się techniki molekularne, wykrywany elektroforetycznie polimorfizm białek (enzymów) służył jako marker genetyczny ( ).
 - Białka i ich metabolity można też nanosić na mikromacierze – wtedy wiążą się nie przez parowanie zasad, ale ze swoistymi przeciwciałami ( ).
 [ŹRÓDŁO] Źródło: Drewa s. 715, 717, 732 · Jorde s. 42–43 (brak dostępu)
 
@@ -213,20 +212,14 @@ Jest jednak problem: kod genetyczny jest zdegenerowany – jeden aminokwas może
 3. Sonda z PCR – gdy fragment jest bardzo rzadki. Sonda musi powstać w ogromnej liczbie kopii. A jeśli szukany fragment występuje w materiale tylko w kilku kopiach i nie mamy go sklonowanego? Wtedy można go namnożyć metodą PCR ( ): PCR z kilku kopii robi miliony identycznych kopii jednego wybranego odcinka. Te kopie, po oznaczeniu, służą jako sonda.
 
 ### Jak zobaczyć, gdzie usiadła sonda?  []
-Sonda to też DNA, więc jest tak samo niewidoczna jak wszystko inne na membranie. Dlatego zanim się jej użyje, trzeba ją oznaczyć – doczepić do niej coś, co da się wykryć. Po hybrydyzacji nadmiar sondy się spłukuje, a znacznik pokazuje miejsca, gdzie sonda została. Rodzaj znacznika decyduje o tym, jak zobaczymy sygnał. Drewa opisuje cztery sposoby:
-1. Znakowanie radioaktywne. Do sondy wbudowuje się nukleotyd zawierający izotop promieniotwórczy. Membranę przykłada się do kliszy wrażliwej na promieniowanie – tam, gdzie leży sonda, klisza ciemnieje. To autoradiografia .
-2. Znakowanie fluorescencyjne. Do sondy przyłącza się fluorochrom – barwnik, który oświetlony świeci światłem o określonej długości fali. Najczęściej to rodamina i fluoresceina . Sygnał ogląda się w mikroskopie fluorescencyjnym .
-[POJĘCIE Hapten] mała cząsteczka (biotyna, digoksygenina, fluoresceina) przyczepiona do sondy; sama nie jest tym, co widzimy – wykrywa ją dopiero swoiste przeciwciało.
-3. Znakowanie immunochemiczne (cytochemiczne) – w dwóch krokach. Do sondy przyczepia się nie barwnik, tylko małą cząsteczkę – hapten : biotynę , digoksygeninę albo fluoresceinę . Po hybrydyzacji dodaje się przeciwciała , które rozpoznają ten hapten i się do niego przyczepiają. Dopiero przeciwciało niesie coś widocznego: enzym ( fosfatazę alkaliczną lub peroksydazę ), barwnik fluorescencyjny albo koloidalne złoto . Powstaje „kanapka”: badane DNA – sonda – hapten – przeciwciało – coś, co widać.
+Sonda to też DNA, więc jest tak samo niewidoczna jak wszystko inne na membranie. Dlatego zanim się jej użyje, trzeba ją oznaczyć – doczepić do niej coś, co da się wykryć. Po hybrydyzacji nadmiar sondy się spłukuje, a znacznik pokazuje miejsca, gdzie sonda została. Rodzaj znacznika decyduje o tym, jak zobaczymy sygnał. Drewa opisuje cztery sposoby ( ):
+1. Znakowanie radioaktywne. Do sondy wbudowuje się nukleotyd zawierający izotop promieniotwórczy. Tam, gdzie leży sonda, przyłożona klisza ciemnieje – to autoradiografia .
+2. Znakowanie fluorescencyjne. Do sondy przyłącza się fluorochrom – barwnik, który oświetlony świeci światłem o określonej długości fali. Sygnał ogląda się w mikroskopie fluorescencyjnym .
+[POJĘCIE Hapten] mała cząsteczka (np. biotyna, digoksygenina) przyczepiona do sondy; sama nie jest tym, co widzimy – wykrywa ją dopiero swoiste przeciwciało.
+3. Znakowanie immunochemiczne (cytochemiczne) – w dwóch krokach. Do sondy przyczepia się nie barwnik, tylko małą cząsteczkę – hapten , np. biotynę albo digoksygeninę . Po hybrydyzacji dodaje się przeciwciała rozpoznające ten hapten, a dopiero one niosą coś widocznego, np. enzym albo barwnik fluorescencyjny; powstaje „kanapka”: badane DNA – sonda – hapten – przeciwciało – coś, co widać.
 [RAMKA obraz] Hapten to mała chorągiewka wbita w sondę – z daleka jej nie widać. Przeciwciało to ktoś z latarką, kto rozpoznaje tylko ten jeden wzór chorągiewki: podchodzi, staje przy niej i świeci. Dopiero dzięki latarce widzimy, gdzie jest sonda.
-4. Znakowanie enzymatyczne. Enzym przyczepia się bezpośrednio do sondy , bez haptenu i przeciwciała. Po hybrydyzacji dodaje się substrat, a enzym zamienia go w barwny produkt. Reakcja barwna pojawia się dokładnie tam, gdzie leży sonda.
-[TABELA]
-Co doczepiamy do sondy | Jak widzimy sygnał
-radioaktywne – nukleotyd z izotopem promieniotwórczym | klisza ciemnieje – autoradiografia
-fluorescencyjne – fluorochrom (rodamina, fluoresceina) | świecenie w mikroskopie fluorescencyjnym
-immunochemiczne – hapten (biotyna, digoksygenina, fluoresceina) | przeciwciało przeciw haptenowi , niosące fosfatazę alkaliczną, peroksydazę, barwnik fluorescencyjny lub koloidalne złoto
-enzymatyczne – enzym | reakcja barwna katalizowana przez enzym
-[/TABELA]
+4. Znakowanie enzymatyczne. Enzym przyczepia się bezpośrednio do sondy , bez haptenu i przeciwciała. Po dodaniu substratu zamienia go w barwny produkt, więc reakcja barwna pojawia się dokładnie tam, gdzie leży sonda. (Nazwy barwników, haptenów i enzymów zebrano w tabeli w części 2, .)
+[RYCINA c06-fig-znakowanie „Cztery sposoby znakowania sondy”: W każdej kolumnie czytaj od dołu: badane DNA na membranie, sparowana z nim sonda, znacznik i – u góry – to, co widać. Porównaj kolumny C i D: w obu sygnał może dawać enzym, ale w C niesie go przeciwciało rozpoznające hapten, a w D enzym siedzi wprost na sondzie. Wniosek: znakowanie immunochemiczne jest dwustopniowe – sam hapten nie jest tym, co widzimy.]
 
 ### Hybrydyzacja in situ – bez membrany  []
 Czasem nie chcemy wiedzieć, jak długi jest fragment, tylko w której komórce (albo w którym miejscu tkanki) znajduje się szukana sekwencja. Wtedy hybrydyzację prowadzi się in situ , czyli „w miejscu” – wprost w rozmazie komórek albo w skrawku tkanki, bez elektroforezy i transferu. Trzeba tylko najpierw odpowiednio przygotować (strawić) preparat: kwasy nukleinowe są ukryte w komórkach i upakowane, więc trzeba je odsłonić i rozpleść na pojedyncze nici. Dopiero wtedy sonda może się do nich dostać i przyczepić.
@@ -237,7 +230,7 @@ Czasem nie chcemy wiedzieć, jak długi jest fragment, tylko w której komórce 
 Teraz łączymy wszystko, co już znasz – elektroforezę, transfer i sondę – w jedną metodę.
 
 ### Skąd te nazwy?  []
-Metodę wymyślił E.M. Southern , stąd Southern blot . Słowo blot nawiązuje do sposobu przeniesienia DNA na bibułę: sole wędrujące przez żel pociągają za sobą DNA, tak jak bibuła wciąga atramentowy kleks (Drewa przypisuje to zjawisku osmozy).
+Metodę wymyślił E.M. Southern , stąd Southern blot . Słowo blot nawiązuje do sposobu przeniesienia DNA z żelu na bibułę (skąd dokładnie – ).
 „Southern” brzmi jak angielskie „południowy”, więc kolejne metody nazwano żartem jak pozostałe strony świata:
 - northern blot („północny”) – przenosimy RNA ;
 - western blot („zachodni”) – przenosimy białka ;
@@ -248,38 +241,30 @@ Najważniejsza różnica: w hybrydyzacji Southerna sonda DNA szuka DNA (DNA–DN
 Cel: znaleźć w całym genomowym DNA fragment z interesującą nas sekwencją i zobaczyć, jak jest długi. Kolejne kroki wynikają z kolejnych przeszkód ( ):
 Krok 1. Trawienie enzymem restrykcyjnym. Przeszkoda: genomowe DNA to ogromnie długie cząsteczki – w żelu nic się nie rozdzieli. Rozwiązanie: tnie się je enzymem restrykcyjnym . Taki enzym przecina DNA zawsze w miejscu o określonej, krótkiej sekwencji ( miejscu restrykcyjnym ; więcej w ). Dzięki temu u każdego człowieka ten sam odcinek genu trafia zawsze do fragmentu o tej samej długości – i właśnie tę długość będziemy oglądać.
 Krok 2. Elektroforeza w żelu agarozowym. Fragmenty układają się według wielkości. Ponieważ genom daje setki tysięcy fragmentów o różnych długościach, w żelu widać nie oddzielne prążki, tylko ciągłą smugę. Nasz fragment gdzieś w niej jest – ale nie wiemy gdzie.
-Krok 3. Trzy kąpiele żelu. Zanim przeniesiemy DNA na membranę, trzeba je przygotować. Drewa wymienia te kąpiele jako „denaturacja, depurynacja, neutralizacja”, ale z jego opisu wynika kolejność:
-- depurynacja (0,25 M HCl). Przeszkoda: długie fragmenty słabo wychodzą z żelu. Rozwiązanie: kwas tnie je na krótsze kawałki, które łatwiej przejdą na membranę.
-- denaturacja (0,5 M NaOH). Przeszkoda: DNA jest dwuniciowe, a sonda potrzebuje pojedynczej nici. Rozwiązanie: w środowisku zasadowym nici się rozplatają.
-- neutralizacja (0,5 M Tris, pH 8,5). Przeszkoda: po NaOH żel jest silnie zasadowy, a w takim środowisku DNA źle wiąże się z membraną. Rozwiązanie: przywracamy obojętne pH.
+Krok 3. Trzy kąpiele żelu. Zanim przeniesiemy DNA na membranę, trzeba je przygotować. Drewa wymienia te kąpiele jako „denaturacja, depurynacja, neutralizacja” i podaje, że neutralizacja następuje po denaturacji; miejsca depurynacji w tej kolejności nie określa (na rycinie stoi ona na początku). Każda kąpiel usuwa inną przeszkodę:
+- depurynacja (HCl). Przeszkoda: długie fragmenty słabo wychodzą z żelu. Rozwiązanie: kwas tnie je na krótsze kawałki, które łatwiej przejdą na membranę.
+- denaturacja (NaOH). Przeszkoda: DNA jest dwuniciowe, a sonda potrzebuje pojedynczej nici. Rozwiązanie: w środowisku zasadowym nici się rozplatają.
+- neutralizacja (Tris). Przeszkoda: po NaOH żel jest silnie zasadowy, a w takim środowisku DNA źle wiąże się z membraną. Rozwiązanie: przywracamy obojętne pH.
 Krok 4. Przeniesienie na membranę (nitrocelulozową lub nylonową) – transferem kapilarnym, próżniowym albo elektrotransferem. Membrana jest odbitką żelu: fragment, który w żelu był na danej wysokości, na membranie też tam jest.
-Krok 5. Utrwalenie. Przeszkoda: zaraz będziemy membranę moczyć i płukać – DNA nie może się z niej zmyć. Rozwiązanie: DNA wiąże się z membraną trwale, wiązaniami kowalencyjnymi , pod wpływem światła UV albo w temperaturze +80 °C .
-Krok 6. Hybrydyzacja ze znakowaną sondą. Sonda przyczepia się tylko do fragmentu z szukaną sekwencją. Nadmiar się spłukuje, a znacznik pokazuje jeden prążek w miejscu, gdzie leży nasz fragment. Wysokość prążka mówi, jak długi jest fragment. Intensywność zależy od aktywności sondy (jak mocno jest oznakowana) i od tego, ile komplementarnego DNA było w próbce.
+Krok 5. Utrwalenie. Przeszkoda: zaraz będziemy membranę moczyć i płukać – DNA nie może się z niej zmyć. Rozwiązanie: DNA wiąże się z membraną trwale, wiązaniami kowalencyjnymi , pod wpływem światła UV albo po ogrzaniu membrany (stężenia kąpieli i temperatura – ).
+Krok 6. Hybrydyzacja ze znakowaną sondą. Sonda przyczepia się tylko do fragmentu z szukaną sekwencją. Nadmiar się spłukuje, a znacznik pokazuje jeden prążek w miejscu, gdzie leży nasz fragment. Wysokość prążka mówi, jak długi jest fragment.
 [RYCINA c06-fig-southern „Hybrydyzacja typu Southern – od trawienia do utrwalenia”: 1 – cięcie w miejscach restrykcyjnych; 2 – rozdział w żelu agarozowym (M – wzorzec), DNA genomowe daje smugę; 3 – kąpiele żelu; 4 – transfer kapilarny z zachowaniem układu; 5 – utrwalenie, potem hybrydyzacja z sondą.]
 
 ### Co wykrywa Southern? Delecje i mutacje punktowe  []
 Cała interpretacja opiera się na jednej zasadzie z elektroforezy: im krótszy fragment, tym dalej od startu leży jego prążek. Southern pokazuje nam długość fragmentu z genem – więc wykryje każdą zmianę, która tę długość zmienia.
-Delecja. Jeśli w genie brakuje kawałka, fragment rozpoznawany przez sondę jest krótszy. Jego prążek leży niżej (dalej od startu) niż u osoby zdrowej. Z tego, jak bardzo „uciekł”, można oszacować, jak duży odcinek genu utracono .
-Mutacja punktowa. Zamiana jednej zasady nie zmienia długości DNA, więc zwykle w Southernie jej nie widać. Jest jeden wyjątek: gdy mutacja niszczy miejsce restrykcyjne . Enzym rozpoznaje dokładną sekwencję – po zmianie jednej litery już jej nie rozpozna i nie przetnie. Dwa sąsiednie fragmenty zostają wtedy połączone w jeden, dłuższy ( ). Każdy z nas ma dwa allele (dwie kopie) genu, więc:
+Niewielka delecja. Jeśli w genie brakuje niewielkiego kawałka, fragment rozpoznawany przez sondę jest krótszy. Szybciej wędruje, więc jego prążek leży niżej (dalej od startu) niż u osoby zdrowej. Z tego, jak bardzo „uciekł”, można oszacować, jak duży odcinek genu utracono .
+Mutacja punktowa. Zamiana jednej zasady nie zmienia długości DNA, więc sama w sobie nie przesuwa prążka. Southern może jednak wykryć także mutację punktową – np. gdy mutacja niszczy miejsce restrykcyjne . Enzym rozpoznaje dokładną sekwencję – po zmianie jednej litery już jej nie rozpozna i nie przetnie. Dwa sąsiednie fragmenty zostają wtedy połączone w jeden, dłuższy ( ). Każdy z nas ma dwa allele (dwie kopie) genu, więc:
 - osoba zdrowa – oba allele cięte normalnie: jeden prążek o zwykłej długości;
 - nosiciel – jeden allel prawidłowy, jeden zmutowany: dwa prążki , prawidłowy i dłuższy;
 - homozygota – oba allele zmutowane: tylko jeden prążek, wyżej (dłuższy).
 [RYCINA c06-fig-rflp „Utrata miejsca restrykcyjnego – zdrowy, nosiciel, homozygota”: Mutacja niszczy środkowe miejsce restrykcyjne, więc fragment wiążący sondę staje się dłuższy. Wartości w kpz są przykładowe.]
 [POJĘCIE RFLP] ( restriction fragment length polymorphism ) – polimorfizm długości fragmentów restrykcyjnych: różnice między ludźmi w długości fragmentów, na które enzym tnie DNA.
 Ta zasada ma swoją nazwę: RFLP ( restriction fragment length polymorphism ) – polimorfizm długości fragmentów restrykcyjnych . Chodzi o to, że u różnych osób ten sam odcinek DNA po cięciu enzymem daje fragmenty różnej długości – bo coś zmieniło miejsca cięcia albo długość DNA między nimi. Analiza RFLP polega na pocięciu DNA, rozdzieleniu fragmentów i porównaniu ich długości. Poznano ponad 100 enzymów restrykcyjnych rozpoznających różne sekwencje, więc dla wielu typowych mutacji punktowych da się dobrać enzym, którego miejsce cięcia ta mutacja niszczy. Dlatego RFLP jest szeroko używana w diagnostyce. Zapamiętaj tę metodę – wróci przy identyfikacji osób.
-[RAMKA zapamietaj] Southern pokazuje długość fragmentu z genem. Delecja – prążek niżej (krótszy). Mutacja niszcząca miejsce restrykcyjne – fragment dłuższy: nosiciel ma dwa prążki (prawidłowy i dłuższy), homozygota jeden, dłuższy. To jest analiza RFLP.
+[RAMKA zapamietaj] Southern pokazuje długość fragmentu z genem. Niewielka delecja – prążek niżej (krótszy). Mutacja niszcząca miejsce restrykcyjne – fragment dłuższy: nosiciel ma dwa prążki (prawidłowy i dłuższy), homozygota jeden, dłuższy. To jest analiza RFLP.
 
-### Odmiany: dot blot i slot blot  []
-Czasem nie interesuje nas długość fragmentu, tylko odpowiedź „czy ta sekwencja jest w próbce?” – i to dla wielu próbek naraz. Wtedy elektroforeza jest niepotrzebna. W hybrydyzacji punktowej (dot blot) wiele próbek DNA nakrapia się w postaci kropli obok siebie na jeden filtr i wszystkie hybrydyzuje z tą samą sondą. Kropla, która świeci, zawiera szukaną sekwencję. W wariancie slot blot DNA nanosi się nie w krople, tylko do specjalnego wzorca szczelin.
-Metodę można zamienić w ilościową : obok próbek nakrapia się wzorce ze znaną ilością DNA. Porównując siłę sygnału próbki ze wzorcami, szacujemy, ile szukanej sekwencji w niej jest.
-
-### Odmiany: hybrydyzacja kolonijna i łysinkowa  []
-Te metody rozwiązują inny problem. Gdy klonuje się DNA, powstaje biblioteka – tysiące kolonii bakterii, z których każda niesie inny fragment DNA (biblioteka genomowa – fragmenty genomu; biblioteka cDNA – kopie mRNA). Jak znaleźć wśród nich tę jedną kolonię, która ma nasz gen? Właśnie sondą:
-- Bakterie transformuje się zmodyfikowanym plazmidem (każda dostaje inny fragment DNA) i wysiewa na szalki Petriego – wyrastają kolonie.
-- Kolonie odbija się (replikuje) na filtr, jak pieczątkę – układ kolonii na filtrze jest taki sam jak na szalce. Szalkę zachowuje się jako szalkę wzorcową .
-- Filtr poddaje się hybrydyzacji z sondą i autoradiografii.
-- Sygnał na filtrze pokazuje miejsce. Na szalce wzorcowej w tym samym miejscu rośnie żywa kolonia z szukanym fragmentem – można ją wziąć do dalszej pracy.
-Hybrydyzacja łysinkowa działa tak samo, tylko zamiast plazmidu używa się wektora fagowego, a na filtr przenosi się i przytwierdza fagi. Techniki punktowe i kolonijne służą głównie do przeglądania bibliotek genomowych i cDNA – w poszukiwaniu klonów z konkretnymi genami.
+### Odmiany: dot blot, hybrydyzacja kolonijna i łysinkowa  []
+Czasem nie interesuje nas długość fragmentu, tylko odpowiedź „czy ta sekwencja jest w próbce?” – i to dla wielu próbek naraz. Wtedy elektroforeza jest niepotrzebna: w hybrydyzacji punktowej (dot blot) wiele próbek DNA nakrapia się w postaci kropli obok siebie na jeden filtr i wszystkie hybrydyzuje z tą samą sondą, a kropla, która daje sygnał, zawiera szukaną sekwencję.
+Gdy klonuje się DNA, powstaje biblioteka – tysiące kolonii bakterii, z których każda niesie inny fragment DNA (w bibliotece genomowej – fragmenty genomu, w bibliotece cDNA – kopie mRNA), a my szukamy tej jednej, która ma nasz gen. W hybrydyzacji kolonijnej (i podobnej łysinkowej ) kolonie odbija się na filtr z zachowaniem ich układu i hybrydyzuje z sondą – sygnał na filtrze wskazuje miejsce na szalce, w którym rośnie szukana kolonia. Techniki punktowe i kolonijne służą głównie do przeglądania bibliotek genomowych i cDNA (krok po kroku – ).
 
 ### Hybrydyzacja typu northern  []
 Southern mówi, jaki gen mamy w DNA. Northern mówi, czy ten gen pracuje . Gen, który jest aktywny, jest przepisywany na RNA – więc szukając sondą RNA danego genu, sprawdzamy:
@@ -287,7 +272,7 @@ Southern mówi, jaki gen mamy w DNA. Northern mówi, czy ten gen pracuje . Gen, 
 - jaką długość ma ich RNA;
 - jak intensywnie zachodzi transkrypcja – im silniejszy prążek, tym więcej RNA.
 Etapy są podobne jak w Southernie, z dwiema różnicami wynikającymi z natury RNA:
-- Denaturacja RNA i rozdział w denaturującym żelu agarozowym (np. z aldehydem mrówkowym lub glioksalem). RNA jest jednoniciowe i chętnie zwija się samo na sobie w różne kształty, które zmieniają szybkość wędrówki. Czynnik denaturujący w żelu utrzymuje RNA rozwinięte, więc biegnie ono zgodnie ze swoją długością.
+- Denaturacja RNA i rozdział w denaturującym żelu agarozowym. RNA jest jednoniciowe i chętnie zwija się samo na sobie w różne kształty, które zmieniają szybkość wędrówki. Czynnik denaturujący w żelu utrzymuje RNA rozwinięte, więc biegnie ono zgodnie ze swoją długością.
 - Przeniesienie na membranę i utrwalenie. RNA przechodzi z żelu na membranę wydajnie, więc w przeciwieństwie do długich fragmentów DNA nie trzeba go wcześniej ciąć – nie ma tu kąpieli w HCl.
 - Hybrydyzacja ze znakowaną sondą.
 [ŹRÓDŁO] Źródło: Drewa s. 715–716
@@ -312,8 +297,7 @@ Zwróć uwagę na odwrócenie ról. W Southernie na membranie leżał badany mat
 - fragmenty cDNA – kopie mRNA poszczególnych genów (do badania ekspresji genów);
 - fragmenty RNA ;
 - nawet białka i ich metabolity – wtedy łączą się nie przez parowanie zasad, ale przez swoiste przeciwciała.
-Dlatego mikromacierze służą badaniu genomu (genomika), transkryptów, czyli RNA (transkryptomika), i białek (proteomika).
-Pierwowzorem były zwykłe paski lub krążki bibuły z naniesionym DNA – przypominało to hybrydyzację Southerna. Dziś podłożem są membrany nylonowe, szkiełka mikroskopowe, płytki plastikowe lub krzemowe. Sekwencje nanosi się przez nakrapianie albo systemami mikrodrukowania – działają podobnie jak drukarka atramentowa.
+Dlatego mikromacierze służą badaniu genomu (genomika), transkryptów, czyli RNA (transkryptomika), i białek (proteomika). (Na czym i jak się je wytwarza – .)
 
 ### Szukanie delecji i duplikacji: doświadczenie dwukolorowe  []
 [POJĘCIE DNA referencyjne] DNA kontrolne (prawidłowe), z którym porównuje się DNA badane.
@@ -326,36 +310,22 @@ Pytanie: czy w genomie pacjenta czegoś nie brakuje albo czegoś nie jest za du�
 Jak czytać wynik? Jeśli dany odcinek występuje w obu DNA w tej samej ilości, oba DNA zajmują po połowie miejsc w punkcie – sygnały są w równowadze . Odchylenia:
 - przeważa sygnał DNA kontrolnego – DNA badanego „nie miało czym konkurować”, bo tego odcinka u pacjenta brakuje: delecja ;
 - przeważa sygnał DNA badanego – pacjent ma tego odcinka więcej niż prawidłowo: duplikacja .
-Jak drobne zmiany wykryje mikromacierz (jaką ma rozdzielczość )? Zależy od tego, jak duże są naniesione sekwencje, jak gęsto są upakowane i jak dokładny jest czytnik. Mikromacierz może obejmować kilka wybranych genów, grupy genów albo cały genom. Same doświadczenia są stosunkowo tanie, ale wymagają bardzo drogiego sprzętu – precyzyjnego skanera laserowego i oprogramowania.
+Jak drobne zmiany wykryje mikromacierz (jaką ma rozdzielczość )? Zależy od tego, jak duże są naniesione sekwencje, jak gęsto są upakowane i jak dokładny jest czytnik. Mikromacierz może obejmować kilka wybranych genów, grupy genów albo cały genom.
 [RAMKA zapamietaj] Mikromacierz = tysiące znanych sekwencji w znanych miejscach; badany materiał jest znakowany i hybrydyzuje z nimi naraz. Doświadczenie dwukolorowe: DNA badane i kontrolne 1:1 w różnych kolorach; przewaga sygnału kontrolnego – delecja, przewaga badanego – duplikacja.
 
 ### Rodzaje mikromacierzy  []
-[TABELA]
-Rodzaj | Co na niej jest i do czego służy
-Badanie RNA (transkryptomika)
-ekspresyjne | najpopularniejsze; 11–20 sond oligonukleotydowych na fragmenty 3′ każdego znanego transkryptu organizmu – pokazują, które geny są aktywne
-eksonowe | sondy dla poszczególnych eksonów: zmiany ekspresji i alternatywne składanie (z jednego pre-mRNA różne warianty mRNA)
-dachówkowe ( tiling arrays ) | sondy równomiernie pokrywają cały genom: aktywność transkrypcyjna całych genomów, miejsca wiązania czynników transkrypcyjnych, modyfikacje histonów, metylacja DNA, rola niekodujących fragmentów
-splicing array | alternatywne składanie transkryptu
-Badanie DNA – według rodzaju sond
-oligonukleotydowe | krótkie sondy, na ogół 25–70 nt
-cDNA | sondy dłuższe, zwykle odpowiadające całym sekwencjom mRNA
-BAC/PAC | kilka tysięcy dużych sklonowanych fragmentów (w wektorach BAC i PAC); cały genom z rozdzielczością ok. 1 Mpz
-z produktami PCR | wybrane produkty PCR jako sondy
-Inne : genotypowanie (badanie sekwencji genów), SNP array (polimorfizmy pojedynczych nukleotydów), ChIP-chip (miejsca wiązania białek z DNA i modyfikacje chromatyny)
-[/TABELA]
-ChIP-chip odpowiada na pytanie: w których miejscach genomu siada dane białko (np. czynnik transkrypcyjny)? Najpierw swoistym przeciwciałem przeciw temu białku „wyławia się” z komórki fragmenty chromatyny razem z przyczepionym białkiem – to immunoprecypitacja chromatyny (ChIP). Wyłowione fragmenty DNA to właśnie te miejsca, do których białko było przyczepione. Sprawdza się je na mikromacierzy ( chip ) i odczytuje, gdzie i jak często białko się wiąże.
+Mikromacierze różnią się tym, co naniesiono na płytkę, a od tego zależy, na jakie pytanie odpowiadają. Drewa wymienia mikromacierze do badania RNA (np. ekspresji genów), do badania DNA, do analizy polimorfizmów pojedynczych nukleotydów (SNP) i do szukania miejsc, w których białka wiążą się z DNA (ChIP-chip) – przegląd w części 2 ( ).
 [ŹRÓDŁO] Źródło: Drewa s. 717–718
 
 ## Sekwencjonowanie  [c06-sekwencjonowanie]
 
 ### Po co czytać sekwencję?  []
-Wszystkie dotychczasowe metody mówiły nam coś pośrednio: że fragment jest dłuższy, że sekwencja jest albo jej nie ma. Sekwencjonowanie to odczytanie samej kolejności nukleotydów, litera po literze. To najczulszy sposób wykrywania zmian w DNA i jedyny z tu opisanych, który od razu pokazuje, jaka dokładnie to zmiana – pozwala ją w pełni opisać. Dzięki postępowi technicznemu i komputerowej (bioinformatycznej) obróbce danych udało się w ten sposób odczytać cały genom człowieka.
+Wszystkie dotychczasowe metody mówiły nam coś pośrednio: że fragment jest dłuższy, że sekwencja jest albo jej nie ma. Sekwencjonowanie to odczytanie samej kolejności nukleotydów, litera po literze. To najczulszy sposób wykrywania zmian w DNA, a przy tym pozwala je w pełni scharakteryzować – powiedzieć, jaka dokładnie to zmiana. Dzięki postępowi technicznemu i komputerowej (bioinformatycznej) obróbce danych udało się w ten sposób odczytać cały genom człowieka.
 Pierwsze metody to metoda terminacji łańcucha (Sangera) i metoda chemicznej degradacji (Maxama–Gilberta) .
-Często przed sekwencjonowaniem robi się metody przesiewowe : nie czytają sekwencji, ale szybko wskazują fragmenty, w których prawdopodobnie jest mutacja – i dopiero te się sekwencjonuje ( ). Jedna z nich, DHPLC (denaturująca wysokosprawna chromatografia cieczowa), łączy zalety wcześniejszych: czułość do 100% , stosunkowo niskie koszty, szybkość, a z automatycznym podajnikiem próbek (autosamplerem) 200 próbek na dobę .
+Często przed sekwencjonowaniem robi się metody przesiewowe : nie czytają sekwencji, ale szybko wskazują fragmenty, w których prawdopodobnie jest mutacja – i dopiero te się sekwencjonuje ( ; metody przesiewowe opisane u Drewy obok sekwencjonowania – ).
 
 ### Jak działa odczyt metodą terminacji łańcucha?  []
-Żeby zrozumieć automatyczny odczyt, trzeba wiedzieć, czym jest dideoksynukleotyd (ddNTP) . Polimeraza DNA buduje nową nić, doczepiając kolejne nukleotydy (dNTP); każdy następny przyczepia się do grupy –OH na końcu 3′ poprzedniego. ddNTP tej grupy nie ma – gdy polimeraza go wbuduje, do nici nie da się już nic doczepić i synteza się zatrzymuje (stąd „terminacja łańcucha”; szerzej w rozdziale o genomice, ).
+Żeby zrozumieć automatyczny odczyt, trzeba wiedzieć, czym jest dideoksynukleotyd (ddNTP) – przypominamy to z rozdziału o genomice, bo Drewa na tych stronach mechanizmu nie opisuje. Polimeraza DNA buduje nową nić, doczepiając kolejne nukleotydy (dNTP); każdy następny przyczepia się do grupy –OH na końcu 3′ poprzedniego. ddNTP tej grupy nie ma – gdy polimeraza go wbuduje, do nici nie da się już nic doczepić i synteza się zatrzymuje (stąd „terminacja łańcucha”; szerzej – ).
 Do reakcji daje się zwykłe dNTP i trochę ddNTP. Raz polimeraza wbuduje zwykły nukleotyd i idzie dalej, raz – ddNTP i staje. Powstają więc kopie urwane na każdej kolejnej pozycji , a każda kończy się ddNTP. Gdy ddNTP są znakowane fluorescencyjnie (każda z czterech zasad innym kolorem), kolor końca każdej kopii mówi, jaka litera stoi w tym miejscu. Wystarczy rozdzielić kopie według długości – od najkrótszej – i odczytać kolejne kolory.
 
 ### Automatyczny odczyt  []
@@ -378,17 +348,13 @@ Inny pomysł: zamiast urywać kopie, budujemy nową nić krok po kroku i po każ
 [RYCINA c06-fig-piro „Kaskada pirosekwencjonowania – cztery enzymy”: Góra: pasujący dNTP → pirofosforan → ATP (sulfurylaza) → światło (lucyferaza). Dół: niewłaściwy dNTP nie jest wbudowany, rozkłada go apyraza.]
 [RAMKA obraz] Zgadujesz słowo litera po literze, a lampka zapala się tylko przy dobrej odpowiedzi. „A?” – ciemno. „C?” – ciemno. „G?” – błysk! Zapisujesz G i zgadujesz następną literę.
 Tak powstaje nić komplementarna i jednocześnie odczytujemy jej sekwencję – szybciej i taniej niż wcześniejszymi metodami.
-Metoda 454 – jedna z pierwszych technik sekwencjonowania nowej generacji – to pirosekwencjonowanie prowadzone jednocześnie na wielu fragmentach DNA . Dzięki temu jest dużo szybsze. Stosuje się ją m.in. do odczytu odcinków DNA, wykrywania mutacji i polimorfizmów pojedynczych nukleotydów, genotypowania wirusów i bakterii oraz badania mtDNA.
+Metoda 454 – jedna z pierwszych technik sekwencjonowania nowej generacji – to pirosekwencjonowanie prowadzone jednocześnie na wielu fragmentach DNA . Dzięki temu jest dużo szybsze (zastosowania – ).
 
-### Masowe sekwencjonowanie na płytce i SMRT  []
-Płytka szklana. Bardzo wiele różnych fragmentów DNA przyczepia się (zakotwicza) do szklanej płytki . Każdy fragment namnaża się na miejscu, aż ma co najmniej 1000 kopii – pojedyncza cząsteczka świeciłaby za słabo, tysiąc kopii obok siebie daje sygnał widoczny dla aparatu. Potem sekwencjonuje się je przez syntezę z użyciem odwracalnych terminatorów z usuwalnymi barwnikami:
-- polimeraza wbudowuje jeden nukleotyd z barwnikiem, który na chwilę blokuje dalszą syntezę;
-- laser wzbudza barwnik i aparat odczytuje kolor – czyli literę;
-- barwnik i blokadę się usuwa, więc można dobudować następny nukleotyd.
-Płytka jest gęsto pokryta fragmentami, więc w każdym cyklu odczytuje się ogromną liczbę fragmentów naraz – stąd szybkość.
+### Masowe sekwencjonowanie na płytce i SMRT  [c06-plytka]
 [POJĘCIE Odwracalny terminator] nukleotyd, który po wbudowaniu zatrzymuje syntezę, ale blokadę (i barwnik) można usunąć, żeby wydłużać nić dalej.
-SMRT ( single molecule real-time sequencing ) podgląda pracę jednej cząsteczki polimerazy DNA . Polimeraza jest przytwierdzona do ściany maleńkiej komory i syntetyzuje nić bez przerwy. Każdy z czterech dNTP ma inny barwnik, przyczepiony do końcowej reszty fosforanowej. Gdy polimeraza trzyma właściwy nukleotyd, żeby go wbudować, barwnik jest w polu widzenia detektora o rząd wielkości dłużej, niż gdyby nukleotyd tylko przepływał przez komorę – i aparat rejestruje kolor. Przy wbudowaniu barwnik odpada razem z pirofosforanem i odpływa, więc nowa nić zostaje bez barwnika, a polimeraza bierze kolejny nukleotyd. Zaleta: szybkość – 10 pz na sekundę .
-W przyszłości może się rozwinąć sekwencjonowanie bezpośrednie : fizykochemiczny odczyt DNA bez PCR, w czujniku wielkości nanometrów.
+Płytka szklana. Bardzo wiele różnych fragmentów DNA przyczepia się (zakotwicza) do szklanej płytki . Każdy fragment namnaża się, aż ma co najmniej 1000 kopii (źródło nie mówi po co; wiele jednakowych cząsteczek w jednym miejscu daje razem mocniejszy sygnał niż jedna). Potem sekwencjonuje się je przez syntezę z użyciem odwracalnych terminatorów z usuwalnymi barwnikami fluorescencyjnymi. Kolejnych kroków Drewa nie opisuje – podpowiada je sama nazwa: wbudowany nukleotyd na chwilę zatrzymuje syntezę, jego barwnik zostaje odczytany, a po usunięciu blokady i barwnika można dobudować następny.
+Płytka jest bardzo gęsto pokryta fragmentami, więc odczytuje się ogromną liczbę fragmentów naraz – stąd szybkość.
+SMRT ( single molecule real-time sequencing ) podgląda pracę jednej cząsteczki polimerazy DNA : każdy z czterech dNTP ma inny barwnik, a aparat rejestruje kolor, gdy polimeraza wbudowuje nukleotyd – sekwencję odczytuje się więc w trakcie syntezy, z szybkością 10 pz na sekundę . Źródło (2011) opisuje SMRT jako jedną z metod rozwijanych (jak działa i co może przyjść po niej – ).
 [ŹRÓDŁO] Źródło: Drewa s. 730–732
 
 ## Identyfikacja genetyczna: układy STR  [c06-str]
@@ -408,9 +374,7 @@ Szczególnie przydatne okazały się miejsca, w których ten sam krótki odcinek
 [RAMKA przyklad] Jednostka powtarzalna STR to np. AATG. Jedna osoba może mieć w danym miejscu AATG powtórzone 9 razy (AATG AATG … AATG), druga – 10 razy. Fragment drugiej osoby jest o 4 pz dłuższy. Mierząc długość fragmentu, liczymy więc powtórzenia – i odróżniamy ludzi.
 
 ### Pierwsza metoda: RFLP minisatelitów – „genetyczny odcisk palca”  []
-Pierwsza metoda identyfikacji wykorzystywała minisatelity i znaną już analizę RFLP z hybrydyzacją Southerna. DNA tnie się enzymem restrykcyjnym w miejscach leżących po obu stronach minisatelity. Fragment zawierający minisatelitę ma więc długość zależną od liczby powtórzeń. Po elektroforezie i transferze sonda rozpoznająca minisatelity pokazuje te fragmenty jako prążki. Były dwie wersje:
-- Wielolokusowa ( multilocus , MLP) – sonda rozpoznawała sekwencję wspólną dla wielu minisatelitów, więc pokazywała naraz kilka–kilkanaście układów: dużo prążków, układ niepowtarzalny dla danej osoby – stąd nazwa „genetyczny odcisk palca”. Wymagała jednak kilku mikrogramów DNA dobrej jakości. W sprawach o ojcostwo to zwykle nie problem (materiał od żywej osoby jest świeży), ale ślady z miejsca przestępstwa mają mało DNA, często zniszczonego – tam metoda była bardzo trudna albo niemożliwa.
-- Jednolokusowa (SLP) – sonda swoista dla jednego minisatelity, więc tylko 1–2 prążki (allele jednego układu). Wymagała mniej DNA – ok. 1 µg – a prostszy obraz łatwiej było ocenić statystycznie, także w mieszaninach DNA kilku osób. Fragmenty nadal miały jednak po kilka–kilkanaście tysięcy pz.
+Pierwsza metoda identyfikacji wykorzystywała minisatelity i znaną już analizę RFLP z hybrydyzacją Southerna: DNA tnie się enzymem restrykcyjnym po obu stronach minisatelity, więc długość fragmentu zależy od liczby powtórzeń, a sonda pokazuje te fragmenty jako prążki – obraz niepowtarzalny dla danej osoby, stąd nazwa „genetyczny odcisk palca”. Metoda wymagała jednak dużo DNA dobrej jakości. W sprawach o ojcostwo to zwykle nie problem (materiał od żywej osoby jest świeży), ale ślady z miejsca przestępstwa mają mało DNA, często zniszczonego – tam metoda zawodziła (jej odmiany i liczby – ).
 
 ### Przełom: PCR i przejście na STR  []
 Problemem identyfikacji była mała ilość materiału . Rozwiązał go PCR : z jednej kopii wybranego odcinka DNA powstaje nawet kilkaset milionów identycznych kopii. Nawet ślina na niedopałku czy plamka krwi wielkości główki szpilki może wystarczyć.
@@ -424,7 +388,7 @@ liczba alleli | kilka–kilkanaście, czasem ok. 20 | dziesiątki, nawet setki
 [/TABELA]
 
 ### Dlaczego STR są lepsze, choć mają mniej alleli?  []
-STR mają mniej wariantów niż minisatelity – ale wystarczająco dużo. Niemal każdy układ STR ma co najmniej trzy allele częste w populacji (> 10%), więc genotypy w przeciętnym układzie STR różnią się między ludźmi znacznie bardziej niż np. grupy krwi. A do tego mają dwie przewagi:
+STR mają mniej wariantów niż minisatelity – ale wystarczająco dużo (ile – ). A do tego mają dwie przewagi:
 - Działają ze zniszczonym DNA. Degradacja DNA to jego pocięcie na coraz krótsze kawałki. Długi allel minisatelity rzadko przetrwa w całości. Krótki allel STR (100–300 pz) ma dużą szansę przetrwać – i da się go namnożyć nawet z silnie zdegradowanego DNA , np. ze śladu długo leżącego w złych warunkach.
 - Można badać wiele naraz. Wiele układów STR namnaża się w jednej probówce – to amplifikacja multipleksowa . Zużywa się mniej DNA (którego w śladzie i tak jest mało), mniej odczynników i mniej czasu do uzyskania pełnego profilu.
 
@@ -436,61 +400,56 @@ Przykład z Drewy: trzy barwniki × po trzy układy o różnej długości w każ
 [RYCINA c06-fig-multipleks „Multipleks: 3 barwniki × 3 układy = 9 układów STR”: Produkty dziewięciu układów i marker wielkości wędrują razem; program rozdziela obraz na kolory. W jednym kolorze układy leżą w różnych zakresach długości (szare pola). Piki przykładowe.]
 
 ### Jak się mierzy długość produktów? Sekwenator kapilarny  []
-Produkty multipleksu trzeba rozdzielić z dokładnością do pojedynczych par zasad – przecież allele różnią się o kilka pz. Robi to automatyczny sekwenator . Rozdziela produkty elektroforetycznie (w denaturującym żelu poliakrylamidowym lub podobnym materiale – z dokładnością do 1 pz dla fragmentów do ok. 500 pz), a laser i układ optyczny rozpoznają barwniki. Dziś są to głównie sekwenatory kapilarne : rozdział w kapilarach trwa ok. 20 min , a ten sam w klasycznej elektroforezie płytowej – nawet 3 godz.
+Produkty multipleksu trzeba rozdzielić z dokładnością do pojedynczych par zasad – przecież allele różnią się o kilka pz. Robi to automatyczny sekwenator . Rozdziela produkty elektroforetycznie (w denaturującym żelu poliakrylamidowym lub podobnym materiale) z dokładnością do 1 pz , a laser i układ optyczny rozpoznają barwniki. Dziś są to głównie sekwenatory kapilarne , w których rozdział biegnie w cienkich rurkach – kapilarach (ile trwa i jakie ma granice – ).
 Detektor patrzy na jedno miejsce kapilary i rejestruje, kiedy przepływa obok niego coś świecącego i w jakim kolorze. Program rysuje z tego elektroforegram – wykres z kolorowymi pikami. Każdy pik to fragment DNA; kolor mówi, który barwnik (grupa starterów), a położenie na osi X („czas retencji”) – jak długo fragment biegł, czyli jaką ma długość.
 [POJĘCIE Elektroforegram] wykres z różnokolorowymi pikami; pik to fragment DNA, jego położenie na osi X odpowiada długości, a kolor – barwnikowi startera.
 
 ### Marker wielkości – linijka w każdej próbce  []
 Czas retencji to jeszcze nie liczba par zasad. Trzeba go przeliczyć – i do tego służy marker wielkości : zestaw sztucznych odcinków DNA o znanej długości, który biegnie razem z próbkami jak linijka.
-Najdokładniejszy jest wewnętrzny marker wielkości . Oznacza się go barwnikiem o innym kolorze niż startery i dodaje wprost do każdej próbki , więc biegnie w tej samej kapilarze co badane fragmenty, w dokładnie tych samych warunkach. Program odróżnia jego piki po kolorze i według nich przelicza długości pozostałych fragmentów. Marker z kilkunastu fragmentów 60–600 pz daje dokładność 0,5–1 pz .
-Dlaczego to takie ważne? Dawniej, w detekcji jednokolorowej, marker biegł w osobnej linii żelu – w trochę innych warunkach – i pomiar był niedokładny; zdarzały się wątpliwości, jak nazwać dany fragment. W detekcji wielokolorowej marker jest w każdej linii: pomiar jest dokładny, a w jednej elektroforezie mieści się więcej układów.
+Najdokładniejszy jest wewnętrzny marker wielkości . Oznacza się go barwnikiem o innym kolorze niż startery i dodaje wprost do każdej próbki , więc biegnie w tej samej kapilarze co badane fragmenty, w dokładnie tych samych warunkach. Program odróżnia jego piki po kolorze i według nich przelicza długości pozostałych fragmentów. Pozwala to mierzyć długość z dokładnością do 0,5–1 pz (z czego składa się taki marker i jak mierzono bez niego – ).
 
 ### Drabina alleliczna – jak nadać allelowi nazwę  []
-Znamy już długość fragmentu. Ale wynik ma brzmieć „allel 9”, a nie „176 pz”. Nadanie fragmentom standardowych nazw to genotypowanie . Nazwa allelu STR to po prostu liczba powtórzeń .
+Znamy już długość fragmentu. Ale wynik ma brzmieć „allel 9”, a nie podawać liczbę par zasad. Nadanie fragmentom standardowych nazw to genotypowanie . Nazwa allelu STR to po prostu liczba powtórzeń .
 Do przeliczenia długości na nazwę służy drabina alleliczna – zestaw znanych alleli danego układu, których budowę wcześniej sprawdzono sekwencjonowaniem (wiemy, ile mają powtórzeń). Drabinę puszcza się w tych samych warunkach co próbki. Fragment z próbki, który biegnie razem ze „szczeblem” drabiny, to ten sam allel – wystarczy znać jego kolor i długość.
 Dlaczego nie wystarczy samo przeliczenie długości? Bo długość zmierzona w sekwenatorze może się różnić od rzeczywistej nawet o kilka nukleotydów. Drabina, biegnąc w tych samych warunkach, „myli się” tak samo – więc porównanie z nią jest pewne.
-Przykład z Drewy – układ TH01:
-- leży na krótkim ramieniu chromosomu 11, w pierwszym intronie genu hydroksylazy tyrozynowej;
-- jednostka powtarzalna to AATG ;
-- allel z 9 powtórzeniami to allel 9 ; jeden z zestawów starterów daje dla niego produkt 176 pz .
-Nazewnictwo radzi sobie też z mutacjami. W allelu 10 kiedyś w jednym powtórzeniu wypadł jeden nukleotyd. Powstał allel z 9 pełnymi powtórzeniami i jednym niepełnym, 3-nukleotydowym – i nazywa się go allel 9.3 („9 pełnych i 3 nukleotydy”). Ma 179 pz, a allel 10 – 180 pz: różnią się o 1 pz. Właśnie dlatego potrzebna jest dokładność pomiaru 0,5–1 pz.
+Przykład z Drewy – układ TH01. Jego jednostka powtarzalna to AATG , a allel z 9 powtórzeniami to allel 9 (gdzie leży ten układ i jaki produkt daje allel 9 – ).
+Nazewnictwo radzi sobie też z mutacjami. W allelu 10 kiedyś w jednym powtórzeniu wypadł jeden nukleotyd. Powstał allel z 9 pełnymi powtórzeniami i jednym niepełnym, 3-nukleotydowym – i nazywa się go allel 9.3 („9 pełnych i 3 nukleotydy”). Przy jednym z zestawów starterów jego produkt ma 179 pz, a produkt allelu 10 – 180 pz: różnią się o 1 pz. Właśnie dlatego potrzebna jest dokładność pomiaru 0,5–1 pz.
 
 ### Profil genetyczny i baza częstości  []
 [POJĘCIE Profil genetyczny] lista alleli wszystkich badanych układów STR danej próbki.
 Lista alleli ze wszystkich badanych układów to profil genetyczny . Gdy profil śladu zgadza się z profilem podejrzanego – czy to już dowód? Jeszcze nie. Trzeba wiedzieć, jak często taki profil występuje w populacji: jeśli bardzo rzadko, zgodność jest mocnym dowodem; jeśli często – słabym. Bez obliczeń statystycznych profilu nie można uznać za unikalny.
-Do obliczeń potrzebna jest baza częstości alleli . Tworzy się ją tak: od kilkuset losowo wybranych osób pobiera się anonimowo krew lub wymaz z ust, oznacza ich profile STR i zapisuje, jakie allele wykryto w każdym układzie. Częstość allelu = N/Σ : liczba chromosomów z danym allelem (N) podzielona przez liczbę wszystkich przebadanych chromosomów (Σ; każda osoba ma dwa).
-[ŹRÓDŁO] Źródło: Drewa s. 765–774
+Do obliczeń potrzebna jest baza częstości alleli . Tworzy się ją tak: od kilkuset losowo wybranych osób pobiera się anonimowo krew lub wymaz z ust, oznacza ich profile STR i zapisuje, jakie allele wykryto w każdym układzie. Częstość allelu = N/Σ : liczba chromosomów z danym allelem (N) podzielona przez liczbę wszystkich przebadanych chromosomów (Σ; każda osoba ma dwa). Przykładową bazę z przeliczeniem znajdziesz w części 2 ( ).
+[ŹRÓDŁO] Źródło: Drewa s. 769–774 (wprowadzenie: s. 765–768)
 
 ## Sporne ojcostwo  [c06-ojcostwo]
 
 ### Wskaźnik ojcostwa PI – o co w nim chodzi?  []
-Dziecko ma w każdym układzie dwa allele: jeden od matki, jeden od ojca. Jeśli mężczyzna nie ma żadnego allelu wspólnego z dzieckiem w badanych układach, nie może być ojcem. Ale jeśli allel się zgadza – czy to dowód? Może to przypadek: ten sam allel może mieć wielu mężczyzn.
-Dlatego zestawia się dwie hipotezy: „ten mężczyzna jest ojcem” i „ojcem jest przypadkowy mężczyzna” . Wskaźnik ojcostwa (PI) mówi, ile razy bardziej prawdopodobny jest uzyskany wynik przy pierwszej hipotezie niż przy drugiej. Liczy się go osobno dla każdego układu STR. Im rzadszy w populacji jest wspólny allel, tym trudniej o przypadek – i tym wyższy PI.
+Dziecko ma w każdym układzie dwa allele: jeden od matki, jeden od ojca. Rodzic i dziecko powinni więc mieć w każdym badanym układzie co najmniej jeden wspólny allel. Jeśli takich wspólnych alleli nie ma, pokrewieństwo w pierwszej linii trzeba wykluczyć. Ale jeśli allel się zgadza – czy to dowód? Może to przypadek: ten sam allel może mieć wielu mężczyzn.
+Dlatego zestawia się dwie hipotezy: „ten mężczyzna jest ojcem” (Drewa nazywa ją hipotezą matki) i „ojcem jest przypadkowy mężczyzna” (hipoteza domniemanego ojca). Wskaźnik ojcostwa (PI) mówi, ile razy bardziej prawdopodobny jest uzyskany wynik przy pierwszej hipotezie niż przy drugiej. Liczy się go osobno dla każdego układu STR. Im rzadszy w populacji jest wspólny allel, tym trudniej o przypadek – i tym wyższy PI.
 Drewa pokazuje to na locus D21S11 , gdzie częstość allelu 26 wynosi p 26 = 0,004 ( ):
 - Badamy tylko ojca i dziecko. Ojciec 26/30, dziecko 26/29. Wspólny allel to 26, ale nie wiemy, który allel dziecko dostało od matki – może 26, może 29. PI = 1 / (4 × p 26 ) = 62,5 .
 - Badamy też matkę. Matka 28/29. Allel 29 dziecka mógł pochodzić tylko od niej, więc allel 26 musiał dać ojciec biologiczny. Badany mężczyzna (26/30) przekazuje allel 26 z prawdopodobieństwem 0,5 (ma go na jednym z dwóch chromosomów), a przypadkowy mężczyzna – z prawdopodobieństwem równym częstości allelu. Stąd PI = 0,5 / p 26 = 125 .
 [RYCINA c06-fig-pi „Locus D21S11 – dwa obliczenia PI”: A – bez profilu matki nie wiadomo, który allel dziecka jest matczyny: PI = 62,5. B – allel 29 wyłączony jako matczyny, zostaje allel 26 od ojca: PI = 125.]
-Drewa ujmuje wynik tak: hipoteza matki („ten mężczyzna jest ojcem mojego dziecka”) jest 62,5 (z profilem matki – 125) razy bardziej prawdopodobna niż hipoteza domniemanego ojca („to nie jest moje dziecko”).
-Wniosek: profil matki podnosi PI . Pozwala wskazać, które allele dziecka na pewno są matczyne, i wyłączyć je z analizy. Zostaje mniej niepewności co do tego, który allel jest ojcowski – mianownik ilorazu zwykle maleje, a PI rośnie.
-Jeden układ to za mało, więc wyniki się łączy: sumaryczny PI to iloczyn PI wszystkich układów (wolno mnożyć, gdy układy nie są ze sobą sprzężone genetycznie, czyli dziedziczą się niezależnie). PI jest odpowiednikiem wskaźnika LR używanego przy śladach: o ile bardziej prawdopodobny jest wynik, gdy osoby są spokrewnione, niż gdy nie są.
+Wniosek: profil matki podnosi PI . Często pozwala wskazać allele dziecka, które mogą pochodzić wyłącznie od matki, i wyłączyć je z analizy. Zostaje mniej niepewności co do tego, który allel jest ojcowski – mianownik ilorazu zwykle maleje, a PI rośnie.
+Jeden układ to za mało, więc wyniki się łączy: sumaryczny PI to iloczyn PI wszystkich układów (wolno mnożyć, gdy układy nie są ze sobą sprzężone genetycznie, czyli dziedziczą się niezależnie). Jak Drewa formułuje wynik i z jakim wskaźnikiem porównuje PI – .
 [RAMKA zapamietaj] Bez matki PI = 1/(4 × p) = 62,5, z matką 0,5/p = 125 – profil matki podnosi PI. Sumaryczny PI to iloczyn PI układów niesprzężonych.
 
 ### Procedura badania spornego ojcostwa – 5 etapów  []
 Obliczenia to tylko jeden etap całej procedury – od decyzji o badaniu do opinii dla sądu. Każdy etap ma zabezpieczyć wynik przed błędem:
-- Pobranie materiału – zwykle wymazy z ust od matki, dziecka i domniemanego ojca. Od każdego co najmniej dwa wymazy , w obecności wszystkich zainteresowanych, którzy podpisują protokół (żeby nikt potem nie kwestionował, czyja jest próbka).
+- Pobranie materiału – zwykle wymazy z ust od matki, dziecka i domniemanego ojca. Od każdego co najmniej dwa wymazy , najczęściej w obecności wszystkich zainteresowanych, którzy podpisują protokół (żeby nikt potem nie kwestionował, czyja jest próbka).
 - Izolacja DNA – materiał jest świeży, więc zwykle łatwo uzyskać dość DNA dobrej jakości. Z dwóch wymazów każdej osoby robi się dwa osobne preparaty i bada je oddzielnie. Wyniki muszą się zgadzać – to wyłapuje pomyłki, np. zamianę próbek.
 - Amplifikacja i elektroforeza – zestawy multipleksowe kilkunastu układów STR, sekwenatory kapilarne z detekcją 4- lub 5-kolorową, drabiny alleliczne i wewnętrzny standard wielkości.
 - Analiza wyników i obliczenia statystyczne w specjalnych programach komputerowych.
 - Opinia – tu jest ważna asymetria. Wykluczenie ojcostwa jest kategoryczne: „nie jest ojcem”. Potwierdzenie brzmi: „jest ojcem z prawdopodobieństwem graniczącym z pewnością”, bo statystyka oparta na dziedziczeniu autosomalnym nie daje 100% pewności – zawsze istnieje minimalna szansa przypadku.
 W większości spraw 15 układów STR wystarcza, by uzyskać PI ≥ 1 000 000 ; prawdopodobieństwo ojcostwa wynosi wtedy zwykle 99,9999% lub więcej. Czasem do wysokiego PI potrzeba dodatkowych analiz, więc laboratorium powinno móc zbadać więcej układów niż standardowe. Cała procedura trwa zwykle 1–2 tygodnie .
-[ŹRÓDŁO] Źródło: Drewa s. 779–781
+[ŹRÓDŁO] Źródło: Drewa s. 780–781 (definicja PI: s. 779)
 
 ## Ślady biologiczne  [c06-slady]
 Badanie śladu jest trudniejsze niż ojcostwa: DNA jest zwykle bardzo mało, bywa zdegradowane albo zanieczyszczone, a do tego nie wiadomo, czy ślad nie pochodzi od kilku osób. Dlatego procedura ma siedem etapów:
 - Zabezpieczenie śladów – zwykle przez techników kryminalistyki na miejscu przestępstwa. Przedmioty z wieloma śladami albo ze śladami trudnymi do zabezpieczenia trafiają do laboratorium, które szuka wszystkiego, co może zawierać DNA (używa źródeł światła o różnej długości fali i mikroskopów). To etap kluczowy: pominięty lub źle zabezpieczony ślad może zmienić końcowe wnioski.
 - Wstępna ocena – zanim zacznie się drogie badanie DNA, sprawdza się, co to za ślad: testy biochemiczne na obecność krwi i nasienia, testy swoiste dla krwi i nasienia ludzkiego, oględziny włosów i włókien pod mikroskopem. Na tej podstawie wybiera się ślady do badań genetycznych.
 - Izolacja DNA – metodę dobiera się do rodzaju śladu, w dużej mierze z doświadczenia. Czasem trzeba spróbować 2–3 metod, z których tylko jedna da wynik.
-- Ocena ilości i jakości DNA, amplifikacja, elektroforeza. DNA ze śladu bywa zdegradowane, jest go mało albo zawiera substancje hamujące PCR – trzeba to wiedzieć przed amplifikacją. Najczęściej sprawdza się to metodą „RT-PCR”: namnaża się krótki fragment i mierzy, jak wydajnie się namnaża. Przy silnie zdegradowanym DNA lub bardzo małej ilości stosuje się multipleksy krótszych układów (miniSTR) albo bada mtDNA. Sama amplifikacja i analiza – jak przy ojcostwie.
+- Ocena ilości i jakości DNA, amplifikacja, elektroforeza. DNA ze śladu bywa zdegradowane, jest go mało albo zawiera substancje hamujące PCR – trzeba to wiedzieć przed amplifikacją. Najczęściej sprawdza się to metodą „RT-PCR” (tu: PCR w czasie rzeczywistym, a nie odwrotna transkrypcja): namnaża się krótki fragment i mierzy, jak wydajnie się namnaża. Przy silnie zdegradowanym DNA lub bardzo małej ilości stosuje się multipleksy krótszych układów (miniSTR) albo bada mtDNA. Sama amplifikacja i analiza – jak przy ojcostwie.
 - Analiza materiału porównawczego – żeby powiedzieć, czy ślad pochodzi od konkretnej osoby, trzeba oznaczyć jej profil i porównać z profilami śladów.
 - Analiza wyników i obliczenia – pełny profil od jednej osoby ocenia się łatwo. Często jednak profil jest szczątkowy (nie wszystkie układy dały wynik), co może mocno obniżyć jego wartość dowodową; czasem profilu nie da się w ogóle oznaczyć; a mieszaniny DNA kilku osób wymagają osobnych metod.
 - Opinia – opisuje ślady, sposób ich zabezpieczenia, metody i wyniki; sentencja podsumowuje obserwacje i obliczenia, z uwagami o zanieczyszczeniach lub degradacji. Przy wielu śladach – nawet setki stron.
@@ -501,7 +460,209 @@ Wniosek Drewy: analiza śladów jest znacznie bardziej złożona niż badanie po
 Mieszaniny DNA. Jeśli w śladzie jest DNA kilku osób, każdy układ pokazuje allele ich wszystkich. Skład mieszaniny da się ustalić tylko wtedy, gdy proporcja składników nie jest niższa niż 1:10–20 (jednego DNA jest najwyżej 10–20 razy mniej niż drugiego) – w praktyce więc tylko przy zbliżonych proporcjach. Gdy DNA jednej osoby jest 100–1000 razy więcej , drugi składnik „ginie” i wynik wygląda jak profil jednej osoby.
 Dalsze pokrewieństwo. Ojca czy matkę ustala się dobrze, ale pokrewieństwo dalsze niż w pierwszej linii bywa bardzo trudne albo niemożliwe do ustalenia. Wspólne DNA „rozmywa się” z każdym pokoleniem: rodzice przekazują dzieciom po 50% DNA, a dziadkowie wnukom – już tylko po 25% .
 [ŹRÓDŁO] Źródło: Drewa s. 781–782
-[RAMKA w60] Elektroforeza : DNA (ujemne) biegnie do anody, krótkie dalej; agaroza 0,1–20 kpz, PAA 5–1000 pz, pole pulsacyjne do 10 Mpz; żel pokazuje wielkość, ilość, degradację, zanieczyszczenia. Sonda : znakowany, jednoniciowy fragment, przyczepia się tylko do komplementarnej sekwencji; źródła – sklonowany gen, rodzina oligonukleotydów, PCR; znakowanie – radioaktywne, fluorescencyjne, hapten + przeciwciało, enzym. Southern (DNA–DNA): trawienie → żel → HCl, NaOH, Tris → transfer → UV / 80 °C → sonda; delecja – prążek niżej; utrata miejsca restrykcyjnego (RFLP) – nosiciel 2 prążki, homozygota 1 dłuższy; northern – RNA, ekspresja. Mikromacierz : tysiące znanych sekwencji naraz; DNA badane i kontrolne 1:1 w dwóch kolorach – przewaga kontroli = delecja, badanego = duplikacja. Sekwencjonowanie : ddNTP zatrzymują syntezę; cycle sequencing (obie nici), pirosekwencjonowanie (pirofosforan → ATP → światło), 454, płytka, SMRT (10 pz/s). STR : 2–6 pz × 5–50, allele 100–300 pz, działają ze zniszczonym DNA, multipleks (kolor + długość), wewnętrzny marker, drabina alleliczna; PI bez matki 62,5, z matką 125; ojcostwo – 5 etapów, ślady – 7.
+[RAMKA w60] Elektroforeza : DNA (ujemne) biegnie do anody, krótkie dalej; agaroza 0,1–20 kpz, PAA 5–1000 pz, pole pulsacyjne do 10 Mpz; żel pokazuje wielkość, ilość, degradację, zanieczyszczenia. Sonda : znakowany, jednoniciowy fragment, przyczepia się tylko do komplementarnej sekwencji; źródła – sklonowany gen, rodzina oligonukleotydów, PCR; znakowanie – radioaktywne, fluorescencyjne, hapten + przeciwciało, enzym. Southern (DNA–DNA): trawienie → żel → kąpiele (HCl, NaOH, Tris) → transfer → utrwalenie (UV lub ogrzanie) → sonda; niewielka delecja – prążek niżej; utrata miejsca restrykcyjnego (RFLP) – nosiciel 2 prążki, homozygota 1 dłuższy; northern – RNA, ekspresja. Mikromacierz : tysiące znanych sekwencji naraz; DNA badane i kontrolne 1:1 w dwóch kolorach – przewaga kontroli = delecja, badanego = duplikacja. Sekwencjonowanie : ddNTP zatrzymują syntezę; cycle sequencing (obie nici), pirosekwencjonowanie (pirofosforan → ATP → światło), 454, płytka, SMRT (10 pz/s). STR : 2–6 pz × 5–50, allele 100–300 pz, działają ze zniszczonym DNA, multipleks (kolor + długość), wewnętrzny marker, drabina alleliczna; PI bez matki 62,5, z matką 125; ojcostwo – 5 etapów, ślady – 7.
+[RAMKA przejscie] Część pierwsza wystarcza, żeby rozumieć każdą metodę: po co jest, jak działa i jak odczytać wynik. Część druga jest dla tych, którzy chcą znać także liczby, warunki reakcji, odmiany metod i nazwy techniczne – oraz to, co Drewa podaje na tych samych stronach obok głównych zagadnień. Każda sekcja wskazuje podrozdział części pierwszej, który rozszerza. elektroforeza – ocena preparatu, barwniki, pole pulsacyjne ( ), sondy i bloty – znaczniki, Southern w liczbach, odmiany ( ), rodzaje mikromacierzy i ChIP-chip ( ), sekwencjonowanie – przesiew i platformy ( ), mapy genomu i pierwsze markery ( ), od minisatelitów do STR – pomiar i nazwy alleli ( ), ojcostwo i ślady – doprecyzowania ( ).
+
+## Elektroforeza: ocena preparatu i szczegóły techniczne  [c06-r-elektroforeza]
+W części 1 ( ) żel był „okiem” laboratorium: pokazywał wielkość, ilość, degradację i zanieczyszczenia. Tu dochodzą liczby i odmiany techniczne, które Drewa podaje przy tej samej okazji.
+
+### Trzy sposoby oceny preparatu  []
+Drewa zaczyna od pytania, czy otrzymany preparat w ogóle nadaje się do dalszej pracy – jakość DNA i RNA ma bezpośredni wpływ na wynik eksperymentu. Wymienia trzy sposoby oceny: elektroforezę analityczną w żelu (to ją opisuje część 1), pomiar spektrofotometryczny absorbancji oraz mikromacierz połączoną z elektroforezą mikrokapilarną . Dwa ostatnie – długości fali, stosunek 260/280, barwnik RiboGreen i skalę integralności 1–10 – omówiono w ; tu ich nie powtarzamy.
+
+### rRNA – linijka „orientacyjna”  []
+Prążki rRNA w żelu z całkowitym RNA Drewa nazywa markerem mas „orientacyjnym”. Mogą pełnić tę funkcję, bo wielkości podstawowych frakcji rRNA są znane dla poszczególnych organizmów – u człowieka 18S ma 1,9 kpz, a 28S – 5,0 kpz.
+
+### Barwniki: od czego zależy czułość?  []
+Każdy barwnik ma próg – ilość DNA, poniżej której prążka nie zobaczymy. Bromek etydyny pozwala zobaczyć DNA od ok. 10 ng w pojedynczym prążku. W żelach poliakrylamidowych można stosować barwniki bardziej czułe: azotan srebra (AgNO 3 ) albo SYBR – preparat cyjaninowego barwnika fluorescencyjnego, który wybarwia dwuniciowe DNA.
+Kompleks SYBR–DNA najsilniej pochłania światło o długości 498 nm (niebieskie), a najsilniej świeci przy 522 nm (zielone). SYBR wiąże się z DNA bardzo mocno i specyficznie, a jego sygnał jest wprost proporcjonalny do ilości DNA w próbce. Dlatego używa się go w technikach ilościowych, np. w qRT-PCR (ang. quantitative real time PCR – ilościowy PCR w czasie rzeczywistym; ).
+
+### Jak działa pole pulsacyjne?  []
+Do cząsteczek od 20 kpz do 10 Mpz służy elektroforeza w polu pulsacyjnym. Pole elektryczne włącza się i wyłącza w krótkich odstępach czasu i za każdym razem zmienia jego kierunek – o 90° lub 180° . Powtarzające się zmiany kierunku stopniowo rozdzielają naniesiony preparat DNA; można tak rozdzielić całe chromosomy, np. drożdżowe.
+
+### Elektroforeza kapilarna – zastosowania i nazwy  []
+Elektroforezę kapilarną (CE) stosuje się w analizie DNA na każdej skali: od ustalania sekwencji pojedynczego łańcucha DNA, przez analizę oligonukleotydów, aż po analizę DNA całego chromosomu. Podstawowe techniki z rozdziałem w kapilarach obejmuje wspólna nazwa: wysokosprawna elektroforeza kapilarna (HPCE) . Wraz z rozwojem mikromacierzy DNA wprowadzono elektroforezę mikrokapilarną – µCE (ang. micro capillary electrophoresis ); z niej korzysta urządzenie do oceny integralności kwasów nukleinowych ( ).
+
+### Transfer jako odmiana elektroforezy  []
+Elektrotransfer ( ) Drewa nazywa „szczególnym przypadkiem zastosowania elektroforezy”: naładowane cząsteczki nadal wędrują w polu elektrycznym, tylko prąd płynie przez całą grubość żelu, a nie wzdłuż niego. Nośnikiem może być bibuła lub różne rodzaje membran nałożonych na żel.
+[ŹRÓDŁO] Źródło: Drewa s. 712–714
+
+## Sondy i bloty w szczegółach  [c06-r-bloty]
+Część 1 opisała cztery sposoby znakowania sondy ( ) i kolejne kroki hybrydyzacji Southerna ( ). Tu – nazwy znaczników, warunki poszczególnych kroków i odmiany metody krok po kroku.
+
+### Znakowanie sondy – pełna tabela  []
+Drewa dzieli znakowanie na radioaktywne i nieradioaktywne ; do nieradioaktywnego należą metody fluorescencyjne, immunochemiczne (cytochemiczne) i enzymatyczne. W trzech z czterech sposobów znacznik trafia do sondy tą samą drogą: włącza się do niej nukleotyd – znakowany izotopem, sprzężony z haptenem albo sprzężony z cząsteczką enzymu (Drewa nazywa go „enzymem markerowym”). Nazwy z tabeli niżej to te, które podaje źródło.
+[TABELA]
+Co doczepiamy do sondy | Jak widzimy sygnał
+radioaktywne – nukleotyd z izotopem promieniotwórczym | klisza ciemnieje – autoradiografia
+fluorescencyjne – fluorochrom, najczęściej rodamina lub fluoresceina | świecenie w mikroskopie fluorescencyjnym
+immunochemiczne – nukleotyd z haptenem: biotyną, digoksygeniną lub fluoresceiną | przeciwciało swoiste dla haptenu , sprzężone z fosfatazą alkaliczną, peroksydazą, barwnikiem fluorescencyjnym lub koloidalnym złotem
+enzymatyczne – nukleotyd z enzymem markerowym | reakcja barwna katalizowana przez enzym
+[/TABELA]
+Fluoresceina stoi w tabeli dwa razy. Jako fluorochrom sama świeci i widać ją w mikroskopie; jako hapten jest „chorągiewką”, którą dopiero rozpoznaje przeciwciało.
+
+### Skąd nazwa „Southern blot”?  []
+Pierwszy człon pochodzi od nazwiska wynalazcy, E.M. Southerna. Drugi – blot – od pomysłu, by przeniesienie wymusić zjawiskiem osmozy: odpowiednie sole wędrują przez żel i pociągają za sobą cząsteczki DNA, podobnie jak bibuła wciąga atramentowy kleks. W diagnostyce molekularnej przyjęto nazwę hybrydyzacja Southerna .
+
+### Southern w liczbach  []
+Kroki 3 i 5 z części 1 z warunkami, które podaje Drewa (kolejność depurynacji źródło pozostawia otwartą; pewne jest tylko, że neutralizacja następuje po denaturacji):
+[TABELA]
+Etap | Odczynnik / warunek | Po co
+depurynacja | 0,25 M HCl | fragmentacja dłuższych odcinków – łatwiejsze przeniesienie
+denaturacja | 0,5 M NaOH (warunki zasadowe) | forma jednoniciowa, zdolna do hybrydyzacji
+neutralizacja | 0,5 M Tris, pH 8,5 | obojętne pH żelu – łatwiejsze wiązanie DNA z membraną
+utrwalenie | światło UV lub +80 °C | wiązania kowalencyjne DNA–membrana
+[/TABELA]
+Co mówi intensywność prążka? Znacznik sondy uwidacznia cały kompleks sonda–DNA w postaci prążka, a intensywność tego prążka zależy od dwóch rzeczy: aktywności sondy i ilości komplementarnego DNA w badanym materiale. Słaby prążek nie musi więc znaczyć, że DNA było mało – równie dobrze sonda mogła dawać słaby sygnał.
+Po co ponad 100 enzymów? Analizę RFLP wykorzystuje się szeroko w diagnostyce typowych mutacji punktowych, bo poznano ponad 100 enzymów restrykcyjnych, które pozwalają wykazać zmiany sekwencji „charakterystyczne dla wielu chorób”.
+
+### Czego szukamy, gdy długość fragmentu nie ma znaczenia?  []
+Odmiany Southerna z części 1 nie mierzą długości fragmentu – liczy się tylko to, czy sonda znajdzie cel. Każda odpowiada jednak na inne pytanie.
+Dot blot i slot blot – czy sekwencja jest w próbkach? Wiele próbek DNA nanosi się na ten sam filtr w postaci kropli i hybrydyzuje z tą samą sondą, co pozwala jednocześnie wykrywać i identyfikować wiele próbek. W wariancie slot blot zamiast nakrapiania stosuje się specjalnie przygotowany wzorzec szczelin, do których nanosi się DNA. Metoda może być ilościowa , jeśli przed hybrydyzacją wprowadzi się wzorce ilości użytego DNA: porównując sygnał próbki z sygnałami wzorców, szacuje się, ile szukanej sekwencji w niej jest.
+Hybrydyzacja kolonijna – który klon niesie nasz gen? Na membranie umieszcza się kolonie bakteryjne zawierające poszczególne klony. Kolejne kroki:
+- Komórki bakterii transformuje się zmodyfikowanym plazmidem (każda dostaje inny fragment DNA) i wysiewa na szalki Petriego.
+- Kolonie replikuje się na filtr – jak pieczątką, z zachowaniem ich układu. Szalkę zachowuje się jako szalkę wzorcową .
+- Filtr poddaje się hybrydyzacji z sondą i autoradiografii.
+- Miejsce sygnału na filtrze wskazuje na szalce wzorcowej dokładnie tę kolonię, w której jest hybrydyzujący fragment.
+Szalka wzorcowa jest potrzebna, bo sam filtr mówi tylko, gdzie był klon; żywe bakterie z szukanym fragmentem zostają na szalce. Hybrydyzacja łysinkowa przebiega podobnie: komórki bakterii transformuje się wektorem fagowym , wysiewa i replikuje na filtr, a przeniesione fagi przytwierdza się do filtru, hybrydyzuje z sondą i poddaje autoradiografii. Techniki punktowe i hybrydyzacja kolonijna służą na ogół do przeglądania bibliotek genomowych i cDNA w celu identyfikacji klonów kodujących poszczególne geny.
+
+### Northern – warunki  []
+W denaturującym żelu agarozowym RNA utrzymuje się w formie rozwiniętej dzięki czynnikowi denaturującemu, np. aldehydowi mrówkowemu lub glioksalowi . Potem RNA przenosi się – jak DNA w Southernie – na membranę nitrocelulozową lub nylonową i utrwala.
+[ŹRÓDŁO] Źródło: Drewa s. 714–716
+
+## Rodzaje mikromacierzy: co jest na płytce i na jakie pytanie odpowiada  [c06-r-mikromacierze]
+W części 1 ( ) mikromacierz była tablicą tysięcy znanych sekwencji, a doświadczenie dwukolorowe pokazało, jak szuka się na niej delecji i duplikacji. Rodzaje mikromacierzy łatwo pomylić, dlatego porządkujemy je według jednego kryterium: co naniesiono na płytkę. Od tego zależy, na jakie pytanie płytka odpowiada.
+
+### Jak powstaje płytka?  []
+Wzorcowymi sekwencjami mogą być np. oligonukleotydy będące fragmentami genów albo reprezentujące dowolny inny odcinek genomu, a do badania ekspresji – fragmenty cDNA powstałe w odwrotnej transkrypcji z mRNA ( ). Pierwowzorem mikromacierzy były paski lub krążki bibułowe z naniesionymi wzorcowymi próbami DNA – przypominało to w ogólnym zarysie hybrydyzację Southerna. Dziś podłożem są membrany nylonowe, szkiełka mikroskopowe, płytki plastikowe lub krzemowe. Oligonukleotydy nanosi się przez nakrapianie albo systemami mikrodrukowania, które przypominają komputerowe drukarki atramentowe lub drukowanie mikroprocesorów na potrzeby elektroniki. Zależnie od przeznaczenia mikromacierz obejmuje określone geny, grupy genów, wybrane sekwencje albo cały genom.
+
+### Przegląd rodzajów  []
+[TABELA]
+Rodzaj | Co na niej jest i do czego służy
+Badanie RNA (transkryptomika)
+ekspresyjne | 11–20 sond oligonukleotydowych obejmujących fragmenty 3′ każdego znanego transkryptu organizmu – które geny są aktywne; najpopularniejsze, dostępne dla największej liczby gatunków pro- i eukariotycznych
+eksonowe | sondy dla poszczególnych eksonów transkryptu: zmiany wzoru ekspresji i alternatywne składanie (różne warianty mRNA z jednego pre-mRNA)
+dachówkowe ( genome tiling arrays ) | sondy równomiernie pokrywają genom: aktywność transkrypcyjna całego genomu, także obszarów pozagenowych; miejsca wiązania czynników transkrypcyjnych, modyfikacje histonów, metylacja DNA
+splicing array | alternatywne składanie transkryptu
+Badanie DNA – według budowy sond
+oligonukleotydowe ( oligo array ) | krótkie sondy, na ogół 25–70 nt
+cDNA ( cDNA array ) | sondy znacznie dłuższe, zwykle odpowiadające pełnym sekwencjom mRNA – „co w praktyce oznacza kompletną sekwencję wariantu genu”
+BAC/PAC ( BAC/PAC-array ) | kilka tysięcy klonów w wektorach BAC i PAC; cały genom z rozdzielczością ok. 1 Mpz
+z produktami PCR | wybrane produkty PCR jako sondy
+Inne : genotypowanie (badanie sekwencji genów), SNP array (polimorfizmy pojedynczych nukleotydów), ChIP-chip (oddziaływania DNA z białkami i modyfikacje chromatyny)
+[/TABELA]
+Mikromacierze dachówkowe, podobnie jak ekspresyjne, stosuje się często w porównawczej analizie funkcjonalnej genomów. Takie doświadczenia mówią o możliwej roli nowo odkrytych transkryptów i o roli niekodujących fragmentów genomu. Dają też wgląd w regulację procesów słabo dotąd poznanych genetycznie: embriogenezy, różnicowania tkanek czy odpowiedzi komórki lub organizmu na warunki środowiska.
+
+### ChIP-chip – gdzie siada białko?  []
+Podstawą wielu procesów w komórce – replikacji DNA, transkrypcji, rekombinacji, naprawy DNA i regulacji upakowania chromatyny – są oddziaływania białek z DNA. Jedną z najnowocześniejszych metod ich badania jest ChIP-chip ( ChIP on chip ). Łączy dwa etapy:
+- immunoprecypitację chromatyny (ChIP, ang. chromatin immunoprecipitation ): swoiste przeciwciało przeciw danemu białku „wyławia” z komórki fragmenty chromatyny razem z przyczepionym białkiem – wyłowione fragmenty DNA to miejsca, w których białko było związane;
+- analizę tej wyselekcjonowanej puli kwasów nukleinowych na mikromacierzy ( chip ): odczytuje się, w jakich miejscach genomu i jak często białko się wiąże.
+Drewa nazywa to „mapowaniem interakcji białko–DNA” – z dużą dokładnością.
+
+### Ile to kosztuje?  []
+Same metody mikromacierzowe są stosunkowo tanie, ale wymagają bardzo drogiego oprzyrządowania: precyzyjnego skanera laserowego do odczytu (krok 4 na ) i technik komputerowych do analizy danych.
+[ŹRÓDŁO] Źródło: Drewa s. 717–718
+
+## Sekwencjonowanie: przesiew i platformy w szczegółach  [c06-r-sekwencjonowanie]
+Część 1 ( ) zaczęła od tego, że przed sekwencjonowaniem często robi się przesiew, a skończyła na SMRT. Tu – co Drewa pisze o przesiewie na tych samych stronach oraz liczby i szczegóły techniczne kolejnych platform.
+
+### Przesiew: czy ten fragment warto sekwencjonować?  []
+Metody przesiewowe oceniają zmiany właściwości fizykochemicznych DNA wynikające z różnic w składzie nukleotydów: nawet mutacja punktowa może zmienić konformację (kształt) fragmentu, a przez to jego ruchliwość w żelu. Na tym opierają się PCR-SSCP , PCR-DGGE , PCR-TGGE i analiza heterodupleksów (HA, ang. heteroduplex analysis ) – wszystkie opisuje . Drewa dodaje do nich chemiczne rozszczepianie niesparowań heterodupleksów (CMC, ang. chemical mismatch cleavage ) oraz odmianę HA – DHPLC (ang. denaturing high-performance liquid chromatography , denaturująca wysokosprawna chromatografia cieczowa), która wykorzystuje wysoką rozdzielczość nowoczesnych wypełnień kolumn chromatograficznych.
+DHPLC łączy zalety wcześniejszych metod: czułość sięga 100% przy stosunkowo niskich kosztach, metoda jest szybka, a z automatycznym podajnikiem próbek ( autosamplerem ) pozwala zbadać 200 próbek na dobę . Wynik przesiewu – podejrzenie mutacji w danym fragmencie – jest podstawą decyzji o jego sekwencjonowaniu.
+
+### Daty i zastosowania  []
+Usprawnienia techniczne i lepsza bioinformatyczna obróbka danych pozwoliły poznać pełny genom człowieka oraz wielu innych organizmów. Pirosekwencjonowanie opracowano w 1996 r. – Drewa nazywa je techniką „nowatorską, stosunkowo prostą”.
+Metoda 454 czyta równolegle wiele fragmentów DNA, więc Drewa wymienia dla niej szeroki wachlarz zastosowań: badanie sekwencji odcinków DNA, wykrywanie mutacji i polimorfizmów pojedynczych nukleotydów, genotypowanie wirusów i bakterii oraz badanie mitochondrialnego DNA.
+
+### Płytka szklana – skąd czułość?  []
+Wymóg co najmniej 1000 kopii każdego fragmentu ( ) źródło zostawia bez uzasadnienia. O czułości odczytu Drewa pisze tylko tyle, że zapewnia ją wzbudzanie fluoroforu laserem i specjalnie zaprojektowany system optyczny.
+
+### SMRT – jak podejrzeć jedną polimerazę?  [c06-r-smrt]
+SMRT opiera się na pojedynczej cząsteczce polimerazy DNA pracującej w trybie ciągłym. Żeby mierzyć aktywność jednej cząsteczki, trzeba ją zamknąć w bardzo małej przestrzeni. Sekwencjonowanie przebiega więc w komorze o średnicy 10 nm i objętości 20 zeptolitrów (zepto- = 10 −21 ), utworzonej w cienkiej metalowej warstewce nadrukowanej na kwarcową płytkę. Jeden chip ma kilka tysięcy takich komór, a polimeraza jest przytwierdzona kowalencyjnie do ściany komory. Odczyt jednej litery:
+- Do syntezy używa się dNTP znakowanych różnymi barwnikami fluorescencyjnymi, dołączonymi do końcowego atomu fosforu .
+- Gdy do komory trafia pasujący nukleotyd, polimeraza go wbudowuje. Barwnik pozostaje wtedy w zasięgu detektora o rząd wielkości dłużej, niż trwa dyfuzja cząsteczki z komory – i aparat rejestruje jego kolor.
+- Po włączeniu nukleotydu do łańcucha znakowany pirofosforan dyfunduje z komory (nowa nić zostaje bez barwnika) i proces się powtarza.
+Podstawową zaletą jest szybkość: 10 pz na sekundę . Teoretycznie jeden chip mógłby więc zsekwencjonować ponad milion par zasad w ciągu minuty – łatwo to sprawdzić: jedna komora daje 600 pz na minutę, a komór jest kilka tysięcy. Źródło (2011) opisuje SMRT jako jedną z technik rozwijanych.
+
+### Sekwencjonowanie bezpośrednie  []
+Na koniec Drewa (2011) wspomina metodę, która dzięki rozwojowi nanotechnologii może się wkrótce rozwinąć: sekwencjonowanie bezpośrednie , czyli fizykochemiczną analizę DNA bez użycia PCR. Odczyt mógłby przebiegać z szybkością 300 pz na sekundę w pojedynczym czujniku nanometrowym – 30 razy szybciej niż pojedyncza polimeraza w SMRT.
+[ŹRÓDŁO] Źródło: Drewa s. 730–732
+
+## Mapy genomu i pierwsze markery  [c06-r-markery]
+W części 1 padło, że dawniej markerem genetycznym był polimorfizm białek ( ), a analiza RFLP wróci przy identyfikacji osób ( ). Drewa łączy te wątki krótką historią map genomu; definicje markerów i ich rodzaje omawia .
+Efektywna analiza DNA wymaga map genomu: map opartych na częstości rekombinacji i analizie sprzężeń oraz mapy fizycznej , która pokazuje pozycje sekwencji i genów w danym locus wraz z fizycznymi odległościami między nimi. Mapa musi pokazywać pozycje genów względem określonych markerów – punktów orientacyjnych. Historia map to szukanie markerów coraz liczniejszych:
+- cechy fenotypowe – grupy krwi lub zespoły dziedziczne sprzężone z danym chromosomem (np. zespół Nail-Patella sprzężony z chromosomem 9);
+- wykrywany elektroforetycznie polimorfizm białek (enzymów) – grupa markerów poszerzona jeszcze przed technikami molekularnymi; liczba i rozmieszczenie tych markerów nadal nie wystarczały jednak do opracowania projektu sekwencjonowania;
+- markery DNA – w pierwszej znacznie ulepszonej mapie genomu użyto 180 loci markerowych wyznaczonych przez polimorfizm długości anonimowych (bez przypisanej funkcji) fragmentów restrykcyjnych, czyli przez analizę RFLP.
+Na tej samej zasadzie – różnicach długości fragmentów DNA między osobami – opiera się identyfikacja genetyczna: najpierw analiza RFLP minisatelitów, a potem układów STR ( ).
+[ŹRÓDŁO] Źródło: Drewa s. 732
+
+## Od minisatelitów do STR: pomiar i nazewnictwo  [c06-r-str]
+Część 1 ( ) przeszła od minisatelitów do STR jednym argumentem: STR są krótkie. Tu ta sama droga z liczbami – jako ciąg metod, z których każda potrzebowała mniej DNA – a potem szczegóły pomiaru: sekwenator, marker, drabina, nazwy alleli i baza częstości.
+
+### MLP → SLP → STR: coraz mniej DNA  []
+Analiza RFLP minisatelitów miała dwie wersje, różniące się sondą. Sonda wielolokusowa (MLP) miała „sekwencję rdzeniową”, wspólną dla wielu minisatelitów. W wersji jednolokusowej (SLP) zastąpiono ją sondą o sekwencji unikalnej dla motywu powtarzalnego jednego, wybranego minisatelity. Dopiero PCR pozwolił zejść do śladowych ilości DNA – ale wymagał przejścia na STR.
+[TABELA]
+Cecha | MLP (RFLP) | SLP (RFLP) | STR (PCR)
+co widać | kilka–kilkanaście układów naraz, dużo prążków | allele jednego locus: 1–2 prążki, obraz znacznie prostszy | allele wielu układów naraz (multipleks)
+ilość DNA | kilka µg dobrej jakości | ok. 1 µg, nadal stosunkowo dobrej jakości | niewielka; z jednej kopii odcinka – kilkaset milionów kopii
+długość fragmentów | tysiące pz | kilka – kilkanaście tysięcy pz | zwykle 100–300 pz
+zastosowanie | głównie sporne ojcostwo i pokrewieństwo (materiał – krew); ślady – bardzo trudne lub niemożliwe | głównie sporne ojcostwo; łatwiejsza statystyka i mieszaniny DNA kilku osób; ślady i próbki z niskocząsteczkowym DNA – w ograniczonym zakresie | także ślina na niedopałku, plamka krwi wielkości główki szpilki, ślady na przedmiotach dotykanych przez sprawcę
+[/TABELA]
+Dlaczego nie wystarczyło namnożyć minisatelitów metodą PCR? Mieszanina reakcyjna PCR zawiera startery (krótkie, odpowiednio zaprojektowane odcinki DNA), polimerazę DNA, trifosforany deoksyrybonukleotydów i niewielką ilość genomowego DNA; podczas cyklicznych zmian temperatury w termocyklerze namnaża się odcinek leżący między starterami ( ). Dla minisatelity tym odcinkiem byłby cały allel – a allele minisatelitów liczą często kilka, a nawet kilkanaście tysięcy par zasad. Ich amplifikacja wymaga DNA wysokiej jakości i nawet wtedy jest technicznie trudna. Drewa pisze więc, że PCR minisatelitów był „praktycznie niemożliwy na szerszą skalę”, a wejście PCR oznaczało całkowitą zmianę warsztatu badawczego identyfikacji osobniczej.
+Ile alleli wystarczy? STR mają mniej alleli niż minisatelity, ale w niemal każdym układzie STR są co najmniej trzy allele stosunkowo częste w populacji (> 10%). Dzięki temu zróżnicowanie genotypów przeciętnego układu STR jest znacznie wyższe niż zróżnicowanie fenotypów przeciętnego układu grupowego krwi. (Sprawdzisz to na bazie częstości na końcu tej sekcji.)
+
+### Sekwenator – czas i granice  []
+Denaturujący żel poliakrylamidowy (lub jego odpowiednik) rozdziela fragmenty różniące się o 1 pz – pod warunkiem, że nie są dłuższe niż ok. 500 pz . Allele STR (zwykle 100–300 pz) mieszczą się w tej granicy z zapasem. W sekwenatorach kapilarnych elektroforeza trwa ok. 20 min ; ten sam rozdział w tradycyjnej elektroforezie „płytowej” mógłby trwać nawet 3 godz.
+
+### Detekcja jedno- i wielokolorowa – dwa przypadki  []
+Wewnętrzny marker wielkości z części 1 składa się z kilkunastu fragmentów DNA o długościach 60–600 pz i pozwala mierzyć z dokładnością 0,5–1 pz. Po co aż taka dokładność, widać najlepiej, gdy zestawi się dwa sposoby detekcji ze schematu Drewy (ryc. 29.4 w źródle).
+Detekcja jednokolorowa. Fragmenty mają znaczniki fluorescencyjne, a obecność fragmentu sygnalizuje pik na wykresie. Marker wielkości (na schemacie prążki od 160 do 240 pz) biegnie w osobnej linii żelu , a komputer na jego podstawie ocenia wielkość fragmentów na całym żelu i przypisuje im nazwy alleli. Na schemacie fragmenty 191,3 i 199,1 pz oznaczono jako allele 7 i 9. Obok są fragmenty 191,4 i 200,1 pz: pierwszy to nadal allel 7, ale przy drugim pojawia się pytanie „9 czy 9,1?”. Marker biegł w innej linii niż próbka, czyli w nieco innych warunkach, więc taki pomiar był niedokładny – i takie wątpliwości zdarzały się często.
+Detekcja wielokolorowa. Produkty PCR znakuje się barwnikami o różnych kolorach – na schemacie niebieskim, żółtym i zielonym – a marker wielkości unikalnym kolorem (np. czerwonym) i umieszcza w każdej linii . Komputer „rozdziela” otrzymany obraz na kolory składowe ( ). Daje to dwie korzyści: niezwykle dokładny pomiar wielkości, bo marker biegnie razem z próbką, i więcej układów oznaczanych w jednej elektroforezie.
+
+### Drabina alleliczna i TH01 – szczegóły  []
+Drabina alleliczna to zestaw wszystkich możliwych, a przynajmniej najczęściej występujących w danej populacji alleli badanych układów. Każdy jej allel wcześniej zsekwencjonowano, więc wiadomo dokładnie, ile i jakich jednostek powtarzalnych zawiera.
+Układ TH01 leży na krótkim ramieniu chromosomu 11, w pierwszym intronie genu hydroksylazy tyrozynowej. Drewa podaje jego jednostkę powtarzalną jako AATG , a o allelu z bazy GenBank (numer dostępu D00269 , nukleotydy 1169–1205) pisze, że zawiera 9 powtórzeń motywu TCAT – stąd nazwa allel 9. Amplifikacja tego allelu jednym z zestawów starterów daje produkt o długości rzeczywistej 176 pz .
+[RAMKA przyklad] Allel 9 daje 176 pz, a jednostka powtarzalna ma 4 nukleotydy. Z tymi samymi starterami allel 10 powinien więc dać 176 + 4 = 180 pz – i tyle podaje Drewa. Allel 9.3 to allel 10 z delecją jednego nukleotydu: 180 – 1 = 179 pz. Te dwa produkty dzieli 1 pz, a pomiar w sekwenatorze może odbiegać od długości rzeczywistej nawet o kilka nukleotydów – dlatego nazwę nadaje się dopiero po porównaniu z drabiną.
+Nomenklatura alleli STR uwzględnia więc także niektóre mutacje punktowe, które utrwaliły się w populacji – jak delecja, z której powstał allel 9.3.
+
+### Baza częstości – przykład z przeliczeniem  []
+Częstości alleli muszą pochodzić z populacji, z której pochodzi badana osoba. Drewa pokazuje przykładową bazę dla sześciu układów STR (tab. 29.2 w źródle). Przy każdym allelu w nawiasie podano N – liczbę chromosomów z tym allelem; Σ – liczba wszystkich przebadanych chromosomów w danym układzie.
+[TABELA]
+Układ | Allel (N) | Σ
+D5S818 | 7 (2) · 8 (1) · 9 (46) · 10 (82) · 11 (341) · 12 (366) · 13 (150) · 14 (9) · 15 (3) | 1000
+D13S317 | 6 (2) · 8 (146) · 9 (81) · 10 (46) · 11 (394) · 12 (209) · 13 (79) · 14 (42) · 15 (1) | 1000
+D7S820 | 7 (10) · 8 (174) · 9 (152) · 10 (280) · 11 (199) · 12 (139) · 13 (45) · 14 (1) | 1000
+TPOX | 8 (541) · 9 (102) · 10 (61) · 11 (262) · 12 (34) | 1000
+D3S1358 | 11 (1) · 14 (29) · 15 (47) · 16 (65) · 17 (70) · 18 (39) · 19 (5) | 256
+LPL | 6 (1) · 7 (1) · 9 (46) · 10 (452) · 11 (275) · 12 (202) · 13 (23) | 1000
+[/TABELA]
+[RAMKA przyklad] Częstość allelu 8 w układzie TPOX: N/Σ = 541/1000 = 0,541 – ponad połowa przebadanych chromosomów. Zmieńmy układ: allel 11 w D3S1358 wykryto tylko raz (N = 1), ale przebadano tu tylko 256 chromosomów, więc częstość wynosi 1/256 ≈ 0,004, a nie 0,001, jak wyszłoby przy Σ = 1000. Do wzoru zawsze bierze się Σ tego samego układu. Sprawdź też regułę „co najmniej trzy allele powyżej 10%”: w TPOX spełniają ją allele 8, 9 i 11 (0,541; 0,102; 0,262) – i w każdym z pozostałych układów tabeli są co najmniej trzy takie allele.
+[ŹRÓDŁO] Źródło: Drewa s. 769–774
+
+## Ojcostwo i ślady: doprecyzowania  [c06-r-ojcostwo]
+Procedury z części 1 ( , ) są kompletne. Tu – jak Drewa formułuje wynik PI, kilka zastrzeżeń, które w źródle osłabiają stwierdzenia, i warunki progu 1:10–20 dla mieszanin.
+
+### PI: hipoteza matki i hipoteza ojca  []
+W ramce z obliczeniami ( ) Drewa zapisuje hipotezy tak, jakby wypowiadali je uczestnicy sprawy: hipoteza domniemanego ojca – „to nie jest moje dziecko”, hipoteza matki – „ten mężczyzna jest ojcem mojego dziecka”. Wynik brzmi więc: hipoteza matki jest 62,5 raza (z profilem matki – 125 razy) bardziej prawdopodobna niż hipoteza ojca.
+PI można traktować jako odpowiednik wskaźnika LR używanego przy śladach: oba mówią, o ile bardziej prawdopodobne jest otrzymanie konkretnego wyniku badań przy założeniu, że badane osoby są spokrewnione, niż przy założeniu, że nie są.
+
+### Zastrzeżenia źródła  []
+W dwóch miejscach Drewa pisze ostrożniej, niż łatwo zapamiętać:
+- profil matki „często” , a nie zawsze, pozwala wskazać allele dziecka pochodzące wyłącznie od niej;
+- materiał pobiera się od osób wyznaczonych przez organ zlecający analizę, a wszyscy zainteresowani są przy tym obecni „najczęściej” , nie zawsze.
+[RAMKA przyklad] Kiedy profil matki nie pomaga? Przykładowe genotypy: matka 28/29, dziecko 28/29. Oba allele dziecka występują u matki, więc każdy z nich mógł pochodzić od niej – żadnego nie da się wyłączyć z analizy. Porównaj z : tam matka 28/29 i dziecko 26/29 – allel 26 dziecka nie mógł pochodzić od matki, więc zostaje tylko on jako ojcowski.
+
+### Ślady – uzupełnienia do etapów  []
+Do trzech etapów badania śladów ( ) Drewa dodaje szczegóły, które pokazują, skąd biorą się trudności:
+- etap 1 – do laboratorium trafiają też przedmioty ze śladami nieewidentnymi; poza źródłami światła o różnych długościach fali i mikroskopami laboratorium korzysta z binokularów;
+- etap 4 – „RT-PCR” to tu PCR w czasie rzeczywistym (jak qRT-PCR, ), a nie odwrotna transkrypcja: ocenia się efektywność namnażania krótkiego fragmentu za pomocą specjalistycznego sprzętu;
+- etap 6 – profilu niektórych śladów w ogóle nie da się oznaczyć z powodu silnej degradacji DNA lub zanieczyszczenia inhibitorami PCR.
+
+### Próg 1:10–20 – w jakich warunkach?  []
+Granica dla mieszanin z części 1 ma konkretne warunki: Drewa podaje ją dla amplifikacji metodą PCR z detekcją w najczulszych dostępnych systemach elektroforezy kapilarnej. Jest to ograniczenie czysto techniczne, ale w praktyce sprawia, że badać da się tylko mieszaniny o mniej więcej podobnych proporcjach DNA poszczególnych osób.
+[RAMKA przyklad] Proporcje przykładowe. Ślad zawiera DNA dwóch osób w proporcji 1:5 – mieści się w granicy 1:10–20, więc skład mieszaniny da się ustalić. Gdy proporcja spadnie do 1:500 (DNA jednej osoby 500 razy więcej), mieszanina daje taki wynik jak próbka od jednej osoby – drugi składnik znika z profilu.
+Oba ograniczenia z części 1 – mieszaniny i pokrewieństwo dalsze niż w pierwszej linii – otwierają u Drewy podrozdział o analizie układów STR chromosomów płciowych; jego treść wykracza poza strony z rozpiski.
+[ŹRÓDŁO] Źródło: Drewa s. 780–782
 
 
 ======== E. ŹRÓDŁA (przycięte do zakresu z mapy) ========

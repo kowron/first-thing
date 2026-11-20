@@ -125,3 +125,10 @@ Naprawa (do wdrożenia 19.11, przed pierwszym agentem):
 - 19.11 wieczór: C2 Z09 GOTOWE – 24 → 31 s. (cz. 1: 21 s., cz. 2: 10 s.). STOP – został tylko G (C2 wg `plany/z01-czesci.md`, karta ryciny 1), potem pełny build i ryciny z ChatGPT. Czekamy na znak użytkownika.
 - 19.11 wieczór: C2 G GOTOWE – 26 → 37 s. (cz. 1: 25 s., cz. 2: 12 s.). PEŁNY BUILD: 335 s., 0 błędów, 0 uwag, 94 ryciny (12 zaślepek). PDF wysłany użytkownikowi. ZOSTAJE: (1) ryciny z ChatGPT → `ryciny/cNN-fig-….png` w miejsce 12 zaślepek; (2) rewizja/sprawdzenie błędów nowego tekstu (części 2) i redakcja całości – DOPIERO na znak użytkownika.
 - 20.11: 12 rycin z ChatGPT wstawionych (`ryciny/`), pełny build 335 s., 0/0. Użytkownik: nazwisk z błędami (Singer, Tijo) NIE podawać. Zostaje: rewizja – na znak użytkownika; aksolotl w Z07 – bez decyzji.
+
+## 20.11 – REWIZJA (test łańcuszka zleconego przez użytkownika)
+Łańcuszek: 6× Sonnet xhigh (zgłaszają wszystko podejrzane → `rewizja3/zNN.md`, handoff `handoff/R3-rewizja-sonnet.md`) → 1× Fable medium (weryfikuje, potwierdza/odrzuca, wypisuje błędy do `rewizja3/POTWIERDZONE.md`: tekst – gotowe brzmienia zamiany; skład/ryciny – lista) → 1× Sonnet (wkleja poprawki tekstu w całym podręczniku) + 1× Opus (skład, układ, ryciny w całym podręczniku). Na koniec raport tokenów: Fable / Sonnet / Opus i na co poszło najwięcej.
+Podział Sonnetów: G+Z11 · Z02+Z03 · Z04+Z06 · Z05+Z07 · Z08+Z10 · Z09+strony wstępne. Uruchomieni 20.11.
+| agent | model | tokeny |
+|---|---|---|
+| wstawienie 12 rycin | Opus | 138 tys. |

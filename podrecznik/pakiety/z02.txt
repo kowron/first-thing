@@ -1,0 +1,2232 @@
+# PAKIET PLANISTY – rozdział 02
+Jedyny plik do przeczytania (poza handoffem C1, STYL.md i ZASADY.md). Sekcje: A rozpiska, B mapa zakresu, C fakty uciętych wcześniej (T z wyciągu), D tekst rozdziału (bez rycin SVG), E źródła przycięte do zakresu.
+
+
+======== A. ROZPISKA ZAJĘĆ ========
+
+                                                                                                 Lekarski
+                                            Zajęcia nr 2                             Biologia molekularna
+
+Temat seminarium:      Molekularne podstawy regulacji podziałów komórkowych
+
+Temat ćwiczenia:       Podziały komórkowe: mitoza i mejoza
+
+Zagadnienia do przygotowania przez studenta:
+1. Mitoza i mejoza [1].
+2. Punkty kontrolne cyklu komórkowego [2].
+3. Białka stojące na straży genomu [2].
+4. Udział cyklin w fazie G1 cyklu komórkowego. Szlak sygnałowy pRb. Sekwestracja Cip/Kip. Szlak
+   sygnałowy p53 [1].
+5. Inhibitory kinaz zależnych od cyklin [1].
+6. Regulacja fazy S cyklu komórkowego [1].
+7. Regulacja fazy G2 cyklu komórkowego [1].
+
+Zaliczenie pisemne
+Karta pracy studenta
+
+Część praktyczna:
+1. Mitoza w stożku wzrostu korzenia cebuli (Allium cepa) 2n = 16. Preparat barwiony fioletem goryczki,
+   pow. 10x100. W przekrojach podłużnych przez stożek wzrostu (powyżej czapeczki) korzenia cebuli
+   należy odnaleźć i wykonać w prawidłowej kolejności rysunki poszczególnych etapów mitozy.
+2. Mitoza w linii komórkowej RES (Ren Embryonis Suis, 2n=38), uzyskana ze zdrowych komórek nerki
+   płodu świni domowej, pow. 10x100. Korzystając z powiększenia immersyjnego należy narysować
+   komórki zwierzęce w kolejnych etapach mitozy.
+3. Spermatogeneza w kanalikach krętych jądra szczura, pow. 10x10, 10x40. Na małym powiększeniu
+   należy odszukać przekroje przez kanaliki kręte (najbardziej zbliżone do kolistych) i zaobserwować
+   komórki poszczególnych etapów procesu spermatogenezy.
+4. Mejoza w gonadzie męskiej Xenopus laevis, pow. 10x100. W preparacie należy odnaleźć i narysować
+   komórki znajdujące się w kolejnych fazach pierwszego oraz drugiego podziału mejotycznego.
+
+Piśmiennictwo:
+1. Drewa G., Ferenc T.: Genetyka medyczna podręcznik dla studentów. Wydawnictwo Edra Urban &
+   Partner, Wrocław, 2011. Rozdział nr 7.
+2. Jóźwiak J.: Biologia komórki dla studentów uczelni medycznych. Wydawnictwo Edra Urban &
+   Partner, Wrocław 2020. Rozdział 6.
+
+
+
+======== B. MAPA ZAKRESU (handoff) ========
+
+# Handoff Z02 – Mitoza, mejoza i regulacja cyklu komórkowego (Opus xhigh, 1 agent)
+Plan szczegółowy przygotował szef (Fable): **zakres, źródła, cięcia i lista rycin są ustalone poniżej – nie zmieniasz ich**. Twoja praca to dobry tekst i ryciny. Jeśli coś w planie nie zgadza się ze źródłem, zapisz to w `stan/z02.md` i idź dalej według źródła.
+Przeczytaj: `/home/user/first-thing/podrecznik/ZASADY.md`, `KOMPONENTY.md`, potem tylko wskazane fragmenty paczki.
+
+- **Plik wynikowy:** `/home/user/first-thing/podrecznik/rozdzialy/z02-cykl-komorkowy.html` · **limit: 14 stron** (A4, dwie kolumny)
+- **Paczka źródeł:** `/tmp/claude-0/-home-user-first-thing/600b873f-e07d-5766-b2f4-6a90b68ae091/scratchpad/zrodla/z02/` · **wyciąg:** `wyciagi/z02.md` · **stan:** `stan/z02.md` (jeśli istnieje – kontynuuj, nie czytaj źródeł od nowa)
+- **Bank rycin:** `bank-rycin/INDEX.md`
+
+## Mapa: zagadnienie → źródło → co zostaje / co tniemy
+| # | Zagadnienie (rozpiska) | Źródło (czytaj tylko to) | Zostaje | Tniemy |
+|---|---|---|---|---|
+| 1 | Mitoza i mejoza | Drewa r. 7: **7.7 Mitoza** (s. 155–158, z podrozdz. profaza i prometafaza, metafaza, anafaza, telofaza, cytokineza), **7.8 Mejoza** (s. 158–161: pierwszy podział – profaza I ze stadiami, metafaza I, anafaza I, telofaza I; drugi podział) | przebieg każdej fazy, co dzieje się z chromosomami, wrzecionem i otoczką; stadia profazy I i crossing-over; liczba chromosomów/chromatyd po każdym podziale; wynik mitozy vs mejozy (tabela porównawcza); tab. 7.2 jeśli dotyczy czasu faz | „7.9.1 Zaburzenia mejozy” (s. 161–162) – poza rozpiską, pomiń w całości; opisy mikroskopowe drugorzędne |
+| 2 | Punkty kontrolne cyklu | Jóźwiak r. 6: „Punkty kontrolne cyklu komórkowego” (z ryc. 6.5–6.7 i tab. 6.2) | po co punkty kontrolne; co komórka sprawdza (4 pytania); trzy punkty: G1 (restrykcyjny, przejście do G0), G2/M (integralność DNA, pełna replikacja), M (wrzeciono); cykliny i Cdk – skąd nazwa, tab. 6.2 (która cyklina z którą Cdk w której fazie); regulacja Cdk (fosforylacja, inhibitory, degradacja cykliny przez ubikwitynę/proteasom) | – |
+| 3 | Białka stojące na straży genomu | Jóźwiak r. 6: „Białka stojące na straży genomu” – do nagłówka „Leki przeciwnowotworowe” (ten i dalsze pomiń) | trzy grupy: p53, białka kieszeniowe (Rb, p107, p130), BRCA1/2; p53: MDM2 → ubikwitynacja → proteasom; po uszkodzeniu DNA fosforylacja i stabilizacja; geny docelowe (p21, Bax, Puma, MSH2, MLH1); mutacja TP53 w 50–70% nowotworów; białka kieszeniowe: kieszeń A/B wiąże E2F, rekrutacja deacetylaz histonów, regulacja fosforylacją, cel wirusów; BRCA1/2: naprawa pęknięć dwuniciowych przez rekombinację homologiczną, ryzyko raka sutka 80%, raka jajnika 55% (BRCA1) i 25% (BRCA2) | hipoteza Knudsona i dywagacje o późnej mutacji TP53 (1 zdanie); mikroRNA a BRCA; receptor estrogenowy (ryc. 6.11) |
+| 4 | Cykliny w fazie G1; szlak pRb; sekwestracja Cip/Kip; szlak p53 | Drewa r. 7: **7.2** (s. 145), **7.2.1** (s. 145–147), **7.2.2** (s. 147), **7.2.3** (s. 148–149); jako wstęp 3 zdania z **7.1.1** (s. 144: cdk, cykliny, inhibitory; fosforylacja/defosforylacja; szlak pRb i p53) | wczesna/późna G1; cykliny D + cdk4/6, rola ERK, aktywacja przez CAK (cyklina H–cdk7); dwie funkcje kompleksu (fosforylacja pRb, sekwestracja Cip/Kip); cyklina E–cdk2 i punkt restrykcyjny G1/S; pRb–E2F–DP, uwolnienie E2F, dodatnie sprzężenie zwrotne; HAT/HDAC (2–3 zdania); sekwestracja: definicja i skutek; spadek cykliny D1 (ubikwityna–proteasom); p53: rola, aktywacja (fosforylacja: DNA-PK, MAPK, ATM), tetramer, geny docelowe (gadd45, Cip1, hdm2, Bax, Fas, IGFBP-3), trzy drogi indukcji apoptozy, pętla ujemna z hdm2, p300, działanie także w G2 | tab. 7.1 (loci genów) – cała, poza pRb 13q14 i p53 17p13 w notce „Pojęcie”; „7.1.2 Droga sygnałowa mitogen–jądro” (Grb2, Ras-Sos, Raf, kaskada MAPK, AP-1, TRE) – zostaje jedno zdanie, że sygnał mitogenny dociera do jądra przez kinazę ERK; listy białek aktywujących E2F (TBP, TFIIH, P/CAF, GCN5, TAF250, SRC1, p300); mechanizm PIC (TFIIA/TFIID); białko EMA; Thr-187, Thr-286, GSK-3β, PI3K/Akt |
+| 5 | Inhibitory kinaz zależnych od cyklin | Drewa r. 7: **7.3** (s. 149–151) | dwie rodziny: INK4 (p16, p15, p18, p19) i Cip/Kip (p21, p27, p57); INK4: wiążą cdk4/6, hipofosforylacja pRb, zatrzymanie w G1, odwrócenie sekwestracji; p19 a hdm2/p53; Cip/Kip: podwójna rola zależna od stężenia; p21: droga zależna i niezależna od p53; wiązanie PCNA; p27 i p57 – rola w różnicowaniu, najwyższy poziom w komórkach zróżnicowanych | wspólne locus INK4a i eksony 1α/1β; listy czynników indukujących (E1a, v-abl, myc, IL-6, TGFβ, IFN, dioksyny, kwas retinowy, TPA, DMSO, E1AF, AP-2, HBP1…) – zostaw po 1–2 przykłady; dwa mechanizmy degradacji p27 |
+| 6 | Regulacja fazy S | Drewa r. 7: **7.4** (s. 151) | całość (SPF = cyklina A–cdk2; duplikacja centrosomów; spadek cykliny E) | – |
+| 7 | Regulacja fazy G2 | Drewa r. 7: **7.5** (s. 151) | całość (MPF = cyklina B i A + cdk1; APC/C: degradacja kohezyn, cykliny B, gemininy; punkt restrykcyjny G2) | – |
+
+**Poza zakresem (nie czytaj, nie pisz):** Drewa 7.1 wstęp o zaburzeniach, 7.6 (s. 151–155), 7.9–7.11; Jóźwiak r. 6: opis mitozy i mejozy (rozpiska przypisuje je Drewie), leki przeciwnowotworowe.
+**Powtórzenia pRb/p53:** pełny mechanizm opisz raz – w części o zagadnieniu 4 (Drewa); w części o zagadnieniu 3 podaj tylko to, co wnosi Jóźwiak, z odesłaniem. Drewa pisze „hdm2”, Jóźwiak „MDM2” – użyj „hdm2 (MDM2)”.
+**Układ rozdziału:** 1) Cykl komórkowy i jego punkty kontrolne (zag. 2) → 2) Faza G1: cykliny, pRb, Cip/Kip (zag. 4) → 3) p53 (zag. 4) → 4) Inhibitory CDK (zag. 5) → 5) Fazy S i G2 (zag. 6–7) → 6) Białka straży genomu (zag. 3) → 7) Mitoza → 8) Mejoza (zag. 1).
+
+## Ryciny (5 nowych; bank nie ma rycin do tego rozdziału)
+1. **Cykl komórkowy i punkty kontrolne** – koło G1 → S → G2 → M (+ wyjście do G0); trzy punkty kontrolne z podpisem, co sprawdzają; przy fazach kompleksy z tab. 6.2 Jóźwiaka i z Drewy 7.4–7.5 (cyklina D–cdk4/6, cyklina E–cdk2, cyklina A–cdk2 = SPF, cyklina B/A–cdk1 = MPF).
+2. **Szlak pRb i sekwestracja Cip/Kip** – dwa panele: A) pRb–E2F–DP (nieaktywny) → fosforylacja przez cyklinę D–cdk4/6 → hiperfosforylacja przez cyklinę E–cdk2 → wolny E2F → geny fazy S, strzałka sprzężenia zwrotnego (E2F → cyklina E); B) sekwestracja: cyklina D–cdk4/6 przejmuje Cip/Kip z nieaktywnego kompleksu cyklina E–cdk2–Cip/Kip (wg ryc. 7.3 Drewy).
+3. **Szlak p53** – uszkodzenie DNA → fosforylacja i stabilizacja p53 (tetramer) → p21 (zatrzymanie cyklu), gadd45, Bax/Fas (apoptoza); pętla hdm2 → ubikwitynacja → degradacja; p19INK4d blokuje hdm2 (wg ryc. 7.4 Drewy).
+4. **Mitoza** – pasek 6 schematycznych komórek: profaza, prometafaza, metafaza, anafaza, telofaza, cytokineza, z 1 wierszem opisu pod każdą.
+5. **Mejoza** – mejoza I i II w jednym schemacie (homologi, biwalenty, crossing-over w profazie I, rozdział homologów, potem chromatyd; 4 komórki haploidalne), z liczbą chromosomów na każdym etapie.
+Inhibitory CDK – tabela (rodzina, białka, na co działają, skutek), bez ryciny.
+
+
+
+======== C. FAKTY UCIĘTE WCZEŚNIEJ (T z wyciągu) ========
+
+# Wyciąg Z02 – Mitoza, mejoza i regulacja cyklu komórkowego
+## Zag. 2 – Punkty kontrolne cyklu (J s. 68–71)
+## Zag. 4 – Faza G1: cykliny, pRb, Cip/Kip, p53 (D s. 144–149)
+### Wstęp 7.1.1 (D144) – 3 zdania
+### 7.2 Cykliny w G1 (D145)
+### 7.2.1 Szlak pRb (D145–147)
+### 7.2.2 Sekwestracja Cip/Kip (D147)
+### 7.2.3 Szlak p53 (D148–149)
+## Zag. 5 – Inhibitory CDK (D s. 149–151)
+## Zag. 6 – Faza S (D s. 151)
+## Zag. 7 – Faza G2 (D s. 151)
+## Zag. 3 – Białka na straży genomu (J s. 70–75, do „Leki”)
+## Zag. 1 – Mitoza i mejoza (D s. 155–161)
+### 7.7 Mitoza (D155–158)
+### 7.8 Mejoza (D158–161)
+## Proponowany układ (= handoff)
+## Ryciny: z banku 0; nowe 5 (cykl + punkty kontrolne; pRb + sekwestracja; p53; mitoza; mejoza)
+
+
+======== D. TEKST ROZDZIAŁU ========
+
+(plik rozdzialy/z02-cykl-komorkowy.html; data-title: Mitoza, mejoza i regulacja cyklu komórkowego)
+[LEAD] Zanim komórka się podzieli, musi skopiować całe swoje DNA i rozdzielić obie kopie dokładnie po równo. Jeśli podzieli się z uszkodzonym albo niedokończonym DNA, błąd przejdzie na komórki potomne. Najpierw zobaczysz, jak komórka pilnuje tego procesu – punkty kontrolne, cykliny i kinazy, białka strzegące genomu – a potem, jak przebiegają same podziały: mitoza i mejoza.
+
+## Cykl komórkowy i jego punkty kontrolne  [c02-cykl]
+
+### Co komórka musi zrobić, zanim się podzieli?  []
+Wyobraź sobie komórkę, która ma się podzielić na dwie. Każda z komórek potomnych potrzebuje pełnego kompletu DNA. Komórka musi więc najpierw skopiować (zreplikować) całe swoje DNA, a potem rozdzielić obie kopie po równo. Musi też zwielokrotnić ilość białek, bo komórki potomne będą ich potrzebowały.
+[POJĘCIE Chromatydy siostrzane] dwie identyczne kopie chromosomu powstałe przy replikacji DNA, połączone centromerem; w czasie podziału rozchodzą się do przeciwnych biegunów komórki.
+Po skopiowaniu DNA każdy chromosom składa się z dwóch identycznych kopii – chromatyd siostrzanych , połączonych w jednym miejscu zwanym centromerem . W czasie podziału z białka tubuliny powstaje wrzeciono podziałowe (mitotyczne): rusztowanie z włókien, wzdłuż których chromatydy siostrzane rozchodzą się do przeciwnych biegunów komórki. Każdy biegun dostaje po jednej chromatydzie z każdego chromosomu – i tak powstają dwa jednakowe komplety. Szczegóły podziału opisujemy w podrozdziale o mitozie ( ); na razie wystarczy ten obraz.
+
+### Cztery fazy cyklu  [c02-fazy]
+Okres od jednego podziału komórki do następnego to cykl komórkowy . W komórkach eukariotycznych, które dzielą się mitotycznie, ma on cztery fazy, wyróżnione według tego, co dzieje się z ilością DNA ( ):
+- G1 – przerwa pomitotyczna (ang. gap 1 ): okres po podziale, zanim DNA zostanie skopiowane;
+- S – faza syntezy DNA: DNA zostaje skopiowane i od tej chwili każdy chromosom ma dwie chromatydy siostrzane;
+- G2 – przerwa przedmitotyczna (ang. gap 2 ): okres między skopiowaniem DNA a podziałem;
+- M – podział: najpierw jądra komórkowego ( mitoza , inaczej kariokineza), potem cytoplazmy ( cytokineza ).
+Fazy G1, S i G2 to razem interfaza – okres przygotowania do podziału. Komórka może też wyjść z aktywnego cyklu; pozostaje wtedy w fazie spoczynkowej G0 . Sam podział (faza M) trwa 0,5–3 godz. i jest nieprzerwanym ciągiem zdarzeń. Cały cykl trwa natomiast bardzo różnie w różnych typach komórek: od 1,5–3 godz. w komórkach drożdży do roku w komórkach wątrobowych (hepatocytach) człowieka (wszystkie przykłady z tabeli źródła – część 2, ).
+Mimo tych różnic pewne cechy cyklu są uniwersalne – także w komórkach nowotworowych. Ich cykl nie różni się specjalnie od cyklu komórek prawidłowych. Różnica leży gdzie indziej: komórki nowotworowe tracą mechanizmy, które regulują podział i decydują o przejściu do fazy G0 albo pozostaniu w niej. Tym mechanizmom poświęcona jest większa część rozdziału.
+[RYCINA c02-fig-cykl „Cykl komórkowy i punkty kontrolne”: Zacznij od fazy G1 (zielony łuk po prawej) i idź zgodnie z ruchem wskazówek zegara: G1 → S → G2 → M. Czerwone kreski 1–3 to punkty kontrolne, a ramki po prawej mówią, co komórka w nich sprawdza. Porównaj ich położenie: punkt 1 stoi przed replikacją DNA, punkt 2 – po niej, punkt 3 – w trakcie podziału. Przy łukach – kompleksy cyklina–cdk działające w danej fazie.]
+
+### Co się stanie, jeśli komórka podzieli się z błędem?  []
+W czasie cyklu na komórkę działają sygnały z zewnątrz i z jej wnętrza. Niektóre mogą zaburzyć jej pracę albo wprowadzić zmiany – na przykład uszkodzić DNA. Co by się stało, gdyby komórka mimo to dzieliła się dalej?
+- Uszkodzenie przeszłoby na komórki potomne – obie dostałyby kopię uszkodzonego DNA.
+- Komórka traciłaby zasoby. Kopiowanie DNA i zwielokrotnianie białek zużywa bardzo dużo energii. Uszkodzona komórka, która prowadziłaby te procesy, wydawałaby energię na próżno i mogłaby zginąć.
+- Groziłby nowotwór. Komórki, które wymknęłyby się spod kontroli, mogłyby dać mu początek.
+
+### Punkty kontrolne: zatrzymaj się i sprawdź  []
+Dlatego cykl jest ściśle kontrolowany w określonych momentach – w punktach kontrolnych (ang. checkpoints ). W punkcie kontrolnym komórka na pewien czas wstrzymuje procesy cyklu i sprawdza cztery rzeczy. Każda odpowiada innemu zagrożeniu:
+- czy ma dość substancji odżywczych, by kontynuować podział – bo podział jest energochłonny;
+- czy DNA nie jest uszkodzone – bo uszkodzenie przeszłoby na komórki potomne;
+- czy replikacja już się zakończyła – bo przy niedokończonej replikacji część DNA nie miałaby kopii dla drugiej komórki;
+- czy DNA zostało zreplikowane tylko jeden raz – bo każda komórka potomna ma dostać dokładnie jedną kopię.
+
+### Trzy punkty kontrolne – trzy momenty cyklu  []
+Cykl ma trzy punkty kontrolne ( ). Każdy stoi w innym miejscu i sprawdza to, co ma znaczenie przed najbliższym etapem.
+Punkt G1, czyli punkt restrykcyjny – najważniejszy z trzech. Leży w końcowej części fazy G1, czyli zanim DNA zostanie skopiowane. Komórka sprawdza tu przede wszystkim, czy ma zasoby na podział, np. dość substancji odżywczych. Jeśli nie – przechodzi w fazę G0 i czeka na bardziej sprzyjające warunki. Jeśli tak – podejmuje nieodwracalną decyzję o podziale. Przed wejściem w fazę S sprawdza też, czy DNA nie jest uszkodzone. Jeśli jest, cykl zostaje zahamowany, a komórka ma czas na naprawę. Po przejściu punktu G1 komórka musi kontynuować podział – zatrzymać ją może już tylko punkt G2/M albo M.
+Punkt G2/M, czyli punkt kontroli integralności DNA – pod koniec fazy G2, a więc po replikacji. Komórka sprawdza, czy w czasie replikacji do DNA nie wkradły się błędy. Jeśli wykryje uszkodzenia, których nie da się naprawić, może uruchomić apoptozę – programowaną śmierć komórki, w której komórka sama się likwiduje ( ). Sprawdza też, czy całe DNA zostało zreplikowane i czy ma dość białek potrzebnych do mitozy.
+Punkt M, czyli punkt organizacji wrzeciona mitotycznego – w czasie mitozy. Sprawdza, czy włókna wrzeciona są prawidłowo uformowane, czy chromosomy są dobrze ustawione względem wrzeciona i czy chromatydy siostrzane są połączone z włóknami wychodzącymi z przeciwnych biegunów. To ostatnie jest kluczowe: gdyby obie chromatydy jednego chromosomu przyczepiły się do włókien tego samego bieguna, trafiłyby do jednej komórki potomnej, a druga nie dostałaby żadnej. Punkt M zapobiega więc nieprawidłowemu rozdziałowi chromosomów.
+[RAMKA przyklad] Trzy komórki dochodzą do końca fazy G1. Komórka A ma dość substancji odżywczych i nieuszkodzone DNA. Przechodzi punkt restrykcyjny i od tej chwili musi kontynuować podział. W fazie S przy kopiowaniu DNA powstaje błąd. Zatrzymać ją może już tylko punkt G2/M: tu błąd replikacji zostanie wykryty, a jeśli nie da się go naprawić – komórka może zginąć w apoptozie. Komórka B ma za mało zasobów. Nie podejmuje decyzji o podziale, tylko przechodzi w G0 i czeka. Komórka C ma zasoby, ale uszkodzone DNA. Cykl zostaje zahamowany jeszcze w G1, zanim DNA zostanie skopiowane, a komórka dostaje czas na naprawę.
+
+### Kto zatrzymuje i kto uruchamia cykl?  []
+Punkty kontrolne to miejsca, w których zapada decyzja. Stałą kontrolę nad przebiegiem cyklu sprawują dwa rodzaje białek: kinazy zależne od cyklin (cdk, ang. cyclin-dependent kinases ; u Jóźwiaka: Cdk) i cykliny . Żeby zrozumieć, jak działają, zacznijmy od tego, czym jest kinaza.
+[POJĘCIE Kinaza i fosfataza] kinaza przenosi grupę fosforanową na cząsteczkę substratu – często na inną kinazę (fosforylacja); fosfataza działa odwrotnie i grupę fosforanową usuwa (defosforylacja).
+Kinaza to enzym, który przenosi grupę fosforanową na inną cząsteczkę – swój substrat . Ta reakcja to fosforylacja . Substratem kinazy jest często inna kinaza. Enzymy o działaniu przeciwnym, które grupę fosforanową usuwają ( defosforylacja ), to fosfatazy . W tym rozdziale zobaczysz wiele przykładów, że przyłączenie grupy fosforanowej zmienia działanie białka – najpierw przy samych kinazach cdk, potem przy białkach pRb i p53.
+Stan wyjściowy: kinazy cdk są w komórce przez cały cykl, a ich stężenie jest względnie stałe. Sama kinaza cdk jest jednak nieaktywna . Zmienia się to, gdy przyłączy się do niej cyklina – cyklina działa tylko w kompleksie z odpowiednią kinazą cdk. Nazwa „cyklina” pochodzi od cyklicznych zmian jej stężenia: stężenie każdej cykliny rośnie i spada w kolejnych fazach, zależnie od funkcji, jaką cyklina pełni. Kinaza jest więc stała, a cyklina zmienna – i to pojawienie się cykliny wyznacza, kiedy kinaza może zadziałać.
+
+### Jak włącza się i wyłącza kinazę cdk?  []
+Samo zwiększenie stężenia cykliny nie wystarcza, by przeprowadzić komórkę do następnej fazy. Kompleks cyklina–cdk przechodzi kilka etapów ( ):
+- Komórka wytwarza cyklinę (ekspresja genu i synteza białka).
+- Cyklina łączy się z odpowiednią kinazą cdk. Powstaje kompleks, ale jeszcze nieaktywny.
+- Kinaza cdk zostaje ufosforylowana. Dopiero teraz kompleks jest aktywny i fosforyluje swoje swoiste substraty.
+- Gdy aktywność kompleksu nie jest już potrzebna, enzym ligaza ubikwityny przyłącza do cykliny cząsteczki ubikwityny . Ubikwityna działa jak etykieta „do rozłożenia”: cyklina z taką etykietą trafia do proteasomu , kompleksu rozkładającego białka, i zostaje zniszczona.
+- Kinaza cdk zostaje zdefosforylowana i czeka w gotowości na kolejny podział.
+Aktywność cdk regulują więc trzy rzeczy: związanie cykliny, fosforylacja i – trzeci sposób – związanie inhibitorów kinaz zależnych od cyklin (CKI; u Jóźwiaka: CDKI). Inhibitory to białka, które przyłączają się do kinaz cdk lub ich kompleksów z cyklinami i blokują ich działanie; opisujemy je osobno ( ).
+[RAMKA obraz] Kinaza cdk to samochód, który przez cały cykl stoi w garażu – zawsze ten sam. Bez kluczyka nie pojedzie, a kluczykiem jest cyklina; do tego trzeba jeszcze zwolnić blokadę (fosforylacja). Każda faza ma swój kluczyk, a po jeździe kluczyk zostaje zniszczony i na następną trzeba wyrobić nowy – stąd stężenie cyklin rośnie i spada. Wspólna zależność: część stała działa tylko wtedy, gdy dołączy do niej część zmienna. Granica analogii: samochód pojedzie, dokąd zechce kierowca, a kompleks cyklina–cdk fosforyluje tylko swoje swoiste substraty.
+[RYCINA c02-fig-cdk „Włączanie i wyłączanie kinazy cdk”: Czytaj od lewej. Porównaj stany 1 i 2: sama cyklina nie wystarcza – kompleks działa dopiero po fosforylacji kinazy (stan 3). W stanie 4 cyklina oznaczona ubikwityną (fioletowe kółka) trafia do proteasomu, a zdefosforylowana cdk wraca do stanu 1. Wniosek: kinaza przetrwa cały cykl, cyklina – nie.]
+
+### Która cyklina działa w której fazie?  [c02-ktora-cyklina]
+Cykliny dzieli się na cztery klasy – według faz, które regulują. Cykliny fazy G1 odpowiadają za wejście w cykl po pobudzeniu przez czynniki wzrostu, a cykliny fazy G1/S , fazy S i fazy M – za przejście przez kolejne fazy. Wyjątkiem od cyklicznych zmian stężenia jest cyklina fazy G1 ( cyklina D ) – jej stężenie utrzymuje się na dość wysokim poziomie praktycznie przez cały cykl. Tabela pokazuje, która cyklina z którą kinazą działa w której fazie:
+[TABELA]
+Faza | Cykliny | Kinazy zależne od cyklin
+G0 | C | cdk3
+G1 | D, E | cdk2, cdk4, cdk6
+S | A, E | cdk2
+G2 | A | cdk1, cdk2
+M | B | cdk1
+[/TABELA]
+
+### Cykl krok po kroku: kto co robi?  [c02-krok]
+Prześledźmy cały cykl od komórki w spoczynku (G0). Przy każdym kroku zwróć uwagę, kto działa, co robi i jaki jest tego skutek. Pojawią się tu czynniki transkrypcyjne – białka, które włączają transkrypcję określonych genów.
+- Czynnik wzrostu wiąże się ze swoim receptorem na powierzchni komórki. Uruchamia to kaskadę Ras/Raf/MEK/ERK – łańcuch białek, które kolejno przekazują sobie sygnał (więcej o kinazie ERK w fazie G1, ). Skutek: komórka wychodzi z G0, rozpoczyna się transkrypcja genu cykliny D, a następnie aktywacja kinaz cdk4 i cdk6.
+- Kompleks cyklina D–cdk4/6 działa m.in. na białko Rb . Bez czynników wzrostu Rb blokuje czynniki transkrypcyjne genów potrzebnych do dalszego cyklu. W obecności czynników wzrostu ta blokada (represja) zostaje zniesiona. Skutek: powstają białka potrzebne do dalszego cyklu, w tym cyklina E (klasa G1/S).
+- Kompleks cyklina E–cdk2 fosforyluje białka bezpośrednio zaangażowane w replikację DNA i podwojenie centrosomu. Skutek: komórka przechodzi przez punkt restrykcyjny – po nim replikacji DNA nie da się już zablokować.
+- Pod koniec fazy S proteasom rozkłada cyklinę E. Rośnie natomiast stężenie cykliny A (klasa S), która z cdk2 tworzy kompleks aktywny do końca fazy G2.
+- Pod koniec G2 zaczyna się synteza cykliny B (klasa M). Kompleks cyklina B–cdk1 reguluje przejście G2/M i samą mitozę. Jest bardzo aktywny: fosforyluje kilkadziesiąt białek odpowiedzialnych m.in. za kondensację chromosomów, rozpad otoczki jądrowej i rozdzielenie centrosomów.
+- Pod koniec fazy M kompleks promujący anafazę (APC, ang. anaphase-promoting complex ) przyłącza ubikwitynę do cykliny B. Skutek: cyklina B trafia do proteasomu i zostaje rozłożona, a kinaza cdk1 traci partnera.
+[RAMKA zapamietaj] Punkty kontrolne: G1 (restrykcyjny – zasoby i stan DNA; brak zasobów → G0), G2/M (integralność i pełna replikacja DNA), M (wrzeciono, chromatydy połączone z przeciwnymi biegunami). Kinaza cdk ma stałe stężenie i sama jest nieaktywna; działa dopiero z cykliną i po fosforylacji, a zbędną cyklinę rozkłada układ ubikwityna–proteasom.
+[ŹRÓDŁO] Źródło: Jóźwiak s. 68–71 · Drewa s. 155–156
+
+## Faza G1: cykliny, szlak pRb i sekwestracja Cip/Kip  [c02-g1]
+Najważniejsza decyzja zapada w fazie G1: czy komórka przejdzie punkt restrykcyjny i zacznie kopiować DNA. Według Drewy cykl regulują trzy grupy białek: kinazy cdk (cyklinozależne kinazy serynowo-treoninowe – przyłączają fosforan do reszt seryny i treoniny w białkach), cykliny i endogenne inhibitory cdk , czyli inhibitory wytwarzane przez samą komórkę. Od poziomu tych białek zależy, czy komórka przejdzie do następnej fazy, czy zostanie zatrzymana. Podstawą całej regulacji są reakcje fosforylacji i defosforylacji odpowiednich białek.
+Regulacja odbywa się głównie w fazie G1, a biorą w niej udział dwa szlaki – ciągi białek, z których każde działa na następne: szlak pRb i szlak p53 . Ten podrozdział opisuje szlak pRb, następny – szlak p53.
+
+### Skąd komórka wie, że ma się dzielić?  [c02-skad]
+Sygnał do podziału przychodzi z zewnątrz – od czynników mitogennych (mitogenów), czyli czynników pobudzających komórkę do podziału; u Jóźwiaka to czynniki wzrostu. Mitogen wiąże się z receptorem na powierzchni komórki, a sygnał dociera do jądra przez kaskadę kinaz, w której uczestniczy kinaza ERK (kinaza regulowana sygnałami zewnątrzkomórkowymi, ang. extracellular regulated kinase ) (kolejne ogniwa tej drogi – część 2, ).
+
+### Wczesna i późna faza G1 – dwa kompleksy po kolei  []
+Fazę G1 dzieli się na wczesną i późną. W każdej działa inny kompleks cyklina–cdk, a pierwszy przygotowuje grunt dla drugiego:
+- We wczesnej G1, po zadziałaniu mitogenów, rośnie poziom cyklin D (D1–D3). Cykliny D są podjednostką regulatorową kinaz cdk4 i cdk6 .
+- Pod wpływem mitogenów ERK fosforyluje białka, które ułatwiają połączenie cyklin D z cdk4 lub cdk6. Skutek: powstają kompleksy cyklina D–cdk4/cdk6.
+- Kompleksy przechodzą do jądra komórkowego. Tam aktywują je kinazy aktywujące cdk (CAK). Właściwości CAK ma kompleks cyklina H–cdk7.
+- Aktywny kompleks cyklina D1–cdk4/cdk6 ma dwa zadania: fosforyluje białko Rb i sekwestruje białka Cip/Kip . Oba wyjaśniamy niżej.
+- Skutek obu zadań: w późnej G1 aktywuje się kompleks cyklina E–cdk2 . To on przeprowadza komórkę przez punkt restrykcyjny G1/S – i to nawet wtedy, gdy bodźce mitogenne już nie działają. Za chwilę zobaczysz, skąd to „nawet wtedy”.
+
+### Szlak pRb: od czego zaczynamy?  []
+[POJĘCIE pRb] białko Rb (od retinoblastoma ) – produkt genu, którego mutacja warunkuje rozwój siatkówczaka; gen leży w locus 13q14 (13q14.1–q14.2). Należy do białek kieszeniowych.
+Stan wyjściowy. W fazie G1 białko Rb (pRb) jest związane z heterodimerem , czyli kompleksem dwóch różnych białek: czynnika transkrypcyjnego E2F i białka z rodziny DP . Wolny E2F włączałby ekspresję wielu genów potrzebnych do przejścia z fazy G1 do S – nazwijmy je w skrócie genami fazy S. Dopóki jednak trzyma go pRb, E2F jest nieaktywny, a geny fazy S – wyłączone.
+Co się zmienia. Szlak pRb to kolejne fosforylacje pRb. Każdy krok ma swojego sprawcę i swój skutek ( ):
+- Cyklina D–cdk4/6 fosforyluje pRb. Skutek: ufosforylowane pRb zaczyna uwalniać E2F.
+- Uwolniony E2F włącza ekspresję wielu genów odpowiedzialnych za przejście z fazy G1 do S. Jednym z nich jest gen cykliny E .
+- Nowa cyklina E łączy się z cdk2. Cyklina E–cdk2 hiperfosforyluje pRb, czyli przyłącza do niego kolejne grupy fosforanowe (gr. hyper – ponad). Skutek: od pRb odłączają się kolejne cząsteczki E2F.
+Jóźwiak uściśla, że sama fosforylacja przez cyklinę D–cdk4 nie wystarcza do zablokowania pRb – E2F zostaje w pełni uwolniony dopiero po kolejnych fosforylacjach przez cyklinę E–cdk2; tak pokazuje .
+
+### Dlaczego po pewnym czasie mitogen nie jest już potrzebny?  []
+Spójrz jeszcze raz na kroki 2 i 3. E2F zwiększa ilość cykliny E, a cyklina E–cdk2 uwalnia jeszcze więcej E2F. Produkt procesu nasila ten sam proces – to dodatnie sprzężenie zwrotne . Raz uruchomiona pętla sama się nakręca i przyspiesza przejście przez granicę faz G1/S. To pozwala zrozumieć, dlaczego cyklina E–cdk2 przeprowadza komórkę przez punkt restrykcyjny nawet bez bodźców mitogennych: mitogen był potrzebny do uruchomienia pętli, a nie do jej podtrzymania.
+[RYCINA c02-fig-prb „Szlak pRb i sekwestracja Cip/Kip”: Panel A czytaj od lewej: pRb (ochra) trzyma E2F–DP; po pierwszej fosforylacji (cyklina D–cdk4/6) E2F nie jest jeszcze w pełni wolny – uwalnia go dopiero hiperfosforylacja przez cyklinę E–cdk2. Przerywana strzałka zamyka pętlę: E2F włącza gen cykliny E. W panelu B porównaj cyklinę E–cdk2 przed sekwestracją (z Cip/Kip – nieaktywna) i po niej (bez Cip/Kip – aktywna).]
+[RAMKA przyklad] Dwie komórki we wczesnej G1 dostają mitogen, który po pewnym czasie znika. Komórka A – mitogen znika, zanim powstała aktywna cyklina E–cdk2. Bez czynników wzrostu Rb nadal blokuje czynniki transkrypcyjne: E2F pozostaje związany, geny fazy S są wyłączone, nowa cyklina E nie powstaje. Komórka nie przechodzi punktu restrykcyjnego. Komórka B – mitogen znika, gdy cyklina E–cdk2 jest już aktywna. Pętla E2F → cyklina E → hiperfosforylacja pRb → więcej wolnego E2F podtrzymuje się sama. Komórka przechodzi punkt restrykcyjny. Moment aktywacji cykliny E–cdk2 oddziela więc etap, na którym komórka potrzebuje mitogenu, od etapu, na którym go już nie potrzebuje. To pomaga zrozumieć, dlaczego decyzję w punkcie restrykcyjnym nazywa się nieodwracalną.
+[RAMKA obraz] Mitogen to zapałka, a pętla E2F–cyklina E to ognisko. Zapałka jest potrzebna tylko do rozpalenia; potem palące się drewno samo zapala kolejne kawałki – tak jak E2F zwiększa ilość cykliny E, a cyklina E–cdk2 uwalnia więcej E2F. Wspólna zależność: proces, który raz ruszył, sam wytwarza warunki do dalszego trwania. Granica analogii: ognisko gaśnie, gdy wypali się drewno, a pętlę w komórce wyłącza sama komórka – pod koniec fazy S proteasom rozkłada cyklinę E.
+
+### Jak pRb wycisza geny przez chromatynę?  [c02-chromatyna]
+pRb nie tylko trzyma E2F. Wpływa też na to, czy E2F w ogóle dotrze do swoich genów. Przypomnijmy: DNA w jądrze jest nawinięte na białka – histony ; DNA z histonami tworzy nukleosomy , a całość to chromatyna ( ). Żeby gen został przepisany, czynnik transkrypcyjny musi dotrzeć do jego promotora – odcinka DNA, od którego zaczyna się transkrypcja genu. A to zależy od tego, jak ciasno upakowana jest chromatyna.
+Czynniki E2F (E2F1–E2F5) mają domenę aktywacyjną – fragment cząsteczki, do którego przyłączają się białka aktywujące. Najlepiej poznane z nich, CBP , ma aktywność histonowej acetylotransferazy (HAT) (pozostałe białka aktywujące – część 2, ). HAT przyłącza grupy acetylowe do reszt lizyny na N-końcu histonów. Zmienia to konformację nukleosomów i ułatwia E2F dostęp do promotora.
+Do tej samej domeny E2F przyłącza się jednak pRb – i jednocześnie wiąże deacetylazę histonową (HDAC1–HDAC3). HDAC usuwa grupy acetylowe z histonów, a chromatyna przechodzi w postać nieaktywną. pRb sprowadza więc do E2F enzym działający przeciwnie do tego, który sprowadzają białka aktywujące:
+[TABELA]
+Cecha | HAT (np. CBP) | HDAC1–HDAC3
+kto ją przyłącza do E2F | białka aktywujące E2F | pRb
+co robi z histonami | przyłącza grupy acetylowe | usuwa grupy acetylowe
+chromatyna | dostęp E2F do promotora łatwiejszy | postać nieaktywna
+[/TABELA]
+Acetylacja i deacetylacja histonów odgrywają więc kluczową rolę w kontroli aktywności E2F.
+E2F i pRb regulują transkrypcję także w drugi sposób – bez udziału enzymów modyfikujących histony, z udziałem kompleksu białek zwanego PIC (jak to działa – część 2, ).
+
+### Sekwestracja Cip/Kip – drugie zadanie cykliny D  [c02-sekwestracja]
+[POJĘCIE Sekwestracja Cip/Kip] przejęcie inhibitorów cdk (p21 Cip1 , p27 Kip1 ) przez kompleks cyklina D–cdk4/cdk6; odłączone od cykliny E–cdk2 przestają ją hamować.
+Słowo „sekwestracja” znaczy dosłownie „odłożenie na bok, oddanie w przechowanie”: coś zostaje zabrane z miejsca, w którym działało, i zatrzymane gdzie indziej. Tutaj na bok odkładane są inhibitory cdk z rodziny Cip/Kip – białka p21 Cip1 i p27 Kip1 .
+Stan wyjściowy: białka Cip/Kip są związane z kompleksem cyklina E–cdk2 i trzymają go w postaci nieaktywnej. Kompleks cyklina D–cdk4/6 robi wtedy coś, co nie wymaga jego działania enzymatycznego – Drewa nazywa tę funkcję niekatalityczną ( ):
+- Cyklina D–cdk4/6 odłącza białka Cip/Kip od kompleksu cyklina E–cdk2 i zatrzymuje je u siebie.
+- Cyklina E–cdk2, pozbawiona inhibitora, staje się aktywna.
+- Nowy kompleks cyklina D–cdk4/6–Cip/Kip nadal fosforyluje pRb – inhibitor mu w tym nie przeszkadza. Białka Cip/Kip ułatwiają nawet powstanie kompleksu cyklina D–cdk4/6 i jego transport do jądra.
+- Aktywna cyklina E–cdk2 przyspiesza własną aktywację: fosforyluje p27 i w ten sposób zapoczątkowuje jego degradację.
+Obie drogi – fosforylacja pRb i sekwestracja – prowadzą więc do tego samego: do aktywnej cykliny E–cdk2, która w późnej G1 hiperfosforyluje pRb. Hiperfosforylowane pRb odgrywa kluczową rolę w przejściu z fazy G1 do fazy S.
+
+### Dlaczego cyklina D1 musi zniknąć na granicy G1/S?  [c02-d1]
+Na początku G1 cyklina D była niezbędna. Na granicy G1/S jej ilość musi jednak spaść – to warunek przejścia komórki z fazy G1 do S. Odpowiadają za to dwa mechanizmy:
+- E2F hamuje gen cykliny D1. Uwolniony E2F nie tylko włącza geny fazy S, ale też hamuje promotor genu cykliny D1. Im więcej wolnego E2F, tym mniej nowej cykliny D1.
+- Proteasom rozkłada cyklinę D1 (droga ubikwitynowo-proteasomowa). Zależy to od drogi sygnałowej Ras: gdy zostaje ona zahamowana, cyklina D1 zostaje ufosforylowana, przechodzi z jądra do cytoplazmy i tam zostaje rozłożona (które kinazy biorą w tym udział – część 2, ).
+Układ ubikwityna–proteasom rozkłada też inne białka ważne dla przebiegu cyklu: inhibitory cdk (CKI), białka supresorowe i pozostałe cykliny fazy G1.
+[RAMKA zapamietaj] We wczesnej G1 cyklina D–cdk4/6 fosforyluje pRb i sekwestruje Cip/Kip; oba procesy aktywują cyklinę E–cdk2 (późna G1), która hiperfosforyluje pRb. Uwolniony E2F włącza geny fazy S, w tym gen cykliny E – to dodatnie sprzężenie zwrotne przeprowadza komórkę przez punkt restrykcyjny G1/S nawet bez mitogenów.
+[ŹRÓDŁO] Źródło: Drewa s. 144–147 · Jóźwiak s. 70, 73
+
+## Szlak sygnałowy p53  [c02-p53]
+
+### Po co komórce p53?  []
+Szlak pRb prowadzi komórkę do podziału. Szlak p53 działa w przeciwną stronę: zatrzymuje cykl, gdy DNA jest uszkodzone. Białko p53 to jeden z ważniejszych czynników regulujących cykl komórkowy; ma ogromne znaczenie w regulacji cyklu, indukcji apoptozy i onkogenezie, czyli powstawaniu nowotworów. Jego zasadnicza rola to utrzymanie stabilności genomu narażonego na czynniki genotoksyczne – czynniki uszkadzające DNA, np. promieniowanie UV.
+[POJĘCIE p53] białko supresorowe i czynnik transkrypcyjny, które chroni stabilność genomu. Gen ( P53 , u Jóźwiaka TP53 ) leży w locus 17p13 (17p13.1). Prawidłowa forma to wtp53 (ang. wild type ).
+p53 wykonuje to zadanie na trzy sposoby: aktywuje geny odpowiedzialne za naprawę uszkodzonego DNA, bezpośrednio uczestniczy w naprawie i kontroluje prawidłowość replikacji DNA.
+[RYCINA c02-fig-p53 „Szlak p53”: Zacznij od lewej: uszkodzenie DNA → fosforylacja i stabilizacja p53 (tetramer). Trzy strzałki w prawo to trzy grupy genów docelowych: zatrzymanie cyklu, apoptoza i hdm2. Prześledź dolną pętlę: hdm2 wraca do p53 i kieruje je do degradacji – to ujemne sprzężenie zwrotne. Białko p19 INK4d (po prawej) blokuje hdm2, więc chroni p53.]
+
+### Stan wyjściowy: p53 nieaktywne i pilnowane  []
+Prawidłowe białko p53 (wtp53, od ang. wild type – typ dziki, czyli niezmutowany) występuje w komórce w postaci nieaktywnej . W warunkach fizjologicznych pilnuje go białko hdm2 (u Jóźwiaka: MDM2). hdm2 łączy się z p53 w heterodimer, a to ma dwa skutki: p53 traci zdolność włączania genów, a jego degradacja na drodze ubikwitynowo-proteasomowej przyspiesza. Dopóki DNA jest w porządku, p53 jest więc nieaktywne i na bieżąco rozkładane.
+
+### Co się dzieje po uszkodzeniu DNA?  []
+Teraz zmieniamy warunek: DNA zostaje uszkodzone. p53 aktywują wtedy różne czynniki wewnątrz- i zewnątrzkomórkowe. Prześledźmy kolejne kroki ( ):
+- Zmiana jakościowa – fosforylacja p53. To modyfikacja potranslacyjna, czyli zmiana białka już po jego syntezie. p53 fosforylują m.in. DNA-PK (kinaza białkowa zależna od DNA), MAPK (kinazy białkowe aktywowane mitogenami) i ATM (produkt genu ataksji-teleangiektazji).
+- Zmiana ilościowa – rośnie całkowity poziom p53 w komórce.
+- Aktywne cząsteczki p53 łączą się po cztery w tetramery . W tej postaci oddziałują z promotorami genów docelowych – p53 działa jako czynnik transkrypcyjny.
+- p53 włącza geny docelowe . Produkty jednych zatrzymują cykl, innych prowadzą do apoptozy, a jeden – hdm2 – hamuje samo p53 (tabela).
+[TABELA]
+Gen docelowy p53 | Skutek działania produktu
+Cip1 (białko p21) | hamowanie cyklu komórkowego
+gadd45 | hamowanie cyklu; wiąże PCNA i hamuje jego aktywność
+Bax | apoptoza
+Fas | apoptoza
+IGFBP-3 | apoptoza
+hdm2 | hamowanie p53 (pętla ujemnego sprzężenia zwrotnego)
+[/TABELA]
+
+### Najpierw: zatrzymać cykl i dać czas na naprawę  []
+Produkty genów gadd45 i Cip1 (białko p21 ) hamują cykl komórkowy. p21 to inhibitor cdk z rodziny Cip/Kip: gdy jego stężenie jest wysokie, powstają nieaktywne kompleksy cyklina E–cdk2–p21, pRb nie zostaje hiperfosforylowane i cykl staje w fazie G1 (więcej w części o inhibitorach cdk, ). Drogi, którymi działa gadd45, nie są do końca poznane. Wiadomo, że gadd45 wiąże PCNA (antygen jądrowy proliferujących komórek, ang. proliferating cell nuclear antigen ) – białko potrzebne m.in. do replikacji DNA – i hamuje jego aktywność.
+
+### Gdy naprawa się nie uda: apoptoza  [c02-apoptoza]
+Jeśli naprawa DNA jest nieskuteczna, p53 indukuje apoptozę . Komórka ginie, ale dzięki temu genom organizmu zostaje ochroniony przed kumulacją mutacji, które mogłyby doprowadzić do transformacji nowotworowej, czyli przemiany komórki w nowotworową. Drewa opisuje trzy prawdopodobne drogi (białka rodziny Bcl-2 i szlak Fas – zob. ):
+- Nasilenie syntezy Bax przy jednoczesnym obniżeniu poziomu Bcl-2 – jeden z lepiej poznanych mechanizmów.
+- Fas/APO-1 (CD95) – białko receptorowe dla TNF.
+- IGFBP-3 – antagonista insulinopodobnego czynnika wzrostu IGF-1 (na czym polega jego działanie – część 2, ).
+
+### Kto wyłącza p53? Pętla z hdm2  [c02-hdm2]
+Wróć do tabeli: wśród genów włączanych przez p53 jest hdm2 – białko, które p53 wycisza. Aktywne p53 zwiększa więc ilość własnego hamulca. Im więcej aktywnego p53, tym więcej hdm2; im więcej hdm2, tym mniej aktywnego p53. To pętla ujemnego sprzężenia zwrotnego : produkt procesu hamuje ten sam proces – odwrotnie niż w pętli E2F–cyklina E z fazy G1.
+Co by było bez tej pętli? Nic nie sprowadzałoby p53 z powrotem do niskiego poziomu. Raz aktywowane p53 dalej włączałoby geny zatrzymania cyklu i apoptozy – także wtedy, gdy DNA zostało już naprawione. Pętla z hdm2 pozwala p53 wrócić do stanu wyjściowego.
+Ten tok rozumowania sprawdza się na przykładzie z Drewy. Białko p19 INK4d przyłącza się do hdm2 i chroni p53 przed inaktywacją i degradacją – to tak, jakby przeciąć pętlę w jednym miejscu. Skutek jest taki, jakiego się spodziewamy: poziom p53 rośnie, a cykl zatrzymuje się w fazie G1 ( ).
+[RAMKA przyklad] Trzy komórki, trzy sytuacje. DNA nieuszkodzone. hdm2 trzyma p53 w heterodimerze i kieruje je do degradacji. Poziom p53 jest niski, cykl biegnie dalej. Uszkodzenie, które da się naprawić. Kinazy (np. ATM) fosforylują p53, jego poziom rośnie, tetramery p53 włączają p21 i gadd45. Cykl staje w G1, a komórka naprawia DNA. p53 włączyło jednak także gen hdm2 – przybywa hdm2, które sprowadza p53 z powrotem do niskiego poziomu. Uszkodzenie, którego nie da się naprawić. Naprawa jest nieskuteczna, więc p53 indukuje apoptozę (Bax, Fas, IGFBP-3). Komórka ginie, a jej mutacje nie przechodzą na komórki potomne.
+p53 działa nie tylko na granicy faz G1 i S: hamuje cykl także w fazie G2 i potrafi go zatrzymać bez udziału inhibitorów cdk (jak – część 2, ).
+[RAMKA zapamietaj] Uszkodzenie DNA → fosforylacja p53 (DNA-PK, MAPK, ATM) i wzrost jego poziomu → tetramer p53 włącza geny docelowe: p21 i gadd45 zatrzymują cykl, Bax, Fas i IGFBP-3 prowadzą do apoptozy. hdm2 – też produkt genu docelowego p53 – wiąże p53 i kieruje je do degradacji: to pętla ujemnego sprzężenia zwrotnego.
+[ŹRÓDŁO] Źródło: Drewa s. 144–145, 148–150
+
+## Inhibitory kinaz zależnych od cyklin  [c02-cki]
+
+### Hamulce cyklu: po co i jakie?  []
+Cykl napędzają kompleksy cyklina–cdk. Komórka musi jednak umieć je zatrzymać – na przykład wtedy, gdy p53 wykryje uszkodzenie DNA, albo gdy komórka ostatecznie się zróżnicowała i nie powinna wracać do podziałów. Służą do tego inhibitory kinaz zależnych od cyklin (CKI): białka, które wiążą kinazy cdk albo ich kompleksy z cyklinami i hamują ich działanie.
+Według budowy cząsteczki CKI dzieli się na dwie rodziny: INK4 – p16 INK4a , p15 INK4b , p18 INK4c i p19 INK4d – oraz Cip/Kip – p21 Cip1 , p27 Kip1 i p57 Kip2 . Ich działanie najłatwiej zrozumieć, zaczynając od tego, co wiążą – z tego wynika, gdzie działają i jaki jest skutek:
+[TABELA]
+Kryterium | INK4 | Cip/Kip
+Białka | p16, p15, p18, p19 | p21, p27, p57
+Co wiążą | same kinazy cdk4 i cdk6; p19 wiąże też hdm2 | kompleksy cyklina E–cdk2 i cyklina D–cdk4/6; p21 wiąże też PCNA
+Gdzie działają | faza G1, droga zależna od pRb (p19 i p15 także niezależnie od pRb) | faza G1: cyklinę E–cdk2 hamują, cyklinę D–cdk4/6 wspierają
+Skutek | nie powstaje aktywna cyklina D–cdk4/6 → pRb hipofosforylowane → E2F związany → zatrzymanie w G1 | zależy od stężenia: wysokie – nieaktywna cyklina E–cdk2, zatrzymanie w G1; niskie – progresja cyklu
+[/TABELA]
+
+### INK4: hamulec na cdk4 i cdk6  [c02-ink4]
+Białka INK4 zatrzymują cykl w fazie G1 drogą zależną od pRb. Przyłączają się do kinaz cdk4 i cdk6 i nie pozwalają powstać aktywnemu kompleksowi cyklina D–cdk4/6. Skutek: pRb pozostaje hipofosforylowane (gr. hypo – pod, poniżej; ma mało grup fosforanowych) i nie uwalnia E2F, którego aktywność jest niezbędna do pokonania punktu restrykcyjnego G1/S.
+Nadekspresja białek INK4, czyli wytwarzanie ich w nadmiarze, odwraca sekwestrację : białka Cip/Kip uwalniają się z kompleksu cyklina D–cdk4/6 i powstaje nieaktywny kompleks cyklina E–cdk2–Cip/Kip (sekwestracja – ).
+Białko p19 INK4d zatrzymuje cykl także niezależnie od drogi pRb: wiąże hdm2 i chroni p53 przed inaktywacją i degradacją, więc poziom p53 rośnie, a cykl staje w G1 ( ). Niezależnie od pRb może działać również p15 INK4b .
+Nie wszystkie białka INK4 pojawiają się w tych samych warunkach. Poziom p16 rośnie typowo w trzech sytuacjach: pod wpływem onkogennego Ras, w komórkach starzejących się oraz po inaktywacji białka Rb lub p53. (Co pobudza pozostałe białka INK4 i jak zbudowane są geny p16 i p19 – część 2, .)
+[RAMKA przyklad] Komórka zaczyna wytwarzać bardzo dużo p16. Prześledź skutki krok po kroku. p16 wiąże cdk4 i cdk6, więc nie powstaje aktywny kompleks cyklina D–cdk4/6. Droga pierwsza: cyklina D–cdk4/6 nie fosforyluje pRb. pRb nadal trzyma E2F, a geny fazy S – w tym gen cykliny E – pozostają wyłączone. Droga druga: cyklina D–cdk4/6 nie przechowuje już białek Cip/Kip. Inhibitory łączą się z cykliną E–cdk2 i powstaje nieaktywny kompleks cyklina E–cdk2–Cip/Kip, który nie hiperfosforyluje pRb. Obie drogi kończą się tak samo: E2F pozostaje związany, a komórka zatrzymuje się w fazie G1.
+
+### Cip/Kip: hamulec czy wsparcie? Zależy od ilości  []
+W odróżnieniu od INK4 białka Cip/Kip pełnią w fazie G1 dwie przeciwne funkcje. Związane z kompleksem cyklina E–cdk2 są inhibitorami . Związane z kompleksem cyklina D–cdk4/6 są regulatorami pozytywnymi : ułatwiają powstanie tego kompleksu, stabilizują go i pomagają w jego transporcie do jądra – najdokładniej opisano to dla p21. Kierunek działania zależy od ich aktywności i ilości w komórce: niskie stężenie sprzyja progresji cyklu, wysokie ją hamuje .
+Jak to połączyć z sekwestracją? Według Drewy wysokie stężenie p21 sprzyja powstawaniu nieaktywnych kompleksów cyklina E–cdk2–p21. Można to rozumieć tak: przy niewielkiej ilości Cip/Kip przechowuje je cyklina D–cdk4/6, a cyklina E–cdk2 pozostaje wolna i aktywna; im więcej Cip/Kip, tym więcej trafia na cyklinę E–cdk2 i ją blokuje.
+
+#### p21 Cip1  [c02-p21]
+Gen kodujący p21 (Cip1, inaczej p21 WAF1 ) ulega ekspresji dwiema drogami:
+- drogą zależną od p53 – czynniki genotoksyczne uszkadzają DNA, to indukuje prawidłowe p53 (wtp53), a p53 nasila transkrypcję genu Cip1. Wysokie stężenie p21 sprzyja powstawaniu nieaktywnych kompleksów cyklina E–cdk2–p21; pRb nie zostaje hiperfosforylowane i cykl zatrzymuje się w fazie G1 ( );
+- drogą niezależną od p53 – uruchamiają ją czynniki indukujące różnicowanie komórek (np. kwas retinowy) i czynniki wzrostu (np. TGFβ). Na tej drodze ekspresję genu Cip1 regulują liczne czynniki transkrypcyjne (które – część 2, ).
+p21 hamuje też replikację DNA, bo bezpośrednio wiąże PCNA; nie wpływa przy tym na udział PCNA w naprawie uszkodzonego DNA. Zwróć uwagę, jak to pasuje do szlaku p53: komórka zatrzymana przez p21 nie kopiuje DNA, ale nadal może je naprawiać.
+
+#### p27 Kip1 i p57 Kip2  [c02-p27]
+Białka p27 i p57 działają podobnie jak p21: zależnie od poziomu w komórce hamują cykl albo go wspierają. (Jak komórka reguluje ilość p27 i jak je rozkłada – część 2, .)
+p27 i p57 odgrywają ważną rolę w różnicowaniu komórek, ale udział p57 jest dużo bardziej istotny. Brak p57 powoduje różnorodne, ciężkie i często letalne zaburzenia rozwojowe, a inne CKI nie mogą go zastąpić. W przeciwieństwie do p21 najwyższe poziomy p27 i p57 występują w komórkach ostatecznie zróżnicowanych – w ten sposób komórki te chronią się przed ponownym wejściem w cykl. Obie rodziny, INK4 i Cip/Kip, uczestniczą także w różnicowaniu, starzeniu się komórek i apoptozie.
+[RAMKA zapamietaj] INK4 (p15, p16, p18, p19) wiążą same cdk4/6 – pRb pozostaje hipofosforylowane i cykl staje w G1; ich nadmiar odwraca sekwestrację. Cip/Kip (p21, p27, p57) wiążą kompleksy: w wysokim stężeniu hamują cyklinę E–cdk2, w niskim wspierają cyklinę D–cdk4/6. p27 i p57 utrzymują komórki zróżnicowane poza cyklem.
+[ŹRÓDŁO] Źródło: Drewa s. 149–151
+
+## Regulacja faz S i G2  [c02-sg2]
+Po punkcie restrykcyjnym komórka wchodzi w fazę S. Teraz do pracy przystępują kolejne kompleksy cyklina–cdk, a każdy przygotowuje następny etap: najpierw kopiowanie DNA, potem podział.
+
+### Faza S: czynnik promujący fazę S  []
+W fazie S rośnie poziom czynnika promującego fazę S (SPF), czyli kompleksu cyklina A–cdk2 . SPF przechodzi do jądra komórkowego i przygotowuje komórkę do syntezy DNA oraz do podwojenia (duplikacji) centrosomów – struktur z mikrotubulami, które w mitozie się rozdzielają. W czasie replikacji DNA spada poziom cykliny E, a rośnie poziom cyklin mitotycznych. Najwyższą aktywność osiągają one w fazie G2.
+
+### Faza G2: czynnik promujący fazę M  []
+Kompleks cyklin mitotycznych (cykliny B i A) z kinazą cdk1 to czynnik promujący fazę M (MPF). MPF przygotowuje podział na trzy sposoby:
+- wytwarza wrzeciono kariokinetyczne (podziałowe);
+- powoduje rozpad błony jądrowej – dzięki temu włókna wrzeciona będą mogły dotrzeć do chromosomów;
+- powoduje kondensację chromatyny – z długich nici powstają zwarte chromosomy.
+Skutek: komórka może przejść do metafazy mitozy, czyli etapu, w którym chromosomy ustawiają się w płaszczyźnie równikowej komórki ( ).
+
+### Jak komórka kończy podział? Kompleks promujący anafazę  [c02-apc]
+W metafazie MPF aktywuje kompleks promujący anafazę (APC, ang. anaphase promoting complex ), nazywany też cyklosomem i oznaczany skrótem APC/C. Nazwa mówi, co robi: uruchamia anafazę – etap, w którym chromatydy siostrzane rozchodzą się do biegunów. APC/C ma cztery zadania ( ):
+- Uruchamia enzymatyczną degradację kohezyn . Skutek: chromatydy siostrzane mogą się rozdzielić. Skoro dopiero rozłożenie kohezyn pozwala chromatydom się rozdzielić, to właśnie kohezyny do tej chwili je spinają.
+- Obniża poziom cykliny B : przyłącza do niej ubikwitynę i kieruje ją do degradacji w proteasomie. Kinaza cdk1 traci partnera ( ).
+- Nasila ekspresję genów kodujących cykliny fazy G1 – tych, które będą potrzebne w następnym cyklu.
+- Powoduje degradację gemininy – białka, które chroni nowo zsyntetyzowane DNA przed ponowną replikacją w tym samym cyklu.
+[RYCINA c02-fig-apc „Cztery zadania kompleksu APC/C”: Zacznij od lewej: MPF (cykliny B i A z cdk1) aktywuje APC/C. Następnie porównaj cztery kafle – w każdym po lewej jest to, co APC/C robi, a po prawej skutek. Wniosek: ten sam kompleks rozdziela chromatydy (1), wyłącza kinazę cdk1 (2) i przygotowuje następny cykl (3, 4).]
+Ostatni punkt łączy się z jednym z pytań punktów kontrolnych: „czy DNA zostało zreplikowane tylko raz?”. Dopóki działa geminina, świeżo skopiowane DNA nie zostanie skopiowane po raz drugi. Gdy APC/C ją rozkłada, ta ochrona znika – w kolejnym cyklu DNA będzie można znowu skopiować.
+
+### Punkt restrykcyjny fazy G2  []
+Drewa opisuje też punkt restrykcyjny fazy G2, który „strzeże” wejścia do fazy M. Dzięki niemu dzielą się tylko komórki z prawidłowo i całkowicie zreplikowanym DNA, z nieuszkodzonym materiałem genetycznym i wystarczająco duże, by proliferować. Odpowiada on punktowi kontrolnemu G2/M ( ); Drewa dodaje do listy kryterium wielkości komórki.
+Kompleksy, które kolejno prowadzą komórkę przez cykl, zbiera tabela:
+[TABELA]
+Kompleks | Kiedy | Co robi
+cyklina D–cdk4/6 | wczesna G1 | fosforyluje pRb, sekwestruje Cip/Kip
+cyklina E–cdk2 | późna G1 | hiperfosforyluje pRb; przeprowadza przez punkt restrykcyjny
+cyklina A–cdk2 (SPF) | S | przygotowuje syntezę DNA i duplikację centrosomów
+cykliny B i A + cdk1 (MPF) | G2 → M | wrzeciono, rozpad błony jądrowej, kondensacja chromatyny; aktywuje APC/C
+APC/C (cyklosom) | metafaza → anafaza | degradacja kohezyn, cykliny B i gemininy
+[/TABELA]
+[ŹRÓDŁO] Źródło: Drewa s. 151
+
+## Białka stojące na straży genomu  [c02-straz]
+
+### Przed czym chronią?  []
+Zmiana sekwencji DNA może prowadzić do niekontrolowanych zmian w komórce: do produkcji białek o nieznanej sekwencji albo do braku ekspresji białek niezbędnych do przeżycia. Dlatego nad DNA czuwa grupa białek, które wykrywają zmiany jego struktury. Mają trzy zadania, w ustalonej kolejności:
+- zablokować dalsze podziały komórki ze zmienionym DNA;
+- umożliwić naprawę DNA;
+- jeśli naprawa jest niemożliwa – skierować komórkę na drogę apoptozy.
+Należą do nich p53 , białka kieszeniowe i BRCA1/BRCA2 . Dwa pierwsze znasz już z opisu Drewy (szlaki p53 i pRb); tu dodajemy to, co wnosi Jóźwiak. BRCA opisujemy od podstaw.
+
+### p53 według Jóźwiaka  [c02-p53-jozwiak]
+p53 jest prawdopodobnie najważniejszym białkiem chroniącym komórkę przed uszkodzeniami DNA. Świadczy o tym fakt, że kodujący je gen TP53 (ang. tumour suppressor protein p53 ) jest najczęściej zmutowanym genem w ludzkich komórkach nowotworowych – mutację ma ok. 50–70% wszystkich nowotworów. Mutacja TP53 jest zarazem złym czynnikiem rokowniczym. Opis Jóźwiaka uzupełnia szlak p53 ( ) o kilka szczegółów:
+- Białko hdm2 – u Jóźwiaka MDM2 (ang. mouse double minute 2 homolog ) – to ligaza ubikwityny . W prawidłowych komórkach utrzymuje niskie stężenie p53: przenosi p53 z jądra do cytoplazmy, ubikwitynuje je i w ten sposób kieruje do degradacji w proteasomie.
+- p53 zostaje ufosforylowane nie tylko po uszkodzeniu (mutacji) DNA, ale też po zwiększeniu ekspresji onkogenów (genów sprzyjających nowotworzeniu) i w hipoksji, czyli przy niedoborze tlenu. Fosforylacja blokuje degradację, więc stężenie p53 rośnie.
+- p53 wiąże się z DNA jako czynnik transkrypcyjny i zwiększa transkrypcję p21. p21 wiąże kompleksy cyklina E–cdk2 i cyklina D–cdk4, hamuje je i zatrzymuje komórkę w punkcie restrykcyjnym fazy G1 (tak Jóźwiak; według Drewy p21 związane z cykliną D–cdk4/6 nie hamuje tego kompleksu, a nawet ułatwia jego powstanie – hamowana jest cyklina E–cdk2, zob. Cip/Kip, ).
+- Komórka ma czas na naprawę DNA. Jeśli naprawa się nie powiedzie, p53 indukuje proapoptotyczne białka z rodziny Bcl-2 (ang. B-cell lymphoma 2 ) i komórka ginie w apoptozie.
+Jóźwiak podkreśla, że to, które geny p53 włączy, zależy od nasilenia uszkodzenia – od tego, czy DNA da się jeszcze naprawić, czy komórka jest uszkodzona nieodwracalnie. Oba źródła podają przykłady genów z tych samych grup:
+[TABELA]
+Grupa genów docelowych | Drewa | Jóźwiak
+zatrzymanie cyklu | Cip1 (p21), gadd45 | p21
+apoptoza | Bax, Fas, IGFBP-3 | Bax, Puma (rodzina Bcl-2)
+naprawa DNA | (bez nazw genów) | MSH2, PMS2, MLH1
+hamowanie p53 | hdm2 | MDM2
+[/TABELA]
+TP53 jest genem supresji nowotworowej – jego prawidłowy produkt chroni przed nowotworzeniem (stąd ang. tumour suppressor ). W większości nowotworów zmutowany jest tylko jeden z dwóch alleli tego genu (allel to każda z dwóch kopii genu – od matki i od ojca; ). Tłumaczy się to tym, że mutacja TP53 pojawia się na późniejszym etapie rozwoju nowotworu (dlaczego wymaga to wyjaśnienia – hipoteza „dwóch uderzeń”, część 2, ).
+
+### Białka kieszeniowe  [c02-kieszeniowe]
+Do rodziny białek kieszeniowych należą Rb (retinoblastoma), p107 i p130 . Nazwa pochodzi od budowy: wszystkie mają bardzo podobną domenę, która tworzy przestrzenną kieszeń – tzw. kieszeń A/B . W kieszeni wiążą się czynniki transkrypcyjne z rodziny E2F – te same, które poznałeś w szlaku pRb ( ), potrzebne do produkcji białek umożliwiających wejście w fazę S. Białka kieszeniowe działają dwoma mechanizmami:
+- Wiążą E2F w kieszeni. E2F nie może wtedy uczestniczyć w transkrypcji. Komórce brakuje białek potrzebnych w kolejnych fazach, więc zostaje zatrzymana w fazie G1.
+- Gromadzą (rekrutują) deacetylazy histonów (HDAC). HDAC zwiększają kondensację DNA i utrudniają aparatowi transkrypcyjnemu dostęp do promotorów genów – to ten sam mechanizm, który Drewa opisuje dla pRb.
+Aktywność białek kieszeniowych reguluje fosforylacja. Nieufosforylowane wiążą E2F i zatrzymują cykl. W fazie S – a w niektórych nowotworach stale (konstytutywnie) – kompleksy cyklina–cdk fosforylują białka kieszeniowe, które tracą zdolność wiązania E2F, i komórka wchodzi w fazę S. W warunkach fizjologicznych pRb jest ufosforylowane, czyli nieaktywne, w fazach S, G2 i M. Uwolniony E2F włącza geny związane z progresją cyklu – np. geny cyklin (także samej cykliny E), cdk i białek naprawy DNA.
+Ze względu na swoje znaczenie dla regulacji cyklu białka kieszeniowe są częstym celem działania wirusów i nowotworów. Działają one z dwóch stron, ale z tym samym skutkiem – E2F zostaje uwolniony spod kontroli:
+- kieszeń A/B wiąże produkty genów wirusowych, które w ten sposób blokują działanie białek kieszeniowych;
+- wiele nowotworów nasila działanie kompleksów cyklina–cdk, które fosforylują i blokują białka kieszeniowe.
+
+### BRCA1 i BRCA2: naprawa pęknięcia obu nici  [c02-brca]
+Wyobraź sobie, że pod wpływem mutagenu pękają obie nici DNA w tym samym miejscu, a przy pęknięciu brakuje fragmentu. Samo połączenie końców nie wystarczy: brakującej sekwencji nie ma już w żadnej z dwóch nici tej cząsteczki. Trzeba ją skopiować z innej, nieuszkodzonej cząsteczki o tej samej – homologicznej – sekwencji.
+Tym zajmują się BRCA1 i BRCA2 (ang. breast cancer type 1/2 susceptibility protein ) – białka odpowiedzialne za naprawę dwuniciowych pęknięć DNA . Powstają we wszystkich komórkach organizmu, ale ich mutacje wiążą się przede wszystkim z rakiem sutka, jajnika i prostaty. Dzięki tym białkom brakujące sekwencje mogą zostać skopiowane z chromatydy siostrzanej, a ciągłość pękniętego DNA – odtworzona. Naprawa przebiega tak:
+- Pod wpływem mutagenu pękają obie nici DNA.
+- BRCA1 aktywuje helikazę i egzonukleazę, które „odwijają” DNA i przycinają jedną z nici.
+- Druga, nieprzycięta nić zbliża się do nieuszkodzonej, homologicznej sekwencji tego samego genu.
+- BRCA2 wiąże pojedynczą nić DNA i aktywuje rekombinazę . Ten enzym kopiuje brakującą sekwencję z nieuszkodzonego, homologicznego DNA – proces ten to rekombinacja homologiczna .
+- Ligaza przyłącza odtworzoną nić do pękniętego DNA, a na jej matrycy zostaje uzupełniony brakujący fragment drugiej nici.
+[RAMKA obraz] Z książki wyrwano kawałek kartki – tekstu brakuje po obu stronach. Z reszty tej kartki go nie odtworzysz; musisz sięgnąć po drugi egzemplarz tej samej książki i przepisać brakujący fragment. Wspólna zależność: brakującą informację da się odtworzyć tylko z innej kopii o tej samej treści. Granica analogii: w komórce nikt niczego nie przepisuje „z boku” – nić uszkodzonego DNA sama zbliża się do homologicznej sekwencji, a ta służy za matrycę.
+Osoby z mutacją w genie BRCA1 lub BRCA2 mają 80% ryzyko rozwoju raka sutka – dlatego niektóre nosicielki mutacji decydują się na profilaktyczną mastektomię. Rak jajnika rozwija się u 55% kobiet z mutacją BRCA1 i u 25% kobiet z mutacją BRCA2 . (Jak często mutacje te rzeczywiście stoją za rakiem sutka – część 2, .)
+[RAMKA zapamietaj] Straż genomu: zablokować podziały, umożliwić naprawę, a gdy się nie da – apoptoza. p53 ( TP53 zmutowany w 50–70% nowotworów; MDM2 utrzymuje go nisko), białka kieszeniowe Rb, p107 i p130 (kieszeń A/B wiąże E2F, rekrutacja HDAC) oraz BRCA1 i BRCA2 (naprawa pęknięć dwuniciowych przez rekombinację homologiczną).
+[ŹRÓDŁO] Źródło: Jóźwiak s. 70–75
+
+## Mitoza  [c02-mitoza]
+
+### Zadanie: dwa jednakowe komplety  []
+Podstawowym zadaniem mitozy jest precyzyjne rozdzielenie skopiowanych chromosomów do komórek potomnych. Podziały mitotyczne zachodzą w organizmie nieustannie – dzięki nim organizm prawidłowo rośnie, a tkanki się regenerują. Nazwa pochodzi od słowa mitos – nitka.
+
+### Stan wyjściowy: co komórka ma na starcie?  []
+Mitoza zaczyna się po fazach S i G2, więc DNA jest już skopiowane. Każdy chromosom składa się z dwóch identycznych chromatyd siostrzanych, połączonych centromerem. Liczba chromosomów się nie zmieniła – zmieniła się liczba chromatyd: jest ich teraz dwa razy więcej niż chromosomów. Licząc, kieruj się centromerami: dwie chromatydy spięte jednym centromerem to wciąż jeden chromosom.
+Cel mitozy da się więc ująć liczbowo: każda komórka potomna ma dostać tyle samo chromosomów co komórka macierzysta, każdy z jedną chromatydą – po jednej chromatydzie z każdego chromosomu.
+
+### Sześć stadiów mitozy  []
+Faza M jest nieprzerwanym ciągiem zdarzeń, ale tradycyjnie dzieli się ją na pięć stadiów, które następują po sobie w ściśle określonym porządku: profazę , prometafazę , metafazę , anafazę i telofazę . Szóstym stadium, na końcu mitozy, jest cytokineza ( ). Przy każdym stadium patrz na trzy rzeczy: co dzieje się z chromosomami, z wrzecionem i z otoczką jądrową.
+
+### Profaza: chromosomy stają się widoczne  []
+Profaza to etap przygotowawczy. Zaczyna się od kondensacji zreplikowanych chromosomów: skracają się i grubieją, aż stają się widoczne w mikroskopie optycznym. Pod koniec profazy widać, że każdy chromosom składa się z dwóch identycznych chromatyd siostrzanych połączonych centromerem.
+Na zewnątrz jądra, między centriolami, tworzy się wrzeciono mitotyczne (kariokinetyczne). Jest zbudowane z białka tubuliny i stanowi rusztowanie dla chromatyd siostrzanych, które rozejdą się do przeciwnych biegunów komórki. W rejonie centromeru rozwijają się kinetochory – miejsca połączenia mikrotubul z chromosomem, oddziałujące z włóknami wrzeciona. Kondensacja chromatyny i tworzenie wrzeciona to dwa z zadań czynnika MPF ( ).
+[RYCINA c02-fig-mitoza „Fazy mitozy”: Czytaj od lewej. Komórka ma 2n = 4 chromosomy (dwie pary homologów; kolor – pochodzenie od ojca lub matki). Śledź jeden chromosom: w profazie widać jego dwie chromatydy, w metafazie leży w płytce, w anafazie jego chromatydy odchodzą do przeciwnych biegunów. Wniosek: każda komórka potomna dostaje po jednej chromatydzie z każdego chromosomu.]
+
+### Prometafaza: otoczka znika, mikrotubule chwytają chromosomy  [c02-prometafaza]
+W prometafazie zanika jąderko, a otoczka jądrowa rozpada się na małe fragmenty. Dopóki otoczka była cała, oddzielała chromosomy od wrzeciona, które powstało na zewnątrz jądra. Teraz mikrotubule wrzeciona mogą dotrzeć do chromosomów i związać się z nimi. Prometafaza jest stadium przejściowym między profazą a metafazą (u Drewy bywa zaliczana do jednej lub drugiej).
+
+### Metafaza: chromosomy w płytce  []
+Mikrotubule kinetochorowe ustawiają skondensowane chromosomy w płaszczyźnie równikowej komórki – powstaje płytka metafazowa . Każdy chromosom jest połączony z mikrotubulami wrzeciona w miejscu kinetochoru. Właśnie takie ustawienie – chromatydy połączone z włóknami z przeciwnych biegunów – sprawdza punkt kontrolny M ( ).
+Pod koniec metafazy włókna wrzeciona skracają się i chromosom rozdziela się na dwie chromatydy siostrzane. Rozdzielenie umożliwia rozkład kohezyn przez kompleks APC/C ( ).
+W wyniku kondensacji powstają chromosomy metafazowe – to na nich wykonuje się analizę cytogenetyczną, czyli określa kariotyp ( ). Wiele leków przeciwnowotworowych, np. winblastyna i kolchicyna , zaburza polimeryzację tubuliny, czyli łączenie się jej cząsteczek w mikrotubule. Nici wrzeciona nie mogą się wtedy wydłużać i podział komórki zatrzymuje się w metafazie.
+
+### Anafaza: chromatydy rozchodzą się do biegunów  []
+Anafaza zaczyna się od rozdzielenia chromatyd każdego chromosomu. Chromatydy wędrują ku przeciwnym biegunom komórki; każda z nich jest odtąd osobnym chromosomem potomnym. Mechanizmy kierujące chromosomy na właściwe miejsca są bardzo precyzyjne, choć sam mechanizm ruchu chromatyd nie jest do końca poznany. To one zapewniają prawidłowy podział materiału genetycznego.
+Na tym etapie mogą się zdarzyć błędy. Czynniki uszkadzające DNA (np. promieniowanie jonizujące) działające podczas podziału płytki metafazowej mogą zaburzyć rozdział i ruch chromosomów i spowodować wiele anomalii chromosomowych. Jednym z błędów jest nondysjunkcja , dosłownie „nierozdzielenie” – chromatydy chromosomu nie rozchodzą się prawidłowo do dwóch biegunów. Nondysjunkcja mitotyczna w komórkach dzielącej się zygoty prowadzi do powstania organizmu z kariotypem mozaikowym . Dlaczego mozaika? Komórki potomne takiego podziału dostają różną liczbę chromosomów, a każda przekazuje swój kariotyp wszystkim swoim potomkom. Organizm składa się wtedy z komórek o różnych kariotypach.
+
+### Telofaza i cytokineza: dwie nowe komórki  []
+Telofaza jest odwrotnością profazy: w profazie chromosomy się kondensowały, a otoczka znikała – teraz jest odwrotnie. Telofaza zaczyna się, gdy dwa zespoły chromosomów potomnych docierają do biegunów wrzeciona. Chromosomy ulegają dekondensacji (despiralizacji) do chromatyny. Rozpoczyna się intensywna synteza rRNA, odtwarzają się jąderko i otoczka jądrowa – powstają dwa nowe jądra komórkowe. Komórka odzyskuje aktywność metaboliczną.
+Cytokineza , czyli podział cytoplazmy, zaczyna się już pod koniec anafazy. W płaszczyźnie równikowej dzielącej się komórki powstaje pierścień kurczliwy z włókien aktynowych i miozynowych. Jego skurcz przewęża komórkę i dzieli ją na dwie komórki potomne. Równocześnie dzielą się i przemieszczają do komórek potomnych organelle. Komórki potomne mają razem co najmniej o 25% większą powierzchnię niż komórka macierzysta.
+[RAMKA przyklad] Policzmy chromosomy i chromatydy w komórce, która ma 2n = 4 chromosomy (dwie pary homologów, jak na rycinie). G1: 4 chromosomy, każdy z jednej chromatydy – razem 4 chromatydy. Po fazie S (G2, profaza, prometafaza, metafaza): nadal 4 chromosomy – 4 centromery – ale każdy z dwóch chromatyd siostrzanych, czyli 8 chromatyd. Anafaza: chromatydy się rozdzielają i każda staje się chromosomem potomnym. Do każdego bieguna wędrują 4 chromosomy po jednej chromatydzie. Telofaza i cytokineza: dwie komórki potomne, każda ma 4 chromosomy po jednej chromatydzie – tyle samo, ile komórka macierzysta miała w G1. Dla człowieka (2n = 46) rachunek jest ten sam: 46 chromosomów w G1; po fazie S 46 chromosomów i 92 chromatydy; w każdej komórce potomnej znowu 46 chromosomów po jednej chromatydzie.
+[RAMKA zapamietaj] Profaza (kondensacja, wrzeciono, kinetochory) → prometafaza (rozpad otoczki, mikrotubule wiążą chromosomy) → metafaza (płytka metafazowa) → anafaza (chromatydy siostrzane do biegunów) → telofaza (dekondensacja, nowe otoczki i jąderka) → cytokineza (pierścień kurczliwy z aktyny i miozyny). Liczba chromosomów w komórkach potomnych = w komórce macierzystej.
+[ŹRÓDŁO] Źródło: Drewa s. 155–158
+
+## Mejoza  [c02-mejoza]
+
+### Po co drugi rodzaj podziału?  []
+Komórka człowieka ma 46 chromosomów: dwa komplety po 23, jeden od matki i jeden od ojca. Gdyby plemnik i komórka jajowa powstawały przez mitozę, każde miałoby 46 chromosomów, a zygota – 92. W następnym pokoleniu byłoby ich 184. Liczba chromosomów podwajałaby się przy każdym zapłodnieniu.
+Zapobiega temu mejoza (gr. meiosis – zmniejszenie): podział komórek szlaku płciowego, w którym powstają komórki potomne o zredukowanej liczbie chromosomów. Komórka z dwoma kompletami chromosomów jest diploidalna (2n), a z jednym kompletem – haploidalna (n). Dwa chromosomy jednej pary – matczyny i ojcowski – to chromosomy homologiczne (homologi; ).
+Mejoza ma też drugie znaczenie: jest jedną z przyczyn zmienności organizmów, bo w jej trakcie zachodzi rekombinacja genetyczna między chromosomami homologicznymi – crossing-over .
+
+### Dwa podziały: co zmniejsza każdy z nich?  []
+Mejoza składa się z dwóch kolejnych podziałów:
+- mejozy I (MI) – podziału redukcyjnego , który zmniejsza o połowę liczbę chromosomów;
+- mejozy II (MII) – podziału ekwacyjnego , który zmniejsza zawartość DNA.
+Z jednej komórki macierzystej powstają ostatecznie cztery komórki potomne. Każda ma o połowę mniej materiału genetycznego i o połowę mniej chromosomów niż komórka macierzysta ( ). Dlaczego jeden podział zmniejsza liczbę chromosomów, a drugi – ilość DNA, zobaczysz, gdy policzymy chromosomy i chromatydy.
+U człowieka mejoza zachodzi w gametogenezie – w spermatogenezie, z której powstają plemniki, i w oogenezie, z której powstają komórki jajowe. Podziałom mejotycznym podlegają spermatocyty I i II rzędu oraz oocyty I i II rzędu. W oogenezie drugi podział (MII) zachodzi tylko po zapłodnieniu, czyli po połączeniu oocytu II rzędu z plemnikiem.
+
+### Profaza I: homologi łączą się w pary  []
+Stan wyjściowy jest taki sam jak przed mitozą: mejozę I zawsze poprzedza replikacja DNA, więc każdy chromosom składa się z dwóch chromatyd siostrzanych. MI obejmuje profazę, metafazę, anafazę i telofazę. Profaza I jest najdłuższą fazą mejozy – w spermatogenezie człowieka trwa ok. 3 tygodni, a w oogenezie wiele lat. Jest szczególnie rozbudowana, bo zachodzi w niej coś, czego w mitozie nie ma: homologi łączą się w pary i wymieniają fragmenty. Dzieli się na pięć stadiów:
+[POJĘCIE Biwalent (tetrada)] para skoniugowanych chromosomów homologicznych – matczynego i ojcowskiego; ma cztery chromatydy. Liczba biwalentów odpowiada haploidalnej liczbie chromosomów.
+- Leptoten – zaczyna się przebudowa (kondensacja) chromosomu interfazowego. Z chromatyny wyodrębniają się nitkowate, nieuporządkowane chromosomy, ułożone przypadkowo.
+- Zygoten – homologiczne chromosomy matczyne i ojcowskie zaczynają łączyć się w pary zwane biwalentami . Ten proces to koniugacja chromosomów ( synapsis ). Jest bardzo dokładny – homologi układają się naprzeciw siebie. Biwalent to dwa chromosomy po dwie chromatydy, czyli cztery chromatydy – stąd druga nazwa: tetrada . Każda para homologów tworzy jeden biwalent, więc liczba biwalentów odpowiada haploidalnej liczbie chromosomów.
+- Pachyten – homologi są już całkowicie skoniugowane. Zachodzi crossing-over : wzajemna wymiana fragmentów między niesiostrzanymi chromatydami chromosomów homologicznych, czyli między chromatydą chromosomu matczynego a chromatydą chromosomu ojcowskiego. W miejscach pęknięć chromatydy niesiostrzane krzyżują się i tworzą chiazmy . Według Drewy podczas jednej mejozy w komórkach człowieka crossing-over zachodzi średnio 1–2 razy.
+- Diploten – homologi zaczynają się rozdzielać ( desynapsis ), z wyjątkiem chiazm, które nadal łączą chromatydy niesiostrzane.
+- Diakineza – chromosomy kondensują się i oddzielają od otoczki jądrowej, a chiazmy przesuwają się od centromeru ku końcom. W każdym biwalencie wyraźnie widać cztery chromatydy.
+
+### Metafaza, anafaza i telofaza I: rozchodzą się homologi  []
+W prometafazie I , stadium przejściowym między profazą I a metafazą I, mikrotubule wrzeciona łączą się z biwalentami i przesuwają je do płaszczyzny równikowej komórki. W metafazie I biwalenty tworzą płytkę metafazową. Porównaj z mitozą: w płytce leżą teraz pary chromosomów, a nie pojedyncze chromosomy.
+W anafazie I chromosomy homologiczne z każdego biwalentu oddzielają się od siebie i wędrują do przeciwnych biegunów. Rozchodzą się całe chromosomy – każdy nadal z dwiema chromatydami siostrzanymi. Rozdział homologów jest zupełnie przypadkowy; to niezależna segregacja chromosomów .
+[RYCINA c02-fig-mejoza „Przebieg mejozy”: Ta sama komórka 2n = 4 co na rycinie mitozy. Porównaj górny i dolny rząd: w mejozie I do biegunów rozchodzą się całe chromosomy homologiczne (każdy wciąż z dwiema chromatydami), w mejozie II – chromatydy siostrzane. Kółko oznacza chiazmę; kolor – chromosom od jednego lub drugiego rodzica. Wynik: cztery komórki haploidalne, różne genetycznie.]
+W telofazie I powstają dwie komórki. Każda ma haploidalną liczbę chromosomów, ale diploidalną ilość DNA – bo każdy chromosom wciąż ma dwie chromatydy. Część chromosomów danej komórki pochodzi od ojca, a część od matki. Po pierwszym podziale następuje cytokineza.
+
+### Drugi podział mejotyczny: rozchodzą się chromatydy  []
+Mejoza II przebiega podobnie jak mitoza, ale w komórkach haploidalnych. Po krótkiej profazie II następuje metafaza II : chromosomy tworzą płytkę metafazową w płaszczyźnie równikowej wrzeciona. Na początku anafazy II , tak jak w anafazie mitozy, chromatydy każdego chromosomu oddzielają się od siebie i przechodzą do przeciwnych biegunów. W telofazie II odtwarzają się jądra potomne, a potem zachodzi cytokineza.
+W wyniku MII z każdej z dwóch komórek powstałych w MI powstają dwie komórki potomne z haploidalną liczbą chromosomów (u człowieka n = 23). Każdy chromosom ma już tylko jedną chromatydę, a komórka – haploidalną ilość DNA. Z dwóch podziałów powstają więc cztery komórki haploidalne. Gamety mają haploidalną liczbę chromosomów (n), więc zygota powstała przy zapłodnieniu jest diploidalna (2n). Dzięki temu zarodek i przyszły organizm zachowują liczbę chromosomów charakterystyczną dla rodziców.
+[RAMKA przyklad] Ta sama komórka co przy mitozie: 2n = 4, dwie pary homologów. Przed MI (po replikacji): 4 chromosomy, 8 chromatyd. Profaza I, metafaza I: homologi tworzą 2 biwalenty (2 = n), każdy z 4 chromatyd. Nadal 4 chromosomy i 8 chromatyd. Anafaza I: do każdego bieguna idą 2 całe chromosomy, każdy z 2 chromatyd. Po MI: 2 komórki, w każdej 2 chromosomy i 4 chromatydy. Liczba chromosomów spadła o połowę – stąd podział redukcyjny ; ilość DNA jest wciąż diploidalna. Anafaza II: chromatydy się rozdzielają; do każdego bieguna idą 2 chromosomy po jednej chromatydzie. Po MII: 4 komórki, w każdej 2 chromosomy i 2 chromatydy. Liczba chromosomów się nie zmieniła, a ilość DNA spadła o połowę – to właśnie robi podział ekwacyjny. Dla człowieka: 23 biwalenty w profazie I; po MI dwie komórki po 23 chromosomy (46 chromatyd); po MII cztery komórki po 23 chromosomy z jedną chromatydą. Ogólnie: liczba chromosomów w komórce po MI równa się liczbie biwalentów w profazie I – jeśli powstały 4 biwalenty, komórki potomne będą miały po 4 chromosomy.
+
+### Skąd bierze się zmienność?  []
+Mejoza zwiększa zmienność genetyczną dzięki dwóm zjawiskom: niezależnej segregacji chromosomów i crossing-over ( ). Zobaczmy, jak każde z nich zmienia skład komórek potomnych.
+[RYCINA c02-fig-segregacja „Dwa źródła zmienności w mejozie”: W panelu A porównaj dwa możliwe ustawienia tych samych biwalentów w metafazie I: od ustawienia zależy, które chromosomy trafią razem do jednej komórki – dwa ustawienia dają cztery zestawy. W panelu B prześledź chromatydy: po wymianie fragmentów dwie z czterech są mieszane, a po MI i MII każda trafia do innej komórki. Kolor – chromosom od jednego lub drugiego rodzica.]
+Niezależna segregacja. W metafazie I każdy biwalent leży w płytce tak, że jeden homolog jest zwrócony ku jednemu biegunowi, a drugi – ku przeciwnemu. Który ku któremu – decyduje przypadek, bo rozdział homologów jest zupełnie przypadkowy. Przy dwóch biwalentach (2n = 4) płytka może ułożyć się na dwa sposoby, a każdy daje inną parę komórek: raz każda komórka dostaje chromosomy od jednego rodzica, raz – po jednym od każdego. Razem są to cztery różne zestawy chromosomów. Każda kolejna para homologów podwaja liczbę możliwości. Jeśli każdy biwalent ustawia się niezależnie od pozostałych, przy 23 parach (człowiek) daje to 2 23 , czyli ponad 8 milionów zestawów – i to jeszcze bez crossing-over.
+Crossing-over. W pachytenie chromatydy niesiostrzane wymieniają fragmenty. Po jednej takiej wymianie w biwalencie są dwie chromatydy niezmienione (każda w całości od jednego rodzica) i dwie zrekombinowane – złożone z fragmentów chromosomu matczynego i ojcowskiego. W MI rozchodzą się homologi, a w MII chromatydy, więc każda z czterech chromatyd biwalentu trafia do innej komórki. Nawet pojedynczy chromosom gamety nie musi więc być ani w całości matczyny, ani w całości ojcowski.
+
+### Zaburzenia mejozy  [c02-zaburzenia]
+Jeżeli w pierwszym podziale mejotycznym biwalenty się nie rozdzielą, dochodzi do nondysjunkcji – tak jak w mitozie, „nierozdzielenia”. Oba homologi trafiają wtedy do jednej komórki, a druga nie dostaje żadnego. Nondysjunkcja może zajść także w drugim podziale mejotycznym. Prowadzi do aneuploidii , czyli nieprawidłowej liczby chromosomów. Gameta z dodatkowym chromosomem po zapłodnieniu daje zygotę z trzema kopiami tego chromosomu ( trisomia ), a gameta bez niego – zygotę z jedną kopią ( monosomia ) ( ).
+Przykładem jest zespół Downa – dodatkowa kopia chromosomu 21. Częstość nondysjunkcji zależy od wieku matki. Wpływają na nią też czynniki środowiskowe: niewielkie dawki promieniowania jonizującego, fungicydy, herbicydy, hormony egzogenne i alkohol.
+
+### Mitoza a mejoza  []
+[TABELA]
+Cecha | Mitoza | Mejoza
+Jakich komórek dotyczy | komórki somatyczne (wzrost i regeneracja tkanek) | komórki szlaku płciowego (spermatocyty i oocyty I i II rzędu)
+Liczba podziałów | jeden | dwa: MI (redukcyjny) i MII (ekwacyjny)
+Koniugacja homologów, crossing-over | brak | w profazie I (zygoten, pachyten)
+Co rozchodzi się w anafazie | chromatydy siostrzane | anafaza I – chromosomy homologiczne; anafaza II – chromatydy siostrzane
+Liczba komórek potomnych | 2 | 4
+Liczba chromosomów w komórce potomnej | taka sama jak w komórce macierzystej | o połowę mniejsza – haploidalna (u człowieka n = 23)
+Ilość DNA: komórka macierzysta → potomna | 2n → 2n | 2n → 1n
+Komórki potomne | z tymi samymi chromosomami co komórka macierzysta | różne genetycznie – crossing-over i niezależna segregacja chromosomów
+[/TABELA]
+[RAMKA zapamietaj] MI rozdziela chromosomy homologiczne (liczba chromosomów 2n → n, każdy nadal z dwiema chromatydami), MII – chromatydy siostrzane (spada ilość DNA). Profaza I: leptoten, zygoten (biwalenty), pachyten (crossing-over, chiazmy), diploten, diakineza. Wynik: cztery różne genetycznie komórki haploidalne.
+[ŹRÓDŁO] Źródło: Drewa s. 158–162
+[RAMKA w60] Punkty kontrolne : G1 (restrykcyjny – zasoby i stan DNA; wyjście do G0), G2/M (integralność i pełna replikacja DNA), M (wrzeciono, przyczepienie chromatyd do przeciwnych biegunów). cdk ma stałe stężenie i sama jest nieaktywna; działa z cykliną i po fosforylacji, a zbędną cyklinę rozkłada układ ubikwityna–proteasom. Faza G1 : cyklina D–cdk4/6 fosforyluje pRb i sekwestruje Cip/Kip → cyklina E–cdk2 hiperfosforyluje pRb → wolny E2F włącza geny fazy S, w tym cyklinę E (dodatnie sprzężenie zwrotne). p53 po uszkodzeniu DNA jest fosforylowane i stabilizowane → p21 i gadd45 (zatrzymanie), Bax, Fas, IGFBP-3 (apoptoza); hdm2 (MDM2) kieruje p53 do degradacji (ujemne sprzężenie zwrotne). CKI : INK4 (p15, p16, p18, p19) hamują cdk4/6; Cip/Kip (p21, p27, p57) hamują cyklinę E–cdk2 w wysokim, a wspierają cyklinę D–cdk4/6 w niskim stężeniu. Mitoza : 2 komórki o tej samej liczbie chromosomów; mejoza : MI rozdziela homologi, MII chromatydy → 4 różne komórki haploidalne.
+[RAMKA przejscie] Część 1 zawiera to, co trzeba rozumieć: po co komórce punkty kontrolne, jak cykliny włączają kinazy cdk, jak szlaki pRb i p53 decydują o wejściu w fazę S, czym hamują cykl inhibitory cdk i jak przebiegają mitoza i mejoza. Część 2 jest dla tych, którzy chcą znać źródła w całości – „na piątkę”. Nie wprowadza nowych tematów: dopowiada szczegóły do podrozdziałów, które już znasz – kolejne ogniwa drogi od mitogenu do jądra, białka pomocnicze szlaków pRb i p53, czynniki włączające poszczególne inhibitory, liczby dotyczące BRCA i położenie genów na chromosomach. Każda sekcja zaczyna się od odsyłacza do miejsca w części 1, które rozszerza. czas cyklu i stężenia cyklin ( ), od mitogenu do genu cykliny D1 ( ), szlak pRb – białka pomocnicze, PIC, fosforylacje ( ), szlak p53 – IGFBP-3, Akt, p300, faza G2 ( ), inhibitory cdk – co je włącza ( ), cała regulacja na schemacie Drewy ( ), straż genomu – Knudson, naprawa, liczby o BRCA ( ), mitoza i mejoza – daty, ryciny, nondysjunkcja ( ), gdzie leżą geny regulatorów cyklu ( ), skróty – pełne nazwy ( ).
+
+## Czas cyklu i stężenia cyklin – co pokazują tabela i wykresy źródeł  [c02-r-cykliny]
+W części 1 poznałeś cztery fazy cyklu ( ) i wiesz, że stężenie cyklin rośnie i spada ( ). Nie widziałeś jednak, ile trwa cały cykl w różnych komórkach ani kiedy dokładnie każda cyklina osiąga szczyt. Tu zbieramy to, co mówi wstęp rozdziału Drewy, jej tabela i dwa schematy Jóźwiaka.
+
+### Jak Drewa streszcza cykl?  []
+Drewa zaczyna od definicji: cykl komórkowy to proces, który umożliwia podział komórki na dwie komórki potomne. Ile takich cykli potrzeba? Rozwój organizmu z jednokomórkowej zygoty do postaci dorosłej wymaga bardzo wielu jego powtórzeń. Fazom Drewa przypisuje zadania: G1 to faza wzrostu i okres przygotowania chromosomów do replikacji, a G2 przygotowuje komórkę do fazy M. W fazie spoczynku G0 są komórki, których nie pobudzają czynniki mitogenne – to ten sam warunek, od którego zaczyna się „Cykl krok po kroku” ( ): bez czynnika wzrostu komórka z G0 nie wychodzi.
+W tym samym miejscu Drewa streszcza, która cyklina działa w której fazie: w G1 cykliny D z cdk4/cdk6, w późnej G1 cyklina E, w fazie S cykliny A i E z cdk2, w fazie M cykliny B i A z cdk1. Porównaj to z tabelą Jóźwiaka z części 1 ( ). Różnica dotyczy fazy M: u Jóźwiaka działa w niej tylko cyklina B, u Drewy – cykliny B i A. Wersja Drewy zgadza się z jej definicją MPF: cykliny B i A + cdk1 ( ).
+
+### Ile trwa cały cykl?  []
+Tabela Drewy „Czas trwania niektórych eukariotycznych cykli komórkowych” podaje cztery przykłady:
+[TABELA]
+Typ komórki | Czas cyklu komórkowego
+komórki drożdży | 1,5–3 godz.
+komórki nabłonka jelita | 12 godz.
+fibroblasty ssaków w hodowli | 20 godz.
+komórki wątrobowe (hepatocyty) człowieka | 1 rok
+[/TABELA]
+Zestaw to z liczbą z części 1: sam podział (faza M) trwa 0,5–3 godz. W drożdżach cały cykl trwa więc mniej więcej tyle, ile może trwać sam podział, a w hepatocycie nawet 3 godziny podziału to drobny ułamek roku (rok to ok. 8760 godzin – rachunek przykładowy). Która faza się wydłuża i dlaczego cykle różnią się aż tak bardzo – źródło nie podaje.
+
+### Kiedy każda cyklina osiąga szczyt?  []
+Jóźwiak pokazuje stężenia czterech klas cyklin na jednym wykresie (ryc. 6.6 w źródle). Na osi poziomej są fazy G1, S, G2 i M, a trzy przerywane linie pionowe wyznaczają granice G1/S, S/G2 i G2/M. Czytaj go od lewej i przy każdej krzywej przypomnij sobie krok z części 1 ( ):
+- cyklina fazy G1 (cykliny D) – szeroki łuk od początku G1 do końca M; to obraz zdania, że stężenie cykliny D utrzymuje się na dość wysokim poziomie praktycznie przez cały cykl;
+- cyklina fazy G1/S (cykliny E) – wąska krzywa ze szczytem dokładnie na granicy G1/S, czyli przy punkcie restrykcyjnym; mniej więcej w połowie fazy S wraca do zera – w fazie S cyklinę E rozkłada proteasom (krok 4);
+- cyklina fazy S (cykliny A) – szczyt na granicy S/G2, spadek do zera na początku fazy M; kompleks cyklina A–cdk2 jest aktywny do końca G2 (krok 4);
+- cyklina fazy M (cykliny B) – szczyt na granicy G2/M i gwałtowny spadek w fazie M, gdy APC przyłącza do cykliny B ubikwitynę (krok 6).
+Każda z trzech granic faz ma więc „swoją” cyklinę, której krzywa właśnie tam osiąga szczyt. Drewa mówi to samo o cyklinach mitotycznych: najwyższą aktywność osiągają w fazie G2 ( ).
+
+### Dlaczego stężenie cykliny ma kształt „zęba”?  []
+Drugi schemat Jóźwiaka (ryc. 6.7) przedstawia jeden cykl komórkowy jako koło sześciu etapów: akumulacja cykliny → utworzenie i aktywacja kompleksu cyklina/CDK → aktywacja ligazy ubikwityny → degradacja cykliny → dezaktywacja CDK → dezaktywacja ligazy ubikwityny. To etapy z z jedną nowością: ligaza ubikwityny też ma stan włączony i wyłączony. Na kole zostaje aktywowana po aktywacji kompleksu, a jej dezaktywacja zamyka koło.
+Nad kołem źródło rysuje stężenie cykliny w czasie: narasta stopniowo i gwałtownie opada, a jeden taki „ząb” odpowiada jednemu cyklowi komórkowemu. Kształt wynika z koła: powolne narastanie to akumulacja cykliny, gwałtowny spadek – jej degradacja po włączeniu ligazy. Dla cykliny B rolę takiej ligazy pełni APC/C z części 1 – to on przyłącza do niej ubikwitynę ( ).
+[ŹRÓDŁO] Źródło: Drewa s. 143, 151, 156 · Jóźwiak s. 70–71
+
+## Od mitogenu do genu cykliny D1 – droga sygnałowa ogniwo po ogniwie  [c02-r-mitogen]
+W części 1 ( ) między „mitogen wiąże się z receptorem” a „rośnie poziom cyklin D” stało jedno słowo: kaskada. Jak sygnał z powierzchni komórki zamienia się w nowe białko w jądrze? Drewa opisuje najlepiej poznaną drogę ogniwo po ogniwie. Sygnał pokonuje trzy odcinki: błonę, cytoplazmę i jądro.
+
+### Błona: receptor z aktywnością kinazy  []
+Droga zaczyna się od receptorowej kinazy tyrozynowej – receptora, który jest zarazem kinazą. Pobudzenie receptora przez mitogen powoduje fosforylację reszt tyrozynowych w domenach cytoplazmatycznych białka receptorowego, czyli w jego części leżącej wewnątrz komórki. Powstają fosfotyrozyny – reszty tyrozyny z przyłączoną grupą fosforanową.
+Fosfotyrozyny są miejscami zaczepienia. Przyłącza się do nich białko adaptorowe Grb2 – łącznik między białkami, takiego samego typu jak FADD w szlaku zewnętrznym apoptozy ( ). Grb2 bierze udział w tworzeniu kompleksu białkowego Ras–Sos .
+
+### Cytoplazma: sztafeta kinaz  []
+Białko Ras przy udziale GTP aktywuje białko Raf , które ma aktywność kinazy białkowej i uruchamia kaskadę kinaz MAP. Kinazy aktywowane mitogenami, MAPK (ang. Mitogen-Activated Protein Kinases ), to trzy ogniwa fosforylowane w tej kolejności: MAPKKK , MAPKK (MEK1 i MEK2) i ERK – kinaza białkowa regulowana sygnałami zewnątrzkomórkowymi (ang. Extracellular Regulated Kinase ). To dosłownie zdanie z części 1: substratem kinazy jest często inna kinaza ( ).
+Cztery ogniwa ze środka tej drogi – Ras, Raf, MEK i ERK – to kaskada, którą w części 1 opisał Jóźwiak ( ); jego MEK to MAPKK.
+
+### Jądro: czynniki transkrypcyjne i gen cykliny D1  []
+Kinaza ERK umożliwia przyłączenie reszty fosforanowej do licznych białek, m.in. Jun, Fos, Myc, SRF, Elk-1, c-Ets-1, c-Ets-2 i Sap1a. Wszystkie są czynnikami transkrypcyjnymi, które wpływają na ekspresję genów regulujących cykl komórkowy. Tu sygnał przestaje być przekazywany z kinazy na kinazę i zaczyna działać na geny.
+Dwie z tych rodzin łączą się w pary. Czynniki Fos (c-Fos, FosB, Fra-1, Fra-2) i Jun (c-Jun, JunB, JunD) tworzą dimery typu suwaka leucynowego – to jeden ze sposobów łączenia dwóch białek w dimer. Taki dimer nazywa się czynnikiem transkrypcyjnym AP-1 . Kto z kim? Białka Fos tworzą heterodimery z białkami rodzin Jun i ATF. Białka Jun łączą się w dimery z ATF2, a ze sobą – w mało stabilne homodimery.
+W DNA AP-1 łączy się z sekwencją TGAC/GTCA , zwaną też TRE (ang. Tetradecanoyl phorbol acetate-Responsive Element ). Sekwencja TRE znajduje się w promotorach wielu genów, m.in. genu kodującego cyklinę D1 . Tu droga się zamyka: dlatego we wczesnej G1, po zadziałaniu mitogenów, rośnie poziom cyklin D ( ). Ta sama kinaza ERK – jak wiesz – pomaga potem złożyć kompleks cyklina D–cdk4/6.
+Nie jest obojętne, który dimer usiądzie na TRE. Według Drewy oddziaływania dimerów z TRE wskazują na możliwość hamowania transkrypcji przez kompleks Jun–Fos oraz jej nasilania przez kompleks Jun–Jun. Skład dimeru może więc decydować, czy gen zostanie wyciszony, czy pobudzony.
+[TABELA]
+Ogniwo (w kolejności sygnału) | Co robi
+receptorowa kinaza tyrozynowa | po pobudzeniu przez mitogen ma ufosforylowane reszty tyrozynowe w domenach cytoplazmatycznych
+Grb2 (białko adaptorowe) | przyłącza się do fosfotyrozyn; uczestniczy w tworzeniu kompleksu Ras–Sos
+Ras (z GTP) | aktywuje Raf
+Raf | kinaza białkowa; uruchamia kaskadę kinaz MAP
+MAPKKK → MAPKK (MEK1, MEK2) → ERK | fosforylowane kolejno
+czynniki transkrypcyjne (Jun, Fos, Myc i in.) | fosforylowane dzięki ERK; wpływają na geny regulujące cykl
+AP-1 (dimery Fos i Jun) | wiąże się z sekwencją TRE w promotorze m.in. genu cykliny D1
+[/TABELA]
+Znane są jeszcze co najmniej dwie drogi sygnałowe, które wpływają na przejście z fazy G0 do G1. Pierwsza wiąże się z aktywnością kinazy fosfatydyloinozytolowej 3 ( PI3K ), druga – z białkami rodziny Rho wiążącymi GTP. PI3K spotkasz jeszcze dwa razy: przy rozkładzie cykliny D1 ( ) i przy hamowaniu apoptozy ( ).
+[ŹRÓDŁO] Źródło: Drewa s. 144–145 · Jóźwiak s. 70
+
+## Szlak pRb i sekwestracja – białka pomocnicze, kompleks PIC, miejsca fosforylacji  [c02-r-prb]
+W części 1 ( ) pRb wyciszało geny fazy S na dwa sposoby: trzymało E2F i sprowadzało do niego deacetylazy histonów. Tu dopowiadamy trzy rzeczy: jakie białka pomagają E2F (i dlaczego przykładem było CBP), jakie jeszcze sposoby ma pRb i co oznaczają numery przy fosforylowanych resztach.
+
+### Białka aktywujące E2F i białka o aktywności HAT – dwie listy  []
+Do domeny aktywacyjnej E2F przyłączają się cztery białka aktywujące : TBP, TFIIH, hdm2 i CBP. Osobną listę tworzy sześć białek o aktywności histonowej transferazy acetylowej (HAT), czyli robiących z chromatyną to, co w tabeli z części 1 stoi w kolumnie „HAT” ( ): CBP, P/CAF, GCN5, TAF250, SRC1 i p300. CBP jest na obu listach – przyłącza się do E2F i ma aktywność HAT – dlatego dobrze nadawało się na przykład w części 1. O pozostałych pięciu białkach drugiej listy źródło mówi tylko tyle, że mają aktywność HAT.
+Trzy z tych nazw spotkasz w rozdziale w innych rolach. Kompleks cyklina H–cdk7, który ma właściwości kinaz CAK ( ), wchodzi w interakcje z czynnikiem transkrypcyjnym TFIIH. hdm2 to białko, które wycisza p53 ( ). p300 wpływa na aktywność p53 ( ).
+
+### Ile sposobów ma pRb na wyciszenie genów fazy S?  []
+Do dwóch sposobów z części 1 źródło dodaje dwa kolejne. Trzeci: w licznych badaniach wykazano mechanizm, za którego pomocą E2F i pRb regulują transkrypcję bez udziału enzymów modyfikujących białka histonowe. Kluczową rolę odgrywa w nim kompleks TFIIA/TFIID, tzw. PIC . Najłatwiej rozumieć go jako wyścig o promotor. Przy udziale E2F kompleks PIC przyłącza się do promotora – a gdy już tam jest, E2F staje się oporny na represyjne działanie pRb. pRb nie może więc czekać: reguluje ten proces, blokując przyłączenie PIC do promotora.
+Czwarty sposób działa jeszcze wcześniej. Białko Rb prawdopodobnie hamuje transkrypcję samych czynników E2F1 i E2F2 – a bez nich nie ulega ekspresji wiele genów fazy S. Razem pRb ma więc cztery sposoby na wyciszenie genów fazy S:
+- wiąże heterodimer E2F–DP (część 1, );
+- sprowadza deacetylazy histonów HDAC1–HDAC3 (część 1, );
+- blokuje przyłączenie PIC do promotora;
+- prawdopodobnie hamuje transkrypcję E2F1 i E2F2.
+Nie poznano jeszcze wszystkich czynników regulujących ekspresję genów fazy S. Znane są białka o dużym podobieństwie strukturalnym do E2F, np. EMA . Różnicę widać przez kontrast z E2F: EMA zamiast domeny aktywacyjnej ma tzw. domenę hamującą . Prawdopodobnie hamuje więc transkrypcję genów kontrolowanych przez E2F – i nie podlega regulacji przez pRb.
+
+### Co znaczą numery Thr-187 i Thr-286?  []
+Zapis Thr-187 czytaj: treonina (Thr) w pozycji 187 łańcucha białka. Pamiętasz z części 1, że cdk to kinazy serynowo-treoninowe ( ). Kompleks cyklina E–cdk2, przyspieszając własną aktywację, fosforyluje w białku p27 Kip1 właśnie resztę treoninową Thr-187 – i to rozpoczyna degradację p27 ( ).
+Los cykliny D1 ( ) to przełącznik z dwoma stanami. Jej degradacja zależy od drogi sygnałowej Ras, która obejmuje kinazę fosfatydyloinozytolową 3 ( PI3K ) i kinazę białkową B ( Akt ):
+- droga Ras czynna – Akt hamuje fosforylację cykliny D1;
+- droga Ras zahamowana – kinaza GSK-3β fosforyluje cyklinę D1 w miejscu Thr-286 ; ufosforylowana cyklina D1 przechodzi z jądra do cytoplazmy i tam zostaje zdegradowana.
+Zestaw oba numery: w obu przypadkach fosforylacja jednej reszty treoniny poprzedza zniszczenie białka – p27 po fosforylacji Thr-187, cyklina D1 po fosforylacji Thr-286.
+[ŹRÓDŁO] Źródło: Drewa s. 145–147
+
+## Szlak p53 – dopowiedzenia: IGFBP-3, hamowanie apoptozy, p300, faza G2  [c02-r-p53]
+Część 1 ( ) opisała, jak p53 zatrzymuje cykl i kiedy kieruje komórkę na apoptozę. Zostały trzy pytania: jak antagonista czynnika wzrostu może wywołać apoptozę, czy wyrok p53 jest ostateczny i gdzie jeszcze p53 hamuje cykl. Najpierw jednak – skąd przekonanie, że p53 jest tak ważne?
+Białko p53 odkryto ponad 30 lat przed wydaniem podręcznika Drewy (2011). Gen P53 cechuje znaczna homologia międzygatunkowa – u różnych gatunków jest bardzo podobny. Drewa przypisuje to ogromnemu znaczeniu p53 w regulacji cyklu, indukcji apoptozy i onkogenezie: gen tak ważny niewiele się zmienił w ewolucji. To ten sam tok rozumowania co przy „wysoko konserwatywnych” kaspazach ( ).
+
+### Jak antagonista czynnika wzrostu może wywołać apoptozę?  []
+Trzecia droga z części 1 ( ) wykorzystuje IGFBP-3 – antagonistę insulinopodobnego czynnika wzrostu IGF-1. Istotą tego procesu jest obniżenie aktywności IGF-1 lub poziomu receptora IGF-1 , który ma zdolność ochrony fibroblastów przed apoptozą indukowaną promieniowaniem UV. Łańcuch wygląda więc tak:
+- IGF-1 działa przez swój receptor;
+- receptor IGF-1 chroni komórkę (w źródle: fibroblast) przed apoptozą po UV;
+- IGFBP-3 obniża aktywność IGF-1 albo ilość receptora – ochrona słabnie.
+Istotą tej drogi jest więc osłabienie ochrony, którą komórce daje IGF-1 przez swój receptor.
+
+### Czy wyrok p53 jest ostateczny?  []
+Nie zawsze. Badania dowiodły, że apoptozę indukowaną przez p53 można zahamować. Odpowiada za to droga Ras–PI3K–Akt , która prowadzi do fosforylacji i inaktywacji kaspazy 9 . Przypomnij sobie z rozdziału o apoptozie ( ): kaspaza 9 to kaspaza inicjatorowa szlaku wewnętrznego, uruchamiana w apoptosomie. Jej wyłączenie zatrzymuje ten szlak na samym początku. To kolejny przykład z części 1, że fosforylacja zmienia działanie białka – tu je wyłącza.
+Zestaw to z poprzednią sekcją ( ): ta sama droga Ras–PI3K–Akt chroni cyklinę D1 przed rozkładem. W obu miejscach, w których wymienia ją źródło, działa więc na korzyść komórki, która się dzieli.
+
+### p300: pomocnik i hamulec jednocześnie  []
+Na aktywność czynnika transkrypcyjnego p53 wpływa też białko p300 , które pełni dwie przeciwstawne funkcje. Przy aktywności acetylotransferazy może działać jako koaktywator transkrypcji – czyli pomagać p53 włączać geny. Udowodniono też, że p300 nasila degradację p53 na drodze ubikwitynowo-proteasomowej – działa wtedy w tym samym kierunku co hdm2 ( ). Aktywność acetylotransferazy to ta sama aktywność HAT, dla której p300 trafiło na listę w poprzedniej sekcji. Kiedy przeważa która funkcja – źródło nie podaje.
+
+### Gdzie jeszcze p53 hamuje cykl?  []
+W części 1 p53 zatrzymywało cykl na granicy G1/S. Rola p53 nie ogranicza się jednak do tego przejścia. Źródło podaje trzy poziomy:
+- faza G1 – przez p21 , inhibitor cdk z rodziny Cip/Kip (część 1);
+- faza G2 – zahamowanie cyklu przy udziale p53 dotyczy także tej fazy; jest to prawdopodobnie związane z hamowaniem ekspresji topoizomerazy DNA IIα , enzymu odpowiedzialnego za replikację i transkrypcję DNA;
+- bez udziału inhibitorów (CKI) – p53 obniża aktywność kinaz CAK . Przypomnij sobie: CAK (cyklina H–cdk7) aktywuje w jądrze kompleksy cyklina D–cdk4/6 ( ). Słabsza CAK to mniej aktywnych kompleksów – cykl staje, choć żaden inhibitor się nie przyłączył.
+[ŹRÓDŁO] Źródło: Drewa s. 148–150
+
+## Inhibitory cdk – wspólne locus, czynniki indukujące, regulacja i rozkład p27  [c02-r-cki]
+W części 1 ( ) poznałeś obie rodziny inhibitorów cdk i to, co wiążą. Zostało pytanie: co włącza każdy z tych hamulców? Odpowiedź w skrócie: każdy hamulec ma własny włącznik – dzięki temu komórka może zatrzymać cykl z różnych powodów.
+
+### Dwa białka z jednego miejsca na chromosomie  []
+Geny kodujące p16 INK4a i p19 INK4d zajmują to samo locus INK4a na chromosomie 9. Mają wspólne eksony 2 i 3, a różnią się eksonem pierwszym: ekson 1α należy do p16 INK4a , ekson 1β – do p19 INK4d (eksony to odcinki genu, które zostają w dojrzałym mRNA po wycięciu intronów; ). Każdy z genów ma własną sekwencję promotorową, a nasilenie ich ekspresji zależy od różnych czynników. Dlatego dwa białka zbudowane częściowo z tych samych eksonów pojawiają się w innych warunkach.
+[RAMKA uwaga] W podrozdziale 7.3 Drewa przypisuje białku p19 INK4d wspólne locus z p16 INK4a (ekson 1β) i ochronę p53 przez wiązanie hdm2. W dalszej części tego samego rozdziału (7.6, s. 153 – poza zakresem zajęć) ekson 1β i udział w drodze p53 ma białko nazwane p19 ARF (u człowieka p14 ARF ), a w odpowiedziach do pytań (s. 162) wśród białek hamujących powstawanie kompleksu cyklina D1–cdk4 są tylko p15, p16 i p18. Źródło nie jest więc spójne co do tego, które białko „p19” wiąże hdm2; tu trzymamy się brzmienia podrozdziału 7.3.
+
+### Kto włącza który hamulec?  []
+Tabela zbiera czynniki, które źródło wiąże z poszczególnymi inhibitorami; szczegóły o p21 i p27 – pod tabelą.
+[TABELA]
+Inhibitor | Co zwiększa jego ilość lub ekspresję (i co ją zmniejsza)
+p16 INK4a | onkogenny Ras; starzenie się komórek; inaktywacja białka Rb lub p53
+p19 INK4d | ekspresja zmienia się okresowo w cyklu, szczyt w fazie S; najsilniejsze bodźce: sekwencje onkogenne (np. E1a , v-abl , myc ) i czynnik transkrypcyjny E2F1
+p18 INK4c | ekspresja okresowa, szczyt w fazie S; szybka aktywacja m.in. przez IL-6, np. podczas różnicowania limfocytów B
+p15 INK4b | najlepiej poznane: TGFβ1 i IFNα; TGFβ1 dodatkowo stabilizuje cząsteczkę p15
+p21 Cip1 | droga zależna od p53: uszkodzenie DNA → wtp53 (część 1); droga niezależna od p53: czynniki różnicowania, czynniki wzrostu, aktywatory promotora (niżej); TGFβ1. Hamuje: HBP1
+p27 Kip1 | TGFβ1 (podnosi poziom białka); transkrypcję nasilają antymitogeny: IL-6, IFNα, dioksyny. Hamuje transkrypcję: np. IL-2; rozkład – dwie drogi (niżej)
+p57 Kip2 | źródło nie podaje
+[/TABELA]
+Trzy spostrzeżenia zamieniają tę tabelę w rozumowanie:
+- Jeden sygnał – kilka hamulców. TGFβ1 podnosi poziom p15, p21 i p27 i w ten sposób zatrzymuje cykl w fazie G1. Podobnie IFNα pojawia się przy trzech inhibitorach: indukuje p15, aktywuje promotor genu Cip1 i nasila ekspresję Kip1 .
+- E2F1 po obu stronach. E2F1 pobudza p19 INK4d i silnie aktywuje promotor Cip1 . Czynnik z rodziny E2F, który w części 1 popychał komórkę do fazy S, włącza też geny jej hamulców.
+- Interleukina 6 szybko aktywuje p18 i nasila ekspresję genu Kip1 .
+
+### p21: długa lista regulatorów i trzeci sposób działania  []
+Droga niezależna od p53 ( ) ma więcej uczestników, niż podała część 1. Uaktywniają ją czynniki indukujące różnicowanie komórek – np. kwas retinowy, TPA, DMSO – oraz czynniki wzrostu, np. PDGF, FGF, TGFβ. Ekspresję genu regulują wtedy liczne czynniki transkrypcyjne. Silnymi aktywatorami promotora genu Cip1 są m.in. czynniki transkrypcyjne E1AF , E2A , E2F1 i E2F3 , AP-2 , białko supresorowe BRCA1 oraz IFNα . Wśród białek hamujących indukcję tego genu jest HBP1 (ang. HMG-box protein-1 ) – białko wiążące pRb, w chwili pisania podręcznika niedawno odkryte. Zwróć uwagę na BRCA1: białko, które w części 1 naprawia pęknięcia dwuniciowe DNA ( ), tu pobudza gen inhibitora cdk.
+p21 ma też trzeci sposób działania – obok hamowania cykliny E–cdk2 i wiązania PCNA. Opisano mechanizmy, w których p21 bezpośrednio reguluje aktywność czynnika transkrypcyjnego E2F – na drodze niezależnej od cdk i białka Rb.
+
+### p27: gen włączony stale, ilość białka zmienna  []
+Ekspresja genu Kip1 jest jednakowo nasilona w komórkach dzielących się i w komórkach w fazie spoczynku. Skoro na poziomie genu różnicy nie ma, a ilość p27 się zmienia, aktywność i poziom p27 muszą być regulowane później – potranslacyjnie , już po syntezie białka. Jednym z lepiej poznanych czynników działających w ten sposób jest TGFβ1: przyczynia się do wzrostu poziomu p27 Kip1 (a także p15 INK4b i p21 Cip1 ), co zatrzymuje cykl w fazie G1.
+Źródło wymienia jednak także czynniki, które wpływają na samą transkrypcję genu Kip1 – regulacja potranslacyjna nie wyklucza regulacji genu. Antymitogeny nasilające ekspresję genu Kip1 to np. interleukina 6, IFNα i dioksyny; do czynników represyjnych należy np. interleukina 2.
+Zostaje rozkład. W przeciwieństwie do innych inhibitorów p27 Kip1 jest degradowane w dwóch niezależnych mechanizmach. Pierwszy to układ ubikwitynowo-proteasomowy z części 1: białko oznaczone ubikwityną trafia do proteasomu. Drugi to proteoliza , czyli cięcie łańcucha białka, zależna od ATP i zachodząca w zakresie domeny wiążącej cyklinę – w tym fragmencie, którym p27 łączy się z cykliną. Początek degradacji p27 wyznacza fosforylacja Thr-187 przez cyklinę E–cdk2 ( ); źródło nie mówi, której z dwóch dróg to dotyczy.
+[ŹRÓDŁO] Źródło: Drewa s. 149–150
+
+## Cała regulacja cyklu na jednym schemacie Drewy  [c02-r-schemat]
+Tekst Drewy opisuje szlaki po kolei: pRb, p53, inhibitory, fazy S i G2 (część 1, od do ). Jeden schemat (ryc. 7.1 w źródle, „Mechanizmy regulacji cyklu komórkowego”, wg Hirama i Koeffler, 1995, zmodyfikowano) zbiera je w jeden obraz – i pokazuje przy tym kilka rzeczy, o których tekst milczy. Sekcja porównuje więc to, co już znasz, z tym, co na schemacie jest nowe.
+
+### Jak czytać schemat?  []
+Schemat obejmuje cały cykl: G0, G1, S, G2 i M. Strzałka oznacza indukowanie, a kreska zakończona poprzeczką – hamowanie. Grube łuki pokazują kierunek cyklu: od kompleksów fazy G1 ku fazie S oraz od kompleksów z cykliną A i cykliną B ku fazie M.
+Każdy z pięciu kompleksów narysowano jako cztery białka : kinazę, cyklinę, p21 i PCNA. Są to (zapis jak na schemacie): CDK4(6)–cykliny D, CDK2–cyklina E, CDK2–cyklina A, CDK1–cyklina A i CDK1–cyklina B – te same kompleksy co w tabeli z części 1 ( ). Osobno, bez cykliny, narysowano CDK4(6) z p15/p16/p18/p19 – zgodnie z tym, że INK4 wiążą same kinazy cdk4 i cdk6 ( ).
+[TABELA]
+Element schematu | Działanie | Na co | W tekście
+czynnik wzrostu | indukuje | cykliny D | część 1
+czynnik wzrostu | hamuje | p27 | nowe
+cAMP | indukuje | p27 | nowe
+TGF-β | hamuje | CDK4(6) | nowe
+p27 | hamuje | CDK4(6)–cykliny D, CDK2–cyklina E | część 1 (Cip/Kip)
+kompleksy cyklin D i cykliny E | indukują | przyłączenie grupy fosforanowej do Rb | część 1
+Rb; p107/p130 | tworzą kompleks z | E2F | część 1 (białka kieszeniowe)
+wolny E2F | indukuje | transkrypcję | część 1
+TFIIH | indukuje | transkrypcję i naprawę DNA; strzałka dwustronna z CDK7–cykliną H | nowe (interakcja – )
+cyklina H–CDK7 | indukuje | kompleksy CDK1 (z cykliną A i z cykliną B) | nowe
+CDC25 | indukuje | wejście kompleksów CDK1 w fazę M | nowe
+Wee1/Mik1 | hamuje | wejście kompleksów CDK1 w fazę M | nowe
+nim1 | hamuje | Wee1/Mik1 | nowe
+kompleksy wchodzące w fazę M | indukują | histon H1, laminy, wimentynę, kalmodesmon i inne | nowe
+uszkodzenie DNA → p53 | indukuje | transkrypcję: naprawę DNA, BAX (→ apoptoza), p21WAF1 | część 1
+p53 → BCL-2 | hamuje | BCL-2, który sam hamuje apoptozę | część 1 (Bax ↑, Bcl-2 ↓)
+p21WAF1 | hamuje | replikację DNA i wszystkie pięć kompleksów | replikacja – część 1; kompleksy z A i B – nowe
+[/TABELA]
+
+### Co na schemacie jest nowe?  []
+1. Trzy białka przy wejściu w mitozę. Od CDC25 strzałki indukowania biegną do łuków, które prowadzą od kompleksów CDK1 do fazy M; do tych samych łuków biegną kreski hamowania od Wee1/Mik1 ; a nim1 hamuje Wee1/Mik1. Jaki jest skutek nim1? Pomoże przykład z części 1: p19 INK4d hamuje hdm2, a hdm2 hamuje p53 – skutek netto to więcej p53 ( ). Tu tak samo: nim1 hamuje hamulec, więc sprzyja wejściu w mitozę. To rozumowanie z samych strzałek – schemat nie mówi, jak te białka działają.
+2. Na co działa kompleks fazy M. Od łuków wchodzących w fazę M strzałki prowadzą do ramki „histon H1, laminy, wimentyna, kalmodesmon i inne”. Zestaw to ostrożnie z zadaniami MPF z części 1 ( ) i ze zdaniem Jóźwiaka, że cyklina B–cdk1 fosforyluje kilkadziesiąt białek: laminy pasują do rozpadu błony jądrowej, histon H1 – do kondensacji chromatyny. Laminy i wimentynę znasz z rozdziału o apoptozie ( ): laminy to białka otoczki jądrowej, wimentyna – cytoszkieletu. O kalmodesmonie źródło podaje tylko nazwę.
+3. CAK działa także na cdk1. W tekście kompleks cyklina H–cdk7 aktywuje kompleksy cyklina D–cdk4/6 ( ). Na schemacie jego strzałki wskazują kompleksy CDK1 – z cykliną A i z cykliną B.
+4. p21 przy każdym kompleksie i sygnały z zewnątrz. p21 i PCNA narysowano w każdym kompleksie, także z cyklinami A i B, a kreski hamowania biegną od p21WAF1 do wszystkich pięciu. Schemat dodaje też dwa sygnały, których tekst nie wymienia: cAMP indukuje p27, a czynnik wzrostu p27 hamuje. Zestaw to z poprzednią sekcją ( ): tam TGFβ1 podnosi poziom p27, tu TGF-β hamuje CDK4(6) – kierunek ten sam: zatrzymanie w fazie G1.
+[ŹRÓDŁO] Źródło: Drewa s. 146 (ryc. 7.1) · Jóźwiak s. 70
+
+## Białka straży genomu – hipoteza dwóch uderzeń, dwie wersje naprawy, liczby o BRCA  [c02-r-straz]
+W części 1 ( ) białka straży genomu opisaliśmy głównie według Jóźwiaka. Drewa w podsumowaniu rozdziału ujmuje to samo krótko: białka pRb i p53 pełnią rolę „strażników” genomu i chronią komórkę przed transformacją nowotworową; komórki zmutowane nie przechodzą do fazy S, dzięki czemu mogą zostać „naprawione” albo zniszczone w apoptozie. Gen kodujący p53 jest według Drewy uszkodzony w ponad połowie przypadków nowotworów człowieka – zgadza się to z 50–70% u Jóźwiaka. Ostatni punkt podsumowania dotyczy fazy G2: sporadycznie występujące mutacje w genach kodujących białka regulatorowe tej fazy wskazują na ich udział w ochronie i przeżyciu komórek nowotworowych oraz w rozwoju oporności na chemioterapię nowotworów.
+
+### Co jeszcze pokazuje schemat p53 u Jóźwiaka?  []
+Tabela z części 1 ( ) zestawia trzy grupy genów docelowych p53. Schemat Jóźwiaka (ryc. 6.8) dodaje dwie rzeczy. Wśród bodźców, które prowadzą do fosforylacji p53, wypisano cztery: uszkodzenie DNA, stres , hipoksję i aktywację onkogenów – „stresu” nie ma w tekście ani w podpisie. Przy trzech skutkach działania p53 narysowano też miejsce działania:
+- „zablokowanie cyklu komórkowego” – p21 przy kompleksach cyklina D/CDK4 i cyklina E/CDK2;
+- „apoptoza” – Puma i Bax przy mitochondrium , z którego w szlaku wewnętrznym apoptozy wypływa cytochrom c ( );
+- „naprawa DNA” – MSH2, PMS2 i MLH1 przy nici DNA.
+
+### Dlaczego jeden zmutowany allel TP53 wymaga wyjaśnienia?  []
+W części 1 ( ) stoi, że w większości nowotworów zmutowany jest tylko jeden allel TP53 . Dlaczego miałoby to dziwić? Gen TP53 należy do genów supresji nowotworowej, a co za tym idzie – powinien podlegać hipotezie „dwóch uderzeń” Knudsona (Jóźwiak odsyła tu do rozdziału o onkogenezie, poza zakresem zajęć). Z wywodu Jóźwiaka wynika, że hipoteza ta oczekuje mutacji w obu allelach genu. Okazuje się jednak, że w większości nowotworów wykrywa się mutację tylko na jednym allelu. Jóźwiak tłumaczy to tym, że do mutacji TP53 dochodzi na późniejszym etapie rozwoju nowotworu – nie jest to więc główny czynnik nowotworzenia.
+[RAMKA uwaga] W podpisie ryc. 6.9 (Jóźwiak s. 73) E2F nazwano „czynnikiem elongacji transkrypcji ( elongation factor 2 )”. W tekście głównym Jóźwiaka (s. 73) i u Drewy (s. 145) E2F to czynnik transkrypcyjny , który uruchamia ekspresję genów fazy S – tak należy go rozumieć.
+
+### Naprawa pęknięcia: chromatyda siostrzana czy drugi allel?  []
+W części 1 ( ) napisaliśmy ostrożnie, że brakującą sekwencję kopiuje się z nieuszkodzonej, homologicznej sekwencji. Powód: Jóźwiak podaje dwie wersje. W tekście (s. 73) BRCA1 i BRCA2 pozwalają skopiować brakujące sekwencje z chromatydy siostrzanej . Na rycinie i w jej podpisie (ryc. 6.10, s. 74) nieprzycięta nić zbliża się do sekwencji homologicznej danego genu na drugim allelu . Wspólne dla obu wersji jest to, co w części 1: wzorcem jest nieuszkodzona sekwencja homologiczna. Która wersja jest właściwa, źródło nie rozstrzyga.
+Rycina dodaje podpisy przy białkach: BRCA1 „odpowiada za przycięcie luźnych fragmentów DNA”, BRCA2 – „za skopiowanie sekwencji z drugiego allelu”. Panele idą w kolejności: działanie mutagenu → pęknięcie obu nici DNA → jedna z nici zbliża się do nieuszkodzonej sekwencji homologicznej → „sekwencja DNA jest uzupełniana na matrycy nici komplementarnej” → „połączenie nici w ciągłą sekwencję”.
+
+### Pięć liczb o BRCA – czego dotyczy każda?  []
+Liczby o BRCA łatwo pomylić, bo każda odpowiada na inne pytanie:
+[TABELA]
+Liczba | Czego dotyczy
+80% | ryzyko raka sutka u osoby z mutacją BRCA1 lub BRCA2
+55% / 25% | rak jajnika u kobiet z mutacją BRCA1 / BRCA2
+kilkanaście procent | część wszystkich przypadków nowotworów sutka i jajnika, w których stwierdza się mutacje BRCA
+ok. 3–5% | udział dziedzicznej formy (mutacje genów BRCA) wśród wszystkich przypadków raka sutka
+nawet 100× | o tyle bywa podwyższone stężenie niektórych mikroRNA w komórkach nowotworowych
+[/TABELA]
+Z tych liczb Jóźwiak wyprowadza wniosek w dwóch krokach.
+Krok 1: białek BRCA bywa za mało także bez mutacji. Mutacja nie jest prawdopodobnie główną przyczyną obniżenia ekspresji białek BRCA1/2 w komórkach nowotworowych – mutacje stwierdza się jedynie w kilkunastu procentach przypadków nowotworów sutka i jajnika. Za obniżenie ekspresji odpowiada w tych przypadkach zjawisko interferencji RNA ( ): przynajmniej kilka typów naturalnie występujących mikroRNA – których stężenie w komórkach nowotworowych bywa podwyższone nawet 100 razy – blokuje translację białka z matrycy mRNA dla BRCA1 i BRCA2. mRNA więc jest, ale białko z niego nie powstaje.
+Krok 2: najczęściej chodzi o co innego. Dziedziczna forma raka sutka, związana z mutacją genów kodujących białka BRCA, jest dość rzadka – to tylko ok. 3–5% wszystkich przypadków. Najczęściej w nowotworach sutka dochodzi do nadekspresji genu receptora estrogenowego . Komórka wytwarza wtedy więcej receptora, więc nawet przy fizjologicznym poziomie estrogenów we krwi jest nadmiernie stymulowana do wzrostu i proliferacji. Na zdjęciu preparatu raka sutka w źródle (ryc. 6.11) receptory estrogenowe są zabarwione na brązowo i widać ich lokalizację jądrową, charakterystyczną dla komórek raka sutka.
+Nie próbuj uzgadniać „kilkunastu procent” z „3–5%”: pierwsza liczba dotyczy nowotworów sutka i jajnika razem, druga – tylko dziedzicznej formy raka sutka; obie pochodzą z różnych miejsc źródła.
+[ŹRÓDŁO] Źródło: Drewa s. 162 · Jóźwiak s. 72–75
+
+## Mitoza i mejoza – daty, szczegóły z rycin źródła, skutki nondysjunkcji  [c02-r-podzialy]
+Dwa dopowiedzenia do podrozdziałów o podziałach ( , ): co pokazują ryciny Drewy, a czego nie ma w tekście, i czy ma znaczenie, w którym podziale mejotycznym zaszła nondysjunkcja.
+
+### Kiedy opisano oba podziały?  []
+Nazwę „mitoza” (od mitos – nitka) wprowadził w 1882 r. W. Flemming. Mejozę ( meiosis – zmniejszenie) opisano rok później, w 1883 r.
+
+### Co widać na rycinach mitozy w źródle?  []
+Ryciny Drewy pokazują kilka szczegółów, których tekst nie omawia. W kolejności faz:
+- Profaza (ryc. 7.5) – przy jądrze widać centrosomy z mikrotubulami , a na chromosomach zaznaczono „centromer z kinetochorem”. Rycina pokazuje więc, skąd wychodzą mikrotubule wrzeciona; w części 1 SPF przygotowuje duplikację centrosomów w fazie S, a cyklina B–cdk1 – ich rozdzielenie ( ). W tekście o profazie Drewa pisze o „centriolach” – obie nazwy podajemy tak, jak stoją w źródle.
+- Na tej samej rycinie opisano już „znikające jąderko”, a otoczkę jądrową narysowano linią przerywaną – choć tekst przypisuje zanik jąderka i rozpad otoczki prometafazie. Wiąże się to z niekonsekwencją, o której mowa w części 1: prometafazę Drewa zalicza raz do profazy, raz do metafazy ( ).
+- Metafaza (ryc. 7.6) – w komórce widać pęcherzyki otoczki jądrowej , zapewne te „małe fragmenty”, na które otoczka rozpadła się w prometafazie (rycina tego nie wyjaśnia). Od chromosomów ułożonych w płytce metafazowej do biegunów wrzeciona podziałowego biegną włókna kinetochorowe .
+- Anafaza (ryc. 7.7) – rycina ma dwa podpisy: „chromatydy przesuwające się ku biegunom komórki” i „skręcające się włókna kinetochorowe”. Zapewne miało być „skracające się”: tekst mówi o skracaniu się włókien wrzeciona.
+
+### Czy ma znaczenie, w którym podziale zaszła nondysjunkcja?  []
+W części 1 ( ) wiesz, że nondysjunkcja może zajść w pierwszym albo w drugim podziale mejotycznym. Schemat w źródle (ryc. 7.12) pokazuje, że skutki są różne. Prześledź jedną parę homologów, tak jak w „Przykładzie” z części 1.
+Błąd w MI. Homologi tej pary nie rozdzielają się: oba trafiają do jednej komórki, a druga nie dostaje żadnego. MII rozdziela potem chromatydy prawidłowo. Komórka z dwoma homologami daje dwie gamety, które mają po dwa chromosomy tej pary (n + 1); komórka bez homologu – dwie gamety bez tego chromosomu (n − 1). Wszystkie cztery gamety są nieprawidłowe.
+Błąd w MII. MI przebiega prawidłowo – każda z dwóch komórek ma jeden chromosom tej pary. W jednej z nich chromatydy siostrzane nie rozchodzą się: powstaje jedna gameta n + 1 i jedna n − 1. Druga komórka dzieli się prawidłowo i daje dwie gamety prawidłowe (n).
+Wniosek: po błędzie w MI żadna gameta nie jest prawidłowa, po błędzie w MII – połowa. Po zapłodnieniu prawidłową gametą powstają zygoty:
+[TABELA]
+Błąd | Gamety | Zygoty
+MI | 2 × (n + 1), 2 × (n − 1) | 2n + 1 (trisomia) lub 2n − 1 (monosomia)
+MII | 1 × (n + 1), 1 × (n − 1), 2 × n | 2n + 1, 2n − 1 lub 2n (prawidłowa)
+[/TABELA]
+Dla człowieka (rachunek z 2n = 46): zygota 2n + 1 ma 47 chromosomów, a 2n − 1 – 45. Zespół Downa z części 1 – dodatkowa kopia chromosomu 21 – to przykład zygoty 2n + 1 (trisomia, monosomia – ).
+[ŹRÓDŁO] Źródło: Drewa s. 156–158, 161
+
+## Gdzie leżą geny regulatorów cyklu? Tabela loci  [c02-r-loci]
+W części 1 podaliśmy położenie dwóch genów: pRb (13q14, ) i p53 (17p13, ). Tabela Drewy „Loci najważniejszych genów kodujących białka regulujące cykl komórkowy” zestawia ich 20. Jak ją czytać: liczba przed literą to numer chromosomu, p – ramię krótkie, q – ramię długie, a liczby po literze – prążek (pełne objaśnienie zapisu – ).
+[TABELA]
+Cykliny i kinazy | Locus | Inhibitory, p53, pRb | Locus
+cyklina A1 | 13q12.3-q13 | p15 (INK4B) | 9p21
+cyklina A2 | 4q25-q31 | p16 (INK4A) | 9p21
+cyklina B1 | 5q12 | p18 (INK4C) | 1p32.3
+cyklina B2 | 15q21.3 | p19 (INK4D) | 9p21
+cyklina D1 | 11q13 | p21 (Cip1) | 6p21.2
+cyklina D2 | 12p13 | p27 (Kip1) | 12p13.1-p12
+cyklina D3 | 6p21 | p57 (Kip2) | 11p15.5
+cyklina E1 | 19q12 | p53 | 17p13.1
+cyklina E2 | 8q22.1 | pRb | 13q14.1-q14.2
+kinaza cyklinozależna 4 (CDK4) | 12q13 |  | 
+kinaza cyklinozależna 6 (CDK6) | 7q21-q22 |  | 
+[/TABELA]
+Co z tabeli łączy się z tekstem?
+- Cykliny D1–D3 z części 1 to produkty trzech różnych genów na trzech chromosomach (11, 12 i 6). Tabela pokazuje też, że cykliny A, B i E mają po dwa geny (A1 i A2, B1 i B2, E1 i E2) – tekst Drewy tego nie omawia.
+- Trzy z czterech genów INK4 – p15, p16 i p19 – leżą w tym samym prążku 9p21. Zgadza się to ze wspólnym locus p16 i p19 na chromosomie 9 ( ). Gen p18 leży gdzie indziej – na chromosomie 1.
+- Loci pRb i p53 są te same co w ramkach „Pojęcie” w części 1.
+[ŹRÓDŁO] Źródło: Drewa s. 145
+
+## Skróty z tego rozdziału – pełne nazwy  [c02-r-skroty]
+Skrót, pełna nazwa (jak w źródłach) i krótkie przypomnienie, czym jest w tym rozdziale ( , ). Bez rozwinięcia w źródłach podano m.in. CBP, TBP, TFIIH, EMA, GSK-3β, IGFBP-3, Grb2, Sos, CDC25, Wee1, Mik1, nim1, cAMP, TGFβ1, IFNα, PDGF, FGF, TPA, DMSO, E1AF, E2A i AP-2 – te nazwy wystarczy znać jako nazwy.
+[TABELA]
+Cykl i kompleksy | Pełna nazwa · czym jest
+G0, G1, S, G2, M | G1, G2 – ang. gap 1 , gap 2 (przerwa pomitotyczna, przedmitotyczna); S – synteza DNA; M – mitoza z cytokinezą; G0 – spoczynek
+cdk (Cdk, CDK) | ang. cyclin-dependent kinase · kinaza zależna od cyklin
+CKI = CDKI | ang. cyclin-dependent kinase inhibitor · inhibitor kinaz zależnych od cyklin (CKI – Drewa, CDKI – Jóźwiak)
+CAK | kinazy aktywujące cdk · kompleks cyklina H–cdk7
+SPF | czynnik promujący fazę S · cyklina A–cdk2
+MPF | czynnik promujący fazę M · cykliny B i A + cdk1
+APC, APC/C | ang. anaphase promoting complex · kompleks promujący anafazę (cyklosom)
+MI, MII | mejoza I (podział redukcyjny), mejoza II (podział ekwacyjny)
+n, 2n | liczba haploidalna, diploidalna
+[/TABELA]
+[TABELA]
+Mitogen i pRb | Pełna nazwa · czym jest
+MAPK | ang. Mitogen-Activated Protein Kinases · kinazy aktywowane mitogenami
+MAPKKK, MAPKK | kolejne kinazy kaskady MAPK; MAPKK = MEK1, MEK2
+ERK | ang. Extracellular Regulated Kinase · kinaza regulowana sygnałami zewnątrzkomórkowymi
+AP-1 | dimerowy czynnik transkrypcyjny z białek Fos i Jun
+TRE | ang. Tetradecanoyl phorbol acetate-Responsive Element · sekwencja wiązana przez AP-1
+PI3K | kinaza fosfatydyloinozytolowa 3
+Akt | kinaza białkowa B
+pRb, Rb | białko retinoblastoma (siatkówczak) · białko kieszeniowe
+E2F, DP | czynnik transkrypcyjny i białko, z którym tworzy heterodimer (bez rozwinięcia w źródłach)
+HAT | histonowa transferaza acetylowa (acetylotransferaza)
+HDAC | deacetylaza histonów (HDAC1–HDAC3)
+PIC | kompleks TFIIA/TFIID (bez rozwinięcia w źródle)
+[/TABELA]
+[TABELA]
+p53, straż genomu, CKI | Pełna nazwa · czym jest
+TP53 ( P53 ) | ang. tumour suppressor protein p53 · gen białka p53 ( P53 – zapis Drewy)
+wtp53 | ang. wild type p53 · prawidłowe (niezmutowane) białko p53
+hdm2 = MDM2 | ang. murine/mouse double minute 2 homolog · ligaza ubikwityny wyciszająca p53 (hdm2 – Drewa, MDM2 – Jóźwiak)
+DNA-PK | kinaza białkowa zależna od DNA · fosforyluje p53
+ATM | produkt genu ataksji-teleangiektazji · fosforyluje p53
+PCNA | ang. proliferating cell nuclear antigen · antygen jądrowy proliferujących komórek
+Cip1 = WAF1 | gen białka p21
+IGF-1 | insulinopodobny czynnik wzrostu
+Fas = APO-1 = CD95 | białko receptorowe; droga apoptozy indukowanej przez p53
+Bcl-2 | ang. B-cell lymphoma 2 · rodzina białek regulujących apoptozę
+MSH2, PMS2, MLH1 | ang. mutS homologue 2 , postmeiotic segregation increased 2 , mutL homologue 1 · białka naprawy DNA
+BRCA1, BRCA2 | ang. breast cancer type 1/2 susceptibility protein · naprawa pęknięć dwuniciowych
+INK4, Cip/Kip | dwie rodziny CKI (bez rozwinięcia w źródłach)
+HBP1 | ang. HMG-box protein-1 · hamuje indukcję genu Cip1
+IL-6, IL-2 | interleukina 6, interleukina 2
+[/TABELA]
+[ŹRÓDŁO] Źródło: Drewa s. 144–151, 155 · Jóźwiak s. 69–73
+
+
+======== E. ŹRÓDŁA (przycięte do zakresu z mapy) ========
+
+
+---------- drewa_r07.txt (s. 143–151, 155–162) ----------
+[Strona 143]
+
+"0. CYKL ŻYCIOWY KOMÓRKI
+/_ | JEGO ZABURZENIA
+
+Rafał Czajkowski, Anna Kaźnica
+
+cykl komórkowy
+
+mechanizmy regulacji cyklu komórkowego
+przebieg mitozy
+
+przebieg mejozy
+
+pytania
+
+piśmiennictwo
+
+Cykl komórkowy jest procesem umożliwiającym podział komórki na dwie komórki potomne. Rozwój organizmu z jednokomórkowej zygoty do postaci dorosłej wymaga bardzo wielu
+powtórzeń cyklu komórkowego. W komórkach eukariotycznych cykl komórkowy obejmuje
+dwa podstawowe procesy: syntezę DNA (faza S) oraz mitozę (faza M). Fazy S oraz M są
+przedzielone fazami G (G1 i G2), a cykl komórkowy przebiega w następującej kolejności
+faz: Gl, S, G2, M. Komórki niestymulowane czynnikami mitogennymi znajdują się w fazie
+spoczynku GO. Faza Gl jest fazą wzrostu i okresem przygotowania chromosomów do replikacji. W fazie S zachodzi proces syntezy DNA (replikacji) oraz duplikacji centrosomów.
+Faza G2 jest fazą przygotowującą komórkę do fazy M (mitozy). Przejście komórki przez poszczególne fazy cyklu komórkowego kontrolują takie białka cytoplazmatyczne, jak cykliny
+oraz kinazy zależne od cyklin (cdk). W fazie G1 działają cykliny D oraz kinazy cdk4/cdk6,
+a w późnej fazie G1 cyklina E, w fazie S cykliny A iE oraz cdk2, w fazie M cykliny Bi A oraz
+cdkl. Poziomy kinaz cdk są względnie stałe, a do ich aktywacji potrzebne jest połączenie
+z odpowiednią cykliną, których stężenie rośnie w poszczególnych fazach cyklu komórkowego. Kinazy cdk przyłączają reszty fosforanowe do odpowiednich białek, które kontrolują
+przejście komórki do następnej fazy cyklu.
+
+7.1
+Regulacja cyklu
+komórkowego
+
+W większości komórek dorosłego organizmu
+wielokomórkowego następuje cykliczny podział. Największą aktywnością proliferacyjną
+charakteryzują się komórki nabłonków oraz
+komórki szpiku kostnego. Cykl komórkowy
+jest precyzyjnie kontrolowany przez czynniki zewnątrz- i wewnątrzkomórkowe (punkty
+
+kontrolne - check-points). Prawidłowy przebieg proliferacji oraz homeostaza organizmu
+zależą od precyzji działania punktów kontrolnych.
+
+Zaburzenia mechanizmów kontroli cyklu komórkowego są wynikiem działania
+różnych czynników. Najczęściej są spowodowane mutacjami, takimi jak amplifikacje genów, translokacje, mutacje punktowe, delecje
+homozygotyczne, utrata heterozygotyczności
+całych fragmentów chromosomu, zmiany
+w metylacji promotora oraz insercje wiruso-
+
+[Strona 144]
+
+144
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+we. Mogą one uszkadzać różne geny kontrolujące poszczególne fazy cyklu komórkowego, ale najczęściej dotyczą genów kodujących
+białka aktywne w fazie Gl.
+
+Komórki, które „uwolniły się” spod kontroli mechanizmów regulujących proliferację, dzielą się szybko i w sposób niekontrolowany. Liczba komórek z uszkodzonym DNA
+znacznie rośnie, a szybko przebiegający cykl
+komórkowy sprzyja powstawaniu nowych
+mutacji. Uszkodzenia materiału genetycznego przyczyniające się do zaburzeń poziomu
+białek regulujących cykl komórkowy, a także
+defekty uniemożliwiające prawidłowe funkcjonowanie punktów kontrolnych odpowiadają za zachwianie homeostazy komórki. Zaburzenia homeostazy komórki są przyczyną
+wielu zmian chorobowych, zwłaszcza chorób
+nowotworowych.
+
+7.1.1
+
+Regulacja fazy G1
+cyklu komórkowego
+
+Cykl komórkowy regulowany jest za pomocą
+cyklinozależnych kinaz serynowo-treoninowych (cdk), cyklin oraz endogennych inhibitorów cdk. W zależności od poziomu wyżej
+wymienionych białek komórka przechodzi
+do następnej fazy lub zostaje zatrzymana na
+określonym etapie cyklu komórkowego. Podstawową zasadą regulacji cyklu jest uruchamianie reakcji fosforylacji i defosforylacji odpowiednich białek. Regulacja ta odbywa się
+głównie w fazie Gl z wykorzystaniem szlaku pRb (pRb pathway) oraz szlaku p53 (p53
+pathway).
+
+7.1.2
+
+Droga sygnałowa mitogen—
+—jadro komórkowe
+
+Czynniki mitogenne przyłączając się do receptorów zlokalizowanych na powierzchni
+komórki uruchamiają kaskadę procesów
+biochemicznych, które przenoszą sygnał do
+
+jądra komórkowego. Najlepiej poznana jest
+droga sygnałowa wykorzystująca receptorową kinazę tyrozynową. Pobudzenie receptora przez mitogen powoduje fosforylację
+reszt tyrozynowych w domenach cytoplazmatycznych białka receptorowego. Do reszt
+fosfotyrozynowych przyłącza się białko adaptorowe Grb2, które bierze udział w tworzeniu kompleksu białkowego Ras-Sos. Białko
+Ras przy udziale GTP aktywuje białko Raf,
+mające aktywność kinazy białkowej uruchamiającej kaskadę kinaz MAP. Kaskada
+kinaz aktywowanych mitogenami MAPK
+(Mitogen-Activated Protein Kinases) obejmuje MAPKKK, MAPKK (MEK1 i MEK2)
+oraz kinazę białkową regulowaną sygnałami
+zewnątrzkomórkowymi ERK (Extracellular
+Regulated Kinase), które są poddawane fosforylacji według podanej kolejności. Kinaza
+ERK umożliwia przyłączenie reszty fosforanowej do licznych białek, m.in. Jun, Fos, Myc,
+SRF, Elk-1, c-Ets-1, c-Ets-2, Sapla. Białka te
+są czynnikami transkrypcyjnymi wpływającymi na ekspresję genów regulujących cykl
+komórkowy.
+
+Czynniki transkrypcyjne Fos (c-Fos,
+FosB, Fra-1, Fra-2) oraz Jun (c-Jun, JunB,
+JunD) tworza dimery typu suwaka leucynowego, które nazywa sie dimerowym czynnikiem transkrypcyjnym AP-1. Białka Fos tworzą heterodimery z białkami rodzin Jun oraz
+ATF, natomiast białka Jun łączą się w dimery
+z ATF2. Białka Jun łączą się w mało stabilne homodimery. W obrębie DNA AP-1 łączy
+się z sekwencją TGAC/GTCA zwaną też sekwencją TRE (Tetradecanoyl phorbol acetate-
+-Responsive Element). Sekwencja TRE znajduje się w promotorach wielu genów, wśród
+których znajduje się gen kodujący cyklinę D1.
+Oddziaływania dimerów z sekwencją TRE
+wskazują na możliwość hamowania transkrypcji przez kompleks Jun-Fos oraz jej nasilania przez kompleks Jun-Jun.
+
+Znane są jeszcze co najmniej dwie drogi
+sygnałowe wpływające na przejście cyklu komórkowego z fazy GO do fazy Gl. Pierwsza
+związana jest z aktywnością kinazy fosfatydyloinozytolowej 3 (PI3K), druga zaś z białkami rodziny Rho wiążącymi GTP.
+
+[Strona 145]
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+7.2
+
+Udział cyklin w fazie G1
+cyklu komórkowego
+
+Fazę G1 cyklu komórkowego można podzielić
+na wczesną i późną. Do fazy wczesnej należą
+cykliny D (D1-D3), których poziom podwyższa się po zadziałaniu czynników mitogennych. Cykliny D stanowią podjednostkę
+regulatorową dla kinaz cdk4 i cdk6. Proces
+tworzenia kompleksów cyklina D-cdk4/cdk6
+przebiega pod kontrolą opisanej wyżej kinazy białkowej regulowanej sygnałami zewnątrzkomórkowymi (ERK). Pod wpływem
+mitogenów ERK fosforyluje białka, które ułatwiają połączenie cyklin D z cdk4 lub cdk6.
+Tak powstałe kompleksy przedostają się do
+jądra komórkowego, gdzie zostają uaktywnione przez kinazy aktywujące cdk (CAK).
+Właściwości kinaz CAK ma kompleks cyklina H-cdk7 wchodzący w interakcje z czynnikiem transkrypcyjnym TFIIH.
+
+Aktywny kompleks cyklina D1-cdk4/
+/cdk6 spełnia w komórce dwie ważne funkcje odpowiedzialne za prawidłowy przebieg
+wczesnej fazy Gl cyklu komórkowego. Są
+nimi zdolność do fosforylacji białka Rb oraz
+proces sekwestracji białek Cip/Kip. Dzięki
+tym procesom w późnej fazie G1 dochodzi do
+aktywacji kompleksu cyklina E-cdk2, która
+umożliwia przejście przez punkt restrykcyjny G1/S nawet przy braku działania bodźców
+mitogennych. Loci najważniejszych genów
+kodujących cykliny biorące udział w regulacji cyklu komórkowego przedstawiono
+w tab. 7.1.
+
+7.2.1
+Szlak sygnałowy pRb
+
+W fazie Gl białko Rb (pRb) jest połączone
+z heterodimerem utworzonym przez czynnik
+transkrypcyjny E2F oraz białka rodziny DP.
+Czynnik transkrypcyjny E2F w połączeniu
+z białkami E2F-DP jest nieaktywny biochemicznie. Po przyłączeniu reszt fosforanowych
+
+Tabela 7.1 Loci najważniejszych genów
+kodujących białka regulujące cykl
+komórkowy
+[""WNA"" EA
+Cyklina A1 13q12.3-q13
+| Cyklina A2 | 4q25-931
+| Cyklina B1 5q12
+Cyklina B2 15q21.3
+| Cyklina D1 11q13
+| cyklina D2 12p13
+| Gyklina D3 6p21
+| Cyklina E1 19q12
+| Cyklina E2 8q22.1
+| Kinaza cyklinozależna 4 12q13
+(CDK4-cyclin-dependent
+kinase 4)
+| Kinaza cyklinozależna 6 7q21-q22
+(CDK6-cyclin-dependent
+kinase 6)
+| pls(INK4B) 9p21
+| p16(INK4A) 9p21
+| pis(INKaC) 1p32.3
+| p19(INK4D) 9p21
+| p21(Cip1) 6p21.2
+| p27(Kipt) 12p13.1-p12
+| p57(Kip2) | 11p15.5
+| p53 17p13.1
+| pRb 13q14.1-q14.2
+
+białko Rb odłącza się od kompleksu, uwalniając czynnik transkrypcyjny E2F. Czynnik
+ten inicjuje ekspresję licznych genów odpowiedzialnych za przejście komórki z fazy G1
+do fazy S cyklu komórkowego (ryc. 7.1).
+
+Jednym z genów indukowanych przez
+czynnik transkrypcyjny E2F jest gen kodujący cyklinę E. Kompleks cyklina E-cdk2
+przyczynia się do hiperfosforylacji białka Rb,
+co prowadzi do odłączenia czynnika transkrypcyjnego E2F. Jest to przykład dodatniego sprzężenia zwrotnego przyspieszającego
+proces przejścia faz G1/S.
+
+Czynniki transkrypcyjne E2F (E2F1-
+-E2F5) mają domenę aktywacyjną, do któ-
+
+145
+
+[Strona 146]
+
+146
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+6 cAMP
+
+GI
+
+czynnik wzrostu
+TGF-B
+
+| p27
+
+histon H1, laminy,
+wimentyna, kalmodesmon
+iinne
+
+naprawa
+DNA
+
+CDC25
+G2 nim1 —— 4 Weel/Mik1
+
+i
+
+uszkodzenie DNA
+
+p53
+
+| BCL-2
+transkrypcja” —
+y | DABAX"T
+
+APOPTOZA
+
+p21WAF1
+replikacja DNA S
+
+—— hamowanie
+—» indukowanie
+
+S/S
+
+Ryc. 7.1 Mechanizmy regulacji cyklu komórkowego (wg Hirama i Koeffler, 1995, zmodyfikowano).
+
+rej przyłączają się różne białka aktywujące
+cząsteczkę E2F. Do czynników aktywujących E2F należą białka TBP, TFIIH, hdm2,
+CBP. Najlepiej poznanym białkiem jest CBP,
+które obok takich białek, jak P/CAF, GCNS5,
+TAF250, SRCI, p300, ma aktywność histonowej transferazy acetylowej (HAT). Acetylacja
+reszt lizynowych na N-końcu białka histonowego prowadzi do zmiany konformacji
+nukleosomów, ułatwiając dostęp czynników
+transkrypcyjnych E2F do promotora. Domena aktywacyjna białka E2F oprócz zdolności
+wiązania powyższych białek jest miejscem
+przyłączania czynników hamujących aktywność E2F, do których należy białko Rb. Białko
+Rb ma zdolność jednoczesnego łączenia się
+z domeną aktywacyjną w obrębie E2F oraz
+deacetylazą histonową (HDAC1-HDAC3).
+Enzym ten jest odpowiedzialny za deacetylację białek histonowych, co w konsekwencji
+prowadzi do przekształcenia chromatyny
+w postać nieaktywną. Procesy acetylacja/deacetylacja odgrywają kluczową rolę w kon-
+
+troli aktywności czynników transkrypcyjnych E2F (ryc. 7.2).
+
+W licznych badaniach wykazano istnienie jeszcze innego mechanizmu, za którego
+pomocą E2F i pRb regulują transkrypcję bez
+udziału powyższych enzymów modyfikujących białka histonowe. Kluczową rolę w tym
+mechanizmie odgrywa kompleks TFIIA/
+/ TFIID, tzw. PIC. Przy udziale E2 F kompleks
+ten przyłącza się do promotora, w wyniku
+czego czynnik transkrypcyjny E2F staje się
+oporny na represyjne działanie pRb. Regulacja tego procesu przez pRb polega na blokowaniu przyłączenia PIC do promotora.
+Białko Rb prawdopodobnie hamuje procesy
+transkrypcji czynników E2F1 i E2F2, uniemożliwiając tym samym ekspresję licznych
+genów fazy S.
+
+Nie poznano jeszcze wszystkich czynników regulujących ekspresję genów fazy S.
+Znane są białka o dużym podobieństwie
+strukturalnym do E2F, np. EMA, które odgrywa odmienną rolę w regulacji cyklu ko-
+
+[Strona 147]
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+NIEAKTYWNA POSTAĆ CHROMATYNY
+
+HAT | | HDAC1-HDAC3
+AKTYWNA POSTAĆ CHROMATYNY
+
+Ryc.7.2 Udział enzymów HAT/HDAC w zmianach konformacji chromatyny.
+
+mórkowego (zamiast domeny aktywacyjnej
+ma tzw. domenę hamującą). Białko EMA
+prawdopodobnie hamuje transkrypcję genów kontrolowanych przez E2F i nie podlega
+regulacji przez pRb.
+
+7.2.2
+Sekwestracja Cip/Kip
+
+Drugą, niekatalityczną funkcją kompleksu cyklina D-cdk4/cdk6 jest „sekwestracja”
+inhibitorów cdk (CKI) (ryc. 7.3). Proces ten
+dotyczy białek p21CiP1 i p27KiPL związanych
+z kompleksem cyklina E-cdk2. Sekwestracja
+polega na odłączeniu białek Cip/Kip od kompleksu cyklina E-cdk2, który w ten sposób jest
+aktywowany. Powstały w wyniku sekwestracji kompleks cyklina D-cdk4/cdk6-Cip/Kip
+zachowuje zdolność fosforylacji pRb. Białka
+Cip/Kip ułatwiają powstanie kompleksu cyklina D-cdk4/cdk6 oraz jego transport do
+jądra komórkowego.
+
+sygnał mitogenny
+
+cyklina D-cdk4/cdk6
+cyklina E-cdk2-Cip/Kip
+(nieaktywny)
+
+Ryc. 7.3 Proces sekwestracji Cip/Kip.
+
+Kompleks cyklina E-cdk2 przyspiesza
+własną aktywację przez fosforylację reszty
+treoninowej (Thr-187), białka p27'P! rozpoczynającą proces jego degradacji.
+
+Przedstawione mechanizmy prowadzące
+do powstania aktywnego kompleksu cyklina
+E-cdk2 przyczyniają się do hiperfosforylacji
+białka Rb w późnej fazie G1. Hiperfosforylowane pRb odgrywa kluczową rolę w regulacji
+przejścia z fazy Gl do fazy S cyklu komórkowego. Z jednej strony czynnik transkrypcyjny E2F indukuje ekspresję licznych genów
+fazy S, z drugiej zaś ma zdolność hamowania promotora genu kodującego cyklinę D1.
+W ten sposób dochodzi do obniżenia ilości
+cykliny DI, co jest niezbędne do przejścia
+komórek z fazy G1 do fazy S cyklu komórkowego.
+
+Spadek ilości cykliny D1 związany jest
+również z jej degradacją na drodze ubikwitynowo-proteasomowej. Proces ten zależy
+od drogi sygnałowej Ras, obejmującej kinazę
+fosfatydyloinozytolową 3 (PI3K) oraz kinazę
+białkową B (Akt), która hamuje fosforylację
+cykliny Dl. Zahamowanie drogi sygnałowej Ras prowadzi do fosforylacji cykliny D1
+w miejscu Thr-286 przez kinazę GSK-3B.
+Ufosforylowana cyklina D1 przechodzi z jądra komórkowego do cytoplazmy, gdzie następnie zostaje zdegradowana. Układ ubikwitynowo-proteasomowy degraduje również
+inne białka odgrywające podstawową rolę
+w progresji cyklu komórkowego. Do białek
+tych należą inhibitory kinaz zależnych od
+cyklin (CKI), białka supresorowe oraz inne
+cykliny fazy Gl.
+
+cyklina D-cdk4/cdk6-Cip/Kip
+
+(aktywny)
++ cyklina E-cdk2
+sekwestracja (aktywny)
+—————-
+
+,
+
+hiperfosforylacja pRb
+
+147
+
+[Strona 148]
+
+148
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+7.2.3
+Szlak sygnałowy p53
+
+Jednym z ważniejszych czynników regulujących cykl komórkowy jest odkryte ponad
+30 lat temu białko p53. Gen P53 kodujący to
+białko charakteryzuje się znaczną homologią międzygatunkową, co można przypisać
+ogromnemu znaczeniu białka p53 w regulacji cyklu komórkowego, indukcji apoptozy
+oraz onkogenezie. Zasadniczą rolą tego białka jest utrzymanie stabilności genomu narażonego na działanie czynników genotoksycznych (np. promieniowanie UV). Zadanie
+to realizowane jest przez aktywację genów
+odpowiedzialnych za naprawę uszkodzonego DNA, bezpośredni udział w naprawie
+oraz przez kontrolę prawidłowości replikacji
+DNA.
+
+Prawidłowe białko p53 (wtp53 - wild
+type p53) występuje w komórkach w postaci
+nieaktywnej. Do aktywacji białka p53 dochodzi pod wpływem różnych czynników
+wewnątrzkomórkowych, jak i zewnątrzkomórkowych. Aktywacja obejmuje zmiany
+jakościowe na drodze mechanizmów potranslacyjnych (fosforylacja p53), a także zmiany
+ilościowe wyrażające się wzrostem całkowitego poziomu białka p53 w komórce. Zdolność
+do fosforylacji cząsteczki p53 wykazują m.in.
+takie białka, jak DNA-PK (kinaza białkowa
+zależna od DNA), MAPK (kinazy białkowe
+aktywowane mitogenem) i ATM (produkt
+genu ataksja-telangiektazja).
+
+Po zadziałaniu czynników aktywujących cząsteczki białka łączą się w tetramery
+i w takiej postaci oddziałują z promotorami
+odpowiednich genów. Wśród wielu genów
+aktywowanych przez p53 na szczególną uwagę zasługują: gadd45, Cipl, hdm2, Bax, Fas,
+IGFBP-3. Produkty białkowe genów gadd45
+oraz Cipl odpowiedzialne są za hamowanie
+cyklu komórkowego. W przeciwieństwie
+do białka p21C'P! drogi, za pomocą których
+białko gadd45 indukuje ten proces, nie są
+do końca poznane. Wiadomo natomiast, że
+gadd45 potrafi łączyć się z antygenem jądrowym proliferujacych komórek PCNA (Proli-
+
+ferating Cell Nuclear Antigen) i hamować jego
+aktywność.
+
+W przypadku nieefektywnej naprawy
+DNA białko p53 indukuje apoptozę, chroniąc w ten sposób genom przed kumulacją
+mutacji, które w efekcie mogłyby prowadzić
+do transformacji nowotworowej. Indukcja
+apoptozy przez białko p53 realizowana jest
+przez wykorzystanie kilku prawdopodobnych mechanizmów. Jednym z lepiej poznanych jest mechanizm wykorzystujący
+nasilenie syntezy Bax z jednoczesnym obniżeniem poziomu Bcl-2. Innym potencjalnym
+mediatorem apoptozy indukowanej przez
+p53 jest białko receptorowe dla TNF, tzw.
+Fas/APO-1 (CD95). Trzecia potencjalna droga indukcji apoptozy wykorzystuje IGFBP-3,
+który jest antagonistą insulinopodobnego
+czynnika wzrostu IGF-1. Istotą tego procesu jest obniżenie aktywności IGF-1 lub poziomów receptora IGR-1, który ma zdolność
+ochrony fibroblastów przed apoptozą indukowaną promieniowaniem UV. Badania dowiodły, że możliwe jest hamowanie apoptozy
+indukowanej przez białko p53. Za proces ten
+odpowiedzialna jest droga Ras-PI3K-Akt,
+która prowadzi do fosforylacji i inaktywacji
+kaspazy 9.
+
+W warunkach fizjologicznych aktywność białka p53 podlega precyzyjnej kontroli
+(ryc. 7.4). Rolę regulatora funkcji p53 spełnia białko hdm2, z którym cząsteczka p53
+tworzy heterodimer. Takie połączenie ma
+dwie konsekwencje. Po pierwsze, p53 traci
+zdolność indukowania ekspresji genów; po
+drugie, przyspiesza proces degradacji p53
+na drodze ubikwitynowo-proteasomowej.
+Można zauważyć, że oddziaływania między
+p53 a hdm2 odbywają się na zasadzie pętli
+ujemnego sprzężenia zwrotnego. Na aktywność czynnika transkrypcyjnego p53 wpływa również białko p300, które pełni dwie
+przeciwstawne funkcje. Przy aktywności
+acetylotransferazy może działać jako koaktywator transkrypcji. Udowodniono też, że
+białko p300 nasila degradację cząsteczki p53
+na drodze ubikwitynowo-proteasomowej.
+
+Rola białka p53 w regulacji cyklu komórkowego nie ogranicza się tylko do kontroli
+
+[Strona 149]
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+p19!NK4d | hdm2
+
+,
+
+stabilizacja p53
+
+p19!NK4d
+
+uszkodzenie DNA
+
+<———
+
+hdm2 |a| p53 p53 |— | p53 | hdm2
+p53 p53 |
+{ { degradacja p53
+p21 Bax
+
+Ryc. 7.4 Szlak sygna-
+
+zatrzymanie cyklu
+
+apoptoza
+
+komórkowego
+
+łowy p53.
+
+przejścia cyklu komórkowego z fazy Gl do
+S. Zahamowanie cyklu komórkowego przy
+udziale tego białka dotyczy również fazy
+G2. Proces ten jest prawdopodobnie związany z hamowaniem ekspresji topoizomerazy
+DNA II a, enzymu odpowiedzialnego za replikację i transkrypcję DNA.
+
+7.3
+
+Inhibitory kinaz zależnych
+od cyklin
+
+Ze względu na budowę cząsteczki białka
+inhibitory kinaz zależnych od cyklin (CKI)
+można podzielić na dwie grupy. Pierwsza
+z nich obejmuje białka INK4 (p16!NK4a,
+p15INK4b, p18!NKAc, plgINK4d) do drugiej
+zaś należą białka Cip/Kip (p21CP!, p27K1PL,
+p57Kip2),
+
+Białka INK4 zatrzymują cykl komórkowy
+w fazie Gl na drodze zależnej od białka Rb.
+Przyłączając się do kinaz cdk4/cdk6 hamują
+powstawanie aktywnego kompleksu cyklina
+D-cdk4/cdk6. W ten sposób utrzymują stan
+hipofosforylacji białka Rb, uniemożliwiając „uwolnienie” czynnika transkrypcyjnego E2F, którego aktywność jest niezbędna
+do pokonania punktu restrykcyjnego G1/S.
+Nadekspresja białek INK4 prowadzi do odwrócenia procesu sekwestracji, tzn. uwolnienia białek Cip/Kip z kompleksu cyklina
+D-cdk4/cdk6 i wytworzenia nieaktywnego
+
+kompleksu cyklina E-cdk2-Cip/Kip. Białko
+pl9INK4d zatrzymuje cykl komórkowy również w mechanizmie niezależnym od „drogi
+pRb”. Przyłączając się do cząsteczki hdm2
+chroni białko supresorowe p53 przed inaktywacją i degradacją, prowadząc do wzrostu
+poziomu tego białka i zatrzymując cykl komórkowy w fazie Gl (ryc. 7.4). W licznych
+badaniach udowodniono, że niezależnie od
+pRb może również działać białko p15!NK%,
+Geny kodujące białka pl6!NK4a oraz
+p19!NK4d zajmują to samo locus INK4a na
+chromosomie 9. Mają one wspólne eksony 2
+i 3, natomiast różnica dotyczy eksonu pierwszego (ekson la dla białka pl6!NK44 oraz
+ekson 18 dla białka p19!NK4d), Każdy z genów
+ma własną sekwencję promotorową, a nasilenie ekspresji tych genów zależy od różnych
+czynników. Poziom białka pl6lNK% podnosi
+się typowo w trzech sytuacjach: pod wpływem onkogennego Ras, w komórkach starzejących się oraz wskutek inaktywacji białka Rb
+lub p53. Ekspresja białka p19!NK44, podobnie
+do pl8!NK4c, zmienia się okresowo w czasie
+cyklu komórkowego i osiąga szczyt w fazie
+S. Najsilniejszymi bodźcami stymulującymi
+ekspresję p19!NK4d są sekwencje onkogenne,
+np. Ela, v-abl, myc, oraz czynnik transkrypcyjny E2F1. Szybka aktywacja białka p18!N¥4«
+odbywa się m.in. przy udziale IL-6, np. podczas różnicowania limfocytów B. Najlepiej
+poznanymi czynnikami indukującymi ekspresję genu kodującego białko p15!NK4> są
+
+149
+
+[Strona 150]
+
+150
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+'TGgi oraz IFNq. Cząsteczka TGFp; dodatkowo stabilizuje cząsteczkę białka p15!NK4b,
+
+W odróżnieniu od białek INK4, białka
+Cip/Kip spełniają dwie różne funkcje w regulacji fazy G1 cyklu komórkowego. Łącząc
+się z kompleksem cyklina E-cdk2 pełnią rolę
+inhibitorów, natomiast w połączeniu z kompleksem cyklina D-cdk4/cdk6 działają jako
+pozytywne regulatory. Kierunek działania
+białek Cip/Kip określony jest także przez
+ich aktywność oraz zawartość w komórce.
+Niskie stężenie białek Cip/Kip promuje progresję cyklu komórkowego, natomiast wysoki poziom inicjuje ich właściwości hamujące.
+Działanie promujące cykl komórkowy polega
+na ułatwieniu powstawania kompleksu cyklina D-cdk4/cdk6, jego stabilizacji oraz transporcie do jądra komórkowego. Mechanizmy
+te zostały dokładnie opisane na przykładzie
+białka p21@P!.
+
+Ekspresja genu kodującego białko p21CiP!
+odbywa się na drodze zależnej i niezależnej
+od białka p53.
+
+W przypadku indukcji ekspresji genu
+Cipl (p21WAFI) na drodze zależnej od p53
+ważną rolę odgrywają czynniki genotoksyczne. Uszkodzenie materiału genetycznego
+prowadzi do indukcji prawidłowego białka
+p53 (wtp53), które nasila transkrypcję genu
+Cipl. Wysokie stężenia białka p21C'P! sprzyjają powstawaniu nieaktywnych kompleksów
+cyklina E-cdk2-p21. Dochodzi więc do sytuacji, w której nie następuje hiperfosforylacja
+białka Rb, co w efekcie prowadzi do zatrzymania cyklu komórkowego w fazie G1. Opisano też mechanizmy, za pomocą których
+białko p21CiPl bezpośrednio reguluje aktywność czynnika transkrypcyjnego E2F na
+drodze niezależnej od cdk i białka Rb. Białko
+p53 zatrzymuje również cykl komórkowy bez
+udziału inhibitorów (CKI), obniżając aktywności kinaz CAK.
+
+Droga niezależna od p53 uaktywniana
+jest przez czynniki indukujące proces różnicowania komórek (np. kwas retinowy, TPA,
+DMSO) oraz czynniki wzrostu (np. PDGF,
+FGF, TGFp). Ekspresja genu kodującego
+białko p21GP! na drodze niezależnej od p53
+regulowana jest przez liczne czynniki trans-
+
+krypcyjne. Silnymi aktywatorami promotora
+genu Cipl są m.in. czynniki transkrypcyjne
+E1AF, E2A, E2Fl i E2F3, AP-2, białko supresorowe BRCAI oraz IFNg. Wśród białek
+hamujących indukcję tego genu można wymienić niedawno odkryte białko wiążące
+pRb, tzw. HBP1 (HMG-box protein-1). Białko p21CP! hamuje też proces replikacji DNA
+przez bezpośrednie związanie PCNA. Nie
+wpływa natomiast na udział PCNA w naprawie uszkodzonego DNA.
+
+Białka p27KiPl oraz p57KiP2 odgrywają
+podobną rolę w regulacji cyklu komórkowego do białka p21GP!, W zależności od ich
+poziomu w komórce mogą spełniać funkcje
+inhibitora lub czynnika promującego cykl
+komórkowy. Ekspresja genu Kipl jest jednakowo nasilona zarówno w komórkach dzielących się, jak i w fazie spoczynku, co wskazuje
+na potranslacyjny mechanizm regulacji jego
+aktywności i poziomu w komórce. Jednym
+z lepiej poznanych czynników działających
+w mechanizmie potranslacyjnym jest czynnik wzrostu TGFp. TGFg przyczynia się do
+wzrostu poziomu białka p27K-P! (również
+pL5INK4b, p21CiPl), co w konsekwencji prowadzi do zatrzymania cyklu komórkowego
+w fazie Gl.
+
+Znane są również czynniki, które przyczyniając się do regulacji wpływają na transkrypcję genu kodującego białko p27K-PL,
+Przykładem antymitogenów nasilających
+ekspresję genu Kipl mogą być interleukina 6,
+IFN, oraz dioksyny. Do czynników represyjnych należy np. interleukina 2.
+
+W przeciwieństwie do innych inhibitorów degradacja białka p27*iP! następuje
+w dwóch niezależnych mechanizmach. Jeden
+związany jest z układem ubikwitynowo-proteasomowym, drugi zaś dotyczy ATP-zależnej proteolizy w zakresie domeny wiążącej cyklinę. Białka p27*'P! oraz p57*'P? odgrywają
+ważną rolę podczas różnicowania komórek,
+ale udział p57KiP2 w tym procesie wydaje się
+o wiele bardziej istotny. Dowodem potwierdzającym znaczący udział białka p57KiP2
+podczas różnicowania jest to, że w organizmach pozbawionych tego białka występują
+różnorodne, ciężkie i często letalne zaburze-
+
+[Strona 151]
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+nia rozwojowe. Rola białka p57'P? nie może
+być zastąpiona przez inne inhibitory (CKI).
+
+W przeciwieństwie do białka p21*'P!, najwyższe poziomy białek p27X1Pl oraz p57KiP2
+stwierdza się w komórkach ostatecznie zróżnicowanych. W ten sposób komórki zróżnicowane chronią się przed ponownym wejściem do cyklu komórkowego.
+
+Opisując białka klasy INK4 oraz Cip/
+/Kip nie można ograniczyć się wyłącznie do
+procesu proliferacji. W wieloletnich badaniach potwierdzono udział tych białek w procesach różnicowania i starzenia się komórki,
+a także w procesie apoptozy.
+
+74
+
+Regulacja fazy S
+cyklu komórkowego
+
+W fazie S wzrasta poziom promującego ją
+czynnika (SPF), który jest kompleksem białek
+cykliny A i cdk2. Kompleks ten przedostaje
+się do jądra komórkowego i przygotowuje komórkę do syntezy DNA oraz duplikacji centrosomów. Podczas replikacji DNA obniża
+się poziom cykliny E i wzrasta poziom cyklin
+mitotycznych, których najwyższą aktywność
+obserwuje się w fazie G2 (rozdz. 3).
+
+7.5
+
+Regulacja fazy G2
+cyklu komórkowego
+
+Kompleks cyklin mitotycznych (cyklina B
+i A) oraz kinazę cdk1 określa się jako czynnik
+promujący fazę M (MPF). MPF odpowiada
+za wytworzenie wrzeciona kariokinetycznego, rozpad błony jądrowej oraz kondensację
+chromatyny. Procesy te umożliwiają komórce przejście do metafazy mitozy. W metafazie czynnik MPF aktywuje kompleks promujący anafazę (APC — Anaphase Promoting
+Complex) nazywany również cyklosomem
+i oznaczany często skrótem APC/C. APC/C
+odpowiada za uruchomienie procesów pro-
+
+wadzących do enzymatycznej degradacji kohezyn, co umożliwia rozdzielenie chromatyd
+siostrzanych. Kompleks promujący anafazę
+przyczynia się do obniżenia poziomu cykliny B przez przyłączenie jej do ubikwityny
+idegradacji na drodze ubikwitynowo-proteasomowej. Innymi procesami aktywowanymi przy udziale APC/C są — nasilenie
+ekspresji genów kodujących cykliny fazy Gl
+oraz degradacja gemininy (białko chroniące
+nowo zsyntetyzowane DNA przed ponowną
+replikacją w czasie tego samego cyklu podziału komórki). W fazie G2 cyklu komórkowego działa punkt restrykcyjny „strzegący” wejścia do fazy M, dzięki któremu dzielą
+się tylko komórki z prawidłowo i całkowicie
+zreplikowanym DNA, nieuszkodzonym materiałem genetycznym i wystarczająco duże,
+aby proliferować.
+
+7.6
+
+Udziat biatek regulujacych
+cykl komórkowy
+w onkogenezie
+
+Rozpatrując molekularne podstawy onkogenezy coraz częściej skupiamy się nad
+przebiegiem wieloelementowych szlaków
+regulujących cykl komórkowy kosztem zainteresowania poszczególnymi genami czy też
+ich produktami bialkowymi.
+
+Pojedyncza zmiana w obrębie jednego
+genu prawdopodobnie nie jest w stanie
+doprowadzić do transformacji nowotworowej. Do rozwoju nowotworu potrzebny
+jest cały tor mutacyjny, czyli kolejno następujące po sobie mutacje w obrębie protoonkogenów i/lub antyonkogenów.
+
+Faza GI cyklu komórkowego może podlegać regulacji sprawowanej przez wiele antyonkogenów i protoonkogenów. Dlatego
+zaburzenia kontroli cyklu komórkowego
+prowadzące do rozwoju choroby nowotworowej najczęściej ujawniają się w fazie G1 oraz
+w punkcie restrykcyjnym G1/S.
+
+151
+
+[Strona 155]
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+raka okrężnicy, raka żołądka oraz niedrobnokomórkowego raka płuc. Wysoki poziom
+białka p27KP1 może również wskazywać na
+znaczną złośliwość nowotworu, jak np. w nowotworach szyjki macicy.
+
+Zróżnicowane poziomy białka p27KPL
+w nowotworach poszczególnych typów, przy
+jednoczesnym braku mutacji w obrębie kodującego to białko genu, sugerują udział
+mechanizmów potranskrypcyjnych i potranslacyjnych. Niedawno wysunięto nową
+hipotezę, według której inaktywacja białka
+p27K-PL jako inhibitora cyklin cdk wynika
+z procesu sekwestracji zachodzącego w cytoplazmie komórki.
+
+Ukazało się wiele prac omawiających
+dużą rolę białka pRb w procesie transformacji nowotworowej. Najczęściej spotykanymi
+zmianami dotyczącymi genu Rb są mutacje
+inaktywujące, zmiany w metylacji promotora
+oraz zahamowanie aktywności jego produktu przez interakcje z onkoproteinami wirusowymi (antygen T wirusa SV40, onkoproteina E1B-55K adenowirusa oraz białko E6
+wirusa HPV). W procesie onkogenezy istotną rolę odgrywają też czynniki upośledzające
+łączenie białka pRb z deacetylazą histonową
+(HDAC). Zaburzenie interakcji pRb-HDAC
+może być spowodowane mutacjami punktowymi genu Rb w obrębie domeny wiążącej HDAC oraz onkoproteiną E7 wirusa
+HPV, która utrudnia łączenie pRb z HDAC.
+W wyniku tych zmian następuje uwolnienie
+czynnika E2F od wymuszonej transkrypcji
+sprawowanej przez kompleks pRb-HDAC, co
+przyspiesza przejście komórki do fazy S cyklu komórkowego.
+
+Uszkodzenie poszczególnych elementów
+szlaku regulacyjnego pRb ma różne znaczenie w nowotworach poszczególnych typów.
+Utrata aktywności białka p16!NK44 stosunkowo często występuje w czerniakach i rakach
+trzustki, natomiast nadekspresja cykliny D1
+dotyczy wielu chłoniaków, brak aktywnego
+białka pRb stwierdza się zaś bardzo często
+w raku drobnokomórkowym płuc. Uszkodzenie białka pRb całkowicie eliminuje punkt
+restrykcyjny w fazie G1 cyklu komórkowego,
+natomiast zmiany we wcześniejszych ele-
+
+mentach tej drogi, np. pl6!'NK4a, cyklina D1,
+cdk4/cdk6, mogą jedynie współuczestniczyć
+w procesie onkogenezy. W wielu nowotworach zmiany dotyczą jednocześnie obu dróg
+regulacyjnych fazy Gl, które współdziałają
+w transformacji nowotworowej, upośledzając różne funkcje przebiegające w komórce.
+Klasycznym przykładem mogą być onkoproteiny wirusowe, które jednocześnie upośledzają funkcję białka pRb (przyspieszenie
+fazy G1 cyklu komórkowego) oraz inaktywują białko p53 (ochrona zmutowanej komórki
+przed apoptozą).
+
+Cykl komórkowy jest niezwykle skomplikowany i wymaga precyzyjnych mechanizmów kontrolnych. Pod wpływem oddziaływania różnorodnych czynników na komórki
+organizmu mogą pojawiać się mutacje w obrębie genów kontrolujących cykl komórkowy.
+Jedną z chorób związanych z zaburzeniami
+regulacji cyklu komórkowego jest Ataxia teleangiectasia. Choroba ta jest dziedziczona
+autosomalnie recesywnie i charakteryzuje
+się zaburzeniami rozwojowymi, niedoborem
+odporności i skłonnością do zachorowań na
+nowotwory. Gen odpowiedzialny za wystąpienie tej choroby koduje białko ATM, które
+sygnalizuje uszkodzenie DNA i spowalnia
+cykl komórkowy.
+
+7.7
+
+Mitoza
+
+W komórkach eukariotycznych dzielących
+się mitotycznie cykl komórkowy obejmuje cztery fazy odnoszące się do zmian ilości
+DNA: mitozę (M), fazę Gl zwaną przerwą
+pomitotyczną (gapl), fazę syntezy DNA (S)
+i fazę G2 zwaną przerwą przedmitotyczną
+(gap2).
+
+Faza M cyklu komórkowego obejmuje podział jądra komórkowego (mitoza) nazywany
+również kariokinezą, a następnie podział
+cytoplazmy (cytokineza). W aktywnym cyklu komórkowym okres przygotowawczy do
+podziału (faza Gl, S i G) zwany jest interfazą. Komórki, które „wychodzą” z aktywnego
+
+155
+
+[Strona 156]
+
+156
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+cyklu komórkowego, pozostają w fazie spoczynkowej (GO). Podstawowym zadaniem
+podziału mitotycznego jest precyzyjne rozdzielenie skopiowanych chromosomów do
+komórek potomnych. Nazwę „mitoza” wprowadził W. Fleming w 1882 r. (mitos — nitka).
+Podziały mitotyczne zachodzą nieustannie
+w żywym organizmie, warunkując jego prawidłowy wzrost i regenerację tkanek. Faza
+M trwa 0,5-3 godz. i stanowi nieprzerwaną
+sekwencję zdarzeń. Cykl komórkowy u eukariota różni się długością trwania w różnych typach komórek (tab. 7.2), lecz pewne
+jego cechy są uniwersalne. Dotyczy to także
+komórek nowotworowych, których cykl życiowy nie różni się specjalnie od obserwowanego w komórkach prawidłowych. Różnicę
+stanowi utrata przez komórki nowotworowe
+mechanizmów regulujących podział komórek i przejście lub pozostanie w fazie GO cyklu komórkowego.
+
+Tradycyjnie fazę M dzieli się na pięć stadiów; są to:
+
+a) profaza,
+
+b) prometafaza,
+
+c) metafaza,
+
+d) anafaza,
+
+e) telofaza.
+
+Wymienione stadia następują po sobie
+w ściśle określonym porządku, składając się
+na mitozę. Z kolei cytokineza jest szóstym
+stadium, które następuje w końcowym etapie
+mitozy.
+
+Tabela 7.2 Czas trwania niektórych
+eukariotycznych cykli komórkowych
+
+Czascyklu
+komórkowego
+
+Komórki drożdży 1,5-3 godz.
+Komórki nabłonka jelita 12 godz.
+Fibroblasty ssaków w hodowli 20 godz.
+Komórki wątrobowe m 1 rok
+(hepatocyty) człowieka
+
+7.7.1
+
+Profaza i prometafaza
+
+Profaza (pierwszy etap mitozy) jest etapem
+przygotowawczym rozpoczynającym się
+kondensacją zreplikowanych chromosomów.
+Następuje kondensacja poszczególnych chromosomów, wskutek czego skracają się one
+igrubieją, stając się widoczne w mikroskopie optycznym. Pod koniec profazy każdy
+chromosom składa się z dwóch identycznych chromatyd siostrzanych połączonych
+centromerem. Na zewnątrz jądra między
+centriolami tworzy się wrzeciono mitotyczne (kariokinetyczne), które zbudowane jest
+z białka tubuliny i pełni rolę rusztowania dla
+chromatyd siostrzanych rozchodzących się
+do przeciwnych biegunów komórki.
+
+W regionie centromeru rozwijają się kinetochory (miejsca połączenia mikrotubul
+z chromosomem), których włókna oddziałują z włóknami wrzeciona mitotycznego.
+
+W prometafazie zanika jąderko i następuje rozpad otoczki jądrowej na małe fragmenty
+(ryc. 7.5), co umożliwia mikrotubulom wrzeciona kontakt z chromosomami i związanie
+się z nimi.
+
+centrosomy
+z mikrotubulami
+
+centromer
+z kinetochorem
+
+cytoplazma
+
+znikające
+jąderko
+
+otoczka
+jądrowa
+
+błona
+komórkowa
+
+Ryc. 7.5 Komórka w stadium profazy.
+
+[Strona 157]
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+7.7.2
+
+Metafaza
+
+Pierwszym etapem metafazy jest prometafaza. Po zaniku otoczki jądrowej w wyniku działania mikrotubul kinetochorowych
+skondensowane chromosomy ustawiają się
+w płaszczyźnie równikowej. Tworzy się tzw.
+płytka metafazowa. Każdy chromosom połączony jest z mikrotubulami wrzeciona kariokinetycznego w miejscu kinetochoru. Pod
+koniec metafazy na skutek skracania się włókien wrzeciona mitotycznego następuje rozdzielenie chromosomu na dwie chromatydy
+siostrzane (ryc. 7.6).
+
+W wyniku kondensacji chromosomów
+powstają chromosomy metafazowe, które pozwalają na wykonanie analiz cytogenetycznych (określanie kariotypów). Wiele leków
+przeciwnowotworowych (np. winblastyna,
+kolchicyna) zaburza polimeryzację tubuliny,
+zapobiegając wydłużaniu się nici wrzeciona
+mitotycznego, skutkując tym samym zatrzymaniem podziału komórki w stadium metafazy.
+
+płytka metafazowa
+
+włókna
+kinetochorowe
+
+biegun
+wrzeciona
+podziałowego
+
+pęcherzyki
+otoczki jądrowej
+
+Ryc. 7.6 Komórka w stadium metafazy.
+
+7.7.3
+
+Anafaza
+
+Anafaza rozpoczyna się rozdzieleniem chromatyd z każdego chromosomu oraz przemieszczaniem się ich ku biegunom komórki. Mechanizmy kierujące chromosomy do
+ustalonych miejsc są bardzo precyzyjne, ale
+mechanizm przemieszczania się chromatyd nie jest do końca poznany. Zapewnia to
+prawidłowy podział materiału genetycznego
+(ryc. 7.7). Działanie czynników uszkadzających DNA (np. promieniowanie jonizujące) podczas podziału płytki metafazalnej
+może skutkować nieprawidłowym podziałem i przemieszczaniem się chromosomów,
+powodując wieleanomalii chromosomowych.
+Wynikiem nondysjunkcji mitotycznej w komórkach dzielącej się zygoty jest powstawanie organizmu z kariotypem mozaikowym.
+
+7.74
+
+Telofaza
+
+Telofaza jest odwrotnością profazy i rozpoczyna się, gdy dwa zespoły chromosomów
+potomnych docierają do biegunów wrzeciona. Następuje dekondensacja (despiralizacja)
+chromosomów do chromatyny. Rozpoczyna
+
+skręcające się włókna kinetochorowe
+
+chromatydy przesuwające się ku biegunom komórki
+
+Ryc. 7.7 Komórka w stadium anafazy.
+
+157
+
+[Strona 158]
+
+158
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+dekondensacja
+
+odtwarzanie otoczki :
+chromosomów
+
+jądrowej
+
+Ryc. 7.8 Komórka w stadium telofazy.
+
+się intensywna synteza rRNA, zostają odtworzone jąderko i otoczka jądrowa, prowadząc
+do uformowania dwóch nowych jąder komórkowych. Przywrócona zostaje aktywność
+metaboliczna komórki (ryc. 7.8).
+
+7.7.5
+
+Cytokineza
+
+Cytokineza jest podziałem cytoplazmy, który rozpoczyna się już pod koniec anafazy.
+W płaszczyźnie równikowej dzielącej się komórki powstaje „pierścień kurczliwy” zbudowany z włókien aktynowych i miozynowych.
+Skurcz tego pierścienia powoduje przewężenie i w konsekwencji podział komórki na
+dwie potomne. Równocześnie z podziałem
+jądra następuje podział i przemieszczenie
+do komórek potomnych organelli komórkowych. Powstałe komórki potomne mają co
+najmniej 25% większą powierzchnię niż komórka macierzysta (ryc. 7.9).
+
+7.8
+Mejoza
+
+Mejozę (z grec. meiosis — zmniejszenie) opisano w 1883 r. jako podział zachodzący w komórkach szlaku płciowego, prowadzący do
+powstania komórek potomnych o zreduko-
+
+CYTOKINEZA
+
+Ryc. 7.9 Proces cytokinezy.
+
+wanej (haploidalnej) liczbie chromosomów
+w stosunku do komórki macierzystej, co zapobiega podwajaniu się ich liczby w wyniku
+zapłodnienia. Proces mejotyczny jest jedną
+z przyczyn zmienności organizmów, ponieważ podczas podziału mejotycznego zachodzi rekombinacja genetyczna między parami
+chromosomów homologicznych (crossing-
+-over).
+
+Mejoza składa się z dwóch kolejnych podziałów komórkowych: mejozy I (MI), czyli
+podziału redukcyjnego (zmniejszenie o połowę liczby chromosomów), i mejozy II (MII),
+czyli podziału ekwacyjnego (zmniejszenie
+zawartości DNA).
+
+Ostatecznie zjednej komórki macierzystej
+powstają cztery komórki potomne, z których
+każda zawiera o połowę mniej materiału genetycznego niż komórka macierzysta i o połowę mniej chromosomów (liczba haploidalna). Mejoza u człowieka występuje podczas
+gametogenezy (spermatogeneza i oogeneza),
+która prowadzi do powstania odpowiednio
+plemników i komórek jajowych. Podziałowi mejotycznemu podlegają spermatocyty I
+i II rzędu oraz oocyty I i II rzędu. Należy zaznaczyć, że w oogenezie drugi podział (MID
+zachodzi tylko po zapłodnieniu (połączeniu
+oocytu II rzędu z plemnikiem).
+
+[Strona 159]
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+7.8.1
+
+Pierwszy podziat mejotyczny
+
+Pierwszy podzial mejotyczny poprzedzony
+jest zawsze replikacją DNA, każdy chromosom składa się z dwóch chromatyd siostrzanych. Mejoza składa się z profazy, metafazy,
+anafazy itelofazy (ryc. 7.10). Profaza podziału
+redukcyjnego jest szczególnie rozbudowana,
+wyróżnia się w niej następujące stadia: leptoten, zygoten, pachyten, diploten i diakinezę.
+
+MEJOZA I
+
+komórki macierzyste
+
+7.8.1.1
+
+Profaza I
+
+Jest najdłuższą fazą mejozy, np. w spermatogenezie człowieka trwa ok. 3 tyg., a w oogenezie wiele lat.
+
+W leptotenie rozpoczyna się przebudowa
+(kondensacja) chromosomu interfazowego.
+Z chromatyny wyodrębniają się nitkowate,
+nieuporządkowane chromosomy, które układają się przypadkowo.
+
+profaza I
+
+a
+
+anafaz.
+
+NE
+
+<
+
+MEJOZA II
+
+Drugi podział mejotyczny przebiega podobnie jak mitoza (ryc. 7.5—7.9)
+
+Ryc. 7.10 Przebieg mejozy.
+
+159
+
+[Strona 160]
+
+160
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+W stadium zygotenu homologiczne chromosomy matczyne i ojcowskie zaczynają łączyć się w pary, zwane biwalentami. Proces
+ten nosi nazwę koniugacji chromosomów
+(synapsis); jest on bardzo dokładny, homologiczne chromosomy układają się naprzeciw
+siebie. Każdy biwalent złożony jest z czterech
+chromatyd, tworząc tzw. tetrade. Całkowita liczba powstałych biwalentów odpowiada
+haploidalnej liczbie chromosomów w jądrze
+komórkowym.
+
+W stadium pachytenu chromosomy homologiczne są już całkowicie skoniugowane. Ważnym procesem zachodzącym w tym
+stadium jest crossing-over (ryc. 7.11), tj. wzajemna wymiana fragmentów między niesiostrzanymi chromatydami chromosomów
+homologicznych. W miejscach pęknięć chromatydy niesiostrzane krzyżują się ze sobą,
+tworząc chiazmy. Obliczono, że podczas jednej mejozy w komórkach człowieka crossing-
+-over zachodzi średnio 1-2 razy.
+
+Diploten zaczyna się od rozdzielenia
+chromosomów homologicznych (desynapsis),
+z wyjątkiem punktów zwanych chiazmami,
+które nadal łączą ze sobą chromatydy niesiostrzane chromosomów homologicznych.
+
+W ostatnim stadium profazy I, diakinezie, chromosomy się kondensują i oddzielają
+od otoczki jądrowej, a chiazmy przesuwają
+się od centromeru ku końcowi. W każdym
+
+chromatydy siostrzane
+
+(matczyny) _ (ojcowski)
+IGI
+
+=... __= centromery
+
+—_ chiazma
+
+Ryc. 7.11 Crossing-over.
+
+biwalencie widać wyraźnie cztery chromatydy.
+
+7.8.1.2
+
+Metafaza I
+
+W prometafazie I, będącej stadium przejściowym między profazą I i metafazą I, mikrotubule wrzeciona podziałowego łączą się
+z biwalentami i przemieszczają je ku płaszczyźnie równikowej komórki, gdzie tworzą
+tzw. płytkę metafazową.
+
+7.8.1.3
+
+Anafaza I
+
+W kolejnym stadium, zwanym anafaza I,
+chromosomy homologiczne wchodzace
+w skład biwalentu oddzielają się od siebie
+i wędrują ku przeciwnym biegunom komórki. Rozdział chromosomów homologicznych
+jest zupełnie przypadkowy i nosi nazwę niezależnej segregacji chromosomów.
+
+7.8.1.4
+
+Telofaza I
+
+W telofazie I powstają dwie komórki, z których każda zawiera haploidalną liczbę chromosomów z diploidalną ilością DNA. Część
+chromosomów danej komórki pochodzi od
+ojca, a część od matki.
+
+Po ukończeniu pierwszego podziału mejotycznego następuje podział cytoplazmy
+zwany cytokinezą, w którego wyniku komórka dzieli się na dwie komórki potomne.
+
+79
+Drugi podział mejotyczny
+
+Drugi podział mejotyczny przebiega podobnie jak mitoza, z tym że odbywa się w komórkach haploidalnych. Po krótkotrwałej
+profazie II następuje metafaza II, w której
+chromosomy tworzą płytkę metafazową
+w płaszczyźnie równikowej wrzeciona podziałowego. Na początku anafazy II, podobnie jak w anafazie mitotycznej, chromatydy
+
+[Strona 161]
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+w każdym chromosomie oddzielają się od
+siebie i przechodzą na przeciwne bieguny
+komórki. Po zrekonstruowaniu jąder potomnych w telofazie II komórki przechodzą
+cytokinezę. W wyniku drugiego podziału
+mejotycznego u człowieka powstają dwie komórki potomne zawierające haploidalną liczbę chromosomów (n = 23). Każdy chromosom zawiera jedną chromatydę i haploidalną
+ilość DNA.
+
+W wyniku dwóch podziałów mejotycznych (MI i MII) powstają cztery komórki haploidalne. Wskutek redukcji liczby chromosomów o połowę i powstania haploidalnych
+gamet zawierających DNA (n) tworząca się
+w wyniku zapłodnienia zygota jest komórką diploidalną (2n). Dzięki temu w rozwijającym się zarodku i przyszłym organizmie
+potomnym zostanie zachowana liczba chromosomów charakterystyczna dla komórek
+osobników rodzicielskich. Mejoza przyczy-
+
+NONDYSJUNKCJA
+W PIERWSZYM PODZIALE MEJOTYCZNYM
+
+trisomia monosomia
+
+Ryc. 7.12 Nondysjunkcja w przebiegu mejozy.
+
+nia się ponadto do zwiększenia zmienności
+genetycznej organizmów dzięki niezależnej
+segregacji chromosomów i crossing-over.
+
+7.9.1
+
+Zaburzenia mejozy
+
+W niektórych przypadkach może nastąpić
+zaburzenie mejozy. Jeżeli podczas pierwszego podziału mejotycznego nie nastąpi rozdzielenie biwalentów, dochodzi do zjawiska
+nondysjunkcji prowadzącego do aneuploidii.
+Przykładem tego typu zaburzeń jest zespół
+Downacharakteryzujący się obecnością w komórkach dodatkowej kopii chromosomu 21
+(ryc. 7.12).
+
+Częstość występowania nondysjunkcji
+zależy bezspornie od wieku matki. Wykazano też, że czynniki środowiskowe, np. niewielkie dawki promieniowania jonizującego,
+
+NONDYSJUNKCJA
+W DRUGIM PODZIALE MEJOTYCZNYM
+
+s
++
+=
+5
+'
+=
+
+trisomia monosomia
+
+161
+
+[Strona 162]
+
+162
+
+fungicydy, hormony egzogenne, herbicydy
+
+i
+
+7 CYKL ŻYCIOWY KOMÓRKI I JEGO ZABURZENIA
+
+alkohol, mają wpływ na częstość występo-
+
+wania tego zjawiska.
+
+“+ białka pRb i p53 pełnią rolę „strażników” genomu i chronią komórkę przed
+transformacją nowotworową
+
+“+ komórki zmutowane nie przechodzą
+do fazy S cyklu komórkowego, dzieki czemu mogą być „naprawione” lub
+zniszczone w wyniku apoptozy
+
+*» gen kodujący białko p53 jest uszkodzony w ponad połowie przypadków nowotworów występujących u człowieka
+
+*+ sporadycznie występujące mutacje
+w genach kodujących białka regulatorowe fazy G2 wskazują na ich udział
+w ochronie i przeżyciu komórek nowotworowych oraz rozwoju oporności na
+chemioterapię nowotworów
+
+710
+Pytania
+
+1.
+
+2.
+
+Yr
+
+Które białka hamują powstawanie kompleksu cyklina D1l-cdk4?
+
+Jakie białka kodowane są przez geny
+zlokalizowane w locus INK4A/ARF?
+Kompleks jakich białek tworzy czynnik
+promujący fazę M (MPF)?
+
+Co to jest cyklosom?
+
+W której fazie cyklu komórkowego działają białka pRb i p53?
+
+. Błona jądrowa powstaje w telofazie z:
+
+a) organizatora jądrowego
+
+b) błon siateczki śródplazmatycznej
+
+c) wrzeciona podziałowego
+
+d) centrioli
+
+W czasie I profazy mejozy wytworzyły się
+4 biwalenty. Komórki potomne będą więc
+mieć po:
+
+a) 8 chromosomów
+
+b) 4 chromosomy
+
+c) 2 chromosomy
+
+d) brak prawidłowej odpowiedzi
+
+. Liczba biwalentów tworzących się w cza-
+
+sie mejozy u organizmów diploidalnych:
+
+a) odpowiada diploidalnej liczbie chromosomów
+b) jest równa liczbie chromatyd
+c) odpowiada haploidalnej liczbie chromosomów
+d) jest zawsze stała
+9. Uzupełnij tabelę:
+
+RÓŻNICE MIĘDZY MITOZĄ A MEJOZĄ
+
+CECHY ©, |MITOZA — | MEJOZA |
+
+Jakiego typu
+komórek dotyczy
+ten proces?
+
+lle komórek powstaje na końcu
+tego procesu?
+
+Czy nowo po-
+
+wstałe komórki są
+
+identyczne z komórką matczyną?
+
+Porównaj ilość
+DNA w komórce
+potomnej i komórce matczynej
+
+Odpowiedzi
+
+ad 1. Białka p15, pl6, p18
+
+ad 2. Białka p15, p16, pl9
+
+ad 3. Cyklina B i A oraz kinaza cdkl
+ad 4. Kompleks promujący anafazę
+ad 5. Faza GI
+
+6b, 7b, 8c.
+
+9.
+
+RÓŻNICE MIĘDZY MITOZĄ A MEJOZĄ
+
+CECHY © | MITOZA || MEJOZA |
+
+Jakiego typu komórek so- | komórek
+komórek dotyczy | matycznych | szlaku płcioten proces? wego
+
+lle komórek po- 2 komórki 4 komórki
+wstaje na końcu
+
+tego procesu?
+
+Czy nowo po- identyczne komórki powstałe komórki są | komórki tomne różne
+identyczne z ko- potomne od matczynej
+
+mórką matczyną? | imatczyne
+
+Porównaj ilość 2n komórka 2n komórka
+DNA w komórce matczyna matczyna
+potomnej i ko- i2nkomórka | i Inkomórka
+mórce matczynej | potomna potomna
+
+
+---------- jozwiak_r06.txt (cały plik) ----------
+# ŹRÓDŁO: Jóźwiak J., Biologia komórki dla studentów uczelni medycznych, Edra Urban & Partner 2020 – Rozdział 6. Cykl komórkowy i proliferacja komórek
+# Zakres: s. 68–75: podrozdziały „Punkty kontrolne cyklu komórkowego” i „Białka stojące na straży genomu” (p53, białka kieszeniowe, BRCA1/BRCA2) – do nagłówka „Leki przeciwnowotworowe” (bez niego). PDF s. 79–86.
+# Tekst z warstwy OCR PDF (pdftotext -bbox), złożony łamami: lewy łam, potem prawy (pasy między podpisami pełnej szerokości).
+# [Strona N] = numeracja książki (odtworzona: numery widoczne na s. 65/119/126–128 + parzystość żywej paginy).
+# ### = nagłówek podrozdziału. [PODPIS/TABELA] = podpis ryciny lub tabela – wyjęte z biegu tekstu, na końcu strony.
+# [ETYKIETY RYCIN] = napisy wewnątrz rycin (szum OCR, nie czytać jako tekstu). Znaki ">", "3", "=", "„" na początku akapitu = punktory.
+
+[Strona 68] (od nagłówka „Punkty kontrolne cyklu komórkowego”; wcześniejsza część strony – w pliku *_reszta.txt)
+### Punkty kontrolne cyklu komórkowego
+
+Podczas gdy komórka krąży w cyklu komórkowym, poddawana jest działaniu wewnętrznych i zewnętrznych sygnałów, które potencjalnie mogą zaburzać jej funkcjonowanie lub wprowadzać zmiany (np. uszkodzenia DNA) stawiające pod znakiem zapytania dalsze jej losy. Ponieważ sam proces duplikacji DNA i zwielokrotniania ilości białek potrzebnych komórkom potomnym jest bardzo energochłonny, komórka musi co pewien czas sprawdzać, czy nie zaszły w niej niekorzystne zmiany i czy prawidłowe przeprowadzenie procesu podziału nie jest zagrożone. W przypadku bowiem uszkodzenia komórki, wydatkowanie energii na produkcję białek i DNA oznaczałoby utratę zasobów i, potencjalnie, śmierć. Poza tym komórki, które wymknęłyby się spod kontroli mechanizmów regulacyjnych, mogłyby rodzić niebezpieczeństwo nowotworzenia. Dlatego też cykl komórkowy jest bardzo ściśle kontrolowany w określonych punktach czasowych. Rolę tę pełnią tzw. punkty kontrolne (chechpoini) (+ ryc. 6.5),
+
+[Strona 69]
+w ramach których odbywa się czasowe zahamowanie przebiegających procesów i sprawdzenie:
+
+> czy w komórce jest wystarczająca ilość substancji odżywczych do kontynuowania podziału,
+
+> czy DNA nie jest uszkodzone,
+
+> czy zakończyła się już replikacja,
+
++ czy DNA zostało zreplikowane tylko jeden raz.
+
+Cykl komórkowy zawiera trzy punkty kontrolne:
+
+> Punkt G1 (punkt restrykcyjny) jest najistotniejszym z punktów kontrolnych. Punkt ten znajduje się w końcowym etapie fazy G1 i umożliwia komórce sprawdzenie, czy posiada ona wystarczające zasoby do kontynuowania podziału, np. wystarczającą ilość substancji odżywczych. Jeśli nie, komórka przejdzie w fazę GO, kiedy będzie oczekiwać na pojawienie się bardziej sprzyjających warunków środowiskowych. W przypadku dostatecznej ilości energii/substancji odżywczych, komórka podejmuje nieodwracalną decyzję o rozpoczęciu podziału. Tutaj także, przed przejściem do fazy $, odbywa się sprawdzenie, czy DNA nie jest uszkodzone. Jeśli tak, progresja cyklu zostanie zahamowana, a komórka będzie miała czas na naprawę materiału genetycznego. Po przejściu punktu G1 komórka musi kontynuować podział do ewentualnego zahamowana w punkcie G2/M lub M.
+
+> Punkt G2/M (punkt kontroli integralności DNA) znajduje się pod koniec fazy G2 i konieczny jest w celu sprawdzenia, czy w trakcie replikacji DNA nie doszło do wprowadzenia błędów do materiału genetycznego — wykrycie niepodlegających naprawie uszkodzeń może prowadzić do wyindukowania programowanej śmierci komórki, czyli apoptozy. Ponadto komórka sprawdza, czy całe DNA zostało zreplikowane. Trzecim kontrolowanym parametrem jest poziom białek koniecznych do przeprowadzenia zbliżającej się fazy mitozy.
+
+> Punkt M (punkt organizacji wrzeciona mitotycznego) znajduje się w fazie mitozy i dotyczy przede wszystkim wrzeciona mitotycznego. Sprawdza prawidłowe uformowanie się włókien wrzeciona, prawidłowość ustawienia chromosomów względem wrzeciona oraz połączenie chromatyd siostrzanych z włóknami wrzeciona pochodzącymi z przeciwnych biegunów. W ten sposób punkt M zapobiega nieprawidłowej dystrybucji chromosomów do komórek potomnych.
+
+Za pełnienie stałej kontroli nad przebiegiem cyklu odpowiedzialne są natomiast cykliny i kinazy zależne od cyklin (Cdk, cyclin-dependent kinase). Nazwa „cyklina” związana jest z cyklicznymi zmianami stężenia białka w trakcie cyklu komórkowego (+ ryc. 6.6). Cykliny dzieli się na cztery klasy: cykliny fazy G1 odpowiedzialne są za wejście w cykl komórkowy w odpowiedzi na stymulację przez czynniki wzrostu, a cykliny fazy G1/$, cykliny fazy S i cykliny fazy M za przejście przez kolejne fazy cyklu komórkowego (+ tab. 6.2). Cykliny pełnią swoją funkcję dopiero bo związaniu i utworzeniu kompleksu z odpowiednimi kinazami Cdk, a stężenie cyklin w poszczególnych
+
+[PODPIS/TABELA] Ryc. 6.5 Punkty kontrolne. Aby podział komórki dokonał się w warunkach zapewniających jak największe bezpieczeństwo komórki i jej materiału genetycznego, w cyklu komórkowym istnieją trzy punkty kontroli bezpieczeństwa, nazywane punktami kontrolnymi. W pierwszym z nich, punkcie G1, sprawdzane są zasoby pozwalające na dokonanie podziału. W punkcie G2/M kontrolowana jest jakość DNA, natomiast w punkcie M — prawidłowy podział chromosomów do komórek potomnych.
+
+[ETYKIETY RYCIN – szum OCR] Punkt organizacji | wrzeciona podziatowego | Punkt kontroli | integralności DNA | Punkt restrykcyjny
+
+[Strona 70]
+fazach cyklu zmienia się, odpowiednio do pełnionych przez nie funkcji. Na początku cyklu komórkowego, stymulacja przez czynniki wzrostu powoduje wyjście komórki z GO. Po związaniu cząsteczki czynnika wzrostu z jego receptorem, uruchamiana jest kaskada szlaku Ras/Raf/MEK/ ERK, która prowadzi do transkrypcji cykliny D (należącej do cyklin fazy G1), a następnie aktywacji kinaz Cdk 4/Cdk 6. Jednym z najważniejszych celów działania kompleksu cyklina D/Cdk 4/6 jest białko Rb (refinoblastoma — produkt genu, którego mutacja warunkuje rozwój siatkówczaka). W przypadku braku stymulacji przez czynniki wzrostu, Rb blokuje czynniki transkrypcyjne przyczyniające się do ekspresji genów związanych z progresją cyklu komórkowego. W obecności czynników wzrostu dochodzi do zwolnienia represji Rb i w efekcie, produkcji białek związanych z progresją cyklu, w tym cykliny E (należącej do cyklin fazy G1/S). Kompleks cykliny E wraz z odpowiednią kinazą (Cdk 2), fosforyluje substraty bezpośrednio zaangażowane w replikację DNA czy duplikację centrosomu, przeprowadzając komórkę przez punkt restrykcyjny (punkt kontrolny G1), po przejściu którego nie ma już możliwości zablokowania replikacji DNA. Pod koniec fazy S stężenie cykliny E obniża się, ponieważ jest ona degradowana przez proteasom. Jednocześnie rośnie stężenie cykliny A (należącej do cyklin fazy S) tworzącej kompleks z Cdk2, aktywny do końca fazy G2, kiedy rozpoczyna się synteza cykliny B (należącej do cyklin fazy M). Kompleks cyklina B/Cdk 1 reguluje przejście przez granicę faz G2/M, a także przez samą mitozę. Kompleks ten charakteryzuje się wysoką aktywnością, gdyż fosforyluje kilkadziesiąt białek, zaangażowanych w kondensację chromosomów, rozpad otoczki jądrowej czy rozdzielenie się centrosomów. Pod koniec fazy M, kompleks promujący anafazę (APC, anaphase-promoting complex) ubikwitynuje cyklinę B, kierując ją do degradacji w proteasomie.
+
+### Białka stojące na straży genomu
+
+Ponieważ zmiana sekwencji DNA może prowadzić do niekontrolowanych zmian w komórce (produkcji białek
+
+[PODPIS/TABELA] Ryc. 6.6 Cykliny. Biatkami regulującymi przechodzenie komórki przez poszczególne fazy cyklu komórkowego są cykliny. Cykliny dzieli się na 4 klasy, odpowiednio do faz cyklu, które regulują. Jak widać na powyższym wykresie, stężenie poszczególnych cyklin zmienia się odpowiednio do punktu, w którym pełnią swoją funkcję. Jedynie stężenie cykliny fazy G1 (tzn. cykliny D) utrzymuje się na dość wysokim poziomie praktycznie przez cały cykl komórkowy.
+
+[PODPIS/TABELA] Tabela 6.2 Cykliny i kinazy zależne od cyklin
+GO c Cdk3
+GI D,E Cdk2, Cdk4, Cdk6
+Ss A,E Cdk2
+G2 A Cdk1, Cdk2
+M B Cdk1
+
+[ETYKIETY RYCIN – szum OCR] Cyklina Cyklina | Cyklina | fazy S$ fazy M | fazy G1/S | Faza Gl | Faza S$ Faza G2 Faza M
+
+[Strona 71]
+Kinazy to enzymy wprowadzające grupę fosforanową do cząsteczki substratu, którym często są inne kinazy, a fosfatazy to enzymy o przeciwnej funkcji. Jednym z przykładów kinaz są kinazy zależne od cyklin
+
+— białka, których stężenie w czasie cyklu komórkowego pozostaje na względnie stałym poziomie, a których aktywność regulowana jest poprzez:
+
+związanie cykliny, fosforylację, związanie inhibitorów (CDKI, cyclin-dependent kinase inhibitor) (> ryc. 6.7).
+
+o nieznanej sekwencji lub braku ekspresji białek nieodzownych do przeżycia komórki), proces ten jest ściśle kontrolowany przez grupę białek wykrywających zmiany struktury DNA. Białka te mają za zadanie zablokowanie dalszych podziałów komórki o zmienionym DNA, umożliwienie naprawy DNA i - w razie braku możliwości naprawy, skierowanie komórki na drogę apoptozy. Do białek tych należą p53, białka kieszeniowe i BRCA1/ BRCA2.
+
+### P53
+
+Białko p53 jest prawdopodobnie najważniejszym białkiem z punktu widzenia ochrony komórki przed uszkodzeniami DNA. Dowodzi tego fakt, że kodujący je gen TP53 (tumour suppressor protein p53) jest najczęściej zmutowanym genem w ludzkich komórkach nowotworowych (około 50-70% wszystkich nowotworów), a jego mutacja stanowi jednocześnie zły czynnik rokowniczy.
+
+[PODPIS/TABELA] Ryc. 6.7 Aktywacja cyklin. Samo zwiększenie stężenia cykliny nie wystarcza, by przeprowadzić komórkę do następnej fazy cyklu. Ponieważ cykliny odgrywają tak ważną rolę przy kontrolowaniu i prowadzeniu cyklu, ich aktywność jest bardzo precyzyjnie regulowana. Droga prowadząca do aktywacji cykliny zaczyna się od jej ekspresji i produkcji białka. W następnej kolejności cyklina łączy się z odpowiednią kinazą zależną od cyklin (cyclin-dependent kinase, CDK). Kinazy CDK obecne są w komórce przez cały okres trwania cyklu, ale aktywność uzyskują dopiero po ufosforylowaniu. Kompleks ufosforylowanej CDK z cykliną posiada odpowiednią aktywność i fosforyluje swoiste substraty. Kiedy aktywność kompleksu cyklina/CDK nie jest potrzebna, ligaza ubikwityny przyłącza cząsteczki ubikwityny do cykliny, kierując cyklinę do degradacji w proteasomie. CDK jest defosforylowana i pozostaje w gotowości, na wypadek wejścia komórki w kolejny podział. J
+
+[ETYKIETY RYCIN – szum OCR] OD kina | x | Stężenie | ao | 4) Ligaza | ź, ubikwityny | \ Czas e _ Ubikwityna | \ | 4 | No utworzenie i | Dezaktywacja / WIC | \ queer | ligazy , | ubikwityny, | N eyklina/CDK | Sao | U | Dezaktywacja | 9 © degradacja | s 344 cykliny | 42%." | 44 ”
+
+[Strona 72]
+W prawidłowych komórkach stężenie p53 jest utrzymywane na niskim poziomie przez ligazę ubikwityny MDM2 (murine/mouse double minute 2 bomolog), która transportuje p53 z jądra komórkowego do cytoplazmy, ubikwitynuje je i prowadzi w ten sposób do jego degradacji w proteasomie (+ ryc. 6.8). W przypadku uszkodzenia (mutacji) DNA lub zwiększenia ekspresji onkogenów, dochodzi do fosforylacji p53 blokującej możliwość jego degradacji, co skutkuje zwiększeniem stężenia p53 w komórce. W efekcie tego, p53 wiąże się z DNA i działa jako czynnik transkrypcyjny, zwiększając transkrypcję białka p21 - inhibitora kinaz zależnych od cyklin (CDKI, cyclin-dependent kinase inbibitor). p21 wiąże się z kompleksami cyklina E/CDK2 i cyklina D/CDK4, hamując ich aktywność i zatrzymując komórkę w pierwszym punkcie kontrolnym cyklu komórkowego (tzw. punkt restrykcyjny) znajdującym się w fazie G1. Dzięki tej blokadzie komórka ma czas na naprawę DNA, a jeśli naprawa nie powiedzie się, na uruchomienie programowanej śmierci w mechanizmie apoptozy, poprzez indukowanie przez p53 proapoptotycznych białek z rodziny Bcl-2 (B-cell lymphoma 2). Gen 7P53 należy do grupy genów supresji nowotworowej, a co za tym idzie, powinien podlegać hipotezie „dwóch uderzeń” Knudsona (zob. rozdział Onkogeneza). Okazuje się jednak, że w większości przypadków nowotworów wykrywa się mutację na jednym tylko allelu
+
+[PODPIS/TABELA] Ryc. 6.8 Fizjologia p53. Ekspresja p53 pozostaje pod kontrola MDM2 (mouse double minute 2). W warunkach fizjologicznych p53 jest wychwytywane przez MDM2, ubikwitynowane i degradowane w proteasomie. Kiedy jednak w komórce dojdzie do uszkodzenia DNA, aktywacji onkogenów lub hipoksji, p53 jest fosforylowane, co powoduje jego stabilizację (brak degradacji). Fosforylowane p53 wiąże się z DNA, pełniąc rolę czynnika transkrypcyjnego. W zależności od nasilenia uszkodzenia komórki, a co za tym idzie ewentualnej możliwości naprawy DNA lub nieodwracalnego uszkodzenia komórki, p53 preferencyjnie moduluje transkrypcję genów kodujących białka związane z różnymi procesami komórkowymi, np. p21 — białko blokujące kompleksy cyklin, co hamuje progresję cyklu komórkowego, Bax i Puma = białka z rodziny Bel-2 uczestniczące w apoptozie, MSH2 (muts homologue 2), PMS2 (postmeiotic segregation increased 2) i MLH1 (mutL homologue 1) - białka odpowiedzialne za naprawę DNA. Jednym z białek, których transkrypcję reguluje p53, jest także samo MDM2.
+
+[ETYKIETY RYCIN – szum OCR] Ubikwityna | Sa: | «6 | > Degradacja p53 | w proteasomie CDK4 | Cyklina E/ | CDK2 | NPREEHATS | | Rm | wego
+
+[Strona 73]
+genu 7P53. Fakt ten tłumaczy się w ten sposób, że do mutacji 7P53 dochodzi na późniejszym etapie rozwoju nowotworu, nie jest to więc główny czynnik nowotworzenia.
+
+### Białka kieszeniowe
+
+Rodzina białek kieszeniowych obejmuje trzech przedstawicieli: Rb (retinoblastoma), p107 i p130, o dużej homologii domeny odpowiedzialnej za tworzenie przestrzennej kieszeni (tzw. kieszeń A/B), z ktéra wiaza się czynniki transkrypcyjne z rodziny E2F, potrzebne do produkcji białek umożliwiających wejście komórki w fazę S$ (>ryc. 6.9). Po związaniu czynników transkrypcyjnych w kieszeni, nie jest możliwy ich udział w transkrypcji genów i komórka pozbawiona białek koniecznych do wejścia w kolejne fazy cyklu jest zatrzymywana w fazie G1. Drugim mechanizmem działania białek kieszeniowych jest rekrutacja (gromadzenie) deacetylaz histonéw (HDAC, histone deacetylase), ktérych aktywność zwiększa kondensację DNA i utrudnia dostęp aparatu transkrypcyjnego do promotorów genów. Aktywność białek kieszeniowych jest regulowana przez fosforylację. W postaci nieufosforylowanej zatrzymują cykl komórkowy, wiążąc czynniki z rodziny E2F. W fazie S$ oraz — w przypadku niektórych nowotworów
+
+- konstytutywnie, kompleksy cyklina/Cdk fosforylują białka kieszeniowe, blokując ich zdolność wiązania E2F.
+
+W'takiej sytuacji komórka wchodzi w fazę S$ (+ ryc. 6.9). W warunkach fizjologicznych białko Rb jest fosforylowane (a co za tym idzie dezaktywowane) przez odpowiednie kompleksy cyklina/Cdk w fazie $, G2 i M. W związku ze znaczeniem białek kieszeniowych dla regulacji cyklu komórkowego, są one częstym celem działania wirusów i nowotworów. Kieszeń A/B jest miejscem wiązania produktów genów wirusowych, które w ten sposób blokują działanie białek kieszeniowych. Jednocześnie wiele nowotworów nasila działanie kompleksów cyklina/Cdk, które fosforylują i blokują białka kieszeniowe na tej drodze.
+
+### BRCA1/BRCA2
+
+BRCA1 i BRCA2 (éreast cancer type 1/2 susceptibiliży protein) to białka odpowiedzialne za naprawę dwuniciowych pęknięć DNA. Są one produkowane we wszystkich komórkach organizmu, choć ich mutacje związane są przede wszystkim z rakiem sutka, jajnika i prostaty. W przypadku pojawienia się pęknięcia nici DNA, BRCA1 i BRCA2 pozwalają na skopiowanie ewentualnych brakujących sekwencji z chromatydy siostrzanej, po czym następuje odtworzenie ciągłości pękniętego DNA (= ryc. 6.10). U osób z mutacją w genie BRCA1 lub BRC4A2 występuje 80% ryzyko rozwinięcia się raka sutka — z tego powodu niektóre kobiety będące nosicielkami mutacji decydują się na profilaktyczną
+
+[PODPIS/TABELA] Ryc. 6.9 Retinoblastoma. Białka kieszeniowe, w tym produkt genu Rf, regulowane są przez fosforylację. W warunkach spoczynkowych białko Rb wiąże czynnik elongacji transkrypcji E2F (elongation factor 2), w związku z czym nie może on pełnić roli czynnika transkrypcyjnego (dla wielu genów związanych z progresją cyklu, np. cyklin, CDK, białek naprawiających DNA). Kiedy uruchamiana jest progresja cyklu, cyklina D wraz z odpowiednią kinazą (CDK4) fosforyluje Rb, jednak fosforylacja ta nie jest wystarczająca do zablokowania funkcji Rb. Dopiero aktywność kompleksu cykliny E i CDK2, wprowadzającego kolejne fosforylacje na białku Rb, powoduje zwolnienie E2F z represji Rb i uruchomienie transkrypcji genów odpowiedzialnych za progresję cyklu (w tym samej cykliny E).
+
+[ETYKIETY RYCIN – szum OCR] CDK4 | ż | “> D 3 | r. | os | Gl | ala
+
+[Strona 74]
+[PODPIS/TABELA] Ryc. 610 Zasada działania BRCA1 i BRCA2. W przypadku dwuniciowego uszkodzenia DNA aktywowane są białka naprawcze BRCAT i BRCA2, których zadaniem jest nie tylko połączenie pękniętych nici, ale także ewentualne uzupełnienie brakującego odcinka DNA. BRCAT aktywuje helikazę i egzonukleazę, które „odwijają” DNA i przycinają jedną jego nić. W tym czasie druga, nieprzycięta nić zbliża się do sekwencji homologicznej danego genu na drugim allelu. BRCA2 wiąże pojedynczą nić DNA i aktywuje rekombinazę — enzym, który kopiuje z nieuszkodzonego odcinka homologicznego DNA brakującą sekwencję w procesie zwanym rekombinacją homologiczną. W następnym kroku ligaza przyłącza odtworzoną nić do pękniętego DNA. Na matrycy odtworzonego DNA uzupełniany jest brakujący fragment drugiej nici DNA.
+
+[ETYKIETY RYCIN – szum OCR] Działanie mutagenu | Dochodzi do pęknięcia | Połączenie nici w ciągłą | obu nici DNA | sekwencję | Jedna z nici zbliża się BRCA1 | do nieuszkodzonej Odpowiada za | sekwencji homologicznej przycięcie luźnych | na drugim allelu tego fragmentów DNA | samego genu | XW | BRCA2 | Odpowiada za | skopiowanie sekwencji | z drugiego allelu
+
+[Strona 75] (do nagłówka „Leki przeciwnowotworowe”, bez niego; dalsza część strony – w pliku *_reszta.txt)
+mastektomię. Mutacja BRCA1 powoduje pojawienie się raka jajnika u 55% kobiet, a BRCA2 u 25% kobiet. Mutacja nie jest jednak prawdopodobnie główną przyczyną obniżenia ekspresji białek BRCA1/2 w komórkach nowotworowych, gdyż jedynie w kilkunastu procentach wszystkich przypadków nowotworów sutka i jajnika stwierdza się mutacje. Za obniżenie ekspresji w tym przypadku odpowiedzialne jest zjawisko interferencji RNA -— przynajmniej kilka typów naturalnie występujących mikroRNA, których nawet 100x podwyższone stężenie stwierdzane jest w komórkach nowotworowych, blokuje translację białka z matrycy mRNA dla BRCA1 i BRCA2 (9 ryc. 6.11).
+
+[PODPIS/TABELA] Ryc. 611 Receptor estrogenowy w raku sutka. Chociaż udział białek BRCA w patofizjologii raka sutka jest powszechnie znany, dziedziczna forma raka (związana z mutacją genów kodujących białka BRCA) jest dość rzadka, bowiem stanowi tylko ok. 3-5% wszystkich przypadków. Najczęściej w nowotworach sutka dochodzi natomiast do nadekspresji genu receptora estrogenowego. W takiej sytuacji, nawet przy fizjologicznym poziomie estrogenów we krwi, komórki są nadmiernie stymulowane do wzrostu i proliferacji. Na powyższym zdjęciu na brązowo zabarwione są receptory estrogenowe - widoczna lokalizacja jądrowa, charakterystyczna dla komórek raka sutka. (Dzięki uprzejmości dr. hab. Ł. Koperskiego).

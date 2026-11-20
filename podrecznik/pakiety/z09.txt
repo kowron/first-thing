@@ -146,51 +146,41 @@ Istnieje jeszcze czwarty typ – chromosomy telocentryczne . Centromer leży w n
 [RAMKA przyklad] W preparacie widzisz chromosom, którego przewężenie dzieli go na dwa nierówne odcinki: górny jest wyraźnie krótszy od dolnego, ale dobrze widoczny. Krok 1. Ramiona nie są równe (p < q), więc centromer nie leży w środku – to nie chromosom metacentryczny. Krok 2. Ramię p nie jest szczątkowe – to nie chromosom akrocentryczny. Wniosek: chromosom submetacentryczny. Gdyby nad przewężeniem był tylko krótki „kikut”, a prawie cały chromosom tworzyło ramię q – byłby to chromosom akrocentryczny.
 [RYCINA c09-fig-chromosom „Chromosom metafazowy”: Zacznij od A: znajdź przewężenie pierwotne (centromer) – nad nim leży ramię krótkie p, pod nim długie q, a obie chromatydy kończą się telomerami; obok chromosom akrocentryczny z satelitą oddzieloną przewężeniem wtórnym. W B porównaj ramiona: im bliżej końca leży centromer, tym krótsze ramię p; chromosomów telocentrycznych (bez p) człowiek nie ma.]
 
-### Skąd taki zwarty kształt? Chromatyna i histony  []
-Chromosom to nie samo DNA. W jądrze DNA tworzy z białkami kompleks zwany chromatyną ; chromosom jest zbudowany z DNA oraz z białek histonowych i niehistonowych . Szczególne znaczenie mają histony, bo to one tworzą strukturę chromosomu. Białka niehistonowe odgrywają głównie rolę stabilizacyjną i regulacyjną.
-Histony dzieli się na 5 klas: H1 – bardzo bogate w lizynę, H2A i H2B – bogate w lizynę, H3 i H4 – bogate w argininę. Lizyna i arginina to aminokwasy naładowane dodatnio, a podwójna helisa DNA jest naładowana ujemnie – przyciąganie przeciwnych ładunków ułatwia wiązanie histonów z DNA. Skład aminokwasowy histonów jest zbliżony u wszystkich eukariontów, niezależnie od stopnia ich rozwoju ewolucyjnego; dość znaczną zmienność ewolucyjną wykazuje tylko histon H1. Histony są importowane do jądra w fazie S cyklu komórkowego, a ilościowo jest ich w chromatynie tyle samo co DNA (proporcja 1 : 1).
-Ile DNA trzeba upakować? Całkowita długość DNA haploidalnego zestawu chromosomów ssaków (w komórce, która się nie dzieli) to ok. 1 m . W chromosomach metafazowych ta sama nić DNA jest ok. 10 000 razy krótsza – dzięki zwijaniu i kondensacji. Inaczej mówiąc: chromosom metafazowy ma długość ok. 0,0001 długości swojego DNA.
-Jak wygląda to zwijanie, opisano w ; tu wystarczy przypomnienie. W jądrze interfazowym chromatyna ma strukturę nukleosomów – odcinków DNA nawiniętych na rdzeń z histonów. Sąsiednie nukleosomy łączy DNA łącznikowe o długości ok. 60 par zasad. Histon H1 leży na zewnątrz nukleosomu: wiąże się z DNA łącznikowym, domeną globularną oddziałuje z histonem H2A rdzenia, a inną domeną może łączyć się z sąsiednim histonem H1. Kolejne poziomy upakowania to: podwójna helisa (2 nm) → nukleosom (11 nm) → solenoid (30 nm) → pętle solenoidu (300 nm) → skondensowany segment chromosomu (700 nm) → chromosom metafazowy (1400 nm).
-Po co komórka tak silnie upakowuje DNA przed podziałem? Kondensacja jest niezbędna, by materiał genetyczny został równo podzielony między dwie nowo powstające komórki. Metrowej długości, rozluźnionych nici nie dałoby się sprawnie rozdzielić na dwie równe części – zwarty chromosom przemieszcza się w czasie podziału jako całość.
+### Skąd taki zwarty kształt? Chromatyna i histony  [c09-chromatyna]
+Chromosom to nie samo DNA. W jądrze DNA tworzy z białkami kompleks zwany chromatyną ; chromosom jest zbudowany z DNA oraz z białek histonowych i niehistonowych . Szczególne znaczenie mają histony, bo to one tworzą strukturę chromosomu. Mają dużo aminokwasów naładowanych dodatnio (lizyny i argininy), a podwójna helisa DNA jest naładowana ujemnie – przyciąganie przeciwnych ładunków ułatwia wiązanie histonów z DNA. Białka niehistonowe odgrywają głównie rolę stabilizacyjną i regulacyjną.
+Jak silnie DNA jest upakowane? W chromosomach metafazowych nić DNA jest ok. 10 000 razy krótsza niż ta sama nić rozprostowana – dzięki zwijaniu i kondensacji. Jak wygląda to zwijanie, opisano w ; tu wystarczy przypomnienie. W jądrze interfazowym chromatyna ma strukturę nukleosomów – odcinków DNA nawiniętych na rdzeń z histonów. Kolejne poziomy upakowania to: podwójna helisa (2 nm) → nukleosom (11 nm) → solenoid (30 nm) → pętle solenoidu (300 nm) → skondensowany segment chromosomu (700 nm) → chromosom metafazowy (1400 nm). Ile DNA jest do upakowania i jak zbudowany jest nukleosom – .
+Po co komórka tak silnie upakowuje DNA przed podziałem? Kondensacja jest niezbędna, by w czasie podziału materiał genetyczny został równo podzielony między dwie nowo powstające komórki.
 
 ### Euchromatyna i heterochromatyna – dwa stopnie upakowania  []
-Nie cała chromatyna jest upakowana jednakowo. Wyróżnia się mniej skondensowaną euchromatynę i silniej skondensowaną heterochromatynę . Różnią się one dwiema rzeczami. Po pierwsze – rodzajem DNA: w heterochromatynie są krótkie sekwencje DNA ułożone tandemowo , czyli powtórzone jedna za drugą. Po drugie – modyfikacjami epigenetycznymi: metylacją i acetylacją DNA oraz histonów.
+Nie cała chromatyna jest upakowana jednakowo. Wyróżnia się mniej skondensowaną euchromatynę i silniej skondensowaną heterochromatynę . Różnią się one przede wszystkim rodzajem DNA: w heterochromatynie są krótkie sekwencje DNA ułożone tandemowo , czyli powtórzone jedna za drugą. (Druga różnica – modyfikacje epigenetyczne – i liczby: .)
 Heterochromatyna występuje w dwóch postaciach: konstytutywnej (stałej) i fakultatywnej (powstającej tylko w niektórych komórkach). Porównaj wszystkie trzy w tabeli i zwróć uwagę na dwa wiersze: skład zasad (pary GC czy AT) i czas replikacji . Wrócimy do nich przy barwieniu prążkowym – ciemne i jasne prążki odpowiadają właśnie regionom bogatym w pary AT i w pary GC.
 [TABELA]
 Cecha | Euchromatyna | Heterochromatyna konstytutywna | Heterochromatyna fakultatywna
-kondensacja | mniejsza; euchromatyna luźna jest aktywna transkrypcyjnie, zwarta – nieaktywna genetycznie | wysoka i trwała; dekondensacja tylko w późnej fazie S | powstaje z euchromatyny w wyniku jej kondensacji ( heterochromatynizacja )
+kondensacja | mniejsza | wysoka i trwała | powstaje z euchromatyny w wyniku jej kondensacji ( heterochromatynizacja )
 replikacja DNA | we wczesnej i środkowej fazie S | w późnej fazie S | –
-DNA | bogate w pary GC ; cytozyna niezmetylowana lub słabo zmetylowana | bogate w pary AT ; silnie zmetylowane; sekwencje tandemowe o długości od 59 do 300–400 pz | –
+DNA | bogate w pary GC | bogate w pary AT ; sekwencje tandemowe | –
 gdzie i kiedy | – | głównie region przycentromerowy: centromer właściwy i przylegająca do niego z obu stron chromatyna przycentromerowa | tylko w określonych populacjach komórek; wycisza („wyłącza”) odcinki genomu na określonym etapie rozwoju
 [/TABELA]
 
-### Centromer: miejsce, za które chromosom jest ciągnięty  []
+### Centromer: miejsce, za które chromosom jest ciągnięty  [c09-centromer]
 W czasie podziału do centromeru przyczepiają się włókna wrzeciona podziałowego . Po podziale centromeru chromatydy przemieszczają się do przeciwnych biegunów komórki (w mitozie), a w mejozie zachodzi segregacja chromosomów. Centromer jest ostatnim replikowanym i rozdzielanym fragmentem chromosomu – dlatego w metafazie chromatydy siostrzane są w nim jeszcze połączone.
-Z czego zbudowany jest centromer? Z różnych sekwencji powtarzających się – w większości z satelitarnego DNA , a także z licznych sekwencji typu SINES i LINES. W centromerach chromosomów człowieka wyróżnia się co najmniej cztery główne rodziny takich sekwencji:
-- satelitarny DNA typu I, II i III – ich udział zależy od chromosomu: np. chromosomy 1 i 16 zawierają typ II, a chromosom 9 – typ III;
-- α-satelitarny DNA – podstawowy typ sekwencji centromerowych człowieka;
-- β-satelitarny DNA (Sau 3A) oraz Hae III DNA – tylko w niektórych chromosomach, głównie w centromerach chromosomów akrocentrycznych.
+Z czego zbudowany jest centromer? Z różnych sekwencji powtarzających się – w większości z satelitarnego DNA (rodziny tych sekwencji: ).
 [POJĘCIE Kinetochor] wielowarstwowa struktura z sekwencji centromerowych i związanych z nimi swoistych białek; współdziała z mikrotubulami wrzeciona i ułatwia rozdzielanie chromatyd lub chromosomów w anafazie.
-Sekwencje centromerowe wiążą się ze swoistymi białkami. Razem tworzą wielowarstwową strukturę – kinetochor . To kinetochor współdziała z mikrotubulami wrzeciona i ułatwia rozdzielanie chromatyd siostrzanych (w mitozie) lub chromosomów (w mejozie) w anafazie. W mikroskopie elektronowym kinetochor chromosomu metafazowego ma postać trójblaszkowej płytki: gęstej blaszki zewnętrznej i wewnętrznej oraz mniej wyraźnej blaszki środkowej.
+Sekwencje centromerowe wiążą się ze swoistymi białkami. Razem tworzą wielowarstwową strukturę – kinetochor . To kinetochor współdziała z mikrotubulami wrzeciona i ułatwia rozdzielanie chromatyd siostrzanych (w mitozie) lub chromosomów (w mejozie) w anafazie.
 Zapamiętaj regułę „jeden chromosom – jeden centromer”. Chromosom z dwoma centromerami (dicentryczny) jest już aberracją – spotkasz go w katalogu aberracji strukturalnych ( ).
 
-### Telomery – zabezpieczenie końców  []
+### Telomery – zabezpieczenie końców  [c09-telomery]
 Końce chromosomów wymagają ochrony: bez niej mogłyby się łączyć ze sobą, a DNA byłoby narażone na działanie nukleaz (enzymów rozkładających DNA). Chronią je telomery (tel) – końcowe odcinki chromosomów o bardzo charakterystycznej sekwencji, niezbędnej do utrzymania ich stabilności.
-Telomer to powtórzenia tandemowe krótkiej sekwencji – u człowieka 5′-TTAGGG-3′ – obejmujące, zależnie od pary chromosomów i rodzaju komórki, 2–30 kpz. DNA telomerowe nie tworzy nukleosomów: zamiast histonów wiążą się z nim białka telomerowe , a całość (DNA telomerowe z tymi białkami) to telosom . Przestrzennie telomer tworzy poczwórną helisę w kształcie spinki do włosów – „czapeczkę” bogatą w guaninę. To ona chroni zakończenia chromosomów przed łączeniem się ze sobą, a DNA – przed nukleazami.
-Każdy chromosom ma dwa telomery, więc w komórce człowieka (46 chromosomów) jest ich 92 . Telomer nie zawiera genów i nie koduje białek. Pełni cztery zasadnicze funkcje:
-- chroni koniec chromosomu przed uszkodzeniem lub nieprawidłową rekombinacją;
-- umożliwia całkowitą replikację chromosomu;
-- nadzoruje ekspresję genów;
-- wspomaga organizację chromosomów podczas podziału komórki.
+Telomer to powtórzenia tandemowe krótkiej sekwencji – u człowieka 5′-TTAGGG-3′ . Ma strukturę przestrzenną nazywaną „czapeczką”. To ona chroni zakończenia chromosomów przed łączeniem się ze sobą, a DNA – przed nukleazami. Każdy chromosom ma dwa telomery, po jednym na każdym końcu. Telomer nie zawiera genów i nie koduje białek. (Długość telomerów, ich białka, kształt czapeczki i cztery funkcje telomeru: .)
 
 #### Telomer jako zegar komórki  []
-U noworodka poszczególne telomery mają 6–10 tys. nukleotydów. Przy każdej replikacji DNA telomery się skracają, więc w komórkach somatycznych liczba powtórzeń maleje z wiekiem. Gdy zakończenia chromosomów staną się zbyt krótkie, komórki przestają się dzielić. Jedna z teorii zakłada więc, że długość telomeru wyznacza wiek komórki, a komórka jest zaprogramowana na określoną liczbę podziałów; taki mechanizm może np. chronić przed powstawaniem raka.
-W niektórych komórkach – płciowych, macierzystych i komórkach szpiku – telomery się nie skracają, bo działa w nich telomeraza , enzym uzupełniający skracające się końce. Telomeraza może przekształcić prawidłową komórkę somatyczną w komórkę „nieśmiertelną”, dzielącą się bez końca (np. nowotworową). Enzym zawiera krótką cząsteczkę RNA, której część jest komplementarna do powtórzeń telomerowych. To RNA służy jako matryca do syntezy powtórzeń na wystającym końcu 3′; nić komplementarna jest dobudowywana jako nić opóźniona, z pozostawieniem wystającego końca 3′ (replikacja: ). Gdy skracanie telomerów nie jest równoważone przez telomerazę, komórka może zginąć – tracone są wtedy geny położone na końcach chromosomów.
+Przy każdej replikacji DNA telomery się skracają, więc w komórkach somatycznych liczba powtórzeń maleje z wiekiem. Gdy zakończenia chromosomów staną się zbyt krótkie, komórki przestają się dzielić. Jedna z teorii zakłada więc, że długość telomeru wyznacza wiek komórki, a komórka jest zaprogramowana na określoną liczbę podziałów; taki mechanizm może np. chronić przed powstawaniem raka.
+W niektórych komórkach – płciowych, macierzystych i komórkach szpiku – telomery się nie skracają, bo działa w nich telomeraza , enzym uzupełniający skracające się końce (jak to robi – ). Telomeraza może przekształcić prawidłową komórkę somatyczną w komórkę „nieśmiertelną”, dzielącą się bez końca (np. nowotworową).
 
-### Satelity i organizatory jąderka  []
+### Satelity i organizatory jąderka  [c09-satelity]
 Przyjrzyj się chromosomom akrocentrycznym. Na końcu ich bardzo krótkiego ramienia p może być widoczna mała „główka” – satelita : fragment chromatyny oddzielony od ramienia krótkiego barwiącym się odcinkiem, zwanym przewężeniem wtórnym albo nitką satelitonośną . Satelity mogą mieć wszystkie chromosomy akrocentryczne z wyjątkiem chromosomu Y.
-Przewężenie wtórne ma swoją funkcję. U człowieka jest to odcinek jąderkotwórczy chromosomów akrocentrycznych – par 13, 14, 15, 21 i 22 – czyli organizator jąderkowy (NOR, nucleolar organising region ). Zawiera tandemowo ułożone geny rDNA. Z nich powstaje prerybosomowy RNA (pre-rRNA), przekształcany następnie w rRNA. W telofazie odcinki NOR uczestniczą w tworzeniu jąderka, a w interfazie ulegają dekondensacji i wokół nich tworzy się jąderko.
-Organizatorów jąderka jest u człowieka 10 – tyle, ile chromosomów akrocentrycznych (5 par); każdy zawiera ok. 450 kopii rDNA. Liczba chromosomów jąderkotwórczych jest stała dla danego genomu, natomiast wielkość satelitów i przewężeń wtórnych jest cechą polimorficzną – różni się między zdrowymi ludźmi. Ta różnorodność wróci przy zapisie prawidłowego kariotypu ( ).
+Przewężenie wtórne ma swoją funkcję. U człowieka jest to odcinek jąderkotwórczy chromosomów akrocentrycznych – par 13, 14, 15, 21 i 22 – czyli organizator jąderkowy (NOR, nucleolar organising region ). Zawiera tandemowo ułożone geny rDNA – geny rybosomowego RNA (rRNA). Ile ich jest i jak organizatory budują jąderko – .
+Liczba chromosomów jąderkotwórczych jest stała dla danego genomu, natomiast wielkość satelitów i przewężeń wtórnych jest cechą polimorficzną – różni się między zdrowymi ludźmi. Ta różnorodność wróci przy zapisie prawidłowego kariotypu ( ).
 [RAMKA zapamietaj] Chromosom metafazowy to dwie chromatydy siostrzane połączone centromerem, który dzieli go na ramię krótkie p i długie q. Położenie centromeru jest stałe dla danego chromosomu i wyznacza jego typ: meta-, submeta- lub akrocentryczny. Końce chronią telomery (TTAGGG), a chromosomy akrocentryczne 13, 14, 15, 21 i 22 mogą mieć satelity i organizatory jąderka (NOR).
 [ŹRÓDŁO] Źródło: Drewa s. 431–436
 
@@ -201,11 +191,11 @@ Organizatorów jąderka jest u człowieka 10 – tyle, ile chromosomów akrocent
 Weź teraz wszystkie chromosomy jednej komórki. Ich zestaw – o charakterystycznej liczbie i morfologii – to kariotyp . Kariotyp człowieka to 46 chromosomów: 22 pary autosomów (chromosomów somatycznych), oznaczonych numerami od 1 do 22, oraz para chromosomów płci (heterochromosomów), oznaczanych literami X i Y. Chromosomy jednej pary to chromosomy homologiczne .
 Prawidłowy kariotyp żeński zapisuje się 46,XX , a męski – 46,XY : najpierw liczba wszystkich chromosomów, po przecinku chromosomy płci. To najprostszy przykład zapisu, którego czytania nauczysz się w dalszej części rozdziału ( ).
 Kariotyp można ocenić bezpośrednio w mikroskopie świetlnym, oglądając wybarwione metodami prążkowymi płytki metafazowe – chromosomy metafazowe jednej komórki rozłożone na szkiełku. Taka obserwacja pozwala policzyć chromosomy, określić płeć i ogólnie ocenić kariotyp. Do dokładnej analizy sporządza się kariogram.
-[POJĘCIE Kariogram] zestaw chromosomów jednej komórki przedstawiony graficznie według zasad konferencji paryskiej (1971) – ułożony w pary homologiczne i grupy.
+[POJĘCIE Kariogram] zestaw chromosomów jednej komórki przedstawiony graficznie według ustalonych zasad – ułożony w pary homologiczne i grupy.
 Kariogram powstaje z mikrofotografii płytek metafazowych wybarwionych prążkowo – tak, że na chromosomach widać poprzeczne pasy barwiące się intensywnie i słabiej, czyli prążki ( ). Najczęściej stosuje się barwienie na prążki G (GTG). Z odbitek wycina się poszczególne chromosomy i układa w pary homologiczne według wielkości, położenia centromeru i wzoru prążków (G, Q, R). Kariotyp to więc sam zestaw chromosomów, a kariogram – jego uporządkowany obraz. Trzecie pojęcie, idiogram , to schemat wzoru prążków wszystkich chromosomów; wzór ten odzwierciedla nierównomierną kondensację chromatyny.
 
 ### Według czego porządkuje się chromosomy?  []
-Chromosomy człowieka klasyfikuje się według zasad uzgodnionych na międzynarodowych konferencjach cytogenetycznych (Denver 1960, Londyn 1966, Paryż 1971, Sztokholm 1977). Podstawą obecnej klasyfikacji jest międzynarodowy system nazewnictwa cytogenetycznego ISCN ( International System for Human Cytogenetic Nomenclature ) w wersjach z 2005 i 2009 r. Kryteria są trzy:
+Chromosomy człowieka klasyfikuje się według zasad uzgodnionych na międzynarodowych konferencjach cytogenetycznych (które i kiedy – ). Podstawą obecnej klasyfikacji jest międzynarodowy system nazewnictwa cytogenetycznego ISCN ( International System for Human Cytogenetic Nomenclature ) w wersjach z 2005 i 2009 r. Kryteria są trzy:
 - wielkość chromosomu,
 - położenie centromeru ,
 - rozmieszczenie prążków w chromosomie.
@@ -262,14 +252,14 @@ Ostatnie wskazanie obejmuje także osoby bez objawów. Łączy się z tym, co ju
 ### Problem: potrzebne są komórki, które się dzielą  []
 Chromosomy widać tylko w dzielącej się komórce. Pierwszy krok badania jest więc zawsze ten sam: zdobyć dużo komórek w trakcie podziału. Do oceny liczby i struktury chromosomów bada się najczęściej limfocyty krwi obwodowej i komórki szpiku kostnego . W szczególnych przypadkach chromosomy otrzymuje się z hodowli tkankowej fibroblastów albo tkanek pochodzących z guzów nowotworowych. Kariotyp płodu ocenia się w hodowli komórek pobranych z trofoblastu lub płynu owodniowego .
 Najczęstszą metodą jest makro- lub mikrohodowla limfocytów krwi obwodowej. Jej zaletą jest łatwy i powtarzalny sposób otrzymywania dużej liczby komórek do hodowli. Jest jednak przeszkoda: pobrane limfocyty znajdują się w fazie G 1 lub G 0 cyklu komórkowego ( ), a nie w podziale. W takiej krwi nie byłoby więc chromosomów metafazowych. Dlatego limfocyty trzeba najpierw pobudzić do podziałów – to tzw. transformacja blastyczna – za pomocą stymulatorów podziałów komórkowych, np. fitohemaglutyniny .
-Hodowla komórek i przygotowanie preparatu wymagają płynów hodowlanych, kolchicyny, płynu hipotonicznego i utrwalacza. Dzięki takim metodom J. Tjio i A. Levan wykazali w 1956 r., że prawidłowa liczba chromosomów człowieka wynosi 46. Drogę od próbki do kariogramu pokazuje .
+Drogę od próbki do kariogramu pokazuje (odczynniki i historia metody – ).
 [RYCINA c09-fig-preparat „Od próbki do kariogramu”: Czytaj od lewej. Najważniejszy jest krok 2: limfocyty pobrane w fazie G 0 /G 1 dopiero po pobudzeniu fitohemaglutyniną zaczynają się dzielić – bez niego na szkiełku (krok 3) nie byłoby płytek metafazowych do barwienia (4) i ułożenia kariogramu (5).]
 
 ### Po co barwić prążkowo?  []
 Sama wielkość i centromer nie wystarczą, by odróżnić np. pary grupy C. Potrzebna jest cecha, która w każdym chromosomie wygląda inaczej. Dają ją metody prążkowe , opracowane na początku lat 70. XX w. Wyodrębniają one w chromosomach prążki pozytywne (barwiące się intensywnie) i negatywne (barwiące się słabiej). Układ prążków jest charakterystyczny dla każdego chromosomu. Dzięki temu można zidentyfikować poszczególne pary homologiczne i analizować nieprawidłowości ich liczby i struktury.
 W rutynowych badaniach stosuje się wybarwianie prążków G (GTG), Q (QFQ), R (RBA) i C (CBG), a w praktyce kariotyp analizuje się najczęściej na chromosomach metafazowych wybarwionych na prążki G. Czym te techniki się różnią i kiedy wybrać którą – za chwilę. Najpierw dwie sprawy wspólne dla wszystkich: ile prążków widać i jak się je nazywa.
 
-### Ile prążków zobaczymy? Rozdzielczość  []
+### Ile prążków zobaczymy? Rozdzielczość  [c09-rozdzielczosc]
 Liczba prążków, czyli rozdzielczość obrazu prążkowego, zależy od stopnia kondensacji chromatyny. Im słabiej skondensowany chromosom, tym więcej prążków da się w nim wyróżnić:
 [TABELA]
 Chromosomy (zestaw haploidalny) | Liczba prążków
@@ -277,7 +267,7 @@ metafazowe, o średnim stopniu kondensacji | 300–400
 prometafazowe | ok. 550–580
 profazowe | do 850
 [/TABELA]
-Ten sam materiał genetyczny daje więc w profazie ponad dwa razy więcej prążków niż w metafazie – drobniejsze odcinki chromosomu stają się rozróżnialne. Metodę uzyskiwania chromosomów o zwiększonej rozdzielczości (prometafazowych i profazowych) określa się jako HRT . Kondensację chromatyny zmniejsza się przez częściową synchronizację hodowli komórek i/lub związki hamujące kondensację chromosomów, np. BrdU lub metotreksat. W rutynowej diagnostyce rozdzielczość zwykle nie przekracza 550–580 prążków.
+Ten sam materiał genetyczny daje więc w profazie ponad dwa razy więcej prążków niż w metafazie – drobniejsze odcinki chromosomu stają się rozróżnialne. Metodę uzyskiwania chromosomów o zwiększonej rozdzielczości (prometafazowych i profazowych) określa się jako HRT (jak zmniejsza się kondensację – ). W rutynowej diagnostyce rozdzielczość zwykle nie przekracza 550–580 prążków.
 
 ### Jak nazywa się prążki? Adres prążka  [c09-adres]
 Żeby opisać, gdzie w chromosomie pękł fragment albo gdzie leży badany gen, każdy prążek musi mieć swój „adres”. Składa się on z czterech części, podawanych kolejno ( ):
@@ -289,27 +279,26 @@ Regiony i prążki numeruje się od centromeru: odcinki położone przy centrome
 [RAMKA przyklad] Odczytaj adres 10q25.2 . 10 – chromosom 10. q – ramię długie. 2 – drugi region ramienia długiego, licząc od centromeru. 5 – piąty prążek w tym regionie. .2 – subprążek 2 tego prążka. Zwróć uwagę, że „25” czytamy „dwa, pięć” (region 2, prążek 5), a nie „dwadzieścia pięć”. Tak samo 5q13 to chromosom 5, ramię długie, region 1, prążek 3.
 [RYCINA c09-fig-adres „Adres prążka”: Zacznij od centromeru i idź w dół ramienia q: najpierw region 1 (jeden prążek), potem region 2 z prążkami 1–6 – piąty z nich to prążek 10q25. Kolumny po lewej to kolejne części adresu, rozbite po prawej na elementy zapisu. Podział na regiony i prążki według schematu Drewy (s. 444); rozkład ciemnych i jasnych prążków umowny.]
 
-### Którą technikę wybrać? Prążki G, Q, R i C  []
+### Którą technikę wybrać? Prążki G, Q, R i C  [c09-prazki]
 Cztery podstawowe techniki różnią się trzema rzeczami: czym się barwi, co wychodzi ciemne lub świecące i do czego nadaje się wynik. Najpierw każda z osobna, potem zestawienie.
 
 #### Prążki G (GTG) – technika rutynowa  []
 Preparat traktuje się enzymami proteolitycznymi (trawiącymi białka), np. trypsyną lub pronazą, i barwi barwnikiem Giemsy. Chromosomy mają wtedy ciemne prążki poprzedzielane jasnymi międzyprążkami.
-Co kryje się pod tymi kolorami? Przypomnij sobie tabelę eu- i heterochromatyny ( ). Ciemne prążki G to regiony bogate w pary A-T, z późno replikującym DNA – nieaktywna genetycznie, skondensowana heterochromatyna z nielicznymi aktywnymi genami. Różnią się od jasnych także białkami: ta chromatyna jest bogata w białka z mostkami siarczkowymi (S–S), a dużo takich wiązań mają białka niehistonowe chromosomów. Jasne prążki G to regiony bogate w pary G-C – wcześnie replikująca, rozluźniona, aktywna euchromatyna.
+Co kryje się pod tymi kolorami? Przypomnij sobie tabelę eu- i heterochromatyny ( ). Ciemne prążki G to regiony bogate w pary A-T, z późno replikującym DNA – nieaktywna genetycznie, skondensowana heterochromatyna z nielicznymi aktywnymi genami. Jasne prążki G to regiony bogate w pary G-C – wcześnie replikująca, rozluźniona, aktywna euchromatyna.
 Wzór prążków G jest charakterystyczny i unikatowy dla każdej pary homologów. Odzwierciedla odmienną kondensację chromatyny i pozwala dokładnie zidentyfikować każdy chromosom – dlatego jest podstawą rutynowej analizy i kariogramu.
 
 #### Prążki Q (QFQ) – świecące  []
-Zamiast barwnika Giemsy stosuje się fluorochromy , czyli barwniki fluoryzujące. Są dwa ich rodzaje. Pierwsze wiążą się z DNA jonowo i mogą interkalować (wsuwać się) między płaszczyzny jego zasad – np. oranż akrydynowy . Drugie interkalują do dwuniciowego DNA i mają powinowactwo do pewnych zasad azotowych – np. atebryna (Q) i jej pochodne oraz iperyt akrychinowy (QM).
-Silnie fluoryzujące prążki to regiony DNA bogate w pary A-T, a wygaszenie fluorescencji jest proporcjonalne do zawartości par G-C. Świecą więc regiony bogate w A-T – te same, które w barwieniu G są ciemne. Bardzo silnie świecą m.in. okolice centromeru chromosomu 3 (grupa A), satelity chromosomów akrocentrycznych i dystalne odcinki ramion długich chromosomu Y.
+Zamiast barwnika Giemsy stosuje się fluorochromy , czyli barwniki fluoryzujące – np. atebrynę . Silnie fluoryzujące prążki to regiony DNA bogate w pary A-T – te same, które w barwieniu G są ciemne (rodzaje fluorochromów i to, czemu regiony G-C świecą słabo – ). Bardzo silnie świecą m.in. okolice centromeru chromosomu 3 (grupa A), satelity chromosomów akrocentrycznych i dystalne odcinki ramion długich chromosomu Y.
 
 #### Prążki R (RBA) – odwrotność G  []
 Prążki R są odwrotnością prążków G : rejony ciemne w prążkach G są w prążkach R jasne i odwrotnie. Ciemne prążki R to DNA bogate w pary G-C, jasne – bogate w pary A-T. Wzór prążków R można uzyskać różnymi technikami (RHG, RBA, RBG). Barwienie R uzupełnia analizę kariotypu: odwrócony wzór ujawnia aberracje niedostrzegalne w prążkach G lub Q.
 
 #### Prążki C (CBG) – tylko heterochromatyna konstytutywna  []
-Barwienie C służy do czegoś innego niż rozpoznawanie par: wykrywa w kariotypie rejony zawierające heterochromatynę konstytutywną . Preparat inkubuje się w roztworze wodorotlenku baru [Ba(OH) 2 ], a potem barwi barwnikiem Giemsy. Wybarwia się chromatyna centromerowa i przycentromerowa – rejony zbudowane z powtarzających się sekwencji satelitarnego DNA, silnie związanych ze swoistymi białkami niehistonowymi, które chronią DNA. Na ciemno wychodzą więc centromery i okolice przycentromerowe, a reszta chromosomu pozostaje jasna. U człowieka wielkość chromatyny przycentromerowej chromosomów par 1, 9 i 16 jest cechą polimorficzną.
+Barwienie C służy do czegoś innego niż rozpoznawanie par: wykrywa w kariotypie rejony zawierające heterochromatynę konstytutywną . Preparat inkubuje się w roztworze wodorotlenku baru [Ba(OH) 2 ], a potem barwi barwnikiem Giemsy. Wybarwia się chromatyna centromerowa i przycentromerowa (z czego zbudowane są te rejony – ). Na ciemno wychodzą więc centromery i okolice przycentromerowe, a reszta chromosomu pozostaje jasna. U człowieka wielkość chromatyny przycentromerowej chromosomów par 1, 9 i 16 jest cechą polimorficzną.
 [TABELA]
 Technika | Czym się barwi | Co jest ciemne lub świeci | Co pokazuje, do czego służy
 G (GTG) | enzym proteolityczny (trypsyna, pronaza) + barwnik Giemsy | ciemne: regiony bogate w A-T, późno replikujące (heterochromatyna); jasne: G-C, euchromatyna | wzór unikatowy dla każdej pary – rutynowa identyfikacja chromosomów i kariogram
-Q (QFQ) | fluorochromy, np. atebryna, oranż akrydynowy | świecą regiony bogate w A-T; pary G-C wygaszają fluorescencję | bardzo silnie świecą: okolica centromeru chromosomu 3, satelity akrocentrycznych, dystalna część Yq
+Q (QFQ) | fluorochromy, np. atebryna | świecą regiony bogate w A-T | bardzo silnie świecą: okolica centromeru chromosomu 3, satelity akrocentrycznych, dystalna część Yq
 R (RBA) | różne techniki (RHG, RBA, RBG) | ciemne: regiony bogate w G-C; jasne: A-T – odwrotność G | uzupełnienie analizy – ujawnia aberracje niedostrzegalne w G lub Q
 C (CBG) | Ba(OH) 2 , potem barwnik Giemsy | ciemne: centromery i okolice przycentromerowe (heterochromatyna konstytutywna) | wykrywanie heterochromatyny konstytutywnej; jej wielkość w chromosomach 1, 9 i 16 – cecha polimorficzna
 [/TABELA]
@@ -326,22 +315,20 @@ Kariotyp prążkowy pokazuje, że coś jest nie tak: każda nieprawidłowość w
 - Czy brakuje fragmentu mniejszego niż prążek? Rozdzielczość kariotypu ma granice, a części zmian klasyczne badanie cytogenetyczne nie wykrywa. Tu pomaga FISH, którym diagnozuje się m.in. zespoły mikrodelecyjne (wywołane utratą bardzo małego fragmentu chromosomu).
 - Co, jeśli komórki się nie dzielą? Kariotyp wymaga metafaz, a FISH i CGH pozwalają analizować aberracje także w komórkach niedzielących się – nawet utrwalonych formaliną i zatopionych w bloczkach parafinowych.
 - Ile DNA ma jądro? Na to odpowiada cytometria przepływowa.
+Do technik uzupełniających należy też autoradiografia , która wykorzystuje izotopy promieniotwórcze. Dziś stosuje się ją rzadko – z powodu narażenia na radioizotopy i związanych z tym problemów ochrony radiologicznej (do czego służy – ).
 
 ### Barwienia celowane: AgNOR i DAPI z dystamycyną  []
-AgNOR to barwienie organizatorów jąderkotwórczych. Organizatory jąderka na nitkach satelitonośnych chromosomów akrocentrycznych zawierają geny rybosomalne dla 18S i 28S rRNA. Te z nich, w których odbywa się aktywna transkrypcja rRNA, wybarwiają się selektywnie azotanem srebra (stąd „Ag” w nazwie). Metodę stosuje się do badania polimorfizmu nitek satelitonośnych i satelitów, a także do identyfikacji chromosomów markerowych – te często są utworzone z ramion krótkich chromosomów akrocentrycznych, czyli z odcinków niosących organizatory jąderka.
-Fluorochrom DAPI (4,6-diamino-2-fenyloindol) ma powinowactwo do par A-T i daje wzór prążków Q. Połączenie DAPI z antybiotykiem dystamycyną A , który również wiąże się z parami A-T, daje bardziej kontrastowy obraz prążków. Silnie fluoryzują wtedy regiony heterochromatyny konstytutywnej chromosomów 1, 9 i 16, dystalna część ramion długich chromosomu Y i proksymalna część ramion krótkich chromosomu 15. Metodę stosuje się do identyfikacji tych regionów, a przede wszystkim chromosomów markerowych pochodzących z chromosomu 15. Przy okazji: dwie główne techniki barwienia na prążki Q to QFQ (fluorochrom – atebryna) i QFH (fluorochrom – barwnik Hoechst).
+AgNOR to barwienie organizatorów jąderkotwórczych – leżących na nitkach satelitonośnych chromosomów akrocentrycznych. Te organizatory, w których odbywa się aktywna transkrypcja rRNA, wybarwiają się selektywnie azotanem srebra (stąd „Ag” w nazwie). Metodę stosuje się do badania polimorfizmu nitek satelitonośnych i satelitów, a także do identyfikacji chromosomów markerowych – te często są utworzone z ramion krótkich chromosomów akrocentrycznych, czyli z odcinków niosących organizatory jąderka.
+Fluorochrom DAPI (pełna nazwa – ) ma powinowactwo do par A-T i daje wzór prążków Q. Połączenie DAPI z antybiotykiem dystamycyną A , który również wiąże się z parami A-T, daje bardziej kontrastowy obraz prążków. Silnie fluoryzują wtedy regiony heterochromatyny konstytutywnej chromosomów 1, 9 i 16, dystalna część ramion długich chromosomu Y i proksymalna część ramion krótkich chromosomu 15. Metodę stosuje się do identyfikacji tych regionów, a przede wszystkim chromosomów markerowych pochodzących z chromosomu 15.
 
-### Autoradiografia  []
-Autoradiografia wykorzystuje izotopy promieniotwórcze. Służy do badania struktury chromosomów, kinetyki i asynchronii replikacji DNA oraz czasu trwania poszczególnych faz cyklu komórkowego. Stosuje się ją też w hybrydyzacji kwasów nukleinowych z sondami znakowanymi izotopami ( 3 H, 32 P, 35 S, 14 C): hybrydy emitują promieniowanie, które uwidacznia się na kliszy rentgenowskiej. W badaniach chromosomów stosuje się najczęściej tryt ( 3 H) oraz trytowaną aktynomycynę D, która swoiście wiąże się z DNA utrwalonych chromosomów – pozwala to dość precyzyjnie analizować rozmieszczenie odcinków bogatych w pary G-C lub A-T. Czas replikacji DNA w poszczególnych odcinkach chromosomów bada się z użyciem trytowanej tymidyny. Obecnie metodę stosuje się rzadko, z powodu narażenia na radioizotopy i związanych z tym problemów ochrony radiologicznej.
-
-### Cytometria przepływowa – ile DNA ma jądro?  []
-W cytometrii przepływowej zawiesinę komórek oświetla się i mierzy ugięcie oraz rozproszenie światła, a także wzbudzoną fluorescencję. Pozwala to ocenić cechy morfologiczne komórek i ilość barwnika związanego przez ich struktury – a stąd zawartość określonych cząsteczek, np. DNA, RNA lub antygenów powierzchniowych. Fluorochrom dobiera się do badanej składowej komórki; do barwienia kwasów nukleinowych, przede wszystkim DNA, stosuje się m.in. DAPI, oranż akrydyny i bromek etydyny.
+### Cytometria przepływowa – ile DNA ma jądro?  [c09-cytometria]
+W cytometrii przepływowej komórki w zawiesinie wybarwia się fluorochromem i mierzy wzbudzoną fluorescencję. Na tej podstawie ocenia się ilość barwnika związanego przez struktury komórki, a stąd – zawartość w komórce określonych cząsteczek, np. DNA (co jeszcze mierzy cytometr i jakimi barwnikami – ).
 Odmiana tej techniki, cytofluorometria przepływowa , służy m.in. do ilościowego oznaczania DNA w jądrze komórkowym (ploidalności). Z wyników sporządza się wykresy zawartości DNA w poszczególnych populacjach komórek – histogramy DNA . Rozumowanie jest proste: ilość DNA w jądrze wiąże się z liczbą chromosomów. W prawidłowej komórce, która się nie dzieli, wynosi 2n. W komórkach guzów może występować inna wielokrotność liczby haploidalnej (n = 23), np. 3n lub 4n ( poliploidia ), albo liczba chromosomów niebędąca wielokrotnością liczby haploidalnej ( aneuploidia ). Obie zmieniają zawartość DNA w jądrze, dlatego cytofluorometria jest badaniem uzupełniającym w diagnostyce i rokowaniu w różnych nowotworach.
 
-### FISH – sonda, która szuka jednego fragmentu  []
+### FISH – sonda, która szuka jednego fragmentu  [c09-fish]
 Jak sprawdzić, czy w chromosomie jest konkretna, krótka sekwencja DNA, skoro w obrazie prążkowym jej nie widać? Trzeba ją „oznaczyć” od środka – hybrydyzacją z sondą. Przypomnienie z : hybrydyzacja to łączenie się dwóch komplementarnych, jednoniciowych odcinków kwasu nukleinowego, a sonda to znakowany fragment o sekwencji komplementarnej do szukanej – przyłącza się tylko tam, gdzie tę sekwencję znajdzie.
-Hybrydyzacja in situ (ISH, „w miejscu”) pozwala lokalizować swoiste sekwencje DNA bezpośrednio w materiale biologicznym – w preparacie cytogenetycznym, rozmazie komórkowym lub skrawku tkankowym – na szkiełku podstawowym, rzadziej w zawiesinie. To proces wieloetapowy, a jednym z najważniejszych etapów jest przygotowanie i detekcja sond. Dawniej stosowano sondy znakowane radioaktywnie (np. 3 H); obecnie zastępują je sondy, których znacznikiem są fluorochromy.
-W fluorescencyjnej hybrydyzacji in situ (FISH) sonda niesie fluorochrom albo jest sprzężona z inną cząsteczką, np. biotyną lub digoksygeniną. W tym drugim przypadku fluorochrom dodaje się dopiero po hybrydyzacji – sprzężony z przeciwciałami lub awidyną. Miejsce, w którym sonda się przyłączyła, świeci jako kolorowy punkt – sygnał hybrydyzacyjny ( ).
+Hybrydyzacja in situ (ISH, „w miejscu”) pozwala lokalizować swoiste sekwencje DNA bezpośrednio w materiale biologicznym – w preparacie cytogenetycznym, rozmazie komórkowym lub skrawku tkankowym – na szkiełku podstawowym, rzadziej w zawiesinie. To proces wieloetapowy, a jednym z najważniejszych etapów jest przygotowanie i detekcja sond.
+W fluorescencyjnej hybrydyzacji in situ (FISH) znacznikiem sondy jest fluorochrom (dwa sposoby, w jakie sonda go otrzymuje – ). Miejsce, w którym sonda się przyłączyła, świeci jako kolorowy punkt – sygnał hybrydyzacyjny ( ).
 FISH należy do technik cytogenetyki molekularnej . Służy do badania zmian ilościowych DNA – amplifikacji genu, delecji, duplikacji – oraz zmian liczby i struktury chromosomów, zarówno w metafazie, jak i w interfazie. Co zobaczymy, zależy od wyboru sondy:
 - sondy centromerowe rozpoznają regiony centromerowe poszczególnych par autosomów i chromosomów płci – w płytkach metafazowych lub w jądrach interfazowych;
 - sondy prążkowo specyficzne i telomerowe rozpoznają inne niż centromerowe regiony chromosomów i służą do wykrywania aberracji strukturalnych i liczbowych w metafazie oraz w jądrach interfazowych.
@@ -352,23 +339,22 @@ Zastosowanie kliniczne FISH:
 - „szybkie” wykrywanie aneuploidii w diagnostyce prekoncepcyjnej, preimplantacyjnej i przedurodzeniowej;
 - diagnostyka nowotworów – ocena aberracji swoistych dla danego typu nowotworu, w celach leczniczych i rokowniczych.
 
-### Cytogenetyka interfazalna – bez metafaz  []
-Sonda znajduje swój fragment także w jądrze komórki, która się nie dzieli – nie trzeba więc mieć chromosomów metafazowych. Na tym opiera się cytogenetyka interfazalna : hybrydyzacja sondy swoistej dla komplementarnego fragmentu DNA w jądrach komórek, które nie są w fazie mitozy ( jądrach interfazowych ). Wykrywa się tak zaburzenia odpowiadające liczbowym i strukturalnym aberracjom chromosomowym, w tym mikrodelecjom, w różnym materiale: rozmazach komórkowych z aspiratów, skrawkach histologicznych świeżych lub zatopionych w parafinie, komórkach płynu owodniowego, szpiku i innych. Duże znaczenie ma wybór sondy fluorescencyjnej; najczęściej używa się sond centromerowych, telomerowych i prążkowo specyficznych dla sekwencji DNA o znanej lokalizacji.
+### Cytogenetyka interfazalna – bez metafaz  [c09-interfaza]
+Sonda znajduje swój fragment także w jądrze komórki, która się nie dzieli – nie trzeba więc mieć chromosomów metafazowych. Na tym opiera się cytogenetyka interfazalna : hybrydyzacja sondy swoistej dla komplementarnego fragmentu DNA w jądrach komórek, które nie są w fazie mitozy ( jądrach interfazowych ). Wykrywa się tak zaburzenia odpowiadające liczbowym i strukturalnym aberracjom chromosomowym, w tym mikrodelecjom, w różnym materiale biologicznym (jakim – ). Duże znaczenie ma wybór sondy fluorescencyjnej; najczęściej używa się sond centromerowych, telomerowych i prążkowo specyficznych dla sekwencji DNA o znanej lokalizacji.
 
-### CGH – porównanie całego genomu z wzorcem  []
+### CGH – porównanie całego genomu z wzorcem  [c09-cgh]
 FISH odpowiada na pytanie o jeden region – ten, dla którego mamy sondę. A jeśli nie wiadomo, gdzie szukać? Porównawcza hybrydyzacja genomowa (CGH) identyfikuje zmiany liczby kopii sekwencji DNA w całym genomie naraz. Też polega na hybrydyzacji in situ , ale role są odwrócone: znakuje się genomowe DNA pacjenta , a hybrydyzuje się je do prawidłowych chromosomów metafazowych w preparacie kontrolnym. W mieszaninie hybrydyzacyjnej jest też referencyjne DNA komórki prawidłowej ( ).
 - Równe ilości DNA referencyjnego i badanego znakuje się różnymi fluorochromami – referencyjne na czerwono, badane na zielono.
 - W czasie hybrydyzacji oba DNA przyłączają się do chromosomów na kontrolnym preparacie.
-- Komputer mierzy półilościowo i porównuje natężenie obu fluorescencji – stosunek „zieleń : czerwień” – wzdłuż wszystkich chromosomów, a uzyskane profile odnosi do wzorców (ideogramów chromosomów).
+- Komputer porównuje natężenie obu fluorescencji – stosunek „zieleń : czerwień” – wzdłuż wszystkich chromosomów.
 - Profil mieszczący się w przedziale wartości progowych 0,75–1,25 uznaje się za prawidłowy. Wartości powyżej 1,25 lub poniżej 0,75 w danym regionie wskazują na nieprawidłową liczbę kopii sekwencji DNA tego regionu.
 Dlaczego stosunek barw mówi o liczbie kopii? Obu DNA dodano tyle samo. Jeśli pacjent ma danego odcinka tyle co komórka prawidłowa, w odpowiednim miejscu chromosomu przyłączy się tyle samo zielonego co czerwonego DNA – stosunek wyniesie ok. 1. Jeśli u pacjenta odcinka brakuje, zielonego DNA z tego regionu jest mniej i przeważa czerwień; jeśli odcinek jest w nadmiarze – przeważa zieleń. Na tej samej zasadzie działa dwukolorowe doświadczenie na mikromacierzy ( ).
 [RYCINA c09-fig-fish-cgh „FISH i CGH”: A – FISH: sonda z fluorochromem (1) przyłącza się do komplementarnego DNA (2); w jądrze interfazowym policz sygnały (3) – dwa to prawidłowa liczba kopii, trzy to trisomia. B – CGH: DNA badane (zielone) i referencyjne (czerwone) w równych ilościach hybrydyzują do prawidłowych chromosomów; śledź profil zieleń : czerwień wzdłuż chromosomu – powyżej 1,25 przeważa DNA pacjenta (nadmiar kopii), poniżej 0,75 – DNA referencyjne (ubytek).]
 [RAMKA przyklad] Liczby przykładowe. W regionie A stosunek zieleń : czerwień wynosi 1,0 – mieści się w przedziale 0,75–1,25, liczba kopii jest prawidłowa. W regionie B wynosi 1,5 – powyżej 1,25: pacjent ma więcej kopii tej sekwencji. W regionie C – 0,5 , poniżej 0,75: kopii jest mniej. A jak wypadnie badanie nosiciela translokacji zrównoważonej? Jego materiał genetyczny jest tylko przestawiony – żaden odcinek nie przybył ani nie ubył – więc stosunek barw wszędzie pozostaje w normie. Dlatego CGH nie wykrywa aberracji zrównoważonych.
-CGH ma też inne ograniczenia: małą rozdzielczość – 5–10 Mpz (milionów par zasad), porównywalną z cytogenetyką klasyczną – i brak możliwości wykrywania mozaikowatości chromosomowej. Zakres zastosowań poszerza udoskonalona wersja – HR-CGH . Zastosowania kliniczne CGH:
+CGH ma też inne ograniczenia: nie wykrywa mozaikowatości chromosomowej, a jej rozdzielczość jest mała – porównywalna z cytogenetyką klasyczną (liczby i nowsze odmiany metody – ). Zastosowania kliniczne CGH:
 - diagnostyka niezrównoważonych aberracji chromosomowych w komórkach nowotworowych;
 - identyfikacja i charakterystyka aberracji strukturalnych jako uzupełnienie cytogenetyki klasycznej (np. chromosomów markerowych);
 - identyfikacja niewielkich delecji i duplikacji niewidocznych w rutynowym badaniu kariotypu.
-Najnowszą modyfikacją jest CGH do mikromacierzy ( array CGH). Mieszaninę DNA badanego i referencyjnego hybrydyzuje się w niej nie do chromosomów metafazowych, lecz do zmapowanych wcześniej klonów genomowych (określonych sekwencji DNA) umieszczonych na płytce.
 [TABELA]
 Pytanie | Kariotyp prążkowy | FISH | CGH
 Co badamy? | wszystkie chromosomy komórki: ich liczbę i wzór prążków | region rozpoznawany przez wybraną sondę | liczbę kopii sekwencji DNA w całym genomie
@@ -416,7 +402,7 @@ mat | pochodzenie matczyne | UPID | uniparentalna izodisomia
 mos | mozaika |  | 
 [/TABELA]
 
-### Czytamy element po elemencie  []
+### Czytamy element po elemencie  [c09-czytamy]
 Każdy zapis czytaj zawsze w tej samej kolejności: liczba chromosomów → chromosomy płci → typ aberracji → którego chromosomu dotyczy → gdzie pękł . Adresy punktów pęknięć czytasz tak jak adres prążka ( ). Przejdźmy przez cztery przykłady, od najprostszego ( ).
 [RAMKA przyklad] 1. 47,XY,+21. 47 – o jeden chromosom więcej niż prawidłowe 46. XY – kariotyp męski. +21 – dodatkowy chromosom 21. Liczba się zgadza: 46 + 1 = 47. Odczyt: trisomia 21 u mężczyzny, aberracja liczbowa. U kobiety ten sam stan zapisuje się 47,XX,+21.
 [RAMKA przyklad] 2. 46,XX,del(5)(q13q33). 46,XX – kobieta, liczba chromosomów prawidłowa (delecja nie usuwa całego chromosomu). del – delecja, czyli utrata fragmentu chromosomu. (5) – dotyczy chromosomu 5. (q13q33) – dwa punkty pęknięć, oba na ramieniu długim: q13 (region 1, prążek 3) i q33 (region 3, prążek 3); między nimi nie stawia się żadnego znaku. Odczyt: utracony został wewnętrzny fragment ramienia długiego chromosomu 5, między q13 a q33 – delecja interstycjalna . Gdyby w nawiasie był jeden punkt, jak w 46,XY,del(5)(q13), chromosom straciłby cały koniec ramienia długiego od q13 – delecja terminalna .
@@ -429,90 +415,69 @@ Teraz ten sam typ chromosomu pochodnego w wersji niezrównoważonej: 46,XX, der(
 ### Warianty polimorficzne – dopisek, który nie oznacza choroby  [c09-polimorfizm]
 Nie każdy dopisek po chromosomach płci oznacza aberrację. W zapisie prawidłowego kariotypu uwzględnia się też polimorfizm – np. większą niż w granicach normy ilość heterochromatyny konstytutywnej (h) albo duże satelity (s). Czyta się je tą samą metodą: chromosom → ramię → struktura → plus lub minus.
 - 46,XX,1qh+ – kariotyp żeński; w chromosomie 1, w okolicy centromerowej ramienia długiego (q), większy odcinek heterochromatyny konstytutywnej (h+);
-- 46,XY,9qh− – krótszy odcinek heterochromatyny konstytutywnej (h−) w okolicy centromerowej ramienia długiego chromosomu 9;
-- 46,XX,15ps+ – duże satelity (s+) na ramionach krótkich (p) chromosomu 15;
-- 22pstk+ – dłuższa nitka satelitonośna (stk+) na ramieniu krótkim chromosomu 22.
-Większa lub mniejsza ilość heterochromatyny konstytutywnej ani wielkość satelitów i nitek satelitonośnych nie oznaczają patologii – to cechy polimorficzne chromosomów (heterochromatynę konstytutywną uwidacznia barwienie C). Cechą polimorficzną są też miejsca kruche (fra) – fragmenty chromosomów niewybarwiające się (achromatyczne) barwnikiem Giemsy:
-- fra(10)(q25.2) – miejsce kruche na chromosomie 10 w subprążku 10q25.2;
-- fra(10)(q22.1),fra(10)(q25.2) – dwa miejsca kruche na tym samym chromosomie;
-- fra(10)(q25.2),fra(16)(q22.1) – dwa miejsca kruche na różnych chromosomach.
+- 46,XX,15ps+ – duże satelity (s+) na ramionach krótkich (p) chromosomu 15.
+Większa lub mniejsza ilość heterochromatyny konstytutywnej ani wielkość satelitów i nitek satelitonośnych nie oznaczają patologii – to cechy polimorficzne chromosomów (heterochromatynę konstytutywną uwidacznia barwienie C). Cechą polimorficzną są też miejsca kruche (fra) – fragmenty chromosomów niewybarwiające się (achromatyczne) barwnikiem Giemsy. Dalsze zapisy polimorfizmów, także miejsc kruchych – .
 
-### Zapis rozszerzony – trasa wzdłuż chromosomu  []
+### Zapis rozszerzony – trasa wzdłuż chromosomu  [c09-rozszerzony]
 Zapis skrócony podaje typ aberracji, chromosomy i punkty pęknięć. Zapis rozszerzony opisuje dokładnie wszystkie rejony chromosomów, z których składa się nieprawidłowy chromosom. Czytaj go jak trasę: zaczynasz na jednym końcu chromosomu pochodnego, idziesz do drugiego, a zapis wymienia kolejne odcinki, przez które przechodzisz ( ). Potrzebne są cztery symbole:
 - pter i qter – koniec (fragment terminalny, ter) ramienia krótkiego i długiego;
 - → – „od – do”, czyli zakres regionu;
 - :: – pęknięcie i połączenie: tu kończy się jeden odcinek i zaczyna drugi;
 - : – samo pęknięcie: w tym miejscu chromosom się kończy.
-[RAMKA przyklad] 46,XX,del(5)(pter→q13::q33→qter). Idziesz od końca ramienia krótkiego (pter) do prążka q13; tam pęknięcie i połączenie (::) z prążkiem q33; dalej do końca ramienia długiego (qter). Odcinek q13–q33 został pominięty – to ta sama delecja interstycjalna co del(5)(q13q33). Dla porównania 46,XY,del(5)(pter→q13:) : trasa kończy się na q13 pojedynczym dwukropkiem – brakuje całego końca ramienia długiego (delecja terminalna). W translokacji wzajemnej powstają dwa chromosomy pochodne, więc są dwie trasy, rozdzielone średnikiem: 46,XX,t(2;5)(2pter→2q21::5q31→5qter;5pter→5q31::2q21→2qter).
 [RYCINA c09-fig-trasa „Zapis rozszerzony – trasa wzdłuż chromosomu”: Czytaj zapis rozszerzony od lewej, idąc wzdłuż chromosomu pochodnego. A – trasa pter→q13, połączenie (::), q33→qter: odcinek q13–q33 (czerwony) wypada. B – dwie trasy, po jednej na każdy chromosom pochodny, rozdzielone średnikiem; kolor odcinka (zielony – z chromosomu 2, niebieski – z chromosomu 5) odpowiada kolorowi jego opisu w zapisie.]
+[RAMKA przyklad] 46,XX,del(5)(pter→q13::q33→qter). Idziesz od końca ramienia krótkiego (pter) do prążka q13; tam pęknięcie i połączenie (::) z prążkiem q33; dalej do końca ramienia długiego (qter). Odcinek q13–q33 został pominięty – to ta sama delecja interstycjalna co del(5)(q13q33). Dla porównania 46,XY,del(5)(pter→q13:) : trasa kończy się na q13 pojedynczym dwukropkiem – brakuje całego końca ramienia długiego (delecja terminalna). Translokacja wzajemna daje dwa chromosomy pochodne, więc jej zapis rozszerzony ma dwie trasy rozdzielone średnikiem ( ).
 [RAMKA zapamietaj] Zapis kariotypu: liczba chromosomów, przecinek, chromosomy płci, przecinek, opis aberracji – skrót, w nawiasie chromosom (różne chromosomy rozdziela średnik), w kolejnym nawiasie punkty pęknięć, np. 46,XX,del(5)(q13q33). Zapis rozszerzony to trasa od końca do końca chromosomu pochodnego: „→” – od–do, „::” – pęknięcie i połączenie, „:” – pęknięcie. Dopiski typu 1qh+ czy 15ps+ opisują polimorfizm, a nie chorobę.
 [ŹRÓDŁO] Źródło: Drewa s. 451–457
 
 ## Katalog aberracji i ich zapis  [c09-aberracje]
 Umiesz już czytać zapis. Ten podrozdział zbiera wszystkie typy aberracji opisane przez Drewę – z przykładowymi zapisami, które możesz rozkładać na elementy tak jak wcześniej.
 
-### Aberracje liczbowe: za dużo lub za mało całych chromosomów  []
+### Aberracje liczbowe: za dużo lub za mało całych chromosomów  [c09-liczbowe]
 Aberracje liczbowe dotyczą komórek, które mają nieprawidłową liczbę prawidłowych chromosomów. Wyróżnia się dwa rodzaje takich komórek.
-Komórki poliploidalne (euploidalne) powstają przez zwielokrotnienie całego haploidalnego garnituru chromosomów (n = 23) – są to np. komórki triploidalne i tetraploidalne. Kariotyp komórki triploidalnej zapisuje się np. 69,XXY (3 × 23 = 69), a tetraploidalnej – 92,XXXX (4 × 23 = 92). Poliploidia u zwierząt i człowieka występuje bardzo rzadko, jest natomiast dość częsta u roślin.
-Komórki aneuploidalne nie mają jednego chromosomu albo mają dodatkowy jeden, dwa lub (rzadko) więcej chromosomów. Komórka, w której brakuje jednego chromosomu, to komórka monosomiczna ; z dodatkowymi chromosomami (np. chromosomem X) – polisomiczna ; bez całej pary chromosomów – nullisomiczna . Przy zaburzeniach liczby chromosomów w komórkach płciowych mówi się o gamecie disomicznej lub nullisomicznej .
+Komórki poliploidalne (euploidalne) powstają przez zwielokrotnienie całego haploidalnego garnituru chromosomów (n = 23) – są to np. komórki triploidalne i tetraploidalne. Kariotyp komórki triploidalnej zapisuje się np. 69,XXY (3 × 23 = 69), a tetraploidalnej – 92,XXXX (4 × 23 = 92).
+Komórki aneuploidalne nie mają jednego chromosomu albo mają dodatkowy jeden, dwa lub (rzadko) więcej chromosomów. Komórka, w której brakuje jednego chromosomu, to komórka monosomiczna ; z dodatkowymi chromosomami (np. chromosomem X) – polisomiczna (dalsze nazwy, także dla gamet – ).
 Aneuploidie dzieli się na aneuploidie chromosomów płci i autosomów – i każdą grupę zapisuje się nieco inaczej. Aneuploidie chromosomów płci : liczba wszystkich chromosomów, przecinek i bezpośrednio po nim litery chromosomów płci – zmiana widoczna jest w samych literach. 45,X to monosomia X (brak jednego chromosomu X u płci żeńskiej), 47,XXX – polisomia X (trzy chromosomy X), 47,XYY – polisomia Y (jeden chromosom X i dwa Y).
 Aneuploidie autosomów : liczba chromosomów, przecinek, chromosomy płci, przecinek, a potem znak „+” lub „−” i numer dodatkowego lub brakującego chromosomu. 47,XY,+21 lub 47,XX,+21 to trisomia 21, czyli dodatkowy chromosom pary 21.
-Uniparentalna disomia (UPD) to stan, w którym oba chromosomy homologiczne danej pary pochodzą od jednego rodzica. Liczba chromosomów jest prawidłowa – zapis wskazuje więc pochodzenie pary: 46,XY,upd(15)mat to męski kariotyp z uniparentalną disomią chromosomu 15 pochodzenia matczynego (mat; pochodzenie ojcowskie – pat).
-[RAMKA przyklad] mos47,XX,+21[23]/ 46,XX,upd(21)pat[7]. mos – mozaika, czyli kilka linii komórkowych u jednej osoby; ukośnik dzieli zapis na linie. Pierwsza linia: 47,XX,+21[23] – trisomia 21, stwierdzona w 23 komórkach (liczba w nawiasie kwadratowym). Druga: 46,XX,upd(21)pat[7] – uniparentalna disomia chromosomu 21 pochodzenia ojcowskiego, w 7 komórkach. Odczyt: żeński kariotyp mozaikowy z dwiema liniami komórkowymi.
+Uniparentalna disomia (UPD) to stan, w którym oba chromosomy homologiczne danej pary pochodzą od jednego rodzica. Liczba chromosomów jest prawidłowa – zapis wskazuje więc pochodzenie pary: 46,XY,upd(15)mat to męski kariotyp z uniparentalną disomią chromosomu 15 pochodzenia matczynego (mat; pochodzenie ojcowskie – pat). Zapis mozaiki z UPD – .
 
-### Aberracje strukturalne: katalog zapisów  []
+### Aberracje strukturalne: katalog zapisów  [c09-strukturalne]
 Aberracje strukturalne dotyczą komórek, w których liczba chromosomów może być prawidłowa, ale wystąpiły nieprawidłowości w budowie chromosomów: translokacje, delecje, duplikacje, inwersje, insercje, izochromosomy, chromosomy dicentryczne, pierścieniowe i markerowe. Zapisuje się je dwoma sposobami – skróconym i rozszerzonym ( ). W zapisach skróconych delecji, duplikacji, inwersji i insercji między punktami pęknięć nie stawia się żadnego znaku.
-Tabela zbiera przykład dla każdego typu. Elementy zapisów już znasz, więc spróbuj odczytać każdy zapis samodzielnie, a kolumnę „Jak go czytać” traktuj jako sprawdzenie.
+Tabela zbiera przykład dla każdego typu. Elementy zapisów już znasz, więc spróbuj odczytać każdy zapis samodzielnie, a kolumnę „Jak go czytać” traktuj jako sprawdzenie. Jak zmienia się chromosom w sześciu z tych aberracji, pokazuje ; zapisy rozszerzone wszystkich typów – .
 [TABELA]
 Aberracja | Przykład zapisu | Jak go czytać
-Translokacja robertsonowska zrównoważona (der) | 45,XX,der(13;21)(q10;q10) rozszerzony: 45,XX,der(13;21) (13qter→13q10:: 21q10→qter) | fuzja centryczna: pęknięcie w pobliżu centromeru dwóch chromosomów akrocentrycznych (tu: w prążku q10 chromosomów 13 i 21), połączenie ich ramion długich i utrata ramion krótkich – powstaje jeden chromosom pochodny (der). Chromosomy w translokacji oddziela średnik, punkty pęknięcia i połączenia – dwukropek. Bez objawów (nie utracono funkcjonalnego DNA); nosiciel translokacji zrównoważonej może ją przekazać potomstwu
-Translokacja robertsonowska niezrównoważona | 46,XX,der(21;21)(q10;q10),+21 | chromosom pochodny z ramion długich dwóch chromosomów 21 i dodatkowy chromosom 21 – potrójna kopia ramienia 21q, czego wynikiem jest zespół Downa
-Translokacja wzajemna (t) | 46,XX,t(2;5)(q21;q31) rozszerzony: 46,XX,t(2;5) (2pter→2q21:: 5q31→5qter; 5pter→5q31:: 2q21→2qter) | wymiana odcinków leżących dystalnie od pęknięć w obu chromosomach (może dotyczyć ramion długich i krótkich wszystkich autosomów i heterochromosomów); tu zrównoważona, pęknięcia w 2q21 i 5q31; „::” – pęknięcie w jednym chromosomie i przyłączenie fragmentu drugiego
-Delecja terminalna (del) | 46,XY,del(5)(q13) rozszerzony: 46,XY,del(5) (pter→q13:) | utrata końcowego fragmentu ramienia długiego chromosomu 5 od prążka q13 – oznaczona pojedynczym dwukropkiem
-Delecja interstycjalna | 46,XX,del(5)(q13q33) rozszerzony: 46,XX,del(5) (pter→q13::q33→qter) | utrata wewnętrznego fragmentu ramienia długiego chromosomu 5 między prążkami q13 i q33
-Duplikacja (dup) | 46,XX,dup(1)(q22q25) rozszerzony: 46,XX,dup(1) (pter→q25:: q22→qter) | bezpośrednie podwojenie fragmentu chromosomu 1 między prążkami q22 i q25; ten sam fragment podwojony z odwróceniem o 180° to dup(1)(q25q22)
-Inwersja paracentryczna (inv) | 46,XX,inv(3)(q21q26) rozszerzony: 46,XX,inv(3) (pter→q21:: q26→q21:: q26→qter) | odwrócenie o 180° fragmentu między prążkami q21 i q26 – w obrębie ramienia długiego, bez centromeru
-Inwersja pericentryczna | 46,XX,inv(3)(p13q21) rozszerzony: 46,XX,inv(3) (pter→p13::q21→p13:: q21→qter) | odwrócony fragment między prążkiem p13 ramienia krótkiego a q21 ramienia długiego – obejmuje centromer
-Insercja (ins) | 46,XX,ins(2)(p13q21q31) rozszerzony: 46,XX,ins(2) (pter→p13:: q31→q21:: p13→q21:: q31→qter) | fragment ramienia długiego chromosomu 2 (między q21 i q31) włączony w ramię krótkie tego samego chromosomu, w prążek p13
-Izochromosom (i) | 46,X,i(X)(q10) rozszerzony: 46,X,i(X) (qter→q10::q10→qter) autosom: 46,XX,i(17)(q10) | chromosom złożony z dwóch identycznych ramion krótkich lub długich (tu: długich X, w drugim przykładzie – długich chromosomu 17); powstaje przez nieprawidłowy, poprzeczny podział w obrębie centromeru (duplikacja jednego, delecja drugiego ramienia)
-Chromosom dicentryczny (dic) | 45,XX,dic(13;15)(q22;q24) rozszerzony: 45,XX,dic(13;15) (13pter→13q22:: 15q24→15pter) | chromosom z dwoma centromerami, złożony z fragmentów chromosomów 13 i 15 zawierających ich centromery; powstaje w wyniku translokacji, inwersji i innych aberracji
-Chromosom pierścieniowy (r) | 46,XX,r(7)(p22q36) rozszerzony: 46,XX,r(7)(::p22→q36::) | pęknięcia w p22 i q36 i połączenie złamanych końców; fragmenty dystalne od pęknięć ulegają delecji
-Chromosom markerowy (mar) | 47,XX,+mar 47,XX,t(12;16) (q13;p11),+mar | dodatkowy, strukturalnie nieprawidłowy chromosom o nieznanym pochodzeniu; w drugim zapisie – chromosom markerowy, który powstał w wyniku translokacji t(12;16)
+Translokacja robertsonowska (der) | 45,XX,der(13;21)(q10;q10) | fuzja centryczna: pęknięcie w pobliżu centromeru dwóch chromosomów akrocentrycznych (tu: w prążku q10 chromosomów 13 i 21), połączenie ich ramion długich i utrata ramion krótkich – powstaje jeden chromosom pochodny (der); zrównoważona – bez objawów, ale nosiciel może ją przekazać potomstwu (wersja niezrównoważona: )
+Translokacja wzajemna (t) | 46,XX,t(2;5)(q21;q31) | wymiana odcinków leżących dystalnie od pęknięć w obu chromosomach (może dotyczyć ramion długich i krótkich wszystkich autosomów i heterochromosomów); tu zrównoważona, pęknięcia w 2q21 i 5q31
+Delecja terminalna (del) | 46,XY,del(5)(q13) | utrata końcowego fragmentu ramienia długiego chromosomu 5 od prążka q13
+Delecja interstycjalna | 46,XX,del(5)(q13q33) | utrata wewnętrznego fragmentu ramienia długiego chromosomu 5 między prążkami q13 i q33
+Duplikacja (dup) | 46,XX,dup(1)(q22q25) | bezpośrednie podwojenie fragmentu chromosomu 1 między prążkami q22 i q25 (duplikacja z odwróceniem – )
+Inwersja paracentryczna (inv) | 46,XX,inv(3)(q21q26) | odwrócenie o 180° fragmentu między prążkami q21 i q26 – w obrębie ramienia długiego, bez centromeru
+Inwersja pericentryczna | 46,XX,inv(3)(p13q21) | odwrócony fragment między prążkiem p13 ramienia krótkiego a q21 ramienia długiego – obejmuje centromer
+Insercja (ins) | 46,XX,ins(2)(p13q21q31) | fragment ramienia długiego chromosomu 2 (między q21 i q31) włączony w ramię krótkie tego samego chromosomu, w prążek p13
+Izochromosom (i) | 46,X,i(X)(q10) | chromosom złożony z dwóch identycznych ramion krótkich lub długich (tu: długich X); powstaje przez nieprawidłowy, poprzeczny podział w obrębie centromeru (duplikacja jednego, delecja drugiego ramienia)
+Chromosom dicentryczny (dic) | 45,XX,dic(13;15)(q22;q24) | chromosom z dwoma centromerami, złożony z fragmentów chromosomów 13 i 15 zawierających ich centromery; powstaje w wyniku translokacji, inwersji i innych aberracji
+Chromosom pierścieniowy (r) | 46,XX,r(7)(p22q36) | pęknięcia w p22 i q36 i połączenie złamanych końców; fragmenty dystalne od pęknięć ulegają delecji
+Chromosom markerowy (mar) | 47,XX,+mar | dodatkowy, strukturalnie nieprawidłowy chromosom o nieznanym pochodzeniu
 [/TABELA]
-W kariotypie człowieka najczęściej stwierdza się izochromosom ramion długich chromosomu X; izochromosomy większości autosomów są letalne. Chromosomy markerowe to dodatkowe chromosomy, których pochodzenie i mechanizm powstawania są nieznane – najczęściej małe, metacentryczne lub akrocentryczne, czasem o budowie pierścieniowej, z jednym lub dwoma centromerami. Ich pochodzenie pomagają ustalić techniki uzupełniające ( ).
-[RAMKA przyklad] Porównaj dwa zapisy duplikacji chromosomu 1: dup(1)(q22q25) i dup(1)(q25q22) . Punkty pęknięć są te same, różni się tylko ich kolejność. W pierwszym zapisie fragment q22–q25 jest podwojony bezpośrednio, w drugim – z odwróceniem o 180°. Kolejność punktów w nawiasie niesie więc informację o kierunku podwojonego fragmentu. Podobnie w zapisie rozszerzonym inwersji paracentrycznej (pter→q21::q26→q21::q26→qter) widać odwrócenie: trasa po dojściu do q21 przeskakuje do q26 i biegnie „pod prąd” z powrotem do q21.
+[RYCINA c09-fig-strukturalne „Aberracje strukturalne – przed i po”: W każdym panelu porównaj chromosom po lewej (przed) z chromosomem po prawej (po); czerwone kreski to punkty pęknięć z zapisu nad rysunkiem, a biała strzałka pokazuje orientację odcinka. Zestaw panele A i B: w obu odcinek jest odwrócony o 180°, ale tylko w B obejmuje centromer. Wniosek: zapis podaje punkty pęknięć, a rodzaj aberracji mówi, co stało się z odcinkiem między nimi – odwrócenie, podwojenie, zamknięcie w pierścień albo połączenie ramion.]
+W kariotypie człowieka najczęściej stwierdza się izochromosom ramion długich chromosomu X. Pochodzenie chromosomów markerowych pomagają ustalić techniki uzupełniające ( ); jak zwykle wyglądają takie chromosomy – .
 
-### Mozaika i chimera: więcej niż jedna linia komórkowa  []
-W kariotypie mozaikowym (mos) u tego samego osobnika występują dwie lub więcej linie komórkowe. Jedna linia ma prawidłową liczbę prawidłowych chromosomów, kolejne – nieprawidłową liczbę chromosomów lub chromosomy z aberracją. Mozaikowatość powstaje w wyniku mitotycznej nondysjunkcji (nierozdzielenia się chromosomów) w czasie pierwszych podziałów zygoty ( ). Przykłady zapisu:
-- mos 45,X/ 46,XX/ 47,XXX – trzy linie komórkowe;
-- mos46,XY(70%)/ 47,XY,+21(30%) – linia prawidłowa i linia z trisomią 21;
-- mos 45,X(40%)/ 46,XY(60%) – linia z monosomią X i linia prawidłowa męska.
-Niektórzy autorzy podają w zapisie odsetek komórek z danym kariotypem. Ma to znaczenie, bo od odsetka komórek nieprawidłowych zależy, w jakim stopniu ujawniają się cechy fenotypowe danego zespołu.
+### Mozaika i chimera: więcej niż jedna linia komórkowa  [c09-mozaika]
+W kariotypie mozaikowym (mos) u tego samego osobnika występują dwie lub więcej linie komórkowe. Jedna linia ma prawidłową liczbę prawidłowych chromosomów, kolejne – nieprawidłową liczbę chromosomów lub chromosomy z aberracją. Mozaikowatość powstaje w wyniku mitotycznej nondysjunkcji (nierozdzielenia się chromosomów) w czasie pierwszych podziałów zygoty ( ). Przykład zapisu: mos 45,X/ 46,XX/ 47,XXX – trzy linie komórkowe, oddzielone ukośnikami.
+Ile jest komórek nieprawidłowych, ma znaczenie: od tego zależy, w jakim stopniu ujawniają się cechy fenotypowe danego zespołu (jak zapisuje się odsetki komórek – ).
 Jeśli linie komórkowe pochodzą z różnych zygot , kariotyp nazywa się chimerą (chi), np. chi 46,XX[25]/ 46,XY[10] – linia żeńska w 25 komórkach i męska w 10 (w nawiasach kwadratowych liczba komórek). Różnica tkwi więc w pochodzeniu: mozaika to linie powstałe z jednej zygoty, chimera – z różnych.
 
-### Zapis wyników hybrydyzacji in situ  []
-Wynik FISH dopisuje się do zapisu kariotypu. Zasada: wynik standardowej analizy cytogenetycznej, kropka , skrót ish , odstęp i wynik hybrydyzacji in situ . Jeśli standardowej analizy nie wykonano, podaje się tylko wynik ish. Prawidłowe chromosomy opisuje się tak: ish, odstęp, chromosom, region, prążek lub subprążek (bez nawiasu), a w nawiasie – badane locus (miejsce rozpoznawane przez sondę), znak mnożenia „x” i liczba zaobserwowanych sygnałów. Symbole zebrano w tabeli.
+### Zapis wyników hybrydyzacji in situ  [c09-ish]
+Wynik FISH dopisuje się do zapisu kariotypu. Zasada: wynik standardowej analizy cytogenetycznej, kropka , skrót ish , odstęp i wynik hybrydyzacji in situ . Jeśli standardowej analizy nie wykonano, podaje się tylko wynik ish. Prawidłowe chromosomy opisuje się tak: ish, odstęp, chromosom, region, prążek lub subprążek (bez nawiasu), a w nawiasie – badane locus (miejsce rozpoznawane przez sondę), znak mnożenia „x” i liczba zaobserwowanych sygnałów. Najważniejsze symbole zebrano w tabeli (pełna lista – ).
 [TABELA]
 Symbol | Znaczenie w zapisie ish
 − | brak sygnału z określonego chromosomu
 + | sygnał obecny na określonym chromosomie
 ++ | duplikacja na określonym chromosomie
 x | poprzedza liczbę zaobserwowanych sygnałów
-; | oddziela sondy na różnych chromosomach pochodnych
-amp | zamplifikowany sygnał
-cgh | porównawcza hybrydyzacja genomowa
-con | połączone (przyległe) sygnały
-sep | rozdzielone sygnały
-dim / enh | osłabiona / wzmocniona intensywność sygnału
 ish | hybrydyzacja in situ
-nucish | jądrowa (interfazowa) hybrydyzacja in situ
 FISH | fluorescencyjna hybrydyzacja in situ
 [/TABELA]
 [RAMKA przyklad] 46,XY.ish 22q11.2(D22S75x2). Przed kropką – standardowa analiza: prawidłowy kariotyp męski. Po kropce – FISH: badano region 22q11.2 sondą dla locus D22S75 (sonda dla regionu krytycznego zespołu DiGeorge’a, DGCR); „x2” – dwa sygnały, czyli prawidłowy wzór hybrydyzacji na chromosomach metafazowych. Teraz 46,XX.ish del(22)(q11.2q11.2)(D22S75−) : standardowy kariotyp jest prawidłowy (46,XX), ale FISH wykazał delecję w regionie DGCR na chromosomie 22 – sonda dla locus D22S75 nie dała sygnału na jednym z chromosomów („−”). Zauważ, że obie granice delecji leżą w tym samym subprążku q11.2. Standardowe badanie jej nie wykazało – wykrył ją dopiero FISH.
-Trzy kolejne zapisy pokazują pozostałe reguły:
-- ish del(22)(q11.2q11.2)(D22S75−) – ta sama delecja, ale standardowej analizy cytogenetycznej nie wykonano, więc zapis zaczyna się od ish;
-- 46,XY.ish dup(17)(p11.2p11.2)(RAI1++) – region zawierający locus RAI1 na chromosomie 17 jest zduplikowany („++”), co wykryto ish na chromosomach metafazowych;
-- 46,XY.ish 17p11.2(RAI1x2) – locus RAI1 na chromosomie 17 ma prawidłową liczbę kopii (dwie).
 [RAMKA zapamietaj] Aberracje liczbowe zapisuje się liczbą chromosomów i „+”/„−” z numerem (47,XY,+21), a aneuploidie chromosomów płci – samymi literami (45,X; 47,XXX). Aberracje strukturalne mają skrót typu (del, dup, inv, ins, t, der, i, dic, r, mar), chromosom i punkty pęknięć. Ukośnik rozdziela linie komórkowe mozaiki (mos) lub chimery (chi), nawias kwadratowy podaje liczbę komórek, a kropka oddziela od kariotypu wynik ish.
 [ŹRÓDŁO] Źródło: Drewa s. 453–458
 
@@ -520,15 +485,269 @@ Trzy kolejne zapisy pokazują pozostałe reguły:
 
 ### Po co badać chromosomy komórek nowotworu?  []
 Aberracje chromosomowe są cechą charakterystyczną komórek rakowych: aberracje klonalne – obecne w grupie komórek wywodzących się z jednej komórki – znaleziono we wszystkich głównych typach złośliwych guzów nowotworowych. Wiele z nich okazało się markerami prognostycznymi (pomagają przewidywać przebieg choroby) w nowotworach hematologicznych i niektórych guzach litych. Rearanżacje chromosomowe, czyli przegrupowania fragmentów chromosomów, odgrywają też ważną rolę w patogenezie raków pochodzenia nabłonkowego.
-Podstawową metodą badania aberracji chromosomów w komórkach guzów jest hodowla długo- i krótkoterminowa . Najwięcej klonalnych aberracji zaobserwowano w nowotworach układu krwiotwórczego – mają one tam istotne znaczenie nie tylko w diagnostyce, ale i w prognozowaniu klinicznym. W guzach wywodzących się z innych tkanek rola aberracji w prognozowaniu nie jest jeszcze jednoznacznie określona; w niektórych podjęto próby powiązania złożoności aberracji lub obecności określonej aberracji z przebiegiem choroby.
-Skąd biorą się aberracje w komórkach nowotworowych? Przyczyny są wciąż słabo poznane. W komórkach guzów mogą występować nieswoiste zmiany kariotypu, uważane za wtórne – wynikające z zaburzeń genetycznych i metabolicznych w czasie progresji nowotworu. Badania białaczek wykazały, że aberracje mogą wywoływać niektóre czynniki środowiskowe i zawodowe oraz leczenie cytostatykami. Dla większości zaburzeń chromosomowych w rakach nie zidentyfikowano jednak swoistego czynnika inicjującego.
+Najwięcej klonalnych aberracji zaobserwowano w nowotworach układu krwiotwórczego – mają one tam istotne znaczenie nie tylko w diagnostyce, ale i w prognozowaniu klinicznym. (Jak otrzymuje się chromosomy komórek guza i skąd biorą się w nich aberracje – .)
 
 ### Jak przegrupowanie chromosomów zmienia działanie genu?  []
 Typowymi rearanżacjami w nowotworach są translokacje wzajemne, inwersje i insercje – zdarzenia wczesne, a nawet inicjujące rozwój raka. Dochodzi w nich do przegrupowania genów, w tym protoonkogenów , które po aktywacji stają się onkogenami . Pod względem skutków czynnościowych powtarzające się (klonalne) rearanżacje dzieli się na dwa typy:
 - chimeryczne geny fuzyjne – przegrupowanie łączy fragmenty dwóch genów w jeden gen o nowej, zmienionej aktywności; nazwa genu fuzyjnego zestawia nazwy obu genów, np. BCR-ABL1;
 - zmiana ekspresji genu (np. nadekspresja) – budowa genu pozostaje prawidłowa, zmienia się natomiast jego ekspresja.
-Przykłady obu typów zebrano w tabeli. Zapis aberracji czytasz już samodzielnie, więc każdy wiersz mówi trzy rzeczy: jakie chromosomy i gdzie pękły, jakie geny zostały przegrupowane i w jakim nowotworze ta zmiana występuje.
+Osiem przykładów obu typów zebrano w tabeli (całą tabelę źródła – 25 zmian – zawiera część 2: ). Zapis aberracji czytasz już samodzielnie, więc każdy wiersz mówi trzy rzeczy: jakie chromosomy i gdzie pękły, jakie geny zostały przegrupowane i w jakim nowotworze ta zmiana występuje.
 [RAMKA przyklad] Odczytaj wiersz t(9;22)(q34.1;q11.23) – BCR-ABL1 . Translokacja między chromosomami 9 i 22; punkty pęknięć to subprążki 9q34.1 i 22q11.23. Skutek: gen fuzyjny BCR-ABL1 – pierwszy typ rearanżacji. Zmiana występuje w przewlekłej białaczce szpikowej, ostrej białaczce limfoblastycznej i ostrej białaczce szpikowej. Dla porównania t(8;14)(q24.21;q32.33) z genami MYC i IGHG1 należy do drugiej grupy – zmienionej ekspresji genów o prawidłowej budowie (chłoniak Burkitta).
+[TABELA]
+Aberracja | Geny | Nowotwór
+Geny fuzyjne obejmujące kinazy tyrozynowe
+inv(2)(p22–p21p23)* | EML4-ALK | niedrobnokomórkowy rak płuca
+t(9;22)(q34.1;q11.23) | BCR-ABL1 | przewlekła białaczka szpikowa, ostra białaczka limfoblastyczna, ostra białaczka szpikowa
+Geny fuzyjne obejmujące czynniki transkrypcyjne
+t(8;21)(q22;q22.3) | RUNX1-RUNX1T1 | ostra białaczka szpikowa
+t(11;22)(q24.1–q24.3;q12.2) | FLI1-EWSR1 | mięsak Ewinga
+t(15;17)(q22;q21) | PML-RARA | ostra białaczka promielocytowa
+Zmieniona ekspresja genów o prawidłowej budowie
+t(8;14)(q24.21;q32.33) | MYC-IGHG1 | chłoniak Burkitta
+t(14;18)(q32.33;q21.3) | IGHG1-BCL2 | chłoniak grudkowy
+del(21)(q22.3q22.3)* | TMPRSS2-ERG | rak prostaty
+[/TABELA]
+Gwiazdką (*) oznaczono zmiany niewykrywalne w klasycznym badaniu cytogenetycznym – do ich wykrycia potrzebne są metody cytogenetyki molekularnej, np. FISH, który stosuje się w diagnostyce nowotworów ( ).
+
+### Klon i jego wielkość  []
+[POJĘCIE Klon] populacja komórek pochodzących od jednej komórki; komórki klonu mają takie same lub zbliżone zestawy nieprawidłowych chromosomów.
+Kariotyp guza opisuje się według zasad ISCN 2005, a podstawowym pojęciem jest klon – populacja komórek pochodzących od jednej komórki. „Pochodzenie klonalne” oznacza, że komórki mają takie same lub zbliżone zestawy nieprawidłowych chromosomów. Klon nie musi więc być całkowicie jednorodny: w czasie rozwoju guza mogą powstawać subklony .
+W zapisie różne klony oddziela się ukośnikiem (/) – tak jak linie komórkowe mozaiki. Wielkość klonu to liczba tworzących go komórek; podaje się ją zawsze w nawiasie kwadratowym po zapisie kariotypu, np. 46,XX,t(8;21)(q22;q22)[23] – klon z 46 chromosomami zidentyfikowany w 23 płytkach metafazowych.
+
+### Linia główna, macierzysta i boczne  [c09-linie]
+Linia główna ( mainline , ml) to najczęstszy skład chromosomowy w populacji komórek guza – termin czysto ilościowy, oznaczający największy klon. Gdy dwa lub więcej klonów ma tę samą wielkość, guz może mieć więcej niż jedną linię główną.
+Linia macierzysta ( stemline , sl) to podstawowy klon w populacji komórek guza; umieszcza się ją na pierwszym miejscu. Cytogenetycznie pokrewne klony (subklony) przedstawia się, jeśli to możliwe, w kolejności wzrastającej złożoności zmian – niezależnie od wielkości klonu. Wszystkie dodatkowe nieprawidłowe subklony to linie boczne ( sidelines , sdl); gdy jest ich więcej, opisuje się je jako sdl1, sdl2 itd. Skrót sl lub sdl w opisie klonu oznacza wszystkie nieprawidłowości tamtej linii – dopisuje się już tylko to, co nowe.
+Linia główna i linia macierzysta to więc dwa różne kryteria: główna jest największa, macierzysta – podstawowa i zapisana jako pierwsza. W kariotypie 46,XX, t(9;22) (q34;q11.2)[3]/ 47,XX,+8, t(9;22) (q34;q11.2)[17] linię główną reprezentuje klon z 47 chromosomami (17 komórek), choć najprawdopodobniej powstał on z klonu z 46 chromosomami.
+[RAMKA przyklad] 46,XY, t(9;22) (q34;q11.2)[3]/ 47,sl,+8[17]/ 48,sdl1,+9[3]/ 49,sdl2,+11[12] – rozpisz klony po kolei. Klon z 46 chromosomami (3 komórki) stoi na pierwszym miejscu – to linia macierzysta (sl) z translokacją t(9;22)(q34;q11.2). Klon z 47 : „sl,+8” – wszystkie zmiany linii macierzystej i dodatkowo trisomia 8; to pierwsza linia boczna, sdl1 (17 komórek). Klon z 48 : „sdl1,+9” – t(9;22), +8 i dodatkowo trisomia 9; to sdl2. Klon z 49 : „sdl2,+11” – wszystkie zmiany sdl2 i trisomia 11. Drewa nazywa wszystkie trzy klony – z 47, 48 i 49 chromosomami – liniami bocznymi. Kontrola: każdy dodatkowy chromosom zwiększa liczbę o 1: 46 → 47 → 48 → 49 – zgadza się. Linią główną (największym klonem) jest tu klon z 47 chromosomami, a nie linia macierzysta.
+Drugi przykład, w którym linia boczna jednocześnie traci i zyskuje chromosomy – .
+
+### Liczba modalna  [c09-modalna]
+Liczba modalna ( modal number , mn) to liczba chromosomów najczęściej występująca w populacji komórek guza; może być wyrażona jako zakres między dwiema liczbami. Liczby modalne w zakresie haploidalnym, diploidalnym albo niebędące całkowitą wielokrotnością liczby haploidalnej, których nie da się wyrazić precyzyjnie, określa się jako „prawie haploidalne” ( near haploid ), „prawie diploidalne” itd. Obok „prawie” używa się przedrostków „hipo-” i „hiper-”, a każde określenie ma swój symbol: „prawie” – znak ±, „hipo-” – minus, „hiper-” – plus. Tak wygląda to dla kariotypu diploidalnego (2n = 46): prawie diploidalny (2n±) – 35–57 chromosomów, hipodiploidalny (2n−) – 35–45, hiperdiploidalny (2n+) – 47–57.
+Te same określenia stosuje się do kariotypów haploidalnych, triploidalnych, tetraploidalnych i pentaploidalnych (pełna tabela – ). Komórki, w których liczba chromosomów różni się od euploidalnej (wielokrotności liczby haploidalnej), nazywa się aneuploidalnymi .
+[RAMKA zapamietaj] W nowotworach typowe są translokacje wzajemne, inwersje i insercje, które tworzą geny fuzyjne (np. BCR-ABL1 przy t(9;22)) albo zmieniają ekspresję genu o prawidłowej budowie (np. MYC przy t(8;14)). Klon to komórki pochodzące od jednej komórki ([n] – liczba komórek); linia główna to klon największy, linia macierzysta (sl) – podstawowy, zapisany jako pierwszy, a liczba modalna – najczęstsza liczba chromosomów w guzie.
+[ŹRÓDŁO] Źródło: Drewa s. 466–469
+[RAMKA w60] Chromosom metafazowy – dwie chromatydy połączone centromerem, którego stałe położenie wyznacza typ (meta-, submeta-, akrocentryczny); ramię krótkie p, długie q; na końcach telomery (TTAGGG); akrocentryczne 13–15, 21, 22 mają satelity i NOR. Kariotyp – 46 chromosomów: 22 pary autosomów w grupach A–G (wielkość + centromer) oraz XX lub XY; X w grupie C, Y w G; do rozpoznania każdej pary potrzebne są prążki. Preparat i prążki – hodowla limfocytów pobudzonych fitohemaglutyniną; G – rutyna (ciemne = A-T), Q – świecą A-T, R – odwrotność G, C – heterochromatyna konstytutywna; 300–400, 550–580 lub do 850 prążków; adres: chromosom, ramię, region, prążek. FISH i CGH – FISH: sonda i liczenie sygnałów, także w jądrach interfazowych; CGH: DNA pacjenta wobec referencyjnego, stosunek zieleń : czerwień poza 0,75–1,25 = zmiana liczby kopii; aberracji zrównoważonych CGH nie wykrywa. Zapis ISCN – liczba, płeć, aberracja: 47,XY,+21; 46,XX,del(5)(q13q33); 46,XX,t(2;5)(q21;q31); zapis rozszerzony to trasa (→, ::, :); „/” – linie komórkowe, [n] – liczba komórek, „.ish” – wynik FISH. Nowotwory – geny fuzyjne (BCR-ABL1) lub zmieniona ekspresja (MYC); klon, linia główna (największa), macierzysta (sl, pierwsza), boczne (sdl), liczba modalna.
+[RAMKA przejscie] Część 1 wystarcza, by rozpoznać chromosom, ułożyć kariogram, dobrać technikę i przeczytać typowy zapis wyniku. Część 2 jest dla tych, którzy chcą odpowiedzieć na pytania szczegółowe: podaje liczby i budowę molekularną struktur chromosomu, szczegóły technik oraz pełne katalogi – zapisy rozszerzone wszystkich aberracji, całą tabelę rearanżacji w nowotworach i wszystkie zakresy liczby modalnej. Każda jej sekcja wskazuje podrozdział części 1, który rozszerza. histony i nukleosom w liczbach ( ), centromer, telomer i NOR od strony DNA ( ), preparat i barwienia – szczegóły techniczne ( ), FISH i CGH – warianty i granice ( ), pełny katalog zapisów ISCN ( ), nowotwory – cała tabela rearanżacji, klony, liczba modalna ( ).
+
+## Histony i nukleosom w liczbach  [c09-r-chromatyna]
+W części 1 ( ) padła jedna liczba: w chromosomie metafazowym nić DNA jest ok. 10 000 razy krótsza niż rozprostowana. Tu sprawdzimy, ile tego DNA jest, i przejdziemy przez kolejne poziomy upakowania – od białek, które je zwijają, do całego chromosomu.
+
+### Ile DNA trzeba zmieścić?  []
+Całkowita długość DNA w haploidalnym zestawie chromosomów komórek ssaków, które nie są w trakcie podziału, wynosi ok. 1 m . Skąd liczba 10 000? Porównano całkowitą długość podwójnej helisy DNA w haploidalnym zestawie chromosomów człowieka z długością haploidalnego zestawu chromosomów metafazowych. To samo można zapisać odwrotnie: długość chromosomu metafazowego wynosi ok. 0,0001 długości jego DNA. Przeliczenie przybliżone: metr DNA skrócony 10 000 razy to ok. 0,1 mm.
+
+### Histony – pięć klas  []
+Za strukturę chromosomu odpowiadają histony. Dzieli się je na 5 klas, które różnią się zawartością dodatnio naładowanych aminokwasów: H1 jest bardzo bogaty w lizynę, H2A i H2B są bogate w lizynę, a H3 i H4 – w argininę.
+Skład aminokwasowy histonów jest zbliżony u wszystkich organizmów eukariotycznych, niezależnie od stopnia ich rozwoju ewolucyjnego; dość znaczną zmienność ewolucyjną wykazuje tylko histon H1. Histony są importowane do jądra komórkowego w czasie fazy S cyklu komórkowego – wtedy, gdy podwaja się DNA ( ). Ilościowo jest ich w chromatynie tyle samo co DNA: proporcja histony : DNA wynosi 1 : 1.
+
+### Nukleosom – podstawowa podjednostka chromatyny  []
+Nukleosom jest podstawową podjednostką chromatyny. Jego wnętrze – rdzeń – stanowi oktamer histonowy : po dwie kopie każdego z histonów H2A, H2B, H3 i H4 (4 × 2 = 8 cząsteczek, stąd „oktamer”). Oktamer ma kształt cylindra o średnicy 11 nm i wysokości 6 nm – to ta sama liczba 11 nm, która w części 1 stała przy nukleosomie. Wokół oktameru owinięta jest podwójna helisa DNA o długości 146 par zasad – prawie dwukrotnie, dokładnie 1,8 zwoju.
+Sąsiednie nukleosomy łączy DNA łącznikowe – ok. 60 par zasad. Piąta klasa histonów, H1 , nie wchodzi do rdzenia: H1 leży na zewnątrz nukleosomu i wiąże się z DNA łącznikowym. Swoją domeną globularną oddziałuje z histonem H2A rdzenia, a za pomocą innej domeny może się łączyć z sąsiednim histonem H1. Kolejne poziomy upakowania zestawia tabela (kreska – źródło nie podaje budowy).
+[TABELA]
+Poziom upakowania | Szerokość | Co go tworzy
+podwójna helisa DNA | 2 nm | nić DNA
+nukleosom | 11 nm | 146 pz DNA nawinięte (1,8 zwoju) na oktamer histonów
+włókno chromatynowe (solenoid) | 30 nm | mocno ściśnięte nukleosomy
+struktury z pętli solenoidu | 300 nm | pętle włókna chromatynowego
+skondensowany fragment chromosomu metafazowego | 700 nm | –
+chromosom metafazowy | 1400 nm | –
+[/TABELA]
+
+### Euchromatyna i heterochromatyna – co jeszcze je różni?  []
+W części 1 ( ) eu- i heterochromatynę rozróżniały stopień kondensacji, czas replikacji i skład zasad. Źródło podaje też drugą różnicę między nimi: modyfikacje epigenetyczne – metylację (przyłączanie grup metylowych) i acetylację DNA oraz histonów. Stąd szczegóły w opisie obu form:
+- euchromatyna – jej cytozyna nie jest zmetylowana albo jest zmetylowana słabo; wyróżnia się euchromatynę luźną , aktywną transkrypcyjnie, i zwartą , nieaktywną genetycznie;
+- heterochromatyna konstytutywna – jej DNA jest wysoko zmetylowane i zbudowane z sekwencji tandemowych o długości od 59 do 300–400 pz, bogatych w pary AT; ulega dekondensacji tylko w późnej fazie S cyklu komórkowego.
+[ŹRÓDŁO] Źródło: Drewa s. 431–433
+
+## Centromer, telomer i NOR od strony DNA  [c09-r-powtorzenia]
+W części 1 centromer ( ), telomery i organizatory jąderka opisaliśmy przez to, co robią: do centromeru przyczepia się wrzeciono, telomery chronią końce, a w organizatorach leżą geny rRNA. Wszystkie trzy mają też wspólną cechę budowy – tworzy je DNA z sekwencji powtórzonych wiele razy: w centromerze są to głównie sekwencje satelitarne, w telomerze powtórzenia TTAGGG, w organizatorze jąderkowym tandemowo ułożone geny rDNA. Tu przyjrzymy się tym powtórzeniom i białkom, które się z nimi wiążą.
+
+### Centromer: rodziny sekwencji i kinetochor  []
+W centromerze znajdują się różnego rodzaju sekwencje powtarzające się: w większości sekwencje satelitarnego DNA , a także liczne sekwencje typu SINES i LINES (inne rodziny sekwencji powtarzających się; źródło ich nie rozwija). W centromerach chromosomów człowieka wyróżnia się co najmniej cztery główne rodziny sekwencji powtarzających się. Różnią się tym, w których chromosomach występują:
+[TABELA]
+Rodzina sekwencji | Gdzie występuje
+satelitarny DNA typu I, II i III | udział typów zależy od chromosomu: np. chromosomy 1 i 16 zawierają typ II, a chromosom 9 – typ III
+α-satelitarny DNA | podstawowy typ sekwencji powtarzających się w centromerach człowieka
+β-satelitarny DNA (Sau 3A) | tylko w niektórych chromosomach, głównie w centromerowych domenach chromosomów akrocentrycznych
+Hae III DNA | jak β-satelitarny: tylko w niektórych chromosomach, głównie akrocentrycznych
+[/TABELA]
+Te sekwencje wiążą się ze swoistymi białkami i razem tworzą kinetochor. Jak on wygląda? Badania w mikroskopie elektronowym wykazały, że kinetochor chromosomów metafazowych większości komórek organizmów wyższych ma postać trójblaszkowej płytki : gęstej blaszki zewnętrznej i wewnętrznej oraz mniej wyraźnej – środkowej. Zastrzeżenie „większości komórek” pochodzi ze źródła: opisu nie uogólnia się na wszystkie komórki.
+
+### Telomer: długość, białka, kształt  []
+Telomer to powtórzenia sekwencji 5′-TTAGGG-3′ ( ). Zależnie od pary chromosomów i rodzaju komórki obejmują one obszar 2–30 kpz (kilo par zasad). U noworodka poszczególne telomery mają 6–10 tysięcy nukleotydów ; potem w komórkach somatycznych z każdą replikacją się skracają.
+DNA telomerowe jest upakowane inaczej niż reszta chromatyny: nie tworzy nukleosomów. Zamiast histonów wiążą się z nim białka telomerowe , a połączenie DNA telomerowego z tymi białkami to telosom . Przestrzennie telomer ma kształt poczwórnej helisy – rodzaju spinki do włosów, czyli „czapeczki” z części 1 – o dużej zawartości guaniny.
+Każdy chromosom ma dwa telomery, więc w każdej komórce człowieka jest ich 92 (46 × 2). Telomer nie zawiera genów, a mimo to pełni cztery zasadnicze funkcje:
+- chroni koniec chromosomu przed uszkodzeniem lub nieprawidłową rekombinacją;
+- umożliwia całkowitą replikację chromosomu;
+- nadzoruje ekspresję genów;
+- wspomaga organizację chromosomów podczas podziału komórki.
+Do tego dochodzi rola biologicznego zegara komórki, opisana w części 1.
+
+### Telomeraza krok po kroku  [c09-r-telomeraza]
+Część 1 mówiła tylko, że telomeraza „uzupełnia skracające się końce”. Problem jest taki: przy każdej replikacji koniec chromosomu traci fragment telomeru (dlaczego – ). Żeby go odbudować, enzym musi dopisać brakujące powtórzenia – a do tego potrzebuje wzoru. Ten wzór nosi w sobie:
+- Telomeraza zawiera krótką cząsteczkę RNA. Część sekwencji tego RNA jest komplementarna do powtarzających się sekwencji DNA w telomerach – może się więc z nimi sparować.
+- RNA działa jako matryca. Według niej enzym syntetyzuje kolejne powtórzenia na wystającym końcu 3′ nici DNA. Dlaczego na końcu 3′? Nić DNA wydłuża się zawsze od końca 3′ ( ), więc dobudować można tylko tę nić, której koniec 3′ wystaje.
+- Nić komplementarna powstaje później – jest syntetyzowana jako nić opóźniona , z pozostawieniem wystającego końca 3′. Po wydłużeniu telomer jest dłuższy, a koniec 3′ – tak jak przed wydłużeniem – nadal wystaje.
+Co się dzieje, gdy tego mechanizmu brakuje? Jeżeli skracanie telomerów nie jest równoważone aktywnością telomerazy, komórka może zginąć – w wyniku eliminacji genów położonych na końcach chromosomów.
+
+### Organizatory jąderka w liczbach  [c09-r-nor]
+Organizator jąderkowy ( ) to odcinek chromosomu z tandemowo ułożonymi genami rDNA dla rRNA. Geny te odpowiadają za transkrypcję prerybosomowego RNA (pre-rRNA), który w procesach potranskrypcyjnych przekształca się w rybosomowy RNA (rRNA).
+U człowieka jest 10 organizatorów jąderka – tyle, ile chromosomów w pięciu parach akrocentrycznych z NOR (13, 14, 15, 21 i 22). Każdy odcinek NOR składa się z ok. 450 kopii rDNA (w przeliczeniu: 10 × 450 = ok. 4500 kopii). Organizatory budują jąderko w dwóch momentach: podczas podziału komórki, w telofazie , uczestniczą w jego tworzeniu, a w interfazie ulegają dekondensacji i wokół nich tworzy się jąderko.
+[ŹRÓDŁO] Źródło: Drewa s. 433–436
+
+## Preparat i barwienia – szczegóły techniczne  [c09-r-techniki]
+Ta sekcja dopowiada szczegóły do trzech podrozdziałów części 1: klasyfikacji chromosomów ( ), otrzymywania i barwienia preparatu ( ) oraz technik uzupełniających ( ). Łączy je jedno pytanie: jak powstaje obraz, który ogląda cytogenetyk – od zasad klasyfikacji po to, z czym wiąże się barwnik.
+
+### Skąd wiemy, że chromosomów jest 46?  []
+Prawidłową liczbę chromosomów człowieka ustalili w 1956 r. J. Tjio i A. Levan . Wykorzystali metody hodowli komórek z użyciem płynów hodowlanych, kolchicyny, płynów hipotonicznych i utrwalacza – tych samych odczynników, które widać w kroku 3 na – i wykazali, że prawidłowa liczba chromosomów w komórce człowieka wynosi 46.
+Ujednolicone zasady klasyfikacji chromosomów opracowano na międzynarodowych konferencjach w Denver (1960) , Londynie (1966) , Paryżu (1971) i Sztokholmie (1977) . Do konferencji paryskiej odwołuje się definicja kariogramu: to zestaw chromosomów przedstawionych graficznie według zasad opracowanych w Paryżu w 1971 r. Obecnie podstawą klasyfikacji jest system ISCN z 2005 i 2009 r.
+
+### Jak uzyskuje się więcej prążków (HRT)?  []
+W części 1 ( ) prążków było tym więcej, im słabiej skondensowany był chromosom. Metoda HRT wykorzystuje to celowo: stopień kondensacji chromatyny zmniejsza się dzięki częściowej synchronizacji hodowli komórek (ujednoliceniu fazy cyklu, w której się znajdują) i/lub działaniu związków hamujących kondensację chromosomów, np. BrdU lub metotreksatu .
+
+### Adres prążka – dwa szczegóły ze schematu Drewy  []
+W opisie prążka ramię (p lub q) nazywa się też segmentem – adres podaje więc kolejno: numer chromosomu, segment (ramię), numer regionu i numer prążka w regionie ( ). Schemat w źródle pokazuje numerację na dwóch chromosomach: na chromosomie 10 (z niego pochodzi przykład 10q25.2 i ) oraz na akrocentrycznym chromosomie 14. W chromosomie 14 ramię krótkie ma jeden region (prążki 1–3), a ramię długie – trzy regiony: 1 (prążki 1–3), 2 (prążki 1–4) i 3 (prążki 1–2). Sprawdź się: ostatni, najbardziej dystalny prążek ramienia długiego chromosomu 14 ma adres 14q32 – region 3, prążek 2.
+
+### Z czym wiąże się barwnik?  [c09-r-fluorochromy]
+Część 1 ( ) opisywała barwienia przez ich wynik: co wychodzi ciemne, a co świeci. Źródło dodaje kilka informacji o tym, co w chromatynie odpowiada za ten wynik.
+Prążki G. Ciemne prążki G różnią się od jasnych nie tylko DNA (pary A-T, późna replikacja), ale też białkami: ich chromatyna jest bogata w białka z mostkami siarczkowymi (S–S) , a dużo takich wiązań mają białka niehistonowe chromosomów.
+Prążki C. Wybarwiające się rejony centromerowe i przycentromerowe są zbudowane z powtarzających się sekwencji satelitarnego DNA, silnie związanych ze swoistymi białkami niehistonowymi, które chronią DNA.
+Prążki Q. Fluorochromy do prążków Q są dwojakiego rodzaju. Pierwsze wiążą się z DNA jonowo i mogą interkalować – wsuwać się między płaszczyzny zasad. Drugie interkalują do dwuniciowego DNA i mają powinowactwo do pewnych zasad azotowych. Silnie świecą regiony bogate w pary A-T, ponieważ wygaszenie fluorescencji jest proporcjonalne do zawartości par G-C : im więcej G-C w danym odcinku, tym słabiej on świeci. Dwie główne techniki barwienia na prążki Q różnią się fluorochromem: QFQ – atebryna, QFH – barwnik Hoechst (Drewa podaje numer 32258).
+AgNOR. Organizatory jąderka, które wybarwia azotan srebra, zawierają geny rybosomalne dla 18S i 28S rRNA ( ).
+Tabela zbiera wszystkie fluorochromy wymienione w rozdziale; kreska oznacza, że źródło nie podaje sposobu wiązania.
+[TABELA]
+Fluorochrom | Jak wiąże się z DNA | Gdzie użyty
+oranż akrydynowy (oranż akrydyny) | jonowo; może interkalować między płaszczyzny zasad | prążki Q; cytometria – barwienie kwasów nukleinowych
+atebryna (Q) i jej pochodne, iperyt akrychinowy (QM) | interkalują do dwuniciowego DNA; powinowactwo do pewnych zasad | prążki Q (technika QFQ – atebryna)
+barwnik Hoechst | – | prążki Q (technika QFH)
+DAPI (4′,6-diamidyno-2-fenyloindol) | powinowactwo do par A-T | wzór prążków Q; z dystamycyną A – kontrastowy obraz prążków ( ); cytometria
+bromek etydyny | – | cytometria – barwienie kwasów nukleinowych
+[/TABELA]
+
+### Autoradiografia  [c09-r-autoradiografia]
+Autoradiografia ( ) wykorzystuje izotopy promieniotwórcze. Cząsteczka znakowana izotopem emituje promieniowanie, które można uwidocznić na kliszy rentgenowskiej – tak pokazuje się, gdzie ta cząsteczka się znalazła. Metoda służy do badania struktury chromosomów, kinetyki i asynchronii replikacji DNA oraz czasu trwania poszczególnych faz cyklu komórkowego. Wykorzystuje się ją też w hybrydyzacji kwasów nukleinowych z sondami znakowanymi izotopami 3 H, 32 P, 35 S i 14 C: powstałe hybrydy emitują promieniowanie widoczne na kliszy.
+W badaniach chromosomów stosuje się najczęściej tryt ( 3 H) oraz trytowaną aktynomycynę D ( 3 H-AMD ). Aktynomycyna D swoiście wiąże się z DNA utrwalonych chromosomów – dzięki temu można dość precyzyjnie analizować rozmieszczenie odcinków DNA zawierających pary G-C lub A-T. Czas replikacji DNA w poszczególnych odcinkach chromosomów bada się „standardową metodą” z użyciem trytowanej tymidyny ( 3 H-TdR ) – znakowanego składnika DNA.
+Obecnie autoradiografię stosuje się rzadko – z powodu narażenia na radioizotopy i związanego z tym problemu ochrony radiologicznej. W hybrydyzacji in situ sondy radioaktywne zastępuje się sondami fluorescencyjnymi ( ).
+
+### Cytometria przepływowa – co mierzy aparat?  [c09-r-cytometria]
+W części 1 ( ) cytometria odpowiadała na jedno pytanie: ile DNA ma jądro. Sam pomiar jest szerszy. W zawiesinie komórkowej mierzy się trzy rzeczy: ugięcie i rozproszenie światła oraz wzbudzoną fluorescencję . Pozwala to ocenić cechy morfologiczne badanych komórek, a także ilość barwnika związanego przez ich struktury – a stąd zawartość w komórce określonych cząsteczek: DNA, RNA lub antygenów powierzchniowych.
+Dobór fluorochromu zależy od tego, jaką składową komórki chce się zbadać. Do barwienia kwasów nukleinowych, przede wszystkim DNA, stosuje się m.in. DAPI, oranż akrydyny i bromek etydyny (tabela wyżej). Zawartość DNA w jądrze mierzy cytometr przepływowy , a histogramy DNA sporządza się na podstawie wyników odczytywanych na monitorze.
+[ŹRÓDŁO] Źródło: Drewa s. 431, 436–437, 444–449
+
+## FISH i CGH – warianty i granice  [c09-r-fish-cgh]
+Zasadę FISH ( ) i CGH znasz z części 1: sonda świeci tam, gdzie znajdzie swój odcinek, a w CGH stosunek dwóch barw mówi o liczbie kopii. Tu dochodzą cztery sprawy: jak sonda otrzymuje fluorochrom, jak odczytać przykłady ze źródła, w jakim materiale można liczyć sygnały i jak rozwijała się CGH.
+
+### Jak sonda otrzymuje fluorochrom?  []
+Hybrydyzacja in situ nie zawsze korzystała z fluorescencji. Stosowane dotychczas sondy znakowane radioaktywnie (np. z użyciem 3 H) są obecnie zastępowane sondami, których znacznikiem są fluorochromy . Źródło opisuje dwie drogi dołączenia fluorochromu ( , krok 1):
+- znakowanie bezpośrednie – sonda od początku niesie fluorochrom;
+- znakowanie pośrednie – sonda jest sprzężona z inną cząsteczką, np. biotyną lub digoksygeniną ; fluorochrom, sprzężony z przeciwciałami lub awidyną , dodaje się dopiero po etapie hybrydyzacji.
+
+### Jak odczytać obrazy FISH ze źródła?  []
+Ryciny Drewy pokazują dwa rodzaje obrazów. Pierwszy to chromosomy po hybrydyzacji z sondą dla badanego regionu chromosomu 20 – świecący sygnał wskazuje, gdzie na chromosomie leży ten region. Drugi to cztery obrazy komórek guza – desmoidu , w których liczy się sygnały. Odczytaj je tak jak w części 1: w prawidłowej komórce sonda dla odcinka autosomu daje dwa sygnały, po jednym na każdy homolog.
+[TABELA]
+Obraz | Sonda | Sygnały i odczyt
+A | swoista dla locus 5q31 | 1 sygnał zamiast 2 – w jądrze jest jedna kopia tego locus
+B | centromerowa cen 20 | 1 sygnał zamiast 2 – jedna kopia regionu centromerowego chromosomu 20
+C | rodzaju sondy źródło nie podaje | 3 sygnały – trisomia chromosomu pary 20
+D | rodzaju sondy źródło nie podaje | 3 sygnały – trisomia chromosomu pary 8
+[/TABELA]
+
+### W jakim materiale działa cytogenetyka interfazalna?  []
+Skoro sonda znajduje swój odcinek także w jądrze, które się nie dzieli ( ), nie trzeba hodować komórek aż do metafazy. Zaburzenia odpowiadające wszystkim liczbowym i strukturalnym rodzajom aberracji chromosomowych można więc wykrywać w różnym materiale biologicznym:
+- w aspiratach – rozmazach komórkowych;
+- w skrawkach histologicznych świeżo pobranych lub zatopionych w bloczkach parafinowych;
+- w komórkach płynu owodniowego;
+- w komórkach szpiku kostnego i innych.
+
+### CGH i jej nowsze odmiany  [c09-r-cgh]
+W części 1 ( ) CGH była porównaniem dwóch barw wzdłuż chromosomów. Ocena wyników jest komputerowa i półilościowa : mierzy się i porównuje natężenie (intensywność) obu fluorescencji „zieleń : czerwień” wzdłuż wszystkich chromosomów, a uzyskane profile odnosi się do wzorców – ideogramów chromosomów (schematów wzoru prążków; w części 1 – idiogram, ).
+Rozdzielczość klasycznej CGH jest mała – 5–10 Mpz (milionów par zasad), czyli porównywalna z metodami cytogenetyki klasycznej. Do tego CGH nie wykrywa aberracji zrównoważonych ani mozaikowatości chromosomowej. Źródło wymienia dwie odmiany metody, które powstały później:
+- HR-CGH – udoskonalona wersja CGH, która poszerza zakres zastosowań badawczych i diagnostycznych;
+- CGH do mikromacierzy ( array CGH) – najnowsza, rozwijana obecnie modyfikacja. Od klasycznej CGH różni ją to, że mieszanina DNA badanego i referencyjnego hybrydyzuje nie do chromosomów metafazowych, lecz do klonów genomowych – określonych sekwencji DNA, wcześniej zmapowanych i umieszczonych na płytce (o mikromacierzach: ).
+Drewa nie podaje rozdzielczości HR-CGH ani array CGH. Wspólna pozostaje zasada: DNA badane i referencyjne, dwie barwy i porównanie ich natężenia.
+[ŹRÓDŁO] Źródło: Drewa s. 449–452
+
+## Pełny katalog zapisów ISCN  [c09-r-iscn]
+Czytać zapis kariotypu nauczyłeś się w części 1 ( ), a katalog aberracji ( ) podał dla każdego typu zapis skrócony. Tu są zapisy, które tam pominęliśmy: dalsze warianty polimorficzne, pozostałe nazwy aberracji liczbowych, zapisy rozszerzone wszystkich aberracji strukturalnych, mozaiki z odsetkami komórek i pełna lista symboli ish. Wszystkie czyta się tą samą metodą – element po elemencie, a zapis rozszerzony – jak trasę.
+
+### Warianty polimorficzne i miejsca kruche  [c09-r-polimorfizm]
+Do zapisów 1qh+ i 15ps+ z części 1 ( ) dochodzą dwa kolejne. Czytaj je tak samo: chromosom → ramię → struktura → plus lub minus.
+- 46,XY,9qh− – zmniejszona długość odcinka heterochromatyny konstytutywnej (h−) w okolicy centromerowej ramienia długiego (q) chromosomu 9;
+- 22pstk+ – zwiększona długość nitki satelitonośnej (stk+) na ramieniu krótkim (p) chromosomu 22.
+Miejsce kruche zapisuje się skrótem fra, numerem chromosomu w nawiasie i adresem w drugim nawiasie. Gdy miejsc kruchych jest więcej, ich zapisy oddziela przecinek – niezależnie od tego, czy leżą na tym samym chromosomie, czy na różnych:
+- fra(10)(q25.2) – miejsce kruche na chromosomie 10 w subprążku 10q25.2;
+- fra(10)(q22.1),fra(10)(q25.2) – dwa miejsca kruche na tym samym chromosomie 10;
+- fra(10)(q25.2),fra(16)(q22.1) – dwa miejsca kruche na różnych chromosomach.
+
+### Aberracje liczbowe – pozostałe nazwy  [c09-r-liczbowe]
+Część 1 ( ) wymieniła komórki poliploidalne oraz monosomiczne i polisomiczne. Źródło dodaje trzy informacje. Poliploidia u zwierząt i człowieka występuje bardzo rzadko, jest natomiast dość częsta u roślin. Komórka, w której brakuje którejkolwiek całej pary chromosomów, to komórka nullisomiczna . Przy zaburzeniach liczby chromosomów w komórkach płciowych mówi się o gamecie disomicznej lub nullisomicznej : gameta ma prawidłowo po jednym chromosomie z każdej pary, więc gameta disomiczna ma danego chromosomu dwie kopie, a nullisomiczna – żadnej.
+Uniparentalna disomia (UPD) może dotyczyć także jednej z linii mozaiki. Zapis łączy wtedy reguły obu zapisów:
+[RAMKA przyklad] mos47,XX,+21[23]/ 46,XX,upd(21)pat[7]. mos – mozaika ( ); ukośnik dzieli zapis na linie. Pierwsza linia: 47,XX,+21[23] – trisomia 21, stwierdzona w 23 komórkach (liczba w nawiasie kwadratowym). Druga: 46,XX,upd(21)pat[7] – uniparentalna disomia chromosomu 21 pochodzenia ojcowskiego, w 7 komórkach. Odczyt: żeński kariotyp mozaikowy z dwiema liniami komórkowymi.
+
+### Zapisy rozszerzone wszystkich aberracji strukturalnych  []
+W części 1 ( ) zapis rozszerzony przeszliśmy jak trasę na dwóch przykładach: delecji i translokacji wzajemnej. Ta sama metoda działa dla każdego typu. Przypomnienie symboli: pter i qter – koniec ramienia krótkiego i długiego; → – „od – do”; :: – pęknięcie i połączenie; : – pęknięcie. W tabeli przy każdym zapisie rozszerzonym opisano trasę – zakryj ostatnią kolumnę i spróbuj przejść ją sam.
+[TABELA]
+Aberracja | Zapis skrócony i rozszerzony | Trasa
+Translokacja robertsonowska | 45,XX,der(13;21)(q10;q10) 45,XX,der(13;21) (13qter→13q10:: 21q10→qter) | od końca ramienia długiego 13 do q10 (przy centromerze), połączenie z 21q10 i dalej do końca ramienia długiego 21 – chromosom z dwóch ramion długich
+Translokacja wzajemna | 46,XX,t(2;5)(q21;q31) 46,XX,t(2;5) (2pter→2q21:: 5q31→5qter; 5pter→5q31:: 2q21→2qter) | dwie trasy rozdzielone średnikiem – po jednej dla każdego chromosomu pochodnego ( )
+Delecja terminalna | 46,XY,del(5)(q13) 46,XY,del(5) (pter→q13:) | od pter do q13; pojedynczy dwukropek – tu chromosom się kończy
+Delecja interstycjalna | 46,XX,del(5)(q13q33) 46,XX,del(5) (pter→q13::q33→qter) | od pter do q13, przeskok do q33 i dalej do qter – odcinek q13–q33 pominięty
+Duplikacja | 46,XX,dup(1)(q22q25) 46,XX,dup(1) (pter→q25:: q22→qter) | od pter do q25, powrót do q22 i dalej do qter – odcinek q22–q25 przechodzisz dwa razy, za każdym razem w tę samą stronę
+Inwersja paracentryczna | 46,XX,inv(3)(q21q26) 46,XX,inv(3) (pter→q21:: q26→q21:: q26→qter) | od pter do q21, skok do q26 i „pod prąd” z powrotem do q21, skok do q26 i dalej do qter – odcinek q21–q26 przechodzisz w odwrotnym kierunku
+Inwersja pericentryczna | 46,XX,inv(3)(p13q21) 46,XX,inv(3) (pter→p13::q21→p13:: q21→qter) | od pter do p13, skok do q21 i z powrotem do p13 – przez centromer; skok do q21 i dalej do qter – odwrócony odcinek zawiera centromer
+Insercja | 46,XX,ins(2)(p13q21q31) 46,XX,ins(2) (pter→p13:: q31→q21:: p13→q21:: q31→qter) | od pter do p13; tu wstawiony odcinek q31→q21; dalej od p13 przez centromer do q21, skok do q31 i do qter – odcinek q21–q31 zniknął ze swojego miejsca i pojawił się w p13
+Izochromosom | 46,X,i(X)(q10) 46,X,i(X) (qter→q10::q10→qter) 46,XX,i(17)(q10) 46,XX,i(17) (qter→q10::q10→qter) | od końca ramienia długiego do q10, połączenie i znów od q10 do końca ramienia długiego – dwa ramiona długie; tak samo dla X i dla chromosomu 17
+Chromosom dicentryczny | 45,XX,dic(13;15)(q22;q24) 45,XX,dic(13;15) (13pter→13q22:: 15q24→15pter) | od końca ramienia krótkiego 13 przez centromer 13 do 13q22, połączenie z 15q24 i dalej przez centromer 15 do 15pter – po drodze mijasz dwa centromery
+Chromosom pierścieniowy | 46,XX,r(7)(p22q36) 46,XX,r(7) (::p22→q36::) | zapis zaczyna się i kończy podwójnym dwukropkiem: od p22 do q36, a koniec łączy się z początkiem – pierścień; odcinki za p22 i q36 utracone
+[/TABELA]
+
+### Duplikacja z odwróceniem  [c09-r-dup]
+Duplikacja to podwojenie fragmentu chromosomu w sposób bezpośredni albo z jego odwróceniem o 180° (inwersją). W zapisie skróconym różnicę widać tylko w kolejności punktów pęknięć.
+[RAMKA przyklad] Porównaj dwa zapisy duplikacji chromosomu 1: dup(1)(q22q25) i dup(1)(q25q22) . Punkty pęknięć są te same, różni się tylko ich kolejność: w pierwszym zapisie fragment q22–q25 jest podwojony bezpośrednio, w drugim – z odwróceniem o 180°. Zapis rozszerzony duplikacji z odwróceniem Drewa podaje w dwóch wariantach: 46,XX,dup(1) (pter→q25:: q25→q22:: q25→qter) lub (pter→q22:: q25→q22:: q22→qter) . Przejdź pierwszą trasę: od pter do q25, potem z q25 „pod prąd” do q22 – to podwojony, odwrócony odcinek – i od q25 dalej do qter. W obu wariantach odcinek q22–q25 występuje dwa razy: raz w zwykłym kierunku, raz odwrotnie; warianty różnią się tym, która kopia leży pierwsza.
+
+### Izochromosomy, pierścienie i markery – uzupełnienia  []
+Izochromosom ramion długich chromosomu X stwierdza się najczęściej, natomiast izochromosomy większości autosomów są letalne . Chromosomy pierścieniowe powstają w wyniku pęknięcia i ponownego połączenia złamanych końców jednego lub kilku chromosomów.
+Chromosomy markerowe to dodatkowe chromosomy, których pochodzenie i mechanizm powstawania są nieznane. Najczęściej są to chromosomy małe, metacentryczne lub akrocentryczne ; mogą mieć też strukturę pierścieniową i zawierają jeden lub dwa centromery. Zapis może też wskazywać, skąd marker się wziął: 47,XX,t(12;16)(q13;p11),+mar to kariotyp z chromosomem markerowym, który powstał w wyniku translokacji t(12;16).
+Translokację niezrównoważoną z części 1 ( ) Drewa ilustruje kariogramem w wersji męskiej: 46,XY, der(21;21) (q10;q10),+21 (zespół Downa). Zapis różni się od żeńskiego tylko literami chromosomów płci.
+
+### Mozaika – zapis z odsetkami komórek  [c09-r-mozaika]
+Niektórzy autorzy w zapisie kariotypu mozaikowego podają odsetek komórek z określonym kariotypem – w nawiasie po zapisie danej linii. Ma to znaczenie, bo od odsetka komórek nieprawidłowych zależy, w jakim stopniu ujawniają się cechy fenotypowe danego zespołu ( ). Dwa przykłady:
+- mos46,XY(70%)/ 47,XY,+21(30%) – linia prawidłowa (70% komórek) i linia z trisomią 21 (30%);
+- mos 45,X(40%)/ 46,XY(60%) – linia z monosomią X (40%) i linia prawidłowa męska (60%).
+Porównaj z zapisem chimery z części 1: tam w nawiasach kwadratowych stoi liczba komórek, a tu – w nawiasach okrągłych – odsetek. Kontrola: odsetki wszystkich linii sumują się do 100%.
+
+### Zapis ish – pełna lista symboli i trzy dalsze zapisy  [c09-r-ish]
+Część 1 ( ) podała symbole −, +, ++ i x. Pełna lista ze źródła obejmuje też symbole, które opisują wygląd sygnału, oraz skróty rodzajów badania:
+[TABELA]
+Symbol | Znaczenie w zapisie ish
+; | oddziela sondy na różnych chromosomach pochodnych
+amp | zamplifikowany sygnał
+con | połączone (przyległe) sygnały
+sep | rozdzielone sygnały
+dim | osłabiona intensywność sygnału
+enh | wzmocniona intensywność sygnału
+cgh | porównawcza hybrydyzacja genomowa
+nucish | jądrowa lub interfazowa hybrydyzacja in situ
+[/TABELA]
+Symbole wyglądu sygnału łatwiej zapamiętać parami przeciwieństw: con – sep (sygnały razem lub osobno), dim – enh (słabszy lub silniejszy). Trzy kolejne zapisy pokazują pozostałe reguły:
+- ish del(22)(q11.2q11.2)(D22S75−) – ta sama delecja co w przykładzie z części 1, ale standardowej analizy cytogenetycznej nie wykonano, więc zapis zaczyna się od ish (bez liczby chromosomów i kropki);
+- 46,XY.ish dup(17)(p11.2p11.2)(RAI1++) – region zawierający locus RAI1 na chromosomie 17 jest zduplikowany („++”), co wykryto ish na chromosomach metafazowych;
+- 46,XY.ish 17p11.2(RAI1x2) – locus RAI1 na chromosomie 17 ma prawidłową liczbę kopii (dwie), co wykazano w analizie ish z zastosowaniem sondy miejscowo specyficznej .
+Porównaj dwa ostatnie zapisy – oba dotyczą locus RAI1. Pierwszy zaczyna się od skrótu aberracji (dup) z nawiasami, bo opisuje zmieniony chromosom. Drugi zaczyna się od adresu 17p11.2 bez nawiasu – tak opisuje się chromosomy prawidłowe.
+[ŹRÓDŁO] Źródło: Drewa s. 453–458
+
+## Nowotwory: cała tabela rearanżacji i opis klonów  [c09-r-nowotwory]
+Podrozdział o cytogenetyce nowotworów w części 1 ( ) pokazał osiem przykładowych rearanżacji i zasady opisu klonów na jednym przykładzie. Tu jest reszta: skąd bierze się materiał i skąd aberracje, cała tabela źródła, drugi przykład klonów i pełna tabela liczby modalnej.
+
+### Skąd materiał i skąd aberracje?  []
+Podstawową metodą badania aberracji chromosomów w komórkach pochodzących z guzów nowotworowych jest hodowla długo- i krótkoterminowa . W nowotworach układu krwiotwórczego aberracje mają znaczenie diagnostyczne i prognostyczne. Inaczej jest w guzach wywodzących się z innych tkanek: dotychczasowe obserwacje cytogenetyczne nie pozwalają jednoznacznie określić roli aberracji w prognozowaniu klinicznym. W niektórych rodzajach guzów podjęto próby powiązania (korelacji) złożoności aberracji chromosomowych albo obecności określonej aberracji z przebiegiem klinicznym choroby.
+Skąd biorą się aberracje w komórkach nowotworowych? Przyczyny są wciąż słabo poznane. Źródło wymienia trzy możliwości:
+- w komórkach guzów mogą wystąpić nieswoiste zmiany kariotypu , uważane za wtórne – wynikające z zaburzeń genetycznych i metabolicznych w czasie progresji nowotworu;
+- badania nad różnymi typami białaczek wykazały, że przyczyną aberracji mogą być niektóre czynniki środowiskowe i zawodowe
+- oraz leczenie lekami cytostatycznymi .
+Dla większości zaburzeń chromosomowych związanych z rakami nie zidentyfikowano jednak swoistego czynnika inicjującego.
+
+### Cała tabela rearanżacji  [c09-r-tabela]
+Tabela źródła zestawia 25 rearanżacji w trzech grupach; osiem z nich znasz z części 1 ( ). Grupy odpowiadają dwóm typom skutków: geny fuzyjne (obejmujące kinazy tyrozynowe albo czynniki transkrypcyjne) i zmieniona ekspresja genów o prawidłowej budowie.
 [TABELA]
 Aberracja | Geny | Nowotwór
 Geny fuzyjne obejmujące kinazy tyrozynowe
@@ -560,23 +779,20 @@ t(12;13)(q13;q12.3) | ETV6-CDX2 | ostra białaczka szpikowa
 t(14;18)(q32.33;q21.3) | IGHG1-BCL2 | chłoniak grudkowy
 del(21)(q22.3q22.3)* | TMPRSS2-ERG | rak prostaty
 [/TABELA]
-Gwiazdką (*) oznaczono zmiany niewykrywalne w klasycznym badaniu cytogenetycznym . Przy części z nich powód widać w samym zapisie. Porównaj dwie inwersje chromosomu 10: w inv(10)(q11.2q21) punkty pęknięć leżą w różnych regionach i gwiazdki nie ma, a w inv(10)(q11.2q11.2)* – w tym samym subprążku. Podobnie del(4)(q12q12)* i del(21)(q22.3q22.3)*: zmiana mieści się w obrębie jednego prążka, więc wzór prążków się nie zmienia. Tu przydają się metody cytogenetyki molekularnej, np. FISH stosowany w diagnostyce nowotworów ( ).
-Istotnym zagadnieniem są też niezrównoważone aberracje w komórkach guzów – delecje, duplikacje i amplifikacje. Większość z nich dotyczy dużych regionów chromosomów, zawierających liczne geny. Ich następstwa czynnościowe dla rozwoju nowotworu nie zostały dotąd poznane.
+Czytając tabelę wierszami, zwróć uwagę na geny, które się powtarzają. Mięsak Ewinga ma w tabeli dwie różne translokacje – t(11;22) i t(21;22) – a w obu chromosom 22 pęka w subprążku q12.2 i bierze udział gen EWSR1. Gen IGHG1 występuje w czterech wierszach, za każdym razem z pęknięciem chromosomu 14 w subprążku q32.33: raz w genie fuzyjnym (szpiczak mnogi) i trzy razy w grupie zmienionej ekspresji (chłoniaki). Ten sam gen może więc uczestniczyć w różnych rearanżacjach.
 
-### Klon i jego wielkość  []
-[POJĘCIE Klon] populacja komórek pochodzących od jednej komórki; komórki klonu mają takie same lub zbliżone zestawy nieprawidłowych chromosomów.
-Kariotyp guza opisuje się według zasad ISCN 2005, a podstawowym pojęciem jest klon – populacja komórek pochodzących od jednej komórki. „Pochodzenie klonalne” oznacza, że komórki mają takie same lub zbliżone zestawy nieprawidłowych chromosomów. Klon nie musi więc być całkowicie jednorodny: w czasie rozwoju guza mogą powstawać subklony .
-W zapisie różne klony oddziela się ukośnikiem (/) – tak jak linie komórkowe mozaiki. Wielkość klonu to liczba tworzących go komórek; podaje się ją zawsze w nawiasie kwadratowym po zapisie kariotypu, np. 46,XX,t(8;21)(q22;q22)[23] – klon z 46 chromosomami zidentyfikowany w 23 płytkach metafazowych.
+### Gwiazdki – co mówi źródło, a co jest wnioskiem  []
+Drewa objaśnia gwiazdkę tylko tak: zmiany niewykrywalne w klasycznym badaniu cytogenetycznym; w trzech z siedmiu takich zapisów – del(4)(q12q12), inv(10)(q11.2q11.2) i del(21)(q22.3q22.3) – oba punkty pęknięć leżą w tym samym prążku (porównaj inv(10)(q11.2q21) bez gwiazdki, z punktami w różnych regionach). Wniosek własny – Drewa tego nie objaśnia: można to powiązać z tym, że kariotyp opisuje się z dokładnością do prążka ( ), więc zmiana zamknięta w jednym prążku może nie zmienić wzoru prążków – podobnie delecji del(22)(q11.2q11.2) standardowe badanie nie wykazało przy kariotypie 46,XX ( ). Dla pozostałych czterech zmian z gwiazdką – inv(2), t(4;14), episom(9q34.1) i t(12;21) – sam zapis niczego nie tłumaczy.
 
-### Linia główna, macierzysta i boczne  []
-Linia główna ( mainline , ml) to najczęstszy skład chromosomowy w populacji komórek guza – termin czysto ilościowy, oznaczający największy klon. Gdy dwa lub więcej klonów ma tę samą wielkość, guz może mieć więcej niż jedną linię główną.
-Linia macierzysta ( stemline , sl) to podstawowy klon w populacji komórek guza; umieszcza się ją na pierwszym miejscu. Cytogenetycznie pokrewne klony (subklony) przedstawia się, jeśli to możliwe, w kolejności wzrastającej złożoności zmian – niezależnie od wielkości klonu. Wszystkie dodatkowe nieprawidłowe subklony to linie boczne ( sidelines , sdl); gdy jest ich więcej, opisuje się je jako sdl1, sdl2 itd. Skrót sl lub sdl w opisie klonu oznacza wszystkie nieprawidłowości tamtej linii – dopisuje się już tylko to, co nowe.
-Linia główna i linia macierzysta to więc dwa różne kryteria: główna jest największa, macierzysta – podstawowa i zapisana jako pierwsza. W kariotypie 46,XX, t(9;22) (q34;q11.2)[3]/ 47,XX,+8, t(9;22) (q34;q11.2)[17] linię główną reprezentuje klon z 47 chromosomami (17 komórek), choć najprawdopodobniej powstał on z klonu z 46 chromosomami.
-[RAMKA przyklad] 46,XY, t(9;22) (q34;q11.2)[3]/ 47,sl,+8[17]/ 48,sdl1,+9[3]/ 49,sdl2,+11[12] – rozpisz klony po kolei. Klon z 46 chromosomami (3 komórki) stoi na pierwszym miejscu – to linia macierzysta (sl) z translokacją t(9;22)(q34;q11.2). Klon z 47 : „sl,+8” – wszystkie zmiany linii macierzystej i dodatkowo trisomia 8; to pierwsza linia boczna, sdl1 (17 komórek). Klon z 48 : „sdl1,+9” – t(9;22), +8 i dodatkowo trisomia 9; to sdl2. Klon z 49 : „sdl2,+11” – wszystkie zmiany sdl2 i trisomia 11. Kontrola: każdy dodatkowy chromosom zwiększa liczbę o 1: 46 → 47 → 48 → 49 – zgadza się. Linią główną (największym klonem) jest tu klon z 47 chromosomami, a nie linia macierzysta.
-Tak samo czyta się kariotyp 48,XX, t(12;16) (q13;p11.1),…[23]/ 49,sl,+6[8]/ 50,sdl1,+7,−8,+9[4] : klon z 49 chromosomami ma wszystkie nieprawidłowości linii macierzystej i dodatkowo chromosom 6, a klon z 50 chromosomami – wszystkie nieprawidłowości sdl1 oraz trisomię 7, monosomię 8 i trisomię 9 (kontrola: 49 + 1 − 1 + 1 = 50).
+### Aberracje niezrównoważone w guzach  []
+Obok rearanżacji z tabeli istotnym zagadnieniem w cytogenetyce nowotworów złośliwych jest występowanie w komórkach guzów aberracji niezrównoważonych – delecji, duplikacji i amplifikacji – oraz ich konsekwencje funkcjonalne. Większość z nich dotyczy dużych regionów chromosomów, zawierających liczne geny. Jak dotąd następstwa funkcjonalne tych niezrównoważeń dla rozwoju nowotworów nie są poznane. Właśnie takie zmiany liczby kopii DNA w komórkach nowotworowych wykrywa CGH ( ).
 
-### Liczba modalna  []
-Liczba modalna ( modal number , mn) to liczba chromosomów najczęściej występująca w populacji komórek guza; może być wyrażona jako zakres między dwiema liczbami. Liczby modalne w zakresie haploidalnym, diploidalnym albo niebędące całkowitą wielokrotnością liczby haploidalnej, których nie da się wyrazić precyzyjnie, określa się jako „prawie haploidalne” ( near haploid ), „prawie diploidalne” itd. Do opisu kariotypu komórek guza stosuje się określenia zebrane w tabeli (podano liczbę chromosomów). Symbol określenia „prawie” zawiera znak ± (np. prawie diploidalny – 2n±), „hipo-” – minus (hipodiploidalny – 2n−), a „hiper-” – plus (hiperdiploidalny – 2n+).
+### Drugi przykład klonów – przeliczony do końca  [c09-r-klony]
+Metodę rozpisywania klonów z części 1 ( ) zastosuj do kariotypu, w którym linia boczna jednocześnie zyskuje i traci chromosomy.
+[RAMKA przyklad] 48,XX, t(12;16) (q13;p11.1),…[23]/ 49,sl,+6[8]/ 50,sdl1,+7,−8,+9[4]. Klon z 48 chromosomami (23 komórki) stoi na pierwszym miejscu – to linia macierzysta (sl). Translokacja nie zmienia liczby chromosomów, więc wielokropek kryje dalsze zmiany tej linii, których tu nie wypisano. Klon z 49 (8 komórek): „sl,+6” – wszystkie nieprawidłowości linii macierzystej i dodatkowo chromosom 6 (48 + 1 = 49); to sdl1. Klon z 50 (4 komórki): „sdl1,+7,−8,+9” – wszystkie nieprawidłowości sdl1, ponadto trisomia 7, monosomia 8 i trisomia 9. Kontrola: 49 + 1 − 1 + 1 = 50. Linia główna? Największy klon to tu linia macierzysta (23 komórki) – inaczej niż w przykładzie z części 1, gdzie linią główną był klon z 47 chromosomami. Oba kryteria mogą więc wskazać ten sam klon albo różne.
+
+### Pełna tabela liczby modalnej  [c09-r-modalna]
+W części 1 ( ) podaliśmy zakresy dla kariotypu diploidalnego. Te same trzy określenia – „prawie”, „hipo-” i „hiper-” – stosuje się do pięciu poziomów ploidalności (w tabeli podano liczbę chromosomów):
 [TABELA]
 Kariotyp | prawie | hipo- | hiper-
 haploidalny (n = 23) | n±: < 34 | n−: < 23 | n+: 24⁠–⁠34
@@ -586,10 +802,8 @@ tetraploidalny (4n = 92) | 4n±: 81⁠–⁠103 | 4n−: 81⁠–⁠91 | 4n+: 93
 pentaploidalny (5n = 115) | 5n±: 104⁠–⁠126 | 5n−: 104⁠–⁠114 | 5n+: 116⁠–⁠126
 [/TABELA]
 [RAMKA przyklad] Jak korzystać z tabeli? Zauważ, że zakresy „hipo-” i „hiper-” omijają dokładną wielokrotność liczby haploidalnej: hipodiploidalny to 35–45, hiperdiploidalny 47–57 – liczba 46 (dokładnie 2n) nie należy do żadnego z nich. Tak samo 69 (3n) leży między 58–68 a 70–80. Guz z liczbą modalną 52 (liczba przykładowa) jest więc hiperdiploidalny (2n+), a zarazem mieści się w zakresie „prawie diploidalnym” (35–57).
-Określenia pseudodiploidalny , pseudotriploidalny itd. opisują kariotyp, w którym liczba chromosomów jest wielokrotnością liczby haploidalnej (euploidalna), ale nieprawidłowa z powodu liczbowych i/lub strukturalnych aberracji. Komórki, w których liczba chromosomów różni się od euploidalnej, nazywa się aneuploidalnymi .
-[RAMKA zapamietaj] W nowotworach typowe są translokacje wzajemne, inwersje i insercje, które tworzą geny fuzyjne (np. BCR-ABL1 przy t(9;22)) albo zmieniają ekspresję genu o prawidłowej budowie (np. MYC przy t(8;14)). Klon to komórki pochodzące od jednej komórki ([n] – liczba komórek); linia główna to klon największy, linia macierzysta (sl) – podstawowy, zapisany jako pierwszy, a liczba modalna – najczęstsza liczba chromosomów w guzie.
+Określenia pseudodiploidalny , pseudotriploidalny itd. opisują kariotyp, w którym liczba chromosomów jest wielokrotnością liczby haploidalnej (euploidalna), ale nieprawidłowa z powodu obecności liczbowych i/lub strukturalnych aberracji.
 [ŹRÓDŁO] Źródło: Drewa s. 466–469
-[RAMKA w60] Chromosom metafazowy – dwie chromatydy połączone centromerem, którego stałe położenie wyznacza typ (meta-, submeta-, akrocentryczny); ramię krótkie p, długie q; na końcach telomery (TTAGGG); akrocentryczne 13–15, 21, 22 mają satelity i NOR. Kariotyp – 46 chromosomów: 22 pary autosomów w grupach A–G (wielkość + centromer) oraz XX lub XY; X w grupie C, Y w G; do rozpoznania każdej pary potrzebne są prążki. Preparat i prążki – hodowla limfocytów pobudzonych fitohemaglutyniną; G – rutyna (ciemne = A-T), Q – świecą A-T, R – odwrotność G, C – heterochromatyna konstytutywna; 300–400, 550–580 lub do 850 prążków; adres: chromosom, ramię, region, prążek. FISH i CGH – FISH: sonda i liczenie sygnałów, także w jądrach interfazowych; CGH: DNA pacjenta wobec referencyjnego, stosunek zieleń : czerwień poza 0,75–1,25 = zmiana liczby kopii; aberracji zrównoważonych CGH nie wykrywa. Zapis ISCN – liczba, płeć, aberracja: 47,XY,+21; 46,XX,del(5)(q13q33); 46,XX,t(2;5)(q21;q31); zapis rozszerzony to trasa (→, ::, :); „/” – linie komórkowe, [n] – liczba komórek, „.ish” – wynik FISH. Nowotwory – geny fuzyjne (BCR-ABL1) lub zmieniona ekspresja (MYC); klon, linia główna (największa), macierzysta (sl, pierwsza), boczne (sdl), liczba modalna.
 
 
 ======== E. ŹRÓDŁA (przycięte do zakresu z mapy) ========

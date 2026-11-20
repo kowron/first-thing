@@ -184,6 +184,7 @@ Jak dotąd nie ma dowodów naukowych na szkodliwy wpływ żywności modyfikowane
 Akty prawne dotyczące wprowadzania roślin transgenicznych do uprawy oraz ich wykorzystania jako żywności i paszy mają dwa cele: zapewnić bezpieczeństwo i pozostawić konsumentowi wybór między żywnością zmodyfikowaną genetycznie a pochodzącą z rolnictwa konwencjonalnego lub ekologicznego.
 - Unia Europejska – rozporządzenie 1829/2003/WE w sprawie zmodyfikowanej genetycznie żywności i paszy oraz rozporządzenie 1830/2003/WE dotyczące m.in. możliwości śledzenia żywności i produktów paszowych wyprodukowanych z GMO;
 - Polska – Ustawa o organizmach genetycznie zmodyfikowanych z 2001 r., regulująca zamknięte użycie GMO, uwalnianie ich do środowiska w celach innych niż wprowadzenie do obrotu, wprowadzanie do obrotu produktów GMO, wywóz za granicę i tranzyt oraz kompetencje organów administracji rządowej.
+Jak te dwa porządki prawne przekładają się na mapę upraw – ile hektarów, w których krajach i pod jakimi roślinami – pokazuje część 2 ( ).
 [RAMKA zapamietaj] Roślinę transgeniczną uzyskuje się metodą wektorową ( Agrobacterium tumefaciens wnosi T-DNA z plazmidu Ti i wbudowuje je do genomu) albo biolistyczną (DNA wstrzeliwane na mikronośnikach – uniwersalne, także do organelli). Dwie najczęstsze modyfikacje to odporność na herbicydy i odporność na szkodniki (gen Cry, endotoksyna Bacillus thuringiensis ).
 [ŹRÓDŁO] Źródło: Drewa s. 739–746
 
@@ -224,19 +225,17 @@ Krótkie okno przed kariogamią jest najlepszym momentem na wstrzyknięcie trans
 - Mikroiniekcja transgenu. Mikropipetą wprowadza się do jednego z przedjądrzy transgen w ilości do 1000 kopii. Wybiera się zwykle przedjądrze męskie , bo jest większe i leży bliżej błony komórkowej – łatwiej w nie trafić, mniej uszkadzając komórkę.
 - Hodowla i przeniesienie zarodka. Zygotę umieszcza się w płynie hodowlanym, by podjęła podziały, a zarodek w stadium 2 lub 4 blastomerów (pierwszych komórek potomnych) przenosi się do macicy samicy-biorczyni . Biorczyni musi mieć odpowiednio zsynchronizowany cykl owulacyjny, bo tylko wtedy błona śluzowa macicy jest gotowa na zagnieżdżenie zarodka.
 [RYCINA c11-fig-transgen „Dwie drogi do zwierzęcia o wybranym genomie”: Zacznij od stanu wyjściowego: w A jest zapłodniona komórka jajowa z dwoma przedjądrzami, w B – komórka somatyczna i oocyt pozbawiony jądra. Porównaj, skąd pochodzi materiał genetyczny nowego osobnika: w A od obojga rodziców plus wstrzyknięty transgen, w B wyłącznie z jądra dawcy. Wniosek: mikroiniekcja dodaje zwierzęciu nowy gen, klonowanie powtarza cały genom jednego dawcy.]
-Dlaczego ta metoda jest tak mało wydajna? Decydują o tym dwie rzeczy, których nie kontrolujemy.
-- Kiedy transgen się zintegruje. Jeśli integracja nie nastąpi przed pierwszym podziałem komórki, część komórek zarodka nie będzie go miała i urodzi się zwierzę będące chimerą/mozaiką – u myszy zdarza się to w 75% przypadków . Ogólna wydajność transgenezy wynosi od 0,5% u bydła do około 20% u myszy . Osobniki homozygotyczne pod względem transgenu uzyskuje się rzadko – transgen zajmuje najczęściej tylko jedno locus.
-- Gdzie i w ilu kopiach. Miejsce integracji transgenu jest przypadkowe , a liczba wbudowanych kopii nie jest kontrolowana. Transgen może więc wypaść w środku ważnego genu gospodarza albo powstać w wielu kopiach – i oba te zdarzenia prowadzą niekiedy do ciężkich powikłań, a nawet śmierci transgenicznego zwierzęcia.
+Dlaczego ta metoda jest tak mało wydajna? Nie kontrolujemy chwili, w której transgen się wbuduje. Jeśli integracja nie nastąpi przed pierwszym podziałem komórki, część komórek zarodka nie będzie go miała i urodzi się zwierzę będące chimerą/mozaiką – u myszy zdarza się to w 75% przypadków . Ogólna wydajność transgenezy wynosi od 0,5% u bydła do około 20% u myszy ; osobniki homozygotyczne pod względem transgenu uzyskuje się rzadko, bo transgen zajmuje najczęściej tylko jedno locus. Nie kontrolujemy też miejsca wbudowania ani liczby kopii – czym to grozi, pokazuje część 2 ( ).
 
 ### Komórki ES i myszy znokautowane – po co psuć gen?  []
 Zmień pytanie: nie „jak dodać cechę”, ale „jak sprawdzić, do czego gen służy”. Odpowiedź: zepsuć go i zobaczyć, czego zwierzęciu zabraknie. To logika myszy znokautowanych (knockout) – zwierząt bez ani jednego czynnego genu z określonej pary alleli. U myszy pozbawionych genu deaminazy adenozyny, czyli z mutacją obu alleli, wystąpiły objawy ciężkiego złożonego niedoboru odporności (SCID) – tej samej choroby, którą ten defekt wywołuje u człowieka. Zgodę na takie badania muszą wydać komisje bioetyczne.
 Potrzebna jest do tego komórka, którą można zmodyfikować w hodowli, a potem wprowadzić do zarodka. Takie są pierwotne komórki zarodkowe (ES) , wyizolowane z zarodków mysich ( ): dzielą się w warunkach hodowli i są zdolne do kolonizacji zarodka we wczesnych stadiach rozwoju, a ich komórki potomne zasiedlają wszystkie tkanki nowego organizmu na równi z komórkami pochodzącymi z zarodka. Myszy są jedynym gatunkiem modyfikowanym tą metodą.
 Zostaje najtrudniejsze: jak wymusić uszkodzenie konkretnego genu i jak rozpoznać nieliczne komórki, w których się to udało ( ).
-- Budowa wektora. Konstruuje się plazmid z fragmentem obcego DNA, który ma zrekombinować z homologicznym genem myszy i go zinaktywować. W środek tego fragmentu wstawia się gen markerowy oporności na neomycynę : marker rozdziela transgen na dwie części, więc przerwany transgen traci aktywność – to gen null . Plazmid nosi dodatkowo gen kinazy tymidynowej (Tk) ; po co – wyjaśni punkt 4.
+- Zepsuty gen przygotowany w probówce. Konstruuje się plazmid z fragmentem obcego DNA, który ma zrekombinować z homologicznym genem myszy i go zinaktywować. W środek tego fragmentu wstawia się gen markerowy oporności na neomycynę : marker rozdziela transgen na dwie części, więc przerwany transgen traci aktywność – to gen null .
 - Wprowadzenie do komórek ES. Komórki ES pobrane z blastocyst transformuje się tym plazmidem, najczęściej metodą elektroporacji – krótkie impulsy prądu otwierają w błonie przejściowe pory, którymi wnika DNA.
 - Trzy możliwe losy plazmidu. Może zajść rekombinacja homologiczna – gen dziki gospodarza zostaje wymieniony na gen null (zwykle w jednym z pary alleli); rekombinacja nieuprawniona – fragment obcego DNA przyłącza się do genomu w losowym miejscu, nie zastępując niczego; albo rekombinacja nie zachodzi wcale i komórka pozostaje niezmieniona.
-- Podwójna selekcja. Pod mikroskopem te trzy przypadki wyglądają tak samo, więc odróżnia się je warunkami hodowli. Neomycyna zabija komórki bez genu oporności – odpadają wszystkie, w których nic się nie wbudowało. Gancyklowir zabija komórki z genem Tk, a Tk zostaje w genomie tylko po rekombinacji nieuprawnionej, bo przy homologicznej wymieniany jest sam odcinek transgenu. Przeżywa więc dokładnie ta grupa, o którą chodzi: klony z genem null w miejscu genu dzikiego .
-- Od komórki do zwierzęcia. Wyselekcjonowane komórki ES wstrzykuje się mikroiniekcją do blastocysty, a tak zmodyfikowany zarodek przenosi do macicy samicy-biorczyni. Jeśli komórki ES skolonizują zarodek, rodzą się myszy chimery . Dalej potrzebne są krzyżówki: kojarzenie chimer pokazuje, czy chimeryzm objął także linię komórek płciowych, w następnym pokoleniu otrzymuje się heterozygoty z genem null w jednym allelu, a z ich skrzyżowania – homozygoty z dwoma allelami zinaktywowanymi, czyli właściwe myszy znokautowane.
+- Podwójna selekcja. Pod mikroskopem te trzy przypadki wyglądają tak samo, więc odróżnia się je warunkami hodowli: w pożywce podaje się kolejno neomycynę i gancyklowir ( ). Przeżywa dokładnie ta grupa, o którą chodzi – klony z genem null w miejscu genu dzikiego ; dlaczego akurat one, wyjaśnia część 2 ( ).
+- Od komórki do zwierzęcia. Wyselekcjonowane komórki ES wstrzykuje się mikroiniekcją do blastocysty, a tak zmodyfikowany zarodek przenosi do macicy samicy-biorczyni. Jeśli komórki ES skolonizują zarodek, rodzą się myszy chimery . Potrzebne są jeszcze krzyżówki ( ): w pierwszym pokoleniu po chimerze pojawiają się heterozygoty z genem null w jednym allelu, a z ich skrzyżowania – homozygoty z dwoma allelami zinaktywowanymi, czyli właściwe myszy znokautowane.
 [RYCINA c11-fig-knockout „Podwójna selekcja klonów komórek ES”: Czytaj kolumnami: każda to inny los wprowadzonego plazmidu, a dwa dolne wiersze to dwie kolejne selekcje. Porównaj kolumnę pierwszą i drugą – różni je tylko obecność genu Tk, i właśnie ta różnica rozstrzyga o przeżyciu w gancyklowirze. Wniosek: neomycyna usuwa komórki, w których nic się nie wbudowało, a gancyklowir te, w których wbudowało się w złym miejscu; zostaje klon z genem null w miejscu genu dzikiego. Schemat własny, proporcje umowne.]
 Co wynika z braku jednego genu? Trzy możliwości: homozygotyczność genu null może być letalna ; homozygoty mogą przeżywać, ale funkcjonować nieprawidłowo ; mogą też rozwijać się prawidłowo – wtedy prawdopodobnie brakujący produkt genu albo jego funkcję zastępują inne białka lub odmienny szlak metaboliczny. Ta trzecia możliwość jest ważna: brak objawów nie dowodzi, że gen jest nieważny, tylko że organizm ma zastępstwo.
 
@@ -245,9 +244,10 @@ Co wynika z braku jednego genu? Trzy możliwości: homozygotyczność genu null 
 Klonem nazywamy grupę złożoną z co najmniej dwóch identycznych genetycznie organizmów lub komórek, powstałych z jednego osobnika drogą rozmnażania bezpłciowego. Klonami są więc rośliny powstałe z fragmentacji organizmu macierzystego (rozmnażanie wegetatywne), a także bliźnięta monozygotyczne – z tym że te ostatnie są identyczne genetycznie względem siebie , a nie względem organizmu rodzicielskiego.
 Klonowanie metodą transplantacji jąder komórkowych polega na usunięciu materiału genetycznego oocytu i zastąpieniu go jądrem komórkowym pochodzącym z pierwotnych komórek zarodkowych ( klonowanie zarodkowe ) albo z komórek somatycznych, czyli komórek ciała ( klonowanie somatyczne ). Obejmuje cztery etapy ( ):
 - usunięcie jądra z komórki-biorcy – nosi nazwę wyjądrzenia albo enukleacji ; bez tego w komórce zostałyby dwa zestawy materiału genetycznego. Najczęściej komórką-biorcą jest oocyt zatrzymany w stadium II metafazy;
-- pozyskanie komórek będących dawcami jąder – w klonowaniu somatycznym są to komórki płodowe albo komórki ciała (skóra, język, mięśnie) osobników nowo narodzonych i dorosłych;
-- wprowadzenie jądra do komórki-biorcy – mikropipetą albo przez fuzję obu komórek w obecności czynników stymulujących: glikolu polietylenowego, impulsów elektrycznych lub inaktywowanego wirusa Sendai;
-- aktywacja zmodyfikowanej komórki-biorcy – przy naturalnym zapłodnieniu bodźcem aktywującym jest wniknięcie plemnika, a tutaj plemnika nie ma, więc używa się czynników fizykochemicznych: impulsów prądu stałego, 7% etanolu, jonów strontu.
+- pozyskanie komórek będących dawcami jąder – w klonowaniu somatycznym są to komórki płodowe albo komórki ciała osobników nowo narodzonych i dorosłych;
+- wprowadzenie jądra do komórki-biorcy – mikropipetą albo przez fuzję obu komórek w obecności czynników stymulujących;
+- aktywacja zmodyfikowanej komórki-biorcy – przy naturalnym zapłodnieniu bodźcem aktywującym jest wniknięcie plemnika, a tutaj plemnika nie ma, więc używa się czynników fizykochemicznych.
+Czym dokładnie wywołuje się fuzję i aktywację, z jakich komórek wolno wziąć jądro i co jeszcze bywa komórką-biorcą – zestawia część 2 ( ).
 O powodzeniu decydują dwa warunki. Pierwszy: jądro dawcy powinno być w fazie G0 lub G1 cyklu komórkowego ( ), bo w fazie S najtrudniej zachować prawidłowy profil replikacji DNA. Drugi: jądro komórki somatycznej musi – dzięki cytoplazmie oocytu – ponownie uzyskać totipotencjalność , czyli zdolność dania wszystkich typów komórek organizmu i trofoblastu ( ). Wymaga to odwrócenia zmian epigenetycznych , które zaszły w DNA w miarę różnicowania się komórki-dawcy; bez pełnego „zatarcia” tych zmian rozwój zrekonstruowanego oocytu zostaje zahamowany. Moment aktywacji musi być zsynchronizowany z wprowadzeniem jądra, inaczej może dojść do zaburzenia kariotypu i ploidii zarodka. Ostatni etap to transfer zarodka w stadium moruli lub blastuli do macicy samicy-biorczyni.
 Pierwszym ssakiem uzyskanym przez klonowanie somatyczne była owca Dolly (1996). Do wyjądrzonego oocytu jednej owcy wprowadzono jądro pobrane z komórki gruczołu mlecznego dorosłej owcy , a fuzję przeprowadzono impulsami elektrycznymi. Wynik tego doświadczenia jest ważniejszy niż narodziny jednego zwierzęcia: dojrzałe, zróżnicowane komórki somatyczne ssaków zachowują potencjał rozwojowy .
 [RAMKA zapamietaj] Mikroiniekcja do przedjądrza działa, bo transgen trafia do zygoty – ale miejsce i liczba kopii są losowe, a wydajność wynosi 0,5–20%. Komórki ES pozwalają uszkodzić wybrany gen (gen null, rekombinacja homologiczna, selekcja neomycyną i gancyklowirem) i dają myszy znokautowane. Klonowanie przez transfer jądra wymaga enukleacji oocytu, jądra w fazie G0/G1 i odwrócenia zmian epigenetycznych – owca Dolly pokazała, że komórka somatyczna zachowuje potencjał rozwojowy.
@@ -284,7 +284,7 @@ Największym problemem terapii genowej jest znalezienie skutecznych i bezpieczny
 - biologiczne – wektory oparte na wirusach RNA, wirusach DNA i plazmidach. W wektorach wirusowych usuwa się odpowiednie sekwencje genomu wirusa, czyli geny odpowiedzialne za wirulencję , żeby wirus nie mógł się autoreplikować w komórkach gospodarza i nie wywołał choroby zamiast ją leczyć;
 - fizykochemiczne – fuzja DNA z liposomami, transfekcja precypitatu DNA z fosforanem wapnia, elektroporacja, mikroiniekcja dojądrowa.
 [RAMKA zapamietaj] U człowieka wolno prowadzić wyłącznie somatyczną terapię genową; modyfikacja linii płciowej jest zabroniona. Gen wprowadza się ex vivo (pobrane komórki, modyfikacja in vitro, zwrot) albo in vivo (wektor wprost do tkanki). Rodzaje: dodawanie (komplementacja), zamiana (rekombinacja homologiczna), „doskonalenie” genomu (nowa funkcja).
-[ŹRÓDŁO] Źródło: Drewa s. 795–797
+[ŹRÓDŁO] Źródło: Drewa s. 796–798
 
 ## Wektory: czym dostarczyć gen  [c11-wektory]
 Nie ma wektora dobrego do wszystkiego – każdy jest kompromisem. Przed wyborem zadaj cztery pytania:
@@ -320,7 +320,7 @@ Chemiczne (liposomy kationowe) | wiele typów; do 150 kb | duża pojemność, ni
 [ŹRÓDŁO] Źródło: Drewa s. 797–798
 
 ## Kierunki terapii genowej  [c11-kierunki]
-Próby terapii genowej prowadzi się w bardzo różnych chorobach, a najwięcej z nich dotyczy nowotworów. Przy każdej chorobie zadawaj te same cztery pytania: co jest zepsute , co dostarczyć , czym i dokąd . Zobaczysz wtedy, że dostarczany gen wcale nie zawsze jest kopią genu uszkodzonego.
+Próby terapii genowej prowadzi się w bardzo różnych chorobach, a najwięcej z nich dotyczy nowotworów (ile dokładnie i na jakim etapie badań – ). Przy każdej chorobie zadawaj te same cztery pytania: co jest zepsute , co dostarczyć , czym i dokąd . Zobaczysz wtedy, że dostarczany gen wcale nie zawsze jest kopią genu uszkodzonego.
 
 ### Mukowiscydoza – dlaczego terapię trzeba powtarzać?  []
 Mukowiscydoza (torbielowate zwłóknienie trzustki) jest chorobą dziedziczoną autosomalnie recesywnie ( ), a jej przyczyną jest mutacja genu CFTR , kodującego białko błonowego kanału chlorkowego . Objawy dotyczą wielu narządów, ale najczęstszą przyczyną śmierci są zaburzenia układu oddechowego – dlatego próby terapii koncentrują się na skorygowaniu defektu w komórkach nabłonkowych oskrzeli .
@@ -352,7 +352,8 @@ Nowotwór nie jest chorobą brakującego białka, więc terapia genowa wygląda 
 - Immunoterapia – uczynić guz widocznym. W większości nowotworów antygeny guza są wytwarzane, ale tak słabe, że organizm jest wobec nich tolerancyjny; niektóre guzy mają też aktywne mechanizmy unikania odpowiedzi immunologicznej. Dlatego komórki nowotworowe modyfikuje się genami cytokin stymulujących układ odpornościowy (np. TNFα, interferon α) albo cząsteczek kostymulujących (np. ligand CD40). Rośnie wtedy poziom prezentacji antygenów nowotworowych, a w konsekwencji dochodzi do rekrutacji swoistych dla nowotworu limfocytów T i B. Drugą drogą jest namnożenie ex vivo limfocytów T pobranych od pacjenta i zwrócenie ich choremu; swoistość nowotworową uzyskuje się przez transfer genów białek receptorowych, a chemotaksję do guza – przez geny receptorów dla chemokin wydzielanych przez nowotwór. Aby limfocyty przetrwały w mikrośrodowisku guza, wprowadza się im geny zapobiegające apoptozie ( ) i starzeniu.
 - Wirusy onkolityczne – niszczyć tylko komórki guza. Takie wektory wybiórczo niszczą komórki, które uległy transformacji nowotworowej, i są nieszkodliwe dla prawidłowych tkanek: namnożone wiriony uwalniają się, zabijając zakażoną komórkę, i atakują kolejne. Użyto m.in. adenowirusów pozbawionych genu E1B ( ONYX-015 ), które mnożą się tylko w komórkach bez funkcjonalnego białka p53 ( ) – a brak sprawnego p53 jest cechą większości znanych nowotworów – oraz zmutowanego wirusa Herpes simplex (HF10), w raku piersi i raku trzustki. Wirusy onkolityczne stosuje się także łącznie z chemio- i radioterapią.
 - Kompensacja mutacji – wyłączyć onkogen, przywrócić supresor. Te dwa cele osiąga się czterema sposobami: zatrzymaniem transkrypcji onkogenu antysensownymi oligonukleotydami tworzącymi podwójną helisę (DNA tripleksowy); zatrzymaniem translacji przez oligonukleotyd hybrydyzujący z kodującymi sekwencjami mRNA onkogenu (np. mRNA K-ras); zablokowaniem gotowych onkoprotein „wewnątrzkomórkowymi przeciwciałami”; zastąpieniem zmutowanych genów supresorowych (np. P53, RB1) formą dziką.
-- Geny samobójcze – molekularna chemioterapia. Do komórek guza wprowadza się gen kodujący białko, które przekształca podany do krwiobiegu nietoksyczny prolek w toksyczne metabolity indukujące apoptozę. Chemioterapia działa więc tylko tam, gdzie jest transgen. Trzy układy stosowane u ludzi to: gen kinazy tymidynowej Herpes simplex ( HSV-tk ) – wywołuje podatność na acyklowir, gancyklowir i walacyklowir; bakteryjny gen deaminazy cytozynowej – wrażliwość na 5-fluorocytozynę; gen ssaczego cytochromu CYP2B – wzmocnienie chemowrażliwości na cyklofosfamid. Ważna obserwacja: toksyczne produkty powstające w zmodyfikowanych komórkach przenikają poza nie i niszczą sąsiednie, niezmodyfikowane komórki. To efekt sąsiedztwa ( bystander effect ) – dzięki niemu nie trzeba trafić transgenem do każdej komórki guza.
+- Geny samobójcze – molekularna chemioterapia. Do komórek guza wprowadza się gen kodujący białko, które przekształca podany do krwiobiegu nietoksyczny prolek w toksyczne metabolity indukujące apoptozę. Chemioterapia działa więc tylko tam, gdzie jest transgen. Trzy układy stosowane u ludzi to: gen kinazy tymidynowej Herpes simplex ( HSV-tk ) – wywołuje podatność na acyklowir, gancyklowir i walacyklowir; bakteryjny gen deaminazy cytozynowej – wrażliwość na 5-fluorocytozynę; gen ssaczego cytochromu CYP2B – wzmocnienie chemowrażliwości na cyklofosfamid. Ważna obserwacja: toksyczne produkty powstające w zmodyfikowanych komórkach przenikają poza nie i niszczą sąsiednie, niezmodyfikowane komórki. To efekt sąsiedztwa ( bystander effect ) – dzięki niemu nie trzeba trafić transgenem do każdej komórki guza ( ).
+[RYCINA c11-fig-samobojcze „Gen samobójczy i efekt sąsiedztwa”: Zacznij od krwiobiegu u góry: nietoksyczny prolek dociera do wszystkich komórek. Porównaj panele – w guzie komórki z transgenem (fioletowy znacznik w jądrze) zamieniają prolek w toksyczne metabolity i giną przez apoptozę (kroki 1–3), w prawidłowej tkance prolek pozostaje nietoksyczny. Wniosek: toksyczne produkty przenikają też do sąsiednich komórek guza (krok 4, efekt sąsiedztwa), więc transgen nie musi trafić do każdej z nich.]
 [RAMKA zapamietaj] Dostarczany gen nie zawsze jest kopią genu uszkodzonego: w mukowiscydozie i hipercholesterolemii to brakujący gen (CFTR, receptor LDL), w niedokrwieniu i chorobach mózgu – czynnik wzrostu (VEGF, FGF-4, CNTF, NGF), w AIDS – gen uodporniający komórkę, a w nowotworach gen, który czyni guz widocznym dla odporności albo zamienia prolek w truciznę (geny samobójcze, efekt sąsiedztwa).
 [ŹRÓDŁO] Źródło: Drewa s. 800–808
 
@@ -395,6 +396,233 @@ Na koniec stanowisko, które porządkuje całą tę dyskusję: uznawanie informa
 [RAMKA zapamietaj] Eugenika negatywna eliminuje cechy uznane za niekorzystne, pozytywna dąży do „lepszego” potomstwa – i jest nieskuteczna wobec niezależnej segregacji cech i wpływu środowiska; obie są zakazane. Świadoma zgoda jest ważna tylko wtedy, gdy jest swobodna, poprzedzona zrozumiałą informacją, dotyczy konkretnej interwencji i da się ją wycofać. Poufność danych genetycznych chroni przed dyskryminacją – zwłaszcza w zatrudnieniu i ubezpieczeniach.
 [ŹRÓDŁO] Źródło: Drewa s. 890–896, 904
 [RAMKA w60] Biotechnologia – tradycyjna korzysta z organizmów niemodyfikowanych, nowoczesna z modyfikowanych genetycznie; kolory OECD nazywają obszar zastosowania: zielona (rolnictwo), czerwona (zdrowie), biała (przemysł i środowisko), fioletowa (prawo i etyka), niebieska (wody). Rośliny GM – transgen wnosi Agrobacterium (T-DNA z plazmidu Ti) albo strzelba genowa (metoda biolistyczna, też do organelli); najczęściej odporność na herbicydy i na szkodniki (gen Cry); szczepionki jadalne, złoty ryż; obrót reguluje prawo UE i Ustawa o GMO. Zwierzęta GM – cechy użytkowe, bioreaktory (białka wymagające modyfikacji potranslacyjnych), modele chorób, ksenotransplantacje (epitop Gal); metody: mikroiniekcja do przedjądrza (0,5–20%), komórki ES i myszy knockout, klonowanie przez transfer jądra (Dolly). Terapia genowa – tylko somatyczna; ex vivo, gdy komórki da się pobrać i oddać, in vivo – gdy zostają na miejscu; rodzaje: dodawanie, zamiana, „doskonalenie” genomu. Wektory – wybór po czterech cechach (podziały komórki, czas ekspresji, pojemność, immunogenność): retro- i lentiwirusy, adenowirusy, AAV, HSV, plazmidy, liposomy kationowe. Prawa i granice – eugenika (pozytywna i negatywna) jest zakazana; badanie genetyczne wymaga świadomej, odwołalnej zgody po zrozumiałej informacji, a dane genetyczne – poufności chroniącej przed dyskryminacją.
+[RAMKA przejscie] Część 1 dała mechanizmy i zasady wyboru: jak wprowadzić gen do rośliny, zwierzęcia i komórki chorego, czym dostarczyć go do konkretnej tkanki i gdzie prawo stawia granicę. Część 2 jest dla tych, którzy chcą zdać „na piątkę” i poprowadzić dyskusję na zaliczeniu ustnym: pokazuje te same zasady w liczbach – ile prób, u ilu pacjentów i z jakim skutkiem – oraz pełną technikę knockoutu i klonowania i trudne przypadki prawa. Każda sekcja zaczyna się od odsyłacza do miejsca w części 1, które rozszerza. dwie daty przed inżynierią genetyczną ( ), żywność GM w liczbach i na świecie ( ), zwierzęta GM – skutki uboczne transgenu ( ), knockout i klonowanie – pełna technika ( ), terapia genowa: pierwsze próby i mapa wektorów ( ), kierunki terapii – co pokazały próby ( ), nowotwory – przykłady i dwie tabele ( ), zgoda i dane – przypadki trudne ( ).
+
+## Zanim była inżynieria genetyczna – dwie daty  [c11-r-historia]
+Część 1 ( ) postawiła granicę między biotechnologią tradycyjną a nowoczesną w jednym miejscu: czy organizm pracujący dla nas został genetycznie zmieniony. Źródło wiąże z tą granicą dwie daty i warto je znać, bo pokazują, czego brakowało, zanim granicę dało się przekroczyć.
+Pierwsza to 1857 r. Ludwik Pasteur wyjaśnił wtedy udział drożdży w fermentacji wina, czyli w przemianie cukru gronowego w alkohol etylowy. Produkt był znany od tysiącleci; dopiero teraz wiadomo było, kto go wytwarza. Po tym odkryciu poszły kolejne, a z nich – przemysłowe biosyntezy wymienione w części 1 (antybiotyki, enzymy, barwniki i konserwanty).
+Druga to 1953 r. , gdy James Watson i Francis Crick odkryli budowę podwójnej helisy DNA. Źródło wskazuje ten moment jako początek inżynierii genetycznej: od tej chwili rozwój przebiega w coraz szybszym tempie. Zestawienie obu dat tłumaczy kolejność, w jakiej rozwijała się biotechnologia – najpierw trzeba było wiedzieć, kto pracuje, a dopiero potem dało się zmienić jego instrukcję.
+[ŹRÓDŁO] Źródło: Drewa s. 737–738
+
+## Żywność GM w liczbach i na świecie  [c11-r-rosliny]
+Część 1 ( ) pokazała, jak wprowadza się gen do rośliny i o co toczy się spór. Tu dochodzą trzy rzeczy, o które pyta się na zaliczeniu: druga bakteria używana jako wektor, pierwsze próby ze szczepionkami jadalnymi oraz skala upraw – ile, gdzie i czego.
+
+### Drugie Agrobacterium i ile DNA niesie mikropocisk  []
+Oprócz Agrobacterium tumefaciens do transformacji roślin używa się także Agrobacterium rhizogenes . Ta bakteria, zakażając roślinę, stymuluje ją do wytwarzania dużej liczby włośników – dzięki genom leżącym na plazmidzie Ri (odpowiedniku plazmidu Ti). Do transgenezy roślin plazmid Ri wykorzystuje się jednak rzadziej.
+Przy metodzie biolistycznej warto znać skalę ładunku: zazwyczaj jeden mikronośnik – zależnie od swojej powierzchni – jest pokryty 0,01–0,1 pg DNA . Jeden „strzał” niesie więc pikogramy materiału, co tłumaczy, dlaczego do komórki trafia wiele mikropocisków naraz.
+
+### Szczepionki jadalne: pierwszy eksperyment i polski wątek  []
+Część 1 opisała zasadę; tu dwa dowody, że ona działa. Pierwszy eksperyment na ludziach przeprowadzono w USA w 1998 r. : ochotnikom podano surowe bulwy ziemniaka, w których znajdowała się niepatogeniczna podjednostka endotoksyny Escherichia coli (szczepu wywołującego biegunkę). Efektem immunizacji były swoiste przeciwciała przeciw tej endotoksynie, wykrywane w ślinie i we krwi – czyli dokładnie to, czego oczekuje się po szczepionce, choć nikt nie użył igły.
+Polskim akcentem jest sałata wykazująca ekspresję białka powierzchniowego HBs wirusa zapalenia wątroby typu B (HBV), otrzymana w placówce Polskiej Akademii Nauk w Poznaniu.
+
+### Gdzie i ile: uprawy GM w 2008 r.  []
+Część 1 zestawiła dwa porządki prawne. Źródło wskazuje ich skutek wprost: prawo dotyczące GMO w Stanach Zjednoczonych nie jest tak restrykcyjne jak europejskie , dlatego to USA są największym producentem żywności modyfikowanej genetycznie. W 2008 r. areał upraw GM wyniósł tam 62,5 mln ha przy światowej powierzchni 125 mln ha – czyli połowa wszystkich upraw GM na świecie. Rośliny modyfikowane genetycznie uprawiano wtedy w 25 krajach , w tym w 7 państwach Wspólnoty Europejskiej . Najpowszechniej uprawianą rośliną GM jest soja (65,8 mln ha), dalej kukurydza (37,3 mln ha), bawełna (15,5 mln ha) i rzepak (5,9 mln ha). W Polsce trwają prace nad projektem nowej ustawy o GMO.
+Tabela porządkuje te liczby krajami. Czytaj ją dwiema kolumnami naraz: powierzchnia mówi o skali, lista roślin – o tym, na co w danym kraju postawiono. Zwróć uwagę, że sama pierwsza piątka krajów wyczerpuje większość światowego areału, a kraje z końca listy uprawiają po mniej niż 0,1 mln ha, najczęściej jedną roślinę. Dane dotyczą 2008 r. – stan według źródła.
+[TABELA]
+Kraj | Powierzchnia upraw GM (mln ha) | Rośliny GM
+USA | 62,5 | soja, kukurydza, bawełna, rzepak, kabaczek, papaja, lucerna, burak cukrowy
+Argentyna | 21,0 | soja, kukurydza, bawełna
+Brazylia | 15,8 | soja, kukurydza, bawełna
+Indie | 7,6 | bawełna
+Kanada | 7,6 | rzepak, kukurydza, soja, burak cukrowy
+Chiny | 3,8 | bawełna, pomidor, topola, petunia, papaja, słodka papryka
+Paragwaj | 2,7 | soja
+Republika Południowej Afryki | 1,8 | kukurydza, soja, bawełna
+Urugwaj | 0,7 | soja, kukurydza
+Boliwia | 0,6 | soja
+Filipiny | 0,4 | kukurydza
+Australia | 0,2 | bawełna, rzepak, goździk
+Meksyk | 0,1 | bawełna, soja
+Hiszpania | 0,1 | kukurydza
+Chile | <0,1 | kukurydza, soja, rzepak
+Kolumbia | <0,1 | bawełna, goździk
+Honduras | <0,1 | kukurydza
+Burkina Faso | <0,1 | bawełna
+Czechy | <0,1 | kukurydza
+Rumunia | <0,1 | kukurydza
+Portugalia | <0,1 | kukurydza
+Niemcy | <0,1 | kukurydza
+Polska | <0,1 | kukurydza
+Słowacja | <0,1 | kukurydza
+Egipt | <0,1 | bawełna, soja
+[/TABELA]
+[ŹRÓDŁO] Źródło: Drewa s. 740, 744–745 (tab. 28.1)
+
+## Zwierzęta GM: jeden transgen, kilka skutków  [c11-r-zwierzeta]
+Część 1 ( ) wymieniła poprawę cech użytkowych jako pierwszy kierunek transgenezy zwierząt i podała wynik prób z genem hormonu wzrostu u świń. Tu dopowiadamy, komu jeszcze ten gen wprowadzono i co poszło nie tak, bo właśnie ten przykład najlepiej tłumaczy, dlaczego transgeneza zwierząt jest trudna.
+Gen hormonu wzrostu wprowadzono bydłu, świniom i rybom . U świń efekt zgodny z zamiarem rzeczywiście wystąpił – szybszy przyrost i mniej tłuszczu ( ) – ale te same zwierzęta częściej zapadały na choroby , m.in. tkanki łącznej i nerwowej. U owiec próby poprawy masy tkanki mięśniowej tym samym hormonem się nie powiodły, a częstym powikłaniem nadekspresji genu hormonu wzrostu była bezpłodność .
+Wniosek z tych prób jest ogólniejszy niż sam hormon wzrostu: jeden transgen działa w całym organizmie, a nie tylko w tej tkance, o którą chodziło hodowcy. Dlatego lista trudności z części 1 (niska wydajność, koszty, chore lub bezpłodne osobniki) nie jest wyliczanką – to podsumowanie takich właśnie doświadczeń.
+[ŹRÓDŁO] Źródło: Drewa s. 746
+
+## Jak naprawdę robi się knockout i klon  [c11-r-metody]
+W części 1 ( ) trzy metody transgenezy opisano tak, żeby dało się je zrozumieć i porównać. Tu są te fragmenty, które trzeba znać, gdy pytanie brzmi „a dlaczego akurat tak” – oraz warianty, z których w części 1 został tylko jeden, najczęstszy.
+
+### Mikroiniekcja: pierwszy eksperyment i cena przypadkowego wbudowania  []
+Jeden z pierwszych udanych eksperymentów tego typu przeprowadzono w 1982 r. : do mysiej zygoty wprowadzono gen hormonu wzrostu szczura . Od tego czasu metodę zastosowano do transgenezy wielu gatunków, w tym zwierząt gospodarskich – i to ona jest do dziś najczęściej używana.
+Część 1 kończy się na stwierdzeniu, że miejsce wbudowania i liczba kopii są przypadkowe. Oto, co z tego wynika. Wstrzykiwana porcja liczy do 1000 kopii transgenu, a liczba kopii, które się wbudują, nie jest kontrolowana ; nie wybieramy też miejsca w genomie. Transgen może więc wypaść w środku ważnego genu gospodarza albo powstać w wielu kopiach – oba te zdarzenia prowadzą niekiedy do ciężkich powikłań, a nawet śmierci transgenicznego zwierzęcia. Metoda jest więc tania w pomyśle i kosztowna w skutkach: żeby mieć jedno zdrowe zwierzę, trzeba wielu zygot.
+
+### Knockout krok po kroku: dlaczego akurat dwa leki  []
+Część 1 podała sam wynik podwójnej selekcji ( ). Mechanizm zaczyna się wcześniej – przy konstrukcji plazmidu.
+- Wektor z dwoma genami pomocniczymi. Plazmid zawiera fragment obcego DNA (transgen), który ma zrekombinować z homologicznym genem myszy i zinaktywować jego funkcję, a dodatkowo gen kinazy tymidynowej (Tk) . W transgen wstawiony jest selekcyjny gen oporności na neomycynę , który rozdziela go na dwie części – przerwany transgen traci aktywność i staje się genem null .
+- Marker w ściśle określonym miejscu. Gen markerowy musi być przyłączony tak, żeby jego ekspresja nastąpiła jedynie po wymianie transgenu z genem gospodarza na drodze rekombinacji homologicznej . To ten warunek czyni z markera narzędzie selekcji, a nie tylko etykietę.
+- Trzy losy plazmidu w hodowli. Po elektroporacji komórek ES pobranych z blastocyst może zajść rekombinacja homologiczna – gen dziki gospodarza zostaje wymieniony na obcy fragment DNA, a powstały klon jest pozbawiony genu dzikiego (zwykle w jednym z pary alleli; taki gen nazywa się allelem zinaktywowanym albo genem znokautowanym ); rekombinacja nieuprawniona – fragment obcego DNA przyłącza się do genomu losowo; albo brak rekombinacji – komórki ES nie ulegają transformacji.
+- Dwa leki, dwie różne cechy. Neomycyna zabija komórki, które nie mają wbudowanego genu oporności – odpadają wszystkie, w których nic się nie wbudowało. Gancyklowir zabija komórki z wbudowanym genem Tk, a Tk zostaje w genomie tylko po rekombinacji nieuprawnionej: przy homologicznej wymieniany jest sam odcinek transgenu, leżący między odcinkami homologicznymi, a Tk pozostaje poza nim i nie wchodzi do genomu.
+Tabela pokazuje to samo w jednym spojrzeniu – co klon ma w genomie i który lek go wyeliminuje.
+[TABELA]
+Co zaszło w komórce ES | Co zostaje w genomie | Neomycyna | Gancyklowir | Wynik
+rekombinacja homologiczna | gen null z markerem neomycynowym w miejscu genu dzikiego (bez Tk) | przeżywa (ma oporność) | przeżywa (nie ma Tk) | klon, o który chodzi
+rekombinacja nieuprawniona | cały wprowadzony odcinek, razem z Tk, w losowym miejscu | przeżywa (ma oporność) | ginie (ma Tk) | odpada
+brak rekombinacji | nic – komórka niezmieniona | ginie (brak oporności) | – | odpada
+[/TABELA]
+
+### Od chimery do homozygoty: krzyżówki i umaszczenie  []
+Drugi etap wykorzystuje wielokomórkowe zarodki w stadium przedimplantacyjnym (moruli, blastocysty). Umaszczenie myszy nie jest tu ozdobą schematu – jest znacznikiem , po którym widać, czy komórki ES rzeczywiście zasiedliły zarodek i czy dotarły do linii płciowej.
+- Komórki ES pochodzą z blastocyst myszy brązowej (na schemacie źródła rysowanej jako żółta), a wstrzykuje się je do blastocysty myszy czarnej ; zarodek przenosi się do macicy myszy-biorczyni.
+- Jeśli komórki ES skolonizują zarodek, rodzą się chimery o dwubarwnych łatach – na schemacie czarne z żółtymi plamami.
+- Samca chimerę krzyżuje się z samicą myszy czarnej. Jeśli w pokoleniu F 1 obok myszy czarnych pojawią się żółte , to znaczy, że chimeryzm objął także linię komórek płciowych – żółta barwa jest cechą dominującą i pochodzi od komórek ES. Takie myszy żółte są heterozygotami : mają gen null w jednym z pary alleli.
+- Krzyżowanie żółtych myszy siostrzanych z F 1 daje w F 2 oprócz heterozygot także homozygoty z dwoma zinaktywowanymi allelami – właściwe myszy znokautowane.
+- Myszy żółtej heterozygotycznej nie odróżnisz od homozygotycznej po wyglądzie. Rozstrzyga badanie DNA metodą Southern blotting ( ).
+
+### Klonowanie: pełne listy wariantów  []
+W części 1 każdy z czterech etapów klonowania miał jedną, najczęstszą wersję. Źródło wymienia przy każdym kilka – i warto je znać, bo pokazują, co w tej procedurze jest konieczne, a co jest tylko wyborem techniki.
+- Komórka-biorca. Najczęściej jest nią oocyt zatrzymany w stadium II metafazy (M II), uzyskiwany przyżyciowo po hormonalnej hiperowulacji u samic albo poubojowo z jajników zwierząt rzeźnych. Prowadzi się też próby z oocytami profazowymi , metafazowymi (I metafaza) , zygotami i zarodkami 2-komórkowymi .
+- Enukleacja. Można ją przeprowadzić metodami mikrochirurgicznymi – inwazyjnymi lub nieinwazyjnymi – a także chemicznie , np. etoposidem , który jest inhibitorem topoizomerazy II.
+- Dawca jądra. W klonowaniu zarodkowym są to blastomery , komórki węzła zarodkowego lub trofoektodermy ; w somatycznym – komórki płodowe oraz komórki ciała (skóra, język, jądra, ucho, mięśnie) osobników nowo narodzonych i dorosłych.
+- Fuzja. Jądro wprowadza się mikropipetą albo przez fuzję komórki-biorcy z komórką-dawcą w obecności czynników stymulujących: glikolu polietylenowego , impulsów elektrycznych lub inaktywowanego wirusa Sendai .
+- Aktywacja. Zamiast wnikającego plemnika działają czynniki fizykochemiczne: impulsy prądu stałego , 7% etanol , jony strontu , jonomycyna , trójfosforan inozytolu .
+
+### Dolly – czego nie widać w jednym zdaniu  []
+Część 1 podaje wniosek z tego doświadczenia. Oto jego cena i szczegóły. Jądro pobrano z komórki gruczołu mlecznego dorosłej owcy rasy Finn dorset , która miała wówczas 6 lat , a wprowadzono je do wyjądrzonego oocytu owcy rasy Scottish blackface ; fuzję przeprowadzono impulsami elektrycznymi. Większość zarodków wprowadzonych do macicy obumierała w pierwszych stadiach rozwoju embrionalnego, a oprócz Dolly urodziły się jagnięta obciążone defektami genetycznymi lub zdeformowane. Sama Dolly żyła 6 lat – o połowę krócej niż owce tej rasy – i wydała na świat 6 jagniąt . Zdolność do rozrodu jest tu ważna: potwierdza, że jądro komórki somatycznej odzyskało pełny potencjał rozwojowy, a nie tylko pozwoliło zarodkowi ruszyć.
+[ŹRÓDŁO] Źródło: Drewa s. 747–755
+
+## Terapia genowa: pierwsze próby i mapa wektorów  [c11-r-terapia]
+Część 1 ( , ) podała kryteria wyboru wektora. Tu widać, co z tych kryteriów wyszło w praktyce: czego naprawdę używano w próbach klinicznych, jak daleko te próby zaszły i które trzy przypadki ukształtowały dzisiejsze zasady ostrożności. Wszystkie liczby opisują stan do 2010 r. – tak podaje je źródło (wydanie z 2011 r.).
+
+### Ile prób i w jakich chorobach  []
+Do 2010 r. na całym świecie zaaprobowano 1644 próby kliniczne terapii genowej u ludzi, z czego ponad 900 po 2000 r. Rozkład celów terapeutycznych tłumaczy, dlaczego część 1 tyle miejsca poświęca nowotworom: dotyczyło ich 1060 prób (64,5%) . Dalej są choroby sercowo-naczyniowe – 143 próby (8,7%), monogenowe – 134 (8,2%) i infekcyjne – 131 (8%). Reszta to pojedyncze procenty: oznaczanie genów 50 prób (3%), zdrowi wolontariusze 38 (2,3%), choroby neurologiczne 30 (1,8%), choroby oczu 18 (1,1%) i inne 40 (2,4%).
+Druga liczba studzi entuzjazm pierwszej. W najbardziej zaawansowanej III fazie badań klinicznych – tej, która daje największe szanse na wejście terapii do powszechnego użycia – znajdowało się tylko 57 prób (3,5%) . Ponad 990 (60,5%) nie wyszło poza fazę I. Pozostałe rozkładają się tak: faza I/II – 308 prób (18,7%), faza II – 267 (16,2%), faza II/III – 13 (0,8%), faza IV – 2 (0,1%) i pojedyncze badania – 2 (0,1%).
+
+### Czym dostarczano gen w rzeczywistych próbach  []
+Tabela zestawia udział poszczególnych wektorów we wszystkich próbach prowadzonych do 2010 r. Porównaj ją z kryteriami z części 1: na czele są wektory o dużej pojemności i łatwe w przygotowaniu (adenowirusy, nagie i plazmidowe DNA), a nie te o najdłuższej ekspresji – bo w próbie klinicznej liczy się także to, czy wektor da się bezpiecznie podać.
+[TABELA]
+Wektor | Udział prób (liczba)
+adenowirusy | 23,8% (400)
+retrowirusy | 20,5% (344)
+nagie DNA i plazmidowe DNA | 17,7% (304)
+wirus krowianki | 7,9% (133)
+lipofekcja | 6,5% (109)
+poxwirusy | 5,5% (93)
+wirusy AAV | 4,5% (75)
+wirus Herpes simplex | 3,3% (56)
+nieznane | 3,3% (55)
+lentiwirusy | 1,7% (29)
+inne | 4,9% (82)
+[/TABELA]
+
+### Trzy przypadki, o które pytają na zaliczeniu  []
+Każdy z nich pokazuje inną stronę tej samej metody: sukces, ryzyko immunologiczne i ryzyko wbudowania w złym miejscu.
+- Pierwsza udana terapia – Ashanti de Silva. Czteroletnia dziewczynka chorowała na ciężki złożony niedobór odporności (SCID) , w którym brakuje enzymu deaminazy adenozyny (ADA) . Niedobór enzymu prowadzi do gromadzenia toksycznych metabolitów adenozyny, a przez to do upośledzenia odporności humoralnej i komórkowej oraz ciężkich zakażeń oportunistycznych, często kończących się śmiercią. Terapię przeprowadzono 14 września 1990 r. w USA (zespół W.F. Andersona): z organizmu dziewczynki wyizolowano limfocyty T, wprowadzono do nich wektorem retrowirusowym gen ADA i oddano komórki pacjentce – podręcznikowy przykład transferu ex vivo z części 1. Transfer trzeba było okresowo powtarzać .
+- Pierwsza ofiara – Jesse Gelsinger. We wrześniu 1999 r. , w I fazie badań nad terapią niedoboru transkarbamylazy ornitynowej (OTC) , zmarł 18-letni pacjent. W ciągu kilku dni po wprowadzeniu do krwiobiegu genu OTC w wektorze adenowirusowym doszło u niego do niewydolności wielonarządowej . To jest konkretna treść ostrzeżenia z tabeli wektorów w części 1: „wysoka immunogenność, reakcja zapalna”.
+- Białaczka po terapii SCID/X1. W terapii ciężkiego złożonego niedoboru odporności sprzężonego z chromosomem X u 2 z 10 pacjentów leczonych wektorami retrowirusowymi rozwinęła się białaczka , bo wektor wbudował się w pobliżu onkogenu komórkowego LMO2 (11p13) . Tak wygląda w praktyce „mutacja insercyjna” wymieniona w części 1 jako główna wada retrowirusów.
+
+### Tabela 30.1: wektory w chorobach serca  []
+Źródło zestawia wektory używane w próbach przedklinicznych i klinicznych genoterapii chorób sercowo-naczyniowych. Liczba znaków „+” to ocena w skali od + do +++++ (im więcej, tym wyższa wydajność, ekspresja albo odpowiedź immunologiczna). Zwróć uwagę na wiersz adenowirusów: najwyższa wydajność i ekspresja idą tu w parze z najsilniejszą odpowiedzią immunologiczną – to ta sama zamiana, która kosztowała życie pacjenta w próbie OTC.
+[TABELA]
+Wektor | Wydajność transferu in vivo | Utrzymywanie się efektu | Poziom ekspresji | Komórki docelowe | Ryzyko · odpowiedź immunologiczna gospodarza
+Liposomy kationowe | + | krótkotrwałe | + | dzielące się i niedzielące się | cytotoksyczność · +
+Liposomy-HVJ | +++ | krótkotrwałe | ++ | dzielące się i niedzielące się | cytotoksyczność · +
+Nagie plazmidy | + | krótkotrwałe | + | dzielące się i niedzielące się | cytotoksyczność · +
+Retrowirusy | ++ | przez całe życie | ++ | dzielące się | cytotoksyczność, onkogeneza · +
+Lentiwirusy | +++ | przez całe życie | +++ | dzielące się i niedzielące się | cytotoksyczność, mutacja wirusowa · +
+Adenowirusy | +++++ | umiarkowane | +++++ | dzielące się i niedzielące się | cytotoksyczność, reakcja zapalna · ++++
+Wirusy AAV | +++ | przez całe życie | +++ | dzielące się i niedzielące się | onkogeneza, mutacja wirusowa · +
+Wirus Herpes simplex | +++ | długotrwałe | +++ | dzielące się i niedzielące się | cytotoksyczność, mutacja wirusowa · +++
+α-wirus | ++ | krótkotrwałe | +++ | dzielące się i niedzielące się | cytotoksyczność, mutacja wirusowa · +++
+[/TABELA]
+[ŹRÓDŁO] Źródło: Drewa s. 798–800, 802 (ryc. 30.1–30.3, tab. 30.1)
+
+## Kierunki terapii – co pokazały próby  [c11-r-kierunki]
+Część 1 ( ) odpowiadała przy każdej chorobie na cztery pytania: co jest zepsute, co dostarczyć, czym i dokąd. Tu dochodzi piąte, o które pyta się przy ocenie metody: z jakim skutkiem – u ilu pacjentów, w której fazie badań i jak długo utrzymał się efekt.
+
+### Mukowiscydoza: dokładny defekt i okno czasowe  []
+Gen CFTR leży na długim ramieniu chromosomu 7 ( 7q31.2 ). Najczęstszą mutacją jest ΔF508 – delecja trzech nukleotydów w eksonie 10 , kodujących fenyloalaninę. Druga rzecz, której w części 1 nie było: skuteczność terapii jest tym większa, im wcześniej się ją zastosuje , ponieważ mimo defektu genetycznego płuca noworodków nie wykazują jeszcze zmian patologicznych . Terapia nie cofa zniszczeń – zapobiega im, więc im później, tym mniej ma do uratowania.
+
+### Serce i naczynia: trzy próby, trzy różne wyniki  []
+Oprócz klasycznej terapii genowej w chorobie niedokrwiennej serca prowadzi się próby z modyfikowanymi genetycznie komórkami prekursorowymi nabłonka : izoluje się je z krwi obwodowej , namnaża in vitro , modyfikuje tak, by uzyskać nadekspresję naczyniowych czynników wzrostu , i wprowadza z powrotem do organizmu; u zwierząt laboratoryjnych wyniki są obiecujące.
+Mniej optymistycznie wypada genoterapia zmian miażdżycowych w naczyniach obwodowych . Po zachęcających wynikach I fazy kolejne etapy nie wskazały jednoznacznego sukcesu terapeutycznego. Powód jest techniczny: trudno uzyskać właściwy poziom ekspresji czynnika proangiogennego i utrzymać go dostatecznie długo, by angiogeneza w ogóle ruszyła; część badaczy wskazuje też na nieodpowiednio dobrane metody oceny wyniku leczenia.
+Najlepszy wynik ma modyfikacja ex vivo żyły odpiszczelowej przeszczepianej chorym z chorobą zarostowo-zakrzepową naczyń obwodowych. W II fazie badań klinicznych u pacjentów po takim zabiegu stwierdzono zwiększenie drożności naczyń i redukcję stenozy do 40% . Wynik wymaga potwierdzenia w III fazie, obejmującej znacznie liczniejszą grupę.
+
+### Hipercholesterolemia rodzinna: gen dotarł, efekt umiarkowany  []
+W części 1 ta choroba była wzorcowym przykładem terapii ex vivo. Oto liczby. Zabieg powtarza się trzykrotnie . W przeprowadzonej próbie klinicznej u 3 z 5 pacjentów zaobserwowano redukcję frakcji LDL o 6–25% , a 4 miesiące po terapii transgen wykryto w hepatocytach pobranych drogą biopsji u wszystkich pięciu . Zestaw te dwie liczby: gen był na miejscu u wszystkich, a wymierną poprawę miało trzech – samo dotarcie genu do komórki nie wystarcza, żeby mówić o skuteczności.
+
+### Mózg: ile kapsuł, ilu pacjentów, jak długo  []
+- Parkinson. Przy wprowadzeniu genu GAD do jądra podwzgórza dochodzi jeszcze jeden efekt: do komórek istoty czarnej uwalniany jest glutaminian , który działa ochronnie na neurony wytwarzające dopaminę . Dwie pierwsze z trzech metod opisanych w części 1 (gen GAD i gen neuturyny) są w II fazie badań klinicznych, która ma potwierdzić ich bezpieczeństwo i skuteczność.
+- Huntington. Komórki linii BHK (wyprowadzonej z nerki chomika) zmodyfikowane genem CNTF zamknięto w polimerowej kapsule i wszczepiono podczas operacji do prawej bocznej komory mózgu 6 pacjentom . Próba trwała 2 lata , a kapsułę wymieniano co 6 miesięcy . Metoda okazała się bezpieczna, ale poziom uwalniania CNTF po pół roku nie u wszystkich był zadowalający. W badaniach u naczelnych, którym wprowadzano każdorazowo 4 kapsuły , osiągnięto całkowitą korekcję fenotypu – u ludzi implantowano tylko jedną, bo celem tej fazy było zbadanie bezpieczeństwa. Różnica w wyniku ma więc prostą przyczynę: różną dawkę.
+- Alzheimer. Pierwsza próba kliniczna odbyła się w 2001 r. W I fazie leczeniem objęto 8 pacjentów : drogą biopsji pobrano od nich fibroblasty skóry, wprowadzono do nich wektorem retrowirusowym gen NGF i podczas zabiegu chirurgicznego implantowano komórki do jądra podstawnego Meynerta – obszaru, w którym u chorych leżą zdegenerowane ciała neuronów cholinergicznych. W ciągu 5 lat po terapii stwierdzono u nich znaczny wzrost aktywności metabolicznej kory mózgowej. Nowsze próby polegają na bezpośredniej iniekcji genu NGF w wektorze AAV wprost do mózgu; wyniki I fazy są obiecujące, planowane są wieloośrodkowe badania II fazy.
+[ŹRÓDŁO] Źródło: Drewa s. 800–805
+
+## Nowotwory: przykłady i dwie tabele  [c11-r-nowotwory]
+Część 1 ( ) opisała cztery pomysły na terapię genową nowotworów. Tu są konkretne próby, w których tych pomysłów użyto – z celem, sposobem podania i fazą badań. To materiał wprost pod pytanie „a czy coś z tego działa”.
+
+### Immunoterapia: można zmienić nie tylko komórkę guza  []
+Ten sam efekt – lepszą prezentację antygenów nowotworowych – uzyskuje się także bez dotykania komórek guza: modyfikuje się komórki prezentujące antygen (APC) za pomocą lizatów guza , peptydów nowotworowych albo kwasów nukleinowych (RNA, DNA) . Zamiast uczynić guz widocznym, uczy się więc komórki układu odpornościowego, czego mają szukać.
+
+### Wirusy onkolityczne: ile prób i z jakim skutkiem  []
+Z wektorem ONYX-015 przeprowadzono dotychczas co najmniej 15 prób klinicznych . Wektor HF10 , zbudowany na bazie wirusa Herpes simplex , zastosowano m.in. w próbie klinicznej terapii zaawansowanego raka piersi i raka trzustki – efektem była apoptoza zainicjowana w 30–100% komórek nowotworowych . Tabela zestawia cele terapeutyczne prowadzonych prób: czytaj ją kolumną „sposób podania”, bo to ona decyduje, czy wirus musi przeżyć drogę przez krew, czy trafia wprost do guza.
+[TABELA]
+Wektor | Modyfikowany wirus | Cel terapeutyczny | Sposób podania | Faza badań klinicznych
+HF10 | Herpes simplex | rak piersi, rak trzustki | bezpośredni* | I
+ONYX-015 | adenowirus | rak trzustki | bezpośredni* | I/II
+ONYX-015 | adenowirus | rak okrężnicy | dożylny | II
+ONYX-015 | adenowirus | rak wątroby | dożylny | II
+ONYX-015 | adenowirus | rak głowy i szyi | bezpośredni* | II
+ONYX-015 | adenowirus | rak jajnika | dożylny | I
+OncoVex GM-CSF | Herpes simplex | rak piersi, czerniak | bezpośredni* | I
+1716 | Herpes simplex | guzy mózgu | bezpośredni* | II
+PV701 | wirus choroby Newcastle | guzy lite | dożylny | I
+[/TABELA]
+* do tkanek guza.
+
+### Kompensacja mutacji: co czym zastępowano  []
+Druga tabela pokazuje, że wybór wektora idzie tu w parze ze strategią: geny supresorowe zastępuje się (potrzebna duża pojemność i szybka ekspresja – adenowirus), a onkogeny wycisza antysensownie (retrowirus).
+[TABELA]
+Gen | Strategia | Wektor | Typ guza
+P53 | zastąpienie genu | adenowirus | rak niedrobnokomórkowy płuca, rak sutka, rak prostaty
+RB | zastąpienie genu | adenowirus | rak pęcherza moczowego
+BRCA1 | zastąpienie genu | retrowirus | rak jajnika
+K-Ras | antysens | retrowirus | rak niedrobnokomórkowy płuca
+c-myc | antysens | retrowirus | rak piersi, rak prostaty
+c-fos | antysens | retrowirus | rak piersi, rak prostaty
+[/TABELA]
+
+### Geny samobójcze: próba, po której spodziewano się przełomu  []
+W III fazie badań nad glejakami mózgu użyto układu kinaza tymidynowa/gancyklowir : transgen w wektorze retrowirusowym wprowadzano podczas zabiegu chirurgicznego. W porównaniu z grupą kontrolną (zabieg chirurgiczny i radioterapia) nie zanotowano istotnych korzyści terapeutycznych . Zdaniem autorów przyczyną był niski poziom transdukcji komórek nowotworowych – efekt sąsiedztwa ma granice i nie zastąpi dotarcia transgenu do dostatecznej liczby komórek. Inne badania z genami samobójczymi dotyczą raka prostaty: używa się w nich samego genu kinazy tymidynowej albo terapii łączonej kinaza tymidynowa/deaminaza cytozynowa.
+[ŹRÓDŁO] Źródło: Drewa s. 806–808 (tab. 30.2, 30.3)
+
+## Zgoda i dane – przypadki trudne  [c11-r-prawo]
+Część 1 ( ) podała zasady: kiedy zgoda jest ważna, kto decyduje za osoby niezdolne do jej wyrażenia i przed czym chroni poufność danych. Tu są sytuacje, w których te zasady wchodzą ze sobą w kolizję – i przykłady, które tłumaczą, skąd wzięła się dzisiejsza ostrożność.
+
+### Eugenika: co kryje się za słowem „drastyczne”  []
+Do wymienionych w części 1 przykładów eugeniki negatywnej źródło dodaje postulat sformułowania nowej prawnej definicji narodzin . Podaje też konkret: w jednym z państw europejskich do 1975 r. wykastrowano 63 000 osób, głównie dzieci, z powodów rasowo-biologicznych ; proponowano również kastrację jednego jądra, aby „zmniejszyć przyszły popęd seksualny”. Procesy o odszkodowania toczyły się tam jeszcze w latach 90. XX w.
+Po stronie eugeniki pozytywnej najbardziej znany przykład też ma liczby: „bank spermy geniuszy” , w tym noblistów, prowadzono w latach 1980–1999 , a z tej „puli” urodziło się 230 dzieci . Argument molekularny z części 1 – niezależna segregacja cech i wpływ środowiska – obowiązuje niezależnie od wielkości takiej puli.
+
+### Badania ważne dla rodziny u osoby, która sama nie może się zgodzić  []
+To najtrudniejszy przypadek świadomej zgody: badanie ma być wykonane u osoby niezdolnej do jej wyrażenia, a potrzebne jest nie jej, tylko jej krewnym. Protokół dodatkowy do Europejskiej konwencji bioetycznej dopuszcza je w art. 13, ale dopiero po spełnieniu wszystkich warunków naraz:
+- wynik badania ma istotne znaczenie dla zdrowia lub planów prokreacyjnych tych krewnych;
+- tej wiedzy nie da się uzyskać bez wykonania tego badania;
+- badanie nie pociąga za sobą ryzyka i nie stanowi obciążenia dla osoby badanej;
+- wynik nie wywoła znaczących następstw dla dalszego życia i prywatności osoby badanej;
+- badanie zostanie wykonane za zgodą przedstawiciela prawnego , który może ją wycofać;
+- osobie badanej pozostaje prawo sprzeciwu .
+Po co aż tyle warunków? Bo alternatywą bywa zaproponowanie krewnym badań bardziej obciążających lub długotrwałych – i to właśnie trzeba uwzględnić oraz udokumentować, starając się o zgodę w imieniu osoby, która sama jej nie wyrazi.
+Przy eksperymentach i badaniach naukowych warunki są jeszcze ostrzejsze. Osoby niezdolne do wyrażenia zgody można nimi objąć tylko wtedy, gdy oczekiwane wyniki są w stanie zapewnić rzeczywistą i bezpośrednią korzyść dla ich zdrowia , a badania o porównywalnej skuteczności nie mogą być przeprowadzone u osób zdolnych do wyrażenia zgody .
+
+### Anonimizacja, która nie jest pełna  []
+Część 1 mówi o „nieodwracalnym zatarciu” związku danych z osobą. Jednym z kryteriów anonimowości jest to, że odtworzenie tego związku wymagałoby „nieproporcjonalnego nakładu czasu i działań” . Źródło zwraca uwagę, że przy próbkach biologicznych to kryterium bywa złudne: próbka, której nie da się zidentyfikować, nadal ma indywidualny, niepowtarzalny profil genetyczny (np. próbka DNA). Istnieje więc ryzyko krzyżowego łączenia informacji – z bazy, w której dane personalne pacjenta są dostępne razem z jego profilem, oraz z profilu próbki uznanej za „anonimową”, co pozwala wstecznie odtworzyć dane personalne . W dobie informatyzacji takie działanie niekoniecznie wymaga nieproporcjonalnego nakładu – a wtedy kryterium anonimowości przestaje być spełnione.
+
+### Próbki do spraw sądowych  []
+Osobne zasady dotyczą próbek biologicznych pobranych in vivo i post mortem na potrzeby postępowania kryminalistycznego, cywilnego (np. w sprawach o wykluczenie ojcostwa) lub medycyny sądowej. Pobranie może się odbyć wyłącznie za zgodą osoby zainteresowanej lub jej przedstawiciela ustawowego i/lub na wniosek upoważnionych organów . Próbki powinny być utylizowane natychmiast po wykorzystaniu w konkretnym postępowaniu, bez prawa do dalszego przechowywania lub użycia w innych celach; to samo dotyczy informacji uzyskanych z ich analizy, jeśli lokalne ustawodawstwo nie stanowi inaczej – zgodnie z międzynarodowymi prawami człowieka. W drugą stronę działa wyjątek, o którym warto pamiętać: dostęp osoby badanej do własnych danych można ograniczyć , jeśli służy to zapobieżeniu konkretnemu niebezpieczeństwu lub ściganiu przestępstwa.
+[ŹRÓDŁO] Źródło: Drewa s. 891–893, 895–896, 904
 
 
 ======== E. ŹRÓDŁA (przycięte do zakresu z mapy) ========

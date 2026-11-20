@@ -18,6 +18,8 @@ DREWA = pathlib.Path('/root/.claude/uploads/600b873f-e07d-5766-b2f4-6a90b68ae091
 # ('l', [(od, do), ...]) = linie pliku (1-indeksowane, włącznie).
 JORDE = ZR / 'z08' / 'jorde_r05_STARE_WYDANIE.txt'
 ZAKRES = {
+    '02': [(ZR/'z02'/'drewa_r07.txt', ('s', [(143, 151), (155, 162)])), (ZR/'z02'/'jozwiak_r06.txt', None)],
+    '03': [(ZR/'z03'/'drewa_r08.txt', ('s', [(165, 174)])), (ZR/'z03'/'jozwiak_r11.txt', None), (ZR/'z03'/'alster_korwek_2014.txt', None)],
     '04': [(ZR/'z04'/'drewa_r03.txt', None), (ZR/'z04'/'drewa_r18.txt', None),
            (ZR/'z04'/'drewa_r27.txt', None), (ZR/'z04'/'ostrowska_r06.txt', None)],
     '05': [(ZR/'z05'/'drewa_r27.txt', None), (ZR/'z05'/'ostrowska_r06.txt', None)],

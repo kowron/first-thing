@@ -1,0 +1,2412 @@
+# PAKIET PLANISTY – rozdział 03
+Jedyny plik do przeczytania (poza handoffem C1, STYL.md i ZASADY.md). Sekcje: A rozpiska, B mapa zakresu, C fakty uciętych wcześniej (T z wyciągu), D tekst rozdziału (bez rycin SVG), E źródła przycięte do zakresu.
+
+
+======== A. ROZPISKA ZAJĘĆ ========
+
+                                                                                                Lekarski
+                                           Zajęcia nr 3                             Biologia molekularna
+
+Temat seminarium:     Molekularne aspekty śmierci komórki
+
+Temat ćwiczenia:      Starzenie i eliminacja komórek – apoptoza
+
+Zagadnienia do przygotowania przez studenta:
+1. Apoptoza [1].
+2. Rola rodziny białek Bcl-2 w procesie apoptozy [1].
+3. Rola kaspaz w procesie apoptozy [1].
+4. Zewnętrzny i wewnętrzny szlak apoptozy. Szlak pseudoreceptorowy, sfingomielinowo-ceramidowy i
+   indukowany stresem [1].
+5. Znaczenie apoptozy w fizjologii człowieka [2].
+6. Zaburzenia apoptozy. Nowotwory. Choroby neurodegeneracyjne [2].
+7. Znaczniki starzenia komórkowego [3].
+
+Zaliczenie pisemne
+
+
+Część praktyczna:
+1. Praca z artykułem naukowym o tematyce apoptozy
+   a. Ekspresja antygenu Fas i FasL na limfocytach T i B w przerosłych migdałkach gardłowych u dzieci
+       chorych na wysiękowe zapalenie ucha. Beata Żelazowska-Rutkowska et al. Otolaryngologia Polska
+       2008, LXII, 1: 59-64.
+   b. Badanie wpływu stałego pola magnetycznego na apoptozę komórek białaczki ludzkiej HL-60.
+       Dariusz Sztafrowski et al. Przegląd elektrotechniczny, R. 92 NR 12/2016, doi
+       10.15199/48.2016.12.43
+   c. Cytometryczna ocena apoptozy na podstawie pomiaru aktywności kaspaz jako metoda analizy
+       oddziaływań białek łubinu wąskolistnego (Lupinus angustifolius, odmiana baron) na układ
+       immunologiczny człowieka. Patrycja Kłos, Eleonora Lampart-Szczapa. Żywność. Nauka.
+       Technologia. Jakość, 2005 2(23):72-79.
+2. Przyżyciowa obserwacja komórek nowotworowych linii HCT116 barwionych Hoechstem
+   traktowanych promieniowaniem UV (10x100).
+3. Analiza wyników cytometrycznego pomiaru apoptozy w komórkach nowotworowych linii HCT116 w
+   odpowiedzi na promieniowanie jonizujące.
+
+
+
+Piśmiennictwo:
+1. Drewa G., Ferenc T.: Genetyka medyczna podręcznik dla studentów. Wydawnictwo Edra Urban &
+   Partner, Wrocław, 2011. Rozdział nr 8.
+2. Jóźwiak J.: Biologia komórki dla studentów uczelni medycznych. Wydawnictwo Edra Urban &
+   Partner, Wrocław 2020. Rozdział 11.
+3. Alster O, Korwek Z. Znaczniki starzenia komórkowego. Postępy Biochemii. 2014; 60:138-146 (plik
+   do pobrania).
+
+
+
+======== B. MAPA ZAKRESU (handoff) ========
+
+# Handoff Z03 – Apoptoza i starzenie komórek (Opus xhigh, 1 agent)
+Plan szczegółowy przygotował szef (Fable): **zakres, źródła, cięcia i lista rycin są ustalone poniżej – nie zmieniasz ich**. Twoja praca to dobry tekst i ryciny. Jeśli coś w planie nie zgadza się ze źródłem, zapisz to w `stan/z03.md` i idź dalej według źródła.
+Przeczytaj: `/home/user/first-thing/podrecznik/ZASADY.md`, `KOMPONENTY.md`, potem tylko wskazane fragmenty paczki.
+
+- **Plik wynikowy:** `/home/user/first-thing/podrecznik/rozdzialy/z03-apoptoza.html` · **limit: 12 stron** (A4, dwie kolumny)
+- **Paczka źródeł:** `/tmp/claude-0/-home-user-first-thing/600b873f-e07d-5766-b2f4-6a90b68ae091/scratchpad/zrodla/z03/` · **wyciąg:** `wyciagi/z03.md` · **stan:** `stan/z03.md` (jeśli istnieje – kontynuuj, nie czytaj źródeł od nowa)
+- **Bank rycin:** `bank-rycin/INDEX.md`
+
+## Mapa: zagadnienie → źródło → co zostaje / co tniemy
+| # | Zagadnienie | Źródło (czytaj tylko to) | Zostaje | Tniemy |
+|---|---|---|---|---|
+| 1 | Apoptoza | Drewa r. 8: **8.1** (s. 165–166, ryc. 8.1–8.2) | definicja, kiedy zachodzi, cechy morfologiczne i biochemiczne po kolei (obkurczenie, kondensacja chromatyny, fragmentacja DNA i jądra, ciałka apoptotyczne, fagocytoza bez zapalenia) | historia odkrycia, nazwiska |
+| 2 | Rodzina białek Bcl-2 | Drewa **8.1.1** (s. 166–167, tab. 8.1, ryc. 8.3) | podział na anty- i proapoptotyczne z przedstawicielami, domeny BH, miejsce działania (błona mitochondrialna), jak regulują uwalnianie cytochromu c, znaczenie stosunku Bax/Bcl-2 | szczegóły struktury poszczególnych białek, rzadziej wymieniane białka z tab. 8.1 (zostaw 3–4 z każdej grupy) |
+| 3 | Kaspazy | Drewa **8.1.2** (s. 167–168, tab. 8.2, ryc. 8.4) | czym są (proteazy cysteinowe tnące za Asp), prokaspazy i aktywacja, podział: inicjatorowe / wykonawcze (które numery), substraty i skutki, inhibitory jeśli podane | szczegóły budowy podjednostek |
+| 4 | Szlak zewnętrzny i wewnętrzny; pseudoreceptorowy, sfingomielinowo-ceramidowy, indukowany stresem | Drewa **8.2**, **8.2.1** (s. 168–171), **8.2.2** (171–172), **8.2.3** (172), **8.2.4** (172–174), **8.2.5** (174), ryc. 8.5–8.6 | każdy szlak jako lista kroków: sygnał → receptor/czujnik → białka adaptorowe → kaspaza inicjatorowa → kaspazy wykonawcze; połączenie szlaków (Bid); apoptosom; czym różnią się trzy szlaki dodatkowe | długie listy receptorów i ligandów (zostaw Fas/FasL, TNF/TNFR1 i 1–2 inne), szczegóły pośredników sygnału w szlaku ceramidowym poza głównymi krokami |
+| 5 | Znaczenie apoptozy w fizjologii | Jóźwiak r. 11: „Znaczenie apoptozy w fizjologii człowieka” | cztery procesy z przykładami: rozwój embrionalny (palce, syndaktylia), modelowanie układu odpornościowego (selekcja negatywna limfocytów T), eliminacja komórek uszkodzonych (wirus, toksyny, niedotlenienie), eliminacja komórek z uszkodzonym DNA (p53 → Bax → cytochrom c; radioterapia) | ryc. 11.7 (zdjęcie) |
+| 6 | Zaburzenia apoptozy; nowotwory; choroby neurodegeneracyjne | Jóźwiak r. 11: od „Ponieważ znaczenie apoptozy…” do „Podsumowania” (tab. 11.4, nowotwory, choroby neurodegeneracyjne) | zasada: nasilenie albo zablokowanie apoptozy; tab. 11.4 skrócona (po 4–5 chorób w kolumnie); nowotwory: dlaczego blokada apoptozy, oporność na leki, cztery najczęstsze zaburzenia z przykładami nowotworów; choroby neurodegeneracyjne: mechanizmy podane w tekście (np. Aβ aktywuje kaspazę 3) | ryc. 11.8 (leki) – tylko zdanie, że istnieją leki działające na szlaki apoptozy |
+| 7 | Znaczniki starzenia komórkowego | Alster, Korwek (cały artykuł, 9 s.) | definicja starzenia komórkowego (replikacyjne / przyspieszone); lista znaczników w grupach z nagłówków artykułu: zmiany struktury i morfologii (kształt, SA-β-galaktozydaza, ziarnistość, lipofuscyna, cytoszkielet), proliferacja i cykl (zahamowanie proliferacji, wzrost inhibitorów p21 i p16, zatrzymanie w cyklu), DNA i chromatyna (skupiska białek odpowiedzi na uszkodzenia DNA, zmiany chromatyny, telomery), pozostałe grupy z artykułu – przy każdym: co to jest i dlaczego świadczy o starzeniu (1–2 zdania); zastrzeżenie autorów, że żaden znacznik nie jest swoisty i trzeba stosować kilka | opisy metod oznaczania (odczynniki, pH, linie komórkowe, masy białek), dane liczbowe z pojedynczych doświadczeń, przegląd piśmiennictwa – w sumie tnij ok. 30% |
+
+**Poza zakresem:** Drewa 8.3–8.4 (fizjologia i patologia apoptozy – rozpiska przypisuje te tematy Jóźwiakowi), 8.5–8.6; Jóźwiak r. 11: nekroza i tab. 11.1, „Szlaki apoptozy”, tab. 11.2–11.3, „Faza efektorowa”, „Immunologia apoptozy i nekrozy” (te same tematy bierzemy z Drewy).
+**Układ:** 1) Czym jest apoptoza → 2) Białka Bcl-2 → 3) Kaspazy → 4) Szlak zewnętrzny i wewnętrzny → 5) Trzy szlaki dodatkowe → 6) Apoptoza w fizjologii → 7) Zaburzenia apoptozy → 8) Znaczniki starzenia komórkowego.
+
+## Ryciny (5 nowych)
+1. **Komórka w apoptozie – kolejne zmiany** (pasek 4–5 etapów wg ryc. 8.2 Drewy).
+2. **Rodzina Bcl-2** – dwie grupy z przedstawicielami i domenami BH; strzałki „hamuje / ułatwia” wypływ cytochromu c z mitochondrium.
+3. **Szlak zewnętrzny i wewnętrzny** – jedna duża rycina wg ryc. 8.5 Drewy: receptor śmierci → adaptor → kaspaza inicjatorowa ↔ Bid ↔ mitochondrium → cytochrom c → apoptosom → kaspaza inicjatorowa → kaspazy wykonawcze → skutki.
+4. **Trzy szlaki dodatkowe** – trzy małe panele obok siebie (wg ryc. 8.6), każdy 3–4 kroki.
+5. **Znaczniki starzenia komórkowego** – schemat komórki z zaznaczonymi grupami znaczników (wg ryc. 1 artykułu).
+Kaspazy – tabela (inicjatorowe / wykonawcze), bez ryciny.
+
+
+
+======== C. FAKTY UCIĘTE WCZEŚNIEJ (T z wyciągu) ========
+
+# Wyciąg Z03 – Apoptoza i starzenie komórek
+## Zag. 1 – Apoptoza (D s. 165–166)
+## Zag. 2 – Rodzina białek Bcl-2 (D s. 166–167, 171)
+## Zag. 3 – Kaspazy (D s. 167–169)
+## Zag. 4 – Szlaki: zewnętrzny i wewnętrzny (D s. 168–171)
+## Zag. 4 cd. – Trzy szlaki dodatkowe (D s. 172–174)
+## Zag. 5 – Znaczenie apoptozy w fizjologii (J s. 126)
+## Zag. 6 – Zaburzenia apoptozy (J s. 126–127)
+## Zag. 7 – Znaczniki starzenia komórkowego (A s. 138–144)
+### Definicja
+### Struktura i morfologia
+### Proliferacja i cykl komórkowy
+### DNA i chromatyna
+### Fenotyp sekrecyjny (SASP/SMS)
+### Starzenie indukowane onkogenami
+### Podsumowanie
+## Proponowany układ (= handoff)
+## Bilans
+
+
+======== D. TEKST ROZDZIAŁU ========
+
+(plik rozdzialy/z03-apoptoza.html; data-title: Apoptoza i starzenie komórek)
+[LEAD] Organizm stale musi usuwać komórki – niepotrzebne, uszkodzone albo groźne. Trzeba to robić tak, żeby nie zaszkodzić sąsiednim komórkom i nie wywołać zapalenia. Służy do tego apoptoza: śmierć, którą komórka przeprowadza sama, według programu. Rozdział pokazuje po kolei, jak wygląda komórka w apoptozie, które białka ją rozbierają (kaspazy) i które decydują, czy do tego dojdzie (Bcl-2), jakimi drogami biegnie sygnał, po co organizm z tego korzysta i co się dzieje, gdy apoptozy jest za dużo albo za mało. Na końcu – komórki, które nie giną, tylko się starzeją, i to, jak je rozpoznać.
+
+## Czym jest apoptoza  [c03-apoptoza]
+
+### Jak usunąć komórkę, nie szkodząc sąsiadom?  []
+Wyobraź sobie zawiązek dłoni w zarodku. Palce są początkowo połączone tkanką, która musi zniknąć. Albo komórkę zakażoną wirusem, której nie da się już uratować. W obu przypadkach komórki trzeba usunąć – ale ich sąsiedzi mają przeżyć, a w tkance nie powinno rozwinąć się zapalenie. Organizm rozwiązuje ten problem tak, że komórka sama przeprowadza swoją śmierć według ustalonego planu: rozbiera się od środka, a jej szczątki, zamknięte w błonie, pochłaniają inne komórki.
+[POJĘCIE Apoptoza] kontrolowana śmierć komórki, wymagająca ekspresji genów i energii, przebiegająca bez zapalenia; komórka rozpada się na ciałka apoptotyczne, które pochłaniają sąsiednie komórki lub makrofagi.
+Ten proces to apoptoza . Nazwa pochodzi od greckiego słowa oznaczającego opadanie płatków kwiatów lub liści z drzew. Apoptoza to zespół zmian morfologicznych (w budowie komórki) i biochemicznych, które prowadzą do kontrolowanej śmierci komórki z pominięciem procesu zapalnego .
+„Kontrolowana” znaczy tu, że komórka nie ginie biernie, tylko wykonuje pracę. Apoptoza jest stanem fizjologicznym – należy do normalnego życia organizmu – i wymaga ekspresji wielu genów (czyli wytworzenia białek, które ją przeprowadzą) oraz nakładu energii .
+Apoptozę nazywa się też programowaną lub samobójczą śmiercią komórki (PCD, ang. programmed cell death ); terminy te często stosuje się zamiennie. Słowem „apoptoza” opisuje się zmiany w umierającej komórce niezależnie od tego, czy zachodzą w trakcie rozwoju organizmu, czy wywołał je czynnik zewnętrzny. Apoptoza dotyczy przeważnie pojedynczych komórek i trwa od kilku do kilkunastu godzin.
+
+### Co się dzieje z komórką? Zmiany krok po kroku  [c03-zmiany]
+Zacznij od komórki prawidłowej (lewy kafelek ). Ma okrągłe jądro, w którym leży chromatyna – DNA razem z białkami. Jądro otacza otoczka jądrowa . Komórka w apoptozie traci wodę i w konsekwencji się obkurcza. Zmiany widoczne w jej budowie następują w ustalonej kolejności – numery odpowiadają kafelkom ryciny:
+- Kondensacja i marginalizacja chromatyny. Pierwszym widocznym objawem apoptozy są zmiany w jądrze. Chromatyna zagęszcza się (kondensuje) i układa pod otoczką jądrową, czyli przesuwa się na brzeg jądra – stąd nazwa „marginalizacja”.
+- Obkurczenie komórki i jądra, pęcherzyki. Zagęszcza się cytoplazma, komórka i jądro się obkurczają. Na powierzchni komórki tworzą się charakterystyczne pęcherzyki.
+- Fragmentacja jądra i rozpad na ciałka apoptotyczne. Jądro rozpada się na fragmenty. Potem cała komórka rozpada się na kawałki otoczone błoną komórkową – ciałka apoptotyczne . W ciałkach są resztki chromatyny i cytoplazmy oraz niezmienione organella. Błona zachowuje ciągłość, więc zawartość komórki nie wydostaje się do otoczenia.
+- Fagocytoza. Ciałka apoptotyczne pochłaniają (fagocytują) sąsiednie komórki albo makrofagi – komórki wyspecjalizowane w pochłanianiu. Nie rozwija się zapalenie.
+[RYCINA c03-fig-zmiany „Komórka w apoptozie – kolejne zmiany”: Zacznij od komórki prawidłowej (bez numeru) i śledź jądro: chromatyna zagęszcza się pod otoczką (1), jądro maleje razem z komórką, a na powierzchni pojawiają się pęcherzyki (2), wreszcie jądro rozpada się, a jego fragmenty trafiają do ciałek apoptotycznych (3). Ciałka są otoczone błoną; pochłania je makrofag lub sąsiednia komórka, a zapalenie się nie rozwija (4).]
+Zmienia się też błona komórkowa. Jest zbudowana z dwóch warstw lipidów, które nie są jednakowe – to asymetria błony . Jeden z lipidów, fosfatydyloseryna , w zdrowej komórce leży w warstwie wewnętrznej. W apoptozie przemieszcza się do warstwy zewnętrznej i asymetria błony zostaje zaburzona.
+[RAMKA przyklad] W preparacie widzisz dwie komórki. Komórka A ma jeszcze zwykłą wielkość, ale chromatyna tworzy w jej jądrze ciemny pas tuż pod otoczką jądrową. W miejscu komórki B leży kilka małych pęcherzyków otoczonych błoną, w niektórych są ciemne grudki chromatyny. Która jest dalej w apoptozie? Pierwszym widocznym objawem są zmiany w jądrze – A jest więc na początku drogi (etap 1). Pęcherzyki z resztkami chromatyny w B to ciałka apoptotyczne (etap 3); wkrótce pochłoną je sąsiednie komórki lub makrofagi.
+
+### Kto przeprowadza te zmiany?  []
+W przebiegu apoptozy główne role odgrywają dwie grupy białek. Kaspazy to enzymy, które tną inne białka – to one rozbierają komórkę (następny podrozdział). Białka z rodziny Bcl-2 decydują, czy z mitochondrium wydostanie się cytochrom c – białko, które uruchamia jedną z kaspaz. W zdrowej komórce obie drogi są zamknięte: kaspazy istnieją, ale w nieaktywnej postaci, a cytochrom c pozostaje w mitochondrium. Apoptoza zaczyna się od otwarcia tych zabezpieczeń.
+[RAMKA zapamietaj] Apoptoza to kontrolowana, wymagająca energii i ekspresji genów śmierć pojedynczych komórek, bez zapalenia. Kolejność zmian: kondensacja i marginalizacja chromatyny → obkurczenie komórki i jądra, pęcherzyki → fragmentacja jądra i ciałka apoptotyczne otoczone błoną → fagocytoza.
+[ŹRÓDŁO] Źródło: Drewa s. 165–167
+
+## Kaspazy  [c03-kaspazy]
+
+### Czym jest kaspaza?  []
+Żeby komórka rozpadła się tak, jak opisano wyżej, trzeba pociąć wiele jej białek – m.in. białka otoczki jądrowej i cytoszkieletu , wewnętrznego rusztowania komórki. Białko to łańcuch aminokwasów połączonych wiązaniami peptydowymi . Enzym, który rozcina (hydrolizuje) te wiązania, to proteaza . W apoptozie białka tną kaspazy.
+[POJĘCIE Kaspaza] proteaza cysteinowa, która tnie białka w sąsiedztwie kwasu asparaginowego; powstaje jako nieaktywna prokaspaza, a po aktywacji tnie białka komórki w trakcie apoptozy.
+Kaspazy to rodzina wysoko konserwatywnych proteaz cysteinowych . „Konserwatywne” znaczy, że ich budowa niewiele się zmieniła w ewolucji. „Cysteinowe” – że w centrum katalitycznym kluczowa jest reszta aminokwasu cysteiny: pełni funkcję katalitycznego nukleofila, czyli bezpośrednio uczestniczy w rozcinaniu wiązania. Zidentyfikowano 14 kaspaz.
+Kaspazy hydrolizują wiązania peptydowe w sąsiedztwie kwasu asparaginowego (Asp). Zapamiętaj ten aminokwas – za chwilę zobaczysz, że w takich miejscach przecina się też sama kaspaza, gdy się aktywuje.
+
+### Dlaczego kaspaza powstaje jako nieaktywna prokaspaza?  []
+Pomyśl, co by było, gdyby enzym tnący białka działał w zdrowej komórce: niszczyłby ją. Tymczasem wszystkie kaspazy występują w komórce jako nieaktywne proformy – zymogeny , nazywane prokaspazami . Komórka ma je w zapasie, ale dopóki nie zostaną uaktywnione, niczego nie tną.
+Prokaspaza składa się z trzech części ( ):
+- prodomena – N-końcowa, zwana domeną śmierci DD (ang. death domain ); przedrostek „pro-” oznacza część, która musi zostać odcięta, zanim enzym zacznie działać;
+- p20 – duża podjednostka z centrum katalitycznym;
+- p10 – mała, C-końcowa podjednostka (masy części i dalsze szczegóły budowy – część 2, ).
+W prodomenie kaspaz inicjatorowych (o nich za chwilę) leżą domeny, które służą do łączenia się z innymi białkami: CARD (ang. caspase recruitment domain , domena rekrutacji kaspaz) – w kaspazach 2 i 9 – albo dwie domeny DED (ang. death effector domain , wykonawcza domena śmierci) – w kaspazach 8 i 10. Za ich pośrednictwem prokaspaza łączy się z białkiem adaptorowym , czyli białkiem-łącznikiem, które wiąże ją w kompleks sygnałowy (poznasz dwa takie białka: FADD i Apaf-1).
+
+### Jak kaspaza staje się aktywna?  [c03-aktywacja]
+Aktywacja polega na cięciu. Prokaspaza zostaje przecięta w miejscach za resztami kwasu asparaginowego: między prodomeną a p20 oraz między p20 a p10. Prodomena odpada, a aktywny enzym tworzą dwie podjednostki p20 i dwie p10 .
+[RYCINA c03-fig-kaspaza „Aktywacja kaspazy”: Po lewej prokaspaza: od N-końca prodomena (w kaspazach inicjatorowych z domeną CARD lub DED), duża podjednostka p20 z centrum katalitycznym i mała p10. Czerwone kreski to miejsca cięcia za resztami Asp. Porównaj z prawą stroną: po cięciu prodomena odpada, a aktywny enzym tworzą dwie p20 i dwie p10.]
+Kto tnie prokaspazę? To zależy od rodzaju kaspazy – i właśnie na tym opiera się podział kaspaz na dwie grupy (zestawienie w tabeli na końcu podrozdziału):
+- Kaspazy inicjatorowe (2, 8, 9, 10) rozpoczynają apoptozę. Aktywują się przez autoproteolizę , czyli same się przecinają, gdy białko adaptorowe zwiąże je w kompleksie: kaspazy 8 i 10 w kompleksie DISC, kaspaza 9 w apoptosomie (oba kompleksy – w podrozdziale o szlakach).
+- Kaspazy wykonawcze , czyli efektorowe (3, 6, 7), nie mają domen CARD ani DED. Aktywuje je proteoliza: tnie je wcześniej aktywowana kaspaza inicjatorowa.
+Powstaje kaskada kaspaz : aktywna kaspaza inicjatorowa uaktywnia kaspazy wykonawcze, a te tną białka komórki.
+
+### Co tną kaspazy wykonawcze – i co z tego wynika?  []
+Kaspazy wykonawcze tną liczne białka cytoplazmatyczne i jądrowe. Zwróć uwagę, że na liście są białka struktur, które w apoptozie się rozpadają, i białka ważne dla przeżycia komórki:
+- laminy – białka wchodzące w skład błony (otoczki) jądrowej;
+- aktyna i fodryna – białka cytoszkieletu;
+- ICAD – inhibitor DNazy aktywowanej przez kaspazy (CAD). DNaza to enzym tnący DNA, a ICAD hamuje jej działanie; kaspazy tną właśnie ten inhibitor;
+- PARP – polimeraza poli(ADP-rybozy);
+- DNA-PK – kinaza białkowa zależna od DNA;
+- białka Rb i MDM2 (zob. ).
+Proteoliza lamin i białek cytoszkieletu nieuchronnie prowadzi do śmierci komórki.
+[TABELA]
+Grupa | Kaspazy | Budowa | Aktywacja | Rola
+Inicjatorowe | 2, 8, 9, 10 (oraz 12 – tylko w szlaku indukowanym stresem) | prodomena z CARD (2, 9) lub z dwiema DED (8, 10) + p20 + p10 | autoproteoliza; kaspazy 8 i 10 w kompleksie DISC, kaspaza 9 w apoptosomie | rozpoczynają apoptozę – aktywują kaspazy wykonawcze
+Wykonawcze (efektorowe) | 3, 6, 7 | p20 + p10, bez CARD i DED | proteoliza przez aktywne kaspazy inicjatorowe | tną liczne białka cytoplazmatyczne i jądrowe
+[/TABELA]
+[RAMKA zapamietaj] Kaspazy to proteazy cysteinowe tnące w sąsiedztwie kwasu asparaginowego. Powstają jako nieaktywne prokaspazy (prodomena + p20 + p10); aktywny enzym to 2 × p20 + 2 × p10. Inicjatorowe (2, 8, 9, 10) aktywują się same w kompleksach z białkami adaptorowymi i tną wykonawcze (3, 6, 7), a te tną m.in. laminy, aktynę, ICAD i PARP.
+[ŹRÓDŁO] Źródło: Drewa s. 167–169, 171 · Alster s. 143
+
+## Rodzina białek Bcl-2  [c03-bcl2]
+
+### Stan wyjściowy: cytochrom c zamknięty w mitochondrium  []
+Mitochondrium ma dwie błony: zewnętrzną i wewnętrzną. Między nimi leży przestrzeń międzybłonowa , a w niej – białko cytochrom c . Dopóki tam zostaje, nie może się połączyć z białkiem Apaf-1 (czynnikiem aktywującym apoptozę), które czeka w cytoplazmie. Gdy jednak cytochrom c wydostanie się do cytoplazmy, wiąże się z Apaf-1, a powstały kompleks uaktywnia kaspazę inicjatorową 9 – i rusza kaskada, którą już znasz.
+Zewnętrzna błona mitochondrium działa więc jak brama: jej otwarcie dla cytochromu c wypuszcza sygnał do apoptozy. Bramy pilnują białka z rodziny Bcl-2. Jedne utrudniają jej otwarcie, inne je ułatwiają.
+
+### Skąd nazwa i co wiadomo o tej rodzinie?  []
+Rodzina Bcl-2 (ang. B-cell CLL/lymphoma 2 ) to duża, niejednorodna grupa białek regulujących apoptozę. W nazwie są limfocyt B ( B-cell ) i chłoniak ( lymphoma ) – gen wykryto właśnie w chłoniakach. Gen bcl-2 zidentyfikowano jako onkogen – gen, którego nadmierna aktywność sprzyja nowotworowi – aktywowany przez translokację t(14;18), czyli wymianę fragmentów między chromosomami 14 i 18 ( ). Ta translokacja występuje w 95% przypadków nieziarniczych chłoniaków grudkowych.
+U człowieka zidentyfikowano 26 genów rodziny Bcl-2. Kilka z nich dzięki alternatywnemu splicingowi mRNA – różnemu składaniu odcinków tego samego transkryptu – daje dwa lub więcej białek o przeciwstawnym działaniu. Przykład: Bcl-X L chroni komórkę, a Bcl-X S działa proapoptotycznie.
+
+### Dwie grupy: proapoptotyczne i antyapoptotyczne  [c03-grupy]
+Białka rodziny dzieli się na dwie grupy o przeciwnym działaniu. Nadekspresja (nadmierne wytwarzanie) białek proapoptotycznych prowadzi do śmierci komórki. Białka antyapoptotyczne zwiększają prawdopodobieństwo jej przeżycia. Tabela zestawia cechy obu grup i podaje tylko część białek (wszystkie białka z tabeli źródła i układ domen każdego z nich – część 2, ).
+[TABELA]
+Proapoptotyczne | Antyapoptotyczne
+Bax, Bak, Bad, Bid, Bim, Bcl-X S i inne | Bcl-2, Bcl-X L , Mcl-1, Bcl-W i inne
+domeny BH1–BH3 albo tylko BH3 | większość: domeny BH1–BH4
+w cytozolu | głównie w zewnętrznej błonie mitochondrialnej; też w błonie siateczki śródplazmatycznej i w otoczce jądrowej
+nadekspresja prowadzi do śmierci komórki | zwiększają prawdopodobieństwo przeżycia
+[/TABELA]
+Mimo przeciwnego działania białka obu grup są do siebie podobne. Każde ma od jednej do czterech domen BH (ang. Bcl-2 homology domain , domena homologii Bcl-2). Domena to odcinek białka o określonej budowie, a „homologia” oznacza, że te odcinki są podobne u członków całej rodziny. Większość białek antyapoptotycznych ma wszystkie cztery domeny, BH1–BH4. Białka proapoptotyczne mają BH1–BH3 albo tylko BH3 – domenę BH3 mają więc wszystkie. Niektóre białka rodziny mają też hydrofobową domenę transbłonową TM , czyli odcinek, który może tkwić w błonie; prawdopodobnie odpowiada ona za umiejscowienie tych białek ( ).
+[RYCINA c03-fig-bcl2 „Rodzina białek Bcl-2”: Po lewej porównaj domeny: białka antyapoptotyczne mają BH1–BH4, proapoptotyczne – BH1–BH3 albo tylko BH3; domenę BH3 mają wszystkie pokazane białka. Po prawej ta sama brama w działaniu: tBid zmienia Bax, Bax tworzy pory w zewnętrznej błonie i cytochrom c (c) wypływa do cytozolu, a Bcl-2 stabilizuje błonę i hamuje jego wypływ.]
+
+### Kto co robi przy bramie?  [c03-brama]
+Białka antyapoptotyczne (Bcl-2, Bcl-X L , Mcl-1 i inne) siedzą tam, gdzie jest brama – głównie w zewnętrznej błonie mitochondrialnej. Ich czynności i skutki:
+- stabilizują błonę mitochondrialną ;
+- przeciwdziałają stresowi oksydacyjnemu , czyli nadmiarowi reaktywnych form tlenu;
+- zapobiegają uwalnianiu cytochromu c – skutek: cytochrom c nie wiąże się z Apaf-1, więc droga do kaspazy 9 pozostaje zamknięta.
+Białka proapoptotyczne (Bax, Bak, Bad, Bid i inne) przebywają w cytozolu – płynnej części cytoplazmy. Po odpowiednim sygnale oddziałują z białkami antyapoptotycznymi i w ten sposób hamują albo rozpoczynają śmierć komórki. Najlepiej widać to na przykładzie Bax (prawa część ryciny):
+- sygnał – skrócona forma białka Bid, tBid – wiąże się z Bax i zmienia jego konformację , czyli kształt przestrzenny (skąd się bierze tBid, zobaczysz w podrozdziale o szlakach);
+- zmieniony Bax przyłącza się do poryny VDAC – białka tworzącego kanał w zewnętrznej błonie mitochondrium;
+- Bax uczestniczy w tworzeniu porów, przez które cytochrom c wypływa do cytoplazmy.
+Białka rodziny Bcl-2 regulują też działanie kaspaz we wszystkich szlakach apoptozy oraz stężenie jonów Ca 2+ w komórce.
+
+### Kto wygrywa?  []
+Skoro nadmiar białek proapoptotycznych prowadzi do śmierci, a antyapoptotyczne zwiększają szansę przeżycia, o losie komórki decyduje przewaga jednej z grup . Komórka może tę przewagę przesuwać. Przypomnij sobie białko p53 z – „strażnika genomu”, który reaguje na uszkodzenie DNA. Jednym ze sposobów, w jakie p53 wywołuje apoptozę, jest nasilenie syntezy Bax przy jednoczesnym obniżeniu poziomu Bcl-2.
+[RAMKA zapamietaj] Cytochrom c, który wydostanie się z mitochondrium, łączy się z Apaf-1 i uruchamia kaspazę 9. Białka antyapoptotyczne (Bcl-2, Bcl-X L , Mcl-1; zwykle BH1–BH4, w zewnętrznej błonie mitochondrium) nie wypuszczają go, proapoptotyczne (Bax, Bak, Bad, Bid; BH1–BH3 lub tylko BH3, w cytozolu) ułatwiają wypływ – Bax zmieniony przez tBid tworzy pory.
+[ŹRÓDŁO] Źródło: Drewa s. 166–167, 171
+
+## Szlak zewnętrzny i wewnętrzny  [c03-szlaki]
+
+### Co uruchamia pierwszą kaspazę?  []
+Wiesz już, kto tnie białka komórki (kaspazy) i kto pilnuje mitochondrium (białka Bcl-2). Zostaje pytanie: co uaktywnia pierwszą kaspazę? Apoptoza może przebiegać różnymi szlakami – zależnie od rodzaju komórki i od czynnika, który ją wywołuje. Najlepiej poznane są: szlak zewnętrzny , związany z błoną komórkową, szlak wewnętrzny , czyli mitochondrialny, oraz szlak pseudoreceptorowy , w którym uczestniczą perforyna i granzym B. Apoptoza może też przebiegać szlakiem sfingomielinowo-ceramidowym i szlakiem indukowanym stresem . Trzy ostatnie opisuje następny podrozdział.
+Dwa główne szlaki najłatwiej porównać według dwóch pytań: skąd pochodzi sygnał i która kaspaza inicjatorowa go odbiera . Kończą się tak samo – aktywacją kaspaz wykonawczych.
+[TABELA]
+ | Szlak zewnętrzny (receptorowy) | Szlak wewnętrzny (mitochondrialny)
+Skąd sygnał | z zewnątrz: ligand wiąże się z receptorem śmierci w błonie komórkowej | z wnętrza komórki: np. ROS, Ca 2+ , uszkodzenia DNA → wzrost przepuszczalności błony mitochondrium
+Białko adaptorowe | FADD | Apaf-1
+Kompleks aktywujący | DISC | apoptosom
+Kaspaza inicjatorowa | 8 (lub 10) | 9
+Wspólny koniec | kaspazy wykonawcze 3, 6, 7
+[/TABELA]
+[RYCINA c03-fig-szlaki „Szlak zewnętrzny i wewnętrzny”: Czytaj od dwóch wejść. U góry szlak zewnętrzny: FasL na receptorze Fas → FADD → prokaspaza 8/10 w kompleksie DISC → kaspaza 8/10. U dołu wewnętrzny: czynniki stresu → otwarcie PTP → cytochrom c → apoptosom → kaspaza 9. Obie drogi zbiegają się na kaspazach wykonawczych (po prawej). Czerwona strzałka to łącznik: Bid, cięty przez kaspazę 8 do tBid, który zmienia Bax w błonie mitochondrium.]
+
+### Szlak zewnętrzny: sygnał przychodzi z zewnątrz  [c03-zewnetrzny]
+Szlak zewnętrzny, zwany też receptorowym , poznano najwcześniej i najlepiej. Uczestniczą w nim receptory śmierci i ich ligandy . Receptor to białko, które rozpoznaje określoną cząsteczkę sygnałową – ligand – i po jej związaniu przekazuje sygnał dalej. Receptory śmierci są białkami transbłonowymi, czyli przechodzą przez błonę komórkową. Należą do nadrodziny receptorów czynnika martwicy nowotworów (TNF, ang. tumor necrosis factor ). Każdy ma trzy domeny:
+- zewnątrzkomórkową – rozpoznaje ligand;
+- transbłonową – tkwi w błonie;
+- cytoplazmatyczną – z domeną śmierci DD , przez którą sygnał idzie dalej do wnętrza komórki.
+Przyłączenie liganda do receptora uruchamia szlak. Każdy receptor ma swój ligand (pozostałe nazwy i receptory – część 2, ):
+[TABELA]
+Receptor śmierci | Ligand
+Fas | FasL
+TNFR1 | TNFα
+TRAIL-R1, TRAIL-R2 | TRAIL
+[/TABELA]
+Najlepiej poznana jest ścieżka z udziałem receptora Fas . Prześledź ją na górze ryciny – w każdym kroku działa inne białko:
+- Sygnał. Ligand FasL wiąże się z receptorem Fas.
+- Białko adaptorowe. Domena DD receptora łączy się z domeną DD na C-końcu białka adaptorowego FADD .
+- Kompleks DISC. Domena DED na N-końcu FADD łączy się z domeną DED prokaspazy 8 lub 10. Powstaje kompleks sygnałowy DISC (ang. death inducing signaling complex ): receptor – FADD – prokaspaza.
+- Kaspaza inicjatorowa. W DISC prokaspaza 8 (lub 10) przekształca się w aktywną kaspazę 8 (lub 10).
+- Kaspazy wykonawcze. Kaspaza 8 (10) aktywuje kaspazy 3, 6 i 7.
+- Skutek. Kaspazy wykonawcze tną m.in. laminy i białka cytoszkieletu – komórka nieuchronnie ginie.
+Zauważ zasadę, która powtarza się w całym szlaku: domena łączy się z domeną tego samego typu – DD z DD, DED z DED. FADD jest łącznikiem z dwiema różnymi końcówkami: końcówką DD przyczepia się do receptora, a końcówką DED – do prokaspazy.
+W niektórych typach komórek receptor Fas przekazuje sygnał inną drogą – przez białko adaptorowe DAXX i kinazę JNK. Kinaza to enzym, który przyłącza do innych białek reszty fosforanowe (fosforyluje je) i w ten sposób zmienia ich działanie. Także ta droga kończy się uruchomieniem kaskady kaspaz (jej kolejne ogniwa – część 2, ).
+
+### Szlak wewnętrzny: sygnał powstaje w komórce  [c03-wewnetrzny]
+[POJĘCIE Apoptosom] kompleks cytochromu c, białka adaptorowego Apaf-1 i prokaspazy 9, który powstaje w cytoplazmie z udziałem ATP; aktywuje kaspazę 9.
+W szlaku wewnętrznym kluczową rolę odgrywają mitochondria – organella znane przede wszystkim jako centra energetyczne komórki. Tym razem sygnał nie przychodzi z zewnątrz. Szlak uruchamiają czynniki działające w samej komórce: wzrost poziomu reaktywnych form tlenu (ROS, ang. reactive oxygen species ), wzrost stężenia jonów Ca 2+ w cytoplazmie, szok termiczny, zaburzenia transportu elektronów i uszkodzenia DNA. Odpowiedzią na nie jest wzrost przepuszczalności błony mitochondrialnej – i od niego szlak się zaczyna. Prześledź go na dole ryciny:
+- Otwarcie megakanałów. Na styku obu błon mitochondrium otwierają się megakanały, czyli pory przepuszczalności PTP (ang. permeability transition pore ). Ich budowę opisuje kilka hipotetycznych modeli. Za zasadniczy element najczęściej uznaje się translokator nukleotydów adeninowych ANT w błonie wewnętrznej, połączony z poryną VDAC w błonie zewnętrznej. Od strony cytoplazmy z kanałem łączą się białka Bcl-2 i Bax – to tu białka Bcl-2 pilnują bramy. (Pozostałe składniki kompleksu – część 2, .)
+- Zmiany w mitochondrium. Niezależnie od modelu budowy otwarcie megakanałów obniża potencjał transbłonowy (różnicę ładunków po obu stronach błony), hamuje syntezę ATP i podnosi stężenie Ca 2+ w macierzy, czyli we wnętrzu mitochondrium.
+- Uwolnienie białek. Z przestrzeni międzybłonowej do cytoplazmy wychodzi cytochrom c, a z nim m.in. czynnik indukcji apoptozy AIF (ang. apoptosis-inducing factor ) i białko Smac/DIABLO (pełna lista – część 2, ).
+- Apoptosom. W cytoplazmie, z udziałem ATP, cytochrom c łączy się z białkiem adaptorowym Apaf-1 i z prokaspazą 9. Apaf-1 ma dwie końcówki. Na N-końcu jest domena CARD, która wiąże prokaspazę 9 (ta również ma domenę CARD). Na C-końcu jest domena powtórzeń WD-40, która wiąże cytochrom c oraz dATP/ATP.
+- Kaspaza inicjatorowa. W apoptosomie prokaspaza 9 zostaje aktywowana.
+- Kaspazy wykonawcze. Kaspaza 9 uruchamia ich kaskadę. Tną one białka istotne dla przeżycia komórki: laminy, aktynę, PARP i DNA-PK.
+Porównaj oba szlaki. W każdym białko adaptorowe (FADD albo Apaf-1) wiąże prokaspazę inicjatorową w kompleks (DISC albo apoptosom), w którym staje się ona aktywna ( ). Różni się przede wszystkim to, co uruchamia kompleks: ligand na receptorze śmierci albo cytochrom c wypuszczony z mitochondrium.
+[RYCINA c03-fig-kompleksy „DISC i apoptosom – która domena łączy się z którą”: W każdym panelu czytaj z góry na dół: sygnał → białko adaptorowe → prokaspaza. Porównaj kolory stykających się domen: zawsze łączą się domeny tego samego typu – DD z DD i DED z DED w kompleksie DISC, CARD z CARD w apoptosomie. Wniosek: białko adaptorowe (FADD, Apaf-1) ma dwie różne końcówki – jedną odbiera sygnał, drugą chwyta prokaspazę inicjatorową.]
+
+### Gdzie szlaki się łączą? Białko Bid  [c03-bid]
+W niektórych przypadkach szlak receptorowy łączy się ze szlakiem wewnętrznym. Łącznikiem jest białko Bid z rodziny Bcl-2 (czerwona strzałka na ):
+- kaspaza 8 tnie Bid do skróconej formy tBid (ang. truncated Bid );
+- tBid wiąże się z białkiem Bax i zmienia jego konformację;
+- zmieniony Bax przyłącza się do poryny VDAC i uczestniczy w tworzeniu porów;
+- przez pory wypływa cytochrom c – rusza szlak mitochondrialny.
+Sygnał z receptora śmierci może więc biec dwiema drogami: wprost od kaspazy 8 do kaspaz wykonawczych i – przez Bid – przez mitochondrium. Z mitochondrium wypływa wtedy 100 razy więcej cytochromu c niż w typowym szlaku wewnętrznym.
+[RAMKA przyklad] W komórce nowotworowej apoptosom jest nieczynny (taki defekt opisano np. w czerniaku – podrozdział o zaburzeniach). Które drogi do kaspaz wykonawczych zostają otwarte? Przejdź po rycinie. Szlak wewnętrzny jest przerwany: cytochrom c może wyjść z mitochondrium, ale nie uaktywni kaspazy 9. Przerwana jest też odnoga przez Bid – ona również prowadzi przez apoptosom. Otwarta zostaje droga z receptora śmierci: FasL → Fas → FADD → DISC → kaspaza 8, która bezpośrednio aktywuje kaspazy wykonawcze. Sygnały wewnętrzne, np. uszkodzenie DNA, nie uruchomią więc w tej komórce kaspazy 9.
+[RAMKA zapamietaj] Zewnętrzny: ligand (FasL) → receptor śmierci (Fas) → FADD (DD–DD, DED–DED) → DISC → kaspaza 8/10 → kaspazy 3, 6, 7. Wewnętrzny: ROS, Ca 2+ , uszkodzenia DNA → otwarcie PTP → cytochrom c → apoptosom (Apaf-1, ATP) → kaspaza 9 → kaspazy wykonawcze. Łącznik: kaspaza 8 tnie Bid do tBid, a tBid zmienia Bax.
+[ŹRÓDŁO] Źródło: Drewa s. 168–171
+
+## Trzy szlaki dodatkowe  [c03-dodatkowe]
+Trzy kolejne szlaki porównaj z dwoma głównymi według tych samych pytań: skąd przychodzi sygnał, co uaktywnia kaspazy wykonawcze (i czy w ogóle) oraz czy droga prowadzi przez mitochondrium ( ; zestawienie wszystkich pięciu szlaków – w tabeli na końcu podrozdziału).
+[RYCINA c03-fig-dodatkowe „Trzy szlaki dodatkowe”: Każdy panel czytaj od góry: na górze to, co wysyła sygnał, na dole (szara ramka) – czym szlak różni się od głównych. Porównaj środkowe pola: w A kaspazę 3 aktywuje granzym B od komórki odpornościowej, w B sygnał niesie lipid ceramid i kinazy, w C – kaspaza 12 z błony siateczki śródplazmatycznej. Wszystkie prowadzą do kaskady kaspaz wykonawczych – oprócz drogi granzymu A.]
+
+### Szlak pseudoreceptorowy: enzym od innej komórki  [c03-pseudo]
+Tak jak w szlaku receptorowym, sygnał przychodzi z zewnątrz – od innej komórki. To szlak zewnątrzpochodny, wywoływany przez komórki układu odpornościowego: cytotoksyczne limfocyty T (CTL) i komórki NK . Różnica: zamiast liganda na receptorze śmierci do wnętrza komórki trafia enzym.
+Działa tu układ perforyna–granzym B (GrB). CTL i komórki NK wytwarzają perforynę oraz granzym B i uwalniają je na drodze egzocytozy , czyli wydzielania na zewnątrz komórki. Granzym B jest proteazą serynową – w jego centrum katalitycznym działa seryna, a nie cysteina jak w kaspazach. Kolejne kroki (panel A):
+- Wniknięcie granzymu B. Początkowo uważano, że perforyna wbudowuje się w błonę komórki, która ma zginąć, i tworzy kanał dla granzymu B. Granzym B może jednak wnikać także bez udziału perforyny (dwie takie drogi – część 2, ).
+- Aktywacja kaspaz. W cytoplazmie granzym B, podobnie jak kaspazy, tnie różne substraty i aktywuje kaspazę 3. Kaspaza 3 odcina prodomenę kaspazy 7, aktywuje ją i uruchamia kaskadę kaspaz wykonawczych. Granzym B przejmuje więc rolę, którą w głównych szlakach pełni kaspaza inicjatorowa.
+- Droga przez mitochondrium. Granzym B tnie też Bid do tBid – dalej tak jak przy połączeniu szlaków: tBid łączy się z Bax i uruchamia szlak mitochondrialny.
+Szlak pseudoreceptorowy może przebiegać także z udziałem granzymu A (GrA), wydzielanego również przez CTL i komórki NK. To jedyna droga opisana w tym rozdziale, która nie korzysta z kaspaz. Granzym A wnika do komórki z udziałem perforyny. Jego mechanizm nie jest do końca wyjaśniony, ale wiadomo, że ta apoptoza jest niezależna od kaspaz i angażuje jądro. Granzym A przechodzi do jądra i tnie laminy, histon H1 i kompleks SET. Na pociętą chromatynę działa uaktywniona DNaza i w jądrze pojawiają się zmiany apoptotyczne.
+
+### Szlak sfingomielinowo-ceramidowy: sygnał niesie lipid  [c03-ceramid]
+Ten szlak zaczyna się tak jak zewnętrzny – od receptora Fas. Dalej jednak sygnał przekazuje lipid ceramid i aktywowane przez niego kinazy. Ceramid pełni rolę wtórnego przekaźnika , czyli cząsteczki, która powstaje w komórce po odebraniu sygnału z zewnątrz i przenosi go dalej. Szlak aktywują promieniowanie jonizujące, infekcje wirusowe lub brak czynników wzrostu. Kroki (panel B):
+- Receptor. Ligand FasL łączy się z receptorem Fas.
+- Sfingomielinaza. Aktywuje się kwaśna lub obojętna sfingomielinaza . Ten enzym hydrolizuje sfingomielinę – lipid błony komórkowej – do ceramidu i fosfocholiny (fosforanu choliny).
+- Ceramid jako przekaźnik. Ceramid aktywuje kinazy – CAPK (aktywowane przez ceramid), MAPK (aktywowane przez mitogeny) i kaskadę kinaz SAPK (związanych ze stresem)/JNK – oraz fosfatazy CAPP (aktywowane przez ceramid; fosfataza odłącza reszty fosforanowe, czyli działa odwrotnie niż kinaza).
+- Kaspazy wykonawcze. Kinazy SAPK/JNK uruchamiają kaskadę kaspaz wykonawczych. (Od czego zależy, które enzymy włączy ceramid – część 2, .)
+Lipidy tego szlaku mogą też zwiększać przepuszczalność błony mitochondrialnej, czyli włączać szlak wewnętrzny.
+
+### Szlak indukowany stresem: sygnał z siateczki śródplazmatycznej  [c03-stres]
+Ten szlak jest niezależny i od receptorów w błonie komórkowej, i od mitochondrium. Kluczową rolę odgrywa w nim siateczka śródplazmatyczna . Kroki (panel C):
+- Stres. Zaburzenia homeostazy (równowagi) jonów Ca 2+ albo nadmierne gromadzenie w siateczce białek niewłaściwie zmodyfikowanych lub błędnie pofałdowanych, czyli o nieprawidłowym kształcie przestrzennym.
+- Kaspaza 12. Te czynniki aktywują prokaspazę 12, umiejscowioną w błonie siateczki.
+- Kaspazy wykonawcze. Kaspaza 12 uruchamia ich kaskadę, która prowadzi do śmierci komórki.
+Kaspaza 12 nie jest potrzebna w innych szlakach, dlatego uznano ją za enzym inicjujący tylko szlak indukowany stresem – to jego „własna” kaspaza inicjatorowa. Szlak ten odpowiada za apoptozę neuronów w chorobie Alzheimera. Apoptoza z udziałem siateczki może przebiegać także przy udziale Apaf-1 i ścieżki mitochondrialnej.
+[TABELA]
+Szlak | Skąd sygnał | Co uaktywnia kaspazy wykonawcze | Związek z mitochondrium
+Zewnętrzny | ligand na receptorze śmierci (Fas, TNFR, TRAIL-R) | kaspaza 8 (10) w kompleksie DISC | może się włączyć przez Bid
+Wewnętrzny | ROS, Ca 2+ , szok termiczny, zaburzenia transportu elektronów, uszkodzenia DNA | kaspaza 9 w apoptosomie | to jego podstawa – wypływ cytochromu c
+Pseudoreceptorowy | limfocyty cytotoksyczne T i komórki NK: perforyna, granzymy | granzym B → kaspaza 3; granzym A działa bez kaspaz | granzym B tnie Bid → tBid → Bax
+Sfingomielinowo-ceramidowy | promieniowanie jonizujące, wirusy, brak czynników wzrostu; receptor Fas → sfingomielinaza | ceramid → kinazy SAPK/JNK | lipidy zwiększają przepuszczalność błony mitochondrialnej
+Indukowany stresem | zaburzenia Ca 2+ , błędnie pofałdowane białka w siateczce śródplazmatycznej | kaspaza 12 | niezależny; może jednak angażować Apaf-1 i mitochondrium
+[/TABELA]
+[RAMKA zapamietaj] Pseudoreceptorowy: sygnał od CTL lub komórki NK; granzym B zastępuje kaspazę inicjatorową (aktywuje kaspazę 3), a granzym A działa w jądrze bez kaspaz. Sfingomielinowo-ceramidowy: Fas → sfingomielinaza → ceramid → kinazy. Indukowany stresem: siateczka śródplazmatyczna → kaspaza 12.
+[ŹRÓDŁO] Źródło: Drewa s. 168, 172–174
+
+## Znaczenie apoptozy w fizjologii człowieka  [c03-fizjologia]
+
+### Które komórki organizm usuwa – i dlaczego?  []
+Apoptoza usuwa komórki nadmiarowe, niefunkcjonalne albo niebezpieczne dla organizmu. W dużym stopniu zależą od niej cztery typy procesów. Przy każdym zwróć uwagę na dwie rzeczy: dlaczego daną komórkę trzeba usunąć i co się stanie, jeśli apoptoza zawiedzie.
+
+#### 1. Rozwój embrionalny  []
+Już w zarodku trzeba usuwać komórki, które spełniły swoją rolę i są niepotrzebne. Na drodze apoptozy formują się i kształtują też niektóre narządy. Przykładem są palce. Ich zawiązki są początkowo połączone ze sobą. Rozdzielają się, bo przez apoptozę giną komórki leżące między nimi. Jeśli ten proces zostanie zahamowany, może powstać syndaktylia , czyli zrośnięcie dwóch lub więcej palców.
+
+#### 2. Modelowanie układu odpornościowego  []
+Limfocyty T rozpoznają antygeny – cząsteczki, na które reaguje układ odpornościowy. Przez całe życie w grasicy rozwijają się limfocyty T rozpoznające różnorodne antygeny, także antygeny własne organizmu. Limfocyt T skierowany przeciw antygenom własnym byłby niebezpieczny, dlatego po wykryciu zostaje skierowany na drogę apoptozy. Ten proces to selekcja negatywna . Chroni organizm przed rozwojem choroby autoimmunizacyjnej , czyli takiej, w której układ odpornościowy atakuje własne tkanki.
+
+#### 3. Eliminacja uszkodzonych komórek  []
+Komórki zakażone wirusem albo uszkodzone przez toksyny, których nie da się uratować, giną przez apoptozę – najczęściej na drodze stresu oksydacyjnego . Tak samo giną komórki uszkodzone przez zbyt niski poziom tlenu lub substancji odżywczych. Zdarza się to np. w nowotworach, które rosną tak szybko, że nie nadąża za nimi wzrost nowych naczyń krwionośnych odżywiających guz.
+
+#### 4. Eliminacja komórek z uszkodzonym DNA  []
+Tu pracuje białko p53 . Przypomnienie z : p53 to „strażnik genomu” – białko, które reaguje na uszkodzenia DNA i decyduje, czy komórka ma czas na naprawę, czy musi zginąć. Przebieg krok po kroku:
+- Uszkodzenie DNA, np. przez promieniowanie jonizujące, aktywuje p53.
+- p53 najpierw zatrzymuje cykl komórkowy na przejściu z fazy G1 do fazy S. Komórka zyskuje czas na naprawę uszkodzeń.
+- Jeśli skuteczna naprawa nie jest możliwa, p53 zwiększa ekspresję Bax .
+- Bax tworzy kanały w błonie mitochondrium (tak jak w podrozdziale o Bcl-2), cytochrom c wypływa do cytoplazmy i zaczyna się faza efektorowa apoptozy – ta, w której działają kaspazy wykonawcze.
+Ten mechanizm wykorzystuje radioterapia : napromieniowanie uszkadza DNA komórki nowotworowej i uruchamia apoptozę. Apoptoza jest tu jednak tylko jednym z kilku mechanizmów niszczenia komórek.
+[RAMKA zapamietaj] Apoptoza rozdziela palce w zarodku (zahamowanie → syndaktylia), usuwa w grasicy limfocyty T skierowane przeciw własnym antygenom (selekcja negatywna) oraz eliminuje komórki uszkodzone i komórki z nienaprawialnym uszkodzeniem DNA (p53 → Bax → cytochrom c).
+[ŹRÓDŁO] Źródło: Jóźwiak s. 126
+
+## Zaburzenia apoptozy  [c03-zaburzenia]
+
+### Za dużo albo za mało apoptozy  [c03-za-duzo]
+Skoro apoptoza jest tak ważna, jej zaburzenia – zarówno nasilenie , jak i zablokowanie – prowadzą do wielu procesów chorobowych lub się do nich przyczyniają. Skutki łatwo przewidzieć z tego, co już wiesz. Za dużo apoptozy oznacza utratę komórek, które są potrzebne. Za mało – przeżycie komórek, które powinny zginąć: uszkodzonych, z uszkodzonym DNA albo skierowanych przeciw własnym antygenom.
+Udział zaburzeń apoptozy udowodniono m.in. w nowotworach, nadczynności tarczycy, osteoporozie, stwardnieniu rozsianym, chorobie Parkinsona i chorobie Alzheimera. Tabela zestawia po pięć przykładów z każdej grupy (cała tabela źródła – część 2, ). Po stronie nasilenia są m.in. choroby, w których giną neurony (Alzheimer, Parkinson – omówione niżej), po stronie zahamowania – nowotwory (białaczka, chłoniak, raki).
+[TABELA]
+Nasilenie apoptozy | Zahamowanie apoptozy
+cukrzyca typu I | osteoporoza
+zawał mięśnia serca | białaczka
+choroba Alzheimera | chłoniak
+choroba Parkinsona | raki (np. piersi, prostaty)
+stwardnienie rozsiane | nadczynność tarczycy
+[/TABELA]
+
+### Dlaczego nowotwór musi zablokować apoptozę?  []
+Nowotworzenie to jeden z najlepszych przykładów skutków zaburzeń apoptozy. Komórka nowotworowa rozwija się często długo i przez ten czas gromadzi kolejne mutacje. Tymczasem p53 nasila apoptozę, gdy wykryje uszkodzenie DNA – komórka z uszkodzonym DNA powinna więc zostać usunięta. Wynika z tego, że w rozwijającym się nowotworze apoptoza musi zostać zablokowana . Tylko wtedy mutacje mogą się w komórce gromadzić w niekontrolowany sposób.
+
+### Dlaczego nowotwór staje się oporny na leki?  [c03-opornosc]
+Wiele leków przeciwnowotworowych działa właśnie przez to, że wywołuje w komórkach apoptozę. Jeśli w komórce apoptoza jest zablokowana, lek działający tą drogą traci skuteczność. Dlatego zaburzenia apoptozy w wielu przypadkach odpowiadają za oporność na leki przeciwnowotworowe . Ponieważ w nowotworach apoptoza bywa zablokowana, opracowano też wiele leków przeciwnowotworowych, które wpływają na szlaki związane z apoptozą i ją nasilają (pięć przykładów z mechanizmami – część 2, ).
+
+### Gdzie szlak bywa przerwany?  []
+Najczęstsze zaburzenia wykrywane w komórkach nowotworowych dotyczą różnych miejsc szlaków, które już znasz:
+[TABELA]
+Zaburzenie | Co to znaczy w szlaku | Przykłady nowotworów
+nadekspresja antyapoptotycznych białek Bcl-2 | brama mitochondrialna pozostaje zamknięta – cytochrom c nie wypływa | chłoniaki, rak sutka, rak płuc
+inaktywacja apoptosomu | cytochrom c nie uaktywnia kaspazy 9 – szlak wewnętrzny przerwany | czerniak, białaczki, rak szyjki macicy
+obniżenie ekspresji białka Fas | mniej receptorów śmierci – komórka słabiej odbiera sygnał szlaku zewnętrznego | rak wątrobowokomórkowy, rak przełyku, rak jelita grubego
+obniżenie aktywności kaspaz | osłabiony wspólny koniec szlaków | –
+[/TABELA]
+[RAMKA przyklad] Komórka chłoniaka grudkowego ma translokację t(14;18): onkogen bcl-2 jest aktywny i w komórce jest dużo białka Bcl-2. Pacjent jest napromieniowywany. Prześledź skutek krok po kroku. (1) Promieniowanie uszkadza DNA i aktywuje p53. (2) p53 zwiększa ekspresję Bax. (3) Bax powinien utworzyć kanały w błonie mitochondrium – ale nadmiar Bcl-2 stabilizuje błonę i zapobiega uwalnianiu cytochromu c; przewaga jest po stronie białek antyapoptotycznych. (4) Cytochrom c nie łączy się z Apaf-1 i kaspaza 9 się nie aktywuje. Ta droga apoptozy jest zablokowana – komórka z uszkodzonym DNA może się nie usunąć i dalej gromadzić mutacje, a leczenie działające przez apoptozę traci skuteczność.
+
+### Choroby neurodegeneracyjne: apoptozy za dużo  []
+W chorobie Alzheimera odkładają się dwa białka: amyloid β (Aβ) w przestrzeni międzykomórkowej i białko tau wewnątrz komórek. Aβ aktywuje kaspazę 3 – kaspazę wykonawczą – i nasila apoptozę neuronów. Jednym z substratów kaspazy 3 jest właśnie białko tau. Jego przecięcie przez kaspazę prowadzi do gromadzenia się agregatów (skupisk) tau w neuronie. Za apoptozę neuronów w tej chorobie odpowiada też szlak indukowany stresem ( ).
+W chorobie Parkinsona giną neurony dopaminergiczne (wytwarzające dopaminę) w układzie nigrostriatalnym mózgu. Również tu dochodzi do zmian, które łatwo umiejscowić w szlakach: do aktywacji kaspazy 3 (wspólny koniec szlaków), blokowania Bcl-2 (słabnie ochrona mitochondrium) i zwiększenia ekspresji receptora Fas (więcej receptorów śmierci). Takie zmiany nasilające apoptozę prawdopodobnie przyczyniają się w chorobach neurodegeneracyjnych do utraty neuronów w ośrodkowym układzie nerwowym.
+[RAMKA zapamietaj] W nowotworach apoptoza jest zablokowana (nadmiar antyapoptotycznych Bcl-2, nieczynny apoptosom, mniej Fas, słabsze kaspazy) – to pozwala gromadzić mutacje i daje oporność na leki. W chorobach Alzheimera i Parkinsona apoptoza neuronów jest nasilona, m.in. przez aktywację kaspazy 3.
+[ŹRÓDŁO] Źródło: Jóźwiak s. 126–127 · Drewa s. 166, 174
+
+## Znaczniki starzenia komórkowego  [c03-starzenie]
+
+### Jak poznać, że komórka się zestarzała?  []
+Hodowla komórek, która dotąd rosła, przestaje rosnąć. Komórki nie giną – po prostu przestały się dzielić. Czy to starzenie? Żeby to rozstrzygnąć, trzeba wiedzieć, czym jest starzenie komórkowe i po jakich cechach się je rozpoznaje.
+Starzenie komórkowe to złożony, wieloetapowy proces związany z nieodwracalnym zatrzymaniem komórek w cyklu komórkowym. Komórka stara już się nie podzieli, choć – jak zobaczysz – nadal się zmienia: rośnie, zmienia budowę i wydziela różne czynniki. Wyróżnia się dwa rodzaje starzenia:
+- starzenie replikacyjne – zależne od skracania telomerów , czyli końcowych odcinków chromosomów (szczegóły niżej). W hodowli widać je jako skończoną liczbę podziałów komórek; pojawia się po kilku tygodniach lub miesiącach, zależnie od typu komórek;
+- starzenie przyspieszone – niezależne od skracania telomerów. Pojawia się już po kilku dniach od zadziałania czynnika, który je wywołuje – np. uszkodzeń DNA albo aktywacji onkogenu.
+
+### Dlaczego potrzeba wielu znaczników?  []
+[POJĘCIE Znacznik starzenia] cecha komórki – morfologiczna lub biochemiczna – która towarzyszy starzeniu; żadna nie jest typowa wyłącznie dla starzenia, dlatego bada się kilka znaczników naraz.
+Znacznik starzenia to cecha komórki, która towarzyszy starzeniu i którą da się zbadać. Kłopot w tym, że nie istnieje jeden znacznik typowy wyłącznie dla starzenia. Opisano za to wiele cech, które je charakteryzują – uniwersalnych i swoistych dla określonych typów komórek. Dzieli się je na grupy ( ):
+- zmiany struktury i morfologii komórki;
+- zmiany związane z proliferacją i regulacją cyklu komórkowego;
+- znaczniki związane z DNA i chromatyną;
+- fenotyp wydzielniczy (sekrecyjny);
+- osobno – znaczniki starzenia wywołanego aktywacją onkogenów.
+Przy każdym znaczniku szukaj odpowiedzi na dwa pytania: co się zmienia i dlaczego to świadczy o starzeniu (oraz kiedy może zmylić). Jak się poszczególne znaczniki oznacza – zebrano w części 2 ( ).
+[RYCINA c03-fig-starzenie „Znaczniki starzenia komórkowego”: Zacznij od małej komórki prawidłowej w lewym górnym rogu: po zadziałaniu czynnika indukującego starzenie staje się duża i płaska. Potem przejdź po jej przedziałach: lizosomy (SA-β-Gal, lipofuscyna), jądro (SAHF, DNA-SCARS, p16 i p21) i otoczenie (wydzielany SASP). W ramkach te same znaczniki ułożone w grupy, jak w tekście; żaden z nich osobno nie wystarcza do rozpoznania starzenia.]
+
+### Struktura i morfologia komórki  [c03-morfologia]
+
+#### Komórka duża i płaska  []
+Komórki ulegające starzeniu replikacyjnemu i przyspieszonemu powiększają się i stają się płaskie. Dotyczy to komórek prawidłowych, np. fibroblastów i komórek mięśni gładkich, i komórek nowotworowych.
+
+#### Wzrost aktywności i poziomu SA-β-Gal  [c03-sabgal]
+Co to jest. SA-β-Gal to β-galaktozydaza związana ze starzeniem (ang. senescence associated β-galactosidase ) – enzym lizosomalny, czyli działający w lizosomach, pęcherzykach trawiących składniki komórki. W starzeniu rośnie jej aktywność i poziom. To podstawowy, najbardziej znany i najpowszechniej używany znacznik starzenia – in vitro (w hodowli) i in vivo (w organizmie), w starzeniu replikacyjnym i przyspieszonym. W barwieniu na aktywność tego enzymu w komórkach powstaje niebieski osad.
+Dlaczego świadczy o starzeniu. SA-β-Gal występuje w komórkach, które uległy starzeniu, ale nie w spoczynkowych fibroblastach (które też się nie dzielą, ale nie są stare) ani w zróżnicowanych keratynocytach. Jej aktywność rośnie z wiekiem dawcy komórek – w fibroblastach skóry i w keratynocytach naskórka. Wzrost aktywności koreluje ze wzrostem masy lizosomów w komórkach starych. Funkcja SA-β-Gal w starzeniu nie jest znana; przypuszcza się, że wzrost jej aktywności wynika jedynie z większej liczby lizosomów, a nie jest przyczyną starzenia.
+Kiedy może zmylić. Aktywność SA-β-Gal rośnie też bez starzenia: w nieprawidłowych warunkach hodowli, w hodowli przegęszczonej oraz w świetle cebulek włosowych i przewodów gruczołów ekrynowych i łojowych. Żeby uniknąć wyniku fałszywie dodatniego, bada się ją razem z innym znacznikiem, np. zatrzymaniem w cyklu. Jeśli komórki z wysoką aktywnością SA-β-Gal są jednocześnie zatrzymane w cyklu, wzrost aktywności wiąże się ze starzeniem. Działa to też w drugą stronę: SA-β-Gal nie jest niezbędna do starzenia. Fibroblasty osób z gangliozydozą GM1 – chorobą spichrzeniową spowodowaną brakiem β-galaktozydazy – starzeją się bez wzrostu aktywności SA-β-Gal, bo ten znacznik zależy od obecności lizosomalnej β-galaktozydazy. Brak SA-β-Gal nie wyklucza więc starzenia.
+
+#### Wzrost ziarnistości  []
+Komórki stają się bardziej ziarniste – prawdopodobnie z powodu wzrostu masy lizosomów.
+
+#### Wzrost poziomu lipofuscyny  []
+Lipofuscyna to brązowożółty barwnik, który powstaje podczas utleniania lipoprotein w lizosomach. Jej ilość rośnie w komórkach starych organizmów. Zauważ, że trzy ostatnie znaczniki – SA-β-Gal, ziarnistość i lipofuscyna – wiążą się z lizosomami.
+
+#### Zmiany cytoszkieletu  [c03-cytoszkielet]
+W starzeniu zmienia się poziom trzech białek cytoszkieletu: wimentyny, β-aktyny i tubuliny. Wimentyna to białko filamentów pośrednich (grupy III), obecne w komórkach pochodzenia mezenchymalnego. Jej poziom rośnie wraz z liczbą podziałów, a komórki stare mają mniej aktyny i tubuliny niż młode (liczby – część 2, ).
+
+### Proliferacja i cykl komórkowy  [c03-proliferacja]
+Najpierw krótkie przypomnienie z . Cykl komórkowy ma cztery fazy: G1, S, G2 i M. Regulują go cykliny , kinazy zależne od cyklin (CDK, ang. cyclin-dependent kinases ) i inhibitory tych kinaz (CKI). W każdej fazie dominuje inny kompleks cykliny z CDK (które – rozdz. 2; zestawienie także w części 2, ). Inhibitory należą do dwóch klas:
+- INK4/ARF (p15, p16, p18, p19) – wiążą CDK4 i CDK6; zmiana allosteryczna (zmiana kształtu kinazy) uniemożliwia im oddziaływanie z cyklinami D;
+- CIP/KIP (p21, p27, p57) – wiążą się ze szczeliną katalityczną kompleksu cyklina–CDK i hamują jego działanie.
+W starzeniu kluczową rolę odgrywają dwa szlaki sygnałowe: p53–p21 – głównie w starzeniu wywołanym uszkodzeniami DNA i w replikacyjnym – oraz p16–pRb – w starzeniu wywołanym nadekspresją onkogenów. Część białek jest wspólna dla obu szlaków. (Z rozdziału 2: p53 po uszkodzeniu DNA zwiększa ilość p21, a pRb kontroluje przejście przez fazę G1.)
+
+#### Zahamowanie proliferacji  []
+To podstawowy znacznik: gdy proliferacja się zatrzymuje, liczba komórek przestaje się zmieniać . Proliferację można też badać przez wbudowywanie do DNA bromodeoksyurydyny (BrdU) lub 5-etynylo-2′-deoksyurydyny (EdU). Komórka, która syntetyzuje DNA, wbudowuje je do nowych nici. Brak komórek wbudowujących BrdU świadczy więc o zahamowaniu syntezy DNA, a zatem proliferacji – to równoznaczne z zatrzymaniem komórek w cyklu. Innym powszechnie stosowanym znacznikiem proliferacji jest białko Ki67 : brak jego skupisk w komórkach świadczy o zatrzymaniu proliferacji. Pamiętaj jednak, że samo zahamowanie proliferacji nie dowodzi starzenia – nie dzielą się też np. komórki spoczynkowe.
+
+#### Wzrost poziomu inhibitorów cyklu  [c03-inhibitory]
+Co i dlaczego. Starzeniu replikacyjnemu i przyspieszonemu towarzyszy zwiększona synteza inhibitorów p21 i p16 . To logiczne: im więcej inhibitorów, tym mniej aktywnych kompleksów cyklina–CDK, a to one regulują przejście przez kolejne fazy cyklu. Poziom p16 rośnie z wiekiem u ludzi (wykazano to w skórze i w limfocytach T) i u myszy. Wzrost p16 koreluje ze zmniejszającą się z wiekiem liczbą komórek progenitorowych w wielu tkankach.
+Kiedy może zmylić. W starzeniu komórek podczas rozwoju zarodkowego rośnie p21, ale nie p16. Wzrost p16 występuje też poza starzeniem – w komórkach gruczołu mlekowego. Z kolei w wielu nowotworach p16 brak – m.in. w glejaku wielopostaciowym, czerniaku i gruczolakoraku trzustki. Wnioskuje się z tego, że p16 hamuje rozwój nowotworu.
+Inne inhibitory i cyklina D1. Istotną rolę w starzeniu odgrywają też pozostałe inhibitory obu klas – m.in. p15, p27 i p57. Znacznikiem starzenia nowotworowych komórek nabłonkowych jest cyklina D1. (Doświadczenia, które to pokazały – część 2, .)
+
+#### Zatrzymanie w cyklu  []
+Zatrzymanie w cyklu związane ze starzeniem uważa się za nieodwracalne , bo nie są znane czynniki fizjologiczne, które mogłyby je odwrócić. Zależnie od typu komórek i od czynnika, który wywołał starzenie, komórka zatrzymuje się w fazie G1 albo G2: w starzeniu replikacyjnym zwykle w G1 (może też w G2), w przyspieszonym – w G2.
+
+### DNA i chromatyna  [c03-chromatyna]
+
+#### Skupiska białek odpowiedzi na uszkodzenia DNA (DNA-SCARS)  []
+Na uszkodzenia DNA komórka odpowiada uruchomieniem szlaku odpowiedzi na uszkodzenia DNA (DDR, ang. DNA damage response ) – zespołu białek, które reagują na uszkodzenie. Uszkodzenia DNA, które aktywują ten szlak trwale , prowadzą do starzenia przyspieszonego. Trwała aktywacja – w odróżnieniu od przejściowej – objawia się długo utrzymującymi się skupiskami białek DDR, np. γH2AX i 53BP1.
+Skupiska białek DDR w jądrze starej komórki (m.in. ATM, γH2AX i 53BP1) to właśnie DNA-SCARS . Wcześniej uważano, że przyspieszone starzenie mogą wywołać uszkodzenia zarówno w telomerowym, jak i w nietelomerowym DNA. Nowsze badania pokazały, że trwała aktywacja DDR wynika z uszkodzeń w odcinkach telomerowych – i że kilka takich uszkodzeń wystarcza do wywołania starzenia. Skupiska powstające przy uszkodzonych lub zbyt krótkich telomerach wyróżnia się jako TIF . DNA-SCARS często współwystępują z białkiem PML (niżej).
+
+#### Skupiska heterochromatyny związane ze starzeniem (SAHF)  [c03-sahf]
+Heterochromatyna to silnie skondensowana chromatyna. W jądrze starej komórki, np. ludzkiego fibroblastu, tworzy 30–50 skupisk widocznych po barwieniu jądra barwnikiem DAPI. Skupiska powstają w obszarach promotorowych genów kodujących białka, które regulują fazę S cyklu. Wykrywa się je też przez znakowanie składników: histonu H3 zmetylowanego na lizynie 9 (H3K9me), białka HP1, histonu makroH2A i białka HMGA.
+SAHF powstają etapami, z udziałem ciałek jądrowych PML (o nich niżej) i białek opiekuńczych histonów (kolejność etapów – część 2, ). Są znacznikiem i starzenia przyspieszonego wywołanego onkogenami, i replikacyjnego, ale ich pojawienie się zależy od typu komórek.
+
+#### Wzrost zawartości białka PML  [c03-pml]
+Białko PML (ang. promyelocytic leukemia protein ) jest głównym składnikiem jądrowych ciałek PML (PML-NB), w których znajduje się ponad 50 białek, m.in. Rb, p53, ATM, ATR i białka naprawy DNA. Ze starzeniem łączy je bezpośredni związek. Synteza PML w komórkach prawidłowych prowadzi do nieodwracalnego zatrzymania w cyklu i starzenia, a bez PML nie dochodzi do starzenia wywołanego nadprodukcją onkogenu RAS. W starzeniu liczba i wielkość PML-NB rosną, a w nowotworzeniu ich liczba maleje, bo synteza PML jest obniżona.
+Ten znacznik pomaga odróżnić starzenie od innych przyczyn zatrzymania cyklu. W komórkach zatrzymanych z powodu braku surowicy w pożywce, osiągnięcia konfluencji (zarośnięcia całej powierzchni naczynia hodowlanego) albo nadprodukcji p53 ciałek PML nie przybywa. PML-NB biorą też udział w powstawaniu SAHF.
+
+#### Skracanie telomerów  []
+Telomery to fragmenty DNA na końcach chromosomów; u ssaków są zbudowane z powtórzeń sekwencji TTAGGG . Razem z kompleksem sześciu białek, zwanych szelterynami , pełnią funkcję ochronną. Z każdym podziałem komórki telomery się skracają. Maksymalna liczba podziałów, którym komórka może ulec, to limit Hayflicka , a starzenie spowodowane skracaniem telomerów to starzenie replikacyjne. Telomery odbudowuje telomeraza . Jej poziom jest różny u różnych gatunków: u myszy telomeraza jest aktywna w komórkach somatycznych, u ludzi – rzadko. Długość telomerów jest znacznikiem starzenia replikacyjnego.
+
+#### Spadek poziomu laminy B1  [c03-lamina]
+Laminy to filamenty pośrednie typu V wchodzące w skład błony jądrowej – te same białka, które w apoptozie tną kaspazy. Poziom laminy B1 spada w starzeniu replikacyjnym, wywołanym onkogenami i wywołanym uszkodzeniami DNA – in vitro i in vivo. Spadek ten wymaga aktywności jednego z dwóch kluczowych szlaków starzenia, p16–pRb albo p53–p21.
+
+#### Oksydacyjne modyfikacje zasad azotowych  [c03-oksydacja]
+Według wolnorodnikowej teorii starzenia wolne rodniki uszkadzają makrocząsteczki komórki: DNA, lipidy i białka. Znacznikiem jest poziom utlenionych zasad azotowych i nukleozydów, np. 8-oksyguaniny (8-oksyGua) i jej nukleozydu, 8-oksy-2′-deoksyguanozyny (8-oksydG). Poziom 8-oksydG rośnie z wiekiem: u gryzoni jest wyższy w jądrowym DNA starszych zwierząt, a u ludzi – w leukocytach i w moczu osób starszych. 8-oksyGua w moczu uważa się za najczulszy znacznik wpływu stresu oksydacyjnego na DNA.
+
+#### Zmiany metylacji DNA  []
+W DNA część cytozyn ma przyłączoną grupę metylową (5-metylocytozyna, 5-mC). Starzeniu towarzyszy globalna demetylacja , obserwowana w wielu typach komórek i tkanek: w hodowli poziom 5-mC spada wraz z liczbą pasaży (przeniesień hodowli do nowego naczynia). Dochodzi też do demetylacji konkretnych genów, np. MYC i genu β-aktyny. W starzeniu replikacyjnym fibroblastów obok hipometylacji występuje skupiskowa hipermetylacja określonych genów; profil metylacji przypomina wtedy profil komórek nowotworowych.
+
+### Fenotyp sekrecyjny (SASP)  [c03-sasp]
+Stare komórki nie tylko przestają się dzielić – zaczynają też wydzielać zespół czynników nazywany fenotypem sekrecyjnym związanym ze starzeniem (SASP, ang. senescence associated secretory phenotype ; inaczej SMS). Należą do nich cytokiny, proteazy, czynniki wzrostu i inne związki działające autokrynnie (na komórkę, która je wydzieliła) lub parakrynnie (na komórki sąsiednie). Skład SASP zależy od bodźca, który wywołał starzenie, i od typu komórek.
+SASP pojawia się przy trwałej aktywacji szlaku odpowiedzi na uszkodzenia DNA – tej samej, która tworzy DNA-SCARS. Przy przejściowej aktywacji komórki tych czynników nie wydzielają. Wydzielaniem sterują białka tego szlaku i czynniki transkrypcyjne, m.in. NF-κB (wszyscy regulatorzy – część 2, ).
+Jedną z pierwszych cytokin wydzielanych po indukcji starzenia jest IL-1α . Wiąże się z receptorem IL1R, co uruchamia kaskadę sygnałów aktywującą NF-κB, a ten indukuje transkrypcję genów prozapalnych cytokin IL-6 i IL-8. Czynniki SASP mogą działać korzystnie i niekorzystnie: indukują angiogenezę, proliferację i różnicowanie komórek, naprawę tkanek, transformację epitelialno-mezenchymalną i oporność na chemioterapię, a także aktywują układ odpornościowy.
+
+### Znaczniki starzenia wywołanego onkogenami  [c03-onkogeny]
+W starzeniu przyspieszonym wywołanym aktywacją onkogenów rośnie poziom białek DEC1 i DCR2 (ang. decoy death receptor-2 ); oba aktywuje p53. Podwyższony poziom tych białek obserwowano w zmianach łagodnych w skórze, płucach i trzustce, ale nie w nowotworach złośliwych tych narządów. Współwystępował on z innymi znacznikami starzenia – wzrostem aktywności SA-β-Gal i SAHF.
+
+### Jeden znacznik to za mało – wniosek praktyczny  [c03-wniosek]
+Wróć do przeglądu. SA-β-Gal rośnie też w hodowli przegęszczonej i w cebulkach włosowych, p16 – w gruczole mlekowym, a zahamowanie proliferacji występuje także w komórkach spoczynkowych. Żaden znacznik nie jest swoisty . Wniosek praktyczny: trzeba zbadać przynajmniej kilka znaczników naraz, np. SA-β-Gal razem z zatrzymaniem w cyklu. Dopiero ich współwystępowanie daje pewność, że komórki uległy starzeniu.
+[RAMKA przyklad] Wróćmy do hodowli fibroblastów, która przestała rosnąć: liczba komórek od kilku dni się nie zmienia. Przyczyną może być starzenie, ale też konfluencja albo brak surowicy w pożywce. (1) Stała liczba komórek i brak wbudowywania BrdU potwierdzają tylko zahamowanie proliferacji – wspólne dla wszystkich trzech przyczyn. (2) Wysoka aktywność SA-β-Gal też nie rozstrzyga, bo rośnie w hodowli przegęszczonej. (3) Pomogą znaczniki, które przy tamtych przyczynach się nie zmieniają: przy zatrzymaniu z braku surowicy czy z powodu konfluencji nie przybywa ciałek PML. Jeśli komórki są duże i płaskie, mają więcej PML-NB, skupiska SAHF i podwyższone p16 i p21 – współwystępowanie tych cech wskazuje na starzenie.
+Na koniec zestawienie znaczników z tego podrozdziału (jak się je oznacza – część 2, ):
+[TABELA]
+Znacznik | Co się zmienia w komórce starej
+SA-β-Gal | rośnie aktywność i poziom
+ziarnistość | rośnie
+lipofuscyna | rośnie
+wimentyna, aktyna, tubulina | wimentyna rośnie, aktyna i tubulina maleją
+BrdU, EdU; Ki67 | brak wbudowywania; brak skupisk Ki67
+p16, p21 i inne inhibitory; cyklina D1 | rośnie poziom
+zatrzymanie w cyklu | nieodwracalne, w G1 lub G2
+DNA-SCARS, PML | trwałe skupiska białek DDR; więcej i większe PML-NB
+SAHF | 30–50 skupisk heterochromatyny
+telomery | krótsze
+lamina B1 | maleje
+SASP | wydzielanie cytokin, proteaz, czynników wzrostu
+[/TABELA]
+[RAMKA zapamietaj] Starzenie to nieodwracalne zatrzymanie w cyklu: replikacyjne (skracanie telomerów) albo przyspieszone (dni po zadziałaniu czynnika). Znaczniki obejmują morfologię i lizosomy, cykl, DNA i chromatynę oraz SASP, ale żaden nie jest swoisty – dlatego bada się kilka naraz.
+[ŹRÓDŁO] Źródło: Alster s. 138–144
+[RAMKA w60] Apoptoza – kontrolowana śmierć komórki bez zapalenia: kondensacja chromatyny → obkurczenie → fragmentacja jądra i ciałka apoptotyczne → fagocytoza. Kaspazy – proteazy cysteinowe tnące za Asp; powstają jako prokaspazy; inicjatorowe 2, 8, 9, 10 aktywują wykonawcze 3, 6, 7. Bcl-2 – antyapoptotyczne (Bcl-2, Bcl-X L ) nie wypuszczają cytochromu c z mitochondrium, proapoptotyczne (Bax, Bak, Bid) ułatwiają jego wypływ. Szlaki – zewnętrzny: Fas → FADD → DISC → kaspaza 8; wewnętrzny: cytochrom c → apoptosom → kaspaza 9; łączy je tBid. Dodatkowe: pseudoreceptorowy (granzymy), ceramidowy, stresowy (kaspaza 12). Fizjologia i choroby – apoptoza rozdziela palce i usuwa limfocyty T skierowane przeciw własnym antygenom; w nowotworach jest zablokowana (oporność na leki), w chorobach Alzheimera i Parkinsona nasilona. Starzenie – nieodwracalne zatrzymanie w cyklu; znaczniki (SA-β-Gal, p16/p21, DNA-SCARS, SAHF, PML, telomery, SASP) bada się łącznie, bo żaden nie jest swoisty.
+[RAMKA przejscie] Część 1 zawiera to, co trzeba rozumieć: czym jest apoptoza, kto ją przeprowadza, jakimi szlakami biegnie sygnał, co się dzieje, gdy jest jej za dużo albo za mało, i po czym poznać komórkę starą. Część 2 jest dla tych, którzy chcą znać źródła w całości – „na piątkę”. Nie wprowadza nowych tematów: dopowiada szczegóły do podrozdziałów, które już znasz – pełne listy białek, budowę kaspaz, pośredników szlaków, leki i sposoby oznaczania znaczników starzenia. Każda sekcja zaczyna się od odsyłacza do miejsca w części 1, które rozszerza. skąd to wiemy – nazwa, odkrycia, C. elegans ( ), kaspazy – budowa i tabela siedmiu kaspaz ( ), rodzina Bcl-2 – pełna lista i domeny ( ), szlaki główne – receptory, DAXX, megakanał ( ), szlak pseudoreceptorowy i ceramidowy ( ), choroby i leki nasilające apoptozę ( ), jak oznacza się znaczniki starzenia ( ), starzenie: morfologia i cykl – doświadczenia ( ), starzenie: DNA, chromatyna, SASP ( ), skróty – pełne nazwy ( ).
+
+## Skąd to wiemy? Nazwa, odkrycia i nicień C. elegans  [c03-r-historia]
+W części 1 ( ) kaspazy i białka Bcl-2 pojawiły się jako gotowe pojęcia. Skąd wiadomo, że służą do apoptozy? I skąd same nazwy?
+
+### Skąd nazwy?  []
+Termin „apoptoza” wprowadzili w 1972 r. J.F. Kerr, A.H. Wyllie i A.R. Currie. Określenie „programowana śmierć komórki” stosowano pierwotnie tylko do śmierci zachodzącej w procesach fizjologicznych, które warunkują prawidłowe funkcjonowanie organizmu – na etapie embrionalnym i w późniejszym okresie. Dziś oba terminy stosuje się często zamiennie.
+
+### Co ma nicień do apoptozy u człowieka?  []
+Genetyczne podstawy apoptozy i udział ekspresji genów w jej regulacji poznano najpierw u nicienia Caenorhabditis elegans . Badania R. Horvitza, S. Brennera i J. Sulstona uhonorowano w 2002 r. Nagrodą Nobla.
+Wiedza przeniosła się na człowieka dzięki podobieństwu białek. Kaspazy są wysoko konserwatywne – ich budowa niewiele się zmieniła w ewolucji. Jeśli więc białko człowieka przypomina białko nicienia o znanej funkcji, podpowiada to, co samo robi. Tak poznano obie rodziny z części 1:
+- Kaspazy. Pierwszą kaspazę zidentyfikowano jako enzym, który przekształca pro-interleukinę 1β w aktywną interleukinę 1β – stąd nazwa ICE (ang. Interleukin Converting Enzyme ). Jej kluczową rolę w apoptozie dowiedziono dzięki sklonowaniu genu ced-3 nicienia: jego produkt jest podobny do ICE.
+- Bcl-2. Gen bcl-2 zidentyfikowano po raz pierwszy w 1986 r. – jako onkogen aktywowany przez translokację t(14;18). Antyapoptotyczne działanie białka Bcl-2 poznano dzięki temu, że budową i funkcją jest homologiczne (podobne) do białka Ced-9 nicienia.
+Daty po kolei: 1972 – termin „apoptoza”; 1986 – gen bcl-2 ; 2000 – publikacja wyników badań, które przedstawiły szlak indukowany stresem ( ); 2002 – Nagroda Nobla za badania nad C. elegans .
+[ŹRÓDŁO] Źródło: Drewa s. 165–167, 174
+
+## Kaspazy – szczegóły budowy i siedem kaspaz w tabeli  [c03-r-kaspazy]
+Na rycinie prokaspazy w części 1 ( , ) przy każdej części stała liczba w kilodaltonach (kDa – jednostka masy cząsteczki), ale tekst jej nie omawiał. Tu wyjaśniamy, skąd te liczby, gdzie dokładnie tnie się prokaspazę i czym prodomena chwyta inne białka.
+
+### Ile ważą części prokaspazy?  []
+Budowę kaspaz poznano dzięki krystalografii rentgenowskiej i sekwencjonowaniu białek. Kaspazy są syntetyzowane jako katalitycznie nieczynne, trzyczęściowe proenzymy o masie 32–55 kDa. Prodomena ma 3–24 kDa, duża podjednostka p20 (z centrum katalitycznym) – 17–21 kDa, a mała podjednostka p10 – 10–13 kDa; źródło nazywa p10 „małą podjednostką katalityczną”. Na schemacie źródła p20 to podjednostka α, a p10 – β.
+Zakresów nie dodawaj do siebie – każdy obejmuje różne kaspazy. Najszerszy ma prodomena. W tabeli niżej kaspazy inicjatorowe są cięższe (48,8–55 kDa) niż wykonawcze (32–34 kDa). Zgadza się to z tym, że tylko inicjatorowe mają w prodomenie domenę CARD albo dwie domeny DED.
+
+### Gdzie dokładnie tnie się prokaspazę?  []
+W większości prokaspaz p20 i p10 oddziela sekwencja łącznikowa . Schemat źródła pokazuje trzy miejsca cięcia, każde za resztą Asp (zapis „asp-x”): jedno między prodomeną a p20 i dwa po obu stronach łącznika. Pierwsze cięcie odłącza prodomenę, dwa pozostałe rozdzielają p20 i p10. Dlatego aktywny enzym z części 1 ( ) tworzą osobne łańcuchy: dwa p20 i dwa p10.
+Katalityczna reszta cysteiny – ta, od której kaspazy są proteazami cysteinowymi – leży w dużej podjednostce, w obrębie konserwatywnego fragmentu sekwencji zapisywanego QACxG . To zapis jednoliterowy aminokwasów; C oznacza cysteinę.
+
+### Czym prodomena chwyta inne białka?  []
+Duża N-końcowa prodomena zawiera długi motyw (80–100 reszt aminokwasowych), który uczestniczy w przekazywaniu (transdukcji) sygnałów apoptozy. Domeny DED i CARD z części 1 są zbudowane z ułożonych nierównolegle α-helis o charakterze amfipatycznym , czyli z częścią hydrofilową (dobrze oddziałującą z wodą) i hydrofobową (unikającą wody). Z innymi białkami oddziałują przez interakcje elektrostatyczne (przyciąganie ładunków) lub hydrofobowe. Tak prokaspaza wiąże się z białkiem adaptorowym – domena z domeną tego samego typu ( ).
+
+### Siedem kaspaz w tabeli  []
+Tabela źródła zestawia cztery kaspazy inicjatorowe i trzy wykonawcze. Inne nazwy przydadzą się, gdy spotkasz kaspazę opisaną inaczej; zapis lokalizacji genu (chromosom, ramię p lub q, prążki) objaśnia rozdz. 9 ( ).
+[TABELA]
+Kaspaza (inne nazwy) | Grupa | Budowa | Masa (kDa) | Lokalizacja chromosomowa
+kaspaza 2 (ICH-1) | inicjatorowa | 1 CARD + p20 + p10 | 48,8 | 7q34-q35
+kaspaza 8 (MACH, FLICE, Mch5) | inicjatorowa | 2 DED + p20 + p10 | 55 | 2q33-q34
+kaspaza 9 (ICE-LAP6, Mch6) | inicjatorowa | 1 CARD + p20 + p10 | 50 | 1p36.3-p36.1
+kaspaza 10 (Mch-4) | inicjatorowa | 2 DED + p20 + p10 | 55 | 2q33-q34
+kaspaza 3 (CPP32, Apopain, Yama) | wykonawcza | p20 + p10 | 32 | 4q34
+kaspaza 6 (Mch-2) | wykonawcza | p20 + p10 | 34 | 4q25
+kaspaza 7 (Mch3, ICE-LAP-3, CMH-1) | wykonawcza | p20 + p10 | 34 | 10q25
+[/TABELA]
+Kaspazy 8 i 10 zgadzają się we wszystkich kolumnach: budowa, masa 55 kDa, miejsce w genomie 2q33-q34. Dwie uwagi, żeby tabela nie zmyliła. Zapis „p20 + p10” nie znaczy, że kaspazy wykonawcze nie mają prodomeny – kaspaza 3 odcina przecież prodomenę kaspazy 7 ( ); znaczy tylko, że nie mają domen CARD ani DED. Tabela obejmuje 7 z 14 kaspaz – nie ma w niej m.in. kaspazy 12 ze szlaku indukowanego stresem.
+[ŹRÓDŁO] Źródło: Drewa s. 167–169, 172
+
+## Rodzina Bcl-2 – pełna lista i domeny każdego białka  [c03-r-bcl2]
+Część 1 ( ) podała dwie reguły: większość białek antyapoptotycznych ma domeny BH1–BH4, a proapoptotyczne mają BH1–BH3 albo tylko BH3. Kto jest wyjątkiem i które białka mają tylko BH3? Odpowiadają dwie tabele ze źródła.
+
+### Wszystkie białka z tabeli źródła  []
+Źródło zestawia 22 wybrane białka rodziny (genów jest u człowieka 26). Ukośnik łączy nazwy, które źródło podaje razem; pogrubiono białka z części 1.
+[TABELA]
+Proapoptotyczne (16) | Antyapoptotyczne (6)
+Bax , Bak , Bok/Mtd, Bad , Bid , Bim , Bik, Hrk, Bcl-X S , APR/Noxa, PUMA, p193, Bcl-Gs, Bcl-rambo/Mil, Nip3, Nix/BNIP | Bcl-2 , Bcl-X L , Mcl-1 , Bfl-1/A1, Bcl-W , Bcl-B/Boo/Diva
+[/TABELA]
+
+### Które domeny ma które białko?  []
+Schemat źródła pokazuje układ domen 15 białek. Domeny podano w tej samej kolejności co na schemacie (TM – domena transbłonowa; porównaj lewą część ).
+[TABELA]
+Białka | Domeny (kolejność jak na schemacie źródła) | Grupa
+Bcl-2, Bcl-X L , Bcl-W, Bcl-B, Mcl-1 | BH4 – BH3 – BH1 – BH2 – TM | antyapoptotyczne
+Bfl-1 | BH1 – BH2 | antyapoptotyczne
+Bax, Bak, Bok | BH3 – BH1 – BH2 – TM | proapoptotyczne
+Bad, Bid | BH3 | proapoptotyczne
+Bim, Bik, Hrk, APR (Noxa) | BH3 – TM | proapoptotyczne
+[/TABELA]
+Co widać w tabeli?
+- Wyjątkiem od „większości” jest Bfl-1 : chroni komórkę, a ma tylko domeny BH1 i BH2.
+- Białka proapoptotyczne są dwóch typów: z trzema domenami BH (Bax, Bak, Bok) i z samą BH3 (Bad, Bid; z dodatkową domeną TM – Bim, Bik, Hrk, APR).
+- Bid – łącznik szlaku zewnętrznego i wewnętrznego ( ) – należy do białek z samą BH3.
+- Pierwszy i trzeci wiersz różnią się na schemacie tylko domeną BH4: mają ją białka z pierwszego wiersza, a Bax, Bak i Bok – nie.
+[ŹRÓDŁO] Źródło: Drewa s. 166–167
+
+## Szlak zewnętrzny i wewnętrzny – pozostałe receptory, droga przez DAXX, skład megakanału  [c03-r-szlaki]
+Cztery uzupełnienia do podrozdziału o dwóch głównych szlakach ( ; ).
+
+### Jakie receptory śmierci wymienia źródło?  []
+Zasada jest ta sama co dla Fas: ligand wiąże się z receptorem, który w części cytoplazmatycznej ma domenę śmierci DD. Źródło wymienia receptory słowami „zalicza się m.in.” – lista nie jest zamknięta.
+[TABELA]
+Receptor | Inne nazwy, znaczenie nazwy | Ligand
+Fas | CD95, Apo1 | FasL (ligand Fas)
+TNFR1, TNFR2 | receptory czynnika martwicy nowotworów 1 i 2 | TNFα
+TRAIL-R1, TRAIL-R2 | receptory liganda TRAIL | TRAIL
+[/TABELA]
+
+### Jak sygnał biegnie przez DAXX?  [c03-r-daxx]
+W drodze głównej ( ) adaptor FADD chwyta prokaspazę 8 własną domeną DED – sygnał przechodzi przez wiązanie domen. W drodze przez DAXX adaptor włącza kinazę, a sygnał biegnie dalej przez fosforylację:
+- aktywacja receptora Fas angażuje białko adaptorowe DAXX;
+- DAXX angażuje kinazę JNK (ang. Jun-N-terminal Kinase ) – nazwa mówi, co ten enzym fosforyluje: N-koniec białka Jun;
+- JNK fosforyluje N-końcowy odcinek czynnika transkrypcyjnego c-Jun oraz kinazę odpowiedzi zewnątrzkomórkowej ERK i w ten sposób uruchamia kaskadę kaspaz.
+Ta droga działa tylko w niektórych typach komórek i może być modyfikowana: DAXX bywa zastępowane układem sygnalizacyjnym związanym z małymi białkami G z rodziny Rho (Rac-1). Kinazę JNK spotkasz też w szlaku ceramidowym ( ).
+
+### Z czego zbudowany jest megakanał?  [c03-r-megakanal]
+Część 1 ( ) wymienia ANT, VDAC oraz białka Bcl-2 i Bax. Źródło dodaje trzy składniki, ale zastrzega, że istnieje kilka hipotetycznych modeli budowy i działania megakanałów. Kolumnę „Gdzie” odczytano ze schematu źródła, który przedstawia jeden z nich.
+[TABELA]
+Składnik | Gdzie (wg schematu źródła) | Co mówi o nim źródło
+ANT – translokator nukleotydów adeninowych | błona wewnętrzna | zasadniczy element kanału („najczęściej uznaje się”)
+VDAC – poryna | błona zewnętrzna | tworzy kompleks z ANT; przyłącza się do niej Bax zmieniony przez tBid
+BPR – obwodowy receptor benzodiazepiny | błona zewnętrzna, obok VDAC | tworzy kompleks z ANT i VDAC
+kinaza kreatynowa (CK) | między błonami, przy styku ANT i VDAC | enzym, któremu przypisuje się funkcję regulatorową
+peroksydaza glutationowa (GPX) | przy ANT | enzym, któremu przypisuje się funkcję regulatorową
+Bcl-2, Bax | od strony cytoplazmy | łączą się z kanałem; przy wypływie cytochromu c Bax ma znak „+”, Bcl-2 – „–”
+[/TABELA]
+Znaki „+” i „–” powtarzają obrazowo to, co wiesz o bramie mitochondrialnej ( ): Bax ułatwia wypływ cytochromu c, Bcl-2 go hamuje.
+
+### Co dokładnie wychodzi z mitochondrium?  [c03-r-uwalniane]
+Gdy rośnie przepuszczalność PTP, z przestrzeni międzybłonowej do cytoplazmy wychodzą: cytochrom c – zwany też Apaf-2 (ang. Apoptosis protease activating factor-2 ), czynnik indukcji apoptozy AIF, prokaspazy 2, 3 i 9 oraz białko Smac/DIABLO. Nazwa Apaf-2 staje się jasna obok Apaf-1: apoptosom to Apaf-1 + Apaf-2 (cytochrom c) + prokaspaza 9. Zauważ, że prokaspaza 9 też jest na tej liście – wychodzi z mitochondrium, a w cytoplazmie wchodzi do apoptosomu.
+[ŹRÓDŁO] Źródło: Drewa s. 169–171
+
+## Szlak pseudoreceptorowy i ceramidowy – szczegóły  [c03-r-dodatkowe]
+Uzupełnienia do dwóch szlaków dodatkowych z części 1 ( ; A i B).
+
+### Jak granzym dostaje się do komórki?  []
+Inne nazwy: granzym B to GrB lub fragmentyna-2 , granzym A – GrA lub fragmentyna-1 . Granzym B wydziela limfocyt cytotoksyczny T lub komórka NK, a działa on w cytoplazmie komórki docelowej – musi więc przejść przez jej błonę. Źródło podaje trzy drogi:
+- przez kanał, który perforyna tworzy w błonie komórki docelowej – tak uważano początkowo;
+- bez udziału perforyny – na zasadzie endocytozy , czyli wchłonięcia w pęcherzyku utworzonym z błony;
+- bez udziału perforyny – przy udziale receptora mannozo-6-fosforanu.
+Na schemacie źródła drogi 2 i 3 opisano jako endocytozę; obie prowadzą przez endosom – pęcherzyk z wchłoniętą substancją. Granzym A wnika przy udziale perforyny. Ścieżkę z granzymem A – tę bez kaspaz ( ) – indukują wzrost stężenia reaktywnych form tlenu (ROS) i zaburzenia potencjału błonowego mitochondrium.
+
+### Co włącza ceramid – i od czego to zależy?  [c03-r-ceramid]
+Hydrolizując sfingomielinę ( ), sfingomielinaza uwalnia też cholesterol i jednocześnie zmienia przepuszczalność błony. Co aktywuje powstały ceramid, zależy od czynnika stymulującego sygnał, od typu komórki i od rodzaju sfingomielinazy. Tę ostatnią zależność źródło rozpisuje na dwie odnogi:
+[TABELA]
+Sfingomielinaza | Co aktywuje powstały ceramid | Co dalej
+obojętna | kinazy CAPK i MAPK, fosfatazy CAPP | źródło nie podaje
+kwaśna | prawdopodobnie kinazy SAPK/JNK | kaskada kaspaz wykonawczych
+[/TABELA]
+„Prawdopodobnie” to słowo źródła – druga odnoga nie jest pewna. Kinazę JNK znasz już z drogi przez DAXX ( ); w obu szlakach prowadzi do kaskady kaspaz.
+
+### Trzy lipidy, przeciwne skutki  []
+Produkty metabolizmu ceramidu też uczestniczą w apoptozie – i to z przeciwnym skutkiem. Zestaw trzy cząsteczki:
+- ceramid – przekazuje sygnał do apoptozy (przez kinazy do kaspaz);
+- sfingozyna – jest inhibitorem antyapoptotycznych białek Bcl-2 i Bcl-X L , czyli tych, które chronią komórkę; sprzyja więc apoptozie;
+- sfingozyno-1-fosforan , ufosforylowana sfingozyna – hamuje apoptozę: blokuje wypływ cytochromu c i białka Smac/DIABLO z przestrzeni międzybłonowej mitochondrium.
+Sfingozyno-1-fosforan działa więc w tę samą stronę co Bcl-2 i Bcl-X L przy bramie mitochondrialnej ( ). Od sfingozyny różni go jedna reszta fosforanowa – a skutek jest przeciwny.
+[ŹRÓDŁO] Źródło: Drewa s. 172–173
+
+## Zaburzenia apoptozy – cała tabela chorób i leki nasilające apoptozę  [c03-r-zaburzenia]
+Część 1 ( ) podała po pięć chorób z każdej grupy, a o lekach – tylko, że wiele z nich nasila apoptozę. Tu – cała tabela i leki z mechanizmem działania.
+
+### Cała tabela chorób  []
+Źródło podaje same nazwy, bez mechanizmów; kursywą – pozycje spoza części 1. Mechanizm znasz tylko dla nowotworów oraz chorób Alzheimera i Parkinsona.
+[TABELA]
+Nasilenie apoptozy | Zahamowanie apoptozy
+cukrzyca typu I | osteoporoza
+zawał mięśnia serca | białaczka
+choroba Alzheimera | chłoniak
+choroba Parkinsona | raki (np. piersi, prostaty)
+stwardnienie rozsiane | nadczynność tarczycy
+wrzodziejące zapalenie jelita grubego | zespół Smitha
+choroba Hashimoto | układowy toczeń rumieniowaty
+AIDS | 
+[/TABELA]
+Jak wygląda apoptoza w nowotworze, pokazuje zdjęcie preparatu w źródle: w raku gruczołowo-torbielowatym między komórkami nowotworowymi leżą pojedyncze komórki apoptotyczne. Widać w nich kondensację jądra, zmniejszenie komórek i ciałka apoptotyczne – zmiany z .
+
+### W co celują leki nasilające apoptozę?  [c03-r-leki]
+Źródło podaje zasadę: nabłonkowy czynnik wzrostu (EGF) aktywuje szlaki chroniące przed apoptozą. Jak taki szlak wygląda, pokazuje schemat źródła; opisujemy go słowami:
+- od receptora w błonie komórkowej biegną dwie drogi sygnału: Ras → Raf → Mek → Erk oraz PI3K → Akt ;
+- na ich końcu stoją białka proapoptotyczne z rodziny Bcl-2: Erk hamuje Bim , a Akt hamuje Bim i Bax ;
+- na dole schematu jest łańcuch: Bim → Bim-P (postać ufosforylowana) → Bim → Bax → apoptoza;
+- osobno narysowano białko Bcr/Abl ze strzałką do Raf.
+Połącz to z częścią 1: Bax tworzy pory, przez które wypływa cytochrom c ( ). Dopóki sygnał od receptora dociera do Erk i Akt, Bim i Bax są zahamowane, a komórka – chroniona. Jeśli lek przerwie sygnał wyżej, hamowanie znika. W różne ogniwa tej drogi celują leki z tabeli.
+[TABELA]
+Lek | Co hamuje | Miejsce na schemacie | Dlaczego to nasila apoptozę (wg źródła) | Zastosowanie
+cetuksymab | receptor nabłonkowego czynnika wzrostu (EGF); przeciwciało monoklonalne, czyli rozpoznające jeden określony cel | receptor, od strony zewnątrzkomórkowej | EGF aktywuje szlaki chroniące przed apoptozą | rak jelita grubego, rak płaskonabłonkowy skóry
+erlotynib | kinazę tyrozynową związaną z receptorami EGF | receptor, od strony cytoplazmy | źródło nie podaje osobno (ten sam receptor EGF) | niedrobnokomórkowy rak płuca, rak trzustki
+imatynib | kinazę tyrozynową | Bcr/Abl | źródło nie podaje | białaczki
+sorafenib | białko Raf | Raf | źródło nie podaje | rak nerki, wątroby i tarczycy
+bortezomib | proteasom | przy Bim-P | w proteasomie rozkładane są niektóre białka proapoptotyczne | szpiczak mnogi, chłoniaki
+[/TABELA]
+Kinaza tyrozynowa przyłącza reszty fosforanowe do tyrozyny w białkach; proteasom to kompleks rozkładający białka ( ). Bortezomib działa inaczej niż pozostałe leki: nie przerywa sygnału od receptora, tylko hamuje proteasom – niektóre białka proapoptotyczne nie są wtedy rozkładane i apoptoza się nasila. Schemat pokazuje jeszcze szósty lek, którego podpis ryciny nie wymienia: idelalizyb , umieszczony przy PI3K.
+[ŹRÓDŁO] Źródło: Jóźwiak s. 126–127
+
+## Jak oznacza się znaczniki starzenia  [c03-r-metody]
+Część 1 ( ) mówi, co się zmienia w komórce starej i dlaczego to świadczy o starzeniu. Zostaje pytanie praktyczne: jak tę zmianę zobaczyć albo zmierzyć?
+
+### Jakie narzędzia się powtarzają?  []
+Prawie wszystkie znaczniki oznacza się kilkoma narzędziami. Każde z nich wykrywa jedną określoną cząsteczkę albo cechę – barwnikiem, przeciwciałem albo pomiarem:
+- barwienie i mikroskop – w komórce widać barwnik albo barwny produkt reakcji (X-gal, barwienia histochemiczne, DAPI);
+- immunocytochemia – barwienie komórek przeciwciałami, które rozpoznają dane białko;
+- Western blotting – wykrywanie określonego białka wśród białek rozdzielonych w żelu ( );
+- cytometr przepływowy – urządzenie, które bada komórki pojedynczo, jedną po drugiej; pozwala szybko ocenić ilościowo, ile komórek ma daną cechę;
+- ELISA – test z przeciwciałami, który mierzy ilość określonej cząsteczki w próbce;
+- do DNA: FISH ( ) i Southern blotting ( ).
+
+### SA-β-Gal: jedyna procedura opisana krok po kroku  []
+Pomysł: dać enzymowi substrat, z którego powstaje coś widocznego – i to tylko tam, gdzie enzym jest. W wersji mikroskopowej:
+- komórki się utrwala;
+- inkubuje się je w roztworze barwiącym z X-gal – substratem β-galaktozydazy;
+- enzym tnie X-gal i powstaje barwny produkt, który wytrąca się w komórkach jako niebieski osad (precypitat) – widać go w mikroskopie świetlnym.
+Wersja cytometryczna korzysta z tego samego pomysłu, ale z innym substratem: pod wpływem β-galaktozydazy emituje on zieloną fluorescencję. Produkt nie wytrąca się, tylko świeci, a wynik jest liczbą – ile komórek ma podwyższoną aktywność SA-β-Gal. Taka ocena jest szybka. Ponieważ żaden znacznik nie jest swoisty ( ), metody się łączy – np. SA-β-Gal z zatrzymaniem w cyklu.
+
+### Tabela metod  []
+[TABELA]
+Znacznik | Jak się go oznacza (wg źródła)
+SA-β-Gal | mikroskop świetlny: X-gal → niebieski osad; cytometr przepływowy: substrat dający zieloną fluorescencję
+ziarnistość | cytometr przepływowy lub obserwacja mikroskopowa
+lipofuscyna | barwienia histochemiczne
+wimentyna | barwienia immunocytochemiczne, Western blotting
+proliferacja: liczba komórek | zliczanie komórek (przy zahamowaniu proliferacji liczba się nie zmienia)
+proliferacja: BrdU, EdU | immunocytochemicznie, techniką ELISA, cytometrem przepływowym
+Ki67 | immunocytochemicznie
+inhibitory cyklu (p16, p21 i inne), cyklina D1 | m.in. Western blotting
+zatrzymanie w cyklu | cytometr przepływowy
+DNA-SCARS; PML | barwienia immunocytochemiczne
+SAHF | barwienie jądra DAPI; znakowanie na obecność histonu H3 zmetylowanego na lizynie 9, białka HP1, histonu makroH2A, białka HMGA
+długość telomerów | FISH, Southern blotting
+lamina B1 | barwienia immunocytochemiczne, Western blotting
+8-oksydG, 8-oksyGua | oznaczane w jądrowym DNA narządów (gryzonie) oraz w leukocytach i w moczu (ludzie); techniki źródło nie podaje
+metylacja DNA | poziom 5-metylocytozyny (5-mC); techniki źródło nie podaje
+SASP | cytometr przepływowy, ELISA
+zmiana morfologii; DEC1, DCR2 | źródło nie podaje metody
+[/TABELA]
+[ŹRÓDŁO] Źródło: Alster s. 139–144
+
+## Znaczniki starzenia: morfologia, lizosomy i cykl – doświadczenia i liczby  [c03-r-cykl]
+Część 1 ( ) podaje uogólnienia, np. „komórki stare mają mniej aktyny”. Tu – doświadczenia, z których pochodzą. Często dotyczą jednej linii komórkowej (komórek jednego pochodzenia utrzymywanych w hodowli i oznaczanych symbolem, np. TIG3) albo jednego gatunku. Wiele doświadczeń ma ten sam schemat: zwiększyć w komórkach ilość białka ( nadprodukcja ) albo ją obniżyć – i sprawdzić, czy pojawią się znaczniki starzenia.
+
+### Kształt komórki  []
+Powiększenie i spłaszczenie opisano w komórkach prawidłowych (ludzkie komórki mięśni gładkich, fibroblasty) oraz w liniach nowotworowych: ludzkich komórkach raka okrężnicy HCT116, liniach glejaka U343 MG-A, U87 MG i U343 MG, linii kostniakomięsaka U2OS i ludzkich komórkach raka piersi MCF-7. Starzenie wywołane onkogenem może zmieniać komórkę także inaczej: w melanocytach starzejących się wskutek nadekspresji onkogenu RAS stwierdza się intensywną wakuolizację (powstaje wiele wodniczek), a melanocyty starzejące się wskutek nadekspresji onkogenu BRAF mają wrzecionowate jądra.
+
+### SA-β-Gal: skąd wiadomo, że to tylko znacznik?  [c03-r-sabgal]
+Znacznik opisali Dimri i wsp. Był przydatny także w badaniu starzenia u gryzoni i naczelnych; stosuje się go też u starzejących się organizmów modelowych, np. danio pręgowanego i C. elegans .
+Część 1 ( ) mówi, że wzrost aktywności SA-β-Gal wynika prawdopodobnie z większej liczby lizosomów i nie jest przyczyną starzenia. Za tym, że enzym nie jest do starzenia niezbędny, przemawiają dwa dowody:
+- fibroblasty pacjentów z gangliozydozą GM1, którym brakuje β-galaktozydazy, ulegały starzeniu replikacyjnemu i przyspieszonemu – wywołanemu adriamycyną, związkiem indukującym uszkodzenia DNA – bez wzrostu aktywności SA-β-Gal;
+- obniżenie poziomu β-galaktozydazy technikami siRNA lub shRNA (wyciszanie genów – ) w komórkach prawidłowych i nowotworowych nie hamuje indukcji starzenia.
+Komórki starzeją się więc także bez tego enzymu: SA-β-Gal jest znacznikiem, a nie warunkiem starzenia.
+
+### Cytoszkielet w liczbach  [c03-r-cytoszkielet]
+Wimentyna ma masę 58 kDa i wykazuje dużą homologię międzygatunkową (jest podobna u różnych gatunków). Zdanie z części 1, że jej poziom rośnie z liczbą podziałów, opiera się na liniach fibroblastów:
+- w embrionalnych fibroblastach linii TIG3 poziom wimentyny rósł wraz z liczbą podziałów;
+- ludzkie fibroblasty skórne linii TIG101, które uległy starzeniu, miały ponad dwukrotnie więcej wimentyny niż komórki TIG3 na wczesnym pasażu;
+- płodowe fibroblasty skórne linii TIG3S miały jej istotnie mniej niż TIG101.
+Komórki, które uległy starzeniu, miały też czterokrotnie niższy poziom aktyny i dwukrotnie niższy poziom tubuliny niż komórki młode.
+
+### Cykl: kompleksy cyklin i pełne symbole inhibitorów  [c03-r-cykl-tlo]
+Przypomnienie cyklu w części 1 ( ) pomija, który kompleks cykliny z CDK dominuje w której fazie (więcej – ): G1 – cyklina D–CDK4/CDK6 i cyklina E–CDK2; S – cyklina A–CDK2; G2 – cyklina A–CDK1; M – cyklina B–CDK1 (ten ostatni kompleks pokazuje tylko schemat artykułu).
+Pełne symbole inhibitorów: klasa INK4/ARF – p15 INK4B , p16 INK4A , p18 INK4C , p19 INK4D ; klasa CIP/KIP – p21 CIP1 (też p21 WAF1/CIP1 ), p27 KIP1 , p57 KIP2 .
+
+### p16 – co jeszcze trzeba wiedzieć?  []
+Pełna lista nowotworów, w których brak p16 ( ): glejak wielopostaciowy, czerniak, gruczolakorak trzustki, niedrobnokomórkowy rak płuc, rak pęcherza i rak ustnej części gardła.
+Autorzy odnotowują też dane, według których sam wzrost poziomu p16 jest wystarczającym dowodem starzenia komórkowego. Zestaw to z tym, co już wiesz: p16 rośnie także poza starzeniem – w gruczole mlekowym – a końcowy wniosek autorów brzmi, że trzeba badać kilka znaczników naraz. Artykuł tej rozbieżności nie rozstrzyga.
+
+### Pozostałe inhibitory i cyklina D1 – z jakich doświadczeń?  [c03-r-inhibitory]
+Tabela pokazuje, na czym opiera się zdanie z części 1, że istotną rolę w starzeniu odgrywają też pozostałe inhibitory. Zwróć uwagę na ostatnią kolumnę: każda obserwacja dotyczy konkretnego materiału.
+[TABELA]
+Białko (klasa) | Co zaobserwowano | W jakich komórkach lub tkankach
+p15 (INK4/ARF) | starzeniu towarzyszy wzrost poziomu; poziom wyższy w zmianach łagodnych niż w nowotworach złośliwych; korelacja ze wzrostem aktywności SA-β-Gal i obecnością SAHF | skóra, płuca, trzustka
+p19 Ink4d (INK4/ARF) | poziom rośnie z wiekiem, ale słabiej niż p16 Ink4a | gryzonie
+p19 Arf (u ludzi odpowiednik: p14 ARF ) | jego wzrost towarzyszy wzrostowi p16 Ink4a | gryzonie
+p57 (CIP/KIP) | nadprodukcja → zatrzymanie w fazie G1, wzrost aktywności SA-β-Gal, komórki duże i płaskie | komórki raka prostaty linii PPC-1; to samo po wprowadzeniu p57 do trzech linii glejaka (U343 MG-A, U87 MG, U343 MG)
+p57 | poziom rośnie wraz z liczbą podziałów | linia HUC ( human uroepithelial cells )
+p27 i p21 (CIP/KIP) | nadprodukcja indukuje starzenie | ludzkie komórki kostniakomięsaka linii U2OS
+cyklina D1 | znacznik starzenia; wzrost poziomu | nowotworowe komórki nabłonkowe (epitelialne); wzrost także w komórkach mięśni gładkich
+[/TABELA]
+[RAMKA przyklad] Do komórek raka prostaty linii PPC-1 wprowadzono p57. Po czym poznać, że zaczęły się starzeć? Z części 1 wiesz, że jeden znacznik nie wystarcza, i znasz kilka, które da się sprawdzić w hodowli: kształt komórki, aktywność SA-β-Gal, zatrzymanie w cyklu. Te właśnie zmiany zaobserwowano: zatrzymanie w fazie G1, wzrost aktywności SA-β-Gal, komórki duże i płaskie – trzy znaczniki naraz.
+Dwie obserwacje warto zestawić z częścią 1. p15 zachowuje się jak DEC1 i DCR2 ( ): jego poziom jest wyższy w zmianach łagodnych niż w nowotworach złośliwych. Cyklina D1 jest cykliną, a nie inhibitorem – znacznikami starzenia są więc nie tylko inhibitory, ale i cykliny. I jeszcze jedno uzupełnienie: zatrzymanie w fazie G2 w starzeniu replikacyjnym opisano w pracy Mao i wsp.
+[ŹRÓDŁO] Źródło: Alster s. 138–141
+
+## Znaczniki starzenia: DNA, chromatyna i SASP – szczegóły  [c03-r-chromatyna]
+Uzupełnienia do znaczników jądrowych i do SASP z części 1 ( ).
+
+### DNA-SCARS: kiedy zmienił się pogląd?  []
+Do niedawna uważano, że starzenie przyspieszone mogą indukować uszkodzenia w telomerowym i nietelomerowym DNA. W 2012 r. kilka zespołów badawczych pokazało, że trwała aktywacja szlaku DDR jest wynikiem uszkodzeń w odcinkach telomerowych.
+
+### Jak powstają SAHF?  [c03-r-sahf]
+SAHF opisali po raz pierwszy w 2003 r. Narita i wsp., w ludzkich fibroblastach. Najpierw zapis: H3K9me to histon H3 z grupą metylową (me) na lizynie (K) w pozycji 9; cyfra na końcu (H3K9me2, H3K9me3) podaje liczbę grup metylowych. Tak samo H3K27me3 – trzy grupy metylowe na lizynie 27.
+Część 1 ( ) mówi tylko, że SAHF powstają etapami. Kolejność według źródła:
+- Przed powstaniem SAHF białka HIRA i HP1 przemieszczają się do ciałek PML-NB; w tym początkowym etapie biorą udział ASF1a, HIRA i PML.
+- Pierwszy etap – kondensacja chromosomów. Odpowiadają za nią białka opiekuńcze histonów HIRA i ASF1a. Widać ją po barwieniu DAPI, zanim skupiska wzbogacą się w HP1, makroH2A i H3K9me.
+- Kolejny krok – metylacja histonu H3 na lizynie 9.
+- Następnie powstaje miejsce wiązania białka HP1 i wbudowuje się histon makroH2A.
+Udział HIRA i ASF1a potwierdzają doświadczenia w obie strony: nadprodukcja HIRA lub ASF1a w komórkach pierwotnych (pobranych wprost z organizmu) przyspiesza tworzenie SAHF, a wyciszenie ASF1a hamuje je w starzeniu indukowanym nadekspresją onkogenu RAS. SAHF nie powstają też w komórkach pozbawionych kinaz ATM lub ATR – kluczowych w szlaku odpowiedzi na uszkodzenia DNA.
+Składniki SAHF mają warianty: histon makroH2A – makroH2A1.1, 1.2 i 2; białka HP1 – HP1α, β i γ; białka HMGA – HMGA1 i 2. A to, że pojawienie się SAHF zależy od typu komórek, pokazują fibroblasty: w starzeniu replikacyjnym linii IMR90 i WI38 SAHF powstają, w linii BJ – nie; gdy jednak starzenie komórek BJ wywołano nadekspresją onkogenów, SAHF się pojawiały.
+
+### Budowa SAHF – i czy znacznik napędza proces?  []
+Początkowo nie umiano rozróżnić modyfikacji H3K9me3, H3K9me2, H3K9me i H3K27me, bo wokół modyfikowanej lizyny leżą identyczne aminokwasy; pomogły bardziej specyficzne przeciwciała. Okazało się, że SAHF mają budowę warstwową: rdzeń bogaty w H3K9me3 otacza pierścień, w którym dominuje H3K27me3.
+Teraz paradoks. Po H3K9me i HP1 rozpoznaje się SAHF. Podczas tworzenia SAHF rośnie poziom HP1, które wiąże się z H3K9me3, ale poziom samego H3K9me3 znacznie nie rośnie. Pozbawienie ludzkich fibroblastów H3K9me3 lub H3K27me3 nie uniemożliwia powstawania SAHF; nie uniemożliwia go też obniżenie poziomu białek HP1. Znacznik nie musi więc być tym, co proces napędza – tak samo jak SA-β-Gal ( ).
+
+### Białko PML  []
+PML opisano po raz pierwszy u osób z ostrą białaczką promielocytarną – stąd nazwa (ang. promyelocytic leukemia ). Ciałka PML-NB nazywa się też ND10 i POD; wśród ich ponad 50 białek są także helikazy i topoizomerazy. Związek ze starzeniem ( ) potwierdzają dwie obserwacje: nadekspresja onkogenu RAS indukuje starzenie, któremu towarzyszy więcej PML-NB niż w komórkach kontrolnych, a w obrębie PML-NB stwierdzono wtedy białka Rb i p53; w fibroblastach linii IMR90 starzeniu replikacyjnemu towarzyszył wzrost poziomu białka PML.
+
+### Telomery i lamina B1  []
+Sześć szelteryn to TRF1, TRF2, POT1, TIN2, TPP1 i Rap1 (pełne nazwy – ).
+Spadek laminy B1 wymaga szlaku p16–pRb albo p53–p21 ( ). Źródło dodaje, od czego nie zależy: od białek p38 i ATM ani od czynnika transkrypcyjnego NF-κB. Starzeniu może też towarzyszyć wzrost poziomu reaktywnych form tlenu, ale obniżenie ich poziomu nie hamowało spadku laminy B1. Spadek laminy B1 nie zależy więc ani od kinazy ATM ze szlaku DDR, ani od białek regulujących SASP (p38, NF-κB – niżej), ani od poziomu ROS.
+
+### Uszkodzenia oksydacyjne i metylacja  []
+Wolnorodnikową teorię starzenia ( ) sformułował Denham Harman w 1956 r.; według niej wolne rodniki odgrywają krytyczną rolę w starzeniu organizmu. U ludzi poziom 8-oksydG był wyższy w dwóch grupach o średniej wieku 67 i 50 lat niż u osób w wieku ok. 31 lat; wykazano dodatnią korelację między poziomem 8-oksydG a wiekiem (badano leukocyty i mocz). Metylacja: po transformacji komórek wirusem SV-40 poziom 5-metylocytozyny pozostaje stały – nie spada z kolejnymi pasażami.
+
+### Co steruje wydzielaniem SASP?  [c03-r-sasp]
+Część 1 ( ) opisuje jedną drogę: IL-1α → receptor IL1R → NF-κB → geny IL-6 i IL-8. Źródło wymienia więcej regulatorów aktywności SASP:
+- niektóre białka szlaku odpowiedzi na uszkodzenia DNA: ATM, NBS1 i CHK2;
+- czynniki transkrypcyjne NF-κB i C/EBP-β;
+- kinazę p38MAPK – pojawia się pod wpływem nadekspresji onkogenu RAS i promieniowania X i indukuje SASP przez aktywację NF-κB.
+W obu drogach opisanych krok po kroku – od IL-1α i od p38MAPK – sygnał biegnie przez NF-κB. Rolę p38MAPK potwierdza doświadczenie: inhibitor tej kinazy zmniejszał wydzielanie większości elementów SASP. Zaskakujące jest co innego: inaktywacja białka p53 zwiększa wydzielanie niektórych elementów SASP – choć szlak p53–p21 prowadzi do starzenia.
+[ŹRÓDŁO] Źródło: Alster s. 141–144
+
+## Skróty z tego rozdziału – pełne nazwy  [c03-r-skroty]
+Skrót, pełna nazwa angielska (jak w źródłach) i krótkie przypomnienie. Pominięto skróty rozwinięte w tekście części 1 (np. DISC, CARD, SASP).
+[TABELA]
+Apoptoza | Pełna nazwa · czym jest
+ANT | Adenine Nucleotide Translocator · element megakanału
+Apaf-2 | Apoptosis protease activating factor-2 · cytochrom c
+BPR | Peripheral Benzodiazepine Receptor · składnik megakanału
+CAPK, CAPP | Ceramide-Activated Protein Kinases, … Phosphatase · kinazy i fosfataza aktywowane przez ceramid
+CK, GPX | kinaza kreatynowa, peroksydaza glutationowa (megakanał)
+DAXX | Death Adapter Protein / Death-Associated Protein · adaptor drogi od Fas
+ERK | Extracellular Signal-regulated Kinase · kinaza odpowiedzi zewnątrzkomórkowej
+FADD | Fas-Associated Death Domain · adaptor szlaku zewnętrznego
+GrA, GrB | granzym A (fragmentyna-1), granzym B (fragmentyna-2)
+ICAD | Inhibitor of Caspase-Activated DNase · substrat kaspaz
+ICE | Interleukin Converting Enzyme · pierwsza poznana kaspaza
+JNK | Jun-N-terminal Kinase · kinaza drogi DAXX i ceramidowej
+MAPK | Mitogen-Activated Protein Kinases · aktywowane przez mitogeny
+SAPK | Stress Associated Protein Kinase · związane ze stresem
+Smac/ DIABLO | Second mitochondrial activator of caspase / Direct IAP Binding protein with Low pI · uwalniane z mitochondrium
+TM | Transmembrane Domain · domena transbłonowa
+TNFR1, 2 | Tumor Necrosis Factor Receptor 1, 2 · receptory śmierci
+TRAIL-R1, R2 | TNF-Related Apoptosis-Inducing Ligand-R1, R2 · receptory śmierci
+VDAC | Voltage Dependent Anion Channel · poryna mitochondrium
+WD-40 | WD-40 repeats · domena powtórzeń WD w Apaf-1
+[/TABELA]
+[TABELA]
+Starzenie | Pełna nazwa · czym jest
+ATM | Ataxia telangiectasia mutated · kinaza szlaku DDR
+C/EBP-β | CCAAT-enhancer-binding proteins · regulator SASP
+CHK2 | checkpoint kinase 2 · szlak DDR, regulator SASP
+CIP/KIP | CDK interacting protein / kinase inhibitory protein · klasa inhibitorów
+CKI | cyclin-dependent kinase inhibitors · inhibitory CDK
+DEC1 | differentiated embryo-chondrocyte expressed-1 · znacznik po onkogenach
+DNA-SCARS | DNA segments with chromatin alterations reinforcing senescence
+FISH | fluorescence in situ hybridization · pomiar telomerów
+HMGA | High Mobility Group A · składnik SAHF
+HP1 | heterochromatin protein-1 · składnik SAHF
+HUC | human uroepithelial cells · linia komórkowa
+INK4/ARF | Inhibitor of kinase 4 / alternative reading frame · klasa inhibitorów
+NBS1 | Nijmegen breakage syndrome protein-1 · szlak DDR, regulator SASP
+NF-κB | nuclear factor kappa-light-chain-enhancer of activated B cells · regulator SASP
+PML-NB | PML nuclear bodies ; inaczej ND10 ( nuclear bodies ), POD ( promyelocytic oncogenic domains )
+POT1, Rap1, TIN2, TRF1, TRF2 | szelteryny: protection of telomeres 1 ; repressor-activator protein 1 ; TRF1-interacting nuclear protein 2 ; telomeric repeat binding factor 1, 2
+SAHF | senescence associated heterochromatin foci
+SMS | senescence-messaging secretome · inna nazwa SASP
+TIF | telomere dysfunction-induced foci · skupiska DDR przy telomerach
+[/TABELA]
+[ŹRÓDŁO] Źródło: Drewa s. 165–172 · Alster s. 138–144
+
+
+======== E. ŹRÓDŁA (przycięte do zakresu z mapy) ========
+
+
+---------- drewa_r08.txt (s. 165–174) ----------
+[Strona 165]
+
+APOPTOZA
+
+— Alina Grzanka, Tomasz Drewa
+
+rola białek Bcl-2 i kaspaz w procesie apoptozy
+szlaki sygnałowe apoptozy
+
+fizjologiczna i patologiczna rola apoptozy
+znaczenie apoptozy w przebiegu różnych chorób
+pytania
+
+piśmiennictwo
+
+Termin „apoptoza” pochodzi od greckiego słowa apoptosis (opadanie płatków kwiatowych lub liści z drzew), został on wprowadzony w 1972 r. przez J.F. Kerra, A.H. Wylliego
+i A.R. Currie. Określa on zespół zmian morfologicznych i biochemicznych prowadzących
+do kontrolowanej śmierci komórki z pominięciem procesu zapalnego. Apoptoza jest stanem fizjologicznym, który wymaga ekspresji wielu genów oraz nakładu energii. Genetyczne podstawy apoptozy oraz udział ekspresji genów w regulacji apoptozy poznano najpierw
+u nicienia Caenorhabditis elegans. Badania prowadzone przez R. Horovitza, S. Brennera
+i J. Sulstona zostały uhonorowane w 2002 r. Nagrodą Nobla. Apoptoza nazywana jest też
+programowaną lub samobójczą śmiercią komórki (PCD — Programmed Cell Death), terminy
+te używane są często zamiennie. Pierwotnie określenie „programowana śmierć komórki”
+stosowano tylko przy opisie śmierci zachodzącej podczas procesów fizjologicznych, warunkujących prawidłowe funkcjonowanie organizmu zarówno na etapie embrionalnym, jak
+i w późniejszym okresie. Obecnie termin „apoptoza” stosuje się do opisu zmian przebiegających w umierającej komórce, niezależnie od tego czy śmierć komórki zachodzi podczas
+rozwoju organizmu, czy jest indukowana przez czynniki zewnętrzne.
+
+8.1
+Apoptoza
+
+Apoptoza dotyczy przeważnie pojedynczych
+komórek i trwa od kilku do kilkunastu godzin. Efektem tego procesu jest utrata wody
+w komórce, a w konsekwencji jej obkurczenie.
+W wyniku przemieszczenia się fosfatydyloseryny z wewnętrznej do zewnętrznej warstwy
+błony komórkowej dochodzi do zaburzenia
+jej asymetrii. Pierwszym morfologicznym
+objawem świadczącym o rozpoczęciu procesu
+apoptozy są zmiany w jądrze komórkowym.
+
+Dochodzi do kondensacji chromatyny, która
+umiejscawia się pod otoczką jądrową (marginalizacja chromatyny) (ryc. 8.1). Następnie
+obkurcza się jądro komórkowe i dochodzi do
+jego fragmentacji. Następuje również kondensacja cytoplazmy, a na powierzchni komórki tworzą się charakterystyczne pęcherzyki. Ostatecznie komórka rozpada się na
+fragmenty otoczone błoną komórkową, są to
+tzw. ciałka apoptotyczne. Struktury te zawierają resztki chromatyny i cytoplazmy oraz
+niezmienione organella komórkowe, które
+fagocytowane są przez sąsiadujące komórki
+lub makrofagi (ryc. 8.1 i 8.2).
+
+[Strona 166]
+
+166
+
+8 APOPTOZA
+
+Ryc. 8.1 Komórka w stadium apoptozy (elektronogram z arch. A. Grzanka, Katedra Histologii
+i Embriologii Collegium Medicum UMK).
+
+8.1.1
+
+Rola rodziny biatek Bcl-2
+w procesie apoptozy
+
+Rodzina białek Bcl-2 (B-cell CLL/lymphoma 2) jest dużą, heterogenną grupą białek regulujących proces apoptozy. Gen bcl-2 po raz
+pierwszy został zidentyfikowany w 1986 r.
+jako onkogen aktywowany przez charakterystyczną translokację t(14;18) obecną w 95%
+
+kondensacja i marginalizacja
+
+chromatyny
+
+obkurczenie jądra
+
+obkurczenie
+komórki
+
+pęcherzyki
+
+przypadków  nieziarniczych chłoniaków
+grudkowatych. Antyapoptotyczne działanie
+białka Bcl-2 poznano na podstawie homologicznej struktury i funkcji białka Ced-9
+u Caenorhabditis elegans. Dotychczas u ludzi zidentyfikowano 26 genów należących
+do rodziny BCL-2 (http://www.apoptosis-
+-db.org/), z których kilka produkuje dwa lub
+więcej białek przez splicing alternatywny
+mRNA, wywołujących przeciwstawne działanie w procesie regulacji apoptozy, np. Bcl-
+-Xr oraz Bcl-Xg. Białka Bcl-2 zostały podzielone na dwie grupy (tab. 8.1).
+
+Pierwszą grupę stanowią białka proapoptotyczne, np. Bax, Bak, Bok/Mtd, Bad, Bid,
+Bim, Bik, Hrk, Bcl-Xs, których nadekspresja
+prowadzi do śmierci komórki. Druga grupę
+
+Tabela 8.1 Wybrane białka rodziny Bcl-2
+Bax Bcl-2
+Bak Bcl-XL
+Bok/Mtd Mcl-1
+Bad Bfl-1/A1
+Bid Bcl-W
+Bim Bcl-B/Boo/Diva
+Bik
+Hrk
+Bcl-Xs
+APR/Noxa
+PUMA
+p193
+Bcl-Gs
+Bcl-rambo/Mil
+Nip3
+Nix/BNIP
+ciągłość błony ciałka
+komórkowej apoptyczne
+
+fragmenty jądra
+fagocytoza
+
+Ryc. 8.2 Cechy morfologiczne komórki w stadium apoptozy (schemat).
+
+[Strona 167]
+
+tworzą białka antyapoptotyczne, np. Bcl-2,
+Bcl-X,, Mcl-1, Bfl-1/A1, Bcl-W, Bcl-B/Boo/
+/Diva, zwiększające prawdopodobieństwo
+przeżycia komórki. Białka rodziny Bcl-2
+charakteryzują się obecnością od jednej do
+czterech domen BH (Bcl-2 homology domain)
+(ryc. 8.3).
+
+Większość białek działających antyapoptotycznie wykazuje pełną homologię
+strukturalną w zakresie domen BH1 — BH4,
+natomiast grupa białek proapoptotycznych
+wykazuje homologię w zakresie domen BH1
+— BH3 lub tylko w obrębie domeny BH3. Niektóre białka rodziny Bcl-2 mają także transbłonową domenę TM (Transmembrane Domain) o charakterze hydrofobowym, która
+prawdopodobnie odgrywa rolę w lokalizacji
+tej grupy białek. Antyapoptotyczne produkty genów Bcl-2 zlokalizowane są głównie w zewnętrznej błonie mitochondrialnej.
+Występują one również w błonie siateczki
+śródplazmatycznej, a także w otoczce jądrowej. Ich główną rolą jest stabilizacja błony
+mitochondrialnej, przeciwdziałanie stresowi oksydacyjnemu oraz zapobieganie uwalnianiu cytochromu c, który w konsekwencji
+nie wiąże się z czynnikiem aktywującym
+apoptozę Apaf-1. Proapoptotyczne białka rodziny Bcl-2 zlokalizowane są w cytozolu i po
+odpowiednim sygnale oddziałują z białkami
+antyapoptotycznymi, powodując hamowanie lub rozpoczęcie procesu śmierci komórki na drodze apoptozy. Białka rodziny Bcl-2
+regulują też działanie kaspaz we wszystkich
+szlakach apoptozy oraz stężenie jonów Ca?*
+w komórce.
+
+8 APOPTOZA
+
+8.1.2
+
+Rola kaspaz w procesie
+apoptozy
+
+Kaspazy należą do rodziny wysoko konserwatywnych proteaz cysteinowych, w których
+reszta cysteinowa pełni funkcję katalitycznego nukleofila, przyczyniając się w ten sposób
+do trawienia białek. Hydroliza wiązań peptydowych przebiega w sąsiedztwie kwasu asparaginowego. Pierwszy przedstawiciel rodziny
+kaspaz został zidentyfikowany jako enzym
+konwertujący interleukiny pro-IL-18 (ICE,
+Interleukin Converting Enzyme) w aktywną
+interleukinę 16. Kluczową rolę ICE w procesie apoptozy dowiedziono dzięki sklonowaniu genu ced-3 u Caenorhabditis elegans,
+którego produkt wykazuje podobieństwo do
+enzymu konwertującego interleukinę 18. Dotychczas zidentyfikowano 14 kaspaz, wśród
+których wyróżnia się kaspazy inicjatorowe
+(indukujące proces apoptozy) oraz efektorowe (wykonawcze) (tab. 8.2).
+
+Kaspazy inicjatorowe aktywowane są
+przez autoproteolizę, natomiast wykonawcze
+są aktywowane na drodze proteolizy przez
+wcześniej aktywowane kaspazy inicjujące.
+Z udziałem kaspaz wykonawczych następuje
+proteoliza licznych białek cytoplazmatycznych i jądrowych, m.in. niektórych białek cytoszkieletu komórki (lamin, aktyny, fodryny),
+inhibitora CAD (Inhibitor of Caspase-Activated DNase), polimerazy poli(ADP)-rybozy
+(PARP) oraz bialek Rb i MDM2. Wszystkie
+kaspazy wystepuja w komorce w postaci nie-
+
+—{BH4| {BH3}—BH1| [BH2}—TM} Bcl-2, Bcl-X,, Bcl-W, Bcl-B, Mcl-1
+[BH3|—BH1 |BH2)—| TM} Bax, Bak, Bok
+[BH1] [BH2| Bfl-1
+[BH3] Bad, Bid
+[BH3| {TM} Bim, Bik, Hrk, APR
+
+Ryc. 8.3 Struktura wybranych białek rodziny Bcl-2.
+
+167
+
+[Strona 168]
+
+168
+
+8 APOPTOZA
+
+Tabela 8.2 Charakterystyka kaspaz inicjatorowych i wykonawczych w procesie apoptozy
+
+SS _ > Lokalizacja
+
+owe
+
+nn a rornosomi
+
+Kaspazy kaspaza 2 | 1CARD+ 48,8 7q34-q35
+inicjatorowe (ICH-1) p20+p10
+
+kaspaza 8 2DED+ 55 2q33-q34
+
+(MACH, FLICE, Mch5) p20+p10
+
+kaspaza 9 1CARD+ 50 1p36.3-p36.1
+
+(ICE-LAP6, Mch6) p20+p10
+
+kaspaza 10 2DED+ 55 2q33-q34
+
+(Mch-4) p20+p10
+Kaspazy kaspaza 3 p20+p10 32 4q34
+wykonawcze (CPP32, Apopain, Yama)
+
+kaspaza 6 p20+p10 34 4q25
+
+(Mch-2)
+
+kaspaza 7 p20+p10 34 10q25
+
+(Mch3, ICE-LAP-3, CMH-1)
+
+aktywnych proform zwanych zymogenami.
+Badania za pomocą krystalografii rentgenowskiej oraz sekwencjonowanie białek wykazały, że powstające kaspazy syntetyzowane
+są jako katalitycznie nieczynne, trzyczęściowe proenzymy o masie 32-55 kDa. Prokaspazy zawierają trzy domeny, dużą wewnętrzną
+(p20) o wielkości 17-21 kDa z podjednostką
+katalityczną (centrum katalityczne), małą
+C-końcową (pl0) o wielkości 10-13 kDa,
+zwaną małą podjednostką katalityczną, oraz
+N-końcową prodomeną o wielkości 3-24 kDa,
+zwaną domeną śmierci DD (Death Domain)
+(ryc. 8.4).
+
+W budowie większości prokaspaz podjednoski p20 i pl0 oddzielone są sekwencją
+łącznikową. Duża N-końcowa prodomena zawiera 80-100 reszt długiego motywu
+zaangażowanego w transdukcję sygnałów
+apoptozy. Domena DD ma dwie subdomeny
+— wykonawczą domenę śmierci DED (Death
+Effector Domain) oraz domenę aktywacji i rekrutacji kaspaz CARD (Caspase Recruitment
+Domain), składające się z ułożonych nierównolegle a-helis o charakterze amfipatycznym, które oddziałują z innymi białkami za
+pośrednictwem interakcji elektrostatycznych
+lub hydrofobowych.
+
+8.2
+
+Szlaki sygnatowe
+apoptozy
+
+Proces apoptozy, w zależności od rodzaju komórki i czynnika indukującego, może
+przebiegać różnymi szlakami. Do najlepiej
+poznanych należą: szlak związany z błoną
+komórkową, tzw. zewnętrzny, szlak mitochondrialny zwany wewnętrznym, a także
+szlak angażujący perforyny i granzym B, czyli pseudoreceptorowy. Apoptoza może również odbywać się na szlaku sfingomielinowo-ceramidowym oraz przebiegać szlakiem
+indukowanym stresem.
+
+8.2.1
+Zewnetrzny szlak apoptozy
+
+Najwcześniej i najlepiej poznanym szlakiem
+sygnalizacyjnym apoptozy jest Ścieżka zewnętrzna nazywana również receptorową
+(ryc. 8.5). Uczestniczą w niej struktury błonowe zwane receptorami śmierci oraz ich ligandy. Receptorami śmierci są transbłonowe
+białka, które należą do nadrodziny recep-
+
+[Strona 169]
+
+8 APOPTOZA
+
+reszta cysteinowa
+
+w obrębie konserwatywnego
+
+fragmentu QACxG
+
+sekwencja łącznikowa
+
+asp-x asp-x | asp-x
+duża mała
+prodomena podjednostka (p20) podjednostka (p10)
+3-24 kDa 17-21 kDa 10-13 kDa
+fragment - : - fragment
+N-końcowy DED/CARD podjednostkaa © podjednostka B | ©-końcowy
+32-55 kDa
+PROKASPAZA
+| p20 © |
+| pio |
+| p10 |
+[| © p20 |
+AKTYWNA KASPAZA
+
+Ryc. 8.4 Budowa kaspaz (schemat).
+
+torów dla czynnika martwicy nowotworów
+TNE (Tumor Necrosis Factor). W ich strukturze wyróżnia się trzy domeny: zewnątrzkomórkową, umożliwiającą rozpoznawanie
+określonych ligandów, transbłonową oraz cytoplazmatyczną zawierającą domeny śmierci
+(DD). Do rodziny receptorów TNF zalicza się
+m.in. receptory TNFR1 oraz TNFR2 (Tumor
+Necrosis Factor Receptor 1, 2), Fas/CD95/
+Apol, a także TRAIL-R1 i TRAIL-R2 (TNF-
+-Related Apoptosis-Inducing Ligand-R1, R2).
+W wyniku połączenia się wyżej wymienionych receptorów z odpowiednim dla nich
+ligandem następuje indukcja sygnału uruchamiającego szlak zewnętrzny apoptozy. Ligandem dla receptorów TNFR1 oraz TNFR2
+jest TNFa, dla receptora Fas/CD95/Apol
+ligandem jest Fas (FasL), natomiast receptory TRAIL-RI1 lub -R2 łączą się z ligandem
+TRAIL. Najlepiej poznanym i najczęściej opisywanym szlakiem zewnętrznym jest ścieżka z udziałem receptora Fas/CD95/Apol.
+Po związaniu się liganda FasL z receptorem
+
+Fas/CD95/Apol sygnał indukujący apoptozę
+zostaje przekazany za pośrednictwem białka
+adaptorowego FADD (Fas-Associated Death
+Domain), które poprzez domenę DD na swoim C-końcu łączy się z domeną DD receptora
+Fas.
+
+Następnie przez domenę efektorową
+śmierci DED występującą na jego N-końcu,
+białko to łączy się z podobną domeną zlokalizowaną na nieaktywnym jeszcze białku inicjatorowym - prokaspazie 8 lub 10.
+W wyniku połączenia tych elementów powstaje kompleks sygnałowy DISC (Death
+Inducing Signaling Complex), dzięki któremu
+prokaspaza 8 lub 10 przekształca się w czynną kaspazę 8 lub 10. Zachodzi wówczas inicjacja kaspaz wykonawczych (3, 6, 7), które
+powodują proteolizę m.in. lamin oraz białek
+cytoszkieletu, co nieuchronnie prowadzi do
+śmierci komórki. Aktywacja receptora Fas
+może się odbywać także przez białko adaptorowe DAXX (Death Adapter Protein/Death-
+-Associated Protein), angażujące kinazę JNK
+
+169
+
+[Strona 170]
+
+c ligand
+
+receptor
+
+poodjocaoooocooosoooococa
+
+sy
+
+Le
+
+Z
+
+i
+
+SE
+
+a
+
+et
+
+po D000 000500 0C DDD 000 00 C0D00000000009
+
+APOPTOSOM
+
+8s,
+
+|2
+
+oon
+
+grialnę
+
+\&
+
+se
+
+4.
+
+.
+
+0000000000000000000000000000000900009
+
+3
+
+6 000000000000000000000
+
+&
+
+(kaspaza® ) 9
+
+DISC
+
+z
+
+%
+
+o
+
+3)
+
+s
+
+L
+
+błona zewnętrzna
+
+>
+
+BPRZ_N
+
+APOPTOZA
+
+Ryc. 8.5 Połączenie szlaków receptorowego i mitochondrialnego apoptozy (schemat) oraz hipotetyczny model megakanału mitochondrialnego. GPX
+
+- peroksydaza glutationowa, ANT - translokaza nukleotydów adeninowych, VDAC - poryna, CK - kinaza kreatynowa, BPR - obwodowy receptor benzodiaze-
+
+piny.
+
+[Strona 171]
+
+(Jun-N-terminal Kinase). Enzym ten poprzez
+fosforylację N-końcowego odcinka czynnika
+transkrypcyjnego c-Jun i kinazy odpowiedzi
+zewnątrzkomórkowej ERK (Extracellular Signal-regulated Kinase) uruchamia kaskadę
+kaspaz. Szlak wykorzystujący to białko funkcjonuje tylko w niektórych typach komórek
+i może być modyfikowany przez zastąpienie
+białka DAXX układem sygnalizacyjnym
+związanym z małymi białkami G z rodziny Rho (Rac-1). W niektórych przypadkach
+szlak receptorowy może się łączyć przez białko Bid ze szlakiem wewnętrznym (ryc. 8.5).
+Cząsteczka białka Bid z udziałem kaspazy 8
+podlega proteolizie do skróconej formy tBid
+(truncated Bid) i może się wiązać z białkiem
+Bax, co zmienia jego konformację. Tak zmodyfikowane strukturalnie białko Bax przyłącza się do poryny VDAC (Voltage Dependent Anion Chanel) błony mitochondrium
+i uczestniczy w formowaniu przepuszczalnych porów, umożliwiając wypływ cytochromu ci aktywację szlaku mitochondrialnego
+(ryc. 8.5). Z mitochondrium wypływa wówczas 100-krotnie większa ilość cytochromu
+c niż podczas przebiegu typowej ścieżki wewnętrznej.
+
+8.2.2
+Wewnętrzny szlak apoptozy
+
+Kluczową rolę w wewnętrznym szlaku apoptozy odgrywają mitochondria, organelle
+znane przede wszystkim jako centra energetyczne komórki (ryc. 8.5). Zwiększenie przepuszczalności błony mitochondrialnej jest
+początkiem wewnętrznego szlaku apoptozy,
+którego aktywacja następuje w wyniku wzrostu poziomu reaktywnych form tlenu ROS
+(Reactive Oxygen Species), stężenia jonów
+wapnia (Ca?*) w cytoplazmie, szoku termicznego, zaburzeń transportu elektronów lub
+uszkodzeń DNA. Odpowiedzią na te czynniki są liczne zmiany w obrębie tego organellum, jak i całej komórki. Następuje otwarcie
+megakanałów mitochondrialnych nazywanych również porami przepuszczalności PTP
+(Permeability Transition Pore), znajdujących
+
+8 APOPTOZA
+
+się na styku obu błon mitochondrium (ryc.
+8.5). Istnieje kilka hipotetycznych modeli
+opisujących budowę oraz sposób działania
+megakanałów mitochondrialnych. Za ich zasadniczy element budowy najczęściej uznaje
+się translokator nukleotydów adeninowych
+ANT (Adenine Nucleotide Translocator), zlokalizowany w błonie wewnętrznej. Tworzy
+on kompleksy z obecną w błonie zewnętrznej poryną VDAC i obwodowym receptorem
+benzodiazepiny BPR (Peripheral Benzodiazepine Receptor). W kompleksie tym znajduje
+się również wiele enzymów, którym przypisuje się funkcje regulatorowe; są to m.in. kinaza kreatynowa, peroksydaza glutationowa
+i białka z rodziny Bcl-2 (Bcl-2, Bax) łączące
+się z kanałem od strony cytoplazmatycznej.
+Niezależnie od teorii budowy porów, otwarcie megakanałów powoduje wiele zmian
+w obrębie mitochondrium, m.in. obniża potencjał transbłonowy, hamuje syntezę ATP
+oraz powoduje wzrost stężenia jonów wapnia
+w macierzy. Wzrostowi przepuszczalności
+PTP towarzyszy też uwolnienie z przestrzeni
+międzybłonowej do cytoplazmy cytochromu c zwanego Apaf-2 (Apoptosis protease activating factor-2), czynnika indukcji apoptozy
+AIF (Apoptosis-Inducing Factor), prokaspazy 2, 3, 9 oraz białka Smac/DIABLO (Second
+mitochondrial activator of caspase/Direct
+IAP Binding protein with Low pl). W cytoplazmie formuje sie kompleks zwany apoptosomem (ryc. 8.5). Kompleks ten składa się
+z cytochromu c, białka adaptorowego Apaf-1
+oraz prokaspazy 9 i powstaje z udziałem
+ATP. Białko Apaf-1 ma na N-końcu domenę
+CARD, która umożliwia połączenie z prokaspazą 9, natomiast C-koniec białka Apaf-1
+wyposażony jest w domenę wielokrotnych
+powtórzeń WD (WD-40 repeats), która wiąże cytochrom c oraz dATP/ATP. Prokaspaza
+9 związana z domeną CARD białka Apaf-1
+podlega w apoptosomie katalitycznej aktywacji i uruchamia kaskadę kaspaz wykonawczych, które powodują proteolizę białek
+istotnych dla przeżycia komórki, m.in. lamin, aktyny, polimerazy poli(ADP)-rybozy
+(PARP) i kinazy białkowej zależnej od DNA
+(DNA-PK).
+
+171
+
+[Strona 172]
+
+172
+
+8 APOPTOZA
+
+8.2.3
+
+Szlak pseudoreceptorowy
+
+Jest to szlak zewnątrzpochodny indukowany
+przez komórki układu immunologicznego:
+cytotoksyczne limfocyty T oraz komórki NK
+(ryc. 8.6). W szlaku tym uczestniczy układ
+perforyna-granzym B (GrB, fragmentyna-2).
+Cytotoksyczne limfocyty T i komórki NK
+produkują perforynę oraz proteazę serynową -— granzym B, które uwalniane są drogą
+egzocytozy. Początkowo uważano, że wypływająca z komórek CTL lub NK perforyna
+wbudowuje się w błonę komórek mających
+poddać się apoptozie i tworzy kanał dla granzymu B. Po wniknięciu do cytoplazmy niszczonych komórek granzym B, podobnie jak
+kaspazy, hydrolizuje różne substraty, aktywując tym samym kaspazę 3, która następnie
+odcina prodomenę kaspazy 7, aktywując ją,
+uruchomiając jednocześnie kaskadę kaspaz
+wykonawczych apoptozy. Granzym B może
+również wnikać do komórek niszczonych bez
+udziału perforyn na zasadzie endocytozy lub
+przenikać do ich wnętrza przy udziale receptora mannozo-6-fosforanu (ryc. 8.6). Obecny
+w komórce granzym B hydrolizuje białko Bid
+do opisywanej już wcześniej formy tBid, która łącząc się z białkiem Bax uruchamia ścieżkę apoptozy z udziałem mitochondrium.
+
+Szlak pseudoreceptorowy może przebiegać także z udziałem granzymu A (GrA,
+fragmentyna-1), który wydzielany jest również przez cytotoksyczne limfocyty T i komórki NK. Granzym A wnika do komórek
+przy udziale perforyny (ryc. 8.6). Mechanizm
+działania granzymu A nie jest do końca wyjaśniony. Wiadomo jednak, że apoptoza z jego
+udziałem jest niezależna od kaspaz i angażuje jądro komórkowe. Fragmentyna-1 przemieszcza się do jądra komórkowego, gdzie
+hydrolizuje laminy, histon H1 oraz kompleks
+SET. Na pociętą przez granzym A chromatynę działa uaktywniona DNaza, powodując
+apoptotyczne zmiany w jądrze komórkowym.
+Ścieżkę tę indukuje wzrost stężenia reaktywnych form tlenu oraz zaburzenia potencjału
+błonowego mitochondrium.
+
+8.2.4
+
+Szlak sfingomielinowo-
+-ceramidowy
+
+Ceramid pełniący rolę wtórnego przekaźnika bierze udział w apoptotycznej śmierci
+komórki w szlaku sfingomielinowo-ceramidowym (ryc. 8.6).
+
+Aktywacja tego szlaku zachodzi pod
+wpływem działania promieniowania jonizującego, infekcji wirusowych lub braku czynników wzrostu. W wyniku połączenia liganda FasL z receptorem Fas następuje aktywacja
+kwaśnej lub obojętnej sfingomielinazy. Enzym ten hydrolizuje błonową sfingomielinę
+do ceramidu i fosfocholiny (fosforan choliny), uwalniając cholesterol i zmieniając jednocześnie przepuszczalność błony. Powstały
+w wyniku hydrolizy ceramid jako wtórny
+przekaźnik aktywuje kinazy CAPK (Ceramide-Activated Protein Kinases), zależne od mitogenów kinazy MAPK (Mitogen-Activated
+Protein Kinases), fosfatazy CAPP (Ceramide-
+-Activated Protein Phosphatase) oraz kaskady
+kinaz SAPK (Stress Associated Protein Kinase)/JNK. Rodzaj związku chemicznego aktywowanego przez ceramid zależy od czynnika stymulującego sygnał, typu komórki
+oraz rodzaju sfingomielinazy. Ceramid powstały w wyniku hydrolizy sfingomielinazą
+obojętną aktywuje kinazy CAPK, MAPK
+oraz CAPP. Enzymatyczne działanie sfingomielinazy kwaśnej wpływa prawdopodobnie
+na powstanie ceramidu indukującego aktywację kinaz SAPK/JNK, które uruchamiają
+kaskadę kaspaz wykonawczych apoptozy.
+Wymienione lipidy mogą również wpływać
+na ścieżkę wewnętrzną apoptozy, zwiększając
+przepuszczalność błony mitochondrialnej.
+W procesie apoptozy uczestniczą również
+produkty metabolizmu ceramidu — sfingozyna i sfingozyno-1-fosforan. Pierwszy z nich
+jest inhibitorem białek antyapoptotycznych
+z rodziny Bcl-2 (Bcl-2, Bcl-Xq), natomiast
+ufosforylowana jego forma hamuje apoptozę, blokując wpływ cytochromu c oraz białka
+Smac/DIABLO z przestrzeni międzybłonowej mitochondrium.
+
+[Strona 173]
+
+CTL lub NK _ &
+
+os
+
+A e
+
+c! 9314
+
+receptor
+
+mannozo-6-fosforanu
+
+sfi mie?)
+
+mie?)
+
+lub
+
+e
+
+sfingomielinaza ©
+
+CY
+
+Saroe
+
+REBECEECELCIN
+
+obojętna
+
+[[hydroliza]
+
+ŚĆ
+
+ff
+
+„Ś
+
+ach a ©
+
+oe
+
+o,
+
+Y
+
+oe
+
+5
+
+©
+
+=
+
+7
+
+kinazy SAPK/JNK
+
+kinazy MAPK
+
+kinazy CAPK
+
+fosfatazy CAPP
+
+G
+
+BS
+
+w
+
+<
+
+=
+
+laminy
+
+histon H1
+
+BONNIE)
+
+4
+
+kompleks SET
+
+ee,
+
+a
+
+APOPTOZA
+
+Ryc. 8.6 Schemat pseudoreceptorowego, sfingomielinowo-ceramidowego oraz indukowanego stresem szlaku apoptozy.
+
+[Strona 174]
+
+174
+
+8 APOPTOZA
+
+8.2.5
+
+Szlak indukowany stresem
+
+W 2000 r. opublikowano wyniki badań
+przedstawiające szlak apoptotyczny niezależny od zlokalizowanych w błonie komórkowej
+receptorów oraz mitochondrium. Kluczową rolę odgrywa w nim siateczka śródplazmatyczna (ryc. 8.6). Indukcja tego szlaku następuje w odpowiedzi na zaburzenia
+homeostazy jonów wapnia lub nadmierne
+gromadzenie w siateczce śródplazmatycznej
+niewłaściwie zmodyfikowanych lub błędnie
+pofałdowanych białek. Wymienione czynniki wywołujące ten stres aktywują prokaspazę 12 umiejscowioną w błonie siateczki.
+Kaspaza 12 uruchamia kaskadę kaspaz wykonawczych prowadzącą do śmierci komórki. Aktywacja kaspazy 12 nie jest konieczna
+w przebiegu innych ścieżek apoptotycznych,
+dlatego została uznana za enzym inicjujący
+tylko szlak indukowany stresem. Omawiany
+szlak jest odpowiedzialny za apoptozę neuronów w chorobie Alzheimera. Apoptoza
+z udziałem siateczki śródplazmatycznej może
+przebiegać także przy udziale białka Apaf-1
+i ścieżki mitochondrialnej (ryc. 8.6).
+
+8.3
+
+Fizjologiczna rola
+apoptozy
+
+Apoptoza odgrywa istotna role w licznych
+procesach fizjologicznych przebiegajacych
+w wielokomórkowych organizmach. Umozliwia ona kontrolę, a także regulację liczby
+i rodzaju komórek zarówno w rozwijającym
+się, jak i dojrzałym organizmie. W okresie
+rozwoju embrionalnego część wytworzonych
+komórek zostaje wyeliminowana na drodze
+apoptozy, coumożliwiaodpowiednieukształtowanie tkanek i narządów. Podczas rozwoju nicienia Caenorhabditis elegans spośród
+1090 powstających komórek 131 obumiera,
+113 komórek umiera podczas embriogenezy,
+
+natomiast 18 podczas dorosłego życia robaka. Każdy nicień rozwija się tak samo i składa
+się ostatecznie z 959 komórek somatycznych.
+Szczególnym przykładem zjawiska apoptozy
+w rozwoju kręgowców może być śmierć prawie połowy neuronów powstających w czasie
+embriogenezy w rozwoju układu nerwowego.
+Fizjologicznym przykładem programowanej
+śmierci komórki w rozwoju kręgowców jest
+zanik błony pławnej między palcami zarodka ludzkiego czy też śmierć komórek ogona
+kijanki w procesie metamorfozy. Programowana śmierć komórki ma również istotne
+znaczenie podczas tworzenia układu rozrodczego u ssaków. Na początku rozwoju narządów rozrodczych u obu płci powstają zarówno przewody Wolffa, jak i kanały Millera.
+Dopiero w wyniku procesu apoptozy zanikają struktury niewłaściwe dla osobnika danej
+płci. Innym przykładem apoptozy u kręgowców może być śmierć komórek soczewki oka
+w czasie jej kształtowania podczas rozwoju
+zarodkowego. Zjawiskiem fizjologicznym
+jest też programowana genetycznie śmierć
+keratynocytów skóry, krypt jelitowych oraz
+komórek endometrium macicy w życiu postnatalnym. Proces apoptozy odgrywa również znaczącą rolę w utrzymaniu homeostazy organizmu w zakresie równowagi między
+proliferacją a śmiercią komórek w jego późniejszych etapach życia, reguluje on m.in.
+erytropoezę i dojrzewanie limfocytów T.
+Limfocyty T, które są ważnym składnikiem
+układu odpornościowego, dojrzewają w grasicy. Limfocyty, które nie potrafią rozpoznać
+i zniszczyć obcych białek (antygenów) lub
+atakują tkanki własne gospodarza, są poddane apoptozie, zanim dostaną się do krwiobiegu. Przykładem programowanej śmierci
+komórki podczas życia osobniczego jest również inwolucja narządów. Będące pod ścisłą
+kontrolą hormonalną narządy, które spełniły już swoje funkcje, fizjologicznie zanikają
+w wyniku procesu apoptozy. Z powodu np.
+braku impulsów nerwowych wywoływanych
+przez ssanie następuje zatrzymanie laktacji,
+a także inwolucja i unieczynnienie nabłonka
+gruczołowego gruczołu mlekowego. Na drodze apoptozy następuje inwolucja macicy, do-
+
+
+---------- jozwiak_r11.txt (cały plik) ----------
+# ŹRÓDŁO: Jóźwiak J., Biologia komórki dla studentów uczelni medycznych, Edra Urban & Partner 2020 – Rozdział 11. Śmierć komórek
+# Zakres: s. 126–127: „Znaczenie apoptozy w fizjologii człowieka”, „Zaburzenia apoptozy” (nowotwory, choroby neurodegeneracyjne, tab. 11.4) – do nagłówka „Podsumowanie” (bez niego). PDF s. 136–137.
+# Tekst z warstwy OCR PDF (pdftotext -bbox), złożony łamami: lewy łam, potem prawy (pasy między podpisami pełnej szerokości).
+# [Strona N] = numeracja książki (odtworzona: numery widoczne na s. 65/119/126–128 + parzystość żywej paginy).
+# ### = nagłówek podrozdziału. [PODPIS/TABELA] = podpis ryciny lub tabela – wyjęte z biegu tekstu, na końcu strony.
+# [ETYKIETY RYCIN] = napisy wewnątrz rycin (szum OCR, nie czytać jako tekstu). Znaki ">", "3", "=", "„" na początku akapitu = punktory.
+
+[Strona 126] (od nagłówka „Znaczenie apoptozy w fizjologii człowieka”; wcześniejsza część strony – w pliku *_reszta.txt)
+### Znaczenie apoptozy w fizjologii człowieka
+
+Wyróżnić można kilka typów procesów w dużym stopniu zależnych od apoptozy, w których eliminowane są komórki nadmiarowe, niefunkcjonalne lub niebezpieczne z punktu widzenia organizmu:
+
+1. Rozwój embrionalny: już w czasie rozwoju embrionalnego konieczne jest eliminowanie niektórych komórek, które spełniły już swoją rolę i są niepotrzebne. Podobnie formowanie i kształtowanie się niektórych narządów przebiega na drodze apoptozy. Przykładem takiego procesu jest rozdzielanie się palców w trakcie embriogenezy — początkowo połączone ze sobą zawiązki palców rozdzielają się poprzez apoptozę komórek znajdujących się pomiędzy nimi. Zahamowanie tego procesu może doprowadzić do pojawienia się syndaktylii, czyli zrośnięcia dwóch lub więcej palców.
+
+„ Modelowanie układu odpornościowego: w całym okresie życia człowieka w grasicy rozwijają się limfocyty T, które rozpoznają różnorodne antygeny, w tym także antygeny własne, obecne w danym organizmie. W razie wykrycia limfocytu T skierowanego przeciwko antygenom własnym, dochodzi do skierowania go na drogę apoptozy, w procesie nazywanym selekcją negatywną, który ma za zadanie zabezpieczenie organizmu przed rozwinięciem się choroby autoimmunizacyjnej.
+
+„ Eliminacja uszkodzonych komórek: komórki, które zostały zainfekowane przez wirusa lub poddane działaniu toksyn i których nie da się uratować, są eliminowane przez apoptozę, najczęściej na drodze stresu oksydacyjnego. Podobnie dzieje się z komórkami, które uległy uszkodzeniu na skutek zbyt niskiego poziomu tlenu lub substancji odżywczych. Z sytuacją taką mamy do czynienia np. w nowotworach, które wzrastają na tyle szybko, że nie nadąża za nimi wzrost nowych naczyń krwionośnych odżywiających tkankę nowotworową (% ryc. 11.7).
+
+„ Eliminacja komórek z uszkodzonym DNA: w efekcie np. działania promieniowania jonizującego dochodzi do uszkodzenia struktury DNA, co z kolei aktywuje p53. Białko to w pierwszej kolejności zatrzymuje cykl komórkowy na etapie przejścia z fazy G1 do $, pozostawiając komórce czas na ewentualne naprawienie powstałych uszkodzeń DNA. Jeśli natomiast skuteczna naprawa nie jest możliwa, p53 zwiększa ekspresję Bax, bezpośrednio zaangażowanego w tworzenie kanałów w błonie mitochondrium, pozwalających na wypływ cytochromu c do cytoplazmy i rozpoczęcie fazy efektorowej apoptozy. Powyższy mechanizm jest wykorzystywany w niszczeniu nowotworów za pomocą radioterapii: napromieniowanie komórki uszkadza jego DNA i uruchamia apoptozę (zaznaczyć należy, że w tym przypadku apoptoza jest jednym z kilku mechanizmów eliminacji komórek).
+
+### Zaburzenia apoptozy
+
+Ponieważ znaczenie apoptozy w fizjologii jest tak duże, jej zaburzenia, tzn. nasilenie lub zablokowanie, prowadzą lub przyczyniają się do wielu procesów patologicznych. Przykładem procesów patologicznych, w których udowodniono udział zaburzeń apoptozy, są np. choroby nowotworowe, nadczynność tarczycy, osteoporoza, stwardnienie rozsiane, choroba Parkinsona i choroba Alzheimera (> tab. 11.4).
+
+### Nowotwory
+
+Jednym z najlepszych przykładów ogromnego znaczenia zaburzeń apoptozy dla fizjologii jest nowotworzenie. Z samego faktu, że główny strażnik genomu, białko p53, nasila apoptozę w przypadku wykrycia uszkodzenia DNA wynika, iż apoptoza musi zostać zablokowana,
+
+[PODPIS/TABELA] Ryc. 11.7 Apoptoza w raku gruczotowo-torbielowatym. Na zdjęciu pomiędzy komórkami nowotworowymi układają się pojedyncze komórki apoptotyczne (zaznaczone strzałkami). Wyraźnie widoczna kondensacja jądra komórkowego, zmniejszenie kształtu komórek (środek zdjęcia) i pojawienie się ciałek apoptotycznych (po prawej stronie). (Dzięki uprzejmości dr. hab. Ł. Koperskiego).
+
+[Strona 127]
+aby możliwe było niekontrolowane gromadzenie mutacji w trakcie — często dość długiego — procesu rozwoju komórki nowotworowej. Co więcej wykazano, że zaburzenia apoptozy odpowiedzialne są w wielu przypadkach za oporność na leki przeciwnowotworowe (leki te wywołują często apoptozę w komórkach). Stąd opracowano całą gamę leków przeciwnowotworowych, które wykazują wpływ na szlaki związane z apoptozą (+ ryc. 11.8). Do najczęstszych zaburzeń wykrywanych w komórkach nowotworowych zaliczyć można: 3 nadekspresję antyapoptotycznych białek z rodziny Bcl-2 (chłoniaki, rak sutka, rak płuc),
+
+> inaktywację kompleksu apoptosomu (czerniak, białaczki, rak szyjki macicy), 3 obniżenie ekspresji białka Fas (rak wątrobowokomórkowy, rak przełyku, rak jelita grubego),
+
+= obniżenie aktywności kaspaz.
+
+### Choroby neurodegeneracyjne
+
+Choroba Alzheimera związana jest z odkładaniem się w przestrzeni międzykomórkowej białka zwanego amyloidem B (AB) oraz białka tau wewnątrz komórek. Stwierdzono, że AB ma zdolność aktywowania kaspazy 3 i nasilania apoptozy neuronów. Jednym z substratów kaspazy 3 jest białko tau, którego przecięcie przez kaspazę prowadzi w efekcie do gromadzenia się agregatów tau w neuronie. W chorobie Parkinsona, charakteryzującej się utratą neuronów dopaminergicznych w układzie nigrostriatalnym mózgu, również dochodzi do aktywacji kaspazy 3 oraz blokowania Bcl-2, oraz zwiększenia ekspresji receptora Fas. Powyższe zmiany nasilające apoptozę prawdopodobnie przyczyniają się w chorobach neurodegeneracyjnych do utraty neuronów w ośrodkowym układzie nerwowym.
+
+[PODPIS/TABELA] Tabela 11.4 Przykłady chorób, w których dochodzi do zaburzeń
+procesu apoptozy
+Cukrzyca typu I Osteoporoza
+Zawał mięśnia serca Białaczka
+Choroba Alzheimera Chłoniak
+Choroba Parkinsona Raki (np. piersi, prostaty)
+Stwardnienie rozsiane Nadczynność tarczycy
+Wrzodziejące zapalenie Zespół Smitha
+jelita grubego
+Choroba Hashimoto Układowy toczeń
+rumieniowaty
+AIDS
+
+[PODPIS/TABELA] Ryc. 11.8 Przykłady leków nasilających apoptozę. W związku z zaburzeniami apoptozy w nowotworach opracowano wiele leków, których zadaniem jest modulowanie procesu apoptozy. Cetuksymab to przeciwciało monoklonalne skierowane przeciwko receptorowi dla nabłonkowego czynnika wzrostu (EGF). Ponieważ EGF aktywuje szlaki chroniące przed apoptozą, cetuksymab nasila apoptozę w komórkach nowotworowych. Jest zarejestrowany do leczenia raka jelita grubego i raka płaskonabłonkowego skóry. Erlotynib to inhibitor kinazy tyrozynowej związanej z receptorami EGF. Wskazany jest w niedrobnokomórkowym raku płuca i raku trzustki. Inhibitorem kinazy tyrozynowej jest również imatynib, wykorzystywany w białaczkach. Sorafenib hamuje Raf, stosuje się go w raku nerki, wątroby i tarczycy. Bortezomib jest inhibitorem proteasomu, w którym rozkładane są niektóre białka proapoptotyczne. Jego działanie nasila apoptozę, dzięki czemu został zarejestrowany do leczenia szpiczaka mnogiego i chłoniaków.
+
+---------- alster_korwek_2014.txt (cały plik) ----------
+# ŹRÓDŁO: Alster O., Korwek Z., Znaczniki starzenia komórkowego. Postępy Biochemii 2014; 60: 138–146
+# Zakres: cały artykuł, s. 138–146 (PDF z warstwą tekstową, pdftotext; tekst dwułamowy – kolejność kolumn wg pdftotext).
+
+[Strona 138]
+Znaczniki starzenia komórkowego
+
+STRESZCZENIE
+
+Olga Alster1,
+Zbigniew Korwek
+
+2
+
+Pracownia Molekularnych Podstaw Starzenia, Instytut Biologii Doświadczalnej
+im. Marcelego Nenckiego PAN, Warszawa
+2
+Pracownia Modelowania w Biologii i Medycynie, Instytut Podstawowych Problemów Techniki PAN, Warszawa
+1
+
+Instytut
+Biologii
+Doświadczalnej
+im.
+Marcelego Nenckiego PAN, ul. Pasteura 3,
+02-093 Warszawa; tel.: (22) 589 22 60, e-mail:
+o.alster@nencki.gov.pl
+
+
+
+Artykuł otrzymano 14 marca 2014 r.
+Artykuł zaakceptowano 9 kwietnia 2014 r.
+Słowa kluczowe: znaczniki starzenia, starzenie replikacyjne, starzenie przyspieszone, fenotyp sekrecyjny, β-galaktozydaza związana
+ze starzeniem
+Wykaz skrótów: CDK — ang. cyclin-dependent kinases; CIP/KIP — ang. CDK interacting
+protein/ kinase inhibitory protein; CKI — ang. cyclin-dependent kinase inhibitors; DNA-SCARS —
+ang. DNA segments with chromatin alterations reinforcing senescence; PML — ang. promyelocytic
+leukemia protein; SA-β-Gal — ang. senescence associated β-galactosidase; SAHF — ang. senescence
+associated heterochromatin foci; SASP — ang. senescence associated secreatory phenotype
+
+S
+
+tarzenie jest złożonym procesem związanym z nieodwracalnym zatrzymaniem komórek
+w cyklu. Wyróżnić można starzenie replikacyjne, zależne od skracania telomerów, i starzenie przyspieszone, które jest niezależne od ich skracania. Starzenie replikacyjne obserwowane jest w hodowli jako skończona liczba podziałów komórek, co może trwać od kilku
+tygodni do miesięcy, w zależności od typu komórek. Starzenie przyspieszone zachodzi już
+po kilku dniach od zadziałania czynnika je indukującego. Nie ma jednego uniwersalnego
+znacznika procesu starzenia komórkowego. Badanie starzenia komórkowego możliwe jest
+dzięki występowaniu szeregu znaczników tego procesu, które pozwalają obserwować zmiany zarówno na poziomie molekularnym jak i biochemicznym. Dopiero ich współwystępowanie pozwala na uzyskanie pewności, że komórki uległy starzeniu.
+
+WPROWADZENIE
+
+Starzenie komórkowe jest bardzo złożonym i wieloetapowym procesem. Wyróżnić możemy starzenie replikacyjne, które związane jest ze skracaniem telomerów i obserwowane jest w hodowli po kilku tygodniach lub miesiącach, oraz
+starzenie przyspieszone, które jest niezależne od skracania telomerów i może
+być obserwowane po kilku dniach od zadziałania czynnika je indukującego.
+Badanie starzenia możliwe jest dzięki istnieniu licznych metod, pozwalających
+śledzić ten proces. W chwili obecnej nie ma jednego markera typowego wyłącznie dla procesu starzenia, jednak występuje szereg cech, które charakteryzują
+ten proces. Opisanych zostało wiele znaczników starzenia i można je podzielić
+na dwie grupy: uniwersalne i komórkowo specyficzne1. Możemy wyróżnić następujące uniwersalne znaczniki starzenia: zmianę morfologii, wzrost syntezy i
+aktywności β-galaktozydazy związanej ze starzeniem (SA-β-Gal, ang. Senescence associated β-galactosidase), wzrost ziarnistości, wzrost poziomu lipofuscyny,
+zmiany w cytoszkielecie, zahamowanie proliferacji, wzrost poziomu inhibitorów cyklu komórkowego (m.in. p16INK4a (p16) i p21WAFI/CIP1 (p21)), zatrzymanie
+komórek w cyklu, występowanie skupisk białek stanowiących element szlaku
+odpowiedzi na uszkodzenia DNA (DNA-SCARS, ang. DNA segments with chromatin alterations reinforcing senescence), występowanie skupisk heterochromatyny związanych ze starzeniem (SAHF, ang. Senescence Associated Heterochromatin
+Foci), wzrost poziomu białka PML (ang. promyelocytic leukemia protein), skracanie
+telomerów, spadek poziomu laminy B1, zmiany metylacji DNA oraz pojawienie się fenotypu sekrecyjnego związanego ze starzeniem (SASP, ang. Senescence
+Associated Secretory Phenotype; SMS, ang. Senescence-messaging Secretome) [1-3].
+Schemat na rycinie 1 przedstawia zmiany występujące w komórce, która uległa
+starzeniu. Większość z wyżej wymienionych znaczników starzenia, w zależności od typu badanych zmian, można zakwalifikować do następujących grup: na
+poziomie struktury i morfologii komórki (wielkość i rozpłaszczenie, aktywność
+SA-β-Gal, ziarnistość, wzrost poziomu lipofuscyny oraz zmiany cytoszkieletu),
+zmiany związane z regulacją cyklu komórkowego (zahamowanie proliferacji,
+wzrost poziomu inhibitorów cyklu komórkowego i cykliny D1 oraz zatrzymanie komórek w cyklu), znaczniki związane z DNA i heterochromatyną (występowanie DNA-SCARS, SAHF, PML-NB, skracanie telomerów, spadek poziomu
+laminy B1 i zmiany metylacji) oraz fenotyp wydzielniczy (SASP). Wszystkie te
+znaczniki zostaną omówione poniżej.
+ZMIANY NA POZIOMIE STRUKTURY I MORFOLOGII KOMÓRKI
+ZMIANA MORFOLOGII KOMÓREK ULEGAJĄCYCH STARZENIU
+
+Komórki ulegające starzeniu replikacyjnemu, jak i przyspieszonemu, powiększają się i stają się płaskie. Zmiana ta obserwowana jest zarówno w przypadku
+Zagadnienie to zostało szerzej omówione w artykule „Rola starzenia komórkowego w starzeniu organizmu i chorobach związanych z wiekiem”, opublikowanym w niniejszym zeszycie
+Postępów Biochemii.
+
+1
+
+138
+
+www.postepybiochemii.pl
+
+[Strona 139]
+Obecność SA-β-Gal nie
+jest jednak niezbędna do indukcji starzenia. Fibroblasty
+pochodzące od pacjentów z
+gangliozydazą GM1, chorobą
+spichrzeniową spowodowaną brakiem β-galaktozydazy,
+ulegały starzeniu replikacyjnemu, jak również przyspieszonemu, pod wpływem
+adriamycyny, związku który indukuje powstawanie
+uszkodzeń DNA. Starzeniu
+tych komórek nie towarzyszył wzrost aktywności SAβ-Gal, gdyż wzrost poziomu
+Rycina 1. Znaczniki starzenia komórkowego. Wśród znaczników procesu starzenia można wyróżnić: zatrzymanie podziałów, zwiększenie rozmiarów komórki, wzrost aktywności i poziomu SA-β-Gal, wzrost poziomu inhibitorów cyklu komórtego znacznika uwarunkowakowego (białek p16 i/lub p21), pojawienie się fenotypu sekrecyjnego związanego ze starzeniem (SASP, ang. senescence
+ny jest obecnością lizosomalassociated secreatory phenotype), pojawienie się skupisk heterochromatyny związanych ze starzeniem oraz skupisk białek
+nej β-galaktozydazy. Ponadto
+związanych z aktywacją szlaku odpowiedzi na uszkodzenia DNA (DNA-SCARS, ang. DNA segments with chromatin alterations). Zmodyfikowane według [73].
+stwierdzono, że obniżenie poziomu β-galaktozydazy przy
+użyciu technik siRNA bądź
+komórek prawidłowych np. ludzkich komórek mięśni gładshRNA
+w
+komórkach
+prawidłowych
+czy nowotworowych
+kich, fibroblastów, jak i komórek nowotworowych: ludzkich
+nie
+hamuje
+indukcji
+starzenia
+[12].
+komórkach raka okrężnicy (HCT116), liniach glejaka (U343
+MG-A, U87 MG, U343 MG), linii kostniakomięsaka (U2OS)
+i ludzkich komórkach raka piersi (MCF-7) [4-6]. Ponadto,
+w melanocytach, ulegających starzeniu spowodanym nadekspresją onkogenu RAS, stwierdzona jest intensywna wakuoalizacja [7]. Zaobserwowano, że melanocyty ulegające
+starzeniu w wyniku nadekspresji onkogenu BRAF, mają
+wrzecionowate jądra komórkowe [8].
+WZROST AKTYWNOŚCI I POZIOMU β-GALAKTOZYDAZY
+ZWIĄZANEJ ZE STARZENIEM (SA-β-GAL)
+
+Podstawowym markerem procesu starzenia komórkowego jest wzrost aktywności i poziomu enzymu lizosomalnego β-galaktozydazy związanej ze starzeniem (SAβ-Gal). Jest to najbardziej znany i najpowszechniej używany w warunkach in vitro, jak i in vivo marker starzenia,
+który został opisany przez Dimri i wsp [9]. SA-β-Gal jest
+markerem, którego obecność została opisana zarówno w
+starzeniu replikacyjnym, jak również przyspieszonym
+[1]. Obecność tego znacznika stwierdzono w komórkach,
+które uległy starzeniu, ale nie w spoczynkowych fibroblastach czy zróżnicowanych keratynocytach. Ponadto
+obserwowano wzrost aktywności SA-β-Gal wraz z wiekiem dawcy w fibroblastach skórnych i epidermalnych
+keratynocytach. Znacznik ten również był przydatny w
+badaniu starzenia u gryzoni czy naczelnych [10]. Ponadto
+ma on zastosowanie u starzejących się organizmów modelowych, jak np. u Danio pręgowanego i Caenorhabditis
+elegans. Niestety okazało się, że wzrost aktywności SA-βGal nie towarzyszy jedynie starzeniu, ale może również
+być wykrywany w warunkach nie związanych z nim jak
+np. w przypadku nieprawidłowych warunków hodowli
+komórek, jej przegęszczenia oraz w świetle cebulek włosowych oraz przewodów ekrynowych i łojotokowych
+[11]. Wzrost aktywności tego enzymu koreluje ze wzrostem masy lizosomów, który jest obserwowany w komórkach starych [12].
+Postępy Biochemii 60 (2) 2014
+
+Aby uniknąć potencjalnie fałszywie dodatnich wyników
+dobrze jest badać wzrost aktywności SA-β-Gal z innymi
+znacznikami starzenia jak np. z zatrzymaniem komórek w
+cyklu, które jest również znacznikiem tego procesu. Równoczesne pokazanie, że komórki są zatrzymane w cyklu przy
+wzroście aktywności SA-β-Gal świadczy o tym, że wzrost
+aktywności tego enzymu związany jest ze starzeniem.
+W celu zbadania aktywności SA-β-Gal przy użyciu mikroskopu świetlnego komórki utrwalano, a następnie inkubowano w roztworze barwiącym zawierającym x-gal,
+który jest substratem β-galaktozydazy. W wyniku cięcia x-gal przez enzym dochodzi do powstawania barwnego produktu, który obserwowany jest w komórkach w postaci niebieskiego precypitatu. Do pomiaru aktywności SA-β-Gal,
+oprócz mikroskopii świetlnej można również wykorzystać
+metodę z zastosowaniem cytometru przepływowego. Wykorzystuje się do tego określony substrat, który pod wpływem β-galaktozydazy emituje zieloną fluorescencję. Metoda z zastosowaniem cytometru przepływowego pozwala
+na dokonanie szybkiej oceny ilościowej komórek wykazujących wzrost aktywności SA-β-Gal [9,13].
+Dotychczas nie została poznana funkcja SA-β-Gal w
+przebiegu starzenia. Przypuszcza się, że wzrost aktywności tego enzymu wynika jedynie ze wzrostu liczby lizosomów, a nie jego związku przyczynowo-skutkowego w
+starzeniu.
+WZROST ZIARNISTOŚCI
+
+Jedną z kolejnych zmian towarzyszących starzeniu jest
+wzrost ziarnistości komórek. Związane jest to prawdopodobnie ze wzrostem masy lizosomów, w komórkach,
+które uległy starzeniu [12]. Wzrost ziarnistości komórek
+
+139
+
+[Strona 140]
+można określić przy użyciu cytometru przepływowego
+lub obserwacji mikroskopowej.
+WZROST POZIOMU LIPOFUSCYNY
+
+Innym markerem procesu starzenia jest lipofuscyna,
+która jest brązowożółtym barwnikiem wytwarzanym
+podczas utleniania lipoprotein w lizosomach. Stwierdzono, że ilość lipofuscyny wzrasta w komórkach starych
+organizmów [14]. Wzrost poziomu lipofuscyny można
+ocenić poprzez wykonanie barwień histochemicznych.
+ZMIANY CYTOSZKIELETU TOWARZYSZĄCE STARZENIU
+
+Starzeniu komórkowemu towarzyszy również szereg
+zmian związanych z białkami cytoszkieletu. Zaobserwowano zmiany w poziomie następujących białek: wimentyny,
+β-aktyny i tubuliny.
+Wimentyna jest białkiem o masie 58 kDa, które należy do III grupy filamentów pośrednich i obecne jest w
+komórkach pochodzenia mezenchymalnego. Białko to
+wykazuje dużą homologię międzygatunkową [15,16]. W
+embrionalnych fibroblastach linii TIG3 zaobserwowano, że wraz z liczbą podziałów rósł poziom wimentyny.
+Ponadto stwierdzono, że ludzkie fibroblasty skórne linii
+TIG101, które uległy starzeniu, miały ponad dwukrotnie
+wyższy poziom wimentyny niż komórki linii TIG3, które
+były na wczesnym pasażu. Również wykazano, że płodowe fibroblasty skórne linii TIG3S miały istotnie niższy
+poziom tego białka niż komórki linii TIG101. Zmianie poziomu wimentyny towarzyszyły również zmiany poziomu tubuliny i aktyny. Zaobserwowano, że komórki, które
+uległy starzeniu miały odpowiednio cztero- i dwukrotnie
+niższy poziom aktyny i tubuliny niż komórki młode [17].
+Wzrost poziomu wimentyny można ocenić poprzez wykonanie barwień immunocytochemicznych oraz z zastosowaniem techniki Western blotting.
+
+WZROST POZIOMU INHIBITORÓW
+CYKLU KOMÓRKOWEGO
+
+Cykl komórkowy jest ściśle regulowany dzięki wzajemnemu oddziaływaniu cyklin, kinaz zależnych od cyklin
+(CDK, ang. cyclin-dependent kinases) i inhibitorów kinaz zależnych od cyklin (CKI, ang. cyclin-dependent kinase inhibitors). Wyróżnić można cztery fazy cyklu komórkowego: G1,
+S, G2 i M. Każda z faz cyklu komórkowego charakteryzuje
+się dominacją odpowiednich kompleksów cykliny z kinazą zależną od cyklin. W fazie G1 kluczową rolę odgrywają
+dwa takie kompleksy, cyklina D-CDK6-CDK4 oraz cyklina E-CDK2, w fazie S: cyklina A-CDK2 i w fazie G2 cyklina A-CDK1. Dwie klasy inhibitorów zależnych od cyklin
+uczestniczą w regulacji cyklu komórkowego: INK4/ARF
+(ang. Inhibitor of kinase 4/ alternative reading frame) oraz CIP/
+KIP (ang. CDK interacting protein/ kinase inhibitory protein).
+Do klasy INK4/ARF zaliczamy następujące białka: p15INK4B
+(p15), p16INK4A (p16), p18INK4C (p18) oraz p19INK4D (p19). Białka
+należące do tej klasy wiążą się z CDK4 i CDK6 co prowadzi
+do allosterycznej zmiany, która uniemożliwia oddziaływanie z cyklinami D. Wśród białek należących do klasy CIP/
+KIP można wyróżnić: p21CIP1 (p21), p27KIP1 (p27) i p57KIP2
+(p57). Białka te hamują enzymatyczną funkcję kompleksu
+cyklina-CDK poprzez wiązanie się z katalityczną szczeliną
+kompleksu [21]. Udział inhibitorów kinaz zależnych od cyklin został przedstawiony na rycinie 2.
+W starzeniu komórkowym kluczową rolę odgrywają dwa szlaki sygnałowe: p53-p21 i p16-pRb [22]. Szlak z
+udziałem białek p53-p21 głównie pełni funkcję w starzeniu
+indukowanym uszkodzeniami DNA oraz w starzeniu replikacyjnym, natomiast szlak z udziałem białek p16-pRb w
+starzeniu indukowanym nadekspresją onkogenów. Stwierdzono jednak, że część białek jest wspólna dla obydwu
+
+ZNACZNIKI ZWIĄZANE Z PROLIFERACJĄ
+I REGULACJĄ CYKLU KOMÓRKOWEGO
+ZAHAMOWANIE PROLIFERACJI
+
+Podstawowym znacznikiem starzenia, który pozwala
+określić czy komórki proliferują jest określenie ich liczby.
+Gdy dojdzie do zahamowania proliferacji liczba komórek
+nie ulega zmianie. Proliferację komórek można również
+badać poprzez określanie zdolności do wbudowywania
+do DNA bromodeoksyurydyny (BrdU) bądź 5-etynyl-2-deoksyurydyny (EdU). Brak komórek zdolnych do
+wbudowywania BrdU do DNA świadczy o zahamowaniu
+syntezy DNA, a zatem proliferacji co jest równoznaczne
+z zatrzymaniem komórek w cyklu. Zdolność komórek do
+wbudowywania do DNA BrdU czy EdU można wykrywać immunocytochemicznie, przy użyciu techniki ELISA, jak również przy pomocy cytometru przepływowego
+[18]. Kolejnym powszechnie stosowanym znacznikiem
+proliferacji jest białko Ki67. Brak skupisk tego białka w
+komórkach świadczy o zatrzymaniu proliferacji. Obecność tego białka można wykrywać immunocytochemicznie [19,20].
+
+140
+
+Rycina 2. Udział inhibitorów kinaz zależnych od cyklin w przebiegu cyklu komórkowego. Cykl komórkowy jest ściśle regulowany dzięki wzajemnemu oddziaływaniu cyklin, kinaz zależnych od cyklin (CDK, ang. cyclin-dependent kinases) i inhibitorów kinaz zależnych od cyklin (CKI, ang. cyclin-dependent kinase
+inhibitors). Każda z faz cyklu komórkowego charakteryzuje się dominacją odpowiednich kompleksów cykliny z kinazą zależną od cyklin. W fazie G1 kluczową
+rolę odgrywają dwa takie kompleksy, cyklina D-CDK6-CDK4 oraz cyklina E-CDK2, w fazie S: cyklina A-CDK2 i w fazie G2 cyklina A-CDK1. Dwie klasy inhibitorów zależnych od cyklin uczestniczą w regulacji cyklu komórkowego: INK4/
+ARF (ang. Inhibitor of kinase 4/ alternative reading frame) oraz CIP/KIP (ang. CDK
+interacting protein/ kinase inhibitory protein). Do klasy INK/ARF należą następujące
+białka: p15, p16, p18 i p19. W klasie CIP/KIP można wyróżnić następujące białka:
+p21, p27 i p57. Zmodyfikowane według [21].
+
+www.postepybiochemii.pl
+
+[Strona 141]
+szlaków. Zwiększona synteza inhibitorów cyklu komórkowego takich jak białka p21 i p16 towarzyszy starzeniu replikacyjnemu, jak i przyspieszonemu. Zaobserwowano, że
+poziom p16 rośnie wraz z wiekiem u ludzi i myszy. U ludzi
+syntezę p16 wykazano w skórze oraz w limfocytach T [2325]. Ponadto stwierdzono, że wzrost poziomu tego białka
+koreluje ze zmniejszoną liczbą komórek progenitorowych,
+co jest obserwowane wraz z wiekiem w wielu tkankach [26].
+Starzenie komórkowe obserwowane jest również podczas
+rozwoju embrionalnego. Dochodzi wówczas to wzrostu poziomu białka p21, natomiast nie obserwowany jest wzrost
+białka p16 [27,28]. Szerzej to zagadnienie zostało omówione
+przez Annę Bielak-Żmijewskią i wsp. [4]. Wzrost poziomu
+białka p16 nie jest jedynie związany ze starzeniem komórkowym, a obserwowany jest również w komórkach gruczołu mlekowego [29]. Występują również dane pokazujące,
+że wzrost poziomu białka p16 jest wystarczającym dowodem na występowanie starzenia komórkowego. Brak białka
+p16 stwierdzono w przypadku wielu typów nowotworów:
+w glejaku wielopostaciowym, czerniaku, gruczolakoraku
+trzustki, nie drobnokomórkowym raku płuc, raku pęcherza i raku ustnogardłowym. Można zatem wnioskować, że
+obecność białka p16 hamuje rozwój nowotworu [30].2
+Oprócz powszechnie znanych i stosowanych znaczników
+starzenia jakimi są białka p16 i p21 istotną rolę w tym procesie odgrywają również inne inhibitory kinaz zależnych
+od cyklin, należące do dwóch klas: INK4/ARF i CIP/KIP.
+Zaobserwowano, że starzeniu komórkowemu towarzyszy
+wzrost poziomu białka p15. Wyższy poziom tego białka obserwowano w zmianach łagodnych występujących w skórze, płucach i trzustce, ale nie w złośliwych nowotworach
+występujących w tych samych tkankach i narządach. Podwyższony poziom tego białka korelował z występowaniem
+innych znaczników starzenia; wzrostem aktywności SA-βGal i występowaniem skupisk heterochromatyny (SAHF)
+[31]. U gryzoni zaobserwowano wzrost poziomu p19Ink4d
+wraz z wiekiem, ale nie w takim stopniu jak p16 Ink4a [32]. Ponadto, u gryzoni stwierdzono, że wzrostowi poziomu białka p16 Ink4a towarzyszy wzrost poziomu p19Arf (u ludzi odpowiednikiem tego białka jest p14ARF) [23]. Równie istotną
+rolę, jak białka należące do klasy INK4/ARF, pełnią białka
+należące do klasy CIP/KIP. Stwierdzono, że nadprodukcja
+białka p57 w komórkach raka prostaty, linii PPC-1, prowadzi do pojawienia się kilku znaczników starzenia komórkowego. Obserwowane jest wtedy zatrzymanie komórek w
+fazie G1 cyklu komórkowego. Dochodzi również do wzrostu aktywności SA-β-Gal oraz komórki stają się duże i płaskie. W komórkach linii HUC (ang. human uroepithelial cells)
+stwierdzono również, że wraz z rosnącą liczbą podziałów
+dochodzi do wzrostu poziomu białka p57 [33]. Wprowadzenie białka p57 do trzech linii komórkowych glejaka (U343
+MG-A, U87 MG, U343 MG) prowadziło do pojawienia się
+kilku znaczników starzenia. Komórki stawały się duże i płaskie, zatrzymywały się w fazie G1 cyklu komórkowego oraz
+dochodziło do wzrostu aktywności SA-β-Gal [6]. Kolejnym
+białkiem należącym do klasy CIP/KIP, które również pełni
+istotną funkcję w starzeniu jest białko p27. Zaobserwowano, że nie tylko nadprodukcja białka p21, ale również białka
+
+p27 w ludzkich komórkach kostniakomięsaka linii U2OS
+prowadziła do indukcji starzenia. Znacznikami procesu starzenia nie są jedynie inhibitory kinaz zależnych od cyklin,
+ale również cykliny. Wykazano, że cyklina D1 jest znacznikiem starzenia nowotworowych komórek epitelialnych
+[20,34]. Ponadto wzrost poziomu tego znacznika starzenia
+był również obserwowany w komórkach mięśni gładkich
+[35]. Zmiany poziomu inhibitorów cyklu komórkowego jak
+i cykliny D1 można między innymi ocenić przy użyciu techniki Western bloting.
+ZATRZYMANIE KOMÓREK W CYKLU KOMÓRKOWYM
+
+Związane ze starzeniem zatrzymanie komórek w cyklu
+postrzegane jest jako proces nieodwracalny, ponieważ nie
+ma znanych czynników fizjologicznych, które mogłyby ten
+proces odwrócić [36]. W zależności od typu komórek oraz
+od czynnika indukującego starzenie, może dochodzić do
+zatrzymania komórek w fazie G1 bądź G2 cyklu komórkowego. W przypadku starzenia replikacyjnego dochodzi
+zazwyczaj do zatrzymania komórek w fazie G1 cyklu komórkowego. Tak jak opisano w pracy Mao i wsp. [37] —
+może również dojść do zatrzymania komórek w fazie G2
+cyklu komórkowego. Przyspieszonemu starzeniu towarzyszy zatrzymanie komórek w fazie G2 cyklu komórkowego
+[5,20,38]. Zatrzymanie komórek w cyklu można zbadać
+przy użyciu cytometru przepływowego.
+ZNACZNIKI ZWIĄZANE Z DNA I CHROMATYNĄ
+WYSTĘPOWANIE SKUPISK BIAŁEK BĘDĄCYCH
+ELEMENTAMI SZLAKU ODPOWIEDZI NA
+USZKODZENIA DNA (DNA-SCARS)
+
+Uszkodzenia DNA, powodujące trwałą aktywację szlaku
+odpowiedzi na uszkodzenia DNA (DDR, ang. DNA Damage
+Response), prowadzą do indukcji przyspieszonego starzenia. Trwała aktywacja szlaku odpowiedzi na uszkodzenia
+DNA, w odróżnieniu od przejściowej aktywacji tego szlaku,
+charakteryzuje się długotrwałym występowaniem skupisk
+białek będących elementami szlaku DDR tak jak np. γH2AX
+i 53BP1 [39-41].3 Do niedawna uważano, że przyspieszone
+starzenie może być indukowane uszkodzeniami DNA występującymi zarówno w telomerowym, jak i nietelomerowym DNA [42]. W 2012 roku kilka zespołów badawczych
+[39,43,44] pokazało, że trwała aktywacja DDR jest wynikiem
+występowania uszkodzeń w odcinkach telomerowych. Występowanie kilku uszkodzeń w odcinkach telomerowych
+stanowi wystarczający bodziec do indukcji starzenia [39].
+Komórki, które uległy starzeniu w wyniku trwałej aktywacji szlaku odpowiedzi na uszkodzenia DNA, mają w
+jądrze komórkowym skupiska białek będących elementami tego szlaku (DNA-SCARS, ang. DNA segments with
+chromatin alterations). Skupiska te zawierają takie białka jak
+np.: ATM, γH2AX i 53BP1 [41,45]. W obrębie DNA-SCARS
+można również wyróżnić skupiska powstałe w wyniku aktywacji szlaku wynikającego z uszkodzonych, bądź zbyt
+krótkich telomerów (TIF, ang. telomere dysfunction-induZagadnienie to zostało szerzej omówione w artykule „Rola szlaku
+indukowanego uszkodzeniami DNA w apoptozie i starzeniu
+komórkowym”, opublikowanym w niniejszym zeszycie Postępów
+Biochemii.
+
+3
+
+Zagadnienie to zostało szerzej omówione w artykule „Rola starzenia
+komórkowego w kancerogenezie i terapii przeciwnowotworowej”,
+opublikowanym w niniejszym zeszycie Postępów Biochemii.
+
+2
+
+Postępy Biochemii 60 (2) 2014
+
+141
+
+[Strona 142]
+ced foci) [45,46]. Zaobserwowano, że DNA-SCARS często
+współwystępują z PML (ang. Promyelocytic Leukemia Protein)
+[41]. Występowanie DNA-SCARS można zbadać poprzez
+wykonanie barwień immunocytochemicznych.
+SKUPISKA HETEROCHROMATYNY
+ZWIĄZANE ZE STARZENIEM (SAHF)
+
+W komórkach, które uległy starzeniu, stwierdzono występowanie tzw. skupisk heterochromatyny związanych ze
+starzeniem (SAHF, ang. Senescence Associated Heterochromatin Foci). Zostały one po raz pierwszy opisane w 2003 przez
+Naritę i wsp. [47] w ludzkich fibroblastach, w których heterochromatyna uległa starzeniu w postaci 30–50 skupisk,
+widocznych w wyniku barwienia DAPI. SAHF powstają w
+obszarach promotorowych genów kodujących białka regulujące fazę S cyklu komórkowego. Skupiska te są wykrywane dzięki znakowaniu na obecność histonu H3, który uległ
+metylacji w pozycji lizyny 9 (H3 Lys 9), białka HP-1 (ang. heterochromatin protein-1), histonu makroH2A i białka HMGA
+(ang. High Mobility Group A) [47]. W obrębie rodziny makroH2A wyróżnić można histon makroH2A1.1, 1.2 i 2. [48].
+Występują trzy białka należące do rodziny HP1: HP1α, β i γ
+oraz dwa białka HMGA: HMGA1 i 2 [49]. W początkowym
+etapie powstawania SAHF udział biorą następujące białka:
+ASF1a, HIRA i PML [50]. Zaobserwowano, że w komórkach
+pozbawionych kinaz ATM czy ATR, białek które pełnią
+kluczową rolę w szlaku odpowiedzi na uszkodzenia DNA,
+nie dochodzi do powstawania skupisk heterochromatyny
+związanych ze starzeniem [51]. Pierwszy etap związany
+jest z kondensacją chromosomów. Wykrywany jest poprzez
+barwienie jądra komórkowego przy użyciu DAPI i obserwowany zanim dojdzie do wzbogacenia SAHF w białko
+HP1 oraz histony makroH2A czy H3K9Me. Za kondensację chromosomów podczas tworzenia SAHF odpowiadają
+dwa białka opiekuńcze histonów HIRA i ASF1a. Nadprodukcja HIRA czy ASF1a w komórkach pierwotnych przyspiesza tworzenie SAHF. Zaobserwowano, że wyciszenie
+ASF1a hamuje tworzenie SAHF w starzeniu indukowanym
+nadekspresją onkogenu RAS. Kolejnym krokiem w powstawaniu SAHF jest metylacja histonu H3 na reszcie lizyny 9.
+Następnie dochodzi do powstania miejsca wiązania białka
+HP1 i wbudowania histonu macroH2A. W komórkach ulegających starzeniu, przed powstaniem SAHF, białka HIRA
+i HP1 ulegają translokacji do PML-NB [48]. SAHF są markerem charakterystycznym zarówno dla przyspieszonego
+starzenia indukowanego aktywacją onkogenów, jak i replikacyjnego, jednakże zaobserwowano, że jest to zależne od
+typu komórek [47,50]. W starzeniu replikacyjnym ludzkich
+fibroblastów linii IMR90 i WI38, ale nie BJ, zaobserwowano
+powstawanie SAHF. Co ciekawe, gdy starzenie w komórkach linii BJ było indukowane nadekspresją onkogenów
+znacznik ten już się pojawiał [47].
+Pierwotnie stwierdzono, że jednym z elementów SAHF
+jest występowanie metylacji histonu H3 na reszcie lizyny 9.
+Nie potrafiono jednak rozróżnić poszczególnych modyfikacji histonu H3: H3K9me3, H3K9me2, H3K9me i H3K27me.
+Wszystkie wyżej wymienione modyfikacje charakteryzują
+się występowaniem identycznych aminokwasów wokół
+miejsca modyfikacji lizyny. Stworzenie bardziej specyficznych przeciwciał pozwoliło na dokładniejsze poznanie
+
+142
+
+struktury SAHF. Wykazano, że SAHF mają budowę warstwową. Rdzeń bogaty jest w H3K9me3 i otoczony jest pierścieniem, w którym dominuje H3K27me3. Podczas tworzenia SAHF dochodzi do wzrostu poziomu białka HP1,
+które wiąże się z H3K9me3, natomiast nie obserwowany
+jest znaczny wzrost poziomu histonu H3K9me3. Zaobserwowano, że pozbawienie ludzkich fibroblastów histonu
+H3K9me3 lub H3K27me3 nie uniemożliwiało powstawania SAHF [52]. Ponadto obniżenie poziomu białek HP1 nie
+uniemożliwia tworzenia SAHF [49].
+WZROST ZAWARTOŚCI BIAŁKA PML
+
+Białko PML (ang. promyelocytic leukemia protein) zostało
+po raz pierwszy opisane u osób dotkniętych ostrą białaczką
+promielocytarną. Stanowi ono główny składnik PML-NB
+(ang. PML nuclear bodies), zwanych również ND10 (ang.
+nuclear bodies) i POD (ang. promyelocytic oncogenic domains)
+[53-54]. W PML-NB stwierdzono obecność ponad 50 białek,
+między innymi Rb, p53, ATM, ATR, helikaz, topoizomeraz
+oraz białek biorących udział w naprawie uszkodzeń DNA.
+Występują dowody świadczące o bezpośrednim związku białka PML ze starzeniem. Synteza PML w komórkach
+prawidłowych prowadzi do nieodwracalnego zatrzymania komórek w cyklu i indukcji starzenia komórkowego.
+Ponadto stwierdzono, że białko to odgrywa istotną rolę
+w przyspieszonym starzeniu indukowanym onkogenami
+[51,55]. Zaobserwowano, że podczas starzenia zwiększa
+się liczba i wielkość PML-NB, natomiast nowotworzeniu
+towarzyszy zmniejszenie ich liczby wynikające z obniżonej
+syntezy PML [56]. Nadekspresja onkogenu RAS prowadzi do indukcji starzenia, czemu towarzyszy zwiększenie
+liczby PML-NB w porównaniu z komórkami kontrolnymi.
+Ponadto w starzeniu indukowanym RAS zaobserwowano
+występowanie białka Rb i p53 w obrębie PML-NB. Stwierdzono, że brak białka PML uniemożliwia indukcję starzenia
+spowodowanego nadprodukcją białka RAS [57]. W komórkach, w których do zatrzymania cyklu dochodzi w wyniku
+braku surowicy, osiągnięcia konfluencji czy też nadprodukcji białka p53, nie obserwowane jest pojawienie się większej
+liczby PML-NB. Wykazano również, że nadprodukcja białka PML prowadzi do indukcji starzenia. W powstawaniu
+skupisk heterochromatyny związanych ze starzeniem biorą
+udział PML-NB. Stwierdzono również, że w fibroblastach
+linii IMR90, starzeniu replikacyjnemu towarzyszył wzrost
+poziomu białka PML [57]. Białko PML można wykryć poprzez wykonywanie barwień immunocytochemicznych na
+obecność tego białka.
+SKRACANIE TELOMERÓW I AKTYWNOŚĆ TELOMERAZY
+
+Telomery są to fragmenty DNA, obecne na zakończeniach chromosomów. U ssaków zbudowane są z powtórzeń
+sekwencji sześciu nukleotydów TTAGGG. Telomery wraz
+z kompleksem białek pełnią funkcję ochronną. Wyróżnić
+można sześć białek związanych z telomerami zwanych szelterynami: TRF1 (ang. telomeric repeat binding factor 1), TRF2
+(ang. telomeric repeat binding factor 2), POT1 (ang. protection
+of telomeres 1), TIN2 (ang. TRF1-interacting nuclear protein
+2), TPP1 i Rap1 (ang. repressor-activator protein 1). Z każdym podziałem komórkowym telomery ulegają skracaniu.
+Maksymalna liczba podziałów, której komórka może ulec
+www.postepybiochemii.pl
+
+[Strona 143]
+nazwana jest limitem Hayflicka, a starzenie spowodowane
+skracaniem telomerów nazwane zostało starzeniem replikacyjnym. Za odbudowowywanie telomerów odpowiedzialna jest telomeraza. Poziom enzymu i liczba komórek, które
+wykazują jego aktywność jest bardzo różna u różnych gatunków. U myszy w komórkach somatycznych obserwowana jest aktywność telomerazy, podczas gdy u ludzi takie zjawisko jest rzadkie [1,58]. Badanie długości telomerów jest
+znacznikiem stosowanym do badania starzenia replikacyjnego i można go oznaczać przy użyciu technik FISH (ang.
+Fluorescence in situ hybridization) oraz Southern blotting.4
+OBNIŻENIE POZIOMU LAMINY B1
+
+Jednym ze znaczników starzenia jest towarzyszący temu
+procesowi spadek poziomu laminy B1, który obserwowany
+był zarówno w warunkach in vitro, jak i in vivo [2]. Laminy
+należą do filamentów pośrednich typu V i wchodzą w skład
+błony jądrowej. Spadek poziomu laminy B1 widoczny był
+zarówno w starzeniu replikacyjnym, jak również indukowanym nadekspresją onkogenów, czy też uszkodzeniami
+DNA. Stwierdzono, że spadek poziomu laminy B1 związany ze starzeniem, był niezależny od obecności następujących białek: p38, ATM i czynnika transkrypcyjnego NF-κB,
+natomiast niezbędna była aktywność jednego z kluczowych
+szlaków biorących udział w starzeniu, p16-pRb bądź p53-p21. Starzeniu może również towarzyszyć wzrost poziomu
+reaktywnych form tlenu [59]. Obniżenie ich poziomu nie
+hamowało spadku poziomu laminy B1 [60]. Poziom laminy
+B1 można zbadać poprzez wykonanie barwień immunocytochemicznych, jak również przy użyciu techniki Western
+blotting.
+OKSYDACYJNE MODYFIKACJE ZASAD AZOTOWYCH
+
+Za kolejny znacznik starzenia komórkowego może być
+uznany poziom utlenionych pochodnych zasad azotowych
+i nukleozydów np. 8-oksyguaniny (8-oksyGua) oraz jej nukleozydu 8-oksy-2’-deoksyguanozyny (8-oksydG). Wolnorodnikowa teoria starzenia sformułowana przez Denhama
+Harmana w 1956 roku zakłada, że krytyczną rolę w starzeniu organizmu odgrywają wolne rodniki, które prowadzą
+do uszkodzenia makrocząsteczek komórkowych takich jak
+DNA, lipidy i białka [61]. Analiza tkanek zwierzęcych oraz
+ludzkich, dostarcza licznych dowodów na korelację pomiędzy występowaniem zmian spowodowanych obecnością
+wolnych rodników a wiekiem [62]. Stwierdzono zależny od
+wieku wzrost liczby oksydacyjnych uszkodzeń DNA oraz
+8-oksy-2’-deoksyguanozyny (8-oksydG) w tkankach zwierząt doświadczalnych. U gryzoni zaobserwowano wyższy
+poziom 8-oksydG w jądrowym DNA wyizolowanym z różnych narządów, pochodzących od zwierząt starszych niż
+od zwierząt młodych [63]. U ludzi wykazano, że poziom
+znacznika oksydacycjnych uszkodzeń DNA 8-oksydG jest
+wyższy w dwóch grupach wiekowych, w których średnia
+wieku wynosiła odpowiednio 67 i 50 lat niż u osób w wieku
+około 31 lat. Wykazana została również dodatnia korelacja
+pomiędzy poziomem 8-oksydG, a wiekiem badanych osób.
+Poziom 8-oksydG badano w leukocytach i moczu. Ponadto,
+Zagadnienie to zostało szerzej omówione w artykule „Rola starzenia
+komórkowego w starzeniu organizmu i chorobach związanych z
+wiekiem”, opublikowanym w niniejszym zeszycie Postępów Biochemii.
+
+4
+
+Postępy Biochemii 60 (2) 2014
+
+w moczu zaobserwowano nie tylko zależny od wieku podwyższony poziom 8-oksydG, ale również 8-oxoGua, który
+jest postrzegany jako najbardziej czuły znacznik wpływu
+stresu oksydacyjnego na DNA [64].
+METYLACJA
+
+Starzeniu towarzyszy globalna demetylacja, która obserwowana jest w wielu typach komórek i tkanek. Obserwacji
+tych dokonano badając poziom 5-metylocytozyny (5-mC).
+Stwierdzono, że poziom tego znacznika metylacji spada
+w komórkach hodowanych in vitro wraz z liczbą pasaży.
+Transformacja komórek wirusem SV-40 prowadzi do utrzymywania się 5-mC na stałym poziomie. Oprócz globalnej
+demetylacji, starzeniu towarzyszy również występowanie
+demetylacji konkretnych genów jak na przykład: MYC i
+β-aktyna. Ponadto stwierdzono, że w starzeniu występuje
+również hipometylacja [65]. Badania fibroblastów pokazały,
+że starzeniu replikacyjnemu towarzyszy zarówno hipometylacja i skupiskowo występująca hipermetylacja dotycząca
+konkretnych genów. Profil metylacji w komórkach, które
+uległy starzeniu był podobny do tego, który występuje w
+komórkach nowotworowych [66].
+FENOTYP SEKRECYJNY ZWIĄZANY
+ZE STARZENIEM (SASP/SMS)
+
+Inną cechą charakterystyczną dla komórek starych jest
+występowanie tzw. fenotypu wydzielniczego zwanego
+SASP (ang. Senescence Associated Secreatory Phenotype) lub
+SMS (ang. Senescence-Messaging Secretome) [41,67,68]. W
+obrębie SASP/SMS wyróżnić można takie czynniki jak:
+cytokiny, proteazy, czynniki wzrostu, czy też inne związki
+wykazujące działanie autokrynne bądź parakrynne. Fenotyp sekrecyjny komórek zależny jest zarówno od bodźca indukującego starzenie, jak i typu komórek. Aktywność jego
+jest regulowana przez niektóre białka szlaku odpowiedzi
+na uszkodzenia DNA: ATM (ang. Ataxia telangiectasia mutated), NBS1(ang. Nijmegen breakage syndrome protein-1) i CHK2
+(ang. checkpoint kinase 2) [41]. Natomiast inaktywacja białka
+p53 powoduje zwiększone wydzielanie niektórych elementów SASP [67]. Ponadto SASP jest regulowany przez następujące czynniki transkrypcyjne: NF-κB (ang. nuclear factor
+kappa-light-chain-enhancer of activated B cells) i C/EBP-β (ang.
+CCAAT-enhancer-binding proteins) [69,70]. Fenotyp sekrecyjny pojawia się, gdy dochodzi do trwałej aktywacji szlaku
+odpowiedzi na uszkodzenia DNA. Podczas przejściowej
+aktywacji szlaku, czynniki wchodzące w skład SASP nie
+są wydzielane przez komórki. Zauważono, że istotną rolę
+w regulacji fenotypu sekrecyjnego pełni również kinaza p38MAPK pojawijąca się pod wpływem nadekspresji
+onkogenu RAS, jak również promieniowania X. Kinaza
+p38MAPK indukowała SASP poprzez aktywację czynnika
+transkrypcyjnego NF-κB. Zastosowanie inhibitora kinazy
+p38MAPK zmniejszało wydzielanie większości elementów
+SASP [71]. Czynniki wydzielane przez komórki ulegające
+starzeniu mogą mieć zarówno pozytywny, jak i negatywny wpływ na wiele procesów zachodzących w organizmie.
+Elementy SASP indukują angiogenezę, proliferację i różnicowanie komórek, naprawę tkanek, transformację epitelialno-mezynchymalną oraz prowadzą do występowania oporności na chemioterapię (Ryc. 3). Jedną z pierwszych cytokin
+
+143
+
+[Strona 144]
+isolated from human aorta. Biogerontology
+15: 47-64
+5. Mosieniak G, Adamowicz M, Alster O,
+Jaskowiak H, Szczepankiewicz AA, Wilczynski GM, Ciechomska IA, Sikora E (2012) Curcumin induces permanent growth arrest of
+human colon cancer cells: link between senescence and autophagy. Mechanism of ageing
+and Development 133: 444-455
+
+Rycina 3. Procesy, na które wpływają elementy fenotypu sekrecyjnego związanego ze starzeniem (SASP/SMS).
+Czynniki wydzielane przez komórki ulegające starzeniu indukują angiogenezę, oporność na chemioterapię, transformację epitelialno-mezenchymalną, proliferację komórek, regenerację tkanek i prowadzą do aktywacji układu
+odpornościowego. Zmodyfikowane według [2].
+
+wydzielanych przez komórki, w wyniku indukcji starzenia
+jest IL-1α [72]. IL-1α wiąże się z receptorem IL1R, który aktywuje kaskadę sygnałów prowadzącą do aktywacji NF-κB.
+Ten czynnik indukuje transkrypcję genów kodujących cytokiny prozapalne, IL-6 i IL-8 [72]. Fenotyp sekrecyjny można
+zmierzyć przy użyciu cytometru przepływowego, jak również z użyciem techniki ELISA.
+ZNACZNIKI STARZENIA INDUKOWANE
+AKTYWACJĄ ONKOGENÓW
+WZROST POZIOMU BIAŁEK: DEC1 I DCR2
+
+Występuje szereg markerów przyspieszonego starzenia
+indukowanego aktywacją onkogenów. Zaobserwowano
+podwyższony poziom białek DEC1 (ang. differentiated embro-chondrocyte expressed-1) i DCR2 (ang. decoy death receptor-2). DEC1 i DCR2 ulegają aktywacji przez p53. Wyższy
+poziom tych białek obserwowano w zmianach łagodnych
+występujących w skórze, płucach i trzustce, ale nie w złośliwych nowotworach występujących w tych samych tkankach i narządach. Podwyższony poziom tych białek korelował z występowaniem innych znaczników starzenia,
+wzrostem aktywności SA-β-Gal i występowaniem skupisk
+heterochromatyny (SAHF) [31].
+PODSUMOWANIE
+
+Starzenie komórkowe jest bardzo złożonym procesem,
+którego wnikliwe poznanie i zrozumienie możliwe jest
+dzięki zbadaniu szeregu jego znaczników. Znanych jest
+wiele znaczników starzenia komórkowego. Umożliwiają one wykrywanie zarówno zmian biochemicznych, jak i
+morfologicznych. Aby scharakteryzować starzenie komórkowe niezbędne jest zbadanie przynajmniej kilku znaczników tego procesu i dopiero ich współwystępowanie pozwala na uzyskanie pewności, że komórki uległy starzeniu.
+PIŚMIENNICTWO
+1. de Jesus BB, Blasco MA (2012) Assessing cell and organ senescence
+biomarkers. Circ Res. 111: 97-109
+2. Campisi J (2013) Aging, cellular senescence, and cancer. Annu Rev
+Physiol 75: 685-705
+3. Lopez-Otin C, Blasco MA, Partridge L, Serrano M, Kroemer G (2013)
+The hallmarks of ageing. Cell 153: 1194-1217
+4. Bielak-Zmijewska A, Wnuk M, Przybylska D, Grabowska W, Lewinska A, Alster O, Korwek Z, Cmoch A, Myszka A, Pikula S, Mosieniak
+G, Sikora E (2014) A comparison of replicative senescence and doxorubicin-induced premature senescence of vascular smooth muscle cells
+
+144
+
+6. Tsugu A, Sakai K, Dirks PB, Jung S, Weksberg R, Fei YL, Mondal S, Ivanchuk S, Ackerley C, Hamel PA, Rutka JT (2000) Expression
+of p57(KIP2) potently blocks the growth of
+human astrocytomas and induces cell senescence. Am J Pathol 157: 919-932
+
+7. Denoyelle C, Abou-Rjaily G, Bezrookove
+V, Verhaegen M, Johnson TM, Fullen DR, Pointer JN, Gruber SB, Su LD, Nikiforov MA, Kaufman RJ, Bastian BC,
+Soengas MS (2006) Anti-oncogenic role of the endoplasmic reticulum
+differentially activated by mutations in the MAPK pathway. Nat Cell
+Biol 8: 1053-1063
+8. Michaloglou C, Vredeveld LC, Soengas MS, Denoyelle C, Kuilman T,
+van der Horst CM, Majoor DM, Shay JW, Mooi WJ, Peeper DS (2005).
+BRAFE600-associated senescence-like cell cycle arrest of human naevi.
+Nature 436: 720-724
+9. Dimri GP, Lee X, Basile G , Acosta M , Scott G, Roskelley C, Medrano
+EE, Linskensi M, Rubeljii I, O Pereira-Smith, Peacocke M, Campisi J
+(1995). A biomarker that identifies senescent human cells in culture
+and in aging skin in vivo. Proc Natl Acad Sci USA 92: 9363-9367
+10. Itahana K, Campisi J, Dimri GP (2004) Mechanisms of cellular senescence in human and mouse cells. Biogerontology 5: 1-10
+11. Severino J, Allen RG, Balin S, Balin A, Cristofalo VJ (2000) Is beta-galactosidase staining a marker of senescence in vitro and in vivo? Exp
+Cell Res 257: 162-171
+12. Lee BY, Han JA, Im JS, Morrone A, Johung K, Goodwin EC, Kleijer WJ,
+DiMaio D, Hwang ES (2006) Senescence-associated beta-galactosidase
+is lysosomal beta-galactosidase. Aging Cell 5: 187-195
+13. Kurz JD, Decary S, Hong Y, Erusalimsky JD (2000) Senescence-associated β-galactosidase reflects an increase in lysosomal mass during
+replicative ageing of human endothelial cells. J Cell Sci 113: 3613-3622
+14. Georgakopoulou EA, Tsimaratou K, Evangelou K, Fernandez Marcos
+PJ, Zoumpourlis V, Trougakos IP, Kletsas D, Bartek J, Serrano M, Gorgoulis VG (2013) Specific lipofuscin staining as a novel biomarker to
+detect replicative and stress-induced senescence. A method applicable
+in cryo-preserved and archival tissues. Aging (Albany NY) 5: 37-50
+15. Eriksson JE, Dechat T, Grin B, Helfand B, Mendez M, Pallari HM,
+Goldman RD (2009) Introducing intermediate filaments: from discovery to disease. J Clin Invest 119: 1763-1771
+16. Ivaska J, Pallari HM, Nevo J, Eriksson JE (2007) Novel functions of
+vimentin in cell adhesion, migration, and signaling. Exp Cell Res 313:
+2050-2062
+17. Nishio K, Inoue A (2005) Senescence-associated alterations of cytoskeleton: extraordinary production of vimentin that anchors cytoplasmic
+p53 in senescence human fibroblasts. Histochem Cell Biol 123: 263-273
+18. Itahana K, Itahana Y, Dimri GP (2013) Colorimetric detection of senescence-associated β galactosidase. Methods Mol Biol 965: 143-56
+19. Gerdes J, Schwab U, Lemke H, Stein H (1983) Production of a mouse
+monoclonal antibody reactive with a human nuclear antigen associated with cell proliferation. Int J Cancer 31: 13-20
+20. Sliwinska MA, Mosieniak G, Wolanin K, Babik A, Piwocka K, Magalska A, Szczepanowska J, Fronk J, Sikora E (2009) Induction of senescence with doxorubicin leads to increased genomic instability of
+HCT116 cells. Mech Ageing Dev 130: 24-32
+21. Kepp O, Martins I, Menger L, Michaud M, Adjemian S, Sukkurwala
+AQ, Galluzzi L, Kroemer G (2013) Quantification of cell cycle-arresting
+proteins. Methods Mol Biol 965: 121-142
+22. Ben-Porath I, Weinberg RA (2005) The signals and pathways activating cellular senescence. Int J Biochem Cell Biol 37: 961-976
+www.postepybiochemii.pl
+
+[Strona 145]
+23. Krishnamurthy J, Torrice C, Ramsey MR, Kovalev GI, Al-Regaiey
+K, Su L, Sharpless NE (2004) Ink4a/Arf expression is a biomarker of
+aging. J Clin Invest 114: 1299-1307.
+24. Ressler S, Bartkova J, Niederegger H, Bartek J, Scharffetter-Kochanek
+K, Jansen-Dürr P, Wlaschek M (2006) p16INK4A is a robust in vivo
+biomarker of cellular aging in human skin. Aging Cell 5: 379-389
+25. Liu Y, Sanoff HK, Cho H, Burd CE, Torrice C, Ibrahim JG, Thomas NE,
+Sharpless NE (2009) Expression of p16(INK4a) in peripheral blood T-cells is a biomarker of human aging. Aging Cell 8: 439-448
+26. Krishnamurthy J, Ramsey MR, Ligon KL, Torrice C, Koh A, Bonner-Weir S, Sharpless NE (2006) p16INK4a induces an age-dependent
+decline in islet regenerative potential. Nature 443: 453-457
+27. Muñoz-Espín D, Cañamero M, Maraver A, Gómez-López G, Contreras J, Murillo-Cuesta S, Rodríguez-Baeza A, Varela-Nieto I, Ruberte
+J, Collado M, Serrano M (2013) Programmed cell senescence during
+mammalian embryonic development. Cell 155: 1104-1118
+28. Storer M, Mas A, Robert-Moreno A, Pecoraro M, Ortells MC, Di Giacomo V, Yosef R, Pilpel N, Krizhanovsky V, Sharpe J, Keyes WM (2013)
+Senescence is a developmental mechanism that contributes to embryonic growth and patterning. Cell 155: 1119-1130
+29. Gadd M, Pisc C, Branda J, Ionescu-Tiba V, Nikolic Z, Yang C, Wang T,
+Shackleford GM, Cardiff RD, Schmidt EV (2001) Regulation of cyclin
+D1 and p16(INK4A) is critical for growth arrest during mammary involution. Cancer Res 61: 8811-8819
+30. Rocco JW, Sidransky D (2001) p16(MTS-1/CDKN2/INK4a) in cancer
+progression. Exp Cell Res 264: 42-55
+31. Collado M, Gil J, Efeyan A, Guerra C, Schuhmacher AJ, Barradas M,
+Benguría A, Zaballos A, Flores JM, Barbacid M, Beach D, Serrano M
+(2005) Tumour biology: senescence in premalignant tumours. Nature
+436: 642
+32. Zindy F, Quelle DE, Roussel MF, Sherr CJ (1997) Expression of the
+p16INK4a tumor suppressor versus other INK4 family members during
+mouse development and aging. Oncogene 15: 203-211
+33. Schwarze SR, Shi Y, Fu VX, Watson PA, Jarrard DF (2001) Role of cyclin-dependent kinase inhibitors in the growth arrest at senescence in
+human prostate epithelial and uroepithelial cells. Oncogene 20: 81848192
+34. Sabisz M, Skladanowski A (2009) Cancer stem cells and escape from
+drug-induced premature senescence in human lung tumor cells: implications for drug resistance and in vitro drug screening models. Cell
+Cycle 8: 3208-3217
+35. Burton DG, Sheerin AN, Ostler EL, Smith K, Giles PJ, Lowe J, Rhys-Williams W, Kipling DG, Faragher RG (2007) Cyclin D1 overexpression permits the reproducible detection of senescent human vascular
+smooth muscle cells. Ann N Y Acad Sci 1119: 20-31
+36. Beauséjour CM1, Krtolica A, Galimi F, Narita M, Lowe SW, Yaswen
+P, Campisi J (2003) Reversal of human cellular senescence: roles of the
+p53 and p16 pathways. EMBO J 22: 4212-4222
+37. Mao Z1, Ke Z, Gorbunova V, Seluanov A. (2012) Replicatively senescent cells are arrested in G1 and G2 phases. Aging (Albany NY) 4:
+431-435
+38. Chatterjee N, Kiran S, Ram BM, Islam N, Ramasarma T, Ramakrishna
+G (2011) Diperoxovanadate can substitute for H(2)O(2) at much lower
+concentration in inducing features of premature cellular senescence in
+mouse fibroblasts (NIH3T3). Mech Ageing Dev 132: 230-239
+39. Fumagalli M, Rossiello F, Clerici M, Barozzi S, Cittaro D, Kaplunov
+JM, Bucci G, Dobreva M, Matti V, Beausejour CM, Herbig U, Longhese
+MP, d’Adda di Fagagna F (2012) Telomeric DNA damage is irreparable and causes persistent DNA-damage-response activation. Nat Cell
+Biol 14: 355-365
+40. Sedelnikova OA1, Horikawa I, Zimonjic DB, Popescu NC, Bonner
+WM, Barrett JC (2004). Senescing human cells and ageing mice accumulate DNA lesions with unrepairable double-strand breaks. Nat Cell
+Biol 6: 168-170
+41. Rodier F, Coppé JP, Patil CK, Hoeijmakers WA, Muñoz DP, Raza SR,
+Freund A, Campeau E, Davalos AR, Campisi J (2009) Persistent DNA
+damage signalling triggers senescence-associated inflammatory cytokine secretion. Nat Cell Biol 11: 973-979
+Postępy Biochemii 60 (2) 2014
+
+42. Nakamura AJ, Chiang YJ, Hathcock KS, Horikawa I, Sedelnikova OA,
+Hodes RJ, Bonner WM (2008) Both telomeric and non-telomeric DNA
+damage are determinants of mammalian cellular senescence. Epigenetics Chromatin 1: 6
+43. Hewitt G, Jurk D, Marques FD, Correia-Melo C, Hardy T, Gackowska
+A, Anderson R, Taschuk M, Mann J, Passos JF (2012) Telomeres are
+favoured targets of a persistent DNA damage response in ageing and
+stress-induced senescence. Nat Commun 3: 708
+44. Suram A, Kaplunov J, Patel PL, Ruan H, Cerutti A, Boccardi V, Fumagalli M, Di Micco R, Mirani N, Gurung RL, Hande MP, d’Adda di
+Fagagna F, Herbig U (2012) Oncogene-induced telomere dysfunction
+enforces cellular senescence in human cancer precursor lesions. EMBO
+J 31: 2839-2851
+45. Herbig U, Jobling WA, Chen BP, Chen DJ, Sedivy JM (2004) Telomere
+shortening triggers senescence of human cells through a pathway involving ATM, p53, and p21(CIP1), but not p16(INK4a). Mol Cell 14:
+501-513
+46. Herbig U1, Ferreira M, Condel L, Carey D, Sedivy JM (2006) Cellular
+senescence in aging primates. Science 311: 1257
+47. Narita M1, Nũnez S, Heard E, Narita M, Lin AW, Hearn SA, Spector
+DL, Hannon GJ, Lowe SW (2003) Rb-mediated heterochromatin formation and silencing of E2F target genes during cellular senescence.
+Cell 113: 703-716
+48. Adams PD (2007) Remodeling of chromatin structure in senescent
+cells and its potential impact on tumor suppression and aging. Gene
+397: 84-93
+49. Zhang R, Chen W, Adams PD (2007) Molecular dissection of formation of senescence-associated heterochromatin foci. Mol Cell Biol 27:
+2343-2358
+50. Zhang R, Poustovoitov MV, Ye X, Santos HA, Chen W, Daganzo SM,
+Erzberger JP, Serebriiskii IG, Canutescu AA, Dunbrack RL, Pehrson
+JR, Berger JM, Kaufman PD, Adams PD (2005) Formation of MacroH2A-containing senescence-associated heterochromatin foci and senescence driven by ASF1a and HIRA. Dev Cell 8: 19-30
+51. O’Sullivan RJ, Karlseder J (2012) The great unravelling: chromatin as a
+modulator of the aging process. Trends Biochem Sci 37: 466-476
+52. Chandra T, Kirschner K, Thuret JY, Pope BD, Ryba T, Newman S,
+Ahmed K, Samarajiwa SA, Salama R, Carroll T, Stark R, Janky R, Narita M, Xue L, Chicas A, Nũnez S, Janknecht R, Hayashi-Takanaka Y,
+Wilson MD, Marshall A, Odom DT, Babu MM, Bazett-Jones DP, Tavaré S, Edwards PA, Lowe SW, Kimura H, Gilbert DM, Narita M (2012)
+Independence of repressive histone marks and chromatin compaction
+during senescent heterochromatic layer formation. Mol Cell 47: 203214
+53. Negorev D, Maul GG (2001) Cellular proteins localized at and interacting within ND10/PML nuclear bodies/PODs suggest functions of
+a nuclear depot. Oncogene 20: 7234-7242
+54. Ivanschitz L, De Thé H, Le Bras M (2013) PML, SUMOylation, and
+Senescence. Front Oncol 3: 171
+55. Scaglioni PP1, Rabellino A, Yung TM, Bernardi R, Choi S, Konstantinidou G, Nardella C, Cheng K, Pandolfi PP (2012) Translation-dependent mechanisms lead to PML upregulation and mediate oncogenic K-RAS-induced cellular senescence. EMBO Mol Med 4: 594-602
+56. Koken MH, Linares-Cruz G, Quignon F, Viron A, Chelbi-Alix MK,
+Sobczak-Thépot J, Juhlin L, Degos L, Calvo F, de Thé H (1995) The
+PML growth-suppressor has an altered expression in human oncogenesis. Oncogene 10: 1315-1324
+57. Ferbeyre G, de Stanchina E, Querido E, Baptiste N, Prives C, Lowe
+SW (2000) PML is induced by oncogenic ras and promotes premature
+senescence. Genes Dev 2000 14: 2015-2027
+58. Correia-Melo C, Hewitt G, Passos JF (2014) Telomeres, oxidative stress
+and inflammatory factors: partners in cellular senescence? Longev
+Healthspan 3: 1
+59. Passos JF, Nelson G, Wang C, Richter T, Simillion C, Proctor CJ, Miwa
+S, Olijslagers S, Hallinan J, Wipat A, Saretzki G, Rudolph KL, Kirkwood TB, von Zglinicki T (2010) Feedback between p21 and reactive
+oxygen production is necessary for cell senescence. Mol Syst Biol 6: 347
+
+145
+
+[Strona 146]
+60. Freund A, Laberge RM, Demaria M, Campisi J (2012) Lamin B1 loss is
+a senescence-associated biomarker. Mol Biol Cell 23: 2066-2075
+
+notypes reveal cell-nonautonomous functions of oncogenic RAS and
+the p53 tumor suppressor. PLoS Biol 6: 2853-2868
+
+61. Harman D (1956) Aging: a theory based on free radical and radiation
+chemistry. J Gerontol 11: 298-300
+
+68. Kuilman T, Peeper DS (2009) Senescence-messaging secretome: SMS-ing cellular stress. Nat Rev Cancer 9: 81-94
+
+62. Tudek B, Winczura A, Janik J, Siomek A, Foksinski M, Oliński R (2010)
+Involvement of oxidatively damaged DNA and repair in cancer development and aging. Am J Transl Res 2: 254-284
+
+69. Acosta JC, O’Loghlen A, Banito A, Guijarro MV, Augert A, Raguz S,
+Fumagalli M, Da Costa M, Brown C, Popov N, Takatsu Y, Melamed
+J, d’Adda di Fagagna F, Bernard D, Hernando E, Gil J (2008) Chemokine signaling via the CXCR2 receptor reinforces senescence. Cell 133:
+1006-1018
+
+63. Hamilton ML, Van Remmen H, Drake JA, Yang H, Guo ZM, Kewitt
+K, Walter CA, Richardson A (2001) Does oxidative damage to DNA
+increase with age? Proc Natl Acad Sci USA 98: 10469-10474
+64. Olinski R, Siomek A, Rozalski R, Gackowski D, Foksinski M, Guz J,
+Dziaman T, Szpila A, Tudek B (2007) Oxidative damage to DNA and
+antioxidant status in aging and age-related diseases. Acta Biochim Pol
+54: 11-26
+65. Issa JP (1999) Aging, DNA methylation and cancer. Crit Rev Oncol
+Hematol 32: 31-43
+66. Cruickshanks HA, McBryan T, Nelson DM, Vanderkraats ND, Shah
+PP, van Tuyn J, Singh Rai T, Brock C, Donahue G, Dunican DS, Drotar
+ME, Meehan RR, Edwards JR, Berger SL, Adams PD (2013) Senescent
+cells harbour features of the cancer epigenome. Nat Cell Biol 15: 1495506
+67. Coppé JP, Patil CK, Rodier F, Sun Y, Muñoz DP, Goldstein J, Nelson
+PS, Desprez PY, Campisi J (2008) Senescence-associated secretory phe-
+
+70. Kuilman T, Michaloglou C, Vredeveld LC, Douma S, van Doorn R,
+Desmet CJ, Aarden LA, Mooi WJ, Peeper DS (2008) Oncogene-induced senescence relayed by an interleukin-dependent inflammatory
+network. Cell 133 : 1019-1031
+71. Freund A, Patil CK, Campisi J (2011) p38MAPK is a novel DNA damage response-independent regulator of the senescence-associated
+secretory phenotype. EMBO J 30: 1536-1548
+72. Orjalo AV, Bhaumik D, Gengler BK, Scott GK, Campisi J (2011) Cell
+surface-bound IL-1alpha is an upstream regulator of the senescence-associated IL-6/IL-8 cytokine network. Proc Natl Acad Sci USA 106:
+17031-17036
+73. Rodier F, Campisi J (2011) Four faces of cellular senescence. J Cell Biol
+192: 547-556
+
+Markers of cellular senescence
+Olga Alster1,, Zbigniew Korwek2
+Laboratory of Molecular Bases of Aging, Nencki Institute of Experimental Biology, 3 Pasteura St., 02-093 Warsaw, Poland
+Laboratory of Modeling in Biology and Medicine, Institute of Fundamental Technological Research PAS, 5B Pawińskiego St., 02-106 Warsaw,
+Poland
+
+1
+2
+
+
+
+e-mail: o.alster@nencki.gov.pl
+
+Key words: markers of senescence, replicative senescence, premature senescence, secreatory phenotype, senescence associated β-galactosidase
+
+ABSTRACT
+Cellular senescence is a complex process associated with irreversible cell cycle arrest. We can distinguish replicative senescence, which is
+telomere dependent and stress-induced premature senescence (SIPS), which is telomere independent. Replicative senescence can be observed
+in culture after a few weeks or months, depending on the cell type. On the other hand SIPS can be observed a few days after treating with
+a senescence inducing agent. Till now a universal marker of senescence has not been decribed. Studies concerning senescence are possible
+thanks to the existance of many markers of senescence which enable to observe molecular as well as biochemical changes associated with this
+process. The presence of a few markers of senescence allows us to be sure that cells underwent senescence.
+
+146
+
+www.postepybiochemii.pl
