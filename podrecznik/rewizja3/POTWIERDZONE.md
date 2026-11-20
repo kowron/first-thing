@@ -680,15 +680,222 @@ Elektroforeza białek, przypomnienie ddNTP, wstęp do STR i ojcostwa ze s. 765�
 
 ---
 
-## Z07–Z11 – NIEZWERYFIKOWANE
-Weryfikacja przerwana po rozdziale 06 na polecenie zleceniodawcy (rozdziały od z07 przejmuje inny agent). Raporty `rewizja3/z07.md` … `z11.md` nie były czytane.
+## Z07 – Komórki macierzyste, różnicowanie, regeneracja (45 zgłoszeń)
+
+Uwaga: tryb lekki – „check i zatwierdź”. Pozycje odczytane ze skanu (tab. 9.1, Drewa s. 692, Jóźwiak s. 110, tab. T) potwierdzone w `stan/z07-v3.md` – odrzucone.
+
+### A. TEKST
+
+### z07-1  (pozycja raportu nr 1; M – wniosek nielogiczny i spoza Twymana: z „większość kręgowców odtwarza tylko część” nie wynika „człowiek nie odtworzy”)
+PLIK: rozdzialy/z07-komorki-macierzyste.html
+ZNAJDŹ: Ssak – np. człowiek – też jest kręgowcem, więc utraconej kończyny nie odtworzy.
+ZAMIEŃ NA: Człowiek i inne ssaki utraconej kończyny nie odtwarzają.
+
+### z07-2  (pozycja raportu nr 2; M – Twyman s. 394: „suggested” = sugeruje, nie „potwierdza”; cały podrozdział to hipoteza)
+PLIK: rozdzialy/z07-komorki-macierzyste.html
+ZNAJDŹ: Rolę kwasu retinowego potwierdza jego podawanie z zewnątrz.
+ZAMIEŃ NA: Na rolę kwasu retinowego wskazuje jego podawanie z zewnątrz.
+
+### B. SKŁAD / RYCINY / UKŁAD (Opus)
+- z07-B1 (poz. 35, 36, 37, 45) puste pola: s. 4 (dół ~1/5), s. 9 (prawa kolumna + dół), s. 10 (dół ~1/3; odsyłacz „ryc. 4” na s. 10, rycina na s. 11) – ramki „Przykład” przeszły na następną stronę.
+- z07-B2 (poz. 36, 38) rozbite tabele: Shh/Ihh/Dhh (s. 9, wiersz Dhh sam na górze prawej kolumny), Hedgehog pełna (s. 20, 1 wiersz na dole lewej), Teorie (s. 17/18, 2+2).
+- z07-B3 (poz. 24, 41) ryc. 4 (hipertrofia/hiperplazja): kodowanie kolorów niespójne z podpisem (tkanka prawidłowa też w zielonej ramce; dysplazja/metaplazja bez ramki) – do obejrzenia.
+- z07-B4 (poz. 40) ryc. 5 (regeneracja): etykiety kafelków („Czapeczka (AEC)”, „Odtworzenie wzoru”) nie zgadzają się z nazwami etapów w liście tekstu („Czapeczka naskórkowa”, „Wzrost i odtworzenie wzoru”).
+- z07-B5 (poz. 30) „ochra” jako nazwa koloru w podpisach ryc. 3 i ryc. 5 – niezgrabne (ten sam wzorzec co w rozdz. 5).
+
+### C. ODRZUCONE: 35 (tryb lekki)
+Liczby i mapa odczytane ze skanu (tab. 9.1, Drewa s. 692 „progenitorowe=unipotencjalne”, Jóźwiak s. 110, 112 – potwierdzone w stan/z07-v3), limit stron i nadmiar rycin (nieaktualne), odsyłacz „limit Hayflicka → rozdz. 3” (celowy, Alster ma źródło), „jamy brzusznej” pominięte słusznie (błąd źródła), meta-komentarze cz. 2 (dopuszczalne), rekonstrukcje zdań z rozsypanego OCR Jóźwiaka. Nierozstrzygnięte (bez zmian): 5, 6, 12, 18.
 
 ---
 
-## D. DO DECYZJI ZLECENIODAWCY (stan po front + z01–z06)
+## Z08 – Zmienność i dziedziczenie (53 zgłoszenia)
+
+Uwaga: tryb lekki. Dziedziczenie mitochondrialne wg Jordego (wyd. ok. 2000) – liczby celowe (handoff).
+
+### A. TEKST
+
+### z08-1  (pozycja raportu nr 1; M – teza absolutna, sprzeczna z de novo niżej; doprecyzowanie do pokazanego rodowodu)
+PLIK: rozdzialy/z08-dziedziczenie.html
+ZNAJDŹ: Każdy chory ma chorego rodzica.
+ZAMIEŃ NA: W tym rodowodzie każdy chory ma chorego rodzica.
+
+### z08-2  (pozycja raportu nr 2; M – 15% vs 25% to nie „wielokrotnie”; „zawsze” mocniejsze niż źródło, s. 275 „znacznie niższe”)
+PLIK: rozdzialy/z08-dziedziczenie.html
+ZNAJDŹ: Zawsze jest jednak wielokrotnie mniejsze niż 25% czy 50% przy chorobach jednogenowych.
+ZAMIEŃ NA: Zwykle jest jednak znacznie mniejsze niż 25% czy 50% przy chorobach jednogenowych.
+
+### z08-3  (pozycja raportu nr 15; M wg Jordego – Jorde s. 119: „istotną”, nie „główną”)
+PLIK: rozdzialy/z08-dziedziczenie.html
+ZNAJDŹ: Jest ona główną przyczyną
+ZAMIEŃ NA: Jest ona istotną przyczyną
+
+### B. SKŁAD / RYCINY / UKŁAD (Opus)
+- z08-B1 (poz. 47) s. 41: nagłówki tabeli Rh złożone kapitalikami „DD / DD / DD” zamiast DD / Dd / dd – znika rozróżnienie, na którym opiera się tabela; tak samo n→N na s. 33 („3N”, „2N + 1”) – usterka stylu nagłówków tabel.
+- z08-B2 (poz. 48, 49) puste pola (s. 1, 2, 25, 27) i rozbite tabele (s. 32/33 CPEO, s. 33 trójkąt Pascala, s. 20 krewni 4+4, s. 39/40 para-Bombay).
+- z08-B3 (poz. 50) s. 28: tytuł części 2 rozjechany justowaniem („Zmienność   i   dziedziczenie…”).
+- z08-B4 (poz. 41) epistaza: ramka „Pojęcie” i następny akapit powtarzają tę samą definicję (epistatyczny/hipostatyczny).
+- z08-B5 (poz. 43) niespójna nazwa enzymu: „α-2-L-fukozylotransferaza” vs „α-1,2-L-fukozylotransferazy” w jednym rozdziale – ujednolicić.
+- z08-B6 (poz. 52) ryc. 1B: kreskowanie „zielone pomarszczone (aabb)” prawie nieodróżnialne od „zielone gładkie” w legendzie.
+
+### C. ODRZUCONE: 42 (tryb lekki)
+Błędy źródła powielane przez Drewę bez ramki (1886, haplotypy Rh, wiązania α/β, Pro12Ala, 35 dni vs 8–9 tyg., β-amyloid) – to te same liczby druku; mitochondria wg Jordego (celowe); rekonstrukcje OCR potwierdzone skanem (stan/z08-v3: ryc. 16.4, 16.7, tab. 13.5, RH 75/30/75); pojęcia wyjaśniane w R1/innych rozdziałach; Drosophila na 2. miejscu uzasadniona Morganem. Nierozstrzygnięte (bez zmian): 3, 22, 23, 26, 27.
+
+---
+
+## Z09 – Podstawy cytogenetyki (60 zgłoszeń)
+
+Uwaga: tryb lekki. Rekonstrukcje z OCR potwierdzone skanem (`stan/z09-v3.md`: s. 444, Hoechst 32258, Tjio, t(7;11)/t(11;14), n±) – odrzucone.
+
+### A. TEKST
+
+### z09-1  (pozycja raportu nr 3; M – E s. 436–437: satelity „mogą mieć”; podpis ryc. 2)
+PLIK: rozdzialy/z09-cytogenetyka.html
+ZNAJDŹ: satelity mają wszystkie poza Y
+ZAMIEŃ NA: satelity mogą mieć wszystkie poza Y
+
+### z09-2  (pozycja raportu nr 3; M – to samo w ramce „W 60 sekund”)
+PLIK: rozdzialy/z09-cytogenetyka.html
+ZNAJDŹ: akrocentryczne 13–15, 21, 22 mają satelity i NOR
+ZAMIEŃ NA: akrocentryczne 13–15, 21, 22 mogą mieć satelity i NOR
+
+### z09-3  (pozycja raportu nr 29; Z – zakaz „Sprawdź się”/quizów; przeredagowanie na zdanie)
+PLIK: rozdzialy/z09-cytogenetyka.html
+ZNAJDŹ: Sprawdź się: ostatni, najbardziej dystalny prążek ramienia długiego chromosomu 14 ma adres 14q32 – region 3, prążek 2.
+ZAMIEŃ NA: Ostatni, najbardziej dystalny prążek ramienia długiego chromosomu 14 ma więc adres 14q32 – region 3, prążek 2.
+
+### z09-4  (pozycja raportu nr 47; J – wypunktowano 5 symboli: pter, qter, →, ::, : )
+PLIK: rozdzialy/z09-cytogenetyka.html
+ZNAJDŹ: Potrzebne są cztery symbole:
+ZAMIEŃ NA: Potrzebne są te symbole:
+
+### B. SKŁAD / RYCINY / UKŁAD (Opus)
+- z09-B1 (poz. 25) ryc. 5 „Cztery wzory prążków” nieprzywołana w tekście (brak figref; sekcja G/Q/R/C zapowiada „potem zestawienie”).
+- z09-B2 (poz. 44) powtórzone definicje w ramkach „Pojęcie” i następnym akapicie: Kinetochor, Kariotyp, Klon.
+- z09-B3 (poz. 45, 46) niespójna pisownia: „pary GC/AT” vs „A-T/G-C”; „idiogram” vs „ideogram”.
+- z09-B4 (poz. 54, 55) puste pola (s. 11, 14 ~20–25%) i rozcięte tabele (eu-/heterochromatyna, grupy A–G, skróty s. 13/14, rearanżacje s. 19/20 i 29/30, liczba modalna oddzielona od nagłówka).
+- z09-B5 (poz. 26, 28) liczne meta-komentarze o źródle oraz odsyłacze do rycin Drewy, których student nie ma („Ryciny Drewy pokazują…”, „Adres prążka ze schematu Drewy”).
+- z09-B6 (poz. 58) ryc. 2 grupa G: chromosom Y ma u góry zgrubienia łatwe do wzięcia za satelity – sprzeczne z etykietą „bez satelitów”.
+
+### C. ODRZUCONE: 50 (tryb lekki)
+Rekonstrukcje OCR potwierdzone skanem (stan/z09-v3: s. 444 adres prążka, Hoechst 32258, Tjio/Levan, t(7;11)/t(11;14), n±, tab. 18.3), wszystkie zapisy/rachunki zgodne z E, meta-komentarze cz. 2 (dopuszczalne), odsyłacze „s. N” do początku sekcji (drobne), limit stron i 9 rycin (nieaktualne). Nierozstrzygnięte (bez zmian): 1 (replikacja heterochromatyny w późnej S – cz. 1/cz. 2), 9.
+
+---
+
+## Z10 – Chromosomy płci, chromatyna płciowa, dziedziczenie sprzężone z płcią (34 zgłoszenia)
+
+Uwaga: tryb lekki. Zgodnie z handoffem: liczby wielkości Y i tabela mapy genów Y odczytane ze skanu (`stan/z10-v3.md`) – zarzuty „niezgodne z OCR” ODRZUCONE (poz. 1, 2). Jorde (wyd. ok. 2000) – liczby celowe.
+
+### A. TEKST
+
+### z10-1  (pozycja raportu nr 3; M – sprzeczne z regułą X−1: 47,XXY ma 1 ciałko; E s. 462: „brak lub zwiększenie” względem normy dla płci)
+PLIK: rozdzialy/z10-plec.html
+ZNAJDŹ: <b>Aberracje liczbowe</b> X zmieniają liczbę ciałek: ciałka brak albo jest ich więcej niż jedno
+ZAMIEŃ NA: <b>Aberracje liczbowe</b> X zmieniają liczbę ciałek: jest ich inna liczba niż prawidłowa dla danej płci – może ich brakować albo być więcej
+
+### z10-2  (pozycja raportu nr 23; J – błędna składnia: wygląda, jakby hipogonadyzm powodował zaburzenie)
+PLIK: rozdzialy/z10-plec.html
+ZNAJDŹ: genem zespołu Kallmanna – zaburzenia, które powoduje hipogonadyzm i brak węchu
+ZAMIEŃ NA: genem zespołu Kallmanna – zaburzenia powodującego hipogonadyzm i brak węchu
+
+### B. SKŁAD / RYCINY / UKŁAD (Opus)
+- z10-B1 (poz. 27, 28) puste pola: s. 13 (dół obu kolumn ~90 mm), s. 6 (lewa kolumna ~65–70 mm; nagłówek odcięty od ramki „Przykład”).
+- z10-B2 (poz. 29, 30) rozbite tabele: „Rodzaj cechy” (s. 15/16, 1+3 wiersze), „Odcinek Y | Geny na mapie” (s. 17, 4+2 między kolumnami).
+- z10-B3 (poz. 31) s. 24: tabela „Krewni… z premutacją” – nagłówki do lewej, wartości do prawej, trudno przypisać kolumny.
+- z10-B4 (poz. 21) ryc. 6 (FMR1) nieprzywołana w cz. 1 (figref dopiero w ramce przejścia do cz. 2).
+- z10-B5 (poz. 33) ryc. 3: etykieta „XIST ulega transkrypcji” pod panelem 3, a start transkrypcji opisany w panelu 1 (XIC).
+
+### C. ODRZUCONE: 26 (tryb lekki)
+Wykładniki wielkości Y i mapa genów Y odczytane ze skanu (handoff + stan/z10-v3: ryc. 18.14, PARY/PABY) – ODRZUCONE; Jorde celowo (hemofilia, 79 Mb, progi); daltonizm jako 3. przykład i zakres stron – zostawione; rekonstrukcje OCR liczb Jordego; dopowiedzenia mechanizmów (losowe). Nierozstrzygnięte (bez zmian): 4, 6, 24.
+
+---
+
+## Z11 – Biotechnologia, GMO, terapia genowa, eugenika (73 zgłoszenia)
+
+Uwaga: tryb lekki. Tabele i liczby odczytane ze skanu potwierdzone w `stan/z11-v3.md` (tab. 28.1, 30.x).
+
+### A. TEKST
+
+### z11-1  (pozycja raportu nr 7; M – definicja z „Konwencji o różnorodności biologicznej” spoza E, s. 737)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ:  Konwencja o różnorodności biologicznej ujmuje to szerzej: jest to dziedzina wykorzystująca elementy biologiczne, organizmy żywe lub ich składniki do wytwarzania albo modyfikowania produktów i procesów.
+ZAMIEŃ NA: (USUŃ)
+
+### z11-2  (pozycja raportu nr 16; M – czas teraźniejszy o stanie z ok. 2008/2011 r.)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ: W Polsce trwają prace nad projektem nowej ustawy o GMO.
+ZAMIEŃ NA: W tamtym czasie trwały w Polsce prace nad projektem nowej ustawy o GMO.
+
+### z11-3  (pozycja raportu nr 28; M – sprzeczne z własną tabelą: liposomy do 150 kb)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ: pojemność <b>30–50 kb</b> – największą z omawianych – i
+ZAMIEŃ NA: pojemność <b>30–50 kb</b> i
+
+### z11-4  (pozycja raportu nr 35; M – E s. 806: „miały się selektywnie mnożyć” (zamiar, nie fakt))
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ: które mnożą się tylko w komórkach bez funkcjonalnego białka <b>p53</b>
+ZAMIEŃ NA: które miały się selektywnie mnożyć w komórkach bez funkcjonalnego białka <b>p53</b>
+
+### z11-5  (pozycja raportu nr 36; M – brak w E, sprzeczne z efektem sąsiedztwa w następnym zdaniu)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ:  Chemioterapia działa więc tylko tam, gdzie jest transgen.
+ZAMIEŃ NA: (USUŃ)
+
+### z11-6  (pozycja raportu nr 31; M – dopisane ponad E s. 796–797)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ: , a jego wadę (mutacja insercyjna) można sprawdzać w hodowli, zanim komórki wrócą do chorego
+ZAMIEŃ NA: (USUŃ)
+
+### z11-7  (pozycja raportu nr 37; M – E s. 808: „może to wynikać” – złagodzony zamiar wrócił do kategoryczności)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ: Zdaniem autorów przyczyną był <b>niski poziom transdukcji komórek nowotworowych</b>
+ZAMIEŃ NA: Zdaniem autorów przyczyną mógł być <b>niski poziom transdukcji komórek nowotworowych</b>
+
+### z11-8  (pozycja raportu nr 62; J – błąd logiczny w liście „Zgoda jest ważna, gdy:”)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ: jest nieważna, jeśli oświadczenie woli złożyła osoba znajdująca się w <b>stanie wyłączającym świadome albo swobodne powzięcie decyzji</b>
+ZAMIEŃ NA: nie pochodzi od osoby znajdującej się w <b>stanie wyłączającym świadome albo swobodne powzięcie decyzji</b>
+
+### z11-9a  (pozycja raportu nr 5; J – zakaz odniesień do „zaliczenia”/quizów)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ: Część 2 jest dla tych, którzy chcą zdać „na piątkę” i poprowadzić dyskusję na zaliczeniu ustnym: pokazuje te same zasady w liczbach
+ZAMIEŃ NA: Część 2 pokazuje te same zasady w liczbach
+
+### z11-9b  (pozycja raportu nr 5; J)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ: Tu dochodzą trzy rzeczy, o które pyta się na zaliczeniu: druga bakteria
+ZAMIEŃ NA: Tu dochodzą trzy rzeczy: druga bakteria
+
+### z11-9c  (pozycja raportu nr 5; J)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ: <h3>Trzy przypadki, o które pytają na zaliczeniu</h3>
+ZAMIEŃ NA: <h3>Trzy przypadki</h3>
+
+### z11-9d  (pozycja raportu nr 5; J)
+PLIK: rozdzialy/z11-biotechnologia.html
+ZNAJDŹ:  To materiał wprost pod pytanie „a czy coś z tego działa”.
+ZAMIEŃ NA: (USUŃ)
+
+### B. SKŁAD / RYCINY / UKŁAD (Opus)
+- z11-B1 (poz. 70, 71) rozbite tabele: 30.1 (s. 23/24, 3+6 wierszy), 30.3 (s. 25/26, zdanie wstępu rozcięte między kolumny).
+- z11-B2 (poz. 67, 68, 69) ryciny: ryc. 5 (s. 10) napis „podanie bezpośrednie” przekreślony strzałką, etykieta dotyka krzywej; ryc. 4 (s. 8) nagłówek styka się z ramką „neo|Tk”; ryc. 6 (s. 15) inny krój (Arial vs Inter).
+- z11-B3 (poz. 60) ryc. 3 (s. 7): panel A ma 3 kroki (bez hiperowulacji/hodowli), panel B 2 kroki, a tekst opisuje cztery etapy klonowania.
+- z11-B4 (poz. 72, 73) s. 18 wypełniona w 24%, reszta pusta; s. 1 wiersz kategorii nad tytułem zawija samotne „· EUGENIKA”.
+- z11-B5 (poz. 61) liczne meta-odniesienia „źródło”/„jak podaje źródło” bez wykazu źródeł – student nie wie, o jakie źródło chodzi.
+- z11-B6 (poz. 55, 56) „Tk” i „prolek” użyte w cz. 1 przed wyjaśnieniem (wyjaśnione dopiero w cz. 2 / s. 14).
+
+### C. ODRZUCONE: 56 (tryb lekki)
+Wnioski i uzasadnienia dopisane do Drewy w ramkach „Przykład” (dozwolone jako przykłady/logika), błędy źródła powielane bez ramki (wolfram „szlachetny”, 1886-typu), podrozdział 30.1 ucięty w pakiecie E – niezweryfikowalny (do sprawdzenia pakietu), limit 13 stron i liczba rycin (nieaktualne), tabele/liczby potwierdzone skanem (stan/z11-v3). Nierozstrzygnięte (bez zmian): 19 (mleko „codziennie” – w ramce Przykład), 40, 41 (nieścisłości liczbowe źródła), 49 (prawo sprzeciwu – złagodzenie Jordego).
+
+---
+
+## D. DO DECYZJI ZLECENIODAWCY (stan po front + z01–z11)
 - D-1 (front poz. 1) podtytuł okładki „Od cyklu komórkowego do analizy genomu” nie odpowiada spisowi; propozycja: „Od genomu i cyklu komórkowego do biotechnologii”.
 - D-2 (front poz. 8) pierwszy rozdział ma etykietę „G” zamiast „01” – zostawić (i dopisać zdanie wyjaśnienia na s. „Jak korzystać”) czy przenumerować na 01?
 - D-3 (front poz. 9) spis treści nie pokazuje sekcji części 2 (tylko jedna pozycja „Część 2” na rozdział) – dodać je do spisu?
 - D-4 (z04 poz. 3, 5, 40) ryciny z banku k4 (tRNA, splicing) mają etykiety spoza źródeł (CCA, pętle D/T, GU/AG, spliceosom, lasso): zostawić z półzdaniem w podpisie (stan obecny) czy oczyścić ryciny?
 - D-5 (z02 poz. 49, z03 poz. 29) nazwiska zapisane w źródle błędnie („Fleming”, „Horovitz”), w tekście poprawnie („W. Flemming”, „R. Horvitz” – decyzja Z6 z 18.11): zostają, czy – jak Singer/Tjio – usuwamy nazwiska?
 - D-6 (z06 poz. 28) wzór PI = 1 / (4 × p) podany bez wyjaśnienia, skąd czwórka (źródło też nie wyjaśnia) – dopisać wyprowadzenie jako „Przykład” czy zostawić?
+- D-7 (z08 poz. 17) rok publikacji Mendla „1886” (jak w druku Drewy) jest sprzeczny z „zapomniane ponad 34 lata, aż w 1900 r.” (= 1866) w tym samym rozdziale – dopisać „Uwagę do źródła” czy zostawić?
+- D-8 (z09 poz. 14) ramka „Wniosek własny – Drewa tego nie objaśnia” (hipoteza o prążkach przy gwiazdkach) – zostawić jako jawny wniosek czy usunąć (student może zapamiętać jako fakt)?
+- D-9 (z10 poz. 9, 12) wielkość Y: „ok. 1% genomu” (Drewa) vs „70/79 Mb” (Jorde) – rozbieżność tylko zasygnalizowana, nie wyjaśniona (1% ≈ 30 Mb); dopisać, że nie da się jej pogodzić?
+- D-10 (z11 poz. 29) lentiwirusy: cz. 1 „na etapie badań przedklinicznych”, cz. 2 „29 prób klinicznych” / „przedklinicznych i klinicznych” – sprzeczność źródła bez „Uwagi do źródła”.

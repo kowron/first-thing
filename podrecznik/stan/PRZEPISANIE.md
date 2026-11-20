@@ -139,3 +139,6 @@ Podział Sonnetów: G+Z11 · Z02+Z03 · Z04+Z06 · Z05+Z07 · Z08+Z10 · Z09+str
 | rewizja Z08+Z10 | Sonnet | 661 tys. |
 | rewizja Z09+front | Sonnet | 527 tys. |
 - 20.11: 6 raportów Sonneta gotowych (`rewizja3/`, ok. 580 pozycji). Uruchomiony Fable medium – weryfikacja (`handoff/R3-weryfikacja-fable.md` → `rewizja3/POTWIERDZONE.md`). Potem: 1 Sonnet (sekcje A – wklejanie) i 1 Opus (sekcje B – skład/ryciny), pełny build, raport tokenów.
+- 20.11: WERYFIKACJA GOTOWA – `rewizja3/POTWIERDZONE.md` (front + z01–z11): 127 bloków ZNAJDŹ/ZAMIEŃ (sekcje A), ok. 95 pozycji składu (sekcje B), sekcja D (10 pozycji); decyzje użytkownika: `rewizja3/DECYZJE-ZLECENIODAWCY.md` (D-1…D-6; D-7…D-10 bez decyzji – zostawić bez zmian). STOP na polecenie użytkownika.
+- WIECZOREM (na znak użytkownika): 1× Sonnet – wkleić wszystkie bloki A z POTWIERDZONE.md (mechanicznie); 1× Opus – wszystkie sekcje B + D-2, D-3, D-6 z DECYZJE; potem pełny build, PDF, raport tokenów (Fable / Sonnet / Opus). Okładka – osobno, od nowa, później.
+| weryfikacja front+z01–z06 | Fable medium | 343 tys. |
