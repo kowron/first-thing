@@ -608,3 +608,87 @@ ZAMIEŃ NA: allelospecyficzn
 ### C. ODRZUCONE: 41
 Liczby i nazwy potwierdzone na skanie (stan/z05-v3: 5%, 95%, 5 kb, C516T, Ser474Ter, VV405, DMD, biotyna 5′; teraz dodatkowo Ostrowska s. 54: „dDTP” i „10ⁿ-krotne” – ramki „Uwaga do źródła” są słuszne), podstawy PCR i mechanizm ASA z materiału pomocniczego (zostają – decyzje D1, D2), mechanizm metylazy (jest w materiale pomocniczym k5), przypomnienia z rozdz. 4 i 6, krótkie meta-komentarze w części 2, limit stron, rodzaj żeński „gniazdowa PCR” (tak w źródle), terminologia źródeł (kb/kpz, STRP/STR).
 
+---
+
+## Z06 – Elektroforeza, hybrydyzacja, sekwencjonowanie, identyfikacja genetyczna (43 zgłoszenia)
+
+Uwaga: ten rozdział zweryfikowano w trybie lekkim (zmiana zlecenia w trakcie pracy) – pozycje „do sprawdzenia” rozstrzygane z opisu i z jednego odczytu tekstu, bez sięgania do skanu.
+
+### A. TEKST
+
+### z06-1  (pozycja raportu nr 7; M – źródło: można amplifikować, ale to trudne i wymaga DNA wysokiej jakości)
+PLIK: rozdzialy/z06-elektroforeza-hybrydyzacja.html
+ZNAJDŹ: <p>Ale PCR słabo radzi sobie z <b>długimi</b> odcinkami.
+ZAMIEŃ NA: <p>Ale namnażanie <b>długich</b> odcinków jest dla PCR trudne.
+
+### z06-2  (pozycja raportu nr 9; M – zdanie przeczyło RFLP opisanemu dalej)
+PLIK: rozdzialy/z06-elektroforeza-hybrydyzacja.html
+ZNAJDŹ: Dzięki temu u każdego człowieka ten sam odcinek genu trafia zawsze do fragmentu o tej samej długości – i właśnie tę długość będziemy oglądać.
+ZAMIEŃ NA: Dzięki temu w każdej kopii tego samego DNA cięcie wypada w tych samych miejscach, więc szukany odcinek trafia do fragmentu o określonej długości – i właśnie tę długość będziemy oglądać.
+
+### z06-3  (pozycja raportu nr 11; M – dopisane ponad źródło)
+PLIK: rozdzialy/z06-elektroforeza-hybrydyzacja.html
+ZNAJDŹ:  Artefakt pojawia się zwykle w jednej.
+ZAMIEŃ NA: (USUŃ)
+
+### z06-4  (pozycja raportu nr 15; M – „używanego przy śladach” dopisane)
+PLIK: rozdzialy/z06-elektroforeza-hybrydyzacja.html
+ZNAJDŹ: wskaźnika <b>LR</b> używanego przy śladach:
+ZAMIEŃ NA: wskaźnika <b>LR</b>:
+
+### z06-5  (pozycja raportu nr 16; M – „wtedy” łączyło przyczynowo dwa osobne stwierdzenia źródła)
+PLIK: rozdzialy/z06-elektroforeza-hybrydyzacja.html
+ZNAJDŹ: prawdopodobieństwo ojcostwa wynosi wtedy zwykle 99,9999%
+ZAMIEŃ NA: prawdopodobieństwo ojcostwa wynosi zwykle 99,9999%
+
+### z06-6  (pozycja raportu nr 27; Z – lista ma trzy punkty, różnice są w dwóch pierwszych)
+PLIK: rozdzialy/z06-elektroforeza-hybrydyzacja.html
+ZNAJDŹ: z dwiema różnicami wynikającymi z natury RNA:</p>
+ZAMIEŃ NA: z dwiema różnicami wynikającymi z natury RNA (kroki 1 i 2):</p>
+
+### z06-7  (pozycja raportu nr 32; Z)
+PLIK: rozdzialy/z06-elektroforeza-hybrydyzacja.html
+ZNAJDŹ: (miniSTR) albo bada mtDNA.
+ZAMIEŃ NA: (miniSTR) albo bada mtDNA (DNA mitochondrialne).
+
+### z06-8a  (pozycja raportu nr 34; Z – notatka robocza w tekście dla studenta)
+PLIK: rozdzialy/z06-elektroforeza-hybrydyzacja.html
+ZNAJDŹ: którego stron nie mieliśmy. Drewa wspomina o białkach tylko pobocznie, więc podstawy (ładunek białka, SDS-PAGE, HbA i HbS) podano skrótowo – trzeba je uzupełnić z Jordego.
+ZAMIEŃ NA: z którego ten podrozdział nie korzysta. Drewa wspomina o białkach tylko pobocznie, więc podstawy (ładunek białka, SDS-PAGE, HbA i HbS) podano tu skrótowo – warto je porównać z Jordem.
+
+### z06-8b  (pozycja raportu nr 34; Z)
+PLIK: rozdzialy/z06-elektroforeza-hybrydyzacja.html
+ZNAJDŹ: Źródło: Drewa s. 715, 717, 732 · Jorde s. 42–43 (brak dostępu)</p>
+ZAMIEŃ NA: Źródło: Drewa s. 715, 717, 732</p>
+
+### z06-9  (pozycja raportu nr 36; J)
+PLIK: rozdzialy/z06-elektroforeza-hybrydyzacja.html
+ZNAJDŹ: zasada jest podobna jak w klasycznej CGH
+ZAMIEŃ NA: zasada jest podobna do tej z klasycznej CGH
+
+### B. SKŁAD / RYCINY / UKŁAD (Opus)
+- z06-B1 (poz. 37) s. 11: ok. 22% pustego miejsca na dole obu łamów; ryc. 7 (pirosekwencjonowanie) dopiero na s. 12.
+- z06-B2 (poz. 38) s. 9: osierocony nagłówek „Szukanie delecji i duplikacji…” + sama ramka „Pojęcie” na dole prawego łamu, treść na s. 10.
+- z06-B3 (poz. 39) ryc. 2 (transfer): tekst mówi „membranę kładzie się na żelu”, na rycinie w panelach 1 i 3 membrana leży pod żelem – uzgodnić (do obejrzenia).
+- z06-B4 (poz. 40, 41) numeracja rycina ↔ tekst: ryc. 7 ma numery 1–3, lista w tekście 4 punkty (apyraza bez numeru); ryc. 4 (Southern) ma 5 paneli, tekst 6 kroków.
+- z06-B5 (poz. 42) s. 5: ramka „Pojęcie: Hapten” przerywa listę numerowaną między pkt 2 i 3; ramka „Przykład 2 × 4 = 8” stoi przy pkt 3 zamiast przy pkt 2.
+- z06-B6 (poz. 33) `pageref` do h2 zamiast do miejsca treści: s. 14 → „s. 22” (treść na s. 23), s. 9 → „s. 18” (kolonie na s. 19).
+- z06-B7 (poz. 23) ryc. 4: etykiety „obciążnik”, „podsiąka przez bibułę” – nie ma ich w źródle (Drewa: „warstwa higroskopijna”); do decyzji przy przeglądzie rycin.
+
+### C. ODRZUCONE: 27 (tryb lekki)
+Elektroforeza białek, przypomnienie ddNTP, wstęp do STR i ojcostwa ze s. 765–768 i 779 (zostają na życzenie zleceniodawcy), limit stron i liczba rycin, wartości z ryc. 29.4 i tab. 29.2 odczytane ze skanu (stan/z06-v3), domysły oznaczone w tekście jako domysły, objaśnienia logiczne, powtórzenie Pojęcie/akapit. Nierozstrzygnięte w trybie lekkim i zostawione bez zmian: poz. 13 („RT-PCR” = PCR w czasie rzeczywistym), 14 (brzmienie hipotez PI w części 1), 18 (liczby dla MLP), 28 (skąd „4” we wzorze PI), 30 (AATG a TCAT).
+
+---
+
+## Z07–Z11 – NIEZWERYFIKOWANE
+Weryfikacja przerwana po rozdziale 06 na polecenie zleceniodawcy (rozdziały od z07 przejmuje inny agent). Raporty `rewizja3/z07.md` … `z11.md` nie były czytane.
+
+---
+
+## D. DO DECYZJI ZLECENIODAWCY (stan po front + z01–z06)
+- D-1 (front poz. 1) podtytuł okładki „Od cyklu komórkowego do analizy genomu” nie odpowiada spisowi; propozycja: „Od genomu i cyklu komórkowego do biotechnologii”.
+- D-2 (front poz. 8) pierwszy rozdział ma etykietę „G” zamiast „01” – zostawić (i dopisać zdanie wyjaśnienia na s. „Jak korzystać”) czy przenumerować na 01?
+- D-3 (front poz. 9) spis treści nie pokazuje sekcji części 2 (tylko jedna pozycja „Część 2” na rozdział) – dodać je do spisu?
+- D-4 (z04 poz. 3, 5, 40) ryciny z banku k4 (tRNA, splicing) mają etykiety spoza źródeł (CCA, pętle D/T, GU/AG, spliceosom, lasso): zostawić z półzdaniem w podpisie (stan obecny) czy oczyścić ryciny?
+- D-5 (z02 poz. 49, z03 poz. 29) nazwiska zapisane w źródle błędnie („Fleming”, „Horovitz”), w tekście poprawnie („W. Flemming”, „R. Horvitz” – decyzja Z6 z 18.11): zostają, czy – jak Singer/Tjio – usuwamy nazwiska?
+- D-6 (z06 poz. 28) wzór PI = 1 / (4 × p) podany bez wyjaśnienia, skąd czwórka (źródło też nie wyjaśnia) – dopisać wyprowadzenie jako „Przykład” czy zostawić?
