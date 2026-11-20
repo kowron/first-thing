@@ -269,7 +269,7 @@ aside.note .term { display: block; font-weight: 700; font-size: 8.2pt; line-heig
 .w60 {
   break-inside: avoid;
   background: var(--navy); color: #e4efe8; border-radius: 8pt;
-  padding: 11pt 15pt 10pt; margin: 12pt 0 10pt;
+  padding: 11pt 15pt 10pt; margin: 12pt 0 7pt;
   font-family: var(--sans); font-size: 8.4pt; line-height: 12pt;
 }
 .w60 .lbl { color: var(--teal-l); font-size: 6.4pt; line-height: 9pt; margin-bottom: 6pt; display: flex; align-items: center; gap: 6pt; }
@@ -325,15 +325,16 @@ aside.note .term { display: block; font-weight: 700; font-size: 8.2pt; line-heig
 
 /* ---------- Przejście do części 2 (na całą szerokość, po „W 60 sekund”) ---------- */
 .przejscie {
-  break-inside: avoid; margin: 0 0 10pt; padding: 10pt 15pt 10pt;
+  break-inside: avoid; margin: 0 0 10pt; padding: 7pt 14pt 7pt;
   border: 1.2pt solid var(--teal); border-radius: 8pt;
-  font-family: var(--sans); font-size: 8.4pt; line-height: 12pt; color: var(--ink);
+  font-family: var(--sans); font-size: 7.8pt; line-height: 10.8pt; color: var(--ink);
 }
 .przejscie .lbl { color: var(--teal); font-size: 6.4pt; line-height: 9pt; margin-bottom: 5pt; }
 .przejscie .prz-arrow { font-size: 8pt; letter-spacing: 0; margin-right: 5pt; }
 .przejscie .prz-page { letter-spacing: 0.1em; color: var(--muted); }
 .przejscie p { margin: 0 0 4pt; text-align: left !important; }
-.przejscie ul { columns: 2; column-gap: 18pt; margin: 2pt 0 0 !important; }
+.przejscie ul { columns: 3; column-gap: 14pt; margin: 2pt 0 0 !important; }
+.przejscie li { break-inside: avoid; margin-bottom: 1.5pt !important; }
 .przejscie li { text-align: left !important; }
 
 /* ---------- Część 2 („na piątkę”): nagłówek-pas od nowej strony ---------- */
@@ -347,8 +348,8 @@ aside.note .term { display: block; font-weight: 700; font-size: 8.2pt; line-heig
 .cz2-num span { display: block; font-family: var(--display); font-weight: 200; font-size: 38pt; line-height: 36pt; letter-spacing: -0.02em; }
 .cz2-num small { display: block; font-family: var(--sans); font-weight: 700; font-size: 6.4pt; line-height: 9pt; letter-spacing: 0.22em; text-transform: uppercase; margin-top: 2pt; }
 .cz2-kicker { font-family: var(--sans); font-weight: 700; font-size: 6.8pt; line-height: 9pt; letter-spacing: 0.25em; text-transform: uppercase; color: var(--teal); margin: 0 0 3pt; }
-.cz2-title { font-family: var(--display); font-weight: 700; font-size: 16pt; line-height: 19pt; color: var(--navy); margin: 0 0 3pt; letter-spacing: -0.01em; hyphens: none; }
-.cz2-sub { font-family: var(--serif); font-style: italic; font-size: 9.4pt; line-height: 13pt; color: var(--ink-2); margin: 0; }
+.cz2-title { font-family: var(--display); font-weight: 700; font-size: 16pt; line-height: 19pt; color: var(--navy); margin: 0 0 3pt; letter-spacing: -0.01em; hyphens: none; text-align: left !important; text-wrap: balance; }
+.cz2-sub { font-family: var(--serif); font-style: italic; font-size: 9.4pt; line-height: 13pt; color: var(--ink-2); margin: 0; text-align: left !important; }
 /* część 2 odrobinę lżejsza: jaśniejsza kreska nad h2 */
 section.chapter .cz2 { --h2-bar: var(--teal-l); }
 
@@ -540,13 +541,13 @@ section.back h3 { font-size: 9pt; margin: 9pt 0 3pt; }
 .toc-cols { columns: 2; column-gap: 22pt; column-fill: balance; font-family: var(--sans); line-height: 10.4pt; }
 .toc-cols a .t, .figlist a .t { min-width: 0; }
 .toc-cols a { display: flex; align-items: baseline; gap: 6pt; color: inherit; }
-.toc-ch { break-inside: avoid; break-after: avoid; margin-top: 6pt; border-bottom: 0.7pt solid var(--rule); padding: 3pt 0 3.5pt; line-height: 13pt; }
+.toc-ch { break-inside: avoid; break-after: avoid; margin-top: 5pt; border-bottom: 0.7pt solid var(--rule); padding: 3pt 0 3.5pt; line-height: 13pt; }
 .toc-block { break-inside: avoid; }
 .toc-block:first-child .toc-ch, .toc-ch:first-child { margin-top: 0; }
 .toc-ch .n { width: 26pt; flex: none; color: var(--teal); font-weight: 700; font-size: 10pt; }
 .toc-ch .t { flex: 1; padding-right: 10pt; font-size: 10pt; line-height: 13pt; color: var(--navy); font-weight: 500; }
 .toc-ch .p { font-weight: 700; font-size: 9pt; color: var(--navy); font-variant-numeric: tabular-nums; }
-.toc-sec { break-inside: avoid; margin-left: 26pt; border-bottom: 0.6pt solid #e8edf0; padding: 2.4pt 0 2.2pt; }
+.toc-sec { break-inside: avoid; margin-left: 26pt; border-bottom: 0.6pt solid #e8edf0; padding: 1.9pt 0 1.7pt; }
 .toc-sec .t { flex: 1; font-size: 7.6pt; line-height: 10.4pt; color: var(--muted); padding-right: 10pt; }
 .toc-sec .p { font-size: 7.6pt; color: var(--muted); font-variant-numeric: tabular-nums; }
 .toc-cz2 .t, .toc-cz2 .p { color: var(--teal); font-weight: 600; }

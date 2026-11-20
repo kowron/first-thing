@@ -676,6 +676,11 @@
     <li>Jeśli dNTP nie pasował, nie został wbudowany – nie ma pirofosforanu, ATP ani światła. <b>Apyraza</b> rozkłada niewykorzystany dNTP, żeby nie przeszkadzał, gdy dodamy następny.</li>
   </ol>
 
+
+  <div class="box obraz"><p>Zgadujesz słowo litera po literze, a lampka zapala się tylko przy dobrej odpowiedzi. „A?” – ciemno. „C?” – ciemno. „G?” – błysk! Zapisujesz G i zgadujesz następną literę.</p></div>
+  <p>Tak powstaje nić komplementarna i jednocześnie odczytujemy jej sekwencję – szybciej i taniej niż wcześniejszymi metodami.</p>
+  <p><b>Metoda 454</b> – jedna z pierwszych technik <b>sekwencjonowania nowej generacji</b> – to pirosekwencjonowanie prowadzone <b>jednocześnie na wielu fragmentach DNA</b>. Dzięki temu jest dużo szybsze (zastosowania – <a class="pageref" href="#c06-r-daty"></a>).</p>
+
   <figure class="fig" id="c06-fig-piro" data-title="Kaskada pirosekwencjonowania – cztery enzymy">
 
     <div class="panel">
@@ -727,11 +732,6 @@
     </div>
     <figcaption>Góra: pasujący dNTP → pirofosforan → ATP (sulfurylaza) → światło (lucyferaza). Dół: niewłaściwy dNTP nie jest wbudowany, rozkłada go apyraza.</figcaption>
   </figure>
-
-  <div class="box obraz"><p>Zgadujesz słowo litera po literze, a lampka zapala się tylko przy dobrej odpowiedzi. „A?” – ciemno. „C?” – ciemno. „G?” – błysk! Zapisujesz G i zgadujesz następną literę.</p></div>
-  <p>Tak powstaje nić komplementarna i jednocześnie odczytujemy jej sekwencję – szybciej i taniej niż wcześniejszymi metodami.</p>
-  <p><b>Metoda 454</b> – jedna z pierwszych technik <b>sekwencjonowania nowej generacji</b> – to pirosekwencjonowanie prowadzone <b>jednocześnie na wielu fragmentach DNA</b>. Dzięki temu jest dużo szybsze (zastosowania – <a class="pageref" href="#c06-r-daty"></a>).</p>
-
   <h3 id="c06-plytka">Masowe sekwencjonowanie na płytce i SMRT</h3>
   <aside class="note pojecie" data-term="Odwracalny terminator"><p>nukleotyd, który po wbudowaniu zatrzymuje syntezę, ale blokadę (i barwnik) można usunąć, żeby wydłużać nić dalej.</p></aside>
   <p><b>Płytka szklana.</b> Bardzo wiele różnych fragmentów DNA przyczepia się (zakotwicza) do <b>szklanej płytki</b>. Każdy fragment namnaża się, aż ma co najmniej 1000 kopii (źródło nie mówi po co; wiele jednakowych cząsteczek w jednym miejscu daje razem mocniejszy sygnał niż jedna). Potem sekwencjonuje się je przez syntezę z użyciem <b>odwracalnych terminatorów</b> z usuwalnymi barwnikami fluorescencyjnymi. Kolejnych kroków Drewa nie opisuje – podpowiada je sama nazwa: wbudowany nukleotyd na chwilę zatrzymuje syntezę, jego barwnik zostaje odczytany, a po usunięciu blokady i barwnika można dobudować następny.</p>
@@ -1185,7 +1185,7 @@
   <p>PI można traktować jako odpowiednik wskaźnika <b>LR</b>: oba mówią, o ile bardziej prawdopodobne jest otrzymanie konkretnego wyniku badań przy założeniu, że badane osoby są spokrewnione, niż przy założeniu, że nie są.</p>
 
   <h3 id="c06-r-czworka">Objaśnienie: skąd czwórka we wzorze PI = 1/(4 × p)?</h3>
-  <p>Drewa podaje ten wzór bez wyprowadzenia – to, co niżej, jest objaśnieniem, nie treścią źródła. Korzysta tylko z przesłanek z części 1 (<a class="pageref" href="#c06-ojcostwo"></a>): PI to iloraz prawdopodobieństw tego samego wyniku przy dwóch hipotezach; dziecko ma jeden allel od matki i jeden od ojca; mężczyzna, który ma allel na jednym z dwóch chromosomów, przekazuje go z prawdopodobieństwem 0,5; osoba, o której genotypie nic nie wiemy, przekazuje dany allel z prawdopodobieństwem równym jego częstości. Przypadek z części 1: ojciec 26/30, dziecko 26/29, matki nie badano – jej genotypu nie znamy, więc traktujemy ją tak jak przypadkowego mężczyznę.</p>
+  <p class="keep-next">Drewa podaje ten wzór bez wyprowadzenia – to, co niżej, jest objaśnieniem, nie treścią źródła. Korzysta tylko z przesłanek z części 1 (<a class="pageref" href="#c06-ojcostwo"></a>): PI to iloraz prawdopodobieństw tego samego wyniku przy dwóch hipotezach; dziecko ma jeden allel od matki i jeden od ojca; mężczyzna, który ma allel na jednym z dwóch chromosomów, przekazuje go z prawdopodobieństwem 0,5; osoba, o której genotypie nic nie wiemy, przekazuje dany allel z prawdopodobieństwem równym jego częstości. Przypadek z części 1: ojciec 26/30, dziecko 26/29, matki nie badano – jej genotypu nie znamy, więc traktujemy ją tak jak przypadkowego mężczyznę.</p>
   <ol>
     <li><b>Licznik – „ten mężczyzna jest ojcem”.</b> Allelu 29 on nie ma, więc mógł dać dziecku tylko allel 26 – z prawdopodobieństwem 0,5. Allel 29 musiała zatem dać matka; skoro jej nie badano, prawdopodobieństwo, że przekazała właśnie 29, równa się częstości tego allelu, p<sub>29</sub>. Licznik = <span class="nowrap">0,5 × p<sub>29</sub></span>.</li>
     <li><b>Mianownik – „ojcem jest przypadkowy mężczyzna”.</b> Teraz oba allele dziecka pochodzą od osób, których genotypów nie znamy, i możliwe są dwa układy: 26 od ojca i 29 od matki <span class="nowrap">(p<sub>26</sub> × p<sub>29</sub>)</span> albo 29 od ojca i 26 od matki <span class="nowrap">(p<sub>29</sub> × p<sub>26</sub>)</span>. Mianownik = <span class="nowrap">2 × p<sub>26</sub> × p<sub>29</sub></span>.</li>
