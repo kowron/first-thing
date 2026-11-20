@@ -142,3 +142,9 @@ Podział Sonnetów: G+Z11 · Z02+Z03 · Z04+Z06 · Z05+Z07 · Z08+Z10 · Z09+str
 - 20.11: WERYFIKACJA GOTOWA – `rewizja3/POTWIERDZONE.md` (front + z01–z11): 127 bloków ZNAJDŹ/ZAMIEŃ (sekcje A), ok. 95 pozycji składu (sekcje B), sekcja D (10 pozycji); decyzje użytkownika: `rewizja3/DECYZJE-ZLECENIODAWCY.md` (D-1…D-6; D-7…D-10 bez decyzji – zostawić bez zmian). STOP na polecenie użytkownika.
 - WIECZOREM (na znak użytkownika): 1× Sonnet – wkleić wszystkie bloki A z POTWIERDZONE.md (mechanicznie); 1× Opus – wszystkie sekcje B + D-2, D-3, D-6 z DECYZJE; potem pełny build, PDF, raport tokenów (Fable / Sonnet / Opus). Okładka – osobno, od nowa, później.
 | weryfikacja front+z01–z06 | Fable medium | 343 tys. |
+- 20.11 wieczór: REWIZJA ZAKOŃCZONA – 128 zamian tekstu (Sonnet), skład/ryciny/spis/„Jak korzystać”/wykaz źródeł/wyprowadzenie PI (Opus), nowa okładka (Fable max; `narzedzia/okladka/`). Pełny build: 339 s., 0/0. PDF: `Biologia_molekularna_podrecznik_2026-11-20_po_rewizji.pdf`.
+- Zostało drobne: ramka „Dalej: część 2” sama na stronie w z07, z10, z11; kilka luk 5–6 cm przed rycinami; czcionka PNG ryc. genu samobójczego (z11) – tylko nowym plikiem z ChatGPT.
+| poprawki tekstu (128 zamian) | Sonnet | 72 tys. |
+| weryfikacja z07–z11 | Fable low | 180 tys. |
+| skład, ryciny, spis, PI | Opus | 460 tys. |
+| okładka | Fable max | 634 tys. |

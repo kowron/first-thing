@@ -616,36 +616,54 @@ section.cheat table.tbl caption { font-size: 8.4pt; padding-bottom: 3pt; }
 .cheat-block .pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6pt; break-inside: avoid; }
 .cheat-block .vs { color: var(--red); font-weight: 700; }
 
-/* ---------- Okładka ----------------------------------------------------------- */
+/* ---------- Okładka -----------------------------------------------------------
+   Pełny spad A4 (strona „cover” bez marginesów). Warstwy: grafika svg.cv-art (tło, model helisy DNA,
+   wypisy – generuje ją i wstawia do front/cover.html skrypt narzedzia/okladka/okladka.py), nad nią teksty
+   .cv-* ustawione w milimetrach. Lewy i prawy margines tekstu: 18 mm; linia wymiarowa wypisów też stoi na 18 mm.
+   Szybki podgląd bez składania książki: node narzedzia/okladka/podglad.mjs */
 section.cover {
   page: cover; position: relative; width: 210mm; height: 297mm; overflow: hidden;
-  background: var(--navy); color: #fff; font-family: var(--sans);
+  background: #0f2b1d; color: #fff; font-family: var(--sans);
   break-after: page;
 }
-.cover .c-kicker { position: absolute; left: 22mm; top: 26mm; font-size: 7.2pt; font-weight: 700; letter-spacing: 0.32em; color: var(--teal-l); }
-.cover .c-badge {
-  position: absolute; left: 154mm; top: 21mm; width: 32mm; height: 32mm; box-sizing: border-box;
-  border: 1.6pt solid var(--gold); border-radius: 50%; text-align: center; color: var(--gold);
+section.cover svg.cv-art { position: absolute; left: 0; top: 0; width: 210mm; height: 297mm; overflow: hidden; }
+.cover .cv-gold { color: #e9bd52; }
+/* górna linia: rodzaj książki i kierunek */
+.cover .cv-top {
+  position: absolute; left: 18mm; right: 18mm; top: 15.5mm; display: flex; justify-content: space-between;
+  padding-bottom: 3.2mm; border-bottom: 0.5pt solid rgba(143, 211, 166, 0.42);
+  font-size: 6.4pt; line-height: 8pt; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: #8fd3a6;
 }
-.cover .c-badge .l1 { display: block; margin-top: 7.4mm; font-size: 5.8pt; font-weight: 700; letter-spacing: 0.28em; }
-.cover .c-badge .l2 { display: block; font-family: var(--display); font-size: 29pt; line-height: 30pt; font-weight: 700; }
-.cover .c-badge .l3 { display: block; font-size: 5.4pt; color: #d9c58a; margin-top: 1pt; }
-.cover h1.c-title {
-  position: absolute; left: 22mm; top: 57mm; width: 168mm; margin: 0;
-  font-family: var(--display); font-weight: 700; font-size: 43pt; line-height: 45pt; letter-spacing: -0.02em; color: #fff; hyphens: none;
+/* tytuł: −1,4 mm w lewo, żeby pień litery B stał optycznie na marginesie 18 mm */
+.cover h1.cv-title {
+  position: absolute; left: 16.6mm; top: 33mm; margin: 0;
+  font-family: var(--display); font-weight: 700; font-size: 68pt; line-height: 0.95; letter-spacing: -0.03em; color: #fff;
+  hyphens: none; white-space: nowrap;
 }
-.cover .c-sub { position: absolute; left: 22mm; top: 110mm; width: 150mm; font-family: var(--display); font-weight: 300; font-size: 17pt; line-height: 21pt; color: #d9eadf; margin: 0; }
-.cover .c-bar { position: absolute; left: 22mm; top: 134mm; width: 36mm; height: 1.6mm; background: var(--gold); }
-.cover .c-desc { position: absolute; left: 22mm; top: 143mm; width: 120mm; font-family: var(--serif); font-style: italic; font-size: 12.4pt; line-height: 19pt; color: #c6dacd; margin: 0; }
-.cover .c-stats { position: absolute; left: 22mm; top: 191mm; width: 170mm; display: flex; gap: 0; }
-.cover .c-stat { width: 42mm; }
-.cover .c-stat .v { display: block; font-family: var(--display); font-weight: 600; font-size: 31pt; line-height: 34pt; color: var(--teal-l); letter-spacing: -0.02em; }
-.cover .c-stat .d { display: block; font-size: 7.4pt; color: #a8b8c4; margin-top: 2pt; }
-.cover .c-art1 { position: absolute; left: 128mm; top: 108mm; width: 64mm; }
-.cover .c-art2 { position: absolute; left: 86mm; top: 213mm; width: 110mm; }
-.cover .c-scope { position: absolute; left: 22mm; top: 264mm; width: 160mm; font-size: 7.2pt; line-height: 10.6pt; color: #9db8a6; margin: 0; }
-.cover .c-scope b { color: #fff; font-weight: 600; }
-.cover .c-scope i { font-style: italic; }
+.cover .cv-sub {
+  position: absolute; left: 18mm; top: 86mm; margin: 0;
+  font-family: var(--display); font-weight: 300; font-size: 23pt; line-height: 1.1; letter-spacing: -0.005em; color: #d5ecdc;
+}
+/* zawartość: zdanie (wiersze łamane ręcznie znacznikiem <br>) i podziałka rozdziałów G, 02–11;
+   blok ma szerokość najdłuższego wiersza, więc podziałka kończy się równo z pierwszym wierszem zdania */
+.cover .cv-info { position: absolute; left: 18mm; top: 233mm; width: max-content; }
+.cover .cv-lead {
+  margin: 0 0 6.5mm; font-family: var(--serif); font-style: italic; font-size: 11.1pt; line-height: 15.6pt; color: #cfe5d7;
+  text-align: left; white-space: nowrap;
+}
+.cover .cv-scale {
+  display: flex; justify-content: space-between; padding-top: 2.5mm;
+  border-top: 0.5pt solid rgba(143, 211, 166, 0.55);
+  font-family: var(--mono); font-size: 5.8pt; line-height: 7pt; color: #8fd3a6;
+}
+/* każda pozycja ma zerową szerokość: kreski stoją w równych odstępach, a numer jest wyśrodkowany pod kreską */
+.cover .cv-scale span { position: relative; width: 0; display: flex; justify-content: center; white-space: nowrap; }
+.cover .cv-scale span::before { content: ""; position: absolute; left: -0.25pt; top: -2.5mm; width: 0.5pt; height: 1.5mm; background: #8fd3a6; }
+.cover .cv-foot {
+  position: absolute; left: 18mm; top: 279.5mm; margin: 0; display: flex; gap: 5mm;
+  font-size: 5.8pt; line-height: 8pt; letter-spacing: 0.1em; color: #86a893; text-transform: uppercase; font-weight: 500;
+}
+.cover .cv-foot b { color: #e7f2ea; font-weight: 600; }
 
 /* ---------- Pomocnicze --------------------------------------------------------- */
 .clear { clear: both; }
