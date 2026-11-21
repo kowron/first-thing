@@ -149,3 +149,4 @@ Podział Sonnetów: G+Z11 · Z02+Z03 · Z04+Z06 · Z05+Z07 · Z08+Z10 · Z09+str
 | skład, ryciny, spis, PI | Opus | 460 tys. |
 | okładka | Fable max | 634 tys. |
 - 21.11: ostatnie poprawki składu (luki, ramki przejścia) – pełny build 337 s., 0/0. PDF: `Biologia_molekularna_podrecznik_2026-11-21.pdf`. PROJEKT ZAKOŃCZONY (poza ew. nową wersją ryciny genu samobójczego z ChatGPT).
+- 21.11: USUNIĘTO rozdział Genomika (archiwum/) i treści spoza książek w z04, z05, z06 (elektroforeza białek, ddNTP, podstawy PCR z „materiału pomocniczego”, ASA ponad s. 725, 3 ryciny). ZASADA: pliki k4/k5/genomika były tylko wzorem wyglądu, NIE źródłem. Wersja do wydania: `Biologia_molekularna_podrecznik_wydanie.pdf` – 296 s., 10 rozdziałów (zajęcia 2–11), 82 ryciny, 0/0.

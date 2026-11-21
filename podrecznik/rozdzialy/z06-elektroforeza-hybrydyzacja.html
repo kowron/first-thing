@@ -161,36 +161,6 @@
   <p>Mamy więc membranę z rozdzielonym DNA. Ale wszystkie fragmenty wyglądają na niej tak samo. Jak znaleźć ten jeden, którego szukamy? Odpowiedź to <b>hybrydyzacja z sondą</b> (<a class="pageref" href="#c06-hybrydyzacja"></a>).</p>
   <p class="src">Źródło: Drewa s. 714</p>
 
-  <!-- ============ 3 ============ -->
-  <h2 id="c06-bialka">Elektroforeza białek</h2>
-  <div class="box uwaga"><p>Rozpiska przypisuje to zagadnienie podręcznikowi Jordego (s. 42–43), z którego ten podrozdział nie korzysta. Drewa wspomina o białkach tylko pobocznie, więc podstawy (ładunek białka, SDS-PAGE, HbA i HbS) podano tu skrótowo – warto je porównać z Jordem.</p></div>
-  <h3>Dlaczego białka są trudniejsze niż DNA?</h3>
-  <p>DNA jest zawsze ujemne i zawsze biegnie do anody. Białko <b>nie ma stałego ładunku</b>. Zbudowane jest z aminokwasów, z których kwaśne niosą ładunek ujemny, a zasadowe – dodatni. Ładunek całego białka to ich suma, więc <b>zależy od tego, z jakich aminokwasów jest zbudowane, i od pH</b> buforu. W jednym żelu różne białka mogą więc biec nawet w przeciwne strony – i nie rozdzielą się porządnie według wielkości.</p>
-
-  <h3>SDS-PAGE – jak zmusić białka, by biegły według masy</h3>
-  <p>Rozwiązaniem jest <b>SDS-PAGE</b>: rozdział w żelu poliakrylamidowym (PAGE) z dodatkiem <b>SDS</b> (dodecylosiarczanu sodu). SDS to detergent o ładunku ujemnym, który robi dwie rzeczy naraz:</p>
-  <ol>
-    <li>rozwija (denaturuje) białka – wszystkie stają się podobnymi „nitkami”, bez znaczenia, jaki miały kształt;</li>
-    <li>oblepia je ładunkiem ujemnym – mniej więcej proporcjonalnie do długości łańcucha, więc własny ładunek białka przestaje mieć znaczenie.</li>
-  </ol>
-  <p>Po takim zabiegu białka zachowują się jak DNA: wszystkie biegną do anody, a o tym, jak daleko zajdą, decyduje już tylko <b>masa</b> – mniejsze dalej. Masę odczytuje się, porównując z wzorcem białek o znanych masach (w kDa).</p>
-
-  <h3>Przykład: hemoglobina A i S</h3>
-  <p>W elektroforezie bez SDS ruchliwość białka zależy od jego ładunku. Wystarczy więc zmiana jednego aminokwasu, żeby białko biegło inaczej. Tak jest z <b>hemoglobiną S</b>: w 6. pozycji łańcucha β kwas glutaminowy (ładunek ujemny) zastąpiła w niej walina (bez ładunku). HbS ma więc mniej ładunku ujemnego niż prawidłowa HbA i w buforze zasadowym biegnie do anody wolniej. Wynik w żelu:</p>
-  <ul>
-    <li>homozygota AA – jeden prążek HbA;</li>
-    <li>homozygota SS – jeden prążek HbS, bliżej startu;</li>
-    <li>heterozygota AS – oba prążki.</li>
-  </ul>
-
-  <h3>Białka u Drewy</h3>
-  <ul>
-    <li><b>Western blot</b> to przeniesienie na membranę białek rozdzielonych w żelu, a <b>eastern blot</b> – białek rozdzielonych w <b>elektroforezie dwukierunkowej</b> (skąd te nazwy – <a class="pageref" href="#c06-southern"></a>).</li>
-    <li>Zanim pojawiły się techniki molekularne, <b>wykrywany elektroforetycznie polimorfizm białek</b> (enzymów) służył jako marker genetyczny (<a class="pageref" href="#c06-r-markery"></a>).</li>
-    <li>Białka i ich metabolity można też nanosić na mikromacierze – wtedy wiążą się nie przez parowanie zasad, ale ze <b>swoistymi przeciwciałami</b> (<a class="pageref" href="#c06-mikromacierze"></a>).</li>
-  </ul>
-  <p class="src">Źródło: Drewa s. 715, 717, 732</p>
-
   <!-- ============ 4 ============ -->
   <h2 id="c06-hybrydyzacja">Hybrydyzacja i sondy</h2>
   <h3>Problem: igła w stogu siana</h3>
@@ -650,19 +620,15 @@
   <p>Pierwsze metody to <b>metoda terminacji łańcucha (Sangera)</b> i <b>metoda chemicznej degradacji (Maxama–Gilberta)</b>.</p>
   <p>Często przed sekwencjonowaniem robi się <b>metody przesiewowe</b>: nie czytają sekwencji, ale szybko wskazują fragmenty, w których prawdopodobnie jest mutacja – i dopiero te się sekwencjonuje (<a class="chapref" href="#c05"></a>; metody przesiewowe opisane u Drewy obok sekwencjonowania – <a class="pageref" href="#c06-r-sekwencjonowanie"></a>).</p>
 
-  <h3>Jak działa odczyt metodą terminacji łańcucha?</h3>
-  <p>Żeby zrozumieć automatyczny odczyt, trzeba wiedzieć, czym jest <b>dideoksynukleotyd (ddNTP)</b> – wyjaśniamy to krótko, bo Drewa na tych stronach mechanizmu nie opisuje. Polimeraza DNA buduje nową nić, doczepiając kolejne nukleotydy (dNTP); każdy następny przyczepia się do grupy –OH na końcu 3′ poprzedniego. <b>ddNTP</b> tej grupy nie ma – gdy polimeraza go wbuduje, do nici nie da się już nic doczepić i <b>synteza się zatrzymuje</b> (stąd „terminacja łańcucha”).</p>
-  <p>Do reakcji daje się zwykłe dNTP i trochę ddNTP. Raz polimeraza wbuduje zwykły nukleotyd i idzie dalej, raz – ddNTP i staje. Powstają więc kopie urwane na <b>każdej kolejnej pozycji</b>, a każda kończy się ddNTP. Gdy ddNTP są <b>znakowane fluorescencyjnie</b> (każda z czterech zasad innym kolorem), kolor końca każdej kopii mówi, jaka litera stoi w tym miejscu. Wystarczy rozdzielić kopie według długości – od najkrótszej – i odczytać kolejne kolory.</p>
-
   <h3>Automatyczny odczyt</h3>
-  <p>Na tej zasadzie działają automatyczne sekwenatory. Kopie rozdziela się w kapilarze (albo linii żelu); z jednej kapilary odczytuje się <b>300–1000 pz</b>. Barwniki wzbudza <b>laser</b>, a detektory fluorescencji zapisują kolejne kolory na bieżąco, w czasie rzeczywistym. Odczytaną sekwencję porównuje się z prawidłową z baz danych <b>GenBank</b> i <b>EMBL</b> – różnice to kandydaci na mutacje. Nowoczesne aparaty czytają tak miliony par zasad na godzinę.</p>
+  <p>Odczyt sekwencji zautomatyzowano dzięki <b>znakowaniu fluorescencyjnemu trifosforanów dideoksynukleotydów (ddNTP)</b>. Z jednej kapilary (albo linii żelu) odczytuje się <b>300–1000 pz</b>. Barwniki wzbudza <b>laser</b>, a detektory fluorescencji zapisują kolejne kolory na bieżąco, w czasie rzeczywistym. Odczytaną sekwencję porównuje się z prawidłową z baz danych <b>GenBank</b> i <b>EMBL</b> – różnice to kandydaci na mutacje. Nowoczesne aparaty czytają tak miliony par zasad na godzinę.</p>
 
   <h3>Cycle sequencing – dlaczego czytamy obie nici?</h3>
   <p>Najwygodniejszą techniką jest <b>cycle sequencing</b>. Jej istota: odczytuje się <b>obie nici</b> DNA. Po co? Bo odczyt czasem się myli – powstaje <b>artefakt</b>, przypadkowy błąd, którego w DNA nie ma. Prawdziwa zmiana sekwencji jest w <b>obu niciach</b> (w jednej jako zmieniona litera, w drugiej jako jej komplementarna para). Zmiana widoczna w obu niciach = prawdziwa mutacja.</p>
   <p>Etapy, każdy przygotowuje następny:</p>
   <ol>
     <li><b>Preparatywny PCR</b> – namnażamy badany fragment genu parą specyficznych starterów, żeby mieć dużo materiału do odczytu.</li>
-    <li><b>Asymetryczny PCR</b> – dla każdej próbki <b>osobno z każdym ze starterów</b>: jeden starter kopiuje jedną nić, drugi – drugą, więc dostajemy osobno odczyt każdej nici. W tej reakcji są ddNTP znakowane barwnikami, więc powstają kopie urwane na każdej pozycji.</li>
+    <li><b>Asymetryczny PCR</b> – dla każdej próbki <b>osobno z każdym ze starterów</b>: jeden starter kopiuje jedną nić, drugi – drugą, więc dostajemy osobno odczyt każdej nici. W tej reakcji stosuje się ddNTP znakowane barwnikami fluorescencyjnymi.</li>
     <li><b>Elektroforeza</b> w denaturującym żelu poliakrylamidowym (rozdziela z dokładnością do 1 nukleotydu); w trakcie przepływu detektor rejestruje kolor każdej kopii.</li>
     <li><b>Analiza komputerowa</b> – program składa kolory w sekwencję i porównuje obie nici.</li>
   </ol>
@@ -956,7 +922,7 @@
       <li><b>Sonda</b>: znakowany, jednoniciowy fragment, przyczepia się tylko do komplementarnej sekwencji; źródła – sklonowany gen, rodzina oligonukleotydów, PCR; znakowanie – radioaktywne, fluorescencyjne, hapten + przeciwciało, enzym.</li>
       <li><b>Southern</b> (DNA–DNA): trawienie → żel → kąpiele (HCl, NaOH, Tris) → transfer → utrwalenie (UV lub ogrzanie) → sonda; niewielka delecja – prążek niżej; utrata miejsca restrykcyjnego (RFLP) – nosiciel 2 prążki, homozygota 1 dłuższy; <b>northern</b> – RNA, ekspresja.</li>
       <li><b>Mikromacierz</b>: tysiące znanych sekwencji naraz; DNA badane i kontrolne 1:1 w dwóch kolorach – przewaga kontroli = delecja, badanego = duplikacja.</li>
-      <li><b>Sekwencjonowanie</b>: ddNTP zatrzymują syntezę; cycle sequencing (obie nici), pirosekwencjonowanie (pirofosforan → ATP → światło), 454, płytka, SMRT (10 pz/s).</li>
+      <li><b>Sekwencjonowanie</b>: automatyczny odczyt dzięki ddNTP znakowanym fluorescencyjnie; cycle sequencing (obie nici), pirosekwencjonowanie (pirofosforan → ATP → światło), 454, płytka, SMRT (10 pz/s).</li>
       <li><b>STR</b>: 2–6 pz × 5–50, allele 100–300 pz, działają ze zniszczonym DNA, multipleks (kolor + długość), wewnętrzny marker, drabina alleliczna; PI bez matki 62,5, z matką 125; ojcostwo – 5 etapów, ślady – 7.</li>
     </ul>
   </div>
@@ -1118,7 +1084,7 @@
 
   <!-- R5 -->
   <h2 id="c06-r-markery">Mapy genomu i pierwsze markery</h2>
-  <p>W części 1 padło, że dawniej markerem genetycznym był polimorfizm białek (<a class="pageref" href="#c06-bialka"></a>), a analiza RFLP wróci przy identyfikacji osób (<a class="pageref" href="#c06-southern"></a>). Drewa łączy te wątki krótką historią map genomu; definicje markerów i ich rodzaje omawia <a class="chapref" href="#c05"></a>.</p>
+  <p>W części 1 analiza RFLP pojawiła się przy hybrydyzacji Southern (<a class="pageref" href="#c06-southern"></a>). Drewa wiąże ją z krótką historią map genomu; definicje markerów i ich rodzaje omawia <a class="chapref" href="#c05"></a>.</p>
   <p>Efektywna analiza DNA wymaga map genomu: map opartych na częstości rekombinacji i analizie sprzężeń oraz <b>mapy fizycznej</b>, która pokazuje pozycje sekwencji i genów w danym locus wraz z fizycznymi odległościami między nimi. Mapa musi pokazywać pozycje genów względem określonych markerów – punktów orientacyjnych. Historia map to szukanie markerów coraz liczniejszych:</p>
   <ol>
     <li><b>cechy fenotypowe</b> – grupy krwi lub zespoły dziedziczne sprzężone z danym chromosomem (np. zespół Nail-Patella sprzężony z chromosomem 9);</li>

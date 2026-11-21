@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* Szybki podgląd okładki bez składania całej książki.
  *
- *   node narzedzia/okladka/podglad.mjs [wynik.png] [--pdf wynik.pdf] [--skala 2] [--rozdzialy 10] [--ryciny 85]
+ *   node narzedzia/okladka/podglad.mjs [wynik.png] [--pdf wynik.pdf] [--skala 2] [--rozdzialy 10] [--ryciny 82]
  *
  * Bierze front/cover.html i css/style.css (te same czcionki i style co build.mjs), wstawia liczniki
  * (data-stat – w prawdziwym składzie robi to lib/browser.js) i zapisuje zrzut całej okładki (domyślnie
@@ -18,7 +18,7 @@ const { chromium } = require('playwright');
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 
 const argv = process.argv.slice(2);
-const opt = { png: path.join(ROOT, 'Okladka_podglad.png'), pdf: null, scale: 2, chapters: 10, figures: 85 };
+const opt = { png: path.join(ROOT, 'Okladka_podglad.png'), pdf: null, scale: 2, chapters: 10, figures: 82 };
 for (let i = 0; i < argv.length; i++) {
   const a = argv[i];
   if (a === '--pdf') opt.pdf = argv[++i];
