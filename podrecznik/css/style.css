@@ -275,7 +275,8 @@ aside.note .term { display: block; font-weight: 700; font-size: 8.2pt; line-heig
 .w60 .lbl { color: var(--teal-l); font-size: 6.4pt; line-height: 9pt; margin-bottom: 6pt; display: flex; align-items: center; gap: 6pt; }
 .w60 .lbl svg { width: 10pt; height: 10pt; }
 .w60 ul, .w60 ol { margin: 0 !important; padding: 0; list-style: none; columns: 2; column-gap: 18pt; }
-.w60 li { break-inside: avoid; text-align: left !important; }
+.w60 li { text-align: left !important; }
+section.chapter .w60 li { break-inside: auto; }
 .w60 li { position: relative; padding-left: 15pt !important; margin: 0 0 4pt !important; }
 .w60 li:last-child { margin-bottom: 0 !important; }
 /* kreska zamiast punktora: 6 × 2 pt, 4,2 pt od góry – float o zerowej szerokości (−15 + 6 + 9), bez position: absolute */
@@ -333,7 +334,7 @@ aside.note .term { display: block; font-weight: 700; font-size: 8.2pt; line-heig
 .przejscie .prz-arrow { font-size: 8pt; letter-spacing: 0; margin-right: 5pt; }
 .przejscie .prz-page { letter-spacing: 0.1em; color: var(--muted); }
 .przejscie p { margin: 0 0 4pt; text-align: left !important; }
-.przejscie ul { columns: 3; column-gap: 14pt; margin: 2pt 0 0 !important; }
+.przejscie ul { columns: 2; column-gap: 14pt; margin: 2pt 0 0 !important; }
 .przejscie li { break-inside: avoid; margin-bottom: 1.5pt !important; }
 .przejscie li { text-align: left !important; }
 
