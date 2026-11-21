@@ -148,3 +148,4 @@ Podział Sonnetów: G+Z11 · Z02+Z03 · Z04+Z06 · Z05+Z07 · Z08+Z10 · Z09+str
 | weryfikacja z07–z11 | Fable low | 180 tys. |
 | skład, ryciny, spis, PI | Opus | 460 tys. |
 | okładka | Fable max | 634 tys. |
+- 21.11: ostatnie poprawki składu (luki, ramki przejścia) – pełny build 337 s., 0/0. PDF: `Biologia_molekularna_podrecznik_2026-11-21.pdf`. PROJEKT ZAKOŃCZONY (poza ew. nową wersją ryciny genu samobójczego z ChatGPT).

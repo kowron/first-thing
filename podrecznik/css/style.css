@@ -269,8 +269,8 @@ aside.note .term { display: block; font-weight: 700; font-size: 8.2pt; line-heig
 .w60 {
   break-inside: avoid;
   background: var(--navy); color: #e4efe8; border-radius: 8pt;
-  padding: 11pt 15pt 10pt; margin: 12pt 0 7pt;
-  font-family: var(--sans); font-size: 8.4pt; line-height: 12pt;
+  padding: 10pt 15pt 9pt; margin: 10pt 0 6pt;
+  font-family: var(--sans); font-size: 8.4pt; line-height: 11.6pt;
 }
 .w60 .lbl { color: var(--teal-l); font-size: 6.4pt; line-height: 9pt; margin-bottom: 6pt; display: flex; align-items: center; gap: 6pt; }
 .w60 .lbl svg { width: 10pt; height: 10pt; }
@@ -326,7 +326,7 @@ section.chapter .w60 li { break-inside: auto; }
 
 /* ---------- Przejście do części 2 (na całą szerokość, po „W 60 sekund”) ---------- */
 .przejscie {
-  break-inside: avoid; margin: 0 0 10pt; padding: 7pt 14pt 7pt;
+  break-inside: avoid; margin: 0 0 10pt; padding: 6pt 14pt 6pt;
   border: 1.2pt solid var(--teal); border-radius: 8pt;
   font-family: var(--sans); font-size: 7.8pt; line-height: 10.8pt; color: var(--ink);
 }
